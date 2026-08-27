@@ -14,6 +14,7 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+# Trigger a clean deployment after the Pages site was unpublished.
 jobs:
   deploy:
     environment:
