@@ -4,75 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>每日法学经典</title>
-<meta name="description" content="每日系统解读一部法学经典著作，追溯问题意识、论证结构、核心观点、学术影响与争议。">
+<meta name="description" content="每日推荐并系统解读一部法学经典著作。">
 <link rel="stylesheet" href="assets/style.css">
+<style>
+  .daily-home{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:48px 24px}
+  .daily-entry{width:min(760px,100%);text-align:center}
+  .daily-kicker{font-family:Georgia,serif;letter-spacing:.18em;font-size:12px;color:var(--accent);margin-bottom:18px}
+  .daily-date{font-size:14px;color:var(--muted);margin-bottom:28px}
+  .daily-title{font-size:46px;line-height:1.35;margin:0 0 14px}
+  .daily-en{font-family:Georgia,serif;font-size:20px;color:var(--muted);margin-bottom:32px}
+  .daily-link{display:inline-block;padding:11px 20px;border:1px solid var(--ink);text-decoration:none;background:var(--panel)}
+  .daily-link:hover{background:var(--ink);color:var(--paper)}
+  .daily-archive{margin-top:26px;font-size:13px;color:var(--muted)}
+  .daily-archive a{text-decoration:none;border-bottom:1px solid var(--line)}
+  @media(max-width:700px){.daily-title{font-size:34px}.daily-home{padding:32px 20px}}
+</style>
 </head>
 <body>
-<header class="top">
-  <div class="wrap nav">
-    <a class="brand" href="index.html">每日法学经典</a>
-    <nav class="navlinks">
-      <a href="index.html">今日解读</a>
-      <a href="archive.html">历史归档</a>
-      <a href="PROMPT.md">内容规范</a>
-    </nav>
-  </div>
-</header>
-<main>
-  <section class="hero">
-    <div class="wrap">
-      <div class="eyebrow">DAILY LEGAL CLASSICS</div>
-      <h1>每天读懂一部真正重要的法学经典</h1>
-      <p class="lead">不止告诉你“这本书讲了什么”，更追问作者在和谁争论、试图解决什么问题、为什么给出这样的答案，以及这些思想后来如何被继承、修正与批评。</p>
-      <div class="meta">
-        <span class="pill">每日更新</span>
-        <span class="pill">原著优先</span>
-        <span class="pill">版本核验</span>
-        <span class="pill">公开来源</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <div class="section-title">
-        <h2>今日解读</h2>
-        <span>2026 · 08 · 27</span>
-      </div>
-      <div class="feature">
-        <div class="bookmark">
-          <strong>《普通法》<br>The Common Law</strong>
-        </div>
-        <div>
-          <div class="eyebrow">ISSUE 001 · OLIVER WENDELL HOLMES JR.</div>
-          <h3>霍姆斯如何把法律从逻辑体系拉回历史与经验</h3>
-          <p>1881年的《普通法》不是一本规则汇编，而是一场法学方法论实验。霍姆斯追踪刑事责任、侵权、财产与契约制度的历史演变，试图说明：法律并不是从抽象逻辑里自然推导出来，而是在经验、社会需要和制度选择中逐步形成。</p>
-          <p>本期同时讨论它为何影响美国法律现实主义、客观责任与客观契约理论，以及后世法律史学者对其历史方法的主要批评。</p>
-          <a class="cta" href="articles/2026-08-27-the-common-law.html">阅读全文</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <div class="section-title">
-        <h2>解读框架</h2>
-        <span>每一期固定八部分</span>
-      </div>
-      <div class="grid">
-        <article class="card"><div class="date">01</div><h3>写作背景</h3><p>作者、时代、问题意识与成书缘起。</p></article>
-        <article class="card"><div class="date">02</div><h3>论证结构</h3><p>不抄目录，而是还原全书如何一步步推进。</p></article>
-        <article class="card"><div class="date">03</div><h3>主要观点</h3><p>通俗概括 + 原文支撑 + 版本定位 + 解释。</p></article>
-        <article class="card"><div class="date">04</div><h3>学术影响</h3><p>落实到理论、学者、制度、立法或司法实践。</p></article>
-        <article class="card"><div class="date">05—06</div><h3>争议与误读</h3><p>只保留有明确来源的批评与可核验的常见误解。</p></article>
-        <article class="card"><div class="date">07—08</div><h3>通俗总结与来源</h3><p>回答“为什么今天仍值得读”，并列出公开查阅路径。</p></article>
-      </div>
-    </div>
+<main class="daily-home">
+  <section class="daily-entry">
+    <div class="daily-kicker">DAILY LEGAL CLASSICS · ISSUE 001</div>
+    <div class="daily-date">生成日期：2026年8月27日</div>
+    <h1 class="daily-title">今日读物推荐：《普通法》</h1>
+    <div class="daily-en">Oliver Wendell Holmes Jr. · The Common Law · 1881</div>
+    <a class="daily-link" href="articles/2026-08-27-the-common-law.html">进入今日解读</a>
+    <div class="daily-archive"><a href="archive.html">查看历史读物</a></div>
   </section>
 </main>
-<footer>
-  <div class="wrap">每日法学经典 · Daily Legal Classics</div>
-</footer>
 </body>
 </html>
