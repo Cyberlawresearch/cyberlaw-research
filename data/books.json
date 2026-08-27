@@ -1,5 +1,17 @@
 {
   "updated": "2026-08-27",
-  "latest": null,
-  "books": []
+  "latest": "2026-08-27-the-common-law",
+  "books": [
+    {
+      "id": "2026-08-27-the-common-law",
+      "issue": 1,
+      "date": "2026-08-27",
+      "title_zh": "普通法",
+      "title_original": "The Common Law",
+      "author": "Oliver Wendell Holmes Jr.",
+      "year": 1881,
+      "field": "美国法思想史",
+      "url": "articles/2026-08-27-the-common-law.html"
+    }
+  ]
 }
