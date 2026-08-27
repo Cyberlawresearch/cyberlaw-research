@@ -1,0 +1,338 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Joshua A. Kroll等：《可问责的算法》｜每日域外法学论文精读</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/history.css"></head><body><header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../briefs.html">全球科技法简报</a><a href="../papers.html">域外法学论文精读</a><a href="../classics.html">法学经典著作</a><a href="../new-works.html">科技法研究新作</a></nav></div></header><main><section class="article-hero"><div class="reading"><div class="eyebrow">每日域外法学论文精读 · 2026.08.11</div><h1>Joshua A. Kroll等：《可问责的算法》</h1></div></section><article class="article reading history-content"><div class="content"><h1>今日域外法学论文</h1>
+<h2>Joshua A. Kroll等：《可问责的算法》</h2>
+<p><strong>原题：</strong> <em>Accountable Algorithms</em><br/>
+<strong>作者：</strong> Joshua A. Kroll、Joanna Huey、Solon Barocas、Edward W. Felten、Joel R. Reidenberg、David G. Robinson、Harlan Yu<br/>
+<strong>出处：</strong> <em>University of Pennsylvania Law Review</em>, Vol. 165, No. 3, 2017, pp. 633–705<br/>
+<strong>发表时间：</strong> 2017年2月<br/>
+<strong>研究领域：</strong> 算法问责、人工智能治理、行政法、反歧视法、自动化决策、计算法学</p>
+<p><strong>公开获取来源：</strong> 宾夕法尼亚大学法律评论提供正式发表版本；Princeton Open Access Repository保存公开PDF；SSRN也有作者公开版本。普林斯顿大学研究成果页面确认了正式书目信息及73页篇幅。</p>
+<p><strong>被引情况：</strong> 截至2026年8月11日，普林斯顿大学研究成果页链接的Scopus统计显示 <strong>690次引用</strong>；SSRN当前搜索索引则显示约 <strong>2453次“Cited by”</strong>。两者差距主要源于数据库覆盖、工作论文与正式发表版本合并方式以及引用识别口径不同，因此宜将其理解为动态数据，而不能互相替代。无论采用哪一口径，这篇文章都属于算法问责法学文献中的高影响成果。</p>
+<hr/>
+<h2>一、为什么今天选这篇</h2>
+<p>此前介绍的Ananny与Crawford《看见却未必理解》告诉我们：</p>
+<blockquote><p><strong>透明并不等于问责。</strong></p></blockquote>
+<p>今天这篇《Accountable Algorithms》则向前走了一步：</p>
+<blockquote><p><strong>如果“把源代码公开”并不能解决算法问责问题，那么法律究竟还能要求什么？</strong></p></blockquote>
+<p>Kroll等人的特别之处，在于作者团队同时包含法学家、计算机科学家和公共政策学者。他们没有停留在“算法应当更加公平透明”的原则性口号，而是直接把法律要求翻译成计算机系统可以验证的技术属性。</p>
+<p>文章的核心命题可以概括为：</p>
+<blockquote><p><strong>算法问责不必等于彻底打开黑箱。真正重要的是，我们能否证明系统按照预先确定的规则运行，并能够检验这种规则及其结果是否符合实体法律要求。</strong></p></blockquote>
+<p>作者因此试图在两种极端之间建立第三条道路：</p>
+<p><strong>一边是完全秘密的算法黑箱；另一边是要求公开全部源代码、数据和模型。</strong></p>
+<p>他们提出的替代方案是：</p><blockquote><p><strong>可验证而不必完全公开。</strong></p></blockquote>
+<p>这使论文成为今天算法审计、可信AI、合规验证甚至“零知识机器学习”等研究的重要早期理论源头。</p>
+<hr/>
+<h1>二、论文首先发现了什么问题</h1>
+<p>文章开头列举了当时已经大量自动化的重要决定：</p>
+<ul><li>计票；</li><li>贷款和信用卡审批；</li><li>警务资源配置；</li><li>税务审计；</li><li>移民签证审批。</li></ul>
+<p>作者指出，过去这些决定主要由人作出，因此法律形成了一整套围绕<strong>人的行为</strong>建立的控制机制。</p>
+<p>例如：</p>
+<ul><li>判断官员是否具有不当动机；</li><li>要求决策者说明理由；</li><li>调查是否具有歧视意图；</li><li>通过交叉询问判断事实；</li><li>通过行政程序保证一致执法。</li></ul>
+<p>问题在于：</p><blockquote><p>当真正执行决定的是软件时，这些制度如何工作？</p></blockquote>
+<p>作者举了一个非常简单但很深的问题：</p><blockquote><p>“how do you judge the intent of a piece of software?”</p></blockquote>
+<p>可译为：</p><blockquote><p><strong>我们究竟应当怎样判断一段软件的“意图”？</strong></p></blockquote>
+<p>软件本身显然没有类似人的主观心理状态。</p>
+<p>于是，以：</p><blockquote><p>“这个决策者是不是出于种族偏见？”</p></blockquote>
+<p>为核心建立的法律规则，到了算法系统中可能突然找不到分析对象。</p>
+<p>这正是全文的起点：</p>
+<p><strong>法律面对的并非单纯技术黑箱，而是传统法律问责机制与自动化决策结构之间发生了错位。</strong></p>
+<hr/>
+<h1>三、论文的总体论证结构</h1>
+<p>文章结构非常清晰，基本上是逐层推进的。</p>
+<h3>第一部分：技术工具</h3>
+<p>介绍密码学和计算机科学中已经存在的一系列方法，说明法律无需获得系统所有内部信息，也能够验证某些关键属性。</p>
+<h3>第二部分：程序规则性</h3>
+<p>作者提出全文最重要的概念：</p><blockquote><p><strong>procedural regularity</strong></p></blockquote><p>即“程序规则性”。</p>
+<p>核心是证明：</p><blockquote><p><strong>系统每一次决定都按照事先宣布的同一套规则作出。</strong></p></blockquote>
+<h3>第三部分：实体法律要求</h3>
+<p>仅仅证明规则一致还不够。作者进一步讨论：</p><ul><li>差别待遇；</li><li>差别影响；</li><li>算法歧视；</li></ul>
+<p>说明计算技术如何帮助验证模型是否符合实体法律标准。</p>
+<h3>第四部分：法律与计算机科学如何共同设计问责制度</h3>
+<p>文章最后强调：</p><blockquote><p>技术不能替代法律判断。</p></blockquote>
+<p>计算机科学可以证明“系统满足某种规则”，但<strong>什么规则值得满足</strong>，仍然必须由法律和公共政策决定。</p>
+<hr/>
+<h1>四、核心观点一：算法透明并不是算法问责</h1>
+<p>这是全文最重要的理论突破。</p>
+<p>当时算法法学中一种非常流行的解决方案是：</p><blockquote><p>算法有问题，是因为我们看不见算法。</p></blockquote>
+<p>所以：</p><blockquote><p>把源代码公开就好了。</p></blockquote>
+<p>Kroll等人直接挑战了这一观点。</p>
+<p>文章摘要明确提出：</p><blockquote><p>“Disclosure of source code is often neither necessary nor sufficient”</p></blockquote>
+<p>可译为：</p><blockquote><p><strong>公开源代码往往既不是实现问责的必要条件，也不是充分条件。</strong></p></blockquote>
+<p>为什么？</p>
+<hr/>
+<h2>（一）源代码公开也不一定能够理解系统</h2>
+<p>一套软件可能包含：</p><ul><li>数十万行代码；</li><li>多个第三方组件；</li><li>动态数据库；</li><li>实时参数；</li><li>机器学习模型。</li></ul>
+<p>即使把所有代码交给个人、法官甚至律师，他们也未必能判断：</p><blockquote><p>这个具体决定为什么发生。</p></blockquote>
+<p>因此：</p><p><strong>可见，不等于可验证。</strong></p>
+<p>这和后来Ananny与Crawford提出的“seeing without knowing”形成了非常有意思的呼应。</p>
+<hr/>
+<h2>（二）真正的决策逻辑可能不在代码里</h2>
+<p>机器学习系统尤其如此。</p>
+<p>代码只是：</p><blockquote><p>“如何训练模型”的程序。</p></blockquote>
+<p>真正形成决定的还包括：</p><ul><li>训练数据；</li><li>模型参数；</li><li>特征选择；</li><li>阈值；</li><li>数据更新。</li></ul>
+<p>所以只公开代码，有时就像公开：</p><blockquote><p>“这台机器怎么建造”</p></blockquote>
+<p>却没有公开：</p><blockquote><p>“机器里现在装了什么参数”。</p></blockquote>
+<hr/>
+<h2>（三）透明甚至可能带来新的风险</h2>
+<p>作者明确指出，有些情况下完全公开不仅没必要，还可能有害。</p>
+<p>例如：</p><h3>税务审计</h3><p>如果公开哪些变量会触发审计，逃税者可以针对规则设计行为。</p>
+<h3>安全筛查</h3><p>如果完整公开安检或反恐筛查规则，攻击者可以规避。</p>
+<h3>隐私保护</h3><p>公开模型、数据或系统参数还可能泄露其他个人信息。</p>
+<p>因此：</p><blockquote><p><strong>算法治理不能把透明度本身当作最终目标。</strong></p></blockquote>
+<p>真正的问题应该是：</p><blockquote><p><strong>为了什么目的，需要谁知道什么？</strong></p></blockquote>
+<hr/>
+<h1>五、核心观点二：问责的第一层是“程序规则性”</h1>
+<p>作者提出全文最重要的概念：</p><blockquote><p><strong>procedural regularity</strong></p></blockquote>
+<p>可以译为：</p><blockquote><p><strong>程序规则性，或者程序运行的一致性。</strong></p></blockquote>
+<p>普林斯顿大学对论文的正式摘要把它定义为：</p><blockquote><p>decisions are made under an announced set of rules consistently applied in each case</p></blockquote>
+<p>即：</p><blockquote><p><strong>决定按照一套事先公布或确定的规则作出，并且这套规则在每一个案件中得到一致适用。</strong></p></blockquote>
+<p>这是一个非常具有行政法色彩的概念。</p>
+<hr/>
+<h1>六、为什么“程序规则性”特别重要</h1>
+<p>设想一个政府部门规定：</p><blockquote><p>彩票签证申请必须通过随机抽签决定。</p></blockquote>
+<p>如果完全由人工执行，我们会担心：</p><ul><li>官员偷偷照顾熟人；</li><li>特定国家申请人被排除；</li><li>部分申请被人工改动。</li></ul>
+<p>如果改成算法执行，人们可能认为：</p><blockquote><p>机器不会徇私，所以问题解决了。</p></blockquote>
+<p>但实际并没有。</p>
+<p>程序员完全可以：</p><ul><li>对某些申请人使用不同代码；</li><li>在随机抽签前偷偷排除部分申请；</li><li>部署一个与公开规则不同的软件版本。</li></ul>
+<p>因此真正需要证明的是：</p><blockquote><p><strong>实际运行的算法，就是政府声称自己运行的算法。</strong></p></blockquote>
+<p>而且：</p><blockquote><p><strong>所有案件都经过同一套规则。</strong></p></blockquote>
+<p>这就是程序规则性。</p>
+<p>它对应的其实是一条非常传统的法治原则：</p><blockquote><p><strong>规则应当事先确定，并且同案同处理。</strong></p></blockquote>
+<p>Kroll等人的创新之处在于：</p><blockquote><p>过去这种原则主要通过文书、档案、听证和人工监督保障；数字时代则可以直接通过计算技术把这种要求写入系统结构。</p></blockquote>
+<hr/>
+<h1>七、程序规则性不等于程序公平</h1>
+<p>这里特别需要区分。</p>
+<p>假设一个算法规定：</p><blockquote><p>所有女性申请人的评分一律减20分。</p></blockquote>
+<p>系统严格、稳定、毫无例外地执行这一规则。</p>
+<p>那么：</p><p><strong>它的程序规则性非常高。</strong></p>
+<p>但：</p><p><strong>它显然可能在实体上违法。</strong></p>
+<p>所以作者非常清楚：</p><blockquote><p>procedural regularity只是算法问责的基础，而不是全部。</p></blockquote>
+<p>它能够解决：</p><blockquote><p><strong>“系统有没有偷偷改变规则？”</strong></p></blockquote>
+<p>却不能解决：</p><blockquote><p><strong>“这个规则本身是否公平？”</strong></p></blockquote>
+<p>因此，全文随后必须从<strong>程序问责</strong>进入<strong>实体问责</strong>。</p>
+<hr/>
+<h1>八、核心观点三：技术可以证明“你遵守了规则”，而不必知道整个规则内部</h1>
+<p>这是全文最有技术特色的部分。</p>
+<p>作者借助现代密码学提出一种很重要的思路：</p><blockquote><p><strong>验证，不一定意味着查看全部内部信息。</strong></p></blockquote>
+<p>今天听起来已经比较熟悉，但2017年用于算法法律问责，非常具有前瞻性。</p>
+<p>其中主要涉及两个技术思想：</p><h3>1. Commitment</h3><p>即<strong>密码学承诺</strong>。</p><h3>2. Zero-Knowledge Proof</h3><p>即<strong>零知识证明</strong>。</p>
+<hr/>
+<h1>九、什么是“密码学承诺”</h1>
+<p>可以用一个比较通俗的方式理解。</p>
+<p>某个政府部门在系统部署前，把自己准备使用的算法经过密码学处理，产生一个无法轻易伪造的数字“指纹”。</p>
+<p>它相当于说：</p><blockquote><p><strong>“我承诺，以后使用的就是今天这套规则。”</strong></p></blockquote>
+<p>但此时并不一定必须把完整代码公开。</p>
+<p>之后发生争议时，可以验证：</p><blockquote><p>当时真正执行的算法，是不是之前承诺的那个版本。</p></blockquote>
+<p>这样就可以防止一种很危险的行为：</p><blockquote><p><strong>事后偷偷修改算法，再声称原来就是这样。</strong></p></blockquote>
+<p>它在法治上的功能，与行政机关：</p><ul><li>留存规则文本；</li><li>固定规范版本；</li><li>防止事后篡改档案；</li></ul>
+<p>非常相似。</p>
+<p>区别只是：</p><blockquote><p><strong>这种程序保障被密码学技术实现了。</strong></p></blockquote>
+<hr/>
+<h1>十、什么是“零知识证明”</h1>
+<p>零知识证明听起来很神秘，其核心思路其实非常简单：</p><blockquote><p><strong>我可以向你证明某件事情是真的，但不必告诉你全部底层秘密。</strong></p></blockquote>
+<p>放到算法监管中，例如企业可以证明：</p><blockquote><p>“我的模型没有直接使用某个禁止变量。”</p></blockquote>
+<p>或者：</p><blockquote><p>“这项决定确实由先前承诺的算法产生。”</p></blockquote>
+<p>而不一定把：</p><ul><li>完整代码；</li><li>商业秘密；</li><li>所有个人数据；</li></ul>
+<p>全部交出去。</p>
+<p>正因为如此，作者认为：</p><blockquote><p>技术可以创造比“完全透明”更加细致和灵活的问责方式。</p></blockquote>
+<p>这里的法律意义非常大。</p>
+<p>过去常被理解为一个二选一问题：</p><blockquote><p><strong>要么保护商业秘密，要么实现算法监管。</strong></p></blockquote>
+<p>这篇论文试图告诉我们：</p><blockquote><p><strong>有些情况下根本不必二选一。</strong></p></blockquote>
+<p>可以通过可验证计算：</p><p><strong>不公开全部秘密，但仍证明合规。</strong></p>
+<hr/>
+<h1>十一、核心观点四：算法反而可能比人类更容易实现某些形式的问责</h1>
+<p>这是文章一个非常有意思、甚至略显反直觉的观点。</p>
+<p>很多算法治理文献把算法描述成：</p><blockquote><p>比人更黑、更难理解、更难问责。</p></blockquote>
+<p>Kroll等人认为，这只说对了一部分。</p>
+<p>人的决策可能存在：</p><ul><li>潜意识偏见；</li><li>记忆错误；</li><li>不愿承认真实动机；</li><li>每个案件随意改变标准。</li></ul>
+<p>而算法至少在某些方面具有一个独特优势：</p><blockquote><p><strong>它的计算过程可以被记录、固定和验证。</strong></p></blockquote>
+<p>文章说：</p><blockquote><p>“we can peer into the ‘brain’ of an algorithm”</p></blockquote>
+<p>可译为：</p><blockquote><p><strong>我们实际上能够查看算法的“头脑”。</strong></p></blockquote>
+<p>作者的真正意思不是说算法一定透明，而是：</p><blockquote><p>人类决策者真正的心理过程可能永远无法被完全验证；算法如果制度设计正确，则可以提前声明规则，并在事后证明实际执行了什么。</p></blockquote>
+<p>因此：</p><p><strong>自动化并不天然削弱法治。</strong></p>
+<p>设计得当时，它甚至可能比人工决定提供更强的可审计性。</p>
+<hr/>
+<h1>十二、这为什么与传统行政法非常相似</h1>
+<p>如果把技术术语全部拿掉，会发现作者实际上在重新构建数字时代的行政程序。</p>
+<p>传统行政法关心：</p><ul><li>行政机关依据什么规则；</li><li>规则是否事先存在；</li><li>是否平等适用；</li><li>是否任意改变；</li><li>是否能够留下记录；</li><li>法院能否事后复核。</li></ul>
+<p>Kroll等人做的事情就是把这些要求转译为：</p><ul><li>算法版本固定；</li><li>计算过程可验证；</li><li>输入输出可审计；</li><li>系统不能事后篡改；</li><li>合规属性可以证明。</li></ul>
+<p>所以，这篇文章真正重要之处，不只是“法律学者介绍零知识证明”。</p>
+<p>而是：</p><blockquote><p><strong>它说明了传统法治原则怎样可以转化为数字系统的工程要求。</strong></p></blockquote>
+<hr/>
+<h1>十三、核心观点五：问责必须进一步进入“实体合法性”</h1>
+<p>作者很清楚，仅仅证明“系统始终如一”仍然不够。</p>
+<p>于是文章随后进入美国反歧视法。</p>
+<p>其中主要讨论两类法律问题：</p><h3>1. Disparate Treatment</h3><p>差别待遇。</p><h3>2. Disparate Impact</h3><p>差别影响。</p>
+<p>两者看似相近，法律结构完全不同。</p>
+<hr/>
+<h1>十四、差别待遇在算法时代会遇到什么问题</h1>
+<p>差别待遇通常关心：</p><blockquote><p><strong>决策者是否因为种族、性别等敏感属性故意给予不同待遇。</strong></p></blockquote>
+<p>但算法没有“心理”。</p>
+<p>那么谁具有歧视意图？</p>
+<p>可能是：</p><ul><li>程序员；</li><li>数据科学家；</li><li>产品经理；</li><li>企业；</li><li>选择训练数据的人。</li></ul>
+<p>更麻烦的是：</p>
+<p>即使所有人都没有主观歧视意图，模型仍可能从数据中自动发现与种族或性别高度相关的代理变量。</p>
+<p>所以算法时代会使：</p><blockquote><p><strong>“是不是故意歧视”</strong></p></blockquote>
+<p>这个传统法律问题变得越来越难以稳定运作。</p>
+<hr/>
+<h1>十五、差别影响也不会因为使用算法而消失</h1>
+<p>算法开发者常说：</p><blockquote><p>模型没有使用种族变量，所以不存在歧视。</p></blockquote>
+<p>但Kroll等人与Barocas、Selbst的研究共同揭示：</p>
+<p>这并不成立。</p>
+<p>例如模型可以使用：</p><ul><li>邮政编码；</li><li>教育经历；</li><li>消费模式；</li><li>社交网络；</li></ul>
+<p>这些变量可能与种族或社会阶层高度相关。</p>
+<p>所以：</p><blockquote><p><strong>删除敏感变量，并不等于删除敏感属性的影响。</strong></p></blockquote>
+<p>程序问责因此必须进一步进入：</p><blockquote><p><strong>模型实际对不同群体造成什么结果。</strong></p></blockquote>
+<p>这就从：</p><p><strong>代码检查</strong></p><p>走向：</p><p><strong>结果审计。</strong></p>
+<hr/>
+<h1>十六、一个特别重要的思想：法律必须先明确自己到底要什么</h1>
+<p>这是全文很容易被技术部分遮住、但在法理上特别重要的一层。</p>
+<p>计算机可以验证：</p><blockquote><p>“模型是否满足规则X。”</p></blockquote>
+<p>但计算机不能告诉社会：</p><blockquote><p><strong>“规则X是不是正义的。”</strong></p></blockquote>
+<p>例如，我们可以要求技术验证：</p><ul><li>不使用种族；</li><li>不同性别通过率相同；</li><li>不同群体假阳性率相同；</li><li>相同风险的人得到相同待遇。</li></ul>
+<p>问题是：</p><p>这些标准本身可能互相冲突。</p>
+<p>那么：</p><blockquote><p><strong>究竟应选择哪一个？</strong></p></blockquote>
+<p>这不是计算机科学问题。</p>
+<p>而是：</p><ul><li>立法；</li><li>法理；</li><li>公共政策；</li></ul><p>问题。</p>
+<p>作者因此认为，技术工具反而会迫使法律更加认真地思考：</p><blockquote><p><strong>我们所说的“公平”究竟意味着什么。</strong></p></blockquote>
+<p>普林斯顿大学对论文的正式介绍也特别指出，这些工具会迫使决策者更认真考虑规则效果，并由此推动对政策与法律标准本身的重新讨论。</p>
+<hr/>
+<h1>十七、因此，“可问责算法”并不是“公平算法”</h1>
+<p>这是理解全文最关键的区分。</p>
+<p>一个算法可以：</p><ul><li>完整保存记录；</li><li>严格按照固定规则；</li><li>允许验证；</li><li>接受审计；</li></ul>
+<p>却仍然：</p><blockquote><p><strong>执行一套不公平的法律。</strong></p></blockquote>
+<p>因此，accountability与fairness并不是同义词。</p>
+<p>更准确地说：</p><blockquote><p><strong>问责是一种让公平与合法性能够被检查的制度能力。</strong></p></blockquote>
+<p>这一点至今仍非常重要。</p>
+<p>很多AI治理方案容易把：</p><blockquote><p>“模型经过审计”</p></blockquote>
+<p>写成：</p><blockquote><p>“模型因此是公平的”。</p></blockquote>
+<p>实际上审计只能回答：</p><blockquote><p><strong>它符合了被审计的那个标准。</strong></p></blockquote>
+<p>至于标准本身是否合理，仍需要外部规范判断。</p>
+<hr/>
+<h1>十八、关键概念</h1>
+<h3>1. Algorithmic Accountability</h3><p><strong>算法问责。</strong></p><p>使自动化系统能够接受外部验证，并证明其决策符合预先确定的程序和实体规则。</p>
+<h3>2. Procedural Regularity</h3><p><strong>程序规则性。</strong></p><p>决定依据事先确定的规则，并在所有相关案件中保持一致适用。</p>
+<h3>3. Commitment</h3><p><strong>密码学承诺。</strong></p><p>通过技术方式提前固定某套规则、模型或数据的状态，使其以后可以被验证，而又无需立即公开全部内容。</p>
+<h3>4. Zero-Knowledge Proof</h3><p><strong>零知识证明。</strong></p><p>在不披露底层秘密的情况下证明某项关于计算过程的陈述为真。</p>
+<h3>5. Partial Transparency</h3><p><strong>部分透明或选择性透明。</strong></p><p>根据监督目的公开必要信息，而不是机械要求完全公开全部系统。</p>
+<h3>6. Verifiability</h3><p><strong>可验证性。</strong></p><p>第三方能够确定系统确实按照声称的方式运行。</p>
+<h3>7. Procedural Fairness</h3><p><strong>程序公平。</strong></p><p>决策过程遵守稳定、一致、可审查的规则。</p>
+<h3>8. Substantive Fairness</h3><p><strong>实体公平。</strong></p><p>系统实际采用的规则及其结果符合反歧视、平等和其他实体法律要求。</p>
+<hr/>
+<h1>十九、这篇论文最重要的理论贡献</h1>
+<h2>（一）把算法治理从“透明性”推进到“可验证性”</h2>
+<p>此前最流行的逻辑是：</p><blockquote><p>黑箱 → 打开黑箱 → 实现问责。</p></blockquote>
+<p>Kroll等人改变为：</p><blockquote><p><strong>明确法律标准 → 将其转化为可验证属性 → 证明系统符合标准。</strong></p></blockquote>
+<p>这是非常重要的方法论变化。</p>
+<hr/>
+<h2>（二）第一次非常系统地把密码学工具引入算法法治</h2>
+<p>论文不是把技术作为研究对象，而是把技术本身当作：</p><blockquote><p><strong>实现法律程序的制度工具。</strong></p></blockquote>
+<p>这开创了一种很有价值的研究方向：</p><blockquote><p>不只是研究“法律怎样管算法”，也研究“技术怎样帮助实现法律”。</p></blockquote>
+<hr/>
+<h2>（三）把行政法的程序规则转化为系统设计要求</h2>
+<p>传统法治中的：</p><ul><li>稳定；</li><li>一致；</li><li>可复核；</li><li>不任意；</li></ul>
+<p>被转化为：</p><ul><li>固定代码；</li><li>记录版本；</li><li>可验证计算；</li><li>技术审计。</li></ul>
+<p>所以，这实际上是一篇很重要的<strong>数字行政法</strong>论文。</p>
+<hr/>
+<h2>（四）打破商业秘密与算法监管之间的简单对立</h2>
+<p>作者表明：</p><blockquote><p>某些监管目标并不需要监管者获得全部算法秘密。</p></blockquote>
+<p>法律可以要求：</p><blockquote><p><strong>证明合规</strong></p></blockquote>
+<p>而不是：</p><blockquote><p><strong>无条件公开所有技术信息。</strong></p></blockquote>
+<p>这一点对于今天涉及：</p><ul><li>模型权重；</li><li>训练数据；</li><li>商业秘密；</li><li>网络安全；</li></ul><p>的AI监管尤其重要。</p>
+<hr/>
+<h2>（五）指出算法可能提升，而不只是降低问责能力</h2>
+<p>与很多黑箱批评不同，作者提出：</p><blockquote><p><strong>自动化也可能把决策过程变得更加可记录和可验证。</strong></p></blockquote>
+<p>真正的问题不是：</p><blockquote><p>人还是机器更好。</p></blockquote>
+<p>而是：</p><blockquote><p><strong>制度如何设计。</strong></p></blockquote>
+<hr/>
+<h1>二十、这篇论文后来受到的一个重要批评：别把法律问题过度技术化</h1>
+<p>这也是今天回头读《Accountable Algorithms》最需要注意的一点。</p>
+<p>后来研究越来越强调：</p><blockquote><p>技术验证只能证明形式上的规则遵守，不能替代社会和制度判断。</p></blockquote>
+<p>例如，Deirdre Mulligan、Kenneth Bamberger等关于算法审计和法律验证的研究进一步指出，现实法律标准往往不像密码规则那样可以简单写成：</p><blockquote><p>true / false。</p></blockquote>
+<p>很多法律要求本身就是：</p><ul><li>开放性；</li><li>情境性；</li><li>需要解释；</li><li>需要比例判断。</li></ul>
+<p>例如：</p><blockquote><p>“合理”</p></blockquote><blockquote><p>“必要”</p></blockquote><blockquote><p>“不成比例”</p></blockquote><blockquote><p>“不公平”</p></blockquote>
+<p>都不是简单数学条件。</p>
+<p>这意味着：</p><p><strong>越具有实质价值判断的法律要求，越难完全转化为机器验证。</strong></p>
+<hr/>
+<h1>二十一、另一个问题：程序规则性也可能固化错误</h1>
+<p>程序规则性的优势是：</p><blockquote><p>人人按照同样规则处理。</p></blockquote>
+<p>但它也可能带来一个危险：</p><blockquote><p><strong>错误规则被更加稳定、更加高效地执行。</strong></p></blockquote>
+<p>人工决策虽然可能任意，却有时允许：</p><ul><li>裁量；</li><li>例外；</li><li>同情；</li><li>个案矫正。</li></ul>
+<p>完全自动化的规则执行可能消灭这些空间。</p>
+<p>所以：</p><blockquote><p><strong>规则一致性不是法治的全部。</strong></p></blockquote>
+<p>尤其行政法长期以来还要求：</p><ul><li>个案听证；</li><li>比例判断；</li><li>例外机制；</li><li>行政裁量。</li></ul>
+<p>如果只把法治理解为“机器始终如一”，就可能遗漏这些重要价值。</p>
+<hr/>
+<h1>二十二、第三个问题：谁来决定被验证的标准</h1>
+<p>假设企业证明：</p><blockquote><p>模型的男女通过率完全相同。</p></blockquote>
+<p>这听起来很公平。</p>
+<p>但也许真正重要的是：</p><blockquote><p>男女具有相同能力时是否受到相同评价。</p></blockquote>
+<p>或者：</p><blockquote><p>不同群体的错误率是否一致。</p></blockquote>
+<p>所以：</p><blockquote><p><strong>“算法通过了验证”</strong></p></blockquote>
+<p>本身没有意义。</p>
+<p>必须进一步问：</p><blockquote><p><strong>它究竟验证了什么？</strong></p></blockquote>
+<p>如果标准由企业自己选择，就可能出现：</p><blockquote><p>企业挑一个自己容易通过的公平指标，然后宣布模型合规。</p></blockquote>
+<p>因此，技术验证必须置于：</p><ul><li>立法；</li><li>监管；</li><li>利益相关者参与；</li></ul><p>之下。</p>
+<hr/>
+<h1>二十三、第四个问题：机器学习系统比传统确定性程序更麻烦</h1>
+<p>文章中的很多技术方案，在固定规则的传统软件上特别清晰。</p>
+<p>例如：</p><blockquote><p>抽签程序必须严格随机。</p></blockquote>
+<p>但今天的大模型系统存在：</p><ul><li>概率输出；</li><li>动态更新；</li><li>微调；</li><li>外部工具调用；</li><li>上下文变化。</li></ul>
+<p>此时：</p><blockquote><p>“系统是不是运行了同一套规则”</p></blockquote>
+<p>本身可能就很难定义。</p>
+<p>因此，今天应用这篇论文，不能机械地理解为：</p><blockquote><p>固定一个模型哈希就完成问责。</p></blockquote>
+<p>更合理的是建立多层版本控制：</p><ul><li>基础模型版本；</li><li>系统提示词；</li><li>安全策略；</li><li>检索数据；</li><li>工具调用；</li><li>决策日志。</li></ul>
+<hr/>
+<h1>二十四、放到今天人工智能治理中，最有现实价值的七点</h1>
+<h2>1. AI监管不应机械追求“全部开源”</h2>
+<p>监管目标不是：</p><blockquote><p>所有模型代码和权重公开。</p></blockquote>
+<p>真正目标应是：</p><blockquote><p><strong>关键法律属性能够得到可靠验证。</strong></p></blockquote>
+<p>对于高风险模型，可以通过监管访问、独立审计和技术证明实现问责。</p>
+<hr/>
+<h2>2. 高风险AI应该建立版本固定与变更记录</h2>
+<p>如果一个信贷、招聘或者行政AI发生争议，首先必须能够回答：</p><blockquote><p><strong>当时究竟运行的是哪个版本？</strong></p></blockquote>
+<p>至少应保留：</p><ul><li>模型版本；</li><li>参数；</li><li>数据版本；</li><li>决策规则；</li><li>重大更新日期。</li></ul>
+<p>否则后续审计几乎不可能。</p>
+<hr/>
+<h2>3. AI合规可以逐步走向“可机器验证”</h2>
+<p>一些明确规则，例如：</p><ul><li>不得读取某类数据；</li><li>必须经人工确认后执行；</li><li>特定权限不得自动调用；</li><li>某些高风险输出必须进入复核；</li></ul>
+<p>完全可以写成系统级约束并自动验证。</p>
+<p>这比单纯要求企业写一份《AI伦理原则》可靠得多。</p>
+<hr/>
+<h2>4. 监管机关需要从“查文件”走向“查系统”</h2>
+<p>未来的AI监管能力不能只有：</p><blockquote><p>阅读企业提交的合规报告。</p></blockquote>
+<p>还应能够：</p><ul><li>输入测试数据；</li><li>检查运行结果；</li><li>查看版本；</li><li>测试限制条件；</li><li>验证企业的技术声明。</li></ul>
+<p>这正是Kroll等人所强调的“verification”思想。</p>
+<hr/>
+<h2>5. 商业秘密不是拒绝一切算法监督的充分理由</h2>
+<p>真正合理的制度不是：</p><blockquote><p>强迫企业把所有模型公开。</p></blockquote>
+<p>也不是：</p><blockquote><p>企业一说商业秘密监管就结束。</p></blockquote>
+<p>而应建立：</p><ul><li>监管机关保密访问；</li><li>独立第三方审计；</li><li>密码学证明；</li><li>分层透明；</li></ul><p>等制度。</p>
+<hr/>
+<h2>6. 对智能体尤其应强调“程序规则性”</h2>
+<p>智能体系统最大的新风险之一，是：</p><blockquote><p>模型可能自主调用多个工具并执行现实行动。</p></blockquote>
+<p>因此可进一步把程序规则性转化为：</p><ul><li>权限事先声明；</li><li>工具调用范围固定；</li><li>高风险动作必须人工确认；</li><li>所有重要操作留下日志；</li><li>禁止运行时自行扩大权限。</li></ul>
+<p>这实际上就是把传统：</p><blockquote><p><strong>依法定权限行事</strong></p></blockquote>
+<p>转译成智能体技术架构。</p>
+<hr/>
+<h2>7. 最终不能忘记：技术只能验证法律，不能生成正义</h2>
+<p>这仍然是这篇论文留给今天最重要的提醒。</p>
+<p>我们完全可能建立一个：</p><ul><li>极其透明；</li><li>极其稳定；</li><li>极其可验证；</li></ul><p>的AI系统。</p>
+<p>但如果它执行的是一套：</p><blockquote><p>本身不合理的规则，</p></blockquote>
+<p>那么技术越强，只会让不合理的规则执行得越彻底。</p>
+<p>所以AI治理必须始终保持两个层次：</p><blockquote><p><strong>第一层：系统有没有按照规则工作。</strong></p></blockquote><blockquote><p><strong>第二层：这套规则究竟是否值得让机器去执行。</strong></p></blockquote>
+<hr/>
+<h1>二十五、把它放入此前几篇论文的理论链条</h1>
+<p>这一组论文现在已经可以形成一条相当清楚的算法法治演化路径。</p>
+<p><strong>Citron与Pasquale《评分社会》</strong>关注的是：</p><blockquote><p>算法评分如何开始分配社会机会，因此个人需要获得挑战与纠错的程序。</p></blockquote>
+<p><strong>Barocas与Selbst《大数据的差别影响》</strong>进一步指出：</p><blockquote><p>即使没有主观歧视，大数据系统也可能产生结构性群体差异。</p></blockquote>
+<p><strong>Kroll等人《可问责的算法》</strong>则提出：</p><blockquote><p><strong>不要只要求企业解释，应进一步把法律要求转化为可以验证的系统属性。</strong></p></blockquote>
+<p><strong>Ananny与Crawford《看见却未必理解》</strong>又提醒我们：</p><blockquote><p>即使技术上能够看见和验证，如果没有能够迫使企业回应和改变的制度权力，仍然不能形成真正问责。</p></blockquote>
+<p>而<strong>Selbst等人《社会技术系统中的公平与抽象》</strong>最终进一步提醒：</p><blockquote><p>即使模型本身已经完美通过技术验证，仍不能脱离其所在的组织、制度与社会结构判断公平。</p></blockquote>
+<p>这几篇连起来，实际上形成了一套非常完整的算法治理方法：</p><blockquote><p><strong>程序权利 → 反歧视 → 技术验证 → 组织问责 → 社会技术治理。</strong></p></blockquote>
+<hr/>
+<h1>二十六、一句话概括</h1>
+<p>Kroll等人这篇论文最重要的贡献，可以压缩成一句话：</p><blockquote><p><strong>算法问责的关键并不是让所有人看见全部源代码，而是建立能够证明系统实际上遵守了事先确定之法律规则的技术与制度机制。</strong></p></blockquote>
+<p>它把算法治理从比较模糊的：</p><blockquote><p><strong>“要求透明”</strong></p></blockquote>
+<p>推进到了更严格的：</p><blockquote><p><strong>“要求证明”。</strong></p></blockquote>
+<p>但它同时也留下了一个更根本的法学问题：</p><blockquote><p><strong>技术可以越来越精确地证明机器执行了什么，却永远不能代替法律回答——机器究竟应当执行什么。</strong></p></blockquote>
+</div></article></main><footer><div class="wrap"><a href="../papers.html">← 返回论文精读目录</a></div></footer></body></html>
