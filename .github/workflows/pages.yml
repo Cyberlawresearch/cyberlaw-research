@@ -50,16 +50,19 @@ jobs:
           from pathlib import Path
 
           reading_dirs = {'articles','papers','new-works'}
+          tool_pages = {'search.html','themes.html','ideas.html'}
           for path in Path('.').rglob('*.html'):
               if '.git' in path.parts or path.name == 'login.html':
                   continue
               depth = len(path.parent.parts)
               prefix = '../' * depth
               auth = f'<script src="{prefix}assets/auth-config.js"></script><script src="{prefix}assets/auth.js"></script>'
-              text = path.read_text(encoding='utf-8', errors='ignore')
               extra = ''
               if path.parent.name in reading_dirs:
                   extra = f'<script defer src="{prefix}assets/favorites.js"></script><script defer src="{prefix}assets/context-tools.js"></script>'
+              elif path.name in tool_pages:
+                  extra = f'<script defer src="{prefix}assets/research-tools.js"></script>'
+              text = path.read_text(encoding='utf-8', errors='ignore')
               if '</head>' in text:
                   text = text.replace('</head>', auth + extra + '</head>', 1)
                   path.write_text(text, encoding='utf-8')
