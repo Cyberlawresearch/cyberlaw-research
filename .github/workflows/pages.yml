@@ -25,24 +25,43 @@ jobs:
         uses: actions/checkout@v4
       - name: Build research indexes
         run: python scripts/build_research_index.py
-      - name: Enable research tools on reading pages
+      - name: Prepare contextual reading tools
         shell: bash
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
 
           groups = [Path('articles'), Path('papers'), Path('new-works')]
-          tag = '<script defer src="../assets/research-tools.js"></script>'
+          tags = (
+              '<script defer src="../assets/favorites.js"></script>'
+              '<script defer src="../assets/context-tools.js"></script>'
+          )
           for group in groups:
               if not group.exists():
                   continue
               for path in group.glob('*.html'):
                   text = path.read_text(encoding='utf-8')
-                  if 'assets/research-tools.js' in text:
-                      continue
+
+                  # The brief should begin directly with its substantive sections.
+                  if 'tech-law-brief' in path.name:
+                      text = re.sub(
+                          r'<section\b[^>]*class=["\'][^"\']*brief-focus[^"\']*["\'][^>]*>.*?<h2[^>]*>\s*本期最值得先看\s*</h2>.*?</section>',
+                          '', text, flags=re.S|re.I
+                      )
+                      text = re.sub(
+                          r'<h2[^>]*>\s*本期最值得先看\s*</h2>\s*<div\b[^>]*class=["\'][^"\']*highlight[^"\']*["\'][^>]*>.*?</div>',
+                          '', text, flags=re.S|re.I
+                      )
+
+                  # Remove obsolete injected tool tags if a source page ever contains them.
+                  text = re.sub(r'<script\b[^>]*src=["\'][^"\']*assets/research-tools\.js["\'][^>]*></script>', '', text, flags=re.I)
+                  text = re.sub(r'<script\b[^>]*src=["\'][^"\']*assets/favorites\.js["\'][^>]*></script>', '', text, flags=re.I)
+                  text = re.sub(r'<script\b[^>]*src=["\'][^"\']*assets/context-tools\.js["\'][^>]*></script>', '', text, flags=re.I)
+
                   if '</head>' in text:
-                      text = text.replace('</head>', tag + '</head>', 1)
-                      path.write_text(text, encoding='utf-8')
+                      text = text.replace('</head>', tags + '</head>', 1)
+                  path.write_text(text, encoding='utf-8')
           PY
       - name: Setup Pages
         uses: actions/configure-pages@v5
