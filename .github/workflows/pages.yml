@@ -23,20 +23,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Enable text favorites on reading pages
+      - name: Build research indexes
+        run: python scripts/build_research_index.py
+      - name: Enable research tools on reading pages
         shell: bash
         run: |
           python - <<'PY'
           from pathlib import Path
 
           groups = [Path('articles'), Path('papers'), Path('new-works')]
-          tag = '<script defer src="../assets/favorites.js"></script>'
+          tag = '<script defer src="../assets/research-tools.js"></script>'
           for group in groups:
               if not group.exists():
                   continue
               for path in group.glob('*.html'):
                   text = path.read_text(encoding='utf-8')
-                  if 'assets/favorites.js' in text:
+                  if 'assets/research-tools.js' in text:
                       continue
                   if '</head>' in text:
                       text = text.replace('</head>', tag + '</head>', 1)
