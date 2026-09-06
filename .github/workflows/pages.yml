@@ -30,60 +30,39 @@ jobs:
           from pathlib import Path
           import re
 
-          groups = [Path('articles'), Path('papers'), Path('new-works')]
-          for group in groups:
-              if not group.exists():
+          for path in Path('.').rglob('*.html'):
+              if '.git' in path.parts:
                   continue
-              for path in group.glob('*.html'):
-                  text = path.read_text(encoding='utf-8')
-
-                  if 'tech-law-brief' in path.name:
-                      text = re.sub(
-                          r'<section\b[^>]*class=["\'][^"\']*brief-focus[^"\']*["\'][^>]*>.*?<h2[^>]*>\s*本期最值得先看\s*</h2>.*?</section>',
-                          '', text, flags=re.S|re.I
-                      )
-                      text = re.sub(
-                          r'<h2[^>]*>\s*本期最值得先看\s*</h2>\s*<div\b[^>]*class=["\'][^"\']*highlight[^"\']*["\'][^>]*>.*?</div>',
-                          '', text, flags=re.S|re.I
-                      )
-
-                  text = re.sub(r'<script\b[^>]*src=["\'][^"\']*assets/research-tools\.js["\'][^>]*></script>', '', text, flags=re.I)
-                  text = re.sub(r'<script\b[^>]*src=["\'][^"\']*assets/favorites\.js["\'][^>]*></script>', '', text, flags=re.I)
-                  text = re.sub(r'<script\b[^>]*src=["\'][^"\']*assets/context-tools\.js["\'][^>]*></script>', '', text, flags=re.I)
-                  path.write_text(text, encoding='utf-8')
-
-          # Keep the deployed labels explicit about the current citation standards.
-          js = Path('assets/context-tools.js')
-          if js.exists():
-              text = js.read_text(encoding='utf-8')
-              text = text.replace('>专题脉络</button>', '>专题时间线</button>')
-              text = text.replace('专题脉络</div>', '专题时间线</div>')
-              text = text.replace('>引用</button>', '>引用/导出</button>')
-              text = text.replace('>GB/T 7714</button>', '>GB/T 7714—2025</button>')
-              text = text.replace('>《法学引注手册》</button>', '>《法学引注手册》第二版</button>')
-              js.write_text(text, encoding='utf-8')
+              text = path.read_text(encoding='utf-8', errors='ignore')
+              if 'tech-law-brief' in path.name:
+                  text = re.sub(r'<section\b[^>]*class=["\'][^"\']*brief-focus[^"\']*["\'][^>]*>.*?<h2[^>]*>\s*本期最值得先看\s*</h2>.*?</section>', '', text, flags=re.S|re.I)
+                  text = re.sub(r'<h2[^>]*>\s*本期最值得先看\s*</h2>\s*<div\b[^>]*class=["\'][^"\']*highlight[^"\']*["\'][^>]*>.*?</div>', '', text, flags=re.S|re.I)
+              for name in ['research-tools.js','favorites.js','context-tools.js','auth-config.js','auth.js']:
+                  text = re.sub(r'<script\b[^>]*src=["\'][^"\']*'+re.escape(name)+r'["\'][^>]*></script>', '', text, flags=re.I)
+              path.write_text(text, encoding='utf-8')
           PY
       - name: Build research indexes
         run: python scripts/build_research_index.py
-      - name: Enable contextual reading tools
+      - name: Enable account access and contextual tools
         shell: bash
         run: |
           python - <<'PY'
           from pathlib import Path
 
-          groups = [Path('articles'), Path('papers'), Path('new-works')]
-          tags = (
-              '<script defer src="../assets/favorites.js"></script>'
-              '<script defer src="../assets/context-tools.js"></script>'
-          )
-          for group in groups:
-              if not group.exists():
+          reading_dirs = {'articles','papers','new-works'}
+          for path in Path('.').rglob('*.html'):
+              if '.git' in path.parts or path.name == 'login.html':
                   continue
-              for path in group.glob('*.html'):
-                  text = path.read_text(encoding='utf-8')
-                  if '</head>' in text:
-                      text = text.replace('</head>', tags + '</head>', 1)
-                      path.write_text(text, encoding='utf-8')
+              depth = len(path.parent.parts)
+              prefix = '../' * depth
+              auth = f'<script src="{prefix}assets/auth-config.js"></script><script src="{prefix}assets/auth.js"></script>'
+              text = path.read_text(encoding='utf-8', errors='ignore')
+              extra = ''
+              if path.parent.name in reading_dirs:
+                  extra = f'<script defer src="{prefix}assets/favorites.js"></script><script defer src="{prefix}assets/context-tools.js"></script>'
+              if '</head>' in text:
+                  text = text.replace('</head>', auth + extra + '</head>', 1)
+                  path.write_text(text, encoding='utf-8')
           PY
       - name: Setup Pages
         uses: actions/configure-pages@v5
