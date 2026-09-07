@@ -1,6 +1,10 @@
-name: Reader tools regression
+name: 网信法研究每日测评与维护
 
+# Scheduled scope: verified reader-function checks, not an autonomous legal-content audit.
 on:
+  schedule:
+    - cron: '30 21 * * *'
+      timezone: 'Asia/Shanghai'
   workflow_run:
     workflows: ["Deploy static site to Pages"]
     types: [completed]
@@ -9,6 +13,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
 
 concurrency:
   group: reader-regression-${{ github.event.workflow_run.head_sha || github.sha }}
@@ -16,13 +21,14 @@ concurrency:
 
 jobs:
   verify:
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 12
     env:
+      TZ: Asia/Shanghai
       TEST_COMMIT: ${{ github.event.workflow_run.head_sha || github.sha }}
     steps:
-      - name: Checkout the deployed commit
+      - name: Checkout the commit to verify
         uses: actions/checkout@v4
         with:
           ref: ${{ env.TEST_COMMIT }}
@@ -31,14 +37,106 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Read back schedule and enabled state
+        id: schedule_check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          from datetime import datetime, timedelta
+          import json, os, re
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+          from zoneinfo import ZoneInfo
+
+          source = Path('.github/workflows/reader-regression.yml').read_text(encoding='utf-8')
+          cron = re.search(r"cron:\s*'([^']+)'", source).group(1)
+          timezone = re.search(r"timezone:\s*'([^']+)'", source).group(1)
+          url = os.environ['GITHUB_API_URL'] + '/repos/' + os.environ['GITHUB_REPOSITORY'] + '/actions/workflows/reader-regression.yml'
+          request = Request(url, headers={'Authorization': 'Bearer ' + os.environ['GH_TOKEN'], 'Accept': 'application/vnd.github+json'})
+          with urlopen(request, timeout=30) as response:
+              workflow = json.load(response)
+          now = datetime.now(ZoneInfo(timezone))
+          next_at = now.replace(hour=21, minute=30, second=0, microsecond=0)
+          if next_at <= now:
+              next_at += timedelta(days=1)
+          report = {key: workflow.get(key) for key in ('id', 'name', 'path', 'state')}
+          report.update(cron=cron, timezone=timezone, checked_at=now.isoformat(),
+                        next_expected_at=next_at.isoformat(), next_time_basis='Calculated from cron, not a GitHub execution guarantee',
+                        event=os.environ['GITHUB_EVENT_NAME'], commit=os.environ['TEST_COMMIT'],
+                        capabilities=['GitHub repository and Actions read', 'HTTPS access to deployed site',
+                                      'Isolated Chromium reader tests', 'Actions summaries and test artifacts'],
+                        autonomous_web_search=False, repository_write=False)
+          output = Path('reader-test-results')
+          output.mkdir(exist_ok=True)
+          (output / 'schedule-verification.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
+          print(json.dumps(report, ensure_ascii=False, indent=2))
+          assert cron == '30 21 * * *' and timezone == 'Asia/Shanghai', 'Unexpected daily schedule'
+          assert workflow['state'] == 'active', 'Workflow is not enabled'
+          assert workflow['name'] == '网信法研究每日测评与维护', 'Unexpected workflow name'
+          PY
       - name: Install isolated browser test dependencies
+        id: dependencies
         run: |
           python -m pip install playwright==1.57.0
           python -m playwright install --with-deps chromium
       - name: Test fixtures and the actual deployed pages
+        id: reader
         run: python .github/scripts/reader_regression.py --mode all
       - name: Verify mobile header and exact excerpt destination
+        id: layout
+        if: ${{ !cancelled() && steps.dependencies.outcome == 'success' }}
         run: python .github/scripts/reader_layout.py --mode all
+      - name: Record checked scope and remaining work
+        if: always()
+        env:
+          SCHEDULE_RESULT: ${{ steps.schedule_check.outcome }}
+          READER_RESULT: ${{ steps.reader.outcome }}
+          LAYOUT_RESULT: ${{ steps.layout.outcome }}
+        run: |
+          python - <<'PY'
+          from datetime import datetime
+          import json, os
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+
+          output = Path('reader-test-results')
+          output.mkdir(exist_ok=True)
+          statuses = {'success': '通过', 'failure': '失败', 'skipped': '未测试', 'cancelled': '已取消', '': '未测试'}
+          tests = []
+          for filename in ('results.json', 'layout-results.json'):
+              path = output / filename
+              if path.exists():
+                  tests.extend(json.loads(path.read_text(encoding='utf-8')).get('results', []))
+          passed = sum(item.get('status') == 'passed' for item in tests)
+          failed = [item for item in tests if item.get('status') != 'passed']
+          now = datetime.now(ZoneInfo('Asia/Shanghai')).isoformat()
+          lines = ['# 网信法研究每日测评与维护', '', '运行时间：' + now,
+                   '触发方式：' + os.environ['GITHUB_EVENT_NAME'], '检查提交：' + os.environ['TEST_COMMIT'], '',
+                   '## 本次范围', '已编写的阅读功能回归、隔离浏览器端到端流程、移动导航与摘录回跳。线上页面范围及每项结果见测试明细。', '',
+                   '## 执行结果',
+                   '调度回读：' + statuses.get(os.environ.get('SCHEDULE_RESULT', ''), '未核验'),
+                   '阅读流程：' + statuses.get(os.environ.get('READER_RESULT', ''), '未测试'),
+                   '移动端与定位：' + statuses.get(os.environ.get('LAYOUT_RESULT', ''), '未测试'),
+                   f'已记录测试组：{len(tests)}；通过：{passed}；未通过：{len(failed)}。', '',
+                   '## 确认问题与修改', '本工作流只读检查，不自动修改网页、账号、密码、收藏、笔记或历史正文。']
+          for item in failed:
+              lines.append('- ' + item.get('test', '未命名测试') + '：' + str(item.get('detail', '未提供详情')))
+          if not failed:
+              if tests and os.environ.get('READER_RESULT') == os.environ.get('LAYOUT_RESULT') == 'success':
+                  lines.append('本次已执行的功能测试范围内未发现问题。')
+              else:
+                  lines.append('检查未全部完成，请查看各步骤状态；不能据此认定没有问题。')
+          lines += ['', '## 未覆盖或需要另行处理',
+                    '四栏目的事实与法律状态核验、论文与图书书目核验、引注标准正确性、全文质量判断、全站历史内容轮查和自动代码修复未启用。',
+                    '这些功能测试不等于服务端账号安全测试，也不证明已实现跨设备云同步。',
+                    '若线上资源与检查提交不一致，测试按失败记录；不覆盖内容发布任务，也不将部署成功等同于功能通过。', '',
+                    '报告仅保存在 GitHub Actions 摘要和测试制品，不写入读者页面。']
+          report = '\n'.join(lines) + '\n'
+          (output / 'maintenance-report.md').write_text(report, encoding='utf-8')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as summary:
+              summary.write('\n' + report)
+          PY
       - name: Retain test results outside reader pages
         if: always()
         uses: actions/upload-artifact@v4
@@ -46,4 +144,4 @@ jobs:
           name: reader-regression-${{ env.TEST_COMMIT }}
           path: reader-test-results/
           if-no-files-found: warn
-          retention-days: 14
+          retention-days: 30
