@@ -56,7 +56,7 @@ jobs:
                   continue
               depth = len(path.parent.parts)
               prefix = '../' * depth
-              auth = f'<script src="{prefix}assets/auth.js?v=3"></script>'
+              auth = f'<script src="{prefix}assets/auth.js?v=4"></script>'
               extra = ''
               if path.parent.name in reading_dirs:
                   extra = f'<script defer src="{prefix}assets/favorites.js?v=4"></script><script defer src="{prefix}assets/context-tools.js?v=3"></script><script defer src="{prefix}assets/related-refine.js?v=1"></script><script defer src="{prefix}assets/context-refine.js?v=2"></script><script defer src="{prefix}assets/citation-refine.js?v=1"></script><script defer src="{prefix}assets/notes-inline.js?v=4"></script>'

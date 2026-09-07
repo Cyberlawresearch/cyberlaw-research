@@ -37,6 +37,8 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Test fixtures and the actual deployed pages
         run: python .github/scripts/reader_regression.py --mode all
+      - name: Verify mobile header and exact excerpt destination
+        run: python .github/scripts/reader_layout.py --mode all
       - name: Retain test results outside reader pages
         if: always()
         uses: actions/upload-artifact@v4
