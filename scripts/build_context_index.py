@@ -15,6 +15,8 @@ ASSETS = ROOT / 'assets'
 class Node:
     def __init__(self, tag='', attrs=(), parent=None):
         self.tag, self.attrs, self.parent, self.children = tag, dict(attrs), parent, []
+        self.start = -1
+        self.opening = ''
     def has(self, name):
         return name in self.attrs.get('class', '').split()
     def walk(self):
@@ -38,9 +40,15 @@ class Document(HTMLParser):
     def __init__(self, text):
         super().__init__(convert_charrefs=True)
         self.root = self.current = Node('root')
+        self.line_offsets = [0]
+        for line in text.splitlines(keepends=True):
+            self.line_offsets.append(self.line_offsets[-1] + len(line))
         self.feed(text)
     def handle_starttag(self, tag, attrs):
         node = Node(tag, attrs, self.current)
+        line, column = self.getpos()
+        node.start = self.line_offsets[line - 1] + column
+        node.opening = self.get_starttag_text()
         self.current.children.append(node)
         if tag not in self.VOID:
             self.current = node
@@ -70,7 +78,7 @@ def document(path):
 def content_block(doc, row):
     anchor = row.get('anchor', '')
     explicit = doc.first(lambda n: bool(anchor) and n.attrs.get('id') == anchor)
-    if explicit:
+    if explicit and explicit.tag != 'h3':
         return explicit
     number = re.search(r'research-item-(\d+)$', anchor)
     idx = int(number.group(1)) - 1 if number else -1
@@ -78,8 +86,8 @@ def content_block(doc, row):
     if 0 <= idx < len(cards):
         return cards[idx]
     headings = [n for n in doc.walk() if n.tag == 'h3' and re.match(r'^\s*\d+[.、]', n.text())]
-    if 0 <= idx < len(headings):
-        heading = headings[idx]
+    if (explicit and explicit.tag == 'h3') or 0 <= idx < len(headings):
+        heading = explicit if explicit and explicit.tag == 'h3' else headings[idx]
         siblings = heading.parent.children
         block = Node('section')
         for child in siblings[siblings.index(heading):]:
@@ -123,7 +131,43 @@ def book_like(block, category=''):
 def read(name):
     return json.loads((ASSETS / name).read_text(encoding='utf-8'))
 
+def install_item_anchors():
+    # Write only missing ID attributes. Keep all text, existing IDs and layout.
+    paths = {row['path'] for name in ('news-index.json', 'newworks-index.json') for row in read(name)}
+    for path in paths:
+        resolved = (ROOT / path).resolve()
+        if not resolved.is_relative_to(ROOT) or resolved.suffix != '.html':
+            raise ValueError(f'Invalid content path: {path}')
+        source = resolved.read_text(encoding='utf-8')
+        doc = Document(source).root
+        nodes = [n for n in doc.walk() if n.tag == 'article' and n.has('brief-item')]
+        if not nodes:
+            nodes = [n for n in doc.walk() if n.tag == 'h3' and re.match(r'^\s*\d+[.、]', n.text())]
+        existing = {n.attrs['id'] for n in doc.walk() if n.attrs.get('id')}
+        patches = []
+        for i, node in enumerate(nodes, 1):
+            anchor = f'research-item-{i}'
+            if node.attrs.get('id'):
+                continue
+            if anchor in existing:
+                raise ValueError(f'Conflicting item anchor: {path}#{anchor}')
+            existing.add(anchor)
+            patches.append((node.start + len(node.opening) - 1, f' id="{anchor}"'))
+        for offset, addition in sorted(patches, reverse=True):
+            source = source[:offset] + addition + source[offset:]
+        if patches:
+            resolved.write_text(source, encoding='utf-8')
+    DOCUMENTS.clear()
+
+def with_anchor(row, block):
+    node = block if block.attrs.get('id') else block.first(lambda n: n.tag == 'h3' and n.attrs.get('id'))
+    if not node:
+        raise ValueError(f'No stable item anchor: {row["id"]}')
+    anchor = node.attrs['id']
+    return {**row, 'anchor': anchor, 'id': row['path'] + '#' + anchor}
+
 def build():
+    install_item_anchors()
     output = []
     for row in read('news-index.json'):
         doc = document(row['path'])
@@ -131,13 +175,13 @@ def build():
         if block is None or not row.get('title'):
             continue
         meta = block.first(lambda n: n.has('brief-meta') or n.has('brief-date'))
-        output.append({**row, 'kind': 'news', 'materialType': 'news',
+        output.append({**with_anchor(row, block), 'kind': 'news', 'materialType': 'news',
                        'meta': meta.text() if meta else row.get('meta', ''),
                        'facts': facts_only(block), 'text': block.text()})
     for row in read('newworks-index.json'):
         block = content_block(document(row['path']), row)
         if block is not None and not book_like(block):
-            output.append({**row, 'kind': 'work', 'materialType': 'article', 'text': block.text()})
+            output.append({**with_anchor(row, block), 'kind': 'work', 'materialType': 'article', 'text': block.text()})
     for row in read('research-index.json'):
         if row['category'] != '域外法学论文精读':
             continue
@@ -148,6 +192,8 @@ def build():
     for row in output:
         if row['kind'] == 'news' and not row['facts']:
             raise ValueError(f'No factual paragraph: {row["id"]}')
+        if row.get('anchor') and not document(row['path']).first(lambda n: n.attrs.get('id') == row['anchor']):
+            raise ValueError(f'Missing item destination: {row["id"]}')
     (ASSETS / 'context-index.json').write_text(
         json.dumps(output, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     print('Context index:', {kind: sum(x['kind'] == kind for x in output) for kind in ('news','work','paper')})
