@@ -59,7 +59,7 @@ jobs:
               auth = f'<script src="{prefix}assets/auth.js?v=3"></script>'
               extra = ''
               if path.parent.name in reading_dirs:
-                  extra = f'<script defer src="{prefix}assets/favorites.js?v=3"></script><script defer src="{prefix}assets/context-tools.js?v=3"></script><script defer src="{prefix}assets/related-refine.js?v=1"></script><script defer src="{prefix}assets/context-refine.js?v=2"></script><script defer src="{prefix}assets/citation-refine.js?v=1"></script><script defer src="{prefix}assets/notes-inline.js?v=3"></script>'
+                  extra = f'<script defer src="{prefix}assets/favorites.js?v=4"></script><script defer src="{prefix}assets/context-tools.js?v=3"></script><script defer src="{prefix}assets/related-refine.js?v=1"></script><script defer src="{prefix}assets/context-refine.js?v=2"></script><script defer src="{prefix}assets/citation-refine.js?v=1"></script><script defer src="{prefix}assets/notes-inline.js?v=4"></script>'
               elif path.name in tool_pages:
                   extra = f'<script defer src="{prefix}assets/research-tools.js?v=3"></script>'
               text = path.read_text(encoding='utf-8', errors='ignore')
