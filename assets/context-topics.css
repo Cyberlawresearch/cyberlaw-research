@@ -1,0 +1,9 @@
+.ctx-topic-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 18px}
+.ctx-topic-tabs [role=tab]{appearance:none;max-width:100%;padding:8px 12px;border:1px solid #d9ccbc;border-radius:7px;background:#fffdf9;color:#655145;font:600 13px/1.5 system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;text-align:left;white-space:normal;overflow-wrap:anywhere;cursor:pointer}
+.ctx-topic-tabs [aria-selected=true]{background:#eee5da;border-color:#937056;color:#46352a}
+.ctx-topic-tabs [role=tab]:focus-visible,.ctx-topic-timeline a:focus-visible{outline:2px solid #7c5640;outline-offset:3px}
+.ctx-topic-timeline[hidden]{display:none!important}
+.ctx-topic-timeline .ctx-timeline{margin-bottom:4px}
+.ctx-topic-timeline a{min-width:0;overflow-wrap:anywhere}
+.ctx-topic-timeline time{white-space:nowrap}
+@media(max-width:540px){.ctx-topic-tabs{gap:6px}.ctx-topic-tabs [role=tab]{flex:1 1 140px;font-size:12px}.ctx-topic-timeline .ctx-timeline a{grid-template-columns:1fr;gap:3px}.ctx-topic-timeline .ctx-timeline a:before{top:5px}}
