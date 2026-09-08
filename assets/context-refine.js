@@ -1,7 +1,7 @@
 /* Item-level reading and factual topic timelines. No private reader data is read. */
 (function (global) {
   'use strict';
-  const VERSION = '4';
+  const VERSION = '5';
   const normal = s => String(s || '').toLowerCase().replace(/[\s\p{P}\p{S}]+/gu, '');
   const hit = (text, word) => {
     const value = String(text || '').toLowerCase(), term = word.toLowerCase();
@@ -15,7 +15,7 @@
   // Every group must match. A single generic AI/data/company keyword is never enough.
   const TOPICS = [
     ['AI民事纠纷与司法救济', [['人工智能','AI','算法'], ['纠纷','民事','损害赔偿','侵权责任','禁令']]],
-    ['智能体权限与越权行为', [['智能体','agentic','ai agent','AI代理'], ['越权','权限','接管','入侵','授权','网络风险','非预期行动','德国网站','Wiki']]],
+    ['智能体治理', [['智能体','agentic','ai agent','AI代理'], ['越权','权限','接管','入侵','授权','网络风险','非预期行动','德国网站','Wiki']]],
     ['AI安全事件与披露义务', [['AI','人工智能','模型','OpenAI','智能体'], ['事故披露','事件报告','报告标准','失控','异常行为','网站事件']]],
     ['前沿AI能力评测与安全防护', [['AI','人工智能','模型','OpenAI','智能体'], ['前沿能力','红队','安全评测','网络能力','Preparedness Framework']]],
     ['生成式AI备案与服务管理', [['生成式','大模型'], ['备案','登记','服务管理','服务登记']]],
@@ -47,7 +47,7 @@
     ['科技商业秘密与跨境执法', [['商业秘密','技术泄密','半导体技术','泄密'], ['调查','诉讼','起诉','刑事','检方','窃取','盗窃']]],
     ['算力互联与资源调度', [['算力网','算力互联','算力调度','算力网络','词元工厂','一体化算力']]],
     ['算力与模型服务的财政支持', [['算力券','数据券','模型券','算力补贴','词元付费']]],
-    ['智能体网络与互操作规范', [['智能体互联网','数据智能体','代理协议','Model Hardware Standard']]],
+    ['智能体治理', [['智能体互联网','数据智能体','代理协议','Model Hardware Standard']]],
     ['数据中心能源与环境许可', [['数据中心','算力基地'], ['能源','电力','环境','空气许可','能耗','并网','水资源','资源披露','液冷','吉瓦']]],
     ['AI云服务与数字主权', [['云','cloud'], ['主权','依赖','供应链','准入','分发','迁移','采购','国防']]],
     ['选举AI与政治广告规则', [['选举','选民','投票','政治广告','election'], ['AI','人工智能','深度伪造','合成内容','机器人']]],
@@ -65,7 +65,7 @@
   function detectTopics(item) {
     const title = item.title || '';
     const sentences = String(item.facts || '').split(/[。！？；\n]/).filter(s => s.trim() && !/不同于|无关|不能据以|^\s*(?:上述|此次收录|新的信息|并非|不是|不能|不应)/.test(s));
-    return TOPICS.map(([name, groups]) => {
+    const matches = TOPICS.map(([name, groups]) => {
       // Only the headline and fact sentences can establish a timeline topic.
       const titleMatch = groupsMatch(title, groups);
       const factMatch = sentences.some(s => groupsMatch(s, groups));
@@ -75,7 +75,15 @@
       const titleGroups = groups.filter(ws => any(title, ws)).length;
       const mentions = groups.flat().filter(w => hit(title, w)).length;
       return { name, score: (titleMatch ? 100 : 40) + titleGroups * 8 + Math.min(mentions, 4) };
-    }).filter(Boolean).sort((a, b) => b.score - a.score);
+    }).filter(Boolean);
+    // Alternative rules share one reader-facing topic and one candidate pool.
+    // Keep the strongest match, so an item matching both facets is not boosted twice.
+    const merged = new Map();
+    for (const match of matches) {
+      const existing = merged.get(match.name);
+      if (!existing || match.score > existing.score) merged.set(match.name, match);
+    }
+    return [...merged.values()].sort((a, b) => b.score - a.score);
   }
   const grams = s => {
     const value = normal(s), out = new Set();

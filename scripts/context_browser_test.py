@@ -44,7 +44,7 @@ def main():
                 panel.get_by_role('tab', name='算力互联与资源调度', exact=True).wait_for()
                 tabs = panel.get_by_role('tab')
                 assert tabs.count() == 2
-                assert tabs.nth(1).inner_text() == '智能体网络与互操作规范'
+                assert tabs.nth(1).inner_text() == '智能体治理'
                 first = panel.get_by_role('tabpanel').inner_text()
                 assert '算力网' in first and '德国网站' not in first
                 tabs.nth(1).click()
@@ -70,7 +70,11 @@ def main():
                 n_panel = news.locator('.ctx-inline-panel')
                 n_panel.get_by_role('tab', name='AI安全事件与披露义务', exact=True).wait_for()
                 assert n_panel.get_by_role('tab').count() == 2
-                assert n_panel.get_by_role('tab').nth(1).inner_text() == '智能体权限与越权行为'
+                assert n_panel.get_by_role('tab').nth(1).inner_text() == '智能体治理'
+                assert n_panel.get_by_role('tab', name='智能体治理', exact=True).count() == 1
+                assert panel.get_by_role('tab', name='智能体治理', exact=True).count() == 1
+                assert not page.get_by_role('tab', name='智能体权限与越权行为', exact=True).count()
+                assert not page.get_by_role('tab', name='智能体网络与互操作规范', exact=True).count()
                 all_links = n_panel.locator('.ctx-timeline a').evaluate_all('(nodes)=>nodes.map(n=>n.href)')
                 assert len(all_links) == len(set(all_links))
                 text = n_panel.inner_text()
@@ -86,7 +90,7 @@ def main():
                 page.locator(f'[id="{anchor}"]').wait_for()
                 assert page.locator(f'[id="{anchor}"] h3').count() == 1
                 assert not errors, errors
-                results.append({'test':f'context-ui-{width}','status':'passed','detail':'No books; two factual topic tabs; sorted news; panel switching; exact anchor; responsive layout.'})
+                results.append({'test':f'context-ui-{width}','status':'passed','detail':'No books; permissions and interoperability share one agent governance tab; distinct factual topics; sorted news; panel switching; exact anchor; responsive layout.'})
                 context.close()
             browser.close()
     except Exception as error:
