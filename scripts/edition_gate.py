@@ -72,6 +72,9 @@ def validate(m):
  for folder in ['articles','papers','new-works']:
   for p in (ROOT/folder).glob('*.html'):
    if p.relative_to(ROOT).as_posix() in paths:continue
+   # Later unfinished editions must not invalidate the last complete edition.
+   stamp=re.search(r'\d{4}-\d{2}-\d{2}',p.name)
+   if stamp and date.fromisoformat(stamp.group())>day:continue
    if 'new-work' in p.name or folder=='new-works':previous.append(p.read_text(encoding='utf-8'))
  prior='\n'.join(previous)
  for w in works:
