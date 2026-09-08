@@ -268,6 +268,11 @@ def run(now, api):
         problem = '当前整期结构验收失败：' + str(e)[:450]
     require(problem is None or not changed, problem or '')
     head = git('rev-parse', 'HEAD')
+    remote = api.request('GET', '/git/ref/heads/main')['object']['sha']
+    if remote != head:
+        return {'status':'pending', 'action':'superseded', 'delivered':False,
+                'commit':head, 'expected_date':day.isoformat(), 'current_date':current['date'],
+                'problem':None, 'content_generation_controlled':False}
     runs = api.request('GET', '/actions/runs?head_sha=' + head + '&per_page=100')['workflow_runs']
     runs = [r for r in runs if r.get('path') == '.github/workflows/pages.yml' and r.get('head_branch') == 'main']
     action = delivery_action(runs, live_matches(current))

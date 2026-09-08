@@ -14,6 +14,19 @@ import edition_gate as gate
 ROOT = Path(__file__).resolve().parents[1]
 
 class Rules(unittest.TestCase):
+    def test_superseded_checkout_cannot_retry_an_older_deployment(self):
+        class API:
+            def request(self, method, path, data=None):
+                if method == 'GET' and path == '/git/ref/heads/main':
+                    return {'object': {'sha': 'newer-head'}}
+                raise AssertionError('Stale checkout attempted an external action: '+method+' '+path)
+        with tempfile.TemporaryDirectory() as temp:
+            with patch.object(release,'ROOT',Path(temp)), patch.object(release,'git',return_value='old-head'), patch.object(release,'load',return_value={'date':'2026-09-08'}), patch.object(gate,'validate'), patch.dict(release.os.environ,{'GITHUB_REPOSITORY':release.REPO}):
+                result=release.run(datetime.fromisoformat('2026-09-08T23:55:00+08:00'),API())
+        self.assertEqual(result['action'],'superseded')
+        self.assertEqual(result['status'],'pending')
+        self.assertFalse(result['delivered'])
+
     def test_midnight_belongs_to_previous_edition(self):
         self.assertEqual(str(release.expected_day(datetime.fromisoformat('2026-09-09T00:17:00+08:00'))),'2026-09-08')
         self.assertEqual(str(release.expected_day(datetime.fromisoformat('2026-09-09T20:17:00+08:00'))),'2026-09-09')
