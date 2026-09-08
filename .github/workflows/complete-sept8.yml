@@ -1,0 +1,47 @@
+name: Complete September 8 edition once
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/complete_sept8.py'
+      - '.github/scripts/complete_sept8_finish.py'
+      - '.github/workflows/complete-sept8.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: complete-september-8-edition
+  cancel-in-progress: false
+jobs:
+  complete:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verify target and original base
+        run: |
+          test "$GITHUB_REPOSITORY" = 'Cyberlawresearch/cyberlaw-research'
+          test "$GITHUB_REF" = 'refs/heads/main'
+          git merge-base --is-ancestor 6b83432451db29691f36e80b7045fa3a543f0e48 HEAD
+      - name: Install HTML parser
+        run: python -m pip install beautifulsoup4==4.13.4
+      - name: Complete and validate the four-section edition
+        run: |
+          python .github/scripts/complete_sept8.py
+          python .github/scripts/complete_sept8_finish.py
+          python scripts/edition_gate.py
+          git diff --check
+      - name: Commit only the reviewed edition paths
+        run: |
+          git add -- articles/2026-09-08-tech-law-brief.html articles/2026-09-08-richards-dangers-surveillance.html articles/2026-09-08-raz-authority-of-law.html articles/2026-09-08-new-works.html index.html archive.html briefs.html papers.html classics.html new-works.html data/current-edition.json
+          if git diff --cached --quiet; then
+            echo 'Edition is already complete; no source changes.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m '完成9月8日四栏内容核验、去重、经典扩充与首页归档同步'
+          git push origin HEAD:main
+          echo "Completed source commit: $(git rev-parse HEAD). Pages deployment requires a separate verified run." >> "$GITHUB_STEP_SUMMARY"

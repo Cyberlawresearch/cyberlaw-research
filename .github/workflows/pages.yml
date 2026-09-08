@@ -23,13 +23,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Install edition validator
+        run: python -m pip install beautifulsoup4==4.13.4
       - name: Prepare content structure
         shell: bash
         run: |
           python - <<'PY'
           from pathlib import Path
           import re
-
           for path in Path('.').rglob('*.html'):
               if '.git' in path.parts:
                   continue
@@ -41,6 +42,7 @@ jobs:
                   text = re.sub(r'<script\b[^>]*src=["\'][^"\']*'+re.escape(name)+r'[^"\']*["\'][^>]*></script>', '', text, flags=re.I)
               path.write_text(text, encoding='utf-8')
           PY
+          python scripts/edition_gate.py --sync-nav
       - name: Build research indexes
         run: python scripts/build_research_index.py
       - name: Build factual context index and verify matching rules
@@ -52,7 +54,6 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
-
           reading_dirs = {'articles','papers','new-works'}
           tool_pages = {'search.html','themes.html','ideas.html'}
           for path in Path('.').rglob('*.html'):
@@ -75,7 +76,7 @@ jobs:
         run: |
           python -m pip install playwright==1.57.0
           python -m playwright install --with-deps chromium
-      - name: Validate contextual reading before deployment
+      - name: Validate contextual reading and complete edition before deployment
         shell: bash
         run: |
           python -m http.server 8765 --directory "$GITHUB_WORKSPACE/.." > "$RUNNER_TEMP/context-server.log" 2>&1 &
@@ -83,6 +84,7 @@ jobs:
           trap 'kill "$server"' EXIT
           sleep 2
           python scripts/context_browser_test.py --base http://localhost:8765/cyberlaw-research/ --output "$RUNNER_TEMP/context-tests/preflight/results.json"
+          python scripts/edition_gate.py --base http://localhost:8765/cyberlaw-research/ --output "$RUNNER_TEMP/context-tests/preflight/edition.json"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
@@ -94,7 +96,9 @@ jobs:
         uses: actions/deploy-pages@v4
       - name: Verify deployed contextual reading
         run: python scripts/context_browser_test.py --output "$RUNNER_TEMP/context-tests/deployed/results.json"
-      - name: Retain context test evidence outside the website
+      - name: Verify deployed current edition and entry points
+        run: python scripts/edition_gate.py --base https://cyberlawresearch.github.io/cyberlaw-research/ --output "$RUNNER_TEMP/context-tests/deployed/edition.json"
+      - name: Retain test evidence outside the website
         if: always()
         uses: actions/upload-artifact@v4
         with:
