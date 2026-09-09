@@ -1,0 +1,29 @@
+name: Clean September 9 staging tree
+on:
+  push:
+    branches: [automation-sep9-staging]
+    paths:
+      - '.github/workflows/cleanup-sep9-staging.yml'
+permissions:
+  contents: write
+concurrency:
+  group: cleanup-sep9-staging
+  cancel-in-progress: false
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: automation-sep9-staging
+          fetch-depth: 0
+      - name: Keep only the four reviewed bodies and review record as branch changes
+        run: |
+          git rm -rf --ignore-unmatch .github/staging-sep9
+          git rm -f --ignore-unmatch .github/workflows/stage-sep9-payload.yml
+          git rm -f --ignore-unmatch .github/workflows/validate-sep9-candidate.yml
+          git rm -f --ignore-unmatch .github/workflows/cleanup-sep9-staging.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m '清理临时文件，仅保留9月9日已核验正文与核验记录'
+          git push origin HEAD:automation-sep9-staging
