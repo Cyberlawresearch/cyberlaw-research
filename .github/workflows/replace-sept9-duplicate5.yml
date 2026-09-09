@@ -1,0 +1,79 @@
+name: 一次性替换2026-09-09最后重复新作
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/replace-sept9-duplicate5.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch-sept9:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Verify exact history set and replace final duplicate
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from datetime import date, datetime, timezone
+          import hashlib, json, re
+
+          root = Path('.')
+          day = date(2026, 9, 9)
+          current_paths = {
+              'articles/2026-09-09-tech-law-brief.html',
+              'articles/2026-09-09-crawford-schultz-big-data-due-process.html',
+              'articles/2026-09-09-beccaria-crimes-punishments.html',
+              'articles/2026-09-09-new-works.html',
+          }
+          previous = []
+          for folder in ['articles', 'papers', 'new-works']:
+              for p in (root / folder).glob('*.html'):
+                  rel = p.as_posix()
+                  if rel in current_paths:
+                      continue
+                  stamp = re.search(r'\d{4}-\d{2}-\d{2}', p.name)
+                  if stamp and date.fromisoformat(stamp.group()) > day:
+                      continue
+                  if 'new-work' in p.name or folder == 'new-works':
+                      previous.append(p.read_text(encoding='utf-8'))
+          prior = '\n'.join(previous)
+          new_url = 'https://academic.oup.com/idpl/article/16/3/ipag012/8740755'
+          new_doi = '10.1093/idpl/ipag012'
+          assert new_url not in prior, 'candidate source already appeared in history'
+          assert new_doi not in prior, 'candidate DOI already appeared in history'
+
+          path = root / 'articles/2026-09-09-new-works.html'
+          text = path.read_text(encoding='utf-8')
+          replacement = '<article class="brief-item work-entry" data-citation=\'{"type":"article","author":"Ruifeng Song","originalTitle":"Information fiduciaries for China? A critique","journal":"International Data Privacy Law","year":"2026","volume":"16","issue":"3","pages":"ipag012","doi":"10.1093/idpl/ipag012","url":"https://academic.oup.com/idpl/article/16/3/ipag012/8740755","cnTitle":"中国是否需要信息受托人制度：对制度移植的批判"}\' data-material-type="article" data-original-title="Information fiduciaries for China? A critique" id="research-item-5"><h3>5. 中国是否需要信息受托人制度：对制度移植的批判</h3><div class="brief-meta">Ruifeng Song · “Information fiduciaries for China? A critique” · <em>2026-07-23 online · International Data Privacy Law, Vol.16 No.3, article ipag012</em> · DOI:10.1093/idpl/ipag012</div><p class="work-reading">文章讨论美国“信息受托人”理论是否应移植到中国个人信息保护法。作者区分信息受托人与数据信托，并从美国理论产生的特定宪法背景、中国受托法实践以及该理论在美国本身尚未真正制度化三个方面质疑直接移植的必要性，主张优先强化个人信息保护法中已经存在的平台问责机制。其价值在于为数字法领域的比较法移植提供了具体的功能替代分析。</p><p class="source">原始来源：<a data-original-title="Information fiduciaries for China? A critique" href="https://academic.oup.com/idpl/article/16/3/ipag012/8740755">International Data Privacy Law</a></p></article>'
+          pattern = r'<article class="brief-item work-entry"[^>]*id="research-item-5">.*?</article>'
+          text, count = re.subn(pattern, lambda _m: replacement, text, count=1, flags=re.S)
+          assert count == 1, 'research-item-5 not found'
+          assert '10.1177/18479790261468434' not in text
+          assert text.count('class="brief-item work-entry"') == 5
+          path.write_text(text, encoding='utf-8')
+
+          record_path = root / '.github/editions/2026-09-09.json'
+          record = json.loads(record_path.read_text(encoding='utf-8'))
+          now = datetime.now(timezone.utc).isoformat()
+          record['review']['status'] = 'verified'
+          record['review']['checked_at'] = now
+          record['review']['last_news_scan_at'] = now
+          for page in record['pages'].values():
+              record['review']['sha256'][page] = hashlib.sha256((root / page).read_bytes()).hexdigest()
+          record_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/replace-sept9-duplicate5.yml
+          git add articles/2026-09-09-new-works.html .github/editions/2026-09-09.json
+          git diff --check
+          git commit -m "替换2026-09-09最后一个重复研究新作"
+          git push origin HEAD:main
