@@ -1,0 +1,36 @@
+name: Stage September 9 exact bodies
+on:
+  push:
+    branches: [automation-sep9-staging]
+    paths:
+      - '.github/staging-sep9/**'
+      - '.github/workflows/stage-sep9-payload.yml'
+permissions:
+  contents: write
+concurrency:
+  group: stage-sep9-payload
+  cancel-in-progress: false
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: automation-sep9-staging
+          fetch-depth: 0
+      - name: Decode exact reviewed bodies
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .github/staging-sep9/brief.* | tr -d '\n' | base64 -d | gzip -d > articles/2026-09-09-tech-law-brief.html
+          cat .github/staging-sep9/classic.* | tr -d '\n' | base64 -d | gzip -d > articles/2026-09-09-beccaria-crimes-punishments.html
+          test "$(sha256sum articles/2026-09-09-tech-law-brief.html | cut -d' ' -f1)" = aad9b4bac06ae26118ac72eaa42c6f9cc98ed85f4296c3b402f5d480e67b734d
+          test "$(sha256sum articles/2026-09-09-beccaria-crimes-punishments.html | cut -d' ' -f1)" = bff04cf8ee2a8d53282a9697e72e3bcd9084f572d771df5daf0dfc4ca9672445
+      - name: Commit only reconstructed bodies
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- articles/2026-09-09-tech-law-brief.html articles/2026-09-09-beccaria-crimes-punishments.html
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m '重建9月9日简报与经典正文（核验哈希一致）'
+          git push origin HEAD:automation-sep9-staging
