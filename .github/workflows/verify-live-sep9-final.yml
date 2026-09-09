@@ -1,0 +1,80 @@
+name: Verify final September 9 main deployment
+on:
+  push:
+    branches: [automation-sep9-staging]
+    paths:
+      - '.github/workflows/verify-live-sep9-final.yml'
+permissions:
+  contents: write
+  actions: read
+jobs:
+  verify-final:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: automation-sep9-staging
+          fetch-depth: 0
+      - name: Wait for current main Pages success
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          repo='Cyberlawresearch/cyberlaw-research'
+          main_sha=''; pages_run=''
+          for i in $(seq 1 66); do
+            main_sha=$(gh api repos/$repo/git/ref/heads/main --jq .object.sha)
+            edition=$(gh api repos/$repo/contents/data/current-edition.json?ref=main --jq .content | tr -d '\n' | base64 -d | python -c 'import json,sys; print(json.load(sys.stdin)["date"])')
+            if [ "$edition" = '2026-09-09' ]; then
+              pages_run=$(gh api "repos/$repo/actions/runs?head_sha=$main_sha&per_page=100" --jq '[.workflow_runs[] | select(.path==".github/workflows/pages.yml" and .head_branch=="main" and .status=="completed" and .conclusion=="success")][0].id // empty')
+              if [ -n "$pages_run" ]; then break; fi
+            fi
+            sleep 10
+          done
+          test -n "$pages_run"
+          test "$(gh api repos/$repo/actions/runs/$pages_run --jq .head_sha)" = "$main_sha"
+          printf '%s\n' "$main_sha" > "$RUNNER_TEMP/main_sha"
+          printf '%s\n' "$pages_run" > "$RUNNER_TEMP/pages_run"
+      - name: Verify live edition and homepage
+        shell: bash
+        run: |
+          set -euo pipefail
+          base='https://cyberlawresearch.github.io/cyberlaw-research/'
+          nonce=$(date +%s%N)
+          curl -fsSL "${base}data/current-edition.json?check=$nonce" -o "$RUNNER_TEMP/edition.json"
+          python - <<'PY'
+          import json,os
+          m=json.load(open(os.environ['RUNNER_TEMP']+'/edition.json',encoding='utf-8'))
+          assert m['date']=='2026-09-09',m
+          assert m['news_count']==18 and m['newworks_count']==5,m
+          assert list(m['pages'].values())==[
+            'articles/2026-09-09-tech-law-brief.html',
+            'articles/2026-09-09-crawford-schultz-big-data-due-process.html',
+            'articles/2026-09-09-beccaria-crimes-punishments.html',
+            'articles/2026-09-09-new-works.html']
+          PY
+          curl -fsSL "${base}index.html?check=$nonce" -o "$RUNNER_TEMP/home.html"
+          for p in \
+            'articles/2026-09-09-tech-law-brief.html' \
+            'articles/2026-09-09-crawford-schultz-big-data-due-process.html' \
+            'articles/2026-09-09-beccaria-crimes-punishments.html' \
+            'articles/2026-09-09-new-works.html'; do grep -F "$p" "$RUNNER_TEMP/home.html"; done
+          grep -F '网信法研究每日推送' "$RUNNER_TEMP/home.html"
+          ! grep -F 'Cyberlaw Research' "$RUNNER_TEMP/home.html"
+          ! grep -F '本期最值得先看' "$RUNNER_TEMP/home.html"
+      - name: Record final verification on staging only
+        run: |
+          set -euo pipefail
+          main_sha=$(cat "$RUNNER_TEMP/main_sha"); pages_run=$(cat "$RUNNER_TEMP/pages_run")
+          mkdir -p .github/release-verification
+          python - <<PY
+          import json,datetime
+          d={'date':'2026-09-09','final_main_sha':'$main_sha','pages_run_id':int('$pages_run'),'pages_status':'completed','pages_conclusion':'success','live_manifest_date':'2026-09-09','homepage_four_entries':True,'brand':'网信法研究每日推送','verified_at':datetime.datetime.now(datetime.timezone.utc).isoformat()}
+          open('.github/release-verification/2026-09-09-final.json','w',encoding='utf-8').write(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
+          PY
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .github/release-verification/2026-09-09-final.json
+          git commit -m '记录2026-09-09最终main与Pages验收'
+          git push origin HEAD:automation-sep9-staging
