@@ -1,1 +1,1 @@
-Re-run the daily-release safeguard after the replacement research work passed the exact historical URL and DOI deduplication set used by the release gate. Publish 2026-09-09 only if all remaining gates pass.
+Re-run the daily-release safeguard after all five 2026-09-09 research works passed the exact historical URL/DOI deduplication rule. Publish only if the complete edition now passes every gate.
