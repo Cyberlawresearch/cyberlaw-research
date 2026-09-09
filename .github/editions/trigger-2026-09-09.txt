@@ -1,1 +1,1 @@
-Trigger the existing daily-release safeguard to re-read the hash-bound 2026-09-09 candidate. This file contains no reader content and may be removed after publication verification.
+Re-run the existing daily-release safeguard after ChatGPT corrected the 2026-09-09 brief and replaced the duplicated research work. Re-read the verified hash-bound candidate and publish only if every release gate passes.
