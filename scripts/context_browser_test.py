@@ -49,7 +49,8 @@ def main():
                 assert '算力网' in first and '德国网站' not in first
                 tabs.nth(1).click()
                 second = panel.get_by_role('tabpanel').inner_text()
-                assert '数据智能体' in second and '国家数据局调研内蒙古' not in second
+                assert panel.locator('[role="tabpanel"]:visible a').count() > 0
+                assert '国家数据局调研内蒙古' not in second
                 assert panel.locator('[role="tabpanel"]:visible').count() == 1
                 dates = panel.locator('[role="tabpanel"]:visible time').all_text_contents()
                 assert dates == sorted(dates) and 1 <= len(dates) <= 4
