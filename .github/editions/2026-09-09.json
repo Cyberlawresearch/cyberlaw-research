@@ -10,8 +10,8 @@
   "newworks_count": 5,
   "review": {
     "status": "verified",
-    "checked_at": "2026-09-09T16:40:47.234932+00:00",
-    "last_news_scan_at": "2026-09-09T16:40:47.234932+00:00",
+    "checked_at": "2026-09-09T16:44:29.283874+00:00",
+    "last_news_scan_at": "2026-09-09T16:44:29.283874+00:00",
     "checks": {
       "sources": true,
       "legal_status": true,
@@ -23,7 +23,7 @@
       "articles/2026-09-09-tech-law-brief.html": "97b89bb01dbc700160a6b95378a3d45e8745bf4502e147d09cbf26951e87d0ba",
       "articles/2026-09-09-crawford-schultz-big-data-due-process.html": "37ea1a52f01b8b542f6ca211614e95c9d671e269eeb04d4f670a004775911af8",
       "articles/2026-09-09-beccaria-crimes-punishments.html": "ee3ff1a877f7c01fc65e01866541d67ecaa4ff3126aa7c30eb978a3152aea8b4",
-      "articles/2026-09-09-new-works.html": "ffb79dcf9711306358905c3b596b08b9370eea43e12c77e6bb1c885cf6cb3005"
+      "articles/2026-09-09-new-works.html": "de4c367459ed28b16e0cb107bcbe457eb711e49cca76fa0a7642921c193c3350"
     },
     "news_event_times": {
       "research-item-1": "2026-09-07T19:22:29+08:00",
