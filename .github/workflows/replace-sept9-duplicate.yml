@@ -1,0 +1,57 @@
+name: 一次性替换2026-09-09重复新作
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/replace-sept9-duplicate.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  replace:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Replace duplicate and refresh review hashes
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from datetime import datetime, timezone
+          import hashlib, json, re
+
+          path = Path('articles/2026-09-09-new-works.html')
+          text = path.read_text(encoding='utf-8')
+          replacement = '''<article class="brief-item work-entry" data-citation='{"type":"article","author":"Paul Burgess","originalTitle":"Limiting artificial intelligence (with the Rule of Law)","journal":"Cambridge Forum on AI: Law and Governance","year":"2026","volume":"2","issue":"","pages":"e15","doi":"10.1017/cfl.2026.10063","url":"https://www.cambridge.org/core/journals/cambridge-forum-on-ai-law-and-governance/article/limiting-artificial-intelligence-with-the-rule-of-law/3C8C6B0BD3F73296B3757552F0526820","cnTitle":"以法治限制人工智能：公共行政中AI应用的法治边界"}' data-material-type="article" data-original-title="Limiting artificial intelligence (with the Rule of Law)" id="research-item-2">
+<h3>2. 以法治限制人工智能：公共行政中AI应用的法治边界</h3><div class="brief-meta">Paul Burgess · “Limiting artificial intelligence (with the Rule of Law)” · <em>2026-09-01 online · Cambridge Forum on AI: Law and Governance, Vol.2, e15</em> · DOI:10.1017/cfl.2026.10063</div>
+<p class="work-reading">文章聚焦公共行政使用人工智能时如何受到法治原则约束。作者把可预见性、程序清晰以及决定理由可知悉、可争议等要求转化为政府部署AI的具体限制，并强调这些约束并不完全依赖专门的人工智能监管立法。其价值在于把“负责任AI”进一步连接到行政权行使的一般法治要求，为自动化行政中的理由说明、可审查性和权力边界提供规范基础。</p>
+<p class="source">原始来源：<a data-original-title="Limiting artificial intelligence (with the Rule of Law)" href="https://www.cambridge.org/core/journals/cambridge-forum-on-ai-law-and-governance/article/limiting-artificial-intelligence-with-the-rule-of-law/3C8C6B0BD3F73296B3757552F0526820">Cambridge Forum on AI: Law and Governance</a></p></article>'''
+          pattern = r'<article class="brief-item work-entry"[^>]*id="research-item-2">.*?</article>'
+          text, count = re.subn(pattern, lambda _m: replacement, text, count=1, flags=re.S)
+          assert count == 1, 'research-item-2 not found'
+          assert '10.1017/S0008197325101086' not in text
+          assert text.count('class="brief-item work-entry"') == 5
+          path.write_text(text, encoding='utf-8')
+
+          record_path = Path('.github/editions/2026-09-09.json')
+          record = json.loads(record_path.read_text(encoding='utf-8'))
+          now = datetime.now(timezone.utc).isoformat()
+          record['review']['status'] = 'verified'
+          record['review']['checked_at'] = now
+          record['review']['last_news_scan_at'] = now
+          for page in record['pages'].values():
+              record['review']['sha256'][page] = hashlib.sha256(Path(page).read_bytes()).hexdigest()
+          record_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/replace-sept9-duplicate.yml
+          git add articles/2026-09-09-new-works.html .github/editions/2026-09-09.json
+          git diff --check
+          git commit -m "替换2026-09-09重复研究新作"
+          git push origin HEAD:main
