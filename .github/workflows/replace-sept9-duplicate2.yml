@@ -1,0 +1,79 @@
+name: 一次性替换2026-09-09重复新作第二版
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/replace-sept9-duplicate2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch-sept9:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Verify against history, replace, and refresh hashes
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from datetime import date, datetime, timezone
+          import hashlib, json, re
+
+          root = Path('.')
+          day = date(2026, 9, 9)
+          current_paths = {
+              'articles/2026-09-09-tech-law-brief.html',
+              'articles/2026-09-09-crawford-schultz-big-data-due-process.html',
+              'articles/2026-09-09-beccaria-crimes-punishments.html',
+              'articles/2026-09-09-new-works.html',
+          }
+          previous = []
+          for folder in ['articles', 'papers', 'new-works']:
+              for p in (root / folder).glob('*.html'):
+                  rel = p.as_posix()
+                  if rel in current_paths:
+                      continue
+                  stamp = re.search(r'\d{4}-\d{2}-\d{2}', p.name)
+                  if stamp and date.fromisoformat(stamp.group()) > day:
+                      continue
+                  if 'new-work' in p.name or folder == 'new-works':
+                      previous.append(p.read_text(encoding='utf-8'))
+          prior = '\n'.join(previous)
+          new_url = 'https://www.cambridge.org/core/journals/cambridge-forum-on-ai-law-and-governance/article/putting-the-genai-back-into-the-bottle-judicial-regulation-of-generative-artificial-intelligence-in-legal-proceedings/CE4225FA88EB4FE6EADD8D3D82C7A06A'
+          new_doi = '10.1017/cfl.2026.10056'
+          assert new_url not in prior, 'candidate source already appeared in history'
+          assert new_doi not in prior, 'candidate DOI already appeared in history'
+
+          path = root / 'articles/2026-09-09-new-works.html'
+          text = path.read_text(encoding='utf-8')
+          replacement = '<article class="brief-item work-entry" data-citation=\'{"type":"article","author":"Felicity Bell; Michael Legg; Vicki McNamara","originalTitle":"Putting the GenAI back into the bottle? Judicial regulation of generative artificial intelligence in legal proceedings","journal":"Cambridge Forum on AI: Law and Governance","year":"2026","volume":"2","issue":"","pages":"e16","doi":"10.1017/cfl.2026.10056","url":"https://www.cambridge.org/core/journals/cambridge-forum-on-ai-law-and-governance/article/putting-the-genai-back-into-the-bottle-judicial-regulation-of-generative-artificial-intelligence-in-legal-proceedings/CE4225FA88EB4FE6EADD8D3D82C7A06A","cnTitle":"司法程序中的生成式人工智能规制：如何回应虚假材料与程序风险"}\' data-material-type="article" data-original-title="Putting the GenAI back into the bottle? Judicial regulation of generative artificial intelligence in legal proceedings" id="research-item-2"><h3>2. 司法程序中的生成式人工智能规制：如何回应虚假材料与程序风险</h3><div class="brief-meta">Felicity Bell、Michael Legg、Vicki McNamara · “Putting the GenAI back into the bottle? Judicial regulation of generative artificial intelligence in legal proceedings” · <em>2026-09-04 online · Cambridge Forum on AI: Law and Governance, Vol.2, e16</em> · DOI:10.1017/cfl.2026.10056</div><p class="work-reading">文章比较澳大利亚、香港、新西兰和新加坡法院面对生成式人工智能进入诉讼程序后的规制做法，重点讨论虚假案例、错误材料、程序公平和司法公信力风险。作者以回应性规制为框架，将禁止、披露、教育提示以及惩戒等措施放在同一规制梯度中评估，说明法院需要根据误用程度不断调整治理强度，而不能只依赖一次性禁令。</p><p class="source">原始来源：<a data-original-title="Putting the GenAI back into the bottle? Judicial regulation of generative artificial intelligence in legal proceedings" href="https://www.cambridge.org/core/journals/cambridge-forum-on-ai-law-and-governance/article/putting-the-genai-back-into-the-bottle-judicial-regulation-of-generative-artificial-intelligence-in-legal-proceedings/CE4225FA88EB4FE6EADD8D3D82C7A06A">Cambridge Forum on AI: Law and Governance</a></p></article>'
+          pattern = r'<article class="brief-item work-entry"[^>]*id="research-item-2">.*?</article>'
+          text, count = re.subn(pattern, lambda _m: replacement, text, count=1, flags=re.S)
+          assert count == 1, 'research-item-2 not found'
+          assert '10.1017/cfl.2026.10063' not in text
+          assert text.count('class="brief-item work-entry"') == 5
+          path.write_text(text, encoding='utf-8')
+
+          record_path = root / '.github/editions/2026-09-09.json'
+          record = json.loads(record_path.read_text(encoding='utf-8'))
+          now = datetime.now(timezone.utc).isoformat()
+          record['review']['status'] = 'verified'
+          record['review']['checked_at'] = now
+          record['review']['last_news_scan_at'] = now
+          for page in record['pages'].values():
+              record['review']['sha256'][page] = hashlib.sha256((root / page).read_bytes()).hexdigest()
+          record_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/replace-sept9-duplicate2.yml
+          git add articles/2026-09-09-new-works.html .github/editions/2026-09-09.json
+          git diff --check
+          git commit -m "替换2026-09-09重复研究新作为未推送新作"
+          git push origin HEAD:main
