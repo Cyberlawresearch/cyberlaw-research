@@ -1,0 +1,86 @@
+name: Verify September 9 live release
+on:
+  push:
+    branches: [automation-sep9-staging]
+    paths:
+      - '.github/workflows/verify-live-sep9.yml'
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: verify-live-sep9
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: automation-sep9-staging
+          fetch-depth: 0
+      - name: Wait for atomic promotion and successful Pages deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          repo='Cyberlawresearch/cyberlaw-research'
+          main_sha=''
+          pages_run=''
+          for i in $(seq 1 60); do
+            main_sha=$(gh api repos/$repo/git/ref/heads/main --jq .object.sha)
+            edition=$(gh api repos/$repo/contents/data/current-edition.json?ref=main --jq .content | tr -d '\n' | base64 -d | python -c 'import json,sys; print(json.load(sys.stdin)["date"])')
+            if [ "$edition" = '2026-09-09' ]; then
+              pages_run=$(gh api "repos/$repo/actions/runs?head_sha=$main_sha&per_page=100" --jq '[.workflow_runs[] | select(.path==".github/workflows/pages.yml" and .head_branch=="main" and .status=="completed" and .conclusion=="success")][0].id // empty')
+              if [ -n "$pages_run" ]; then break; fi
+            fi
+            sleep 10
+          done
+          test -n "$main_sha"
+          test -n "$pages_run"
+          test "$(gh api repos/$repo/actions/runs/$pages_run --jq .head_sha)" = "$main_sha"
+          test "$(gh api repos/$repo/actions/runs/$pages_run --jq .status)" = completed
+          test "$(gh api repos/$repo/actions/runs/$pages_run --jq .conclusion)" = success
+          printf '%s\n' "$main_sha" > "$RUNNER_TEMP/main_sha"
+          printf '%s\n' "$pages_run" > "$RUNNER_TEMP/pages_run"
+      - name: Verify live manifest and reader entry points
+        shell: bash
+        run: |
+          set -euo pipefail
+          base='https://cyberlawresearch.github.io/cyberlaw-research/'
+          nonce=$(date +%s%N)
+          curl -fsSL "${base}data/current-edition.json?check=$nonce" -o "$RUNNER_TEMP/live-edition.json"
+          python - <<'PY'
+          import json,os
+          p=os.environ['RUNNER_TEMP']+'/live-edition.json'
+          m=json.load(open(p,encoding='utf-8'))
+          assert m['date']=='2026-09-09',m
+          assert list(m['pages'])==['brief','paper','classic','newworks']
+          assert m['news_count']==18 and m['newworks_count']==5
+          assert len(set(m['pages'].values()))==4
+          print(json.dumps(m,ensure_ascii=False))
+          PY
+          curl -fsSL "${base}index.html?check=$nonce" -o "$RUNNER_TEMP/home.html"
+          grep -F 'articles/2026-09-09-tech-law-brief.html' "$RUNNER_TEMP/home.html"
+          grep -F 'articles/2026-09-09-crawford-schultz-big-data-due-process.html' "$RUNNER_TEMP/home.html"
+          grep -F 'articles/2026-09-09-beccaria-crimes-punishments.html' "$RUNNER_TEMP/home.html"
+          grep -F 'articles/2026-09-09-new-works.html' "$RUNNER_TEMP/home.html"
+          grep -F '网信法研究每日推送' "$RUNNER_TEMP/home.html"
+          ! grep -F '本期最值得先看' "$RUNNER_TEMP/home.html"
+      - name: Record verification off main
+        run: |
+          set -euo pipefail
+          main_sha=$(cat "$RUNNER_TEMP/main_sha")
+          pages_run=$(cat "$RUNNER_TEMP/pages_run")
+          mkdir -p .github/release-verification
+          python - <<PY
+          import json,datetime
+          data={'date':'2026-09-09','main_sha':'$main_sha','pages_run_id':int('$pages_run'),'pages_status':'completed','pages_conclusion':'success','live_manifest':'2026-09-09','live_home_entries_verified':True,'verified_at':datetime.datetime.now(datetime.timezone.utc).isoformat()}
+          open('.github/release-verification/2026-09-09.json','w',encoding='utf-8').write(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- .github/release-verification/2026-09-09.json
+          git commit -m '记录2026-09-09最终Pages与线上入口验收'
+          git push origin HEAD:automation-sep9-staging
