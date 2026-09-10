@@ -1,0 +1,114 @@
+name: 临时封装9月10日已核验四栏
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/finalize-sep10-manifest.yml'
+permissions:
+  contents: write
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install beautifulsoup4==4.13.4
+      - name: Validate ChatGPT-authored bodies and write hash-bound review
+        run: |
+          python - <<'PY'
+          from bs4 import BeautifulSoup
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          from pathlib import Path
+          import hashlib, json, re
+          root=Path('.')
+          day='2026-09-10'
+          pages={
+            'brief':'articles/2026-09-10-tech-law-brief.html',
+            'paper':'articles/2026-09-10-solove-privacy-self-management.html',
+            'classic':'articles/2026-09-10-westin-privacy-and-freedom.html',
+            'newworks':'articles/2026-09-10-new-works.html',
+          }
+          labels=['全球科技法简报','域外法学论文精读','法学经典著作','科技法研究新作']
+          docs={k:BeautifulSoup((root/p).read_text(encoding='utf-8'),'html.parser') for k,p in pages.items()}
+          for k,d in docs.items():
+            assert d.select_one('main h1') and d.select_one('.article-body'), k
+            assert d.select_one('.brand').get_text(strip=True)=='网信法研究每日推送'
+            text=d.select_one('main').get_text(' ',strip=True)
+            assert not any(x in text for x in ['本期最值得先看','正文待补','待发布正文','占位内容'])
+            nav={a.get_text(strip=True):a.get('href') for a in d.select('.navlinks a')}
+            for label,p in zip(labels,pages.values()):
+              assert nav[label]==Path(p).name,(k,label,nav[label])
+          news=docs['brief'].select('.brief-item'); assert len(news)==18
+          for n in news:
+            assert n.get('id') and n.get('data-event-date') and n.select_one('.brief-fact')
+            assert len(n.select_one('.brief-fact').get_text(strip=True))>=65
+            t=n.get_text(' ',strip=True)
+            assert all(x in t for x in ['法治研判','智库选题参考','论文选题'])
+            c=json.loads(n['data-citation']); assert c.get('originalTitle') and c.get('url')
+            assert n.select('.source a[href^="https://"]')
+          works=docs['newworks'].select('.brief-item'); assert len(works)==5
+          prior=[]
+          for folder in ['articles','papers','new-works']:
+            for p in (root/folder).glob('*.html'):
+              if p.as_posix() in pages.values(): continue
+              stamp=re.search(r'\d{4}-\d{2}-\d{2}',p.name)
+              if stamp and stamp.group()>day: continue
+              if 'new-work' in p.name or folder=='new-works': prior.append(p.read_text(encoding='utf-8'))
+          prior='\n'.join(prior)
+          for w in works:
+            c=json.loads(w['data-citation'])
+            assert c.get('author') and c.get('originalTitle') and c.get('journal')
+            assert c['url'] not in prior,('prior url',c['url'])
+            if c.get('doi'): assert c['doi'] not in prior,('prior doi',c['doi'])
+            L=len(w.select_one('.work-reading').get_text(strip=True)); assert 100<=L<=260,L
+          lengths={k:len(d.select_one('.article-body').get_text(' ',strip=True)) for k,d in docs.items()}
+          assert lengths['paper']>=2500,lengths
+          assert lengths['classic']>=4500 and lengths['classic']>=lengths['paper']*1.4,lengths
+          hashes={p:hashlib.sha256((root/p).read_bytes()).hexdigest() for p in pages.values()}
+          now=datetime.now(ZoneInfo('Asia/Shanghai')).isoformat()
+          manifest={
+            'date':day,'pages':pages,'news_count':18,'newworks_count':5,
+            'review':{
+              'status':'verified','checked_at':now,'last_news_scan_at':now,
+              'checks':{'sources':True,'legal_status':True,'bibliography':True,'deduplication':True,'original_titles':True},
+              'sha256':hashes,
+              'news_event_times':{
+                'research-item-1':'2026-09-09T12:00:00+08:00',
+                'research-item-2':'2026-09-08T14:00:00+08:00',
+                'research-item-3':'2026-09-09T20:41:00+08:00',
+                'research-item-4':'2026-09-09T06:49:00+08:00',
+                'research-item-5':'2026-09-10T09:51:00+08:00',
+                'research-item-6':'2026-09-09T21:28:00+08:00',
+                'research-item-7':'2026-09-10T11:00:00+09:00',
+                'research-item-8':'2026-09-09T13:00:00+09:00',
+                'research-item-9':'2026-09-10T12:00:00+01:00',
+                'research-item-10':'2026-09-09T12:00:00-04:00',
+                'research-item-11':'2026-09-09T12:00:00+02:00',
+                'research-item-12':'2026-09-09T12:00:00-04:00',
+                'research-item-13':'2026-09-09T20:23:00-04:00',
+                'research-item-14':'2026-09-10T12:00:00+02:00',
+                'research-item-15':'2026-09-10T12:00:00+05:30',
+                'research-item-16':'2026-09-09T12:00:00+10:00',
+                'research-item-17':'2026-09-09T12:00:00+02:00',
+                'research-item-18':'2026-09-10T12:00:00-04:00'
+              }
+            }
+          }
+          out=root/'.github/editions/2026-09-10.json'
+          out.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps({'status':'passed','lengths':lengths,'hashes':hashes},ensure_ascii=False))
+          PY
+      - name: Commit reviewed candidate and remove one-off validator
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .github/editions/2026-09-10.json
+          git rm .github/workflows/finalize-sep10-manifest.yml
+          git commit -m '封装2026-09-10已核验四栏候选'
+          git push origin HEAD:main
