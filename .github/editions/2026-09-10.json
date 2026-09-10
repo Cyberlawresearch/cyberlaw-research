@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-10",
+  "pages": {
+    "brief": "articles/2026-09-10-tech-law-brief.html",
+    "paper": "articles/2026-09-10-solove-privacy-self-management.html",
+    "classic": "articles/2026-09-10-westin-privacy-and-freedom.html",
+    "newworks": "articles/2026-09-10-new-works.html"
+  },
+  "news_count": 18,
+  "newworks_count": 5,
+  "review": {
+    "status": "verified",
+    "checked_at": "2026-09-10T22:59:34.504931+08:00",
+    "last_news_scan_at": "2026-09-10T22:59:34.504931+08:00",
+    "checks": {
+      "sources": true,
+      "legal_status": true,
+      "bibliography": true,
+      "deduplication": true,
+      "original_titles": true
+    },
+    "sha256": {
+      "articles/2026-09-10-tech-law-brief.html": "041f1a9c3747a6fed5f176eeb235bebc5d0f911989ce35687932612471fe1525",
+      "articles/2026-09-10-solove-privacy-self-management.html": "8446f3669029695400fb0928e44e1f0837c155947da9379b07cb6a2b98e19bd5",
+      "articles/2026-09-10-westin-privacy-and-freedom.html": "b687a6758517dbdf21cdfb6e7da3f789ab77322807452c81e681c921771833e3",
+      "articles/2026-09-10-new-works.html": "8dbdff265e08e60829d585488b75ba8d55d4124c1bf80e416cc369672411e21e"
+    },
+    "news_event_times": {
+      "research-item-1": "2026-09-09T12:00:00+08:00",
+      "research-item-2": "2026-09-08T14:00:00+08:00",
+      "research-item-3": "2026-09-09T20:41:00+08:00",
+      "research-item-4": "2026-09-09T06:49:00+08:00",
+      "research-item-5": "2026-09-10T09:51:00+08:00",
+      "research-item-6": "2026-09-09T21:28:00+08:00",
+      "research-item-7": "2026-09-10T11:00:00+09:00",
+      "research-item-8": "2026-09-09T13:00:00+09:00",
+      "research-item-9": "2026-09-10T12:00:00+01:00",
+      "research-item-10": "2026-09-09T12:00:00-04:00",
+      "research-item-11": "2026-09-09T12:00:00+02:00",
+      "research-item-12": "2026-09-09T12:00:00-04:00",
+      "research-item-13": "2026-09-09T20:23:00-04:00",
+      "research-item-14": "2026-09-10T12:00:00+02:00",
+      "research-item-15": "2026-09-10T12:00:00+05:30",
+      "research-item-16": "2026-09-09T12:00:00+10:00",
+      "research-item-17": "2026-09-09T12:00:00+02:00",
+      "research-item-18": "2026-09-10T12:00:00-04:00"
+    }
+  }
+}
