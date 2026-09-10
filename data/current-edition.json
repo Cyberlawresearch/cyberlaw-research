@@ -1,10 +1,10 @@
 {
-  "date": "2026-09-09",
+  "date": "2026-09-10",
   "pages": {
-    "brief": "articles/2026-09-09-tech-law-brief.html",
-    "paper": "articles/2026-09-09-crawford-schultz-big-data-due-process.html",
-    "classic": "articles/2026-09-09-beccaria-crimes-punishments.html",
-    "newworks": "articles/2026-09-09-new-works.html"
+    "brief": "articles/2026-09-10-tech-law-brief.html",
+    "paper": "articles/2026-09-10-solove-privacy-self-management.html",
+    "classic": "articles/2026-09-10-westin-privacy-and-freedom.html",
+    "newworks": "articles/2026-09-10-new-works.html"
   },
   "news_count": 18,
   "newworks_count": 5
