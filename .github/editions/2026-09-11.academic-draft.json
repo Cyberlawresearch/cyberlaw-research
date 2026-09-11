@@ -1,6 +1,6 @@
 {
   "date": "2026-09-11",
-  "state": "partial_published",
+  "state": "published",
   "pages": {
     "brief": "articles/2026-09-11-tech-law-brief.html",
     "paper": "articles/2026-09-11-brennan-marquez-plausible-cause.html",
@@ -10,18 +10,13 @@
   "news_status": "published",
   "news_published_at": "2026-09-11T23:10:00+08:00",
   "newworks_count": 5,
-  "publication_blocker": {
-    "scope": "academic_only",
-    "type": "academic_deduplication",
-    "detail": "科技法研究新作包含历史已发布来源：Between Law and Code: Operationalizing Responsible AI in Public Administration。该问题仅阻塞学术栏，不再阻塞已核验的新闻简报发布。"
-  },
   "academic_review": {
-    "status": "needs_revision",
-    "checked_at": "2026-09-11T18:40:29+08:00",
+    "status": "verified",
+    "checked_at": "2026-09-11T23:11:00+08:00",
     "checks": {
       "sources": true,
       "bibliography": true,
-      "deduplication": false,
+      "deduplication": true,
       "original_titles": true
     },
     "paper": {
@@ -41,13 +36,14 @@
       "edition": "English edition, translated by Thomas Burger"
     },
     "newworks_dois": [
-      "10.1017/cfl.2026.10055",
+      "10.1017/cfl.2026.10063",
       "10.1017/cfl.2026.10049",
       "10.1017/cfl.2026.10042",
       "10.1016/j.clsr.2026.106373",
       "10.1016/j.clsr.2026.106393"
     ]
   },
+  "academic_published_at": "2026-09-11T23:11:00+08:00",
   "news_count": 18,
   "news_review": {
     "status": "verified",
