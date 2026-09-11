@@ -1,10 +1,16 @@
 {
-  "date": "2026-09-10",
+  "date": "2026-09-11",
   "pages": {
-    "brief": "articles/2026-09-10-tech-law-brief.html",
+    "brief": "articles/2026-09-11-tech-law-brief.html",
     "paper": "articles/2026-09-10-solove-privacy-self-management.html",
     "classic": "articles/2026-09-10-westin-privacy-and-freedom.html",
     "newworks": "articles/2026-09-10-new-works.html"
+  },
+  "page_dates": {
+    "brief": "2026-09-11",
+    "paper": "2026-09-10",
+    "classic": "2026-09-10",
+    "newworks": "2026-09-10"
   },
   "news_count": 18,
   "newworks_count": 5

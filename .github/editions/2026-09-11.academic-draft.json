@@ -1,17 +1,19 @@
 {
   "date": "2026-09-11",
-  "state": "draft",
+  "state": "partial_published",
   "pages": {
     "brief": "articles/2026-09-11-tech-law-brief.html",
     "paper": "articles/2026-09-11-brennan-marquez-plausible-cause.html",
     "classic": "articles/2026-09-11-habermas-structural-transformation-public-sphere.html",
     "newworks": "articles/2026-09-11-new-works.html"
   },
-  "news_status": "verified",
+  "news_status": "published",
+  "news_published_at": "2026-09-11T23:10:00+08:00",
   "newworks_count": 5,
   "publication_blocker": {
+    "scope": "academic_only",
     "type": "academic_deduplication",
-    "detail": "整期结构验收发现科技法研究新作包含历史已发布来源：Between Law and Code: Operationalizing Responsible AI in Public Administration。新闻简报已经核验通过，不应重做；需由学术三栏任务替换重复新作并重新完成去重核验。"
+    "detail": "科技法研究新作包含历史已发布来源：Between Law and Code: Operationalizing Responsible AI in Public Administration。该问题仅阻塞学术栏，不再阻塞已核验的新闻简报发布。"
   },
   "academic_review": {
     "status": "needs_revision",
