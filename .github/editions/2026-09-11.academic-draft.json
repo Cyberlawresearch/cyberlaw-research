@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-11",
+  "state": "draft",
+  "pages": {
+    "brief": "articles/2026-09-11-tech-law-brief.html",
+    "paper": "articles/2026-09-11-brennan-marquez-plausible-cause.html",
+    "classic": "articles/2026-09-11-habermas-structural-transformation-public-sphere.html",
+    "newworks": "articles/2026-09-11-new-works.html"
+  },
+  "news_status": "pending",
+  "newworks_count": 5,
+  "academic_review": {
+    "status": "verified",
+    "checked_at": "2026-09-11T18:29:00+08:00",
+    "checks": {
+      "sources": true,
+      "bibliography": true,
+      "deduplication": true,
+      "original_titles": true
+    },
+    "paper": {
+      "author": "Kiel Brennan-Marquez",
+      "originalTitle": "\"Plausible Cause\": Explanatory Standards in the Age of Powerful Machines",
+      "journal": "Vanderbilt Law Review",
+      "year": "2017",
+      "volume": "70",
+      "issue": "4",
+      "pages": "1249–1301"
+    },
+    "classic": {
+      "author": "Jürgen Habermas",
+      "originalTitle": "The Structural Transformation of the Public Sphere: An Inquiry into a Category of Bourgeois Society",
+      "publisher": "The MIT Press",
+      "year": "1989",
+      "edition": "English edition, translated by Thomas Burger"
+    },
+    "newworks_dois": [
+      "10.1017/cfl.2026.10055",
+      "10.1017/cfl.2026.10049",
+      "10.1017/cfl.2026.10042",
+      "10.1016/j.clsr.2026.106373",
+      "10.1016/j.clsr.2026.106393"
+    ]
+  }
+}
