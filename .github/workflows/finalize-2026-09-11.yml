@@ -1,0 +1,78 @@
+name: Finalize 2026-09-11 verified edition candidate
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/finalize-2026-09-11.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: finalize-2026-09-11
+  cancel-in-progress: false
+
+jobs:
+  finalize:
+    if: github.repository == 'Cyberlawresearch/cyberlaw-research'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Bind verified four-column content to exact hashes
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          day='2026-09-11'
+          draft_path=Path('.github/editions/2026-09-11.academic-draft.json')
+          draft=json.loads(draft_path.read_text(encoding='utf-8'))
+          assert draft['date']==day
+          assert draft['academic_review']['status']=='verified'
+          assert draft['news_status']=='verified'
+          assert draft['news_review']['status']=='verified'
+          pages=draft['pages']
+          assert list(pages)==['brief','paper','classic','newworks']
+          for p in pages.values():
+              assert Path(p).is_file(), p
+          brief=Path(pages['brief']).read_text(encoding='utf-8')
+          assert brief.count('class="brief-item"')==draft['news_count']==18
+          assert '本期最值得先看' not in brief
+          assert 'Cyberlaw Research' not in brief
+          checks={
+              'sources': bool(draft['news_review']['checks']['sources'] and draft['academic_review']['checks']['sources']),
+              'legal_status': bool(draft['news_review']['checks']['legal_status']),
+              'bibliography': bool(draft['academic_review']['checks']['bibliography']),
+              'deduplication': bool(draft['news_review']['checks']['deduplication'] and draft['academic_review']['checks']['deduplication']),
+              'original_titles': bool(draft['news_review']['checks']['original_titles'] and draft['academic_review']['checks']['original_titles'])
+          }
+          assert all(checks.values())
+          record={
+              'date':day,
+              'pages':pages,
+              'news_count':draft['news_count'],
+              'newworks_count':draft['newworks_count'],
+              'review':{
+                  'status':'verified',
+                  'checked_at':draft['news_review']['checked_at'],
+                  'last_news_scan_at':draft['news_review']['last_news_scan_at'],
+                  'checks':checks,
+                  'sha256':{p:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in pages.values()},
+                  'news_event_times':draft['news_review']['news_event_times']
+              }
+          }
+          Path('.github/editions/2026-09-11.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          PY
+      - name: Commit candidate and remove one-time finalizer
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .github/editions/2026-09-11.json
+          git rm .github/workflows/finalize-2026-09-11.yml
+          git commit -m '形成2026-09-11四栏核验候选并绑定内容哈希'
+          git push origin HEAD:main
