@@ -14,6 +14,7 @@ LABELS=['全球科技法简报','域外法学论文精读','法学经典著作',
 HISTORIES=['briefs.html','papers.html','classics.html','new-works.html']
 TECH_LABEL='网信法技术基础'
 TECH_PATH='tech-basics.html'
+TECH_CSS='assets/course-map.css'
 
 def soup(path):
     return BeautifulSoup((ROOT/path).read_text(encoding='utf-8'),'html.parser')
@@ -67,13 +68,24 @@ def validate(m):
             assert a is not None and target(p,a.get('href'))==dest,(p,label)
         tech=next((x for x in d.select('.navlinks a') if x.get_text(strip=True)==TECH_LABEL),None)
         assert tech is not None and target(p,tech.get('href'))==TECH_PATH,(p,TECH_LABEL)
-    home=soup('index.html');cards=home.select('.portal-card')
+    home=soup('index.html')
+    cards=home.select('.portal-card[data-daily-column]')
+    assert len(cards)==4
+    assert [a.get('data-daily-column') for a in cards]==KEYS
     assert [a.get('href') for a in cards]==paths
-    stamps=home.select('.portal-latest small');assert len(stamps)==4
+    stamps=[card.select_one('.portal-latest small') for card in cards]
+    assert all(stamps)
     for key,node in zip(KEYS,stamps):assert m['page_dates'][key].replace('-','.') in node.get_text(),key
     assert len(home.select('a[href="archive.html"]'))==1
     home_tech=next((x for x in home.select('.navlinks a') if x.get_text(strip=True)==TECH_LABEL),None)
     assert home_tech is not None and target('index.html',home_tech.get('href'))==TECH_PATH,TECH_LABEL
+    tech_card=home.select_one('.portal-card-tech[href="tech-basics.html"]')
+    assert tech_card is not None and '网信法技术基础' in tech_card.get_text(' ',strip=True)
+    assert tech_card.select_one('.home-course-path') is not None
+    tech_page=soup(TECH_PATH)
+    assert tech_page.select_one('.course-logic') is not None
+    assert len(tech_page.select('.logic-module'))==8
+    assert (ROOT/TECH_CSS).is_file()
     for p,listing in zip(paths,HISTORIES):
         first=soup(listing).select_one('.issue-list .issue-row')
         assert first is not None and first.select_one(f'a[href="{p}"]'),listing
@@ -88,14 +100,14 @@ def validate(m):
     works=docs[3].select('.brief-item');assert len(works)==m['newworks_count']==5
     assert len(docs[1].select_one('.article-body').get_text(' ',strip=True))>=2500
     assert len(docs[2].select_one('.article-body').get_text(' ',strip=True))>=4500
-    return {'date':m['date'],'page_dates':m['page_dates'],'pages':paths,'news':len(news),'newworks':len(works),'status':'passed'}
+    return {'date':m['date'],'page_dates':m['page_dates'],'pages':paths,'news':len(news),'newworks':len(works),'tech_basics':'passed','status':'passed'}
 
 def read_url(url):
     req=Request(url,headers={'User-Agent':'cyberlaw-current-columns-gate'})
     with urlopen(req,timeout=20) as r:return r.read()
 
 def remote_check(m,base):
-    base=base.rstrip('/')+'/';paths=['index.html','archive.html',*HISTORIES,*m['pages'].values(),'data/current-edition.json']
+    base=base.rstrip('/')+'/';paths=['index.html','archive.html',*HISTORIES,TECH_PATH,TECH_CSS,*m['pages'].values(),'data/current-edition.json']
     for attempt in range(12):
         try:
             if json.loads(read_url(urljoin(base,'data/current-edition.json')+'?v='+str(attempt)))==m:break
