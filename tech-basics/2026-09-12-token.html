@@ -3,117 +3,125 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
-  <title>第01课｜Token：模型看到的不是“词”｜网信法技术基础</title>
+  <title>第01课｜Token：模型怎样把一句话拆成可处理的小片段｜网信法技术基础</title>
   <link href="../assets/style.css" rel="stylesheet"/>
   <link href="../assets/tech-basics.css" rel="stylesheet"/>
 </head>
 <body>
 <header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-09-12-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-09-12-kaminski-right-to-explanation.html">域外法学论文精读</a><a href="../articles/2026-09-12-bingham-rule-of-law.html">法学经典著作</a><a href="../articles/2026-09-12-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a></nav></div></header>
 <main>
-<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 01 · 基础积木 · 2026.09.12</div><h1>Token：模型看到的不是“词”</h1><p class="tech-lead">今天只解决一个问题：你输入的一句话，在真正进入大模型之前，究竟变成了什么？</p></div></section>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 01 · 基础积木 · 2026.09.12</div><h1>Token：模型怎样把一句话拆成可处理的小片段</h1><p class="tech-lead">今天只弄懂一件事：你输入一段文字之后，大模型为什么不能直接“照着文字看”，而要先把它拆成一些小片段？</p></div></section>
 <div class="tech-shell">
   <section class="lesson-focus">
-    <div><strong>一句话先记住</strong><p>大模型不会直接处理“文字”。文本通常先经过 tokenizer，被转换成一串 token 及其编号，再变成向量交给模型计算。</p></div>
-    <div><strong>学完这一课，你应该能分清</strong><p>Token 不是“一个汉字”，Tokenizer 不是 Embedding，Token 化也不是加密、脱敏或匿名化。</p></div>
+    <div><strong>先把 Token 记成一句人话</strong><p><strong>Token 就是大模型处理文字时使用的“小片段”。</strong>一句话进入模型前，会先被拆成若干这样的片段，模型再按照这些片段继续处理。</p></div>
+    <div><strong>这一课先不要求你懂</strong><p>后面会出现 Embedding、Transformer 等词。今天不需要理解它们的技术细节，只要知道：Token 是文字进入模型后的第一站。</p></div>
   </section>
 
   <section class="lesson-section">
-    <h2>先看一张图：一句话怎样进入模型</h2>
+    <h2>一、先看一个最简单的例子</h2>
+    <p>假设你输入一句话：<strong>“人工智能正在改变法律研究。”</strong></p>
+    <p>人读这句话时，会自然按照汉字、词语和语义去理解。但模型在真正计算之前，要先把整句话拆成若干可以逐个处理的片段。每一个这样的片段，就是一个 <strong>Token</strong>。</p>
     <div class="visual-board">
-      <div class="visual-title">从人类可读文本到模型可计算输入</div>
-      <div class="flow">
-        <div class="flow-box"><strong>① 原始文字</strong><span>“人工智能法治”</span></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-box"><strong>② Tokenizer</strong><span>按照该模型使用的词表和切分规则处理文本</span></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-box"><strong>③ Token IDs</strong><span>得到一串离散编号，而不是继续保留为“词”</span></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-box"><strong>④ 向量与模型</strong><span>编号再映射为向量，进入 Transformer 等网络结构</span></div>
-      </div>
+      <div class="visual-title">只看机制，不代表某个具体模型的真实切分</div>
+      <div class="token-strip"><span class="token-chip">人工智能</span><span class="token-chip">正在</span><span class="token-chip">改变</span><span class="token-chip">法律</span><span class="token-chip">研究</span><span class="token-chip">。</span></div>
+      <p class="tiny-note">这里的切分只是为了帮助理解。真实模型可能拆得更细，也可能组合得不同。不同模型使用的切分规则并不完全一样。</p>
     </div>
-    <p>真正需要建立的直觉是：<strong>人看到的是句子，模型最初接收到的是离散的符号编号。</strong>Tokenizer 就像一道“翻译层”，把文本转换成模型词表能够识别的单位。</p>
+    <p>因此，理解 Token 最重要的第一步，不是记住某种固定切法，而是先建立一个直觉：<strong>模型处理的不是完整句子，而是把句子拆成一小段一小段之后再处理。</strong></p>
   </section>
 
   <section class="lesson-section">
-    <h2>一、Token 到底是什么？</h2>
-    <p>Token 可以理解为模型处理文本时使用的基本离散单位，但它并不等于日常语言中的“词”。根据 tokenizer 的设计，一个 token 可能对应一个字、一个词、词的一部分、标点、空格组合，甚至某些字节序列。很多现代模型使用子词或字节级方法，目的不是复刻语言学意义上的分词，而是在有限词表中尽可能高效地表示各种文本。</p>
+    <h2>二、为什么模型要先把文字拆开？</h2>
+    <p>因为现实中的文字太复杂了。新词、人名、公司名称、英文缩写、代码、符号每天都会出现。如果模型只能认识一个固定的“完整词表”，一遇到没见过的新词就很难处理。</p>
+    <p>所以更实用的办法是：<strong>把文字拆成较小的片段，再用这些片段去组合出各种词和句子。</strong>常见词可能作为较大的片段出现，少见词则可以拆得更细。这样不用给世界上每一个词都单独准备一个位置。</p>
     <div class="compare-grid">
-      <div class="compare-card"><b>Token ≠ 汉字</b><p>中文里一个汉字有时可能独立成 token，也可能与相邻字符组成其他 token；具体结果取决于 tokenizer。</p></div>
-      <div class="compare-card"><b>Token ≠ 单词</b><p>英文长词可能被拆成多个子词；高频字符组合也可能被合并为一个 token。</p></div>
-      <div class="compare-card"><b>Token ≠ 固定长度</b><p>两个看起来字数相近的句子，经过不同 tokenizer 后，token 数可能并不相同。</p></div>
-    </div>
-    <p class="tiny-note">这里故意不展示某个中文短语的“唯一正确切分”，因为不同模型使用的 tokenizer 和词表并不相同。课程需要的是机制直觉，而不是把某个模型的切分方式误认为普遍规律。</p>
-  </section>
-
-  <section class="lesson-section">
-    <h2>二、为什么不直接按“字”或者“词”来处理？</h2>
-    <p>如果把每一个完整单词都放进词表，现实语言中的新词、姓名、代码、缩写、拼写变化会迅速让词表膨胀；如果只按单个字符或字节处理，同一句话又会变得过长。子词方法是在两者之间寻找折中：高频组合可以合并成较大的单位，罕见词又能被拆成更小的单位，从而让有限词表覆盖开放世界中的文本。</p>
-    <div class="visual-board">
-      <div class="visual-title">子词方法的基本直觉（仅为机制示意，不代表某个具体模型的真实切分）</div>
-      <div class="token-strip"><span class="token-chip">更小单位</span><span class="token-chip">+</span><span class="token-chip">高频组合反复出现</span><span class="token-chip">→</span><span class="token-chip">词表中形成更常用的片段</span></div>
-      <p class="tiny-note">OpenAI 的 tiktoken 使用 BPE（Byte Pair Encoding）类方法；其他模型可能采用不同 tokenizer。共同点是：文本需要先转换为模型词表中的离散单位。</p>
+      <div class="compare-card"><b>常见内容</b><p>可能直接成为一个较完整的片段，处理起来更省步骤。</p></div>
+      <div class="compare-card"><b>少见内容</b><p>可以继续拆成更小片段，所以新词、姓名、代码也不至于完全无法处理。</p></div>
+      <div class="compare-card"><b>最终目的</b><p>用一套有限的基本片段，覆盖尽可能多的真实文字。</p></div>
     </div>
   </section>
 
   <section class="lesson-section">
-    <h2>三、Tokenizer 做完以后发生什么？</h2>
-    <p>Tokenizer 输出的 token ID 本身只是编号。编号还需要通过 Embedding 层映射为一串向量，模型才能开始进行数值计算。可以把两者暂时这样区分：</p>
+    <h2>三、一句话进入模型，大致经过什么步骤？</h2>
     <div class="visual-board">
+      <div class="visual-title">今天只需要看懂前三步</div>
       <div class="flow">
-        <div class="flow-box"><strong>Token</strong><span>“这是哪个离散单位？”</span></div>
+        <div class="flow-box"><strong>① 你输入文字</strong><span>例如：“人工智能法治”</span></div>
         <div class="flow-arrow">→</div>
-        <div class="flow-box"><strong>Token ID</strong><span>“它在词表里的编号是多少？”</span></div>
+        <div class="flow-box"><strong>② Tokenizer 切分</strong><span>Tokenizer 可以先理解成“切分器”：按照模型自己的规则把文字拆成 Token</span></div>
         <div class="flow-arrow">→</div>
-        <div class="flow-box"><strong>Embedding</strong><span>“把这个编号变成模型可计算的向量表示”</span></div>
+        <div class="flow-box"><strong>③ Token 获得编号</strong><span>每个 Token 在模型使用的词表中都有自己的编号</span></div>
         <div class="flow-arrow">→</div>
-        <div class="flow-box"><strong>Transformer</strong><span>“结合上下文计算这些表示之间的关系”</span></div>
+        <div class="flow-box"><strong>④ 继续交给模型计算</strong><span>后面还要把编号变成模型能计算的一组数字，再进入模型主体</span></div>
       </div>
     </div>
-    <p>下一课会专门讲 Embedding。现在只需要记住：<strong>Tokenizer 解决“怎样切和怎样编号”，Embedding 解决“怎样把编号变成可计算的表示”。</strong></p>
+    <div class="callout"><strong>新词备注｜Tokenizer</strong><br/>Tokenizer 后面不会单独作为大专题，但你只需要把它理解成“负责把文字拆成 Token 的工具或规则”。不同模型可以使用不同的 Tokenizer。</div>
+    <div class="callout"><strong>新词预告｜Embedding</strong><br/>下一课会专门讲。今天只需要知道：Token 得到编号之后，还要再被转换成一组数字，模型才能真正开始计算。这个转换过程与 Embedding 有关。现在不用理解“一组数字”在数学上叫什么，也不用先学“向量”。</div>
+    <div class="callout"><strong>新词预告｜Transformer</strong><br/>后面会用多课专门讲。今天只把它理解成“大模型内部负责继续处理这些信息的核心结构”即可。</div>
   </section>
 
   <section class="lesson-section">
-    <h2>四、三个最容易出现的误解</h2>
+    <h2>四、到这里，Token 可以怎样准确定义？</h2>
+    <p><strong>Token 是模型按照自己的切分规则，从文字中得到的基本处理片段。</strong>每个 Token 都能对应到模型词表中的一个编号。模型正是以这些片段及其编号为起点，继续完成后续计算。</p>
+    <p>这个定义里有三个关键词：</p>
+    <div class="compare-grid">
+      <div class="compare-card"><b>“模型自己的规则”</b><p>Token 怎么切，不完全按照我们日常理解的“字”和“词”来决定。</p></div>
+      <div class="compare-card"><b>“基本处理片段”</b><p>模型先把长文本拆开，再逐步处理这些片段之间的关系。</p></div>
+      <div class="compare-card"><b>“有对应编号”</b><p>模型不会一直拿着汉字或英文字母做计算，而是先把片段转换成可识别的编号。</p></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>五、理解清楚以后，再看它“不是什么”</h2>
     <div class="myth-list">
-      <div class="myth"><b>误解 01</b><span>“一个 token 就是一个字或一个单词。”——不对。Token 的边界取决于 tokenizer 和词表，不能按自然语言中的“字”“词”直接推算。</span></div>
-      <div class="myth"><b>误解 02</b><span>“把文本变成 token ID 之后，原文就看不出来了，所以已经脱敏。”——不对。Token 化本质上是编码过程。掌握相应 tokenizer 和词表时，token 序列通常能够被解码回文本或与原文本高度对应，不能把它当作匿名化措施。</span></div>
-      <div class="myth"><b>误解 03</b><span>“模型上下文窗口有 128K，所以能处理 12.8 万个汉字。”——不能这样换算。上下文窗口通常以 token 计量，而 token 与字符、汉字、英文单词之间不存在固定的一比一关系。</span></div>
+      <div class="myth"><b>Token 不一定等于一个汉字</b><span>中文里，一个 Token 可能是一个字，也可能包含多个字；具体取决于模型使用的切分规则。</span></div>
+      <div class="myth"><b>Token 不一定等于一个单词</b><span>英文单词也可能被拆成几个 Token，尤其是少见词、长词、姓名或特殊写法。</span></div>
+      <div class="myth"><b>Token 没有固定字数</b><span>所以“128K Token”不能直接理解成“12.8万个汉字”或“12.8万个英文单词”。</span></div>
+      <div class="myth"><b>Token 化也不是脱敏</b><span>把文字切开并编号，只是改变了表示方式，并不意味着原来的内容已经无法恢复或无法识别。</span></div>
     </div>
   </section>
 
   <section class="lesson-section">
-    <h2>五、这件事为什么与网信法研究有关？</h2>
+    <h2>六、为什么网信法研究者要知道 Token？</h2>
     <div class="law-bridge">
-      <h3>最重要的一点：Token 化不是匿名化。</h3>
-      <p>在政企大模型、训练数据治理或数据出境分析中，有时会看到“原始文本已经转换为 token，因此不存在原文数据”的说法。这个判断不能成立。Token ID 仍然保存了足以重建或对应文本内容的信息，至少不能仅凭“已经 token 化”就认定个人信息、商业秘密或内部资料已经失去可识别性。</p>
-      <p>进一步说，法律分析应当区分不同技术阶段：<strong>文本切分和编号、向量化表示、模型参数更新、日志保存、推理调用</strong>并不是同一种数据处理活动。只有把技术链条拆开，才能判断数据究竟在哪一步被保留、转换、传输或者进一步利用。</p>
+      <h3>第一个直接用途：别把“格式变化”误当成“数据消失”。</h3>
+      <p>在大模型训练、企业内部AI应用或者数据跨境场景中，可能会出现这样的说法：原始文字已经被转成 Token，所以已经不是原来的数据了。这个结论不能只凭“Token 化”得出。</p>
+      <p>原因很简单：<strong>Token 化的主要作用是让模型更方便处理文字，而不是让文字失去原有含义。</strong>如果系统仍然能够根据这些 Token 对应回原来的文字内容，那么就不能仅因为数据换了一种表示形式，就认定个人信息、商业秘密或者内部资料已经完成脱敏。</p>
     </div>
     <div class="compare-grid">
-      <div class="compare-card"><b>上下文窗口</b><p>模型能一次处理多少内容，通常看 token 数，而不是 Word 页数或汉字数。</p></div>
-      <div class="compare-card"><b>服务计量</b><p>许多模型 API 按输入、输出 token 统计用量，因此 token 也会进入成本与平台定价结构。</p></div>
-      <div class="compare-card"><b>证据与数据治理</b><p>“只剩 token”不能自动证明原始信息已不可恢复，更不能替代对实际可识别性和处理目的的判断。</p></div>
+      <div class="compare-card"><b>上下文窗口</b><p>模型一次能处理多少内容，通常按 Token 计算，而不是直接按页数、汉字数或单词数计算。</p></div>
+      <div class="compare-card"><b>模型计费</b><p>很多模型服务会统计输入和输出用了多少 Token，因此 Token 也是理解AI服务价格的基础单位。</p></div>
+      <div class="compare-card"><b>数据治理</b><p>研究训练数据、日志、跨境传输时，要看内容是否还能被识别和恢复，而不能只看它是否已经变成 Token。</p></div>
     </div>
   </section>
 
   <section class="lesson-section">
-    <h2>六、把这一课转成两个研究问题</h2>
+    <h2>七、这一课只需要带走三句话</h2>
+    <div class="lesson-focus">
+      <div><strong>第一句</strong><p>Token 是大模型处理文字时使用的基本小片段。</p></div>
+      <div><strong>第二句</strong><p>一段文字进入模型前，会先被拆成 Token，并给这些 Token 分配编号。</p></div>
+    </div>
+    <div class="callout"><strong>第三句：</strong>Token 的边界不是固定的，也不能把 Token 化直接理解成匿名化或脱敏。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>研究延伸</h2>
     <div class="research-grid">
-      <div class="research-card"><small>论文问题</small><h3>文本技术转换与个人信息可识别性的规范边界</h3><p>可以从 token 化、编码、向量化等不同技术转换出发，讨论“数据形态改变”与“匿名化”之间为什么不能画等号，并进一步研究个人信息保护法中可识别性判断应当如何吸收技术可逆性、关联能力和实际访问条件。</p></div>
-      <div class="research-card"><small>智库问题</small><h3>防止将 Token 化误判为脱敏：政企大模型数据处理流程中的技术措施分类</h3><p>可针对政务、金融和企业内部大模型梳理文本进入模型后的实际处理链，明确编码、向量化、日志、缓存、模型训练等环节的安全属性，避免以“技术格式发生变化”替代真正的脱敏、访问控制和跨境合规措施。</p></div>
+      <div class="research-card"><small>论文问题</small><h3>数据表示形式变化与个人信息可识别性的法律判断</h3><p>可以研究：一段文字从原文变成 Token、数字编号乃至其他技术表示后，什么时候仍应被视为可识别的信息？法律上的“匿名化”应当看数据长什么样，还是看现实中能不能重新对应到人或内容？</p></div>
+      <div class="research-card"><small>智库问题</small><h3>政企大模型数据处理中的“技术转换不等于脱敏”风险</h3><p>可梳理政务、金融和企业大模型中原始文本进入系统后的各个环节，防止把 Token 化、格式转换等普通技术处理误当成真正的脱敏措施。</p></div>
     </div>
   </section>
 
   <section class="lesson-section">
     <h2>原始材料</h2>
     <ul class="source-links">
-      <li><a href="https://huggingface.co/docs/transformers/main_classes/tokenizer">Hugging Face Transformers：Tokenizer 文档</a>——说明 tokenizer 负责把字符串输入准备成模型可处理的输入。</li>
-      <li><a href="https://huggingface.co/docs/tokenizers/main/pipeline">Hugging Face Tokenizers：Tokenization Pipeline</a>——展示 normalization、pre-tokenization、model 与 post-processing 的处理流程。</li>
-      <li><a href="https://github.com/openai/tiktoken">OpenAI tiktoken</a>——OpenAI 模型使用的 BPE tokenizer 实现与教学材料。</li>
-      <li><a href="https://arxiv.org/abs/1508.07909">Sennrich, Haddow & Birch (2016), Neural Machine Translation of Rare Words with Subword Units</a>——理解子词方法为何能够处理开放词汇的重要背景文献。</li>
+      <li><a href="https://huggingface.co/docs/transformers/main_classes/tokenizer">Hugging Face Transformers：Tokenizer 文档</a></li>
+      <li><a href="https://huggingface.co/docs/tokenizers/main/pipeline">Hugging Face Tokenizers：Tokenization Pipeline</a></li>
+      <li><a href="https://github.com/openai/tiktoken">OpenAI tiktoken</a></li>
+      <li><a href="https://arxiv.org/abs/1508.07909">Sennrich, Haddow &amp; Birch：Neural Machine Translation of Rare Words with Subword Units</a></li>
     </ul>
   </section>
 
-  <div class="next-lesson"><div><div class="tech-kicker">NEXT · LESSON 02</div><strong>Embedding：一个词为什么会变成一串数字？</strong></div><a href="../tech-basics.html">返回课程地图 →</a></div>
+  <div class="next-lesson"><div><div class="tech-kicker">NEXT · LESSON 02</div><strong>Embedding：模型怎样把 Token 变成可计算的一组数字？</strong><div class="tiny-note">“Embedding”下一课会从零解释；不用提前知道“向量”是什么意思。</div></div><a href="../tech-basics.html">返回课程地图 →</a></div>
 </div>
 </main>
 <footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
