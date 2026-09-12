@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-12",
+  "column": "brief",
+  "state": "published",
+  "page": "articles/2026-09-12-tech-law-brief.html",
+  "news_count": 18,
+  "checked_at": "2026-09-12T19:36:43+08:00",
+  "last_news_scan_at": "2026-09-12T19:36:43+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "deduplication": true,
+    "original_titles": true,
+    "timeliness": true
+  },
+  "sha256": {
+    "articles/2026-09-12-tech-law-brief.html": "37dec6f43ad63c2df3cefa6c87354984f1b230adb209171d49802d204791774c"
+  },
+  "deduplication": {
+    "previous_day": true,
+    "history_7d": true,
+    "notable_exclusion": "Nvidia/Groq DOJ probe excluded because the same investigation was already published in the 2026-09-10 brief.",
+    "independent_progress": "The 2026-09-11 RubyGems disclosure concerns a separate incident from the Hugging Face containment event published in the 2026-09-11 brief."
+  },
+  "sources": [
+    {"date":"2026-09-11","originalTitle":"工信部举行《“人工智能+软件”专项行动实施方案》新闻发布会","source":"工业和信息化部信息技术发展司（鄂尔多斯市工信局转载）","url":"https://gxj.ordos.gov.cn/xwzx_126434/tpxw_126437/202609/t20260911_1938124.html"},
+    {"date":"2026-09-10","originalTitle":"工业和信息化部等九部门关于印发《智能网联新能源汽车产业发展“十五五”规划》的通知","source":"工业和信息化部","url":"https://wap.miit.gov.cn/jgsj/zbys/wjfb/art/2026/art_6136a59a8ff04922b7c73ddbc575434e.html"},
+    {"date":"2026-09-11","originalTitle":"李强主持召开国务院常务会议 对加强安全生产工作作出进一步部署","source":"中国政府网（地方政府网站转载）","url":"https://zjj.yantai.gov.cn/col/col22906/art/2026/art_af9b96c7d0989b85aef05f98400bc902.html"},
+    {"date":"2026-09-11","originalTitle":"AI政策宣讲助力大模型企业合规发展","source":"北京市人民政府门户网站／北京经济技术开发区管理委员会","url":"https://www.beijing.gov.cn/ywdt/gzdt/202609/t20260911_4859391.html"},
+    {"date":"2026-09-11","originalTitle":"关于开展人工智能应用服务商培育专项行动的通知","source":"黑龙江省工业和信息化厅","url":"https://gxt.hlj.gov.cn/gxt/c106958/202609/c00_31974736.shtml"},
+    {"date":"2026-09-11","originalTitle":"关于公开征求《面向车联网应用的算力网络安全指南》等89项通信行业标准报批意见的公示","source":"工业和信息化部","url":"https://wap.miit.gov.cn/jgsj/kjs/jscx/bzgf/art/2026/art_39ae3e674a8046cb97b4086c6a0e5c27.html"},
+    {"date":"2026-09-11","originalTitle":"Cyber Resilience Act - Reporting obligations","source":"European Commission, DG CONNECT","url":"https://digital-strategy.ec.europa.eu/en/policies/cra-reporting"},
+    {"date":"2026-09-11","originalTitle":"US Senate negotiators consider requiring AI firms to mitigate known major risks","source":"Reuters","url":"https://www.reuters.com/legal/litigation/us-senate-negotiators-consider-requiring-ai-firms-mitigate-known-major-risks-2026-09-11/"},
+    {"date":"2026-09-11","originalTitle":"Lawyer cites fake witnesses in murder case and blames ChatGPT","source":"Reuters","url":"https://www.reuters.com/legal/government/chatgpt-invented-fake-police-testimony-murder-appeal-new-mexico-high-court-says-2026-09-11/"},
+    {"date":"2026-09-11","originalTitle":"OpenAI agents attacked RubyGems before Hugging Face incident, researchers say","source":"Reuters","url":"https://www.reuters.com/legal/litigation/openai-agents-attacked-software-service-rubygems-before-hugging-face-incident-2026-09-11/"},
+    {"date":"2026-09-11","originalTitle":"개인정보 유출 사전예방·피해구제 강화를 위한 개인정보 보호법·시행령·고시, 9월 11일부터 시행","source":"개인정보보호위원회","url":"https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C010010000&nttId=12459"},
+    {"date":"2026-09-11","originalTitle":"개인정보위, ‘구글’ 디지털성범죄 피해정보 유출 조사 신속 추진","source":"개인정보보호위원회","url":"https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C010010000&nttId=12461"},
+    {"date":"2026-09-12","originalTitle":"South Korea arms itself to protect chip secrets from foreign spies","source":"Financial Times","url":"https://www.ft.com/content/6fa49d3c-e7b9-4bcd-9eb1-b737ff0c552e"},
+    {"date":"2026-09-10","originalTitle":"デジタル取引・特定商取引法等検討会の中間取りまとめを公表しました。","source":"消費者庁","url":"https://www.caa.go.jp/policies/policy/consumer_transaction/release/2026/"},
+    {"date":"2026-09-10","originalTitle":"MDDI's Response to PQ on Government and Commercial Data Compromised in LiteLLM Supply Chain Attack and Measures to Prevent Recurrence","source":"Ministry of Digital Development and Information, Singapore","url":"https://www.mddi.gov.sg/newsroom/mddi-response-to-pq-on-government-and-commercial-data-compromised-in-litellm-supply-chain-attack-and-measures-to-prevent-recurrence/"},
+    {"date":"2026-09-11","originalTitle":"Protecting Against National Security Threats to the Communications Supply Chain through the Equipment Authorization Program","source":"Federal Communications Commission／Federal Register","url":"https://public-inspection.federalregister.gov/2026-18535.pdf"},
+    {"date":"2026-09-11","originalTitle":"India’s demographic dividend visible in rapidly growing fintech ecosystem, says FM Sitharaman","source":"Akashvani News／Prasar Bharati","url":"https://newsonair.gov.in/indias-demographic-dividend-visible-in-rapidly-growing-fintech-ecosystem-says-fm-sitharaman/"},
+    {"date":"2026-09-10","originalTitle":"Investor Advisory Committee Meeting Agenda","source":"U.S. Securities and Exchange Commission","url":"https://www.sec.gov/about/advisory-committees/investor-advisory-committee/iac091026-agenda"}
+  ]
+}
