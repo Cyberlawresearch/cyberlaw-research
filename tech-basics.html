@@ -6,6 +6,7 @@
   <title>网信法技术基础｜网信法研究每日推送</title>
   <link href="assets/style.css" rel="stylesheet"/>
   <link href="assets/tech-basics.css" rel="stylesheet"/>
+  <link href="assets/course-map.css" rel="stylesheet"/>
 </head>
 <body>
 <header class="top"><div class="wrap nav"><a class="brand" href="index.html">网信法研究每日推送</a><nav class="navlinks"><a href="articles/2026-09-12-tech-law-brief.html">全球科技法简报</a><a href="articles/2026-09-12-kaminski-right-to-explanation.html">域外法学论文精读</a><a href="articles/2026-09-12-bingham-rule-of-law.html">法学经典著作</a><a href="articles/2026-09-12-new-works.html">科技法研究新作</a><a href="tech-basics.html">网信法技术基础</a></nav></div></header>
@@ -31,18 +32,52 @@
     </div>
   </section>
 
-  <section class="lesson-section">
-    <h2>八个模块</h2>
-    <div class="course-grid">
-      <div class="course-module active"><small>MODULE 01</small><h2>基础积木</h2><p>Token、Embedding、参数、训练与推理、损失函数、预训练、概率生成。</p></div>
-      <div class="course-module"><small>MODULE 02</small><h2>Transformer</h2><p>Attention、自注意力、Q/K/V、多头注意力、位置编码、前馈网络、Decoder-only。</p></div>
-      <div class="course-module"><small>MODULE 03</small><h2>模型如何炼成</h2><p>训练数据、SFT、RLHF、DPO、合成数据、蒸馏、后训练与评测。</p></div>
-      <div class="course-module"><small>MODULE 04</small><h2>能力与推理</h2><p>上下文窗口、采样、幻觉、推理模型、KV Cache、MoE、多模态。</p></div>
-      <div class="course-module"><small>MODULE 05</small><h2>RAG 与智能体</h2><p>向量数据库、检索增强、工具调用、Agent、Memory、MCP 与跨应用操作。</p></div>
-      <div class="course-module"><small>MODULE 06</small><h2>部署与基础设施</h2><p>API、本地部署、量化、GPU、训练与推理成本、云边端与模型服务链。</p></div>
-      <div class="course-module"><small>MODULE 07</small><h2>安全与失效</h2><p>Prompt Injection、越狱、投毒、模型抽取、隐私泄露、权限、沙箱与评测。</p></div>
-      <div class="course-module"><small>MODULE 08</small><h2>技术到法律</h2><p>可解释、可审计、责任链、数据跨境、平台化、互操作、行政使用与持续监管。</p></div>
+  <section class="lesson-section course-logic">
+    <div class="course-logic-head">
+      <div class="tech-kicker">COURSE MAP</div>
+      <h2>整体课程逻辑：先看懂模型，再看懂它为什么会产生法律问题</h2>
+      <p>这套课程不是把几十个技术词平铺在一起，而是沿着一条完整链条推进：文字怎样进入模型 → 模型怎样处理和学习 → 模型怎样获得能力 → 模型怎样接入外部世界 → 系统怎样真正部署 → 风险和法律责任在哪里出现。</p>
     </div>
+
+    <div class="logic-rail" aria-label="网信法技术基础八模块课程逻辑图">
+      <div class="logic-stage">
+        <div class="logic-stage-label"><small>STAGE 01</small><strong>先看懂输入</strong></div>
+        <div class="logic-stage-body cols-1">
+          <div class="logic-module"><small>MODULE 01</small><h3>基础积木</h3><p>Token · Embedding · 参数 · 训练与推理 · 损失函数 · 预训练 · 概率生成</p></div>
+        </div>
+      </div>
+      <div class="logic-arrow" aria-hidden="true"></div>
+
+      <div class="logic-stage">
+        <div class="logic-stage-label"><small>STAGE 02</small><strong>再看懂模型</strong></div>
+        <div class="logic-stage-body cols-3">
+          <div class="logic-module"><small>MODULE 02</small><h3>Transformer</h3><p>Attention · 自注意力 · Q/K/V · 多头注意力 · 位置编码 · 前馈网络 · Decoder-only</p></div>
+          <div class="logic-module"><small>MODULE 03</small><h3>模型如何炼成</h3><p>训练数据 · SFT · RLHF · DPO · 合成数据 · 蒸馏 · 后训练 · 评测</p></div>
+          <div class="logic-module"><small>MODULE 04</small><h3>能力与推理</h3><p>上下文窗口 · 采样 · 幻觉 · 推理模型 · KV Cache · MoE · 多模态</p></div>
+        </div>
+      </div>
+      <div class="logic-arrow" aria-hidden="true"></div>
+
+      <div class="logic-stage">
+        <div class="logic-stage-label"><small>STAGE 03</small><strong>再看懂应用</strong></div>
+        <div class="logic-stage-body cols-2">
+          <div class="logic-module"><small>MODULE 05</small><h3>RAG 与智能体</h3><p>向量数据库 · 检索增强 · 工具调用 · Agent · Memory · MCP · 跨应用操作</p></div>
+          <div class="logic-module"><small>MODULE 06</small><h3>部署与基础设施</h3><p>API · 本地部署 · 量化 · GPU · 训练与推理成本 · 云边端 · 模型服务链</p></div>
+        </div>
+      </div>
+      <div class="logic-arrow" aria-hidden="true"></div>
+
+      <div class="logic-stage">
+        <div class="logic-stage-label"><small>STAGE 04</small><strong>最后进入治理</strong></div>
+        <div class="logic-stage-body cols-2">
+          <div class="logic-module"><small>MODULE 07</small><h3>安全与失效</h3><p>Prompt Injection · 越狱 · 数据投毒 · 模型抽取 · 隐私泄露 · 权限 · 沙箱 · 评测</p></div>
+          <div class="logic-module"><small>MODULE 08</small><h3>技术到法律</h3><p>可解释 · 可审计 · 责任链 · 数据跨境 · 平台化 · 互操作 · 行政使用 · 持续监管</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="logic-summary"><strong>最终要建立的不是“术语记忆”，而是技术链条。</strong><p>看到一个法律问题时，能够反过来追问：信息在哪一步被转换？模型在哪一步作出计算？谁给了系统权限？数据有没有进入外部服务？风险来自模型本身、工具调用还是基础设施？责任应当落在哪个节点？</p></div>
+    <div class="course-method-note"><div><b>输入</b><span>文字怎样变成模型能处理的内容</span></div><div><b>模型</b><span>信息怎样被处理、学习和生成</span></div><div><b>行动</b><span>模型怎样调用知识、工具和外部系统</span></div><div><b>治理</b><span>风险、权限、证据和责任怎样落到具体环节</span></div></div>
   </section>
 </div>
 </main>
