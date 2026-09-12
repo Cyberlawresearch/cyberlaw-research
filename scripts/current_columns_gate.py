@@ -12,6 +12,8 @@ MANIFEST=ROOT/'data/current-edition.json'
 KEYS=['brief','paper','classic','newworks']
 LABELS=['全球科技法简报','域外法学论文精读','法学经典著作','科技法研究新作']
 HISTORIES=['briefs.html','papers.html','classics.html','new-works.html']
+TECH_LABEL='网信法技术基础'
+TECH_PATH='tech-basics.html'
 
 def soup(path):
     return BeautifulSoup((ROOT/path).read_text(encoding='utf-8'),'html.parser')
@@ -27,11 +29,19 @@ def sync_navigation(paths):
         if '.git' in file.parts or '.github' in file.parts:continue
         d=BeautifulSoup(file.read_text(encoding='utf-8'),'html.parser');modified=False
         parent=file.parent.relative_to(ROOT).as_posix()
-        for a in d.select('.navlinks a'):
+        nav=d.select_one('.navlinks')
+        if nav is None:continue
+        for a in nav.select('a'):
             label=a.get_text(strip=True)
             if label in LABELS:
                 href=posixpath.relpath(paths[LABELS.index(label)],parent)
                 if a.get('href')!=href:a['href']=href;modified=True
+        tech_href=posixpath.relpath(TECH_PATH,parent)
+        tech=next((x for x in nav.select('a') if x.get_text(strip=True)==TECH_LABEL),None)
+        if tech is None:
+            tech=d.new_tag('a',href=tech_href);tech.string=TECH_LABEL;nav.append(tech);modified=True
+        elif tech.get('href')!=tech_href:
+            tech['href']=tech_href;modified=True
         if modified:
             file.write_text(str(d),encoding='utf-8');changed+=1
     return changed
@@ -55,11 +65,15 @@ def validate(m):
         for label,dest in zip(LABELS,paths):
             a=next((x for x in d.select('.navlinks a') if x.get_text(strip=True)==label),None)
             assert a is not None and target(p,a.get('href'))==dest,(p,label)
+        tech=next((x for x in d.select('.navlinks a') if x.get_text(strip=True)==TECH_LABEL),None)
+        assert tech is not None and target(p,tech.get('href'))==TECH_PATH,(p,TECH_LABEL)
     home=soup('index.html');cards=home.select('.portal-card')
     assert [a.get('href') for a in cards]==paths
     stamps=home.select('.portal-latest small');assert len(stamps)==4
     for key,node in zip(KEYS,stamps):assert m['page_dates'][key].replace('-','.') in node.get_text(),key
     assert len(home.select('a[href="archive.html"]'))==1
+    home_tech=next((x for x in home.select('.navlinks a') if x.get_text(strip=True)==TECH_LABEL),None)
+    assert home_tech is not None and target('index.html',home_tech.get('href'))==TECH_PATH,TECH_LABEL
     for p,listing in zip(paths,HISTORIES):
         first=soup(listing).select_one('.issue-list .issue-row')
         assert first is not None and first.select_one(f'a[href="{p}"]'),listing
