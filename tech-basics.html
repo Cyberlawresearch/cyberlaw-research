@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
-  <title>网信法技术基础｜网信法研究每日推送</title>
+  <title>网信法技术基础｜课程总览与历史归档</title>
   <link href="assets/style.css" rel="stylesheet"/>
   <link href="assets/tech-basics.css" rel="stylesheet"/>
   <link href="assets/course-map.css" rel="stylesheet"/>
@@ -11,73 +11,84 @@
 <body>
 <header class="top"><div class="wrap nav"><a class="brand" href="index.html">网信法研究每日推送</a><nav class="navlinks"><a href="articles/2026-09-13-tech-law-brief.html">全球科技法简报</a><a href="articles/2026-09-13-balkin-information-fiduciaries.html">域外法学论文精读</a><a href="articles/2026-09-13-pasquale-black-box-society.html">法学经典著作</a><a href="articles/2026-09-13-new-works.html">科技法研究新作</a><a href="tech-basics.html">网信法技术基础</a></nav></div></header>
 <main>
-<section class="tech-hero"><div class="wrap"><div class="tech-kicker">CYBERLAW TECHNOLOGY BASICS</div><h1>网信法技术基础</h1><p class="tech-lead">每天用 5—8 分钟补一块真正用得上的技术基础。默认读者没有编程、数学或人工智能背景：先把一个概念用最简单的话讲明白，再逐步连接到技术机制和法律问题。</p></div></section>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">CYBERLAW TECHNOLOGY BASICS · ARCHIVE</div><h1>课程总览与历史归档</h1><p class="tech-lead">这里看整套课程的知识关系和往期课程。本期推送从首页直接进入当天课程，不再先经过总览页。</p></div></section>
 <div class="tech-shell">
   <section>
     <div class="latest-lesson">
-      <div class="lesson-no">01</div>
-      <div><div class="tech-kicker">TODAY'S LESSON · 2026.09.12</div><h2>Token：模型怎样把一句话拆成可处理的小片段</h2><p>先从最基础的问题开始：Token 到底是什么，一句话为什么要先被拆成一些小片段，模型才能继续处理。</p></div>
-      <a href="tech-basics/2026-09-12-token.html">开始这一课 →</a>
-    </div>
-  </section>
-
-  <section class="lesson-section">
-    <h2>课程怎么学</h2>
-    <p>每一课只解决一个问题。默认读者第一次接触相关术语，不要求先知道后面的概念。</p>
-    <div class="teaching-principles">
-      <div><b>先正面讲清“它是什么”</b><span>第一步先给出最简单、最充分的正面定义，再用例子建立直觉。</span></div>
-      <div><b>新词第一次出现就做备注</b><span>如果必须提前出现后续课程术语，只说明“今天先把它理解成什么”，不要求读者提前掌握。</span></div>
-      <div><b>再讲“它不是什么”</b><span>否定和纠错放在正面概念建立之后，用来修正误解，而不是替代定义本身。</span></div>
-      <div><b>能画清楚就少绕文字</b><span>用流程图、关系图、对照表承担解释任务，最后再连接法律研究。</span></div>
+      <div class="lesson-no">02</div>
+      <div><div class="tech-kicker">LATEST LESSON · 2026.09.13</div><h2>Embedding：模型怎样把 Token 变成可计算的一组数字？</h2><p>上一课把文字拆成 Token；这一课继续向前一步，弄懂为什么 Token 还要变成一组数字，模型才能真正开始计算。</p></div>
+      <a href="tech-basics/2026-09-13-embedding.html">阅读最新一课 →</a>
     </div>
   </section>
 
   <section class="lesson-section course-logic">
     <div class="course-logic-head">
       <div class="tech-kicker">COURSE MAP</div>
-      <h2>整体课程逻辑：先看懂模型，再看懂它为什么会产生法律问题</h2>
-      <p>这套课程不是把几十个技术词平铺在一起，而是沿着一条完整链条推进：文字怎样进入模型 → 模型怎样处理和学习 → 模型怎样获得能力 → 模型怎样接入外部世界 → 系统怎样真正部署 → 风险和法律责任在哪里出现。</p>
+      <h2>一张图看懂整套课程</h2>
+      <p>课程不是按术语字典排列，而是沿着技术链条推进：先弄懂文字怎样进入模型，再理解模型怎样处理和学习，接着看模型怎样调用外部知识与工具，最后进入安全、权力和法律责任。</p>
     </div>
+    <div class="course-map-frame">
+      <svg class="course-map-svg" viewBox="0 0 1200 650" role="img" aria-labelledby="course-map-title course-map-desc">
+        <title id="course-map-title">网信法技术基础八模块课程导图</title>
+        <desc id="course-map-desc">课程从输入与表示开始，依次进入模型核心、外部应用与部署，最终连接安全与法治研究。</desc>
+        <path class="map-line" d="M275 325 H315 M585 325 H625 M895 325 H935"/>
+        <path class="map-line" d="M295 315 l20 10 -20 10 M605 315 l20 10 -20 10 M915 315 l20 10 -20 10"/>
 
-    <div class="logic-rail" aria-label="网信法技术基础八模块课程逻辑图">
-      <div class="logic-stage">
-        <div class="logic-stage-label"><small>STAGE 01</small><strong>先看懂输入</strong></div>
-        <div class="logic-stage-body cols-1">
-          <div class="logic-module"><small>MODULE 01</small><h3>基础积木</h3><p>Token · Embedding · 参数 · 训练与推理 · 损失函数 · 预训练 · 概率生成</p></div>
-        </div>
-      </div>
-      <div class="logic-arrow" aria-hidden="true"></div>
+        <rect class="map-stage" x="20" y="35" width="255" height="580" rx="12"/>
+        <text class="map-stage-title" x="42" y="72">第一阶段｜先看懂输入</text>
+        <text class="map-stage-sub" x="42" y="96">文字如何变成模型可以计算的内容</text>
+        <rect class="map-module active" x="42" y="132" width="211" height="210" rx="10"/>
+        <text class="map-module-no" x="60" y="159">MODULE 01</text>
+        <text class="map-module-title" x="60" y="188">基础积木</text>
+        <text class="map-module-text" x="60" y="218"><tspan x="60" dy="0">Token · Embedding · 参数</tspan><tspan x="60" dy="25">训练与推理 · 损失函数</tspan><tspan x="60" dy="25">预训练 · 概率生成</tspan></text>
+        <text class="map-stage-sub" x="42" y="392">当前进度</text>
+        <text class="map-module-title" x="42" y="422">02 / Embedding</text>
+        <text class="map-module-text" x="42" y="450"><tspan x="42" dy="0">下一步：参数</tspan><tspan x="42" dy="24">模型“学会”的东西存在哪里？</tspan></text>
 
-      <div class="logic-stage">
-        <div class="logic-stage-label"><small>STAGE 02</small><strong>再看懂模型</strong></div>
-        <div class="logic-stage-body cols-3">
-          <div class="logic-module"><small>MODULE 02</small><h3>Transformer</h3><p>Attention · 自注意力 · Q/K/V · 多头注意力 · 位置编码 · 前馈网络 · Decoder-only</p></div>
-          <div class="logic-module"><small>MODULE 03</small><h3>模型如何炼成</h3><p>训练数据 · SFT · RLHF · DPO · 合成数据 · 蒸馏 · 后训练 · 评测</p></div>
-          <div class="logic-module"><small>MODULE 04</small><h3>能力与推理</h3><p>上下文窗口 · 采样 · 幻觉 · 推理模型 · KV Cache · MoE · 多模态</p></div>
-        </div>
-      </div>
-      <div class="logic-arrow" aria-hidden="true"></div>
+        <rect class="map-stage" x="330" y="35" width="255" height="580" rx="12"/>
+        <text class="map-stage-title" x="352" y="72">第二阶段｜再看懂模型</text>
+        <text class="map-stage-sub" x="352" y="96">模型如何处理、训练并形成能力</text>
+        <rect class="map-module" x="352" y="125" width="211" height="125" rx="10"/>
+        <text class="map-module-no" x="370" y="151">MODULE 02</text><text class="map-module-title" x="370" y="180">Transformer</text>
+        <text class="map-module-text" x="370" y="207"><tspan x="370">Attention · Q/K/V</tspan><tspan x="370" dy="22">位置编码 · Decoder-only</tspan></text>
+        <rect class="map-module" x="352" y="270" width="211" height="125" rx="10"/>
+        <text class="map-module-no" x="370" y="296">MODULE 03</text><text class="map-module-title" x="370" y="325">模型如何炼成</text>
+        <text class="map-module-text" x="370" y="352"><tspan x="370">训练数据 · SFT · RLHF/DPO</tspan><tspan x="370" dy="22">合成数据 · 蒸馏 · 评测</tspan></text>
+        <rect class="map-module" x="352" y="415" width="211" height="125" rx="10"/>
+        <text class="map-module-no" x="370" y="441">MODULE 04</text><text class="map-module-title" x="370" y="470">能力与推理</text>
+        <text class="map-module-text" x="370" y="497"><tspan x="370">上下文 · 采样 · 幻觉</tspan><tspan x="370" dy="22">推理模型 · KV Cache · MoE</tspan></text>
 
-      <div class="logic-stage">
-        <div class="logic-stage-label"><small>STAGE 03</small><strong>再看懂应用</strong></div>
-        <div class="logic-stage-body cols-2">
-          <div class="logic-module"><small>MODULE 05</small><h3>RAG 与智能体</h3><p>向量数据库 · 检索增强 · 工具调用 · Agent · Memory · MCP · 跨应用操作</p></div>
-          <div class="logic-module"><small>MODULE 06</small><h3>部署与基础设施</h3><p>API · 本地部署 · 量化 · GPU · 训练与推理成本 · 云边端 · 模型服务链</p></div>
-        </div>
-      </div>
-      <div class="logic-arrow" aria-hidden="true"></div>
+        <rect class="map-stage" x="640" y="35" width="255" height="580" rx="12"/>
+        <text class="map-stage-title" x="662" y="72">第三阶段｜再看懂应用</text>
+        <text class="map-stage-sub" x="662" y="96">模型怎样连接知识、工具和基础设施</text>
+        <rect class="map-module" x="662" y="155" width="211" height="145" rx="10"/>
+        <text class="map-module-no" x="680" y="181">MODULE 05</text><text class="map-module-title" x="680" y="210">RAG 与智能体</text>
+        <text class="map-module-text" x="680" y="237"><tspan x="680">向量数据库 · 检索增强</tspan><tspan x="680" dy="22">工具调用 · Agent · MCP</tspan><tspan x="680" dy="22">跨应用操作</tspan></text>
+        <rect class="map-module" x="662" y="330" width="211" height="145" rx="10"/>
+        <text class="map-module-no" x="680" y="356">MODULE 06</text><text class="map-module-title" x="680" y="385">部署与基础设施</text>
+        <text class="map-module-text" x="680" y="412"><tspan x="680">API · 本地部署 · 量化</tspan><tspan x="680" dy="22">GPU · 成本 · 云边端</tspan><tspan x="680" dy="22">模型服务链</tspan></text>
 
-      <div class="logic-stage">
-        <div class="logic-stage-label"><small>STAGE 04</small><strong>最后进入治理</strong></div>
-        <div class="logic-stage-body cols-2">
-          <div class="logic-module"><small>MODULE 07</small><h3>安全与失效</h3><p>Prompt Injection · 越狱 · 数据投毒 · 模型抽取 · 隐私泄露 · 权限 · 沙箱 · 评测</p></div>
-          <div class="logic-module"><small>MODULE 08</small><h3>技术到法律</h3><p>可解释 · 可审计 · 责任链 · 数据跨境 · 平台化 · 互操作 · 行政使用 · 持续监管</p></div>
-        </div>
-      </div>
+        <rect class="map-stage" x="950" y="35" width="230" height="580" rx="12"/>
+        <text class="map-stage-title" x="972" y="72">第四阶段｜进入治理</text>
+        <text class="map-stage-sub" x="972" y="96">风险和法律责任落在哪个节点</text>
+        <rect class="map-module" x="972" y="155" width="186" height="145" rx="10"/>
+        <text class="map-module-no" x="990" y="181">MODULE 07</text><text class="map-module-title" x="990" y="210">安全与失效</text>
+        <text class="map-module-text" x="990" y="237"><tspan x="990">提示注入 · 越狱 · 投毒</tspan><tspan x="990" dy="22">模型抽取 · 隐私泄露</tspan><tspan x="990" dy="22">权限 · 沙箱 · 评测</tspan></text>
+        <rect class="map-module" x="972" y="330" width="186" height="165" rx="10"/>
+        <text class="map-module-no" x="990" y="356">MODULE 08</text><text class="map-module-title" x="990" y="385">技术到法律</text>
+        <text class="map-module-text" x="990" y="412"><tspan x="990">可解释 · 可审计 · 责任链</tspan><tspan x="990" dy="22">数据跨境 · 平台化</tspan><tspan x="990" dy="22">互操作 · 行政使用</tspan><tspan x="990" dy="22">持续监管</tspan></text>
+      </svg>
     </div>
+    <p class="course-map-note">读图方法：左边是最基础的“模型怎样接收信息”，中间是“模型怎样工作和形成能力”，再往右是“模型怎样进入真实系统”，最右边才进入安全和法治。后面的概念可以在前面偶尔出现，但只做一句话备注，不要求提前掌握。</p>
+    <div class="logic-summary"><strong>最终目标不是背术语，而是能沿着技术链条追责任。</strong><p>面对一个AI法律问题时，能够具体追问：数据在哪一步被转换？模型在哪一步计算？谁给了系统权限？是否连接外部服务？风险来自模型、工具调用还是基础设施？</p></div>
+  </section>
 
-    <div class="logic-summary"><strong>最终要建立的不是“术语记忆”，而是技术链条。</strong><p>看到一个法律问题时，能够反过来追问：信息在哪一步被转换？模型在哪一步作出计算？谁给了系统权限？数据有没有进入外部服务？风险来自模型本身、工具调用还是基础设施？责任应当落在哪个节点？</p></div>
-    <div class="course-method-note"><div><b>输入</b><span>文字怎样变成模型能处理的内容</span></div><div><b>模型</b><span>信息怎样被处理、学习和生成</span></div><div><b>行动</b><span>模型怎样调用知识、工具和外部系统</span></div><div><b>治理</b><span>风险、权限、证据和责任怎样落到具体环节</span></div></div>
+  <section class="lesson-section tech-history">
+    <div class="tech-history-head"><h2>历史课程</h2><span>按课程顺序持续更新</span></div>
+    <div class="tech-history-list">
+      <a class="tech-history-item" href="tech-basics/2026-09-13-embedding.html"><div class="tech-history-no">02</div><div><div class="tech-history-title">Embedding：模型怎样把 Token 变成可计算的一组数字？</div><div class="tech-history-desc">从 Token ID 到一组可计算数字，第一次正面讲清“向量”是什么。</div></div><div class="tech-history-date">2026.09.13</div></a>
+      <a class="tech-history-item" href="tech-basics/2026-09-12-token.html"><div class="tech-history-no">01</div><div><div class="tech-history-title">Token：模型怎样把一句话拆成可处理的小片段</div><div class="tech-history-desc">从文字进入模型的第一步开始，建立 Token、编号与切分规则的基本直觉。</div></div><div class="tech-history-date">2026.09.12</div></a>
+    </div>
   </section>
 </div>
 </main>
