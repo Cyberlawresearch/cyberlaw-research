@@ -79,12 +79,18 @@ def validate(m):
     assert len(home.select('a[href="archive.html"]'))==1
     home_tech=next((x for x in home.select('.navlinks a') if x.get_text(strip=True)==TECH_LABEL),None)
     assert home_tech is not None and target('index.html',home_tech.get('href'))==TECH_PATH,TECH_LABEL
-    tech_card=home.select_one('.portal-card-tech[href="tech-basics.html"]')
+    tech_card=home.select_one('.portal-card-tech')
     assert tech_card is not None and '网信法技术基础' in tech_card.get_text(' ',strip=True)
+    latest_tech=target('index.html',tech_card.get('href'))
+    assert latest_tech and latest_tech.startswith('tech-basics/') and latest_tech.endswith('.html')
+    assert (ROOT/latest_tech).is_file(),latest_tech
+    latest_doc=soup(latest_tech)
+    assert latest_doc.select_one('main h1') and 'Embedding' in latest_doc.select_one('main h1').get_text()
     assert tech_card.select_one('.home-course-path') is not None
     tech_page=soup(TECH_PATH)
-    assert tech_page.select_one('.course-logic') is not None
-    assert len(tech_page.select('.logic-module'))==8
+    assert tech_page.select_one('svg.course-map-svg') is not None
+    assert len(tech_page.select('.tech-history-item'))>=2
+    assert tech_page.select_one(f'a[href="{latest_tech}"]') is not None
     assert (ROOT/TECH_CSS).is_file()
     for p,listing in zip(paths,HISTORIES):
         first=soup(listing).select_one('.issue-list .issue-row')
@@ -100,14 +106,16 @@ def validate(m):
     works=docs[3].select('.brief-item');assert len(works)==m['newworks_count']==5
     assert len(docs[1].select_one('.article-body').get_text(' ',strip=True))>=2500
     assert len(docs[2].select_one('.article-body').get_text(' ',strip=True))>=4500
-    return {'date':m['date'],'page_dates':m['page_dates'],'pages':paths,'news':len(news),'newworks':len(works),'tech_basics':'passed','status':'passed'}
+    return {'date':m['date'],'page_dates':m['page_dates'],'pages':paths,'news':len(news),'newworks':len(works),'tech_basics':latest_tech,'status':'passed'}
 
 def read_url(url):
     req=Request(url,headers={'User-Agent':'cyberlaw-current-columns-gate'})
     with urlopen(req,timeout=20) as r:return r.read()
 
 def remote_check(m,base):
-    base=base.rstrip('/')+'/';paths=['index.html','archive.html',*HISTORIES,TECH_PATH,TECH_CSS,*m['pages'].values(),'data/current-edition.json']
+    base=base.rstrip('/')+'/'
+    home=soup('index.html');tech_card=home.select_one('.portal-card-tech');latest_tech=target('index.html',tech_card.get('href'))
+    paths=['index.html','archive.html',*HISTORIES,TECH_PATH,TECH_CSS,latest_tech,*m['pages'].values(),'data/current-edition.json']
     for attempt in range(12):
         try:
             if json.loads(read_url(urljoin(base,'data/current-edition.json')+'?v='+str(attempt)))==m:break
@@ -123,7 +131,7 @@ def remote_check(m,base):
             except Exception:pass
             time.sleep(5)
         else:raise AssertionError('deployed page differs: '+path)
-    return {'remote':'passed','base':base}
+    return {'remote':'passed','base':base,'tech_basics':latest_tech}
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--sync-nav',action='store_true');p.add_argument('--base');args=p.parse_args()
