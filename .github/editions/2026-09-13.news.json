@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-13",
+  "column": "brief",
+  "state": "verified",
+  "page": "articles/2026-09-13-tech-law-brief.html",
+  "news_count": 18,
+  "checked_at": "2026-09-13T20:36:22+08:00",
+  "last_news_scan_at": "2026-09-13T20:30:00+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true
+  },
+  "deduplication_notes": [
+    "韩国扩大间谍罪事项与2026-09-12预告属于同一事项，本期仅因2026-09-13法律正式生效而以‘新增进展’再次收录，并明确新增事实。",
+    "Humboldt Merchant Services事项仅以2026-09-11法院正式签发和解命令作为新增进展，不重复包装2026-09-08 FTC投诉与拟议和解。",
+    "已排除2026-09-12已发布的工信部人工智能+软件专项行动、智能网联新能源汽车规划、算力网部署、新墨西哥AI虚假证言制裁等事项。"
+  ],
+  "source_policy": "重大法律状态优先官方或法院/监管一手材料；外国媒体条目保存原始题名与媒体名称，不反向翻译虚构英文题名。",
+  "content_blob_sha": "4313c3bdc4aac0d01ff9c1288f8ec94b8ebf0ea4"
+}
