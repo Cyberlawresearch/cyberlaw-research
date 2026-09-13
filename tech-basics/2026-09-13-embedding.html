@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>第02课｜Embedding：模型怎样把 Token 变成可计算的一组数字？｜网信法技术基础</title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+  <link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-09-13-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-09-13-balkin-information-fiduciaries.html">域外法学论文精读</a><a href="../articles/2026-09-13-pasquale-black-box-society.html">法学经典著作</a><a href="../articles/2026-09-13-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 02 · 基础积木 · 2026.09.13</div><h1>Embedding：模型怎样把 Token 变成可计算的一组数字？</h1><p class="tech-lead">今天只解决一个问题：上一课里 Token 已经有了编号，为什么还不能直接交给模型计算，而要再变成一组数字？</p></div></section>
+<div class="tech-shell">
+  <section class="lesson-focus">
+    <div><strong>先把 Embedding 记成一句人话</strong><p><strong>Embedding 就是把一个 Token 转成一组可供模型计算的数字。</strong>模型不是靠“看懂文字”工作，而是不断对数字做计算，所以 Token 进入模型主体之前，还要先完成这一步。</p></div>
+    <div><strong>这一课先不要求你懂</strong><p>你会看到“向量”这个词。今天先把它理解成<strong>“一组有顺序的数字”</strong>即可，不需要学线性代数；后面遇到向量数据库、相似度等内容时再继续展开。</p></div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>一、为什么 Token 有了编号还不够？</h2>
+    <p>上一课讲过，一段文字会先被拆成 Token，每个 Token 又对应一个编号。例如，我们可以假设“法律”这个 Token 的编号是 317，“模型”的编号是 842。这里的 317 和 842 只是<strong>标签</strong>：它们告诉系统“这是哪个 Token”，却没有直接告诉模型这些 Token 之间有什么关系。</p>
+    <p>如果把编号直接当成大小来理解，就会产生荒谬结果：编号 842 并不比编号 317“更重要”，也不意味着两个编号相差 525，就代表两个词的意义相差 525。<strong>编号只负责认人，Embedding 才开始给模型提供可以用于计算的表示。</strong></p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>二、先看一个最简单的例子</h2>
+    <p>为了建立直觉，可以把 Embedding 想成一张很大的“数字表”。每一个 Token 编号，都能在表里找到属于自己的一行数字。</p>
+    <div class="visual-board">
+      <div class="visual-title">仅为机制示意，真实模型通常会使用更多数字</div>
+      <div class="flow">
+        <div class="flow-box"><strong>① Token</strong><span>“法律”</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>② Token ID</strong><span>假设编号是 317</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>③ 查 Embedding 表</strong><span>找到第 317 行</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>④ 得到一组数字</strong><span>[0.21, -0.48, 0.73, 0.06 …]</span></div>
+      </div>
+      <p class="tiny-note">这些数字只是示意，不是任何真实模型里“法律”这个 Token 的实际数值。</p>
+    </div>
+    <p>模型接下来真正拿去计算的，不再只是“317”这个编号，而是这一整组数字。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>三、“向量”到底是什么意思？</h2>
+    <p>在大模型资料里，你很快会看到一句话：“Embedding 把 Token 映射成向量。”如果第一次学，很容易被“向量”两个字吓住。</p>
+    <p>今天先用最简单的定义：<strong>向量就是一组有顺序的数字。</strong>例如 <strong>[0.21, -0.48, 0.73, 0.06]</strong> 就可以看成一个很短的向量。真实模型中的向量往往更长，可能包含几百、几千甚至更多个数字。</p>
+    <div class="callout"><strong>新词备注｜维度</strong><br/>一组数字里有多少个位置，通常会被称为多少“维”。例如 [0.2, 0.5, -0.1] 有三个数字，可以先理解成“三维”。今天只需要知道这个意思，不需要做任何数学计算。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>四、这些数字是谁写进去的？</h2>
+    <p>通常不是工程师给每个词手工填写一串数字。模型训练开始时，这些数字可以先被初始化，然后随着训练不断调整。模型在大量训练样本中反复尝试预测、纠错，Embedding 表里的数字也会跟着变化。</p>
+    <p>因此，一个训练完成的模型，其 Embedding 中往往已经保存了某些从训练中学到的关系。早期词向量研究就发现，经过训练后，词语之间的语义和语法关系可以在数字表示的相对位置中表现出来。现代大模型的内部机制更复杂，但基本直觉仍然成立：<strong>这些数字不是身份证号，而是模型学习过程的一部分。</strong></p>
+    <div class="compare-grid">
+      <div class="compare-card"><b>Token ID</b><p>回答“它是哪一个 Token”。主要作用是索引和定位。</p></div>
+      <div class="compare-card"><b>Embedding</b><p>回答“模型从哪一组数字开始处理这个 Token”。这些数字会参与后续计算。</p></div>
+      <div class="compare-card"><b>后续计算</b><p>模型还会结合位置和上下文继续改变内部表示，因此 Embedding 只是进入模型时的起点。</p></div>
+    </div>
+    <div class="callout"><strong>新词预告｜上下文表示</strong><br/>同一个 Token 在进入模型时可以从同一组初始数字出发，但放进不同句子后，模型会结合前后文继续计算，形成不同的内部表示。后面讲 Transformer、Attention 时再解释它是怎么做到的。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>五、理解清楚以后，再看三个常见误解</h2>
+    <div class="myth-list">
+      <div class="myth"><b>误解 01</b><span>“Embedding 就是给每个词编一个更复杂的号码。”——不对。号码只是身份标签；Embedding 中的一组数字会直接参与模型计算，并在训练中被调整。</span></div>
+      <div class="myth"><b>误解 02</b><span>“一个 Token 的 Embedding 就是它在任何句子里的最终含义。”——不对。Embedding 是初始表示，真正进入模型后还会结合上下文继续变化。</span></div>
+      <div class="myth"><b>误解 03</b><span>“只要把文本变成 Embedding，就已经匿名化。”——不能这样判断。Embedding 改变了数据形式，但是否还能关联、推断或还原原始内容，要结合具体模型、访问条件和使用方式判断。</span></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>六、为什么网信法研究者要知道 Embedding？</h2>
+    <div class="law-bridge">
+      <h3>最直接的问题：数据变成“一串数字”，不等于法律上的风险已经消失。</h3>
+      <p>在企业知识库、模型训练和AI服务中，文字、文档或用户内容可能被转换成 Embedding 后再保存或调用。从外观上看，它已经不再是一段可以直接阅读的文字，但法律判断不能停在“看起来不是原文”这一层。</p>
+      <p>真正需要继续追问的是：谁掌握生成这些数字的模型和技术条件？这些数字能否与原始文本、用户身份或其他数据重新关联？系统是否利用这些表示继续进行检索、分类、推荐或推断？<strong>因此，“向量化”“Embedding 化”首先是一种技术表示变化，而不是自动取得匿名化法律效果。</strong></p>
+    </div>
+    <p>这也意味着，未来分析模型服务中的数据流时，不能只画“用户 → 模型”一条线。还要看数据是否被转换成 Embedding、保存在哪里、由谁控制、是否进入外部服务，以及这些表示后来被用于什么功能。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>七、这一课只需要带走三句话</h2>
+    <div class="lesson-focus">
+      <div><strong>第一句</strong><p>Embedding 是把 Token 变成一组可供模型计算的数字。</p></div>
+      <div><strong>第二句</strong><p>“向量”今天先理解成一组有顺序的数字；Token ID 是编号，Embedding 是实际参与计算的表示。</p></div>
+    </div>
+    <div class="callout"><strong>第三句：</strong>Embedding 会在训练中形成和调整，但它只是进入模型时的起点，之后还会随着上下文继续变化。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>研究延伸</h2>
+    <div class="research-grid">
+      <div class="research-card"><small>论文问题</small><h3>语义表示转换与个人信息可识别性的规范判断</h3><p>可以进一步研究：原始文本被转换为 Embedding 后，法律上应如何判断其个人信息属性？可识别性是否应当考虑模型持有情况、关联能力、还原成本、推断用途以及数据控制者实际能够调用的技术条件？</p></div>
+      <div class="research-card"><small>智库问题</small><h3>政企AI知识库中的 Embedding 数据安全治理</h3><p>可针对企业内部文档、政务材料和用户输入被转换成 Embedding 后的存储、调用、共享和外部模型接入问题，建立“原文—Embedding—检索结果—模型调用”的完整数据流审计要求。</p></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>原始材料</h2>
+    <ul class="source-links">
+      <li><a href="https://docs.pytorch.org/docs/main/nn.html#torch.nn.Embedding">PyTorch：nn.Embedding 文档</a>——将固定词表中的索引映射到一组可训练的数字表示。</li>
+      <li><a href="https://arxiv.org/abs/1706.03762">Vaswani et al. (2017), Attention Is All You Need</a>——Transformer 模型使用 learned embeddings 将输入与输出 Token 转换为连续表示。</li>
+      <li><a href="https://arxiv.org/abs/1301.3781">Mikolov et al. (2013), Efficient Estimation of Word Representations in Vector Space</a>——早期经典工作，展示如何从大规模文本中学习连续的词表示及其语义、语法关系。</li>
+    </ul>
+  </section>
+
+  <div class="next-lesson"><div><div class="tech-kicker">PREVIOUS · LESSON 01</div><a href="2026-09-12-token.html">Token：模型怎样把一句话拆成可处理的小片段</a></div><div><div class="tech-kicker">NEXT · LESSON 03</div><strong>参数：模型“学会”的东西到底存在哪里？</strong></div></div>
+</div>
+</main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body>
+</html>
