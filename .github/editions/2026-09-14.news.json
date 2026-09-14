@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-14",
+  "column": "brief",
+  "state": "verified",
+  "page": "articles/2026-09-14-tech-law-brief.html",
+  "news_count": 18,
+  "checked_at": "2026-09-14T19:35:30+08:00",
+  "last_news_scan_at": "2026-09-14T19:34:00+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true
+  },
+  "deduplication_notes": [
+    "已与2026-09-13完整简报逐条核对，并回查近7日历史；Revolut伪造政府请求导致客户数据泄露等2026-09-13已发布事项未重复收录。",
+    "BIS事项属于新增进展：2026-09-10既有讲话已提示AI投资金融稳定风险；2026-09-14新报告进一步形成对市场脆弱性和高杠杆融资结构的正式评估，并补充新的融资数据。",
+    "Anthropic相关事项与2026-09-11滥用报告不同：本期只收录2026-09-14中国外交部对Anthropic CEO限制中国AI发展主张的新正式回应。",
+    "欧盟Data Act条目仅写明Article 3(1)对2026-09-12后上市联网产品开始适用，不将其误写为整部Data Act于2026年首次生效。",
+    "完成韩国、日本、越南当地语言检索；韩国个人信息出境制度说明会达到收录门槛，日本、越南本轮未发现优先级更高且通过去重的新增事项。"
+  ],
+  "source_policy": "重大法律状态优先官方、法规、监管或议会一手材料；媒体条目保留原始英文或当地语言题名与媒体名称，不从中文标题反推外文原题；最终发布前已重扫最近1—2小时官方与主流媒体来源。",
+  "content_blob_sha": "2a0e9475bc431c2ccd1b4ba222dc89f9896956a1"
+}
