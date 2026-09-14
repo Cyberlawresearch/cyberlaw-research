@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>第03课｜参数：模型“学会”的东西到底存在哪里？｜网信法技术基础</title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+  <link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-09-14-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-09-14-wachter-mittelstadt-reasonable-inferences.html">域外法学论文精读</a><a href="../articles/2026-09-14-lessig-code-version-2.html">法学经典著作</a><a href="../articles/2026-09-14-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 03 · 基础积木 · 2026.09.14</div><h1>参数：模型“学会”的东西到底存在哪里？</h1><p class="tech-lead">今天只解决一个问题：训练一个模型时，到底有什么东西被改变并保留下来，以至于训练结束后模型表现得像是“学会”了某些规律？</p></div></section>
+<div class="tech-shell">
+  <section class="lesson-focus">
+    <div><strong>先把“参数”记成一句人话</strong><p><strong>参数就是模型内部会在训练中被调整、之后参与计算的一批数字。</strong>训练的一个核心过程，就是不断改变这些数字，让模型在训练任务上的预测逐渐变好。</p></div>
+    <div><strong>这一课先不要求你懂</strong><p>你会看到“权重”“梯度”“优化器”这些词。今天只需要知道：<strong>权重通常是参数的一种；梯度告诉训练过程“往哪个方向改”；优化器负责按一定规则真正更新参数。</strong>数学细节后面再讲。</p></div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>一、模型“学会”东西，首先意味着哪些数字变了</h2>
+    <p>上一课讲到，Token 会先变成一组可以计算的数字。接下来，这些数字要经过模型内部很多层计算。每一层里都有大量可以调整的数值，用来决定不同输入会怎样影响下一步计算。训练开始前，这些数值还没有形成我们希望的能力；训练过程中，它们会被反复修改。</p>
+    <p>因此，说一个模型“训练好了”，并不是说工程师把答案一条条写进了模型，也不是把训练材料原样塞进一个隐藏数据库。更准确地说，<strong>训练数据通过一次次预测和纠错，改变了模型内部的大量参数；这些参数共同影响模型之后会怎样处理新的输入。</strong></p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>二、先看最简单的训练循环</h2>
+    <div class="visual-board">
+      <div class="visual-title">把训练想成“做题—对答案—改数字—再做题”</div>
+      <div class="flow">
+        <div class="flow-box"><strong>① 输入样本</strong><span>给模型一段训练数据</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>② 模型预测</strong><span>用当前参数计算结果</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>③ 计算误差</strong><span>看结果离目标有多远</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>④ 更新参数</strong><span>把内部数字调一点</span></div>
+      </div>
+      <p class="tiny-note">这个过程会重复很多次。真实训练还涉及批次、学习率、优化算法等细节，今天先不展开。</p>
+    </div>
+    <p>这里最值得抓住的是第四步：模型的“学习”必须留下某种可以延续到下一次计算的变化。对常见神经网络来说，这种变化主要就保存在被训练更新后的参数值里。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>三、“权重”又是什么？</h2>
+    <p>大模型资料里经常把“参数”和“权重”混着说。为了今天的理解，可以先把<strong>权重</strong>看成参数中最常见的一类数字：它决定某个输入或中间结果在后续计算中产生多大影响。很多层还会有“偏置”等其他可训练参数。</p>
+    <div class="compare-grid">
+      <div class="compare-card"><b>参数（parameter）</b><p>总称。指模型中能够被训练过程调整、并参与计算的数值。</p></div>
+      <div class="compare-card"><b>权重（weight）</b><p>常见的一类参数。日常说“模型权重”时，往往也泛指一整套已经训练好的参数值。</p></div>
+      <div class="compare-card"><b>参数量</b><p>模型拥有多少个这类可学习数值。它说明模型规模的一部分，但不能单独代表模型一定更聪明。</p></div>
+    </div>
+    <div class="callout"><strong>新词备注｜梯度与优化器</strong><br/>今天只把梯度理解成“告诉训练过程参数往哪个方向调整、影响有多大的一类信号”；优化器则按照既定规则利用这些信号更新参数。后面讲训练时再展开。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>四、参数和训练数据是什么关系？</h2>
+    <p>这是最容易产生误解的地方。训练数据会影响参数，但<strong>参数不是训练数据的逐条副本</strong>。一个大模型学到的语言规律、概念关系和任务能力，通常分散在大量参数共同构成的计算结构中，很难说“第某个参数就保存了某一句知识”。</p>
+    <p>但反过来也不能说参数与训练数据完全没有关系。模型可能从训练材料中记住某些罕见片段，或者在特定条件下复现训练内容。是否发生记忆、能否提取以及风险有多大，需要结合具体模型和测试判断。<strong>“参数不是数据库”与“模型绝不会泄露训练信息”是两件不同的事。</strong></p>
+    <p>模型发布时常见的“权重文件”或检查点（checkpoint），本质上就是把一组训练完成后的参数值保存下来。拿到这些文件并在匹配的模型结构中加载后，模型已经学到的许多能力就可以被重新运行出来。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>五、训练和推理最大的区别之一：参数还改不改</h2>
+    <p>在典型的预训练或微调过程中，模型先进行计算，再根据误差更新参数；而在普通推理阶段，用户输入一个问题时，模型通常只是使用已经训练好的参数完成计算，<strong>不会因为每一次普通对话就自动把全部参数重新训练一遍</strong>。</p>
+    <p>这也是为什么“模型记忆”要分清不同机制：有的系统把对话写进外部数据库或用户记忆，有的系统通过后续微调更新参数，还有的只是把当前对话放进上下文窗口。它们都会让系统表现得像“记住了”，但数据位置、控制主体和法律风险完全不同。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>六、理解清楚以后，再看三个常见误解</h2>
+    <div class="myth-list">
+      <div class="myth"><b>误解 01</b><span>“参数就是把训练语料压缩后存进去。”——不准确。训练材料会塑造参数，但参数不是按文档或句子逐条保存的文本库。</span></div>
+      <div class="myth"><b>误解 02</b><span>“参数越多，模型就一定越好。”——不对。参数量只是规模指标之一，数据质量、训练方法、模型结构和推理方式都会影响实际能力。</span></div>
+      <div class="myth"><b>误解 03</b><span>“模型每回答一次问题，就会自动把这次对话写进参数。”——通常不是。普通推理一般使用固定参数；是否另行保存对话或用于后续训练，要看具体服务设计。</span></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>七、为什么网信法研究者要知道参数？</h2>
+    <div class="law-bridge">
+      <h3>最直接的问题：模型文件不是普通软件文件，它携带了训练后形成的能力。</h3>
+      <p>在开源模型、模型出境、云端部署、模型抽取和供应链管理中，真正被复制、下载或交付的往往不只是程序代码，还包括已经训练好的参数。相同的模型结构，如果没有相应权重，通常不能直接复现同样的能力。</p>
+      <p>因此，判断模型资产、能力扩散或安全风险时，需要区分<strong>代码、模型结构、参数/权重、训练数据和运行时数据</strong>。但也要反过来避免过度推断：仅仅拿到参数文件，并不能自动说明模型用了哪些具体数据、是否取得授权或某一条信息来自哪里。数据来源审计仍需要训练记录、数据清单、版本信息和处理流程等其他证据。</p>
+    </div>
+    <p>这个区分还会影响责任链分析：训练方负责形成和更新参数，模型提供者可能分发权重，部署方决定如何加载和配置模型，应用方又可能增加外部知识库和工具权限。把这些环节混成一个“AI系统”，很容易把实际控制能力和责任主体判断错。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>八、这一课只需要带走三句话</h2>
+    <div class="lesson-focus">
+      <div><strong>第一句</strong><p>参数是模型内部会在训练中被调整、之后参与计算的一批数字。</p></div>
+      <div><strong>第二句</strong><p>训练数据会塑造参数，但参数不是把训练材料逐条存起来的文本数据库。</p></div>
+    </div>
+    <div class="callout"><strong>第三句：</strong>普通推理通常使用已经固定的参数计算答案；是否保存对话、形成长期记忆或继续训练，是另外的系统机制。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>研究延伸</h2>
+    <div class="research-grid">
+      <div class="research-card"><small>论文问题</small><h3>模型参数能否成为独立的法律规制对象？</h3><p>可研究参数文件在模型能力控制、商业秘密、数据保护、出口管制和安全评估中的不同法律属性，以及“代码—权重—数据”应当如何区分规制。</p></div>
+      <div class="research-card"><small>智库问题</small><h3>建立大模型版本与权重流转审计机制</h3><p>可围绕训练主体、基础模型版本、参数更新、微调记录、权重交付、部署位置和访问权限建立可追溯链条，解决同名模型不同版本难以识别的问题。</p></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>原始材料</h2>
+    <ul class="source-links">
+      <li><a href="https://docs.pytorch.org/docs/stable/generated/torch.nn.parameter.Parameter.html">PyTorch：Parameter 文档</a>——说明参数对象如何被模块登记并参与模型训练。</li>
+      <li><a href="https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html">PyTorch：Automatic Differentiation with torch.autograd</a>——展示损失、梯度与参数更新之间的基本关系。</li>
+      <li><a href="https://huggingface.co/docs/transformers/main_classes/model">Hugging Face Transformers：Model 文档</a>——可查看预训练模型权重的加载、保存与 state dict 机制。</li>
+      <li><a href="https://developers.google.com/machine-learning/glossary">Google Machine Learning Glossary</a>——可查 model、parameter、weight、inference 等基础概念。</li>
+    </ul>
+  </section>
+
+  <div class="next-lesson"><div><div class="tech-kicker">PREVIOUS · LESSON 02</div><a href="2026-09-13-embedding.html">Embedding：模型怎样把 Token 变成可计算的一组数字？</a></div><div><div class="tech-kicker">NEXT · LESSON 04</div><strong>训练与推理：模型什么时候在学习，什么时候只是在回答？</strong></div></div>
+</div>
+</main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body>
+</html>
