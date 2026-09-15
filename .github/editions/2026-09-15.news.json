@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-15",
+  "column": "brief",
+  "state": "verified",
+  "page": "articles/2026-09-15-tech-law-brief.html",
+  "news_count": 18,
+  "checked_at": "2026-09-15T19:17:17+08:00",
+  "last_news_scan_at": "2026-09-15T19:17:17+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true
+  },
+  "deduplication_notes": [
+    "已与2026-09-14完整简报逐条做事件级核对，并回查近7日历史；未重复收录网安周开幕及《人工智能安全治理框架》3.0、欧盟公共部门生成式AI试点、韩国个人信息出境制度说明会、澳大利亚议会AI联合委员会征集等已发布事项。",
+    "微软学生AI隐私协议与微软AI行为准则属于不同主体关系和不同治理动作，分别保留；特朗普AI减速立场、英国前沿AI讨论等与前一日事件高度重合的二次报道未重复收录。",
+    "已对韩国、日本、越南使用当地语言检索：韩国智能体安全指南核对KISA正式说明及Reuters原题；日本经产省AI合同案例征集核对日文原题和METI原始链接；越南国家数字总体架构实施核对越文报道及政府决定。"
+  ],
+  "source_policy": "重大法律状态优先使用官方原始文件；无法直接访问或尚无公开一手稿件时使用Reuters、AP、The Guardian、BNEWS／越南通讯社等可靠来源，并在正文准确区分正式规则、草案、政策回应、企业准则和媒体报道。最终发布前已重扫最近1—2小时的重要官方、司法、监管、主流媒体及法律/安全专业来源。",
+  "content_blob_sha": "d0b0949607d21c29e3e08aa522729ef0de9fced7"
+}
