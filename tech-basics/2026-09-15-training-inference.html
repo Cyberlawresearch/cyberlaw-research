@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>第04课｜训练与推理：模型什么时候在学习，什么时候只是在回答？｜网信法技术基础</title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+  <link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-09-14-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-09-14-wachter-mittelstadt-reasonable-inferences.html">域外法学论文精读</a><a href="../articles/2026-09-14-lessig-code-version-2.html">法学经典著作</a><a href="../articles/2026-09-14-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 04 · 基础积木 · 2026.09.15</div><h1>训练与推理：模型什么时候在学习，什么时候只是在回答？</h1><p class="tech-lead">今天只解决一个问题：同样是把数据送进模型，什么时候会改变模型本身，什么时候只是用已经训练好的模型算出一个结果？</p></div></section>
+<div class="tech-shell">
+  <section class="lesson-focus">
+    <div><strong>先把“训练”记成一句人话</strong><p><strong>训练就是让模型做题、看误差，再根据误差调整参数。</strong>训练结束后，模型内部的一部分数字已经被改过，所以之后面对新输入时会表现出不同能力。</p></div>
+    <div><strong>再把“推理”记成一句人话</strong><p><strong>推理就是使用已经训练好的参数处理一个新输入并产生结果。</strong>普通推理通常不会因为这一次提问，就立刻把模型的参数重新训练一遍。</p></div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>一、先用一个直观例子分清两件事</h2>
+    <p>可以把训练想成学生平时做练习题。学生做完一道题，拿到答案，发现哪里错了，再改变自己的解题方法。这个“做题—发现错误—调整方法”的过程，会让下一次表现发生变化。</p>
+    <p>推理更像考试或正式答题。学生拿到一道从没见过的新题，直接使用已经形成的知识和方法作答。<strong>这一道题当然需要思考和计算，但“正在计算答案”不等于“正在重新学习整套知识”。</strong></p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>二、看一张图：训练比推理多了什么？</h2>
+    <div class="visual-board">
+      <div class="visual-title">两条流程最关键的区别，在于后面有没有“根据误差更新参数”</div>
+      <div class="compare-grid">
+        <div class="compare-card"><b>训练</b><p>训练数据 → 用当前参数计算结果 → 与目标比较 → 得到误差信号 → 调整参数 → 再继续训练</p></div>
+        <div class="compare-card"><b>推理</b><p>用户输入 → 用当前参数计算结果 → 生成回答或预测 → 返回结果</p></div>
+      </div>
+      <div class="flow" style="margin-top:18px">
+        <div class="flow-box"><strong>训练的共同前半段</strong><span>模型先根据输入算一个结果</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>只有训练继续往后走</strong><span>看结果错多少</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>计算怎样调整</strong><span>确定参数应该往哪个方向改</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>更新参数</strong><span>模型本身发生可延续的变化</span></div>
+      </div>
+    </div>
+    <p>所以训练和推理并不是两套完全没有关系的技术。两者都要让输入经过模型完成一轮计算；<strong>训练是在这之后继续计算误差并更新参数，而普通推理通常到“得到结果”就结束。</strong></p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>三、训练为什么需要“对答案”？</h2>
+    <p>训练必须知道当前结果好不好，否则就不知道参数应该怎么改。为此，训练过程会把模型输出与训练目标进行比较，并得到一个表示“当前错得有多大”的数值。</p>
+    <div class="callout"><strong>新词预告｜损失函数（loss function）</strong><br/>今天先把它理解成“把模型当前的错误程度变成一个可以计算的数字的方法”。下一课会专门讲：这个数字是怎么来的，为什么模型可以靠它学习。</div>
+    <p>有了误差信号后，训练程序还要判断哪些参数应该改、朝什么方向改，再真正执行更新。上一课提到的“梯度”和“优化器”就在这里发挥作用。今天不需要掌握数学，只要记住：<strong>训练之所以叫“学习”，不是因为模型看过了数据，而是因为数据最终推动参数发生了更新。</strong></p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>四、用户和大模型聊天时，模型是不是也在学习？</h2>
+    <p>通常不能仅凭“模型记得刚才说过的话”判断它正在训练。聊天产品可以通过多种机制让系统表现得像是“记住了”：当前对话可能继续放在上下文中；服务方可能把部分内容写入数据库；系统也可能建立单独的用户记忆。它们都可能影响后续回答，但<strong>这些机制与“立即更新模型参数”不是一回事。</strong></p>
+    <p>相反，如果服务方把用户数据收集起来，之后加入训练集，用于微调或者其他参数更新，那么这些内容才真正进入了后续训练流程。这里往往存在时间差：今天的对话发生在推理阶段，几天或几周后才可能被整理进训练数据。</p>
+    <div class="callout"><strong>新词备注｜微调</strong><br/>今天先把“微调”理解成“在一个已经训练好的模型基础上，再用一批数据继续训练，让部分参数进一步调整”。后面的训练与对齐模块会专门讲。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>五、理解清楚以后，再看三个常见误解</h2>
+    <div class="myth-list">
+      <div class="myth"><b>误解 01</b><span>“只要用户把内容输入模型，模型就已经用这些内容训练了自己。”——不准确。输入首先会被处理用于推理；是否另行保存并进入后续训练，要看具体服务的数据流程。</span></div>
+      <div class="myth"><b>误解 02</b><span>“不用于训练，就等于服务方完全不处理这些数据。”——也不对。即使只用于推理，数据仍可能需要被传输、计算、缓存或记录日志；是否保存以及保存多久，要另看系统设计。</span></div>
+      <div class="myth"><b>误解 03</b><span>“训练和推理使用的是完全不同的模型。”——通常不是。推理往往正是在使用训练形成的那套参数，只是不再执行训练所需的误差计算和参数更新流程。</span></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>六、为什么网信法研究者必须分清训练与推理？</h2>
+    <div class="law-bridge">
+      <h3>最直接的问题：同一份用户数据，进入“推理”还是进入“训练”，意味着完全不同的数据流和控制关系。</h3>
+      <p>如果数据只用于完成一次推理，核心事实问题是：数据传给谁、在哪个服务器计算、是否留下日志、是否调用其他模型或工具。若数据随后又进入训练，问题会继续延伸到训练集整理、版本控制、参数更新、模型发布和后续能力扩散。</p>
+      <p>因此，在隐私政策、企业AI采购、数据出境或内部保密审查中，不能只问一句“是否使用AI”。更值得追问的是：<strong>输入内容是否只用于当次推理？是否被留存？是否被回流为训练数据？如果用于训练，训练的是谁的模型、何时训练、产生了哪个新版本？</strong></p>
+    </div>
+    <p>这一区分也直接影响证据。要证明某段数据“用于训练”，仅凭它曾经被输入模型并不够；更有价值的材料通常包括训练数据清单、训练任务记录、模型版本、参数更新记录和数据处理日志。反过来，服务方声称“不用于训练”，也不能据此推出“数据不会被保存”或“不会发生跨境传输”。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>七、这一课只需要带走三句话</h2>
+    <div class="lesson-focus">
+      <div><strong>第一句</strong><p>训练的核心是：模型计算结果以后，还会根据误差调整参数。</p></div>
+      <div><strong>第二句</strong><p>推理的核心是：使用已经形成的参数处理新输入并产生结果，普通推理通常不立即更新整套模型参数。</p></div>
+    </div>
+    <div class="callout"><strong>第三句：</strong>“不用于训练”只回答了数据是否进入参数更新流程，不能自动回答数据是否被传输、保存、记录日志或用于其他处理。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>研究延伸</h2>
+    <div class="research-grid">
+      <div class="research-card"><small>论文问题</small><h3>训练与推理分离下生成式AI数据处理行为的规范分类</h3><p>可以研究同一份数据在即时推理、日志保存、用户记忆、后续微调和持续训练中的处理目的与控制关系如何变化，以及法律规则是否应当针对这些技术阶段分别识别处理行为和责任主体。</p></div>
+      <div class="research-card"><small>智库问题</small><h3>建立政企大模型“推理数据回流训练”审计机制</h3><p>可要求模型服务商明确区分推理链路与训练链路，记录用户输入是否留存、是否进入训练候选池、何时进入训练任务、影响哪个模型版本，并为“不用于训练”等承诺提供可核验的技术证据。</p></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>原始材料</h2>
+    <ul class="source-links">
+      <li><a href="https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html">PyTorch：Optimizing Model Parameters</a>——用完整训练循环说明模型预测、计算 loss、反向计算以及 optimizer 更新参数的基本过程。</li>
+      <li><a href="https://docs.pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html">PyTorch：A Gentle Introduction to torch.autograd</a>——解释前向计算与根据误差调整参数之间的关系，以及自动求导在训练中的作用。</li>
+      <li><a href="https://docs.pytorch.org/docs/main/optim.html">PyTorch：torch.optim</a>——官方文档明确优化器根据计算得到的梯度更新模型参数。</li>
+      <li><a href="https://huggingface.co/docs/transformers/main/main_classes/trainer">Hugging Face Transformers：Trainer</a>——展示实际模型训练中训练数据、优化器、训练步数和参数更新等组件如何组织。</li>
+    </ul>
+  </section>
+
+  <div class="next-lesson"><div><div class="tech-kicker">PREVIOUS · LESSON 03</div><a href="2026-09-14-parameters.html">参数：模型“学会”的东西到底存在哪里？</a></div><div><div class="tech-kicker">NEXT · LESSON 05</div><strong>损失函数：模型怎么知道自己“答错了多少”？</strong></div></div>
+</div>
+</main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body>
+</html>
