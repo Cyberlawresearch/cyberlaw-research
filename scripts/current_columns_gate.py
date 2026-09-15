@@ -85,7 +85,7 @@ def validate(m):
     assert latest_tech and latest_tech.startswith('tech-basics/') and latest_tech.endswith('.html')
     assert (ROOT/latest_tech).is_file(),latest_tech
     latest_doc=soup(latest_tech)
-    assert latest_doc.select_one('main h1') and 'Embedding' in latest_doc.select_one('main h1').get_text()
+    assert latest_doc.select_one('main h1') and latest_doc.select_one('.tech-kicker'),latest_tech
     assert tech_card.select_one('.home-course-path') is not None
     tech_page=soup(TECH_PATH)
     assert tech_page.select_one('svg.course-map-svg') is not None
