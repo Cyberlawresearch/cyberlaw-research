@@ -38,8 +38,9 @@ jobs:
               if 'tech-law-brief' in path.name:
                   text = re.sub(r'<section\b[^>]*class=["\'][^"\']*brief-focus[^"\']*["\'][^>]*>.*?<h2[^>]*>\s*本期最值得先看\s*</h2>.*?</section>', '', text, flags=re.S|re.I)
                   text = re.sub(r'<h2[^>]*>\s*本期最值得先看\s*</h2>\s*<div\b[^>]*class=["\'][^"\']*highlight[^"\']*["\'][^>]*>.*?</div>', '', text, flags=re.S|re.I)
-              for name in ['research-tools.js','favorites.js','context-tools.js','related-refine.js','context-refine.js','citation-refine.js','notes-inline.js','auth-config.js','auth.js']:
+              for name in ['research-tools.js','favorites.js','context-tools.js','related-refine.js','context-refine.js','context-insight.js','citation-refine.js','notes-inline.js','auth-config.js','auth.js']:
                   text = re.sub(r'<script\b[^>]*src=["\'][^"\']*'+re.escape(name)+r'[^"\']*["\'][^>]*></script>', '', text, flags=re.I)
+              text = re.sub(r'<link\b[^>]*href=["\'][^"\']*news-layout-fix\.css[^"\']*["\'][^>]*>', '', text, flags=re.I)
               path.write_text(text, encoding='utf-8')
           PY
           python scripts/current_columns_gate.py --sync-nav
@@ -62,14 +63,15 @@ jobs:
               depth = len(path.parent.parts)
               prefix = '../' * depth
               auth = f'<script src="{prefix}assets/auth.js?v=4"></script>'
+              layout = f'<link rel="stylesheet" href="{prefix}assets/news-layout-fix.css?v=1"/>' if 'tech-law-brief' in path.name else ''
               extra = ''
               if path.parent.name in reading_dirs:
-                  extra = f'<script defer src="{prefix}assets/favorites.js?v=4"></script><script defer src="{prefix}assets/context-tools.js?v=3"></script><script defer src="{prefix}assets/context-refine.js?v=5"></script><script defer src="{prefix}assets/citation-refine.js?v=1"></script><script defer src="{prefix}assets/notes-inline.js?v=4"></script>'
+                  extra = f'<script defer src="{prefix}assets/favorites.js?v=4"></script><script defer src="{prefix}assets/context-tools.js?v=3"></script><script defer src="{prefix}assets/context-refine.js?v=5"></script><script defer src="{prefix}assets/context-insight.js?v=1"></script><script defer src="{prefix}assets/citation-refine.js?v=1"></script><script defer src="{prefix}assets/notes-inline.js?v=4"></script>'
               elif path.name in tool_pages:
                   extra = f'<script defer src="{prefix}assets/research-tools.js?v=3"></script>'
               text = path.read_text(encoding='utf-8', errors='ignore')
               if '</head>' in text:
-                  text = text.replace('</head>', auth + extra + '</head>', 1)
+                  text = text.replace('</head>', layout + auth + extra + '</head>', 1)
                   path.write_text(text, encoding='utf-8')
           PY
       - name: Install isolated context test browser
