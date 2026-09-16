@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-16",
+  "column": "brief",
+  "state": "verified",
+  "page": "articles/2026-09-16-tech-law-brief.html",
+  "news_count": 18,
+  "distribution": {"domestic": 7, "foreign": 11},
+  "checked_at": "2026-09-16T19:31:43+08:00",
+  "last_news_scan_at": "2026-09-16T19:31:43+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true
+  },
+  "deduplication": {
+    "previous_day": "2026-09-15",
+    "history_start": "2026-09-09",
+    "notes": [
+      "逐条对照2026-09-15完整简报并回查9月9日至15日新闻历史；未重复前一日电子信息制造业规划、脑机接口医疗器械数据集标准、韩国KISA智能体安全指南、欧盟数据主权咨询、微软学生AI隐私协议及人类主义AI准则等事件。",
+      "9月15日曾报道欧盟Kids Act草案泄露；本期欧盟条目仅作为新增进展收录，因为9月16日冯德莱恩在盟情咨文中公开提出分龄账户限制并正式宣布前沿AI安全对话方向，正文已明确新增事实。",
+      "同属网络安全宣传周的材料仅在存在独立正式文件或独立监管行动时分别收录：三类公共数据集、AI应用安全实践指南、信息清除实践指南及汽车数据团体标准分别具有不同发布主体或独立文件对象，不以会议报道拆分凑数。"
+    ]
+  },
+  "scan": {
+    "china_official": "已检查中国政府网、中央网信办、发改委、工信部、商务部、国家数据局、市场监管总局、金融监管总局、人民银行、卫健委、药监局、最高法、最高检及主要数字经济地区公开信息。",
+    "foreign_official": "已检查欧盟委员会、AI Office、EDPB、EDPS、FTC、DOJ、SEC、NIST、CISA、FCC、ICO、CMA、Ofcom、韩国PIPC/KFTC、日本PPC/JFTC/总务省/经产省、新加坡PDPC/IMDA、澳大利亚OAIC/ACCC以及越南、印度、加拿大、巴西等公开信息。",
+    "local_language": "使用韩文、日文、越南文关键词检索韩国、日本、越南监管与政策动态；本期韩国两项官方材料达到质量门槛，日本和越南当日未发现优先级高于已选项目的新正式监管动作。",
+    "media": "发布前重新扫描Reuters、AP、FT、Bloomberg相关检索结果，以及TechCrunch、The Verge和网络安全/法律专业来源；Bloomberg正文直连受访问限制时使用其公开检索结果和其他可靠来源交叉核验。",
+    "final_window": "发布前重新扫描最近1—2小时可检索的重要官方公告、裁判、处罚和政策更新，未发现需要替换本期高优先级条目的新增正式动作。"
+  }
+}
