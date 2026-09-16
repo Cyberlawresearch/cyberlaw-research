@@ -29,14 +29,15 @@ def main():
                 page = context.new_page()
                 errors = []
                 page.on('pageerror', lambda error: errors.append(str(error)))
-                expected = (ROOT/'assets/context-refine.js').read_bytes()
-                for attempt in range(10):
-                    response = context.request.get(urljoin(base, f'assets/context-refine.js?v=context-test-{attempt}'))
-                    if response.ok and hashlib.sha256(response.body()).digest() == hashlib.sha256(expected).digest():
-                        break
-                    time.sleep(6)
-                else:
-                    raise AssertionError('Deployed script differs from the tested commit')
+                for asset in ('context-refine.js', 'context-insight.js', 'news-layout-fix.css'):
+                    expected = (ROOT/'assets'/asset).read_bytes()
+                    for attempt in range(10):
+                        response = context.request.get(urljoin(base, f'assets/{asset}?v=context-test-{attempt}'))
+                        if response.ok and hashlib.sha256(response.body()).digest() == hashlib.sha256(expected).digest():
+                            break
+                        time.sleep(6)
+                    else:
+                        raise AssertionError('Deployed asset differs from the tested commit: ' + asset)
                 page.goto(urljoin(base, 'articles/2026-09-07-tech-law-brief.html'), wait_until='networkidle')
                 item = page.locator('#research-item-2')
                 item.locator('[data-act="timeline"]').click()
@@ -61,6 +62,11 @@ def main():
                 assert not panel.get_by_text('经典著作', exact=True).count()
                 assert not panel.locator('a[href*="laws-empire"],a[href*="rawls"],a[href*="morality-of-law"]').count()
                 assert panel.locator('.ctx-related a').count() > 0
+                item.locator('[data-act="background"]').click()
+                panel.get_by_text('背景信息与未来前瞻', exact=True).wait_for()
+                assert panel.get_by_text('背景信息', exact=True).count() == 1
+                assert panel.get_by_text('未来前瞻', exact=True).count() == 1
+                assert panel.locator('.ctx-insight-block').count() == 2
                 item.locator('[data-act="cite"]').click()
                 panel.get_by_text('引用与导出', exact=True).wait_for()
                 item.locator('[data-act="timeline"]').click()
@@ -90,8 +96,34 @@ def main():
                 page.wait_for_load_state('networkidle')
                 page.locator(f'[id="{anchor}"]').wait_for()
                 assert page.locator(f'[id="{anchor}"] h3').count() == 1
+
+                # Regression: foreign news has an extra original-title row but must keep
+                # the facts full-width and exactly three research-analysis cards.
+                page.goto(urljoin(base, 'articles/2026-09-16-tech-law-brief.html'), wait_until='networkidle')
+                foreign = page.locator('#research-item-16')
+                foreign.locator('.brief-original').wait_for()
+                layout = foreign.evaluate('''el=>{
+                  const rect=n=>{const r=n.getBoundingClientRect();return {x:r.x,y:r.y,width:r.width,height:r.height}};
+                  const original=el.querySelector(':scope > .brief-original');
+                  const fact=el.querySelector(':scope > .brief-fact');
+                  const analysis=[...el.children].filter(n=>n.tagName==='P'&&!n.classList.contains('brief-original')&&!n.classList.contains('brief-fact')&&!n.classList.contains('source'));
+                  return {original:rect(original),fact:rect(fact),analysis:analysis.map(rect)};
+                }''')
+                assert len(layout['analysis']) == 3
+                assert abs(layout['original']['width'] - layout['fact']['width']) < 5
+                if width > 800:
+                    tops = [x['y'] for x in layout['analysis']]
+                    assert max(tops) - min(tops) < 5
+                    assert all(x['width'] < layout['fact']['width'] * .55 for x in layout['analysis'])
+                else:
+                    tops = [x['y'] for x in layout['analysis']]
+                    assert tops == sorted(tops) and len(set(round(x) for x in tops)) == 3
+                foreign.locator('[data-act="background"]').click()
+                f_panel = foreign.locator('.ctx-inline-panel')
+                f_panel.get_by_text('背景信息与未来前瞻', exact=True).wait_for()
+                assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth + 1')
                 assert not errors, errors
-                results.append({'test':f'context-ui-{width}','status':'passed','detail':'No books; permissions and interoperability share one agent governance tab; distinct factual topics; sorted news; panel switching; exact anchor; responsive layout.'})
+                results.append({'test':f'context-ui-{width}','status':'passed','detail':'Related reading, factual timelines, background/outlook panel, exact anchors and foreign-news original-title layout all pass responsively.'})
                 context.close()
             browser.close()
     except Exception as error:
