@@ -1,0 +1,16 @@
+/* Keep foreign-news original titles from shifting the three research-analysis cards. */
+body[data-material-type="news"] .brief-item:has(>.brief-original){display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:12px}
+body[data-material-type="news"] .brief-item:has(>.brief-original)>h3,
+body[data-material-type="news"] .brief-item:has(>.brief-original)>.brief-meta,
+body[data-material-type="news"] .brief-item:has(>.brief-original)>.brief-original,
+body[data-material-type="news"] .brief-item:has(>.brief-original)>.brief-fact,
+body[data-material-type="news"] .brief-item:has(>.brief-original)>.source,
+body[data-material-type="news"] .brief-item:has(>.brief-original)>.ctx-actions{grid-column:1/-1}
+body[data-material-type="news"] .brief-item:has(>.brief-original)>.brief-original{margin:0 0 2px;padding:9px 12px;border:1px solid var(--line);border-left:3px solid rgba(125,45,45,.28);background:rgba(238,230,217,.45);color:var(--muted);font-size:12.5px;line-height:1.7;overflow-wrap:anywhere}
+body[data-material-type="news"] .brief-item:has(>.brief-original)>.brief-original>strong:first-child{display:inline;color:var(--accent);font-size:12px;letter-spacing:.04em;margin:0}
+body[data-material-type="news"] .brief-item:has(>.brief-original)>.brief-fact{grid-column:1/-1;margin:0 0 4px!important;padding:0 0 17px!important;border:0!important;border-bottom:1px solid var(--line)!important;background:transparent!important;font-size:16px!important;line-height:1.84!important}
+body[data-material-type="news"] .brief-item:has(>.brief-original)>p:nth-of-type(n+3):nth-of-type(-n+5){font-size:14px;line-height:1.75;margin:0;background:var(--paper);border:1px solid var(--line);padding:16px 17px;min-width:0}
+body[data-material-type="news"] .brief-item:has(>.brief-original)>p:nth-of-type(3){background:var(--soft)}
+body[data-material-type="news"] .brief-item:has(>.brief-original)>p:nth-of-type(n+3):nth-of-type(-n+5)>strong:first-child{display:block;color:var(--accent);font-size:12px;letter-spacing:.05em;margin-bottom:7px}
+body[data-material-type="news"] .brief-item:has(>.brief-original)>.source{grid-column:1/-1;margin-top:2px;padding-top:2px}
+@media(max-width:800px){body[data-material-type="news"] .brief-item:has(>.brief-original){grid-template-columns:1fr}body[data-material-type="news"] .brief-item:has(>.brief-original)>p:nth-of-type(n+3):nth-of-type(-n+5){grid-column:1}}
