@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>第05课｜损失函数：模型怎么知道自己“答错了多少”？｜网信法技术基础</title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+  <link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-09-15-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-09-15-schwartz-eu-us-privacy-collision.html">域外法学论文精读</a><a href="../articles/2026-09-15-cohen-configuring-networked-self.html">法学经典著作</a><a href="../articles/2026-09-15-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 05 · 基础积木 · 2026.09.16</div><h1>损失函数：模型怎么知道自己“答错了多少”？</h1><p class="tech-lead">今天只解决一个问题：训练时，模型怎样把一次预测的好坏变成一个可以继续计算的数字，从而知道后面的参数调整有没有让自己变好？</p></div></section>
+<div class="tech-shell">
+  <section class="lesson-focus">
+    <div><strong>先把它记成一句人话</strong><p><strong>损失函数就是一套“算差距”的规则：</strong>把模型当前给出的预测与训练目标放在一起比较，最后得到一个数字。通常这个数字越小，表示模型在这项训练目标上越接近要求。</p></div>
+    <div><strong>它在训练里负责什么</strong><p>上一课讲到，训练会根据误差调整参数。损失函数做的，就是先把“这次预测到底差多少”变成可计算的信号，训练程序才能继续判断参数应当怎样调整。</p></div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>一、先用一个直观例子理解“为什么只判对错还不够”</h2>
+    <p>假设训练材料中有一句话：“法国的首都是巴黎。”模型读到“法国的首都是”以后，要预测接下来出现什么。为了便于理解，我们暂时把候选写成完整词语；真实大模型训练时比较的是 Token，具体怎样切分取决于模型使用的 tokenizer。</p>
+    <div class="visual-board">
+      <div class="visual-title">真实答案是“巴黎”。两个模型都要为不同候选分配可能性。</div>
+      <div class="compare-grid">
+        <div class="compare-card"><b>模型 A</b><p>巴黎 80%｜里昂 8%｜伦敦 7%｜其他 5%<br/><strong>真实答案获得了很高的可能性 → 损失较低</strong></p></div>
+        <div class="compare-card"><b>模型 B</b><p>巴黎 10%｜里昂 15%｜伦敦 65%｜其他 10%<br/><strong>真实答案只获得很低的可能性 → 损失较高</strong></p></div>
+        <div class="compare-card"><b>为什么需要一个数字</b><p>如果训练程序只知道“最后猜对没猜对”，它很难区分“非常确定地接近正确答案”和“几乎把正确答案排除掉”这两种情况。</p></div>
+      </div>
+    </div>
+    <p>因此，损失函数不是简单给模型盖一个“对”或“错”的章，而是把预测与目标之间的差距进一步量化。这样，同样是一次预测，训练程序可以比较参数修改前后的损失有没有下降。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>二、看一张图：损失函数处在训练流程的哪一步？</h2>
+    <div class="visual-board">
+      <div class="visual-title">损失函数连接“模型预测”和“参数更新”</div>
+      <div class="flow">
+        <div class="flow-box"><strong>训练文本</strong><span>给模型一段已有内容</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>模型预测</strong><span>给可能出现的下一个 Token 分配不同可能性</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>损失函数</strong><span>把预测与真实下一个 Token 的差距算成一个数字</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>继续训练</strong><span>根据这个信号计算怎样调整参数，使之后的损失下降</span></div>
+      </div>
+    </div>
+    <p>这就是上一课“训练比推理多出来的那一段”的核心。推理时，模型得到结果后通常就把结果返回；训练时，还要继续问：<strong>这个结果离训练目标有多远？参数改成什么样，下一次能不能让这个数字更小？</strong></p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>三、大语言模型常见的损失是怎么想的？</h2>
+    <p>很多自回归语言模型在预训练时做的核心任务，是根据前面的 Token 预测下一个 Token。模型不是只报出一个答案，而是会对词表中的大量候选给出不同分数，并进一步形成一组相对可能性。训练材料本身告诉系统“实际出现的下一个 Token 是什么”，损失函数就据此计算这次预测有多差。</p>
+    <div class="callout"><strong>新词备注｜交叉熵（cross-entropy）</strong><br/>在很多“预测下一个 Token”的语言模型训练中，常用交叉熵一类损失。今天只需要知道它的直觉：<strong>真实答案得到的可能性越低，惩罚通常越大；真实答案得到的可能性越高，损失通常越低。</strong>公式现在不需要掌握。</div>
+    <div class="callout"><strong>后续课程预告｜概率生成</strong><br/>这里出现了“候选可能性”。后面会专门讲模型为什么能够给下一个 Token 分配概率，以及真正生成文字时又怎样从这些候选中选出一个。今天只把它理解成“模型对不同下一步答案有不同程度的倾向”。</div>
+    <p>需要注意，<strong>并不是所有模型、所有训练阶段都使用同一种损失函数。</strong>图片识别、数值预测、对比学习、偏好学习等任务都可能采用不同的计算规则。即使都是语言模型，预训练、监督微调和后续对齐阶段也可能有不同目标。损失函数永远要和“模型此时究竟在学什么”放在一起看。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>四、为什么损失下降，参数就能慢慢“学会”？</h2>
+    <p>单独得到一个损失数字还不够。训练程序会继续利用模型内部的计算关系，判断哪些参数对这个损失产生了影响，以及怎样小幅调整这些参数，可能让损失下降。然后再拿新的训练内容重复这个过程。</p>
+    <div class="visual-board">
+      <div class="visual-title">一次训练更新可以先记成这个循环</div>
+      <div class="token-strip"><span class="token-chip">预测</span><span class="token-chip">→</span><span class="token-chip">计算损失</span><span class="token-chip">→</span><span class="token-chip">调整参数</span><span class="token-chip">→</span><span class="token-chip">再预测</span><span class="token-chip">→</span><span class="token-chip">比较损失有没有下降</span></div>
+    </div>
+    <p>训练就是把这个循环重复很多次。损失函数像一个持续使用的“训练标尺”：参数不是因为模型“理解自己错了”而变化，而是训练程序不断尝试让既定损失更小。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>五、正面概念讲清以后，再看三个常见误解</h2>
+    <div class="myth-list">
+      <div class="myth"><b>误解 01</b><span>“损失就是答错了几道题。”——不完全是。损失可以区分预测的程度差异。即使最后选出的答案相同，模型给真实答案分配的可能性不同，损失也可能不同。</span></div>
+      <div class="myth"><b>误解 02</b><span>“训练损失越低，模型在现实世界里就一定越好。”——不能这样推。损失只反映模型对既定训练目标的优化情况；模型也可能越来越适合训练材料，却没有同步提升真实性、安全性、公平性或面对新数据的表现。</span></div>
+      <div class="myth"><b>误解 03</b><span>“损失函数知道什么答案在法律或伦理上是正确的。”——不是。损失函数只执行设计者给定的计算规则。什么被定义为目标、哪些错误受到更大惩罚、哪些价值根本没有进入目标，都是另外的问题。</span></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>六、为什么这件事与网信法研究有关？</h2>
+    <div class="law-bridge">
+      <h3>最重要的一点：技术上的“优化目标”不等于法律上的“合规目标”。</h3>
+      <p>例如，基础语言模型把“更准确地预测训练文本中的下一个 Token”作为重要训练目标，并不意味着模型因此自动学会事实核验、公平处理、安全拒答或个人信息保护。一个损失值持续下降，只能说明模型越来越符合那套被写进训练过程的计算目标。</p>
+      <p>因此，评价一个用于信贷、招聘、医疗、政务或内容治理的AI系统时，不能只接受“模型训练得很好”“loss 很低”这样的说明。更关键的问题是：<strong>优化的究竟是什么？哪些错误被计算进去？不同错误是否被赋予不同代价？安全、公平、隐私等要求有没有另行进入训练、评测或系统控制？</strong></p>
+    </div>
+    <p>从审计角度看，损失函数也提供了一个具体证据入口。训练配置、损失类型、训练过程中的损失曲线、模型版本和参数检查点，可以帮助判断一次训练到底在优化什么以及训练是否真实发生。但这些材料本身不能证明训练数据来源合法、模型输出真实可靠，也不能替代对具体风险和法律义务的独立审查。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>七、这一课只需要带走三句话</h2>
+    <div class="lesson-focus">
+      <div><strong>第一句</strong><p>损失函数把“模型预测与训练目标之间的差距”变成一个可以计算的数字。</p></div>
+      <div><strong>第二句</strong><p>训练通常尝试让损失下降，但“损失更低”只意味着更符合既定优化目标，不等于所有现实表现都更好。</p></div>
+    </div>
+    <div class="callout"><strong>第三句：</strong>研究AI治理时，不能只问模型“有没有优化”，还要继续问“优化了什么、没有优化什么、谁决定了这套目标”。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>研究延伸</h2>
+    <div class="research-grid">
+      <div class="research-card"><small>论文问题</small><h3>从损失函数到规范目标：人工智能优化目标的法律可审计性</h3><p>可以讨论算法系统以技术代理指标承载业务目标时，法律应如何识别“优化目标”与“规范目标”之间的偏差，并研究在高风险AI中是否应要求披露损失函数、错误权重及与公平、安全、真实性等要求的关系。</p></div>
+      <div class="research-card"><small>智库问题</small><h3>政企人工智能采购中建立“优化目标—实际风险”双重验收机制</h3><p>建议在模型采购和验收中，不再把训练损失、准确率等单一技术指标作为效果证明，而是要求供应商说明模型训练优化的具体目标、不同错误的处理方式，并另行提供安全、隐私、公平和真实场景效果评测。</p></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>原始材料</h2>
+    <ul class="source-links">
+      <li><a href="https://docs.pytorch.org/cppdocs/api/nn/loss.html">PyTorch：Loss Functions</a>——官方文档将损失函数概括为衡量模型预测与目标匹配程度的工具，并列出不同任务使用的不同损失。</li>
+      <li><a href="https://docs.pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html">PyTorch：CrossEntropyLoss</a>——说明交叉熵损失如何把模型输出与目标类别进行比较。</li>
+      <li><a href="https://huggingface.co/docs/transformers/main_classes/output">Hugging Face Transformers：Model outputs</a>——其因果语言模型输出文档明确将 loss 标注为用于 next-token prediction 的语言模型损失。</li>
+      <li><a href="https://developers.google.com/machine-learning/glossary/fundamentals">Google Machine Learning Glossary：Loss / Loss Function</a>——以入门方式解释损失表示预测与目标之间的差距，训练通常以降低损失为目标。</li>
+      <li><a href="https://www.deeplearningbook.org/contents/mlp.html">Goodfellow, Bengio & Courville, Deep Learning, Chapter 6</a>——系统解释神经网络训练中的代价函数、最大似然与交叉熵关系。</li>
+    </ul>
+  </section>
+
+  <div class="next-lesson"><div><div class="tech-kicker">NEXT · LESSON 06</div><strong>预训练：模型为什么要先读海量文本，再去完成具体任务？</strong></div><a href="../tech-basics.html">课程总览与历史归档 →</a></div>
+</div>
+</main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body>
+</html>
