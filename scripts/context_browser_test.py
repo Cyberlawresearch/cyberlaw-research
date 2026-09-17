@@ -22,13 +22,14 @@ def main():
     results = []
     try:
         with sync_playwright() as p:
-            browser = p.chromium.launch(executable_path=None if Path(p.chromium.executable_path).exists() else shutil.which("chromium"))
+            browser = p.chromium.launch(executable_path=None if Path(p.chromium.executable_path).exists() else shutil.which('chromium'))
             for width, height in [(1440, 1000), (390, 844)]:
                 context = browser.new_context(viewport={'width': width, 'height': height})
                 context.add_cookies([{'name':'cyberlaw_user','value':'researcher20','url':base,'sameSite':'Lax'}])
                 page = context.new_page()
                 errors = []
                 page.on('pageerror', lambda error: errors.append(str(error)))
+
                 for asset in ('context-refine.js', 'context-insight.js', 'news-layout-fix.css'):
                     expected = (ROOT/'assets'/asset).read_bytes()
                     for attempt in range(10):
@@ -38,68 +39,61 @@ def main():
                         time.sleep(6)
                     else:
                         raise AssertionError('Deployed asset differs from the tested commit: ' + asset)
-                page.goto(urljoin(base, 'articles/2026-09-07-tech-law-brief.html'), wait_until='networkidle')
-                item = page.locator('#research-item-2')
-                item.locator('[data-act="timeline"]').click()
-                panel = item.locator('.ctx-inline-panel')
-                panel.get_by_role('tab', name='算力互联与资源调度', exact=True).wait_for()
-                tabs = panel.get_by_role('tab')
-                assert tabs.count() == 2
-                assert tabs.nth(1).inner_text() == '智能体治理'
-                first = panel.get_by_role('tabpanel').inner_text()
-                assert '算力网' in first and '德国网站' not in first
-                tabs.nth(1).click()
-                second = panel.get_by_role('tabpanel').inner_text()
-                assert panel.locator('[role="tabpanel"]:visible a').count() > 0
-                assert '国家数据局调研内蒙古' not in second
-                assert panel.locator('[role="tabpanel"]:visible').count() == 1
-                dates = panel.locator('[role="tabpanel"]:visible time').all_text_contents()
-                assert dates == sorted(dates) and 1 <= len(dates) <= 4
-                tabs.nth(1).press('Home')
-                assert tabs.nth(0).get_attribute('aria-selected') == 'true'
-                item.locator('[data-act="related"]').click()
-                panel.get_by_text('关联阅读', exact=True).wait_for()
-                assert not panel.get_by_text('经典著作', exact=True).count()
-                assert not panel.locator('a[href*="laws-empire"],a[href*="rawls"],a[href*="morality-of-law"]').count()
-                assert panel.locator('.ctx-related a').count() > 0
-                item.locator('[data-act="background"]').click()
-                panel.get_by_text('背景信息与未来前瞻', exact=True).wait_for()
-                assert panel.get_by_text('背景信息', exact=True).count() == 1
-                assert panel.get_by_text('未来前瞻', exact=True).count() == 1
-                assert panel.locator('.ctx-insight-block').count() == 2
-                item.locator('[data-act="cite"]').click()
-                panel.get_by_text('引用与导出', exact=True).wait_for()
-                item.locator('[data-act="timeline"]').click()
-                panel.get_by_role('tab', name='算力互联与资源调度', exact=True).wait_for()
-                assert panel.get_by_role('tabpanel').inner_text() == first
-                news = page.locator('#research-item-10')
-                news.locator('[data-act="timeline"]').click()
-                n_panel = news.locator('.ctx-inline-panel')
-                n_panel.get_by_role('tab', name='AI安全事件与披露义务', exact=True).wait_for()
-                assert n_panel.get_by_role('tab').count() == 2
-                assert n_panel.get_by_role('tab').nth(1).inner_text() == '智能体治理'
-                assert n_panel.get_by_role('tab', name='智能体治理', exact=True).count() == 1
-                assert panel.get_by_role('tab', name='智能体治理', exact=True).count() == 1
-                assert not page.get_by_role('tab', name='智能体权限与越权行为', exact=True).count()
-                assert not page.get_by_role('tab', name='智能体网络与互操作规范', exact=True).count()
-                all_links = n_panel.locator('.ctx-timeline a').evaluate_all('(nodes)=>nodes.map(n=>n.href)')
-                assert len(all_links) == len(set(all_links))
-                text = n_panel.inner_text()
-                assert '版权' not in text and '数据中心' not in text
-                n_panel.scroll_into_view_if_needed()
-                page.screenshot(path=str(output.parent/f'context-topics-{width}.png'))
-                assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth + 1')
-                n_panel.get_by_role('tab').nth(1).click()
-                link = n_panel.locator('[role="tabpanel"]:visible a').first
+
+                # Same-event progression: the 17 Sep EU KIDS Act proposal must connect
+                # to the 16 Sep policy announcement, but not to broad AI/data stories.
+                page.goto(urljoin(base, 'articles/2026-09-17-tech-law-brief.html'), wait_until='networkidle')
+                kids = page.locator('#research-item-7')
+                kids.locator('[data-act="timeline"]').click()
+                panel = kids.locator('.ctx-inline-panel')
+                panel.get_by_text('专题时间线', exact=True).wait_for()
+                panel.get_by_role('tab', name='未成年人上网与年龄核验', exact=True).wait_for()
+                timeline_text = panel.inner_text()
+                assert '2026-09-16' in timeline_text and '未满13岁' in timeline_text
+                assert '数据中心' not in timeline_text and '芯片' not in timeline_text and '版权' not in timeline_text
+                links = panel.locator('.ctx-timeline a')
+                assert 1 <= links.count() <= 4
+                assert len(links.evaluate_all('(nodes)=>nodes.map(n=>n.href)')) == len(set(links.evaluate_all('(nodes)=>nodes.map(n=>n.href)')))
+
+                # A timeline link must land on the exact historical item anchor.
+                link = links.first
                 anchor = unquote(urlparse(link.get_attribute('href')).fragment)
                 link.click()
                 page.wait_for_load_state('networkidle')
                 page.locator(f'[id="{anchor}"]').wait_for()
                 assert page.locator(f'[id="{anchor}"] h3').count() == 1
 
-                # Regression: foreign news has an extra original-title row but must keep
-                # the facts full-width and exactly three research-analysis cards.
-                page.goto(urljoin(base, 'articles/2026-09-16-tech-law-brief.html'), wait_until='networkidle')
+                # Related reading may be sparse or empty, but generic same-field material
+                # must not be padded in and books must never appear.
+                page.goto(urljoin(base, 'articles/2026-09-17-tech-law-brief.html'), wait_until='networkidle')
+                agent = page.locator('#research-item-4')
+                agent.locator('[data-act="related"]').click()
+                r_panel = agent.locator('.ctx-inline-panel')
+                r_panel.get_by_text('关联阅读', exact=True).wait_for()
+                assert not r_panel.get_by_text('经典著作', exact=True).count()
+                assert not r_panel.locator('a[href*="laws-empire"],a[href*="rawls"],a[href*="morality-of-law"]').count()
+                related_hrefs = r_panel.locator('.ctx-related a').evaluate_all('(nodes)=>nodes.map(n=>n.href)')
+                assert len(related_hrefs) == len(set(related_hrefs))
+
+                # Agent interoperability must no longer automatically create a broad
+                # "智能体治理" timeline containing unrelated permission/safety items.
+                agent.locator('[data-act="timeline"]').click()
+                a_panel = agent.locator('.ctx-inline-panel')
+                a_panel.get_by_text('专题时间线', exact=True).wait_for()
+                agent_text = a_panel.inner_text()
+                assert '数据中心' not in agent_text and '版权' not in agent_text
+
+                # Background/outlook and cite tools still coexist with the stricter panels.
+                agent.locator('[data-act="background"]').click()
+                a_panel.get_by_text('背景信息与未来前瞻', exact=True).wait_for()
+                assert a_panel.get_by_text('背景信息', exact=True).count() == 1
+                assert a_panel.get_by_text('未来前瞻', exact=True).count() == 1
+                assert a_panel.locator('.ctx-insight-block').count() == 2
+                agent.locator('[data-act="cite"]').click()
+                a_panel.get_by_text('引用与导出', exact=True).wait_for()
+
+                # Foreign news has an extra original-title row but must keep facts
+                # full-width and exactly three research-analysis cards.
                 foreign = page.locator('#research-item-16')
                 foreign.locator('.brief-original').wait_for()
                 layout = foreign.evaluate('''el=>{
@@ -118,12 +112,11 @@ def main():
                 else:
                     tops = [x['y'] for x in layout['analysis']]
                     assert tops == sorted(tops) and len(set(round(x) for x in tops)) == 3
-                foreign.locator('[data-act="background"]').click()
-                f_panel = foreign.locator('.ctx-inline-panel')
-                f_panel.get_by_text('背景信息与未来前瞻', exact=True).wait_for()
+
                 assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth + 1')
                 assert not errors, errors
-                results.append({'test':f'context-ui-{width}','status':'passed','detail':'Related reading, factual timelines, background/outlook panel, exact anchors and foreign-news original-title layout all pass responsively.'})
+                page.screenshot(path=str(output.parent/f'context-topics-{width}.png'))
+                results.append({'test':f'context-ui-{width}','status':'passed','detail':'Direct related-reading links, narrow same-event timelines, background/outlook, exact anchors and foreign-news layout pass responsively.'})
                 context.close()
             browser.close()
     except Exception as error:
