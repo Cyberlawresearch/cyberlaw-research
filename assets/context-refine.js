@@ -1,7 +1,7 @@
 /* Item-level related reading and factual timelines. No private reader data is read. */
 (function (global) {
   'use strict';
-  const VERSION = '6';
+  const VERSION = '7';
   const normal = s => String(s || '').toLowerCase().replace(/[\s\p{P}\p{S}]+/gu, '');
   const hit = (text, word) => {
     const value = String(text || '').toLowerCase(), term = String(word || '').toLowerCase();
@@ -70,8 +70,10 @@
     '未成年人上网与年龄核验','个人信息保护处罚','勒索软件事件与处置','后量子密码迁移',
     'Cookie同意与应用追踪','网络接入实名与日志规则'
   ]);
+  const topicCache = new WeakMap(), entityCache = new WeakMap(), markerCache = new WeakMap();
   const groupsMatch = (text, groups) => groups.every(words => any(text, words));
   function detectTopics(item) {
+    if (item && typeof item === 'object' && topicCache.has(item)) return topicCache.get(item);
     const title = item.title || '';
     const sentences = String(item.facts || '').split(/[。！？；\n]/).filter(s => s.trim() && !/不同于|无关|不能据以|^\s*(?:上述|此次收录|新的信息|并非|不是|不能|不应)/.test(s));
     const matches = TOPICS.map(([name, groups]) => {
@@ -89,7 +91,9 @@
       const existing = merged.get(match.name);
       if (!existing || match.score > existing.score) merged.set(match.name, match);
     }
-    return [...merged.values()].sort((a, b) => b.score - a.score);
+    const result = [...merged.values()].sort((a, b) => b.score - a.score);
+    if (item && typeof item === 'object') topicCache.set(item, result);
+    return result;
   }
 
   const grams = s => {
@@ -113,7 +117,10 @@
 
   const ENTITY_RE = /\b(?:OpenAI|Anthropic|Microsoft|Google|Meta|Apple|Amazon|Oracle|Tesla|TikTok|GitHub|Copilot|Codex|NVIDIA|Huawei|DistroKid|UMG|SpaceXAI|EDPB|SAVE|Cybercab|Weverse|TVING|MikroTik)\b|华为|欧盟委员会|国家情报院/gi;
   function entitySet(item) {
-    return new Set((String(item.title || '') + ' ' + String(item.facts || '')).match(ENTITY_RE)?.map(normal) || []);
+    if (item && typeof item === 'object' && entityCache.has(item)) return entityCache.get(item);
+    const result = new Set((String(item.title || '') + ' ' + String(item.facts || '')).match(ENTITY_RE)?.map(normal) || []);
+    if (item && typeof item === 'object') entityCache.set(item, result);
+    return result;
   }
   function entityOverlap(a, b) {
     const A = entitySet(a), B = entitySet(b);
@@ -121,6 +128,7 @@
   }
   const GENERIC_MARKERS = new Set(['ai','人工智能','模型','数据','平台','安全','监管','数字','法律','治理','服务','系统','网络']);
   function markerSet(item) {
+    if (item && typeof item === 'object' && markerCache.has(item)) return markerCache.get(item);
     const text = String(item.title || '') + ' ' + String(item.facts || '');
     const out = new Set();
     for (const re of [
@@ -133,6 +141,7 @@
         if (value.length >= 3 && !GENERIC_MARKERS.has(value)) out.add(value);
       }
     }
+    if (item && typeof item === 'object') markerCache.set(item, out);
     return out;
   }
   function markerOverlap(a, b) {
