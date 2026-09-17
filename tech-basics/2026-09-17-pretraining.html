@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>第06课｜预训练：模型为什么要先读海量文本，再去完成具体任务？｜网信法技术基础</title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+  <link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-09-16-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-09-16-barocas-selbst-big-data-disparate-impact.html">域外法学论文精读</a><a href="../articles/2026-09-16-solove-digital-person.html">法学经典著作</a><a href="../articles/2026-09-16-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 06 · 基础积木 · 2026.09.17</div><h1>预训练：模型为什么要先读海量文本，再去完成具体任务？</h1><p class="tech-lead">今天只解决一个问题：为什么大语言模型不是先拿着“问答、写作、法律分析”这样的任务直接练，而要先用大量文本做一轮规模很大的基础训练？</p></div></section>
+<div class="tech-shell">
+  <section class="lesson-focus">
+    <div><strong>先把它记成一句人话</strong><p><strong>预训练，就是模型在承担具体任务之前，先用大规模数据进行一轮基础训练。</strong>这一步主要不是教它某一道题的标准答案，而是先让参数在大量训练中形成对语言规律、事实关联和文本结构的广泛统计能力。</p></div>
+    <div><strong>为什么叫“预”训练</strong><p>“预”不是说这一步不重要，而是说它发生在后续的任务适配、指令训练或其他专门训练之前。今天只讲这第一层基础训练，不提前展开后面的训练方式。</p></div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>一、先用一个直观例子：为什么不能一开始只练“法律问答”？</h2>
+    <p>可以把它想成培养一个法律研究助手。如果第一天就只给它几百道“个人信息保护法问答题”，它也许能记住其中一些问法，却还没有形成足够广的语言和知识基础。更现实的做法，是先让它长期接触大量不同类型的文字：新闻、百科、书籍、网页、代码、专业材料等，在反复预测和纠错中逐渐掌握“什么词通常接在什么词后面”“一段话通常怎样组织”“不同概念经常怎样一起出现”。</p>
+    <div class="visual-board">
+      <div class="visual-title">先形成广泛的基础能力，再进入具体任务</div>
+      <div class="flow">
+        <div class="flow-box"><strong>大量原始材料</strong><span>不同主题、不同写法、不同领域的文本</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>预训练</strong><span>反复做基础预测任务并计算损失</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>参数被调整</strong><span>逐步形成广泛的语言与模式识别能力</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>再做专门训练</strong><span>例如更会听指令、回答问题或完成特定任务</span></div>
+      </div>
+    </div>
+    <p>所以，预训练更像是在打地基。后面的专门训练可以改变模型怎样使用这些能力，但如果底层基础很弱，只靠少量任务样本通常很难从零补齐。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>二、预训练时，模型到底在“练”什么？</h2>
+    <p>对很多生成式语言模型来说，最典型的基础任务是：<strong>给出前面的 Token，预测接下来最可能出现哪个 Token。</strong>例如训练文本原本是“数据保护需要明确处理目的”，模型看到“数据保护需要明确处理”以后，要给下一个 Token 的不同候选分配可能性，再和文本中真正出现的下一个 Token 比较。</p>
+    <div class="visual-board">
+      <div class="visual-title">把前几课串起来：一次最简化的预训练循环</div>
+      <div class="flow">
+        <div class="flow-box"><strong>文本变成 Token</strong><span>把训练材料转换成模型能够处理的单位</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>预测下一步</strong><span>模型对下一个 Token 给出不同倾向</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>计算损失</strong><span>比较预测与真实文本之间的差距</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>更新参数</strong><span>让下一轮预测更接近训练材料</span></div>
+      </div>
+    </div>
+    <p>这个过程会在海量文本上反复发生。模型并没有一本单独的“语法规则表”或“百科知识表”被人工逐条写进去，而是参数在大量训练中被持续调整，逐渐形成可以支持后续生成的内部计算结构。</p>
+    <div class="callout"><strong>新词备注｜自监督学习</strong><br/>很多语言模型预训练被称为“自监督”：不是人工给每一句话贴上“正确答案”，而是直接利用原始文本本身制造训练目标。例如把前文作为输入，把原文真正出现的下一个 Token 当作答案。今天只需要理解到这里。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>三、是不是所有模型都靠“猜下一个 Token”预训练？</h2>
+    <p>不是。这里必须区分不同模型的训练目标。很多生成式、从左到右生成文本的语言模型使用“预测下一个 Token”这一类任务；BERT 一类模型则采用过“遮住一部分 Token，再让模型猜回去”的方式。还有模型会把文本、图像、语音等不同数据放在一起训练。</p>
+    <div class="compare-grid">
+      <div class="compare-card"><b>下一 Token 预测</b><p>看到前面的内容，预测接下来出现什么。很多生成式语言模型采用这一类目标。</p></div>
+      <div class="compare-card"><b>遮盖后再预测</b><p>把输入中的一部分内容遮住，让模型根据上下文恢复被遮住的部分。BERT 是经典例子。</p></div>
+      <div class="compare-card"><b>共同点</b><p>无论具体任务怎样设计，预训练的核心都是：在大规模数据上先形成通用基础能力，再进入后续更专门的训练或使用阶段。</p></div>
+    </div>
+    <div class="callout"><strong>后续课程预告｜Transformer</strong><br/>不同 Token 怎样结合上下文相互影响，通常要进入 Transformer、Attention 等内部机制才能讲清。今天不需要掌握这些词；暂时把它理解成“模型内部处理上下文关系的一套核心计算结构”，后面会专门拆开讲。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>四、预训练结束后，模型为什么还不能直接等于“好用的聊天助手”？</h2>
+    <p>预训练首先让模型擅长从大量数据中学习语言和内容模式，但“会继续文本”与“会按人的要求办事”不是同一件事。一个只完成基础预训练的模型，可能知道很多表达方式，却未必稳定遵守指令，也未必知道什么时候应当拒绝、怎样组织回答或怎样适应特定行业。</p>
+    <p>因此，实际的大模型开发通常还会有后续训练阶段。今天不展开，只先记住这个顺序：</p>
+    <div class="token-strip"><span class="token-chip">大规模预训练</span><span class="token-chip">→</span><span class="token-chip">形成基础能力</span><span class="token-chip">→</span><span class="token-chip">后续专门训练</span><span class="token-chip">→</span><span class="token-chip">更适合具体使用方式</span></div>
+    <div class="callout"><strong>新词备注｜后训练 / 微调</strong><br/>这些词以后会在“模型训练与对齐”模块专门讲。今天先把它们理解成：<strong>基础预训练完成以后，为了让模型更适合某类任务、指令或行为要求而继续进行的训练。</strong></div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>五、正面概念讲清以后，再看三个常见误解</h2>
+    <div class="myth-list">
+      <div class="myth"><b>误解 01</b><span>“预训练就是把互联网文本原封不动塞进模型。”——不是。训练数据会参与参数更新，模型文件通常不是一份可以逐条查询原文的数据库。但这不意味着模型绝不会记住训练材料中的具体片段，记忆与复现风险仍需单独评估。</span></div>
+      <div class="myth"><b>误解 02</b><span>“模型读过海量文本，所以它回答任何问题都应该知道正确答案。”——不能这样推。预训练优化的是训练目标，不是给模型安装一套始终准确、及时更新的事实数据库；训练数据缺失、冲突、过时或模型生成过程都可能带来错误。</span></div>
+      <div class="myth"><b>误解 03</b><span>“预训练完成后，后续训练只是改说话语气。”——不准确。后续训练可以明显改变模型如何遵守指令、处理偏好和执行任务，有时也会改变能力边界；具体影响取决于训练数据和方法。</span></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>六、为什么这件事与网信法研究有关？</h2>
+    <div class="law-bridge">
+      <h3>最重要的一点：预训练决定了大量数据最早在什么目的下进入模型开发链条。</h3>
+      <p>对数据合规、版权、商业秘密和个人信息研究而言，不能只盯着用户今天输入了什么。很多基础模型的关键数据处理早在用户使用之前就已经发生：训练材料从哪里取得、经过怎样筛选、以什么目的进入训练、是否保留来源记录、能否响应删除或异议要求，都会直接影响后续治理。</p>
+      <p>同时，也不能把“训练数据已经变成参数”简单等同于“原始风险已经消失”。参数通常不是原文数据库，但模型可能在特定条件下复现或泄露训练材料中的片段。法律分析因此需要区分至少三件事：<strong>训练数据本身的取得与使用是否合法；训练过程形成的模型参数属于什么技术对象；模型在后续使用中是否能够重新暴露与原始材料相关的信息。</strong></p>
+    </div>
+    <p>这一区分也会影响证据保存。企业如果只保留最终模型文件，却无法说明预训练数据来源、过滤规则、版本、训练目的和删除机制，后续很难证明模型开发阶段究竟发生过什么。对高风险行业而言，数据来源清单、训练批次记录、过滤与去重规则、模型版本和训练配置都可能成为可审计链条的一部分。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>七、这一课只需要带走三句话</h2>
+    <div class="lesson-focus">
+      <div><strong>第一句</strong><p>预训练是模型承担具体任务之前，用大规模数据先进行的一轮基础训练。</p></div>
+      <div><strong>第二句</strong><p>很多生成式语言模型通过反复预测下一个 Token、计算损失并更新参数，逐渐形成广泛的语言和内容模式能力。</p></div>
+    </div>
+    <div class="callout"><strong>第三句：</strong>预训练数据进入模型参数，不等于数据治理问题随之消失；研究时要把数据来源、训练过程、参数形成和后续复现风险分开判断。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>八、把这一课转成两个研究问题</h2>
+    <div class="research-grid">
+      <div class="research-card"><small>论文问题</small><h3>从训练数据到模型参数：生成式人工智能预训练中的数据法律关系如何分层？</h3><p>可区分训练数据取得与使用、参数形成、模型记忆与输出复现三个阶段，讨论“数据已经进入参数”是否以及在何种条件下改变个人信息、版权作品或商业秘密的法律评价，并进一步构建不同阶段的责任与证明规则。</p></div>
+      <div class="research-card"><small>智库问题</small><h3>建立基础模型预训练数据来源与训练过程的可追溯记录</h3><p>面向政企大模型和重点行业模型，可研究最低限度的训练数据台账：来源类别、获取方式、过滤去重、敏感数据处理、训练批次、模型版本及删除响应机制，避免模型上线后只剩一个无法回溯开发过程的“黑箱文件”。</p></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>原始材料</h2>
+    <ul class="source-links">
+      <li><a href="https://huggingface.co/docs/transformers/v5.4.0/en/tasks/language_modeling">Hugging Face Transformers：Causal Language Modeling</a>——说明因果语言模型通过序列前文预测下一个 Token，是生成式语言模型常见的训练任务。</li>
+      <li><a href="https://arxiv.org/abs/1810.04805">Devlin et al. (2018), BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</a>——展示另一种经典预训练思路：利用未标注文本进行双向表示预训练，并通过遮盖语言模型任务学习。</li>
+      <li><a href="https://arxiv.org/abs/2005.14165">Brown et al. (2020), Language Models are Few-Shot Learners</a>——GPT-3论文，展示大规模语言模型在大规模语料和参数规模上的预训练方式，以及预训练后直接适应多类下游任务的能力。</li>
+    </ul>
+  </section>
+
+  <div class="next-lesson"><div><div class="tech-kicker">NEXT · LESSON 07</div><strong>概率生成：模型为什么不是“想好一句话”再一次性写出来？</strong></div><a href="../tech-basics.html">课程总览与历史归档 →</a></div>
+</div>
+</main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body>
+</html>
