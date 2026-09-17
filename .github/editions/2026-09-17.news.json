@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-17",
+  "column": "brief",
+  "state": "verified",
+  "page": "articles/2026-09-17-tech-law-brief.html",
+  "news_count": 18,
+  "distribution": {"domestic": 6, "foreign": 12},
+  "checked_at": "2026-09-17T19:46:00+08:00",
+  "last_news_scan_at": "2026-09-17T19:45:00+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  },
+  "deduplication": {
+    "previous_day": "2026-09-16",
+    "history_start": "2026-09-10",
+    "notes": [
+      "逐条对照2026-09-16完整简报并回查近7日站内历史；排除已收录的法仪大模型、9月14日人工智能赋能网络安全应用测试、9月16日最高法网络法治典型案例及前一日各项AI安全/数据执法事项。",
+      "EU KIDS Act仅以新增进展收录：9月16日本栏报道的是冯德莱恩政策演说，9月17日新增事实为欧盟委员会正式采纳并发布立法提案及配套材料。",
+      "上海生成式AI条目为9月17日新增12款应用登记批次；智能体互联条目聚焦GB/Z 185-2026宣贯、协议开源和身份码节点，未与此前一般智能体治理新闻重复。"
+    ]
+  },
+  "scan": {
+    "china_official": "已检查中国政府网、中央网信办、工信系统、北京/上海/深圳等主要数字经济地区及相关部门当日公开信息，并在发布前复扫近两小时重要正式公告。",
+    "foreign_official": "已检查欧盟委员会、EDPB、美国联邦机构、加拿大隐私监管机构、巴西政府等当日或近72小时正式材料，并以Reuters补充核验德国、美国司法与供应链事件。",
+    "local_language": "使用韩文检索韩国AI安全与监管动态，并使用日文、越南文检索日本PPC/JFTC/总务省/经产省及越南科技监管来源；未发现应替换现有入选项目的更高优先级新增正式监管动作。",
+    "media": "发布前复扫Reuters、AP/Bloomberg/FT检索结果及科技、法律和安全专业来源；对媒体报道中的诉讼性质、是否终局、企业主张与正式规则作了区分。",
+    "final_window": "19:45前重新扫描最近1—2小时官方与主流来源，未发现需要替换本期入选条目的重大新正式裁判、处罚或规则。"
+  }
+}
