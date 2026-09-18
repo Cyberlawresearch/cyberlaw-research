@@ -26,6 +26,16 @@ run('same concrete actor and legal issue can establish related reading', () => {
   assert.equal(model.relatedRows(a, [a, b], 'news')[0].path, 'b.html');
 });
 
+run('related news is not artificially capped at three items', () => {
+  const base = {title:'OpenAI披露模型失配事件', facts:'OpenAI公开模型异常行为和未经授权行动的调查。', kind:'news', path:'base.html', anchor:'research-item-1', date:'2026-08-10'};
+  const related = Array.from({length:5}, (_, i) => ({
+    title:`OpenAI模型失配事件后续${i + 1}`,
+    facts:`OpenAI继续披露模型异常行为调查和事件报告${i + 1}。`,
+    kind:'news', path:`r${i + 1}.html`, anchor:'research-item-1', date:`2026-08-0${i + 1}`
+  }));
+  assert.equal(model.relatedRows(base, [base, ...related], 'news').length, 5);
+});
+
 run('agent permissions and interoperability are related but not automatically one timeline', () => {
   const permissions = {title:'智能体越权调用外部应用', facts:'测试发现智能体超出授权权限，调用外部工具。', kind:'news', path:'permissions.html', anchor:'research-item-1', date:'2026-08-01'};
   const interop = {title:'数据智能体互操作规范发布', facts:'数据智能体采用代理协议，规范跨应用互操作。', kind:'news', path:'interop.html', anchor:'research-item-1', date:'2026-08-02'};
@@ -42,6 +52,15 @@ run('same event progression forms a timeline', () => {
   assert.equal(groups.length, 1);
   assert.equal(groups[0].topic, '未成年人上网与年龄核验');
   assert.deepEqual(groups[0].items.map(x => x.path), ['speech.html']);
+});
+
+run('same-type enforcement across jurisdictions can form a comparison timeline', () => {
+  const cn = {title:'监管部门因违规处理个人信息处罚某平台', facts:'监管部门认定平台未经同意共享个人信息并作出行政处罚。', kind:'news', path:'cn.html', anchor:'research-item-1', date:'2026-09-18'};
+  const eu = {title:'European DPA fines retailer for unlawful data sharing', facts:'The authority imposed a GDPR fine for unlawful sharing of personal data.', kind:'news', path:'eu.html', anchor:'research-item-1', date:'2026-09-10'};
+  const groups = model.buildTimelines(cn, [eu, cn]);
+  assert.equal(groups.length, 1);
+  assert.equal(groups[0].topic, '个人信息保护处罚');
+  assert.deepEqual(groups[0].items.map(x => x.path), ['eu.html']);
 });
 
 run('editorial extrapolation does not create factual topics', () => {
@@ -81,7 +100,7 @@ run('timeline groups are narrow, unique, chronological and directly supported', 
         // A named instrument/event marker can establish an event-chain relation even
         // when one historical headline uses wording outside the topic dictionary.
         assert(rowHasTopic || signals.markers > 0, `unsupported timeline topic: ${item.title} -> ${row.title}`);
-        assert(signals.markers > 0 || signals.entities > 0 || signals.title >= .10 || signals.facts >= .12,
+        assert(model.isSeriesTopic(group.topic) || signals.markers > 0 || signals.entities > 0 || signals.title >= .10 || signals.facts >= .12,
           `weak timeline link: ${item.title} -> ${row.title}`);
       }
     }
