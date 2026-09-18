@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>第07课｜概率生成：模型为什么不是“想好一句话”再一次性写出来？｜网信法技术基础</title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+  <link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-09-17-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-09-17-calo-ai-policy-primer-roadmap.html">域外法学论文精读</a><a href="../articles/2026-09-17-nissenbaum-privacy-in-context.html">法学经典著作</a><a href="../articles/2026-09-17-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 07 · 基础积木 · 2026.09.18</div><h1>概率生成：模型为什么不是“想好一句话”再一次性写出来？</h1><p class="tech-lead">今天只解决一个问题：大语言模型收到输入以后，为什么通常是一小步一小步地生成 Token，而不是先在内部写好整段答案，再一次性显示出来？</p></div></section>
+<div class="tech-shell">
+  <section class="lesson-focus">
+    <div><strong>先把它记成一句人话</strong><p><strong>对典型的自回归语言模型来说，生成文本就是不断判断“下一个 Token 更可能是什么”，选出一个，再继续判断下一步。</strong>模型不是先准备好完整句子，而是让已经出现的内容不断成为下一步预测的新条件。</p></div>
+    <div><strong>“概率”到底指什么</strong><p>这里的概率首先是<strong>不同候选 Token 在当前上下文中被模型选作下一步的相对可能性</strong>。它不是“这句话有多少概率是真的”，也不是法律意义上的证明程度。</p></div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>一、先看一个最简单的例子</h2>
+    <p>假设模型已经看到：“今天下班以后，我准备去公园……”接下来它不会只得到一个唯一答案，而可能对很多候选 Token 给出不同倾向。为了建立直觉，可以把结果想成下面这样。数字只是示意，不代表任何具体模型的真实输出：</p>
+    <div class="compare-grid">
+      <div class="compare-card"><b>“散步”</b><p>可能性较高，例如 42%</p></div>
+      <div class="compare-card"><b>“跑步”</b><p>也很合理，例如 24%</p></div>
+      <div class="compare-card"><b>其他候选</b><p>“看书”“拍照”“……”等共同分掉剩余概率</p></div>
+    </div>
+    <p>系统从这些候选里确定下一步以后，例如选了“散步”，新的上下文就变成“今天下班以后，我准备去公园散步……”。模型再基于这段更长的内容计算下一步，如此反复，直到达到停止条件。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>二、一句话是怎样一点一点生成出来的？</h2>
+    <div class="visual-board">
+      <div class="visual-title">典型自回归文本生成的基本循环</div>
+      <div class="flow">
+        <div class="flow-box"><strong>已有内容</strong><span>用户输入 + 已经生成的 Token</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>计算下一步</strong><span>给大量候选 Token 分配不同可能性</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>选出一个 Token</strong><span>按既定生成策略确定下一步</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>放回上下文</strong><span>把新 Token 接在后面，再重复一轮</span></div>
+      </div>
+    </div>
+    <p>因此，一段回答其实是许多次“预测下一步—选一个—继续预测”的结果。前面某一步选了什么，会改变后面看到的上下文，后续概率也会跟着变化。这也是为什么开头很小的差异，有时会让整段回答走向不同方向。</p>
+    <div class="callout"><strong>新词备注｜自回归（autoregressive）</strong><br/>今天先把它理解成：<strong>模型生成下一步时，会把前面已经出现的内容一起作为条件；生成一个，再把它接回去继续生成。</strong>不需要记公式。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>三、有了概率以后，模型一定选“最可能”的那个吗？</h2>
+    <p>不一定。概率分布只是告诉系统“哪些候选更倾向出现”，下一步究竟怎样选，还取决于生成策略。最简单的做法是每次都选概率最高的候选；另一类做法则会在一组较合适的候选里按照概率进行抽取，从而让回答保留一定变化。</p>
+    <div class="compare-grid">
+      <div class="compare-card"><b>每次选最高概率</b><p>同一上下文下更稳定，但长期生成也可能出现机械、重复等问题。</p></div>
+      <div class="compare-card"><b>按概率抽取</b><p>高概率候选更容易被选中，但其他候选也可能出现，因此输出可以不同。</p></div>
+      <div class="compare-card"><b>生成策略</b><p>同一个模型，在不同选择规则下，最终文字也可能明显不同。</p></div>
+    </div>
+    <div class="callout"><strong>后续课程预告｜采样</strong><br/>以后会专门讲 temperature、top-p 等生成设置。今天只要知道：<strong>模型先给出“下一步有哪些可能”，系统还要决定“从这些可能里怎样选”。</strong></div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>四、概率高，能不能理解成“模型更确定这件事是真的”？</h2>
+    <p>不能。假如一句话开头是“法国的首都是”，模型很可能给“巴黎”很高的下一 Token 概率；但这首先说明“巴黎”在当前上下文中是非常符合模型生成规律的续写。对于一个模型经常见到却本身错误的说法，也可能出现很高的生成概率。</p>
+    <p>因此要把两件事分开：</p>
+    <div class="token-strip"><span class="token-chip">下一 Token 概率</span><span class="token-chip">≠</span><span class="token-chip">事实为真的概率</span><span class="token-chip">≠</span><span class="token-chip">法律判断正确的概率</span></div>
+    <p>这一区分非常重要。模型是在完成文本生成任务，它给出的内部概率并不会自动完成事实核验、证据审查或法律论证。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>五、正面概念讲清以后，再看三个常见误解</h2>
+    <div class="myth-list">
+      <div class="myth"><b>误解 01</b><span>“模型先在内部写完整篇回答，再像打字机一样显示出来。”——对典型自回归语言模型来说，不是。核心生成过程通常是逐步确定下一 Token，再继续生成。</span></div>
+      <div class="myth"><b>误解 02</b><span>“模型永远选择概率最高的词，所以同一个问题一定得到同一个答案。”——不一定。生成策略可以允许按概率抽取，模型版本、配置和上下文变化也会改变最终输出。</span></div>
+      <div class="myth"><b>误解 03</b><span>“某个 Token 概率是 90%，就表示相关事实有 90% 的把握是真的。”——不对。它首先描述的是模型在当前上下文里生成这个 Token 的倾向，不能直接替代事实可信度或法律置信度。</span></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>六、为什么这件事与网信法研究有关？</h2>
+    <div class="law-bridge">
+      <h3>第一，生成概率不是事实证明；第二，生成策略本身也是一种可以被平台控制的权力。</h3>
+      <p>在法律咨询、行政辅助、内容审核等场景中，如果系统只是因为某个续写“在语言上很像正确答案”就把它生成出来，不能据此推定其事实已经核实。尤其当系统给出非常肯定的措辞时，语言表达的确定感也不能代替来源、证据和法律依据。</p>
+      <p>同时，开发者或平台即使不重新训练模型，也可以通过生成策略改变输出更稳定还是更多样、更保守还是更开放。由此，模型参数之外还存在一层“推理时配置”的治理空间。审计一个系统时，不能只问“用了哪个模型”，还要问“用什么生成设置运行这个模型”。</p>
+    </div>
+    <p>这还会影响证据留存和结果复核。如果一个高风险系统允许概率抽取，同一输入可能产生不同结果。为了让后续复核有意义，至少应记录模型及版本、完整输入、生成时间、主要生成配置和最终输出；否则即使重新输入同一句话，也未必能完整重现当时的结果。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>七、这一课只需要带走三句话</h2>
+    <div class="lesson-focus">
+      <div><strong>第一句</strong><p>典型自回归语言模型通常不是一次性写好整段文字，而是不断预测并确定下一个 Token。</p></div>
+      <div><strong>第二句</strong><p>下一 Token 的概率表示模型在当前上下文中的生成倾向，不等于事实真实性或法律判断正确率。</p></div>
+    </div>
+    <div class="callout"><strong>第三句：</strong>同一个模型在不同生成策略下可以给出不同结果，因此法律审计不仅要看模型本身，也要看推理时的生成配置。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>八、把这一课转成两个研究问题</h2>
+    <div class="research-grid">
+      <div class="research-card"><small>论文问题</small><h3>从生成概率到法律信赖：为什么大模型“更可能这样说”不等于“更可能是真的”？</h3><p>可以区分 Token 生成概率、模型置信表达与事实可靠性，讨论高风险法律场景中把语言模型概率误当作事实可信度的规范风险，并进一步研究事实核验、证据来源和置信度披露应如何分层。</p></div>
+      <div class="research-card"><small>智库问题</small><h3>建立高风险大模型输出的最小可复核记录</h3><p>可面向政务、金融、医疗等场景明确最低留痕字段，包括模型名称和版本、完整输入、主要生成配置、生成时间及最终输出，使争议发生后能够判断结果来自模型能力、配置变化还是具体输入差异。</p></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>原始材料</h2>
+    <ul class="source-links">
+      <li><a href="https://huggingface.co/docs/transformers/main/llm_tutorial">Hugging Face Transformers：Generation with LLMs</a>——直观说明因果语言模型输出下一 Token 的概率分布，并通过反复选择下一 Token 完成自回归生成。</li>
+      <li><a href="https://huggingface.co/docs/transformers/main/generation_strategies">Hugging Face Transformers：Generation Strategies</a>——介绍贪心选择、采样等不同解码策略怎样从下一 Token 概率中决定实际输出。</li>
+      <li><a href="https://arxiv.org/abs/2005.14165">Brown et al. (2020), Language Models are Few-Shot Learners</a>——GPT-3论文，将 GPT-3明确描述为自回归语言模型，是理解“基于前文逐步生成”的经典材料。</li>
+      <li><a href="https://arxiv.org/abs/1904.09751">Holtzman et al. (2020), The Curious Case of Neural Text Degeneration</a>——说明即使模型不变，不同解码策略也会显著影响生成文本，并提出 nucleus sampling。</li>
+    </ul>
+  </section>
+
+  <div class="next-lesson"><div><div class="tech-kicker">NEXT · LESSON 08 · TRANSFORMER</div><strong>Attention：模型为什么要对上下文里的不同部分“看得不一样重”？</strong></div><a href="../tech-basics.html">课程总览与历史归档 →</a></div>
+</div>
+</main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body>
+</html>
