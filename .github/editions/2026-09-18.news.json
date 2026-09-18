@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-18",
+  "column": "brief",
+  "state": "verified",
+  "page": "articles/2026-09-18-tech-law-brief.html",
+  "news_count": 18,
+  "distribution": {"domestic": 6, "foreign": 12},
+  "checked_at": "2026-09-18T19:12:00+08:00",
+  "last_news_scan_at": "2026-09-18T19:12:00+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  },
+  "deduplication": {
+    "previous_day": "2026-09-17",
+    "history_start": "2026-09-11",
+    "notes": [
+      "逐条对照2026-09-17完整简报并回查2026-09-11至2026-09-17站内新闻历史；排除全国先进制造业大会“人工智能+制造”、EU KIDS Act、OpenAI模型失配披露、华为AI芯片供给及韩国NIS智能体安全评估等已收录事件的重复报道。",
+      "江苏工业技改条目保留的是2026-09-16公开的具体财政支持文件，包含高质量数据集项目最高400万元、工业大模型项目最高2000万元等新增政策工具，与9月17日全国先进制造业大会的一般性部署不是同一监管动作。",
+      "巴西ECA Digital条目以2026-09-17首个半年度透明度报告法定期限届满作为新的法律义务节点；中国—东盟数据合作专业委员会与人工智能部长圆桌会议分别对应数据合作组织机制和AI伦理安全部长级倡议，事实基础与制度动作不同。"
+    ]
+  },
+  "scan": {
+    "china_official": "已检查中国政府网、中央网信办、工业和信息化部、国家数据局、市场监管、金融监管、人民银行、卫生健康、药监、最高法、最高检及北京、上海、江苏、苏州等主要数字经济地区近72小时公开信息，并在发布前复扫最近1至2小时重要正式公告。",
+    "foreign_official": "已检查欧盟委员会、EDPB、美国联邦司法系统、FTC/DOJ相关公开信息、日本PPC、韩国KISA、新加坡CSA、巴西ANPD等近72小时材料，并以Reuters、AP等主流媒体补充核验司法、企业和监管动态。",
+    "local_language": "使用韩文检索KISA、PIPC/KFTC相关动态，使用日文检索PPC/JFTC/总务省/经产省，并使用越南文检索越南及中国—东盟AI治理合作；未发现应替换现有入选项目的更高优先级新增正式监管动作。",
+    "media": "发布前复扫Reuters、AP、FT、Bloomberg检索结果及科技、法律与安全专业来源；对调查请求、初步禁令、诉讼程序、企业披露与正式法律规则作了明确区分。",
+    "final_window": "发布前重新扫描最近1至2小时官方与主流来源，未发现需要替换本期入选条目的重大新正式裁判、处罚或规则。"
+  }
+}
