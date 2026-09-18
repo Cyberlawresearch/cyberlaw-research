@@ -1,7 +1,7 @@
 /* Item-level related reading and factual timelines. No private reader data is read. */
 (function (global) {
   'use strict';
-  const VERSION = '7';
+  const VERSION = '8';
   const normal = s => String(s || '').toLowerCase().replace(/[\s\p{P}\p{S}]+/gu, '');
   const hit = (text, word) => {
     const value = String(text || '').toLowerCase(), term = String(word || '').toLowerCase();
@@ -65,6 +65,8 @@
     ['AI诈骗与金融消费者保护', [['诈骗','网络金融','金融消费者','虚假广告'], ['AI','人工智能','网络','算法','数字','平台','广告']]]
   ];
 
+  // These topics are deliberately narrow enough to support cross-jurisdiction
+  // comparison timelines even when the cases do not share the same actor.
   const SERIES_TOPICS = new Set([
     '生成式AI备案与服务管理','机器遗忘与数据删除','匿名化与重新识别','数据跨境与出境合规',
     '未成年人上网与年龄核验','个人信息保护处罚','勒索软件事件与处置','后量子密码迁移',
@@ -174,8 +176,16 @@
     const sameNamedEvent = s.markers > 0;
     const sameActorAndIssue = s.entities > 0 && s.topics.includes(topic) && (s.title >= .05 || s.facts >= .08);
     const sameEventLanguage = s.title >= .20 && s.topics.includes(topic);
-    const narrowSeries = SERIES_TOPICS.has(topic) && s.topics.includes(topic) && (s.title >= .10 || s.facts >= .12);
-    return { eligible: sameNamedEvent || sameActorAndIssue || sameEventLanguage || narrowSeries, strong: sameNamedEvent || sameActorAndIssue || sameEventLanguage, score: (sameNamedEvent ? 90 : 0) + s.entities * 35 + s.title * 50 + s.facts * 25 + (narrowSeries ? 12 : 0) };
+    // For a deliberately narrow series, sharing the same precise event type is
+    // enough to support a comparison timeline across jurisdictions. Generic
+    // topic overlap is still excluded because only SERIES_TOPICS enter here.
+    const narrowSeries = SERIES_TOPICS.has(topic) && s.topics.includes(topic);
+    return {
+      eligible: sameNamedEvent || sameActorAndIssue || sameEventLanguage || narrowSeries,
+      strong: sameNamedEvent || sameActorAndIssue || sameEventLanguage,
+      series: narrowSeries,
+      score: (sameNamedEvent ? 90 : 0) + s.entities * 35 + s.title * 50 + s.facts * 25 + (narrowSeries ? 12 : 0)
+    };
   }
 
   function buildTimelines(current, rows) {
@@ -187,15 +197,17 @@
         .filter(p => p.rel.eligible)
         .sort((a, b) => b.rel.score - a.rel.score || String(b.x.date).localeCompare(String(a.x.date)) || key(a.x).localeCompare(key(b.x)));
       const selected = [];
-      let hasStrong = false;
+      let hasStrong = false, hasSeries = false;
       for (const { x, rel } of candidates) {
         if ([...used, ...selected].some(y => duplicate(y, x))) continue;
-        selected.push(x); hasStrong ||= rel.strong;
+        selected.push(x); hasStrong ||= rel.strong; hasSeries ||= rel.series;
         if (selected.length === 4) break;
       }
-      // One historical node is acceptable only when it is demonstrably the same
-      // event/actor-and-issue chain. Topic-only series need at least two prior nodes.
-      if (!selected.length || (!hasStrong && selected.length < 2)) continue;
+      // One historical node is enough when it is either the same event chain or
+      // a genuinely comparable event in a deliberately narrow series (e.g.
+      // personal-information penalties across jurisdictions). Broad topics do
+      // not receive this exception.
+      if (!selected.length || (!hasStrong && !hasSeries && selected.length < 2)) continue;
       used.push(...selected);
       result.push({ topic: topic.name, items: selected.sort((a, b) => String(a.date).localeCompare(String(b.date)) || key(a).localeCompare(key(b))) });
       if (result.length === 2) break;
@@ -213,15 +225,16 @@
       return { x, score: s.markers * 40 + s.entities * 25 + s.topics.length * 12 + s.title * 30 + s.facts * 15 + indexedShared * 2 };
     }).filter(Boolean).sort((a, b) => b.score - a.score || String(b.x.date).localeCompare(String(a.x.date)));
     const selected = [];
+    const limit = kind === 'news' ? 6 : 4;
     for (const { x } of ranked) {
       if (selected.some(y => duplicate(y, x))) continue;
       selected.push(x);
-      if (selected.length === 3) break;
+      if (selected.length === limit) break;
     }
     return selected;
   }
 
-  const api = { detectTopics, buildTimelines, relatedRows, directlyRelated, relationSignals, similarity, duplicate, key };
+  const api = { detectTopics, buildTimelines, relatedRows, directlyRelated, relationSignals, similarity, duplicate, key, isSeriesTopic: topic => SERIES_TOPICS.has(topic) };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   if (!global.document) return;
 
