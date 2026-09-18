@@ -15,9 +15,9 @@
 <div class="tech-shell">
   <section>
     <div class="latest-lesson">
-      <div class="lesson-no">06</div>
-      <div><div class="tech-kicker">LATEST LESSON · 2026.09.17</div><h2>预训练：模型为什么要先读海量文本，再去完成具体任务？</h2><p>理解模型为什么要先在大规模数据上形成基础能力，以及为什么训练数据进入参数后，数据治理问题并不会自动消失。</p></div>
-      <a href="tech-basics/2026-09-17-pretraining.html">阅读最新一课 →</a>
+      <div class="lesson-no">07</div>
+      <div><div class="tech-kicker">LATEST LESSON · 2026.09.18</div><h2>概率生成：模型为什么不是“想好一句话”再一次性写出来？</h2><p>理解典型语言模型怎样逐步生成 Token，以及为什么“下一 Token 概率”不能直接等同于事实真实性或法律判断正确率。</p></div>
+      <a href="tech-basics/2026-09-18-probability-generation.html">阅读最新一课 →</a>
     </div>
   </section>
 
@@ -37,18 +37,18 @@
         <rect class="map-stage" x="20" y="35" width="255" height="580" rx="12"/>
         <text class="map-stage-title" x="42" y="72">第一阶段｜先看懂输入</text>
         <text class="map-stage-sub" x="42" y="96">文字如何变成模型可以计算的内容</text>
-        <rect class="map-module active" x="42" y="132" width="211" height="210" rx="10"/>
+        <rect class="map-module" x="42" y="132" width="211" height="210" rx="10"/>
         <text class="map-module-no" x="60" y="159">MODULE 01</text>
         <text class="map-module-title" x="60" y="188">基础积木</text>
         <text class="map-module-text" x="60" y="218"><tspan x="60" dy="0">Token · Embedding · 参数</tspan><tspan x="60" dy="25">训练与推理 · 损失函数</tspan><tspan x="60" dy="25">预训练 · 概率生成</tspan></text>
         <text class="map-stage-sub" x="42" y="392">当前进度</text>
-        <text class="map-module-title" x="42" y="422">06 / 预训练</text>
-        <text class="map-module-text" x="42" y="450"><tspan x="42" dy="0">下一步：概率生成</tspan><tspan x="42" dy="24">模型为什么是一点一点生成文本？</tspan></text>
+        <text class="map-module-title" x="42" y="422">07 / 概率生成</text>
+        <text class="map-module-text" x="42" y="450"><tspan x="42" dy="0">基础积木已完成</tspan><tspan x="42" dy="24">下一步：Attention</tspan></text>
 
         <rect class="map-stage" x="330" y="35" width="255" height="580" rx="12"/>
         <text class="map-stage-title" x="352" y="72">第二阶段｜再看懂模型</text>
         <text class="map-stage-sub" x="352" y="96">模型如何处理、训练并形成能力</text>
-        <rect class="map-module" x="352" y="125" width="211" height="125" rx="10"/>
+        <rect class="map-module active" x="352" y="125" width="211" height="125" rx="10"/>
         <text class="map-module-no" x="370" y="151">MODULE 02</text><text class="map-module-title" x="370" y="180">Transformer</text>
         <text class="map-module-text" x="370" y="207"><tspan x="370">Attention · Q/K/V</tspan><tspan x="370" dy="22">位置编码 · Decoder-only</tspan></text>
         <rect class="map-module" x="352" y="270" width="211" height="125" rx="10"/>
@@ -86,6 +86,7 @@
   <section class="lesson-section tech-history">
     <div class="tech-history-head"><h2>历史课程</h2><span>按课程顺序持续更新</span></div>
     <div class="tech-history-list">
+      <a class="tech-history-item" href="tech-basics/2026-09-18-probability-generation.html"><div class="tech-history-no">07</div><div><div class="tech-history-title">概率生成：模型为什么不是“想好一句话”再一次性写出来？</div><div class="tech-history-desc">理解语言模型怎样一步步确定下一个 Token，以及生成概率、事实可靠性和生成策略为什么必须分开判断。</div></div><div class="tech-history-date">2026.09.18</div></a>
       <a class="tech-history-item" href="tech-basics/2026-09-17-pretraining.html"><div class="tech-history-no">06</div><div><div class="tech-history-title">预训练：模型为什么要先读海量文本，再去完成具体任务？</div><div class="tech-history-desc">理解模型为什么先在大规模数据上形成基础能力，以及预训练数据、模型参数与后续复现风险为什么要分开判断。</div></div><div class="tech-history-date">2026.09.17</div></a>
       <a class="tech-history-item" href="tech-basics/2026-09-16-loss-function.html"><div class="tech-history-no">05</div><div><div class="tech-history-title">损失函数：模型怎么知道自己“答错了多少”？</div><div class="tech-history-desc">理解预测与训练目标之间的差距怎样变成一个数字，以及为什么技术优化目标不能直接等同于法律合规目标。</div></div><div class="tech-history-date">2026.09.16</div></a>
       <a class="tech-history-item" href="tech-basics/2026-09-15-training-inference.html"><div class="tech-history-no">04</div><div><div class="tech-history-title">训练与推理：模型什么时候在学习，什么时候只是在回答？</div><div class="tech-history-desc">分清参数更新与普通回答，理解“用于推理”和“用于训练”为什么是两条不同的数据链路。</div></div><div class="tech-history-date">2026.09.15</div></a>
