@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>第08课｜Attention：模型为什么要对上下文里的不同部分“看得不一样重”？｜网信法技术基础</title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+  <link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-09-18-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-09-18-desai-kroll-trust-but-verify.html">域外法学论文精读</a><a href="../articles/2026-09-18-boyle-public-domain.html">法学经典著作</a><a href="../articles/2026-09-18-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 08 · TRANSFORMER · 2026.09.19</div><h1>Attention：模型为什么要对上下文里的不同部分“看得不一样重”？</h1><p class="tech-lead">今天只解决一个问题：模型在处理当前内容时，为什么不能把上下文里的每一部分都当成同样重要，而要根据当前任务动态决定“哪些信息更值得参考”？</p></div></section>
+<div class="tech-shell">
+  <section class="lesson-focus">
+    <div><strong>先把它记成一句人话</strong><p><strong>Attention 是一种“按相关程度分配权重，再把信息汇总起来”的计算机制。</strong>模型处理当前位置时，会让更相关的信息贡献得更多，让关系较弱的信息贡献得少一些。</p></div>
+    <div><strong>“看得重”不是人的注意力</strong><p>这里的“注意”只是方便理解的说法。它本质上是一组计算出来的权重，不表示模型具有意识，也不表示它像人一样真的“看见”或“理解”。</p></div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>一、先看一个最简单的例子</h2>
+    <p>假设一句话是：“小王把钥匙交给小李，因为小李要开门。”当模型处理“开门”附近的信息时，“小李”和“钥匙”通常比“小王”更直接相关。模型如果把所有词都平均处理，就很难突出这种关系。</p>
+    <div class="compare-grid">
+      <div class="compare-card"><b>“小李”</b><p>和“谁要开门”直接相关，可以分到较高权重。</p></div>
+      <div class="compare-card"><b>“钥匙”</b><p>和“用什么开门”直接相关，也可能得到较高权重。</p></div>
+      <div class="compare-card"><b>“小王”</b><p>仍然属于上下文，但对当前这一步的直接帮助可能较小。</p></div>
+    </div>
+    <p class="tiny-note">上面的权重关系只是机制示意，不代表任何具体模型在这句话上的真实内部结果。不同模型、不同层次和不同计算位置都可能得到不同分配。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>二、Attention 到底做了什么？</h2>
+    <div class="visual-board">
+      <div class="visual-title">把“当前要处理的信息”与上下文建立不同强度的联系</div>
+      <div class="flow">
+        <div class="flow-box"><strong>当前要处理的位置</strong><span>例如正在处理“开门”附近的信息</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>比较相关程度</strong><span>分别判断上下文各部分与当前任务有多相关</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>得到不同权重</strong><span>相关得多，权重大；相关得少，权重小</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>按权重汇总信息</strong><span>形成更贴合当前上下文的新表示</span></div>
+      </div>
+    </div>
+    <p>关键不是“只选一个最重要的词”，而是<strong>让多个信息以不同份量一起参与</strong>。在经典 Transformer 的注意力计算里，这些相关程度会被转换成一组权重，再据此加权汇总信息。这样，模型面对不同位置、不同句子时，可以动态改变“参考谁更多”。</p>
+    <div class="callout"><strong>新词备注｜Transformer</strong><br/>今天先把它理解成：<strong>现代大语言模型常用的一类核心网络结构，Attention 是其中最关键的机制之一。</strong>后面几课会把 Transformer 拆开讲，不需要现在掌握它的完整结构。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>三、为什么不能给上下文固定排一个“重要性榜单”？</h2>
+    <p>因为“什么重要”取决于当前正在处理什么。同一个词，在不同位置承担的作用可能完全不同。处理“谁要开门”时，“小李”更关键；处理“谁把钥匙交出去”时，“小王”又可能更关键。</p>
+    <div class="token-strip"><span class="token-chip">当前处理位置改变</span><span class="token-chip">→</span><span class="token-chip">相关关系改变</span><span class="token-chip">→</span><span class="token-chip">Attention 权重也改变</span></div>
+    <p>因此，Attention 不是给每个词贴上一个永久的重要性分数，而是<strong>针对当前这一步计算“此刻应该更多参考谁”</strong>。</p>
+    <div class="callout"><strong>后续课程预告｜Self-Attention（自注意力）</strong><br/>下一课会专门讲：当一句话里的各个位置彼此都可以相互参考时，这种 Attention 为什么叫“自注意力”。今天只需要先把“按相关程度加权汇总信息”这个基本机制站稳。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>四、正面概念讲清以后，再看三个常见误解</h2>
+    <div class="myth-list">
+      <div class="myth"><b>误解 01</b><span>“Attention 就是模型像人一样把注意力集中到某句话上。”——不是。它首先是一套数值计算和加权汇总机制，不能由名称推出意识或心理状态。</span></div>
+      <div class="myth"><b>误解 02</b><span>“权重最高的词，就是这次输出真正的原因。”——不能这样直接推断。Attention 权重能反映某一步计算中的信息分配，但不自动等于完整的因果解释。</span></div>
+      <div class="myth"><b>误解 03</b><span>“一个词权重低，就说明模型完全没有使用它。”——也不一定。现代模型会经过多轮计算，信息还会在后续步骤继续组合，单次权重不能代表全部处理过程。</span></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>五、为什么这件事与网信法研究有关？</h2>
+    <div class="law-bridge">
+      <h3>最值得警惕的是：Attention 可视化很直观，但“看起来像解释”不等于已经完成法律意义上的解释。</h3>
+      <p>一些系统会把 Attention 权重画成热力图，并据此说明“模型主要关注了哪些词”。这种材料可以帮助观察模型内部计算，但不能仅凭颜色深浅就断言“这就是模型作出结论的真实原因”。2019年的研究曾指出，不同 Attention 分布有时也可能得到相近预测，因此不能把标准 Attention 权重当然视为充分解释；后续研究又进一步指出，它是否具有解释价值，要取决于具体模型、解释定义和验证方法。</p>
+      <p>这对算法解释、行政自动化和高风险人工智能审计都很重要。如果平台用 Attention 图回应“为什么系统作出这个决定”，审计者至少还要继续追问：这些权重来自哪个计算环节？是否稳定？改变高权重输入是否真的会改变输出？是否还有其他机制共同决定结果？</p>
+    </div>
+    <p>因此，Attention 权重更适合被看作一种<strong>需要验证的技术证据</strong>，而不是自动成立的“理由说明”。法律制度如果要求可解释、可申诉或可复核，仍需要结合输入记录、模型版本、其他解释方法和实际决策流程来判断。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>六、这一课只需要带走三句话</h2>
+    <div class="lesson-focus">
+      <div><strong>第一句</strong><p>Attention 的核心是：根据当前任务给上下文不同部分分配不同权重，再加权汇总信息。</p></div>
+      <div><strong>第二句</strong><p>权重不是固定“重要性排名”，而会随着当前处理位置和上下文发生变化。</p></div>
+    </div>
+    <div class="callout"><strong>第三句：</strong>Attention 权重可以帮助观察模型内部的信息分配，但不能不经验证就直接当作模型决策的完整解释。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>七、把这一课转成两个研究问题</h2>
+    <div class="research-grid">
+      <div class="research-card"><small>论文问题</small><h3>Attention 权重的证据属性：技术可视化何时能够进入算法解释？</h3><p>可从“内部计算痕迹”与“法律理由说明”的区别出发，讨论 Attention 权重在算法解释中的证明力、验证条件和规范边界，并进一步分析何种技术材料才能支撑可申诉、可复核的解释义务。</p></div>
+      <div class="research-card"><small>智库问题</small><h3>防止“热力图即解释”：建立高风险AI可解释性材料的分级验收规则</h3><p>可面向政务、金融、医疗等高风险场景，区分 Attention 图、输入输出日志、特征归因、反事实测试等不同材料的用途和证明力，避免供应商用直观可视化替代真正的系统审计。</p></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>原始材料</h2>
+    <ul class="source-links">
+      <li><a href="https://arxiv.org/abs/1706.03762">Vaswani et al. (2017), Attention Is All You Need</a>——提出 Transformer 架构，并给出经典的 scaled dot-product attention 与 multi-head attention 结构。</li>
+      <li><a href="https://docs.pytorch.org/docs/main/generated/torch.nn.functional.scaled_dot_product_attention.html">PyTorch：scaled_dot_product_attention 文档</a>——展示现代框架中 Query、Key、Value、Attention 权重与加权计算的标准实现形式。</li>
+      <li><a href="https://aclanthology.org/N19-1357/">Jain & Wallace (2019), Attention is not Explanation</a>——系统检验 Attention 权重是否可以直接作为模型预测解释，并指出两者不能当然画等号。</li>
+      <li><a href="https://aclanthology.org/D19-1002/">Wiegreffe & Pinter (2019), Attention is not not Explanation</a>——进一步讨论 Attention 是否具有解释价值取决于解释定义、模型结构和验证方法。</li>
+    </ul>
+  </section>
+
+  <div class="next-lesson"><div><div class="tech-kicker">NEXT · LESSON 09 · TRANSFORMER</div><strong>Self-Attention：一句话里的每个位置为什么要彼此参考？</strong></div><a href="../tech-basics.html">课程总览与历史归档 →</a></div>
+</div>
+</main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body>
+</html>
