@@ -9,15 +9,15 @@
   <link href="assets/course-map.css" rel="stylesheet"/>
 </head>
 <body>
-<header class="top"><div class="wrap nav"><a class="brand" href="index.html">网信法研究每日推送</a><nav class="navlinks"><a href="articles/2026-09-17-tech-law-brief.html">全球科技法简报</a><a href="articles/2026-09-17-calo-ai-policy-primer-roadmap.html">域外法学论文精读</a><a href="articles/2026-09-17-nissenbaum-privacy-in-context.html">法学经典著作</a><a href="articles/2026-09-17-new-works.html">科技法研究新作</a><a href="tech-basics.html">网信法技术基础</a></nav></div></header>
+<header class="top"><div class="wrap nav"><a class="brand" href="index.html">网信法研究每日推送</a><nav class="navlinks"><a href="articles/2026-09-18-tech-law-brief.html">全球科技法简报</a><a href="articles/2026-09-18-desai-kroll-trust-but-verify.html">域外法学论文精读</a><a href="articles/2026-09-18-boyle-public-domain.html">法学经典著作</a><a href="articles/2026-09-18-new-works.html">科技法研究新作</a><a href="tech-basics.html">网信法技术基础</a></nav></div></header>
 <main>
 <section class="tech-hero"><div class="wrap"><div class="tech-kicker">CYBERLAW TECHNOLOGY BASICS · ARCHIVE</div><h1>课程总览与历史归档</h1><p class="tech-lead">这里看整套课程的知识关系和往期课程。本期推送从首页直接进入当天课程，不再先经过总览页。</p></div></section>
 <div class="tech-shell">
   <section>
     <div class="latest-lesson">
-      <div class="lesson-no">07</div>
-      <div><div class="tech-kicker">LATEST LESSON · 2026.09.18</div><h2>概率生成：模型为什么不是“想好一句话”再一次性写出来？</h2><p>理解典型语言模型怎样逐步生成 Token，以及为什么“下一 Token 概率”不能直接等同于事实真实性或法律判断正确率。</p></div>
-      <a href="tech-basics/2026-09-18-probability-generation.html">阅读最新一课 →</a>
+      <div class="lesson-no">08</div>
+      <div><div class="tech-kicker">LATEST LESSON · 2026.09.19</div><h2>Attention：模型为什么要对上下文里的不同部分“看得不一样重”？</h2><p>理解 Attention 怎样根据当前任务给上下文不同部分分配不同权重，以及为什么 Attention 权重不能不经验证就直接当作模型决策的完整解释。</p></div>
+      <a href="tech-basics/2026-09-19-attention.html">阅读最新一课 →</a>
     </div>
   </section>
 
@@ -41,16 +41,16 @@
         <text class="map-module-no" x="60" y="159">MODULE 01</text>
         <text class="map-module-title" x="60" y="188">基础积木</text>
         <text class="map-module-text" x="60" y="218"><tspan x="60" dy="0">Token · Embedding · 参数</tspan><tspan x="60" dy="25">训练与推理 · 损失函数</tspan><tspan x="60" dy="25">预训练 · 概率生成</tspan></text>
-        <text class="map-stage-sub" x="42" y="392">当前进度</text>
-        <text class="map-module-title" x="42" y="422">07 / 概率生成</text>
-        <text class="map-module-text" x="42" y="450"><tspan x="42" dy="0">基础积木已完成</tspan><tspan x="42" dy="24">下一步：Attention</tspan></text>
+        <text class="map-stage-sub" x="42" y="392">已完成</text>
+        <text class="map-module-title" x="42" y="422">MODULE 01 / 基础积木</text>
+        <text class="map-module-text" x="42" y="450"><tspan x="42" dy="0">7课已完成</tspan><tspan x="42" dy="24">当前进入 Transformer</tspan></text>
 
         <rect class="map-stage" x="330" y="35" width="255" height="580" rx="12"/>
         <text class="map-stage-title" x="352" y="72">第二阶段｜再看懂模型</text>
         <text class="map-stage-sub" x="352" y="96">模型如何处理、训练并形成能力</text>
         <rect class="map-module active" x="352" y="125" width="211" height="125" rx="10"/>
-        <text class="map-module-no" x="370" y="151">MODULE 02</text><text class="map-module-title" x="370" y="180">Transformer</text>
-        <text class="map-module-text" x="370" y="207"><tspan x="370">Attention · Q/K/V</tspan><tspan x="370" dy="22">位置编码 · Decoder-only</tspan></text>
+        <text class="map-module-no" x="370" y="151">MODULE 02 · CURRENT</text><text class="map-module-title" x="370" y="180">Transformer</text>
+        <text class="map-module-text" x="370" y="207"><tspan x="370">08 Attention · 下一课 Self-Attention</tspan><tspan x="370" dy="22">Q/K/V · 位置编码 · Decoder-only</tspan></text>
         <rect class="map-module" x="352" y="270" width="211" height="125" rx="10"/>
         <text class="map-module-no" x="370" y="296">MODULE 03</text><text class="map-module-title" x="370" y="325">模型如何炼成</text>
         <text class="map-module-text" x="370" y="352"><tspan x="370">训练数据 · SFT · RLHF/DPO</tspan><tspan x="370" dy="22">合成数据 · 蒸馏 · 评测</tspan></text>
@@ -86,6 +86,7 @@
   <section class="lesson-section tech-history">
     <div class="tech-history-head"><h2>历史课程</h2><span>按课程顺序持续更新</span></div>
     <div class="tech-history-list">
+      <a class="tech-history-item" href="tech-basics/2026-09-19-attention.html"><div class="tech-history-no">08</div><div><div class="tech-history-title">Attention：模型为什么要对上下文里的不同部分“看得不一样重”？</div><div class="tech-history-desc">理解 Attention 怎样动态分配信息权重，以及为什么 Attention 可视化不能不经验证就直接当作完整算法解释。</div></div><div class="tech-history-date">2026.09.19</div></a>
       <a class="tech-history-item" href="tech-basics/2026-09-18-probability-generation.html"><div class="tech-history-no">07</div><div><div class="tech-history-title">概率生成：模型为什么不是“想好一句话”再一次性写出来？</div><div class="tech-history-desc">理解语言模型怎样一步步确定下一个 Token，以及生成概率、事实可靠性和生成策略为什么必须分开判断。</div></div><div class="tech-history-date">2026.09.18</div></a>
       <a class="tech-history-item" href="tech-basics/2026-09-17-pretraining.html"><div class="tech-history-no">06</div><div><div class="tech-history-title">预训练：模型为什么要先读海量文本，再去完成具体任务？</div><div class="tech-history-desc">理解模型为什么先在大规模数据上形成基础能力，以及预训练数据、模型参数与后续复现风险为什么要分开判断。</div></div><div class="tech-history-date">2026.09.17</div></a>
       <a class="tech-history-item" href="tech-basics/2026-09-16-loss-function.html"><div class="tech-history-no">05</div><div><div class="tech-history-title">损失函数：模型怎么知道自己“答错了多少”？</div><div class="tech-history-desc">理解预测与训练目标之间的差距怎样变成一个数字，以及为什么技术优化目标不能直接等同于法律合规目标。</div></div><div class="tech-history-date">2026.09.16</div></a>
