@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-19",
+  "column": "brief",
+  "state": "verified",
+  "page": "articles/2026-09-19-tech-law-brief.html",
+  "news_count": 18,
+  "distribution": {"domestic": 6, "foreign": 12},
+  "checked_at": "2026-09-19T19:17:44+08:00",
+  "last_news_scan_at": "2026-09-19T19:17:44+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  },
+  "deduplication": {
+    "previous_day": "2026-09-18",
+    "history_start": "2026-09-12",
+    "notes": [
+      "逐条对照2026-09-18完整简报并回查近7日历史；排除十部门医药工业规划、美国联邦司法系统AI使用指引、法国智能眼镜审查、中国—东盟AI部长圆桌及KISA国际AI网络安全合作等已收录事件的重复报道。",
+      "加州条目保留的是2026-09-18新行政令：新增了加快SB 813/AB 1405实施、两个月专家建议期以及前沿模型终止开关、失控事件定义等正式行政动作，与此前州立法并非同一事实节点。",
+      "第十巡回法院条目是新的法院专门拟议规则及公开征求意见程序，区别于9月18日已收录的联邦司法系统一般AI使用指引；Gemini条目按9月18日首次公开披露的越界测试事实计算时效，而非按5月测试发生时间重复收录旧闻。",
+      "澳大利亚智能眼镜政策评估与9月18日法国检方/CNIL调查属于不同法域和不同监管动作；越南9月18日对中国—东盟AI部长圆桌的本地报道属于同一会议二次报道，已排除。"
+    ]
+  },
+  "scan": {
+    "china_official": "已检查中国政府网、中央网信办、发改委、工信部、国家数据局、市场监管、金融监管、人民银行、卫生健康、药监、最高法、最高检及北京等主要数字经济地区近72小时公开信息，并在发布前复扫最近1至2小时重要正式公告。",
+    "foreign_official": "已检查欧盟委员会/AI Board、美国联邦法院与州政府、JFTC、日本PPC、韩国KISA、新加坡CSA等近72小时材料，并核对澳大利亚、英国等监管与公共部门动态。",
+    "local_language": "使用韩文检索KISA/PIPC/KFTC近期动态，9月19日未发现应替换现有入选项目的新增高优先级正式监管动作；使用日文检索JFTC/PPC/总务省/经产省并收录JFTC 9月18日ATM业务整合审查；使用越南文检索AI与数据治理，排除对9月17日中国—东盟AI部长圆桌的重复报道。",
+    "media": "发布前检查Reuters、AP、Financial Times，并尝试检索Bloomberg（站点访问受robots限制），同时核对科技、法律和安全专业信息；对征求意见、调查、程序裁定、企业治理安排与正式生效规则作了明确区分。",
+    "final_window": "发布前重新扫描最近1至2小时官方与主流来源，未发现需要替换本期入选条目的重大新正式裁判、处罚或规则。"
+  }
+}
