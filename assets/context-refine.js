@@ -225,11 +225,9 @@
       return { x, score: s.markers * 40 + s.entities * 25 + s.topics.length * 12 + s.title * 30 + s.facts * 15 + indexedShared * 2 };
     }).filter(Boolean).sort((a, b) => b.score - a.score || String(b.x.date).localeCompare(String(a.x.date)));
     const selected = [];
-    const limit = kind === 'news' ? 6 : 4;
     for (const { x } of ranked) {
       if (selected.some(y => duplicate(y, x))) continue;
       selected.push(x);
-      if (selected.length === limit) break;
     }
     return selected;
   }
