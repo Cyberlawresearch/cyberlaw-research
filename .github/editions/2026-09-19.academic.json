@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-19",
+  "state": "published",
+  "pages": {
+    "brief": "articles/2026-09-18-tech-law-brief.html",
+    "paper": "articles/2026-09-19-klonick-new-governors.html",
+    "classic": "articles/2026-09-19-ostrom-governing-the-commons.html",
+    "newworks": "articles/2026-09-19-new-works.html"
+  },
+  "academic_review": {
+    "status": "verified",
+    "checked_at": "2026-09-19T18:44:00+08:00",
+    "checks": {
+      "sources": true,
+      "original_reading": true,
+      "bibliography": true,
+      "deduplication": true,
+      "original_titles": true
+    },
+    "paper": {
+      "author": "Kate Klonick",
+      "originalTitle": "The New Governors: The People, Rules, and Processes Governing Online Speech",
+      "journal": "Harvard Law Review",
+      "year": "2018",
+      "volume": "131",
+      "issue": "6",
+      "pages": "1598–1670",
+      "doi": ""
+    },
+    "classic": {
+      "author": "Elinor Ostrom",
+      "originalTitle": "Governing the Commons: The Evolution of Institutions for Collective Action",
+      "publisher": "Cambridge University Press",
+      "year": "1990",
+      "edition": "First edition"
+    },
+    "newworks_dois": [
+      "10.1093/ijlit/eaag008",
+      "10.1093/ijlit/eaag012",
+      "10.1017/S000819732610155X",
+      "10.1017/cfl.2025.10020",
+      "10.1093/grurint/ikag015"
+    ]
+  },
+  "academic_published_at": "2026-09-19T18:44:00+08:00",
+  "news_untouched": true
+}
