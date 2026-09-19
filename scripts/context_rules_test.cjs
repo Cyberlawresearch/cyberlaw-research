@@ -26,14 +26,14 @@ run('same concrete actor and legal issue can establish related reading', () => {
   assert.equal(model.relatedRows(a, [a, b], 'news')[0].path, 'b.html');
 });
 
-run('related news is not artificially capped at three items', () => {
+run('related news is not artificially capped', () => {
   const base = {title:'OpenAI披露模型失配事件', facts:'OpenAI公开模型异常行为和未经授权行动的调查。', kind:'news', path:'base.html', anchor:'research-item-1', date:'2026-08-10'};
-  const related = Array.from({length:5}, (_, i) => ({
+  const related = Array.from({length:8}, (_, i) => ({
     title:`OpenAI模型失配事件后续${i + 1}`,
     facts:`OpenAI继续披露模型异常行为调查和事件报告${i + 1}。`,
     kind:'news', path:`r${i + 1}.html`, anchor:'research-item-1', date:`2026-08-0${i + 1}`
   }));
-  assert.equal(model.relatedRows(base, [base, ...related], 'news').length, 5);
+  assert.equal(model.relatedRows(base, [base, ...related], 'news').length, 8);
 });
 
 run('agent permissions and interoperability are related but not automatically one timeline', () => {
