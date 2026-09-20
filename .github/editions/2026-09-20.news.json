@@ -20,6 +20,12 @@
     "background_outlook": true,
     "foreign_layout": true
   },
+  "freshness_72h_verified_ids": ["research-item-12", "research-item-15", "research-item-18"],
+  "freshness_72h_notes": [
+    "research-item-12：FTC 9月17日公告由新闻分发记录于9月17日19:44 GMT发布，距9月20日19:12北京时间终检约55.5小时；FTC原页同步核对公告日期和内容。",
+    "research-item-15：Reuters稿件时间为9月17日19:58 UTC（页面标注Updated Thu, September 17, 2026 at 7:58 PM UTC），距终检约55.2小时。",
+    "research-item-18：Oversight Board原页日期为9月17日；Benzinga市场新闻记录在9月17日10:07 AM即已抓取并发布该决定，同日市场页面使用美国东部市场时区显示。按该时间核对，距终检不足72小时。"
+  ],
   "deduplication": {
     "previous_day": "2026-09-19",
     "history_start": "2026-09-13",
