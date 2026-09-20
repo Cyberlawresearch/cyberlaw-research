@@ -1,0 +1,46 @@
+{
+  "date": "2026-09-20",
+  "state": "verified",
+  "pages": {
+    "brief": "articles/2026-09-19-tech-law-brief.html",
+    "paper": "articles/2026-09-20-richards-hartzog-taking-trust-seriously.html",
+    "classic": "articles/2026-09-20-lessig-future-of-ideas.html",
+    "newworks": "articles/2026-09-20-new-works.html"
+  },
+  "academic_review": {
+    "status": "verified",
+    "checked_at": "2026-09-20T18:49:37+08:00",
+    "checks": {
+      "sources": true,
+      "original_reading": true,
+      "bibliography": true,
+      "deduplication": true,
+      "original_titles": true
+    },
+    "paper": {
+      "author": "Neil M. Richards; Woodrow Hartzog",
+      "originalTitle": "Taking Trust Seriously in Privacy Law",
+      "journal": "Stanford Technology Law Review",
+      "year": "2016",
+      "volume": "19",
+      "issue": "",
+      "pages": "431–472",
+      "doi": "10.2139/ssrn.2655719"
+    },
+    "classic": {
+      "author": "Lawrence Lessig",
+      "originalTitle": "The Future of Ideas: The Fate of the Commons in a Connected World",
+      "publisher": "Random House",
+      "year": "2001",
+      "edition": "First edition"
+    },
+    "newworks_dois": [
+      "10.1093/ijlit/eaag003",
+      "10.1017/err.2026.10092",
+      "10.1093/grurint/ikag049",
+      "10.1093/jiplp/jpag073",
+      "10.1080/17579961.2026.2718578"
+    ]
+  },
+  "news_untouched": true
+}
