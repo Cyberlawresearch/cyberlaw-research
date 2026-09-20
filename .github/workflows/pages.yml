@@ -31,10 +31,12 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           import re
+          citation = re.compile(r"data-citation='(.*?)'(?=\s+data-event-date=)", re.S)
           for path in Path('.').rglob('*.html'):
               if '.git' in path.parts:
                   continue
               text = path.read_text(encoding='utf-8', errors='ignore')
+              text = citation.sub(lambda m: "data-citation='" + m.group(1).replace("'", "&#39;") + "'", text)
               if 'tech-law-brief' in path.name:
                   text = re.sub(r'<section\b[^>]*class=["\'][^"\']*brief-focus[^"\']*["\'][^>]*>.*?<h2[^>]*>\s*本期最值得先看\s*</h2>.*?</section>', '', text, flags=re.S|re.I)
                   text = re.sub(r'<h2[^>]*>\s*本期最值得先看\s*</h2>\s*<div\b[^>]*class=["\'][^"\']*highlight[^"\']*["\'][^>]*>.*?</div>', '', text, flags=re.S|re.I)
