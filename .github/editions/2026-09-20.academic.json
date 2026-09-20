@@ -1,6 +1,6 @@
 {
   "date": "2026-09-20",
-  "state": "verified",
+  "state": "published",
   "pages": {
     "brief": "articles/2026-09-19-tech-law-brief.html",
     "paper": "articles/2026-09-20-richards-hartzog-taking-trust-seriously.html",
@@ -42,5 +42,6 @@
       "10.1080/17579961.2026.2718578"
     ]
   },
+  "academic_published_at": "2026-09-20T18:51:12+08:00",
   "news_untouched": true
 }
