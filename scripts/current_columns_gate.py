@@ -16,8 +16,13 @@ TECH_LABEL='网信法技术基础'
 TECH_PATH='tech-basics.html'
 TECH_CSS='assets/course-map.css'
 
+def normalize_citations(text):
+    """Keep single-quoted data-citation attributes valid when source titles contain ASCII apostrophes."""
+    pattern=re.compile(r"data-citation='(.*?)'(?=\s+data-event-date=)",re.S)
+    return pattern.sub(lambda m:"data-citation='"+m.group(1).replace("'","&#39;")+"'",text)
+
 def soup(path):
-    return BeautifulSoup((ROOT/path).read_text(encoding='utf-8'),'html.parser')
+    return BeautifulSoup(normalize_citations((ROOT/path).read_text(encoding='utf-8')),'html.parser')
 
 def target(parent,href):
     u=urlsplit(href or '')
@@ -28,7 +33,7 @@ def sync_navigation(paths):
     changed=0
     for file in ROOT.rglob('*.html'):
         if '.git' in file.parts or '.github' in file.parts:continue
-        d=BeautifulSoup(file.read_text(encoding='utf-8'),'html.parser');modified=False
+        d=BeautifulSoup(normalize_citations(file.read_text(encoding='utf-8')),'html.parser');modified=False
         parent=file.parent.relative_to(ROOT).as_posix()
         nav=d.select_one('.navlinks')
         if nav is None:continue
