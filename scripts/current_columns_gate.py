@@ -52,6 +52,14 @@ def sync_navigation(paths):
             file.write_text(str(d),encoding='utf-8');changed+=1
     return changed
 
+def verified_freshness_ids(brief_date):
+    """Allow calendar-day delta 3 only for items whose exact publication time was manually verified under 72h."""
+    path=ROOT/'.github/editions'/f'{brief_date}.news.json'
+    if not path.is_file():return set()
+    record=json.loads(path.read_text(encoding='utf-8'))
+    if record.get('state')!='verified' or not record.get('checks',{}).get('timeliness'):return set()
+    return set(record.get('freshness_72h_verified_ids',[]))
+
 def validate(m):
     assert list(m.get('pages',{}))==KEYS
     assert list(m.get('page_dates',{}))==KEYS
@@ -101,12 +109,14 @@ def validate(m):
         first=soup(listing).select_one('.issue-list .issue-row')
         assert first is not None and first.select_one(f'a[href="{p}"]'),listing
     news=docs[0].select('.brief-item');assert len(news)==m['news_count'] and 18<=len(news)<=20
+    exact_fresh=verified_freshness_ids(days['brief'].isoformat())
     for n in news:
         assert n.get('id') and n.select_one('h3') and n.select_one('.brief-meta')
         facts=n.select_one('.brief-fact');assert facts and len(facts.get_text(strip=True))>=65
         txt=n.get_text(' ',strip=True);assert all(x in txt for x in ['法治研判','智库选题参考','论文选题'])
         assert n.select('.source a[href^="https://"]')
-        assert 0<=(days['brief']-date.fromisoformat(n['data-event-date'])).days<=2
+        age=(days['brief']-date.fromisoformat(n['data-event-date'])).days
+        assert 0<=age<=2 or (age==3 and n['id'] in exact_fresh),(n['id'],n['data-event-date'],'freshness')
         c=json.loads(n['data-citation']);assert c.get('originalTitle') and c.get('url')
     works=docs[3].select('.brief-item');assert len(works)==m['newworks_count']==5
     assert len(docs[1].select_one('.article-body').get_text(' ',strip=True))>=2500
