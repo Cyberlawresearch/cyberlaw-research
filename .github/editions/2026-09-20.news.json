@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-20",
+  "column": "brief",
+  "state": "verified",
+  "page": "articles/2026-09-20-tech-law-brief.html",
+  "news_count": 18,
+  "distribution": {"domestic": 6, "foreign": 12},
+  "checked_at": "2026-09-20T19:12:37+08:00",
+  "last_news_scan_at": "2026-09-20T19:12:37+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  },
+  "deduplication": {
+    "previous_day": "2026-09-19",
+    "history_start": "2026-09-13",
+    "notes": [
+      "逐条对照2026-09-19完整简报并回查2026-09-13至9月19日历史；已排除北京四家在线旅游平台调查、美国第十巡回AI提交认证规则、加州前沿AI安全行政动作、Gemini真实企业突破事件、Anthropic与Accenture前沿模型评测投入等已推送事件。",
+      "美国消费者针对前沿AI企业安全协调提出的反垄断集体诉讼是9月20日新的司法程序节点；TikTok条目是法院9月19日对既有儿童隐私和解中终止旧同意令安排提出的新司法审查意见，均与此前背景事件区分。",
+      "WaterPlum联合通报为日本、美国、澳大利亚和德国多机构9月18日公开归因与安全通报，包含3万台设备、100多个国家、笔记本电脑农场等新增正式披露，不与此前一般朝鲜IT人员风险报道重复。"
+    ]
+  },
+  "scan": {
+    "china_official": "已检查中国政府网、中央网信办、国家发展改革委、工业和信息化部、商务部、国家数据局、市场监管、金融监管、人民银行、卫生健康、药监、最高法、最高检及北京、江苏、广东、郑州等主要数字经济地区近72小时公开信息，并在发布前复扫最近1至2小时重要正式公告。",
+    "foreign_official": "已检查欧盟委员会与AI Board、FTC及美国司法与政府来源、Ofcom及英国监管动态、印度TRAI、澳大利亚ACSC、日本警察厅等近72小时材料，并巡视新加坡、加拿大、巴西等监管动态。",
+    "local_language": "使用韩文检索PIPC、KFTC、KISA近期动态，未发现需要替换现有项目的新增高优先级正式动作；使用日文检索PPC、JFTC、总务省、经产省并核对日本警察厅WaterPlum联合通报；使用越南文检索AI、数据与平台监管，未发现更高优先级新增正式事件。",
+    "media": "发布前检查Reuters、AP、Financial Times，并检查Bloomberg公开可检索信息，同时核对科技、法律和网络安全专业媒体；对诉讼主张、和解司法审查、政策分析、政府间磋商和公开宣布均分别标明程序状态。",
+    "final_window": "发布前重新扫描最近1至2小时官方与主流来源，未发现需要替换本期18条的重大新正式裁判、处罚或规则。"
+  },
+  "content_checks": {
+    "background": "重要调查、诉讼、执法、平台治理和个人信息保护条目均主动回查同一主体、同一案件或同一监管问题的前序节点，并在事实或背景中交代最有解释力的直接前史。",
+    "language": "逐条检查翻译腔、抽象名词堆叠和免责声明式法律状态表述，优先以具体主体、动作和当前程序阶段表达。",
+    "context": "关联阅读按直接事实或制度联系准备；专题时间线仅按同一事件链或高度同质窄专题建立，不以AI治理、数据法、平台监管等宽泛标签凑项。"
+  }
+}
