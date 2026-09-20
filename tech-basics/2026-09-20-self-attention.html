@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>第09课｜Self-Attention：一句话里的每个位置为什么要彼此参考？｜网信法技术基础</title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+  <link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-09-19-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-09-19-klonick-new-governors.html">域外法学论文精读</a><a href="../articles/2026-09-19-ostrom-governing-the-commons.html">法学经典著作</a><a href="../articles/2026-09-19-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 09 · TRANSFORMER · 2026.09.20</div><h1>Self-Attention：一句话里的每个位置为什么要彼此参考？</h1><p class="tech-lead">今天只解决一个问题：上一课说 Attention 会按相关程度分配权重，那么为什么现代语言模型还要让同一段文字里的不同位置彼此参考？</p></div></section>
+<div class="tech-shell">
+  <section class="lesson-focus">
+    <div><strong>最简单的正面定义</strong><p><strong>Self-Attention（自注意力）就是：在同一段输入内部，让每个位置根据当前需要，参考同一序列中其他允许参考的位置，再形成自己的新表示。</strong></p></div>
+    <div><strong>和上一课怎么接上？</strong><p>Attention 是“按相关程度加权汇总信息”；Self-Attention 只是把信息来源限定在<strong>同一段序列内部</strong>。所以“Self”指的是信息从自己所在的这段序列里来。</p></div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>一、先看一个直观例子</h2>
+    <p>假设一句话是：“会议改到下午三点，请提前十分钟到场。”当模型处理“到场”附近的信息时，它需要把“会议”“下午三点”“提前十分钟”联系起来。单看“到场”两个字，信息是不够的。</p>
+    <div class="compare-grid">
+      <div class="compare-card"><b>“会议”</b><p>告诉模型“到场”是为了什么事情。</p></div>
+      <div class="compare-card"><b>“下午三点”</b><p>提供事件发生的具体时间。</p></div>
+      <div class="compare-card"><b>“提前十分钟”</b><p>改变了真正需要到场的时间要求。</p></div>
+    </div>
+    <p>Self-Attention 做的，就是让“到场”这个位置能够结合这些同一句话里的相关信息，而不是只保留它最初那一小块孤立表示。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>二、一张图看懂 Self-Attention</h2>
+    <div class="visual-board">
+      <div class="visual-title">同一序列中的位置彼此建立联系</div>
+      <div class="flow">
+        <div class="flow-box"><strong>同一段输入</strong><span>会议｜改到｜下午三点｜提前十分钟｜到场</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>选定当前位置</strong><span>例如正在处理“到场”</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>参考同序列其他位置</strong><span>比较哪些位置与当前处理最相关</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>形成新的上下文表示</strong><span>“到场”不再只是孤立词，而带上会议与时间信息</span></div>
+      </div>
+    </div>
+    <p>这里最关键的一步，是<strong>每个位置都可以得到一份“结合上下文后的新表示”</strong>。于是，同一个词放在不同句子里，经过 Self-Attention 后形成的表示也可能不同，因为它参考到的周围信息不同。</p>
+    <div class="callout"><strong>新词备注｜Q / K / V</strong><br/>技术上，Self-Attention 会把同一序列里的表示进一步变成三类用于“提出当前需求、比较相关程度、取出信息”的内部表示，通常叫 Query、Key、Value。<strong>今天只需要知道它们都来自同一序列；下一课会专门讲 Q/K/V，不需要现在掌握。</strong></div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>三、是不是“每个位置都能看见所有位置”？不一定</h2>
+    <p>Self-Attention 描述的是“同一序列内部相互参考”的机制，但具体能参考哪些位置，还要看模型采用什么规则。</p>
+    <div class="compare-grid">
+      <div class="compare-card"><b>双向式处理</b><p>某些模型允许一个位置同时参考左边和右边的信息，适合整段文本理解等任务。</p></div>
+      <div class="compare-card"><b>生成式处理</b><p>许多生成式、Decoder-only 模型在生成时采用因果限制：当前位置只能参考自己和前面已经出现的内容，不能“偷看”还没生成的未来内容。</p></div>
+      <div class="compare-card"><b>其他实现</b><p>还有滑动窗口、稀疏 Attention 等设计，不一定让所有位置两两直接建立联系。</p></div>
+    </div>
+    <div class="callout"><strong>新词备注｜注意力掩码（Attention Mask）</strong><br/>今天先把它理解成一道“可不可以看”的门：系统可以规定某些位置允许参与 Attention，另一些位置被挡住。比如生成模型常用它阻止当前位置看到未来 Token。具体实现后面遇到时再展开。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>四、正面概念讲清以后，再看三个常见误解</h2>
+    <div class="myth-list">
+      <div class="myth"><b>误解 01</b><span>“Self-Attention 就是整句话压成一个总摘要。”——不是。通常是每个位置分别根据上下文形成自己的新表示，而不是整句只剩一个统一结果。</span></div>
+      <div class="myth"><b>误解 02</b><span>“Self-Attention 一定意味着每个词都能看到全部其他词。”——不一定。因果掩码、滑动窗口或其他结构都可能限制可见范围。</span></div>
+      <div class="myth"><b>误解 03</b><span>“既然能彼此参考，模型就一定真正理解了指代、时间和因果关系。”——也不能这样推断。Self-Attention 提供了建立关系的计算通道，但关系是否学对、输出是否可靠仍取决于训练和具体模型。</span></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>五、为什么这件事与网信法研究有关？</h2>
+    <div class="law-bridge">
+      <h3>一个非常实用的判断：界面上分开的文字，不等于模型内部彼此隔离。</h3>
+      <p>在真实系统里，同一次模型调用中可能同时存在系统指令、用户当前问题、此前对话、附件摘录等内容。只要这些内容被放进同一个可相互参考的上下文，Self-Attention 就可能让当前输出受到其中多个位置共同影响。页面上把它们画成不同气泡、不同栏目，并不会自动形成技术隔离。</p>
+      <p>这直接影响审计和证据留存。如果只保存“用户最后一句问题”和模型最终答案，却没有保存当时实际进入模型的完整上下文、内容顺序和可见范围，就可能无法复现为什么系统会生成那个结果。对于政务、金融、医疗等高风险使用场景，真正可复核的记录应当关注<strong>模型当时实际能参考到什么</strong>，而不只是用户表面看到了什么。</p>
+    </div>
+    <p>同样，敏感信息与普通信息是否真正隔离，也不能只看前端页面是否分区。是否采用独立调用、上下文裁剪、注意力限制或其他隔离措施，才更接近需要审查的技术事实。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>六、这一课只需要带走三句话</h2>
+    <div class="lesson-focus">
+      <div><strong>第一句</strong><p>Self-Attention 是同一序列内部的位置彼此参考，并各自形成带上下文的新表示。</p></div>
+      <div><strong>第二句</strong><p>“Self”说的是信息来源在同一序列，不意味着所有位置永远都能彼此看见。</p></div>
+    </div>
+    <div class="callout"><strong>第三句：</strong>做法律审计时，真正重要的是模型当时被允许参考的完整上下文，而不是界面上看起来被分成了几个文本框。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>七、把这一课转成两个研究问题</h2>
+    <div class="research-grid">
+      <div class="research-card"><small>论文问题</small><h3>从“提示词”到“有效上下文”：生成式AI决策可复现性的证据边界</h3><p>可研究在 Self-Attention 等上下文处理机制下，系统提示、历史对话、附件内容与用户输入共同影响输出时，法律上的算法解释、举证和可复核要求应当以什么范围的运行记录为对象。</p></div>
+      <div class="research-card"><small>智库问题</small><h3>高风险大模型应用应建立“最小上下文留痕”规则</h3><p>可面向政务、金融、医疗等场景提出运行留痕要求：至少保存模型版本、有效上下文组成、内容顺序、截断或屏蔽规则及最终输出，避免只留最终提示词而无法重现系统实际决策环境。</p></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>原始材料</h2>
+    <ul class="source-links">
+      <li><a href="https://arxiv.org/abs/1706.03762">Vaswani et al. (2017), Attention Is All You Need</a>——经典 Transformer 论文将 Self-Attention 用于同一序列内部不同位置之间的信息关联。</li>
+      <li><a href="https://docs.pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html">PyTorch：MultiheadAttention 文档</a>——官方文档明确说明，在 Self-Attention 中，query、key、value 来自同一输入张量。</li>
+      <li><a href="https://huggingface.co/docs/transformers/main/attention_interface">Hugging Face：Attention backends</a>——说明不同 Attention 实现以及因果、双向、滑动窗口等不同注意力模式和掩码。</li>
+      <li><a href="https://nlp.seas.harvard.edu/2018/04/03/attention.html">Harvard NLP：The Annotated Transformer</a>——将 Self-Attention 概括为同一序列中不同位置之间建立关系、计算序列表示的机制。</li>
+    </ul>
+  </section>
+
+  <div class="next-lesson"><div><div class="tech-kicker">NEXT · LESSON 10 · TRANSFORMER</div><strong>Q/K/V：模型到底怎样判断“该参考谁、取什么信息”？</strong></div><a href="../tech-basics.html">课程总览与历史归档 →</a></div>
+</div>
+</main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body>
+</html>
