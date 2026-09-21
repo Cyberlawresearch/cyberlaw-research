@@ -1,0 +1,46 @@
+{
+  "date": "2026-09-21",
+  "state": "verified",
+  "pages": {
+    "brief": "articles/2026-09-20-tech-law-brief.html",
+    "paper": "articles/2026-09-21-calo-digital-market-manipulation.html",
+    "classic": "articles/2026-09-21-zittrain-future-internet.html",
+    "newworks": "articles/2026-09-21-new-works.html"
+  },
+  "academic_review": {
+    "status": "verified",
+    "checked_at": "2026-09-21T18:48:00+08:00",
+    "checks": {
+      "sources": true,
+      "original_reading": true,
+      "bibliography": true,
+      "deduplication": true,
+      "original_titles": true
+    },
+    "paper": {
+      "author": "Ryan Calo",
+      "originalTitle": "Digital Market Manipulation",
+      "journal": "The George Washington Law Review",
+      "year": "2014",
+      "volume": "82",
+      "issue": "4",
+      "pages": "995–1051",
+      "doi": "10.2139/ssrn.2309703"
+    },
+    "classic": {
+      "author": "Jonathan L. Zittrain",
+      "originalTitle": "The Future of the Internet—And How to Stop It",
+      "publisher": "Yale University Press",
+      "year": "2008",
+      "edition": "First edition"
+    },
+    "newworks_dois": [
+      "10.1017/err.2026.10128",
+      "10.3390/laws15050114",
+      "10.1080/17579961.2026.2633684",
+      "10.1080/17579961.2026.2633679",
+      "10.1017/err.2026.10135"
+    ]
+  },
+  "news_untouched": true
+}
