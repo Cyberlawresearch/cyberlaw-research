@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>第10课｜Q/K/V：模型到底怎样判断“该参考谁、取什么信息”？｜网信法技术基础</title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+  <link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-09-20-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-09-20-richards-hartzog-taking-trust-seriously.html">域外法学论文精读</a><a href="../articles/2026-09-20-lessig-future-of-ideas.html">法学经典著作</a><a href="../articles/2026-09-20-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 10 · TRANSFORMER · 2026.09.21</div><h1>Q/K/V：模型到底怎样判断“该参考谁、取什么信息”？</h1><p class="tech-lead">今天只解决一个问题：上一课说 Self-Attention 会让当前位置参考同一序列里的其他位置，那么模型具体怎样算出“该参考谁”，又怎样把被参考位置的信息拿回来？</p></div></section>
+<div class="tech-shell">
+  <section class="lesson-focus">
+    <div><strong>最简单的正面定义</strong><p><strong>Q、K、V 是 Attention 中给同一份输入分配的三种不同“计算角色”：</strong>Q（Query）表示当前位置此刻想找什么；K（Key）表示每个候选位置“我是否与你的需求匹配”；V（Value）表示一旦这个位置被重视，真正要贡献给结果的信息。</p></div>
+    <div><strong>先别把它们想复杂</strong><p>Q/K/V 都是一组由模型根据当前表示计算出来的数字，不是三份文字，也不是三座数据库。它们的作用分别是<strong>提出需求、做匹配、传信息</strong>。</p></div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>一、先用“找档案”建立直觉</h2>
+    <p>想象你去档案室找“这份合同是谁签的”。你手里的检索需求像 <strong>Query</strong>；每个文件夹封面上的索引标签像 <strong>Key</strong>；文件夹里面真正的合同、签字页等内容像 <strong>Value</strong>。</p>
+    <div class="compare-grid">
+      <div class="compare-card"><b>Q｜我现在要找什么？</b><p>例如：与“谁签署合同”最相关的信息。</p></div>
+      <div class="compare-card"><b>K｜哪些位置更匹配？</b><p>模型把当前 Q 与各候选位置的 K 比较，得到高低不同的匹配分数。</p></div>
+      <div class="compare-card"><b>V｜匹配后拿回什么？</b><p>匹配越高，对应位置的 V 在最终汇总中通常占得越多。</p></div>
+    </div>
+    <p>这个比喻只帮助建立直觉。真实模型没有“合同”“签署人”这样的人工标签，而是在训练中学会怎样把输入转换成适合做匹配和传递信息的一组数字。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>二、一张图看懂 Q/K/V 怎样配合</h2>
+    <div class="visual-board">
+      <div class="visual-title">当前位置怎样从上下文中取回信息</div>
+      <div class="flow">
+        <div class="flow-box"><strong>每个位置已有表示</strong><span>来自前面几课讲过的 Token 表示和上下文处理</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>分别生成 Q / K / V</strong><span>同一份表示被转换成三种计算角色</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>Q 与各个 K 比较</strong><span>算出“当前位置应该多看谁、少看谁”</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>按权重汇总 V</strong><span>把更相关位置携带的信息更多地带入当前位置</span></div>
+      </div>
+    </div>
+    <p>经典 Transformer 使用的是“缩放点积注意力”：先计算 Q 与 K 的匹配分数，再把这些分数转成权重，最后对 V 做加权汇总。今天不需要记公式，只要抓住<strong>Q/K 决定权重，V 提供被汇总的信息</strong>。</p>
+    <div class="callout"><strong>新词备注｜点积</strong><br/>今天先把“点积”理解成一种把两组数字拿来做匹配、最后得到一个分数的计算方法。它不是本课程后续的独立重点，不需要现在掌握公式。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>三、为什么同一个位置要同时有 Q、K、V？</h2>
+    <p>因为“我现在需要什么”和“我能向别人提供什么”不是同一个问题。一个位置作为当前处理对象时，需要用自己的 Q 去找相关内容；作为别人的候选信息来源时，又要提供自己的 K 和 V。</p>
+    <p>仍用档案室作比喻：同一个文件夹既可以有便于检索的标签，也可以有真正的文件内容。标签负责“能不能找到我”，内容负责“找到以后拿走什么”。Q/K/V 把这几个角色拆开，模型就能学习更灵活的匹配方式。</p>
+    <div class="callout"><strong>新词备注｜线性变换</strong><br/>Q、K、V 通常由模型用三组可训练参数，把当前表示分别转换出来。今天先把它理解成“同一份数字经过三套学出来的转换规则，得到三种不同用途的数字”。具体数学形式不需要现在掌握。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>四、不同模型一定都用完全相同的 Q/K/V 吗？不是</h2>
+    <p>Q/K/V 是现代 Attention 的核心抽象，但工程实现会有差异。经典多头注意力为不同注意力头分别学习 Q、K、V 的投影；一些当前模型采用 Multi-Query Attention 或 Grouped-Query Attention，让多组 Query 共享较少的 K/V，以减少推理时的存储和计算压力。</p>
+    <p>所以法律或审计材料里如果只写“使用 Transformer Attention”，还不足以推出具体的 Q/K/V 数量、维度和缓存方式，应继续核对模型架构与运行实现。</p>
+    <div class="callout"><strong>后续课程预告｜KV Cache</strong><br/>生成模型常把已经算过的 Key 和 Value 暂存起来，避免每生成一个新 Token 都重新计算，这叫 KV Cache。<strong>它和今天的 K/V 有直接关系，但“缓存怎样工作、保存什么、有什么隐私与基础设施风险”后面会单独讲，现在不需要掌握。</strong></div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>五、正面概念讲清以后，再看三个常见误解</h2>
+    <div class="myth-list">
+      <div class="myth"><b>误解 01</b><span>“Q 就是用户的问题，K 就是关键词，V 就是答案。”——不对。这个比喻只能帮助入门；在模型里，Q/K/V 是每一层内部计算出来的数字表示。</span></div>
+      <div class="myth"><b>误解 02</b><span>“Q、K、V 是三份独立保存的数据。”——通常不是。它们往往是运行过程中根据当前表示临时计算出来的内部状态；是否被缓存或记录，要看具体系统实现。</span></div>
+      <div class="myth"><b>误解 03</b><span>“某个 K 与 Q 匹配很高，就说明那个位置在事实或法律上最重要。”——不能这样推断。高匹配只说明模型内部这一步计算给了它较高权重，不等于事实真实性、规范重要性或最终决策理由。</span></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>六、为什么这件事与网信法研究有关？</h2>
+    <div class="law-bridge">
+      <h3>内部表示变成数字，不等于数据风险自动消失；看到 Attention，也不等于已经获得完整解释。</h3>
+      <p>第一，Q/K/V 是从输入及中间表示继续计算得到的内部数字表示。如果原始上下文含有个人信息、商业秘密或内部文件，把它转换成 Q/K/V 并不能仅凭“已经数字化”就认定不再具有敏感性。是否仍能关联、推断或泄露，要结合模型、保存方式和实际技术能力判断。</p>
+      <p>第二，Q/K/V 说明了 Attention 权重是如何产生的，但生产系统通常不会把每一层、每个头的全部 Q/K/V 长期保存。若事后只留下输入和最终输出，再声称能够完整复现“模型为什么看了某段文字”，往往还缺少模型版本、参数、上下文范围、注意力实现以及必要的内部状态。</p>
+    </div>
+    <p>因此，高风险AI审计可以区分两类证据：一类是应当常规留存的运行证据，如模型版本、输入、上下文、输出和关键配置；另一类是按需要调取的内部机制证据，如特定层的 Attention 权重或 Q/K/V。二者不能混为一谈，也不能因为后者难以长期保存，就放弃前者的基础留痕。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>七、这一课只需要带走三句话</h2>
+    <div class="lesson-focus">
+      <div><strong>第一句</strong><p>Q 表示“我现在要找什么”，K 用来判断“谁与这个需求更匹配”，V 是“匹配以后真正贡献的信息”。</p></div>
+      <div><strong>第二句</strong><p>Attention 先用 Q 和 K 算权重，再按这些权重汇总 V。</p></div>
+    </div>
+    <div class="callout"><strong>第三句：</strong>Q/K/V 是模型内部的数字表示，不是天然的人类解释，也不能因为变成数字就当然视为匿名或无风险。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>八、把这一课转成两个研究问题</h2>
+    <div class="research-grid">
+      <div class="research-card"><small>论文问题</small><h3>生成式AI内部表示的证据属性：从 Q/K/V 到算法审计边界</h3><p>可研究在模型内部状态通常不长期留存的条件下，法律上的可解释、举证和可审计要求应如何区分运行日志、注意力权重与内部表示，并确定不同证据的证明力和保存义务。</p></div>
+      <div class="research-card"><small>智库问题</small><h3>高风险大模型应用应建立“运行证据—内部机制证据”分级留存规则</h3><p>建议把模型版本、有效上下文、关键配置和输出列为常规留痕；对特定争议再通过受控环境调取 Attention 或内部表示，避免一方面要求不现实的全量内部状态保存，另一方面又只留最终答案而无法复核。</p></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>原始材料</h2>
+    <ul class="source-links">
+      <li><a href="https://arxiv.org/abs/1706.03762">Vaswani et al. (2017), Attention Is All You Need</a>——经典 Transformer 论文给出 Scaled Dot-Product Attention，使用 Query 与 Key 计算权重，再对 Value 加权汇总。</li>
+      <li><a href="https://docs.pytorch.org/docs/main/generated/torch.nn.functional.scaled_dot_product_attention.html">PyTorch：scaled_dot_product_attention</a>——官方实现展示 Q×K 得到注意力权重，再用这些权重乘以 V；同时说明因果掩码和 Grouped Query Attention 等实现差异。</li>
+      <li><a href="https://nlp.seas.harvard.edu/annotated-transformer/">Harvard NLP：The Annotated Transformer</a>——以代码和图示解释 Query、Key、Value 的映射关系以及多头 Attention 中的投影过程。</li>
+      <li><a href="https://docs.pytorch.org/tutorials/intermediate/transformer_building_blocks.html">PyTorch：Transformer building blocks</a>——说明 MultiheadAttention 由输入投影、scaled dot-product attention 和输出投影组成，并展示 Self-Attention 中 Q/K/V 的投影。</li>
+    </ul>
+  </section>
+
+  <div class="next-lesson"><div><div class="tech-kicker">NEXT · LESSON 11 · TRANSFORMER</div><strong>多头注意力：为什么模型要同时用多组 Attention 看同一段话？</strong></div><a href="../tech-basics.html">课程总览与历史归档 →</a></div>
+</div>
+</main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body>
+</html>
