@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-21",
+  "column": "brief",
+  "state": "verified",
+  "page": "articles/2026-09-21-tech-law-brief.html",
+  "news_count": 18,
+  "distribution": {"domestic": 7, "foreign": 11},
+  "checked_at": "2026-09-21T19:41:23+08:00",
+  "last_news_scan_at": "2026-09-21T19:41:23+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  },
+  "deduplication": {
+    "previous_day": "2026-09-20",
+    "history_start": "2026-09-14",
+    "notes": [
+      "逐条对照2026-09-20完整简报并回查2026-09-14至9月20日历史；未重复收录9月20日已推送的Google Gemini误入真实企业系统、加州前沿AI安全行政动作、Anthropic与Accenture评测投入等事件。",
+      "中美AI安全条目属于明确新增进展：9月20日本站记录的是AI安全进入本轮经贸磋商，9月21日新增事实是美方公开提出针对国家安全相关AI事故的具体通报机制，正文已直接说明前后节点差异。",
+      "CrowdSec此前未在站内推送；本期以9月21日SecurityWeek对公司确认结果的报道为当日新闻节点，并回查CrowdSec 9月18日最终调查报告核对TanStack供应链攻击、私有代码仓库和个人数据影响范围。"
+    ]
+  },
+  "scan": {
+    "china_official": "已检查中国政府网、中央网信办、国家发展改革委、工业和信息化部、商务部、国家数据局、市场监管总局、金融监管总局、人民银行、卫生健康、药监、最高法、最高检及主要数字经济地区近72小时公开信息。入选国家数据局首批数据产权登记、五部门生态环境技术服务数据造假整治、江西人工智能+信息通信行动、浙江网安攻防演练和未成年人AI使用调查等正式材料，并在发布前重新扫描最近1至2小时重要公告。",
+    "foreign_official": "已检查欧盟委员会、ECB、美国FTC/DOJ/SEC/NIST/CISA/FCC、英国ICO/CMA/Ofcom以及澳大利亚、新加坡、加拿大、巴西等主要监管与公共机构近期材料；入选欧盟数据中心评级授权法规、ECB Pontes和CISA KEV等明确新节点。",
+    "local_language": "使用韩文检索PIPC、KFTC、KISA近期处罚、跨境传输、平台和AI安全动态；使用日文检索PPC、JFTC、总务省、经产省近期AI、个人信息和平台监管；使用越南文检索AI、数据和平台监管。未发现需要替换本期现有条目的更高优先级9月21日正式动作。",
+    "media": "发布前检查Reuters、Associated Press、Financial Times、Bloomberg公开可检索信息，并检查SecurityWeek等科技、法律和安全专业媒体。对路透报道的人形机器人IPO审核趋严明确标注为媒体核实的审核变化而非正式禁令；对西班牙AI路线图、央行官员AI宏观分析均明确区分政策表态与生效规则。",
+    "final_window": "19时41分前重新扫描最近1至2小时官方和主流来源。最新高优先级安全动态包括科罗拉多供水OT攻击披露和Linux内核KEV更新，均已纳入；未发现需要替换现有18条的更重大正式裁判、处罚或规则。"
+  },
+  "content_checks": {
+    "background": "对DPC-Google位置数据、美国科罗拉多水务OT、CrowdSec供应链泄露、中美AI对话、未成年人AI使用等条目均回查同一案件、同一制度或同一事件链的直接前序节点；背景只保留解释当日新进展所必需的信息。",
+    "language": "逐条检查翻译腔、抽象名词堆叠和免责声明式法律状态表述；对调查、媒体报道、政策讲话、专家观点分别使用具体主体和程序状态表达，不把未正式生效或未获确认的事项写成确定规则。",
+    "context": "关联阅读按同一主体、同一事件链、同一具体规则或技术机制保留直接关系；专题时间线只允许同一事件连续进展或高度同质的窄专题，不以AI治理、数据法、平台监管等宽泛标签凑项。"
+  }
+}
