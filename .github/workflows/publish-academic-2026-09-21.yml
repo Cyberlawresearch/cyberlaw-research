@@ -1,0 +1,134 @@
+name: 9月21日学术三栏结构发布收尾
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/editions/2026-09-21.academic.json'
+      - 'articles/2026-09-21-*.html'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-academic-2026-09-21
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install beautifulsoup4==4.13.4
+      - name: Publish verified academic columns without touching news content
+        run: |
+          python - <<'PY'
+          import json, posixpath, re
+          from datetime import datetime
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          from bs4 import BeautifulSoup
+
+          root=Path('.')
+          rec_path=root/'.github/editions/2026-09-21.academic.json'
+          rec=json.loads(rec_path.read_text(encoding='utf-8'))
+          if rec.get('state')!='verified':
+              print('Academic record is not in verified state; nothing to publish.')
+              raise SystemExit(0)
+          review=rec.get('academic_review',{})
+          assert review.get('status')=='verified'
+          assert all(review.get('checks',{}).get(k) is True for k in ['sources','original_reading','bibliography','deduplication','original_titles'])
+
+          manifest_path=root/'data/current-edition.json'
+          old=json.loads(manifest_path.read_text(encoding='utf-8'))
+          brief_path=old['pages']['brief']
+          brief_date=old['page_dates']['brief']
+          news_count=old['news_count']
+          new_paths={k:rec['pages'][k] for k in ['paper','classic','newworks']}
+          for p in new_paths.values():
+              assert (root/p).is_file(), p
+
+          pages={'brief':brief_path, **new_paths}
+          page_dates={'brief':brief_date,'paper':'2026-09-21','classic':'2026-09-21','newworks':'2026-09-21'}
+          manifest={'date':'2026-09-21','pages':pages,'page_dates':page_dates,'news_count':news_count,'newworks_count':5}
+
+          def soup(path):
+              return BeautifulSoup((root/path).read_text(encoding='utf-8'),'html.parser')
+          labels=['全球科技法简报','域外法学论文精读','法学经典著作','科技法研究新作']
+          keys=['brief','paper','classic','newworks']
+          def sync_nav(path):
+              d=soup(path)
+              nav=d.select_one('.navlinks')
+              if not nav:return
+              parent=posixpath.dirname(path) or '.'
+              for a in nav.select('a'):
+                  txt=a.get_text(strip=True)
+                  if txt in labels:
+                      a['href']=posixpath.relpath(pages[keys[labels.index(txt)]],parent)
+              (root/path).write_text(str(d),encoding='utf-8')
+
+          docs={k:soup(p) for k,p in new_paths.items()}
+          titles={k:docs[k].select_one('main h1').get_text(' ',strip=True) for k in docs}
+
+          # Homepage: academic cards only; news and tech cards remain untouched.
+          home=soup('index.html')
+          for key in ['paper','classic','newworks']:
+              card=home.select_one(f'.portal-card[data-daily-column="{key}"]')
+              assert card is not None
+              card['href']=pages[key]
+              card.select_one('.portal-latest small').string='2026.09.21 · 最新一期'
+              if key=='newworks':
+                  heads=docs[key].select('.brief-item h3')[:3]
+                  text='5项｜'+'；'.join(re.sub(r'^\s*\d+[.、]\s*','',h.get_text(' ',strip=True)) for h in heads)
+              else:text=titles[key]
+              card.select_one('.portal-latest strong').string=text
+          (root/'index.html').write_text(str(home),encoding='utf-8')
+
+          # Academic history lists: prepend exactly one new current row.
+          listings={'paper':'papers.html','classic':'classics.html','newworks':'new-works.html'}
+          for key,listing in listings.items():
+              d=soup(listing); collection=d.select_one('.issue-list'); assert collection is not None
+              if not collection.select_one(f'a[href="{pages[key]}"]'):
+                  row=d.new_tag('article',attrs={'class':'issue-row'})
+                  date_node=d.new_tag('div',attrs={'class':'issue-date'}); st=d.new_tag('strong'); st.string='2026.09.21'; date_node.append(st); row.append(date_node)
+                  main=d.new_tag('div',attrs={'class':'issue-main'}); h=d.new_tag('h3'); h.string=titles[key]; main.append(h)
+                  if key=='newworks':
+                      p=d.new_tag('p'); p.string='平台上传级尽调、AI精神权利、智能体越狱与策略行为、AI代拟判决、农业算法系统性风险。'; main.append(p)
+                  row.append(main)
+                  a=d.new_tag('a',href=pages[key],attrs={'class':'issue-action'}); a.string='阅读全文 →'; row.append(a)
+                  collection.insert(0,row)
+              (root/listing).write_text(str(d),encoding='utf-8')
+
+          # Archive summaries: leave news and tech summaries untouched.
+          archive=soup('archive.html'); cards=archive.select('.portal-grid .portal-card'); assert len(cards)>=5
+          cards[1].select_one('p').string='最新：'+titles['paper']
+          cards[2].select_one('p').string='最新：'+titles['classic']
+          cards[3].select_one('p').string='最新：2026.09.21 · 5项'
+          (root/'archive.html').write_text(str(archive),encoding='utf-8')
+
+          # Sync navigation only on current/entry pages. News body itself is not changed.
+          for path in ['index.html','archive.html','papers.html','classics.html','new-works.html',brief_path,*new_paths.values()]:
+              sync_nav(path)
+
+          manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          rec['state']='published'; rec['academic_published_at']=datetime.now(ZoneInfo('Asia/Shanghai')).isoformat(timespec='seconds'); rec['news_untouched']=True
+          rec_path.write_text(json.dumps(rec,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps(manifest,ensure_ascii=False,indent=2))
+          PY
+          git diff --check
+          if git diff --quiet; then
+            echo 'No structural publication changes needed.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- data/current-edition.json index.html archive.html papers.html classics.html new-works.html articles/2026-09-20-tech-law-brief.html articles/2026-09-21-calo-digital-market-manipulation.html articles/2026-09-21-zittrain-future-internet.html articles/2026-09-21-new-works.html .github/editions/2026-09-21.academic.json
+          git commit -m '独立发布2026-09-21学术三栏'
+          git push origin HEAD:main
