@@ -1,16 +1,16 @@
 {
-  "date": "2026-09-20",
+  "date": "2026-09-21",
   "pages": {
     "brief": "articles/2026-09-20-tech-law-brief.html",
-    "paper": "articles/2026-09-20-richards-hartzog-taking-trust-seriously.html",
-    "classic": "articles/2026-09-20-lessig-future-of-ideas.html",
-    "newworks": "articles/2026-09-20-new-works.html"
+    "paper": "articles/2026-09-21-calo-digital-market-manipulation.html",
+    "classic": "articles/2026-09-21-zittrain-future-internet.html",
+    "newworks": "articles/2026-09-21-new-works.html"
   },
   "page_dates": {
     "brief": "2026-09-20",
-    "paper": "2026-09-20",
-    "classic": "2026-09-20",
-    "newworks": "2026-09-20"
+    "paper": "2026-09-21",
+    "classic": "2026-09-21",
+    "newworks": "2026-09-21"
   },
   "news_count": 18,
   "newworks_count": 5

@@ -1,6 +1,6 @@
 {
   "date": "2026-09-21",
-  "state": "verified",
+  "state": "published",
   "pages": {
     "brief": "articles/2026-09-20-tech-law-brief.html",
     "paper": "articles/2026-09-21-calo-digital-market-manipulation.html",
@@ -42,5 +42,6 @@
       "10.1017/err.2026.10135"
     ]
   },
-  "news_untouched": true
+  "news_untouched": true,
+  "academic_published_at": "2026-09-21T18:45:38+08:00"
 }
