@@ -1,16 +1,16 @@
 {
-  "date": "2026-09-21",
+  "date": "2026-09-22",
   "pages": {
     "brief": "articles/2026-09-21-tech-law-brief.html",
-    "paper": "articles/2026-09-21-calo-digital-market-manipulation.html",
-    "classic": "articles/2026-09-21-zittrain-future-internet.html",
-    "newworks": "articles/2026-09-21-new-works.html"
+    "paper": "articles/2026-09-22-reidenberg-lex-informatica.html",
+    "classic": "articles/2026-09-22-bentham-principles-morals-legislation.html",
+    "newworks": "articles/2026-09-22-new-works.html"
   },
   "page_dates": {
     "brief": "2026-09-21",
-    "paper": "2026-09-21",
-    "classic": "2026-09-21",
-    "newworks": "2026-09-21"
+    "paper": "2026-09-22",
+    "classic": "2026-09-22",
+    "newworks": "2026-09-22"
   },
   "news_count": 18,
   "newworks_count": 5

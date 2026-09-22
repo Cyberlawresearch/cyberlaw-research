@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-22",
+  "state": "published",
+  "pages": {
+    "brief": "articles/2026-09-21-tech-law-brief.html",
+    "paper": "articles/2026-09-22-reidenberg-lex-informatica.html",
+    "classic": "articles/2026-09-22-bentham-principles-morals-legislation.html",
+    "newworks": "articles/2026-09-22-new-works.html"
+  },
+  "academic_review": {
+    "status": "verified",
+    "checked_at": "2026-09-22T18:50:21+08:00",
+    "checks": {
+      "sources": true,
+      "original_reading": true,
+      "bibliography": true,
+      "deduplication": true,
+      "original_titles": true
+    },
+    "paper": {
+      "author": "Joel R. Reidenberg",
+      "originalTitle": "Lex Informatica: The Formulation of Information Policy Rules through Technology",
+      "journal": "Texas Law Review",
+      "year": "1998",
+      "volume": "76",
+      "issue": "3",
+      "pages": "553–584",
+      "doi": ""
+    },
+    "classic": {
+      "author": "Jeremy Bentham",
+      "originalTitle": "An Introduction to the Principles of Morals and Legislation",
+      "publisher": "Clarendon Press",
+      "year": "1907",
+      "edition": "1907 reprint of the 1823 edition corrected by the author"
+    },
+    "newworks_dois": [
+      "10.1017/err.2026.10087",
+      "10.1017/err.2026.10090",
+      "10.1016/j.clsr.2026.106281",
+      "10.1093/ijlit/eaag006",
+      "10.1093/jiplp/jpaf053"
+    ]
+  },
+  "news_untouched": true,
+  "academic_published_at": "2026-09-22T18:50:21+08:00"
+}
