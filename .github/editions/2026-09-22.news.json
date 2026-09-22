@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-22",
+  "column": "brief",
+  "state": "verified",
+  "page": "articles/2026-09-22-tech-law-brief.html",
+  "news_count": 18,
+  "distribution": {"domestic": 6, "foreign": 12},
+  "checked_at": "2026-09-22T19:31:05+08:00",
+  "last_news_scan_at": "2026-09-22T19:31:05+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  },
+  "deduplication": {
+    "previous_day": "2026-09-21",
+    "history_start": "2026-09-15",
+    "notes": [
+      "逐条对照2026-09-21完整简报并回查2026-09-15至9月21日历史；未重复收录爱尔兰DPC对Google位置数据罚款、欧盟数据中心评级、ECB Pontes、CISA Linux KEV、CrowdSec供应链泄露等前一日事项。",
+      "中美AI安全条目仅按明确新增进展收录：9月21日本站记录的是美方提出事故通报机制；本期新增事实是路透报道美方称双方已同意将AI安全对话正式化，并计划约两个月后在深圳继续讨论事故通报等议题，正文已说明前后差异。",
+      "检索中发现澳大利亚政府AI assurance页面虽显示9月22日，但正文明确该框架于2024年6月21日已发布，判定为旧材料重新呈现并排除，没有用旧闻补足数量。"
+    ]
+  },
+  "scan": {
+    "china_official": "已检查中国政府网、中央网信办、国家发展改革委、工业和信息化部、商务部、国家数据局、市场监管总局、金融监管总局、人民银行、卫生健康、药监、最高法、最高检及主要数字经济地区近72小时公开信息。入选国家数据局十大行业数据攻坚、两高网络食品安全犯罪典型案例、国家算力互联互通北京节点、上海生成式AI服务登记等明确新节点；发布前重新扫描最近1至2小时重要公告，未发现需要替换现有条目的更高优先级正式动作。",
+    "foreign_official": "已检查欧盟委员会及相关欧盟机构、美国FTC/DOJ/SEC/NIST/CISA/FCC、英国ICO/CMA/Ofcom，以及澳大利亚、新加坡、加拿大、巴西、印度、菲律宾等近期材料，并检查Reuters、AP、Bloomberg Law、Financial Times及法律、安全专业媒体。入选联合国AI科学小组智能体简报、前沿AI控制倡议、欧盟网络安全审计、菲律宾平台监管、印度数字通信委员会解散等新进展。",
+    "local_language": "使用韩文检索PIPC、KFTC、KISA近期个人信息、平台和AI安全动态；使用日文检索PPC、JFTC、总务省、经产省近期AI、个人信息和竞争监管；使用越南文检索AI、数据和平台监管。发现韩国监管机构与电信企业拟于9月28日发布联合声明、日本和越南近期组织性或一般性材料，但均不足以替换本期现有高优先级条目。",
+    "media": "发布前检查Reuters、Associated Press、Financial Times、Bloomberg Law以及科技、法律和安全专业媒体。对智谱ZCode整改、阿里AI芯片和模型规划、银行AI购物智能体报告、澳大利亚AI训练版权争议、Amazon封锁Meta Muse等均明确区分企业行动、行业建议和正式监管规则。",
+    "final_window": "19时31分前重新扫描最近1至2小时官方和主流来源；未发现新的重大正式裁判、行政处罚或已生效规则需要替换本期18条。"
+  },
+  "content_checks": {
+    "background": "对中美AI安全对话、智谱ZCode、菲律宾平台监管、Amazon-Meta智能体访问、澳大利亚AI训练版权等条目均回查同一事件、制度或主体的前序背景，只保留解释当日新进展所必需的信息。",
+    "language": "逐条检查翻译腔、抽象名词堆叠和免责声明式法律状态表述；对调查、企业整改、政策倡议、议会材料和媒体报道分别使用具体主体及程序状态表达，不把尚未成立的法律义务写成确定规则。",
+    "context": "关联阅读按同一主体、同一事件链、同一具体规则或技术机制保留直接关系；专题时间线只允许同一事件连续发展或高度同质的窄专题，不以AI治理、数据法、平台监管等宽泛标签凑项。",
+    "layout": "12条境外新闻均保留经核验的英文或当地语言原始题名，并以brief-original独立全宽显示；新闻事实全宽，法治研判、智库选题、论文选题仍保持其后三栏结构。"
+  }
+}
