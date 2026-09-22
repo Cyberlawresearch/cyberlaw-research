@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>第11课｜多头注意力：为什么模型要同时用多组 Attention 看同一段话？｜网信法技术基础</title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+  <link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-09-21-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-09-21-calo-digital-market-manipulation.html">域外法学论文精读</a><a href="../articles/2026-09-21-zittrain-future-internet.html">法学经典著作</a><a href="../articles/2026-09-21-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 11 · TRANSFORMER · 2026.09.22</div><h1>多头注意力：为什么模型要同时用多组 Attention 看同一段话？</h1><p class="tech-lead">今天只解决一个问题：前几课已经知道 Attention 会按相关程度汇总信息，Q/K/V 决定“参考谁、取什么”。为什么还要把这套计算并行做很多遍？</p></div></section>
+<div class="tech-shell">
+  <section class="lesson-focus">
+    <div><strong>最简单的正面定义</strong><p><strong>多头注意力（Multi-Head Attention）就是让同一段输入同时经过多组彼此独立学习的 Attention 计算，再把这些结果合并起来。</strong>这里每一组并行的 Attention 计算，就叫一个“头（head）”。</p></div>
+    <div><strong>它解决什么问题</strong><p>如果只有一组 Attention，模型只能用这一组学到的匹配方式汇总信息；多组并行计算让模型有机会同时保留不同的关联方式，最后再综合使用。</p></div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>一、先用“多人审合同”建立直觉</h2>
+    <p>假设一份合同交给三个人同时看：一人重点看“谁承担义务”，一人重点看“什么时候履行”，另一人重点看“有没有例外和前提”。他们读的是同一份合同，但关注关系可以不同，最后再把各自发现的信息合在一起。</p>
+    <p>多头注意力的直觉与此相似：同一段输入进入多个 Attention 头，每个头都有自己学出来的 Q/K/V 转换规则，因此可能形成不同的注意力分布和信息汇总结果。</p>
+    <div class="callout"><strong>注意：</strong>这个“多人审合同”只是帮助理解。真实模型并不会预先规定“第1头看主体、第2头看时间”。某个头是否形成稳定、可解释的功能，需要实际分析，不能靠编号猜。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>二、一张图看懂多头注意力怎样工作</h2>
+    <div class="visual-board">
+      <div class="visual-title">同一份输入，为什么要并行跑多组 Attention</div>
+      <div class="flow">
+        <div class="flow-box"><strong>同一段输入表示</strong><span>每个位置已有一组可计算的数字</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>分成多组 Attention</strong><span>Head 1、Head 2、Head 3…各自使用学到的 Q/K/V 转换规则</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>各头独立计算</strong><span>分别判断该参考哪些位置，并汇总对应信息</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>把各头结果合并</strong><span>拼接后再经过一次学出来的转换，形成这一层的输出</span></div>
+      </div>
+    </div>
+    <p>经典 Transformer 就是这样做的：每个头先在较小的一部分表示维度上独立计算 Attention，再把各头输出拼接并转换。原论文使用8个并行头，但<strong>“8个头”只是那一套模型的具体设计，不是 Transformer 的普遍固定数字</strong>。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>三、为什么“多个头”可能比“一个头”更有用？</h2>
+    <p>因为不同头的参数不同，同一段输入经过不同的 Q/K/V 转换以后，会得到不同的匹配分数。这样，模型可以同时保留多种信息关系，而不是把所有关联一次性平均进同一个结果里。</p>
+    <p>经典 Transformer 论文把这种作用概括为：模型可以同时关注不同位置、不同表示角度的信息。今天不需要掌握数学，只要记住：<strong>多个头的价值不是“重复算很多遍”，而是给模型多套可以共同学习的关联通道。</strong></p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>四、头越多，模型一定越好吗？不一定</h2>
+    <p>后续研究发现，不同头的重要性并不相同。Voita 等人的实验发现，一些头会形成较稳定、可解释的模式，但大量头可以被裁掉而性能变化很小；Michel、Levy 与 Neubig 也发现，部分模型在测试时移除相当比例的注意力头，性能并不会明显下降。</p>
+    <p>这说明“多头”提供了表达空间和训练弹性，但训练完成以后，某些头可能高度重要，另一些可能存在冗余。因此，不能只看“有多少个头”来判断模型能力，也不能把每个头都理解成一个不可替代的功能模块。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>五、正面概念讲清以后，再看三个常见误解</h2>
+    <div class="myth-list">
+      <div class="myth"><b>误解 01</b><span>“一个头就对应一种固定语义，比如专门识别人名。”——不能这样理解。某些头可能呈现稳定模式，但头的功能是训练形成的，而且会随模型、层和任务变化。</span></div>
+      <div class="myth"><b>误解 02</b><span>“头越多，模型一定越强。”——不成立。头数只是架构参数之一，不少研究发现部分头存在明显冗余。</span></div>
+      <div class="myth"><b>误解 03</b><span>“多头注意力就是多个模型分别投票。”——不是。它们仍属于同一个模型、同一层内部的并行计算，结果最终会合并成一个表示。</span></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>六、不同模型里的“多头”也并不完全一样</h2>
+    <p>经典 Multi-Head Attention 为不同头分别计算 Q、K、V。为了降低生成时的内存和带宽成本，一些现代模型会采用 Multi-Query Attention 或 Grouped-Query Attention，让多组 Query 共享较少的 K/V。</p>
+    <div class="callout"><strong>新词备注｜Multi-Query / Grouped-Query Attention</strong><br/>今天只需理解成“保留多组 Query，但让若干头共享 Key/Value 的节省成本方案”。具体为什么能省显存、和 KV Cache 有什么关系，后面的部署与推理课程再讲。</div>
+    <p>因此，在模型说明书或采购材料中看到“32个 Attention heads”，不能不加区分地理解为32套完全独立的 Q/K/V；还要看模型究竟采用哪种实现。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>七、为什么这件事与网信法研究有关？</h2>
+    <div class="law-bridge">
+      <h3>多头机制让“展示一个 Attention 图就解释了模型”变得更不可靠。</h3>
+      <p>如果模型同时有很多层、很多头，那么某一张热力图通常只对应其中一个头，或者是把多个头平均后的结果。PyTorch 的接口甚至明确区分“返回每个头的权重”与“把各头权重平均后返回”。这意味着：解释材料选择哪一层、哪一个头，还是怎样平均，会直接影响最终展示出来的图。</p>
+      <p>进一步说，一些头可以被移除而模型输出变化很小，说明“看起来很醒目的注意力模式”也未必就是决定输出的关键机制。对于司法举证、行政审计或高风险AI合规，不能允许系统提供方只挑一个最容易讲故事的头作为“算法理由”。</p>
+    </div>
+    <p>更可操作的做法是：凡使用 Attention 可视化作为解释材料，应同时说明模型版本、层与头的选择规则、是否做了跨头平均，以及这种可视化是否经过删除、扰动或其他方法验证其对结果确有影响。否则，它最多是一项辅助观察，而不是完整的决策理由。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>八、这一课只需要带走三句话</h2>
+    <div class="lesson-focus">
+      <div><strong>第一句</strong><p>多头注意力就是让多组 Attention 并行处理同一段输入，再把结果合并。</p></div>
+      <div><strong>第二句</strong><p>不同头可以学到不同的关联方式，但不存在“每个头都有固定人工标签”的普遍规律。</p></div>
+    </div>
+    <div class="callout"><strong>第三句：</strong>展示某一个头的 Attention 权重，不等于解释了整个模型，更不能直接把它当成最终决策理由。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>九、把这一课转成两个研究问题</h2>
+    <div class="research-grid">
+      <div class="research-card"><small>论文问题</small><h3>多头注意力可视化的选择性呈现与算法解释证据规则</h3><p>可研究在同一模型存在大量层和头、且不同头重要性差异明显的情况下，单头或平均 Attention 图应具有什么证明力；当事人或系统提供方选择性展示某些头时，法院和监管机构应如何评价。</p></div>
+      <div class="research-card"><small>智库问题</small><h3>高风险AI解释材料应建立 Attention 可视化最低披露规范</h3><p>建议要求说明模型版本、层/头选择方法、是否平均、可视化生成方式及必要的有效性验证，避免以一张无法复现或选择性过强的热力图替代完整技术说明。</p></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>原始材料</h2>
+    <ul class="source-links">
+      <li><a href="https://arxiv.org/abs/1706.03762">Vaswani et al. (2017), Attention Is All You Need</a>——经典 Transformer 论文定义 Multi-Head Attention：多组投影后的 Attention 并行计算，再将各头输出拼接并转换。</li>
+      <li><a href="https://docs.pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html">PyTorch：MultiheadAttention</a>——官方文档说明多头注意力并行使用多个 head，模型总表示维度会分给各头，并可选择返回逐头或跨头平均的 Attention 权重。</li>
+      <li><a href="https://aclanthology.org/P19-1580/">Voita et al. (2019), Analyzing Multi-Head Self-Attention</a>——分析不同 Attention 头的功能差异，发现部分头呈现可解释模式，同时大量头可被裁剪。</li>
+      <li><a href="https://proceedings.neurips.cc/paper/2019/hash/2c601ad9d2ff9bc8b282670cdd54f69f-Abstract.html">Michel, Levy & Neubig (2019), Are Sixteen Heads Really Better than One?</a>——说明许多训练完成的模型中，相当比例的 Attention 头可以移除而性能变化有限。</li>
+    </ul>
+  </section>
+
+  <div class="next-lesson"><div><div class="tech-kicker">NEXT · LESSON 12 · TRANSFORMER</div><strong>位置编码：模型怎样知道“谁在前、谁在后”？</strong></div><a href="../tech-basics.html">课程总览与历史归档 →</a></div>
+</div>
+</main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body>
+</html>
