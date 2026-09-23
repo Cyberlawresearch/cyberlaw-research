@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>第12课｜位置编码：模型怎样知道“谁在前、谁在后”？｜网信法技术基础</title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+  <link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-09-22-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-09-22-reidenberg-lex-informatica.html">域外法学论文精读</a><a href="../articles/2026-09-22-bentham-principles-morals-legislation.html">法学经典著作</a><a href="../articles/2026-09-22-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 12 · TRANSFORMER · 2026.09.23</div><h1>位置编码：模型怎样知道“谁在前、谁在后”？</h1><p class="tech-lead">今天只解决一个问题：Attention 会比较不同位置之间的关系，但模型怎样知道一个 Token 在第几个位置、两个 Token 相隔多远？</p></div></section>
+<div class="tech-shell">
+  <section class="lesson-focus">
+    <div><strong>最简单的正面定义</strong><p><strong>位置编码，就是给模型的计算过程加入“顺序和距离”信息。</strong>这样模型处理一串 Token 时，不只知道“有哪些内容”，还知道“谁在前、谁在后、彼此离多远”。</p></div>
+    <div><strong>为什么需要它</strong><p>Attention 擅长比较不同位置之间的关联，但如果完全不给位置信号，仅靠内容本身，模型就缺少一套明确区分顺序的依据。</p></div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>一、先看一个最直观的例子</h2>
+    <p>“小王借钱给小李”和“小李借钱给小王”，出现的词几乎一样，但顺序一换，谁是出借人、谁是借款人就变了。</p>
+    <p>模型如果只拿到每个 Token 的“内容表示”，却没有任何位置线索，就很难稳定区分这种顺序差异。因此，Transformer 还需要把“第1个、第2个、第3个……”或“相距几个位置”这类信息带进计算。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>二、一张图看懂位置编码在做什么</h2>
+    <div class="visual-board">
+      <div class="visual-title">内容信息 + 位置信息 → 带顺序的表示</div>
+      <div class="flow">
+        <div class="flow-box"><strong>Token</strong><span>“小王｜借钱｜给｜小李”</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>内容表示</strong><span>每个 Token 已变成可计算的一组数字</span></div>
+        <div class="flow-arrow">＋</div>
+        <div class="flow-box"><strong>位置信号</strong><span>第1、2、3、4位，以及位置之间的关系</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>进入 Attention</strong><span>模型既能比较内容，也能利用顺序和距离</span></div>
+      </div>
+    </div>
+    <p>这张图表达的是共同原理，不代表所有模型都真的把两组数字直接“相加”。经典 Transformer 确实把位置编码加入 Token 的表示；现代模型也常把位置信息放进 Attention 的 Q/K 计算，或者直接改变 Attention 分数。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>三、经典 Transformer 怎样加入位置？</h2>
+    <p>2017年的 Transformer 使用一套固定的数学规律，为不同位置生成不同数字，再把它加到 Token 的表示上。原论文使用正弦、余弦函数形成这种位置编码。今天不需要记公式，只要理解：<strong>第1位和第20位会得到不同的位置信号，而且相对距离也能从这些规律中体现出来。</strong></p>
+    <p>也有模型直接学习“第1位应该是什么数字、第2位应该是什么数字”。这叫可学习的位置表示。两者目的相同：都在告诉模型“内容相同，不代表位置相同”。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>四、现代模型不一定还用“直接相加”</h2>
+    <p>很多现代语言模型使用 <strong>RoPE（Rotary Position Embedding，旋转位置编码）</strong>：它不是简单给 Token 再加一组位置数字，而是在 Attention 计算 Q/K 时，根据位置对数字表示做旋转，使模型能够利用相对位置关系。</p>
+    <p>还有 ALiBi 这类方法，甚至不单独生成位置向量，而是根据两个位置之间的距离，直接给 Attention 分数增加一个距离相关的偏置。</p>
+    <div class="callout"><strong>所以要记住：</strong>“位置编码”可以作为一个总称来理解为“把位置信息注入模型计算”，但具体实现并不只有一种。经典 Transformer、RoPE、ALiBi 的做法不同，不能把某一种实现写成所有模型的普遍规律。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>五、正面概念讲清以后，再看三个常见误解</h2>
+    <div class="myth-list">
+      <div class="myth"><b>误解 01</b><span>“Token 本来就是按顺序输入的，所以模型天然知道顺序。”——输入确实有排列顺序，但 Attention 的核心比较计算还需要明确的位置信号，才能把这种顺序系统地带进表示与匹配。</span></div>
+      <div class="myth"><b>误解 02</b><span>“位置编码就是给每个词标一个1、2、3。”——直觉上可以这样理解，但实际模型通常把位置变成多维数字关系，而不是只附一个整数标签。</span></div>
+      <div class="myth"><b>误解 03</b><span>“所有 Transformer 都使用2017年的正弦位置编码。”——不对。现代模型广泛存在可学习位置表示、RoPE、ALiBi及其变体。</span></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>六、为什么这件事与网信法研究有关？</h2>
+    <div class="law-bridge">
+      <h3>对模型而言，“给了哪些材料”与“这些材料放在什么位置”不是同一件事。</h3>
+      <p>系统提示、用户问题、历史对话、检索材料和附件摘录即使内容完全相同，只要排列位置、前后顺序或截断方式变化，模型实际计算到的位置关系就会变化，输出也可能随之变化。因此，复核一次高风险AI决策时，只保存“用了哪些文件”还不够，至少还应能够还原输入顺序和实际进入模型的内容。</p>
+      <p>位置机制还与长文本能力直接相关。模型宣称能够处理很长的输入，并不只取决于界面允许粘贴多少文字，还受到位置表示方法、训练长度和后续扩展方法影响。采购或评测时，应区分“标称可输入长度”和“在较远位置仍能可靠利用信息的能力”。</p>
+    </div>
+    <div class="callout"><strong>新词备注｜上下文窗口</strong><br/>今天先把它理解成“模型一次能够共同处理的输入范围”。不需要现在掌握它的技术细节，后面会单独讲。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>七、这一课只需要带走三句话</h2>
+    <div class="lesson-focus">
+      <div><strong>第一句</strong><p>位置编码的作用，是把顺序和距离信息带进模型计算。</p></div>
+      <div><strong>第二句</strong><p>经典 Transformer 把位置编码加入 Token 表示，但现代模型还存在 RoPE、ALiBi 等不同方案。</p></div>
+    </div>
+    <div class="callout"><strong>第三句：</strong>在审计模型输入时，材料的顺序、位置和截断方式本身也是需要记录的技术事实。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>八、把这一课转成两个研究问题</h2>
+    <div class="research-grid">
+      <div class="research-card"><small>论文问题</small><h3>生成式AI程序可复现性中的“输入位置效应”及其证据规则</h3><p>可研究同一材料因顺序、插入位置和截断不同而产生输出差异时，司法与行政审计应要求保留哪些输入结构信息，以及“完整提示记录”应如何界定。</p></div>
+      <div class="research-card"><small>智库问题</small><h3>高风险大模型长文本能力应区分“标称长度”与“有效利用能力”</h3><p>可提出采购和验收规则：除披露最大输入长度外，还应测试关键信息处于不同位置时的检索、引用和判断表现，并记录所采用的位置机制及扩展方式。</p></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>原始材料</h2>
+    <ul class="source-links">
+      <li><a href="https://arxiv.org/abs/1706.03762">Vaswani et al. (2017), Attention Is All You Need</a>——经典 Transformer 论文，第3.5节说明为什么需要位置信息，并采用固定的正弦、余弦位置编码。</li>
+      <li><a href="https://arxiv.org/abs/2104.09864">Su et al. (2021), RoFormer: Enhanced Transformer with Rotary Position Embedding</a>——提出 RoPE，通过旋转方式把位置关系注入 Attention 计算。</li>
+      <li><a href="https://arxiv.org/abs/2108.12409">Press, Smith & Lewis (2021), Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation</a>——提出 ALiBi，不给 Token 额外添加位置向量，而是用距离偏置影响 Attention 分数。</li>
+      <li><a href="https://huggingface.co/docs/transformers/main/en/internal/rope_utils">Hugging Face Transformers：Rotary Embeddings Utilities</a>——官方文档说明 RoPE 及多种缩放变体在现代模型中的实现差异。</li>
+    </ul>
+  </section>
+
+  <section class="lesson-next"><div><small>NEXT LESSON</small><strong>前馈网络与残差：Attention 之后模型还在做什么？</strong></div><span>第13课 →</span></section>
+</div>
+</main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body>
+</html>
