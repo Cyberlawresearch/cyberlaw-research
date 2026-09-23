@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-23",
+  "column": "brief",
+  "state": "verified",
+  "page": "articles/2026-09-23-tech-law-brief.html",
+  "news_count": 18,
+  "distribution": {"domestic": 6, "foreign": 12},
+  "checked_at": "2026-09-23T19:42:45+08:00",
+  "last_news_scan_at": "2026-09-23T19:42:45+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  },
+  "deduplication": {
+    "previous_day": "2026-09-22",
+    "history_start": "2026-09-16",
+    "notes": [
+      "逐条对照2026-09-22完整简报并回查2026-09-16至9月22日历史；未重复收录国家数据局十大行业数据攻坚、两高网络食品安全案例、北京算力节点、菲律宾平台合规、澳大利亚AI训练版权、银行AI购物智能体等前一日事项。",
+      "Muse条目仅作为明确新增进展再次收录：9月22日本站记录Amazon限制Muse访问零售网站；9月23日新增事实是Reuters披露Meta测试由外包人工处理部分Muse电话任务，法律问题从跨平台访问权转向用户知情、第三方处理和人工接管透明度。",
+      "9月21日至22日的数据中心条目按不同法域不同正式动作区分：加州七项正式立法、得州许可暂停与审计、维多利亚州可持续数据中心行动方案分别具有独立法律或行政节点，不按宽泛‘数据中心监管’合并为重复事件。"
+    ]
+  },
+  "scan": {
+    "china_official": "已检查中国政府网、中央网信办、国家发展改革委、工业和信息化部、商务部、国家数据局、市场监管总局、金融监管总局、人民银行、卫生健康、药监、最高法、最高检及主要数字经济地区近72小时公开信息。入选国家网信办端侧生成式AI备案、五部门绿色算力设施推荐、最高法统一办案办公系统、碳排放计量审查和上海AI安全体检等具体新节点；发布前重新扫描最近1至2小时重要官方信息，未发现需要替换现有条目的更高优先级正式动作。",
+    "foreign_official": "已检查欧盟及主要欧美监管机构、英国CMA/ICO/Ofcom、澳大利亚OAIC与州政府、美国联邦司法和州政府、新加坡、加拿大、印度等近期材料，并核对Reuters、AP、Financial Times及法律、安全专业媒体。入选CMA搜索选择方案、OAIC执法指引、加州/得州/维州数据中心规则、Apple-Epic最高法院程序、BC诉OpenAI和Google印度CSAM直接报送等新节点。",
+    "local_language": "使用越南文检索并核对第363/2026/NĐ-CP号数据领域行政处罚法令、《数据安全法》草案和VNeID-ASEAN连接计划；使用韩文检索PIPC/KFTC/KISA近期个人信息、平台和AI安全动态，使用日文检索PPC/JFTC/总务省/经产省近期AI、数据与平台监管，未发现需要替换现有项目的更高优先级9月23日正式动作。",
+    "media": "发布前检查Reuters、Associated Press、Financial Times，并检查Bloomberg公开可检索结果与科技、法律、安全专业媒体。对The Information关于DeepSeek/月之暗面调查明确标注为媒体核实的调查报道，并以Anthropic公开报告核对前序事实；对Reuters诉讼、政府意见和企业测试分别区分裁判、行政程序和企业行为状态。",
+    "final_window": "19时42分前重新扫描最近1至2小时官方和主流媒体新动态；检索到的美国AI政策讲话、儿童AI风险倡议、NIST活动等未形成更高优先级的新正式裁判、行政处罚或已生效规则，不替换现有18条。"
+  },
+  "content_checks": {
+    "background": "对DeepSeek/月之暗面调查、最高法数字法院、CMA搜索选择、Apple-Epic、BC诉OpenAI、Muse人工接管以及三项数据中心行动均回查同一主体、同一制度或同一事件链的直接前序节点，只保留解释当日进展所必需的背景。",
+    "language": "逐条检查法律状态和中文表达；调查、草案、征求意见、诉讼、政府意见、企业测试和正式立法均用具体程序阶段表达，不把未确认主张或待定结果写成确定事实。",
+    "context": "关联阅读仅按同一主体、同一事件链、同一具体规则、技术机制或受监管行为保留直接关系；专题时间线仍限同一事件连续发展或高度同质窄专题。",
+    "layout": "12条境外新闻均保留经核验的英文或越南文原始题名并以brief-original独立全宽显示；新闻事实全宽，法治研判、智库选题和论文选题保持其后三栏结构；18条均含brief-insight背景与前瞻字段。"
+  }
+}
