@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-24",
+  "state": "published",
+  "pages": {
+    "brief": "articles/2026-09-23-tech-law-brief.html",
+    "paper": "articles/2026-09-24-suzor-digital-constitutionalism.html",
+    "classic": "articles/2026-09-24-calabresi-costs-of-accidents.html",
+    "newworks": "articles/2026-09-24-new-works.html"
+  },
+  "academic_review": {
+    "status": "verified",
+    "checked_at": "2026-09-24T18:45:54+08:00",
+    "checks": {
+      "sources": true,
+      "original_reading": true,
+      "bibliography": true,
+      "deduplication": true,
+      "original_titles": true
+    },
+    "paper": {
+      "author": "Nicolas Suzor",
+      "originalTitle": "Digital Constitutionalism: Using the Rule of Law to Evaluate the Legitimacy of Governance by Platforms",
+      "journal": "Social Media + Society",
+      "year": "2018",
+      "volume": "4",
+      "issue": "3",
+      "pages": "1–11",
+      "doi": "10.1177/2056305118787812"
+    },
+    "classic": {
+      "author": "Guido Calabresi",
+      "originalTitle": "The Costs of Accidents: A Legal and Economic Analysis",
+      "publisher": "Yale University Press",
+      "year": "1970",
+      "edition": "First edition"
+    },
+    "newworks_dois": [
+      "10.1017/elo.2026.10084",
+      "10.1017/err.2025.10020",
+      "10.1017/err.2025.10033",
+      "10.1093/jiplp/jpaf037",
+      "10.1017/elo.2026.10077"
+    ]
+  },
+  "news_untouched": true,
+  "academic_published_at": "2026-09-24T18:45:54+08:00"
+}
