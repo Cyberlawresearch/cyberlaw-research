@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>第13课｜前馈网络与残差：Attention 之后模型还在做什么？｜网信法技术基础</title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+  <link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-09-23-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-09-23-tutt-fda-for-algorithms.html">域外法学论文精读</a><a href="../articles/2026-09-23-mill-on-liberty.html">法学经典著作</a><a href="../articles/2026-09-23-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 13 · TRANSFORMER · 2026.09.24</div><h1>前馈网络与残差：Attention 之后模型还在做什么？</h1><p class="tech-lead">今天只解决一个问题：Attention 已经把相关信息汇总到当前位置以后，Transformer 为什么还要再加工一次，并给旧信息留一条“捷径”？</p></div></section>
+<div class="tech-shell">
+  <section class="lesson-focus">
+    <div><strong>前馈网络是什么</strong><p><strong>前馈网络（Feed-Forward Network，FFN）是在 Transformer 每一层中，对每个位置分别做的一组可学习变换。</strong>它不再去别的位置寻找信息，而是加工这个位置已经得到的表示。</p></div>
+    <div><strong>残差连接是什么</strong><p><strong>残差连接就是保留原来的表示，再把这一子层算出的变化叠加上去。</strong>可以先直观理解成：新表示＝原表示＋本轮加工结果。</p></div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>一、先用“开会记笔记”理解它</h2>
+    <p>想象你参加一场讨论。Attention 像是你先听全场发言：谁说的内容与当前问题更相关，你就多参考一些。听完以后，事情还没有结束——你还要自己整理笔记，把刚刚听到的信息转成“我现在怎样理解这件事”。这一步更接近 FFN。</p>
+    <p>但整理时也没有必要把原笔记全部擦掉重写。更稳妥的做法，是保留已有笔记，再把新理解加进去。这就是残差连接最直观的作用。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>二、一张图看懂一层 Transformer 里的分工</h2>
+    <div class="visual-board">
+      <div class="visual-title">经典 Transformer 的简化流程</div>
+      <div class="flow">
+        <div class="flow-box"><strong>当前位置表示 x</strong><span>已经带有前面几课讲过的内容与位置信息</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>Attention</strong><span>从允许参考的位置汇总相关信息</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>残差</strong><span>保留原表示，并叠加 Attention 的结果</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>FFN</strong><span>每个位置分别进一步加工</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>再次残差</strong><span>保留进入 FFN 前的信息，再叠加加工结果</span></div>
+      </div>
+    </div>
+    <p>最值得记住的分工是：<strong>Attention 主要解决“从别处取什么信息”，FFN 主要解决“拿到这些信息以后，在当前位置怎样进一步变换”。</strong>两者反复堆叠，才构成 Transformer 的核心层。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>三、FFN 为什么不是“多余的一步”？</h2>
+    <p>经典 Transformer 的 FFN 会先把当前位置的一组数字映射到更大的中间空间，经过一次非线性变换，再压回原来的维度。同一套 FFN 参数会应用到所有位置，但每个位置都各算各的。</p>
+    <p>这里的“非线性”今天只需理解成：输出不是简单按固定比例放大或缩小输入，因此模型能够形成更丰富的变换。2017年的原始 Transformer 使用两层线性变换，中间配 ReLU；现代模型也常使用别的激活或门控形式，所以不要把某一种 FFN 写成所有模型的统一结构。</p>
+    <div class="callout"><strong>小提示｜激活函数</strong><br/>今天先把它理解成“让网络不只是做简单线性换算的一道变换规则”。不需要记公式。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>四、残差连接为什么重要？</h2>
+    <p>如果每经过一个子层都把旧表示彻底替换掉，深层网络就必须一层接一层重新构造全部信息。残差连接给原表示保留一条直接路径，让子层更像是在学习“这一轮需要补充或修改什么”。残差学习最初在深层视觉网络中被系统提出，核心目的之一就是让很深的网络更容易优化。</p>
+    <p>经典 Transformer 在 Attention 和 FFN 外都使用残差连接，并配合归一化。原始论文采用的是“子层计算后相加，再做 LayerNorm”的结构；许多后来的大模型会调整归一化的位置。因此，上面的流程图讲的是共同直觉，不是所有模型逐行一致的实现。</p>
+    <div class="callout"><strong>小提示｜归一化</strong><br/>今天先把它理解成“把一层里的数值尺度整理得更稳定”。它与残差经常配合使用，但放在子层前还是子层后，不同模型可能不同。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>五、正面概念讲清以后，再看三个常见误解</h2>
+    <div class="myth-list">
+      <div class="myth"><b>误解 01</b><span>“Transformer 基本就是 Attention。”——Attention 很关键，但标准 Transformer 层还包含 FFN、残差与归一化等结构；只看 Attention 会漏掉大量后续变换。</span></div>
+      <div class="myth"><b>误解 02</b><span>“FFN 会再去整段文本里找一次信息。”——经典的 position-wise FFN 对每个位置分别计算；跨位置的信息汇总主要发生在 Attention 环节。</span></div>
+      <div class="myth"><b>误解 03</b><span>“残差就是把原文复制一份。”——它保留的是模型内部的数字表示路径，不是把用户输入的文字原样复制到下一层。</span></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>六、为什么这件事与网信法研究有关？</h2>
+    <div class="law-bridge">
+      <h3>一张 Attention 热力图，只能展示整条计算链中的一部分。</h3>
+      <p>模型在 Attention 汇总信息之后，还会经过 FFN、残差、归一化以及后续很多层的连续变换。因此，即使某个 Attention 头显示模型“重点参考了哪段文字”，也不能据此直接推出最终答案就是由那段文字单独决定。</p>
+      <p>这会影响算法解释和证据审查。高风险系统如果只提供一张 Attention 可视化图，监管者、法院或采购方仍难判断后续表示怎样被改变。更可复核的做法，是至少记录模型版本与架构配置，并在需要深入审计时明确 Attention、FFN、残差和归一化等关键结构是否发生过变化。</p>
+      <p>这也涉及权力分配：模型提供方掌握内部结构和版本变更，部署者与用户通常只能看到接口和输出。如果关键结构升级却没有清晰的版本留痕，发生争议后，外部主体就更难复现当时的计算条件。</p>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>七、这一课只需要带走三句话</h2>
+    <div class="lesson-focus">
+      <div><strong>第一句</strong><p>Attention 负责跨位置汇总信息，FFN 负责对每个位置得到的信息继续加工。</p></div>
+      <div><strong>第二句</strong><p>残差连接保留原表示的直接路径，再叠加子层产生的变化。</p></div>
+    </div>
+    <div class="callout"><strong>第三句：</strong>解释模型时不能只盯着 Attention；它只是 Transformer 一层中的一个环节。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>八、把这一课转成两个研究问题</h2>
+    <div class="research-grid">
+      <div class="research-card"><small>论文问题</small><h3>从“注意力可视化”到全层机制证据：生成式AI解释义务的技术边界</h3><p>可研究 Attention 权重、FFN 后表示、模型版本与最终输出之间应如何区分证据效力，避免把局部可视化误当成完整决策理由。</p></div>
+      <div class="research-card"><small>智库问题</small><h3>高风险大模型结构变更的最小披露清单</h3><p>可研究采购和监管中是否应要求记录 Attention、FFN、残差与归一化等关键结构及版本变化，以支持事故追溯、效果复测和责任认定。</p></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>原始材料</h2>
+    <ul class="source-links">
+      <li><a href="https://arxiv.org/abs/1706.03762">Vaswani et al. (2017), Attention Is All You Need</a>——原始 Transformer 论文，说明 position-wise FFN、残差连接与 LayerNorm 在每层中的位置。</li>
+      <li><a href="https://docs.pytorch.org/docs/stable/generated/torch.nn.TransformerEncoderLayer.html">PyTorch：TransformerEncoderLayer</a>——当前官方参考实现明确将编码层概括为 self-attention 与 feed-forward network，并提供归一化位置等参数。</li>
+      <li><a href="https://arxiv.org/abs/1512.03385">He et al. (2015), Deep Residual Learning for Image Recognition</a>——残差学习的经典论文，解释为什么通过学习相对于输入的“变化”可以缓解深层网络优化困难。</li>
+      <li><a href="https://arxiv.org/abs/2402.00838">Groeneveld et al. (2024), OLMo: Accelerating the Science of Language Models</a>——可用于观察现代语言模型在归一化、激活函数和块结构上与经典 Transformer 的差异。</li>
+    </ul>
+  </section>
+
+  <section class="lesson-next"><div><small>NEXT LESSON</small><strong>Decoder-only：为什么很多生成式大模型只保留 Transformer 的“解码器”一侧？</strong><p style="margin:6px 0 0">今天不需要掌握 Decoder-only；下一课会从最基本的“编码器/解码器到底是什么”开始讲。</p></div><span>第14课 →</span></section>
+</div>
+</main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body>
+</html>
