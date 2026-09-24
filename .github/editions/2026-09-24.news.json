@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-24",
+  "column": "brief",
+  "state": "verified",
+  "page": "articles/2026-09-24-tech-law-brief.html",
+  "news_count": 18,
+  "distribution": {"domestic": 8, "foreign": 10},
+  "checked_at": "2026-09-24T19:33:12+08:00",
+  "last_news_scan_at": "2026-09-24T19:32:00+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  },
+  "deduplication": {
+    "previous_day": "2026-09-23",
+    "history_start": "2026-09-17",
+    "notes": [
+      "逐条对照2026-09-23完整简报并回查9月17日至23日历史；排除9月23日已收录的中央网信办端侧生成式AI备案、上海AI数智安创共同体与安全体检、CMA搜索选择方案、OAIC合规通知、加州和维州数据中心监管、Apple-Epic程序、BC诉OpenAI、Google印度CSAM直报、Muse人工接管等事件。",
+      "菲律宾NPC条目标记为新增进展：9月22日本站已记录NPC向Meta、Roblox、Reddit和Discord发出说明理由令；9月23日新增的是面向整个行业的正式公共咨询，首次明确要求隐私友好年龄核验并停止向儿童进行暴力和不安全内容行为画像推送。",
+      "江苏9月24日新增12款生成式AI服务属新的备案批次，与9月23日中央网信办手机端侧3款服务备案属于不同机关、不同批次和不同服务清单；本期以江苏属地备案的新增正式名单为新事件节点。"
+    ]
+  },
+  "scan": {
+    "china_official": "已检查中国政府网、中央网信办、国家发展改革委、工业和信息化部、商务部、国家数据局、市场监管总局、金融监管总局及上海监管局公开信息、人民银行、卫生健康、药监、最高法、最高检和主要数字经济地区近72小时材料。发布前再次扫描9月24日下午更新，纳入四川通信网络安全三年行动、市场监管总局境外反垄断合规指引修订、湖北无人机安全立法草案和上海金融AI专项措施等正式动作。",
+    "foreign_official": "已检查欧盟及主要欧美监管机构、美国SEC/FTC/DOJ/NIST/CISA/FCC、英国ICO/CMA/Ofcom、澳大利亚监管与政府动态、瑞典IMY、西班牙AEPD、菲律宾NPC、巴西ANPD及联合国公开材料，并核对Reuters、AP、Bloomberg、Financial Times及科技、法律和安全专业媒体。",
+    "local_language": "使用韩文检索韩国PIPC/KFTC近期个人信息、AI和平台监管；使用日文检索日本PPC/JFTC/总务省/经产省9月24日前后更新；使用越南文检索并核对越南国会常委会审议《数据安全法》草案。韩日检索未发现优先级高于现有项目且在72小时内形成新的正式处罚、裁判或规则节点。",
+    "media": "发布前检查Reuters、Associated Press、Financial Times与Bloomberg公开可检索结果。澳大利亚政府网站遭OpenAI智能体越权访问采用Reuters报道并区分政府确认与OpenAI复核结论；Ofcom-Pornhub调查保留Reuters原始题名并明确调查对象是Aylo的尽调与测试，而非Apple年龄验证技术本身。",
+    "final_window": "19时前后重新扫描最近1—2小时国内主要官方来源和国际主流媒体；新出现的行业会议、政策讲话和一般产业资讯未形成高于现有18条的正式裁判、行政处罚或规则发布节点，保留现有选题。"
+  },
+  "content_checks": {
+    "background": "对上海金融AI措施补入直接面客大模型、外部算力与模型服务纳入信息科技外包的制度背景；对菲律宾NPC说明9月22日平台说明理由令与9月23日行业咨询的连续关系；对Miljödata处罚补入2025年入侵和公共机构客户后续调查；对AEPD招聘AI补入欧盟就业AI高风险场景背景；对UN安理会AI会议补入9月前沿AI安全事故和科学小组材料。",
+    "language": "逐条进行自然中文检查，优先使用‘当前处于国家标准编制启动阶段’‘目前仍在立法审议’‘北京时间发布时听证尚未开始’等正面程序状态说明，避免将调查、草案、行业资质和政策倡议写成已经成立的违法或强制许可。",
+    "context": "关联阅读候选关系只保留同一主体、同一事件链、同一具体规则或同一受监管行为。专题时间线继续按同一案件连续发展或高度同质的窄专题组织；本期不以‘AI治理’‘数据法’‘平台监管’等宽泛标签人为建立时间线。",
+    "layout": "10条境外新闻均保留已核验的英文、西班牙文、瑞典文、越南文或葡萄牙文原始题名，并使用brief-original独立全宽行；brief-fact继续全宽，法治研判、智库选题和论文选题位于其后三栏；18条均包含brief-insight背景与前瞻字段。"
+  }
+}
