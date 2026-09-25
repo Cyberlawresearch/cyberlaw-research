@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-25",
+  "column": "brief",
+  "state": "verified",
+  "page": "articles/2026-09-25-tech-law-brief.html",
+  "news_count": 18,
+  "distribution": {"domestic": 6, "foreign": 12},
+  "checked_at": "2026-09-25T19:42:20+08:00",
+  "last_news_scan_at": "2026-09-25T19:42:20+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  }
+}
