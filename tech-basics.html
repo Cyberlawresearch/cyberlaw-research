@@ -9,15 +9,15 @@
   <link href="assets/course-map.css" rel="stylesheet"/>
 </head>
 <body>
-<header class="top"><div class="wrap nav"><a class="brand" href="index.html">网信法研究每日推送</a><nav class="navlinks"><a href="articles/2026-09-23-tech-law-brief.html">全球科技法简报</a><a href="articles/2026-09-23-tutt-fda-for-algorithms.html">域外法学论文精读</a><a href="articles/2026-09-23-mill-on-liberty.html">法学经典著作</a><a href="articles/2026-09-23-new-works.html">科技法研究新作</a><a href="tech-basics.html">网信法技术基础</a><a href="archive.html">历史记录</a></nav></div></header>
+<header class="top"><div class="wrap nav"><a class="brand" href="index.html">网信法研究每日推送</a><nav class="navlinks"><a href="articles/2026-09-25-tech-law-brief.html">全球科技法简报</a><a href="articles/2026-09-25-johnson-post-law-borders.html">域外法学论文精读</a><a href="articles/2026-09-25-buchanan-tullock-calculus-consent.html">法学经典著作</a><a href="articles/2026-09-25-new-works.html">科技法研究新作</a><a href="tech-basics.html">网信法技术基础</a><a href="archive.html">历史记录</a></nav></div></header>
 <main>
 <section class="tech-hero"><div class="wrap"><div class="tech-kicker">CYBERLAW TECHNOLOGY BASICS · ARCHIVE</div><h1>课程总览与历史归档</h1><p class="tech-lead">这里看整套课程的知识关系和往期课程。本期推送从首页直接进入当天课程，不再先经过总览页。</p></div></section>
 <div class="tech-shell">
   <section>
     <div class="latest-lesson">
-      <div class="lesson-no">13</div>
-      <div><div class="tech-kicker">LATEST LESSON · 2026.09.24</div><h2>前馈网络与残差：Attention 之后模型还在做什么？</h2><p>理解 Attention 汇总信息之后 FFN 怎样继续加工每个位置，以及残差连接为什么给旧表示保留一条直接路径。</p></div>
-      <a href="tech-basics/2026-09-24-feed-forward-residual.html">阅读最新一课 →</a>
+      <div class="lesson-no">14</div>
+      <div><div class="tech-kicker">LATEST LESSON · 2026.09.25</div><h2>Decoder-only：为什么大模型只靠“看左边”也能一路生成？</h2><p>理解GPT类模型怎样用因果Self-Attention按顺序预测下一个Token，以及为什么完整上下文链是法律审计的重要事实。</p></div>
+      <a href="tech-basics/2026-09-25-decoder-only.html">阅读最新一课 →</a>
     </div>
   </section>
 
@@ -30,7 +30,7 @@
     <div class="course-map-frame">
       <svg class="course-map-svg" viewBox="0 0 1200 680" role="img" aria-labelledby="course-map-title course-map-desc">
         <title id="course-map-title">网信法技术基础八模块课程导图</title>
-        <desc id="course-map-desc">八个模块分四个阶段推进，当前正在第二模块 Transformer，第13课为前馈网络与残差。</desc>
+        <desc id="course-map-desc">八个模块分四个阶段推进，第二模块 Transformer 已完成，第14课为 Decoder-only，下一步进入模型训练与对齐。</desc>
         <path class="map-line" d="M275 340 H315 M585 340 H625 M895 340 H935"/>
         <path class="map-line" d="M295 330 l20 10 -20 10 M605 330 l20 10 -20 10 M915 330 l20 10 -20 10"/>
 
@@ -46,12 +46,12 @@
         <rect class="map-stage" x="330" y="35" width="255" height="610" rx="12"/>
         <text class="map-stage-title" x="352" y="72">第二阶段｜再看懂模型</text>
         <text class="map-stage-sub" x="352" y="96">模型如何处理、训练并形成能力</text>
-        <rect class="map-module active" x="352" y="125" width="211" height="150" rx="10"/>
-        <text class="map-module-no" x="370" y="151">MODULE 02 · CURRENT</text>
+        <rect class="map-module" x="352" y="125" width="211" height="150" rx="10"/>
+        <text class="map-module-no" x="370" y="151">MODULE 02 · DONE</text>
         <text class="map-module-title" x="370" y="180">Transformer</text>
-        <text class="map-module-text" x="370" y="207"><tspan x="370">08 Attention · 09 Self-Attention</tspan><tspan x="370" dy="22">10 Q/K/V · 11 多头注意力</tspan><tspan x="370" dy="22">12 位置编码 · 13 前馈/残差</tspan></text>
-        <rect class="map-module" x="352" y="295" width="211" height="125" rx="10"/>
-        <text class="map-module-no" x="370" y="321">MODULE 03</text><text class="map-module-title" x="370" y="350">模型训练与对齐</text>
+        <text class="map-module-text" x="370" y="207"><tspan x="370">08 Attention · 09 Self-Attention</tspan><tspan x="370" dy="22">10 Q/K/V · 11 多头注意力</tspan><tspan x="370" dy="22">12 位置编码 · 13 前馈/残差</tspan><tspan x="370" dy="22">14 Decoder-only</tspan></text>
+        <rect class="map-module active" x="352" y="295" width="211" height="125" rx="10"/>
+        <text class="map-module-no" x="370" y="321">MODULE 03 · CURRENT</text><text class="map-module-title" x="370" y="350">模型训练与对齐</text>
         <text class="map-module-text" x="370" y="377"><tspan x="370">数据集 · SFT · RLHF/DPO</tspan><tspan x="370" dy="22">合成数据 · 蒸馏 · 评测 · 后训练</tspan></text>
         <rect class="map-module" x="352" y="440" width="211" height="125" rx="10"/>
         <text class="map-module-no" x="370" y="466">MODULE 04</text><text class="map-module-title" x="370" y="495">模型能力与推理</text>
@@ -78,13 +78,14 @@
         <text class="map-module-text" x="990" y="417"><tspan x="990">可解释 · 可审计 · 责任链</tspan><tspan x="990" dy="22">数据出境 · 平台化</tspan><tspan x="990" dy="22">互操作 · 行政使用</tspan><tspan x="990" dy="22">持续监管</tspan></text>
       </svg>
     </div>
-    <p class="course-map-note">当前进度：第13课，Transformer 模块还剩 Decoder-only。下一课将从“编码器/解码器是什么”开始，不预设读者已经掌握该术语。</p>
+    <p class="course-map-note">当前进度：第14课，Transformer模块完成。下一课进入“模型训练与对齐”，先看数据集到底是什么。</p>
     <div class="logic-summary"><strong>最终目标不是背术语，而是能沿技术链条追责任。</strong><p>面对一个AI法律问题时，能够具体追问：数据在哪一步被转换？模型在哪一步计算？谁给了系统权限？是否连接外部服务？风险来自模型、工具调用还是基础设施？</p></div>
   </section>
 
   <section class="lesson-section tech-history">
     <div class="tech-history-head"><h2>历史课程</h2><span>按课程顺序持续更新</span></div>
     <div class="tech-history-list">
+      <a class="tech-history-item" href="tech-basics/2026-09-25-decoder-only.html"><div class="tech-history-no">14</div><div><div class="tech-history-title">Decoder-only：为什么大模型只靠“看左边”也能一路生成？</div><div class="tech-history-desc">理解因果Self-Attention和下一Token预测，并区分架构标签与真实系统的数据流、RAG和工具调用。</div></div><div class="tech-history-date">2026.09.25</div></a>
       <a class="tech-history-item" href="tech-basics/2026-09-24-feed-forward-residual.html"><div class="tech-history-no">13</div><div><div class="tech-history-title">前馈网络与残差：Attention 之后模型还在做什么？</div><div class="tech-history-desc">理解 Attention 之后 FFN 怎样加工每个位置，以及残差连接为什么给旧表示保留直接路径。</div></div><div class="tech-history-date">2026.09.24</div></a>
       <a class="tech-history-item" href="tech-basics/2026-09-23-positional-encoding.html"><div class="tech-history-no">12</div><div><div class="tech-history-title">位置编码：模型怎样知道“谁在前、谁在后”？</div><div class="tech-history-desc">理解顺序和距离信息怎样进入模型计算、经典位置编码与 RoPE 等方案有何区别，以及输入位置为什么也是审计事实。</div></div><div class="tech-history-date">2026.09.23</div></a>
       <a class="tech-history-item" href="tech-basics/2026-09-22-multi-head-attention.html"><div class="tech-history-no">11</div><div><div class="tech-history-title">多头注意力：为什么模型要同时用多组 Attention 看同一段话？</div><div class="tech-history-desc">理解多个 Attention 头为什么并行工作、各头结果怎样合并，以及为什么单头热力图不能直接代表整个模型的决策理由。</div></div><div class="tech-history-date">2026.09.22</div></a>

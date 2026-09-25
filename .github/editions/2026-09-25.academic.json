@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-25",
+  "state": "published",
+  "pages": {
+    "brief": "articles/2026-09-25-tech-law-brief.html",
+    "paper": "articles/2026-09-25-johnson-post-law-borders.html",
+    "classic": "articles/2026-09-25-buchanan-tullock-calculus-consent.html",
+    "newworks": "articles/2026-09-25-new-works.html"
+  },
+  "academic_review": {
+    "status": "verified",
+    "checked_at": "2026-09-25T21:00:00+08:00",
+    "checks": {
+      "sources": true,
+      "original_reading": true,
+      "bibliography": true,
+      "deduplication": true,
+      "original_titles": true
+    },
+    "paper": {
+      "author": "David R. Johnson; David G. Post",
+      "originalTitle": "Law and Borders: The Rise of Law in Cyberspace",
+      "journal": "Stanford Law Review",
+      "year": "1996",
+      "volume": "48",
+      "issue": "5",
+      "pages": "1367–1402",
+      "doi": "10.2307/1229390"
+    },
+    "classic": {
+      "author": "James M. Buchanan; Gordon Tullock",
+      "originalTitle": "The Calculus of Consent: Logical Foundations of Constitutional Democracy",
+      "publisher": "University of Michigan Press",
+      "year": "1962",
+      "edition": "First edition"
+    },
+    "newworks_dois": [
+      "10.1017/cfl.2026.10044",
+      "10.1007/s10603-026-09624-6",
+      "10.1007/s10603-026-09625-5",
+      "10.1093/jiplp/jpag067",
+      "10.1093/jiplp/jpag085"
+    ]
+  },
+  "news_untouched": false,
+  "academic_published_at": "2026-09-25T21:00:00+08:00"
+}
