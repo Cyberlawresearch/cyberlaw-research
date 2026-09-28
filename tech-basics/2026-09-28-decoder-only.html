@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>第14课｜Decoder-only：为什么很多生成式大模型只用一套“解码器式”结构？｜网信法技术基础</title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+  <link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-09-25-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-09-24-suzor-digital-constitutionalism.html">域外法学论文精读</a><a href="../articles/2026-09-24-calabresi-costs-of-accidents.html">法学经典著作</a><a href="../articles/2026-09-24-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 14 · TRANSFORMER · 2026.09.28</div><h1>Decoder-only：为什么很多生成式大模型只用一套“解码器式”结构？</h1><p class="tech-lead">今天只解决一个问题：Transformer 原本有编码器和解码器两部分，为什么很多生成式大模型后来只保留一套按前文继续生成的结构？</p></div></section>
+<div class="tech-shell">
+  <section class="lesson-focus">
+    <div><strong>先把 Decoder-only 讲清楚</strong><p><strong>Decoder-only 是一种 Transformer 架构：不再另设一套编码器，而是让同一组 Transformer 层读取已经出现的 Token，并不断预测下一个 Token。</strong></p></div>
+    <div><strong>一句话建立直觉</strong><p>可以把它理解成“边读前文，边续写下一小段”。生成一个 Token 后，把它接回前文，再继续预测下一个。</p></div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>一、先用“续写”理解它</h2>
+    <p>假设你看到一句话：“合同经双方签字盖章后……”然后要继续往下写。你会先读已经出现的内容，再判断下一个最合适的词是什么；写出一个词以后，又把新词和前文一起看，再继续写。</p>
+    <p>Decoder-only 大模型的核心工作方式很接近这种连续续写。前几课已经讲过概率生成：模型不是先把整段答案想好，而是一步步预测下一个 Token。Decoder-only 则告诉我们，这个“读前文—算下一步—再接回去”的过程在架构上怎样组织。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>二、先分清三种常见 Transformer 架构</h2>
+    <div class="compare-grid">
+      <div class="compare-card"><b>Encoder-only</b><p>主要把一段输入整体读懂，通常允许当前位置同时参考前后文。可以先把它理解成“先把材料通读一遍，再形成表示”。</p></div>
+      <div class="compare-card"><b>Encoder–Decoder</b><p>先由编码器处理输入，再由解码器参考编码结果逐步生成输出。机器翻译就是经典场景：先读源语言，再生成目标语言。</p></div>
+      <div class="compare-card"><b>Decoder-only</b><p>不另设独立编码器。提示词、历史上下文和已经生成的内容进入同一序列，模型根据允许看到的前文继续预测下一个 Token。</p></div>
+    </div>
+    <div class="callout"><strong>新词备注｜Encoder / Decoder</strong><br/>今天只需这样理解：Encoder 更像“先把输入读成内部表示”；Decoder 更像“根据已有信息一步步生成输出”。不用记代码结构。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>三、一张图看懂 Decoder-only 怎样生成</h2>
+    <div class="visual-board">
+      <div class="visual-title">同一条序列不断向右延长</div>
+      <div class="flow">
+        <div class="flow-box"><strong>已有上下文</strong><span>系统指令、用户问题、历史内容等被整理成 Token 序列</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>因果 Attention</strong><span>当前位置只参考自己和此前已经出现的 Token</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>Transformer 层</strong><span>经过 Attention、FFN、残差等多层计算</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>预测下一 Token</strong><span>得到词表中各候选 Token 的下一步概率</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>接回序列继续</strong><span>新 Token 成为新的前文，再重复一次</span></div>
+      </div>
+    </div>
+    <p><strong>最关键的限制叫“因果遮罩”。</strong>在典型文本生成中，模型预测当前位置时不能偷看未来还没有生成的 Token。我们在 Self-Attention 那一课已经接触过它：它让训练时的计算方式与真实生成时“只能根据前文往后写”的条件保持一致。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>四、为什么很多生成式模型选择这种结构？</h2>
+    <p>首先，它与“预测下一个 Token”的训练目标非常契合。训练时给模型一段已有文本，让它学习下一步更可能出现什么；真正生成时，也是在已有文本后继续预测。训练和使用的基本形式一致。</p>
+    <p>其次，输入和输出可以放进同一条序列处理。提问、示例、对话历史以及已经生成的答案，都可以按照约定格式排进上下文，不必先由另一套编码器单独处理。GPT 系列早期工作就是这种生成式预训练路线的重要代表。</p>
+    <p>但这不意味着 Decoder-only 在所有任务上都一定更好。需要整体理解文本、输入输出边界非常明确的任务，也可能采用 Encoder-only 或 Encoder–Decoder 架构。架构选择取决于任务、训练方法、效率和部署目标。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>五、一个容易混淆的历史细节</h2>
+    <p>“Decoder-only”这个名字容易让人以为：现代大模型就是把2017年原始 Transformer 图里的 Decoder 原封不动留下来，把 Encoder 删除。</p>
+    <p>这样理解并不准确。原始 Transformer 的 Decoder 除了带因果限制的 Self-Attention，还会通过另一层 Attention 去读取 Encoder 的输出。现代典型 Decoder-only 语言模型没有这套独立 Encoder，因此也没有必须读取 Encoder 输出的那一环。今天把它理解成<strong>“继承了解码式、按前文生成的核心组织方式，但不是机械复制原始 Decoder 的全部部件”</strong>更准确。</p>
+    <div class="callout"><strong>新词备注｜Cross-Attention</strong><br/>就是“这一组表示去参考另一组表示”的 Attention。原始翻译型 Transformer 的 Decoder 会用它读取 Encoder 的处理结果。今天不用继续展开。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>六、正面概念讲清以后，再看三个常见误解</h2>
+    <div class="myth-list">
+      <div class="myth"><b>误解 01</b><span>“Decoder-only 只会生成，不会理解输入。”——它同样要先根据上下文形成内部表示，只是训练和输出方式围绕“根据前文继续预测”组织。</span></div>
+      <div class="myth"><b>误解 02</b><span>“Decoder-only 就是2017年 Transformer Decoder 原样保留。”——名称有历史继承关系，但现代典型实现并没有独立 Encoder，也通常没有读取 Encoder 输出的 Cross-Attention。</span></div>
+      <div class="myth"><b>误解 03</b><span>“模型生成一句话时可以提前看到后面准备写什么。”——典型因果语言模型在预测下一 Token 时只能使用允许看到的既有上下文，未来 Token 尚未生成。</span></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>七、为什么这件事与网信法研究有关？</h2>
+    <div class="law-bridge">
+      <h3>对 Decoder-only 模型来说，“真正送进模型的完整上下文”是一项关键审计事实。</h3>
+      <p>实际系统里，用户看到的提问往往不是模型收到的全部内容。系统指令、历史对话、检索得到的材料、工具返回结果以及平台加入的提示，都可能按一定格式进入同一上下文序列。模型再基于这条序列继续生成。</p>
+      <p>因此，发生争议时只保存用户最后一句输入，往往不足以复现当时的输出。更有意义的运行记录应当能够说明：模型实际收到哪些内容、各部分以什么角色和顺序进入上下文、有没有被截断或替换、使用了哪个模型版本和生成配置。</p>
+      <p>这还提示一个治理边界：模型内部虽然可以通过角色标记和训练形成“系统指令优先”等行为，但真正的工具权限、数据访问范围和外部操作授权不能只靠模型自己“记得遵守”。权限控制仍应在模型之外由系统明确执行。后续讲 Prompt Injection 和 Agent 时会专门回到这个问题。</p>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>八、这一课只需要带走三句话</h2>
+    <div class="lesson-focus">
+      <div><strong>第一句</strong><p>Decoder-only 不另设独立 Encoder，而是用同一套 Transformer 层根据已有 Token 不断预测下一个 Token。</p></div>
+      <div><strong>第二句</strong><p>典型生成过程使用因果 Attention：当前一步只能依赖已经出现的上下文，不能读取未来 Token。</p></div>
+    </div>
+    <div class="callout"><strong>第三句：</strong>“Decoder-only”是架构名称，不等于把原始 Transformer Decoder 的所有部件原封不动保留下来。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>九、把这一课转成两个研究问题</h2>
+    <div class="research-grid">
+      <div class="research-card"><small>论文问题</small><h3>统一上下文中的指令层级与生成式AI的法律可审计性</h3><p>可研究系统指令、用户输入、外部资料和工具结果共同进入模型上下文后，界面上的“角色区别”与模型实际处理之间是什么关系，以及发生争议时哪些上下文信息应纳入解释和举证范围。</p></div>
+      <div class="research-card"><small>智库问题</small><h3>高风险生成式AI“有效输入”的最小留痕规范</h3><p>可研究政务、金融、医疗等场景是否应统一保存完整有效上下文、角色标记、截断情况、模型版本与主要生成配置，避免只保存用户可见问题而无法复现模型当时的真实输入条件。</p></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>原始材料</h2>
+    <ul class="source-links">
+      <li><a href="https://arxiv.org/abs/1706.03762">Vaswani et al. (2017), Attention Is All You Need</a>——原始 Transformer 论文，可对照 Encoder–Decoder 架构以及 Decoder 中的因果 Self-Attention 与 Encoder–Decoder Attention。</li>
+      <li><a href="https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf">Radford et al. (2018), Improving Language Understanding by Generative Pre-Training</a>——GPT早期工作，展示以 Transformer 的生成式语言模型进行预训练和迁移的路线。</li>
+      <li><a href="https://huggingface.co/docs/transformers/tasks/language_modeling">Hugging Face：Causal Language Modeling</a>——说明因果语言模型根据左侧既有 Token 预测下一 Token，GPT-2是典型示例。</li>
+      <li><a href="https://huggingface.co/docs/transformers/main/attention_interface">Hugging Face：Attention Interface</a>——当前文档明确说明 Decoder-only 模型默认使用 causal attention，每个 Token 只关注自身和此前 Token。</li>
+    </ul>
+  </section>
+
+  <section class="lesson-next"><div><small>NEXT LESSON · MODULE 03</small><strong>数据集：模型训练时的数据到底是什么样的？</strong><p style="margin:6px 0 0">Transformer 模块到这里完成。下一课进入“模型训练与对齐”，先从最基础的数据集开始。</p></div><span>第15课 →</span></section>
+</div>
+</main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body>
+</html>
