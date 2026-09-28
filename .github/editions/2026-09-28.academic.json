@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-28",
+  "state": "published",
+  "pages": {
+    "brief": "articles/2026-09-25-tech-law-brief.html",
+    "paper": "articles/2026-09-28-warren-brandeis-right-to-privacy.html",
+    "classic": "articles/2026-09-28-lessig-free-culture.html",
+    "newworks": "articles/2026-09-28-new-works.html"
+  },
+  "academic_review": {
+    "status": "verified",
+    "checked_at": "2026-09-28T23:10:23+08:00",
+    "checks": {
+      "sources": true,
+      "original_reading": true,
+      "bibliography": true,
+      "deduplication": true,
+      "original_titles": true
+    },
+    "paper": {
+      "author": "Samuel D. Warren; Louis D. Brandeis",
+      "originalTitle": "The Right to Privacy",
+      "journal": "Harvard Law Review",
+      "year": "1890",
+      "volume": "4",
+      "issue": "5",
+      "pages": "193–220",
+      "doi": "10.2307/1321160"
+    },
+    "classic": {
+      "author": "Lawrence Lessig",
+      "originalTitle": "Free Culture: How Big Media Uses Technology and the Law to Lock Down Culture and Control Creativity",
+      "publisher": "The Penguin Press",
+      "year": "2004",
+      "edition": "First edition"
+    },
+    "newworks_dois": [
+      "10.1093/medlaw/fwag007",
+      "10.1080/17579961.2026.2633688",
+      "10.1007/s44163-026-01040-6",
+      "10.1007/s43508-026-00147-x",
+      "10.1017/cfl.2026.10044"
+    ]
+  },
+  "news_untouched": true,
+  "academic_published_at": "2026-09-28T23:10:23+08:00"
+}
