@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-28",
+  "column": "brief",
+  "state": "verified",
+  "page": "articles/2026-09-28-tech-law-brief.html",
+  "news_count": 18,
+  "distribution": {
+    "domestic": 6,
+    "foreign": 12
+  },
+  "checked_at": "2026-09-28T23:16:36+08:00",
+  "last_news_scan_at": "2026-09-28T23:14:00+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  },
+  "deduplication": {
+    "previous_day": "2026-09-25",
+    "history_start": "2026-09-21",
+    "notes": [
+      "新闻栏因定时任务在9月25日后被停用，本站没有9月26—27日已发布新闻期；本期逐条对照9月25日完整简报并回查9月21—25日历史，未把9月26—27日缺刊视为可放宽时效或重复收录的理由。",
+      "中美AI对话仅收录9月28日外交部正式回应这一新增节点，未重复9月21—25日工作层事故通报、正式对话安排和元首会谈内容。",
+      "澳大利亚AI调查仅收录参议院邀请OpenAI、Anthropic负责人出席这一新的议会程序节点，并明确承接9月25日政府层面的执法、立法研判。",
+      "数贸会将词元交易与四地数据跨境服务中心联席会、自律公约合并为同一会议事件，未拆分凑数。"
+    ]
+  },
+  "scan": {
+    "china_official": "已检查中国政府网、中央网信办、国家发展改革委、工业和信息化部、商务部、国家数据局、市场监管总局、金融监管总局、人民银行、卫健委、药监局、最高法、最高检及北京、广东、湖北、雄安等主要数字经济地区近72小时公开信息；终检再次扫描9月28日晚间更新。",
+    "foreign_official": "已检查欧盟委员会及DMA、EDPB/EDPS、FTC、DOJ、NIST、CISA、FCC、ICO、CMA、Ofcom、韩国PIPC/KFTC、日本PPC/JFTC/总务省/经产省、新加坡PDPC/IMDA、澳大利亚OAIC/ACCC，以及越南、加拿大、巴西等公开更新，并核对Reuters、AP、Bloomberg、Financial Times及法律、安全专业媒体。",
+    "local_language": "使用韩文检索韩国PIPC/KFTC近期AI、个人信息和平台监管，纳入9月28日PIPC电信CEO座谈及全球AI隐私论坛公告；使用日文检索日本PPC/JFTC/总务省/经产省，纳入经产省数字广告供应链专题；使用越南文检索并核对越南公安部与新加坡网络安全、数字化合作。",
+    "media": "检查Reuters、AP、Bloomberg、Financial Times及科技、法律和安全专业媒体。9月25日晚间UTC发布的四则美国司法/诉讼报道均换算为北京时间9月26日凌晨，终检时仍处72小时内，并在页面保留原UTC发布时间说明。",
+    "final_window": "23时前后重新扫描最近1—2小时中国主要官方来源以及Reuters、AP、Bloomberg、FT和主要境外监管机构；未发现优先级高于现有18条且需要替换的新增正式处罚、裁判或生效规则。"
+  },
+  "content_checks": {
+    "background": "对中美AI对话、澳大利亚智能体事件、韩国电信隐私治理、Booking.com DMA整改等持续事件均回查直接前序；背景只保留能解释当日新动作的关键节点。",
+    "language": "逐条完成自然中文检查，直接说明调查、会议、行业自律、技术发布、临时司法救济和拟议程序各自当前法律状态，避免用否定式免责声明代替程序说明。",
+    "context": "关联阅读候选关系按同一事件链、同一主体、同一具体规则或受监管行为保留；专题时间线只允许同一事件连续发展或高度同质窄专题，不以AI治理、数据法等宽泛标签拼接。",
+    "layout": "12条境外新闻均保留经核验的英文、韩文、日文或越南文原始题名并以brief-original独立全宽显示；新闻事实全宽，法治研判、智库选题和论文选题随后呈现；18条均含brief-insight背景与前瞻字段。"
+  }
+}
