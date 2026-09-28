@@ -1,16 +1,16 @@
 {
-  "date": "2026-09-25",
+  "date": "2026-09-28",
   "pages": {
     "brief": "articles/2026-09-25-tech-law-brief.html",
-    "paper": "articles/2026-09-24-suzor-digital-constitutionalism.html",
-    "classic": "articles/2026-09-24-calabresi-costs-of-accidents.html",
-    "newworks": "articles/2026-09-24-new-works.html"
+    "paper": "articles/2026-09-28-warren-brandeis-right-to-privacy.html",
+    "classic": "articles/2026-09-28-lessig-free-culture.html",
+    "newworks": "articles/2026-09-28-new-works.html"
   },
   "page_dates": {
     "brief": "2026-09-25",
-    "paper": "2026-09-24",
-    "classic": "2026-09-24",
-    "newworks": "2026-09-24"
+    "paper": "2026-09-28",
+    "classic": "2026-09-28",
+    "newworks": "2026-09-28"
   },
   "news_count": 18,
   "newworks_count": 5
