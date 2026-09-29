@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>第15课｜数据集：模型训练时的数据到底是什么样的？｜网信法技术基础</title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+  <link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-09-28-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-09-28-warren-brandeis-right-to-privacy.html">域外法学论文精读</a><a href="../articles/2026-09-28-lessig-free-culture.html">法学经典著作</a><a href="../articles/2026-09-28-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 15 · TRAINING & ALIGNMENT · 2026.09.29</div><h1>数据集：模型训练时的数据到底是什么样的？</h1><p class="tech-lead">今天只解决一个问题：我们常说“大模型用海量数据训练”，这些数据在真正进入训练前，到底是什么形态？</p></div></section>
+<div class="tech-shell">
+  <section class="lesson-focus">
+    <div><strong>最简单的正面定义</strong><p><strong>数据集，就是为了训练、验证或测试模型，按照一定规则整理成的一组数据样本。</strong>它不是“互联网上所有东西”的统称，而是已经被选择、处理并组织成可供模型使用的数据集合。</p></div>
+    <div><strong>一句话建立直觉</strong><p>像老师出题前准备题库：原始书本、新闻和网页只是材料来源；真正的题库还要经过挑选、整理、去重和分类。</p></div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>一、原始材料怎样变成数据集？</h2>
+    <div class="visual-board">
+      <div class="visual-title">从“有数据”到“可用于训练”</div>
+      <div class="flow">
+        <div class="flow-box"><strong>原始来源</strong><span>网页、图书、代码、图片、业务数据等</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>筛选与清洗</strong><span>去掉明显低质、异常或不需要的内容</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>去重与整理</strong><span>减少重复，并形成可处理的数据单元</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>划分用途</strong><span>哪些用于训练，哪些留作验证或测试</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><strong>转成模型输入</strong><span>文本再被 Token 化，进入训练计算</span></div>
+      </div>
+    </div>
+    <p>因此，“某网站曾被抓取”与“某段内容最终进入有效训练数据集”不是一回事。中间还可能发生过滤、删除、去重、格式转换和版本更新。GPT-3 的公开论文就明确记载过对 Common Crawl 进行质量过滤、文档级去重，并加入其他高质量语料。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>二、数据集里的“一条数据”长什么样？</h2>
+    <p>没有一种统一格式。分类任务的数据集可能是一列文本加一列标签；问答数据集可能包含问题、背景材料和答案；图像任务则可以把图片与标签放在一起。Hugging Face 的数据集文档也把数据集描述为由“行”和不同类型“列”组成的结构。</p>
+    <div class="callout"><strong>新词备注｜样本</strong><br/>今天把“样本”理解成数据集里可以被单独拿出来的一条训练或评测材料。它可能是一段文本、一组问答，也可能是图片和说明的组合。</div>
+    <p>对语言模型预训练来说，工程实现还会把长文本切分、拼接或转换为 Token 序列。不同模型和训练阶段处理方法不同，不能把某一种数据格式写成所有大模型的固定做法。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>三、为什么还要分训练集、验证集和测试集？</h2>
+    <div class="compare-grid">
+      <div class="compare-card"><b>训练集</b><p>模型真正用来更新参数、学习规律的数据。</p></div>
+      <div class="compare-card"><b>验证集</b><p>训练过程中用来检查效果、比较不同设置的数据。</p></div>
+      <div class="compare-card"><b>测试集</b><p>最后用于检验模型面对“没训练过的数据”表现如何。</p></div>
+    </div>
+    <p>三者分开的原因很直观：如果考试题已经出现在练习题里，分数就不能真实说明模型能否处理新问题。Google 的机器学习课程因此特别强调训练、验证和测试数据应当区分，并避免测试样本与训练样本重复。</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>四、正面概念讲清以后，再看三个常见误解</h2>
+    <div class="myth-list">
+      <div class="myth"><b>误解 01</b><span>“训练数据就是互联网上抓到的全部原始文件。”——原始来源只是上游，最终数据集通常还经过筛选、清洗、去重和格式处理。</span></div>
+      <div class="myth"><b>误解 02</b><span>“数据集越大一定越好。”——数量只是一个因素，重复、低质或与实际任务差异过大的数据都可能降低价值。</span></div>
+      <div class="myth"><b>误解 03</b><span>“测试集只是训练集的一小部分，混进去也没关系。”——如果测试数据泄漏进训练过程，评测结果可能被高估。</span></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>五、法治连接：争议真正落在哪一层数据？</h2>
+    <div class="law-bridge">
+      <h3>“数据来源”与“有效训练数据集”应当分开审计。</h3>
+      <p>在版权、个人信息、数据来源合规或模型安全争议中，只列出“抓取过哪些网站”往往不够。更关键的证据还包括：某一版本数据集实际保留了哪些内容，经过什么过滤和去重规则，何时生成，后来是否删除或替换，以及训练时实际调用的是哪个版本。</p>
+      <p>这意味着训练数据治理至少存在一条可区分的证据链：<strong>原始来源 → 处理规则 → 有效数据集版本 → 训练使用记录</strong>。前一层存在某项数据，并不能自动证明后一层一定使用了它；反过来，如果缺少版本和处理记录，也很难解释某项内容究竟怎样进入训练过程。</p>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>六、把这一课转成两个研究问题</h2>
+    <div class="research-grid">
+      <div class="research-card"><small>论文问题</small><h3>训练数据集的法律可审计边界</h3><p>可研究从原始数据来源到有效训练样本之间，筛选、去重、删除和版本变化应如何进入版权、个人信息与侵权举证规则。</p></div>
+      <div class="research-card"><small>智库问题</small><h3>高风险大模型训练数据最小留痕规范</h3><p>可研究是否应统一记录数据来源类别、清洗规则、去重方式、数据集版本、训练调用时间和评测隔离情况。</p></div>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>七、这一课只需要带走三句话</h2>
+    <div class="lesson-focus">
+      <div><strong>第一句</strong><p>数据集不是原始材料的简单堆积，而是经过选择和组织后供训练或评测使用的数据集合。</p></div>
+      <div><strong>第二句</strong><p>原始来源、有效训练数据集和最终训练记录是三个不同层次，法律审计时不能混为一谈。</p></div>
+    </div>
+    <div class="callout"><strong>第三句：</strong>训练集、验证集和测试集分开，是为了让模型真正接受“没有练过的题”的检验。</div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>原始材料</h2>
+    <ul class="source-links">
+      <li><a href="https://developers.google.com/machine-learning/crash-course/overfitting/dividing-datasets">Google Machine Learning Crash Course：Dividing the original dataset</a>——介绍训练集、验证集、测试集的基本区别和数据泄漏问题。</li>
+      <li><a href="https://huggingface.co/docs/datasets/about_dataset_features">Hugging Face Datasets：Dataset features</a>——展示数据集怎样由不同类型的列、标签、文本、图像等结构化组成。</li>
+      <li><a href="https://arxiv.org/abs/2005.14165">Brown et al. (2020), Language Models are Few-Shot Learners</a>——GPT-3 论文第2.2节说明训练数据的过滤、去重和混合过程。</li>
+      <li><a href="https://arxiv.org/abs/1803.09010">Gebru et al., Datasheets for Datasets</a>——提出记录数据集动机、组成、收集过程和推荐用途，以提高透明度与问责性。</li>
+    </ul>
+  </section>
+
+  <section class="lesson-next"><div><small>NEXT LESSON · MODULE 03</small><strong>SFT：为什么通用模型还要再用“示范答案”训练一次？</strong><p style="margin:6px 0 0">下一课继续“模型训练与对齐”，理解监督微调怎样把通用预训练模型变成更会按指令回答的模型。</p></div><span>第16课 →</span></section>
+</div>
+</main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body>
+</html>
