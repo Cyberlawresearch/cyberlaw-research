@@ -15,9 +15,9 @@
 <div class="tech-shell">
   <section>
     <div class="latest-lesson">
-      <div class="lesson-no">14</div>
-      <div><div class="tech-kicker">LATEST LESSON · 2026.09.28</div><h2>Decoder-only：为什么很多生成式大模型只用一套“解码器式”结构？</h2><p>理解生成式大模型为什么常用一套按前文逐步生成的 Transformer 层，以及 Decoder-only 与原始 Transformer Decoder 的关系。</p></div>
-      <a href="tech-basics/2026-09-28-decoder-only.html">阅读最新一课 →</a>
+      <div class="lesson-no">15</div>
+      <div><div class="tech-kicker">LATEST LESSON · 2026.09.29</div><h2>数据集：模型训练时的数据到底是什么样的？</h2><p>理解原始数据怎样经过筛选、清洗、去重和用途划分，形成真正供模型训练、验证或测试使用的数据集。</p></div>
+      <a href="tech-basics/2026-09-29-dataset.html">阅读最新一课 →</a>
     </div>
   </section>
 
@@ -30,7 +30,7 @@
     <div class="course-map-frame">
       <svg class="course-map-svg" viewBox="0 0 1200 680" role="img" aria-labelledby="course-map-title course-map-desc">
         <title id="course-map-title">网信法技术基础八模块课程导图</title>
-        <desc id="course-map-desc">八个模块分四个阶段推进，第二模块 Transformer 已完成，第14课为 Decoder-only，下一课进入模型训练与对齐。</desc>
+        <desc id="course-map-desc">八个模块分四个阶段推进，第二模块 Transformer 已完成，第三模块模型训练与对齐正在推进，第15课为数据集。</desc>
         <path class="map-line" d="M275 340 H315 M585 340 H625 M895 340 H935"/>
         <path class="map-line" d="M295 330 l20 10 -20 10 M605 330 l20 10 -20 10 M915 330 l20 10 -20 10"/>
 
@@ -51,8 +51,8 @@
         <text class="map-module-title" x="370" y="180">Transformer</text>
         <text class="map-module-text" x="370" y="207"><tspan x="370">08 Attention · 09 Self-Attention</tspan><tspan x="370" dy="22">10 Q/K/V · 11 多头注意力</tspan><tspan x="370" dy="22">12 位置编码 · 13 前馈/残差</tspan><tspan x="370" dy="22">14 Decoder-only</tspan></text>
         <rect class="map-module active" x="352" y="295" width="211" height="125" rx="10"/>
-        <text class="map-module-no" x="370" y="321">MODULE 03 · NEXT</text><text class="map-module-title" x="370" y="350">模型训练与对齐</text>
-        <text class="map-module-text" x="370" y="377"><tspan x="370">数据集 · SFT · RLHF/DPO</tspan><tspan x="370" dy="22">合成数据 · 蒸馏 · 评测 · 后训练</tspan></text>
+        <text class="map-module-no" x="370" y="321">MODULE 03 · IN PROGRESS</text><text class="map-module-title" x="370" y="350">模型训练与对齐</text>
+        <text class="map-module-text" x="370" y="377"><tspan x="370">15 数据集 · 16 SFT · RLHF/DPO</tspan><tspan x="370" dy="22">合成数据 · 蒸馏 · 评测 · 后训练</tspan></text>
         <rect class="map-module" x="352" y="440" width="211" height="125" rx="10"/>
         <text class="map-module-no" x="370" y="466">MODULE 04</text><text class="map-module-title" x="370" y="495">模型能力与推理</text>
         <text class="map-module-text" x="370" y="522"><tspan x="370">上下文 · 采样 · 幻觉 · 推理模型</tspan><tspan x="370" dy="22">KV Cache · MoE · 多模态</tspan></text>
@@ -78,13 +78,14 @@
         <text class="map-module-text" x="990" y="417"><tspan x="990">可解释 · 可审计 · 责任链</tspan><tspan x="990" dy="22">数据出境 · 平台化</tspan><tspan x="990" dy="22">互操作 · 行政使用</tspan><tspan x="990" dy="22">持续监管</tspan></text>
       </svg>
     </div>
-    <p class="course-map-note">当前进度：第14课，Transformer 模块已完成。下一课进入“模型训练与对齐”，先从最基础的数据集讲起。</p>
+    <p class="course-map-note">当前进度：第15课，进入“模型训练与对齐”模块。已经讲清数据集的基本结构，下一课进入 SFT（监督微调）。</p>
     <div class="logic-summary"><strong>最终目标不是背术语，而是能沿技术链条追责任。</strong><p>面对一个AI法律问题时，能够具体追问：数据在哪一步被转换？模型在哪一步计算？谁给了系统权限？是否连接外部服务？风险来自模型、工具调用还是基础设施？</p></div>
   </section>
 
   <section class="lesson-section tech-history">
     <div class="tech-history-head"><h2>历史课程</h2><span>按课程顺序持续更新</span></div>
     <div class="tech-history-list">
+      <a class="tech-history-item" href="tech-basics/2026-09-29-dataset.html"><div class="tech-history-no">15</div><div><div class="tech-history-title">数据集：模型训练时的数据到底是什么样的？</div><div class="tech-history-desc">理解原始来源怎样经过筛选、清洗、去重和用途划分形成有效训练数据集，以及为什么数据来源、数据集版本和训练记录应当分层审计。</div></div><div class="tech-history-date">2026.09.29</div></a>
       <a class="tech-history-item" href="tech-basics/2026-09-28-decoder-only.html"><div class="tech-history-no">14</div><div><div class="tech-history-title">Decoder-only：为什么很多生成式大模型只用一套“解码器式”结构？</div><div class="tech-history-desc">理解不设独立 Encoder 的生成式架构怎样根据已有上下文逐步预测下一个 Token，以及完整有效上下文为什么是重要审计事实。</div></div><div class="tech-history-date">2026.09.28</div></a>
       <a class="tech-history-item" href="tech-basics/2026-09-24-feed-forward-residual.html"><div class="tech-history-no">13</div><div><div class="tech-history-title">前馈网络与残差：Attention 之后模型还在做什么？</div><div class="tech-history-desc">理解 Attention 之后 FFN 怎样加工每个位置，以及残差连接为什么给旧表示保留直接路径。</div></div><div class="tech-history-date">2026.09.24</div></a>
       <a class="tech-history-item" href="tech-basics/2026-09-23-positional-encoding.html"><div class="tech-history-no">12</div><div><div class="tech-history-title">位置编码：模型怎样知道“谁在前、谁在后”？</div><div class="tech-history-desc">理解顺序和距离信息怎样进入模型计算、经典位置编码与 RoPE 等方案有何区别，以及输入位置为什么也是审计事实。</div></div><div class="tech-history-date">2026.09.23</div></a>
