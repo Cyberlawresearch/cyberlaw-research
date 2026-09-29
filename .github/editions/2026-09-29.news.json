@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-29",
+  "column": "brief",
+  "state": "verified",
+  "page": "articles/2026-09-29-tech-law-brief.html",
+  "news_count": 18,
+  "distribution": {
+    "domestic": 6,
+    "foreign": 12
+  },
+  "checked_at": "2026-09-29T23:36:00+08:00",
+  "last_news_scan_at": "2026-09-29T23:34:00+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  },
+  "deduplication": {
+    "previous_day": "2026-09-28",
+    "history_start": "2026-09-23",
+    "notes": [
+      "逐条对照9月28日完整简报并回查9月23日至28日已发布新闻，未重复收录韩国PIPC论坛预告、NVIDIA智能体安全平台、Booking.com DMA整改等旧节点。",
+      "Meta Muse作为新增进展收录：此前本站记录人工接管和第三方处理，本期新增的是智能体依据长期授权自动向交易相对方发送家庭地址以及Meta对权限提示的后续回应。",
+      "OpenAI模型延期与佛罗里达州诉讼分别属于企业发布决策和州级司法程序，法律状态和新增事实不同。",
+      "Anthropic同一份IPO材料只保留长期算力合同这一条，不把风险披露、公司治理和基础设施承诺拆分凑数。"
+    ]
+  },
+  "scan": {
+    "china_official": "已检查中国政府网、中央网信办、国家发展改革委、工信部、商务部、国家数据局、市场监管总局、金融监管总局、人民银行、卫健委、药监局、最高法、最高检及主要数字经济地区近72小时更新。",
+    "foreign_official": "已检查欧盟委员会及DMA、EDPB、EDPS、FTC、DOJ、SEC、NIST、CISA、FCC、ICO、CMA、Ofcom、韩国PIPC/KFTC、日本PPC/JFTC/总务省/经产省、新加坡PDPC/IMDA、澳大利亚OAIC/ACCC以及越南、加拿大、巴西等公开更新，并核对Reuters、AP、Bloomberg、FT及专业媒体。",
+    "local_language": "使用韩文检索韩国PIPC/KFTC，9月29日未发现足以区别于9月28日论坛预告的新正式规则或共同决定；使用日文检索日本PPC/JFTC/总务省/经产省，未发现优先级更高的新正式节点；使用越南文检索数据、AI和网络安全更新，未以一般会议或旧规则补数。",
+    "media": "发布前核对Reuters、Associated Press、Bloomberg、Financial Times及科技、法律和安全专业媒体，核验Google DMA诉讼、Anthropic算力合同、AMD收购、OpenAI模型延期、佛州诉讼、Meta Muse、Cerebras、Nvidia商标和解、Visa AI防御及Apple生物识别专利诉讼等事项。",
+    "final_window": "23时前后重新扫描最近1—2小时国内主要官方来源和国际主流媒体，纳入晚间发布的Visa AI网络防御动态；未发现更高优先级的新增正式处罚、裁判或生效规则需要替换。"
+  },
+  "content_checks": {
+    "background": "重要诉讼、平台和AI安全事件均回查同一主体、同一案件或本站前序节点，只补最能解释当日新动作的背景。",
+    "language": "逐条完成自然中文检查，直接说明当前程序状态，避免否定式免责声明、英文语序和抽象名词堆叠。",
+    "context": "关联阅读只按同一主体、同一事件链、具体规则、技术机制或受监管行为保留；专题时间线限同一事件连续发展或高度同质窄专题。",
+    "layout": "12条境外新闻均保留已核验原始英文题名并用brief-original独立全宽展示；brief-fact全宽，法治研判、智库选题和论文选题随后呈现；18条均含brief-insight字段。"
+  }
+}
