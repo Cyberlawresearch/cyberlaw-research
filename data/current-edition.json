@@ -1,16 +1,16 @@
 {
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "pages": {
-    "brief": "articles/2026-09-28-tech-law-brief.html",
-    "paper": "articles/2026-09-28-warren-brandeis-right-to-privacy.html",
-    "classic": "articles/2026-09-28-lessig-free-culture.html",
-    "newworks": "articles/2026-09-28-new-works.html"
+    "brief": "articles/2026-09-29-tech-law-brief.html",
+    "paper": "articles/2026-09-29-hartzog-public-information-fallacy.html",
+    "classic": "articles/2026-09-29-cohen-between-truth-power.html",
+    "newworks": "articles/2026-09-29-new-works.html"
   },
   "page_dates": {
-    "brief": "2026-09-28",
-    "paper": "2026-09-28",
-    "classic": "2026-09-28",
-    "newworks": "2026-09-28"
+    "brief": "2026-09-29",
+    "paper": "2026-09-29",
+    "classic": "2026-09-29",
+    "newworks": "2026-09-29"
   },
   "news_count": 18,
   "newworks_count": 5
