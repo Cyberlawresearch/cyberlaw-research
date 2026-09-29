@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-29",
+  "state": "published",
+  "pages": {
+    "brief": "articles/2026-09-28-tech-law-brief.html",
+    "paper": "articles/2026-09-29-ohm-broken-promises-privacy.html",
+    "classic": "articles/2026-09-29-benkler-wealth-of-networks.html",
+    "newworks": "articles/2026-09-29-new-works.html"
+  },
+  "academic_review": {
+    "status": "verified",
+    "checked_at": "2026-09-29T23:31:13+08:00",
+    "checks": {
+      "sources": true,
+      "original_reading": true,
+      "bibliography": true,
+      "deduplication": true,
+      "original_titles": true
+    },
+    "paper": {
+      "author": "Paul Ohm",
+      "originalTitle": "Broken Promises of Privacy: Responding to the Surprising Failure of Anonymization",
+      "journal": "UCLA Law Review",
+      "year": "2010",
+      "volume": "57",
+      "issue": "6",
+      "pages": "1701–1777",
+      "doi": ""
+    },
+    "classic": {
+      "author": "Yochai Benkler",
+      "originalTitle": "The Wealth of Networks: How Social Production Transforms Markets and Freedom",
+      "publisher": "Yale University Press",
+      "year": "2006",
+      "edition": "First edition"
+    },
+    "newworks_dois": [
+      "10.1017/cfl.2026.10057",
+      "10.1017/cfl.2026.10052",
+      "10.1007/s10676-026-09918-w",
+      "10.1093/idpl/ipag020",
+      "10.1017/err.2026.10096"
+    ]
+  },
+  "news_untouched": true,
+  "academic_published_at": "2026-09-29T23:31:13+08:00"
+}
