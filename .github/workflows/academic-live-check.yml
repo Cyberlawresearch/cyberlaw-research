@@ -1,0 +1,123 @@
+name: Academic live acceptance
+on:
+  push:
+    branches: [academic-source-read-20260930]
+    paths: [.github/workflows/academic-live-check.yml]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 505dbf73ea006e4a602d37c14805e5a5d5aaab6d
+      - name: Install disposable browser
+        run: |
+          python -m pip install --quiet beautifulsoup4==4.13.4 playwright==1.57.0
+          python -m playwright install --with-deps chromium
+      - name: Open deployed home and all three academic columns
+        run: |
+          mkdir -p /tmp/academic-live
+          python - <<'PY'
+          import json,time,hashlib
+          from pathlib import Path
+          from urllib.request import Request,urlopen
+          from urllib.parse import urljoin
+          from bs4 import BeautifulSoup
+          from playwright.sync_api import sync_playwright
+          base='https://cyberlawresearch.github.io/cyberlaw-research/'
+          m=json.loads(Path('data/current-edition.json').read_text())
+          review=json.loads(Path('.github/editions/2026-09-30.academic.json').read_text())
+          out=Path('/tmp/academic-live')
+          result={'commit':'505dbf73ea006e4a602d37c14805e5a5d5aaab6d','base':base,'http':[],'browser':[]}
+          def get(path):
+              with urlopen(Request(urljoin(base,path)+'?academic-check='+str(time.time_ns()),headers={'User-Agent':'cyberlaw-academic-acceptance'}),timeout=25) as r:
+                  assert r.status==200,(path,r.status)
+                  return r.read()
+          def body(raw):
+              return BeautifulSoup(raw,'html.parser').select_one('.article-body').get_text(' ',strip=True)
+          try:
+              for attempt in range(36):
+                  try:
+                      assert json.loads(get('data/current-edition.json'))==m
+                      home=BeautifulSoup(get('index.html'),'html.parser')
+                      for key in ['brief','paper','classic','newworks']:
+                          card=home.select_one('[data-daily-column="'+key+'"]')
+                          assert card and card['href']==m['pages'][key]
+                          assert m['page_dates'][key].replace('-','.') in card.select_one('small').text
+                      for key in ['paper','classic','newworks']:
+                          path=m['pages'][key]
+                          source=Path(path).read_bytes()
+                          assert hashlib.sha256(source).hexdigest()==review['academic_review']['sha256'][path]
+                          online=get(path)
+                          assert body(online)==body(source),(key,'body mismatch')
+                          if key=='newworks':assert len(BeautifulSoup(online,'html.parser').select('.brief-item h3'))==5
+                      break
+                  except Exception:
+                      if attempt==35:raise
+                      time.sleep(5)
+              result['http']=[{'path':p,'status':'passed'} for p in ['index.html','data/current-edition.json']+[m['pages'][k] for k in ['paper','classic','newworks']]]
+              with sync_playwright() as p:
+                  browser=p.chromium.launch()
+                  for width,height in [(1440,1000),(390,844)]:
+                      context=browser.new_context(viewport={'width':width,'height':height})
+                      context.add_cookies([{'name':'cyberlaw_user','value':'researcher20','url':base,'sameSite':'Lax'}])
+                      context.route('**/*',lambda route:route.continue_() if route.request.method in ('GET','HEAD') else route.abort())
+                      page=context.new_page()
+                      errors=[]
+                      page.on('pageerror',lambda e:errors.append(str(e)))
+                      for key in ['paper','classic','newworks']:
+                          response=page.goto(base,wait_until='networkidle')
+                          assert response.status==200
+                          page.locator('[data-daily-column="'+key+'"]').click()
+                          page.wait_for_load_state('networkidle')
+                          assert page.url.split('?')[0].endswith(m['pages'][key]),page.url
+                          assert page.locator('main h1').inner_text().strip()
+                          assert page.locator('.brand').inner_text()=='网信法研究每日推送'
+                          for label,dest in zip(['全球科技法简报','域外法学论文精读','法学经典著作','科技法研究新作'],m['pages'].values()):
+                              a=page.locator('.navlinks a').filter(has_text=label)
+                              assert a.count()==1
+                              assert a.evaluate('(a)=>a.href').endswith(dest)
+                          assert page.locator('.article-return a').count()==2
+                          for href in page.locator('.article-return a').evaluate_all('(nodes)=>nodes.map(n=>n.href)'):
+                              assert context.request.get(href).ok
+                          n=5 if key=='newworks' else 1
+                          for i in range(n):
+                              target=page.locator('.brief-item').nth(i) if key=='newworks' else page.locator('.article-body')
+                              actions=target.locator('.ctx-actions').first
+                              actions.locator('[data-act="cite"]').click()
+                              panel=actions.locator('.ctx-inline-panel')
+                              panel.get_by_text('引用与导出',exact=True).wait_for()
+                              text=panel.inner_text()
+                              expected=('10.1093/jiplp/jpag018','10.1007/s43681-026-01149-5','10.1007/s43681-025-00899-y','10.3390/laws15040066','10.1093/ijlit/eaaf026')[i] if key=='newworks' else ('Network Neutrality' if key=='paper' else 'Law and Society in Transition')
+                              assert expected in text,(key,i,text)
+                              actions.locator('[data-act="related"]').click()
+                              panel.get_by_text('关联阅读',exact=True).wait_for()
+                              assert not panel.get_by_text('经典著作',exact=True).count()
+                              actions.locator('[data-act="timeline"]').click()
+                              panel.get_by_text('专题时间线',exact=True).wait_for()
+                              assert not panel.locator('.ctx-timeline a').count(),(key,i,'unexpected timeline')
+                              assert actions.locator('[data-act="fav"]').count()==1
+                          assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth + 1'),(key,width,'overflow')
+                          assert not errors,errors
+                          page.evaluate('window.scrollTo(0,0)')
+                          page.screenshot(path=str(out/(key+'-'+str(width)+'.png')))
+                          result['browser'].append({'column':key,'width':width,'status':'passed','checks':['homepage card','navigation','return links','citation','related reading','timeline','reader controls','no overflow','no page errors']})
+                      context.close()
+                  browser.close()
+              result['status']='passed'
+          except Exception as e:
+              result['status']='failed';result['error']=str(e)
+              raise
+          finally:
+              (out/'results.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
+              print(json.dumps(result,ensure_ascii=False,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: academic-live-505dbf73
+          path: /tmp/academic-live
+          retention-days: 7
