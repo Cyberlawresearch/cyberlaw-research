@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>第16课｜SFT：为什么通用模型还要再用“示范答案”训练一次？｜网信法技术基础</title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+  <link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-09-29-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-09-29-ohm-broken-promises-privacy.html">域外法学论文精读</a><a href="../articles/2026-09-29-benkler-wealth-of-networks.html">法学经典著作</a><a href="../articles/2026-09-29-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 16 · TRAINING & ALIGNMENT · 2026.09.30</div><h1>SFT：为什么通用模型还要再用“示范答案”训练一次？</h1><p class="tech-lead">今天只解决一个问题：模型已经完成预训练、会续写文本了，为什么还要再给它一批“问题—理想回答”的示范，让它继续训练？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus">
+<div><strong>最简单的正面定义</strong><p><strong>SFT（Supervised Fine-Tuning，监督微调）就是在已经训练好的模型上，再用一批带有“参考答案”的示范数据继续训练，让模型更稳定地学会怎样按指令回答。</strong></p></div>
+<div><strong>一句话建立直觉</strong><p>预训练像“读了很多书”，SFT 更像“老师给出若干标准示范：别人这样提问时，你应该怎样作答”。</p></div>
+</section>
+<section class="lesson-section">
+<h2>一、预训练会说话，为什么还不够？</h2>
+<p>前面讲过，预训练的核心任务通常是根据已有文本预测下一个 Token。这样可以学到语言规律和大量知识，但“会续写”并不自动等于“会按照用户要求回答”。用户输入“请把这段话概括成三点”，模型需要知道此时应该直接给三点，而不是继续模仿网页、小说或论坛中的下一段文字。</p>
+<p>SFT 就是在这个阶段加入一批明确的示范：什么样的输入，对应什么样的理想输出。模型通过这些示范调整参数，让“回答指令”本身成为更稳定的行为模式。</p>
+</section>
+<section class="lesson-section">
+<h2>二、一张图看懂 SFT 怎样工作</h2>
+<div class="visual-board"><div class="visual-title">把“示范答案”变成参数更新</div><div class="flow">
+<div class="flow-box"><strong>已有预训练模型</strong><span>已经具备一般语言能力和基础知识</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>输入示范</strong><span>例如：用户问题 + 人工写出的理想回答</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>模型逐步预测</strong><span>尝试生成参考回答中的下一个 Token</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>计算差距</strong><span>用前面学过的损失函数衡量预测与参考答案的差别</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>更新参数</strong><span>反复训练后，更倾向生成示范中体现的回答方式</span></div>
+</div></div>
+<p>InstructGPT 的经典做法就是先收集人工示范，再用这些示范对 GPT-3 进行监督微调。后面再进入基于人类偏好的训练阶段。也就是说，SFT 常常是把“基础模型”变成“更会听指令的模型”的第一步，但不同模型的完整训练流程并不完全相同。</p>
+</section>
+<section class="lesson-section">
+<h2>三、“监督”到底监督了什么？</h2>
+<p>“监督”最简单的意思是：训练数据里已经给出了希望模型学到的目标输出。比如输入是“把下面合同条款改得更清楚”，示范回答就直接展示怎样修改。模型不是只看一个好坏分数，而是能够看到完整的参考文本，并据此调整下一 Token 的预测。</p>
+<div class="callout"><strong>新词备注｜Fine-Tuning（微调）</strong><br/>今天先把它理解成“在已有模型基础上继续训练”，而不是从零开始造一个新模型。SFT 是微调的一种常见方式。</div>
+<p>具体训练实现并不只有一种。以 Hugging Face 的 SFTTrainer 为例，有的设置只对“回答部分”计算损失，有的也可以对整段序列计算损失。因此，“SFT 一定只训练回答 Token”不是普遍规律，判断具体模型时要看训练数据格式和训练配置。</p>
+</section>
+<section class="lesson-section">
+<h2>四、SFT 真正教给模型的通常是什么？</h2>
+<div class="compare-grid">
+<div class="compare-card"><b>回答任务</b><p>看到提问后直接回答、总结、翻译、分类，而不是单纯续写原文。</p></div>
+<div class="compare-card"><b>回答格式</b><p>学会列表、固定字段、对话角色、结构化输出等示范中反复出现的形式。</p></div>
+<div class="compare-card"><b>回答风格与边界</b><p>示范可以影响语气、详略和拒答方式，但实际效果还受数据、训练方法和后续训练影响。</p></div>
+</div>
+<p>LIMA 的研究显示，经过精心挑选的一千组提示和回答，也能明显改变一个大型预训练模型的回答方式。这不意味着所有模型只需要少量数据，而是说明：预训练已经承担了大量基础能力学习，SFT 数据的质量和示范方式本身具有很强的行为塑造作用。</p>
+</section>
+<section class="lesson-section">
+<h2>五、正面概念讲清以后，再看三个常见误解</h2>
+<div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“SFT 是把一套答案数据库装进模型。”——SFT 仍然是通过训练改变参数，模型不会因此变成可以逐条检索示范答案的普通数据库。</span></div>
+<div class="myth"><b>误解 02</b><span>“只要示范答案正确，模型以后就一定正确。”——SFT 改变的是输出倾向，不能保证模型面对所有新问题都复制示范的正确性。</span></div>
+<div class="myth"><b>误解 03</b><span>“所有 SFT 都只学习助手回答。”——具体实现存在差异，有的只对回答部分计算训练损失，也有的会对整段训练序列计算。</span></div>
+</div>
+</section>
+<section class="lesson-section">
+<h2>六、法治连接：谁在定义“理想回答”？</h2>
+<div class="law-bridge">
+<h3>SFT 把人工示范直接变成模型行为，因此示范数据本身就是治理规则的一部分。</h3>
+<p>在法律、医疗、政务等场景中，训练者选择哪些问题进入 SFT 数据、怎样编写标准回答、什么情况下要求拒答，都会影响模型之后面对用户的默认反应。这里的权力不只属于模型开发者，也可能分布在数据供应方、标注团队、产品团队和部署机构之间。</p>
+<p>因此，审计 SFT 不能只问“用了多少条数据”，还应追问：示范由谁制定，依据什么标注规范，是否经过专业复核，哪些高风险问题被纳入或排除，使用的是哪个数据版本，训练后又如何验证行为变化。更完整的证据链可以写成：<strong>示范规则 → SFT 数据集 → 训练配置 → 模型版本 → 行为评测</strong>。</p>
+</div>
+</section>
+<section class="lesson-section">
+<h2>七、把这一课转成两个研究问题</h2>
+<div class="research-grid">
+<div class="research-card"><small>论文问题</small><h3>SFT 示范数据中的规范选择如何进入人工智能责任判断</h3><p>可研究高风险场景中的“理想回答”由谁定义，标注规范、专业复核和模型行为之间能否形成可归责、可举证的联系。</p></div>
+<div class="research-card"><small>智库问题</small><h3>政务与公共服务大模型 SFT 数据治理规范</h3><p>可研究是否需要保存示范来源、编写人员、审核规则、版本变更及训练后行为测试记录，以支持后续审计和纠错。</p></div>
+</div>
+</section>
+<section class="lesson-section">
+<h2>八、这一课只需要带走三句话</h2>
+<div class="lesson-focus">
+<div><strong>第一句</strong><p>SFT 是在预训练模型上继续训练，用“输入—参考回答”示范教模型怎样按指令输出。</p></div>
+<div><strong>第二句</strong><p>SFT 的关键不只是数据数量，更在于示范内容具体塑造了什么回答方式。</p></div>
+</div>
+<div class="callout"><strong>第三句：</strong>SFT 改变模型参数和行为倾向，但并不把示范答案变成一个可逐条检索的答案库。</div>
+</section>
+<section class="lesson-section">
+<h2>原始材料</h2>
+<ul class="source-links">
+<li><a href="https://arxiv.org/abs/2203.02155">Ouyang et al. (2022), Training language models to follow instructions with human feedback</a>——InstructGPT 论文，第一阶段即使用人工示范进行监督微调。</li>
+<li><a href="https://openai.com/index/instruction-following/">OpenAI：Aligning language models to follow instructions</a>——以图示说明“人工示范 → SFT → 偏好比较 → 后续训练”的基本流程。</li>
+<li><a href="https://huggingface.co/docs/trl/en/sft_trainer">Hugging Face TRL：SFT Trainer</a>——说明 SFT 数据格式以及只对 completion / assistant 部分计算损失等不同配置。</li>
+<li><a href="https://arxiv.org/abs/2305.11206">Zhou et al. (2023), LIMA: Less Is More for Alignment</a>——展示高质量监督微调数据对模型回答行为的影响。</li>
+</ul>
+</section>
+<section class="lesson-next"><div><small>NEXT LESSON · MODULE 03</small><strong>RLHF / DPO：模型怎样从“哪一个回答更好”中继续学习？</strong><p style="margin:6px 0 0">下一课继续模型训练与对齐，区分“给出标准答案”和“比较两个答案谁更好”这两种训练信号。</p></div><span>第17课 →</span></section>
+</div>
+</main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body>
+</html>
