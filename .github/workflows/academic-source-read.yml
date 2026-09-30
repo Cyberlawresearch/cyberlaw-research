@@ -1,0 +1,37 @@
+name: Academic source retrieval
+on:
+  push:
+    branches: [academic-source-read-20260930]
+    paths: [.github/workflows/academic-source-read.yml]
+permissions:
+  contents: read
+jobs:
+  retrieve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 9ada4ffc54f0fde6efbf2b870f5e65923c0740f9
+      - name: Copy current source files and fetch original book for reading
+        run: |
+          mkdir -p /tmp/academic-reading/repo /tmp/academic-reading/sources
+          git archive HEAD | tar -x -C /tmp/academic-reading/repo
+          curl --fail --location --retry 2 --max-time 90 'https://ppotoda.org/wp-content/uploads/2023/12/Law-and-Society-in-Transition-_-Toward-Responsive-Law-PDFDrive-.pdf' -o /tmp/academic-reading/sources/nonet-selznick.pdf
+          python -m pip install --quiet pypdf
+          python - <<'PY'
+          from pypdf import PdfReader
+          from pathlib import Path
+          import hashlib,json
+          p=Path('/tmp/academic-reading/sources/nonet-selznick.pdf')
+          reader=PdfReader(p)
+          text='\n\n'.join(f'=== PDF PAGE {i+1} ===\n'+(page.extract_text() or '') for i,page in enumerate(reader.pages))
+          p.with_suffix('.txt').write_text(text,encoding='utf-8')
+          p.with_suffix('.json').write_text(json.dumps({'source':'https://ppotoda.org/wp-content/uploads/2023/12/Law-and-Society-in-Transition-_-Toward-Responsive-Law-PDFDrive-.pdf','sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'pdf_pages':len(reader.pages),'operation':'download and text extraction only; no content, bibliographic or legal verification performed by this workflow'},indent=2),encoding='utf-8')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: academic-reading-20260930
+          path: /tmp/academic-reading
+          retention-days: 1
