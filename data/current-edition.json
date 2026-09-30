@@ -1,16 +1,16 @@
 {
-  "date": "2026-09-29",
+  "date": "2026-09-30",
   "pages": {
     "brief": "articles/2026-09-29-tech-law-brief.html",
-    "paper": "articles/2026-09-29-ohm-broken-promises-privacy.html",
-    "classic": "articles/2026-09-29-benkler-wealth-of-networks.html",
-    "newworks": "articles/2026-09-29-new-works.html"
+    "paper": "articles/2026-09-30-wu-network-neutrality.html",
+    "classic": "articles/2026-09-30-nonet-selznick-responsive-law.html",
+    "newworks": "articles/2026-09-30-new-works.html"
   },
   "page_dates": {
     "brief": "2026-09-29",
-    "paper": "2026-09-29",
-    "classic": "2026-09-29",
-    "newworks": "2026-09-29"
+    "paper": "2026-09-30",
+    "classic": "2026-09-30",
+    "newworks": "2026-09-30"
   },
   "news_count": 18,
   "newworks_count": 5
