@@ -8,13 +8,14 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 9
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: 505dbf73ea006e4a602d37c14805e5a5d5aaab6d
+          ref: dd43aa50e7f2c207af20c21d35c8e4a4da9ee53a
       - name: Install disposable browser
         run: |
+          node --check assets/citation-refine.js
           python -m pip install --quiet beautifulsoup4==4.13.4 playwright==1.57.0
           python -m playwright install --with-deps chromium
       - name: Open deployed home and all three academic columns
@@ -31,7 +32,7 @@ jobs:
           m=json.loads(Path('data/current-edition.json').read_text())
           review=json.loads(Path('.github/editions/2026-09-30.academic.json').read_text())
           out=Path('/tmp/academic-live')
-          result={'commit':'505dbf73ea006e4a602d37c14805e5a5d5aaab6d','base':base,'http':[],'browser':[]}
+          result={'commit':'dd43aa50e7f2c207af20c21d35c8e4a4da9ee53a','base':base,'http':[],'browser':[]}
           def get(path):
               with urlopen(Request(urljoin(base,path)+'?academic-check='+str(time.time_ns()),headers={'User-Agent':'cyberlaw-academic-acceptance'}),timeout=25) as r:
                   assert r.status==200,(path,r.status)
@@ -39,8 +40,9 @@ jobs:
           def body(raw):
               return BeautifulSoup(raw,'html.parser').select_one('.article-body').get_text(' ',strip=True)
           try:
-              for attempt in range(36):
+              for attempt in range(84):
                   try:
+                      assert get('assets/citation-refine.js')==Path('assets/citation-refine.js').read_bytes(),'citation asset not deployed'
                       assert json.loads(get('data/current-edition.json'))==m
                       home=BeautifulSoup(get('index.html'),'html.parser')
                       for key in ['brief','paper','classic','newworks']:
@@ -54,11 +56,13 @@ jobs:
                           online=get(path)
                           assert body(online)==body(source),(key,'body mismatch')
                           if key=='newworks':assert len(BeautifulSoup(online,'html.parser').select('.brief-item h3'))==5
+                      assert body(get(m['pages']['brief']))==body(Path(m['pages']['brief']).read_bytes()),'news body changed'
                       break
                   except Exception:
-                      if attempt==35:raise
+                      if attempt==83:raise
                       time.sleep(5)
-              result['http']=[{'path':p,'status':'passed'} for p in ['index.html','data/current-edition.json']+[m['pages'][k] for k in ['paper','classic','newworks']]]
+              result['http']=[{'path':p,'status':'passed'} for p in ['index.html','data/current-edition.json','assets/citation-refine.js']+[m['pages'][k] for k in ['paper','classic','newworks']]]
+              result['news']={'page':m['pages']['brief'],'date':m['page_dates']['brief'],'count':m['news_count'],'body_unchanged':True}
               with sync_playwright() as p:
                   browser=p.chromium.launch()
                   for width,height in [(1440,1000),(390,844)]:
@@ -90,9 +94,17 @@ jobs:
                               actions.locator('[data-act="cite"]').click()
                               panel=actions.locator('.ctx-inline-panel')
                               panel.get_by_text('引用与导出',exact=True).wait_for()
-                              text=panel.inner_text()
-                              expected=('10.1093/jiplp/jpag018','10.1007/s43681-026-01149-5','10.1007/s43681-025-00899-y','10.3390/laws15040066','10.1093/ijlit/eaaf026')[i] if key=='newworks' else ('Network Neutrality' if key=='paper' else 'Law and Society in Transition')
-                              assert expected in text,(key,i,text)
+                              metadata=target.evaluate('(t)=>JSON.parse((t.closest("[data-citation]")||document.body).getAttribute("data-citation"))')
+                              for fmt in ['gb','law','bluebook','bibtex','ris']:
+                                  panel.locator('[data-fmt="'+fmt+'"]').click()
+                                  text=panel.locator('.ctx-citation').inner_text()
+                                  assert metadata['originalTitle'] in text,(key,i,fmt,text)
+                                  assert metadata['author'] in text,(key,i,fmt,'author')
+                                  assert metadata['year'] in text,(key,i,fmt,'year')
+                                  if metadata.get('doi'):assert metadata['doi'] in text,(key,i,fmt,'DOI')
+                                  if key=='classic':
+                                      assert metadata['publisher'] in text
+                                      assert metadata['edition'] in text
                               actions.locator('[data-act="related"]').click()
                               panel.get_by_text('关联阅读',exact=True).wait_for()
                               assert not panel.get_by_text('经典著作',exact=True).count()
@@ -104,7 +116,7 @@ jobs:
                           assert not errors,errors
                           page.evaluate('window.scrollTo(0,0)')
                           page.screenshot(path=str(out/(key+'-'+str(width)+'.png')))
-                          result['browser'].append({'column':key,'width':width,'status':'passed','checks':['homepage card','navigation','return links','citation','related reading','timeline','reader controls','no overflow','no page errors']})
+                          result['browser'].append({'column':key,'width':width,'status':'passed','checks':['homepage card','navigation','return links','all five structured citation formats','related reading','timeline','reader controls','no overflow','no page errors']})
                       context.close()
                   browser.close()
               result['status']='passed'
@@ -118,6 +130,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: academic-live-505dbf73
+          name: academic-live-dd43aa50
           path: /tmp/academic-live
           retention-days: 7
