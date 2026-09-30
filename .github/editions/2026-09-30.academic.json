@@ -1,0 +1,82 @@
+{
+  "date": "2026-09-30",
+  "timezone": "Asia/Shanghai",
+  "state": "verified",
+  "scope": ["paper", "classic", "newworks"],
+  "pages": {
+    "paper": "articles/2026-09-30-wu-network-neutrality.html",
+    "classic": "articles/2026-09-30-nonet-selznick-responsive-law.html",
+    "newworks": "articles/2026-09-30-new-works.html"
+  },
+  "page_dates": {"paper": "2026-09-30", "classic": "2026-09-30", "newworks": "2026-09-30"},
+  "newworks_count": 5,
+  "academic_review": {
+    "status": "verified",
+    "checked_at": "2026-09-30T23:00:00+08:00",
+    "checks": {"sources": true, "bibliography": true, "deduplication": true, "original_titles": true, "chinese_expression": true, "academic_page_structure": true},
+    "sha256": {
+      "articles/2026-09-30-wu-network-neutrality.html": "a15f7092ea56244f8526d20c24b3e5e4340d42920a728075041c263ab82d0f83",
+      "articles/2026-09-30-nonet-selznick-responsive-law.html": "0481d200d33176303d4b9c52737eb0075b7341601f5b0c7ff82825f3c10b6a31",
+      "articles/2026-09-30-new-works.html": "21cc59b73ecde288a640f8797b90eacf486bcf3e284593ab6301ad18a3236480"
+    },
+    "paper": {
+      "state": "verified",
+      "original_reading": "Read the complete original journal article, printed pages 141–175, including the 2002 service-agreement survey, proposed rule, exceptions, objections and conclusion. Inspected the original table and figure. Modern platform/AI applications are explicitly editorial extensions.",
+      "bibliography": {"author": "Tim Wu", "originalTitle": "Network Neutrality, Broadband Discrimination", "journal": "Journal on Telecommunications & High Technology Law", "year": "2003", "volume": "2", "issue": "1", "pages": "141–175", "doi": "", "url": "https://scholar.law.colorado.edu/ctlj/vol2/iss1/8/"},
+      "sources": ["https://scholar.law.colorado.edu/ctlj/vol2/iss1/8/", "https://scholarship.law.columbia.edu/faculty_scholarship/1281/", "https://scispace.com/pdf/network-neutrality-broadband-discrimination-24cwuzo198.pdf"],
+      "version_note": "10.2139/ssrn.388863 identifies the SSRN working-paper version, not a verified journal DOI. Journal DOI left blank.",
+      "body_characters": 3810,
+      "content_commit": "14ee281e19e93913a8efedb54d261ad0d10cc684"
+    },
+    "classic": {
+      "state": "verified",
+      "original_reading": "Read the original authors' preface and all four chapters plus epilogue, printed pages 1–118. The 2017 reprint was checked against its title/copyright pages and publisher metadata. The added 2001 Kagan introduction is distinguished from the original 1978 text, and no claim is made to having read all of the added introduction.",
+      "bibliography": {"author": "Philippe Nonet; Philip Selznick", "originalTitle": "Law and Society in Transition: Toward Responsive Law", "publisher": "Routledge", "year": "2017", "edition": "2001年增订导论版的重印本", "url": "https://www.routledge.com/Law-and-Society-in-Transition-Toward-Responsive-Law/Nonet-Selznick-Kagan/p/book/9780765806420"},
+      "original_edition": {"publisher": "Harper & Row", "year": "1978"},
+      "full_text_source": "https://ppotoda.org/wp-content/uploads/2023/12/Law-and-Society-in-Transition-_-Toward-Responsive-Law-PDFDrive-.pdf",
+      "source_pdf_sha256": "97d23ab8de68db6ec4071a229279ae83668834d5a2c12e8e4c8f486b79d18d05",
+      "source_pdf_pages": 151,
+      "criticism": {"author": "Malcolm M. Feeley", "originalTitle": "Law, Legitimacy, and Symbols: An Expanded View of Law and Society in Transition", "journal": "Michigan Law Review", "year": "1979", "volume": "77", "issue": "3", "pages": "899–907", "doi": "", "url": "https://repository.law.umich.edu/mlr/vol77/iss3/42/", "reading_source": "https://scispace.com/pdf/book-review-law-legitimacy-and-symbols-an-expanded-view-of-37lzfl34zm.pdf"},
+      "corrections": ["Corrected the epilogue: the two deaths concern legal distinctiveness under repressive and responsive law, not a simple rigidity/arbitrariness dichotomy.", "Removed unverified edition assertions and unsourced generic criticism.", "Expanded the chapter map, resource constraints, purposes, participation, institutional competence and regression risks from the whole original book."],
+      "body_characters": 7574,
+      "content_commit": "68d766dbec01e0933c776ce22d8a5c204ed2cb43"
+    },
+    "newworks": {
+      "state": "verified",
+      "window": {"from": "2024-09-30", "to": "2026-09-30"},
+      "reading_note": "Descriptions are limited to verified original publisher materials. Item 5 was checked using publisher metadata and its publicly accessible extract, not a claim of full-text reading. Items 1–4 were checked against original article text or publicly available publisher text.",
+      "items": [
+        {"cnTitle": "我们用什么比喻判断AI：人工智能版权争议的修辞分析", "author": "Michiel A. Smit", "originalTitle": "Metaphors we judge (AI) by: a rhetorical analysis of artificial copyright disputes", "journal": "Journal of Intellectual Property Law & Practice", "year": "2026", "volume": "21", "issue": "4", "pages": "251–263", "doi": "10.1093/jiplp/jpag018", "published_online": "2026-03-06", "url": "https://academic.oup.com/jiplp/article/21/4/251/8509416", "reading_characters": 159},
+        {"cnTitle": "地球观测人工智能的责任治理：人权与《欧盟人工智能法》", "author": "Caroline Margaux Gevaert; Sanja Šćepanović; Nadia Bernaz; Hannes Taubenböck; Mrinalini Kochupillai", "originalTitle": "Responsible Artificial Intelligence for Earth observation: human rights and the EU AI act", "journal": "AI and Ethics", "year": "2026", "volume": "6", "issue": "", "pages": "304", "doi": "10.1007/s43681-026-01149-5", "published_online": "2026-05-15", "url": "https://link.springer.com/article/10.1007/s43681-026-01149-5", "reading_characters": 150},
+        {"cnTitle": "AI处理弱势群体个人数据时的控制者责任", "author": "Kamrul Faisal", "originalTitle": "Controller responsibilities in AI-driven processing of vulnerable data subjects: a legal framework for risk mitigation, proportionality, and compliance", "journal": "AI and Ethics", "year": "2026", "volume": "6", "issue": "", "pages": "92", "doi": "10.1007/s43681-025-00899-y", "published_online": "2026-01-08", "url": "https://link.springer.com/article/10.1007/s43681-025-00899-y", "reading_characters": 161},
+        {"cnTitle": "人工智能生成作品版权归属的中美欧比较", "author": "Guanglei Chen; Yulin Tong; Zilong Han", "originalTitle": "Comparative Study on the Ownership of Copyright of Artificial Intelligence-Generated Works", "journal": "Laws", "year": "2026", "volume": "15", "issue": "4", "pages": "66", "doi": "10.3390/laws15040066", "published_online": "2026-07-04", "url": "https://www.mdpi.com/2075-471X/15/4/66", "reading_characters": 166},
+        {"cnTitle": "监管对话：全球标准与区域创新之间的亚太数据治理", "author": "Julia Hörnle; Han-Wei Liu; Ching-Fu Lin", "originalTitle": "Regulatory dialogues: Asia-Pacific perspectives in data governance between global standards and regional innovations", "journal": "International Journal of Law and Information Technology", "year": "2026", "volume": "34", "issue": "", "pages": "eaaf026", "doi": "10.1093/ijlit/eaaf026", "published_online": "2026-05-15", "url": "https://academic.oup.com/ijlit/article-abstract/doi/10.1093/ijlit/eaaf026/8679213", "reading_characters": 158}
+      ],
+      "content_commit": "5b6524d06b2604bcd622559dfc9af76ec14e1432"
+    },
+    "deduplication": {
+      "base_main": "9ada4ffc54f0fde6efbf2b870f5e65923c0740f9",
+      "academic_html_files_examined": 119,
+      "structured_citations_examined": 133,
+      "headings_examined": 1726,
+      "history_indexes": ["papers.html", "papers-history-1.html", "classics.html", "classics-history.html", "new-works.html", "new-works-history.html"],
+      "method": "Compared normalized original titles, DOI and authors/versions against all repository academic history, including legacy directories and Chinese-only titles. Excluded today's own entries. No earlier occurrence of any of the seven selected works was found.",
+      "duplicates": []
+    },
+    "navigation": {
+      "academic_return_links": true,
+      "history_link_repairs": ["papers.html: 2026-09-28, 2026-09-29", "classics.html: 2026-09-28, 2026-09-29", "new-works.html: 2026-09-24, 2026-09-28, 2026-09-29"],
+      "homepage_archive_manifest": "Existing academic cards, archive entries, pages, page_dates and newworks_count already matched today's selected works; retained rather than rewritten.",
+      "related_reading": "No manually invented broad-topic related links or timelines added. Existing context-index pipeline remains responsible for deterministic navigation and is subject to its unchanged tests."
+    }
+  },
+  "news_untouched": true,
+  "news_guard": {
+    "pages.brief": "articles/2026-09-29-tech-law-brief.html",
+    "page_dates.brief": "2026-09-29",
+    "news_count": 18,
+    "body_sha256": "ee958702cbdf65ccde223aa3a1c3ba33cf2b38efae86e123e6bc6ffa91bedc08",
+    "scope_note": "News content, homepage entry, manifest fields and news publication records were not written or reverified by this academic task."
+  },
+  "deployment_note": "Verified is a content-review state, not a declaration of successful Pages deployment. Check the Pages run and live current-columns evidence for the containing main commit."
+}
