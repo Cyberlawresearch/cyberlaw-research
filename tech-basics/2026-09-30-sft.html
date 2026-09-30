@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>第16课｜SFT：为什么通用模型还要再用“示范答案”训练一次？｜网信法技术基础</title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+  <link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-09-29-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-09-30-wu-network-neutrality.html">域外法学论文精读</a><a href="../articles/2026-09-30-nonet-selznick-responsive-law.html">法学经典著作</a><a href="../articles/2026-09-30-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 16 · TRAINING &amp; ALIGNMENT · 2026.09.30</div><h1>SFT：为什么通用模型还要再用“示范答案”训练一次？</h1><p class="tech-lead">今日问题：模型已经会续写文本，怎样进一步学会按照要求作答？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus">
+<div><strong>SFT 是什么</strong><p>SFT（Supervised Fine-Tuning，监督微调）是在已有模型基础上，用带有目标输出的数据继续训练，通过调整参数，使模型更适合指定任务。今天以“按照指令回答”为例。<sup><a href="#source-1" aria-label="来源1">[1]</a></sup></p></div>
+<div><strong>先看一个例子</strong><p>教新同事整理通知时，可以给出“明天下午三点在二楼开会，请只提取地点”，再示范回答“二楼”。用于 SFT 的许多“输入—示范回答”，就像这样一组组练习材料。</p></div>
+</section>
+<section class="lesson-section">
+<h2>示范怎样变成参数更新</h2>
+<div class="visual-board" role="group" aria-label="监督微调机制：准备示范、预测下一片段、计算损失、更新参数">
+<div class="visual-title">以常见的生成式语言模型训练为例</div>
+<div class="flow">
+<div class="flow-box"><strong>准备示范</strong><span>输入通知和要求，配上目标回答“二楼”</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>预测下一片段</strong><span>根据输入及目标回答的前文，预测下一个 Token</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>计算损失</strong><span>看模型给目标 Token 分配的概率有多低</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>更新参数</strong><span>据此调整可训练的参数，继续学习其他示范</span></div>
+</div>
+<p class="tiny-note">图示表达学习环节，不表示硬件必须逐格串行计算。Token 是此前讲过的文本处理片段，不一定等于一个字。</p>
+</div>
+<p>训练时，程序把示范回答也作为学习材料。在每个需要学习的位置，用前面的正确文本预测接下来的目标 Token。模型给目标片段的概率越低，通常受到的损失惩罚越大。多组样本的损失共同用于调整参数，让目标回答更容易被生成。这里并不要求模型先独立写完一篇答案，再请人逐篇批改。<sup><a href="#source-2" aria-label="来源2">[2]</a></sup></p>
+<p>“监督”指训练材料提供了学习目标。“微调”指接着已有模型继续训练。具体实现可以只对回答部分计算损失，也可以覆盖整段文本，不能把一种设置当成所有模型的规律。<sup><a href="#source-2" aria-label="来源2">[2]</a></sup></p>
+</section>
+<section class="lesson-section">
+<h2>为什么已有能力还需要示范</h2>
+<p>预训练形成的语言能力，为完成任务提供了基础。SFT 则可以用示范进一步引导模型：看到“只提取地点”，就直接给出地点，而不是续写通知。示范还可以影响回答格式、详略和拒答方式。InstructGPT 的公开研究，就先用人工示范微调已有模型，再进行其他训练。<sup><a href="#source-1" aria-label="来源1">[1]</a></sup></p>
+<p>LIMA 研究用一千组精选问答微调特定预训练模型，观察到回答格式和指令遵循能力的改善。这说明示范质量值得重视，不意味着所有模型都只需一千组数据，或微调必然带来提升。<sup><a href="#source-4" aria-label="来源4">[4]</a></sup></p>
+</section>
+<section class="lesson-section">
+<h2>三个常见误解</h2>
+<div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“对话里给几个例子就是 SFT。”普通对话中的示范影响本次输入；SFT 另有训练过程，会更新参数。</span></div>
+<div class="myth"><b>误解 02</b><span>“监督意味着上线后有人盯着每次回答。”这里的监督来自训练材料中的目标输出，并非人工实时值守。</span></div>
+<div class="myth"><b>误解 03</b><span>“示范正确，模型以后就不会答错。”训练改变输出倾向，不能保证陌生问题上的正确性，仍需独立测试。<sup><a href="#source-3" aria-label="来源3">[3]</a></sup></span></div>
+</div>
+</section>
+<section class="lesson-section">
+<h2>法治连接</h2>
+<div class="law-bridge">
+<h3>谁有权把某种回答设为学习目标</h3>
+<p>示范并非天然中立。开发者制定要求，标注团队编写答案，部署机构选择业务标准，都可能影响模型倾向。OpenAI 对相关训练的说明也承认，研究者的指导和标注者的选择会影响结果。<sup><a href="#source-3" aria-label="来源3">[3]</a></sup></p>
+<p>由此分析责任时，应把“谁决定示范内容”与“谁实际训练、测试和使用模型”分开。可核对示范编写规则、数据集版本、训练配置、模型版本和行为测试，判断各方能控制哪个环节。一次错误回答本身，不能证明错误必然来自某条示范，也不能直接确定某一方承担全部责任。</p>
+</div>
+</section>
+<section class="lesson-section">
+<h2>两个可发展的研究问题</h2>
+<div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>示范答案中的规范选择如何进入责任判断</h3><p>研究编写标准、审核权限和训练记录，如何支持对行为影响及注意义务的具体证明。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>公共服务大模型微调的最小审计记录</h3><p>研究应保留哪些示范来源、审核记录及测试结果，使后续纠错能够追溯到具体版本和主体。</p></div>
+</div>
+</section>
+<section class="lesson-section">
+<h2>原始材料</h2>
+<ol class="source-links">
+<li id="source-1"><a href="https://arxiv.org/abs/2203.02155">Ouyang et al. (2022), Training language models to follow instructions with human feedback</a>。说明人工示范监督微调在训练流程中的位置。</li>
+<li id="source-2"><a href="https://huggingface.co/docs/trl/en/sft_trainer">Hugging Face TRL：SFT Trainer</a>。解释目标 Token、损失计算及回答部分或整段文本等不同设置。</li>
+<li id="source-3"><a href="https://openai.com/index/instruction-following/">OpenAI (2022), Aligning language models to follow instructions</a>。说明示范编写者的影响及训练方法的局限。</li>
+<li id="source-4"><a href="https://arxiv.org/abs/2305.11206">Zhou et al. (2023), LIMA: Less Is More for Alignment</a>。研究精选示范对特定模型回答行为的影响。</li>
+</ol>
+</section>
+<section class="next-lesson"><div><small>后续课程预告 · 第17课</small><p><b>RLHF / DPO：从“哪一个回答更好”中学习。</b>今天先把它们理解成依据回答偏好调整模型的方法，不需要现在掌握，后面会专门讲。</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div>
+</main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body>
+</html>
