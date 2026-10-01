@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: 0ccd08502bfab991d6ae203728ac0b57b6d38290
+          ref: fc99e6af2301c3c88ec130db55cca4e44bcd9445
       - name: Install disposable browser
         run: |
           node --check assets/citation-refine.js
@@ -30,9 +30,9 @@ jobs:
           from playwright.sync_api import sync_playwright
           base='https://cyberlawresearch.github.io/cyberlaw-research/'
           m=json.loads(Path('data/current-edition.json').read_text())
-          review=json.loads(Path('.github/editions/2026-09-30.academic.json').read_text())
+          review=json.loads(Path('.github/editions/2026-10-01.academic.json').read_text())
           out=Path('/tmp/academic-live')
-          result={'commit':'0ccd08502bfab991d6ae203728ac0b57b6d38290','base':base,'http':[],'browser':[]}
+          result={'commit':'fc99e6af2301c3c88ec130db55cca4e44bcd9445','base':base,'http':[],'browser':[]}
           def get(path):
               with urlopen(Request(urljoin(base,path)+'?academic-check='+str(time.time_ns()),headers={'User-Agent':'cyberlaw-academic-acceptance'}),timeout=25) as r:
                   assert r.status==200,(path,r.status)
@@ -52,7 +52,7 @@ jobs:
                       for key in ['paper','classic','newworks']:
                           path=m['pages'][key]
                           source=Path(path).read_bytes()
-                          assert hashlib.sha256(source).hexdigest()==review['academic_review']['sha256'][path]
+                          assert hashlib.sha1(b'blob '+str(len(source)).encode()+b'\\0'+source).hexdigest()==review['academic_review']['content_blobs'][path]
                           online=get(path)
                           assert body(online)==body(source),(key,'body mismatch')
                           if key=='newworks':assert len(BeautifulSoup(online,'html.parser').select('.brief-item h3'))==5
@@ -110,7 +110,7 @@ jobs:
                               assert not panel.get_by_text('经典著作',exact=True).count()
                               actions.locator('[data-act="timeline"]').click()
                               panel.get_by_text('专题时间线',exact=True).wait_for()
-                              assert not panel.locator('.ctx-timeline a').count(),(key,i,'unexpected timeline')
+                              assert not panel.get_by_text('经典著作',exact=True).count(); timeline_hrefs=panel.locator('.ctx-timeline a').evaluate_all('(nodes)=>nodes.map(n=>n.href)'); assert len(timeline_hrefs)==len(set(timeline_hrefs)); assert all(h.startswith(base) for h in timeline_hrefs)
                               assert actions.locator('[data-act="fav"]').count()==1
                           assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth + 1'),(key,width,'overflow')
                           assert not errors,errors
@@ -130,6 +130,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: academic-live-0ccd0850
+          name: academic-live-fc99e6af
           path: /tmp/academic-live
           retention-days: 7
