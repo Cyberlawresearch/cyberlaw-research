@@ -20,6 +20,9 @@ def main():
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     results = []
+    manifest = json.loads((ROOT/'data/current-edition.json').read_text(encoding='utf-8'))
+    current_brief = manifest['pages']['brief']
+    current_news_count = manifest['news_count']
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(executable_path=None if Path(p.chromium.executable_path).exists() else shutil.which('chromium'))
@@ -39,6 +42,48 @@ def main():
                         time.sleep(6)
                     else:
                         raise AssertionError('Deployed asset differs from the tested commit: ' + asset)
+
+                # Always verify the brief currently exposed by current-edition.json.
+                page.goto(urljoin(base, current_brief), wait_until='networkidle')
+                current_items = page.locator('.brief-item')
+                assert current_items.count() == current_news_count
+                assert 18 <= current_items.count() <= 20
+                assert page.locator('.brief-fact').count() == current_news_count
+                assert page.locator('.source a[href^="https://"]').count() >= current_news_count
+
+                current_first = current_items.first
+                assert current_first.locator('[data-act="background"]').count() == 1
+                current_first.locator('[data-act="background"]').click()
+                current_panel = current_first.locator('.ctx-inline-panel')
+                current_panel.get_by_text('背景信息与未来前瞻', exact=True).wait_for()
+                assert current_panel.locator('.ctx-insight-block').count() == 2
+
+                assert current_first.locator('[data-act="related"]').count() == 1
+                current_first.locator('[data-act="related"]').click()
+                current_panel.get_by_text('关联阅读', exact=True).wait_for()
+
+                current_foreign = page.locator('.brief-item:has(.brief-original)').first
+                assert current_foreign.count() == 1
+                current_layout = current_foreign.evaluate('''el=>{
+                  const rect=n=>{const r=n.getBoundingClientRect();return {x:r.x,y:r.y,width:r.width,height:r.height}};
+                  const original=el.querySelector(':scope > .brief-original');
+                  const fact=el.querySelector(':scope > .brief-fact');
+                  const analysis=[...el.children].filter(n=>n.tagName==='P'&&!n.classList.contains('brief-original')&&!n.classList.contains('brief-fact')&&!n.classList.contains('source'));
+                  return {original:rect(original),fact:rect(fact),analysis:analysis.map(rect)};
+                }''')
+                assert len(current_layout['analysis']) == 3
+                assert abs(current_layout['original']['width'] - current_layout['fact']['width']) < 5
+                if width > 800:
+                    current_tops = [x['y'] for x in current_layout['analysis']]
+                    assert max(current_tops) - min(current_tops) < 5
+                    assert all(x['width'] < current_layout['fact']['width'] * .55 for x in current_layout['analysis'])
+                else:
+                    current_tops = [x['y'] for x in current_layout['analysis']]
+                    assert current_tops == sorted(current_tops) and len(set(round(x) for x in current_tops)) == 3
+
+                assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth + 1')
+                assert not errors, errors
+                results.append({'test':f'current-brief-{width}','status':'passed','detail':f'{current_brief} passes current news count, contextual tools and responsive foreign-news layout.'})
 
                 # Same-event progression: the 17 Sep EU KIDS Act proposal must connect
                 # to the 16 Sep policy announcement, but not to broad AI/data stories.
