@@ -1,0 +1,74 @@
+name: Trade Watch source diagnostics
+
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/trade-watch-source-check.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install HTML parser
+        run: python -m pip install beautifulsoup4==4.13.4 requests==2.32.5
+      - name: Check public source documents and Trade Watch pages
+        run: |
+          python - <<'PY'
+          import json, time
+          from pathlib import Path
+          import requests
+          from bs4 import BeautifulSoup
+          urls = [
+              ('Truck bed covers', 'https://www.trade.gov/commerce-preliminary-antidumping-duty-investigation-truck-bed-covers-peoples-republic-china'),
+              ('Air compressors', 'https://www.trade.gov/preliminary-affirmative-countervailing-duty-determinations-stationary-and-portable-air-compressors'),
+              ('Steel framework', 'https://ustr.gov/about/policy-offices/press-office/press-releases/2026/september/ambassador-greer-issues-statement-following-ministerial-meeting-global-forum-steel-excess-capacity'),
+              ('UK steel scope', 'https://www.gov.uk/government/publications/uks-steel-trade-measure-from-1-july-2026/uks-steel-trade-measure-from-1-july-2026'),
+              ('UK steel implementation', 'https://www.gov.uk/government/publications/uks-steel-trade-measure-from-1-july-2026/implementation-notifications-on-the-transitional-exemption-quota-administration-and-the-ukraine-exclusion'),
+              ('Brazil beef safeguard', 'https://trb.mofcom.gov.cn/myjjdc/art/2026/art_50ba0b70b644489fa828f03dd72c15ab.html'),
+              ('Caprolactam', 'https://www.dgtr.gov.in/en/anti-dumping-cases/initiation-anti-dumping-investigation-concerning-imports-caprolactam-originating'),
+              ('Persulphates', 'https://dgtr.gov.in/en/anti-dumping-cases/initiation-notification-anti-dumping-investigation-concerning-imports'),
+          ]
+          report = []
+          for name, url in urls:
+              result = {'name': name, 'url': url, 'ok': False}
+              for attempt in range(2):
+                  try:
+                      response = requests.get(url, timeout=(10, 30), headers={'User-Agent': 'TradeWatch-LinkCheck/1.0'})
+                      response.raise_for_status()
+                      response.encoding = response.apparent_encoding
+                      soup = BeautifulSoup(response.text, 'html.parser')
+                      for tag in soup(['script', 'style', 'nav', 'header', 'footer']):
+                          tag.decompose()
+                      main = soup.find('main') or soup
+                      text = main.get_text(' ', strip=True)
+                      result.update(status=response.status_code, final_url=response.url, title=soup.title.get_text(' ', strip=True) if soup.title else '', text=text, ok=True)
+                      result['documents'] = [{'title': a.get_text(' ', strip=True), 'url': requests.compat.urljoin(response.url, a['href'])} for a in main.select('a[href]') if '.pdf' in a['href'].lower() or '/download' in a['href'].lower()]
+                      break
+                  except Exception as error:
+                      result['error'] = str(error)
+                      if attempt == 0:
+                          time.sleep(2)
+              report.append(result)
+              print('\nSOURCE:', name, '\nURL:', url, '\nSTATUS:', result.get('status', result.get('error')))
+              print('TITLE:', result.get('title', ''))
+              print('TEXT:', result.get('text', '')[:9000])
+              print('DOCUMENTS:', json.dumps(result.get('documents', []), ensure_ascii=False))
+          Path('source-check-results.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
+          failures = [r['name'] for r in report if not r['ok']]
+          if failures:
+              print('::warning::Sources requiring another access route: ' + ', '.join(failures))
+          print('HTTP success is an access check only; content and publication dates require separate verification.')
+          PY
+      - name: Retain diagnostic report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: trade-watch-source-diagnostics
+          path: source-check-results.json
+          retention-days: 7
