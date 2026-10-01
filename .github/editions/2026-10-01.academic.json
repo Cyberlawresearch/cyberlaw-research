@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-01",
+  "timezone": "Asia/Shanghai",
+  "state": "verified",
+  "scope": [
+    "paper",
+    "classic",
+    "newworks"
+  ],
+  "pages": {
+    "paper": "articles/2026-10-01-holmes-path-of-the-law.html",
+    "classic": "articles/2026-10-01-pound-philosophy-of-law.html",
+    "newworks": "articles/2026-10-01-new-works.html"
+  },
+  "page_dates": {
+    "paper": "2026-10-01",
+    "classic": "2026-10-01",
+    "newworks": "2026-10-01"
+  },
+  "newworks_count": 5,
+  "academic_review": {
+    "status": "verified",
+    "checked_at": "2026-10-01T21:18:00+08:00",
+    "checks": {
+      "sources": true,
+      "bibliography": true,
+      "deduplication": true,
+      "original_titles": true,
+      "chinese_expression": true,
+      "academic_page_structure": true,
+      "current_columns_build": true,
+      "current_context_links": true
+    },
+    "content_blobs": {
+      "articles/2026-10-01-holmes-path-of-the-law.html": "0eafff0b4f446988241d12d53d3bc22c9a7ceeb5",
+      "articles/2026-10-01-pound-philosophy-of-law.html": "9dc07a608cf83e164607bf807f4128bdf335e330",
+      "articles/2026-10-01-new-works.html": "5d9b82535bc004ab84e53ea14ceb11a664b8e10f"
+    },
+    "paper": {
+      "state": "verified",
+      "original_reading": "Read the complete public text of The Path of the Law and checked the original Harvard Law Review scan metadata. Review covers prediction theory, the bad-man analytic device, law/morals, contract, anti-formalism, history, statistics/economics, jurisprudence and representative later criticism. Digital-governance discussion is explicitly marked as a present-day reading extension.",
+      "bibliography": {
+        "author": "Oliver Wendell Holmes, Jr.",
+        "originalTitle": "The Path of the Law",
+        "journal": "Harvard Law Review",
+        "year": "1897",
+        "volume": "10",
+        "issue": "8",
+        "pages": "457–478",
+        "doi": "",
+        "url": "https://en.wikisource.org/wiki/Index:Path_of_the_Law.djvu"
+      },
+      "sources": [
+        "https://en.wikisource.org/wiki/Index:Path_of_the_Law.djvu",
+        "https://www.gutenberg.org/ebooks/2373",
+        "https://hls.harvard.edu/bibliography/style-and-skepticism-in-the-path-of-the-law/",
+        "https://nyulawreview.org/issues/volume-72-number-6/the-bad-man-and-the-good-lawyer-a-centennial-essay-on-holmess-the-path-of-the-law/"
+      ],
+      "text_characters": 4592,
+      "cjk_characters": 3567
+    },
+    "classic": {
+      "state": "verified",
+      "original_reading": "Read the 1922 first-edition public text chapter by chapter: The Function of Legal Philosophy, The End of Law, The Application of Law, Liability, Property and Contract. The 1959 Yale revision is treated only as later version history and is not attributed back to the 1922 text.",
+      "bibliography": {
+        "author": "Roscoe Pound",
+        "originalTitle": "An Introduction to the Philosophy of Law",
+        "publisher": "Yale University Press",
+        "year": "1922",
+        "edition": "初版",
+        "url": "https://www.gutenberg.org/files/32168/32168-h/32168-h.htm"
+      },
+      "sources": [
+        "https://www.gutenberg.org/files/32168/32168-h/32168-h.htm",
+        "https://yalebooks.yale.edu/book/9780300001884/an-introduction-to-the-philosophy-of-law/",
+        "https://digitalcommons.unl.edu/dissertations/AAI9604429/",
+        "https://philpapers.org/rec/DIFRPS"
+      ],
+      "text_characters": 8117,
+      "cjk_characters": 6686
+    },
+    "newworks": {
+      "state": "verified",
+      "window": {
+        "from": "2024-10-01",
+        "to": "2026-10-01"
+      },
+      "bibliography_storage": "All five final entries retain verified structured data-citation fields. Unconfirmed issue fields are left blank rather than inferred.",
+      "items": [
+        {
+          "author": "Kennedy Chun Yin Kong",
+          "originalTitle": "The delegation illusion: why deploying autonomous AI agents does not diminish principal responsibility",
+          "journal": "AI and Ethics",
+          "year": "2026",
+          "volume": "6",
+          "issue": "",
+          "pages": "518",
+          "doi": "10.1007/s43681-026-01383-x",
+          "published_online": "2026-09-14",
+          "url": "https://link.springer.com/article/10.1007/s43681-026-01383-x"
+        },
+        {
+          "author": "Will R. Mbioh",
+          "originalTitle": "Social media addiction and the Digital Services Act: mitigation measures or missed opportunities? An intra-active critique",
+          "journal": "European Law Open",
+          "year": "2026",
+          "volume": "",
+          "issue": "First View",
+          "pages": "1–25",
+          "doi": "10.1017/elo.2026.10081",
+          "published_online": "2026-05-04",
+          "url": "https://www.cambridge.org/core/journals/european-law-open/article/social-media-addiction-and-the-digital-services-act-mitigation-measures-or-missed-opportunities-an-intraactive-critique/B780CD5C5320740D25492227C8636A5E"
+        },
+        {
+          "author": "Julius Krüger; Mark-Oliver Mackenrodt",
+          "originalTitle": "Delineating and designating core platform services under the DMA: case T-1078/23 Meta Platforms Inc v European Commission",
+          "journal": "Journal of European Competition Law & Practice",
+          "year": "2026",
+          "volume": "",
+          "issue": "Advance Article",
+          "pages": "lpag056",
+          "doi": "10.1093/jeclap/lpag056",
+          "published_online": "2026-09-25",
+          "url": "https://academic.oup.com/jeclap/advance-article/doi/10.1093/jeclap/lpag056/8835931"
+        },
+        {
+          "author": "Federico L.G. Faroldi",
+          "originalTitle": "Risk for AI Agents",
+          "journal": "European Journal of Risk Regulation",
+          "year": "2026",
+          "volume": "",
+          "issue": "First View",
+          "pages": "1–16",
+          "doi": "10.1017/err.2026.10152",
+          "published_online": "2026-09-28",
+          "url": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/risk-for-ai-agents/391CA197A65142C15C32DC69470E98A2"
+        },
+        {
+          "author": "Sai-Ming Wong",
+          "originalTitle": "Office and unowned architecture: public judgment in the age of algorithmic governance",
+          "journal": "Ethics and Information Technology",
+          "year": "2026",
+          "volume": "28",
+          "issue": "",
+          "pages": "48",
+          "doi": "10.1007/s10676-026-09919-9",
+          "published_online": "2026-09-26",
+          "url": "https://link.springer.com/article/10.1007/s10676-026-09919-9"
+        }
+      ],
+      "work_entries": 5
+    },
+    "deduplication": {
+      "method": "Checked repository-wide title/author searches for Holmes and Pound and repository-wide exact DOI/title searches for new works against current and legacy academic history. Two proposed new-work candidates were rejected as historical duplicates before publication: KafkaGPT (already published 2026-09-14) and Comparing the Right to Information about Automated Decision-Making to the New Right to Explanation (already present 2026-08-22).",
+      "duplicates_in_final_selection": []
+    },
+    "publication": {
+      "content_main_sha": "9a39fe0ab4fb8abba89aaced049bdf59a6dcf85a",
+      "pages_run_id": 36867364933,
+      "pages_conclusion": "success",
+      "predeploy_current_columns": true,
+      "deployed_contextual_reading": true,
+      "deployed_current_columns": true,
+      "deployed_entry_points": true
+    }
+  },
+  "news_untouched": true,
+  "news_guard": {
+    "pages.brief": "articles/2026-10-01-tech-law-brief.html",
+    "page_dates.brief": "2026-10-01",
+    "news_count": 20,
+    "body_blob_sha": "590444c2eed72b31c1cfcd1f6aa27ebf05e1cbf3",
+    "baseline_commit": "45ce8aafdf442aad2a8c0fb5f7e113142dbb2c00",
+    "comparison_head": "9a39fe0ab4fb8abba89aaced049bdf59a6dcf85a",
+    "comparison_result": "No 2026-10-01 news article, briefs index, or .news.json file changed between the completed news baseline and the academic content head."
+  },
+  "deployment_note": "The academic content head 9a39fe0 deployed successfully in Pages run 36867364933; both pre-deploy and deployed current-columns/context checks passed. This review record itself contains no reader-page changes."
+}
