@@ -1,0 +1,144 @@
+name: Trade Watch publication guard
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/trade_watch_presence.py
+      - scripts/test_trade_watch_presence.py
+      - .github/workflows/trade-watch-release-guard.yml
+  schedule:
+    # Asia/Shanghai 10:20, 14:20, 20:20; the content task remains at 09:00.
+    - cron: '20 2,6,12 * * *'
+  workflow_run:
+    workflows: [Deploy static site to Pages]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      expected_date:
+        description: 'Expected issue date YYYY-MM-DD; empty means today in Asia/Shanghai'
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+  actions: write
+  issues: write
+
+concurrency:
+  group: trade-watch-publication-guard
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    if: github.repository == 'Cyberlawresearch/cyberlaw-research'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          persist-credentials: false
+      - name: Install checker dependencies
+        run: python -m pip install beautifulsoup4==4.13.4 requests==2.32.5
+      - name: Test missing-content and false-success detection
+        run: python -m unittest discover -s scripts -p test_trade_watch_presence.py -v
+      - name: Resolve expected date and reject superseded commits
+        id: target
+        uses: actions/github-script@v7
+        env:
+          EXPECTED_DATE: ${{ inputs.expected_date }}
+        with:
+          script: |
+            const main = await github.rest.repos.getBranch({...context.repo, branch: 'main'});
+            const target = context.payload.workflow_run?.head_sha || context.sha;
+            const clock = new Intl.DateTimeFormat('en-GB', {timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'});
+            const parts = Object.fromEntries(clock.formatToParts(new Date()).map(p => [p.type,p.value]));
+            const today = `${parts.year}-${parts.month}-${parts.day}`;
+            const expected = process.env.EXPECTED_DATE || today;
+            if (!/^\d{4}-\d{2}-\d{2}$/.test(expected)) throw new Error('Invalid expected date');
+            const offline = context.eventName === 'push';
+            const beforeCheck = context.eventName === 'workflow_run' && Number(parts.hour)*60+Number(parts.minute) < 620;
+            const active = target === main.data.commit.sha && !beforeCheck;
+            core.setOutput('active', String(active));
+            core.setOutput('mode', offline ? 'offline' : 'live');
+            core.setOutput('date', expected);
+            core.setOutput('sha', target);
+            core.info(JSON.stringify({expected, target, current:main.data.commit.sha, active, offline}));
+      - name: Check expected issue and all three public pages
+        id: presence
+        if: steps.target.outputs.active == 'true'
+        continue-on-error: true
+        env:
+          EXPECTED_DATE: ${{ steps.target.outputs.date }}
+          TARGET_SHA: ${{ steps.target.outputs.sha }}
+          CHECK_MODE: ${{ steps.target.outputs.mode }}
+        run: |
+          if [ "$CHECK_MODE" = offline ]; then
+            python scripts/trade_watch_presence.py --latest --offline --commit "$TARGET_SHA" --report "$RUNNER_TEMP/trade-watch-presence.json"
+          else
+            python scripts/trade_watch_presence.py --date "$EXPECTED_DATE" --commit "$TARGET_SHA" --report "$RUNNER_TEMP/trade-watch-presence.json"
+          fi
+      - name: Retry failed infrastructure deployment at most twice
+        if: steps.target.outputs.active == 'true' && github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const file = `${process.env.RUNNER_TEMP}/trade-watch-presence.json`;
+            if (!fs.existsSync(file) || !JSON.parse(fs.readFileSync(file,'utf8')).repository_ok) return;
+            const run = context.payload.workflow_run;
+            const main = await github.rest.repos.getBranch({...context.repo, branch:'main'});
+            const current = await github.rest.actions.getWorkflowRun({...context.repo,run_id:run.id});
+            if (main.data.commit.sha !== run.head_sha || current.data.status !== 'completed' || current.data.conclusion !== 'failure' || current.data.run_attempt >= 3) return;
+            const jobs = await github.paginate(github.rest.actions.listJobsForWorkflowRun,{...context.repo,run_id:run.id,filter:'latest',per_page:100});
+            const failed = jobs.flatMap(j => j.steps || []).filter(s => s.conclusion === 'failure').map(s => s.name);
+            const retryable = new Set(['Setup Pages','Upload artifact','Deploy to GitHub Pages','Install edition validator','Install isolated context test browser']);
+            if (!failed.length || !failed.every(name => retryable.has(name))) {
+              core.info('Content/test failures require diagnosis; no automatic re-run.'); return;
+            }
+            await github.rest.actions.reRunWorkflowFailedJobs({...context.repo,run_id:run.id});
+            core.info(`Re-run requested for infrastructure failure in Pages run ${run.id}; this is not a publication success.`);
+      - name: Record one publication incident per date
+        if: always() && steps.target.outputs.active == 'true' && steps.target.outputs.mode == 'live'
+        uses: actions/github-script@v7
+        env:
+          EXPECTED_DATE: ${{ steps.target.outputs.date }}
+          TARGET_SHA: ${{ steps.target.outputs.sha }}
+        with:
+          script: |
+            const fs = require('fs');
+            const main = await github.rest.repos.getBranch({...context.repo,branch:'main'});
+            if (main.data.commit.sha !== process.env.TARGET_SHA) {core.info('Superseded; do not open or close an incident.'); return;}
+            const file = `${process.env.RUNNER_TEMP}/trade-watch-presence.json`;
+            const report = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file,'utf8')) : {errors:[{stage:'checker',detail:'Checker did not produce a report'}]};
+            const upstream = context.payload.workflow_run;
+            const deploymentFailed = upstream && upstream.conclusion !== 'success';
+            const ok = report.repository_ok === true && report.public_ok === true && !deploymentFailed;
+            const day = process.env.EXPECTED_DATE;
+            const marker = `<!-- trade-watch-publication:${day} -->`;
+            const title = `Trade Watch 发布异常｜${day}`;
+            let existing;
+            for await (const page of github.paginate.iterator(github.rest.issues.listForRepo,{...context.repo,state:'all',sort:'created',direction:'desc',per_page:100})) {
+              existing = page.data.find(i => !i.pull_request && i.title === title && (i.body || '').includes(marker));
+              if (existing || page.data.some(i => i.created_at.slice(0,10) < day)) break;
+            }
+            if (ok && !existing) {core.info('Publication present; no incident needed.'); return;}
+            const runURL = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const details = (report.errors || []).map(e => `- ${e.stage}: ${e.path || ''} ${e.detail || ''}`).join('\n');
+            const body = `${marker}\n${ok ? '已恢复，三份文件和公开页面核验通过。' : '@'+context.repo.owner+' 当期发布尚未通过核验。'}\n\n期日：${day}\n核验提交：${process.env.TARGET_SHA}\n[检查记录](${runURL})\n\n${details}\n${deploymentFailed ? '\nPages 运行结果：'+upstream.conclusion+'；运行 '+upstream.id : ''}\n\n本检查不生成或补造新闻，不修改读者页面，不关闭每日内容任务。`;
+            if (existing) await github.rest.issues.update({...context.repo,issue_number:existing.number,body,state:ok?'closed':'open'});
+            else await github.rest.issues.create({...context.repo,title,body});
+            if (!ok) core.setFailed('Expected issue is incomplete, deployment failed, or public pages do not match.');
+      - name: Retain checker evidence outside the website
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: trade-watch-presence-${{ github.run_id }}
+          path: ${{ runner.temp }}/trade-watch-presence.json
+          if-no-files-found: ignore
+          retention-days: 14
+      - name: Preserve failed check result
+        if: always() && steps.presence.outcome == 'failure'
+        run: exit 1
