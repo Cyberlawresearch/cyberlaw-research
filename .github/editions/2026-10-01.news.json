@@ -3,12 +3,12 @@
   "column": "brief",
   "state": "draft",
   "page": "articles/2026-10-01-tech-law-brief.html",
-  "news_count": 15,
+  "news_count": 19,
   "distribution": {
     "domestic": 6,
-    "foreign": 9
+    "foreign": 13
   },
-  "updated_at": "2026-10-01T20:40:00+08:00",
+  "updated_at": "2026-10-01T20:47:00+08:00",
   "base_main_sha": "a2f2afd502220bf6f3a87f86caaab5b53020338c",
   "phase": "research",
   "record_kind": "recovery_checkpoint",
@@ -300,6 +300,78 @@
       "paper_topic": "AI模型训练中的统计制作特例与目的限定原则",
       "background": "日本2026年7月公布个人信息保护法修法，随后PPC分阶段制定政令、委员会规则和指南。新法一方面扩大适当数据利用空间，另一方面强化儿童数据、受托处理和风险应对规则。",
       "outlook": "后续委员会还将继续处理不当利用防止、执法有效性和具体指南。AI开发何种情形可被认定为‘统计信息等制作’，以及如何证明模型与个人不再对应，将成为实施中的关键边界。"
+    },
+    {
+      "id": "uk-information-commission-transition-2026-09-30",
+      "jurisdiction": "英国",
+      "event_date": "2026-09-30",
+      "status": "kept",
+      "title": "英国ICO正式转为Information Commission，数据监管改由委员会集体治理",
+      "source_title": "ICO welcomes transition to new Information Commission and marks new chapter with Manchester head office opening",
+      "source_url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/09/ico-welcomes-transition-to-new-information-commission-and-marks-new-chapter-with-manchester-head-office-opening/",
+      "legal_status": "《Data (Use and Access) Act 2025》治理改革正式落地",
+      "new_fact": "英国信息监管机构9月30日正式从单一Information Commissioner治理转为Information Commission委员会治理，新董事会当日履职。",
+      "dedup": "近7日简报未见该机构治理结构正式转换；属于法定机构改革的新生效节点。",
+      "fact_draft": "英国信息专员办公室9月30日宣布，依据《Data (Use and Access) Act 2025》完成机构治理转换，法律实体正式成为Information Commission，由新设董事会监督。新董事会的非执行成员已履职，监管机构日常的数据保护、指导和执法职责继续运行；其下一阶段企业战略将把人工智能、网络韧性、儿童隐私和公共服务列为重点领域。",
+      "legal_analysis": "改革没有改变英国数据保护法的核心监管权限，但把监管机构从‘专员个人负责’改成集体董事会治理。对重大AI、网络安全和儿童数据案件而言，决策监督、内部问责和战略优先级将更制度化，也可能影响跨境充分性评价中对监管独立性和治理结构的观察。",
+      "thinktank_topic": "英国数据监管机构集体治理改革及对独立监管机构组织法的启示",
+      "paper_topic": "数据保护监管机构从个人专员制向委员会制转型的组织法逻辑",
+      "background": "《Data (Use and Access) Act 2025》对英国信息监管机构治理结构作出调整，保留其数据保护等核心职责，同时改为董事会监督的委员会模式。",
+      "outlook": "后续需观察新董事会如何参与重大执法、规则制定和AI监管战略，以及永久主席到任后委员会与CEO之间的权限分工。"
+    },
+    {
+      "id": "uk-ofcom-ncii-hash-deadline-2026-09-30",
+      "jurisdiction": "英国",
+      "event_date": "2026-09-30",
+      "status": "kept",
+      "title": "英国Ofcom平台非法私密图像治理期限届满，要求部署哈希匹配或同等措施",
+      "source_title": "Ofcom to crack down on spread of illegal intimate images and deepfakes, boosting protections for women and girls online",
+      "source_url": "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/ofcom-to-crack-down-on-spread-of-illegal-intimate-images-and-deepfakes-boosting-protections-for-women-and-girls-online",
+      "legal_status": "《Online Safety Act》执法项目中的平台合规期限",
+      "new_fact": "Ofcom此前设定的9月30日期限到期，在线平台应部署hash matching识别阻止非法私密图像和AI深度伪造传播，或证明其他系统同等有效。",
+      "dedup": "近7日简报未报道该9月30日合规期限；属于既有执法项目进入实际检查阶段的新节点。",
+      "fact_draft": "英国Ofcom针对非法私密图像和AI深度伪造内容设定的平台整改期限于9月30日届满。Ofcom要求相关在线平台部署哈希匹配技术，以识别并阻止非法私密图像再次传播；未采用该技术的平台需证明其他系统和流程具有同等效果。监管机构已启动执法项目，并表示不履行《Online Safety Act》义务的企业可能面临最高相当于全球年营业额10%的罚款。",
+      "legal_analysis": "英国在线安全监管开始把‘采取适当措施’落实到可验证的技术控制，并允许企业用同等有效措施替代指定技术。监管重点因此从抽象内容治理责任转向可审计的检测能力、效果证明和持续风险管理。",
+      "thinktank_topic": "英国以技术效果为中心的深度伪造平台治理及我国内容安全工具化监管",
+      "paper_topic": "平台安全义务中的技术措施指定、等效替代与比例原则",
+      "background": "Ofcom 9月9日启动专项执法项目，重点针对非自愿私密图像和AI生成露骨深度伪造的传播，并与StopNCII.org等机构合作。",
+      "outlook": "期限届满后，Ofcom是否公开调查对象、如何评价‘同等有效’措施以及年底拟修订非法内容守则的幅度，将决定平台合规成本和技术选择空间。"
+    },
+    {
+      "id": "kr-public-sector-cyber-accountability-2026-10-01",
+      "jurisdiction": "韩国",
+      "event_date": "2026-10-01",
+      "status": "kept",
+      "title": "韩国发布公共部门网络安全问责方案，严重泄露事故将强化机构负责人责任",
+      "source_title": "공공부문 사이버보안 징계기준 강화, 기관장 엄중 책임",
+      "source_url": "https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000008&nttId=129906",
+      "legal_status": "多部门联合公共部门网络安全责任强化方案",
+      "new_fact": "韩国行政安全部、国家情报院、人事创新处、PIPC等10月1日联合发布方案，将严重信息泄露事故中的机构负责人责任和基础安全规则违规纳入更明确的纪律标准。",
+      "dedup": "近7日简报未见该公共部门网络安全问责方案。",
+      "fact_draft": "韩国行政安全部、国家情报院、人事创新处和个人信息保护委员会等部门10月1日联合发布《公共部门网络安全责任强化方案》。方案拟把初始密码长期不修改、已发现安全问题长期不处理等基础安全规则违规纳入明确的纪律处理标准，并在严重信息泄露事故中强化机构负责人和监督管理人员责任；政府还计划扩大公共机构网络安全评价范围，并增加组织和预算支持。",
+      "legal_analysis": "方案把公共部门网络安全从技术检查推进到行政组织责任和人事问责，把负责人监督义务与一线操作违规同时纳入责任链。对自动化行政和公共数据系统而言，这会提高管理层对安全资源配置、整改闭环和风险留痕的责任。",
+      "thinktank_topic": "韩国公共部门网络安全负责人问责机制及我国政务数据安全责任体系比较",
+      "paper_topic": "公共数字系统安全事故中的组织责任与行政人员问责",
+      "background": "韩国政府认为近期多起公共部门信息泄露和勒索软件事故与基础安全规则未落实有关，且过去纪律处理更多集中于实务人员。",
+      "outlook": "后续需观察纪律规则如何修改、网络安全评价范围扩大到约2000家公共机构的具体节奏，以及机构负责人责任是否与预算、人员配置等客观条件联动。"
+    },
+    {
+      "id": "my-ai-regulation-strengthening-2026-09-30",
+      "jurisdiction": "马来西亚",
+      "event_date": "2026-09-30",
+      "status": "kept",
+      "title": "马来西亚数字部长称将强化AI监管框架并建设专门执法体系",
+      "source_title": "Ramping up regulations on AI tech",
+      "source_url": "https://www.thestar.com.my/news/nation/2026/09/30/ramping-up-regulations-on-ai-tech",
+      "legal_status": "政府政策表态；AI Governance Bill草案已完成但尚未提交议会",
+      "new_fact": "马来西亚数字部长9月30日进一步说明，政府正在强化AI监管框架和专门执法机构建设，回应智能眼镜等新技术带来的隐私与网络安全问题。",
+      "dedup": "近7日简报未报道该9月30日政策表态；此前AI Governance Bill完成草案属于背景，本条仅收录最新监管实施方向。",
+      "fact_draft": "马来西亚数字部长Gobind Singh Deo 9月30日表示，政府正加强人工智能监管框架，并同步建设专门的执法机构和执行能力，以应对智能眼镜等新技术带来的隐私、网络安全和未经同意录制、上传内容等风险。马来西亚AI Governance Bill草案此前已完成，政府正在推进提交内阁及后续议会程序。",
+      "legal_analysis": "马来西亚的政策重点开始从AI伦理原则和立法草案转向‘规则由谁执行、如何执行’。在专门AI法尚未通过前，个人数据保护、网络安全、通信与在线安全规则仍共同承担过渡性治理功能。",
+      "thinktank_topic": "东南亚AI专门立法与执法机构建设趋势及中国企业区域合规影响",
+      "paper_topic": "AI专门法出台前的多法并用与监管机构能力建设",
+      "background": "马来西亚数字部今年已围绕AI Governance Bill开展公众咨询，并将AI Malaysia、国家AI行动计划和AI安全机构作为AI治理体系组成部分。",
+      "outlook": "后续关键节点是法案正式提交内阁和议会、执法机构的法定权限以及现有PDP、网络安全和在线安全监管如何与新AI法衔接。"
     }
   ],
   "coverage": [
@@ -382,6 +454,76 @@
         "PPC"
       ],
       "result": "10月1日修法配套规则第二批基本思路已保存"
+    },
+    {
+      "group": "United Kingdom",
+      "status": "checked",
+      "language": "en",
+      "checked": [
+        "Information Commission/ICO",
+        "Ofcom",
+        "GOV.UK/DVS search"
+      ],
+      "result": "ICO治理转换与Ofcom深度伪造治理期限2条入选；DVS机器可读登记测试候选未入选，避免降低重要性门槛"
+    },
+    {
+      "group": "Malaysia",
+      "status": "checked",
+      "language": "en",
+      "checked": [
+        "Ministry of Digital/AI Malaysia background",
+        "The Star current minister statement"
+      ],
+      "result": "AI监管框架与执法体系建设最新表态入选，明确法案尚未提交议会"
+    },
+    {
+      "group": "Korea local-language final",
+      "status": "checked",
+      "language": "ko",
+      "checked": [
+        "행정안전부",
+        "PIPC",
+        "방송미디어통신위원회"
+      ],
+      "result": "公共部门网络安全问责、英国同等性审查、透明性中心3条入选"
+    },
+    {
+      "group": "Vietnam",
+      "status": "checked",
+      "language": "vi",
+      "checked": [
+        "MIC/local-language search"
+      ],
+      "result": "未发现72小时内达到本栏门槛且可充分核验的新监管事项"
+    },
+    {
+      "group": "India",
+      "status": "checked",
+      "language": "en",
+      "checked": [
+        "MeitY/PIB"
+      ],
+      "result": "发现CAG-BHASHINI AI翻译系统上线，但以应用部署为主，未入选"
+    },
+    {
+      "group": "Canada",
+      "status": "checked",
+      "language": "en",
+      "checked": [
+        "OPC",
+        "Competition Bureau"
+      ],
+      "result": "未发现72小时内达到本栏门槛的新事项"
+    },
+    {
+      "group": "Brazil",
+      "status": "checked",
+      "language": "pt",
+      "checked": [
+        "ANPD",
+        "gov.br"
+      ],
+      "result": "未发现72小时内达到本栏门槛的新事项"
     }
   ],
   "recovery_observations": {
@@ -412,10 +554,10 @@
   },
   "last_error": null,
   "next_actions": [
-    "完成英国、马来西亚及韩国公共部门网络安全问责等终选，达到18—20条。",
-    "补记越南、印度、加拿大、巴西等巡视结果；无合格新增的如实记录。",
-    "对全部条目做来源、法律状态、外文原题、72小时时效和近7日事件级去重终检。",
-    "发布前重扫最近1—2小时，完成中文校对、正文生成、入口更新与Pages验收。"
+    "对19条候选逐条完成来源、法律状态、原题、时效和事件级去重终检。",
+    "发布前重新扫描最近1—2小时的重要官方公告、司法裁判、监管处罚和政策文件。",
+    "完成中文自然表达校对，生成当日新闻正文和brief-insight。",
+    "写入前重新读取最新main和所有目标文件，发布后检查对应Pages与当期桌面/移动端阅读。"
   ],
   "publication": {
     "status": "not_submitted",
