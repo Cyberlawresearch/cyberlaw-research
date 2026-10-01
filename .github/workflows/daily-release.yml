@@ -22,7 +22,7 @@ concurrency:
 
 jobs:
   safeguard:
-    if: github.repository == 'Cyberlawresearch/cyberlaw-research'
+    if: github.repository == 'Cyberlawresearch/cyberlaw-research' && (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
