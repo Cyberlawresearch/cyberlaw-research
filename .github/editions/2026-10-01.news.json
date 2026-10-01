@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-01",
+  "column": "brief",
+  "state": "draft",
+  "page": "articles/2026-10-01-tech-law-brief.html",
+  "news_count": 0,
+  "distribution": {
+    "domestic": 0,
+    "foreign": 0
+  },
+  "updated_at": "2026-10-01T20:12:12+08:00",
+  "base_main_sha": "a2f2afd502220bf6f3a87f86caaab5b53020338c",
+  "phase": "research",
+  "record_kind": "recovery_checkpoint",
+  "progress_status": "needs_research_recovery",
+  "checked_at": null,
+  "last_news_scan_at": null,
+  "checks": {
+    "sources": false,
+    "legal_status": false,
+    "original_titles": false,
+    "timeliness": false,
+    "previous_day_event_deduplication": false,
+    "seven_day_history_deduplication": false,
+    "local_language_scan_korea_japan_vietnam": false,
+    "prior_background_checked": false,
+    "natural_chinese_reviewed": false,
+    "background_outlook": false,
+    "foreign_layout": false
+  },
+  "items": [],
+  "coverage": [],
+  "recovery_observations": {
+    "observed_main_before_protocol_update": "e4ca32f1c4ad9187e4eef154648b3f3ae7d99b18",
+    "manifest_blob_sha": "2166ac20964308d5454407515b7bd5586f69c25f",
+    "current_brief_page": "articles/2026-09-29-tech-law-brief.html",
+    "current_brief_date": "2026-09-29",
+    "current_brief_count": 18,
+    "today_article_read": {
+      "action": "GitHub.fetch_file",
+      "ref": "main",
+      "path": "articles/2026-10-01-tech-law-brief.html",
+      "http_status": 404,
+      "message": "Not Found"
+    },
+    "today_record_read_before_creation": {
+      "action": "GitHub.fetch_file",
+      "ref": "main",
+      "path": ".github/editions/2026-10-01.news.json",
+      "http_status": 404,
+      "message": "Not Found"
+    },
+    "previous_write_error_code": null,
+    "previous_write_error_raw_message": null,
+    "previous_failure_cause": null,
+    "restored_research_items": 0,
+    "note": "本次维护未取得前一次运行的完整候选、来源核验记录和成稿。聊天中的完成声明不作为核验依据。404和缺少提交不能用于推定从未调用写入、安全拦截或资源耗尽。此记录仅保存实际查到的状态，不表示本期新闻已经完成。"
+  },
+  "last_error": null,
+  "next_actions": [
+    "重新读取最新main、现行规范、当天记录和正文状态，确认没有其他执行者完成本期。",
+    "恢复能够查到原始来源的候选，缺少依据的重新研究；对照前一日完整简报并回查近7日。",
+    "每完成一组来源巡视或3—5条候选核验及写作，更新items、coverage、phase及next_actions并回读确认。",
+    "完成18—20条合格新闻、背景与前瞻及中文校对；发布前重新校验72小时时效并复扫最近1—2小时。",
+    "核验后独立发布新闻相关文件，保留其他三栏，并核对对应提交的Pages及部署前后验收。"
+  ],
+  "publication": {
+    "status": "not_submitted",
+    "article_commit_sha": null,
+    "release_commit_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "preflight_passed": null,
+    "deployed_current_columns_passed": null,
+    "deployed_desktop_passed": null,
+    "deployed_mobile_passed": null
+  }
+}
