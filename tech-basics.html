@@ -15,9 +15,9 @@
 <div class="tech-shell">
   <section>
     <div class="latest-lesson">
-      <div class="lesson-no">16</div>
-      <div><div class="tech-kicker">LATEST LESSON · 2026.09.30</div><h2>SFT：为什么通用模型还要再用“示范答案”训练一次？</h2><p>理解监督微调怎样用“输入—参考回答”示范继续训练预训练模型，使其更稳定地按指令回答。</p></div>
-      <a href="tech-basics/2026-09-30-sft.html">阅读最新一课 →</a>
+      <div class="lesson-no">17</div>
+      <div><div class="tech-kicker">LATEST LESSON · 2026.10.01</div><h2>RLHF / DPO：模型怎样从“哪一个回答更好”中学习？</h2><p>理解回答偏好怎样通过奖励模型或直接偏好优化变成参数更新，以及评价规则和标注记录为何影响责任判断。</p></div>
+      <a href="tech-basics/2026-10-01-rlhf-dpo.html">阅读最新一课 →</a>
     </div>
   </section>
 
@@ -30,7 +30,7 @@
     <div class="course-map-frame">
       <svg class="course-map-svg" viewBox="0 0 1200 680" role="img" aria-labelledby="course-map-title course-map-desc">
         <title id="course-map-title">网信法技术基础八模块课程导图</title>
-        <desc id="course-map-desc">八个模块分四个阶段推进，第二模块 Transformer 已完成，第三模块模型训练与对齐正在推进，第16课为 SFT。</desc>
+        <desc id="course-map-desc">八个模块分四个阶段推进，第二模块 Transformer 已完成，第三模块模型训练与对齐正在推进，第17课为 RLHF / DPO，本模块已完成3课。</desc>
         <path class="map-line" d="M275 340 H315 M585 340 H625 M895 340 H935"/>
         <path class="map-line" d="M295 330 l20 10 -20 10 M605 330 l20 10 -20 10 M915 330 l20 10 -20 10"/>
 
@@ -78,13 +78,14 @@
         <text class="map-module-text" x="990" y="417"><tspan x="990">可解释 · 可审计 · 责任链</tspan><tspan x="990" dy="22">数据出境 · 平台化</tspan><tspan x="990" dy="22">互操作 · 行政使用</tspan><tspan x="990" dy="22">持续监管</tspan></text>
       </svg>
     </div>
-    <p class="course-map-note">当前进度：第16课，进入“模型训练与对齐”模块。已经讲清数据集与 SFT，下一课进入 RLHF / DPO，理解偏好数据怎样继续改变模型行为。</p>
+    <p class="course-map-note">当前进度：第17课，正在推进“模型训练与对齐”模块，本模块已完成3课。已经讲清数据集、SFT 与 RLHF / DPO，下一课进入合成数据，理解模型生成的内容怎样成为训练材料。</p>
     <div class="logic-summary"><strong>最终目标不是背术语，而是能沿技术链条追责任。</strong><p>面对一个AI法律问题时，能够具体追问：数据在哪一步被转换？模型在哪一步计算？谁给了系统权限？是否连接外部服务？风险来自模型、工具调用还是基础设施？</p></div>
   </section>
 
   <section class="lesson-section tech-history">
     <div class="tech-history-head"><h2>历史课程</h2><span>按课程顺序持续更新</span></div>
     <div class="tech-history-list">
+      <a class="tech-history-item" href="tech-basics/2026-10-01-rlhf-dpo.html"><div class="tech-history-no">17</div><div><div class="tech-history-title">RLHF / DPO：模型怎样从“哪一个回答更好”中学习？</div><div class="tech-history-desc">理解同一问题下的回答偏好怎样用于训练，比较奖励模型和直接偏好优化两条路径，并追溯评价规则、标注记录和模型行为之间的联系。</div></div><div class="tech-history-date">2026.10.01</div></a>
       <a class="tech-history-item" href="tech-basics/2026-09-30-sft.html"><div class="tech-history-no">16</div><div><div class="tech-history-title">SFT：为什么通用模型还要再用“示范答案”训练一次？</div><div class="tech-history-desc">理解监督微调怎样把人工示范变成参数更新，以及示范规则、SFT 数据集、训练配置和行为评测为什么构成一条可审计的治理链。</div></div><div class="tech-history-date">2026.09.30</div></a>
       <a class="tech-history-item" href="tech-basics/2026-09-29-dataset.html"><div class="tech-history-no">15</div><div><div class="tech-history-title">数据集：模型训练时的数据到底是什么样的？</div><div class="tech-history-desc">理解原始来源怎样经过筛选、清洗、去重和用途划分形成有效训练数据集，以及为什么数据来源、数据集版本和训练记录应当分层审计。</div></div><div class="tech-history-date">2026.09.29</div></a>
       <a class="tech-history-item" href="tech-basics/2026-09-28-decoder-only.html"><div class="tech-history-no">14</div><div><div class="tech-history-title">Decoder-only：为什么很多生成式大模型只用一套“解码器式”结构？</div><div class="tech-history-desc">理解不设独立 Encoder 的生成式架构怎样根据已有上下文逐步预测下一个 Token，以及完整有效上下文为什么是重要审计事实。</div></div><div class="tech-history-date">2026.09.28</div></a>

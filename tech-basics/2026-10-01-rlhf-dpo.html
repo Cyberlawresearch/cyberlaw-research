@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>第17课｜RLHF / DPO：模型怎样从“哪一个回答更好”中学习？｜网信法技术基础</title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+  <link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-09-29-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-09-30-wu-network-neutrality.html">域外法学论文精读</a><a href="../articles/2026-09-30-nonet-selznick-responsive-law.html">法学经典著作</a><a href="../articles/2026-09-30-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 17 · TRAINING &amp; ALIGNMENT · 2026.10.01</div><h1>RLHF / DPO：模型怎样从“哪一个回答更好”中学习？</h1><p class="tech-lead">今日问题：不提供唯一的示范答案，只指出两个回答中更喜欢哪一个，怎样改变模型？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus">
+<div><strong>先讲清它们是什么</strong><p>RLHF（基于人类反馈的强化学习）用人的评价形成奖励信号，再据此训练模型。DPO（直接偏好优化）则直接用“更偏好哪个回答”的成对数据调整模型参数。二者都能把回答偏好变成训练目标，但实现路径不同。<sup><a href="#source-1" aria-label="来源1">[1]</a><a href="#source-2" aria-label="来源2">[2]</a></sup></p></div>
+<div><strong>一个直观例子</strong><p>请把“会议改到明天下午三点，地点仍在二楼”写成简短通知。回答A是“会议有调整，请注意”，回答B是“明天下午三点，二楼开会”。按“简短且保留时间地点”的标准，人会选B。这次选择就是一条偏好记录。</p></div>
+</section>
+<section class="lesson-section">
+<h2>同一条偏好怎样走两条训练路径</h2>
+<div class="visual-board" role="group" aria-label="RLHF与DPO机制对照：共同使用问题、两个回答和偏好标记，分别经过奖励模型或直接计算偏好损失来更新回答模型">
+<div class="visual-title">共同起点：问题＋回答A＋回答B＋“更偏好B”的标记</div>
+<h3>典型 RLHF 路径</h3>
+<div class="flow">
+<div class="flow-box"><strong>人比较回答</strong><span>积累许多成对偏好</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>训练奖励模型</strong><span>学着预测人会偏好谁</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>为新回答评分</strong><span>回答模型生成，奖励模型打分</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>更新回答模型</strong><span>依据奖励反复调整参数</span></div>
+</div>
+<h3>原始 DPO 路径</h3>
+<div class="flow">
+<div class="flow-box"><strong>读取成对偏好</strong><span>同时使用被选和未选回答</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>比较生成倾向</strong><span>对照当前模型与参考模型</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>计算偏好损失</strong><span>衡量与偏好标记的差距</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>更新回答模型</strong><span>让被选回答取得相对优势</span></div>
+</div>
+<p class="tiny-note">上图是典型 RLHF 与原始 DPO 的机制简化，不是所有实现的固定流程。两条路径都考虑限制模型偏离原有行为的程度。<sup><a href="#source-2" aria-label="来源2">[2]</a></sup></p>
+</div>
+<p>RLHF 路径中的“奖励模型”，是专门给回答评分的模型。它先从人的比较中学习，再为回答模型生成的新文本评分。回答模型通过反复生成、获得奖励和更新参数，学习产生更符合评价要求的回答。“强化学习”在这里就是依据奖励改进生成行为。<sup><a href="#source-3" aria-label="来源3">[3]</a></sup></p>
+<p>DPO 省去单独训练奖励模型的步骤。它读取同一问题下被选和未选的回答，比较模型对二者的生成倾向，并以参考模型为基准计算训练损失。“参考模型”在原始方案中是保留不变的基准模型，通常来自训练起点，用来约束变化幅度。更新针对的是相对优势，不保证被选回答的绝对生成概率每次都上升。<sup><a href="#source-2" aria-label="来源2">[2]</a><a href="#source-4" aria-label="来源4">[4]</a></sup></p>
+<p>上一课讲的 SFT 主要学习示范怎样作答。本课的方法进一步利用回答之间的比较，影响详略、措辞或拒答倾向。偏好记录必须连同问题理解：上例B的优势来自保留关键信息，不能概括成“越短越好”。</p>
+</section>
+<section class="lesson-section">
+<h2>三个常见误解</h2>
+<div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“人类反馈意味着上线后有人逐条审答案。”上述流程主要是在训练阶段利用评价，不等于人工实时值守。</span></div>
+<div class="myth"><b>误解 02</b><span>“DPO就是只拿好答案做SFT。”DPO同时利用成对回答的偏好关系，原始目标还包含参考模型这一基准。<sup><a href="#source-4" aria-label="来源4">[4]</a></sup></span></div>
+<div class="myth"><b>误解 03</b><span>“偏好训练完成，回答就必然真实。”评价标准和评价者都有局限，模型仍可能答错，训练结果需要独立测试。<sup><a href="#source-1" aria-label="来源1">[1]</a></sup></span></div>
+</div>
+</section>
+<section class="lesson-section">
+<h2>法治连接</h2>
+<div class="law-bridge">
+<h3>评价标准怎样进入模型行为</h3>
+<p>OpenAI对InstructGPT的研究说明，标注者的选择及研究者给出的指导会影响训练结果，不能据此推定模型代表更广泛人群的偏好。<sup><a href="#source-3" aria-label="来源3">[3]</a></sup></p>
+<p>分析回答风险时，因而需要区分谁制定评价规则、谁标注偏好、谁选择训练方法，以及谁测试并部署模型。标注说明、分歧处理记录、偏好数据版本和训练前后测试，可以帮助追溯行为变化。单有“采用RLHF”或“采用DPO”的声明，不足以判断具体控制能力及责任。</p>
+</div>
+</section>
+<section class="lesson-section">
+<h2>两个可发展的研究问题</h2>
+<div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>偏好标注规则能否成为模型责任的认定证据</h3><p>研究评价规则、标注分歧及版本测试，怎样支持对行为影响和注意义务的具体证明。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>公共服务模型偏好训练的审计记录</h3><p>研究如何记录评价标准及分歧，检验训练是否把“回答讨喜”误当成事实准确。</p></div>
+</div>
+</section>
+<section class="lesson-section">
+<h2>原始材料</h2>
+<ol class="source-links">
+<li id="source-1"><a href="https://arxiv.org/abs/2203.02155">Ouyang et al. (2022), Training language models to follow instructions with human feedback</a>。人类比较反馈的训练流程及模型局限。</li>
+<li id="source-2"><a href="https://arxiv.org/html/2305.18290v2">Rafailov et al. (2023), Direct Preference Optimization: Your Language Model is Secretly a Reward Model</a>。第3—4节对照两条路径及参考模型的作用。</li>
+<li id="source-3"><a href="https://openai.com/index/instruction-following/">OpenAI (2022), Aligning language models to follow instructions</a>。奖励模型、标注指导和偏好代表性。</li>
+<li id="source-4"><a href="https://huggingface.co/docs/trl/en/dpo_trainer">Hugging Face TRL：DPO Trainer</a>。成对数据、相对生成倾向及参考模型的实现说明。</li>
+</ol>
+</section>
+<section class="next-lesson"><div><small>后续课程预告 · 第18课</small><p><b>合成数据：模型生成的内容怎样成为训练材料。</b>今天先理解为借助程序或模型生成、再用于训练的数据，不需要现在掌握，后面会专门讲。</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div>
+</main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body>
+</html>
