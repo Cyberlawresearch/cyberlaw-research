@@ -1,17 +1,17 @@
 {
-  "date": "2026-09-30",
+  "date": "2026-10-01",
   "pages": {
-    "brief": "articles/2026-09-29-tech-law-brief.html",
+    "brief": "articles/2026-10-01-tech-law-brief.html",
     "paper": "articles/2026-09-30-wu-network-neutrality.html",
     "classic": "articles/2026-09-30-nonet-selznick-responsive-law.html",
     "newworks": "articles/2026-09-30-new-works.html"
   },
   "page_dates": {
-    "brief": "2026-09-29",
+    "brief": "2026-10-01",
     "paper": "2026-09-30",
     "classic": "2026-09-30",
     "newworks": "2026-09-30"
   },
-  "news_count": 18,
+  "news_count": 20,
   "newworks_count": 5
 }
