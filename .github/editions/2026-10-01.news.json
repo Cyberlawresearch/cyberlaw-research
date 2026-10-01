@@ -8,11 +8,11 @@
     "domestic": 7,
     "foreign": 13
   },
-  "updated_at": "2026-10-01T20:56:00+08:00",
+  "updated_at": "2026-10-01T21:08:00+08:00",
   "base_main_sha": "a2f2afd502220bf6f3a87f86caaab5b53020338c",
-  "phase": "publishing",
+  "phase": "completed",
   "record_kind": "recovery_checkpoint",
-  "progress_status": "content_verified",
+  "progress_status": "published_and_verified",
   "checked_at": "2026-10-01T21:02:00+08:00",
   "last_news_scan_at": "2026-10-01T20:56:00+08:00",
   "checks": {
@@ -658,19 +658,16 @@
     "note": "本次维护未取得前一次运行的完整候选、来源核验记录和成稿。聊天中的完成声明不作为核验依据。404和缺少提交不能用于推定从未调用写入、安全拦截或资源耗尽。此记录仅保存实际查到的状态，不表示本期新闻已经完成。"
   },
   "last_error": null,
-  "next_actions": [
-    "切换current-edition新闻指针并核对首页/briefs/archive。",
-    "等待并检查与最终发布提交对应的GitHub Pages运行及部署前后验收。"
-  ],
+  "next_actions": [],
   "publication": {
-    "status": "content_submitted",
+    "status": "published",
     "article_commit_sha": "e48825bc7df213becd71ae5d9a28d6ca70bee9e7",
-    "release_commit_sha": null,
-    "pages_run_id": null,
-    "pages_conclusion": null,
-    "preflight_passed": null,
-    "deployed_current_columns_passed": null,
-    "deployed_desktop_passed": null,
-    "deployed_mobile_passed": null
+    "release_commit_sha": "7cf2c06eb4dbc2fc0ee4ec908b9d947b14194d77",
+    "pages_run_id": 36864030972,
+    "pages_conclusion": "success",
+    "preflight_passed": true,
+    "deployed_current_columns_passed": true,
+    "deployed_desktop_passed": true,
+    "deployed_mobile_passed": true
   }
 }
