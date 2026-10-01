@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: dd43aa50e7f2c207af20c21d35c8e4a4da9ee53a
+          ref: 0ccd08502bfab991d6ae203728ac0b57b6d38290
       - name: Install disposable browser
         run: |
           node --check assets/citation-refine.js
@@ -32,7 +32,7 @@ jobs:
           m=json.loads(Path('data/current-edition.json').read_text())
           review=json.loads(Path('.github/editions/2026-09-30.academic.json').read_text())
           out=Path('/tmp/academic-live')
-          result={'commit':'dd43aa50e7f2c207af20c21d35c8e4a4da9ee53a','base':base,'http':[],'browser':[]}
+          result={'commit':'0ccd08502bfab991d6ae203728ac0b57b6d38290','base':base,'http':[],'browser':[]}
           def get(path):
               with urlopen(Request(urljoin(base,path)+'?academic-check='+str(time.time_ns()),headers={'User-Agent':'cyberlaw-academic-acceptance'}),timeout=25) as r:
                   assert r.status==200,(path,r.status)
@@ -130,6 +130,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: academic-live-dd43aa50
+          name: academic-live-0ccd0850
           path: /tmp/academic-live
           retention-days: 7
