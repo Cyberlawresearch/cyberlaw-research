@@ -3,16 +3,16 @@
   "column": "brief",
   "state": "draft",
   "page": "articles/2026-10-01-tech-law-brief.html",
-  "news_count": 19,
+  "news_count": 20,
   "distribution": {
     "domestic": 6,
-    "foreign": 13
+    "foreign": 14
   },
-  "updated_at": "2026-10-01T20:47:00+08:00",
+  "updated_at": "2026-10-01T20:52:00+08:00",
   "base_main_sha": "a2f2afd502220bf6f3a87f86caaab5b53020338c",
-  "phase": "research",
+  "phase": "final_review",
   "record_kind": "recovery_checkpoint",
-  "progress_status": "partial_research_saved",
+  "progress_status": "candidate_set_complete",
   "checked_at": null,
   "last_news_scan_at": null,
   "checks": {
@@ -372,6 +372,24 @@
       "paper_topic": "AI专门法出台前的多法并用与监管机构能力建设",
       "background": "马来西亚数字部今年已围绕AI Governance Bill开展公众咨询，并将AI Malaysia、国家AI行动计划和AI安全机构作为AI治理体系组成部分。",
       "outlook": "后续关键节点是法案正式提交内阁和议会、执法机构的法定权限以及现有PDP、网络安全和在线安全监管如何与新AI法衔接。"
+    },
+    {
+      "id": "us-white-house-frontier-responsibilities-2026-09-29",
+      "jurisdiction": "美国",
+      "event_date": "2026-09-29",
+      "status": "kept",
+      "title": "美国白宫与六家AI企业签署自愿前沿安全承诺",
+      "source_title": "What’s inside Silicon Valley’s AI ‘self-regulation’ agreement with Donald Trump?",
+      "source_url": "https://www.ft.com/content/f52f7b0e-be7d-414c-b19d-d78a3a5f4882",
+      "legal_status": "政府与企业自愿承诺，不具有法规或行政命令的强制效力",
+      "new_fact": "Anthropic、OpenAI、Google、Meta、xAI和Nvidia签署Joint Commitment on Frontier Responsibilities，约定内部能力与风险控制、独立内部监督、外部审计/评估和董事会独立监督四层安排。",
+      "dedup": "近7日已发布新闻未收录该承诺；与FTC 9月30日行业调查属于不同法律机制，本期并列呈现自律与执法两条路径。",
+      "fact_draft": "美国白宫与Anthropic、OpenAI、Google、Meta、xAI和Nvidia于9月29日签署“前沿责任联合承诺”（Joint Commitment on Frontier Responsibilities）。六家公司承诺为前沿模型建立四层安全控制，包括内部能力与风险监测、专门内部监督团队、独立外部审计或评估，以及董事会层面的独立监督。该文件属于自愿承诺，本身未设定法定处罚或强制执行机制。",
+      "legal_analysis": "该承诺把前沿AI安全治理集中到企业内部控制、第三方评估和董事会监督，但没有替代现行消费者保护、竞争和网络安全法律。其法律影响更可能通过企业公开承诺、董事监督义务及监管机关后续引用这些承诺形成，而不是来自文件本身的直接强制力。",
+      "thinktank_topic": "美国前沿AI企业自律承诺与行政执法并行治理模式及对国际AI安全规则竞争的影响",
+      "paper_topic": "前沿AI自愿安全承诺的规范效力与公私协同治理边界",
+      "background": "美国联邦层面的AI治理长期并存行业自愿承诺、行政机关执法和州级立法等多种工具。此次文件在近期智能体安全事件后集中提出四层企业治理安排。",
+      "outlook": "后续需观察这些承诺是否形成公开可验证的审计标准、企业之间是否建立共同基准，以及FTC等监管机关在执法中如何评价企业未履行公开安全承诺的情形。"
     }
   ],
   "coverage": [
@@ -524,6 +542,64 @@
         "gov.br"
       ],
       "result": "未发现72小时内达到本栏门槛的新事项"
+    },
+    {
+      "group": "Global major media final sweep",
+      "status": "checked",
+      "language": "en",
+      "checked": [
+        "Reuters",
+        "AP",
+        "Financial Times",
+        "Bloomberg"
+      ],
+      "result": "AP与FT交叉核验FTC调查及白宫前沿AI承诺；Bloomberg近72小时结果未发现优先级高于当前候选的新监管事项"
+    },
+    {
+      "group": "EU institutions final sweep",
+      "status": "checked",
+      "language": "en",
+      "checked": [
+        "European Commission/AI Office",
+        "EDPB",
+        "EDPS"
+      ],
+      "result": "最终窗口未发现需替换当前候选的新增正式监管事项"
+    },
+    {
+      "group": "US federal institutions final sweep",
+      "status": "checked",
+      "language": "en",
+      "checked": [
+        "FTC",
+        "DOJ",
+        "SEC",
+        "NIST",
+        "CISA",
+        "FCC"
+      ],
+      "result": "FTC调查为本期主要新增；其余最终窗口未发现更高优先级事项"
+    },
+    {
+      "group": "China mandatory central sources final sweep",
+      "status": "checked",
+      "language": "zh-CN",
+      "checked": [
+        "中国政府网",
+        "中央网信办",
+        "国家发展改革委",
+        "工业和信息化部",
+        "商务部",
+        "国家数据局",
+        "市场监管总局",
+        "金融监管总局",
+        "人民银行",
+        "国家卫生健康委",
+        "国家药监局",
+        "最高人民法院",
+        "最高人民检察院"
+      ],
+      "result": "最终窗口保留公安监督检查办法、网信办专项、金融网络营销办法及两起AI人格权益裁判等高价值事项；未用一般产业资讯补数"
     }
   ],
   "recovery_observations": {
@@ -554,10 +630,10 @@
   },
   "last_error": null,
   "next_actions": [
-    "对19条候选逐条完成来源、法律状态、原题、时效和事件级去重终检。",
-    "发布前重新扫描最近1—2小时的重要官方公告、司法裁判、监管处罚和政策文件。",
-    "完成中文自然表达校对，生成当日新闻正文和brief-insight。",
-    "写入前重新读取最新main和所有目标文件，发布后检查对应Pages与当期桌面/移动端阅读。"
+    "逐条核对20条候选的来源、法律状态、原题、72小时时效和近7日事件级去重。",
+    "完成中文终校和页面结构生成。",
+    "发布前执行最后1—2小时窗口复扫；如无更高价值新增则锁定20条。",
+    "写入新闻正文、首页/briefs/archive、current-edition与verified记录，并核对对应Pages部署。"
   ],
   "publication": {
     "status": "not_submitted",
