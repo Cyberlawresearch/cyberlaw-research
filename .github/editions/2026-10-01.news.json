@@ -3,12 +3,12 @@
   "column": "brief",
   "state": "draft",
   "page": "articles/2026-10-01-tech-law-brief.html",
-  "news_count": 5,
+  "news_count": 10,
   "distribution": {
     "domestic": 4,
-    "foreign": 1
+    "foreign": 6
   },
-  "updated_at": "2026-10-01T20:24:00+08:00",
+  "updated_at": "2026-10-01T20:31:00+08:00",
   "base_main_sha": "a2f2afd502220bf6f3a87f86caaab5b53020338c",
   "phase": "research",
   "record_kind": "recovery_checkpoint",
@@ -119,6 +119,96 @@
       "paper_topic": "通用消费者保护法对AI智能体风险的规制边界",
       "background": "近月多起智能体越权访问和自动执行事件引发监管关注，企业也陆续加强模型上线前安全评测和权限控制。",
       "outlook": "后续需要观察FTC是否发出强制信息要求、形成行业报告或针对个别企业启动执法，以及‘失控智能体’是否被纳入欺骗性或不公平商业行为分析。"
+    },
+    {
+      "id": "au-oaic-automated-decision-transparency-2026-09-30",
+      "jurisdiction": "澳大利亚",
+      "event_date": "2026-09-30",
+      "status": "kept",
+      "title": "澳大利亚OAIC发布自动化决策透明义务合规资源",
+      "source_title": "New resources on transparency for use of AI and automated decision-making",
+      "source_url": "https://www.oaic.gov.au/news/media-centre/new-resources-on-transparency-for-use-of-ai-and-automated-decision-making",
+      "legal_status": "监管合规指引；法定义务将于2026-12-10生效",
+      "new_fact": "OAIC 9月30日发布事实清单、政府机构补充材料和流程图，帮助机构落实APP 1.7—1.9自动化决策透明义务。",
+      "dedup": "近7日简报未见该9月30日合规资源发布。",
+      "fact_draft": "澳大利亚信息专员办公室9月30日发布一组面向AI和自动化决策的透明度合规资源。自12月10日起，受《隐私法》约束的机构如果安排计算机程序作出或实质参与作出可能显著影响个人权利或利益的决定，并在程序中使用个人信息，需在隐私政策中说明所使用的个人信息种类以及相关决定类型。",
+      "legal_analysis": "透明义务把自动化决策治理从高层原则落到隐私政策这一持续公开文件，并以‘显著影响权利或利益’而非技术类型作为触发条件。企业需要先识别业务决策链，再判断程序在决定形成中的实际作用。",
+      "thinktank_topic": "自动化行政与商业决策透明义务的域外制度演进及我国规则储备",
+      "paper_topic": "自动化决策透明义务的触发标准与程序性权利",
+      "background": "该义务由2024年隐私法修法引入APP 1，OAIC此前已就商业AI产品的隐私风险、准确性和人工监督发布指导。",
+      "outlook": "12月生效后，后续需观察OAIC如何解释‘显著影响’和‘实质且直接相关’，以及隐私政策披露是否与个案解释权、自动化决策救济形成衔接。"
+    },
+    {
+      "id": "us-third-circuit-tr-ross-ai-fair-use-2026-09-30",
+      "jurisdiction": "美国",
+      "event_date": "2026-09-30",
+      "status": "kept",
+      "title": "美国第三巡回法院公布Thomson Reuters诉Ross案AI合理使用判决理由",
+      "source_title": "Thomson Reuters Enterprise Centre GmbH v. Ross Intelligence Inc., No. 25-2153",
+      "source_url": "https://www2.ca3.uscourts.gov/opinarch/252153p.pdf",
+      "legal_status": "联邦上诉法院先例性判决",
+      "new_fact": "第三巡回法院9月30日公开先例性意见，维持Ross合理使用抗辩失败及Westlaw headnotes受版权保护的判断。",
+      "dedup": "近7日简报未报道该上诉判决；属于新的联邦上诉法院裁判。",
+      "fact_draft": "美国第三巡回上诉法院9月30日公布Thomson Reuters诉Ross Intelligence案先例性意见。法院维持下级法院结论，认定Ross为开发法律检索工具使用Westlaw编辑性headnotes不构成合理使用，并确认相关headnotes达到版权保护所需原创性门槛。法院同时强调，Ross使用的是非生成式AI，本案结论不直接回答生成式AI训练案件中的全部问题。",
+      "legal_analysis": "判决首次在联邦上诉层面对AI开发中的合理使用作出系统判断，核心仍围绕使用目的、市场替代和原作品性质，而不是把‘AI训练’作为独立免责事由。其对生成式AI案件的可迁移程度将取决于训练用途、输出形态和许可市场证据。",
+      "thinktank_topic": "美国AI训练版权上诉判决对我国模型训练数据规则与企业出海的影响",
+      "paper_topic": "AI训练合理使用判断中的市场替代与转化性标准",
+      "background": "案件源于Ross使用由Westlaw headnotes衍生的数据开发法律检索系统。地方法院此前在部分问题上作出有利于Thomson Reuters的判决。",
+      "outlook": "后续其他巡回法院在生成式AI案件中的裁判可能形成差异，最高法院是否介入以及训练数据许可市场证据如何被评价，将决定本案影响边界。"
+    },
+    {
+      "id": "eu-google-dma-interim-suspension-2026-09-30",
+      "jurisdiction": "欧盟",
+      "event_date": "2026-09-30",
+      "status": "kept",
+      "title": "新增进展：Google申请暂停欧盟DMA搜索数据开放命令",
+      "source_title": "Google asks EU court to suspend order to open up to AI chatbots, search engine rivals",
+      "source_url": "https://www.reuters.com/business/google-asks-eu-court-suspend-order-open-up-ai-chatbots-search-engine-rivals-2026-09-30/",
+      "legal_status": "欧盟普通法院临时措施申请",
+      "new_fact": "继9月29日提起撤销诉讼后，Google 9月30日进一步申请暂停执行要求其向AI聊天机器人和搜索竞争者开放匿名化搜索数据的DMA命令。",
+      "dedup": "9月29日简报已报道撤销诉讼；本条只收录9月30日新增的临时停止执行申请并明确为新增进展。",
+      "fact_draft": "Google在对欧盟委员会两项DMA约束提起诉讼后，9月30日进一步请求欧盟普通法院暂停其中搜索数据共享命令的执行。该命令要求Google向符合条件的搜索服务提供匿名化的排名、查询、点击和浏览数据，AI聊天机器人如提供搜索功能也可成为受益者。Google主张立即执行可能对欧洲用户隐私造成严重损害。",
+      "legal_analysis": "争议从DMA义务是否合法推进到执行期间风险如何分配。法院是否给予临时救济，将直接检验竞争开放义务与数据保护风险之间的紧急性衡量，也会影响AI搜索竞争者能否按期取得关键训练和检索数据。",
+      "thinktank_topic": "欧盟强制数据开放与隐私保护冲突对我国平台互操作规则的启示",
+      "paper_topic": "数字市场强制数据共享中的临时救济与风险平衡",
+      "background": "欧委会7月16日依据DMA第6(11)条作出有约束力的搜索数据共享措施，并设置从2026年8月至2027年1月的分阶段实施期限。",
+      "outlook": "后续需观察普通法院是否暂停执行、是否要求Google继续完成部分技术准备，以及数据匿名化标准会否成为实体诉讼的核心争点。"
+    },
+    {
+      "id": "us-new-york-rent-algorithm-ban-injunction-2026-09-30",
+      "jurisdiction": "美国",
+      "event_date": "2026-09-30",
+      "status": "kept",
+      "title": "美国联邦法官初步禁止纽约执行房租算法定价禁令",
+      "source_title": "Judge blocks New York rent-setting software ban",
+      "source_url": "https://www.reuters.com/legal/government/judge-blocks-new-york-rent-setting-software-ban-2026-09-30/",
+      "legal_status": "联邦地区法院初步禁令",
+      "new_fact": "纽约南区联邦法院9月30日对纽约州禁止房东使用算法定价软件设定租金的法律发布初步禁令。",
+      "dedup": "近7日简报未报道该裁判；与RealPage既有反垄断争议属于同一行业背景但本次为纽约州法执行的新司法节点。",
+      "fact_draft": "美国纽约南区联邦地区法院9月30日发布初步禁令，暂时阻止纽约州执行针对房东算法定价软件的新禁令。RealPage主张州法限制其向房东提供价格建议，侵犯第一修正案保护；法官认为其胜诉可能性达到签发临时救济的标准，同时称案件判断接近。",
+      "legal_analysis": "案件把算法定价规制从竞争法责任推进到对软件建议本身能否直接禁止的宪法审查。监管者若无法把‘算法工具’与具体的信息交换、协同行为或反竞争效果准确区分，全面禁令更容易遭遇比例性和表达自由挑战。",
+      "thinktank_topic": "算法协同定价监管的制度工具选择及美国司法审查趋势",
+      "paper_topic": "算法价格建议的表达属性与竞争规制边界",
+      "background": "RealPage租金算法长期受到美国联邦和州反垄断执法关注，司法部此前已通过和解限制其使用竞争者非公开数据。",
+      "outlook": "后续实体审理将决定纽约能否重新设计更窄的规则，也可能影响其他州和城市针对租金算法、动态定价工具的立法方式。"
+    },
+    {
+      "id": "sg-bee-cheng-hiang-ai-data-breach-2026-09-30",
+      "jurisdiction": "新加坡",
+      "event_date": "2026-09-30",
+      "status": "kept",
+      "title": "新加坡披露首起向PDPC报告的AI相关数据泄露事件",
+      "source_title": "Bee Cheng Hiang customers’ e-mail addresses exposed in first case of AI-related data breach in S’pore",
+      "source_url": "https://www.straitstimes.com/tech/bad-ai-prompt-exposes-bee-cheng-hiang-customers-e-mail-addresses-in-first-case-of-ai-related-data",
+      "legal_status": "数据泄露通报与监管调查披露",
+      "new_fact": "PDPC 9月30日向媒体确认，美珍香事件是新加坡首起向监管机构报告的AI相关数据泄露，95,364个客户邮箱地址因AI辅助生成群发代码错误而暴露。",
+      "dedup": "近7日简报未报道该事件；事故发生于4月，但监管机构首次确认其AI相关性质的公开披露发生在9月30日。",
+      "fact_draft": "新加坡个人数据保护委员会9月30日确认，美珍香今年4月发生的邮件泄露是新加坡首起向PDPC报告的AI相关数据泄露。员工使用AI工具生成群发营销邮件代码时提示和代码处理不当，导致95,364名客户的邮箱地址对全部收件人可见。公司在事件发生两天后向PDPC通报。",
+      "legal_analysis": "事件说明AI使用风险并不只来自模型训练或模型输出，也可能出现在AI生成代码被直接投入业务流程的环节。数据保护责任仍落在部署企业，AI辅助开发需要代码审查、测试环境、最小化数据暴露和上线审批等控制。",
+      "thinktank_topic": "生成式AI辅助编程引发数据泄露的企业治理与监管工具",
+      "paper_topic": "AI生成代码的数据安全责任与组织注意义务",
+      "background": "新加坡PDPA要求组织采取合理安全安排并对达到门槛的数据泄露履行通知义务；PDPC近年来也持续加强生成式AI数据使用透明度要求。",
+      "outlook": "后续监管决定是否认定企业安全措施不足，以及是否形成AI辅助编程的专门合规指引，将影响企业内部AI工具的开发与上线控制标准。"
     }
   ],
   "coverage": [
@@ -153,6 +243,26 @@
         "2026-09-24"
       ],
       "result": "已读取近7日实际存在的4期完整新闻标题用于事件级去重"
+    },
+    {
+      "group": "Australia/Singapore",
+      "status": "partial",
+      "checked": [
+        "OAIC",
+        "PDPC/Straits Times"
+      ],
+      "result": "自动化决策透明义务与首起AI相关数据泄露已保存；ACCC/IMDA继续巡视"
+    },
+    {
+      "group": "EU/US courts",
+      "status": "partial",
+      "checked": [
+        "European Commission DMA materials",
+        "EU General Court proceeding via Reuters",
+        "US Third Circuit",
+        "NY federal court via Reuters"
+      ],
+      "result": "3条新司法/程序进展已保存"
     }
   ],
   "recovery_observations": {
@@ -183,11 +293,10 @@
   },
   "last_error": null,
   "next_actions": [
-    "继续完成国内中央部门与主要数字经济地区巡视，国内争取6—9条。",
-    "完成欧盟、英国、日韩、越南、新加坡、澳大利亚、加拿大、印度、巴西及美国其他机构巡视。",
-    "每累计3—5条合格候选再次保存并回读。",
-    "达到18—20条后做全文中文校对、背景与前瞻、关联阅读/时间线检查和发布前1—2小时复扫。",
-    "发布新闻相关文件并核对对应Pages部署与当期桌面/移动端验收。"
+    "继续完成国内部门巡视，争取新增2—4条国内高价值事项。",
+    "继续完成英国、日韩、越南、加拿大、印度、巴西、美国其他监管机构及主要媒体巡视。",
+    "再保存至少两批候选，达到18—20条。",
+    "完成终检、发布前复扫、中文校对与页面发布验收。"
   ],
   "publication": {
     "status": "not_submitted",
