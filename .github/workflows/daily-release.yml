@@ -36,9 +36,12 @@ jobs:
       - name: Install structural validator
         run: python -m pip install beautifulsoup4==4.13.4
       - name: Validate independently published columns
+        shell: bash
         run: |
+          set -euo pipefail
           mkdir -p "$RUNNER_TEMP/release-check"
-          python scripts/current_columns_gate.py | tee "$RUNNER_TEMP/release-check/results.txt"
+          # Match Pages preparation in this disposable checkout; never commit HTML changes.
+          python scripts/current_columns_gate.py --sync-nav 2>&1 | tee "$RUNNER_TEMP/release-check/results.txt"
       - name: Verify safeguard schedule
         env:
           GH_TOKEN: ${{ github.token }}
