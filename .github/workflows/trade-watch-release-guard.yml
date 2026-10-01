@@ -59,7 +59,8 @@ jobs:
             const expected = process.env.EXPECTED_DATE || today;
             if (!/^\d{4}-\d{2}-\d{2}$/.test(expected)) throw new Error('Invalid expected date');
             const offline = context.eventName === 'push';
-            const beforeCheck = context.eventName === 'workflow_run' && Number(parts.hour)*60+Number(parts.minute) < 620;
+            const hasToday = require('fs').existsSync(`trade-watch/issues/${expected}.html`);
+            const beforeCheck = context.eventName === 'workflow_run' && Number(parts.hour)*60+Number(parts.minute) < 620 && !hasToday;
             const active = target === main.data.commit.sha && !beforeCheck;
             core.setOutput('active', String(active));
             core.setOutput('mode', offline ? 'offline' : 'live');
