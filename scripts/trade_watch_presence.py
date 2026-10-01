@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import posixpath
 import re
 import sys
 import time
@@ -69,6 +70,23 @@ def local_check(root: Path, expected: str):
     return documents, errors, count
 
 
+def deployed_expected(document, relative: str):
+    """Match the documented build-time navigation addition, without editing source files."""
+    prepared = BeautifulSoup(str(document), 'html.parser')
+    nav = prepared.select_one('.navlinks')
+    if nav:
+        label = '网信法技术基础'
+        href = posixpath.relpath('tech-basics.html', posixpath.dirname('trade-watch/' + relative))
+        link = next((a for a in nav.select('a') if text(a) == label), None)
+        if link is None:
+            link = prepared.new_tag('a', href=href)
+            link.string = label
+            nav.append(link)
+        else:
+            link['href'] = href
+    return prepared
+
+
 def check(root: Path, expected: str, offline: bool, commit: str = ''):
     documents, errors, count = local_check(root, expected)
     report = {'expected_date': expected, 'commit': commit, 'news_count': count,
@@ -77,6 +95,7 @@ def check(root: Path, expected: str, offline: bool, commit: str = ''):
     if errors or offline:
         return report
     for path, document in documents.items():
+        document = deployed_expected(document, path)
         selectors = ['.navlinks', '.issue-head', '.news-list', '.toc'] if path.startswith('issues/') else ['.navlinks', '.latest-feature', '.focus-grid'] if path == 'index.html' else ['.navlinks', '.archive-list']
         item = {'path': path, 'ok': False, 'attempts': []}
         for attempt in range(3):
