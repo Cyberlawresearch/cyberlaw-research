@@ -52,7 +52,7 @@ jobs:
                       for key in ['paper','classic','newworks']:
                           path=m['pages'][key]
                           source=Path(path).read_bytes()
-                          assert hashlib.sha1(b'blob '+str(len(source)).encode()+b'\\0'+source).hexdigest()==review['academic_review']['content_blobs'][path]
+                          assert hashlib.sha1(b'blob '+str(len(source)).encode()+b'\0'+source).hexdigest()==review['academic_review']['content_blobs'][path]
                           online=get(path)
                           assert body(online)==body(source),(key,'body mismatch')
                           if key=='newworks':assert len(BeautifulSoup(online,'html.parser').select('.brief-item h3'))==5
