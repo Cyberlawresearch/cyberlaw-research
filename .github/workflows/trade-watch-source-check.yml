@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
     paths: [.github/workflows/trade-watch-source-check.yml]
+  workflow_run:
+    workflows: [Deploy static site to Pages]
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -11,64 +15,127 @@ permissions:
 
 jobs:
   sources:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
-      - name: Install HTML parser
-        run: python -m pip install beautifulsoup4==4.13.4 requests==2.32.5
-      - name: Check public source documents and Trade Watch pages
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          persist-credentials: false
+      - name: Install document parsers
+        run: python -m pip install beautifulsoup4==4.13.4 requests==2.32.5 PyMuPDF==1.26.4
+      - name: Inspect original case notices
+        if: github.event_name != 'workflow_run'
         run: |
           python - <<'PY'
-          import json, time
           from pathlib import Path
+          import requests, pymupdf
+          out = Path('trade-check-evidence')
+          out.mkdir(exist_ok=True)
+          notices = [
+              ('caprolactam', 'https://dgtr.gov.in/sites/default/files/2026-09/Initiation%20English.pdf'),
+              ('persulphates', 'https://dgtr.gov.in/sites/default/files/2026-09/Initiation%20Notification%20Persulphate%20English.pdf'),
+              ('milwaukee-framework', 'https://www.steelforum.org/content/dam/steel-forum/en/publications/gfsec-comprehensive-framework-for-joint-action.pdf'),
+          ]
+          for name, url in notices:
+              try:
+                  r = requests.get(url, timeout=(10, 40))
+                  r.raise_for_status()
+                  if not r.content.startswith(b'%PDF') or len(r.content) > 10000000:
+                      raise ValueError('Unexpected document type or size')
+                  (out / (name + '.pdf')).write_bytes(r.content)
+                  doc = pymupdf.open(stream=r.content, filetype='pdf')
+                  print('\nDOCUMENT:', name, 'HTTP:', r.status_code, 'URL:', r.url)
+                  texts = []
+                  for i, page in enumerate(doc):
+                      text = page.get_text()
+                      texts.append(text)
+                      print('PAGE', i + 1, text[:14000])
+                      if i == 0 or i >= len(doc) - 3:
+                          page.get_pixmap(matrix=pymupdf.Matrix(1.2, 1.2)).save(out / f'{name}-{i+1}.png')
+                  (out / (name + '.txt')).write_text('\n'.join(texts), encoding='utf-8')
+              except Exception as e:
+                  print('::warning::Document access failed:', name, str(e))
+          PY
+      - name: Verify published Trade Watch pages and source links
+        if: github.event_name == 'workflow_run'
+        env:
+          DEPLOYED_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          python - <<'PY'
+          import json, os, re, time
+          from pathlib import Path
+          from urllib.parse import urljoin
           import requests
           from bs4 import BeautifulSoup
-          urls = [
-              ('Truck bed covers', 'https://www.trade.gov/commerce-preliminary-antidumping-duty-investigation-truck-bed-covers-peoples-republic-china'),
-              ('Air compressors', 'https://www.trade.gov/preliminary-affirmative-countervailing-duty-determinations-stationary-and-portable-air-compressors'),
-              ('Steel framework', 'https://ustr.gov/about/policy-offices/press-office/press-releases/2026/september/ambassador-greer-issues-statement-following-ministerial-meeting-global-forum-steel-excess-capacity'),
-              ('UK steel scope', 'https://www.gov.uk/government/publications/uks-steel-trade-measure-from-1-july-2026/uks-steel-trade-measure-from-1-july-2026'),
-              ('UK steel implementation', 'https://www.gov.uk/government/publications/uks-steel-trade-measure-from-1-july-2026/implementation-notifications-on-the-transitional-exemption-quota-administration-and-the-ukraine-exclusion'),
-              ('Brazil beef safeguard', 'https://trb.mofcom.gov.cn/myjjdc/art/2026/art_50ba0b70b644489fa828f03dd72c15ab.html'),
-              ('Caprolactam', 'https://www.dgtr.gov.in/en/anti-dumping-cases/initiation-anti-dumping-investigation-concerning-imports-caprolactam-originating'),
-              ('Persulphates', 'https://dgtr.gov.in/en/anti-dumping-cases/initiation-notification-anti-dumping-investigation-concerning-imports'),
-          ]
-          report = []
-          for name, url in urls:
-              result = {'name': name, 'url': url, 'ok': False}
+          root = Path('trade-watch')
+          evidence = Path('trade-check-evidence')
+          evidence.mkdir(exist_ok=True)
+          home = BeautifulSoup((root / 'index.html').read_text(encoding='utf-8'), 'html.parser')
+          relative = home.select_one('a.latest-feature')['href']
+          if not re.fullmatch(r'issues/\d{4}-\d{2}-\d{2}\.html', relative):
+              raise SystemExit('Unexpected latest issue path')
+          base = 'https://cyberlawresearch.github.io/cyberlaw-research/trade-watch/'
+          report = {'commit': os.environ['DEPLOYED_SHA'], 'issue': relative, 'pages': [], 'sources': []}
+          errors = []
+          for path in [relative, 'index.html', 'archive.html']:
+              expected = BeautifulSoup((root / path).read_text(encoding='utf-8'), 'html.parser')
+              url = urljoin(base, path)
+              item = {'path': path, 'url': url, 'ok': False}
+              for attempt in range(4):
+                  try:
+                      r = requests.get(url, params={'verify': os.environ['DEPLOYED_SHA']}, timeout=(10, 30))
+                      r.raise_for_status()
+                      actual = BeautifulSoup(r.content, 'html.parser')
+                      if actual.title.get_text() != expected.title.get_text():
+                          raise ValueError('Page title differs from deployed commit')
+                      selectors = ['.issue-head', '.news-list', '.toc'] if path == relative else ['.latest-feature', '.focus-grid'] if path == 'index.html' else ['.archive-list']
+                      for selector in selectors:
+                          a, b = actual.select_one(selector), expected.select_one(selector)
+                          if not a or not b or a.get_text(' ', strip=True) != b.get_text(' ', strip=True):
+                              raise ValueError('Page content mismatch: ' + selector)
+                          if [x.get('href') for x in a.select('a[href]')] != [x.get('href') for x in b.select('a[href]')]:
+                              raise ValueError('Page links mismatch: ' + selector)
+                      item.update(ok=True, status=r.status_code, title=actual.title.get_text(), news_count=len(actual.select('.news-card')))
+                      break
+                  except Exception as e:
+                      item['error'] = str(e)
+                      if attempt < 3:
+                          time.sleep(10)
+              report['pages'].append(item)
+              print('PAGE CHECK:', json.dumps(item, ensure_ascii=False))
+              if not item['ok']:
+                  errors.append(path)
+          issue = BeautifulSoup((root / relative).read_text(encoding='utf-8'), 'html.parser')
+          urls = sorted({a['href'] for a in issue.select('.source a[href]') if a['href'].startswith('https://')})
+          for url in urls:
+              item = {'url': url, 'ok': False}
               for attempt in range(2):
                   try:
-                      response = requests.get(url, timeout=(10, 30), headers={'User-Agent': 'TradeWatch-LinkCheck/1.0'})
-                      response.raise_for_status()
-                      response.encoding = response.apparent_encoding
-                      soup = BeautifulSoup(response.text, 'html.parser')
-                      for tag in soup(['script', 'style', 'nav', 'header', 'footer']):
-                          tag.decompose()
-                      main = soup.find('main') or soup
-                      text = main.get_text(' ', strip=True)
-                      result.update(status=response.status_code, final_url=response.url, title=soup.title.get_text(' ', strip=True) if soup.title else '', text=text, ok=True)
-                      result['documents'] = [{'title': a.get_text(' ', strip=True), 'url': requests.compat.urljoin(response.url, a['href'])} for a in main.select('a[href]') if '.pdf' in a['href'].lower() or '/download' in a['href'].lower()]
+                      r = requests.get(url, timeout=(10, 30))
+                      r.raise_for_status()
+                      if len(r.content) < 100:
+                          raise ValueError('Unexpectedly empty source')
+                      item.update(ok=True, status=r.status_code, final_url=r.url)
                       break
-                  except Exception as error:
-                      result['error'] = str(error)
+                  except Exception as e:
+                      item['error'] = str(e)
                       if attempt == 0:
                           time.sleep(2)
-              report.append(result)
-              print('\nSOURCE:', name, '\nURL:', url, '\nSTATUS:', result.get('status', result.get('error')))
-              print('TITLE:', result.get('title', ''))
-              print('TEXT:', result.get('text', '')[:9000])
-              print('DOCUMENTS:', json.dumps(result.get('documents', []), ensure_ascii=False))
-          Path('source-check-results.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
-          failures = [r['name'] for r in report if not r['ok']]
-          if failures:
-              print('::warning::Sources requiring another access route: ' + ', '.join(failures))
-          print('HTTP success is an access check only; content and publication dates require separate verification.')
+              report['sources'].append(item)
+              print('SOURCE CHECK:', json.dumps(item, ensure_ascii=False))
+              if not item['ok']:
+                  errors.append(url)
+          (evidence / 'publication-check.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
+          if errors:
+              raise SystemExit('Checks failed: ' + '; '.join(errors))
+          print('Verified published issue, homepage, archive, and', len(urls), 'source links for commit', os.environ['DEPLOYED_SHA'])
           PY
-      - name: Retain diagnostic report
+      - name: Retain diagnostic evidence outside reader pages
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: trade-watch-source-diagnostics
-          path: source-check-results.json
+          name: trade-watch-diagnostics-${{ github.run_id }}
+          path: trade-check-evidence/
           retention-days: 7
