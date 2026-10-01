@@ -42,6 +42,45 @@ jobs:
           mkdir -p "$RUNNER_TEMP/release-check"
           # Match Pages preparation in this disposable checkout; never commit HTML changes.
           python scripts/current_columns_gate.py --sync-nav 2>&1 | tee "$RUNNER_TEMP/release-check/results.txt"
+      - name: Check scheduled news delivery after 22:00
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY' 2>&1 | tee "$RUNNER_TEMP/release-check/news-delivery.txt"
+          import json
+          from datetime import datetime, timedelta
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+
+          now=datetime.now(ZoneInfo('Asia/Shanghai'))
+          if not (now.hour >= 22 or now.hour < 1):
+              print('News deadline check skipped before 22:00 Asia/Shanghai.')
+              raise SystemExit(0)
+
+          day=(now-timedelta(hours=12)).date().isoformat()
+          manifest=json.loads(Path('data/current-edition.json').read_text(encoding='utf-8'))
+          assert manifest['date'] == max(manifest['page_dates'].values()), 'manifest top-level date is not max(page_dates)'
+          assert manifest['page_dates']['brief'] == day, f'brief not published for {day}: {manifest["page_dates"]["brief"]}'
+          page=Path(manifest['pages']['brief'])
+          assert page.is_file() and day in page.name, f'brief page missing or wrong date: {page}'
+
+          record_path=Path('.github/editions')/f'{day}.news.json'
+          assert record_path.is_file(), f'missing news verification record: {record_path}'
+          record=json.loads(record_path.read_text(encoding='utf-8'))
+          assert record.get('state') == 'verified', 'news verification state is not verified'
+          assert record.get('page') == manifest['pages']['brief'], 'news verification page does not match current brief'
+          assert record.get('news_count') == manifest['news_count'], 'news count mismatch between record and manifest'
+          checks=record.get('checks',{})
+          required=(
+              'sources','legal_status','original_titles','timeliness',
+              'previous_day_event_deduplication','seven_day_history_deduplication',
+              'local_language_scan_korea_japan_vietnam','prior_background_checked',
+              'natural_chinese_reviewed','background_outlook','foreign_layout'
+          )
+          missing=[name for name in required if checks.get(name) is not True]
+          assert not missing, 'news verification checks incomplete: '+', '.join(missing)
+          print(f'News delivery verified for {day}: {manifest["pages"]["brief"]} ({manifest["news_count"]} items).')
+          PY
       - name: Verify safeguard schedule
         env:
           GH_TOKEN: ${{ github.token }}
@@ -49,6 +88,24 @@ jobs:
           test "$(gh api repos/Cyberlawresearch/cyberlaw-research/actions/workflows/daily-release.yml --jq .state)" = active
           grep -F "cron: '17,47 20-23,0 * * *'" .github/workflows/daily-release.yml
           grep -F "timezone: 'Asia/Shanghai'" .github/workflows/daily-release.yml
+      - name: Close resolved safeguard issue
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json, subprocess
+          from datetime import datetime, timedelta
+          from zoneinfo import ZoneInfo
+          day=(datetime.now(ZoneInfo('Asia/Shanghai'))-timedelta(hours=12)).date().isoformat()
+          marker='<!-- daily-release:'+day+' -->'
+          endpoint='repos/Cyberlawresearch/cyberlaw-research/issues'
+          rows=json.loads(subprocess.check_output(['gh','api',endpoint+'?state=open&per_page=100'],text=True))
+          for row in rows:
+              if marker in (row.get('body') or ''):
+                  subprocess.run(['gh','api','--method','PATCH',endpoint+'/'+str(row['number']),'-f','state=closed'],check=True)
+                  print('Closed resolved safeguard issue #'+str(row['number']))
+          PY
       - name: Report safeguard failure outside reader pages
         if: failure()
         env:
@@ -64,7 +121,7 @@ jobs:
           endpoint='repos/Cyberlawresearch/cyberlaw-research/issues'
           rows=json.loads(subprocess.check_output(['gh','api',endpoint+'?state=open&per_page=100'],text=True))
           if not any(marker in (r.get('body') or '') for r in rows):
-              body=marker+'\n@Cyberlawresearch\n\n独立栏目发布保障运行失败；仅表示入口或结构验收异常，不会把其他栏目未完成视为失败，也不会覆盖历史正文。\n\n运行记录：'+os.environ['RUN_URL']
+              body=marker+'\n@Cyberlawresearch\n\n独立栏目发布保障运行失败；可能是入口/结构验收异常，或22:00后当天新闻尚未完成verified发布。其他栏目未完成不会阻塞新闻，也不会覆盖历史正文。\n\n运行记录：'+os.environ['RUN_URL']
               subprocess.run(['gh','api','--method','POST',endpoint,'-f','title=每日推送发布保障异常｜'+day,'-f','body='+body],check=True)
           PY
       - name: Retain delivery state
