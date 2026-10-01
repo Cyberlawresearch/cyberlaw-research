@@ -40,7 +40,7 @@ jobs:
           def body(raw):
               return BeautifulSoup(raw,'html.parser').select_one('.article-body').get_text(' ',strip=True)
           try:
-              for attempt in range(84):
+              for attempt in range(1):
                   try:
                       assert get('assets/citation-refine.js')==Path('assets/citation-refine.js').read_bytes(),'citation asset not deployed'
                       assert json.loads(get('data/current-edition.json'))==m
@@ -59,7 +59,7 @@ jobs:
                       assert body(get(m['pages']['brief']))==body(Path(m['pages']['brief']).read_bytes()),'news body changed'
                       break
                   except Exception:
-                      if attempt==83:raise
+                      if attempt==0:raise
                       time.sleep(5)
               result['http']=[{'path':p,'status':'passed'} for p in ['index.html','data/current-edition.json','assets/citation-refine.js']+[m['pages'][k] for k in ['paper','classic','newworks']]]
               result['news']={'page':m['pages']['brief'],'date':m['page_dates']['brief'],'count':m['news_count'],'body_unchanged':True}
