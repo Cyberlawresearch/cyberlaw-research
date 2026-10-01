@@ -30,10 +30,12 @@ function parseBook(){
 }
 function infoFor(target){
  const type=materialType(),src=sourceLink(target),meta=targetMeta(target),cnTitle=targetTitle(target),access=today();
- // Only the three independently verified Sep 30 academic pages opt in.
- // Other dates and all news retain their existing citation behavior.
- const reviewedPages=new Set(['2026-09-30-wu-network-neutrality.html','2026-09-30-nonet-selznick-responsive-law.html','2026-09-30-new-works.html']);
- if(reviewedPages.has(location.pathname.split('/').pop())){
+ // Preserve pre-rollout history and all news; later academic editions use structured fields.
+ // The cutoff is a compatibility boundary, not a whitelist of publication dates.
+ const pageDate=location.pathname.split('/').pop().match(/^(\d{4}-\d{2}-\d{2})-/)?.[1]||'';
+ const academicKind=document.body.dataset.materialType||'';
+ const structuredAcademic=pageDate>='2026-09-30'&&['paper','classic','newwork','newworks'].includes(academicKind);
+ if(structuredAcademic){
   const node=target?.closest('[data-citation]')||document.body;
   try{
    const verified=JSON.parse(node?.getAttribute('data-citation')||'null');
