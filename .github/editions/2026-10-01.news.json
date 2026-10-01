@@ -1,7 +1,7 @@
 {
   "date": "2026-10-01",
   "column": "brief",
-  "state": "draft",
+  "state": "verified",
   "page": "articles/2026-10-01-tech-law-brief.html",
   "news_count": 20,
   "distribution": {
@@ -10,23 +10,23 @@
   },
   "updated_at": "2026-10-01T20:56:00+08:00",
   "base_main_sha": "a2f2afd502220bf6f3a87f86caaab5b53020338c",
-  "phase": "final_review",
+  "phase": "publishing",
   "record_kind": "recovery_checkpoint",
-  "progress_status": "candidate_set_complete_after_final_sweep",
-  "checked_at": null,
-  "last_news_scan_at": null,
+  "progress_status": "content_verified",
+  "checked_at": "2026-10-01T21:02:00+08:00",
+  "last_news_scan_at": "2026-10-01T20:56:00+08:00",
   "checks": {
-    "sources": false,
-    "legal_status": false,
-    "original_titles": false,
-    "timeliness": false,
-    "previous_day_event_deduplication": false,
-    "seven_day_history_deduplication": false,
-    "local_language_scan_korea_japan_vietnam": false,
-    "prior_background_checked": false,
-    "natural_chinese_reviewed": false,
-    "background_outlook": false,
-    "foreign_layout": false
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
   },
   "items": [
     {
@@ -45,7 +45,8 @@
       "thinktank_topic": "公安网络安全监督检查扩围后跨部门数据执法协同机制研究",
       "paper_topic": "网络空间安全监督检查中的行政检查边界与数据合规义务",
       "background": "该办法替代原《公安机关互联网安全监督检查规定》，对应网络安全法、数据安全法、个人信息保护法以及网络数据安全管理制度的扩展。",
-      "outlook": "后续需观察公安机关与网信、通信管理等部门在数据安全、个人信息保护事项上的检查分工，以及地方执法中检查清单、频次和证据要求是否趋于统一。"
+      "outlook": "后续需观察公安机关与网信、通信管理等部门在数据安全、个人信息保护事项上的检查分工，以及地方执法中检查清单、频次和证据要求是否趋于统一。",
+      "source_name": "公安部"
     },
     {
       "id": "cn-cac-short-video-fake-personas-2026-09-30",
@@ -63,7 +64,8 @@
       "thinktank_topic": "短视频虚假人设治理中的身份核验与商业化账号责任机制",
       "paper_topic": "平台账号人格化运营的真实性义务与注意标准",
       "background": "“清朗”系列专项行动长期针对流量造假、恶意营销和虚假信息，本次进一步把‘人设’作为独立治理对象。",
-      "outlook": "后续需观察平台是否形成职业资质核验、弱势群体叙事识别和商业化账号分级管理机制，以及专项治理措施是否沉淀为常态规则。"
+      "outlook": "后续需观察平台是否形成职业资质核验、弱势群体叙事识别和商业化账号分级管理机制，以及专项治理措施是否沉淀为常态规则。",
+      "source_name": "中国网信网"
     },
     {
       "id": "cn-shanghai-ai-voice-rights-2026-09-29",
@@ -82,7 +84,8 @@
       "thinktank_topic": "生成式人工智能训练数据可追溯制度与人格权益保护",
       "paper_topic": "AI训练数据控制者的证明责任与声音人格利益保护",
       "background": "最高法9月7日发布的涉人工智能纠纷意见明确，未经自然人同意使用其声音训练并生成可识别合成人声，权利人可主张声音权益受侵害。",
-      "outlook": "后续类似案件可能进一步细化‘可识别性’判断、模型训练数据举证妨碍和平台运营方责任边界，企业训练数据留存与授权记录的重要性会继续上升。"
+      "outlook": "后续类似案件可能进一步细化‘可识别性’判断、模型训练数据举证妨碍和平台运营方责任边界，企业训练数据留存与授权记录的重要性会继续上升。",
+      "source_name": "上海高院（知识产权律师网转载）"
     },
     {
       "id": "cn-financial-online-marketing-effective-2026-09-30",
@@ -100,7 +103,8 @@
       "thinktank_topic": "金融产品网络营销新规实施后的平台责任与跨部门协同监管",
       "paper_topic": "第三方互联网平台介入金融销售的功能边界与法律责任",
       "background": "办法于4月发布并预留整改期，要求金融机构对合作平台实施事前评估和持续管理，平台不得与金融机构产生品牌混同。",
-      "outlook": "实施后值得观察监管部门如何认定‘变相营销’和平台实际介入销售，以及花呗、白条等嵌入式金融产品的展示、推荐和支付流程如何调整。"
+      "outlook": "实施后值得观察监管部门如何认定‘变相营销’和平台实际介入销售，以及花呗、白条等嵌入式金融产品的展示、推荐和支付流程如何调整。",
+      "source_name": "中国网信网（八部门文件）"
     },
     {
       "id": "cn-beijing-auction-metadata-pilot-2026-09-30",
@@ -118,7 +122,8 @@
       "thinktank_topic": "文化数据国际标准转化应用与我国数字文化资产治理规则储备",
       "paper_topic": "文物艺术品元数据标准化中的数据权利与行政监管边界",
       "background": "ITU文物艺术品元数据标准旨在以统一字段描述艺术品及其交易相关信息。北京此次试点把国际技术标准嵌入现有文物拍卖审核场景，但明确不改变原有行政审批程序。",
-      "outlook": "若试点形成稳定数据结构，后续可能延伸至拍卖交易溯源、版权管理和跨机构数据交换。需要继续观察采集字段、数据保存主体、开放范围以及与文物交易监管平台的衔接。"
+      "outlook": "若试点形成稳定数据结构，后续可能延伸至拍卖交易溯源、版权管理和跨机构数据交换。需要继续观察采集字段、数据保存主体、开放范围以及与文物交易监管平台的衔接。",
+      "source_name": "北京市文物局"
     },
     {
       "id": "cn-yishui-ai-deceased-portrait-2026-09-30",
@@ -137,7 +142,8 @@
       "thinktank_topic": "“AI复活逝者”商业化应用的人格利益保护与平台治理规则",
       "paper_topic": "生成式AI利用死者形象的近亲属请求权与人格利益边界",
       "background": "最高法9月7日发布的涉人工智能纠纷意见明确，擅自制作、使用死者虚拟数字形象侵害其姓名、肖像、名誉等，近亲属可依据民法典第九百九十四条请求承担民事责任。",
-      "outlook": "类似应用将继续出现在短视频营销、数字纪念和虚拟人物服务中。后续裁判可能进一步区分纪念性、艺术性与商业性使用，并细化近亲属同意范围和平台注意义务。"
+      "outlook": "类似应用将继续出现在短视频营销、数字纪念和虚拟人物服务中。后续裁判可能进一步区分纪念性、艺术性与商业性使用，并细化近亲属同意范围和平台注意义务。",
+      "source_name": "沂水法院（知识产权律师网转载）"
     },
     {
       "id": "cn-industrial-internet-data-protection-standard-2026-10-01",
@@ -155,7 +161,8 @@
       "thinktank_topic": "工业互联网数据防护标准体系完善与重点行业数据安全监管衔接",
       "paper_topic": "推荐性网络安全国家标准的合规效力与行政监管引用边界",
       "background": "GB/T 44462系列已包括工业企业、平台企业和标识解析企业等不同主体的网络安全防护要求，本次实施的第4部分进一步聚焦数据防护。",
-      "outlook": "后续需观察该标准在工业互联网平台、制造企业数据安全评估和供应链安全管理中的引用情况，以及是否与数据分类分级、工业领域数据安全管理制度形成更明确的配套关系。"
+      "outlook": "后续需观察该标准在工业互联网平台、制造企业数据安全评估和供应链安全管理中的引用情况，以及是否与数据分类分级、工业领域数据安全管理制度形成更明确的配套关系。",
+      "source_name": "全国标准信息公共服务平台"
     },
     {
       "id": "us-ftc-ai-labs-industry-probe-2026-09-30",
@@ -173,7 +180,8 @@
       "thinktank_topic": "美国以消费者保护法切入AI智能体安全监管的趋势及对我国启示",
       "paper_topic": "通用消费者保护法对AI智能体风险的规制边界",
       "background": "近月多起智能体越权访问和自动执行事件引发监管关注，企业也陆续加强模型上线前安全评测和权限控制。",
-      "outlook": "后续需要观察FTC是否发出强制信息要求、形成行业报告或针对个别企业启动执法，以及‘失控智能体’是否被纳入欺骗性或不公平商业行为分析。"
+      "outlook": "后续需要观察FTC是否发出强制信息要求、形成行业报告或针对个别企业启动执法，以及‘失控智能体’是否被纳入欺骗性或不公平商业行为分析。",
+      "source_name": "Reuters"
     },
     {
       "id": "au-oaic-automated-decision-transparency-2026-09-30",
@@ -191,7 +199,8 @@
       "thinktank_topic": "自动化行政与商业决策透明义务的域外制度演进及我国规则储备",
       "paper_topic": "自动化决策透明义务的触发标准与程序性权利",
       "background": "该义务由2024年隐私法修法引入APP 1，OAIC此前已就商业AI产品的隐私风险、准确性和人工监督发布指导。",
-      "outlook": "12月生效后，后续需观察OAIC如何解释‘显著影响’和‘实质且直接相关’，以及隐私政策披露是否与个案解释权、自动化决策救济形成衔接。"
+      "outlook": "12月生效后，后续需观察OAIC如何解释‘显著影响’和‘实质且直接相关’，以及隐私政策披露是否与个案解释权、自动化决策救济形成衔接。",
+      "source_name": "OAIC"
     },
     {
       "id": "us-third-circuit-tr-ross-ai-fair-use-2026-09-30",
@@ -209,7 +218,8 @@
       "thinktank_topic": "美国AI训练版权上诉判决对我国模型训练数据规则与企业出海的影响",
       "paper_topic": "AI训练合理使用判断中的市场替代与转化性标准",
       "background": "案件源于Ross使用由Westlaw headnotes衍生的数据开发法律检索系统。地方法院此前在部分问题上作出有利于Thomson Reuters的判决。",
-      "outlook": "后续其他巡回法院在生成式AI案件中的裁判可能形成差异，最高法院是否介入以及训练数据许可市场证据如何被评价，将决定本案影响边界。"
+      "outlook": "后续其他巡回法院在生成式AI案件中的裁判可能形成差异，最高法院是否介入以及训练数据许可市场证据如何被评价，将决定本案影响边界。",
+      "source_name": "U.S. Court of Appeals for the Third Circuit"
     },
     {
       "id": "eu-google-dma-interim-suspension-2026-09-30",
@@ -227,7 +237,8 @@
       "thinktank_topic": "欧盟强制数据开放与隐私保护冲突对我国平台互操作规则的启示",
       "paper_topic": "数字市场强制数据共享中的临时救济与风险平衡",
       "background": "欧委会7月16日依据DMA第6(11)条作出有约束力的搜索数据共享措施，并设置从2026年8月至2027年1月的分阶段实施期限。",
-      "outlook": "后续需观察普通法院是否暂停执行、是否要求Google继续完成部分技术准备，以及数据匿名化标准会否成为实体诉讼的核心争点。"
+      "outlook": "后续需观察普通法院是否暂停执行、是否要求Google继续完成部分技术准备，以及数据匿名化标准会否成为实体诉讼的核心争点。",
+      "source_name": "Reuters"
     },
     {
       "id": "us-new-york-rent-algorithm-ban-injunction-2026-09-30",
@@ -245,7 +256,8 @@
       "thinktank_topic": "算法协同定价监管的制度工具选择及美国司法审查趋势",
       "paper_topic": "算法价格建议的表达属性与竞争规制边界",
       "background": "RealPage租金算法长期受到美国联邦和州反垄断执法关注，司法部此前已通过和解限制其使用竞争者非公开数据。",
-      "outlook": "后续实体审理将决定纽约能否重新设计更窄的规则，也可能影响其他州和城市针对租金算法、动态定价工具的立法方式。"
+      "outlook": "后续实体审理将决定纽约能否重新设计更窄的规则，也可能影响其他州和城市针对租金算法、动态定价工具的立法方式。",
+      "source_name": "Reuters"
     },
     {
       "id": "sg-bee-cheng-hiang-ai-data-breach-2026-09-30",
@@ -263,7 +275,8 @@
       "thinktank_topic": "生成式AI辅助编程引发数据泄露的企业治理与监管工具",
       "paper_topic": "AI生成代码的数据安全责任与组织注意义务",
       "background": "新加坡PDPA要求组织采取合理安全安排并对达到门槛的数据泄露履行通知义务；PDPC近年来也持续加强生成式AI数据使用透明度要求。",
-      "outlook": "后续监管决定是否认定企业安全措施不足，以及是否形成AI辅助编程的专门合规指引，将影响企业内部AI工具的开发与上线控制标准。"
+      "outlook": "后续监管决定是否认定企业安全措施不足，以及是否形成AI辅助编程的专门合规指引，将影响企业内部AI工具的开发与上线控制标准。",
+      "source_name": "The Straits Times"
     },
     {
       "id": "kr-transparency-center-2026-10-01",
@@ -281,7 +294,8 @@
       "thinktank_topic": "韩国大型平台透明度报告核验机制及对我国平台信息治理的启示",
       "paper_topic": "平台透明度报告的第三方核验与监管信息权",
       "background": "韩国修订《信息通信网法》后，大型信息通信服务提供者承担新的透明度和信息治理义务。透明性中心由监管机关与视听媒体基金会配套建设，承担制度执行支持功能。",
-      "outlook": "后续最值得观察的是大型平台透明度报告的具体字段、核验方法和不履行义务的法律后果，以及事实核查支持与平台内容治理之间如何保持程序独立。"
+      "outlook": "后续最值得观察的是大型平台透明度报告的具体字段、核验方法和不履行义务的法律后果，以及事实核查支持与平台内容治理之间如何保持程序独立。",
+      "source_name": "韩国广播媒体通信委员会"
     },
     {
       "id": "kr-uk-data-adequacy-review-2026-10-01",
@@ -299,7 +313,8 @@
       "thinktank_topic": "日韩等亚洲经济体个人信息保护水平互认网络扩展及我国跨境数据制度应对",
       "paper_topic": "跨境个人信息保护水平互认的法律标准与制度竞争",
       "background": "韩国2025年已首次对欧盟及欧洲经济区作出保护水平同等性认定，欧盟也维持对韩国的充分性决定。英国成为韩国启动审查的第二个主要法域。",
-      "outlook": "审查结果将取决于英国Data (Use and Access) Act 2025改革后的权利保障和监管独立性评价。若实现相互认可，可能推动更多亚太法域探索双向充分性或同等性安排。"
+      "outlook": "审查结果将取决于英国Data (Use and Access) Act 2025改革后的权利保障和监管独立性评价。若实现相互认可，可能推动更多亚太法域探索双向充分性或同等性安排。",
+      "source_name": "韩国个人信息保护委员会"
     },
     {
       "id": "jp-ppc-privacy-law-implementation-2026-10-01",
@@ -317,7 +332,8 @@
       "thinktank_topic": "日本AI开发数据利用特例对我国个人信息科研与模型训练规则的启示",
       "paper_topic": "AI模型训练中的统计制作特例与目的限定原则",
       "background": "日本2026年7月公布个人信息保护法修法，随后PPC分阶段制定政令、委员会规则和指南。新法一方面扩大适当数据利用空间，另一方面强化儿童数据、受托处理和风险应对规则。",
-      "outlook": "后续委员会还将继续处理不当利用防止、执法有效性和具体指南。AI开发何种情形可被认定为‘统计信息等制作’，以及如何证明模型与个人不再对应，将成为实施中的关键边界。"
+      "outlook": "后续委员会还将继续处理不当利用防止、执法有效性和具体指南。AI开发何种情形可被认定为‘统计信息等制作’，以及如何证明模型与个人不再对应，将成为实施中的关键边界。",
+      "source_name": "日本个人信息保护委员会"
     },
     {
       "id": "uk-information-commission-transition-2026-09-30",
@@ -335,7 +351,8 @@
       "thinktank_topic": "英国数据监管机构集体治理改革及对独立监管机构组织法的启示",
       "paper_topic": "数据保护监管机构从个人专员制向委员会制转型的组织法逻辑",
       "background": "《Data (Use and Access) Act 2025》对英国信息监管机构治理结构作出调整，保留其数据保护等核心职责，同时改为董事会监督的委员会模式。",
-      "outlook": "后续需观察新董事会如何参与重大执法、规则制定和AI监管战略，以及永久主席到任后委员会与CEO之间的权限分工。"
+      "outlook": "后续需观察新董事会如何参与重大执法、规则制定和AI监管战略，以及永久主席到任后委员会与CEO之间的权限分工。",
+      "source_name": "Information Commission"
     },
     {
       "id": "uk-ofcom-ncii-hash-deadline-2026-09-30",
@@ -353,7 +370,8 @@
       "thinktank_topic": "英国以技术效果为中心的深度伪造平台治理及我国内容安全工具化监管",
       "paper_topic": "平台安全义务中的技术措施指定、等效替代与比例原则",
       "background": "Ofcom 9月9日启动专项执法项目，重点针对非自愿私密图像和AI生成露骨深度伪造的传播，并与StopNCII.org等机构合作。",
-      "outlook": "期限届满后，Ofcom是否公开调查对象、如何评价‘同等有效’措施以及年底拟修订非法内容守则的幅度，将决定平台合规成本和技术选择空间。"
+      "outlook": "期限届满后，Ofcom是否公开调查对象、如何评价‘同等有效’措施以及年底拟修订非法内容守则的幅度，将决定平台合规成本和技术选择空间。",
+      "source_name": "Ofcom"
     },
     {
       "id": "kr-public-sector-cyber-accountability-2026-10-01",
@@ -371,7 +389,8 @@
       "thinktank_topic": "韩国公共部门网络安全负责人问责机制及我国政务数据安全责任体系比较",
       "paper_topic": "公共数字系统安全事故中的组织责任与行政人员问责",
       "background": "韩国政府认为近期多起公共部门信息泄露和勒索软件事故与基础安全规则未落实有关，且过去纪律处理更多集中于实务人员。",
-      "outlook": "后续需观察纪律规则如何修改、网络安全评价范围扩大到约2000家公共机构的具体节奏，以及机构负责人责任是否与预算、人员配置等客观条件联动。"
+      "outlook": "后续需观察纪律规则如何修改、网络安全评价范围扩大到约2000家公共机构的具体节奏，以及机构负责人责任是否与预算、人员配置等客观条件联动。",
+      "source_name": "韩国行政安全部"
     },
     {
       "id": "us-white-house-frontier-responsibilities-2026-09-29",
@@ -389,7 +408,8 @@
       "thinktank_topic": "美国前沿AI企业自律承诺与行政执法并行治理模式及对国际AI安全规则竞争的影响",
       "paper_topic": "前沿AI自愿安全承诺的规范效力与公私协同治理边界",
       "background": "美国联邦层面的AI治理长期并存行业自愿承诺、行政机关执法和州级立法等多种工具。此次文件在近期智能体安全事件后集中提出四层企业治理安排。",
-      "outlook": "后续需观察这些承诺是否形成公开可验证的审计标准、企业之间是否建立共同基准，以及FTC等监管机关在执法中如何评价企业未履行公开安全承诺的情形。"
+      "outlook": "后续需观察这些承诺是否形成公开可验证的审计标准、企业之间是否建立共同基准，以及FTC等监管机关在执法中如何评价企业未履行公开安全承诺的情形。",
+      "source_name": "Financial Times"
     }
   ],
   "coverage": [
@@ -639,14 +659,12 @@
   },
   "last_error": null,
   "next_actions": [
-    "逐条核对20条候选的来源、法律状态、原题、72小时时效和近7日事件级去重。",
-    "完成中文终校和页面结构生成。",
-    "发布前执行最后1—2小时窗口复扫；如无更高价值新增则锁定20条。",
-    "写入新闻正文、首页/briefs/archive、current-edition与verified记录，并核对对应Pages部署。"
+    "切换current-edition新闻指针并核对首页/briefs/archive。",
+    "等待并检查与最终发布提交对应的GitHub Pages运行及部署前后验收。"
   ],
   "publication": {
-    "status": "not_submitted",
-    "article_commit_sha": null,
+    "status": "content_submitted",
+    "article_commit_sha": "e48825bc7df213becd71ae5d9a28d6ca70bee9e7",
     "release_commit_sha": null,
     "pages_run_id": null,
     "pages_conclusion": null,
