@@ -4,7 +4,8 @@ import unittest
 from pathlib import Path
 from unittest.mock import Mock, patch
 import requests
-from trade_watch_presence import check, local_check
+from bs4 import BeautifulSoup
+from trade_watch_presence import check, local_check, deployed_expected
 
 DAY = '2026-01-02'
 REL = f'issues/{DAY}.html'
@@ -45,10 +46,26 @@ class PresenceTests(unittest.TestCase):
     def test_public_content_matches(self):
         def get(url, **kwargs):
             relative = url.split('/trade-watch/')[1]
-            return Mock(content=self.contents[relative].encode(), status_code=200, raise_for_status=Mock())
+            return Mock(content=str(deployed_expected(BeautifulSoup(self.contents[relative], 'html.parser'), relative)).encode(), status_code=200, raise_for_status=Mock())
         with patch('trade_watch_presence.requests.get', side_effect=get):
             report = check(self.root, DAY, False)
         self.assertTrue(report['public_ok'])
+    def test_wrong_trade_navigation_is_rejected(self):
+        def get(url, **kwargs):
+            relative = url.split('/trade-watch/')[1]
+            doc = deployed_expected(BeautifulSoup(self.contents[relative], 'html.parser'), relative)
+            link = doc.select_one('.navlinks a')
+            if relative == REL:
+                link['href'] = '../wrong-index.html'
+            return Mock(content=str(doc).encode(), status_code=200, raise_for_status=Mock())
+        with patch('trade_watch_presence.requests.get', side_effect=get), patch('trade_watch_presence.time.sleep'):
+            self.assertFalse(check(self.root, DAY, False)['public_ok'])
+    def test_missing_build_navigation_is_rejected(self):
+        def get(url, **kwargs):
+            relative = url.split('/trade-watch/')[1]
+            return Mock(content=self.contents[relative].encode(), status_code=200, raise_for_status=Mock())
+        with patch('trade_watch_presence.requests.get', side_effect=get), patch('trade_watch_presence.time.sleep'):
+            self.assertFalse(check(self.root, DAY, False)['public_ok'])
     def test_public_error_is_not_success(self):
         with patch('trade_watch_presence.requests.get', side_effect=requests.ConnectionError('offline')), patch('trade_watch_presence.time.sleep'):
             report = check(self.root, DAY, False)
