@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-02",
+  "timezone": "Asia/Shanghai",
+  "column": "newworks",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-02-new-works.html",
+  "newworks_count": 5,
+  "checked_at": "2026-10-02T22:40:31.768+08:00",
+  "checks": {
+    "original_publication_pages_opened": true,
+    "bibliography": true,
+    "doi": true,
+    "repository_history_deduplication": true,
+    "original_titles": true,
+    "chinese_expression": true,
+    "related_reading_reviewed": true,
+    "timeline_reviewed": true
+  },
+  "related_reading": [],
+  "timeline": [],
+  "items": [
+    {
+      "author": "Noble Po-kan Lo",
+      "originalTitle": "AI Sovereignty, Data Bias, and Ethical Challenges in International Law",
+      "journal": "Asian Journal of Law and Society",
+      "year": "2026",
+      "volume": "",
+      "issue": "First View",
+      "pages": "1–20",
+      "doi": "10.1017/als.2026.10053",
+      "published_online": "2026-10-01",
+      "url": "https://www.cambridge.org/core/journals/asian-journal-of-law-and-society/article/ai-sovereignty-data-bias-and-ethical-challenges-in-international-law/4FD9BACE67CB65490A5F6CC2E2CDC33D",
+      "cnTitle": "AI主权与数据偏差：国际法上的控制、平等与人权难题"
+    },
+    {
+      "author": "Anjali Yadav",
+      "originalTitle": "Algorithmic Governance and International Law: Reconciling Sovereignty and Cross-Border Accountability",
+      "journal": "Asian Journal of Law and Society",
+      "year": "2026",
+      "volume": "",
+      "issue": "First View",
+      "pages": "1–21",
+      "doi": "10.1017/als.2026.10063",
+      "published_online": "2026-09-24",
+      "url": "https://www.cambridge.org/core/journals/asian-journal-of-law-and-society/article/algorithmic-governance-and-international-law-reconciling-sovereignty-and-crossborder-accountability/2E0797D2A308104BF79524AAF15A8755",
+      "cnTitle": "算法治理与国际法：在主权和跨境问责之间重构数字管辖"
+    },
+    {
+      "author": "Markus Wagner",
+      "originalTitle": "Triarchic corrigibility: a role-separated governance design pattern for AI-assisted decision-making",
+      "journal": "AI and Ethics",
+      "year": "2026",
+      "volume": "6",
+      "issue": "",
+      "pages": "567",
+      "doi": "10.1007/s43681-026-01362-2",
+      "published_online": "2026-09-30",
+      "url": "https://link.springer.com/article/10.1007/s43681-026-01362-2",
+      "cnTitle": "三元可纠正治理：把私人情境、公共信息和最终决定权分开"
+    },
+    {
+      "author": "Chia-Wei Sun",
+      "originalTitle": "Residual governance for responsible embodied AI: authority, contestability, and cognitive sovereignty",
+      "journal": "AI and Ethics",
+      "year": "2026",
+      "volume": "6",
+      "issue": "",
+      "pages": "555",
+      "doi": "10.1007/s43681-026-01400-z",
+      "published_online": "2026-09-23",
+      "url": "https://link.springer.com/article/10.1007/s43681-026-01400-z",
+      "cnTitle": "具身AI的“剩余治理”：让不确定性、介入权限和可争议性可审计"
+    },
+    {
+      "author": "Zhengyang Chen",
+      "originalTitle": "Operational responsibility in AI governance: a user-centric liability framework",
+      "journal": "AI and Ethics",
+      "year": "2026",
+      "volume": "6",
+      "issue": "",
+      "pages": "306",
+      "doi": "10.1007/s43681-026-01163-7",
+      "published_online": "2026-05-20",
+      "url": "https://link.springer.com/article/10.1007/s43681-026-01163-7",
+      "cnTitle": "AI治理中的操作责任：以部署者为中心重新配置责任"
+    }
+  ],
+  "deduplication": {
+    "method": "Repository-wide exact-title search against current and historical content for all five final items; no final-selection duplicate was found.",
+    "duplicates_in_final_selection": []
+  },
+  "source_review": {
+    "AI Sovereignty, Data Bias, and Ethical Challenges in International Law": "Cambridge Core article page opened; First View, pp.1–20, DOI and publication date verified.",
+    "Algorithmic Governance and International Law: Reconciling Sovereignty and Cross-Border Accountability": "Cambridge Core article page opened; First View, pp.1–21, DOI and publication date verified.",
+    "Triarchic corrigibility: a role-separated governance design pattern for AI-assisted decision-making": "Springer Nature article page opened; AI and Ethics 6, article 567, DOI and version-of-record date verified.",
+    "Residual governance for responsible embodied AI: authority, contestability, and cognitive sovereignty": "Springer Nature article page opened; AI and Ethics 6, article 555, DOI and version-of-record date verified.",
+    "Operational responsibility in AI governance: a user-centric liability framework": "Springer Nature article page opened; AI and Ethics 6, article 306, DOI and version-of-record date verified."
+  },
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "deployed_current_columns": null,
+    "deployed_entry_points": null
+  },
+  "scope_guard": {
+    "brief_page": "articles/2026-10-02-tech-law-brief.html",
+    "paper_page": "articles/2026-10-02-balkin-free-speech-triangle.html",
+    "classic_page": "articles/2026-10-02-maine-ancient-law.html",
+    "news_count": 18,
+    "note": "Only the newworks column and shared navigation/index pointers are changed by this publication."
+  }
+}
