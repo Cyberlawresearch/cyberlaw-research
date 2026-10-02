@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-02",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-02-balkin-free-speech-triangle.html",
+  "selection": "Jack M. Balkin, Free Speech Is a Triangle",
+  "bibliography": {
+    "author": "Jack M. Balkin",
+    "originalTitle": "Free Speech Is a Triangle",
+    "journal": "Columbia Law Review",
+    "year": "2018",
+    "volume": "118",
+    "issue": "7",
+    "pages": "2011–2056",
+    "doi": "",
+    "url": "https://www.columbialawreview.org/content/free-speech-is-a-triangle/"
+  },
+  "original_reading": "Complete Columbia Law Review public text/PDF reviewed, including the triangle model, old-school/new-school regulation, collateral censorship, digital prior restraint, private governance, structural/procompetition reforms, differentiated infrastructure duties, curational due process, information fiduciaries, and conclusion.",
+  "sources": [
+    "https://www.columbialawreview.org/content/free-speech-is-a-triangle/",
+    "https://www.columbialawreview.org/wp-content/uploads/2018/11/Balkin-FREE_SPEECH_IS_A_TRIANGLE.pdf",
+    "https://jackbalkin.yale.edu/bibliography/articles",
+    "https://harvardlawreview.org/print/vol-133/a-skeptical-view-of-information-fiduciaries/",
+    "https://harvardlawreview.org/forum/vol-133/the-fiduciary-model-of-privacy/"
+  ],
+  "checks": {
+    "full_text_read": true,
+    "bibliography": true,
+    "history_deduplication": true,
+    "original_title": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_body_complete": true
+  },
+  "related_reading": [
+    "articles/2026-09-04-balkin-free-speech-algorithmic-society.html",
+    "articles/2026-09-13-balkin-information-fiduciaries.html",
+    "articles/2026-09-19-klonick-new-governors.html"
+  ],
+  "timeline": null,
+  "body_length": 10265,
+  "base_main_sha": "5ff95c104e5e84368d64ac06116555bf6cef71ff",
+  "news_untouched": true,
+  "news_guard": {
+    "pages.brief": "articles/2026-10-02-tech-law-brief.html",
+    "page_dates.brief": "2026-10-02",
+    "news_count": 18,
+    "body_note": "Only the current-column navigation link to paper is synchronized; news body content remains unchanged."
+  },
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}
