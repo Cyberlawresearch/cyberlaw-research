@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-02",
+  "column": "brief",
+  "state": "draft",
+  "phase": "research",
+  "coverage": {
+    "domestic_sources": "partial",
+    "foreign_sources": "partial",
+    "previous_day_event_deduplication": "partial",
+    "seven_day_history_deduplication": "partial",
+    "local_language_scan_korea_japan_vietnam": "partial",
+    "final_1_2h_rescan": false
+  },
+  "items": [
+    {
+      "event_id": "beijing-digital-intelligence-fyp-2026-09-30",
+      "event_date": "2026-09-30",
+      "source_url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202609/t20260930_4887486.html",
+      "status": "verified_candidate"
+    },
+    {
+      "event_id": "shenzhen-medicare-ai-risk-control-procurement-2026-09-30",
+      "event_date": "2026-09-30",
+      "source_url": "https://hsa.sz.gov.cn/xwzx/zfcg/content/post_13006376.html",
+      "status": "verified_candidate"
+    },
+    {
+      "event_id": "california-ai-worker-health-transparency-package-2026-09-30",
+      "event_date": "2026-09-30",
+      "source_url": "https://www.gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/",
+      "status": "verified_candidate"
+    }
+  ],
+  "last_error": null,
+  "next_actions": [
+    "continue source review",
+    "complete event-level deduplication",
+    "complete full article and final rescan",
+    "publish once to main using an atomic Git Data commit"
+  ]
+}
