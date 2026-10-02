@@ -5,10 +5,10 @@
   "phase": "research",
   "coverage": {
     "domestic_sources": "partial",
-    "foreign_sources": "partial",
-    "previous_day_event_deduplication": "partial",
-    "seven_day_history_deduplication": "partial",
-    "local_language_scan_korea_japan_vietnam": "partial",
+    "foreign_sources": "substantial",
+    "previous_day_event_deduplication": "substantial",
+    "seven_day_history_deduplication": "substantial",
+    "local_language_scan_korea_japan_vietnam": "complete",
     "final_1_2h_rescan": false
   },
   "items": [
@@ -25,17 +25,95 @@
       "status": "verified_candidate"
     },
     {
+      "event_id": "hong-kong-ip-financing-sandbox-2026-09-30",
+      "event_date": "2026-09-30",
+      "source_url": "https://www.info.gov.hk/gia/general/202609/30/P2026092900626.htm",
+      "status": "verified_candidate"
+    },
+    {
+      "event_id": "cnnic-generative-ai-report-2026-09-30",
+      "event_date": "2026-09-30",
+      "source_url": "https://www2.cnnic.cn/n4/2026/0930/c326-11690.html",
+      "status": "verified_candidate"
+    },
+    {
       "event_id": "california-ai-worker-health-transparency-package-2026-09-30",
       "event_date": "2026-09-30",
       "source_url": "https://www.gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/",
+      "status": "verified_candidate"
+    },
+    {
+      "event_id": "california-openai-investigative-subpoena-2026-10-01",
+      "event_date": "2026-10-01",
+      "source_url": "https://oag.ca.gov/news/press-releases/part-ongoing-investigation-attorney-general-bonta-serves-investigative-subpoena",
+      "status": "verified_candidate"
+    },
+    {
+      "event_id": "connecticut-ai-data-privacy-effective-2026-10-01",
+      "event_date": "2026-10-01",
+      "source_url": "https://portal.ct.gov/ag/press-releases/2026-press-releases/rights-and-requirements-related-to-new-and-updated-privacy-laws",
+      "status": "verified_candidate"
+    },
+    {
+      "event_id": "sec-crypto-custody-proposal-2026-10-01",
+      "event_date": "2026-10-01",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-100-sec-proposal-would-address-how-investment-advisers-funds-can-custody-crypto-assets-under-federal",
+      "status": "verified_candidate"
+    },
+    {
+      "event_id": "australia-esafety-gaming-transparency-report-2026-10-02",
+      "event_date": "2026-10-02",
+      "source_url": "https://www.esafety.gov.au/newsroom/media-releases/gaming-giants-urged-to-level-up-child-safety-measures",
+      "status": "verified_candidate"
+    },
+    {
+      "event_id": "korea-online-illegal-lending-ads-2026-10-02",
+      "event_date": "2026-10-02",
+      "source_url": "https://www.yna.co.kr/amp/view/AKR20261002071700002",
+      "status": "verified_candidate"
+    },
+    {
+      "event_id": "korea-media-regulator-ai-platform-transparency-2026-09-30",
+      "event_date": "2026-09-30",
+      "source_url": "https://www.yna.co.kr/amp/view/AKR20260930135500017",
+      "status": "verified_candidate"
+    },
+    {
+      "event_id": "india-unlicensed-security-cameras-platforms-2026-10-01",
+      "event_date": "2026-10-01",
+      "source_url": "https://www.reuters.com/world/amazon-walmarts-flipkart-launch-review-unlicensed-security-camera-listings-india-2026-10-01/",
+      "status": "verified_candidate"
+    },
+    {
+      "event_id": "google-ai-overviews-chegg-penske-dismissal-2026-10-01",
+      "event_date": "2026-10-01",
+      "source_url": "https://www.reuters.com/legal/litigation/google-wins-dismissal-chegg-penske-media-lawsuits-over-ai-overviews-2026-10-01/",
+      "status": "verified_candidate"
+    },
+    {
+      "event_id": "new-mexico-meta-privacy-penalty-request-2026-10-01",
+      "event_date": "2026-10-01",
+      "source_url": "https://www.reuters.com/world/us/new-mexico-wants-meta-pay-up-40-billion-penalties-after-data-privacy-trial-2026-10-01/",
+      "status": "verified_candidate"
+    },
+    {
+      "event_id": "mi5-cgtri-espionage-alert-2026-09-30",
+      "event_date": "2026-09-30",
+      "source_url": "https://www.mi5.gov.uk/mi5-issues-espionage-alert-cgtri-%E4%B8%AD%E5%9B%BD%E9%80%9A%E7%94%A8%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6%E9%99%A2",
+      "status": "verified_candidate"
+    },
+    {
+      "event_id": "white-house-super-intelligence-eo-2026-09-29",
+      "event_date": "2026-09-29",
+      "source_url": "https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/",
       "status": "verified_candidate"
     }
   ],
   "last_error": null,
   "next_actions": [
-    "continue source review",
-    "complete event-level deduplication",
-    "complete full article and final rescan",
-    "publish once to main using an atomic Git Data commit"
+    "find two or more additional high-value current candidates and complete domestic source coverage",
+    "draft full 18-20 item article with legal analysis, research topics, background and outlook",
+    "perform final 1-2 hour rescan and source/legal-status checks",
+    "publish once to main using one atomic Git Data commit"
   ]
 }
