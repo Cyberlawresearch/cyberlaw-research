@@ -2,9 +2,12 @@
   "date": "2026-10-02",
   "column": "classic",
   "state": "draft",
-  "phase": "research",
+  "status": "draft_ready",
+  "phase": "final_review",
   "page": "articles/2026-10-02-maine-ancient-law.html",
+  "target_path": "articles/2026-10-02-maine-ancient-law.html",
   "selection": "Henry Sumner Maine, Ancient Law",
+  "book": "Henry Sumner Maine：《古代法》",
   "bibliography": {
     "author": "Henry Sumner Maine",
     "originalTitle": "Ancient Law: Its Connection with the Early History of Society, and Its Relation to Modern Ideas",
@@ -14,27 +17,35 @@
     "edition": "初版"
   },
   "sources": [
+    "https://www.gutenberg.org/ebooks/22910",
     "https://en.wikisource.org/wiki/File:Ancient_Law.djvu",
     "https://pegasus.law.columbia.edu/record/1531387",
-    "https://www.gutenberg.org/ebooks/22910",
-    "https://doi.org/10.1177/106591295000300406",
     "https://www.cambridge.org/core/journals/cambridge-law-journal/article/abs/status-problems-of-definition-and-use/84238634F1C9F42F69EEF87470C70D04",
-    "https://philarchive.org/rec/GOETLS"
+    "https://www.cambridge.org/core/journals/cambridge-law-journal/article/abs/status-to-contractrefuted-or-refined/DCB674B241EA261191F4D9360D7A73E3",
+    "https://www.cambridge.org/core/books/victorian-achievement-of-sir-henry-maine/some-contributions-of-maine-to-history-and-anthropology/BC531789E619EDC879F81B12FA851051"
   ],
-  "checks": {
+  "verification": {
     "full_text_read": true,
     "first_edition_metadata": true,
     "history_deduplication": true,
-    "bibliography": true
+    "bibliography": true,
+    "chapter_structure": true,
+    "representative_criticism": true,
+    "natural_chinese_reviewed": true
   },
-  "next_actions": [
-    "write final classic page",
-    "update classic indexes and current-edition",
-    "verify Pages and current-columns"
+  "history_dedup": true,
+  "summary": "Maine通过法律变化、家庭与身份、继承、财产、契约和侵权犯罪的历史，说明现代个人主义法律概念并非天然起点；“从身份到契约”只是这一更大历史分析中的一个概括。",
+  "required_updates": [
+    "index.html classic card",
+    "classics.html latest row",
+    "archive.html classic summary",
+    "data/current-edition.json classic pages/page_dates",
+    "current-column navigation",
+    "formal classic verification record"
   ],
-  "last_error": {
-    "action": "GitHub content write for final classic page",
-    "code": null,
-    "message": "Write request blocked by OpenAI safety checks before GitHub returned an API error."
-  }
+  "last_error": null,
+  "next_actions": [
+    "publish draft to main",
+    "verify Pages and current-columns"
+  ]
 }
