@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><title>第18课｜合成数据：模型生成的内容怎样成为训练材料？｜网信法技术基础</title><link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/></head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-10-01-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-10-01-holmes-path-of-the-law.html">域外法学论文精读</a><a href="../articles/2026-10-01-pound-philosophy-of-law.html">法学经典著作</a><a href="../articles/2026-10-01-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 18 · TRAINING &amp; ALIGNMENT · 2026.10.02</div><h1>合成数据：模型生成的内容怎样成为训练材料？</h1><p class="tech-lead">今日问题：训练数据一定要由人逐条写好吗？模型生成的内容，怎样才能真正进入训练集？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus">
+<div><strong>它是什么</strong><p>合成数据，是人为构造或由程序、模型生成，而不是直接把现实世界中的原始记录照搬进训练集的数据。今天只看一种常见情况：让大模型生成候选文本，再经过筛选、去重和质量检查，最后把合格样本用于训练。</p></div>
+<div><strong>一个直观例子</strong><p>要训练模型把监管文件改写成通俗解释，团队可以先准备少量可靠示例和写作要求，让生成模型批量产生候选问答，再删除事实错误、重复或格式不合格的样本，只把剩下的数据交给目标模型学习。</p></div>
+</section>
+<section class="lesson-section"><h2>合成数据怎样进入训练集</h2>
+<div class="visual-board" role="group" aria-label="合成数据流程"><div class="visual-title">一种常见流程，不代表所有项目都完全相同</div><div class="flow">
+<div class="flow-box"><strong>设定任务与种子</strong><span>明确要生成什么，提供少量示例或规则</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>生成候选</strong><span>模型批量产生问题、答案或解释</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>筛选与去重</strong><span>剔除错误、重复和低质量内容</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>形成训练集</strong><span>记录版本后，与其他数据按需要组合训练</span></div></div>
+<p class="tiny-note">Self-Instruct 就采用“模型生成—过滤—微调”的路线；Llama 3.1 也公开说明后训练大量使用合成 SFT 数据，并进行过滤和质量控制。<sup><a href="#s1">[1]</a><a href="#s2">[2]</a></sup></p></div>
+<p>“模型生成”只是数据生产的一步，不等于数据已经合格。生成时用什么种子、提示要求和生成模型，会影响候选样本；筛选规则又决定哪些内容最终留下。phi-1 的公开研究也同时使用筛选出的网络数据和由 GPT-3.5 生成的教材、练习，说明真实数据与合成数据可以混合使用。<sup><a href="#s3">[3]</a></sup></p>
+<p>合成数据可以定向补充现实中较少、较贵或难以收集的任务样本，但也可能复制生成模型的错误。Nature 发表的一项研究显示，在其递归训练设置中，多代模型不加区分地学习前代模型生成的数据，会逐步丢失原始分布中的少见信息。这个结果说明来源和质量控制很重要，不意味着任何合成数据都会导致同样结果。<sup><a href="#s4">[4]</a></sup></p>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“合成数据就是随机编造。”合成强调生产方式，样本仍可按明确任务和答案标准生成。</span></div>
+<div class="myth"><b>误解 02</b><span>“模型生成的数据天然更干净。”生成模型可能复制错误、偏向或不适当内容，因此仍需筛选和独立测试。</span></div>
+<div class="myth"><b>误解 03</b><span>“生成得越多越好。”大量重复或错误样本也会放大同一种问题，规模不能替代质量和多样性。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>训练数据从“来源”变成“生成链”</h3>
+<p>审计合成数据时，不能只记录最后的训练文件。还应能追到种子材料、生成模型及版本、生成要求、过滤规则和最终数据集版本。生成和过滤规则都会改变目标模型实际看到的内容。</p>
+<p>如果训练后出现系统性错误，记录越完整，越有可能区分问题来自原始种子、生成环节还是筛选环节。涉及权利、个人信息或合同限制时，也应回到具体来源和使用方式判断，而不能仅凭“AI生成”这一标签得出结论。</p></div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>合成训练数据的生成链应如何进入可审计义务</h3><p>研究种子、生成模型、过滤规则和数据集版本分别需要留下什么记录。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>公共部门使用合成数据训练模型的质量控制规则</h3><p>研究哪些环节需要人工复核、版本管理和独立测试，避免低成本扩充数据同时放大错误。</p></div>
+</div></section>
+<section class="lesson-section"><h2>原始材料</h2><ol class="source-links">
+<li id="s1"><a href="https://arxiv.org/abs/2212.10560">Wang et al. (2022), Self-Instruct</a>。模型生成候选、过滤并用于指令微调。</li>
+<li id="s2"><a href="https://ai.meta.com/blog/meta-llama-3-1/">Meta (2024), Introducing Llama 3.1</a>。合成 SFT 数据及质量过滤。</li>
+<li id="s3"><a href="https://arxiv.org/abs/2306.11644">Gunasekar et al. (2023), Textbooks Are All You Need</a>。phi-1 的合成教材和练习数据。</li>
+<li id="s4"><a href="https://www.nature.com/articles/s41586-024-07566-y">Shumailov et al. (2024), AI models collapse when trained on recursively generated data</a>。递归使用模型生成数据的风险研究。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第19课</small><p><b>蒸馏：一个模型怎样帮助训练另一个模型。</b>今天先把它理解成“用一个模型的输出或行为信息帮助训练另一个模型”，不需要现在掌握，后面会专门讲。</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
