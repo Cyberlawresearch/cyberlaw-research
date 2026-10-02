@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-02",
+  "column": "classic",
+  "state": "draft",
+  "phase": "research",
+  "page": "articles/2026-10-02-maine-ancient-law.html",
+  "selection": "Henry Sumner Maine, Ancient Law",
+  "bibliography": {
+    "author": "Henry Sumner Maine",
+    "originalTitle": "Ancient Law: Its Connection with the Early History of Society, and Its Relation to Modern Ideas",
+    "publisher": "John Murray",
+    "place": "London",
+    "year": "1861",
+    "edition": "初版"
+  },
+  "sources": [
+    "https://en.wikisource.org/wiki/File:Ancient_Law.djvu",
+    "https://pegasus.law.columbia.edu/record/1531387",
+    "https://www.gutenberg.org/ebooks/22910",
+    "https://doi.org/10.1177/106591295000300406",
+    "https://www.cambridge.org/core/journals/cambridge-law-journal/article/abs/status-problems-of-definition-and-use/84238634F1C9F42F69EEF87470C70D04",
+    "https://philarchive.org/rec/GOETLS"
+  ],
+  "checks": {
+    "full_text_read": true,
+    "first_edition_metadata": true,
+    "history_deduplication": true,
+    "bibliography": true
+  },
+  "next_actions": [
+    "write final classic page",
+    "update classic indexes and current-edition",
+    "verify Pages and current-columns"
+  ],
+  "last_error": {
+    "action": "GitHub content write for final classic page",
+    "code": null,
+    "message": "Write request blocked by OpenAI safety checks before GitHub returned an API error."
+  }
+}
