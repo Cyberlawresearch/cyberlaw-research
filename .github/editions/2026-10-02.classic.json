@@ -1,8 +1,8 @@
 {
   "date": "2026-10-02",
   "column": "classic",
-  "state": "draft",
-  "phase": "research",
+  "state": "verified",
+  "phase": "publishing",
   "page": "articles/2026-10-02-maine-ancient-law.html",
   "selection": "Henry Sumner Maine, Ancient Law",
   "bibliography": {
@@ -14,27 +14,29 @@
     "edition": "初版"
   },
   "sources": [
+    "https://www.gutenberg.org/ebooks/22910",
     "https://en.wikisource.org/wiki/File:Ancient_Law.djvu",
     "https://pegasus.law.columbia.edu/record/1531387",
-    "https://www.gutenberg.org/ebooks/22910",
-    "https://doi.org/10.1177/106591295000300406",
     "https://www.cambridge.org/core/journals/cambridge-law-journal/article/abs/status-problems-of-definition-and-use/84238634F1C9F42F69EEF87470C70D04",
-    "https://philarchive.org/rec/GOETLS"
+    "https://www.cambridge.org/core/journals/cambridge-law-journal/article/abs/status-to-contractrefuted-or-refined/DCB674B241EA261191F4D9360D7A73E3",
+    "https://www.cambridge.org/core/books/victorian-achievement-of-sir-henry-maine/some-contributions-of-maine-to-history-and-anthropology/BC531789E619EDC879F81B12FA851051"
   ],
   "checks": {
     "full_text_read": true,
     "first_edition_metadata": true,
     "history_deduplication": true,
-    "bibliography": true
+    "bibliography": true,
+    "chapter_structure": true,
+    "representative_criticism": true,
+    "natural_chinese_reviewed": true,
+    "final_body_complete": true
   },
+  "body_length": 11610,
+  "news_untouched": true,
+  "other_academic_columns_untouched": true,
   "next_actions": [
-    "write final classic page",
-    "update classic indexes and current-edition",
-    "verify Pages and current-columns"
+    "verify final main commit Pages deployment",
+    "verify live current-columns and classic entry points"
   ],
-  "last_error": {
-    "action": "GitHub content write for final classic page",
-    "code": null,
-    "message": "Write request blocked by OpenAI safety checks before GitHub returned an API error."
-  }
+  "last_error": null
 }
