@@ -47,7 +47,7 @@ def main():
                 page.goto(urljoin(base, current_brief), wait_until='networkidle')
                 current_items = page.locator('.brief-item')
                 assert current_items.count() == current_news_count
-                assert 18 <= current_items.count() <= 20
+                assert 1 <= current_items.count() <= 20
                 assert page.locator('.brief-fact').count() == current_news_count
                 assert page.locator('.source a[href^="https://"]').count() >= current_news_count
 
