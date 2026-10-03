@@ -184,13 +184,18 @@
   },
   "last_error": null,
   "next_actions": [
-    "继续核验美国、英国、澳大利亚、加拿大等境外候选并完成15条左右外文新闻",
-    "补齐最终1—2小时复扫",
-    "完成全部条目后再判断publication_ready"
+    "完成foreign_other中尚未巡视的美国、英国、澳大利亚、加拿大等规定来源；今天不设新闻条数目标，只保留达到时效、真实性和研究价值门槛的事项",
+    "完成发布前最后1—2小时官方公告、裁判、处罚和政策文件复扫；仅在发现关键新增时作必要补充",
+    "全部必查来源巡视及现有条目核验完成后，以质量和完整性而非数量判断publication_ready"
   ],
   "publication": {
     "main_commit": null,
     "pages_run": null,
     "deployed": false
+  },
+  "selection_policy": {
+    "quantity_target": "none_for_2026-10-03",
+    "principle": "quality_first_no_padding",
+    "note": "2026-10-03不设最低或目标条数；高质量信息不足时宁少勿滥，不以旧闻、弱相关事项或重复事件补数。"
   }
 }
