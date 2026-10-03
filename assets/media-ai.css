@@ -1,5 +1,39 @@
-/* 权威媒体AI摘编 */
-.media-method{margin-bottom:30px}.media-jump{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin:24px 0 34px}.media-jump a{text-decoration:none;background:var(--panel);border:1px solid var(--line);padding:12px 10px;text-align:center;font-size:13px}.media-jump a:hover{border-color:#b9afa2;box-shadow:var(--shadow)}
-.media-section{margin:0 0 44px}.media-section-head{display:flex;align-items:center;gap:18px;border-bottom:1px solid var(--line);padding:0 0 16px;margin-bottom:18px}.media-section-head h2{margin:0!important;padding:0!important;border:0!important;background:none!important;box-shadow:none!important;display:block!important;font-size:28px!important;counter-increment:none!important}.media-section-head h2:before{display:none!important}.media-section-head p{margin:3px 0 0;color:var(--muted);font-size:13px}.media-mark{width:92px;min-width:92px;height:58px;display:flex;align-items:center;justify-content:center;border-radius:2px;font-family:"Noto Sans SC","Source Han Sans SC",Arial,sans-serif;font-weight:800;letter-spacing:.08em;font-size:15px;color:#fff;box-shadow:0 4px 14px rgba(28,27,24,.08)}.media-mark.rmrb{background:#a7242a}.media-mark.gmrb{background:#7f343a}.media-mark.jjrb{background:#8d4d32}.media-mark.qiushi{background:#8c1f25}.media-mark.hqwg{background:#9e3e32}.media-mark.xinhua{background:#b82b2b}
-.media-item{background:var(--panel);border:1px solid var(--line);padding:22px 24px;margin-bottom:16px}.media-item h3{font-size:21px;line-height:1.5;margin:0 0 8px}.media-meta{font-size:12px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;padding-bottom:11px;border-bottom:1px solid var(--line);margin-bottom:12px}.hit-tags{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}.hit-tag{font-size:11px;border:1px solid var(--line);padding:2px 7px;border-radius:999px;color:var(--accent);background:var(--paper)}.para-label{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.06em;margin:10px 0 5px}.para-digest{margin:0;padding-left:21px}.para-digest li{margin:7px 0;font-size:14.5px;line-height:1.72}.media-source{font-size:12px;color:var(--muted);margin-top:13px;padding-top:10px;border-top:1px solid var(--line)}.media-source a{overflow-wrap:anywhere}.media-empty{background:var(--soft);border:1px dashed var(--line);padding:14px 16px;color:var(--muted);font-size:13px}
-@media(max-width:900px){.media-jump{grid-template-columns:repeat(3,1fr)}}@media(max-width:600px){.media-jump{grid-template-columns:repeat(2,1fr)}.media-section-head{align-items:flex-start}.media-mark{width:78px;min-width:78px;height:52px;font-size:13px}.media-item{padding:18px}}
+/* 权威媒体AI摘编：原文阅读模式 */
+.media-method{margin-bottom:28px}
+.media-jump{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin:24px 0 36px}
+.media-jump a{text-decoration:none;background:var(--panel);border:1px solid var(--line);padding:12px 10px;text-align:center;font-size:13px}
+.media-jump a:hover{border-color:#b9afa2;box-shadow:var(--shadow)}
+.media-section{margin:0 0 48px}
+.media-section-head{display:flex;align-items:center;gap:18px;border-bottom:1px solid var(--line);padding:0 0 16px;margin-bottom:18px}
+.media-section-head h2{margin:0!important;padding:0!important;border:0!important;background:none!important;box-shadow:none!important;display:block!important;font-size:28px!important;counter-increment:none!important}
+.media-section-head h2:before{display:none!important}
+.media-section-head p{margin:3px 0 0;color:var(--muted);font-size:13px}
+.media-logo{position:relative;width:148px;min-width:148px;height:68px;border:1px solid var(--line);background:#fff;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.media-logo img{position:relative;z-index:2;display:block;max-width:94%;max-height:58px;object-fit:contain;background:#fff}
+.media-logo .logo-fallback{position:absolute;z-index:1;inset:0;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;letter-spacing:.08em;color:var(--accent)}
+.media-logo img.logo-crop{width:100%;max-width:none;height:180px;max-height:none;object-fit:cover;object-position:12% 4%;transform:scale(1.05)}
+.media-logo img.hqwg-cover{width:100%;max-width:none;height:180px;max-height:none;object-fit:cover;object-position:83% 18%;transform:scale(1.22)}
+.media-item{display:grid;grid-template-columns:minmax(260px,.82fr) minmax(0,1.38fr);gap:0;background:var(--panel);border:1px solid var(--line);margin-bottom:16px;overflow:hidden}
+.media-info{padding:22px 24px;border-right:1px solid var(--line);background:linear-gradient(135deg,var(--panel),#faf6ee)}
+.media-item h3{font-size:20px;line-height:1.5;margin:0 0 10px}
+.media-meta{font-size:12px;color:var(--muted);display:flex;gap:7px 10px;flex-wrap:wrap;margin-bottom:13px}
+.hit-tags{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 13px}
+.hit-tag{font-size:11px;border:1px solid var(--line);padding:2px 7px;border-radius:999px;color:var(--accent);background:var(--paper)}
+.hit-mode{display:inline-flex;align-items:center;font-size:11px;font-weight:700;letter-spacing:.04em;border:1px solid rgba(125,45,45,.34);padding:3px 8px;color:var(--accent);background:#fff8f3;margin-bottom:14px}
+.hit-mode.body-only:before{content:"●";font-size:7px;margin-right:6px}
+.media-source{font-size:12px;color:var(--muted);margin-top:16px;padding-top:12px;border-top:1px solid var(--line)}
+.media-source a{overflow-wrap:anywhere;text-decoration:none;border-bottom:1px solid var(--line)}
+.media-original{padding:22px 26px;display:flex;flex-direction:column;justify-content:center;min-width:0}
+.original-label{font-family:"Noto Sans SC","Source Han Sans SC",Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--accent);margin-bottom:10px}
+.media-sentence{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:start;border-top:1px solid var(--line);padding:15px 0}
+.media-sentence:first-of-type{border-top:0;padding-top:0}
+.media-sentence blockquote{margin:0;padding:0;border:0;background:none}
+.sentence-text{font-size:18px;line-height:1.9;margin:0;font-family:"Noto Serif SC","Source Han Serif SC",SimSun,serif}
+.sentence-fav{border:1px solid var(--line);background:var(--paper);color:var(--muted);border-radius:999px;padding:5px 10px;font-size:12px;white-space:nowrap;cursor:pointer}
+.sentence-fav:hover,.sentence-fav.active{border-color:#b89580;color:var(--accent);background:#fff8f3}
+.sentence-fav.active{font-weight:700}
+.media-sentence.fav-flash{background:linear-gradient(90deg,rgba(125,45,45,.07),transparent);outline:8px solid rgba(125,45,45,.07)}
+.media-scope-note{font-size:13px;color:var(--muted);line-height:1.75;margin:-8px 0 26px}
+.media-empty{background:var(--soft);border:1px dashed var(--line);padding:14px 16px;color:var(--muted);font-size:13px}
+@media(max-width:900px){.media-jump{grid-template-columns:repeat(3,1fr)}.media-item{grid-template-columns:1fr}.media-info{border-right:0;border-bottom:1px solid var(--line)}}
+@media(max-width:600px){.media-jump{grid-template-columns:repeat(2,1fr)}.media-section-head{align-items:flex-start}.media-logo{width:112px;min-width:112px;height:58px}.media-logo img{max-height:48px}.media-item{display:block}.media-info,.media-original{padding:18px}.media-sentence{grid-template-columns:1fr;gap:10px}.sentence-fav{justify-self:start}.sentence-text{font-size:17px}}
