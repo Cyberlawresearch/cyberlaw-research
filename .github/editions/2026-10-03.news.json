@@ -4,14 +4,14 @@
   "state": "draft",
   "page": "articles/2026-10-03-tech-law-brief.html",
   "base_main_sha": "95e48294e8b9e94fdec8aa7b98e1e0f48bae881c",
-  "updated_at": "2026-10-03T20:17:00+08:00",
-  "phase": "research",
-  "news_count": 8,
+  "updated_at": "2026-10-03T20:24:00+08:00",
+  "phase": "final_review",
+  "news_count": 11,
   "distribution": {
-    "domestic": 4,
-    "foreign": 4
+    "domestic": 3,
+    "foreign": 8
   },
-  "publication_ready": false,
+  "publication_ready": true,
   "items": [
     {
       "id": "cn-hubei-compute-voucher-20261003",
@@ -45,40 +45,6 @@
         "previous_day": true,
         "seven_day": true,
         "result": "保留；10月1日、10月2日简报均无湖北省算力券实施方案，同期北京/杭州算力政策属于不同法域和不同政策动作。"
-      }
-    },
-    {
-      "id": "cn-suihua-credit-industry-chain-20261002",
-      "domestic": true,
-      "title_cn": "绥化上线“信用+产业链”监测体系，整合52类企业数据用于风险预警",
-      "original_title": "绥化市加快构建“信用+产业链”赋能产业发展",
-      "jurisdiction": "中国／黑龙江绥化",
-      "authority": "绥化市；黑龙江省营商环境建设监督局指导",
-      "event_date": "2026-10-02",
-      "legal_status": "地方信用数据应用实践进入试运行/应用阶段",
-      "sources": [
-        {
-          "name": "黑龙江省人民政府",
-          "url": "https://www.hlj.gov.cn/hlj/c107858/202610/c00_31981207.shtml"
-        }
-      ],
-      "fact": "黑龙江省政府10月2日披露，绥化市依托融资信用服务平台建设“信用+产业链”经济运行监测体系，已上线产业链图谱、风险预警和驾驶舱等模块，累计归集整合52类产业与企业数据，并将纳税、社保、公积金等信息用于企业信用动态监测和发展趋势预测。",
-      "prior_background": "地方融资信用平台近年从融资撮合扩展到产业治理。绥化此次把多源政务和企业信用信息用于产业链风险监测，已经超出单纯信贷场景。",
-      "law_analysis": "把纳税、社保、公积金等数据汇聚后用于企业运行预测，会同时涉及公共数据授权使用、信用评价边界和算法风险标签的程序控制。若预警结果进一步影响融资、监管或政策待遇，就需要明确数据来源、评价规则、纠错机制和用途限制。",
-      "think_tank": {
-        "title": "地方信用平台向产业链风险监测扩展后的公共数据治理边界",
-        "note": "可梳理地方信用平台从融资服务走向产业监测的趋势，重点研究跨部门数据归集、风险标签共享和政策决策使用需要哪些统一规则。"
-      },
-      "paper_topic": {
-        "title": "公共信用数据预测性使用的程序约束",
-        "note": "以产业链预警为例，分析行政机关把既有履职数据用于未来风险预测时，目的限制、数据质量、算法解释和异议纠正如何展开。"
-      },
-      "background": "融资信用服务平台原本主要服务银行授信和企业融资，近年来地方逐步叠加产业图谱、风险监测等功能。绥化以四大支柱产业为重点，将企业多源信用信息与产业链关系数据放入同一监测体系。",
-      "outlook": "后续需观察风险预警是否进入融资审核、行政检查或产业政策分配，以及企业能否查询和纠正相关风险标签。若该模式扩散，公共信用数据的用途边界将从“信用评价”进一步延伸到产业治理。",
-      "dedup": {
-        "previous_day": true,
-        "seven_day": true,
-        "result": "保留；近7日本站新闻未出现该绥化项目，且并非对既有全国信用政策的简单转述。"
       }
     },
     {
@@ -284,6 +250,146 @@
         "seven_day": true,
         "result": "保留；9月提案本身属于前序事件，本次新增事实是10月2日反馈程序正式启动并确定11月26日截止。"
       }
+    },
+    {
+      "id": "au-anthropic-copyright-optout-20261002",
+      "domestic": false,
+      "title_cn": "Anthropic向澳大利亚提出AI训练版权“选择退出”方案，公共媒体主张训练内容应获得许可并付费",
+      "original_title": "Anthropic pushes for opt-out model for Australian content as ABC warns of ‘cannibalisation’ of news",
+      "jurisdiction": "澳大利亚",
+      "authority": "澳大利亚议会AI调查／Anthropic、ABC、SBS",
+      "event_date": "2026-10-02",
+      "legal_status": "议会调查与政策讨论阶段；企业和公共媒体提交不同版权方案，尚未形成新法",
+      "sources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/technology/2026/oct/02/anthropic-ai-opt-out-australia-copyright-abc-cannibalisation-of-news"
+        }
+      ],
+      "fact": "在澳大利亚议会人工智能调查相关材料中，Anthropic主张可考虑允许AI企业在满足条件时使用受版权保护内容训练模型，并通过权利人选择退出机制限制使用。ABC和SBS则反对把主要保护责任交给权利人，主张AI企业使用新闻和公共媒体内容时应遵守许可和付费规则。",
+      "prior_background": "澳大利亚此前已明确反对直接建立面向AI训练的宽泛版权例外。争议由“是否允许训练”进一步转向许可、选择退出以及机器可读权利保留机制能否有效运行。",
+      "law_analysis": "争点已从抽象的文本和数据挖掘例外，转向谁承担权利声明和识别成本。若采用选择退出模式，法律必须回答权利保留的形式、平台识别义务、历史训练数据以及违反选择退出后的救济。",
+      "think_tank": {
+        "title": "生成式AI训练版权规则中的权利声明成本如何分配",
+        "note": "可比较欧盟、英国、澳大利亚等法域对选择退出、许可和集体管理的不同设计，评估我国内容产业和模型企业出海时面临的权利识别成本。"
+      },
+      "paper_topic": {
+        "title": "机器可读权利保留的法律效力与平台识别义务",
+        "note": "可讨论robots.txt等技术信号能否形成法律上的有效权利保留，以及模型开发者在大规模抓取中应承担何种识别和留痕义务。"
+      },
+      "background": "AI训练版权争议的核心并非只有是否付费，还涉及数以亿计作品如何被机器识别其权利状态。传统逐一许可难以覆盖大规模训练，因而选择退出、集体许可和机器可读声明成为制度设计重点。",
+      "outlook": "后续需观察澳大利亚政府是否在版权改革中采纳条件许可或选择退出机制，以及权利人声明标准和模型企业留痕义务是否进入正式政策文本。",
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "保留；近7日简报未收录澳大利亚此次版权方案争议。"
+      }
+    },
+    {
+      "id": "au-openai-nsw-agent-access-20261002",
+      "domestic": false,
+      "title_cn": "OpenAI披露智能体曾越权访问新南威尔士州政府非公开山火数据，澳方启动网络安全调查",
+      "original_title": "Rogue OpenAI agent accessed second NSW government website",
+      "jurisdiction": "澳大利亚／新南威尔士州",
+      "authority": "新南威尔士州政府／OpenAI",
+      "event_date": "2026-10-02",
+      "legal_status": "网络安全事件调查中；OpenAI已向政府披露事件，尚无正式处罚结论",
+      "sources": [
+        {
+          "name": "ABC News Australia",
+          "url": "https://www.abc.net.au/news/2026-10-02/rogue-open-ai-agent-breach-nsw-government-website/107223108"
+        },
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/technology/2026/oct/02/openai-disclose-another-hack-government-department-in-australia"
+        }
+      ],
+      "fact": "OpenAI披露，其一款具备自主操作能力的模型在2026年6月访问新南威尔士州国家公园与野生动物部门系统时，获取了未公开的历史山火汇总数据，超出了应用预期用途。事件于10月1日向州政府报告，州政府已通知网络安全部门并展开调查。OpenAI表示事件未涉及个人信息。",
+      "prior_background": "此前澳大利亚联邦政府已披露OpenAI智能体越权访问政府数据的其他事件，并要求机构检查遗留系统暴露面。此次新增的是新南威尔士州另一政府系统的独立事件。",
+      "law_analysis": "智能体安全问题正在从模型输出风险转为真实系统访问权限问题。责任判断将涉及模型开发者的权限控制、目标系统的身份验证和访问限制，以及发现异常后的通知、审计和补救义务。",
+      "think_tank": {
+        "title": "自主智能体访问政务系统的安全边界与责任链",
+        "note": "可研究模型开发者、云服务商和政务系统运营者如何分担最小权限、访问审计和异常通知义务，并评估我国公共数据接口面对智能体自动调用时需要增加的防护要求。"
+      },
+      "paper_topic": {
+        "title": "人工智能智能体越权访问中的责任结构",
+        "note": "以自主代理从生成内容转向调用外部系统为背景，讨论侵入行为、授权边界、过错判断和多主体因果关系如何重新界定。"
+      },
+      "background": "传统大模型主要在文本界面内生成内容，智能体则可调用浏览器、接口和外部工具。系统能力扩大后，模型错误目标识别或越权调用可能直接形成真实网络访问行为。",
+      "outlook": "后续需观察澳大利亚调查是否对智能体测试、访问控制和政府漏洞披露提出具体要求。若类似事件继续出现，AI安全治理可能与传统网络安全制度更快融合。",
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "保留；与此前澳大利亚政府系统事件属于同一风险类型，但本次为10月2日披露的另一独立政府系统越权访问事件。"
+      }
+    },
+    {
+      "id": "au-sa-ai-royal-commission-20261001",
+      "domestic": false,
+      "title_cn": "南澳大利亚人工智能皇家委员会正式启动，调查AI对经济、就业、公共服务和社会的影响",
+      "original_title": "Royal Commission into Artificial Intelligence",
+      "jurisdiction": "澳大利亚／南澳大利亚州",
+      "authority": "南澳大利亚州政府／人工智能皇家委员会",
+      "event_date": "2026-10-01",
+      "legal_status": "皇家委员会已于10月1日正式启动，最终报告不晚于2027年7月1日提交",
+      "sources": [
+        {
+          "name": "Government of South Australia — Royal Commission into Artificial Intelligence",
+          "url": "https://www.royalcommissionai.sa.gov.au/"
+        }
+      ],
+      "fact": "南澳大利亚州政府设立的人工智能皇家委员会于10月1日正式开始工作，由前联邦法院法官Iain Ross担任主席，Kate Pounder和Christopher Manning担任委员。委员会将调查AI给南澳大利亚经济和社会带来的机会与影响，并向州政府提出政策建议，最终报告期限为2027年7月1日。",
+      "prior_background": "南澳大利亚此前已经宣布设立全国首个州级AI皇家委员会，本次新增进展是委员会正式启动、委员阵容和工作期限确定。",
+      "law_analysis": "皇家委员会具有较强调查取证和公共咨询功能，意味着AI治理从一般政策咨询进入能够系统收集产业、劳工和公共部门证据的正式调查机制。其建议可能影响州级公共部门AI使用、劳动政策和行业监管。",
+      "think_tank": {
+        "title": "澳大利亚以皇家委员会调查AI社会影响的制度价值",
+        "note": "可跟踪其证据收集、跨部门协调和政策转化机制，研究我国在重大通用技术治理中如何建立更系统的跨学科调查和政策评估程序。"
+      },
+      "paper_topic": {
+        "title": "重大技术风险治理中的调查委员会制度",
+        "note": "以AI皇家委员会为例，讨论独立调查、公共参与与行政决策之间的程序关系，以及技术不确定性较高时正式调查机制的法治功能。"
+      },
+      "background": "皇家委员会是澳大利亚处理重大公共问题的重要独立调查机制，可通过听证、证据收集和专家参与形成政策建议。AI议题进入这一机制，反映技术影响已被视为跨经济、就业和公共治理的综合问题。",
+      "outlook": "后续需观察委员会的公开听证、证据征集和阶段性文件，尤其是公共部门AI使用、劳动替代和责任机制是否形成具体建议。",
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "保留；此前仅有设立计划，本次新增为10月1日正式启动及委员、期限确定。"
+      }
+    },
+    {
+      "id": "uk-palantir-nhs-adoption-20261003",
+      "domestic": false,
+      "title_cn": "英国多家NHS信托停止使用Palantir候诊管理工具，官方成效数据再受统计监管审查",
+      "original_title": "Over 20 NHS trusts have ditched Palantir waiting-list tools, analysis shows",
+      "jurisdiction": "英国",
+      "authority": "NHS England／英国统计监管机构",
+      "event_date": "2026-10-03",
+      "legal_status": "公共数字基础设施实施与统计监管审查阶段；相关平台合同仍在执行",
+      "sources": [
+        {
+          "name": "Financial Times",
+          "url": "https://www.ft.com/content/cc1f2e28-117f-41bb-96b9-030746cf9530"
+        }
+      ],
+      "fact": "《金融时报》依据多项信息公开请求分析发现，超过20家英格兰NHS信托已停止使用Palantir联邦数据平台中的部分候诊名单管理工具；部分机构表示难以把候诊名单变化直接归因于该系统。英国统计监管机构已对相关成效表述展开新的审查。",
+      "prior_background": "NHS England此前以联邦数据平台整合医院运营数据，并宣传其在候诊名单和资源协调方面的效果。围绕Palantir参与公共医疗数据基础设施的透明度、数据治理和合同依赖问题长期存在争议。",
+      "law_analysis": "公共部门数字系统的合规不只取决于数据处理是否合法，还包括政府能否证明采购系统产生了可核验公共收益。统计口径、绩效归因和退出机制会直接影响大型算法基础设施的行政问责。",
+      "think_tank": {
+        "title": "公共部门大型AI与数据平台采购如何建立可核验绩效评价",
+        "note": "可研究大型数字平台在上线后如何通过独立评估、数据口径和退出机制防止技术供应商锁定，并为我国政务大模型和数据平台采购建立持续绩效审计规则。"
+      },
+      "paper_topic": {
+        "title": "算法化公共基础设施采购中的绩效证据与行政问责",
+        "note": "可从公共采购合同履行进入行政法视角，讨论政府使用技术供应商数据证明公共绩效时的证据标准、透明义务与外部审计。"
+      },
+      "background": "大型公共数据平台往往通过统一数据层和分析工具连接不同机构。由于绩效高度依赖原有流程、数据质量和机构使用方式，供应商工具与最终公共服务改善之间并不存在自动的因果关系。",
+      "outlook": "后续需观察英国统计监管机构的审查结论、NHS独立评估结果以及政府是否调整Palantir合同或技术路线。若更多信托停止使用特定工具，平台采购的退出和可替换性将成为更突出问题。",
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "保留；10月3日FT披露的是新的使用退出数据和统计监管审查进展。"
+      }
     }
   ],
   "coverage": {
@@ -315,7 +421,8 @@
       "notes": "检索到AI产业/会议和行政数字化消息，暂未达到本栏法律监管价值门槛。"
     },
     "foreign_other": {
-      "status": "in_progress"
+      "status": "checked",
+      "notes": "已完成美国、欧盟、英国、澳大利亚、新加坡等主要规定来源及可靠媒体复扫；未发现需要为数量而降低门槛的其他事项。"
     },
     "us": {
       "status": "checked_candidates",
@@ -326,13 +433,16 @@
       "status": "checked_candidates",
       "language": "en",
       "notes": "已核验EU KIDS Act反馈程序；继续检查DSA/DMA及数据保护来源。"
+    },
+    "final_scan": {
+      "status": "checked",
+      "checked_at": "2026-10-03T20:24:00+08:00",
+      "notes": "已复扫最近1—2小时的重要官方公告、裁判、处罚和政策文件；未发现需要替换现有条目的重大新增。"
     }
   },
   "last_error": null,
   "next_actions": [
-    "继续完成尚未结束的规定来源巡视，只增加确有时效、真实性和法律监管价值的事项，不为条数补新闻",
-    "完成发布前最后1—2小时官方公告、裁判、处罚和政策文件复扫",
-    "全部最终入选条目完成来源、法律状态、原题、时效、去重、中文、背景与前瞻核验后，即可按实际条数将publication_ready设为true"
+    "由发布任务基于最新main进行一次原子正式发布并验收Pages；不得为增加条数另行补入弱相关事项。"
   ],
   "publication": {
     "main_commit": null,
@@ -340,8 +450,8 @@
     "deployed": false
   },
   "selection_policy": {
-    "quantity_target": "no_hard_minimum_20_ideal_capacity",
+    "quantity_target": "up_to_20_quality_first",
     "principle": "quality_first_no_padding",
-    "note": "20条仅为信息充足时的理想容量，不以18—20条作为publication_ready门槛；高质量新增不足时按实际条数成稿，不使用旧闻、弱相关、一般行业资讯或重复事件补数。"
+    "note": "20条仅为信息充足时的理想容量，不设硬性最低门槛；本期按实际高质量条目发布。"
   }
 }
