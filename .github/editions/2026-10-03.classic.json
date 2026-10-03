@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-03",
+  "column": "classic",
+  "status": "verified",
+  "phase": "deployment_check",
+  "book": "John Austin：《法理学的范围》",
+  "bibliography": {
+    "author": "John Austin",
+    "originalTitle": "The Province of Jurisprudence Determined",
+    "publisher": "John Murray",
+    "year": "1832",
+    "edition": "初版"
+  },
+  "target_path": "articles/2026-10-03-austin-province-jurisprudence.html",
+  "sources": [
+    "https://books.google.com/books/about/The_Province_of_Jurisprudence_Determined.html?id=Lm__im02ewsC",
+    "https://www.cambridge.org/core/books/austin-the-province-of-jurisprudence-determined/930093B7F0872F4CE799C6A5326DE724",
+    "https://plato.stanford.edu/entries/austin-john/",
+    "https://www.cambridge.org/core/journals/canadian-journal-of-law-and-jurisprudence/article/abs/john-austin-and-constructing-theories-of-law/72471AF3C9B73E06C50592515F14D878",
+    "https://www.cambridge.org/core/journals/canadian-journal-of-law-and-jurisprudence/article/hart-on-legal-powers-as-legal-competences/6BEE4F5C9DC6C67D170764C0CB39C076"
+  ],
+  "verification": {
+    "full_text_review": true,
+    "first_edition_metadata": true,
+    "six_lecture_structure": true,
+    "history_deduplication": true,
+    "bibliography": true,
+    "representative_criticism": true,
+    "natural_chinese_reviewed": true,
+    "final_body_complete": true
+  },
+  "history_dedup": {
+    "passed": true,
+    "rejected_duplicate": "A. V. Dicey, Introduction to the Study of the Law of the Constitution — already published 2026-08-31",
+    "selected_new_work": "John Austin, The Province of Jurisprudence Determined"
+  },
+  "summary": "Austin以六讲划定法理学边界：从命令、义务与制裁出发，区分实在法、实在道德、宗教与伦理评价，再以主权和习惯性服从解释政治社会中的法律效力。后世Hart等对授权性规则、法律体系连续性和单一主权模型的批评，使这本书成为理解法律实证主义演进的重要起点。",
+  "homepage_summary": "John Austin：《法理学的范围》",
+  "classics_summary": "John Austin：《法理学的范围》",
+  "archive_summary": "最新：John Austin：《法理学的范围》",
+  "required_updates": [
+    "publish target_path",
+    "advance homepage classic card",
+    "prepend classics.html Oct 3 entry and correct the existing Oct 1 Pound wrong link",
+    "advance archive classic summary",
+    "advance data/current-edition.json classic pages/page_dates",
+    "sync current classic navigation only",
+    "write verified classic record"
+  ],
+  "last_error": null,
+  "next_actions": [
+    "verify exact main commit Pages deploy",
+    "verify deployed current-columns and live classic entry points"
+  ],
+  "state": "verified",
+  "publication": {
+    "deployment_claim": false,
+    "note": "Content verified; deployment success is established only by the exact main commit's Pages run and live current-columns checks."
+  }
+}
