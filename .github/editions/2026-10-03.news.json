@@ -4,7 +4,7 @@
   "state": "draft",
   "page": "articles/2026-10-03-tech-law-brief.html",
   "base_main_sha": "95e48294e8b9e94fdec8aa7b98e1e0f48bae881c",
-  "updated_at": "2026-10-03T20:15:00+08:00",
+  "updated_at": "2026-10-03T20:17:00+08:00",
   "phase": "research",
   "news_count": 8,
   "distribution": {
@@ -330,9 +330,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "继续核验美国、欧盟、英国、澳大利亚、新加坡等已发现的高价值候选，并按3—5条一组保存",
-    "完成日韩越当地语言巡视结果复核及其他规定来源覆盖",
-    "结束前重新扫描最近1—2小时重要官方公告、裁判、处罚和政策文件；完成18—20条且全部核验后再将publication_ready设为true"
+    "继续完成尚未结束的规定来源巡视，只增加确有时效、真实性和法律监管价值的事项，不为条数补新闻",
+    "完成发布前最后1—2小时官方公告、裁判、处罚和政策文件复扫",
+    "全部最终入选条目完成来源、法律状态、原题、时效、去重、中文、背景与前瞻核验后，即可按实际条数将publication_ready设为true"
   ],
   "publication": {
     "main_commit": null,
@@ -340,8 +340,8 @@
     "deployed": false
   },
   "selection_policy": {
-    "quantity_target": "18-20",
+    "quantity_target": "no_hard_minimum_20_ideal_capacity",
     "principle": "quality_first_no_padding",
-    "note": "按当前任务及仓库规范，目标18—20条；不足时宁少勿滥，不以旧闻或弱相关事项补数。"
+    "note": "20条仅为信息充足时的理想容量，不以18—20条作为publication_ready门槛；高质量新增不足时按实际条数成稿，不使用旧闻、弱相关、一般行业资讯或重复事件补数。"
   }
 }
