@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-03",
+  "column": "classic",
+  "status": "researching",
+  "book": "John Austin：《法理学的范围》",
+  "bibliography": {
+    "author": "John Austin",
+    "originalTitle": "The Province of Jurisprudence Determined",
+    "publisher": "John Murray",
+    "year": "1832",
+    "edition": "初版"
+  },
+  "base_main_sha": "a6ceb5dd83f65daba8519c17c372846ef4658621",
+  "target_path": "articles/2026-10-03-austin-province-jurisprudence.html",
+  "sources": [
+    "https://books.google.com/books/about/The_Province_of_Jurisprudence_Determined.html?id=Lm__im02ewsC",
+    "https://www.cambridge.org/core/books/austin-the-province-of-jurisprudence-determined/930093B7F0872F4CE799C6A5326DE724",
+    "https://plato.stanford.edu/entries/austin-john/",
+    "https://www.cambridge.org/core/journals/canadian-journal-of-law-and-jurisprudence/article/abs/john-austin-and-constructing-theories-of-law/72471AF3C9B73E06C50592515F14D878"
+  ],
+  "verification": {
+    "history_deduplication": true,
+    "first_edition_metadata": true,
+    "lecture_structure": true,
+    "full_text_review_in_progress": true,
+    "representative_criticism": false,
+    "natural_chinese_reviewed": false
+  },
+  "last_error": null,
+  "next_actions": [
+    "finish six-lecture review",
+    "write complete HTML",
+    "verify criticism sources",
+    "atomic draft_ready handoff"
+  ]
+}
