@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-03",
+  "timezone": "Asia/Shanghai",
+  "column": "newworks",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-03-new-works.html",
+  "newworks_count": 5,
+  "checked_at": "2026-10-03T21:03:27+08:00",
+  "verification_basis": "同日“当日第4栏发布包”；发布任务仅核对包完整性、书目字段、站内关联目标与仓库状态，不重新研究或改写。",
+  "checks": {
+    "original_publication_pages_opened": true,
+    "bibliography": true,
+    "doi": true,
+    "repository_history_deduplication": true,
+    "original_titles": true,
+    "chinese_expression": true,
+    "related_reading_reviewed": true,
+    "timeline_reviewed": true
+  },
+  "related_reading": [
+    {
+      "item": 3,
+      "path": "articles/2026-09-12-tech-law-brief.html#research-item-7",
+      "title": "欧盟《网络韧性法》漏洞与严重事件报告义务正式适用，ENISA统一报告平台上线",
+      "relation": "同一部《网络韧性法》；历史新闻记录生命周期报告义务正式适用，当前论文从欧盟产品监管体系解释持续网络安全义务如何改变传统产品规制结构。"
+    }
+  ],
+  "timeline": [],
+  "items": [
+    {
+      "author": "Xinlei Wang、Jiaxin Jia",
+      "originalTitle": "Bridging the deterrence deficit: constructing a punitive damages regime for China’s Personal Information Protection Law",
+      "journal": "International Data Privacy Law",
+      "year": "2026",
+      "volume": "16",
+      "issue": "4",
+      "pages_or_article": "ipag019",
+      "doi": "10.1093/idpl/ipag019",
+      "published_online": "2026-09-28",
+      "url": "https://academic.oup.com/idpl/article-abstract/16/4/ipag019/8842669",
+      "cnTitle": "个人信息保护的“威慑缺口”：为《个人信息保护法》构建惩罚性赔偿制度"
+    },
+    {
+      "author": "Kasim Balarabe",
+      "originalTitle": "Digital sovereignty and jurisdictional complexities in the metaverse: Rethinking legal authority in virtual spaces",
+      "journal": "Internet Policy Review",
+      "year": "2026",
+      "volume": "15",
+      "issue": "3",
+      "pages_or_article": "",
+      "doi": "10.14763/2026.3.2106",
+      "published_online": "2026-09-24",
+      "url": "https://policyreview.info/articles/analysis/jurisdictional-complexities-metaverse",
+      "cnTitle": "元宇宙中的数字主权：虚拟空间的法律权威如何分层配置"
+    },
+    {
+      "author": "Pratham Ajmera",
+      "originalTitle": "European Product Regulation Gets a Security Update – The EU Cyber-Resilience Act as an Adaptation to a Highly Digitised Product Market",
+      "journal": "European Journal of Risk Regulation",
+      "year": "2026",
+      "volume": "",
+      "issue": "First View",
+      "pages_or_article": "1–20",
+      "doi": "10.1017/err.2026.10150",
+      "published_online": "2026-09-23",
+      "url": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/european-product-regulation-gets-a-security-update-the-eu-cyberresilience-act-as-an-adaptation-to-a-highly-digitised-product-market/49837B5366C49678BB5B46AF8164276E",
+      "cnTitle": "欧盟产品监管的网络安全升级：《网络韧性法》如何适应数字化产品市场"
+    },
+    {
+      "author": "Sarah Tas",
+      "originalTitle": "The datafication by Frontex: unpacking (joint) controllership",
+      "journal": "International Data Privacy Law",
+      "year": "2026",
+      "volume": "16",
+      "issue": "4",
+      "pages_or_article": "1–15; ipag017",
+      "doi": "10.1093/idpl/ipag017",
+      "published_online": "2026-09-22",
+      "url": "https://academic.oup.com/idpl/article/16/4/ipag017/8829085",
+      "cnTitle": "Frontex的数据化扩张：共同控制者能否填补问责缺口"
+    },
+    {
+      "author": "S I Strong",
+      "originalTitle": "Artificial Intelligence and Civil Justice: U.S. Practice, Policy, and Principles",
+      "journal": "The American Journal of Comparative Law",
+      "year": "2026",
+      "volume": "74",
+      "issue": "Supplement 1",
+      "pages_or_article": "i117–i147",
+      "doi": "10.1093/ajcl/avag028",
+      "published_online": "2026-09-24",
+      "url": "https://academic.oup.com/ajcl/article/74/Supplement_1/i117/8829023",
+      "cnTitle": "人工智能进入美国民事司法：从律师核验到法院治理的制度边界"
+    }
+  ],
+  "deduplication": {
+    "method": "同日发布包已按 DOI、原始题名、作者和版本与全部历史研究新作去重；五项均无历史命中。",
+    "duplicates_in_final_selection": []
+  },
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "deployed_contextual_reading": null,
+    "deployed_current_columns": null,
+    "deployed_entry_points": null
+  },
+  "scope_guard": {
+    "brief_page": "articles/2026-10-03-tech-law-brief.html",
+    "paper_page": "articles/2026-10-02-balkin-free-speech-triangle.html",
+    "classic_page": "articles/2026-10-02-maine-ancient-law.html",
+    "news_count": 11,
+    "note": "Only the newworks column, its entry points, and necessary current-column newworks navigation are changed by this publication."
+  }
+}
