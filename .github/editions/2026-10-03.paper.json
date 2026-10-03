@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-03",
+  "column": "paper",
+  "phase": "handoff",
+  "content_status": "content_complete",
+  "base_main_sha": "a6ceb5dd83f65daba8519c17c372846ef4658621",
+  "draft_html_path": ".github/editions/2026-10-03.paper.html",
+  "page": "articles/2026-10-03-cohen-law-platform-economy.html",
+  "title": "Julie E. Cohen：《平台经济的法律》",
+  "bibliography": {
+    "type": "article",
+    "author": "Julie E. Cohen",
+    "originalTitle": "Law for the Platform Economy",
+    "journal": "UC Davis Law Review",
+    "year": "2017",
+    "volume": "51",
+    "issue": "1",
+    "pages": "133–204",
+    "doi": "",
+    "url": "https://lawreview.law.ucdavis.edu/archives/51/1/law-platform-economy",
+    "cnTitle": "平台经济的法律"
+  },
+  "versions": {
+    "formal": "UC Davis Law Review, Vol.51, Issue 1 (2017), pp.133–204",
+    "working_paper": "SSRN abstract_id=2991261; posted 2017-06-24; revised 2017-10-04; marked UC Davis Law Review, Forthcoming"
+  },
+  "sources": [
+    "https://lawreview.law.ucdavis.edu/archives/51/1/law-platform-economy",
+    "https://lawreview.law.ucdavis.edu/sites/g/files/dgvnsk15026/files/media/documents/51-1_Cohen.pdf",
+    "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2991261"
+  ],
+  "homepage": {
+    "date": "2026.10.03",
+    "title": "Julie E. Cohen：《平台经济的法律》",
+    "summary": "平台并不是进入既有市场，而是在重组市场、权利与监管制度。"
+  },
+  "papers_list": {
+    "date": "2026.10.03",
+    "title": "Julie E. Cohen：《平台经济的法律》"
+  },
+  "archive": {
+    "summary": "最新：Julie E. Cohen：《平台经济的法律》"
+  },
+  "related_reading": [
+    "articles/2026-09-19-klonick-new-governors.html",
+    "articles/2026-09-24-suzor-digital-constitutionalism.html",
+    "articles/2026-10-02-balkin-free-speech-triangle.html"
+  ],
+  "timeline": null,
+  "checks": {
+    "full_formal_text_read": true,
+    "formal_bibliography_verified": true,
+    "working_paper_version_distinguished": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true
+  }
+}
