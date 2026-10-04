@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-04",
+  "timezone": "Asia/Shanghai",
+  "column": "newworks",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-04-new-works.html",
+  "newworks_count": 5,
+  "checked_at": "2026-10-04T21:00:00+08:00",
+  "checks": {
+    "original_publication_pages_opened": true,
+    "bibliography": true,
+    "doi": true,
+    "repository_history_deduplication": true,
+    "original_titles": true,
+    "chinese_expression": true,
+    "related_reading_reviewed": true,
+    "timeline_reviewed": true
+  },
+  "related_reading": [
+    {
+      "item": 4,
+      "path": "new-works/2026-08-17.html",
+      "reason": "同一《欧盟人工智能法》监管沙盒制度；历史研究侧重监管能力、协调和参与吸引力，本期侧重市场失灵、政府失灵与监管学习。"
+    },
+    {
+      "item": 4,
+      "path": "articles/2026-09-29-new-works.html#research-item-5",
+      "reason": "同一AI监管沙盒制度；历史研究侧重准入、裁量、退出和行政法控制，本期进一步分析信息不对称、外部性、监管学习和监管俘获。"
+    }
+  ],
+  "timeline": [],
+  "items": [
+    {
+      "cnTitle": "越南个人数据保护法的制度移植：为什么规则相似不等于制度相同",
+      "author": "Thi Tue Phuong Hoang、Thi Lan Anh Do",
+      "originalTitle": "Experimental hybridism within filtered legal transplantation: Vietnam’s personal data protection law in comparative perspective",
+      "journal": "International Data Privacy Law",
+      "year": "2026",
+      "volume": "16",
+      "issue": "4",
+      "pages": "",
+      "articleNumber": "ipag018",
+      "doi": "10.1093/idpl/ipag018",
+      "published_online": "2026-09-22",
+      "url": "https://doi.org/10.1093/idpl/ipag018"
+    },
+    {
+      "cnTitle": "AI政策与知识产权政策不能各走各路：尼日利亚两套治理体系的衔接缺口",
+      "author": "Ifeoluwa Ayokunle Olubiyi",
+      "originalTitle": "Gaps in Nigeria’s artificial intelligence and intellectual property legal and policy frameworks and the need for synergy: a comparative analysis",
+      "journal": "Journal of Intellectual Property Law & Practice",
+      "year": "2026",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "articleNumber": "jpag085",
+      "doi": "10.1093/jiplp/jpag085",
+      "published_online": "2026-09-16",
+      "url": "https://doi.org/10.1093/jiplp/jpag085"
+    },
+    {
+      "cnTitle": "欧盟媒体自由法的悖论：保护新闻媒体为何可能反而固化平台权力",
+      "author": "Charis Papaevangelou、Max van Drunen",
+      "originalTitle": "Institutionalising platform dependence: The paradox of the European Media Freedom Act",
+      "journal": "Internet Policy Review",
+      "year": "2026",
+      "volume": "15",
+      "issue": "3",
+      "pages": "",
+      "articleNumber": "",
+      "doi": "10.14763/2026.3.2116",
+      "published_online": "2026-09-17",
+      "url": "https://doi.org/10.14763/2026.3.2116"
+    },
+    {
+      "cnTitle": "AI监管沙盒不只是“放宽规则”：怎样让实验真正帮助监管学习",
+      "author": "Antonella Zarra",
+      "originalTitle": "Experimentalism beyond ex ante regulation: A law and economics perspective on AI regulatory sandboxes",
+      "journal": "Cambridge Forum on AI: Law and Governance",
+      "year": "2026",
+      "volume": "2",
+      "issue": "",
+      "pages": "1–23",
+      "articleNumber": "e1",
+      "doi": "10.1017/cfl.2025.10039",
+      "published_online": "2026-01-22",
+      "url": "https://doi.org/10.1017/cfl.2025.10039"
+    },
+    {
+      "cnTitle": "公共消费银行使用AI作决定：能否把“善意对待客户”写进算法",
+      "author": "Marleen Voss、Laurenz Döring",
+      "originalTitle": "Artificial benevolence in the decision-making process of public consumer banking – An information systems and legal analysis",
+      "journal": "Cambridge Forum on AI: Law and Governance",
+      "year": "2026",
+      "volume": "2",
+      "issue": "",
+      "pages": "1–15",
+      "articleNumber": "e8",
+      "doi": "10.1017/cfl.2025.10040",
+      "published_online": "2026-05-28",
+      "url": "https://doi.org/10.1017/cfl.2025.10040"
+    }
+  ],
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "deployed_current_columns": null,
+    "deployed_entry_points": null
+  },
+  "scope_guard": {
+    "brief_page": "articles/2026-10-03-tech-law-brief.html",
+    "brief_date": "2026-10-03",
+    "news_count": 11,
+    "paper_page": "articles/2026-10-03-cohen-law-platform-economy.html",
+    "paper_date": "2026-10-03",
+    "classic_page": "articles/2026-10-03-austin-province-jurisprudence.html",
+    "classic_date": "2026-10-03"
+  }
+}
