@@ -111,9 +111,9 @@ jobs:
           urls = sorted({a['href'] for a in issue.select('.source a[href]') if a['href'].startswith('https://')})
           for url in urls:
               item = {'url': url, 'ok': False}
-              for attempt in range(2):
+              for attempt in range(3):
                   try:
-                      r = requests.get(url, timeout=(10, 30))
+                      r = requests.get(url, headers={'User-Agent':'Mozilla/5.0 (compatible; TradeWatchVerifier/1.0; +https://github.com/Cyberlawresearch/cyberlaw-research)','Accept':'text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.8'}, timeout=(15, 60))
                       r.raise_for_status()
                       if len(r.content) < 100:
                           raise ValueError('Unexpectedly empty source')
