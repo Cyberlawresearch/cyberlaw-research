@@ -4,12 +4,12 @@
   "state": "draft",
   "page": "articles/2026-10-04-tech-law-brief.html",
   "base_main_sha": "4bfdd5e2e77ad9998acdb2487627c28026b94cd7",
-  "updated_at": "2026-10-04T22:25:03+08:00",
+  "updated_at": "2026-10-04T23:51:00+08:00",
   "phase": "ready_for_publication",
-  "news_count": 11,
+  "news_count": 13,
   "distribution": {
     "domestic": 0,
-    "foreign": 11
+    "foreign": 13
   },
   "publication_ready": true,
   "checks": {
@@ -360,37 +360,38 @@
     {
       "id": "it-garante-iqvia-health-data-20261002",
       "domestic": false,
-      "title_cn": "意大利Garante认定百万患者数据并未真正匿名化，对IQVIA罚款700万欧元",
+      "title_cn": "意大利隐私监管机构认定IQVIA百万患者数据并未真正匿名化，罚款700万欧元",
       "original_title": "Dati sanitari: il Garante privacy sanziona IQVIA per 7 milioni di euro. Non anonimi i dati di un milione di pazienti di 800 medici di famiglia",
-      "jurisdiction": "意大利／欧盟",
-      "authority": "意大利个人数据保护局（Garante）",
+      "original_title_local": "Dati sanitari: il Garante privacy sanziona IQVIA per 7 milioni di euro. Non anonimi i dati di un milione di pazienti di 800 medici di famiglia",
+      "jurisdiction": "意大利",
+      "authority": "意大利个人数据保护局（Garante per la protezione dei dati personali）",
       "event_date": "2026-10-02",
-      "event_id": "IT-Garante-IQVIA-health-data-anonymisation-2026",
-      "new_action": "Garante公布对IQVIA Solutions Italy处以700万欧元罚款的决定，认定其用于研究和医药企业委托分析的约100万名患者健康数据并未达到真正匿名化标准。",
-      "legal_status": "正式行政处罚决定已作出并公开；处罚决定编号710，日期为2026年9月23日，监管机关于10月2日发布新闻稿。",
+      "event_id": "IT-Garante-IQVIA-health-data-20261002",
+      "new_action": "Garante对IQVIA处以700万欧元罚款，认定其处理的约100万名患者健康数据并未达到匿名化标准，并要求在120天内整改。",
+      "legal_status": "正式行政处罚与整改命令；处理涉及健康数据、法律基础、告知、保存期限、DPIA、安全措施和匿名化认定。",
       "sources": [
         {
           "name": "Garante Privacy",
-          "url": "https://garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/10302141"
+          "url": "https://garanteprivacy.it/home/docweb/-/docweb-display/docweb/10302141"
         }
       ],
-      "fact": "意大利个人数据保护局10月2日公布，对IQVIA Solutions Italy S.r.l.罚款700万欧元。该公司建立了包含约100万名患者、来源于800名家庭医生的健康数据库，并将数据用于受医药企业等委托的研究。Garante经调查认定，这些数据虽然经过处理，但仍存在重新识别个人的可能，不能按匿名信息排除在GDPR适用范围之外。",
-      "prior_background": "IQVIA主张相关数据库属于匿名化数据。Garante在2025年现场检查后开展调查，并合并处理公司自行报告的一起个人数据泄露事件，最终于9月23日作出处罚决定，10月2日公开。",
-      "law_analysis": "本案直接回应了数据利用实践中“去标识化是否等于匿名化”的核心问题。只要结合可合理获得的信息仍可能把数据重新关联到个人，数据就不能因技术处理而当然退出GDPR。对于医疗研究、数据产品和模型训练，匿名化判断必须围绕实际再识别风险，而不是企业内部使用何种技术标签。",
+      "fact": "意大利个人数据保护局10月2日宣布，对IQVIA处以700万欧元罚款。监管机关认定，IQVIA从约800名家庭医生处取得的约100万名患者健康数据并未真正匿名化：患者被赋予持续代码，并与出生年份、性别、诊断、症状、处方、检查、疫苗和定位等详细信息结合，仍可能在合理手段下被重新识别。监管机关还认定公司缺乏适当处理基础、告知不足、未明确保存期限、未开展数据保护影响评估且安全措施不足，并要求其在120天内整改。",
+      "prior_background": "IQVIA主张相关数据已经匿名化，因此不再属于个人数据。Garante则从持续标识符、数据粒度和合理可重新识别性出发否定这一判断，并特别指出数据库中还混入超过3300名患者的直接身份信息，其中3000余人的身份信息与健康数据同时存在。",
+      "law_analysis": "该案对匿名化判断采取实质标准，而非只看是否删除姓名等直接标识符。持续代码、细粒度健康信息和位置等变量组合后仍能追踪并区分个人，就可能继续落入数据保护法适用范围。对于医疗数据研究和商业数据库，匿名化不能仅依赖去标识化处理，而需要评估现实可行的重新识别风险。",
       "think_tank": {
-        "title": "医疗数据匿名化的欧盟执法标准及对我国数据产品开发的影响",
-        "note": "可结合IQVIA处罚，比较GDPR匿名化标准与我国个人信息保护法匿名化、去标识化概念的适用差异。"
+        "title": "欧洲医疗数据匿名化执法的新标准及其对我国数据流通的影响",
+        "note": "可比较Garante、EDPB及其他欧洲监管机关对持续标识符、组合识别和合理手段标准的适用，评估医疗数据研究、数据产品和跨境提供中的匿名化边界。"
       },
       "paper_topic": {
-        "title": "匿名化的规范门槛：从技术去标识到法律上的不可识别",
-        "note": "可围绕合理可用信息、辅助数据、再识别成本和数据控制环境，构建匿名化法律判断的分层标准。"
+        "title": "匿名化与去标识化的法律分界：以可合理重新识别标准为中心",
+        "note": "可从健康数据高维度和长期可追踪性出发，讨论匿名化是否应以攻击者能力、外部辅助数据和处理目的动态判断，而非采用静态技术标签。"
       },
-      "background": "健康数据因敏感程度高、维度丰富，即使删除直接身份标识，也可能通过诊疗特征、时间、地区和其他辅助信息重新关联个人。欧盟监管实践一直强调匿名化需要达到实质不可识别，而非形式去标识。",
-      "outlook": "后续应关注处罚决定对健康数据二次研究、数据经纪和医药研究数据库的影响，以及IQVIA是否提起司法救济。该案也可能成为欧盟匿名化与假名化边界的重要执法参照。",
+      "background": "欧洲数据保护法下，真正匿名化的数据不再属于个人数据，但假名化或去标识化数据仍受GDPR约束。医疗数据因信息维度丰富、可长期关联和外部辅助数据充足，通常具有更高的重新识别风险。",
+      "outlook": "后续应关注IQVIA是否调整数据收集和匿名化流程，以及监管机关对医生端自主匿名化的具体要求。该案可能进一步影响欧洲医疗数据二次利用、真实世界研究和健康数据商业数据库的合规设计。",
       "dedup": {
         "previous_day": true,
         "seven_day": true,
-        "result": "保留；仓库近7日无IQVIA或同一处罚事件。"
+        "result": "保留；近7日简报未收录该IQVIA处罚，属于10月2日正式处罚和匿名化认定新节点。"
       }
     },
     {
@@ -464,6 +465,86 @@
         "seven_day": true,
         "result": "保留；仓库近7日未收录新墨西哥州Meta案本次罚款金额听证。"
       }
+    },
+    {
+      "id": "us-amazon-data-center-nda-20261002",
+      "domestic": false,
+      "title_cn": "亚马逊停止在数据中心项目审批中要求政府机构签署保密协议，并承诺增加社区透明度",
+      "original_title": "Amazon to invest $1B into data center communities amid backlash against data center rollouts",
+      "jurisdiction": "美国",
+      "authority": "Amazon Web Services（AWS）",
+      "event_date": "2026-10-02",
+      "event_id": "US-Amazon-data-center-NDA-transparency-20261002",
+      "new_action": "AWS表示已停止在数据中心项目审批过程中与政府机构使用保密协议，并宣布未来五年向数据中心所在社区投入10亿美元，同时增加社区开放活动和信息沟通。",
+      "legal_status": "企业治理与政策回应阶段；不是行政处罚或具有约束力的监管命令，但与美国多地限制数据中心保密协议和数据中心建设审查的政策争议直接相关。",
+      "sources": [
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/91b65ba1729540c1c0d92e35deef35d8"
+        },
+        {
+          "name": "WIRED",
+          "url": "https://www.wired.com/story/amazon-says-it-is-going-to-stop-using-ndas-for-data-centers/"
+        }
+      ],
+      "fact": "亚马逊10月2日宣布，将停止在数据中心项目审批中与政府机构使用保密协议，并计划未来五年向数据中心所在社区投入10亿美元，用于教育、职业培训、能源效率和其他地方项目。公司还表示将通过社区开放活动提高项目透明度。此次调整发生在美国多地围绕数据中心用电、用水、地方财政优惠和项目保密安排的争议持续上升之际。",
+      "prior_background": "美国多个州和地方政府近年围绕大型数据中心的能源、水资源、税收优惠和项目审批透明度展开争议，部分项目因前期使用保密协议而受到居民和议员批评。近期国会也出现限制数据中心项目保密安排的立法讨论。",
+      "law_analysis": "数据中心治理正在从单纯的土地、能源和产业审批问题转向程序透明与公众参与。企业主动放弃与政府机构之间的保密协议，说明地方审批中的信息公开、利益衡量和社区参与正在成为算力基础设施扩张的重要约束条件。即使企业承诺本身不是法律义务，也可能影响后续地方立法和行政审批对保密条款的接受程度。",
+      "think_tank": {
+        "title": "大型数据中心项目审批中的保密协议、公众参与与地方治理",
+        "note": "可比较美国地方政府在数据中心项目中使用保密协议、税收优惠、能源承诺和社区协商的做法，观察企业自愿透明承诺是否进一步转化为地方立法或审批条件。"
+      },
+      "paper_topic": {
+        "title": "数字基础设施项目中的行政透明与商业保密边界",
+        "note": "可讨论政府在招商和基础设施审批中接受企业保密要求的正当边界，以及重大能源和环境外部性项目中公众知情与参与权如何限制商业秘密主张。"
+      },
+      "background": "大型AI和云数据中心的建设越来越依赖地方土地、能源、水资源和财政支持，项目通常在正式公开前经历长期选址和谈判。争议集中在地方政府是否因保密安排而限制公众提前了解项目成本、资源占用和财政承诺。",
+      "outlook": "后续需观察Amazon的承诺是否适用于承包商和各类地方合作安排，以及州和联邦层面的数据中心透明立法是否继续推进。若更多企业采取类似政策，数据中心审批中的保密协议可能从常见招商工具逐步转变为需要特别说明正当性的例外。",
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "保留；10月3日简报未收录Amazon停止数据中心NDA的新承诺，近7日也无相同企业透明度动作。"
+      }
+    },
+    {
+      "id": "us-realpage-motion-dismiss-20261002",
+      "domestic": false,
+      "title_cn": "美国联邦法院拒绝RealPage及多家房东撤诉请求，算法租金反垄断案继续审理",
+      "original_title": "Court Sides with Attorney General Bonta in RealPage Case, Denies RealPage and Landlords’ Attempt to Evade Responsibility in Rent Pricing Lawsuit",
+      "jurisdiction": "美国／北卡罗来纳州",
+      "authority": "美国北卡罗来纳中区联邦地区法院／美国司法部及多州总检察长",
+      "event_date": "2026-10-02",
+      "event_id": "US-RealPage-antitrust-motion-dismiss-20261002",
+      "new_action": "联邦法院拒绝RealPage及部分房东提出的撤诉请求，多州总检察长针对租金算法、非公开竞争敏感数据共享和价格协调的反垄断诉讼继续推进。",
+      "legal_status": "联邦反垄断诉讼中的驳回动议阶段；法院允许相关州政府主张继续审理，尚未作出实体违法终局判决。",
+      "sources": [
+        {
+          "name": "California Department of Justice / Attorney General",
+          "url": "https://www.oag.ca.gov/news/press-releases/court-sides-attorney-general-bonta-realpage-case-denies-realpage-and-landlords%E2%80%99"
+        },
+        {
+          "name": "North Carolina Department of Justice",
+          "url": "https://ncdoj.gov/court-sides-with-attorney-general-jeff-jackson-in-realpage-case-antitrust-lawsuit-over-rent-pricing-to-continue/"
+        }
+      ],
+      "fact": "美国北卡罗来纳中区联邦地区法院本周拒绝RealPage及部分大型房东要求驳回相关诉讼的请求。美国司法部和多个州自2024年起指控RealPage汇集房东的非公开竞争敏感数据，并通过租金定价算法向市场参与者提供价格建议，削弱住房租赁市场竞争。10月2日，多州总检察长确认法院允许案件继续推进，RealPage和仍在诉的房东需要继续回应相关反垄断指控。",
+      "prior_background": "本站10月1日收录的是纽约州针对算法定价软件的州法被联邦法院暂缓执行，争点主要涉及对软件价格建议的直接规制与第一修正案。本条属于另一条诉讼链：联邦政府与多州针对RealPage及房东的数据共享和协调行为提出反垄断主张。",
+      "law_analysis": "两条RealPage诉讼链显示，算法定价监管正在区分“禁止工具本身”与“规制数据共享和协同行为”。前者更容易触发表达自由和过宽审查，后者则回到竞争者是否交换非公开信息、算法是否促成一致定价以及市场竞争是否受到削弱。法院允许案件继续审理，意味着算法只是工具并不会当然排除传统反垄断规则。",
+      "think_tank": {
+        "title": "算法定价监管中工具禁令与竞争行为执法的路径分化",
+        "note": "可比较纽约州直接限制算法定价软件与多州RealPage反垄断诉讼，分析不同监管工具在证明责任、比例性和司法审查上的差异。"
+      },
+      "paper_topic": {
+        "title": "算法协同定价的反垄断归责：从竞争敏感数据共享到价格建议",
+        "note": "可研究平台或软件商汇集竞争者非公开数据并生成价格建议时，传统信息交换理论和协同行为标准如何适用于算法中介。"
+      },
+      "background": "RealPage相关争议已形成多条诉讼和和解链。司法部与多州主张其租金管理软件依赖竞争者非公开数据并可能促成价格协调；部分房东已分别与执法机关达成和解，但针对RealPage及其他被告的诉讼仍在继续。",
+      "outlook": "后续实体审理将重点检验非公开数据交换、算法建议采用方式和租金市场效果之间的证据联系。不同法院同时审理算法定价州法和传统反垄断主张，也可能逐步形成对“规制软件”与“规制协同行为”的边界划分。",
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "保留；虽同属RealPage主题，但与10月1日纽约州算法定价禁令诉讼属于不同法院、不同请求和不同法律基础，10月2日撤诉动议裁定是独立新增司法节点。"
+      }
     }
   ],
   "coverage": {
@@ -525,12 +606,12 @@
     },
     "media": {
       "status": "checked",
-      "notes": "已补查用户提供AP日本AI声音权报道，并复核Reuters、404 Media、TechCrunch及AWS官方材料。Flock为前一日同案报道换标题；AWS停止政府项目NDA为实质新增。"
+      "notes": "已补查用户提供AP日本AI声音权报道，并复核Reuters、404 Media、TechCrunch及AWS官方材料。Flock为前一日同案报道换标题；AWS停止政府项目NDA为实质新增。 补做漏检审计后新增Amazon数据中心NDA透明度承诺、意大利Garante对IQVIA健康数据处罚、RealPage反垄断诉讼撤诉动议裁定；日本津田健次郎AI语音克隆案因已超72小时仅留作已核验排除候选；Flock无令状检索案因10月3日已正式收录而去重排除。"
     },
     "final_scan": {
-      "status": "checked_after_audit",
-      "checked_at": "2026-10-04T22:25:03+08:00",
-      "notes": "补稿后再次扫描最近1—2小时官方和主流来源，并对本轮新增项目完成来源、法律状态、事件级去重与中文复核。未发现必须替换现有11条候选的更高优先级新事项。"
+      "status": "checked_with_additions",
+      "checked_at": "2026-10-04T23:51:00+08:00",
+      "notes": "根据用户提供线索及漏检审计补扫域外媒体、成员国监管机关和州级/法院来源，新增3条符合窗口且具有独立法律价值的候选；2条分别因超72小时和前一日已发布而排除。"
     },
     "audit": {
       "status": "completed",
@@ -539,16 +620,16 @@
     }
   },
   "last_error": {
-    "at": "2026-10-04T22:25:03+08:00",
+    "at": "2026-10-04T23:51:00+08:00",
     "stage": "resolved",
-    "action": "targeted missed-news audit and draft expansion",
+    "action": "coverage audit and draft expansion",
     "error_code": null,
-    "summary": "此前草稿写入安全检查问题已解决；本轮另发现检索覆盖不足，已通过成员国/州级机关和主题反扫补齐并记录。"
+    "summary": "此前域外扫描过度依赖中央级机构清单，导致成员国数据保护机关、州级执法/法院和企业透明度政策等漏检。已补做主题反扫并扩充候选。"
   },
   "next_actions": [
-    "由独立发布任务读取publication_ready=true的当天草稿，并以发布瞬间最新main为基础生成正式新闻栏。",
-    "发布任务不得合并news-drafts，只提取当天草稿内容。",
-    "后续19:00检索固定执行‘机构矩阵扫描 + 主题反扫 + 成员国/州级执法层’三层检索，避免仅扫中央机关后误判为无新增。"
+    "交由独立发布任务读取本草稿，并以发布时最新main为基础生成正式新闻栏。",
+    "发布任务不得直接合并news-drafts分支，只提取当天草稿内容。",
+    "后续检索固定执行机构扫描与主题反扫双层流程，并覆盖欧盟成员国DPA/竞争机关、美国州总检察长与重要联邦法院。"
   ],
   "publication": {
     "main_commit": null,
@@ -570,6 +651,32 @@
         "https://www.404media.co/federal-judge-rules-a-flock-search-was-indiscriminate-mass-surveillance-and-unconstitutional/",
         "https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/"
       ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "id": "jp-tsuda-ai-voice-right-20260930",
+      "title_cn": "东京地方法院在AI语音克隆案中首次承认声音人格利益保护",
+      "original_title": "Tokyo court grants legal protection to human voices in AI clone case",
+      "event_date": "2026-09-30",
+      "source": {
+        "name": "Associated Press",
+        "url": "https://apnews.com/article/japan-anime-voice-actor-ai-a2a9596a197f149398771a9166043ef9"
+      },
+      "prepared_text": "东京地方法院在声优津田健次郎起诉未经授权使用AI克隆声音的案件中，认可声音可作为人格特征受到保护，并认定商业性使用未经同意的仿声可能侵害其权利。该案涉及TikTok账号使用AI生成的近似声音发布大量视频。其制度价值在于，日本司法开始直接回应生成式AI对声音身份、商业利用和人格利益保护提出的新问题。",
+      "exclusion_reason": "判决发生于2026-09-30，AP于2026-10-01报道；截至2026-10-04晚间已超出本栏严格72小时窗口，因此完整核验并留档，但不计入10月4日可发布候选。"
+    },
+    {
+      "id": "us-flock-fourth-amendment-20261001-dedup",
+      "title_cn": "联邦法官称Flock系统构成“无差别大规模监控”并认定无令状历史位置检索违宪",
+      "original_title": "Federal Judge Rules a Flock Search Was ‘Indiscriminate Mass Surveillance’ and Unconstitutional",
+      "event_date": "2026-10-01",
+      "source": {
+        "name": "404 Media",
+        "url": "https://www.404media.co/federal-judge-rules-a-flock-search-was-indiscriminate-mass-surveillance-and-unconstitutional/"
+      },
+      "prepared_text": "俄克拉荷马州联邦地区法院认定，执法人员在没有令状和充分理由的情况下，通过Flock联网车牌识别系统查询车辆一个月跨州行踪，构成第四修正案意义上的搜查。法院强调，当联网摄像系统能够持续汇聚大量车辆位置并供执法机关随时检索时，其性质已不同于单点公共道路观察，并将这种能力描述为一种无差别大规模监控。",
+      "exclusion_reason": "该事件已在2026-10-03正式简报第4条完整收录，同期还收录Ban Flock Act；10月4日没有新的裁判、上诉或执行变化，不得重复发布。"
     }
   ]
 }
