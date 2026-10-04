@@ -4,12 +4,12 @@
   "state": "draft",
   "page": "articles/2026-10-04-tech-law-brief.html",
   "base_main_sha": "4bfdd5e2e77ad9998acdb2487627c28026b94cd7",
-  "updated_at": "2026-10-04T23:51:00+08:00",
+  "updated_at": "2026-10-04T23:58:00+08:00",
   "phase": "ready_for_publication",
-  "news_count": 13,
+  "news_count": 10,
   "distribution": {
     "domestic": 0,
-    "foreign": 13
+    "foreign": 10
   },
   "publication_ready": true,
   "checks": {
@@ -232,52 +232,6 @@
       }
     },
     {
-      "id": "jp-tokyo-ai-voice-publicity-right-20260930",
-      "domestic": false,
-      "title_cn": "东京地院首次明确“声音”可受肖像同类的商业人格利益保护，AI模仿声线案件形成司法标准",
-      "original_title": "Tokyo court grants legal protection to human voices in AI clone case",
-      "original_title_local": "「声」もパブリシティー権の保護対象に　津田健次郎さんのAI声模倣訴訟で東京地裁が判断──削除請求自体は棄却",
-      "jurisdiction": "日本",
-      "authority": "东京地方裁判所",
-      "event_date": "2026-09-30",
-      "event_id": "JP-Tokyo-District-Court-AI-voice-publicity-right-2026-09-30",
-      "new_action": "东京地院在AI模仿声线引发的删除请求案中明确，人声与肖像一样可以成为个人独特人格和商业吸引力的载体；未经许可、专门利用其吸引力的使用可构成对publicity rights的侵害。",
-      "legal_status": "一审民事判决。法院认可声音可进入publicity rights保护范围，但因涉案账户及视频已经删除，最终驳回原告的删除请求。",
-      "sources": [
-        {
-          "name": "日本裁判所判决全文",
-          "url": "https://www.courts.go.jp/assets/hanrei/hanrei-pdf-97097.pdf"
-        },
-        {
-          "name": "Associated Press",
-          "url": "https://apnews.com/article/japan-anime-voice-actor-ai-a2a9596a197f149398771a9166043ef9"
-        },
-        {
-          "name": "ITmedia NEWS",
-          "url": "https://www.itmedia.co.jp/news/article/2609/30/2000001892/"
-        }
-      ],
-      "fact": "日本东京地方裁判所9月30日就声优津田健次郎诉TikTok Pte. Ltd.删除AI模仿声音视频一案作出判决。法院指出，人声与肖像一样可以体现个人独特人格；如果某位表演者的声音具有促进商品销售等商业吸引力，未经许可使用该声音并专门利用这种吸引力，原则上可构成对publicity rights的侵害。涉案账户曾发布188段使用相似声线的旁白视频。由于账户及相关视频在判决前已经删除，法院最终驳回删除请求。",
-      "prior_background": "日本长期缺乏成文法意义上的独立“声音权”。既有publicity rights主要围绕姓名、肖像等人格标识发展。本案把AI声线模仿直接纳入司法判断，并明确声音本身也可能具有独立商业吸引力。AP于10月1日报道该判决；该报道在10月4日19:00的原定研究窗口内仍处72小时范围。",
-      "law_analysis": "判决的价值不在于给任何“相似声音”自动设立排他权，而在于把判断重点放到声音与特定个人的识别联系、声音本身的商业吸引力以及使用者是否专门利用这种吸引力。对于生成式AI语音克隆，这提供了一条不同于著作权和不正当竞争法的保护路径，也把平台删除义务与底层人格权益区分开来。",
-      "think_tank": {
-        "title": "AI语音克隆中的人格标识保护：日本判决与我国声音权益规则比较",
-        "note": "可比较日本publicity rights、我国民法典声音保护规则以及美国right of publicity，分析AI声线复制、商业利用和平台治理的责任边界。"
-      },
-      "paper_topic": {
-        "title": "生成式AI语音克隆的人格权客体与商业利用判断",
-        "note": "可讨论“声音可识别性—商业吸引力—利用目的”三层判断如何形成可操作的侵权标准，并区分声音本身、表演成果和训练数据之间的权利结构。"
-      },
-      "background": "AI语音克隆已使声音从传统表演活动的组成部分转变为可独立复制、调用和商业化的数字化人格标识。日本此前缺少直接处理AI模仿声线的司法标准，本案首次把声音明确纳入publicity rights的分析。",
-      "outlook": "后续应观察该判决是否上诉，以及日本其他法院是否沿用“人格象征+商业吸引力+利用目的”的判断。若形成稳定判例，平台面对AI模仿声音的删除请求和身份核验义务也可能随之提高。",
-      "timeliness_note": "用户指定补充；判决作出于9月30日，AP于10月1日发布报道，原定10月4日19:00研究时该报道仍在72小时窗口内。",
-      "dedup": {
-        "previous_day": true,
-        "seven_day": true,
-        "result": "保留；近7日本站未收录该东京地院AI声音权判决。"
-      }
-    },
-    {
       "id": "us-amazon-data-center-nda-transparency-20261002",
       "domestic": false,
       "title_cn": "AWS回应数据中心社区争议，停止与政府机构就项目使用保密协议并承诺扩大公开沟通",
@@ -409,6 +363,10 @@
         {
           "name": "California Attorney General",
           "url": "https://www.oag.ca.gov/news/press-releases/court-sides-attorney-general-bonta-realpage-case-denies-realpage-and-landlords%E2%80%99"
+        },
+        {
+          "name": "North Carolina Department of Justice",
+          "url": "https://ncdoj.gov/court-sides-with-attorney-general-jeff-jackson-in-realpage-case-antitrust-lawsuit-over-rent-pricing-to-continue/"
         }
       ],
       "fact": "加州总检察长办公室10月2日披露，美国北卡罗来纳中区联邦地区法院拒绝RealPage试图驳回多州联合反垄断诉讼的请求，并拒绝部分房东被告退出案件。州方指控RealPage汇集竞争房东的非公开、竞争敏感租金信息，通过定价算法向订阅房东提供价格建议，并与部分大型物业管理公司形成非法价格协调。案件将继续推进。",
@@ -464,86 +422,6 @@
         "previous_day": true,
         "seven_day": true,
         "result": "保留；仓库近7日未收录新墨西哥州Meta案本次罚款金额听证。"
-      }
-    },
-    {
-      "id": "us-amazon-data-center-nda-20261002",
-      "domestic": false,
-      "title_cn": "亚马逊停止在数据中心项目审批中要求政府机构签署保密协议，并承诺增加社区透明度",
-      "original_title": "Amazon to invest $1B into data center communities amid backlash against data center rollouts",
-      "jurisdiction": "美国",
-      "authority": "Amazon Web Services（AWS）",
-      "event_date": "2026-10-02",
-      "event_id": "US-Amazon-data-center-NDA-transparency-20261002",
-      "new_action": "AWS表示已停止在数据中心项目审批过程中与政府机构使用保密协议，并宣布未来五年向数据中心所在社区投入10亿美元，同时增加社区开放活动和信息沟通。",
-      "legal_status": "企业治理与政策回应阶段；不是行政处罚或具有约束力的监管命令，但与美国多地限制数据中心保密协议和数据中心建设审查的政策争议直接相关。",
-      "sources": [
-        {
-          "name": "Associated Press",
-          "url": "https://apnews.com/article/91b65ba1729540c1c0d92e35deef35d8"
-        },
-        {
-          "name": "WIRED",
-          "url": "https://www.wired.com/story/amazon-says-it-is-going-to-stop-using-ndas-for-data-centers/"
-        }
-      ],
-      "fact": "亚马逊10月2日宣布，将停止在数据中心项目审批中与政府机构使用保密协议，并计划未来五年向数据中心所在社区投入10亿美元，用于教育、职业培训、能源效率和其他地方项目。公司还表示将通过社区开放活动提高项目透明度。此次调整发生在美国多地围绕数据中心用电、用水、地方财政优惠和项目保密安排的争议持续上升之际。",
-      "prior_background": "美国多个州和地方政府近年围绕大型数据中心的能源、水资源、税收优惠和项目审批透明度展开争议，部分项目因前期使用保密协议而受到居民和议员批评。近期国会也出现限制数据中心项目保密安排的立法讨论。",
-      "law_analysis": "数据中心治理正在从单纯的土地、能源和产业审批问题转向程序透明与公众参与。企业主动放弃与政府机构之间的保密协议，说明地方审批中的信息公开、利益衡量和社区参与正在成为算力基础设施扩张的重要约束条件。即使企业承诺本身不是法律义务，也可能影响后续地方立法和行政审批对保密条款的接受程度。",
-      "think_tank": {
-        "title": "大型数据中心项目审批中的保密协议、公众参与与地方治理",
-        "note": "可比较美国地方政府在数据中心项目中使用保密协议、税收优惠、能源承诺和社区协商的做法，观察企业自愿透明承诺是否进一步转化为地方立法或审批条件。"
-      },
-      "paper_topic": {
-        "title": "数字基础设施项目中的行政透明与商业保密边界",
-        "note": "可讨论政府在招商和基础设施审批中接受企业保密要求的正当边界，以及重大能源和环境外部性项目中公众知情与参与权如何限制商业秘密主张。"
-      },
-      "background": "大型AI和云数据中心的建设越来越依赖地方土地、能源、水资源和财政支持，项目通常在正式公开前经历长期选址和谈判。争议集中在地方政府是否因保密安排而限制公众提前了解项目成本、资源占用和财政承诺。",
-      "outlook": "后续需观察Amazon的承诺是否适用于承包商和各类地方合作安排，以及州和联邦层面的数据中心透明立法是否继续推进。若更多企业采取类似政策，数据中心审批中的保密协议可能从常见招商工具逐步转变为需要特别说明正当性的例外。",
-      "dedup": {
-        "previous_day": true,
-        "seven_day": true,
-        "result": "保留；10月3日简报未收录Amazon停止数据中心NDA的新承诺，近7日也无相同企业透明度动作。"
-      }
-    },
-    {
-      "id": "us-realpage-motion-dismiss-20261002",
-      "domestic": false,
-      "title_cn": "美国联邦法院拒绝RealPage及多家房东撤诉请求，算法租金反垄断案继续审理",
-      "original_title": "Court Sides with Attorney General Bonta in RealPage Case, Denies RealPage and Landlords’ Attempt to Evade Responsibility in Rent Pricing Lawsuit",
-      "jurisdiction": "美国／北卡罗来纳州",
-      "authority": "美国北卡罗来纳中区联邦地区法院／美国司法部及多州总检察长",
-      "event_date": "2026-10-02",
-      "event_id": "US-RealPage-antitrust-motion-dismiss-20261002",
-      "new_action": "联邦法院拒绝RealPage及部分房东提出的撤诉请求，多州总检察长针对租金算法、非公开竞争敏感数据共享和价格协调的反垄断诉讼继续推进。",
-      "legal_status": "联邦反垄断诉讼中的驳回动议阶段；法院允许相关州政府主张继续审理，尚未作出实体违法终局判决。",
-      "sources": [
-        {
-          "name": "California Department of Justice / Attorney General",
-          "url": "https://www.oag.ca.gov/news/press-releases/court-sides-attorney-general-bonta-realpage-case-denies-realpage-and-landlords%E2%80%99"
-        },
-        {
-          "name": "North Carolina Department of Justice",
-          "url": "https://ncdoj.gov/court-sides-with-attorney-general-jeff-jackson-in-realpage-case-antitrust-lawsuit-over-rent-pricing-to-continue/"
-        }
-      ],
-      "fact": "美国北卡罗来纳中区联邦地区法院本周拒绝RealPage及部分大型房东要求驳回相关诉讼的请求。美国司法部和多个州自2024年起指控RealPage汇集房东的非公开竞争敏感数据，并通过租金定价算法向市场参与者提供价格建议，削弱住房租赁市场竞争。10月2日，多州总检察长确认法院允许案件继续推进，RealPage和仍在诉的房东需要继续回应相关反垄断指控。",
-      "prior_background": "本站10月1日收录的是纽约州针对算法定价软件的州法被联邦法院暂缓执行，争点主要涉及对软件价格建议的直接规制与第一修正案。本条属于另一条诉讼链：联邦政府与多州针对RealPage及房东的数据共享和协调行为提出反垄断主张。",
-      "law_analysis": "两条RealPage诉讼链显示，算法定价监管正在区分“禁止工具本身”与“规制数据共享和协同行为”。前者更容易触发表达自由和过宽审查，后者则回到竞争者是否交换非公开信息、算法是否促成一致定价以及市场竞争是否受到削弱。法院允许案件继续审理，意味着算法只是工具并不会当然排除传统反垄断规则。",
-      "think_tank": {
-        "title": "算法定价监管中工具禁令与竞争行为执法的路径分化",
-        "note": "可比较纽约州直接限制算法定价软件与多州RealPage反垄断诉讼，分析不同监管工具在证明责任、比例性和司法审查上的差异。"
-      },
-      "paper_topic": {
-        "title": "算法协同定价的反垄断归责：从竞争敏感数据共享到价格建议",
-        "note": "可研究平台或软件商汇集竞争者非公开数据并生成价格建议时，传统信息交换理论和协同行为标准如何适用于算法中介。"
-      },
-      "background": "RealPage相关争议已形成多条诉讼和和解链。司法部与多州主张其租金管理软件依赖竞争者非公开数据并可能促成价格协调；部分房东已分别与执法机关达成和解，但针对RealPage及其他被告的诉讼仍在继续。",
-      "outlook": "后续实体审理将重点检验非公开数据交换、算法建议采用方式和租金市场效果之间的证据联系。不同法院同时审理算法定价州法和传统反垄断主张，也可能逐步形成对“规制软件”与“规制协同行为”的边界划分。",
-      "dedup": {
-        "previous_day": true,
-        "seven_day": true,
-        "result": "保留；虽同属RealPage主题，但与10月1日纽约州算法定价禁令诉讼属于不同法院、不同请求和不同法律基础，10月2日撤诉动议裁定是独立新增司法节点。"
       }
     }
   ],
@@ -609,9 +487,9 @@
       "notes": "已补查用户提供AP日本AI声音权报道，并复核Reuters、404 Media、TechCrunch及AWS官方材料。Flock为前一日同案报道换标题；AWS停止政府项目NDA为实质新增。 补做漏检审计后新增Amazon数据中心NDA透明度承诺、意大利Garante对IQVIA健康数据处罚、RealPage反垄断诉讼撤诉动议裁定；日本津田健次郎AI语音克隆案因已超72小时仅留作已核验排除候选；Flock无令状检索案因10月3日已正式收录而去重排除。"
     },
     "final_scan": {
-      "status": "checked_with_additions",
-      "checked_at": "2026-10-04T23:51:00+08:00",
-      "notes": "根据用户提供线索及漏检审计补扫域外媒体、成员国监管机关和州级/法院来源，新增3条符合窗口且具有独立法律价值的候选；2条分别因超72小时和前一日已发布而排除。"
+      "status": "checked_with_additions_and_dedup",
+      "checked_at": "2026-10-04T23:58:00+08:00",
+      "notes": "补做域外漏检审计后，最终保留10条可发布候选。新增AWS数据中心NDA透明度承诺、韩国PIPC调查机制改革、意大利Garante对IQVIA健康数据处罚、RealPage反垄断诉讼新裁定及新墨西哥州Meta隐私处罚请求等。日本津田健次郎AI语音克隆案因超72小时转入已核验排除记录；Flock无令状检索案因10月3日已正式发布而去重排除。并发续作产生的Amazon/RealPage重复候选已清理。"
     },
     "audit": {
       "status": "completed",
@@ -620,16 +498,16 @@
     }
   },
   "last_error": {
-    "at": "2026-10-04T23:51:00+08:00",
+    "at": "2026-10-04T23:58:00+08:00",
     "stage": "resolved",
-    "action": "coverage audit and draft expansion",
+    "action": "event-level reconciliation after concurrent draft updates",
     "error_code": null,
-    "summary": "此前域外扫描过度依赖中央级机构清单，导致成员国数据保护机关、州级执法/法院和企业透明度政策等漏检。已补做主题反扫并扩充候选。"
+    "summary": "漏检审计期间另一轮续作并发写入新增候选，短暂形成同一Amazon和RealPage事件的重复条目，并把超72小时的日本AI语音案放入正式候选。已按事件级去重和72小时门槛完成合并清理。"
   },
   "next_actions": [
-    "交由独立发布任务读取本草稿，并以发布时最新main为基础生成正式新闻栏。",
-    "发布任务不得直接合并news-drafts分支，只提取当天草稿内容。",
-    "后续检索固定执行机构扫描与主题反扫双层流程，并覆盖欧盟成员国DPA/竞争机关、美国州总检察长与重要联邦法院。"
+    "独立发布任务只读取本文件最终10条items，并以发布瞬间最新main为基础生成正式新闻栏。",
+    "发布任务不得直接合并news-drafts分支。",
+    "后续检索固定执行机构扫描+主题反扫双层流程，并在最终写入前再次按event_id/主体+动作+日期做事件级去重，防止并发续作产生重复候选。"
   ],
   "publication": {
     "main_commit": null,
@@ -663,7 +541,7 @@
         "name": "Associated Press",
         "url": "https://apnews.com/article/japan-anime-voice-actor-ai-a2a9596a197f149398771a9166043ef9"
       },
-      "prepared_text": "东京地方法院在声优津田健次郎起诉未经授权使用AI克隆声音的案件中，认可声音可作为人格特征受到保护，并认定商业性使用未经同意的仿声可能侵害其权利。该案涉及TikTok账号使用AI生成的近似声音发布大量视频。其制度价值在于，日本司法开始直接回应生成式AI对声音身份、商业利用和人格利益保护提出的新问题。",
+      "prepared_text": "东京地方法院在声优津田健次郎起诉未经授权使用AI克隆声音的案件中，认可声音作为人格特征具有可受保护的商业人格利益。涉案TikTok账号使用近似津田声线的AI语音发布大量视频并吸引关注。该裁判把生成式AI语音克隆直接纳入人格利益与商业利用边界的司法审查，对声音权、AI模仿和平台内容治理具有较高研究价值。",
       "exclusion_reason": "判决发生于2026-09-30，AP于2026-10-01报道；截至2026-10-04晚间已超出本栏严格72小时窗口，因此完整核验并留档，但不计入10月4日可发布候选。"
     },
     {
@@ -675,7 +553,7 @@
         "name": "404 Media",
         "url": "https://www.404media.co/federal-judge-rules-a-flock-search-was-indiscriminate-mass-surveillance-and-unconstitutional/"
       },
-      "prepared_text": "俄克拉荷马州联邦地区法院认定，执法人员在没有令状和充分理由的情况下，通过Flock联网车牌识别系统查询车辆一个月跨州行踪，构成第四修正案意义上的搜查。法院强调，当联网摄像系统能够持续汇聚大量车辆位置并供执法机关随时检索时，其性质已不同于单点公共道路观察，并将这种能力描述为一种无差别大规模监控。",
+      "prepared_text": "俄克拉荷马州联邦地区法院认定，执法人员在没有令状和充分理由的情况下，通过Flock联网车牌识别系统查询车辆一个月跨州行踪，构成第四修正案意义上的搜查。法院强调，当联网摄像系统能够持续汇聚大量车辆位置并供执法机关随时检索时，其性质已经不同于单点公共道路观察，并将这种能力描述为一种无差别大规模监控。",
       "exclusion_reason": "该事件已在2026-10-03正式简报第4条完整收录，同期还收录Ban Flock Act；10月4日没有新的裁判、上诉或执行变化，不得重复发布。"
     }
   ]
