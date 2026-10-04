@@ -183,5 +183,19 @@
   "last_error": null,
   "next_actions": [
     "09:00发布任务读取本草稿并再次复核全部来源URL；只使用publication_ready=true内容生成下一期。"
-  ]
+  ],
+  "publication_attempt": {
+    "diagnosed_at": "2026-10-04T12:02:00+08:00",
+    "publication_run_time": "2026-10-04T09:00:00+08:00",
+    "stage": "before verified GitHub main write",
+    "actual_github_write_error_evidence": null,
+    "main_issue_status": "trade-watch/issues/2026-10-04.html is absent on main",
+    "guard_evidence": "GitHub publication guard detected missing issue file, stale index latest link, and missing archive entry; no GitHub API permission/safety error was recorded.",
+    "diagnosis": "Previous run reported a platform safety rejection without durable tool-error evidence. Treat as execution/reporting failure, not a verified GitHub safety or permission failure.",
+    "remediation": [
+      "Publication automation remains enabled.",
+      "Future failures must record exact create_file/update_file tool name, target path, error code/text, retry count, and main re-read result.",
+      "Without such evidence, the task may not attribute failure to safety, permissions, or GitHub blocking."
+    ]
+  }
 }
