@@ -4,12 +4,12 @@
   "state": "draft",
   "page": "articles/2026-10-04-tech-law-brief.html",
   "base_main_sha": "4bfdd5e2e77ad9998acdb2487627c28026b94cd7",
-  "updated_at": "2026-10-04T21:01:00+08:00",
+  "updated_at": "2026-10-04T22:25:03+08:00",
   "phase": "ready_for_publication",
-  "news_count": 5,
+  "news_count": 11,
   "distribution": {
     "domestic": 0,
-    "foreign": 5
+    "foreign": 11
   },
   "publication_ready": true,
   "checks": {
@@ -230,6 +230,240 @@
         "seven_day": true,
         "result": "保留；10月3日简报只收录澳大利亚某一政府系统的独立越权事件，本条为10月2日公开的全球第三方通知数量和50PB范围审查，属于同一风险链条中的实质新增进展。"
       }
+    },
+    {
+      "id": "jp-tokyo-ai-voice-publicity-right-20260930",
+      "domestic": false,
+      "title_cn": "东京地院首次明确“声音”可受肖像同类的商业人格利益保护，AI模仿声线案件形成司法标准",
+      "original_title": "Tokyo court grants legal protection to human voices in AI clone case",
+      "original_title_local": "「声」もパブリシティー権の保護対象に　津田健次郎さんのAI声模倣訴訟で東京地裁が判断──削除請求自体は棄却",
+      "jurisdiction": "日本",
+      "authority": "东京地方裁判所",
+      "event_date": "2026-09-30",
+      "event_id": "JP-Tokyo-District-Court-AI-voice-publicity-right-2026-09-30",
+      "new_action": "东京地院在AI模仿声线引发的删除请求案中明确，人声与肖像一样可以成为个人独特人格和商业吸引力的载体；未经许可、专门利用其吸引力的使用可构成对publicity rights的侵害。",
+      "legal_status": "一审民事判决。法院认可声音可进入publicity rights保护范围，但因涉案账户及视频已经删除，最终驳回原告的删除请求。",
+      "sources": [
+        {
+          "name": "日本裁判所判决全文",
+          "url": "https://www.courts.go.jp/assets/hanrei/hanrei-pdf-97097.pdf"
+        },
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/japan-anime-voice-actor-ai-a2a9596a197f149398771a9166043ef9"
+        },
+        {
+          "name": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2609/30/2000001892/"
+        }
+      ],
+      "fact": "日本东京地方裁判所9月30日就声优津田健次郎诉TikTok Pte. Ltd.删除AI模仿声音视频一案作出判决。法院指出，人声与肖像一样可以体现个人独特人格；如果某位表演者的声音具有促进商品销售等商业吸引力，未经许可使用该声音并专门利用这种吸引力，原则上可构成对publicity rights的侵害。涉案账户曾发布188段使用相似声线的旁白视频。由于账户及相关视频在判决前已经删除，法院最终驳回删除请求。",
+      "prior_background": "日本长期缺乏成文法意义上的独立“声音权”。既有publicity rights主要围绕姓名、肖像等人格标识发展。本案把AI声线模仿直接纳入司法判断，并明确声音本身也可能具有独立商业吸引力。AP于10月1日报道该判决；该报道在10月4日19:00的原定研究窗口内仍处72小时范围。",
+      "law_analysis": "判决的价值不在于给任何“相似声音”自动设立排他权，而在于把判断重点放到声音与特定个人的识别联系、声音本身的商业吸引力以及使用者是否专门利用这种吸引力。对于生成式AI语音克隆，这提供了一条不同于著作权和不正当竞争法的保护路径，也把平台删除义务与底层人格权益区分开来。",
+      "think_tank": {
+        "title": "AI语音克隆中的人格标识保护：日本判决与我国声音权益规则比较",
+        "note": "可比较日本publicity rights、我国民法典声音保护规则以及美国right of publicity，分析AI声线复制、商业利用和平台治理的责任边界。"
+      },
+      "paper_topic": {
+        "title": "生成式AI语音克隆的人格权客体与商业利用判断",
+        "note": "可讨论“声音可识别性—商业吸引力—利用目的”三层判断如何形成可操作的侵权标准，并区分声音本身、表演成果和训练数据之间的权利结构。"
+      },
+      "background": "AI语音克隆已使声音从传统表演活动的组成部分转变为可独立复制、调用和商业化的数字化人格标识。日本此前缺少直接处理AI模仿声线的司法标准，本案首次把声音明确纳入publicity rights的分析。",
+      "outlook": "后续应观察该判决是否上诉，以及日本其他法院是否沿用“人格象征+商业吸引力+利用目的”的判断。若形成稳定判例，平台面对AI模仿声音的删除请求和身份核验义务也可能随之提高。",
+      "timeliness_note": "用户指定补充；判决作出于9月30日，AP于10月1日发布报道，原定10月4日19:00研究时该报道仍在72小时窗口内。",
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "保留；近7日本站未收录该东京地院AI声音权判决。"
+      }
+    },
+    {
+      "id": "us-amazon-data-center-nda-transparency-20261002",
+      "domestic": false,
+      "title_cn": "AWS回应数据中心社区争议，停止与政府机构就项目使用保密协议并承诺扩大公开沟通",
+      "original_title": "The race our nation can’t afford to lose, plus a new commitment from us and a fresh set of community investments",
+      "jurisdiction": "美国",
+      "authority": "Amazon Web Services（AWS）",
+      "event_date": "2026-10-02",
+      "event_id": "US-AWS-data-center-transparency-commitment-2026-10-02",
+      "new_action": "AWS在新的Data Center Commitment中明确表示，不再与合作政府机构就数据中心项目使用保密协议，同时承诺更早共享项目计划、举行社区开放活动并每年公开能源和用水指标；另推出五年超过10亿美元的Built Together社区投资。",
+      "legal_status": "企业治理与项目透明度承诺，不属于行政命令或法定强制规则；但直接回应地方政府审批、公共参与和数据中心基础设施扩张中的透明度争议。",
+      "sources": [
+        {
+          "name": "Matt Garman／AWS Data Center Commitment",
+          "url": "https://www.linkedin.com/pulse/race-our-nation-cant-afford-lose-plus-new-commitment-from-matt-garman-s8azc"
+        },
+        {
+          "name": "Amazon Sustainability — Built Together",
+          "url": "https://sustainability.aboutamazon.com/builttogether"
+        },
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/business/retail-consumer/amazon-invest-1-billion-over-five-years-us-data-center-communities-2026-10-02/"
+        }
+      ],
+      "fact": "AWS首席执行官Matt Garman 10月2日公布新的Amazon Data Center Commitment。AWS明确表示，今后不再与合作政府机构就数据中心项目使用保密协议，并将在数据中心所在社区举行开放活动、尽可能提前说明项目计划；公司还承诺每年公开能源使用、能效、用水、水效和无碳能源占比。AWS同期推出Built Together计划，未来五年在美国数据中心社区追加投入超过10亿美元。",
+      "prior_background": "美国多地围绕数据中心用电、用水、噪声、税收优惠和项目审批透明度出现争议，地方政府与企业在项目公开前签署保密协议尤其受到批评。AWS此次把不再使用NDA写进统一的数据中心承诺，而不是只对单个项目作回应。",
+      "law_analysis": "这一变化把数据中心治理中的争点从单纯的环境与能源负担进一步推进到行政透明和公众参与。企业主动取消与政府机构的保密安排，不等于各州信息公开法当然禁止NDA，但会改变地方政府在招商、土地使用和基础设施审批中的信息披露预期，也可能促使其他云计算企业形成类似透明度基线。",
+      "think_tank": {
+        "title": "AI数据中心扩张中的地方政府保密协议与公共参与制度",
+        "note": "可梳理美国各州数据中心招商中NDA、税收优惠、能源协议和土地审批的透明度规则，并比较企业自律与法定公开义务的作用边界。"
+      },
+      "paper_topic": {
+        "title": "大型数字基础设施项目中的行政保密、商业秘密与公众知情权",
+        "note": "可从数据中心项目切入，分析地方政府招商保密与公共资源配置、环境影响和程序参与之间的平衡。"
+      },
+      "background": "生成式AI带动数据中心快速扩张后，地方政府既希望获得投资和税收，也承受电网、水资源和社区成本压力。保密协议使项目在土地、能源和财政条件已经基本确定后才向居民公开，逐渐成为社区反对的制度性焦点。",
+      "outlook": "后续应观察AWS的新承诺是否仅适用于未来项目、地方政府是否仍通过其他保密机制限制信息公开，以及Microsoft、Google、Meta等大型运营商会否跟进形成行业透明度标准。",
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "保留；近7日本站虽报道美国数据中心政策和企业投资，但未收录AWS停止政府项目NDA及Data Center Commitment。"
+      }
+    },
+    {
+      "id": "kr-pipc-investigation-reform-20261002",
+      "domestic": false,
+      "title_cn": "韩国PIPC改革个人信息泄露调查机制，明确重大、一般和轻微案件处理期限",
+      "original_title_local": "개인정보 유출·침해사고, 더 빠르게 더 공정하게 더 투명하게 조사",
+      "jurisdiction": "韩国",
+      "authority": "韩国个人信息保护委员会（PIPC）",
+      "event_date": "2026-10-02",
+      "event_id": "KR-PIPC-data-breach-investigation-reform-2026-10-02",
+      "new_action": "PIPC推出个人信息泄露与侵害事件快速调查及调查能力强化方案，按重大、一般、轻微案件分别设定12个月、6个月和3个月处理原则，并引入重大案件专班、快速处理、程序通知和处理情况公开机制。",
+      "legal_status": "监管调查程序改革方案，PIPC将分阶段实施；属于执法程序和内部案件管理制度调整，而非对单一企业的处罚。",
+      "sources": [
+        {
+          "name": "韩国PIPC",
+          "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=D010030000&nttId=12555"
+        }
+      ],
+      "fact": "韩国个人信息保护委员会10月2日公布《个人信息泄露·侵害案件快速调查及调查能力强化方案》。PIPC提出，重大案件原则上12个月内处理，一般案件6个月内处理，轻微案件3个月内处理。对100万人以上泄露、社会影响较大或主要公共系统遭入侵等重大案件，将组织专门调查组集中处理；对一般和轻微案件则通过类型化、简化审议和技术支持提高处理速度。PIPC还将强化调查启动、延长和结果通知，并扩大公开平均调查周期、诉讼情况及处罚计算信息。",
+      "prior_background": "韩国个人信息泄露申报数量持续增长，PIPC称2026年上半年已收到432件，接近2025年全年447件。大型通信、平台和零售企业连续发生泄露事件，使监管机关面临案件数量增长与重大案件复杂化并存的问题。",
+      "law_analysis": "这次改革把个人信息执法从实体违法认定延伸到调查程序本身。案件分级、处理期限、延长通知和事前说明事实调查结果，都直接影响被调查企业的程序预期与防御权，也体现数据保护执法从“个案处罚”走向程序标准化。",
+      "think_tank": {
+        "title": "数据保护执法案件分级与限期处理制度比较",
+        "note": "可比较韩国PIPC、欧盟成员国DPA及我国个人信息保护执法中的案件分级、调查期限、程序告知和重大事件专班机制。"
+      },
+      "paper_topic": {
+        "title": "个人信息保护行政调查中的程序期限、分类处理与防御权",
+        "note": "可研究监管机关如何在重大数据泄露的高复杂度与一般案件的处理效率之间建立差异化程序。"
+      },
+      "background": "数据保护监管机关同时承担大规模泄露、一般违法和轻微瑕疵案件时，统一程序容易造成重大案件资源不足、简单案件积压。PIPC此次首次把案件重要性、办理期限和不同处理方式系统关联。",
+      "outlook": "应观察12/6/3个月期限是否形成可对外主张的稳定程序预期，以及PIPC扩大分委员会处理、调查结果预告和处罚计算公开后，企业行政争讼数量是否发生变化。",
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "保留；近7日本站收录过韩国跨境数据和平台透明度事项，但未收录PIPC本次调查程序改革。"
+      }
+    },
+    {
+      "id": "it-garante-iqvia-health-data-20261002",
+      "domestic": false,
+      "title_cn": "意大利Garante认定百万患者数据并未真正匿名化，对IQVIA罚款700万欧元",
+      "original_title": "Dati sanitari: il Garante privacy sanziona IQVIA per 7 milioni di euro. Non anonimi i dati di un milione di pazienti di 800 medici di famiglia",
+      "jurisdiction": "意大利／欧盟",
+      "authority": "意大利个人数据保护局（Garante）",
+      "event_date": "2026-10-02",
+      "event_id": "IT-Garante-IQVIA-health-data-anonymisation-2026",
+      "new_action": "Garante公布对IQVIA Solutions Italy处以700万欧元罚款的决定，认定其用于研究和医药企业委托分析的约100万名患者健康数据并未达到真正匿名化标准。",
+      "legal_status": "正式行政处罚决定已作出并公开；处罚决定编号710，日期为2026年9月23日，监管机关于10月2日发布新闻稿。",
+      "sources": [
+        {
+          "name": "Garante Privacy",
+          "url": "https://garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/10302141"
+        }
+      ],
+      "fact": "意大利个人数据保护局10月2日公布，对IQVIA Solutions Italy S.r.l.罚款700万欧元。该公司建立了包含约100万名患者、来源于800名家庭医生的健康数据库，并将数据用于受医药企业等委托的研究。Garante经调查认定，这些数据虽然经过处理，但仍存在重新识别个人的可能，不能按匿名信息排除在GDPR适用范围之外。",
+      "prior_background": "IQVIA主张相关数据库属于匿名化数据。Garante在2025年现场检查后开展调查，并合并处理公司自行报告的一起个人数据泄露事件，最终于9月23日作出处罚决定，10月2日公开。",
+      "law_analysis": "本案直接回应了数据利用实践中“去标识化是否等于匿名化”的核心问题。只要结合可合理获得的信息仍可能把数据重新关联到个人，数据就不能因技术处理而当然退出GDPR。对于医疗研究、数据产品和模型训练，匿名化判断必须围绕实际再识别风险，而不是企业内部使用何种技术标签。",
+      "think_tank": {
+        "title": "医疗数据匿名化的欧盟执法标准及对我国数据产品开发的影响",
+        "note": "可结合IQVIA处罚，比较GDPR匿名化标准与我国个人信息保护法匿名化、去标识化概念的适用差异。"
+      },
+      "paper_topic": {
+        "title": "匿名化的规范门槛：从技术去标识到法律上的不可识别",
+        "note": "可围绕合理可用信息、辅助数据、再识别成本和数据控制环境，构建匿名化法律判断的分层标准。"
+      },
+      "background": "健康数据因敏感程度高、维度丰富，即使删除直接身份标识，也可能通过诊疗特征、时间、地区和其他辅助信息重新关联个人。欧盟监管实践一直强调匿名化需要达到实质不可识别，而非形式去标识。",
+      "outlook": "后续应关注处罚决定对健康数据二次研究、数据经纪和医药研究数据库的影响，以及IQVIA是否提起司法救济。该案也可能成为欧盟匿名化与假名化边界的重要执法参照。",
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "保留；仓库近7日无IQVIA或同一处罚事件。"
+      }
+    },
+    {
+      "id": "us-realpage-mdnc-dismissal-denied-20261002",
+      "domestic": false,
+      "title_cn": "美国联邦法院拒绝RealPage及多家房东退出算法租金反垄断案，州联合诉讼继续推进",
+      "original_title": "Court Sides with Attorney General Bonta in RealPage Case, Denies RealPage and Landlords’ Attempt to Evade Responsibility in Rent Pricing Lawsuit",
+      "jurisdiction": "美国／北卡罗来纳州联邦法院",
+      "authority": "美国北卡罗来纳中区联邦地区法院／加州等九州总检察长",
+      "event_date": "2026-10-02",
+      "event_id": "US-RealPage-multistate-antitrust-motion-dismiss-denied-2026-10-02",
+      "new_action": "北卡罗来纳中区联邦地区法院拒绝RealPage要求驳回州联合反垄断诉讼的请求，并拒绝多家房东退出案件，诉讼继续进入实体推进阶段。",
+      "legal_status": "联邦反垄断诉讼中的驳回动议裁定；法院并未最终认定RealPage或房东承担责任，但确认州方指控足以继续诉讼。",
+      "sources": [
+        {
+          "name": "California Attorney General",
+          "url": "https://www.oag.ca.gov/news/press-releases/court-sides-attorney-general-bonta-realpage-case-denies-realpage-and-landlords%E2%80%99"
+        }
+      ],
+      "fact": "加州总检察长办公室10月2日披露，美国北卡罗来纳中区联邦地区法院拒绝RealPage试图驳回多州联合反垄断诉讼的请求，并拒绝部分房东被告退出案件。州方指控RealPage汇集竞争房东的非公开、竞争敏感租金信息，通过定价算法向订阅房东提供价格建议，并与部分大型物业管理公司形成非法价格协调。案件将继续推进。",
+      "prior_background": "美国司法部和多州总检察长于2024年起诉RealPage，2025年修订诉状将多家大型物业管理公司列为被告。部分房东此后已经和州方达成和解，但RealPage及其他被告继续抗辩。本站10月1日曾报道纽约州针对算法租金软件禁令被另一联邦法院暂缓执行，那是不同法域、不同诉因的独立案件。",
+      "law_analysis": "这项裁定显示，美国算法定价监管正在形成两条并行路径：一类是直接禁止或限制定价软件的州立法，另一类是依据传统反垄断法审查竞争者非公开数据汇集和价格建议机制。后者更关注数据交换、协调结构和竞争效果，而不是把算法本身作为违法对象。",
+      "think_tank": {
+        "title": "算法定价监管的两条路径：事前禁令与传统反垄断执法",
+        "note": "可比较纽约州算法软件禁令诉讼与RealPage多州反垄断案，分析不同规制工具的证明责任与司法审查风险。"
+      },
+      "paper_topic": {
+        "title": "竞争敏感数据汇集、算法建议与协同行为的反垄断认定",
+        "note": "可讨论平台或软件供应商不直接决定最终价格时，数据共享和算法推荐如何构成反竞争协调的事实基础。"
+      },
+      "background": "RealPage争议的核心并不是房东单独使用软件，而是竞争者是否把非公开租金、入住率等信息交给共同的算法服务商，再通过同一推荐系统形成价格趋同。多州执法与纽约州软件禁令虽然都涉及租金算法，但法律结构并不相同。",
+      "outlook": "案件下一阶段将进入更深入的事实发现和实体审理。应观察法院如何评价非公开数据、推荐算法与房东自主定价之间的因果关系，以及剩余物业管理公司是否继续和解。",
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "保留；与10月1日纽约州算法定价禁令案属于不同法院、不同法源和不同诉讼链，不能仅因均涉及RealPage而合并去重。"
+      }
+    },
+    {
+      "id": "us-new-mexico-meta-privacy-penalty-20261001",
+      "domestic": false,
+      "title_cn": "新墨西哥州要求Meta在数据隐私误导案中支付350亿至400亿美元罚款，法官将另行确定金额",
+      "original_title": "New Mexico wants Meta to pay up to $40 billion in penalties after data privacy trial",
+      "jurisdiction": "美国／新墨西哥州",
+      "authority": "新墨西哥州第一司法地区法院",
+      "event_date": "2026-10-01",
+      "event_id": "US-New-Mexico-v-Meta-privacy-penalty-2026",
+      "new_action": "陪审团此前认定Meta多项关于Facebook数据隐私和平台政策的陈述具有误导性后，新墨西哥州在10月1日罚款听证中请求法院判令Meta支付350亿至400亿美元民事罚款。",
+      "legal_status": "责任陪审团裁决已作出，罚款金额尚未最终裁定。法官Francis Mathew表示预计将在本月决定具体金额。",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/us/new-mexico-wants-meta-pay-up-40-billion-penalties-after-data-privacy-trial-2026-10-01/"
+        }
+      ],
+      "fact": "新墨西哥州10月1日在州法院要求Meta支付350亿至400亿美元民事罚款。该案源于Cambridge Analytica数据事件及Facebook对用户数据访问、隐私和平台政策的公开陈述。陪审团9月25日审查29项公司及高管陈述后，认定其中26项具有误导性，并按受众人数计算出超过4300万次州消费者保护法违规。Meta主张州方要求的金额违反比例和正当程序，并建议罚款上限为34.5亿美元。",
+      "prior_background": "新墨西哥州2021年起诉Meta，案件经过多年审理后于9月25日形成陪审团责任裁决。10月1日的新增事实不是再次确认责任，而是双方正式进入罚款金额争议，州方首次提出350亿至400亿美元的具体请求。",
+      "law_analysis": "案件体现美国州消费者保护法在大型平台隐私争议中的独立执法潜力。与按单次数据处理行为计算罚款不同，本案把面向大量用户的误导性陈述按受众规模转化为数千万次违法，由此产生极高的法定罚款暴露，也使比例原则和正当程序成为处罚阶段的核心争点。",
+      "think_tank": {
+        "title": "美国州消费者保护法如何成为大型平台隐私执法工具",
+        "note": "可比较FTC、州隐私法和一般消费者保护法三类工具，研究误导性隐私陈述如何转化为大额平台责任。"
+      },
+      "paper_topic": {
+        "title": "数字平台大规模消费者违法的罚款计算与比例控制",
+        "note": "可围绕“每名用户/每项陈述/每次传播”如何确定违法次数，以及巨额法定罚款与正当程序之间的关系展开。"
+      },
+      "background": "Cambridge Analytica事件暴露第三方应用获取Facebook用户数据后，各州除隐私法外也尝试使用一般消费者保护法追究平台对用户作出的数据和政策陈述。新墨西哥案是这一路径进入陪审团裁决和巨额罚款阶段的代表案例。",
+      "outlook": "法官预计本月确定罚款金额。无论最终金额是否接近州方请求，本案都可能影响其他州如何计算大规模平台误导行为的违法次数，并推动Meta对隐私和平台政策陈述建立更严格的法律审查。",
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "保留；仓库近7日未收录新墨西哥州Meta案本次罚款金额听证。"
+      }
     }
   ],
   "coverage": {
@@ -248,12 +482,12 @@
     "korea": {
       "status": "checked_candidates",
       "language": "ko",
-      "notes": "已用韩文检索PIPC、KFTC、MSIT/KISA及金融监管动态，形成金融业连锁数据泄露与应急监管候选。"
+      "notes": "已用韩文复核PIPC、KFTC、MSIT/KISA及金融监管动态。除金融业连锁数据泄露与应急监管外，补入PIPC 10月2日个人信息泄露/侵害案件调查程序改革。"
     },
     "japan": {
-      "status": "checked_no_qualified_new",
+      "status": "checked_candidates",
       "language": "ja",
-      "notes": "已用日文终检PPC、JFTC、总务省、经产省近72小时更新；结果主要为既有事项或窗口外材料，无达到本栏门槛的新增。"
+      "notes": "已用日文复核日本监管与司法动态，并补查用户提供的AP线索。东京地院9月30日AI模仿声线判决由裁判所判决全文、AP和日本本地媒体交叉核验，作为用户指定补充候选纳入；其AP报道在原定10月4日19:00研究时仍处72小时窗口。"
     },
     "vietnam": {
       "status": "checked_no_qualified_new",
@@ -263,12 +497,12 @@
     "us": {
       "status": "checked_candidates",
       "language": "en",
-      "notes": "已检索FTC、DOJ、SEC、NIST、CISA、FCC及Reuters法律科技报道，形成白宫AI任务组和明尼苏达AI裸化禁令上诉进展候选。"
+      "notes": "除联邦机关外补做州总检察长、州法院/联邦地区法院及主题反扫。新增RealPage多州反垄断诉讼驳回动议被拒、新墨西哥州Meta隐私案罚款请求、AWS数据中心透明度承诺；Flock“indiscriminate mass surveillance”与10月3日已发布俄克拉何马联邦法院同一裁定，去重不重复收录。"
     },
     "eu": {
-      "status": "checked_no_qualified_new",
-      "language": "en",
-      "notes": "已复查欧盟委员会、AI Office、EDPB、EDPS及DSA/DMA相关近72小时更新，未发现比近两日已收录事项更具新增法律监管价值的内容。"
+      "status": "checked_candidates",
+      "language": "en/it",
+      "notes": "除欧盟委员会、AI Office、EDPB、EDPS外补做成员国DPA第二层巡视，发现并补入意大利Garante对IQVIA 700万欧元处罚；确认原有只扫欧盟中央机关的方式会漏掉成员国高价值执法。"
     },
     "uk": {
       "status": "checked_no_qualified_new",
@@ -291,24 +525,30 @@
     },
     "media": {
       "status": "checked",
-      "notes": "已检查Reuters、AP、Bloomberg、Financial Times及重要科技、法律、安全媒体。排除仅属企业经营、旧闻转述或窗口外事项；新增OpenAI全球第三方通知。"
+      "notes": "已补查用户提供AP日本AI声音权报道，并复核Reuters、404 Media、TechCrunch及AWS官方材料。Flock为前一日同案报道换标题；AWS停止政府项目NDA为实质新增。"
     },
     "final_scan": {
-      "status": "checked_no_higher_priority_new",
-      "checked_at": "2026-10-04T21:01:00+08:00",
-      "notes": "已在研究结束前再次复扫最近1—2小时重要监管、裁判、处罚和政策动态；未发现需要替换现有5条候选的更高优先级新增事项。韩国金融业应急监管仍为当日最重要新增之一。"
+      "status": "checked_after_audit",
+      "checked_at": "2026-10-04T22:25:03+08:00",
+      "notes": "补稿后再次扫描最近1—2小时官方和主流来源，并对本轮新增项目完成来源、法律状态、事件级去重与中文复核。未发现必须替换现有11条候选的更高优先级新事项。"
+    },
+    "audit": {
+      "status": "completed",
+      "checked_at": "2026-10-04T22:25:03+08:00",
+      "notes": "针对“域外候选仅5条”的异常做漏检审计。确认原检索过度依赖中央级监管机关、缺少欧盟成员国DPA/竞争机关、美国州AG/地区法院和跨主题反扫，导致多项高价值事件漏检。本次补入6条新增，另对Flock同案完成去重。"
     }
   },
   "last_error": {
-    "at": "2026-10-04T21:01:00+08:00",
+    "at": "2026-10-04T22:25:03+08:00",
     "stage": "resolved",
-    "action": "update .github/editions/2026-10-04.news.json on news-drafts",
+    "action": "targeted missed-news audit and draft expansion",
     "error_code": null,
-    "summary": "此前一次整文件更新因草稿含不必要的高细节网络安全操作描述而被写入前安全检查拒绝。已压缩为法律与监管研究所需的高层事实后重新保存。"
+    "summary": "此前草稿写入安全检查问题已解决；本轮另发现检索覆盖不足，已通过成员国/州级机关和主题反扫补齐并记录。"
   },
   "next_actions": [
-    "交由独立发布任务读取本草稿，并以发布时最新main为基础生成正式新闻栏。",
-    "发布任务不得直接合并news-drafts分支，只提取当天草稿内容。"
+    "由独立发布任务读取publication_ready=true的当天草稿，并以发布瞬间最新main为基础生成正式新闻栏。",
+    "发布任务不得合并news-drafts，只提取当天草稿内容。",
+    "后续19:00检索固定执行‘机构矩阵扫描 + 主题反扫 + 成员国/州级执法层’三层检索，避免仅扫中央机关后误判为无新增。"
   ],
   "publication": {
     "main_commit": null,
@@ -318,6 +558,18 @@
   "selection_policy": {
     "quantity_target": "up_to_20_quality_first",
     "principle": "quality_first_no_padding",
-    "note": "20条仅为信息充足时理想容量，不设最低条数；目前5条暂定候选。"
-  }
+    "note": "20条仅为信息充足时理想容量，不设最低条数；经漏检审计后现有11条高质量候选，Flock同案重复已排除。"
+  },
+  "dedup_exclusions": [
+    {
+      "event_id": "US-Flock-Kyle-2026-10-01",
+      "title": "Federal Judge Rules a Flock Search Was ‘Indiscriminate Mass Surveillance’ and Unconstitutional",
+      "result": "exclude_duplicate",
+      "reason": "与2026-10-03简报第4条为同一份美国俄克拉何马北区联邦法院裁定（United States v. Kyle）。404 Media、TechCrunch等后续标题强调‘indiscriminate mass surveillance’，但没有新的裁判、上诉、处罚或执行动作，故不重复收录。",
+      "sources": [
+        "https://www.404media.co/federal-judge-rules-a-flock-search-was-indiscriminate-mass-surveillance-and-unconstitutional/",
+        "https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/"
+      ]
+    }
+  ]
 }
