@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-04",
+  "status": "researching",
+  "book": "John Chipman Gray：《法律的性质与渊源》",
+  "bibliography": {
+    "author": "John Chipman Gray",
+    "original_title": "The Nature and Sources of the Law",
+    "publisher": "Columbia University Press",
+    "year": "1909",
+    "edition": "初版"
+  },
+  "base_main_sha": "4bfdd5e2e77ad9998acdb2487627c28026b94cd7",
+  "target_path": "articles/2026-10-04-gray-nature-sources-law.html",
+  "sources": [
+    "https://books.google.com/books/about/The_Nature_and_Sources_of_the_Law.html?id=Zx2uHlJ0huYC",
+    "https://openlibrary.org/books/OL23402587M/The_nature_and_sources_of_the_law"
+  ],
+  "verification": {
+    "history_deduplication": true,
+    "bibliography": true,
+    "full_text_review": false,
+    "representative_criticism": false,
+    "natural_chinese_reviewed": false,
+    "final_body_complete": false
+  },
+  "last_error": null,
+  "next_actions": [
+    "systematically review the complete 1909 text",
+    "verify representative criticism and later scholarship",
+    "write complete classic HTML",
+    "save final JSON and HTML to classic-drafts",
+    "hard-read both files before reporting draft_ready"
+  ]
+}
