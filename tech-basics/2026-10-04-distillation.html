@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><title>第19课｜蒸馏：一个模型怎样帮助训练另一个模型？｜网信法技术基础</title><link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/></head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-10-03-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-10-03-cohen-law-platform-economy.html">域外法学论文精读</a><a href="../articles/2026-10-03-austin-province-jurisprudence.html">法学经典著作</a><a href="../articles/2026-10-03-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 19 · TRAINING &amp; ALIGNMENT · 2026.10.04</div><h1>蒸馏：一个模型怎样帮助训练另一个模型？</h1><p class="tech-lead">今日问题：已经有一个能力较强的大模型，为什么还要再训练一个“小模型”？它究竟从前者那里学到了什么？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus">
+<div><strong>它是什么</strong><p>知识蒸馏，是让一个“学生模型”利用另一个“教师模型”提供的行为信息继续训练，使学生在选定任务上尽量接近教师的表现。教师提供的可以是对不同候选结果的概率关系，也可以是生成的答案、标签或解释。最常见的用途是让较小模型学习较大模型，但学生并不必然更小；学生最终形成的是自己的参数，并不是把教师模型的参数文件直接压缩一遍。</p></div>
+<div><strong>一个直观例子</strong><p>某团队有一个效果很好但运行成本较高的大模型，希望在内部部署一个更小的法律问答模型。可以让大模型针对大量问题给出答案和解释，再用这些结果训练小模型。小模型不必保存大模型的全部结构和参数，但会尝试在这些任务上学会相近的回答方式。</p></div>
+</section>
+<section class="lesson-section"><h2>蒸馏到底传递了什么</h2>
+<div class="visual-board" role="group" aria-label="知识蒸馏的一般机制"><div class="visual-title">“教师—训练信号—学生”是核心关系，具体实现并不只有一种</div><div class="flow">
+<div class="flow-box"><strong>教师模型</strong><span>对输入作出判断或生成回答</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>训练信号</strong><span>概率偏好、答案、标签或解释</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>学生模型</strong><span>根据这些信号更新自己的参数</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>独立评测</strong><span>检查能力、错误和安全表现是否达到要求</span></div></div>
+<p class="tiny-note">经典知识蒸馏常让学生学习教师对不同候选结果的完整相对偏好；在大语言模型中，也常见只取得教师生成的文本，再把这些文本作为监督信号训练学生。两者都可称为蒸馏，但可访问的信息并不相同。<sup><a href="#s1">[1]</a><a href="#s2">[2]</a><a href="#s3">[3]</a></sup></p></div>
+<p>为什么不只用“正确答案”训练？因为教师模型往往不只是知道哪个结果排第一，还对其他候选结果有强弱不同的判断。学生如果能接触这些更细的信号，就可能学到教师在不同输入之间形成的区分方式。Hinton 等人的经典工作正是用教师模型输出的分布帮助较小模型训练。<sup><a href="#s1">[1]</a></sup></p>
+<p>到了大语言模型，蒸馏的形式更加多样。教师模型可以直接生成标签、答案甚至解释步骤，再由学生学习。Distilling Step-by-Step 就把大模型生成的任务标签和解释作为额外监督信号；MiniLLM 则研究了学生怎样更有效地接近教师在生成任务中的概率分布。<sup><a href="#s2">[2]</a><a href="#s3">[3]</a></sup></p><p>蒸馏与上一课“合成数据”可能重叠，但不是同一个概念。教师生成的答案可以是一批合成数据；当这些数据被有目的地用于让学生逼近教师行为时，它们又成为蒸馏中的训练信号。判断关键不是文件叫什么，而是教师输出在学生训练中承担了什么作用。</p>
+<div class="law-bridge"><h3>新词备注：白盒与黑盒</h3><p>今天只需把“白盒”理解为训练方能接触教师模型较丰富的内部输出信息，“黑盒”理解为主要通过接口取得最终回答。两种场景都可能做蒸馏，但技术证据和可利用的信息范围不同，不需要现在掌握更细的模型内部结构。</p></div>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“蒸馏就是把大模型文件压小。”蒸馏本质上是一次训练过程，学生模型要根据教师提供的信号重新更新自己的参数。</span></div>
+<div class="myth"><b>误解 02</b><span>“学生模型会完整复制教师。”学生只在所见数据和训练目标范围内逼近教师，能力、错误模式和安全表现都可能发生变化。</span></div>
+<div class="myth"><b>误解 03</b><span>“只要用了教师输出，就是同一种蒸馏。”内部概率信息、公开模型输出、API回答和人工整理后的训练数据，对应的技术链条并不相同；如果模型输出只是普通数据增强材料，也不宜仅凭“用了另一个模型”就下结论。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>判断蒸馏问题，先查清“接触了什么”</h3>
+<p>蒸馏不会自动留下“复制了教师模型”的简单证据。更有用的事实链是：教师模型及版本是什么，训练方通过何种方式访问，向教师提交了哪些输入，取得的是概率信息还是文本回答，教师输出经过怎样的筛选和整理，最终哪些材料进入学生模型训练。</p>
+<p>这一区分会直接影响后续对数据来源、合同约束、知识产权、商业秘密和责任链的判断。技术上还要单独检查学生模型，因为学生可能继承教师的错误，也可能没有完整继承教师原有的安全限制。仅证明“使用了蒸馏”不足以说明学生模型最终具有什么能力或风险。</p></div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>从权重复制到行为迁移：模型蒸馏的证据结构如何重构</h3><p>研究教师访问方式、输出类型、训练数据形成和学生行为相似性分别能够证明什么，避免把不同技术过程笼统等同。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>大模型蒸馏场景的来源留痕和独立评测规则</h3><p>研究教师版本、调用记录、输出筛选、训练配置和学生评测应保留哪些记录，形成可复核的模型训练链条。</p></div>
+</div></section>
+<section class="lesson-section"><h2>原始材料</h2><ol class="source-links">
+<li id="s1"><a href="https://arxiv.org/abs/1503.02531">Hinton, Vinyals &amp; Dean (2015), Distilling the Knowledge in a Neural Network</a>。经典知识蒸馏论文，说明如何利用教师模型的输出分布训练较小模型。</li>
+<li id="s2"><a href="https://aclanthology.org/2023.findings-acl.507/">Hsieh et al. (2023), Distilling Step-by-Step!</a>。利用大语言模型生成的标签和解释作为额外监督信号训练较小模型。</li>
+<li id="s3"><a href="https://proceedings.iclr.cc/paper_files/paper/2024/hash/8ac015d409635f196f9e3e9dcfb9a94e-Abstract-Conference.html">Gu et al. (2024), MiniLLM: Knowledge Distillation of Large Language Models</a>。讨论生成式大语言模型的白盒知识蒸馏方法。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第20课</small><p><b>评测：我们究竟怎样知道一个模型“变好了”？</b>今天先把评测理解成“用一组事先设计的问题和指标系统检查模型表现”，不需要现在掌握具体指标，后面会专门讲。</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
