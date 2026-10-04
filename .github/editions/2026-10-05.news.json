@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-05",
+  "column": "brief",
+  "state": "draft",
+  "page": "articles/2026-10-05-tech-law-brief.html",
+  "base_main_sha": "c9aa453663d33f836b4b24344970f489ed3deaa5",
+  "updated_at": "2026-10-05T00:00:00+08:00",
+  "phase": "seeded_user_carryover",
+  "news_count": 1,
+  "distribution": {
+    "domestic": 0,
+    "foreign": 1
+  },
+  "publication_ready": false,
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": false,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": false,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": false
+  },
+  "editorial_overrides": [
+    {
+      "id": "us-ftc-openai-anthropic-agentic-ai-probe-20260930",
+      "type": "user_directed_missed-item_carryover",
+      "instruction": "保留为2026-10-05待发候选；不得仅因超过通常72小时窗口而自动删除。",
+      "created_at": "2026-10-05T00:00:00+08:00"
+    }
+  ],
+  "items": [
+    {
+      "id": "us-ftc-openai-anthropic-agentic-ai-probe-20260930",
+      "domestic": false,
+      "title_cn": "美国FTC调查OpenAI、Anthropic等AI机构，聚焦智能体越权与消费者风险",
+      "original_title": "FTC opens probe into AI giants including Anthropic and OpenAI",
+      "jurisdiction": "美国",
+      "authority": "美国联邦贸易委员会（FTC）",
+      "event_date": "2026-09-30",
+      "event_id": "US-FTC-agentic-AI-consumer-risk-probe-20260930",
+      "editorial_status": "user_directed_carryover",
+      "carryover_from": "2026-10-03 missed-source audit",
+      "timeliness_exception": {
+        "type": "user_directed_missed-item_carryover",
+        "reason": "该事件在2026-10-03检索时仍处72小时窗口但被漏检；用户明确要求作为2026-10-05待发内容保留。不得仅因2026-10-05运行时已超过72小时而自动删除。",
+        "ordinary_72h_window": false
+      },
+      "new_action": "FTC已对OpenAI、Anthropic及其他人工智能机构展开行业性调查，重点评估先进AI和智能体技术可能给消费者带来的风险，并向相关机构索取信息。",
+      "legal_status": "联邦监管调查与信息收集阶段；FTC尚未公布最终责任认定或执法结论。",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/business/ftc-opens-probe-into-ai-giants-including-anthropic-openai-new-york-post-reports-2026-09-30/"
+        },
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/ftc-ai-investigation-anthropic-openai-89ac416717adbfb1d72f2d85e6ce83d1"
+        }
+      ],
+      "fact": "美国联邦贸易委员会已对OpenAI、Anthropic及其他人工智能机构展开调查，重点评估先进AI和智能体技术可能给消费者带来的风险。公开报道显示，FTC拟向包括OpenAI、Anthropic和独立评测机构METR在内的主体索取信息，并可能进一步了解企业对智能体异常行为、外部行动和消费者风险的识别与控制措施。AP随后援引FTC方面确认调查存在，但FTC尚未公开完整调查范围和后续程序安排。",
+      "prior_background": "此次调查发生在多起AI智能体出现非预期外部行动、安全控制不足和第三方影响争议之后。与此前围绕大型AI企业投资合作或儿童聊天机器人的FTC调查不同，本轮公开信息直接指向先进AI与智能体可能造成的消费者风险。",
+      "law_analysis": "FTC的介入表明，美国现有消费者保护法可能被用于处理智能体安全问题。关键并不只是模型输出是否误导，而是企业是否充分评估和控制智能体代表用户采取外部行动时产生的风险，以及相关安全承诺、产品设计和风险披露是否可能构成不公平或欺骗性商业行为。",
+      "think_tank": {
+        "title": "FTC以现有消费者保护权限治理AI智能体风险的执法路径",
+        "note": "可持续跟踪FTC信息要求、调查范围及是否形成公开执法文件，分析智能体事故报告、消费者风险评估和企业安全声明如何被纳入现有不公平或欺骗性商业行为规则。"
+      },
+      "paper_topic": {
+        "title": "智能体风险的消费者保护法规制：从模型输出到外部行动",
+        "note": "可讨论当AI系统能够自主调用外部工具、影响第三方系统或代表消费者执行任务时，传统消费者保护法中的不公平性、欺骗性与可合理避免损害标准如何适用。"
+      },
+      "background": "美国目前尚无统一联邦AI综合法，FTC等既有监管机关仍主要依靠原有法定权限介入AI市场。随着AI从内容生成工具转向能够执行多步骤任务的智能体，风险开始从信息质量扩展到授权、外部行动、安全控制和第三方影响。",
+      "outlook": "后续应重点观察FTC是否正式公开6(b)命令、传票或其他信息要求，以及调查是否形成针对智能体测试、风险披露、外部行动控制和事故通报的统一要求。若FTC最终采取执法行动，其法律依据和责任标准可能成为美国智能体治理的重要先例。",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": true,
+        "result": "作为历史漏检顺延候选保留；事件未进入2026-10-03正式简报，用户明确要求列入2026-10-05待发内容。"
+      }
+    }
+  ],
+  "coverage": {
+    "repository_history": {
+      "status": "seeded_from_latest_main",
+      "notes": "已读取最新main并建立10月5日独立待发草稿。"
+    },
+    "carryover_audit": {
+      "status": "checked",
+      "notes": "FTC—OpenAI/Anthropic调查属于10月3日应发现但漏检的高价值事件，按用户明确指示顺延至10月5日待发候选。"
+    },
+    "institution_scan": {
+      "status": "not_started"
+    },
+    "topic_reverse_scan": {
+      "status": "not_started"
+    },
+    "final_scan": {
+      "status": "not_checked",
+      "checked_at": null
+    }
+  },
+  "last_error": null,
+  "next_actions": [
+    "10月5日19:00研究任务继续完成机构扫描与主题反扫，在本文件基础上增补当日候选，不得无故重做或删除本条用户指定顺延候选。",
+    "最终仍需对当日新增候选完成72小时时效、来源、法律状态、去重、中文、背景与前瞻核验后再判断publication_ready。"
+  ],
+  "publication": {
+    "main_commit": null,
+    "pages_run": null,
+    "deployed": false
+  },
+  "selection_policy": {
+    "quantity_target": "up_to_20_quality_first",
+    "principle": "quality_first_no_padding",
+    "carryover_exception": "user_directed_missed-item_carryover"
+  }
+}
