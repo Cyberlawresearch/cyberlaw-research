@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><title>第20课｜评测：我们究竟怎样知道一个模型“变好了”？｜网信法技术基础</title><link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/></head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-10-04-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-10-03-cohen-law-platform-economy.html">域外法学论文精读</a><a href="../articles/2026-10-03-austin-province-jurisprudence.html">法学经典著作</a><a href="../articles/2026-10-04-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 20 · TRAINING &amp; ALIGNMENT · 2026.10.05</div><h1>评测：我们究竟怎样知道一个模型“变好了”？</h1><p class="tech-lead">今日问题：训练完成后，为什么不能只凭几次对话就说模型更强了？一套可信的模型评测到底在比较什么？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus">
+<div><strong>它是什么</strong><p>模型评测，是先确定要检查的能力或风险，再准备一组测试任务，按照统一规则让模型作答，并用事先确定的指标记录结果。它不是给模型贴一个永久的“好”或“坏”标签，而是在明确的测试条件下，收集模型表现的可比较证据。</p></div>
+<div><strong>一个直观例子</strong><p>如果想比较两个法律问答模型，不能让甲回答合同问题、让乙回答刑法问题，再凭印象判断。更合理的做法是让它们回答同一批问题，使用相同提示方式和评分标准，再比较正确率、遗漏、拒答和错误类型。这样得到的差异才有基本可比性。</p></div>
+</section>
+<section class="lesson-section"><h2>一次评测至少要固定四件事</h2>
+<div class="visual-board" role="group" aria-label="模型评测的一般流程"><div class="visual-title">评测不是“出几道题”，而是把测试对象、题目、规则和结果连成一条链</div><div class="flow">
+<div class="flow-box"><strong>评什么</strong><span>知识、推理、安全、稳健性或具体业务能力</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>用什么题</strong><span>固定测试集或真实场景任务</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>怎样评分</strong><span>正确率、人工判断或其他明确指标</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>怎样比较</strong><span>在相同条件下记录模型版本与结果</span></div></div>
+<p class="tiny-note">MMLU、BIG-bench等基准把多项任务组织成可重复测试；HELM进一步强调覆盖不同场景、使用多种指标并统一比较条件。核心不是追逐某个单一分数，而是把“模型表现”变成可复查的测试过程。<sup><a href="#s1">[1]</a><a href="#s2">[2]</a><a href="#s3">[3]</a></sup></p></div>
+<p>第一步是明确“评什么”。模型可能在事实问答上更好，却在安全拒答、长文本处理或专业任务上没有改善。HELM强调多场景、多指标，正是因为通用模型的能力和风险不可能被一个数字完整概括。<sup><a href="#s1">[1]</a></sup></p>
+<p>第二步是固定测试材料和评分规则。MMLU用57个学科任务测试知识和问题解决能力，BIG-bench则汇集更广泛的任务。它们说明同一个模型可以从不同维度被观察，而“选哪些题、怎样计分”本身会影响最终看到的模型表现。<sup><a href="#s2">[2]</a><a href="#s3">[3]</a></sup></p>
+<p>第三步是固定比较条件。模型版本、提示词、是否提供示例、生成参数和评分方式变化，都可能让结果变化。因此，可复核的评测记录不能只留下一个“85分”，还要留下这个分数是在什么条件下得到的。</p>
+<div class="law-bridge"><h3>新词备注：Benchmark（基准）</h3><p>今天先把 Benchmark 理解成“一套约定好的测试题和评分办法”。它让不同模型或不同版本尽量在同一把尺子下比较。基准并不等于真实世界，也不保证覆盖所有能力。</p></div>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“总分更高，就说明模型在所有场景都更好。”评测分数只对被测试的任务和指标有直接意义，专业场景仍需单独验证。</span></div>
+<div class="myth"><b>误解 02</b><span>“找到一个权威榜单就够了。”知识正确率、安全性、稳健性和真实用户体验往往需要不同测试。</span></div>
+<div class="myth"><b>误解 03</b><span>“评测结果是一项永久属性。”模型版本、提示方式、测试题是否进入过训练材料、评分规则变化，都可能改变结果。评测应和版本及测试条件绑定。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>评测结果本身也是一种需要审查来源的证据</h3>
+<p>当企业、监管机关或公共部门用“评测通过”“准确率达到某一水平”证明系统可以上线时，需要追问的不只是最后的数字，而是评测对象、测试集、指标、模型版本和评分程序。相同的“90分”，如果一个来自通用选择题，另一个来自真实业务流程，证明力并不相同。</p>
+<p>谁设计测试、谁选择指标、是否覆盖高风险场景、结果能否复现、版本更新后是否重新测试，都会影响评测结果能否作为采购、备案、风险评估或争议中的可靠依据。NIST 2026年的ARIA评测规划手册也强调，面向具体AI应用的评价应结合模型测试、红队测试和用户测试等不同证据来源。<sup><a href="#s4">[4]</a></sup></p>
+</div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>模型评测结果的证明力：从技术分数到合规证据</h3><p>研究测试集选择、指标设定、模型版本和复现条件如何影响“评测通过”的法律证明力，以及监管或司法机关应怎样审查相关性能材料。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>高风险人工智能评测记录的最低留痕要求</h3><p>围绕模型版本、测试任务、评分标准、关键风险场景和复测触发条件，研究形成可跨机构复核的评测记录规则。</p></div>
+</div></section>
+<section class="lesson-section"><h2>原始材料</h2><ol class="source-links">
+<li id="s1"><a href="https://crfm.stanford.edu/2022/11/17/helm.html">Stanford CRFM, Holistic Evaluation of Language Models (HELM)</a>。强调广泛场景、多指标和标准化条件下的整体评测。</li>
+<li id="s2"><a href="https://arxiv.org/abs/2009.03300">Hendrycks et al., Measuring Massive Multitask Language Understanding (MMLU)</a>。以57个学科任务测试模型的多任务知识与问题解决能力。</li>
+<li id="s3"><a href="https://arxiv.org/abs/2206.04615">Srivastava et al., Beyond the Imitation Game: BIG-bench</a>。汇集大量多样任务，用于刻画语言模型能力及其局限。</li>
+<li id="s4"><a href="https://www.nist.gov/publications/aria-evaluation-planning-manual-elements-aria-style-ai-evaluations">NIST (2026), ARIA Evaluation Planning Manual</a>。提出结合模型测试、红队测试与用户测试来规划面向具体应用的AI评测。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第21课</small><p><b>后训练：模型预训练完成以后，为什么还要继续训练？</b>今天先把后训练理解成“预训练以后，为了让模型更会完成任务、更符合使用要求而继续进行的一组训练过程”，后面会专门讲。</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
