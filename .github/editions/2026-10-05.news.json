@@ -1,0 +1,502 @@
+{
+  "date": "2026-10-05",
+  "column": "brief",
+  "state": "verified",
+  "page": "articles/2026-10-05-tech-law-brief.html",
+  "base_main_sha": "b5d0aff58a5ad1754d92acbc6e307f80f1c800c9",
+  "updated_at": "2026-10-05T21:38:24+08:00",
+  "phase": "publishing",
+  "news_count": 18,
+  "distribution": {
+    "domestic": 3,
+    "foreign": 15
+  },
+  "publication_ready": true,
+  "checked_at": "2026-10-05T21:38:24+08:00",
+  "last_news_scan_at": "2026-10-05T21:38:24+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  },
+  "coverage": [
+    {
+      "group": "中国大陆官方和司法来源",
+      "languages": [
+        "zh-CN"
+      ],
+      "status": "checked_no_qualified_new_items",
+      "note": "国庆假期期间未发现符合72小时且有足够法律、监管或司法增量的正式事项，未用旧闻补数。"
+    },
+    {
+      "group": "台湾地区政府与专业机构",
+      "languages": [
+        "zh-TW"
+      ],
+      "status": "checked_selected",
+      "selected": 2
+    },
+    {
+      "group": "香港政府与本地法律科技动态",
+      "languages": [
+        "zh-HK",
+        "en"
+      ],
+      "status": "checked_selected",
+      "selected": 1
+    },
+    {
+      "group": "韩国PIPC/KFTC/MSIT",
+      "languages": [
+        "ko"
+      ],
+      "status": "checked_no_new_selected"
+    },
+    {
+      "group": "日本PPC/JFTC/总务省/经产省/数字厅",
+      "languages": [
+        "ja"
+      ],
+      "status": "checked_no_new_selected"
+    },
+    {
+      "group": "越南政府与数字监管来源",
+      "languages": [
+        "vi"
+      ],
+      "status": "checked_no_new_selected"
+    },
+    {
+      "group": "欧盟委员会/EDPB及相关监管来源",
+      "languages": [
+        "en"
+      ],
+      "status": "checked"
+    },
+    {
+      "group": "美国法院与科技监管",
+      "languages": [
+        "en"
+      ],
+      "status": "checked_selected"
+    },
+    {
+      "group": "英国Ofcom/CMA/DCMS/ICO及法院",
+      "languages": [
+        "en"
+      ],
+      "status": "checked_selected"
+    },
+    {
+      "group": "国际主流、法律、科技和网络安全媒体",
+      "languages": [
+        "en"
+      ],
+      "status": "checked_selected"
+    }
+  ],
+  "final_scan": {
+    "at": "2026-10-05T21:38:24+08:00",
+    "result": "已复扫最近1—2小时重要官方公告、司法裁判、监管处罚、规则生效和Reuters/AP等主流媒体；未发现需要替换现有18条的更高优先级新增事项。"
+  },
+  "items": [
+    {
+      "id": "tw-nics-ai-cyber-four-priorities-20261005",
+      "event_id": "TW-NICS-AI-cyber-four-priorities-2026-10-05",
+      "title_cn": "台湾地区资安院提出四项AI资安重点工作，政府与关键基础设施将率先开展实测",
+      "domestic": true,
+      "event_date": "2026-10-05",
+      "jurisdiction": "台湾地区",
+      "original_title": null,
+      "sources": [
+        {
+          "name": "原始/一手来源",
+          "url": "https://www.cna.com.tw/news/afe/202610050129.aspx"
+        }
+      ],
+      "legal_status_checked": true,
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "已与10月4日完整简报及近7日历史逐项核对；保留为新事件或具有实质新增程序动作。"
+      }
+    },
+    {
+      "id": "tw-mohw-ai-3d-medical-platform-20261005",
+      "event_id": "TW-MOHW-AI-3D-medical-platform-2026-10-05",
+      "title_cn": "台湾地区卫福部门推动AI 3D医疗影像平台，提出标准互通与全国联邦学习网络方向",
+      "domestic": true,
+      "event_date": "2026-10-05",
+      "jurisdiction": "台湾地区",
+      "original_title": null,
+      "sources": [
+        {
+          "name": "原始/一手来源",
+          "url": "https://www.mohw.gov.tw/cp-16-88138-1.html"
+        }
+      ],
+      "legal_status_checked": true,
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "已与10月4日完整简报及近7日历史逐项核对；保留为新事件或具有实质新增程序动作。"
+      }
+    },
+    {
+      "id": "hk-ai-liability-data-governance-review-20261004",
+      "event_id": "HK-AI-liability-cybercrime-law-review-2026",
+      "title_cn": "香港讨论AI责任与数据治理立法，政府拟检视AI产品事故及网络犯罪现行法律",
+      "domestic": true,
+      "event_date": "2026-10-04",
+      "jurisdiction": "香港",
+      "original_title": null,
+      "sources": [
+        {
+          "name": "原始/一手来源",
+          "url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3369672/new-ai-laws-should-target-data-governance-safety-build-public-confidence-experts"
+        }
+      ],
+      "legal_status_checked": true,
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "已与10月4日完整简报及近7日历史逐项核对；保留为新事件或具有实质新增程序动作。"
+      }
+    },
+    {
+      "id": "no-ai-glasses-temporary-ban-20261005",
+      "event_id": "NO-AI-glasses-temporary-ban-2026-10-05",
+      "title_cn": "挪威拟在部分公共场所临时限制AI眼镜，隐蔽录音录像成为监管焦点",
+      "domestic": false,
+      "event_date": "2026-10-05",
+      "jurisdiction": "挪威",
+      "original_title": "Norway to propose temporary ban on AI glasses in some public places",
+      "sources": [
+        {
+          "name": "原始来源",
+          "url": "https://www.reuters.com/technology/norway-propose-temporary-ban-ai-glasses-some-public-places-2026-10-05/"
+        }
+      ],
+      "legal_status_checked": true,
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "已与10月4日完整简报及近7日历史逐项核对；保留为新事件或具有实质新增程序动作。"
+      }
+    },
+    {
+      "id": "pl-uokik-google-publisher-negotiations-20261005",
+      "event_id": "PL-UOKiK-Google-publisher-remuneration-2026-10-05",
+      "title_cn": "波兰反垄断机构调查Google与出版商报酬谈判，信息不对称被纳入支配地位滥用审查",
+      "domestic": false,
+      "event_date": "2026-10-05",
+      "jurisdiction": "波兰",
+      "original_title": "Polish regulator suspects Google abused dominant position in publisher payment talks",
+      "sources": [
+        {
+          "name": "原始来源",
+          "url": "https://www.reuters.com/legal/litigation/polish-regulator-suspects-google-abused-dominant-position-publisher-payment-2026-10-05/"
+        }
+      ],
+      "legal_status_checked": true,
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "已与10月4日完整简报及近7日历史逐项核对；保留为新事件或具有实质新增程序动作。"
+      }
+    },
+    {
+      "id": "uk-bt-talktalk-public-interest-intervention-20261005",
+      "event_id": "UK-BT-TalkTalk-PIIN-2026-10-05",
+      "title_cn": "英国政府以公共利益介入BT收购TalkTalk，电信连续供应与竞争审查同步推进",
+      "domestic": false,
+      "event_date": "2026-10-05",
+      "jurisdiction": "英国",
+      "original_title": "Secretary of State for Digital, Culture, Media and Sport intervenes under Enterprise Act powers in TalkTalk deal",
+      "sources": [
+        {
+          "name": "原始来源",
+          "url": "https://www.gov.uk/government/news/secretary-of-state-for-digital-culture-media-and-sport-intervenes-under-enterprise-act-powers-in-talktalk-deal--2"
+        }
+      ],
+      "legal_status_checked": true,
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "已与10月4日完整简报及近7日历史逐项核对；保留为新事件或具有实质新增程序动作。"
+      }
+    },
+    {
+      "id": "uk-ofcom-info-requests-judicial-review-20261005",
+      "event_id": "UK-OSA-Ofcom-information-requests-JR-2026-10-05",
+      "title_cn": "Meta、X与TikTok同日挑战Ofcom信息调取，英国《在线安全法》监管权限进入司法审查",
+      "domestic": false,
+      "event_date": "2026-10-05",
+      "jurisdiction": "英国",
+      "original_title": "TikTok’s challenge of UK Online Safety Act targets Ofcom’s use of powers",
+      "sources": [
+        {
+          "name": "原始来源",
+          "url": "https://www.mlex.com/mlex/articles/2533705/tiktok-s-challenge-of-uk-online-safety-act-targets-ofcom-s-use-of-powers"
+        }
+      ],
+      "legal_status_checked": true,
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "已与10月4日完整简报及近7日历史逐项核对；保留为新事件或具有实质新增程序动作。"
+      }
+    },
+    {
+      "id": "eu-iwf-ai-csam-rise-20261005",
+      "event_id": "IWF-AI-CSAM-H1-2026-report-2026-10-05",
+      "title_cn": "IWF称AI生成儿童性虐待图像半年已超去年全年，呼吁欧盟补足未知内容检测规则",
+      "domestic": false,
+      "event_date": "2026-10-05",
+      "jurisdiction": "欧盟／英国",
+      "original_title": "More AI-generated child sexual abuse images found in the first six months of 2026 than all of 2025, IWF warns",
+      "sources": [
+        {
+          "name": "原始来源",
+          "url": "https://www.iwf.org.uk/news-media/news/more-ai-generated-child-sexual-abuse-images-found-in-the-first-six-months-of-2026-than-all-of-2025-iwf-warns/"
+        }
+      ],
+      "legal_status_checked": true,
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "已与10月4日完整简报及近7日历史逐项核对；保留为新事件或具有实质新增程序动作。"
+      }
+    },
+    {
+      "id": "it-meloni-euipo-voice-trademark-20261005",
+      "event_id": "IT-Meloni-voice-trademark-EUIPO-2026-10-05",
+      "title_cn": "意大利总理梅洛尼申请欧盟声音商标，AI语音深度伪造推动人格标识保护新尝试",
+      "domestic": false,
+      "event_date": "2026-10-05",
+      "jurisdiction": "意大利／欧盟",
+      "original_title": "Italy PM Meloni seeks EU trademark for her voice amid AI deepfake risks",
+      "sources": [
+        {
+          "name": "原始来源",
+          "url": "https://www.reuters.com/technology/italy-pm-meloni-seeks-eu-trademark-her-voice-amid-ai-deepfake-risks-2026-10-05/"
+        }
+      ],
+      "legal_status_checked": true,
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "已与10月4日完整简报及近7日历史逐项核对；保留为新事件或具有实质新增程序动作。"
+      }
+    },
+    {
+      "id": "us-qualcomm-arm-contract-trial-20261005",
+      "event_id": "US-Qualcomm-Arm-contract-trial-2026-10-05",
+      "title_cn": "Qualcomm与Arm再赴特拉华联邦法院，芯片授权、测试工具与未来许可谈判成为争点",
+      "domestic": false,
+      "event_date": "2026-10-05",
+      "jurisdiction": "美国",
+      "original_title": "Qualcomm and Arm head to trial again, potential for huge damages in focus",
+      "sources": [
+        {
+          "name": "原始来源",
+          "url": "https://www.reuters.com/business/media-telecom/qualcomm-arm-head-trial-again-potential-huge-damages-focus-2026-10-05/"
+        }
+      ],
+      "legal_status_checked": true,
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "已与10月4日完整简报及近7日历史逐项核对；保留为新事件或具有实质新增程序动作。"
+      }
+    },
+    {
+      "id": "us-nvidia-groq-licensing-shareholder-suit-20261005",
+      "event_id": "US-Nvidia-Groq-license-acquihire-suit-2026-10-05",
+      "title_cn": "Nvidia与Groq 200亿美元许可交易遭股东诉讼，“授权+招募”是否实为收购成为焦点",
+      "domestic": false,
+      "event_date": "2026-10-05",
+      "jurisdiction": "美国／特拉华州",
+      "original_title": "Nvidia’s $20bn licensing deal with Groq faces lawsuit from jilted engineers",
+      "sources": [
+        {
+          "name": "原始来源",
+          "url": "https://www.ft.com/content/93ee425d-9ac7-4543-8cc9-fef2e0670787"
+        }
+      ],
+      "legal_status_checked": true,
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "已与10月4日完整简报及近7日历史逐项核对；保留为新事件或具有实质新增程序动作。"
+      }
+    },
+    {
+      "id": "fr-us-schneider-ptc-acquisition-20261005",
+      "event_id": "Schneider-PTC-acquisition-2026-10-05",
+      "title_cn": "Schneider Electric拟以226亿美元收购PTC，工业软件与AI基础设施整合继续加速",
+      "domestic": false,
+      "event_date": "2026-10-05",
+      "jurisdiction": "法国／美国",
+      "original_title": "Schneider Electric to buy PTC for $22.6 billion in all-cash deal",
+      "sources": [
+        {
+          "name": "原始来源",
+          "url": "https://www.reuters.com/legal/transactional/schneider-electric-buy-ptc-226-billion-all-cash-deal-2026-10-05/"
+        }
+      ],
+      "legal_status_checked": true,
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "已与10月4日完整简报及近7日历史逐项核对；保留为新事件或具有实质新增程序动作。"
+      }
+    },
+    {
+      "id": "jo-us-shinyhunters-rey-detention-20261003",
+      "event_id": "ShinyHunters-Rey-detention-Jordan-2026-10",
+      "title_cn": "路透称ShinyHunters疑似成员在约旦被拘并协助FBI，跨境黑客调查出现关键进展",
+      "domestic": false,
+      "event_date": "2026-10-03",
+      "jurisdiction": "约旦／美国",
+      "original_title": "ShinyHunters hacker in FBI data theft detained in Jordan, cooperating with bureau, sources say",
+      "sources": [
+        {
+          "name": "原始来源",
+          "url": "https://www.reuters.com/world/middle-east/key-shinyhunters-hacker-detained-jordan-is-cooperating-sources-say-2026-10-03/"
+        }
+      ],
+      "legal_status_checked": true,
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "已与10月4日完整简报及近7日历史逐项核对；保留为新事件或具有实质新增程序动作。"
+      }
+    },
+    {
+      "id": "us-ai-monitoring-noncitizens-suit-survives-20261003",
+      "event_id": "US-AI-monitoring-noncitizens-SDNY-2026-10-02",
+      "title_cn": "纽约联邦法院允许AI监控非公民诉讼继续，移民程序并未阻却对监控政策的独立挑战",
+      "domestic": false,
+      "event_date": "2026-10-03",
+      "jurisdiction": "美国",
+      "original_title": "Feds Can't Ax Unions' Suit Over AI Monitoring Of Noncitizens",
+      "sources": [
+        {
+          "name": "原始来源",
+          "url": "https://www.law360.com/articles/2533079/feds-can-t-ax-unions-suit-over-ai-monitoring-of-noncitizens"
+        }
+      ],
+      "legal_status_checked": true,
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "已与10月4日完整简报及近7日历史逐项核对；保留为新事件或具有实质新增程序动作。"
+      }
+    },
+    {
+      "id": "us-google-adtech-mdl-trial-schedule-20261003",
+      "event_id": "US-Google-adtech-publisher-MDL-trial-schedule-2026-10-02",
+      "title_cn": "Google广告技术反垄断多区诉讼确定首场审判安排，出版商损害赔偿争议进入审判准备阶段",
+      "domestic": false,
+      "event_date": "2026-10-03",
+      "jurisdiction": "美国",
+      "original_title": "Gannett, Daily Mail Get April '27 Date For Google Ad Tech Trial",
+      "sources": [
+        {
+          "name": "原始来源",
+          "url": "https://www.law360.com/articles/2533323/gannett-daily-mail-get-april-27-date-for-google-ad-tech-trial"
+        }
+      ],
+      "legal_status_checked": true,
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "已与10月4日完整简报及近7日历史逐项核对；保留为新事件或具有实质新增程序动作。"
+      }
+    },
+    {
+      "id": "us-nso-el-faro-pegasus-dismissal-20261003",
+      "event_id": "US-El-Faro-NSO-Pegasus-jurisdiction-dismissal-2026-10-02",
+      "title_cn": "美国法院再次驳回El Faro记者对NSO Pegasus诉讼，跨境间谍软件案件卡在管辖联系",
+      "domestic": false,
+      "event_date": "2026-10-03",
+      "jurisdiction": "美国／萨尔瓦多／以色列",
+      "original_title": "Judge dismisses spyware case brought by Salvadoran journalists targeted with Pegasus",
+      "sources": [
+        {
+          "name": "原始来源",
+          "url": "https://therecord.media/judge-dismisses-spyware-case-brought-by-salvadoran-journalists"
+        }
+      ],
+      "legal_status_checked": true,
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "已与10月4日完整简报及近7日历史逐项核对；保留为新事件或具有实质新增程序动作。"
+      }
+    },
+    {
+      "id": "us-att-data-breach-settlement-final-approval-20261003",
+      "event_id": "US-ATT-data-breach-settlement-final-approval-2026-10-02",
+      "title_cn": "美国法院最终批准AT&T 1.77亿美元数据泄露和解，数百万客户集体诉讼进入履行阶段",
+      "domestic": false,
+      "event_date": "2026-10-03",
+      "jurisdiction": "美国",
+      "original_title": "AT&T Users' Attys Score $59M As $177M Data Breach Deal OK'd",
+      "sources": [
+        {
+          "name": "原始来源",
+          "url": "https://www.law360.com/articles/2533531/at-t-users-attys-score-59m-177m-data-breach-deal-ok-d"
+        }
+      ],
+      "legal_status_checked": true,
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "已与10月4日完整简报及近7日历史逐项核对；保留为新事件或具有实质新增程序动作。"
+      }
+    },
+    {
+      "id": "us-alphabet-gemini-investor-suit-20261003",
+      "event_id": "US-Alphabet-Gemini-release-investor-suit-2026-10-02",
+      "title_cn": "Alphabet遭投资者起诉，Gemini模型训练与发布时间披露被指误导市场",
+      "domestic": false,
+      "event_date": "2026-10-03",
+      "jurisdiction": "美国",
+      "original_title": "Alphabet Hit With Investor Suit Over Gemini Release Lag",
+      "sources": [
+        {
+          "name": "原始来源",
+          "url": "https://www.law360.com/articles/2533520/alphabet-hit-with-investor-suit-over-gemini-release-lag"
+        }
+      ],
+      "legal_status_checked": true,
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "已与10月4日完整简报及近7日历史逐项核对；保留为新事件或具有实质新增程序动作。"
+      }
+    }
+  ],
+  "publication": {
+    "commit_sha": null,
+    "pages_run_id": null,
+    "pages_result": null,
+    "pre_deploy_checks": {
+      "article_items": 18,
+      "brief_insights": 18,
+      "foreign_original_titles": 15,
+      "current_columns_preserved": true
+    },
+    "post_deploy_checks": null
+  }
+}
