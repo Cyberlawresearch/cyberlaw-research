@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-05",
+  "column": "classic",
+  "status": "verified",
+  "phase": "deployment_check",
+  "book": "John W. Salmond：《法理学：法律理论》",
+  "bibliography": {
+    "author": "John W. Salmond",
+    "originalTitle": "Jurisprudence, or, The Theory of the Law",
+    "publisher": "Stevens and Haynes",
+    "year": "1902",
+    "edition": "1902年初版；正文系统核对1913年第四版"
+  },
+  "target_path": "articles/2026-10-05-salmond-jurisprudence.html",
+  "sources": [
+    "https://openlibrary.org/books/OL6967413M/Jurisprudence_or_the_theory_of_the_law",
+    "https://lawcat.berkeley.edu/record/659184",
+    "https://classic-literature.net/sir-john-w-john-william-salmond-1862-1924/jurisprudence/",
+    "https://teara.govt.nz/en/biographies/3s1/salmond-john-william",
+    "https://ojs.wgtn.ac.nz/vuwlr/article/view/5548",
+    "https://write.jeyounson.com/HartConcept/book-original/chapter_06"
+  ],
+  "verification": {
+    "full_text_review": true,
+    "edition_metadata": true,
+    "twenty_two_chapter_structure": true,
+    "history_deduplication": true,
+    "bibliography": true,
+    "representative_criticism": true,
+    "natural_chinese_reviewed": true,
+    "final_body_complete": true
+  },
+  "history_dedup": {
+    "passed": true,
+    "selected_new_work": "John W. Salmond, Jurisprudence, or, The Theory of the Law",
+    "checked_against": "classics.html current complete index and recent classic publication history"
+  },
+  "summary": "Salmond把法律定义为国家在司法中承认并适用的原则，并以法源、终极法律原则、先例、权利、所有权、占有、法人、责任与程序构成完整理论体系。他既延续分析法学的概念方法，又修正Austin的命令论；其“终极法律原则”后来被Hart明确视为承认规则理论的重要前身。",
+  "homepage_summary": "John W. Salmond：《法理学：法律理论》",
+  "classics_summary": "John W. Salmond：《法理学：法律理论》",
+  "archive_summary": "最新：John W. Salmond：《法理学：法律理论》",
+  "required_updates": [
+    "publish target_path",
+    "advance homepage classic card",
+    "prepend classics.html Oct 5 entry",
+    "advance archive classic summary",
+    "advance data/current-edition.json classic pages/page_dates",
+    "sync current classic navigation only",
+    "write verified classic record"
+  ],
+  "last_error": null,
+  "next_actions": [
+    "verify exact main commit Pages deploy",
+    "verify deployed current-columns and live classic entry points"
+  ],
+  "state": "verified",
+  "publication": {
+    "deployment_claim": false,
+    "note": "Content verified; deployment success is established only by the exact main commit's Pages run and live current-columns checks."
+  },
+  "base_main_sha": "418218a4b4674b6cffc99b35fa407aa6e3cc4588"
+}
