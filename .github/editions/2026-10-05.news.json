@@ -3,13 +3,13 @@
   "column": "brief",
   "state": "draft",
   "page": "articles/2026-10-05-tech-law-brief.html",
-  "base_main_sha": "c9aa453663d33f836b4b24344970f489ed3deaa5",
-  "updated_at": "2026-10-05T00:00:00+08:00",
-  "phase": "seeded_user_carryover",
-  "news_count": 1,
+  "base_main_sha": "b5d0aff58a5ad1754d92acbc6e307f80f1c800c9",
+  "updated_at": "2026-10-05T20:54:00+08:00",
+  "phase": "research",
+  "news_count": 7,
   "distribution": {
     "domestic": 0,
-    "foreign": 1
+    "foreign": 7
   },
   "publication_ready": false,
   "checks": {
@@ -80,32 +80,276 @@
         "seven_day": true,
         "result": "作为历史漏检顺延候选保留；事件未进入2026-10-03正式简报，用户明确要求列入2026-10-05待发内容。"
       }
+    },
+    {
+      "id": "no-ai-glasses-temporary-ban-proposal-20261005",
+      "domestic": false,
+      "title_cn": "挪威政府拟在学校、医疗机构等场所临时限制AI眼镜使用",
+      "original_title": "Vil innføre midlertidig forbud mot KI-briller",
+      "original_title_en": "Norway to propose temporary ban on AI glasses in some public places",
+      "jurisdiction": "挪威",
+      "authority": "挪威数字化与公共治理部",
+      "event_date": "2026-10-05",
+      "event_id": "NO-government-AI-glasses-temporary-ban-proposal-20261005",
+      "new_action": "挪威政府宣布将尽快向议会提交临时立法提案，拟在部分公共及敏感场所限制具备摄录和AI能力的智能眼镜，并同步组织专家研究长期规则。",
+      "legal_status": "政府立法提案准备阶段；尚未经议会通过，也不是已经生效的普遍禁令。",
+      "sources": [
+        {
+          "name": "Norwegian Ministry of Digitalisation and Public Governance",
+          "url": "https://www.regjeringen.no/no/aktuelt/vil-innfore-midlertidig-forbud-mot-ki-briller/id3175516/"
+        },
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/technology/norway-propose-temporary-ban-ai-glasses-some-public-places-2026-10-05/"
+        }
+      ],
+      "fact": "挪威数字化与公共治理部10月5日表示，政府拟尽快向议会提交临时法律提案，在若干公共和敏感场所限制AI眼镜使用。政府点名学校、幼儿园、医疗机构以及部分公众聚集场所，主要担忧在他人不知情的情况下持续拍摄、录音并结合AI处理。政府同时将设立专家组研究更长期的监管方案。",
+      "prior_background": "智能眼镜正在把摄像、录音、识别和生成式AI能力集成到日常可穿戴设备中。与手机不同，旁观者更难识别设备是否正在采集信息，现有告知、同意和场所管理规则因此面临新的可执行性问题。",
+      "law_analysis": "挪威没有等待出现大规模侵权个案后再逐案执法，而是尝试用场所型临时禁令处理可穿戴AI的即时隐私风险。它把监管对象从数据处理后台前移到设备使用行为，后续关键在于禁用场所如何界定、执法主体是谁以及是否设置医疗辅助等合理例外。",
+      "think_tank": {
+        "title": "可穿戴AI进入公共空间后的场所型监管工具",
+        "note": "可比较智能眼镜、执法记录仪和公共视频系统的差异，研究在不禁止技术本身的情况下，如何通过敏感场所、显著提示和例外机制降低无感采集风险。"
+      },
+      "paper_topic": {
+        "title": "从个人同意到场所规则：可穿戴人工智能的隐私治理转向",
+        "note": "可讨论当数据采集具有高度隐蔽性且被摄录者无法有效表达意思时，个人信息法上的同意机制为何不足，以及场所管理规则如何补充。"
+      },
+      "background": "智能眼镜把视听采集与AI识别、理解功能嵌入普通眼镜形态，使周围人员更难判断是否正在被记录。挪威政府此次首先选择临时立法，同时交由专家组研究长期规则。",
+      "outlook": "后续应观察政府正式法案文本、禁用场所清单和例外条款。若议会接受场所型限制，欧洲其他国家可能以类似方法处理可穿戴AI，而不是仅依赖数据保护机关事后执法。",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": true,
+        "result": "近7日站内未发现挪威AI眼镜临时禁令提案；与既有法国智能眼镜监管材料法域和新增动作不同。"
+      }
+    },
+    {
+      "id": "pl-uokik-google-publisher-payments-20261005",
+      "domestic": false,
+      "title_cn": "波兰竞争监管机构指控Google在新闻内容付费谈判中滥用市场支配地位",
+      "original_title": "Prezes UOKiK stawia zarzuty Google",
+      "original_title_en": "Polish regulator suspects Google abused dominant position in publisher payment talks",
+      "jurisdiction": "波兰",
+      "authority": "波兰竞争与消费者保护局（UOKiK）",
+      "event_date": "2026-10-05",
+      "event_id": "PL-UOKiK-Google-publisher-remuneration-abuse-20261005",
+      "new_action": "UOKiK主席向Google集团相关主体提出反垄断指控，认为其在与新闻出版商协商内容使用报酬时可能利用信息和谈判优势削弱出版商议价能力。",
+      "legal_status": "反垄断执法程序中的正式指控阶段；尚未作出最终违法认定或罚款决定。",
+      "sources": [
+        {
+          "name": "UOKiK",
+          "url": "https://uokik.gov.pl/prezes-uokik-stawia-zarzuty-google"
+        },
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/legal/litigation/polish-regulator-suspects-google-abused-dominant-position-publisher-payment-2026-10-05/"
+        }
+      ],
+      "fact": "波兰UOKiK 10月5日宣布对Google集团相关主体提出滥用支配地位指控，争议集中在Google Search、Google News和Discover使用新闻内容时与国内出版商协商报酬的方式。监管机构认为，Google可能没有向出版商提供确定合理报酬所需的充分信息，并使法定谈判机制流于形式。若最终认定违法，相关主体可能面临按营业额计算的罚款。",
+      "prior_background": "波兰2024年修改著作权法以落实欧盟数字单一市场版权规则，为新闻出版商与大型网络服务商之间的内容使用报酬谈判提供法律基础。当前争议并不是一般搜索排名问题，而是平台在版权报酬谈判中的市场力量。",
+      "law_analysis": "案件把版权法设定的报酬请求权与竞争法上的支配地位义务直接连接起来。即使平台形式上参与谈判，如果关键数据、计算依据和议价条件完全由平台一方控制，竞争执法仍可能把这种信息不对称视为滥用市场力量的一部分。",
+      "think_tank": {
+        "title": "大型平台内容付费谈判中的数据透明与竞争法约束",
+        "note": "可研究新闻版权报酬制度在平台掌握流量和收益数据时为何容易陷入形式谈判，并比较竞争法、版权集体管理和强制仲裁等制度工具。"
+      },
+      "paper_topic": {
+        "title": "平台支配地位与版权议价程序：信息不对称的竞争法规制",
+        "note": "可从程序性滥用切入，讨论支配企业在法定许可或报酬谈判中是否负有更高的信息披露和善意协商义务。"
+      },
+      "background": "欧盟DSM版权改革强化了新闻出版商对网络使用内容的权利，但报酬能否真正实现仍取决于平台提供数据和开展谈判的方式。波兰此次案件把这一问题转化为竞争法执法。",
+      "outlook": "后续需观察UOKiK如何界定相关市场、支配地位和应披露信息范围，以及Google是否提出承诺方案。若形成处罚或行为性救济，可能影响其他成员国围绕新闻内容付费的监管路径。",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": true,
+        "result": "近7日站内未发现该波兰UOKiK正式指控；与欧委会既有Google/DMA案件属于不同法律程序和争点。"
+      }
+    },
+    {
+      "id": "us-flock-alpr-fourth-amendment-kyle-20261003",
+      "domestic": false,
+      "title_cn": "美国联邦法官认定无令状查询Flock历史车牌数据构成第四修正案搜索并排除证据",
+      "original_title": "Federal judge calls Flock ‘indiscriminate mass surveillance’",
+      "jurisdiction": "美国／俄克拉荷马州",
+      "authority": "美国俄克拉荷马北区联邦地区法院",
+      "event_date": "2026-10-03",
+      "event_id": "US-NDOK-Kyle-Flock-ALPR-Fourth-Amendment-20261001-reported-20261003",
+      "new_action": "United States v. Kyle案的联邦地区法院裁定引发公开报道；法院把对跨区域历史车牌识别数据的无令状查询认定为第四修正案意义上的搜索，并排除了后续取得的证据。",
+      "legal_status": "联邦地区法院刑事案件中的证据排除裁定；不是全国性先例，后续仍可能出现政府上诉或其他法院不同判断。",
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/"
+        },
+        {
+          "name": "Court order mirror referenced in public docket",
+          "url": "https://storage.courtlistener.com/recap/gov.uscourts.oknd.76981/gov.uscourts.oknd.76981.62.0.pdf"
+        }
+      ],
+      "fact": "10月3日公开报道披露，美国俄克拉荷马北区联邦地区法院在United States v. Kyle案中认定，执法人员无令状查询可还原较长时间车辆移动轨迹的Flock等自动车牌识别网络，侵犯了被告对整体行踪的合理隐私期待。法院据此认定该查询构成第四修正案意义上的搜索，并排除了受其影响的后续证据。裁定由单一联邦地区法院作出，不具有普遍约束力。",
+      "prior_background": "本站9月25日已报道美国众议员提出限制联邦机构无令状使用联网车牌识别系统的FLAFO Act。此次不是重复立法倡议，而是联邦法院首次在具体刑事案件中对历史ALPR网络查询作出实质宪法判断之一。",
+      "law_analysis": "裁定的重要性不在单次拍摄车牌，而在海量公共道路观察经联网、长期保存和跨区域检索后发生的性质变化。它把Carpenter关于整体移动轨迹的隐私逻辑延伸到车辆位置数据库，为公共监控中“单点公开、聚合私密”的判断提供了新的司法样本。",
+      "think_tank": {
+        "title": "联网车牌识别从治安工具演变为历史位置数据库后的授权边界",
+        "note": "可研究我国公共视频、停车和道路识别数据逐步互联后，跨库历史轨迹查询是否需要分级授权、目的限制、日志审计和更严格的司法或行政程序控制。"
+      },
+      "paper_topic": {
+        "title": "聚合效应与公共空间隐私：历史车牌数据查询的宪法性质",
+        "note": "可围绕单次观察合法与长期聚合受保护之间的张力，分析技术规模如何改变传统公共空间隐私判断。"
+      },
+      "background": "美国各地Flock等ALPR系统把固定和移动摄像头采集的车牌、时间和地点记录汇集为可检索数据库。此前多数法院并未把一般ALPR使用认定为第四修正案搜索，Kyle案采取了更强调长期聚合轨迹的路径。",
+      "outlook": "后续重点是政府是否上诉，以及第十巡回法院或其他巡回法院是否接受这种聚合隐私逻辑。同期国会出现新的限制Flock使用提案，司法和立法两条线可能共同推动访问授权规则收紧。",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": true,
+        "result": "与9月25日FLAFO Act存在直接事件关联但属于新的司法程序和宪法判断，可作为新增进展保留。"
+      }
+    },
+    {
+      "id": "in-bitchat-section69a-removal-20261003",
+      "domestic": false,
+      "title_cn": "印度依据《信息技术法》第69A条要求Apple下架Bitchat，去中心化通信工具再遇封禁争议",
+      "original_title": "Jack Dorsey’s Bitchat disappears from app stores in India after government order",
+      "jurisdiction": "印度",
+      "authority": "印度电子与信息技术部（MeitY）／Apple",
+      "event_date": "2026-10-03",
+      "event_id": "IN-MeitY-Bitchat-Section69A-AppStore-removal-20261003",
+      "new_action": "Bitchat创始人披露印度政府依据《信息技术法》第69A条要求Apple在印度App Store移除该应用；Apple通知显示该要求属于政府阻断指令。",
+      "legal_status": "行政网络阻断措施已对Apple端执行；相关正式命令未公开，Google Play及网站无法访问是否基于同一指令尚无充分公开证据。",
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/03/jack-dorseys-bitchat-disappears-from-app-stores-in-india-after-government-order/"
+        }
+      ],
+      "fact": "10月3日，Bitchat创始人Jack Dorsey披露，印度政府要求Apple依据《信息技术法》第69A条在印度App Store下架Bitchat，Apple通知称该应用仍可在印度以外地区获得。TechCrunch核验发现其同时已无法从印度Google Play下载，网站在多家当地网络上也无法访问，但尚不能确认后两项是否来自同一政府命令。",
+      "prior_background": "印度此前曾要求GitHub限制与Bitchat有关的代码仓库，争议焦点包括去中心化通信工具在网络中断或执法调查场景下的可追踪性。此次新增点在于政府明确转而使用第69A条网络阻断权限并落实到应用商店分发端。",
+      "law_analysis": "该事件把传统面向网页和在线内容的阻断权延伸到通信软件分发。若政府可以基于软件的通信能力而非明确公开的违法内容要求应用商店下架，审查对象将从具体信息转向技术功能本身，也会放大秘密阻断命令的程序透明和救济问题。",
+      "think_tank": {
+        "title": "网络阻断权由内容治理延伸至通信工具分发的制度风险",
+        "note": "可比较印度第69A条、应用商店合规和网络中断措施，研究国家安全与执法需求下对通用通信工具采取整体下架的必要性、透明度和救济机制。"
+      },
+      "paper_topic": {
+        "title": "从违法信息到软件功能：网络阻断措施的客体扩张与比例原则",
+        "note": "可讨论当阻断对象由具体内容转向具有一般用途的软件时，行政机关应满足何种事实基础、程序公开和最小侵害要求。"
+      },
+      "background": "Bitchat属于去中心化通信工具，其在互联网中断情况下仍可进行附近设备通信。印度此前围绕相关代码仓库采取限制措施，本轮公开信息显示第69A条被用于应用商店分发。",
+      "outlook": "后续应观察印度电子与信息技术部是否公开阻断命令依据、Google和网络服务商是否收到独立指令，以及开发者是否寻求司法审查。若长期维持，可能成为印度治理去中心化通信工具的重要先例。",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": true,
+        "result": "近7日正式简报未见Bitchat本轮第69A条App Store下架；此前7月措施属于不同法律依据和程序节点。"
+      }
+    },
+    {
+      "id": "us-apple-macos-ai-agent-full-disk-controls-20261002",
+      "domestic": false,
+      "title_cn": "Apple将强化Mac全磁盘访问提示，专门回应AI智能体扩大数据访问风险",
+      "original_title": "Apple says it will flag AI requests for Mac data after Meta's Muse draws complaints",
+      "jurisdiction": "美国／全球",
+      "authority": "Apple",
+      "event_date": "2026-10-02",
+      "event_time_utc": "2026-10-02T22:42:00Z",
+      "event_id": "Apple-macOS-AI-agent-Full-Disk-Access-controls-20261002",
+      "new_action": "Apple宣布将调整macOS权限控制，使用户在应用请求全磁盘访问时需要更加明确的主动操作，并明确把AI智能体能力增强作为收紧权限提示的重要原因。",
+      "legal_status": "平台操作系统安全与隐私规则调整公告；不是政府监管命令，但将改变第三方AI应用获取设备数据的权限条件。",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/business/retail-consumer/apple-says-it-will-flag-ai-requests-mac-data-after-metas-muse-draws-complaints-2026-10-02/"
+        }
+      ],
+      "fact": "Reuters于10月2日22:42 UTC报道，Apple表示将为Mac的Full Disk Access增加更严格、显著的授权控制，使用户只有通过非常明确的主动操作才能授予应用这一高权限。Apple直接指出，随着AI智能体能力和自主性增强，此类广泛数据访问所带来的风险也在上升。调整发生在Meta Muse数据访问争议之后，但Meta表示Messages访问需要用户同时开启相应权限和连接器。",
+      "prior_background": "macOS长期允许用户向备份等应用授予Full Disk Access。智能体能够跨应用读取信息并执行任务后，同一权限从被动文件访问扩展为可能支持自主行动，传统一次性授权的风险边界随之改变。",
+      "law_analysis": "这是一类值得纳入科技法观察的平台私法治理：操作系统通过权限界面重新分配AI开发者与用户之间的控制权。监管未必需要直接规定每个智能体权限，底层平台的权限架构已经可能成为事实上的合规基线，并影响知情同意是否真正可理解、可撤回。",
+      "think_tank": {
+        "title": "AI智能体时代终端操作系统权限模型的监管价值",
+        "note": "可研究操作系统提供者如何通过高权限分级、二次确认、可视化提示和撤回机制降低智能体越权风险，以及这些设计是否应进入行业标准或监管指引。"
+      },
+      "paper_topic": {
+        "title": "一次性授权失灵与智能体持续权限：个人信息同意机制的界面化重构",
+        "note": "可分析当智能体基于广泛系统权限持续读取和行动时，传统一次点击同意是否足够，以及操作系统是否承担新的权限守门人责任。"
+      },
+      "background": "智能体软件需要跨应用访问日历、消息、文件等资源才能执行复杂任务。传统桌面系统为备份、安全工具设置的广泛权限，被智能体调用后可能具有更大的外部性。",
+      "outlook": "后续需观察Apple具体版本、提示方式和开发者接口要求，以及Windows、Android等平台是否采取类似做法。若系统级权限分级逐步统一，可能成为智能体产品安全和隐私合规的底层基础设施。",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": true,
+        "result": "近7日站内没有Apple本次macOS权限调整；与10月4日OpenAI智能体事故属于同一宽泛风险领域但主体、动作和治理层级不同。"
+      }
+    },
+    {
+      "id": "us-amazon-data-center-nda-commitment-20261003",
+      "domestic": false,
+      "title_cn": "Amazon宣布数据中心项目不再与政府机构使用保密协议，回应社区透明度争议",
+      "original_title": "Amazon responds to data center backlash, says it no longer uses NDAs",
+      "jurisdiction": "美国",
+      "authority": "Amazon Web Services／Amazon",
+      "event_date": "2026-10-03",
+      "event_id": "US-Amazon-data-center-government-NDA-transparency-20261003",
+      "new_action": "Amazon公开数据中心社区承诺，明确表示其数据中心项目不再与合作的政府机构使用保密协议，并承诺更早向社区披露规划信息。",
+      "legal_status": "企业基础设施治理承诺；并非监管命令或法律禁令，但直接回应地方政府审批和社区监督中的程序透明问题。",
+      "sources": [
+        {
+          "name": "Amazon",
+          "url": "https://www.aboutamazon.com/impact/amazon-data-center-tenets"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/"
+        }
+      ],
+      "fact": "Amazon在新发布的数据中心承诺中明确表示，数据中心项目不再与合作政府机构使用保密协议，并称将在项目推进过程中更早分享信息、举行社区开放活动。10月3日TechCrunch将这一变化与美国多地围绕数据中心能源、水资源、污染和地方审批透明度的反对行动联系起来。",
+      "prior_background": "美国AI算力扩张推动大型数据中心快速建设，多地社区开始质疑项目在用电、水资源、环境许可和财政优惠方面的信息披露不足。与政府机构签署NDA尤其被批评可能使居民在项目基本确定后才获知关键信息。",
+      "law_analysis": "这项变化虽然不是成文法，却触及基础设施治理中的程序透明度。大型算力项目高度依赖地方规划、环境许可、能源安排和财政协商，如果政府与企业以保密协议提前封闭信息，公众参与可能被架空。Amazon主动退出此类NDA，显示数据中心竞争正从单纯拿地和供电转向“社会许可”和程序正当性。",
+      "think_tank": {
+        "title": "AI算力基础设施建设中的地方政府保密协议与公众参与边界",
+        "note": "可系统研究大型数据中心项目从招商、选址到能源和环境审批各环节的信息公开，区分商业秘密保护与公共决策透明度，形成我国算力基础设施重大项目的程序规范。"
+      },
+      "paper_topic": {
+        "title": "数字基础设施项目中的商业秘密与行政透明：以数据中心NDA为中心",
+        "note": "可讨论政府在招商和项目谈判中签署保密协议后，如何与政府信息公开、公众参与、环境程序和财政监督义务协调。"
+      },
+      "background": "数据中心对土地、电网、水资源和地方税收安排依赖较高，许多决策在企业与地方政府谈判阶段已经形成。社区反对扩大后，信息披露时间和政府是否受NDA限制逐渐成为程序性争议。",
+      "outlook": "后续需观察Amazon是否把承诺转化为标准合同条款，以及其他云服务商和地方政府是否跟进。若数据中心暂停审批和社区诉讼继续增加，项目透明度可能从企业自愿承诺转化为地方立法或许可条件。",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": true,
+        "result": "近7日站内未发现Amazon本轮数据中心NDA承诺；属于新的企业治理与基础设施程序透明事件。"
+      }
     }
   ],
   "coverage": {
     "repository_history": {
-      "status": "seeded_from_latest_main",
-      "notes": "已读取最新main并建立10月5日独立待发草稿。"
+      "status": "checked",
+      "notes": "已读取最新main、current-edition、执行规范及近7日可用新闻记录，并对候选执行仓库关键词去重。"
     },
     "carryover_audit": {
       "status": "checked",
       "notes": "FTC—OpenAI/Anthropic调查属于10月3日应发现但漏检的高价值事件，按用户明确指示顺延至10月5日待发候选。"
     },
     "institution_scan": {
-      "status": "not_started"
+      "status": "in_progress"
     },
     "topic_reverse_scan": {
-      "status": "not_started"
+      "status": "in_progress"
     },
     "final_scan": {
       "status": "not_checked",
       "checked_at": null
+    },
+    "us_courts_and_state_layer": {
+      "status": "checked_with_candidates",
+      "notes": "补出Flock联邦地区法院裁定，并核对站内9月25日相关立法条目，认定为新的司法进展。"
+    },
+    "topic_reverse_scan_checkpoint": {
+      "status": "in_progress",
+      "notes": "已对AI/智能体权限、监控、平台封禁、数据中心、版权/竞争等主题反扫，发现多项此前遗漏候选；成员国DPA、日韩及国内矩阵仍在继续。"
     }
   },
   "last_error": null,
   "next_actions": [
-    "10月5日19:00研究任务继续完成机构扫描与主题反扫，在本文件基础上增补当日候选，不得无故重做或删除本条用户指定顺延候选。",
-    "最终仍需对当日新增候选完成72小时时效、来源、法律状态、去重、中文、背景与前瞻核验后再判断publication_ready。"
+    "继续完成欧盟成员国DPA、英日韩新澳及中国官方矩阵复扫。",
+    "核验10月5日其余候选（Meloni声音商标、Qualcomm/Arm、Huawei/Qualcomm、AI虚假引文司法事项等），按法治价值决定是否纳入。",
+    "完成最后1—2小时复扫、最终事件级去重后再判断publication_ready。"
   ],
   "publication": {
     "main_commit": null,
