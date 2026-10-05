@@ -6,10 +6,10 @@
   "base_main_sha": "b5d0aff58a5ad1754d92acbc6e307f80f1c800c9",
   "updated_at": "2026-10-05T20:54:00+08:00",
   "phase": "research",
-  "news_count": 7,
+  "news_count": 12,
   "distribution": {
-    "domestic": 0,
-    "foreign": 7
+    "domestic": 1,
+    "foreign": 11
   },
   "publication_ready": false,
   "checks": {
@@ -315,6 +315,200 @@
         "seven_day": true,
         "result": "近7日站内未发现Amazon本轮数据中心NDA承诺；属于新的企业治理与基础设施程序透明事件。"
       }
+    },
+    {
+      "id": "uk-bt-talktalk-public-interest-intervention-20261005",
+      "domestic": false,
+      "title_cn": "英国政府对BT收购TalkTalk启动公共利益介入审查，聚焦关键基础设施与公共服务中断风险",
+      "original_title": "BT / TalkTalk merger inquiry",
+      "jurisdiction": "英国",
+      "authority": "英国数字、文化、媒体和体育大臣／竞争与市场管理局（CMA）",
+      "event_date": "2026-10-05",
+      "event_id": "UK-BT-TalkTalk-PIIN-CMA-20261005",
+      "new_action": "英国国务大臣就BT完成收购TalkTalk Telecommunications与PlatformX Communications发出公共利益介入通知，CMA同日启动审查并公开征求意见。",
+      "legal_status": "《2002年企业法》下的公共利益介入与CMA开放审查阶段；尚无最终竞争或公共利益结论。",
+      "sources": [
+        {
+          "name": "UK Competition and Markets Authority",
+          "url": "https://www.gov.uk/cma-cases/bt-slash-talktalk-merger-inquiry"
+        }
+      ],
+      "fact": "英国竞争与市场管理局10月5日公布，数字、文化、媒体和体育大臣已就BT完成收购TalkTalk Telecommunications和PlatformX Communications发出公共利益介入通知。除现有公共卫生紧急情况因素外，通知还援引拟新增的公共利益理由，重点关注交易是否可能造成公共服务、关键国家基础设施以及弱势客户供应中断。CMA须在10月19日前向大臣提交报告，并于10月5日至9日征求意见。",
+      "prior_background": "BT与TalkTalk交易不仅涉及电信市场竞争，还关系到大规模固定通信网络和客户迁移。英国企业并购制度允许政府在法定公共利益事项出现时介入，CMA则负责提供竞争和相关公共利益分析。",
+      "law_analysis": "该案把数字基础设施并购审查从价格和市场份额进一步连接到公共服务连续性与关键基础设施韧性。值得关注的是政府拟通过新的公共利益理由处理交易后的运营中断风险，这可能使大型电信并购的审查对象从竞争结构扩展到服务连续性、应急保障和弱势群体保护。",
+      "think_tank": {
+        "title": "关键数字基础设施并购的公共利益审查如何纳入服务连续性风险",
+        "note": "可比较英国电信并购中的公共利益介入与我国基础电信、云服务等关键数字基础设施投资审查，研究竞争、国家安全和公共服务保障之间的制度衔接。"
+      },
+      "paper_topic": {
+        "title": "数字基础设施并购中的公共利益审查：从市场竞争到服务连续性",
+        "note": "可讨论并购法在何种条件下可以将关键基础设施韧性、公共服务中断和弱势用户保障纳入审查，并分析其与传统竞争标准的边界。"
+      },
+      "background": "电信并购可能同时改变网络运营主体、客户迁移安排和基础设施控制。英国现行制度允许国务大臣在法定公共利益事项触发时发出介入通知，本案进一步将防止公共服务和关键基础设施供应中断作为重点。",
+      "outlook": "后续首先观察CMA 10月19日前报告以及政府是否正式推进新增公共利益理由。若审查最终附加服务连续性或网络韧性条件，可能对英国后续电信、云和其他数字基础设施并购形成示范。",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": true,
+        "result": "近7日站内未发现BT/TalkTalk本轮公共利益介入；属于10月5日新的正式政府与CMA程序。"
+      }
+    },
+    {
+      "id": "us-qualcomm-arm-contract-trial-20261005",
+      "domestic": false,
+      "title_cn": "Qualcomm与Arm在美国再度开庭，芯片许可合同与数十亿美元潜在损失成为争点",
+      "original_title": "Qualcomm and Arm head to trial again, potential for huge damages in focus",
+      "jurisdiction": "美国／特拉华州",
+      "authority": "美国特拉华联邦地区法院",
+      "event_date": "2026-10-05",
+      "event_id": "US-DE-Qualcomm-Arm-contract-license-trial-20261005",
+      "new_action": "Qualcomm与Arm进入新一轮联邦法院陪审团审理，争议涉及合同约定的芯片测试工具、许可终止信息披露及可能持续数年的版税救济；同时还有关于下一代Arm技术许可善意谈判义务的法官审理。",
+      "legal_status": "联邦民事诉讼开庭审理阶段；损害赔偿范围和相关合同条款是否可执行尚待法院判断。",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/qualcomm-arm-head-trial-again-potential-huge-damages-focus-2026-10-05/"
+        }
+      ],
+      "fact": "Qualcomm与Arm 10月5日在美国特拉华联邦法院进入新一轮审理。Qualcomm主张Arm未按合同提供部分芯片测试工具，并不当披露2024年威胁终止关键许可的信息，影响其与Meta的芯片业务讨论；Qualcomm据此寻求包括最长五年停止支付部分版税在内的救济。Arm否认违约。法官Maryellen Noreika还在审查部分救济条款能否执行，并将就双方是否就下一代Arm技术进行善意许可谈判另行审理。",
+      "prior_background": "Arm与Qualcomm围绕Nuvia收购后的许可问题长期诉讼，2024年首轮审理后双方关系仍未彻底解决。随着Arm开始拓展自有芯片业务，许可方与客户之间同时存在技术依赖和潜在竞争。",
+      "law_analysis": "案件的制度意义在于基础芯片架构许可关系中的合同控制力。当核心技术供应商既掌握许可、测试工具和后续技术接入，又可能进入下游竞争市场时，合同履行、信息披露和善意谈判义务可能直接影响市场进入和供应链稳定。",
+      "think_tank": {
+        "title": "芯片基础架构许可争议对全球半导体供应链稳定的影响",
+        "note": "可从Arm生态的许可依赖出发，研究核心架构提供者与下游芯片企业由合作转向竞争后，许可合同、技术接入和反垄断规则如何共同约束供应链权力。"
+      },
+      "paper_topic": {
+        "title": "基础技术许可中的持续接入义务与纵向竞争关系",
+        "note": "可讨论许可方进入下游市场后，既有合同中的工具提供、信息披露和善意谈判义务是否承担类似持续接入机制的功能。"
+      },
+      "background": "Arm长期以许可芯片架构和设计技术为主要商业模式，Qualcomm是其重要客户。双方前序诉讼已围绕Qualcomm收购Nuvia后的许可继受发生争议，本轮又转向合同履行与后续技术谈判。",
+      "outlook": "陪审团裁决和法官对救济条款的判断将决定潜在损害规模。更值得观察的是双方下一代技术许可谈判是否被法院施加程序性约束，以及诉讼是否进一步触发竞争法或供应链层面的审查。",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": true,
+        "result": "近7日站内未发现本轮10月5日新开庭进展；属于既有许可纠纷的实质新增司法阶段。"
+      }
+    },
+    {
+      "id": "cn-huawei-qualcomm-patent-cross-license-20261005",
+      "domestic": true,
+      "title_cn": "华为与高通签署覆盖5G、AI和计算的多年专利交叉许可协议",
+      "original_title": "Huawei and Qualcomm Announce Broad Patent License Agreement",
+      "jurisdiction": "中国／美国／全球知识产权",
+      "authority": "华为／Qualcomm",
+      "event_date": "2026-10-05",
+      "event_id": "CN-US-Huawei-Qualcomm-broad-patent-license-20261005",
+      "new_action": "华为与高通共同宣布多年期广泛专利许可安排，覆盖5G、计算、人工智能和网络技术，并包括高通收购华为部分美国专利；交易完成仍取决于必要监管批准。",
+      "legal_status": "企业知识产权许可与专利交易协议；已签署但部分交易尚待必要监管批准，并非行政决定或司法裁判。",
+      "sources": [
+        {
+          "name": "Huawei",
+          "url": "https://www.huawei.com/en/news/2026/10/qualcomm-broad-patent-agreement"
+        },
+        {
+          "name": "Qualcomm",
+          "url": "https://www.qualcomm.com/news/releases/2026/10/huawei-and-qualcomm-announce-broad-patent-license-agreement"
+        },
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/legal/litigation/huawei-agrees-multi-year-patent-licensing-deal-with-qualcomm-2026-10-05/"
+        }
+      ],
+      "fact": "华为和高通10月5日共同宣布签署多年期广泛专利许可协议，双方将在5G、计算、人工智能和网络等领域进行专利组合交叉许可；协议还包括高通购买华为部分美国专利。双方称许可安排遵循公平、合理、无歧视（FRAND）原则，相关交易将在取得必要监管批准后完成。公开信息显示，这是双方首次将5G纳入专利许可安排。",
+      "prior_background": "华为和高通长期在通信标准必要专利和移动技术领域拥有大量专利。近年来美国出口限制改变了两家企业之间的产品供应关系，但知识产权许可仍形成跨境技术合作渠道。",
+      "law_analysis": "协议显示，在技术出口限制和供应链竞争持续存在的背景下，标准必要专利与知识产权许可仍可形成相对独立的跨境交易机制。值得关注的是5G、AI、计算等专利被打包纳入长期交叉许可后，FRAND原则、监管审批和专利资产交易如何共同影响技术市场竞争。",
+      "think_tank": {
+        "title": "科技竞争背景下中美企业专利交叉许可的稳定器功能与规则空间",
+        "note": "可研究出口管制、投资审查与标准必要专利许可并行存在时，跨境知识产权交易如何维持技术生态互操作，并评估我国企业提升全球许可能力和规则话语权的路径。"
+      },
+      "paper_topic": {
+        "title": "标准必要专利、出口管制与跨境技术许可的制度分层",
+        "note": "可分析行政性技术限制与私法许可关系并存时，两套制度如何分别作用于产品、技术和专利权，并讨论FRAND义务在地缘科技竞争中的稳定功能。"
+      },
+      "background": "华为与高通在移动通信领域已有长期许可往来，但美国技术限制削弱了传统芯片供货关系。此次协议把5G、计算、AI和网络专利纳入更广泛的交叉许可，并加入美国专利资产交易。",
+      "outlook": "后续首先观察交易所需监管批准及具体专利转让范围。若协议顺利实施，中美科技竞争下的专利许可可能继续保持与产品贸易相对分离的合作空间，也可能影响其他跨国企业的SEP谈判策略。",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": true,
+        "result": "近7日站内未发现华为—高通本轮多年广泛专利协议；与8月华为—HP Wi-Fi许可不是同一交易。"
+      }
+    },
+    {
+      "id": "eu-meloni-voice-trademark-deepfake-20261005",
+      "domestic": false,
+      "title_cn": "意大利总理Meloni申请欧盟声音商标，尝试以商标权增加AI声音克隆保护层",
+      "original_title": "Italy PM Meloni seeks EU trademark for her voice amid AI deepfake risks",
+      "original_title_local": "«Io sono Giorgia Meloni», la premier registra la sua voce all'ufficio marchi contro i fake",
+      "jurisdiction": "欧盟／意大利",
+      "authority": "欧盟知识产权局（EUIPO）",
+      "event_date": "2026-10-05",
+      "event_id": "EUIPO-Meloni-sound-mark-AI-deepfake-20261005",
+      "new_action": "Meloni向EUIPO提交声音商标申请，以本人四秒语音片段申请保护，公开表明此举旨在增加应对AI声音克隆和深度伪造的法律工具。",
+      "legal_status": "欧盟商标申请审查中；尚未获准注册，且即使注册也不当然禁止所有AI声音克隆。",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/technology/italy-pm-meloni-seeks-eu-trademark-her-voice-amid-ai-deepfake-risks-2026-10-05/"
+        },
+        {
+          "name": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/politica/2026/10/05/io-sono-giorgia-meloni-premier-registra-la-sua-voce-allufficio-marchi-contro_166e0661-729d-445b-b106-17c3ea8888c6.html"
+        }
+      ],
+      "fact": "意大利总理Giorgia Meloni 10月5日向欧盟知识产权局申请声音商标，申请材料包含她两次说出“Io sono Giorgia Meloni”的四秒录音。EUIPO记录显示申请仍在审查。其办公室确认，此举与防范生成式AI克隆声音和深度伪造有关。商标即使获准，也不会自动覆盖所有未经许可的声音模仿，但可能在特定商品和服务范围内增加维权依据。",
+      "prior_background": "Meloni近年来多次成为合成图像和深度伪造对象，并已就涉嫌利用其形象制作色情深度伪造提起民事诉讼。生成式AI使公众人物声音和肖像复制成本显著下降，而人格权、商标权和平台规则的保护范围并不完全重合。",
+      "law_analysis": "这一做法展示了AI人格仿冒治理中的权利工具叠加：当一般人格权对跨平台、商业性声音克隆的救济存在边界时，声音商标可能在特定商品和服务场景提供额外禁止权。但商标法以来源识别和商业使用为中心，不能替代更一般的声音人格利益保护。",
+      "think_tank": {
+        "title": "AI声音克隆风险上升背景下声音权、商标权与平台义务的制度衔接",
+        "note": "可比较欧盟声音商标、人格权和深度伪造标识规则，评估我国是否需要进一步明确自然人声音利益保护及商业仿冒的跨法域救济机制。"
+      },
+      "paper_topic": {
+        "title": "声音作为人格标识与商业标识：AI克隆场景中的权利竞合",
+        "note": "可研究同一声音同时受人格利益、商标和反不正当竞争规则保护时，各权利的客体、使用行为和救济范围如何区分。"
+      },
+      "background": "声音商标在欧盟可以作为非传统商标申请，但其保护仍围绕指定商品或服务中的来源识别功能。AI克隆把声音从自然人格特征转化为可低成本复制的数字素材，使人格保护与知识产权保护出现新的交叉。",
+      "outlook": "后续需观察EUIPO是否批准该申请及指定商品服务范围。若更多公众人物采取类似策略，声音商标可能成为AI深度伪造维权的补充工具，但其适用边界仍可能由侵权诉讼进一步界定。",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": true,
+        "result": "近7日站内未发现Meloni声音商标申请；属于10月5日新提交的知识产权程序。"
+      }
+    },
+    {
+      "id": "us-sdny-ai-citation-lawyer-training-order-20261002",
+      "domestic": false,
+      "title_cn": "美国联邦法官在AI虚假引文案中拒绝制裁律师，但警告AI依赖可能损害客户与青年律师训练",
+      "original_title": "Judge warns AI could stunt lawyers' training and harm their clients",
+      "jurisdiction": "美国／纽约",
+      "authority": "美国纽约南区联邦地区法院",
+      "event_date": "2026-10-02",
+      "event_time_utc": "2026-10-02T16:20:00Z",
+      "event_id": "US-SDNY-Subramanian-AI-citation-lawyer-training-20261002",
+      "new_action": "联邦法官Arun Subramanian就AI辅助文书出现引文错误作出处理，决定不实施制裁，但要求法律职业对AI产出进行严格核验，并首次把青年律师能力训练和客户利益作为AI使用风险的重要组成部分。",
+      "legal_status": "联邦民事案件中的法官命令与职业责任警示；本案未作出制裁决定，也不是普遍适用的律师行业规则。",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/legal/litigation/judge-warns-ai-could-stunt-lawyers-training-harm-their-clients-2026-10-02/"
+        }
+      ],
+      "fact": "美国纽约南区联邦地区法院法官Arun Subramanian在一宗版权案件中处理了律师提交含AI生成错误引文的文书。法官最终没有制裁相关律师，但称事件应成为法律职业的警钟，强调AI辅助法律工作必须由律师核验，并提醒客户若仅为降低费用要求律师使用AI，也可能承担错误带来的不利后果。法官还提出，青年律师若过早把初稿工作交给AI，可能损害其基本法律训练。",
+      "prior_background": "美国法院过去三年已出现多起律师因生成式AI虚假引文受到制裁的案件。本次新增之处不是再次处罚，而是法院把讨论从真实性核验进一步延伸到客户利益、律所内部治理和青年律师培养。",
+      "law_analysis": "法院正在把AI法律服务风险从单纯的‘不得提交虚假材料’推进到职业能力与组织治理层面。即使没有恶意或最终制裁，律师事务所仍需要建立AI使用政策、复核责任和培训机制；客户要求降本也不能转移律师独立专业判断和真实性义务。",
+      "think_tank": {
+        "title": "生成式AI进入专业服务后的人才能力退化与职业监管",
+        "note": "可由律师行业延伸至审计、医疗和咨询等高专业门槛领域，研究AI降本压力如何影响初级从业者训练，并探索行业监管和组织治理中的能力保留机制。"
+      },
+      "paper_topic": {
+        "title": "AI辅助法律服务中的不可转移专业责任与能力维持义务",
+        "note": "可讨论律师最终签名负责之外，是否还存在持续保持独立判断和职业技能的制度义务，以及律所内部AI治理如何进入职业过失判断。"
+      },
+      "background": "此前AI虚假引文案件通常围绕律师是否违反合理核验义务和是否应被制裁。本案法官未制裁，却将AI依赖可能造成的长期职业能力损失明确提出。",
+      "outlook": "后续需观察更多法院是否把律所AI政策、培训和复核流程纳入制裁或职业责任判断，以及律师协会是否进一步形成统一的AI能力与监督要求。",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": true,
+        "result": "近7日站内未发现本案10月2日新处理；与其他AI虚假引文案件属于同质窄专题但为独立新司法事项。"
+      }
     }
   ],
   "coverage": {
@@ -343,13 +537,33 @@
     "topic_reverse_scan_checkpoint": {
       "status": "in_progress",
       "notes": "已对AI/智能体权限、监控、平台封禁、数据中心、版权/竞争等主题反扫，发现多项此前遗漏候选；成员国DPA、日韩及国内矩阵仍在继续。"
+    },
+    "uk_regulators": {
+      "status": "checked_with_candidate",
+      "notes": "GOV.UK/CMA复扫发现BT/TalkTalk 10月5日公共利益介入审查；ICO/Ofcom本轮未发现更高优先级新节点。"
+    },
+    "eu_member_states": {
+      "status": "checked_with_candidates",
+      "notes": "复扫CNIL、Garante、DPC、AEPD、荷兰AP等；发现意大利IQVIA高价值处罚但官方稿于10月2日早于严格72小时截点，列为超时排除；波兰UOKiK 10月5日Google案纳入。"
+    },
+    "korea_japan": {
+      "status": "checked",
+      "notes": "韩文复扫PIPC/KFTC/MSIT/KISA，PIPC 10月2日11时新闻已早于本次72小时截止；日文复扫PPC/JFTC/总务省/经产省，未发现截止运行时更高优先级合格新增。"
+    },
+    "china_official": {
+      "status": "checked_no_candidate",
+      "notes": "复扫中国政府网、中央网信办、工信部、国家数据局、市场监管总局、金融监管总局、人民银行、最高法、最高检及主要数字经济地区，未发现10月2日20:54后达到同等门槛的新增监管/司法事项；华为—高通10月5日跨境专利协议作为中国企业高价值法律动态单独纳入。"
+    },
+    "global_secondary": {
+      "status": "checked",
+      "notes": "复扫加拿大、巴西、印度、印尼、新加坡、澳大利亚等；印度Bitchat 69A阻断为新增候选，印尼近期高价值项已于10月4日发布故不重复。"
     }
   },
   "last_error": null,
   "next_actions": [
-    "继续完成欧盟成员国DPA、英日韩新澳及中国官方矩阵复扫。",
-    "核验10月5日其余候选（Meloni声音商标、Qualcomm/Arm、Huawei/Qualcomm、AI虚假引文司法事项等），按法治价值决定是否纳入。",
-    "完成最后1—2小时复扫、最终事件级去重后再判断publication_ready。"
+    "完成对剩余美国州AG与联邦监管机关、欧盟中央机构、媒体发现池的收尾复扫，确认是否还有遗漏的高优先级正式动作。",
+    "结束前再扫描最近1—2小时公告并执行全items事件级去重。",
+    "全部来源、时效、原题、法律状态、背景与前瞻核验完成后再将publication_ready判断为true；目前仍保持false。"
   ],
   "publication": {
     "main_commit": null,
@@ -360,5 +574,42 @@
     "quantity_target": "up_to_20_quality_first",
     "principle": "quality_first_no_padding",
     "carryover_exception": "user_directed_missed-item_carryover"
-  }
+  },
+  "excluded_candidates": [
+    {
+      "id": "it-garante-iqvia-health-data-20261002",
+      "title_cn": "意大利Garante因健康数据未实现匿名化对IQVIA罚款700万欧元",
+      "original_title": "Dati sanitari: il Garante privacy sanziona IQVIA per 7 milioni di euro. Non anonimi i dati di un milione di pazienti di 800 medici di famiglia",
+      "source": "https://garanteprivacy.it/home/docweb/-/docweb-display/docweb/10302141",
+      "exclusion_reason": "高价值但普通72小时门槛不满足。公开转载时间显示官方内容于2026-10-02 09:09 UTC分发，早于本次截止2026-10-02 12:54 UTC；不存在用户指定顺延例外。"
+    },
+    {
+      "id": "kr-pipc-breach-investigation-reform-20261002",
+      "title_cn": "韩国PIPC推出个人信息泄露侵害案件快速调查与能力强化方案",
+      "original_title": "개인정보 유출·침해사고, 더 빠르게 더 공정하게 더 투명하게 조사",
+      "source": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=D010030000&nttId=12555",
+      "exclusion_reason": "官方材料标注2026-10-02 11时发布（韩国时间），折合北京时间约10时，早于本次严格72小时截止2026-10-02 20:54；无用户顺延例外。"
+    },
+    {
+      "id": "us-new-mexico-meta-penalty-hearing-20261001",
+      "title_cn": "新墨西哥州要求Meta在隐私消费者保护案中承担最高约400亿美元罚款",
+      "original_title": "New Mexico wants Meta to pay up to $40 billion in penalties after data privacy trial",
+      "source": "https://www.reuters.com/world/us/new-mexico-wants-meta-pay-up-40-billion-penalties-after-data-privacy-trial-2026-10-01/",
+      "exclusion_reason": "发生并报道于2026-10-01，超过严格72小时窗口。"
+    },
+    {
+      "id": "us-google-chegg-penske-ai-overview-dismissal-20261001",
+      "title_cn": "美国法院驳回Chegg、Penske针对Google AI Overviews的反垄断诉讼",
+      "original_title": "Google wins dismissal of Chegg, Penske Media lawsuits over AI overviews",
+      "source": "https://www.reuters.com/legal/litigation/google-wins-dismissal-chegg-penske-media-lawsuits-over-ai-overviews-2026-10-01/",
+      "exclusion_reason": "虽具较高法律价值，但公开报道时间为2026-10-01，超过本次严格72小时窗口。"
+    },
+    {
+      "id": "us-white-house-voluntary-ai-safeguards-analysis-20261003",
+      "title_cn": "路透分析美国政府坚持AI自愿安全承诺路径",
+      "original_title": "As public fears of AI grow, Trump digs in on voluntary safeguards",
+      "source": "https://www.reuters.com/legal/litigation/public-fears-ai-grow-trump-digs-voluntary-safeguards-2026-10-03/",
+      "exclusion_reason": "主要为对9月29日已发生白宫自愿承诺的分析和评论，没有新的正式规则、处罚、裁判或关键执行动作；相关白宫AI任务组新动作已在10月4日正式简报发布。"
+    }
+  ]
 }
