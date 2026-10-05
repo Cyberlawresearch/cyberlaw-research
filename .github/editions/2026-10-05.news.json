@@ -5,13 +5,13 @@
   "page": "articles/2026-10-05-tech-law-brief.html",
   "base_main_sha": "b5d0aff58a5ad1754d92acbc6e307f80f1c800c9",
   "updated_at": "2026-10-05T20:54:00+08:00",
-  "phase": "research",
+  "phase": "ready_for_handoff",
   "news_count": 12,
   "distribution": {
     "domestic": 1,
     "foreign": 11
   },
-  "publication_ready": false,
+  "publication_ready": true,
   "checks": {
     "sources": true,
     "legal_status": true,
@@ -521,14 +521,17 @@
       "notes": "FTC—OpenAI/Anthropic调查属于10月3日应发现但漏检的高价值事件，按用户明确指示顺延至10月5日待发候选。"
     },
     "institution_scan": {
-      "status": "in_progress"
+      "status": "complete",
+      "notes": "已按固定矩阵复扫欧盟中央与主要成员国DPA/竞争机构、美国联邦机构/州级执法与重要法院、英国ICO/CMA/Ofcom、韩国PIPC/KFTC/MSIT/KISA、日本PPC/JFTC/总务省/经产省、新加坡、澳大利亚，以及印度、加拿大、巴西、印尼等；同时复扫中国中央与主要数字经济地区。发现的合格新节点已纳入或按时效/重复规则排除。"
     },
     "topic_reverse_scan": {
-      "status": "in_progress"
+      "status": "complete",
+      "notes": "已反扫AI/模型/智能体、个人信息/隐私/匿名化、平台与内容治理、算法与竞争、自动化决策、网络安全/监控、数据跨境、数据中心/算力、版权/人格权/声音肖像、生物识别/车辆与可穿戴设备等主题；并回溯一手机关、法院、企业正式声明或高可信媒体。"
     },
     "final_scan": {
-      "status": "not_checked",
-      "checked_at": null
+      "status": "complete",
+      "checked_at": "2026-10-05T20:54:00+08:00",
+      "notes": "结束前对最近1—2小时重要官方公告、Reuters/AP及科技法主题再次复扫，未发现需要追加且能完成同等核验的新正式动作。"
     },
     "us_courts_and_state_layer": {
       "status": "checked_with_candidates",
@@ -557,13 +560,28 @@
     "global_secondary": {
       "status": "checked",
       "notes": "复扫加拿大、巴西、印度、印尼、新加坡、澳大利亚等；印度Bitchat 69A阻断为新增候选，印尼近期高价值项已于10月4日发布故不重复。"
+    },
+    "us_core_and_state": {
+      "status": "checked",
+      "notes": "FTC/DOJ/SEC/NIST/CISA/FCC、州AG与联邦法院复扫完成；Flock第四修正案裁定、纽约南区AI引文处理纳入；新墨西哥Meta等超时材料排除。"
+    },
+    "eu_central": {
+      "status": "checked",
+      "notes": "欧委会/数字监管入口、EDPB、EDPS收尾复扫未发现截至运行时需要新增且满足72小时门槛的更高优先级事项；成员国层面波兰UOKiK纳入，意大利IQVIA因超时排除。"
+    },
+    "theme_specific": {
+      "status": "checked",
+      "notes": "数据跨境、自动化决策、算法定价、生物识别/车辆数据等专题未发现可替代当前12条的更高质量新节点；California SB1246和Florida数据中心SB484合规等虽高度相关，但核心动作均发生在窗口之外，未用后续媒体报道日期刷新时效。"
+    },
+    "final_dedup": {
+      "status": "complete",
+      "notes": "结束前按event_id及主体+核心动作+事件日期+法律程序复核12条items，无事件级重复；Flock与9月25日立法材料为不同司法新阶段，保留。"
     }
   },
   "last_error": null,
   "next_actions": [
-    "完成对剩余美国州AG与联邦监管机关、欧盟中央机构、媒体发现池的收尾复扫，确认是否还有遗漏的高优先级正式动作。",
-    "结束前再扫描最近1—2小时公告并执行全items事件级去重。",
-    "全部来源、时效、原题、法律状态、背景与前瞻核验完成后再将publication_ready判断为true；目前仍保持false。"
+    "交由独立发布任务从news-drafts读取本日草稿，发布前再次按其自身规则核验main最新状态。",
+    "发布任务不得整支合并news-drafts历史，仅抽取本日已核验内容生成正式页面。"
   ],
   "publication": {
     "main_commit": null,
@@ -610,6 +628,27 @@
       "original_title": "As public fears of AI grow, Trump digs in on voluntary safeguards",
       "source": "https://www.reuters.com/legal/litigation/public-fears-ai-grow-trump-digs-voluntary-safeguards-2026-10-03/",
       "exclusion_reason": "主要为对9月29日已发生白宫自愿承诺的分析和评论，没有新的正式规则、处罚、裁判或关键执行动作；相关白宫AI任务组新动作已在10月4日正式简报发布。"
+    },
+    {
+      "id": "us-az-ai-victim-video-resentencing-20261001",
+      "title_cn": "亚利桑那州上诉法院因量刑阶段使用AI生成被害人视频撤销原量刑",
+      "original_title": "Sentence tossed in Arizona case where deceased victim was depicted speaking in AI-generated video",
+      "source": "https://apnews.com/article/arizona-ai-video-victim-cd1ca553c7fa80c6698d7f97b51b1edd",
+      "exclusion_reason": "法律价值高，但核心裁判于10月1日公开，可靠转载显示2026-10-01 20:16 EDT（2026-10-02 00:16 UTC）已发布，早于本次严格72小时截止2026-10-02 12:54 UTC；不存在用户指定顺延例外。"
+    },
+    {
+      "id": "us-ca-sb1246-robotaxi-first-responders-20260930",
+      "title_cn": "加州SB 1246建立Robotaxi阻碍急救响应的责任与罚则",
+      "original_title": "SB 1246: Autonomous vehicles",
+      "source": "https://calmatters.digitaldemocracy.org/bills/ca_202520260sb1246",
+      "exclusion_reason": "法案于2026-09-30签署并成章，超过严格72小时窗口；10月2日至5日后续媒体报道没有形成新的立法、裁判或执行阶段，不作为当日新增。"
+    },
+    {
+      "id": "us-fl-fpl-sb484-datacenter-filing-20261001",
+      "title_cn": "佛罗里达电力公司提交数据中心成本自担新法合规文件",
+      "original_title": "FPL rate structure protects Florida customers from data center costs",
+      "source": "https://newsroom.fpl.com/FPL-rate-structure-protects-Florida-customers-from-data-center-costs",
+      "exclusion_reason": "合规文件于2026-10-01提交，早于严格72小时窗口；10月4日媒体报道只是对该既有提交的转述，PSC尚无新的审查决定，因此不以转述日期计入。"
     }
   ]
 }
