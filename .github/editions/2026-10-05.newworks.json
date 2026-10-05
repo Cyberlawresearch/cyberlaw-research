@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-05",
+  "timezone": "Asia/Shanghai",
+  "column": "newworks",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-05-new-works.html",
+  "newworks_count": 5,
+  "checked_at": "2026-10-05T22:45:00+08:00",
+  "checks": {
+    "original_publication_pages_opened": true,
+    "bibliography": true,
+    "doi": true,
+    "repository_history_deduplication": true,
+    "original_titles": true,
+    "chinese_expression": true,
+    "related_reading_reviewed": true,
+    "timeline_reviewed": true
+  },
+  "related_reading": [
+    {
+      "item": 2,
+      "path": "articles/2026-09-22-new-works.html#research-item-4",
+      "reason": "同一作者同一组图像型性虐待研究；历史材料为Part 1，本期为Part 2，分别处理刑法规制与平台主动治理。"
+    }
+  ],
+  "timeline": [],
+  "items": [
+    {
+      "cnTitle": "欧盟科技法究竟漏看了谁：从“技术产品”转向日常生活中的真实伤害",
+      "author": "Mateus Correia de Carvalho",
+      "originalTitle": "People: What EU law does not understand about tech",
+      "journal": "European Law Open",
+      "year": "2026",
+      "volume": "",
+      "issue": "",
+      "pages": "1–14",
+      "articleNumber": "",
+      "doi": "10.1017/elo.2026.10100",
+      "published_online": "2026-09-29",
+      "url": "https://doi.org/10.1017/elo.2026.10100"
+    },
+    {
+      "cnTitle": "图像型性虐待治理的第二步：平台监管从通知删除走向主动预防",
+      "author": "Julia Hörnle",
+      "originalTitle": "Fighting the beast of image-based sexual abuse. Part 2: be strategic and be proactive",
+      "journal": "International Journal of Law and Information Technology",
+      "year": "2026",
+      "volume": "34",
+      "issue": "",
+      "pages": "",
+      "articleNumber": "eaag007",
+      "doi": "10.1093/ijlit/eaag007",
+      "published_online": "2026-05-08",
+      "url": "https://doi.org/10.1093/ijlit/eaag007"
+    },
+    {
+      "cnTitle": "《超级正义：人工智能时代的法律》：当AI不再只是司法辅助工具",
+      "author": "Samuel I Becher、Benjamin Alarie",
+      "originalTitle": "Superjustice: Law in the Age of Artificial Intelligence",
+      "publisher": "Oxford University Press",
+      "year": "2026",
+      "edition": "",
+      "doi": "10.1093/9780198991885.001.0001",
+      "published_online": "2026-04-01",
+      "url": "https://doi.org/10.1093/9780198991885.001.0001"
+    },
+    {
+      "cnTitle": "混合软件能否适用数字权利用尽：用“主要用途”划定两套欧盟版权规则的边界",
+      "author": "Tito Rendas",
+      "originalTitle": "Digital exhaustion and hybrid software products",
+      "journal": "Journal of Intellectual Property Law & Practice",
+      "year": "2026",
+      "volume": "21",
+      "issue": "5",
+      "pages": "320–325",
+      "articleNumber": "",
+      "doi": "10.1093/jiplp/jpag048",
+      "published_online": "2026-04-30",
+      "url": "https://doi.org/10.1093/jiplp/jpag048"
+    },
+    {
+      "cnTitle": "敏感数据进入国际投资法：中美数据安全规则怎样改变数字投资",
+      "author": "Jiaqi Huang",
+      "originalTitle": "The evolution of sensitive data governance in international investment law: a dual-jurisdictional study",
+      "journal": "International Journal of Law and Information Technology",
+      "year": "2026",
+      "volume": "34",
+      "issue": "",
+      "pages": "",
+      "articleNumber": "eaaf023",
+      "doi": "10.1093/ijlit/eaaf023",
+      "published_online": "2026-01-28",
+      "url": "https://doi.org/10.1093/ijlit/eaaf023"
+    }
+  ],
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "deployed_current_columns": null,
+    "deployed_entry_points": null
+  },
+  "scope_guard": {
+    "brief_page": "articles/2026-10-05-tech-law-brief.html",
+    "brief_date": "2026-10-05",
+    "news_count": 18,
+    "paper_page": "articles/2026-10-03-cohen-law-platform-economy.html",
+    "paper_date": "2026-10-03",
+    "classic_page": "articles/2026-10-03-austin-province-jurisprudence.html",
+    "classic_date": "2026-10-03"
+  }
+}
