@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-05",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-05-coglianese-lehr-transparency-algorithmic-governance.html",
+  "selection": "Cary Coglianese & David Lehr, Transparency and Algorithmic Governance",
+  "bibliography": {
+    "type": "article",
+    "author": "Cary Coglianese; David Lehr",
+    "originalTitle": "Transparency and Algorithmic Governance",
+    "journal": "Administrative Law Review",
+    "year": "2019",
+    "volume": "71",
+    "issue": "1",
+    "pages": "1–56",
+    "doi": "",
+    "url": "https://administrativelawreview.org/volume-71-issue-1/",
+    "cnTitle": "透明度与算法治理"
+  },
+  "versions": {
+    "formal": "Administrative Law Review, Vol.71, Issue 1 (2019), pp.1–56",
+    "working_paper": "U of Penn Law School, Public Law Research Paper No.18-38; SSRN abstract_id=3293008; posted 2018-11-29; revised 2019-04-18"
+  },
+  "sources": [
+    "https://administrativelawreview.org/volume-71-issue-1/",
+    "https://www.jstor.org/stable/27170531",
+    "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3293008",
+    "https://scholarship.law.upenn.edu/faculty_scholarship/2123"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "working_paper_version_distinguished": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true
+  },
+  "related_reading": [
+    "articles/2026-09-07-coglianese-lehr-regulating-by-robot.html",
+    "articles/2026-09-03-citron-technological-due-process.html",
+    "articles/2026-09-18-desai-kroll-trust-but-verify.html",
+    "articles/2026-09-12-kaminski-right-to-explanation.html"
+  ],
+  "timeline": null,
+  "body_length": 11799,
+  "base_main_sha": "48a980a7c50a75807972564aa9cb880143edb721",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}
