@@ -5,7 +5,7 @@
   "page": "articles/2026-10-05-tech-law-brief.html",
   "base_main_sha": "b5d0aff58a5ad1754d92acbc6e307f80f1c800c9",
   "updated_at": "2026-10-05T21:38:24+08:00",
-  "phase": "publishing",
+  "phase": "published",
   "news_count": 18,
   "distribution": {
     "domestic": 3,
@@ -488,15 +488,22 @@
     }
   ],
   "publication": {
-    "commit_sha": null,
-    "pages_run_id": null,
-    "pages_result": null,
+    "commit_sha": "0c020b202d1beec4bd72b59f75e6a035ccd5b5ce",
+    "pages_run_id": 37319851999,
+    "pages_result": "success",
     "pre_deploy_checks": {
       "article_items": 18,
       "brief_insights": 18,
       "foreign_original_titles": 15,
       "current_columns_preserved": true
     },
-    "post_deploy_checks": null
-  }
+    "post_deploy_checks": {
+      "contextual_reading": true,
+      "current_columns": true,
+      "entry_points": true,
+      "desktop_and_mobile_site_build": true,
+      "workflow_conclusion": "success"
+    }
+  },
+  "published_at": "2026-10-05T21:52:17+08:00"
 }
