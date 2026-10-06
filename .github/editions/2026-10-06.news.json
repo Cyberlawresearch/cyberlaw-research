@@ -3,17 +3,13 @@
   "column": "brief",
   "state": "verified",
   "page": "articles/2026-10-06-tech-law-brief.html",
-  "base_main_sha": "6abf5cd33898de07a465cc4071e3ea2cb021d7fb",
-  "updated_at": "2026-10-06T19:28:00+08:00",
-  "phase": "publishing",
-  "news_count": 10,
+  "news_count": 18,
   "distribution": {
-    "domestic": 0,
-    "foreign": 10
+    "domestic": 6,
+    "foreign": 12
   },
-  "publication_ready": true,
-  "checked_at": "2026-10-06T19:28:00+08:00",
-  "last_news_scan_at": "2026-10-06T19:28:00+08:00",
+  "checked_at": "2026-10-06T20:47:59.744+08:00",
+  "last_news_scan_at": "2026-10-06T20:47:59.744+08:00",
   "checks": {
     "sources": true,
     "legal_status": true,
@@ -27,267 +23,27 @@
     "background_outlook": true,
     "foreign_layout": true
   },
-  "coverage": {
-    "repository_history": "complete",
-    "institution_scan": "complete",
-    "topic_reverse_scan": "complete",
-    "china_official": "complete_no_qualified_new_items",
-    "local_language_scan": "complete",
-    "final_scan": {
-      "status": "complete",
-      "checked_at": "2026-10-06T19:28:00+08:00",
-      "notes": "发布前复扫最近1—2小时重要官方、司法、监管与高质量媒体；新增英国政府接受医疗AI委员会全部44项建议的正式回应。中国大陆及主要数字经济地区未发现达到同等门槛的新正式动作，未为比例凑数。"
-    }
+  "deduplication": {
+    "previous_day": "2026-10-05",
+    "history_start": "2026-09-29",
+    "notes": [
+      "保留10月6日原有10条并逐条对照10月5日完整简报；新增8条均有独立事件或明确新增程序节点。",
+      "香港10月6日AI风险治理政策简报与10月5日香港AI责任法律检视区分处理：前者新增AI专员、公共AI项目安全与道德申报、Agent安全指引及网络安全执行安排，属于新的正式政策说明。",
+      "FBI数据泄露作为新增进展收录：10月5日本站记录的是ShinyHunters相关人员被拘和跨境调查，本次新增FBI对第三方补丁管理失误的公开确认及承包人员处置。",
+      "近7日核对覆盖9月29日、10月1日至10月5日现有新闻期；仓库不存在9月30日新闻页，因此没有将缺刊视为可放宽去重或时效的理由。"
+    ]
   },
-  "strict_window": {
-    "timezone": "Asia/Shanghai",
-    "run_reference": "2026-10-06T19:28:00+08:00",
-    "cutoff": "2026-10-03T19:28:00+08:00"
+  "scan": {
+    "china_official": "补检中国政府网、中央网信办、发改委、工信部、国家数据局、市场监管、金融监管、人民银行、卫健、药监、最高法、最高检以及主要数字经济地区。国庆假期中央部门高价值新增较少；补入江苏省政府10月5日知识产权“Token租”正式报道，并检查香港政府、创新科技及工业局、私隐专员公署等10月5日至6日正式材料。",
+    "foreign_official": "复核欧盟、英国Ofcom/MHRA、韩国监管与政府动态、澳大利亚议会相关进展及美国安全和地方立法动态；现有10条外国新闻原始来源继续保留。",
+    "local_language": "使用韩文检索韩国PIPC/KFTC及AI、平台、个人信息监管更新；使用日文检索日本PPC/JFTC/总务省/经产省；使用越南文检索人工智能、个人数据与网络安全。未发现优先级高于本期现有候选且具独立新增事实的韩日越正式监管事项。",
+    "media": "补检Reuters、AP及主要科技、法律和安全媒体；新增DeepSeek融资、华为—Qualcomm专利许可、纽约市议会AI安全听证和FBI第三方安全责任进展。",
+    "final_window": "发布前重新扫描10月6日晚间最近1—2小时的Reuters、AP、国内官方及香港政府/监管更新。未发现需要替换现有18条的更高优先级新增处罚、裁判或正式生效规则。"
   },
-  "items": [
-    {
-      "id": "uk-health-ai-commission-response-20261006",
-      "event_id": "UK-MHRA-health-AI-commission-response-Airlock3-2026-10-06",
-      "title_cn": "英国政府接受医疗AI委员会全部44项建议，监管转向全生命周期监测",
-      "domestic": false,
-      "event_date": "2026-10-06",
-      "jurisdiction": "英国",
-      "original_title": "Government backs recommendations of NHS doctors-led AI Commission",
-      "sources": [
-        {
-          "name": "UK Government / MHRA",
-          "url": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission"
-        },
-        {
-          "name": "UK Government policy response",
-          "url": "https://www.gov.uk/government/publications/government-response-to-the-national-commissions-recommendations-on-the-regulation-of-ai-in-healthcare"
-        }
-      ],
-      "legal_status_checked": true,
-      "dedup": {
-        "previous_day": true,
-        "seven_day": true,
-        "result": "10月5日及近7日站内未发现英国政府正式接受全部44项建议；9月10日委员会报告属于前序，本条为10月6日政府正式回应与实施启动。"
-      }
-    },
-    {
-      "id": "uk-ofcom-meta-instants-investigation-20261006",
-      "event_id": "UK-Ofcom-Meta-Instagram-Instants-OSA-investigation-2026-10-06",
-      "title_cn": "英国Ofcom调查Instagram“Instants”上线前风险评估，平台功能变更成为《在线安全法》执法重点",
-      "domestic": false,
-      "event_date": "2026-10-06",
-      "jurisdiction": "英国",
-      "original_title": "Ofcom investigates Meta’s compliance with UK online safety laws",
-      "sources": [
-        {
-          "name": "Ofcom",
-          "url": "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/ofcom-investigates-metas-compliance-with-uk-online-safety-laws"
-        },
-        {
-          "name": "Reuters",
-          "url": "https://www.reuters.com/business/uk-probes-meta-over-safety-risks-of-instagram-instants-feature-2026-10-06/"
-        }
-      ],
-      "legal_status_checked": true,
-      "dedup": {
-        "previous_day": true,
-        "seven_day": true,
-        "result": "与10月5日Meta、TikTok、X挑战Ofcom信息调取属于不同核心动作和法律程序；本条为10月6日新启动的独立正式调查。"
-      }
-    },
-    {
-      "id": "it-agcm-suno-unfair-terms-investigation-20261006",
-      "event_id": "IT-AGCM-Suno-CV278-unfair-contract-terms-2026-10-06",
-      "title_cn": "意大利竞争监管机构调查Suno服务条款，AI平台单方改约、版权许可和美国仲裁条款同时受审查",
-      "domestic": false,
-      "event_date": "2026-10-06",
-      "jurisdiction": "意大利",
-      "original_title": "CV278 - AI, avviata istruttoria nei confronti di Suno per clausole vessatorie",
-      "sources": [
-        {
-          "name": "AGCM",
-          "url": "https://www.agcm.it/media/comunicati-stampa/2026/10/CV278"
-        },
-        {
-          "name": "Reuters",
-          "url": "https://www.reuters.com/technology/italy-regulator-probes-ai-music-startup-suno-over-terms-of-service-2026-10-06/"
-        }
-      ],
-      "legal_status_checked": true,
-      "dedup": {
-        "previous_day": true,
-        "seven_day": true,
-        "result": "近7日站内未发现Suno服务条款消费者保护调查；10月6日为新行政程序。"
-      }
-    },
-    {
-      "id": "au-parliament-ai-agent-incident-reporting-20261006",
-      "event_id": "AU-Parliament-OpenAI-Anthropic-agent-incident-reporting-hearing-2026-10-06",
-      "title_cn": "OpenAI与Anthropic在澳大利亚议会支持AI智能体安全事件强制报告，监管空白进入立法讨论",
-      "domestic": false,
-      "event_date": "2026-10-06",
-      "jurisdiction": "澳大利亚",
-      "original_title": "OpenAI, Anthropic tell Australia they would welcome data breach rules",
-      "sources": [
-        {
-          "name": "Reuters",
-          "url": "https://www.reuters.com/legal/litigation/australias-abc-rejects-ai-copyright-carveout-believes-already-been-scraped-2026-10-06/"
-        },
-        {
-          "name": "The Guardian",
-          "url": "https://www.theguardian.com/media/2026/oct/06/openai-australia-parliament-inquiry-jason-kwon"
-        }
-      ],
-      "legal_status_checked": true,
-      "dedup": {
-        "previous_day": true,
-        "seven_day": true,
-        "result": "与10月3日OpenAI智能体事件属于同一事件链，但本条新增的是10月6日议会听证中的明确立法立场和报告义务议题。"
-      }
-    },
-    {
-      "id": "kr-msit-frontier-ai-program-20261006",
-      "event_id": "KR-MSIT-frontier-AI-4.7tn-program-2026-10-06",
-      "title_cn": "韩国拟投入4.7万亿韩元建设前沿AI模型，政府股权资金与算力、数据、人才将集中配置",
-      "domestic": false,
-      "event_date": "2026-10-06",
-      "jurisdiction": "韩国",
-      "original_title": "South Korea plans to develop $3.5 billion frontier AI model starting next year",
-      "sources": [
-        {
-          "name": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/south-korea-plans-develop-35-billion-frontier-ai-model-starting-next-year-2026-10-06/"
-        }
-      ],
-      "legal_status_checked": true,
-      "dedup": {
-        "previous_day": true,
-        "seven_day": true,
-        "result": "近7日站内未发现该4.7万亿韩元前沿AI项目；与既有韩国AI政策属于不同的新项目安排。"
-      }
-    },
-    {
-      "id": "kr-president-financial-ai-security-response-20261006",
-      "event_id": "KR-finance-security-president-order-2026-10-06",
-      "title_cn": "韩国总统要求强化金融机构AI时代安全治理，近期银行安全事件升级为国家层面调查",
-      "domestic": false,
-      "event_date": "2026-10-06",
-      "jurisdiction": "韩国",
-      "original_title": "South Korea's Lee says AI appears to have been used in bank hacks",
-      "sources": [
-        {
-          "name": "Reuters",
-          "url": "https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06/"
-        }
-      ],
-      "legal_status_checked": true,
-      "dedup": {
-        "previous_day": true,
-        "seven_day": true,
-        "result": "属于10月4日韩国金融安全事件链，但10月6日新增总统层面调查和资源动员要求，属于实质新进展。"
-      }
-    },
-    {
-      "id": "us-fincen-digital-asset-rule-withdrawals-20261005",
-      "event_id": "US-FinCEN-digital-asset-proposed-rules-withdrawal-2026-10-05",
-      "title_cn": "美国FinCEN撤回未托管钱包和虚拟货币混币拟议规则，数字资产反洗钱监管出现调整",
-      "domestic": false,
-      "event_date": "2026-10-05",
-      "jurisdiction": "美国",
-      "original_title": "FinCEN Announces Withdrawals of Proposed Digital Asset Related Rules",
-      "sources": [
-        {
-          "name": "FinCEN",
-          "url": "https://www.fincen.gov/news/news-releases/fincen-announces-withdrawals-proposed-digital-asset-related-rules"
-        }
-      ],
-      "legal_status_checked": true,
-      "dedup": {
-        "previous_day": true,
-        "seven_day": true,
-        "result": "近7日站内未发现FinCEN本次正式撤回两项拟议规则，属于10月5日新增行政程序动作。"
-      }
-    },
-    {
-      "id": "us-pa-data-center-transparency-sb1408-20261005",
-      "event_id": "US-PA-SB1408-data-center-transparency-amended-rereport-2026-10-05",
-      "title_cn": "宾夕法尼亚州参议院推进数据中心透明法案，拟限制政府保密协议并引入能耗水耗报告",
-      "domestic": false,
-      "event_date": "2026-10-05",
-      "jurisdiction": "美国／宾夕法尼亚州",
-      "original_title": "Senate Bill 1408 — Data Center Transparency",
-      "sources": [
-        {
-          "name": "Pennsylvania General Assembly",
-          "url": "https://www.palegis.us/legislation/bills/2025/sb1408"
-        }
-      ],
-      "legal_status_checked": true,
-      "dedup": {
-        "previous_day": true,
-        "seven_day": true,
-        "result": "近7日站内未收录SB 1408于10月5日重新报告的程序进展。"
-      }
-    },
-    {
-      "id": "eu-openai-text-watermark-ai-act-20261005",
-      "event_id": "EU-OpenAI-text-provenance-watermark-rollout-2026-10-05",
-      "title_cn": "OpenAI启动欧盟文本水印合规方案，ChatGPT与Codex将在欧盟逐步加入机器可识别标记",
-      "domestic": false,
-      "event_date": "2026-10-05",
-      "jurisdiction": "欧盟／全球",
-      "original_title": "Our approach to EU text provenance rules",
-      "sources": [
-        {
-          "name": "OpenAI",
-          "url": "https://openai.com/index/eu-text-provenance/"
-        },
-        {
-          "name": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/"
-        }
-      ],
-      "legal_status_checked": true,
-      "dedup": {
-        "previous_day": true,
-        "seven_day": true,
-        "result": "10月5日正式简报未收录该OpenAI文本水印方案；近7日站内未发现同一产品合规动作。"
-      }
-    },
-    {
-      "id": "us-google-constellation-power-deal-20261006",
-      "event_id": "US-Google-Constellation-3.59GW-power-deal-2026-10-06",
-      "title_cn": "Google签下3.59GW美国电力采购协议，AI数据中心用电需求推动核电扩容与电网规则联动",
-      "domestic": false,
-      "event_date": "2026-10-06",
-      "jurisdiction": "美国",
-      "original_title": "Google enters massive 3.6-GW power deal with Constellation Energy",
-      "sources": [
-        {
-          "name": "Reuters",
-          "url": "https://www.reuters.com/business/energy/google-enters-massive-36-gw-power-deal-with-constellation-energy-2026-10-06/"
-        }
-      ],
-      "legal_status_checked": true,
-      "dedup": {
-        "previous_day": true,
-        "seven_day": true,
-        "result": "近7日站内未发现Google与Constellation本轮3.59GW交易；属于10月6日新的AI基础设施重大产业变化。"
-      }
-    }
-  ],
-  "publication": {
-    "main_commit": null,
-    "pages_run": null,
-    "pages_result": null,
-    "deployed": false
-  },
-  "selection_policy": {
-    "quantity_target": "up_to_20_quality_first",
-    "principle": "quality_first_no_padding"
-  },
-  "last_error": null,
-  "next_actions": [
-    "等待对应正文提交的GitHub Pages部署并完成线上验收。"
-  ]
+  "content_checks": {
+    "background": "新增8条均补充直接前序。香港AI治理明确区分前一日法律检视；FBI数据泄露明确承接前一日ShinyHunters调查；其他条目只补与当日动作直接相关的制度或业务背景。",
+    "language": "逐条检查程序状态和中文表达。合规审查、融资消息、政策说明、听证和企业许可协议分别按其真实法律状态表述，不把媒体消息写成正式成交或监管结论。",
+    "context": "关联阅读只保留同一事件、主体、具体规则、技术机制或受监管行为的直接关系；专题时间线仍限同一事件链或高度同质窄专题。",
+    "layout": "国内6条在前，国外12条在后；12条境外新闻均保留核验原始题名的brief-original全宽行，brief-fact保持全宽，再进入研究分析区。"
+  }
 }
