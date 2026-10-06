@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-06",
+  "column": "brief",
+  "state": "draft",
+  "phase": "research",
+  "base_main_sha": "1a40c398fc9edb8f48f93f0e732c8139d0ccb8dd",
+  "updated_at": "2026-10-06T19:05:00+08:00",
+  "news_count": 0,
+  "distribution": {
+    "domestic": 0,
+    "foreign": 0
+  },
+  "checks": {
+    "sources": false,
+    "legal_status": false,
+    "original_titles": false,
+    "timeliness": false,
+    "previous_day_event_deduplication": false,
+    "seven_day_history_deduplication": false,
+    "local_language_scan_korea_japan_vietnam": false,
+    "prior_background_checked": false,
+    "natural_chinese_reviewed": false,
+    "background_outlook": false,
+    "foreign_layout": false
+  },
+  "coverage": [],
+  "items": [],
+  "publication": {
+    "main_commit": null,
+    "pages_run": null,
+    "deployed": false
+  },
+  "selection_policy": {
+    "quantity_target": "up_to_20_quality_first",
+    "principle": "quality_first_no_padding"
+  }
+}
