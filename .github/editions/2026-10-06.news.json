@@ -2,13 +2,13 @@
   "date": "2026-10-06",
   "column": "brief",
   "state": "draft",
-  "phase": "research_checkpoint_2",
+  "phase": "research_checkpoint_3",
   "base_main_sha": "6abf5cd33898de07a465cc4071e3ea2cb021d7fb",
-  "updated_at": "2026-10-06T19:22:00+08:00",
-  "news_count": 8,
+  "updated_at": "2026-10-06T19:33:00+08:00",
+  "news_count": 9,
   "distribution": {
     "domestic": 0,
-    "foreign": 8
+    "foreign": 9
   },
   "checks": {
     "sources": false,
@@ -341,6 +341,42 @@
         "seven_day": true,
         "result": "近7日站内未发现Google与Constellation本轮3.59GW交易；属于10月6日新的AI基础设施重大产业变化。"
       }
+    },
+    {
+      "id": "kr-president-financial-ai-security-response-20261006",
+      "event_id": "KR-finance-security-president-order-2026-10-06",
+      "domestic": false,
+      "title_cn": "韩国总统要求强化金融机构AI时代安全治理，近期银行安全事件升级为国家层面调查",
+      "original_title": "South Korea's Lee says AI appears to have been used in bank hacks",
+      "jurisdiction": "韩国",
+      "authority": "韩国总统府／金融监管部门",
+      "event_date": "2026-10-06",
+      "new_action": "韩国总统李在明在国务会议上要求集中资源调查近期银行安全事件，并强化核心金融系统检查和面向AI时代的安全能力。",
+      "legal_status": "国家层面调查和金融安全应急处置继续升级；尚无最终责任认定或行政处罚结论。",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06/"
+        }
+      ],
+      "fact": "韩国总统李在明10月6日在国务会议上要求有关部门集中人力和资源调查近期银行安全事件，并强化核心金融系统安全检查。金融监管部门和警方正在继续调查。总统同时表示，现有迹象显示部分事件可能涉及AI使用，但具体作用仍待确认。",
+      "prior_background": "10月4日本站已报道韩国金融业连续安全事件后，政府启动应急响应并要求全行业复查。本次新增是总统层面进一步作出调查和资源动员要求。",
+      "law_analysis": "同一事件链正在从行业监管应急响应升级为国家层面的跨部门调查与能力建设。监管逻辑也开始从传统金融网络安全检查转向AI时代的持续风险评估、事件报告和恢复能力。",
+      "think_tank": {
+        "title": "AI时代金融关键基础设施安全能力与跨部门应急机制",
+        "note": "可研究金融监管、网络安全主管部门和执法机关如何形成统一事件分级、报告和调查机制。"
+      },
+      "paper_topic": {
+        "title": "AI时代金融机构安全义务的动态化",
+        "note": "可讨论技术风险持续变化时，金融机构合理安全措施标准如何随风险能力演进。"
+      },
+      "background": "韩国近期多家银行发生安全事件，金融监管和信息安全部门已启动行业复查和应急响应。",
+      "outlook": "后续需观察调查是否形成明确事实结论，以及韩国是否据此调整金融机构安全基线、AI安全评估或事件报告要求。",
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "属于10月4日韩国金融安全事件链，但10月6日新增总统层面调查和资源动员要求，属于实质新进展。"
+      }
     }
   ],
   "publication": {
@@ -358,7 +394,7 @@
     "run_reference": "2026-10-06T19:00:00+08:00",
     "cutoff": "2026-10-03T19:00:00+08:00"
   },
-  "last_error": "首次保存包含网络安全事件高层事实的5条检查点时连接器安全检查拒绝；已按编辑规则先仅保存非网络安全候选，未尝试规避检查。",
+  "last_error": "含网络安全事件技术事实的草稿写入曾被连接器安全检查拒绝；已删除所有非必要技术细节，并仅保留韩国国家层面监管与治理事实。丹麦CPR及FBI第三方运维事件不再尝试写入本次草稿。",
   "next_actions": [
     "补充韩国金融网络安全新增进展、丹麦CPR数据事件等候选，保持仅保存法律监管必要的高层事实。",
     "完成美国州AG/法院、加拿大/巴西/印度/新加坡/印尼及日韩越固定矩阵收尾。",
