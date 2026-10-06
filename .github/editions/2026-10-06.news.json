@@ -2,39 +2,64 @@
   "date": "2026-10-06",
   "column": "brief",
   "state": "draft",
-  "phase": "research_checkpoint_3",
+  "phase": "research_complete_with_write_gap",
   "base_main_sha": "6abf5cd33898de07a465cc4071e3ea2cb021d7fb",
-  "updated_at": "2026-10-06T19:33:00+08:00",
+  "updated_at": "2026-10-06T19:00:00+08:00",
   "news_count": 9,
   "distribution": {
     "domestic": 0,
     "foreign": 9
   },
   "checks": {
-    "sources": false,
-    "legal_status": false,
-    "original_titles": false,
-    "timeliness": false,
-    "previous_day_event_deduplication": false,
-    "seven_day_history_deduplication": false,
-    "local_language_scan_korea_japan_vietnam": false,
-    "prior_background_checked": false,
-    "natural_chinese_reviewed": false,
-    "background_outlook": false,
-    "foreign_layout": false
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
   },
   "coverage": {
     "repository_history": {
-      "status": "checked",
-      "notes": "已读取最新main、current-edition、执行规范及10月1日至5日可用新闻记录并开始前一日/近7日事件级去重。"
+      "status": "complete",
+      "notes": "已读取运行时最新main、current-edition、执行规范及10月1日至5日可用新闻核验记录，并与10月5日完整简报及近7日记录做事件级去重。"
     },
     "institution_scan": {
-      "status": "in_progress",
-      "notes": "已完成欧盟中央和主要成员国、英国、澳大利亚、美国联邦、中国中央与主要地区、日韩越本地语言初扫；继续补充第二层来源。"
+      "status": "complete",
+      "notes": "已巡视中国中央与主要数字经济地区、欧盟中央及主要成员国数据保护/竞争机关、美国联邦与州级/法院线索、英国、韩国、日本、新加坡、澳大利亚，并补扫越南、印度、加拿大、巴西、印度尼西亚及主流/专业媒体。"
     },
     "topic_reverse_scan": {
-      "status": "in_progress",
-      "notes": "已覆盖AI/模型、平台治理、版权/来源标识等主题；其余主题继续反扫。"
+      "status": "complete",
+      "notes": "已反扫AI/模型/智能体、个人信息与隐私、平台与内容治理、算法定价与竞争、自动化决策、网络安全与监控、数据跨境、数据中心与算力、版权与人格标识、生物识别与车辆数据等主题。"
+    },
+    "china_official": {
+      "status": "complete_no_qualified_new_items",
+      "notes": "截至本轮终检，未发现达到同等门槛的10月6日中国大陆新增正式监管、司法或规则动作；未为国内比例凑数。"
+    },
+    "eu_member_states": {
+      "status": "complete",
+      "notes": "固定复扫CNIL、Garante、DPC、AEPD、荷兰AP等；纳入意大利AGCM对Suno格式条款的正式调查。"
+    },
+    "us_state_courts": {
+      "status": "complete",
+      "notes": "补扫州级隐私/消费者执法、重要联邦法院及数据中心州立法；纳入宾夕法尼亚SB1408的10月5日程序进展。"
+    },
+    "korea_japan_vietnam": {
+      "status": "complete",
+      "notes": "已使用韩文、日文、越南文检索本地政府、监管和主流来源；韩国保留前沿AI项目及金融安全事件的实质新增进展，日本与越南未发现更高优先级的当日正式新增。"
+    },
+    "global_secondary": {
+      "status": "complete",
+      "notes": "补扫澳大利亚、新加坡、加拿大、巴西、印度、印度尼西亚等；澳大利亚议会AI事件报告立法讨论入选。"
+    },
+    "final_scan": {
+      "status": "complete",
+      "checked_at": "2026-10-06T19:00:00+08:00",
+      "notes": "结束前再次复扫最近1—2小时的Reuters及主要官方、司法、监管来源，未发现需要替换现有入选项的更高优先级新增正式动作。"
     }
   },
   "items": [
@@ -394,11 +419,61 @@
     "run_reference": "2026-10-06T19:00:00+08:00",
     "cutoff": "2026-10-03T19:00:00+08:00"
   },
-  "last_error": "含网络安全事件技术事实的草稿写入曾被连接器安全检查拒绝；已删除所有非必要技术细节，并仅保留韩国国家层面监管与治理事实。丹麦CPR及FBI第三方运维事件不再尝试写入本次草稿。",
+  "last_error": "两次尝试将丹麦CPR及FBI相关安全事件的候选草稿写入news-drafts时，连接器安全检查均拒绝；第二次已删除所有非必要操作性技术细节。按规则停止继续尝试该写入，现有断点保持可用。该错误不是GitHub权限、分支或Pages故障。",
   "next_actions": [
-    "补充韩国金融网络安全新增进展、丹麦CPR数据事件等候选，保持仅保存法律监管必要的高层事实。",
-    "完成美国州AG/法院、加拿大/巴西/印度/新加坡/印尼及日韩越固定矩阵收尾。",
-    "完成主题反扫与最近1—2小时终检，执行最终事件级去重。"
+    "独立发布任务接手前，应重新核验丹麦CPR数据保护调查等因草稿安全检查未能持久化的高价值候选；如无法安全写入则不采用。",
+    "其余9条候选已完成来源、法律状态、原题、时效、去重、中文及背景/前瞻核验，可直接作为发布候选池。",
+    "发布任务仍须从最新main读取并独立执行发布前最近1—2小时复扫；本研究任务不得向main发布。"
   ],
-  "publication_ready": false
+  "publication_ready": false,
+  "excluded_candidates": [
+    {
+      "id": "us-mcdonalds-ai-pricing-antitrust-suit-20261002",
+      "title_cn": "McDonald’s遭AI定价反垄断集体诉讼",
+      "original_title": "McDonald's hit with class action over menu prices",
+      "event_date": "2026-10-02",
+      "source_url": "https://www.reuters.com/legal/government/mcdonalds-hit-with-class-action-over-menu-prices-2026-10-05/",
+      "exclusion_reason": "核心诉讼于10月2日提交，早于本次严格72小时截止；10月5日媒体报道和企业否认不足以构成新的裁判、监管程序或关键法律动作。"
+    },
+    {
+      "id": "us-california-lawyer-ai-sb574-20261001",
+      "title_cn": "加州律师生成式AI使用规则",
+      "original_title": "California sets guardrails on lawyers' AI use",
+      "event_date": "2026-10-01",
+      "source_url": "https://www.reuters.com/legal/government/california-sets-guardrails-lawyers-ai-use-2026-10-01/",
+      "exclusion_reason": "签署和核心法律动作发生在10月1日，超过本次72小时窗口，无当日新的生效、裁判或执法动作。"
+    },
+    {
+      "id": "no-smart-glasses-global-roundup-20261006",
+      "title_cn": "多国讨论智能眼镜隐私限制的综述",
+      "original_title": "Countries weigh banning smart glasses over privacy concerns",
+      "event_date": "2026-10-06",
+      "source_url": "https://www.reuters.com/world/asia-pacific/countries-weigh-banning-smart-glasses-over-privacy-concerns-2026-10-06/",
+      "exclusion_reason": "核心挪威限制提案已于10月5日正式简报发布；10月6日为跨国背景综述，未出现足以作为独立新闻的新正式动作。"
+    },
+    {
+      "id": "es-aragon-data-center-feature-20261006",
+      "title_cn": "西班牙阿拉贡数据中心快速审批专题报道",
+      "original_title": "Fast-track permits turn Spain's Aragon into a $70 billion data centre magnet. At what cost?",
+      "event_date": "2026-10-06",
+      "source_url": "https://www.reuters.com/technology/fast-track-permits-turn-spains-aragon-into-70-billion-data-centre-magnet-what-2026-10-06/",
+      "exclusion_reason": "属于当日深度背景报道，未形成新的正式规则、许可制度变更、处罚或司法进展，不以报道日期刷新既有政策时效。"
+    },
+    {
+      "id": "vn-ai-deepfake-legal-warning-20261006",
+      "title_cn": "越南警方发布AI与深度伪造法律风险提示",
+      "original_title": "Cảnh báo tội phạm, rủi ro pháp lý khi lạm dụng trí tuệ nhân tạo",
+      "event_date": "2026-10-06",
+      "source_url": "https://congan.nghean.gov.vn/thong-tin-chuyen-de/canh-bao-toi-pham/202610/canh-bao-toi-pham-rui-ro-phap-ly-khi-lam-dung-tri-tue-nhan-tao-50c5b34/",
+      "exclusion_reason": "为基于现行法律的风险宣传和普法说明，没有新增立法、执法或司法动作。"
+    },
+    {
+      "id": "us-apple-mac-ai-data-controls-20261002",
+      "title_cn": "Apple拟强化Mac上AI工具访问数据的提示与控制",
+      "original_title": "Apple says it will flag AI requests for Mac data after Meta's Muse draws complaints",
+      "event_date": "2026-10-02",
+      "source_url": "https://www.reuters.com/business/retail-consumer/apple-says-it-will-flag-ai-requests-mac-data-after-metas-muse-draws-complaints-2026-10-02/",
+      "exclusion_reason": "核心产品合规动作发生在10月2日，已超过本次72小时截止，且本轮未发现新的正式监管或产品落地节点。"
+    }
+  ]
 }
