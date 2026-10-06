@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><title>第21课｜后训练：模型预训练完成以后，为什么还要继续训练？｜网信法技术基础</title><link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/></head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-10-05-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-10-05-coglianese-lehr-transparency-algorithmic-governance.html">域外法学论文精读</a><a href="../articles/2026-10-05-salmond-jurisprudence.html">法学经典著作</a><a href="../articles/2026-10-05-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 21 · TRAINING &amp; ALIGNMENT · 2026.10.06</div><h1>后训练：模型预训练完成以后，为什么还要继续训练？</h1><p class="tech-lead">今日问题：一个模型已经完成大规模预训练，为什么还不能直接拿来做聊天助手、法律问答或行业系统？“后训练”到底又训练了什么？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus">
+<div><strong>它是什么</strong><p>后训练（post-training）不是某一种单独算法，而是预训练完成以后，为了让模型更会遵循指令、更符合人的偏好、减少不希望出现的行为，并增强特定能力而进行的一组训练过程。它把“会续写文本的基础模型”，进一步变成更适合实际交互和具体任务的模型。</p></div>
+<div><strong>一个直观例子</strong><p>可以把预训练后的模型想成一个读过大量材料、知识面很广的人，但他还不知道你的工作规范。后训练像入职后的系统培训：先看合格示范，再学习哪些回答更好，必要时根据结果得到奖励或纠正。知识基础可能相同，但接受不同培训后，工作方式会明显不同。</p></div>
+</section>
+
+<section class="lesson-section"><h2>后训练是一段“训练流程”，不是一个按钮</h2>
+<div class="visual-board" role="group" aria-label="大语言模型后训练的一般流程"><div class="visual-title">不同团队的具体配方不同，但现代大模型后训练通常沿着“示范—偏好—强化—评测”逐步塑造行为</div><div class="flow">
+<div class="flow-box"><strong>预训练模型</strong><span>已经学习大量语言与知识模式，但不一定会稳定遵循指令</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>示范学习</strong><span>用高质量问答、指令和任务示范做监督微调</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>偏好与奖励</strong><span>利用偏好数据、奖励模型或可验证结果继续调整行为</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>评测与迭代</strong><span>检查能力与风险，再决定是否补数据、换目标或继续训练</span></div></div>
+<p class="tiny-note">这不是唯一流程。Ai2 的 Tülu 3采用提示与数据整理、SFT、偏好优化和基于可验证奖励的强化学习等阶段；Meta 公开的 Llama 3.1 后训练则包含多轮 SFT、DPO 与带有人类反馈的强化学习。不同模型的顺序、数据和算法可以不同。<sup><a href="#s1">[1]</a><a href="#s2">[2]</a><a href="#s3">[3]</a></sup></p></div>
+
+<p>先看第一步。预训练主要让模型通过大规模文本学习语言规律和一般知识，但这种训练目标并不等于“按用户要求办事”。一个基础模型可能很会续写，却不一定稳定回答问题，也未必知道什么时候应当拒绝、怎样遵守格式要求。</p>
+
+<p>后训练会引入更明确的行为信号。SFT用“什么样的回答是合格示范”来训练模型；DPO、RLHF等方法进一步利用回答之间的偏好或奖励信号，让模型更倾向于被认为更有帮助、更安全或更符合任务要求的输出。前面几课讲过的合成数据、蒸馏和评测，也常常服务于这条流程：合成数据可以扩大训练材料，蒸馏可以转移能力，评测则决定下一轮还需要修什么。<sup><a href="#s1">[1]</a><a href="#s4">[4]</a></sup></p>
+
+<p>因此，“后训练”更像一套配方。真正决定结果的不只是算法名称，还包括用了哪些数据、怎样筛选数据、谁给偏好、奖励规则是什么、各阶段做几轮、何时停止以及用什么评测判断是否改善。同一个预训练底座，使用不同后训练配方，可以得到行为差异很大的模型。</p>
+
+<div class="law-bridge"><h3>新词备注：Base model 与 Instruct model</h3><p><b>Base model</b>可以先理解成“完成大规模预训练、但尚未专门训练成助手的基础模型”；<b>Instruct model</b>则是“经过指令与偏好等后训练，更适合按用户要求交互的模型”。不同厂商命名并不完全一致，今天只需要理解这种阶段差异。</p></div>
+</section>
+
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“后训练就是再做一次预训练。”两者都可能更新参数，但目标通常不同。预训练强调从大规模数据学习一般语言与知识规律；后训练更强调指令遵循、行为偏好、安全要求或具体能力。</span></div>
+<div class="myth"><b>误解 02</b><span>“后训练就是 RLHF。”RLHF只是其中一种方法。现代后训练还可能包括SFT、DPO、其他偏好优化、可验证奖励强化学习、蒸馏等，具体组合并不统一。</span></div>
+<div class="myth"><b>误解 03</b><span>“底座模型一样，最后模型就差不多。”后训练数据、偏好规则和奖励目标会持续改变模型行为。因此，只知道底座名称，不能完整推断最终模型会怎样回答。</span></div>
+</div></section>
+
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>判断模型责任时，不能只问“底座是谁的”</h3>
+<p>后训练是模型行为被有意识塑造的重要阶段。一个主体即使没有从零预训练模型，只要它选择了后训练数据、设定了回答偏好、决定了奖励规则并形成新的模型版本，就可能对最终行为具有实质影响。具体法律责任仍取决于适用规则和实际控制关系，但技术上不能把所有行为都简单归因于最初的基础模型提供者。</p>
+<p>这也意味着审计记录应当区分不同层次：基础模型版本是什么，后训练用了哪些数据类型和目标，谁实施了哪些训练阶段，形成了哪个检查点，评测结果对应哪个版本。否则，当同一底座衍生出多个行业模型或企业内部模型时，很难还原“某种行为是在什么阶段被引入的”。</p>
+</div></section>
+
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>从基础模型到后训练模型：行为塑造控制权与责任分配</h3><p>研究基础模型提供者、后训练实施者和最终部署者分别控制哪些技术环节，以及训练数据、偏好规则和模型版本如何成为判断参与程度与责任范围的证据。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>高风险人工智能后训练过程应保留哪些最低记录</h3><p>围绕底座版本、后训练数据来源、训练阶段、偏好或奖励规则、检查点、关键评测与版本变更，研究形成可供监管和内部审计复核的最小记录清单。</p></div>
+</div></section>
+
+<section class="lesson-section"><h2>原始材料</h2><ol class="source-links">
+<li id="s1"><a href="https://allenai.org/tulu">Ai2, Tülu 3</a>。公开展示预训练模型之上的多阶段后训练流程，包括数据整理、SFT、偏好优化与基于可验证奖励的强化学习。</li>
+<li id="s2"><a href="https://allenai.org/blog/tulu-3-technical">Ai2, Tülu 3: The next era in open post-training</a>。详细说明多阶段后训练配方、数据构造和评测在整个流程中的位置。</li>
+<li id="s3"><a href="https://ai.meta.com/blog/meta-llama-3-1-ai-responsibility/">Meta, Expanding our open source large language models responsibly</a>。说明Llama 3.1在预训练模型之上进行多轮SFT、DPO和带有人类反馈的强化学习，并使用大量合成训练示例。</li>
+<li id="s4"><a href="https://huggingface.co/docs/trl/en/index">Hugging Face, TRL Documentation</a>。当前后训练工具链包含SFT、DPO、GRPO、奖励建模与蒸馏等多类训练方法。</li>
+</ol></section>
+
+<section class="next-lesson"><div><small>后续课程预告 · 第22课</small><p><b>上下文窗口：模型一次到底能“看到”多少内容？</b>下一课进入“模型能力与推理”模块，理解输入长度限制怎样影响模型处理长文档、连续对话与法律材料。</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
