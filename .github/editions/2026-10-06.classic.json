@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-06",
+  "column": "classic",
+  "status": "verified",
+  "phase": "deployment_check",
+  "book": "John Chipman Gray：《法律的性质与渊源》",
+  "bibliography": {
+    "author": "John Chipman Gray",
+    "originalTitle": "The Nature and Sources of the Law",
+    "publisher": "The Columbia University Press",
+    "year": "1909",
+    "edition": "初版"
+  },
+  "base_main_sha": "e1652e25529d5d7eef279333fd0a84b0fd179297",
+  "target_path": "articles/2026-10-06-gray-nature-sources-law.html",
+  "sources": [
+    "https://archive.org/details/cu31924017092846",
+    "https://pegasus.law.columbia.edu/record/122637",
+    "https://www.routledge.com/The-Nature-and-Sources-of-the-Law-by-John-Chipman-Gray/Campbell-Gray-Thomas/p/book/9780367198138",
+    "https://constitution.org/1-Constitution/cmt/cardozo/jud_proc.htm",
+    "https://academic.oup.com/book/60705/chapter-abstract/527457953"
+  ],
+  "verification": {
+    "full_text_review": true,
+    "first_edition_metadata": true,
+    "thirteen_chapter_structure": true,
+    "history_deduplication": true,
+    "bibliography": true,
+    "representative_criticism": true,
+    "later_edition_separated": true,
+    "natural_chinese_reviewed": true,
+    "final_body_complete": true
+  },
+  "history_dedup": {
+    "passed": true,
+    "checked_against": [
+      "classics.html complete current index",
+      "classics-history.html exported issues 15-35",
+      "recent classic commits",
+      "repository search for author/title"
+    ],
+    "selected_new_work": "John Chipman Gray, The Nature and Sources of the Law"
+  },
+  "summary": "Gray以法院实际采用的规则界定现行法律，并把制定法、先例、专家意见、习惯、道德与衡平区分为法律渊源。他既强调疑难案件中的司法创制，也专门讨论司法权的制度界限。Cardozo与Duxbury后来分别从日常法律规范的独立地位和制定法本身的规范性出发，对其法院中心的“法律—法源”切割提出代表性批评。",
+  "homepage_summary": "John Chipman Gray：《法律的性质与渊源》",
+  "classics_summary": "John Chipman Gray：《法律的性质与渊源》",
+  "archive_summary": "最新：John Chipman Gray：《法律的性质与渊源》",
+  "last_error": null,
+  "next_actions": [
+    "verify exact main commit Pages deploy",
+    "verify current-columns and live classic entry points"
+  ],
+  "state": "verified",
+  "publication": {
+    "deployment_claim": false,
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_result": null,
+    "live_checks": null
+  }
+}
