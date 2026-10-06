@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-06",
+  "base_main_sha": "6abf5cd33898de07a465cc4071e3ea2cb021d7fb",
+  "suggested_issue_number": "034",
+  "phase": "researching",
+  "publication_ready": false,
+  "researched_at": "2026-10-06T08:03:42+08:00",
+  "items": [],
+  "coverage": {
+    "required_jurisdictions": {
+      "US": "pending",
+      "EU": "pending",
+      "UK": "pending",
+      "JP": "pending",
+      "KR": "pending"
+    },
+    "watchlist": {
+      "IN": "pending",
+      "CA": "pending",
+      "AU": "pending"
+    },
+    "recent_7d_dedup": "pending",
+    "source_open_check": "pending",
+    "final_1_2h_rescan": "pending"
+  },
+  "dedup_notes": [],
+  "source_check_summary": {
+    "checked": 0,
+    "passed": 0,
+    "failed": 0,
+    "details": []
+  },
+  "last_error": null,
+  "next_actions": [
+    "Complete required jurisdiction and watchlist scans",
+    "Validate final candidates and legal stages",
+    "Run 7-day event-level dedup",
+    "Open every final source",
+    "Run final 1-2 hour rescan"
+  ]
+}
