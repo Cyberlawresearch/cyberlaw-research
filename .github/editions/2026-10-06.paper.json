@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-06",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-06-selbst-powles-meaningful-information-right-to-explanation.html",
+  "selection": "Andrew D. Selbst & Julia Powles, Meaningful information and the right to explanation",
+  "bibliography": {
+    "type": "article",
+    "author": "Andrew D. Selbst; Julia Powles",
+    "originalTitle": "Meaningful information and the right to explanation",
+    "journal": "International Data Privacy Law",
+    "year": "2017",
+    "volume": "7",
+    "issue": "4",
+    "pages": "233–242",
+    "doi": "10.1093/idpl/ipx022",
+    "url": "https://academic.oup.com/idpl/article/7/4/233/4762325",
+    "cnTitle": "“有意义的信息”与解释权"
+  },
+  "versions": {
+    "formal": "International Data Privacy Law, Vol.7, Issue 4 (November 2017), pp.233–242; Oxford Academic online publication 2017-12-19",
+    "working_paper": "SSRN abstract_id=3039125; written 2017-11-27; posted 2017-11-30; revised 2017-12-20"
+  },
+  "sources": [
+    "https://academic.oup.com/idpl/article/7/4/233/4762325",
+    "https://academic.oup.com/idpl/issue/7/4",
+    "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3039125",
+    "https://escholarship.org/uc/item/9cz6v3zs",
+    "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A62022CJ0203"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "working_paper_version_distinguished": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "later_case_law_verified": true
+  },
+  "related_reading": [
+    "articles/2026-09-12-kaminski-right-to-explanation.html",
+    "articles/2026-09-11-brennan-marquez-plausible-cause.html",
+    "articles/2026-09-16-barocas-selbst-big-data-disparate-impact.html"
+  ],
+  "timeline": null,
+  "body_length": 11721,
+  "base_main_sha": "1a603208fee2cbcae7df2a3f1d745f9069bf4885",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}
