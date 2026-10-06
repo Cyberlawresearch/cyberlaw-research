@@ -2,13 +2,13 @@
   "date": "2026-10-06",
   "column": "brief",
   "state": "draft",
-  "phase": "research",
-  "base_main_sha": "1a40c398fc9edb8f48f93f0e732c8139d0ccb8dd",
-  "updated_at": "2026-10-06T19:05:00+08:00",
-  "news_count": 0,
+  "phase": "research_checkpoint_1",
+  "base_main_sha": "6abf5cd33898de07a465cc4071e3ea2cb021d7fb",
+  "updated_at": "2026-10-06T19:14:00+08:00",
+  "news_count": 3,
   "distribution": {
     "domestic": 0,
-    "foreign": 0
+    "foreign": 3
   },
   "checks": {
     "sources": false,
@@ -23,8 +23,142 @@
     "background_outlook": false,
     "foreign_layout": false
   },
-  "coverage": [],
-  "items": [],
+  "coverage": {
+    "repository_history": {
+      "status": "checked",
+      "notes": "已读取最新main、current-edition、执行规范及10月1日至5日可用新闻记录并开始前一日/近7日事件级去重。"
+    },
+    "institution_scan": {
+      "status": "in_progress",
+      "notes": "已完成欧盟中央和主要成员国、英国、澳大利亚、美国联邦、中国中央与主要地区、日韩越本地语言初扫；继续补充第二层来源。"
+    },
+    "topic_reverse_scan": {
+      "status": "in_progress",
+      "notes": "已覆盖AI/模型、平台治理、版权/来源标识等主题；其余主题继续反扫。"
+    }
+  },
+  "items": [
+    {
+      "id": "uk-ofcom-meta-instants-investigation-20261006",
+      "event_id": "UK-Ofcom-Meta-Instagram-Instants-OSA-investigation-2026-10-06",
+      "domestic": false,
+      "title_cn": "英国Ofcom调查Instagram“Instants”上线前风险评估，平台功能变更成为《在线安全法》执法重点",
+      "original_title": "Ofcom investigates Meta’s compliance with UK online safety laws",
+      "jurisdiction": "英国",
+      "authority": "Ofcom",
+      "event_date": "2026-10-06",
+      "new_action": "Ofcom正式启动调查，核查Meta在推出Instagram Instants前是否完成适当且充分的非法内容风险评估和儿童风险评估。",
+      "legal_status": "《Online Safety Act 2023》下的正式调查阶段；Ofcom正在收集和分析证据，尚未作出违规认定或处罚决定。",
+      "sources": [
+        {
+          "name": "Ofcom",
+          "url": "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/ofcom-investigates-metas-compliance-with-uk-online-safety-laws"
+        },
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/business/uk-probes-meta-over-safety-risks-of-instagram-instants-feature-2026-10-06/"
+        }
+      ],
+      "fact": "Ofcom 10月6日宣布对Meta启动正式调查，重点审查Instagram在今年5月推出“Instants”功能之前，是否按照《在线安全法》完成适当且充分的非法内容风险评估和儿童风险评估。Ofcom强调，平台在对服务设计或运行作出重大改变前必须更新风险评估。调查目前处于证据收集阶段；若后续形成初步违规判断，Meta仍有机会陈述意见，之后Ofcom才会作出最终决定。",
+      "prior_background": "10月5日，Meta、TikTok和X已就Ofcom依据《在线安全法》发出的信息调取要求提起司法挑战。今天这项调查是另一条独立监管程序，直接针对Meta推出新功能前是否履行风险评估义务。",
+      "law_analysis": "这一调查把英国平台安全监管从事后内容处置进一步推向产品功能上线前的风险评估。如果Ofcom最终认定相关功能属于需要事前重新评估的重大变化，平台产品迭代流程会更明确地纳入法定义务链条。",
+      "think_tank": {
+        "title": "平台产品快速迭代背景下事前安全评估义务的监管化趋势",
+        "note": "可关注英国把功能上线前风险评估作为执法抓手后，是否推动其他法域从事后内容治理转向产品设计阶段监管。"
+      },
+      "paper_topic": {
+        "title": "平台功能变更的事前风险评估义务及其程序法结构",
+        "note": "可从“重大功能变更”的认定标准、风险评估的可审查性以及监管机关调查程序切入。"
+      },
+      "background": "英国《在线安全法》要求服务提供者评估并降低非法内容风险；可能被儿童使用的平台还承担儿童风险评估义务。",
+      "outlook": "后续首先要看Ofcom如何界定“重大变化”以及对Meta风险评估材料提出何种证据要求。若调查形成违规认定，可能进一步明确平台在产品开发周期中进行事前风险评估的最低标准。",
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "与10月5日Meta、TikTok、X挑战Ofcom信息调取属于不同核心动作和法律程序；本条为10月6日新启动的独立正式调查。"
+      }
+    },
+    {
+      "id": "it-agcm-suno-unfair-terms-investigation-20261006",
+      "event_id": "IT-AGCM-Suno-CV278-unfair-contract-terms-2026-10-06",
+      "domestic": false,
+      "title_cn": "意大利竞争监管机构调查Suno服务条款，AI平台单方改约、版权许可和美国仲裁条款同时受审查",
+      "original_title": "CV278 - AI, avviata istruttoria nei confronti di Suno per clausole vessatorie",
+      "jurisdiction": "意大利",
+      "authority": "Autorità Garante della Concorrenza e del Mercato（AGCM）",
+      "event_date": "2026-10-06",
+      "new_action": "AGCM对生成式AI音乐服务Suno Inc.正式启动不公平合同条款调查，并将就相关条款开展公共咨询。",
+      "legal_status": "消费者保护行政调查阶段；监管机构认为相关条款可能构成《意大利消费者法典》第33条所称不公平条款，但尚无最终认定。",
+      "sources": [
+        {
+          "name": "AGCM",
+          "url": "https://www.agcm.it/media/comunicati-stampa/2026/10/CV278"
+        },
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/technology/italy-regulator-probes-ai-music-startup-suno-over-terms-of-service-2026-10-06/"
+        }
+      ],
+      "fact": "意大利竞争与市场管理局10月6日宣布对AI音乐生成平台Suno启动调查。监管机构初步关注平台单方修改合同、服务和订阅价格、账号处置、责任限制、版权许可，以及美国仲裁和专属管辖等格式条款。",
+      "prior_background": "Suno等生成式音乐平台此前更多因训练数据和音乐版权争议受到关注。本次程序把监管焦点进一步推进到面向消费者的标准合同、用户生成内容权利配置和跨境争议解决条款。",
+      "law_analysis": "生成式AI平台的法律风险已经不再局限于训练数据是否合法。服务条款直接决定用户内容、账号、版权和救济权如何配置，本国强制性消费者保护规则可能限制全球统一条款中的单方变更权、责任限制和仲裁安排。",
+      "think_tank": {
+        "title": "生成式AI平台全球统一服务条款面临的本地强制法冲突",
+        "note": "可从Suno案观察AI服务出海时消费者法、版权法和争议解决规则如何叠加适用。"
+      },
+      "paper_topic": {
+        "title": "生成式AI服务条款中的内容许可、平台控制与消费者公平",
+        "note": "可研究用户生成内容许可与平台服务控制权之间的结构性不对等。"
+      },
+      "background": "生成式AI服务通常通过在线格式条款一次性配置模型使用、用户内容许可、账号处置和争议解决。欧盟和成员国消费者法对显著失衡的格式条款设有强制审查机制。",
+      "outlook": "AGCM表示未来数周将发布公共咨询文本。后续应关注调查是否要求Suno修改相关格式条款，以及该案是否形成其他AI平台在意大利和欧盟市场调整服务条款的参照。",
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "近7日站内未发现Suno服务条款消费者保护调查；10月6日为新行政程序。"
+      }
+    },
+    {
+      "id": "eu-openai-text-watermark-ai-act-20261005",
+      "event_id": "EU-OpenAI-text-provenance-watermark-rollout-2026-10-05",
+      "domestic": false,
+      "title_cn": "OpenAI启动欧盟文本水印合规方案，ChatGPT与Codex将在欧盟逐步加入机器可识别标记",
+      "original_title": "Our approach to EU text provenance rules",
+      "jurisdiction": "欧盟／全球",
+      "authority": "OpenAI",
+      "event_date": "2026-10-05",
+      "new_action": "OpenAI公布针对欧盟AI法案文本来源透明义务的分阶段实施方案：部分API客户可选择启用文本水印，未来数周在欧盟为符合条件的ChatGPT和Codex文本输出加入不可见水印。",
+      "legal_status": "企业为履行欧盟AI透明义务采取的合规措施；不是监管机关决定。",
+      "sources": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/eu-text-provenance/"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/"
+        }
+      ],
+      "fact": "OpenAI 10月5日公布文本来源识别方案，明确将以欧盟AI法案关于生成文本机器可识别性的要求为依据逐步部署文本水印。部分API客户可主动选择水印输出；未来数周，欧盟符合条件的ChatGPT和Codex文本将加入不可见水印。OpenAI同时说明短文本、改写和翻译会降低检测可靠性，检测结果不能单独证明作者身份、权利归属或内容真实性。",
+      "prior_background": "欧盟AI法案对生成式AI输出设置透明度和可识别性要求，行业一直在讨论文本水印在准确性、可移除性和误判方面的技术限制。本次是OpenAI把相关义务转化为具体产品部署方案。",
+      "law_analysis": "文本水印把抽象的“可识别AI生成内容”义务转化为模型输出层面的技术控制，但技术信号并不能直接解决作者、责任和真实性认定。未来合规争议可能转向技术措施是否足够可靠以及检测结果的证据用途。",
+      "think_tank": {
+        "title": "欧盟AI内容可识别义务落地对我国生成式内容标识制度的启示",
+        "note": "可比较机器可读水印、显式标签和元数据凭证的功能边界。"
+      },
+      "paper_topic": {
+        "title": "生成式文本水印的规范功能与证据边界",
+        "note": "可从技术可检测性与法律证明力的差异出发，讨论水印在平台治理、行政执法和民事诉讼中的证据边界。"
+      },
+      "background": "相比图像和音频，文本容易被编辑、改写或翻译，机器可读来源标记更难保持稳定。",
+      "outlook": "后续应观察欧盟实际部署范围、检测器开放条件及监管机关如何评价技术可靠性。若水印成为通行合规手段，围绕误报、漏报和后处理破坏标记的责任规则可能逐步形成。",
+      "dedup": {
+        "previous_day": true,
+        "seven_day": true,
+        "result": "10月5日正式简报未收录该OpenAI文本水印方案；近7日站内未发现同一产品合规动作。"
+      }
+    }
+  ],
   "publication": {
     "main_commit": null,
     "pages_run": null,
@@ -33,5 +167,18 @@
   "selection_policy": {
     "quantity_target": "up_to_20_quality_first",
     "principle": "quality_first_no_padding"
-  }
+  },
+  "editorial_overrides": [],
+  "strict_window": {
+    "timezone": "Asia/Shanghai",
+    "run_reference": "2026-10-06T19:00:00+08:00",
+    "cutoff": "2026-10-03T19:00:00+08:00"
+  },
+  "last_error": "首次保存包含网络安全事件高层事实的5条检查点时连接器安全检查拒绝；已按编辑规则先仅保存非网络安全候选，未尝试规避检查。",
+  "next_actions": [
+    "继续补扫第二层来源和主题反扫。",
+    "以不含非必要技术细节的方式处理网络安全候选。",
+    "结束前复扫最近1—2小时并执行最终去重。"
+  ],
+  "publication_ready": false
 }
