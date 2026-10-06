@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-06",
+  "timezone": "Asia/Shanghai",
+  "column": "newworks",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-06-new-works.html",
+  "newworks_count": 5,
+  "checked_at": "2026-10-06T21:18:52+08:00",
+  "checks": {
+    "original_publication_pages_opened": true,
+    "bibliography": true,
+    "doi": true,
+    "repository_history_deduplication": true,
+    "original_titles": true,
+    "chinese_expression": true,
+    "related_reading_reviewed": true,
+    "timeline_reviewed": true
+  },
+  "related_reading": [
+    {
+      "item": 1,
+      "path": "articles/2026-09-12-kaminski-right-to-explanation.html",
+      "reason": "同一具体法律问题：算法解释权。历史精读讨论GDPR中的分层透明与算法问责，本期新作直接分析AI法第86条及其在整套透明义务中的位置。"
+    }
+  ],
+  "timeline": [],
+  "items": [
+    {
+      "cnTitle": "AI法透明义务如何分层：从系统可追溯到第86条解释权",
+      "author": "Hajo Michael Holtz",
+      "originalTitle": "The transparency architecture in the AI Act: From system requirements to a right to explanation under article 86",
+      "journal": "Computer Law & Security Review",
+      "year": "2026",
+      "volume": "62",
+      "issue": "",
+      "pages": "",
+      "articleNumber": "106388",
+      "doi": "10.1016/j.clsr.2026.106388",
+      "published_online": "2026",
+      "url": "https://doi.org/10.1016/j.clsr.2026.106388"
+    },
+    {
+      "cnTitle": "云主权能否进入竞争法判断：DMA与《数据法》如何约束超大规模云服务商",
+      "author": "Kalpana Tyagi",
+      "originalTitle": "Cloud sovereignty and contestability: what role for the EU Digital Markets Act and the Data Act?",
+      "journal": "Computer Law & Security Review",
+      "year": "2026",
+      "volume": "62",
+      "issue": "",
+      "pages": "1–21",
+      "articleNumber": "106381",
+      "doi": "10.1016/j.clsr.2026.106381",
+      "published_online": "2026-09",
+      "url": "https://doi.org/10.1016/j.clsr.2026.106381"
+    },
+    {
+      "cnTitle": "欧洲健康数据空间的退出权：为何它不同于GDPR反对权",
+      "author": "Pablo Trigo Kramcsák、Íñigo de Miguel Beriain",
+      "originalTitle": "The opt-out right for secondary uses of personal data in the European Health Data Space: Legal basis, scope, and interplay with the GDPR",
+      "journal": "Computer Law & Security Review",
+      "year": "2026",
+      "volume": "62",
+      "issue": "",
+      "pages": "1–16",
+      "articleNumber": "106367",
+      "doi": "10.1016/j.clsr.2026.106367",
+      "published_online": "2026-09",
+      "url": "https://doi.org/10.1016/j.clsr.2026.106367"
+    },
+    {
+      "cnTitle": "欧盟数据治理法为何落地不理想：从DGA早期实践检验“数字综合法案”改革",
+      "author": "Bárbara da Rosa Lazarotto、Sophie Stalla-Bourdillon、Pablo Trigo Kramcsák",
+      "originalTitle": "Giving EU Data Governance Law a Second Life? From Rebranding to Real-World Impact",
+      "journal": "Computer Law & Security Review",
+      "year": "2026",
+      "volume": "62",
+      "issue": "",
+      "pages": "",
+      "articleNumber": "106363",
+      "doi": "10.1016/j.clsr.2026.106363",
+      "published_online": "2026-09",
+      "url": "https://doi.org/10.1016/j.clsr.2026.106363"
+    },
+    {
+      "cnTitle": "AI模仿摄影作品何时构成侵权：Mio/konektra案划定输出端责任边界",
+      "author": "Ines Duhanic",
+      "originalTitle": "Copyright liability for AI-outputs: the impact of Mio/konektra on staged photography",
+      "journal": "Journal of Intellectual Property Law & Practice",
+      "year": "2026",
+      "volume": "21",
+      "issue": "9",
+      "pages": "605–609",
+      "articleNumber": "",
+      "doi": "10.1093/jiplp/jpag076",
+      "published_online": "2026-07-15",
+      "url": "https://doi.org/10.1093/jiplp/jpag076"
+    }
+  ],
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "deployed_current_columns": null,
+    "deployed_entry_points": null
+  },
+  "scope_guard": {
+    "brief_page": "articles/2026-10-06-tech-law-brief.html",
+    "brief_date": "2026-10-06",
+    "news_count": 18,
+    "paper_page": "articles/2026-10-05-coglianese-lehr-transparency-algorithmic-governance.html",
+    "paper_date": "2026-10-05",
+    "classic_page": "articles/2026-10-06-gray-nature-sources-law.html",
+    "classic_date": "2026-10-06"
+  }
+}
