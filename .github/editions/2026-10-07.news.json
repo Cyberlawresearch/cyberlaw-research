@@ -3,9 +3,9 @@
   "column": "brief",
   "state": "verified",
   "page": "articles/2026-10-07-tech-law-brief.html",
-  "updated_at": "2026-10-07T21:46:08+08:00",
+  "updated_at": "2026-10-07T21:50:32+08:00",
   "base_main_sha": "1d6d7fbd762b81f094c03b8deb758b2864bd61c4",
-  "phase": "publishing",
+  "phase": "complete",
   "news_count": 19,
   "items": [
     {
@@ -335,22 +335,20 @@
       "notes": "保留大规模泄露、AI智能体新增事实和关键企业安全公告；未用一般漏洞新闻凑数"
     }
   },
-  "next_actions": [
-    "等待并检查修复后最新main提交的Pages部署",
-    "检查线上current-columns、背景与前瞻、关联阅读/专题时间线及桌面端和移动端阅读功能"
-  ],
-  "last_error": {
-    "run_id": 37630603589,
-    "at": "2026-10-07T21:44:29+08:00",
-    "stage": "pre-deploy contextual reading/current-columns validation",
-    "detail": "Foreign-news layout exposed four analysis paragraphs because 前序背景 was duplicated in the main card and brief-insight.",
-    "resolution": "Removed only the duplicated visible 前序背景 paragraphs; verified background remains in brief-insight. All 19 cards now expose exactly three research-analysis paragraphs."
-  },
+  "next_actions": [],
+  "last_error": null,
   "publication": {
-    "commit_sha": null,
-    "pages_run_id": null,
-    "pages_conclusion": null,
-    "online_check": null
+    "commit_sha": "cc1dcd9f5cb216efddc464bcff4e91074c8bf413",
+    "pages_run_id": 37631184427,
+    "pages_conclusion": "success",
+    "online_check": {
+      "contextual_reading": "success",
+      "current_columns_and_entry_points": "success",
+      "desktop_and_mobile_layout": "success",
+      "background_outlook": "success",
+      "deployment": "success"
+    },
+    "verified_at": "2026-10-07T21:50:32+08:00"
   },
   "checked_at": "2026-10-07T21:40:49+08:00",
   "last_news_scan_at": "2026-10-07T21:33:42+08:00",
@@ -378,5 +376,11 @@
     "original_titles": 18,
     "brief_insights": 19,
     "analysis_columns_per_item": 3
+  },
+  "resolved_incident": {
+    "failed_pages_run_id": 37630603589,
+    "issue": "主卡片重复展示“前序背景”，导致外国新闻出现4个分析段而非3栏。",
+    "fix": "移除主卡片重复背景段，保留brief-insight中的结构化background；19条均恢复为事实全宽+三栏研究分析。",
+    "repaired_article_blob_sha": "73f962f366ad1b29958a0654b09ef216621923d7"
   }
 }
