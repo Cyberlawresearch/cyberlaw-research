@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-07",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-07-wachter-mittelstadt-floridi-right-to-explanation.html",
+  "selection": "Sandra Wachter; Brent Mittelstadt; Luciano Floridi, Why a Right to Explanation of Automated Decision-Making Does Not Exist in the General Data Protection Regulation",
+  "bibliography": {
+    "type": "article",
+    "author": "Sandra Wachter; Brent Mittelstadt; Luciano Floridi",
+    "originalTitle": "Why a Right to Explanation of Automated Decision-Making Does Not Exist in the General Data Protection Regulation",
+    "journal": "International Data Privacy Law",
+    "year": "2017",
+    "volume": "7",
+    "issue": "2",
+    "pages": "76–99",
+    "doi": "10.1093/idpl/ipx005",
+    "url": "https://academic.oup.com/idpl/article/7/2/76/3860948",
+    "cnTitle": "为什么GDPR中不存在自动化决策解释权"
+  },
+  "versions": {
+    "formal": "International Data Privacy Law, Vol.7, Issue 2 (May 2017), pp.76–99; published online 2017-06-03",
+    "working_paper": "SSRN abstract_id=2903469; date written 2016-12-28; posted 2017-01-24; later revisions preserved separately from the formal journal version"
+  },
+  "sources": [
+    "https://academic.oup.com/idpl/article/7/2/76/3860948",
+    "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2903469",
+    "https://ora.ox.ac.uk/objects/uuid:6c90bb41-093c-417b-852a-7716054e44bb",
+    "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A62022CJ0203",
+    "https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/eng"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "working_paper_version_distinguished": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "later_case_law_verified": true,
+    "current_ai_act_article_86_verified": true
+  },
+  "related_reading": [
+    "articles/2026-10-06-selbst-powles-meaningful-information-right-to-explanation.html",
+    "articles/2026-09-12-kaminski-right-to-explanation.html",
+    "articles/2026-10-06-new-works.html#research-item-1"
+  ],
+  "timeline": null,
+  "body_length": 11938,
+  "base_main_sha": "55939ac80040ddb4e7498e80cbad17c66c48d7b0",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}
