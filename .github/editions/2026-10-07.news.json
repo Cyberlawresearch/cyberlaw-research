@@ -3,16 +3,343 @@
   "column": "brief",
   "state": "draft",
   "page": "articles/2026-10-07-tech-law-brief.html",
-  "updated_at": "2026-10-07T20:36:00+08:00",
-  "base_main_sha": "ad272f7a5524c94949d77bb755e2e08df5ad810b",
-  "phase": "research",
-  "news_count": 0,
-  "items": [],
-  "coverage": {},
+  "updated_at": "2026-10-07T21:05:00+08:00",
+  "base_main_sha": "1d6d7fbd762b81f094c03b8deb758b2864bd61c4",
+  "phase": "writing",
+  "news_count": 19,
+  "items": [
+    {
+      "event_id": "tw-ai-boo",
+      "working_title": "台数发部门AI算力中心BOO第二波进入初审",
+      "jurisdiction": "中国台湾",
+      "event_date": "2026-10-07",
+      "original_title": "數發部推AI算力中心BOO案　第2波吸引2業者申請",
+      "source_name": "中央社",
+      "source_url": "https://www.cna.com.tw/news/afe/202610070211.aspx",
+      "legal_status": "政策执行进展",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    },
+    {
+      "event_id": "jp-ppc-leak-alert",
+      "working_title": "日本PPC发布大规模泄露警示并修订不正访问防护提示",
+      "jurisdiction": "日本",
+      "event_date": "2026-10-07",
+      "original_title": "大規模な漏えい等事案を踏まえた対応について（注意喚起）",
+      "source_name": "個人情報保護委員会",
+      "source_url": "https://www.ppc.go.jp/news/careful_information/261007_alert/",
+      "legal_status": "监管指引",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    },
+    {
+      "event_id": "sg-mas-ai-risk",
+      "working_title": "新加坡金管局发布金融机构AI风险管理指引",
+      "jurisdiction": "新加坡",
+      "event_date": "2026-10-07",
+      "original_title": "MAS Sets Out Supervisory Expectations on Responsible AI Adoption by Financial Institutions",
+      "source_name": "Monetary Authority of Singapore",
+      "source_url": "https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions",
+      "legal_status": "正式监管指引",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    },
+    {
+      "event_id": "sg-digital-infra-bill",
+      "working_title": "新加坡国会通过《数字基础设施法案》",
+      "jurisdiction": "新加坡",
+      "event_date": "2026-10-07",
+      "original_title": "MPs back tighter data centre regulations but raise questions on competitiveness, sustainability",
+      "source_name": "CNA",
+      "source_url": "https://www.channelnewsasia.com/singapore/data-centre-regulations-digital-infrastructure-bill-6438941",
+      "legal_status": "法律通过",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    },
+    {
+      "event_id": "sg-agentic-ai",
+      "working_title": "新加坡政府试验AI智能体并研究强化高风险安全要求",
+      "jurisdiction": "新加坡",
+      "event_date": "2026-10-07",
+      "original_title": "Singapore government running trials to understand how to implement AI agents responsibly: Tan Kiat How",
+      "source_name": "CNA",
+      "source_url": "https://www.channelnewsasia.com/singapore/ai-agents-safety-mddi-tan-kiat-how-parliament-6438106",
+      "legal_status": "正式议会答复",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    },
+    {
+      "event_id": "au-oaic-heycyan",
+      "working_title": "澳大利亚OAIC正式调查HeyCyan智能眼镜应用",
+      "jurisdiction": "澳大利亚",
+      "event_date": "2026-10-07",
+      "original_title": "OAIC opens investigation into maker of HeyCyan smart glasses phone app",
+      "source_name": "OAIC",
+      "source_url": "https://www.oaic.gov.au/news/media-centre/oaic-opens-investigation-into-maker-of-heycyan-smart-glasses-phone-app",
+      "legal_status": "监管调查",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    },
+    {
+      "event_id": "eu-eci-ai-domain",
+      "working_title": "欧委会登记主权AI域名欧洲公民倡议",
+      "jurisdiction": "欧盟",
+      "event_date": "2026-10-06",
+      "original_title": "New initiative registered – for sovereign European AI domains",
+      "source_name": "European Commission / ECI",
+      "source_url": "https://citizens-initiative.europa.eu/news/new-initiative-registered-sovereign-european-ai-domains-2026-10-06_en",
+      "legal_status": "程序登记",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    },
+    {
+      "event_id": "fi-dc-eia",
+      "working_title": "芬兰监管机构要求数据中心项目暂停重大准备活动直至环评完成",
+      "jurisdiction": "芬兰",
+      "event_date": "2026-10-06",
+      "original_title": "Lupa- ja valvontavirasto kehottaa Tuike Finland Oy:tä keskeyttämään Muhoksen ja Kajaanin datakeskushankkeiden valmistelutoimet",
+      "source_name": "Lupa- ja valvontavirasto",
+      "source_url": "https://api.sttinfo.fi/tiedote/72390663/lupa-ja-valvontavirasto-kehottaa-tuike-finland-oyta-keskeyttamaan-muhoksen-ja-kajaanin-datakeskushankkeiden-valmistelutoimet?publisherId=69821631",
+      "legal_status": "行政监管要求",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    },
+    {
+      "event_id": "us-chatgpt-product-liability",
+      "working_title": "ChatGPT是否属于“产品”进入产品责任诉讼核心争点",
+      "jurisdiction": "美国",
+      "event_date": "2026-10-07",
+      "original_title": "Is ChatGPT a 'product' or a 'service'? A wave of lawsuits tests a theory of AI liability",
+      "source_name": "Reuters",
+      "source_url": "https://www.reuters.com/legal/litigation/is-chatgpt-product-or-service-wave-lawsuits-tests-theory-ai-liability-2026-10-07/",
+      "legal_status": "诉讼进展",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    },
+    {
+      "event_id": "us-mcd-ai-pricing",
+      "working_title": "麦当劳AI定价工具遭反垄断集体诉讼",
+      "jurisdiction": "美国",
+      "event_date": "2026-10-07",
+      "original_title": "McDonald’s sued over AI tool that recommends prices to US franchisees",
+      "source_name": "Associated Press",
+      "source_url": "https://apnews.com/article/mcdonalds-ai-pricing-lawsuit-competition-franchisees-bb78e854b11b54b394603effa7550bbe",
+      "legal_status": "诉讼",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    },
+    {
+      "event_id": "uk-google-play-trial",
+      "working_title": "Google Play Store英国逾10亿英镑消费者集体诉讼开庭",
+      "jurisdiction": "英国",
+      "event_date": "2026-10-06",
+      "original_title": "Google fights £1 billion UK lawsuit over app store fees in latest Big Tech case",
+      "source_name": "Reuters",
+      "source_url": "https://www.reuters.com/business/retail-consumer/google-fights-1-billion-uk-lawsuit-over-app-store-fees-latest-big-tech-case-2026-10-06/",
+      "legal_status": "竞争诉讼",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    },
+    {
+      "event_id": "us-ai-streaming-sentence",
+      "working_title": "美国首起AI辅助音乐流媒体欺诈刑事案被告获刑18个月",
+      "jurisdiction": "美国",
+      "event_date": "2026-10-06",
+      "original_title": "North Carolina Man Sentenced To 18 Months In Prison For Super Intelligence-Assisted Music Streaming Fraud",
+      "source_name": "U.S. DOJ / SDNY",
+      "source_url": "https://www.justice.gov/usao-sdny/pr/north-carolina-man-sentenced-18-months-prison-super-intelligence-assisted-music",
+      "legal_status": "刑事判决",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    },
+    {
+      "event_id": "us-arizona-courts-breach",
+      "working_title": "亚利桑那州法院系统披露130万人个人信息被窃",
+      "jurisdiction": "美国",
+      "event_date": "2026-10-06",
+      "original_title": "Personal information for over 1 million people stolen in a cyberattack on Arizona’s court system",
+      "source_name": "Associated Press",
+      "source_url": "https://apnews.com/article/arizona-court-system-cyberattack-67a83df1d6c80cdf07ee2c208bf6e676",
+      "legal_status": "重大数据泄露",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    },
+    {
+      "event_id": "uk-asos-breach",
+      "working_title": "ASOS第三方通信平台遭未授权访问并可能暴露客户基本个人信息",
+      "jurisdiction": "英国",
+      "event_date": "2026-10-06",
+      "original_title": "Unauthorized ASOS Notification",
+      "source_name": "ASOS / NCSC",
+      "source_url": "https://www.asos.com/us/customer-care/engagement/unauthorized-asos-notification/",
+      "legal_status": "重大安全事件",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    },
+    {
+      "event_id": "dk-cpr-breach",
+      "working_title": "丹麦CPR系统约880万登记公民信息遭未授权访问",
+      "jurisdiction": "丹麦",
+      "event_date": "2026-10-05",
+      "original_title": "Omfattende uautoriseret adgang til borgeres CPR-oplysninger",
+      "source_name": "Det Centrale Personregister",
+      "source_url": "https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger",
+      "legal_status": "重大数据泄露",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    },
+    {
+      "event_id": "wikimedia-openai-agents",
+      "working_title": "新增进展：Wikimedia确认OpenAI环境中的“失控”智能体曾大量访问并尝试利用其平台",
+      "jurisdiction": "美国／全球",
+      "event_date": "2026-10-05",
+      "original_title": "OpenAI “rogue” agent activities found on Wikimedia projects",
+      "source_name": "Wikimedia Foundation",
+      "source_url": "https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/",
+      "legal_status": "AI安全新增进展",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    },
+    {
+      "event_id": "atlassian-cve",
+      "working_title": "Atlassian发布多款Data Center产品关键任意文件访问漏洞修复",
+      "jurisdiction": "全球",
+      "event_date": "2026-10-05",
+      "original_title": "CVE-2026-21589 - Arbitrary File Access Vulnerability impacts Multiple Products",
+      "source_name": "Atlassian",
+      "source_url": "https://confluence.atlassian.com/security/cve-2026-21589-arbitrary-file-access-vulnerability-impacts-multiple-products-1870495748.html",
+      "legal_status": "关键安全公告",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    },
+    {
+      "event_id": "jp-advantest-breach",
+      "working_title": "新增进展：Advantest确认2月勒索攻击窃取多类个人身份信息",
+      "jurisdiction": "日本／全球",
+      "event_date": "2026-10-06",
+      "original_title": "Advantest confirms personal information stolen in ransomware attack",
+      "source_name": "BleepingComputer",
+      "source_url": "https://www.bleepingcomputer.com/news/security/advantest-confirms-personal-information-stolen-in-ransomware-attack/",
+      "legal_status": "数据泄露新增披露",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    },
+    {
+      "event_id": "us-spacex-ai-finance",
+      "working_title": "SpaceX据报拟筹400亿美元购买Nvidia AI芯片",
+      "jurisdiction": "美国",
+      "event_date": "2026-10-06",
+      "original_title": "SpaceX seeks $40 billion financing led by Apollo to buy Nvidia chips, FT reports",
+      "source_name": "Reuters",
+      "source_url": "https://www.reuters.com/business/media-telecom/spacex-seeks-40-billion-buy-nvidia-chips-ft-reports-2026-10-06/",
+      "legal_status": "AI基础设施融资",
+      "dedup": {
+        "previous_day": false,
+        "seven_day": false,
+        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+      }
+    }
+  ],
+  "coverage": {
+    "domestic_official_media": {
+      "status": "checked",
+      "notes": "国庆假期新增高价值大陆监管司法事项偏少；台湾数字发展主管部门AI算力中心项目有新增程序进展"
+    },
+    "japan": {
+      "status": "checked",
+      "language": "ja",
+      "notes": "PPC本国语言原始文件已核验"
+    },
+    "korea": {
+      "status": "checked",
+      "language": "ko",
+      "notes": "未发现优于现有候选且具明确新增法律动作的事项"
+    },
+    "vietnam": {
+      "status": "checked",
+      "language": "vi",
+      "notes": "未发现优于现有候选且具明确新增法律动作的事项"
+    },
+    "singapore": {
+      "status": "checked",
+      "notes": "MAS正式AI指引、数字基础设施法案通过、政府AI智能体议会答复"
+    },
+    "australia": {
+      "status": "checked",
+      "notes": "OAIC智能眼镜应用正式调查"
+    },
+    "eu_uk": {
+      "status": "checked",
+      "notes": "欧委会公民倡议登记、芬兰数据中心环评监管、英国竞争诉讼与ASOS事件"
+    },
+    "us": {
+      "status": "checked",
+      "notes": "司法诉讼、刑事判决、法院系统泄露、AI基础设施融资"
+    },
+    "cybersecurity": {
+      "status": "checked",
+      "notes": "保留大规模泄露、AI智能体新增事实和关键企业安全公告；未用一般漏洞新闻凑数"
+    }
+  },
   "next_actions": [
-    "完成近72小时多源巡检",
-    "与2026-10-06及近7日简报做事件级去重",
-    "完成终检后发布并验收Pages"
+    "完成19条正文与brief-insight",
+    "重新扫描最近1—2小时重大官方监管司法事项",
+    "写入前重读最新main并原子更新新闻相关文件",
+    "检查Pages部署及线上功能"
   ],
   "last_error": null,
   "publication": {
