@@ -15,9 +15,9 @@
 <div class="tech-shell">
   <section>
     <div class="latest-lesson">
-      <div class="lesson-no">20</div>
-      <div><div class="tech-kicker">LATEST LESSON · 2026.10.05</div><h2>评测：我们究竟怎样知道一个模型“变好了”？</h2><p>理解模型评测怎样固定测试对象、任务、评分规则与比较条件，并区分评测分数、真实业务表现与合规证明力。</p></div>
-      <a href="tech-basics/2026-10-05-evaluation.html">阅读最新一课 →</a>
+      <div class="lesson-no">21</div>
+      <div><div class="tech-kicker">LATEST LESSON · 2026.10.06</div><h2>后训练：模型预训练完成以后，为什么还要继续训练？</h2><p>理解预训练之后模型怎样通过监督微调、偏好学习和强化学习等后续阶段进一步调整行为，以及为什么这些阶段应当分别留痕和审计。</p></div>
+      <a href="tech-basics/2026-10-06-post-training.html">阅读最新一课 →</a>
     </div>
   </section>
 
@@ -30,7 +30,7 @@
     <div class="course-map-frame">
       <svg class="course-map-svg" viewBox="0 0 1200 680" role="img" aria-labelledby="course-map-title course-map-desc">
         <title id="course-map-title">网信法技术基础八模块课程导图</title>
-        <desc id="course-map-desc">八个模块分四个阶段推进，第二模块 Transformer 已完成，第三模块模型训练与对齐正在推进，第20课为评测，本模块已完成6课。</desc>
+        <desc id="course-map-desc">八个模块分四个阶段推进，第二模块 Transformer 与第三模块模型训练与对齐均已完成，第21课为后训练；下一课进入第四模块模型能力与推理。</desc>
         <path class="map-line" d="M275 340 H315 M585 340 H625 M895 340 H935"/>
         <path class="map-line" d="M295 330 l20 10 -20 10 M605 330 l20 10 -20 10 M915 330 l20 10 -20 10"/>
 
@@ -50,11 +50,11 @@
         <text class="map-module-no" x="370" y="151">MODULE 02 · DONE</text>
         <text class="map-module-title" x="370" y="180">Transformer</text>
         <text class="map-module-text" x="370" y="207"><tspan x="370">08 Attention · 09 Self-Attention</tspan><tspan x="370" dy="22">10 Q/K/V · 11 多头注意力</tspan><tspan x="370" dy="22">12 位置编码 · 13 前馈/残差</tspan><tspan x="370" dy="22">14 Decoder-only</tspan></text>
-        <rect class="map-module active" x="352" y="295" width="211" height="125" rx="10"/>
-        <text class="map-module-no" x="370" y="321">MODULE 03 · IN PROGRESS</text><text class="map-module-title" x="370" y="350">模型训练与对齐</text>
-        <text class="map-module-text" x="370" y="377"><tspan x="370">15 数据集 · 16 SFT · 17 RLHF/DPO</tspan><tspan x="370" dy="22">18 合成数据 · 19 蒸馏 · 20 评测 · 后训练</tspan></text>
-        <rect class="map-module" x="352" y="440" width="211" height="125" rx="10"/>
-        <text class="map-module-no" x="370" y="466">MODULE 04</text><text class="map-module-title" x="370" y="495">模型能力与推理</text>
+        <rect class="map-module" x="352" y="295" width="211" height="125" rx="10"/>
+        <text class="map-module-no" x="370" y="321">MODULE 03 · DONE</text><text class="map-module-title" x="370" y="350">模型训练与对齐</text>
+        <text class="map-module-text" x="370" y="377"><tspan x="370">15 数据集 · 16 SFT · 17 RLHF/DPO</tspan><tspan x="370" dy="22">18 合成数据 · 19 蒸馏 · 20 评测 · 21 后训练</tspan></text>
+        <rect class="map-module active" x="352" y="440" width="211" height="125" rx="10"/>
+        <text class="map-module-no" x="370" y="466">MODULE 04 · NEXT</text><text class="map-module-title" x="370" y="495">模型能力与推理</text>
         <text class="map-module-text" x="370" y="522"><tspan x="370">上下文 · 采样 · 幻觉 · 推理模型</tspan><tspan x="370" dy="22">KV Cache · MoE · 多模态</tspan></text>
 
         <rect class="map-stage" x="640" y="35" width="255" height="610" rx="12"/>
@@ -78,13 +78,14 @@
         <text class="map-module-text" x="990" y="417"><tspan x="990">可解释 · 可审计 · 责任链</tspan><tspan x="990" dy="22">数据出境 · 平台化</tspan><tspan x="990" dy="22">互操作 · 行政使用</tspan><tspan x="990" dy="22">持续监管</tspan></text>
       </svg>
     </div>
-    <p class="course-map-note">当前进度：第20课，正在推进“模型训练与对齐”模块，本模块已完成6课。已经讲清数据集、SFT、RLHF / DPO、合成数据、蒸馏与评测，下一课进入后训练，理解预训练完成以后模型为什么还要继续训练。</p>
+    <p class="course-map-note">当前进度：第21课，已完成“模型训练与对齐”模块，共7课。已经讲清数据集、SFT、RLHF / DPO、合成数据、蒸馏、评测与后训练。下一课进入“模型能力与推理”，从上下文窗口开始，理解模型一次究竟能处理多少上下文。</p>
     <div class="logic-summary"><strong>最终目标不是背术语，而是能沿技术链条追责任。</strong><p>面对一个AI法律问题时，能够具体追问：数据在哪一步被转换？模型在哪一步计算？谁给了系统权限？是否连接外部服务？风险来自模型、工具调用还是基础设施？</p></div>
   </section>
 
   <section class="lesson-section tech-history">
     <div class="tech-history-head"><h2>历史课程</h2><span>按课程顺序持续更新</span></div>
     <div class="tech-history-list">
+      <a class="tech-history-item" href="tech-basics/2026-10-06-post-training.html"><div class="tech-history-no">21</div><div><div class="tech-history-title">后训练：模型预训练完成以后，为什么还要继续训练？</div><div class="tech-history-desc">理解预训练之后模型怎样通过监督微调、偏好学习和强化学习等后续阶段进一步调整行为，并区分基础能力形成与后续行为塑造之间的训练记录和责任链。</div></div><div class="tech-history-date">2026.10.06</div></a>
       <a class="tech-history-item" href="tech-basics/2026-10-05-evaluation.html"><div class="tech-history-no">20</div><div><div class="tech-history-title">评测：我们究竟怎样知道一个模型“变好了”？</div><div class="tech-history-desc">理解模型评测怎样固定测试对象、任务、评分规则与比较条件，并区分评测分数、真实业务表现与合规证明力。</div></div><div class="tech-history-date">2026.10.05</div></a>
       <a class="tech-history-item" href="tech-basics/2026-10-04-distillation.html"><div class="tech-history-no">19</div><div><div class="tech-history-title">蒸馏：一个模型怎样帮助训练另一个模型？</div><div class="tech-history-desc">理解教师模型如何通过概率关系、答案、标签或解释为学生提供训练信号，并区分蒸馏、合成数据与直接参数复制。</div></div><div class="tech-history-date">2026.10.04</div></a>
       <a class="tech-history-item" href="tech-basics/2026-10-02-synthetic-data.html"><div class="tech-history-no">18</div><div><div class="tech-history-title">合成数据：模型生成的内容怎样成为训练材料？</div><div class="tech-history-desc">理解模型生成的候选内容怎样经过筛选、去重和质量检查成为训练数据，并追溯种子材料、生成模型、过滤规则和数据集版本之间的来源链。</div></div><div class="tech-history-date">2026.10.02</div></a>
