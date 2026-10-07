@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-07",
+  "column": "brief",
+  "state": "draft",
+  "page": "articles/2026-10-07-tech-law-brief.html",
+  "updated_at": "2026-10-07T20:36:00+08:00",
+  "base_main_sha": "ad272f7a5524c94949d77bb755e2e08df5ad810b",
+  "phase": "research",
+  "news_count": 0,
+  "items": [],
+  "coverage": {},
+  "next_actions": [
+    "完成近72小时多源巡检",
+    "与2026-10-06及近7日简报做事件级去重",
+    "完成终检后发布并验收Pages"
+  ],
+  "last_error": null,
+  "publication": {
+    "commit_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "online_check": null
+  }
+}
