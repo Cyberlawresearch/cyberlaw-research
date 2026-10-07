@@ -2,10 +2,14 @@
   "date": "2026-10-08",
   "column": "brief",
   "state": "draft",
-  "phase": "writing",
+  "phase": "publishing",
   "page": "articles/2026-10-08-tech-law-brief.html",
-  "news_count": 0,
+  "news_count": 10,
   "mode": "fact_only",
   "analysis_pending": true,
-  "note": "事实新闻试运行；扩展分析由后置任务完成。"
+  "malaysia_ai_bill": "verified: expected in early 2027, not 2028",
+  "publication": {
+    "article_written": false,
+    "current_edition_updated": false
+  }
 }
