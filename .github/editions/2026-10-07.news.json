@@ -3,7 +3,7 @@
   "column": "brief",
   "state": "verified",
   "page": "articles/2026-10-07-tech-law-brief.html",
-  "updated_at": "2026-10-07T21:40:49+08:00",
+  "updated_at": "2026-10-07T21:46:08+08:00",
   "base_main_sha": "1d6d7fbd762b81f094c03b8deb758b2864bd61c4",
   "phase": "publishing",
   "news_count": 19,
@@ -336,11 +336,16 @@
     }
   },
   "next_actions": [
-    "更新首页新闻卡片、briefs列表、archive新闻摘要",
-    "最后更新data/current-edition.json的brief指针和news_count",
-    "检查GitHub Pages部署与线上阅读功能"
+    "等待并检查修复后最新main提交的Pages部署",
+    "检查线上current-columns、背景与前瞻、关联阅读/专题时间线及桌面端和移动端阅读功能"
   ],
-  "last_error": null,
+  "last_error": {
+    "run_id": 37630603589,
+    "at": "2026-10-07T21:44:29+08:00",
+    "stage": "pre-deploy contextual reading/current-columns validation",
+    "detail": "Foreign-news layout exposed four analysis paragraphs because 前序背景 was duplicated in the main card and brief-insight.",
+    "resolution": "Removed only the duplicated visible 前序背景 paragraphs; verified background remains in brief-insight. All 19 cards now expose exactly three research-analysis paragraphs."
+  },
   "publication": {
     "commit_sha": null,
     "pages_run_id": null,
@@ -368,9 +373,10 @@
   },
   "final_page": {
     "path": "articles/2026-10-07-tech-law-brief.html",
-    "blob_sha": "d983c1fbcdd595c8f2207805e7555757df50455a",
+    "blob_sha": "73f962f366ad1b29958a0654b09ef216621923d7",
     "items": 19,
     "original_titles": 18,
-    "brief_insights": 19
+    "brief_insights": 19,
+    "analysis_columns_per_item": 3
   }
 }
