@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-07",
+  "column": "classic",
+  "status": "verified",
+  "state": "verified",
+  "phase": "deployment_check",
+  "book": "A. V. Dicey（戴雪）：《英国宪法研究导论》",
+  "bibliography": {
+    "author": "A. V. Dicey",
+    "originalTitle": "Introduction to the Study of the Law of the Constitution",
+    "publisher": "Macmillan and Co., Limited",
+    "year": "1915",
+    "edition": "第8版"
+  },
+  "base_main_sha": "a024e75ac51e9f7e0ae697ad24716760646a4a9f",
+  "target_path": "articles/2026-10-07-dicey-law-constitution.html",
+  "sources": [
+    "https://constitution.org/1-Constitution/cmt/avd/law_con.htm",
+    "https://oll.libertyfund.org/titles/michener-introduction-to-the-study-of-the-law-of-the-constitution-lf-ed",
+    "https://ndlsearch.ndl.go.jp/books/R100000002-I000006428121",
+    "https://pegasus.law.columbia.edu/record/1122890",
+    "https://search.worldcat.org/title/The-law-and-the-constitution/oclc/896469385",
+    "https://www.juspoliticum.com/articles/l%27oeuvre-d%27ivor-jennings-publiciste-anglais-du-xxe-siecle-519",
+    "https://www.cambridge.org/core/journals/cambridge-law-journal/article/dead-man-and-the-constitution/BDB9B937BAA94C2E56A6451E7CE0D30A"
+  ],
+  "verification": {
+    "complete_eighth_edition_text_systematically_checked": true,
+    "first_edition_metadata_checked": true,
+    "eighth_edition_metadata_checked": true,
+    "three_part_fifteen_chapter_structure_checked": true,
+    "1915_new_introduction_separated_from_earlier_body": true,
+    "history_deduplication": true,
+    "bibliography": true,
+    "representative_criticism": true,
+    "natural_chinese_reviewed": true,
+    "final_body_complete": true
+  },
+  "history_dedup": {
+    "passed": true,
+    "checked_against": [
+      "classics.html complete current index",
+      "classics-history.html exported issues 15-35",
+      "recent classic commits",
+      "repository search for Dicey/title"
+    ],
+    "selected_new_work": "A. V. Dicey, Introduction to the Study of the Law of the Constitution"
+  },
+  "summary": "Dicey以议会主权、法治和宪法惯例三组原则组织英国宪法：议会在法律上拥有最高立法权，行政强制须有法律依据并接受司法控制，大量不由法院直接执行的宪法惯例则通过政治压力及其与正式法律后果的连接维持。第8版新增1915年导论，对1911年《议会法》、行政法、联邦主义和公民投票作三十年后的复查。Jennings从现代行政裁量出发批评其法治论，Thomas Adams则在2026年重新指出其议会主权两部分之间的逻辑缝隙。",
+  "homepage_summary": "A. V. Dicey（戴雪）：《英国宪法研究导论》",
+  "classics_summary": "A. V. Dicey（戴雪）：《英国宪法研究导论》",
+  "archive_summary": "最新：A. V. Dicey（戴雪）：《英国宪法研究导论》",
+  "checked_at": "2026-10-07T20:02:03+08:00",
+  "last_error": null,
+  "publication": {
+    "deployment_claim": false,
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_result": null,
+    "live_checks": null
+  }
+}
