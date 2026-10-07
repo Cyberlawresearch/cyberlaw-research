@@ -1,11 +1,11 @@
 {
   "date": "2026-10-07",
   "column": "brief",
-  "state": "draft",
+  "state": "verified",
   "page": "articles/2026-10-07-tech-law-brief.html",
-  "updated_at": "2026-10-07T21:05:00+08:00",
+  "updated_at": "2026-10-07T21:40:49+08:00",
   "base_main_sha": "1d6d7fbd762b81f094c03b8deb758b2864bd61c4",
-  "phase": "writing",
+  "phase": "publishing",
   "news_count": 19,
   "items": [
     {
@@ -279,18 +279,18 @@
       }
     },
     {
-      "event_id": "us-spacex-ai-finance",
-      "working_title": "SpaceX据报拟筹400亿美元购买Nvidia AI芯片",
+      "event_id": "us-doj-si-terminology",
+      "working_title": "美国司法部要求官方文件尽量以“super intelligence”替代“artificial intelligence”",
       "jurisdiction": "美国",
       "event_date": "2026-10-06",
-      "original_title": "SpaceX seeks $40 billion financing led by Apollo to buy Nvidia chips, FT reports",
+      "original_title": "US Justice Dept tells staff to call AI 'super intelligence' under Trump order",
       "source_name": "Reuters",
-      "source_url": "https://www.reuters.com/business/media-telecom/spacex-seeks-40-billion-buy-nvidia-chips-ft-reports-2026-10-06/",
-      "legal_status": "AI基础设施融资",
+      "source_url": "https://www.reuters.com/legal/litigation/us-justice-dept-tells-staff-call-ai-super-intelligence-under-trump-order-2026-10-06/",
+      "legal_status": "联邦部门内部正式指令",
       "dedup": {
         "previous_day": false,
         "seven_day": false,
-        "reason": "经2026-10-01至2026-10-06标题与事件链回查，未发现同一新增动作；Wikimedia和Advantest按新增进展处理"
+        "reason": "发布前最近1—2小时复扫发现；近7日简报未收录同一行政术语执行动作"
       }
     }
   ],
@@ -336,10 +336,9 @@
     }
   },
   "next_actions": [
-    "完成19条正文与brief-insight",
-    "重新扫描最近1—2小时重大官方监管司法事项",
-    "写入前重读最新main并原子更新新闻相关文件",
-    "检查Pages部署及线上功能"
+    "更新首页新闻卡片、briefs列表、archive新闻摘要",
+    "最后更新data/current-edition.json的brief指针和news_count",
+    "检查GitHub Pages部署与线上阅读功能"
   ],
   "last_error": null,
   "publication": {
@@ -347,5 +346,31 @@
     "pages_run_id": null,
     "pages_conclusion": null,
     "online_check": null
+  },
+  "checked_at": "2026-10-07T21:40:49+08:00",
+  "last_news_scan_at": "2026-10-07T21:33:42+08:00",
+  "distribution": {
+    "domestic": 1,
+    "foreign": 18
+  },
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  },
+  "final_page": {
+    "path": "articles/2026-10-07-tech-law-brief.html",
+    "blob_sha": "d983c1fbcdd595c8f2207805e7555757df50455a",
+    "items": 19,
+    "original_titles": 18,
+    "brief_insights": 19
   }
 }
