@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-08",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-08-chander-le-data-nationalism.html",
+  "selection": "Anupam Chander; Uyên P. Lê, Data Nationalism",
+  "bibliography": {
+    "type": "article",
+    "author": "Anupam Chander; Uyên P. Lê",
+    "originalTitle": "Data Nationalism",
+    "journal": "Emory Law Journal",
+    "year": "2015",
+    "volume": "64",
+    "issue": "3",
+    "pages": "677–739",
+    "doi": "",
+    "url": "https://scholarlycommons.law.emory.edu/elj/vol64/iss3/2/",
+    "cnTitle": "数据民族主义"
+  },
+  "versions": {
+    "formal": "Emory Law Journal, Vol.64, Issue 3 (2015), pp.677–739",
+    "working_paper": ""
+  },
+  "sources": [
+    "https://scholarlycommons.law.emory.edu/elj/vol64/iss3/2/",
+    "https://scholarlycommons.law.emory.edu/elj/vol64/iss3/",
+    "https://www.chander.org/articles",
+    "https://scholarlycommons.law.emory.edu/elj-online/25/"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true,
+    "historical_country_law_caveat": true,
+    "direct_response_verified": true
+  },
+  "related_reading": [
+    "articles/2026-09-15-schwartz-eu-us-privacy-collision.html",
+    "articles/2026-09-08-richards-dangers-surveillance.html"
+  ],
+  "timeline": null,
+  "body_length": 9469,
+  "base_main_sha": "8402db9c571572e21e75e35f263906776fd2a966",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}
