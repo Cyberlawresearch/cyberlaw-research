@@ -67,7 +67,7 @@ def validate(m):
   assert 0<=(day-date.fromisoformat(n['data-event-date'])).days<=2,n['id']
   c=json.loads(n['data-citation']);assert c['originalTitle'] and c['url']
  titles=[normalized(n.h3.get_text()) for n in news];assert len(titles)==len(set(titles))
- works=docs[3].select('.brief-item');assert len(works)==m['newworks_count']==5
+ works=docs[3].select('.brief-item');assert len(works)==m['newworks_count']==3
  previous=[]
  for folder in ['articles','papers','new-works']:
   for p in (ROOT/folder).glob('*.html'):
@@ -128,7 +128,7 @@ def browser_check(m,base,output):
     assert 'login.html' not in page.url and page.locator('main h1').is_visible()
     assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1'),path
     if i in [0,3]:
-     count=m['news_count'] if i==0 else 5
+     count=m['news_count'] if i==0 else m['newworks_count']
      assert page.locator('.brief-item').count()==count
      assert page.locator('.brief-item [data-act="related"]').count()==count
     else:assert page.locator('[data-act="cite"]').count()>=1
