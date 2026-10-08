@@ -4,16 +4,16 @@
   "state": "verified",
   "phase": "published",
   "page": "articles/2026-10-08-tech-law-brief.html",
-  "news_count": 20,
-  "domestic_count": 3,
+  "news_count": 21,
+  "domestic_count": 4,
   "distribution": {
-    "domestic": 3,
+    "domestic": 4,
     "foreign": 17
   },
   "mode": "fact_plus_analysis",
   "analysis_pending": false,
-  "checked_at": "2026-10-08T21:05:00+08:00",
-  "last_news_scan_at": "2026-10-08T21:02:00+08:00",
+  "checked_at": "2026-10-08T21:28:00+08:00",
+  "last_news_scan_at": "2026-10-08T21:25:00+08:00",
   "checks": {
     "timeliness": true,
     "sources": true,
@@ -26,7 +26,10 @@
     "prior_background_checked": true,
     "analysis_reviewed": true,
     "background_outlook": true,
-    "foreign_layout": true
+    "foreign_layout": true,
+    "domestic_official_scan": true,
+    "domestic_media_channel_scan": true,
+    "domestic_major_omission_review": true
   },
   "freshness_72h_verified_ids": [],
   "orphan_item": {
@@ -37,11 +40,30 @@
   "domestic_revision": {
     "status": "completed",
     "added": [
+      "人社部就《新就业形态劳动者权益保障办法》公开征求意见",
       "DeepSeek据报新一轮融资认购额超过800亿元",
       "腾讯据报考虑发行至多50亿美元境外债券",
       "中国加快建设AI数据中心"
     ],
+    "added_without_replacement": 1,
     "replaced_lower_priority_foreign_items": 3
+  },
+  "domestic_media_review": {
+    "status": "completed",
+    "primary_discovery": [
+      "新华社/新华网",
+      "人民网",
+      "央视新闻",
+      "中国青年报",
+      "21世纪经济报道",
+      "经济观察网"
+    ],
+    "mohrss_draft": {
+      "date": "2026-10-08",
+      "comment_deadline": "2026-11-08",
+      "source": "https://www.news.cn/politics/20261008/6e01730616fc4900b2892af1e904914e/c.html",
+      "status": "included"
+    }
   },
   "malaysia_ai_bill": {
     "status": "verified_but_excluded",
@@ -55,6 +77,7 @@
     "archive_updated": true,
     "current_edition_updated": true,
     "render_correction_asset": "assets/oct8-live-correction.js",
+    "build_correction_script": "scripts/apply_news_corrections.py",
     "analysis_assets": [
       "assets/oct8-a1.json",
       "assets/oct8-a2.json",
@@ -64,7 +87,7 @@
   },
   "analysis": {
     "status": "completed",
-    "completed_at": "2026-10-08T21:05:00+08:00",
+    "completed_at": "2026-10-08T21:28:00+08:00",
     "task": "网信法新闻分析补充",
     "fields": [
       "法治研判",
@@ -73,5 +96,11 @@
       "background",
       "outlook"
     ]
+  },
+  "count_policy": {
+    "minimum_publishable": 10,
+    "recommended_when_available": 20,
+    "maximum": null,
+    "rule": "质量、时效和去重优先；达到10条高质量新闻即可发布，重要新闻超过20条时全部保留。"
   }
 }

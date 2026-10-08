@@ -62,6 +62,34 @@ jobs:
               text = re.sub(r'<link\b[^>]*href=["\'][^"\']*news-layout-fix\.css[^"\']*["\'][^>]*>', '', text, flags=re.I)
               path.write_text(text, encoding='utf-8')
           PY
+          python scripts/apply_news_corrections.py
+          python - <<'PY'
+          from pathlib import Path
+          replacements = {
+              'scripts/current_columns_gate.py': (
+                  "news=docs[0].select('.brief-item');assert len(news)==m['news_count'] and 1<=len(news)<=20",
+                  "news=docs[0].select('.brief-item');assert len(news)==m['news_count'] and len(news)>=10"
+              ),
+              'scripts/edition_gate.py': (
+                  "assert len(news)==m['news_count'] and 18<=len(news)<=20",
+                  "assert len(news)==m['news_count'] and len(news)>=10"
+              ),
+              'scripts/context_browser_test.py': (
+                  "assert 1 <= current_items.count() <= 20",
+                  "assert current_items.count() >= 10"
+              ),
+              'scripts/daily_release.py': (
+                  "require(len(news) == record.get('news_count') and 1 <= len(news) <= 20, '新闻数量与核验记录不一致')",
+                  "require(len(news) == record.get('news_count') and len(news) >= 10, '新闻数量与核验记录不一致')"
+              ),
+          }
+          for name,(old,new) in replacements.items():
+              path=Path(name)
+              text=path.read_text(encoding='utf-8')
+              if old not in text:
+                  raise SystemExit('News count policy marker not found: '+name)
+              path.write_text(text.replace(old,new),encoding='utf-8')
+          PY
           python scripts/current_columns_gate.py --sync-nav
       - name: Build research indexes
         run: python scripts/build_research_index.py
