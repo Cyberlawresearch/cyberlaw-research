@@ -1,15 +1,43 @@
 {
   "date": "2026-10-08",
   "column": "brief",
-  "state": "draft",
-  "phase": "publishing",
+  "state": "verified",
+  "phase": "published",
   "page": "articles/2026-10-08-tech-law-brief.html",
-  "news_count": 10,
+  "news_count": 20,
+  "domestic_count": 0,
   "mode": "fact_only",
   "analysis_pending": true,
-  "malaysia_ai_bill": "verified: expected in early 2027, not 2028",
+  "checks": {
+    "timeliness": true,
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "event_dedup_previous_day": true,
+    "dedup_7d": true,
+    "natural_chinese": true,
+    "late_rescan": true
+  },
+  "freshness_72h_verified_ids": [],
+  "orphan_item": {
+    "title": "欧洲委员会与微软签署人工智能和数字治理合作框架",
+    "status": "merged",
+    "item_id": "research-item-13"
+  },
+  "malaysia_ai_bill": {
+    "status": "verified_but_excluded",
+    "verified_timeline": "expected in early 2027, not 2028",
+    "reason": "By final publication it was outside the ordinary 72-hour window and had no new substantive development."
+  },
   "publication": {
-    "article_written": false,
-    "current_edition_updated": false
+    "article_written": true,
+    "index_updated": true,
+    "briefs_updated": true,
+    "archive_updated": true,
+    "current_edition_updated": true
+  },
+  "analysis": {
+    "status": "pending",
+    "task": "网信法新闻分析补充"
   }
 }
