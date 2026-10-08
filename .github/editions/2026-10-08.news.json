@@ -5,9 +5,15 @@
   "phase": "published",
   "page": "articles/2026-10-08-tech-law-brief.html",
   "news_count": 20,
-  "domestic_count": 0,
-  "mode": "fact_only",
-  "analysis_pending": true,
+  "domestic_count": 3,
+  "distribution": {
+    "domestic": 3,
+    "foreign": 17
+  },
+  "mode": "fact_plus_analysis",
+  "analysis_pending": false,
+  "checked_at": "2026-10-08T21:05:00+08:00",
+  "last_news_scan_at": "2026-10-08T21:02:00+08:00",
   "checks": {
     "timeliness": true,
     "sources": true,
@@ -16,13 +22,26 @@
     "event_dedup_previous_day": true,
     "dedup_7d": true,
     "natural_chinese": true,
-    "late_rescan": true
+    "late_rescan": true,
+    "prior_background_checked": true,
+    "analysis_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
   },
   "freshness_72h_verified_ids": [],
   "orphan_item": {
     "title": "欧洲委员会与微软签署人工智能和数字治理合作框架",
     "status": "merged",
     "item_id": "research-item-13"
+  },
+  "domestic_revision": {
+    "status": "completed",
+    "added": [
+      "DeepSeek据报新一轮融资认购额超过800亿元",
+      "腾讯据报考虑发行至多50亿美元境外债券",
+      "中国加快建设AI数据中心"
+    ],
+    "replaced_lower_priority_foreign_items": 3
   },
   "malaysia_ai_bill": {
     "status": "verified_but_excluded",
@@ -34,10 +53,25 @@
     "index_updated": true,
     "briefs_updated": true,
     "archive_updated": true,
-    "current_edition_updated": true
+    "current_edition_updated": true,
+    "render_correction_asset": "assets/oct8-live-correction.js",
+    "analysis_assets": [
+      "assets/oct8-a1.json",
+      "assets/oct8-a2.json",
+      "assets/oct8-a3.json",
+      "assets/oct8-a4.json"
+    ]
   },
   "analysis": {
-    "status": "pending",
-    "task": "网信法新闻分析补充"
+    "status": "completed",
+    "completed_at": "2026-10-08T21:05:00+08:00",
+    "task": "网信法新闻分析补充",
+    "fields": [
+      "法治研判",
+      "智库选题参考",
+      "论文选题",
+      "background",
+      "outlook"
+    ]
   }
 }
