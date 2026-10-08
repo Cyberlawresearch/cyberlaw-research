@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>第22课｜上下文窗口：模型一次究竟能处理多少内容？｜网信法技术基础</title><link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/></head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-10-07-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-10-07-wachter-mittelstadt-floridi-right-to-explanation.html">域外法学论文精读</a><a href="../articles/2026-10-07-dicey-law-constitution.html">法学经典著作</a><a href="../articles/2026-10-06-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 22 · MODEL CAPABILITIES &amp; INFERENCE · 2026.10.08</div><h1>上下文窗口：模型一次究竟能处理多少内容？</h1><p class="tech-lead">今日问题：为什么模型可以分析长合同，却可能在很长的对话中忘掉此前的约定？“支持长上下文”究竟保证了什么？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus">
+<div><strong>它是什么</strong><p><b>上下文窗口（context window）</b>是模型在一次生成过程中能够处理的上下文容量上限，通常以 Token 数量表示。上下文可以包括当前问题、系统指令、此前对话以及放入请求的材料。它决定“一次能放进多少内容”，不直接决定“其中每条信息能否被准确理解”。</p></div>
+<div><strong>一个直观例子</strong><p>把模型想成正在桌前办理案件的助理。桌面能摊开的卷宗页数有限：新的文件、谈话记录和待回答的问题，都要占据桌面。文件过多时，必须删减、分批阅读或先做摘要。桌面变大，只意味着可以同时摆放更多材料，不意味着助理不会漏看关键条款。</p></div>
+</section>
+<section class="lesson-section"><h2>窗口怎样被占用：一张“容量分配图”</h2>
+<div class="visual-board" role="group" aria-label="以8000 Token总预算为例的上下文分配流程"><div class="visual-title">假设某项服务本次总共安排 8,000 Token 预算（仅为讲解数字，非任何特定模型参数）</div>
+<div class="flow">
+<div class="flow-box"><strong>系统说明</strong><span>600 Token：角色与任务要求</span></div><div class="flow-arrow">+</div>
+<div class="flow-box"><strong>卷宗与提问</strong><span>5,900 Token：材料和当前问题</span></div><div class="flow-arrow">+</div>
+<div class="flow-box"><strong>对话记录</strong><span>500 Token：之前说过的话</span></div><div class="flow-arrow">+</div>
+<div class="flow-box"><strong>回答预留</strong><span>1,000 Token：准备生成的内容</span></div>
+</div>
+<p class="tiny-note">600 + 5,900 + 500 + 1,000 = 8,000。这里以“输入与生成共享总容量”的常见情形示意；实际模型还可能设置独立的最大输入、最大输出限制，部分推理模型也要为内部推理预留容量。应以具体模型和服务文档为准。<sup><a href="#s1">[1]</a></sup></p></div>
+<p>模型读取的不是“页”，而是 Token。中文字符、英文单词、数字、标点等会按各自的分词方式被拆成数量不等的 Token。因此，不能把“8,000 Token”直接换算成固定的中文篇幅。前面讲过的 Token 课程解释了这种拆分方式。</p>
+<p>当请求超出限制时，系统可能直接报错，也可能按照预设规则截断较早的对话、删去部分材料，或者先摘要再继续；<b>这些是应用程序采取的处理方式，不是所有模型都会自动执行的动作。</b>如需处理一份超长判决书，可以分段输入并保留段落编号，但分段以后还需要核对跨段事实和引用，不能认为答案天然等于对全文的完整审查。Hugging Face 的工具文档也将“截断到最大长度”列为一种明确配置的处理策略。<sup><a href="#s2">[2]</a></sup></p>
+<div class="law-bridge"><h3>新词备注：长上下文与截断</h3><p><b>长上下文</b>是相对于较短窗口而言的更大处理容量，并非统一的数值等级。<b>截断</b>就是为了满足长度上限而舍弃一部分输入；舍弃哪一部分取决于具体配置。下一课会讲“采样”：模型在多个可能的后续输出之间怎样选择。</p></div>
+<p>还有一个更重要的区别：<b>“放得进去”不等于“用得准确”。</b>2024年发表于《Transactions of the Association for Computational Linguistics》的研究发现，在其测试的多文档问答和信息检索任务中，部分模型对上下文开头或结尾的关键信息更敏感，处于中间的信息反而更容易被忽略。这通常被称为“Lost in the Middle”现象，但不能据此推断所有模型、所有任务都有同等程度的问题。<sup><a href="#s3">[3]</a></sup></p>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“窗口有多大，模型就能记住多长时间。”窗口只描述一次请求能够利用的上下文范围，不等于跨会话的永久记忆。长期保存信息通常依靠应用程序另行管理。</span></div>
+<div class="myth"><b>误解 02</b><span>“支持百万 Token，就能准确审完百万 Token 的合同。”容量上限不是正确率承诺；相关条款的位置、问题设计、材料质量和模型能力都可能影响结果。</span></div>
+<div class="myth"><b>误解 03</b><span>“超出窗口后，系统一定自动记下重点。”有的服务拒绝请求，有的截断，有的摘要或检索补充；具体处理机制需要逐项核实。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>证据完整性不能只看“上传成功”</h3>
+<p>将案件卷宗、行政执法材料或企业内部文件交给模型分析时，应区分三个事实：材料是否成功进入系统，哪些内容实际进入当次模型上下文，模型是否正确引用并使用相关部分。若系统自动删减或摘要材料，遗漏的证据可能改变结论；即使全部放进窗口，也仍可能出现漏读。</p>
+<p>因此，使用大模型辅助法律判断时，适合保留原始材料与分段编号、当次实际输入范围、截断或摘要规则、所用模型版本及关键引用的回查结果。究竟产生何种法律义务仍取决于适用法律和使用场景，不能仅凭技术容量得出合规结论。</p></div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>上下文截断对自动化行政决定的证据基础有何影响？</h3><p>研究政务智能问答或辅助决定系统在超长案卷中删减事实材料的方式，如何影响理由说明、程序记录与当事人对关键依据的质疑。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>长文档人工智能应用应怎样检验“关键材料未遗漏”？</h3><p>设计覆盖开头、中部和结尾证据位置的测试，并要求记录输入范围、分段策略、截断日志和关键引文回查结果。</p></div>
+</div></section>
+<section class="lesson-section"><h2>原始材料</h2><ol class="source-links">
+<li id="s1"><a href="https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them">OpenAI, Understanding and counting tokens</a>。介绍 Token 计量、上下文窗口、输出限制与请求超长时的常见处理方向。</li>
+<li id="s2"><a href="https://huggingface.co/docs/transformers/main/pad_truncation">Hugging Face, Transformers: Padding and truncation</a>。说明模型最大输入长度与截断策略需要在工具层明确配置。</li>
+<li id="s3"><a href="https://aclanthology.org/2024.tacl-1.9/">Nelson F. Liu et al., Lost in the Middle: How Language Models Use Long Contexts</a>, <i>Transactions of the Association for Computational Linguistics</i>, 12 (2024), 157–173, DOI: 10.1162/tacl_a_00638。研究关键信息位置对长上下文任务表现的影响。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第23课</small><p><b>采样：模型为什么同一道题可能给出不同回答？</b>下一课理解模型生成时怎样从候选 Token 中作出选择，以及不同采样设置如何影响输出。</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
