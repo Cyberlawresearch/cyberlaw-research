@@ -87,7 +87,7 @@ def verify_candidate(root, record, now):
     for identity, value in events.items():
         elapsed = now - timestamp(value)
         require(timedelta(0) <= elapsed <= timedelta(hours=72), '新闻不在发布时的72小时内：' + identity)
-    require(record.get('newworks_count') == 5, '研究新作必须为5项')
+    require(record.get('newworks_count') == 3, '研究新作必须为3项')
     return {k: record[k] for k in ('date', 'pages', 'news_count', 'newworks_count')}
 
 def update_entries(root, manifest):
