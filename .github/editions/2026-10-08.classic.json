@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-08",
+  "column": "classic",
+  "status": "verified",
+  "state": "verified",
+  "phase": "deployment_check",
+  "book": "Benjamin N. Cardozo（卡多佐）：《司法过程的性质》",
+  "bibliography": {
+    "author": "Benjamin N. Cardozo",
+    "originalTitle": "The Nature of the Judicial Process",
+    "publisher": "Yale University Press",
+    "year": "1928",
+    "edition": "1928年第六次印刷（1921年初版）"
+  },
+  "base_main_sha": "8a77fa42369712618d99c5b00707902cedc787ef",
+  "target_path": "articles/2026-10-08-cardozo-nature-judicial-process.html",
+  "sources": [
+    "https://constitution.org/1-Constitution/cmt/cardozo/jud_proc.htm",
+    "https://yalebooks.yale.edu/book/9780300000337/the-nature-of-the-judicial-process/",
+    "https://scholarship.law.duke.edu/lcp/vol13/iss2/10/",
+    "https://larc.cardozo.yu.edu/clr/vol1/iss1/9/",
+    "https://larc.cardozo.yu.edu/clr/vol1/iss1/8/",
+    "https://larc.cardozo.yu.edu/clr/vol2/iss3/5/"
+  ],
+  "verification": {
+    "complete_original_four_lectures_systematically_checked": true,
+    "sixth_printing_metadata_checked": true,
+    "four_lecture_structure_checked": true,
+    "cited_cases_checked_in_primary_text": true,
+    "history_deduplication": true,
+    "representative_criticism_sourced": true,
+    "natural_chinese_reviewed": true,
+    "digital_governance_extensions_distinguished": true,
+    "final_body_complete": true
+  },
+  "history_dedup": {
+    "passed": true,
+    "checked_against": [
+      "classics.html full current index",
+      "classics-history.html exported 15–35 index",
+      "recent main classic commits"
+    ],
+    "selected_new_work": "Benjamin N. Cardozo, The Nature of the Judicial Process"
+  },
+  "summary": "卡多佐区分日常法律适用与疑难案件的有限造法作用，分析逻辑、历史、交易习惯与社会利益对裁判的影响，再以先例、信赖和司法权限加以约束。Frank批评忽略初审事实审理，D’Amato质疑司法立法，Nagel追问法律与社会习惯的界限。",
+  "homepage_summary": "Benjamin N. Cardozo（卡多佐）：《司法过程的性质》",
+  "classics_summary": "Benjamin N. Cardozo（卡多佐）：《司法过程的性质》",
+  "archive_summary": "最新：Benjamin N. Cardozo（卡多佐）：《司法过程的性质》",
+  "checked_at": "2026-10-08T20:09:08+08:00",
+  "last_error": null,
+  "publication": {
+    "deployment_claim": false,
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_result": null,
+    "live_checks": null
+  }
+}
