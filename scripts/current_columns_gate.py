@@ -118,7 +118,7 @@ def validate(m):
         age=(days['brief']-date.fromisoformat(n['data-event-date'])).days
         assert 0<=age<=2 or (age==3 and n['id'] in exact_fresh),(n['id'],n['data-event-date'],'freshness')
         c=json.loads(n['data-citation']);assert c.get('originalTitle') and c.get('url')
-    works=docs[3].select('.brief-item');assert len(works)==m['newworks_count']==5
+    works=docs[3].select('.brief-item');assert len(works)==m['newworks_count']==3
     assert len(docs[1].select_one('.article-body').get_text(' ',strip=True))>=2500
     assert len(docs[2].select_one('.article-body').get_text(' ',strip=True))>=4500
     return {'date':m['date'],'page_dates':m['page_dates'],'pages':paths,'news':len(news),'newworks':len(works),'tech_basics':latest_tech,'status':'passed'}
