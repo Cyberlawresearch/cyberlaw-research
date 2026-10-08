@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-07",
+  "timezone": "Asia/Shanghai",
+  "column": "newworks",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-07-new-works.html",
+  "newworks_count": 3,
+  "checked_at": "2026-10-08T20:50:00+08:00",
+  "checks": {
+    "original_publication_pages_opened": true,
+    "bibliography": true,
+    "doi": true,
+    "repository_history_deduplication": true,
+    "original_titles": true,
+    "chinese_expression": true,
+    "related_reading_reviewed": true,
+    "timeline_reviewed": true
+  },
+  "related_reading": [],
+  "timeline": [],
+  "items": [
+    {
+      "cnTitle": "数字综合法案真的在减负吗：企业成本下降可能转化为监管与救济成本",
+      "author": "Antonio Davola、Lorenzo Rodio Nico",
+      "originalTitle": "Who Bears the Burden? The Digital Omnibus and the Redistribution of Supervisory Costs",
+      "journal": "European Journal of Risk Regulation",
+      "year": "2026",
+      "volume": "",
+      "issue": "",
+      "pages": "1–22",
+      "articleNumber": "",
+      "doi": "10.1017/err.2026.10157",
+      "published_online": "2026-10-06",
+      "url": "https://doi.org/10.1017/err.2026.10157"
+    },
+    {
+      "cnTitle": "长期人机互动需要什么规则：亚洲法域中的关系型AI治理",
+      "author": "Ravi Kant、Raneeta Pal",
+      "originalTitle": "Relational Protocols for Human–Machine Dialogue in the Age of Co-developmental AI: Legal, Social, and Cultural Perspectives in Asia",
+      "journal": "Asian Journal of Law and Society",
+      "year": "2026",
+      "volume": "",
+      "issue": "",
+      "pages": "1–14",
+      "articleNumber": "",
+      "doi": "10.1017/als.2026.10076",
+      "published_online": "2026-10-06",
+      "url": "https://doi.org/10.1017/als.2026.10076"
+    },
+    {
+      "cnTitle": "数字贸易中的源代码保护：不披露义务如何给算法监管留下空间",
+      "author": "María Vásquez Callo-Müller",
+      "originalTitle": "Regulating Source Code in Trade Agreements: Between Protection and Disclosure",
+      "journal": "World Trade Review",
+      "year": "2026",
+      "volume": "25",
+      "issue": "4",
+      "pages": "556–582",
+      "articleNumber": "",
+      "doi": "10.1017/S1474745626101578",
+      "published_online": "2026-09-28",
+      "url": "https://doi.org/10.1017/S1474745626101578"
+    }
+  ],
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "deployed_current_columns": null,
+    "deployed_entry_points": null
+  },
+  "scope_guard": {
+    "brief_page": "articles/2026-10-08-tech-law-brief.html",
+    "brief_date": "2026-10-08",
+    "news_count": 20,
+    "paper_page": "articles/2026-10-07-wachter-mittelstadt-floridi-right-to-explanation.html",
+    "paper_date": "2026-10-07",
+    "classic_page": "articles/2026-10-08-cardozo-nature-judicial-process.html",
+    "classic_date": "2026-10-08"
+  }
+}
