@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-08",
+  "timezone": "Asia/Shanghai",
+  "column": "newworks",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-08-new-works.html",
+  "newworks_count": 3,
+  "checked_at": "2026-10-08T20:52:00+08:00",
+  "checks": {
+    "original_publication_pages_opened": true,
+    "bibliography": true,
+    "doi": true,
+    "repository_history_deduplication": true,
+    "original_titles": true,
+    "chinese_expression": true,
+    "related_reading_reviewed": true,
+    "timeline_reviewed": true
+  },
+  "related_reading": [],
+  "timeline": [],
+  "items": [
+    {
+      "cnTitle": "中国法院如何理解可信AI：司法大模型的价值对齐与程序保障",
+      "author": "Daniel Sprick",
+      "originalTitle": "Trustworthy AI for China’s courts: A socialist core value alignment",
+      "journal": "Cambridge Forum on AI: Law and Governance",
+      "year": "2026",
+      "volume": "2",
+      "issue": "",
+      "pages": "",
+      "articleNumber": "e22",
+      "doi": "10.1017/cfl.2026.10060",
+      "published_online": "2026-10-07",
+      "url": "https://doi.org/10.1017/cfl.2026.10060"
+    },
+    {
+      "cnTitle": "隐私声明为什么长期失灵：通知与选择制度的三个结构性问题",
+      "author": "Sophia Walsh、Lukasz Piwek、Kopo Marvin Ramokapane",
+      "originalTitle": "Three Systemic Problems With the Privacy Notice Ecosystem",
+      "journal": "Policy & Internet",
+      "year": "2026",
+      "volume": "18",
+      "issue": "2",
+      "pages": "",
+      "articleNumber": "e70042",
+      "doi": "10.1002/poi3.70042",
+      "published_online": "2026-05-17",
+      "url": "https://doi.org/10.1002/poi3.70042"
+    },
+    {
+      "cnTitle": "拆分科技巨头不能只看竞争：反垄断救济的隐私、创新与国家安全外部性",
+      "author": "Anu Bradford",
+      "originalTitle": "ANTITRUST EXTERNALITIES",
+      "journal": "Journal of Competition Law & Economics",
+      "year": "2026",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "articleNumber": "nhag025",
+      "doi": "10.1093/joclec/nhag025",
+      "published_online": "2026-09-01",
+      "url": "https://doi.org/10.1093/joclec/nhag025"
+    }
+  ],
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "deployed_current_columns": null,
+    "deployed_entry_points": null
+  },
+  "scope_guard": {
+    "brief_page": "articles/2026-10-08-tech-law-brief.html",
+    "brief_date": "2026-10-08",
+    "news_count": 20,
+    "paper_page": "articles/2026-10-07-wachter-mittelstadt-floridi-right-to-explanation.html",
+    "paper_date": "2026-10-07",
+    "classic_page": "articles/2026-10-08-cardozo-nature-judicial-process.html",
+    "classic_date": "2026-10-08"
+  }
+}
