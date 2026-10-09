@@ -2,51 +2,137 @@
   "date": "2026-10-09",
   "base_main_sha": "bcee8e04fea5155f126b6fdebf2a70307afe0341",
   "suggested_issue_number": "034",
-  "phase": "researching",
-  "publication_ready": false,
-  "researched_at": "2026-10-09T15:05:00+08:00",
+  "phase": "research_complete",
+  "publication_ready": true,
+  "researched_at": "2026-10-09T15:06:00+08:00",
   "items": [
     {
+      "rank": 1,
       "date": "2026-10-07",
       "jurisdiction": "美国 / 中国",
       "authority": "美国财政部投资安全办公室",
-      "title": "美国财政部披露首宗对外投资安全计划民事处罚",
-      "status": "official_source_found_fact_check_in_progress"
+      "title": "美国财政部披露对外投资安全计划首宗民事处罚",
+      "legal_stage": "2026年7月已作出的行政处罚于10月7日首次公开披露",
+      "importance": 5,
+      "sources": ["https://home.treasury.gov/news/press-releases/sb0652/"]
     },
     {
+      "rank": 2,
       "date": "2026-10-08",
       "jurisdiction": "美国 / 伊朗 / 中国及香港关联航运主体",
       "authority": "美国财政部外国资产控制办公室",
-      "title": "美国制裁伊朗石油影子船队17艘船舶及关联主体",
-      "status": "official_source_found_fact_check_in_progress"
+      "title": "美国制裁伊朗影子船队17艘船舶及关联公司",
+      "legal_stage": "正式制裁列名，同日移除两艘已改变情况的船舶",
+      "importance": 5,
+      "sources": ["https://home.treasury.gov/news/press-releases/sb0653/", "https://ofac.treasury.gov/recent-actions/20261008"]
     },
     {
+      "rank": 3,
+      "date": "2026-10-08",
+      "jurisdiction": "美国 / 中国",
+      "authority": "美国商务部国际贸易管理局",
+      "title": "美国对中国橡胶促进剂CBS作出反补贴初裁并追溯暂停清算",
+      "legal_stage": "反补贴初裁及紧急情形初裁，尚非最终税令",
+      "importance": 5,
+      "sources": ["https://www.federalregister.gov/documents/2026/10/08/2026-20692/n-cyclohexylbenzothiazole-2-sulfenamide-from-the-peoples-republic-of-china-preliminary-affirmative"]
+    },
+    {
+      "rank": 4,
       "date": "2026-10-07",
       "jurisdiction": "英国 / 中国",
       "authority": "英国贸易救济署",
       "title": "英国拟对中国金红石型二氧化钛征收混合反倾销税",
-      "status": "official_source_found_fact_check_in_progress"
+      "legal_stage": "初步调查结论和拟议建议，尚待意见期及部长决定",
+      "importance": 5,
+      "sources": ["https://www.gov.uk/government/news/new-duty-proposed-on-imports-of-chinese-rutile-titanium-dioxide"]
+    },
+    {
+      "rank": 5,
+      "date": "2026-10-08",
+      "jurisdiction": "英国 / 俄罗斯",
+      "authority": "英国外交、联邦及发展事务部",
+      "title": "英国新增俄罗斯石油、影子船队、加密支付及军工供应链制裁",
+      "legal_stage": "正式新增列名和船舶指定",
+      "importance": 5,
+      "sources": ["https://www.gov.uk/government/news/new-uk-sanctions-hit-the-money-oil-and-supply-chains-fuelling-russias-war", "https://www.gov.uk/government/publications/the-uk-sanctions-list"]
+    },
+    {
+      "rank": 6,
+      "date": "2026-10-09",
+      "jurisdiction": "中国 / 亚洲能源供应链",
+      "authority": "中国炼厂及出口审批执行情况；Reuters引述交易商和行业人士",
+      "title": "中国恢复10月成品油出口，获批规模约370万吨",
+      "legal_stage": "媒体确认的出口审批与企业执行状态，未见普遍性公开法规",
+      "importance": 4,
+      "sources": ["https://www.reuters.com/business/energy/china-resume-october-fuel-exports-after-brief-halt-four-trade-sources-say-2026-10-09/"]
+    },
+    {
+      "rank": 7,
+      "date": "2026-10-07",
+      "jurisdiction": "欧盟 / 中国",
+      "authority": "欧盟委员会与中国政府谈判；Reuters转述FT及欧盟官员信息",
+      "title": "欧中就混合动力汽车出口约束继续谈判，尚无配额或限制生效",
+      "legal_stage": "谈判与媒体披露阶段，不是已生效规则",
+      "importance": 4,
+      "sources": ["https://www.reuters.com/world/china/china-rejects-eu-request-voluntary-hybrid-car-export-curbs-ft-reports-2026-10-07/", "https://www.reuters.com/world/china/eu-seeks-cut-trade-deficit-with-china-talks-with-beijing-2026-10-07/"]
+    },
+    {
+      "rank": 8,
+      "date": "2026-10-08",
+      "jurisdiction": "欧盟 / 中国 / 巴西",
+      "authority": "欧盟委员会竞争总司",
+      "title": "欧盟就MMG收购英美资源巴西镍业务举行第二阶段审查听证",
+      "legal_stage": "第二阶段并购审查持续，未作批准、附条件批准或禁止决定",
+      "importance": 4,
+      "sources": ["https://competition-cases.ec.europa.eu/cases/M.11944", "https://www.reuters.com/business/finance/mmg-accuses-eu-antitrust-regulators-ignoring-evidence-backing-anglo-american-2026-10-08/"]
+    },
+    {
+      "rank": 9,
+      "date": "2026-10-08",
+      "jurisdiction": "美国 / 印度",
+      "authority": "美国商务部国际贸易管理局",
+      "title": "美国对印度辣椒油树脂正式发布反倾销和反补贴税令",
+      "legal_stage": "商务部与ITC肯定性终裁后正式税令生效",
+      "importance": 4,
+      "sources": ["https://www.federalregister.gov/documents/2026/10/08/2026-20690/oleoresin-paprika-from-india-antidumping-duty-order-and-countervailing-duty-order"]
+    },
+    {
+      "rank": 10,
+      "date": "2026-10-08",
+      "jurisdiction": "美国 / 越南",
+      "authority": "越南工贸部门与美国贸易代表办公室谈判",
+      "title": "越南称美越互惠贸易协议谈判已基本完成，仅余技术问题",
+      "legal_stage": "谈判接近完成，尚未签署或实施",
+      "importance": 3,
+      "sources": ["https://www.reuters.com/world/asia-pacific/vietnam-says-its-trade-deal-negotiations-with-us-are-largely-completed-2026-10-08/"]
     }
   ],
   "coverage": {
-    "US": "in_progress",
-    "EU": "in_progress",
-    "UK": "in_progress",
-    "JP": "in_progress",
-    "KR": "in_progress",
-    "IN": "in_progress",
-    "CA": "in_progress",
-    "AU": "in_progress",
-    "recent_7d_dedup": "pending",
-    "source_open_check": "pending",
-    "final_1_2h_rescan": "pending"
+    "required_jurisdictions": {
+      "US": "checked; four qualifying formal actions or negotiations retained",
+      "EU": "checked; hybrid-vehicle talks and nickel merger review retained",
+      "UK": "checked; titanium dioxide remedy proposal and Russia sanctions retained",
+      "JP": "checked; no sufficiently material new trade or export-regulatory action in the 24-72 hour window",
+      "KR": "checked; no sufficiently material new trade or export-regulatory action in the 24-72 hour window"
+    },
+    "watchlist": {
+      "IN": "checked; U.S. final paprika orders retained as material India-related development",
+      "CA": "checked; no qualifying substantive new action beyond procedural updates",
+      "AU": "checked; no qualifying substantive new action beyond routine case administration"
+    },
+    "recent_7d_dedup": "complete; no current item duplicates the prior seven issues. China fuel-export item is retained only as an explicit new reversal/update to the October 4 report.",
+    "source_open_check": "complete; every retained URL opened and matched the specific event or formal document",
+    "final_1_2h_rescan": "complete at 2026-10-09T15:06:00+08:00; China fuel-export resumption added and lower-value logistics surcharge candidate removed"
   },
+  "dedup_notes": [
+    "OFAC October 8 shadow-fleet action is distinct from prior Iran industrial and procurement sanctions because it designates a new vessel/company network and removes two vessels.",
+    "UK October 8 Russia package is a new set of designations and ship specifications, not a repeat of prior UK Iran or EU Russia sanctions.",
+    "China fuel-export resumption is an explicit substantive change from the October 4 pause and will be labelled as an update."
+  ],
   "last_error": null,
   "next_actions": [
-    "Complete mandatory-jurisdiction scan",
-    "Open and verify every candidate source",
-    "Compare candidates with recent issues at event level",
-    "Draft and validate issue HTML",
-    "Publish issue, index, and archive to main and verify Pages"
+    "Generate and validate issue HTML",
+    "Write issue, index and archive to main",
+    "Re-read main files and verify Pages and external links"
   ]
 }
