@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-09",
+  "base_main_sha": "bcee8e04fea5155f126b6fdebf2a70307afe0341",
+  "suggested_issue_number": "034",
+  "phase": "researching",
+  "publication_ready": false,
+  "researched_at": "2026-10-09T15:05:00+08:00",
+  "items": [
+    {
+      "date": "2026-10-07",
+      "jurisdiction": "美国 / 中国",
+      "authority": "美国财政部投资安全办公室",
+      "title": "美国财政部披露首宗对外投资安全计划民事处罚",
+      "status": "official_source_found_fact_check_in_progress"
+    },
+    {
+      "date": "2026-10-08",
+      "jurisdiction": "美国 / 伊朗 / 中国及香港关联航运主体",
+      "authority": "美国财政部外国资产控制办公室",
+      "title": "美国制裁伊朗石油影子船队17艘船舶及关联主体",
+      "status": "official_source_found_fact_check_in_progress"
+    },
+    {
+      "date": "2026-10-07",
+      "jurisdiction": "英国 / 中国",
+      "authority": "英国贸易救济署",
+      "title": "英国拟对中国金红石型二氧化钛征收混合反倾销税",
+      "status": "official_source_found_fact_check_in_progress"
+    }
+  ],
+  "coverage": {
+    "US": "in_progress",
+    "EU": "in_progress",
+    "UK": "in_progress",
+    "JP": "in_progress",
+    "KR": "in_progress",
+    "IN": "in_progress",
+    "CA": "in_progress",
+    "AU": "in_progress",
+    "recent_7d_dedup": "pending",
+    "source_open_check": "pending",
+    "final_1_2h_rescan": "pending"
+  },
+  "last_error": null,
+  "next_actions": [
+    "Complete mandatory-jurisdiction scan",
+    "Open and verify every candidate source",
+    "Compare candidates with recent issues at event level",
+    "Draft and validate issue HTML",
+    "Publish issue, index, and archive to main and verify Pages"
+  ]
+}
