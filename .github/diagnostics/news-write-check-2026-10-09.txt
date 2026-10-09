@@ -1,0 +1,3 @@
+GitHub Contents API write diagnostic.
+Date: 2026-10-09
+Purpose: verify ordinary UTF-8 text writes on the news-drafts branch.
