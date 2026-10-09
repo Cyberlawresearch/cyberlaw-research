@@ -107,6 +107,10 @@ jobs:
           for path in Path('.').rglob('*.html'):
               if '.git' in path.parts or path.name == 'login.html':
                   continue
+              # trade-watch is a public client-facing site and must never inherit
+              # the Cyberlaw Research account/login gate.
+              if 'trade-watch' in path.parts:
+                  continue
               depth = len(path.parent.parts)
               prefix = '../' * depth
               auth = f'<script src="{prefix}assets/auth.js?v=4"></script><script src="{prefix}assets/analytics-config.js?v=1"></script><script defer src="{prefix}assets/analytics.js?v=1"></script>'
