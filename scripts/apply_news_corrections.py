@@ -195,3 +195,6 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+    from apply_structured_news_analysis import main as apply_structured_news_analysis
+
+    apply_structured_news_analysis()
