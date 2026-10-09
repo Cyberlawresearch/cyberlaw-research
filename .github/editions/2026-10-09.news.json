@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-09",
+  "column": "brief",
+  "state": "verified",
+  "phase": "published",
+  "page": "articles/2026-10-09-tech-law-brief.html",
+  "news_count": 11,
+  "distribution": {
+    "domestic": 3,
+    "foreign": 8
+  },
+  "mode": "fact_only",
+  "analysis_pending": true,
+  "checked_at": "2026-10-09T21:42:00+08:00",
+  "last_news_scan_at": "2026-10-09T21:42:00+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "foreign_layout": true,
+    "domestic_major_omission_review": true
+  },
+  "domestic_source_coverage": [
+    {
+      "source_group": "中央与综合权威媒体",
+      "source_name": "新华社、新华网、人民日报、人民网、央视新闻、央广网、中国新闻网、中国政府网部门稿",
+      "checked_at": "2026-10-09T21:42:00+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "发现并核验《关于发展新质生产力的意见》；人社部新就业形态劳动者权益保障征求意见稿已在10月8日刊发，本期不重复。"
+    },
+    {
+      "source_group": "法治、司法、劳动与政策媒体",
+      "source_name": "法治日报、人民法院报、检察日报、中国劳动保障报、中国组织人事报及主管部门所属媒体",
+      "checked_at": "2026-10-09T21:42:00+08:00",
+      "status": "no_new",
+      "found": 0,
+      "notes": "未发现区别于近7日已发事件、且达到本期优先级的新增事项。"
+    },
+    {
+      "source_group": "财经商业媒体",
+      "source_name": "财新、第一财经、21世纪经济报道、经济观察报、证券时报、上海证券报、中国证券报、每日经济新闻、北京商报",
+      "checked_at": "2026-10-09T21:42:00+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "交叉核验新质生产力政策，并巡视人工智能产业投融资与基础设施动态。"
+    },
+    {
+      "source_group": "综合深度媒体",
+      "source_name": "澎湃、界面、新京报、南方都市报、南方周末及主要地方媒体",
+      "checked_at": "2026-10-09T21:42:00+08:00",
+      "status": "no_new",
+      "found": 0,
+      "notes": "未发现符合72小时、未重复且优先级更高的新增事项。"
+    },
+    {
+      "source_group": "科技产业媒体",
+      "source_name": "36氪、虎嗅、钛媒体、雷峰网、量子位、机器之心、IT之家、科创板日报",
+      "checked_at": "2026-10-09T21:42:00+08:00",
+      "status": "checked",
+      "found": 2,
+      "notes": "发现ARTEX与Manus等线索，并使用可靠主流媒体及相关主体信息交叉核验。"
+    },
+    {
+      "source_group": "网络安全、数据与合规媒体",
+      "source_name": "安全内参、FreeBuf、嘶吼、数世咨询及安全研究机构公告",
+      "checked_at": "2026-10-09T21:42:00+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "补查ARTEX及韩国银行攻击后续，事实摘要未保留操作性攻击细节。"
+    },
+    {
+      "source_group": "线索媒体",
+      "source_name": "新浪科技、腾讯新闻、网易科技、凤凰网、搜狐",
+      "checked_at": "2026-10-09T21:42:00+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "仅用于线索发现，未作为重大事实的最终单一来源。"
+    }
+  ],
+  "publication": {
+    "article_written": true,
+    "index_updated": true,
+    "briefs_updated": true,
+    "archive_updated": true,
+    "current_edition_updated": true
+  },
+  "analysis": {
+    "status": "pending",
+    "task": "网信法新闻分析补充"
+  }
+}
