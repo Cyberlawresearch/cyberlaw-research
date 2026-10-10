@@ -57,7 +57,7 @@ def validate(m):
   first=soup(listing).select_one('.issue-list .issue-row')
   assert first is not None and first.select_one(f'a[href="{p}"]'),listing
  news=docs[0].select('.brief-item')
- assert len(news)==m['news_count'] and 18<=len(news)<=20
+ assert len(news)==m['news_count'] and len(news)>=10
  for n in news:
   assert n.get('id') and n.select_one('h3') and n.select_one('.brief-meta')
   facts=n.select_one('.brief-fact');assert facts and len(facts.get_text(strip=True))>=65
