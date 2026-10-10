@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-10",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-10-solove-myth-privacy-paradox.html",
+  "selection": "Daniel J. Solove, The Myth of the Privacy Paradox",
+  "bibliography": {
+    "type": "article",
+    "author": "Daniel J. Solove",
+    "originalTitle": "The Myth of the Privacy Paradox",
+    "journal": "The George Washington Law Review",
+    "year": "2021",
+    "volume": "89",
+    "issue": "1",
+    "pages": "1–51",
+    "doi": "",
+    "url": "https://www.gwlr.org/the-myth-of-the-privacy-paradox/",
+    "cnTitle": "隐私悖论的神话"
+  },
+  "versions": {
+    "formal": "The George Washington Law Review 89(1) (2021), pp. 1–51",
+    "working_paper": "SSRN abstract 3536265; GWU Legal Studies Research Paper No. 2020-10（区分正式期刊版本）"
+  },
+  "sources": [
+    "https://www.gwlr.org/the-myth-of-the-privacy-paradox/",
+    "https://www.gwlr.org/wp-content/uploads/2021/01/89-Geo.-Wash.-L.-Rev.-1.pdf",
+    "https://www.gwlr.org/vol-89-no-1/",
+    "https://scholarship.law.gwu.edu/faculty_publications/1482/",
+    "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3536265"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-09-10-solove-privacy-self-management.html",
+    "articles/2026-09-06-nissenbaum-contextual-integrity.html"
+  ],
+  "timeline": null,
+  "body_length": 5831,
+  "base_main_sha": "83aa2799500ab339e0fd4a9166ca1d7a34a96d1f",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}
