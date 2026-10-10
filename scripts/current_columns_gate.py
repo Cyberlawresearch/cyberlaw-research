@@ -108,7 +108,7 @@ def validate(m):
     for p,listing in zip(paths,HISTORIES):
         first=soup(listing).select_one('.issue-list .issue-row')
         assert first is not None and first.select_one(f'a[href="{p}"]'),listing
-    news=docs[0].select('.brief-item');assert len(news)==m['news_count'] and 1<=len(news)<=20
+    news=docs[0].select('.brief-item');assert len(news)==m['news_count'] and len(news)>=10
     exact_fresh=verified_freshness_ids(days['brief'].isoformat())
     for n in news:
         assert n.get('id') and n.select_one('h3') and n.select_one('.brief-meta')
