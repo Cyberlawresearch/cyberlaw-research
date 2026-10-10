@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-10",
+  "column": "classic",
+  "status": "verified",
+  "state": "verified",
+  "phase": "deployment_check",
+  "book": "Roscoe Pound（庞德）：《普通法的精神》",
+  "bibliography": {
+    "author": "Roscoe Pound",
+    "originalTitle": "The Spirit of the Common Law",
+    "publisher": "Marshall Jones Company",
+    "year": "1921",
+    "edition": "1921年版"
+  },
+  "base_main_sha": "abb21a556d15c7ec857cbc565a87279b76d64653",
+  "target_path": "articles/2026-10-10-pound-spirit-common-law.html",
+  "sources": [
+    "https://archive.org/details/spiritofcommonla00pounuoft",
+    "https://archive.org/stream/spiritofcommonla00pounuoft/spiritofcommonla00pounuoft_djvu.txt",
+    "https://digitalcommons.unl.edu/lawfacpub/1/",
+    "https://repository.law.umich.edu/mlr/vol20/iss7/7/",
+    "https://www.cambridge.org/core/journals/law-and-society-review/article/abs/introduction-j-willard-hurst-and-the-common-law-tradition-in-american-legal-historiography/7AF06D41D5AEA4E852D7C3FC28BEFB37",
+    "https://www.cambridge.org/core/books/laws-history/pound/247CFF05BDAE7A242B3819F55B4999C9"
+  ],
+  "verification": {
+    "complete_original_preface_eight_lectures_and_index_systematically_checked": true,
+    "title_page_copyright_contents_and_repository_metadata_checked": true,
+    "eight_lecture_structure_checked": true,
+    "representative_arguments_checked_in_primary_text": true,
+    "history_deduplication": true,
+    "representative_criticism_sourced": true,
+    "later_historiography_distinguished_from_original_author_claims": true,
+    "natural_chinese_reviewed": true,
+    "digital_governance_extensions_distinguished": true,
+    "final_body_complete": true
+  },
+  "history_dedup": {
+    "passed": true,
+    "checked_against": [
+      "classics.html full current index",
+      "classics-history.html exported 15–35 index",
+      "repository exact-title search",
+      "recent main classic commits"
+    ],
+    "same_author_distinction": "2026-10-01已发布《法律哲学导论》，本期为不同著作《普通法的精神》。",
+    "selected_new_work": "Roscoe Pound, The Spirit of the Common Law"
+  },
+  "summary": "庞德以八讲追踪封建关系、清教伦理、法院与王权、自然权利、边疆经验和十九世纪法哲学如何共同塑造普通法，并以司法经验主义和社会事实研究说明法律怎样在先例约束下继续生长。Patterson质疑书名中的单一“精神”，Gordon则追问职业传统自主性与思想影响之间的张力。",
+  "homepage_summary": "Roscoe Pound（庞德）：《普通法的精神》",
+  "classics_summary": "Roscoe Pound（庞德）：《普通法的精神》",
+  "archive_summary": "最新：Roscoe Pound（庞德）：《普通法的精神》",
+  "checked_at": "2026-10-10T23:26:50+08:00",
+  "last_error": null,
+  "publication": {
+    "deployment_claim": false,
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_result": null,
+    "live_checks": null
+  }
+}
