@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-10",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-10-10-new-works.html",
+  "newworks_count": 3,
+  "works": [
+    {
+      "title": "Personal data sharing agreements and arrangements: international and European human rights standards and the UK",
+      "doi": "10.1093/idpl/ipag022",
+      "source": "https://academic.oup.com/idpl/article-abstract/16/4/ipag022/8885826"
+    },
+    {
+      "title": "Copyright in unreported judgments: perspectives from Singapore",
+      "doi": "10.1093/jiplp/jpag083",
+      "source": "https://doi.org/10.1093/jiplp/jpag083"
+    },
+    {
+      "title": "Generative Spaces: Collaboration, Learning and Innovation in a Regulatory Sandbox",
+      "doi": "10.1093/jopart/muag024",
+      "source": "https://doi.org/10.1093/jopart/muag024",
+      "version": "accepted manuscript"
+    }
+  ],
+  "checks": {
+    "original_publisher_pages": true,
+    "doi_and_versions": true,
+    "three_items": true,
+    "prior_index_keyword_deduplication": true,
+    "natural_chinese_reviewed": true
+  },
+  "publication": {
+    "content_commit": "185ba7ab2b3fc9e1bbb06da0e8e27d4e9759f05c",
+    "pages_deploy_status": null,
+    "online_check": null
+  }
+}
