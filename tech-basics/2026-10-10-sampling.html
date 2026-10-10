@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>第23课｜采样：模型为什么同一道题可能给出不同回答？｜网信法技术基础</title>
+<link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-10-09-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-10-08-chander-le-data-nationalism.html">域外法学论文精读</a><a href="../articles/2026-10-08-cardozo-nature-judicial-process.html">法学经典著作</a><a href="../articles/2026-10-08-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 23 · MODEL CAPABILITIES &amp; INFERENCE · 2026.10.10</div><h1>采样：模型为什么同一道题可能给出不同回答？</h1><p class="tech-lead">今日问题：同一问题，模型为什么有时给出不同答案？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus">
+<div><strong>它是什么</strong><p><b>采样（sampling）</b>是模型生成文本时的一种选词方法：模型根据上下文计算下一个 Token 的候选概率，再按照概率随机选出一个 Token。与此不同，<b>贪心解码</b>在每一步都只选当前概率最高的候选。两者属于不同的生成选择策略。<sup><a href="#s1">[1]</a></sup></p></div>
+<div><strong>一个直观例子</strong><p>让模型补全“这项方案值得____”。下一个词可能是“考虑”“研究”“推广”或“反思”。即使“考虑”最可能，采样时也未必选中。第一个词不同，后续概率随之改变，整句话就可能不同。</p></div>
+</section>
+<section class="lesson-section"><h2>一张机制图：模型如何逐步选词？</h2>
+<div class="visual-board" role="group" aria-label="从上下文计算到概率选择及下一步生成的流程图">
+<div class="visual-title">下图展示一次生成步骤。数字只是为了说明机制，并非真实模型的计算结果。</div>
+<div class="flow">
+<div class="flow-box"><strong>① 现有上下文</strong><span>“这项方案值得……”</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>② 候选概率</strong><span>考虑 60% · 研究 25%<br/>推广 10% · 反思 5%</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>③ 选择规则</strong><span>贪心：取最高值<br/>采样：按概率抽取</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>④ 拼接并继续</strong><span>将选中的 Token 加入文本，重新计算下一步概率</span></div>
+</div>
+<p class="tiny-note">示意中假定只有四个候选且概率合计100%。真实模型有更多候选，一个中文词也未必恰好对应一个 Token。</p>
+</div>
+<p>如果用贪心解码，上例下一步选择“考虑”；如果按概率采样，“研究”也有机会被选中，只是机会较小。<b>随机不等于等概率，更不等于毫无规则。</b>候选概率由模型计算，采样规则决定怎样使用；这不是相应句子真实程度的概率。</p>
+<div class="compare-grid">
+<div class="compare-card"><b>贪心解码</b><p>每步只取当前最高概率的候选。本例选“考虑”，不作随机抽取；但每步最优未必意味着整篇回答最优。</p></div>
+<div class="compare-card"><b>Top-k 采样</b><p>仅保留概率最高的 k 个候选，在其中抽取。例如 k=2 时，保留“考虑”和“研究”。</p></div>
+<div class="compare-card"><b>Top-p 采样</b><p>按概率从高到低累计，保留累计概率达到阈值的最小集合。例如 p=0.8，前两项累计85%，因此保留两项。</p></div>
+</div>
+<p>Top-k 固定候选<b>数量</b>，Top-p 按累计概率决定候选<b>范围</b>；过滤后通常重新分配剩余候选的相对概率。另一常见设置是<b>温度（temperature）</b>：温度越低，通常越偏向高概率候选；越高则更可能选中其他候选。温度调整的是选择分布，不是重新训练模型，也不能单凭它改善事实准确性。Top-p 又称“核采样”，相关研究讨论过它在开放式文本生成中的作用。<sup><a href="#s2">[2]</a></sup><sup><a href="#s3">[3]</a></sup></p>
+<div class="law-bridge"><h3>新词备注：解码策略与随机种子</h3><p><b>解码策略</b>是把模型的候选预测逐步转成输出文本的规则，既包括随机采样，也包括不随机的贪心解码。<b>随机种子（seed）</b>用于控制随机过程的起点。部分服务提供此设置以提高复现性，但不保证完全一致。各模型和接口支持的设置可能不同，以文档为准。<sup><a href="#s4">[4]</a></sup></p></div>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“同一问题回答不同，说明模型每次都重新学习了。”通常不是。普通推理时，模型参数不会因这次生成自动更新；差异可能来自选择策略、实际输入或服务环境。</span></div>
+<div class="myth"><b>误解 02</b><span>“温度调到零，任何平台上都能逐字复现。”某些实现采用近似确定性选择，但模型版本及后台计算仍可能导致差异；部分模型不开放温度设置。</span></div>
+<div class="myth"><b>误解 03</b><span>“选择越保守，答案一定越正确。”稳定性不等于真实性。模型也可能反复生成同一个错误。下一课将专门解释模型“幻觉”。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>可重复测试，不等于结论可靠</h3>
+<p>同一份行政材料或合同多次得到不同判断时，不能只保存最后一次答案。应尽可能记录实际输入、模型和版本、生成策略、可用的采样参数、调用时间及各次输出，并重复测试。还须排查检索材料、系统指令等是否变化。</p>
+<p>多次回答相同，也不能证明事实或法律判断正确。采样留痕解决的是生成过程能否解释和复核的问题，事实与法律判断仍需独立核验。是否负有特定留痕义务，要结合适用法律和实际使用场景判断。</p></div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>生成式人工智能输出的不确定性，如何影响行政决定的理由说明与可复核性？</h3><p>区分随机输出与行政裁量，研究当事人质疑机器辅助结论所需的记录。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>高风险人工智能采购是否需要统一的重复测试与参数留痕要求？</h3><p>比较一次性准确率和多轮稳定性，形成采购验收与持续评估的测试项目。</p></div>
+</div></section>
+<section class="lesson-section"><h2>原始材料</h2><ol class="source-links">
+<li id="s1"><a href="https://huggingface.co/docs/transformers/main/en/generation_strategies">Hugging Face, Transformers: Generation strategies</a>。说明贪心解码、概率采样及其他生成方法。</li>
+<li id="s2"><a href="https://huggingface.co/docs/transformers/main_classes/text_generation">Hugging Face, Transformers: Generation configuration</a>。介绍 temperature、top_k、top_p 等参数。</li>
+<li id="s3"><a href="https://iclr.cc/virtual_2020/poster_rygGQyrFvH.html">Ari Holtzman et al., The Curious Case of Neural Text Degeneration</a>, <i>ICLR 2020</i>。研究核采样与开放式文本生成。</li>
+<li id="s4"><a href="https://developers.openai.com/api/docs/guides/advanced-usage">OpenAI, Advanced usage: Reproducible outputs</a>。说明支持该功能的接口中，种子及后端配置与复现结果的关系。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第24课</small><p><b>幻觉：模型为什么会生成看似可信却不符合事实的内容？</b>下一课区分语言生成的流畅性与事实真实性。</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
