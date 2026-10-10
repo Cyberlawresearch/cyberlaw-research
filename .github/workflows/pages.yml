@@ -10,6 +10,11 @@ permissions:
   pages: write
   id-token: write
 
+# Only the newest main commit may complete a Pages deployment.
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
 jobs:
   latest:
     runs-on: ubuntu-latest
