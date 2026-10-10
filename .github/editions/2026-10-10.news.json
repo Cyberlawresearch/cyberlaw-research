@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-10",
+  "column": "brief",
+  "state": "verified",
+  "phase": "published",
+  "page": "articles/2026-10-10-tech-law-brief.html",
+  "news_count": 13,
+  "distribution": {
+    "domestic": 4,
+    "foreign": 9
+  },
+  "mode": "fact_only",
+  "analysis_pending": true,
+  "checked_at": "2026-10-10T23:23:00+08:00",
+  "last_news_scan_at": "2026-10-10T23:23:00+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "natural_chinese_reviewed": true,
+    "foreign_layout": true
+  },
+  "domestic_source_coverage": [
+    {
+      "source_group": "中央与综合权威媒体",
+      "source_name": "新华社/新华网、人民日报/人民网、央视新闻、央广网、中国新闻网、中国政府网",
+      "checked_at": "2026-10-10T23:23:00+08:00",
+      "status": "checked",
+      "found": 2,
+      "notes": "官网政策、中央媒体和部门发布渠道复核；品质电商政策回到商务部原文核验。"
+    },
+    {
+      "source_group": "法治司法劳动政策媒体",
+      "source_name": "法治日报、人民法院报、检察日报、中国劳动保障报、中国组织人事报",
+      "checked_at": "2026-10-10T23:23:00+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "人脸信息公益诉讼事项经国内媒体与检察机关信息交叉核验；未发现优先级更高且不重复的新事项。"
+    },
+    {
+      "source_group": "财经商业媒体",
+      "source_name": "财新、第一财经、21世纪经济报道、经济观察报、证券时报、上海证券报、中国证券报、每日经济新闻、北京商报",
+      "checked_at": "2026-10-10T23:23:00+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "平台竞争、人工智能产业和数字基础设施主题复核；未发现需要替换现有候选的重大新增。"
+    },
+    {
+      "source_group": "综合深度媒体",
+      "source_name": "澎湃新闻、界面新闻、新京报、南方都市报、南方周末及地方媒体",
+      "checked_at": "2026-10-10T23:23:00+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "纳入澎湃关于黄浦检察机关人脸信息公益诉讼的原创报道。"
+    },
+    {
+      "source_group": "科技产业媒体",
+      "source_name": "36氪、虎嗅、钛媒体、雷峰网、量子位、机器之心、IT之家、科创板日报",
+      "checked_at": "2026-10-10T23:23:00+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "科技语料、模型安全评测披露和人工智能产业主题反扫完成，重要事实回到权威媒体或原始研究核验。"
+    },
+    {
+      "source_group": "网络安全数据合规媒体",
+      "source_name": "安全内参、FreeBuf、嘶吼、数世咨询及安全机构",
+      "checked_at": "2026-10-10T23:23:00+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "智能体安全、数据泄露和监管通报方向复核；正文未保留操作性攻击细节。"
+    },
+    {
+      "source_group": "线索媒体",
+      "source_name": "新浪科技、腾讯新闻、网易科技、凤凰网、搜狐",
+      "checked_at": "2026-10-10T23:23:00+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "仅用于线索补充，未作为重大事实的最终单一来源。"
+    }
+  ],
+  "final_scan": {
+    "window": "最近1—2小时",
+    "result": "未发现必须替换或新增的更高优先级正式规则、处罚、裁判或重大安全事件。"
+  },
+  "publication": {
+    "article_written": true,
+    "index_updated": true,
+    "briefs_updated": true,
+    "archive_updated": true,
+    "current_edition_updated": true
+  },
+  "analysis": {
+    "status": "pending",
+    "task": "网信法新闻分析补充"
+  }
+}
