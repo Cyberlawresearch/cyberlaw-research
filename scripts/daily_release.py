@@ -82,7 +82,7 @@ def verify_candidate(root, record, now):
         require(review.get('sha256', {}).get(path) == digest(file), '正文在核验后发生变化：' + path)
     news = document(root, pages['brief']).select('.brief-item')
     events = review.get('news_event_times', {})
-    require(len(news) == record.get('news_count') and 1 <= len(news) <= 20, '新闻数量与核验记录不一致')
+    require(len(news) == record.get('news_count') and len(news) >= 10, '新闻数量与核验记录不一致')
     require({n.get('id') for n in news} == set(events), '缺少逐条新闻的来源时间记录')
     for identity, value in events.items():
         elapsed = now - timestamp(value)
