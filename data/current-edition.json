@@ -1,16 +1,16 @@
 {
-  "date": "2026-10-09",
+  "date": "2026-10-10",
   "pages": {
     "brief": "articles/2026-10-09-tech-law-brief.html",
     "paper": "articles/2026-10-08-chander-le-data-nationalism.html",
     "classic": "articles/2026-10-08-cardozo-nature-judicial-process.html",
-    "newworks": "articles/2026-10-08-new-works.html"
+    "newworks": "articles/2026-10-10-new-works.html"
   },
   "page_dates": {
     "brief": "2026-10-09",
     "paper": "2026-10-08",
     "classic": "2026-10-08",
-    "newworks": "2026-10-08"
+    "newworks": "2026-10-10"
   },
   "news_count": 11,
   "newworks_count": 3
