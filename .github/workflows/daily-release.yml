@@ -42,45 +42,14 @@ jobs:
           mkdir -p "$RUNNER_TEMP/release-check"
           # Match Pages preparation in this disposable checkout; never commit HTML changes.
           python scripts/current_columns_gate.py --sync-nav 2>&1 | tee "$RUNNER_TEMP/release-check/results.txt"
+      - name: Test news delivery safeguard
+        run: python scripts/test_news_delivery_gate.py
       - name: Check scheduled news delivery after 22:00
         shell: bash
         run: |
           set -euo pipefail
-          python - <<'PY' 2>&1 | tee "$RUNNER_TEMP/release-check/news-delivery.txt"
-          import json
-          from datetime import datetime, timedelta
-          from pathlib import Path
-          from zoneinfo import ZoneInfo
-
-          now=datetime.now(ZoneInfo('Asia/Shanghai'))
-          if not (now.hour >= 22 or now.hour < 1):
-              print('News deadline check skipped before 22:00 Asia/Shanghai.')
-              raise SystemExit(0)
-
-          day=(now-timedelta(hours=12)).date().isoformat()
-          manifest=json.loads(Path('data/current-edition.json').read_text(encoding='utf-8'))
-          assert manifest['date'] == max(manifest['page_dates'].values()), 'manifest top-level date is not max(page_dates)'
-          assert manifest['page_dates']['brief'] == day, f'brief not published for {day}: {manifest["page_dates"]["brief"]}'
-          page=Path(manifest['pages']['brief'])
-          assert page.is_file() and day in page.name, f'brief page missing or wrong date: {page}'
-
-          record_path=Path('.github/editions')/f'{day}.news.json'
-          assert record_path.is_file(), f'missing news verification record: {record_path}'
-          record=json.loads(record_path.read_text(encoding='utf-8'))
-          assert record.get('state') == 'verified', 'news verification state is not verified'
-          assert record.get('page') == manifest['pages']['brief'], 'news verification page does not match current brief'
-          assert record.get('news_count') == manifest['news_count'], 'news count mismatch between record and manifest'
-          checks=record.get('checks',{})
-          required=(
-              'sources','legal_status','original_titles','timeliness',
-              'previous_day_event_deduplication','seven_day_history_deduplication',
-              'local_language_scan_korea_japan_vietnam','prior_background_checked',
-              'natural_chinese_reviewed','background_outlook','foreign_layout'
-          )
-          missing=[name for name in required if checks.get(name) is not True]
-          assert not missing, 'news verification checks incomplete: '+', '.join(missing)
-          print(f'News delivery verified for {day}: {manifest["pages"]["brief"]} ({manifest["news_count"]} items).')
-          PY
+          mkdir -p "$RUNNER_TEMP/release-check"
+          python scripts/news_delivery_gate.py 2>&1 | tee "$RUNNER_TEMP/release-check/news-delivery.txt"
       - name: Verify safeguard schedule
         env:
           GH_TOKEN: ${{ github.token }}
