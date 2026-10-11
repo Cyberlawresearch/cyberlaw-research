@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>第24课｜幻觉：为什么流畅的回答也可能没有事实依据？｜网信法技术基础</title>
+<link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-10-10-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-10-10-solove-myth-privacy-paradox.html">域外法学论文精读</a><a href="../articles/2026-10-10-pound-spirit-common-law.html">法学经典著作</a><a href="../articles/2026-10-10-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 24 · MODEL CAPABILITIES &amp; INFERENCE · 2026.10.11</div><h1>幻觉：为什么流畅的回答也可能没有事实依据？</h1><p class="tech-lead">今日问题：模型能把一段话讲得完整、肯定，为什么其中的事实、法条或引文仍可能是错的？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus">
+<div><strong>它是什么</strong><p><b>幻觉（hallucination）</b>是生成式人工智能给出与可核实事实、已提供材料或当前问题要求不一致的内容，却呈现得像有依据的回答。它可能表现为捏造事实、错误转述或虚构引文。这个名称描述输出错误，并不是说机器具有人的感知体验。<sup><a href="#s1">[1]</a></sup></p></div>
+<div><strong>一个直观例子</strong><p>你让模型概述一份尚未上传的行政处罚决定书。它却写出具体文号、处罚金额和理由，看起来像认真读过原文。<b>这些细节是示意，并非真实案件。</b>如果系统没有查到决定书，文字再像正式文书，也不能据此认定内容属实。</p></div>
+</section>
+<section class="lesson-section"><h2>一张机制图：合理的句子怎样变成不可靠的事实？</h2>
+<div class="visual-board" role="group" aria-label="从证据缺口到生成内容，再到原文核验的风险流程">
+<div class="visual-title">以“概述一份未提供的处罚决定书”为例；图示说明一种可能的失误路径，不代表所有模型或服务都不核验。</div>
+<div class="flow">
+<div class="flow-box"><strong>① 提出问题</strong><span>要求说明文号、依据与处罚理由；原文未提供</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>② 组织回答</strong><span>模型依据当前输入及学到的语言、知识关联预测后续内容</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>③ 输出细节</strong><span>生成看似完整的文号与理由；此时不能推定细节真实</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>④ 对照原文</strong><span>找到权威文件逐项核对；找不到则标记“未核实”</span></div>
+</div>
+<p class="tiny-note">关键分界不是“是否写得通顺”，而是“有关事实有没有可核对的依据”。第四步可以由工具或人工完成，但不能假定所有应用都会自动执行。</p>
+</div>
+<p>前面两课讲过，语言模型会根据上下文计算后续 Token 的可能性，并用一定的生成策略逐步输出。<b>“这句话像一个合适的回答”与“这句话已经经过事实核验”是两种不同的判断。</b>模型可以从训练中学到真实知识，也可能把相似事物混淆，或者在资料不足时补出貌似合理的细节。不同模型、训练方法和应用设置会影响风险，不能把某种错误归因于单一参数。<sup><a href="#s2">[2]</a></sup></p>
+<div class="compare-grid">
+<div class="compare-card"><b>事实型</b><p>把不存在的行政决定、日期或机构行为当成既定事实。</p></div>
+<div class="compare-card"><b>转述型</b><p>原材料只说“提出建议”，摘要却写成“已经作出决定”。</p></div>
+<div class="compare-card"><b>引文型</b><p>给出似乎完整的法条、论文或裁判文号，但出处无法证实。</p></div>
+</div>
+<p>上述分类是帮助阅读的直观示意，不是唯一的学术划分。错误既可能来自模型内部学到的信息，也可能发生在摘要、检索材料利用或最终整理环节。对于要求“根据这份文件回答”的任务，尤其要检查结论是否真的得到所提供材料支持；对于开放式事实问答，还要检查它是否符合外部事实。有关研究表明，模型确实可能复述人类文本中的常见错误，而不只是随意编造。<sup><a href="#s3">[3]</a></sup></p>
+<div class="law-bridge"><h3>新词备注：事实性与有据性</h3><p><b>事实性</b>关注说法是否符合真实世界；<b>有据性</b>关注回答是否受到指定材料支持。二者可能不一致：一句话恰好正确，但未必来自用户提供的文件。后续“检索增强生成（RAG）”课程将专门解释如何连接外部材料，以及为什么检索并不等于自动核实。</p></div>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“语气肯定、格式规范，就说明查证过。”流畅和自信不是证据。尤其要对文号、条款、数据和引文回查原始出处。</span></div>
+<div class="myth"><b>误解 02</b><span>“多问几次都一样，就不可能是幻觉。”错误可能稳定重复；上一课讲的低温度或确定性生成也不能把错误变成事实。</span></div>
+<div class="myth"><b>误解 03</b><span>“接上搜索或数据库，幻觉就消失了。”外部资料可改善核对条件，但检索到错误、过期资料，或模型误读材料，仍可能产生错误。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>让法律判断回到可核实的事实与规范依据</h3>
+<p>在政务智能问答、合同审核或裁判文书检索中，风险不只是“答案有一句错了”，而是未经查证的内容可能被当作法条依据、事实认定或办事指引。研究曾在特定美国法院案例问答任务中观察到明显的法律幻觉，不能把该研究的错误率直接套用于其他模型、法域或应用。<sup><a href="#s4">[4]</a></sup></p>
+<p>较稳妥的流程是保留用户问题与实际输入，要求关键结论指向具体原文，对法条效力、裁判要旨和引用段落逐项核对；没有可靠材料时应允许回答“无法核实”，并提供人工复核或纠错渠道。究竟构成何种法定义务，还需依据使用主体、具体业务和适用规范判断。</p>
+</div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>政务智能问答出现事实幻觉时，行政机关的核查与纠正责任如何确定？</h3><p>区分一般信息提示与足以影响相对人程序选择的具体指引，研究何时需要提供原文依据、纠正错误并恢复受影响的程序机会。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>公共部门大模型应用如何建立分级事实核验与人工回退机制？</h3><p>围绕法规引用、政策效力、办事材料清单等高风险输出，设计原文回查、错误记录、人工接管与持续抽检指标。</p></div>
+</div></section>
+<section class="lesson-section"><h2>原始材料</h2><ol class="source-links">
+<li id="s1"><a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf">NIST, <i>Artificial Intelligence Risk Management Framework: Generative AI Profile</i></a>, NIST AI 600-1 (2024), § 2.2 “Confabulation”。界定自信呈现错误内容及虚构引文的风险。</li>
+<li id="s2"><a href="https://doi.org/10.1145/3571730">Ziwei Ji et al., <i>Survey of Hallucination in Natural Language Generation</i></a>, <i>ACM Computing Surveys</i> 55(12) (2023)。综述不同任务中幻觉的来源、类型和缓解方式。</li>
+<li id="s3"><a href="https://aclanthology.org/2022.acl-long.229/">Stephanie Lin, Jacob Hilton &amp; Owain Evans, <i>TruthfulQA: Measuring How Models Mimic Human Falsehoods</i></a>, <i>ACL 2022</i>。研究模型回答中的虚假观念复现。</li>
+<li id="s4"><a href="https://doi.org/10.1093/jla/laae003">Matthew Dahl et al., <i>Large Legal Fictions: Profiling Legal Hallucinations in Large Language Models</i></a>, <i>Journal of Legal Analysis</i> 16(1) (2024), 64–93。法律问答的实证研究，结论受测试条件约束。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第25课</small><p><b>推理模型：模型为何能分步骤解决复杂任务？</b>下一课理解推理阶段计算与外显解释之间的区别。</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
