@@ -1,0 +1,118 @@
+name: Publish verified news draft
+
+on:
+  # A code change only runs regression tests. It never publishes news.
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/news-from-draft.yml"
+      - "scripts/publish_news_from_draft.py"
+      - "scripts/test_publish_news_from_draft.py"
+  # The ChatGPT research task writes only fact-checked news JSON to news-drafts.
+  schedule:
+    - cron: "15 20 * * *"
+      timezone: "Asia/Shanghai"
+    - cron: "45 21 * * *"
+      timezone: "Asia/Shanghai"
+    - cron: "20 23 * * *"
+      timezone: "Asia/Shanghai"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: structured-news-release
+  cancel-in-progress: false
+
+jobs:
+  publish_or_test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Install HTML parser
+        run: python -m pip install beautifulsoup4==4.13.4
+
+      - name: Run isolated JSON-to-HTML release tests
+        run: python scripts/test_publish_news_from_draft.py
+
+      - name: Read today's explicitly ready draft
+        id: discover
+        if: github.event_name != 'push'
+        shell: bash
+        run: |
+          set -euo pipefail
+          day="$(TZ=Asia/Shanghai date +%F)"
+          echo "day=$day" >> "$GITHUB_OUTPUT"
+          echo "ready=false" >> "$GITHUB_OUTPUT"
+          git fetch --quiet origin refs/heads/news-drafts:refs/remotes/origin/news-drafts
+          path=".github/editions/${day}.news.json"
+          if ! git cat-file -e "refs/remotes/origin/news-drafts:${path}" 2>/dev/null; then
+            echo "No saved draft for $day; nothing to publish."
+            exit 0
+          fi
+          git show "refs/remotes/origin/news-drafts:${path}" > "$RUNNER_TEMP/ready-news.json"
+          if python - "$RUNNER_TEMP/ready-news.json" "$day" <<'PY'
+          import json,sys
+          data=json.load(open(sys.argv[1],encoding="utf-8"))
+          good=(data.get("date")==sys.argv[2] and
+                data.get("column")=="brief" and
+                data.get("publication_ready") is True)
+          raise SystemExit(0 if good else 1)
+          PY
+          then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+            echo "Ready news JSON found for $day."
+          else
+            echo "News draft exists but is not publication_ready; leave main unchanged."
+          fi
+
+      - name: Build verified news on latest main and publish atomically
+        if: steps.discover.outputs.ready == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DAY: ${{ steps.discover.outputs.day }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            echo "Publication attempt $attempt on fresh main."
+            git fetch --quiet origin main
+            git reset --hard origin/main
+            git clean -fd
+            python scripts/publish_news_from_draft.py --draft "$RUNNER_TEMP/ready-news.json"
+            page="articles/${DAY}-tech-law-brief.html"
+            record=".github/editions/${DAY}.news.json"
+            git add -- "$page" index.html briefs.html archive.html "$record" data/current-edition.json
+            if git diff --cached --quiet; then
+              echo "Already published and verified; no duplicate commit."
+              exit 0
+            fi
+            git commit -m "news: publish ${DAY} verified facts from structured draft"
+            if git push origin HEAD:main; then
+              echo "Main updated exactly once. Dispatching Pages via workflow_dispatch."
+              # A push made with GITHUB_TOKEN does not trigger another push workflow.
+              # workflow_dispatch is the documented exception.
+              gh workflow run pages.yml --ref main
+              echo "Pages was dispatched; check completed/success before reporting online."
+              exit 0
+            fi
+            echo "Concurrent main update prevented this push; regenerating from latest main."
+          done
+          echo "::error::Main moved three times; no force push attempted."
+          exit 1
+
+      - name: Describe this run
+        if: always()
+        run: |
+          echo "Tests prove rendering behavior only; a scheduled release also needs" >> "$GITHUB_STEP_SUMMARY"
+          echo "real publication_ready data and successful Pages deployment." >> "$GITHUB_STEP_SUMMARY"
