@@ -2,8 +2,8 @@
   "date": "2026-10-11",
   "column": "brief",
   "state": "draft",
-  "publication_ready": false,
-  "phase": "international_sources_verified_pending_final_scan",
+  "publication_ready": true,
+  "phase": "fact_check_completed_ready_for_actions",
   "base_main_sha": "070381fa748c3ee02703997451c86879a30cea2a",
   "page": "articles/2026-10-11-tech-law-brief.html",
   "items": [
@@ -14,7 +14,7 @@
       "date": "2026-10-10",
       "jurisdiction": "中国·浙江",
       "agency": "浙江省网信系统、宁波市网信部门",
-      "title": "浙江网信通报生成式AI陪伴应用未成年人保护违法问题及处罚",
+      "title": "浙江网信通报生成式AI应用未成年人保护违法问题及处罚",
       "original_title": "浙江网信9月执法处置通报丨浙E执法",
       "source_name": "浙江网信",
       "url": "https://www.zjwx.gov.cn/col/col1694583/art/2026/art_599c0f5512f24e0da89923033a79a592.html",
@@ -60,7 +60,7 @@
       "original_title": "我国将开展适应人工智能发展促就业行动",
       "source_name": "数字中国建设峰会官网（转载新华社消息）",
       "url": "https://www.digitalchina.gov.cn/2026/xwzx/szkx/202610/t20261010_5380162.htm",
-      "fact": "人社部门10月10日对外介绍下一阶段促进就业的工作部署，提出开展适应人工智能发展的促就业行动，并将关注技术发展对岗位和职业技能要求带来的变化。有关工作属于政策部署和拟推进事项，并非已经发布的企业用工强制性新规定。此次消息可结合平台劳动者权益、技能培训和算法管理的后续具体制度观察。",
+      "fact": "新华社10月10日报道，人社部门在当天的国新办新闻发布会上提出开展适应人工智能发展的促就业行动，回应新技术发展对就业和职业技能的影响。会上同时介绍将推进“技能照亮前程”培训行动、农民工就业促进行动、高品质就业公共服务供给行动以及“人力资源服务+”融合发展行动。上述安排属于下一阶段工作部署，而非当日公布的企业用工强制性新规。",
       "deduplication_note": "前七日未见此次人社部AI促就业行动部署的新发布；非重复一般AI产业政策"
     },
     {
@@ -138,7 +138,7 @@
       "domestic": false,
       "date": "2026-10-09",
       "jurisdiction": "日本",
-      "agency": "IDC Frontier、软银集团",
+      "agency": "IDC Frontier、软银株式会社",
       "title": "日本IDC Frontier公开云服务遭非法访问后的应急协调与客户恢复措施",
       "original_title": "〖第4報〗不正アクセスによる障害への対応体制について",
       "source_name": "IDCフロンティア",
@@ -215,7 +215,7 @@
     {
       "source_group": "中央权威媒体",
       "source_name": "新华社、人民网、央视新闻、央广网、中国新闻网",
-      "checked_at": "2026-10-11T20:20:12+08:00",
+      "checked_at": "2026-10-11T20:23:27+08:00",
       "status": "checked",
       "found": 2,
       "notes": "已检索当期科技治理及用工政策，交叉检查人社政策和主管机关消息"
@@ -223,7 +223,7 @@
     {
       "source_group": "法治司法劳动政策媒体",
       "source_name": "法治日报、人民法院报、检察日报、中国劳动保障报、中国组织人事报",
-      "checked_at": "2026-10-11T20:20:12+08:00",
+      "checked_at": "2026-10-11T20:23:27+08:00",
       "status": "checked",
       "found": 1,
       "notes": "核对人社部发布会和中国劳动保障报转载报道；继续补查司法新增"
@@ -231,7 +231,7 @@
     {
       "source_group": "财经媒体",
       "source_name": "财新、第一财经、21世纪经济报道、经济观察报、证券时报、上海证券报、中国证券报、每日经济新闻、北京商报",
-      "checked_at": "2026-10-11T20:20:12+08:00",
+      "checked_at": "2026-10-11T20:23:27+08:00",
       "status": "checked",
       "found": 1,
       "notes": "已查AI企业数据合规与IPO动态，企查查撤回申请向交易所复核"
@@ -239,7 +239,7 @@
     {
       "source_group": "综合媒体",
       "source_name": "澎湃、界面、新京报、南方都市报、南方周末及地方综合媒体",
-      "checked_at": "2026-10-11T20:20:12+08:00",
+      "checked_at": "2026-10-11T20:23:27+08:00",
       "status": "checked",
       "found": 1,
       "notes": "检索AI政策、监管、跨境数据及国际报道"
@@ -247,7 +247,7 @@
     {
       "source_group": "科技媒体",
       "source_name": "36氪、虎嗅、钛媒体、雷峰网、量子位、机器之心、IT之家、科创板日报",
-      "checked_at": "2026-10-11T20:20:12+08:00",
+      "checked_at": "2026-10-11T20:23:27+08:00",
       "status": "checked",
       "found": 1,
       "notes": "按模型安全、平台、数据中心和新规主题检索线索"
@@ -255,7 +255,7 @@
     {
       "source_group": "网络安全与数据合规媒体",
       "source_name": "安全内参、FreeBuf、嘶吼、数世咨询",
-      "checked_at": "2026-10-11T20:20:12+08:00",
+      "checked_at": "2026-10-11T20:23:27+08:00",
       "status": "checked",
       "found": 1,
       "notes": "实检安全内参、FreeBuf、嘶吼等线索，并回到CNCERT10月9日原始风险通报核验；不保存攻击技术步骤"
@@ -263,30 +263,45 @@
     {
       "source_group": "综合线索媒体",
       "source_name": "新浪科技、腾讯新闻、网易科技、凤凰网、搜狐",
-      "checked_at": "2026-10-11T20:20:12+08:00",
+      "checked_at": "2026-10-11T20:23:27+08:00",
       "status": "checked",
       "found": 0,
       "notes": "检索AI、网安、监管关键词；仅用于发现线索，不直接作为未经核验的最终事实"
+    },
+    {
+      "source_group": "财经媒体",
+      "source_name": "财新等部分限制订阅的财经报道",
+      "checked_at": "2026-10-11T20:23:27+08:00",
+      "status": "inaccessible",
+      "found": 0,
+      "notes": "部分报道全文需订阅，不能把只见搜索摘要当成核验；同组改以每日经济新闻完整报道并回核上交所公开审核状态"
+    },
+    {
+      "source_group": "国外媒体",
+      "source_name": "Law360／MLex等部分收费法律新闻",
+      "checked_at": "2026-10-11T20:23:27+08:00",
+      "status": "inaccessible",
+      "found": 0,
+      "notes": "付费全文不可独立核验，改查USITC、IPA、IDC、Reuters、Axios等可读取原文及官方一手文件；未使用付费网页摘要作为新闻原题依据"
     }
   ],
   "checks": {
-    "sources": false,
-    "legal_status": false,
-    "original_titles": false,
-    "timeliness": false,
-    "previous_day_event_deduplication": false,
-    "seven_day_history_deduplication": false,
-    "domestic_major_omission_review": false,
-    "natural_chinese_reviewed": false,
-    "foreign_layout": false
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "natural_chinese_reviewed": true,
+    "foreign_layout": true
   },
-  "checked_at": "2026-10-11T20:20:12+08:00",
-  "last_news_scan_at": null,
+  "checked_at": "2026-10-11T20:23:27+08:00",
+  "last_news_scan_at": "2026-10-11T20:23:27+08:00",
   "next_actions": [
-    "对照近7日逐一核对14条事件级增量",
-    "完成国内重大新闻遗漏反扫与国际官方最新发布终扫",
-    "核验外文原题原始链接、事实日期和版式约束",
-    "末次终扫后更新检查项与publication_ready并回读SHA"
+    "news-from-draft.yml于北京时间21:45检查ready并负责生成main单次提交；不手工改写main",
+    "检查同一Actions运行记录、Pages completed/success、首页及今日新闻入口和桌面/移动阅读验收",
+    "如GitHub计划触发未执行，向使用者报告真实问题，不将草稿误称已发布"
   ],
   "last_error": null
 }
