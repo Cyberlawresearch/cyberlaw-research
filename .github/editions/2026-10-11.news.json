@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-11",
+  "column": "brief",
+  "state": "draft",
+  "publication_ready": false,
+  "phase": "domestic_checkpoint_further_verification_needed",
+  "base_main_sha": "070381fa748c3ee02703997451c86879a30cea2a",
+  "page": "articles/2026-10-11-tech-law-brief.html",
+  "items": [
+    {
+      "id": "research-item-1",
+      "domestic": true,
+      "status": "verified",
+      "date": "2026-10-10",
+      "jurisdiction": "中国·浙江",
+      "agency": "浙江省网信系统、宁波市网信部门",
+      "title": "浙江网信通报生成式AI陪伴应用未成年人保护违法问题及处罚",
+      "original_title": "浙江网信9月执法处置通报丨浙E执法",
+      "source_name": "浙江网信",
+      "url": "https://www.zjwx.gov.cn/col/col1694583/art/2026/art_599c0f5512f24e0da89923033a79a592.html",
+      "fact": "浙江网信部门10月10日发布9月网络执法处置情况，披露宁波一款提供人工智能陪伴服务的应用在未成年人使用模式下存在不适宜内容等问题。主管部门已对相关企业作出警告和罚款10万元的行政处罚，并对责任人员罚款1万元。这是既有执法结果的公开通报，不是当天新制定的人工智能监管规则。",
+      "deduplication_note": "近七日新闻未见该次浙江网信9月执法通报，同其他模型安全研究发布并非同一事件"
+    },
+    {
+      "id": "research-item-2",
+      "domestic": true,
+      "status": "verified",
+      "date": "2026-10-10",
+      "jurisdiction": "中国·江苏南京",
+      "agency": "南京市人大常委会",
+      "title": "南京推进人工智能产业地方立法，条例草案进入二审修改阶段",
+      "original_title": "吕德明在立法工作领导小组第二次会议上强调 推动人工智能立法始终与产业发展同频共振",
+      "source_name": "南京市人大常委会",
+      "url": "https://rd.nanjing.gov.cn/yw/202610/t20261010_5922818.html",
+      "fact": "南京市人大常委会10月10日发布消息，披露10月9日立法工作领导小组第二次会议研究《南京市人工智能产业发展和创新应用促进条例（草案）》修改工作。会议聚焦人工智能创新应用、产业发展和治理要求，推动草案二审准备。该文件仍处于地方立法审议过程，尚不能将拟议条款表述为已经生效的法律义务。",
+      "deduplication_note": "近七日未见南京该条例二审修改会议同事件；区别于10月9日国家新质生产力政策"
+    },
+    {
+      "id": "research-item-3",
+      "domestic": true,
+      "status": "verified",
+      "date": "2026-10-10",
+      "jurisdiction": "中国",
+      "agency": "国家市场监督管理总局",
+      "title": "市场监管总局附条件批准分众传媒收购新潮传媒股权",
+      "original_title": "市场监管总局附条件批准分众传媒收购 新潮传媒股权案",
+      "source_name": "国家市场监督管理总局",
+      "url": "https://www.samr.gov.cn/xw/zj/art/2026/art_e4f023977f3d47eb8d910a9cfa9b732d.html",
+      "fact": "市场监管总局10月10日公开分众传媒收购新潮传媒股权案的附加限制性条件批准情况。主管机关从梯媒广告交易的竞争影响出发，对企业经营行为提出限制性要求，以回应交易可能产生的竞争顾虑。此次属于经营者集中审查中的附条件批准决定，并非认定当事人在相关市场已构成垄断违法的行政处罚。",
+      "deduplication_note": "前七日无该起梯媒广告集中附条件批准事项"
+    },
+    {
+      "id": "research-item-4",
+      "domestic": true,
+      "status": "verified",
+      "date": "2026-10-10",
+      "jurisdiction": "中国",
+      "agency": "人力资源和社会保障部",
+      "title": "人社部门提出开展适应人工智能发展的促就业行动",
+      "original_title": "我国将开展适应人工智能发展促就业行动",
+      "source_name": "数字中国建设峰会官网（转载新华社消息）",
+      "url": "https://www.digitalchina.gov.cn/2026/xwzx/szkx/202610/t20261010_5380162.htm",
+      "fact": "人社部门10月10日对外介绍下一阶段促进就业的工作部署，提出开展适应人工智能发展的促就业行动，并将关注技术发展对岗位和职业技能要求带来的变化。有关工作属于政策部署和拟推进事项，并非已经发布的企业用工强制性新规定。此次消息可结合平台劳动者权益、技能培训和算法管理的后续具体制度观察。",
+      "deduplication_note": "前七日未见此次人社部AI促就业行动部署的新发布；非重复一般AI产业政策"
+    },
+    {
+      "id": "research-item-5",
+      "domestic": true,
+      "status": "verified",
+      "date": "2026-10-10",
+      "jurisdiction": "中国",
+      "agency": "上海证券交易所、企查查",
+      "title": "上交所终止企查查IPO审核，数据合规与AI替代风险曾受问询",
+      "original_title": "毛利率超九成的企查查撤回IPO 曾被问及数据合规与AI替代风险",
+      "source_name": "每日经济新闻",
+      "url": "https://www.nbd.com.cn/articles/2026-10-10/4600716.html",
+      "fact": "根据上交所上市审核信息及10月10日媒体报道，企查查相关上市申请在申请人撤回后被终止审核。此前审核问询涉及企业商业信息数据来源、合规治理以及人工智能对主营业务模式的潜在影响。终止审核并不意味着证券监管机关已经认定企业违法，相关问询也不等于作出数据合规违规结论。",
+      "deduplication_note": "前七日无此项IPO终止审核报道；仅保存撤回和问询的真实程序状态"
+    }
+  ],
+  "news_count": 5,
+  "distribution": {
+    "domestic": 5,
+    "foreign": 0
+  },
+  "coverage": [
+    {
+      "source_group": "中央权威媒体",
+      "source_name": "新华社、人民网、央视新闻、央广网、中国新闻网",
+      "checked_at": "2026-10-11T20:16:04+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "已检索当期科技治理及用工政策，交叉检查人社政策和主管机关消息"
+    },
+    {
+      "source_group": "法治司法劳动政策媒体",
+      "source_name": "法治日报、人民法院报、检察日报、中国劳动保障报、中国组织人事报",
+      "checked_at": "2026-10-11T20:16:04+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核对人社部发布会和中国劳动保障报转载报道；继续补查司法新增"
+    },
+    {
+      "source_group": "财经媒体",
+      "source_name": "财新、第一财经、21世纪经济报道、经济观察报、证券时报、上海证券报、中国证券报、每日经济新闻、北京商报",
+      "checked_at": "2026-10-11T20:16:04+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "已查AI企业数据合规与IPO动态，企查查撤回申请向交易所复核"
+    },
+    {
+      "source_group": "综合媒体",
+      "source_name": "澎湃、界面、新京报、南方都市报、南方周末及地方综合媒体",
+      "checked_at": "2026-10-11T20:16:04+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "检索AI政策、监管、跨境数据及国际报道"
+    },
+    {
+      "source_group": "科技媒体",
+      "source_name": "36氪、虎嗅、钛媒体、雷峰网、量子位、机器之心、IT之家、科创板日报",
+      "checked_at": "2026-10-11T20:16:04+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "按模型安全、平台、数据中心和新规主题检索线索"
+    },
+    {
+      "source_group": "网络安全与数据合规媒体",
+      "source_name": "安全内参、FreeBuf、嘶吼、数世咨询",
+      "checked_at": "2026-10-11T20:16:04+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "核查安全预警、数据泄露及企业责任线索，继续回查官方来源"
+    },
+    {
+      "source_group": "综合线索媒体",
+      "source_name": "新浪科技、腾讯新闻、网易科技、凤凰网、搜狐",
+      "checked_at": "2026-10-11T20:16:04+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "检索AI、网安、监管关键词；仅用于发现线索，不直接作为未经核验的最终事实"
+    }
+  ],
+  "checks": {
+    "sources": false,
+    "legal_status": false,
+    "original_titles": false,
+    "timeliness": false,
+    "previous_day_event_deduplication": false,
+    "seven_day_history_deduplication": false,
+    "domestic_major_omission_review": false,
+    "natural_chinese_reviewed": false,
+    "foreign_layout": false
+  },
+  "checked_at": "2026-10-11T20:16:04+08:00",
+  "last_news_scan_at": null,
+  "next_actions": [
+    "完成国际消息的一手来源核验并扩充至至少10条",
+    "补齐国内官方与省级主管机关主题反扫",
+    "完成事件级近七日去重、外文原题回查和末次1—2小时终扫",
+    "回读草稿并只在全部检查确实通过时设置publication_ready=true"
+  ],
+  "last_error": null
+}
