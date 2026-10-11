@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-11",
+  "base_main_sha": "1eaa12736dda5273c0f8fcccc7d64f051ddb5f16",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {
+    "US": "pending",
+    "EU": "pending",
+    "UK": "pending",
+    "JP": "pending",
+    "KR": "pending",
+    "IN": "pending",
+    "CA": "pending",
+    "AU": "pending"
+  },
+  "last_error": null,
+  "next_actions": [
+    "检索近72小时重大贸易监管新事实",
+    "逐条核验法律阶段和具体一手来源",
+    "与最近至少7个已发布期次事件去重",
+    "形成完整网页并提交main、核验Pages"
+  ]
+}
