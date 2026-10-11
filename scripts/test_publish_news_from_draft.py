@@ -18,8 +18,9 @@ from publish_news_from_draft import publish, FACT_CHECKS, load, verify
 
 ROOT = Path(__file__).resolve().parents[1]
 TZ = ZoneInfo("Asia/Shanghai")
-RUN_TIME = datetime(2026, 10, 11, 20, 30, tzinfo=TZ)
-DAY = RUN_TIME.date().isoformat()
+BASE_DAY = datetime.fromisoformat(load(ROOT / "data/current-edition.json")["page_dates"]["brief"]).date()
+DAY = (BASE_DAY + timedelta(days=1)).isoformat()
+RUN_TIME = datetime.fromisoformat(DAY + "T20:30:00+08:00")
 
 
 def synthetic_draft():
@@ -100,7 +101,7 @@ def main():
         incomplete["items"][0]["url"] = "http://example.org/unsafe"
         expect_failure(root, incomplete, "HTTPS")
         incomplete = copy.deepcopy(data)
-        incomplete["items"][0]["date"] = "2026-10-08"
+        incomplete["items"][0]["date"] = (RUN_TIME.date() - timedelta(days=3)).isoformat()
         expect_failure(root, incomplete, "72-hour window")
 
         result = publish(root, data, RUN_TIME)
