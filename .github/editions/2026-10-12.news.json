@@ -3,16 +3,128 @@
   "column": "brief",
   "state": "draft",
   "publication_ready": false,
-  "phase": "research",
+  "phase": "writing",
   "base_main_sha": "ee8764bb0605ae4fbd411bb3db5879521b32b04f",
   "page": "articles/2026-10-12-tech-law-brief.html",
-  "items": [],
-  "news_count": 0,
+  "items": [
+    {
+      "id": "research-item-1",
+      "domestic": true,
+      "date": "2026-10-10",
+      "jurisdiction": "中国",
+      "agency": "工业和信息化部、公安部、生态环境部、市场监管总局",
+      "title": "四部门就加强汽车产品创新设计安全评估和研发测试公开征求意见",
+      "original_title": "关于公开征求《工业和信息化部 公安部 生态环境部 市场监管总局关于进一步加强汽车产品创新设计和研发测试验证有关管理工作的通知（征求意见稿）》意见的公示",
+      "source_name": "工业和信息化部",
+      "url": "https://www.miit.gov.cn/gzcy/yjzj/art/2026/art_d82e902143264b6d9179e01ee54a414f.html",
+      "fact": "工业和信息化部会同公安部、生态环境部、市场监管总局起草了关于加强汽车产品创新设计和研发测试验证管理的通知，并于10月10日公开征求意见。征求意见稿要求汽车生产企业重视创新设计中的产品安全评估与研发测试验证，相关意见可在11月10日前提交。该文件目前仍处征求意见阶段，不能当作已经施行的强制性规范。",
+      "status": "verified",
+      "deduplication": "与10月11日国内其他AI监管、汽车以外产业报道及10月5日至10日新闻逐条对照，未见针对该四部门汽车研发测试征求意见的同一事件条目。"
+    },
+    {
+      "id": "research-item-2",
+      "domestic": true,
+      "date": "2026-10-10",
+      "jurisdiction": "中国·重庆",
+      "agency": "重庆市城市管理局",
+      "title": "重庆要求停车场数据接入市级智慧停车应用，明确订单按笔调取",
+      "original_title": "停车引导、通停通付、泊位共享！全市停车场数据将联网接入“渝畅停”",
+      "source_name": "重庆日报",
+      "url": "https://app.cqrb.cn/shishi/2026-10-10/2792558_pc.html",
+      "fact": "重庆日报10月10日报道，重庆市城市管理局近日发布停车场数据联网接入通告，要求有关停车场接入市级智慧停车应用“渝畅停”，通告拟于11月1日起施行。接入数据包括剩余车位、车辆进出场时间和图像等，停车支付订单数据仅在用户使用通停通付时按笔调取，不进行批量获取；采集数据统一存储于指定政务云。",
+      "status": "verified",
+      "deduplication": "10月11日和过去一周未发现该重庆停车数据联网通告同一事件；以10月10日首次核验新闻报道日期为新发布信息时间，不推定官方通告出台当日。"
+    },
+    {
+      "id": "research-item-3",
+      "domestic": true,
+      "date": "2026-10-12",
+      "jurisdiction": "中国·上海",
+      "agency": "上海市有关部门",
+      "title": "上海启动新一代智能制造行动，提出2028年工业AI应用目标",
+      "original_title": "上海：到2028年，推动8000台人形机器人进工厂",
+      "source_name": "澎湃新闻",
+      "url": "https://www.thepaper.cn/newsDetail_forward_34235219",
+      "fact": "10月12日，上海在中国国际工业博览会开幕式上正式启动加快发展新一代智能制造行动，提出四大工程及19项重点任务。行动计划到2028年推动重点制造企业智能工厂普及，形成2000多个人工智能制造应用场景、10个垂直行业大模型和300个智能体，并推动人形机器人进入工厂。该事项属于产业政策部署，而非已生效的行政监管规则。",
+      "status": "verified",
+      "deduplication": "与10月11日上海文旅大数据实验室及计算平台报道区分，本条是10月12日新启动的工业智能制造行动，实体与政策安排不同；近7天未见重复。"
+    },
+    {
+      "id": "research-item-4",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "挪威",
+      "agency": "挪威数据保护局（Datatilsynet）",
+      "title": "挪威个人信息监管机构对微软旗下广告技术企业Xandr处以9200万挪威克朗罚款",
+      "original_title": "Datatilsynet gir Microsoft-selskap 92 millioner i gebyr",
+      "source_name": "挪威数据保护局",
+      "url": "https://www.datatilsynet.no/aktuelt/aktuelle-nyheter-2026/datatilsynet-gir-microsoft-selskap-92-millioner-i-bot/",
+      "fact": "挪威数据保护局10月12日宣布对微软旗下广告技术企业Xandr处以9200万挪威克朗行政罚款，认定其在实时广告交易中违法处理并传播来自Grindr用户的敏感个人信息。监管机构否定广告技术中介仅以原应用已取得同意为由免责的主张，认为接收和继续利用数据的企业同样负有确认处理合法性的责任。该决定针对微软收购之前的历史行为，企业仍可依法提出救济。",
+      "status": "verified",
+      "deduplication": "与10月5日至11日简报中的韩国Coupang处罚诉讼及英国ICO AI数据处理事项主体、违法行为和程序进展均不同，未发现本案重复。"
+    },
+    {
+      "id": "research-item-5",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "英国",
+      "agency": "英国内阁办公室、AI安全研究所、国家网络安全中心等",
+      "title": "英国公布前沿AI风险防御措施，拟研究严重AI事件和险情报告安排",
+      "original_title": "Britain steps up national defences against growing AI risks",
+      "source_name": "英国政府（GOV.UK）",
+      "url": "https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks",
+      "fact": "英国政府10月12日发布人工智能风险防御措施，宣布扩展利用前沿AI识别公共部门网络风险的试点，并由国家网络安全中心和AI安全研究所研究自主AI智能体严重事件的应对能力。政府表示将研究通过《网络安全与韧性法案》相关制度加强防护，探讨识别和报告AI严重事故及未遂险情的措施。这些新增报告制度仍在研究阶段，尚非已经通过的法律义务。",
+      "status": "verified",
+      "deduplication": "与10月10日英国媒体报道拟增加AI智能体事故报告要求有所关联；10月12日政府首次正式披露完整方案、机构职责与试点范围，属于新的官方政策动作，故按增量收录。"
+    }
+  ],
+  "news_count": 5,
   "distribution": {
-    "domestic": 0,
-    "foreign": 0
+    "domestic": 3,
+    "foreign": 2
   },
-  "coverage": [],
+  "coverage": [
+    {
+      "source_group": "国内主管机关",
+      "source_name": "工业和信息化部",
+      "checked_at": "2026-10-12T21:49:17.360+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核对10月10日汽车产品创新设计与测试验证征求意见公示原文；主管机关其他主题尚在巡视"
+    },
+    {
+      "source_group": "国内地方政府与媒体",
+      "source_name": "重庆日报、重庆市城市管理局官网关联",
+      "checked_at": "2026-10-12T21:49:17.360+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核对10月10日停车场联网通告报道并追溯官方原文链接"
+    },
+    {
+      "source_group": "国内媒体第四组",
+      "source_name": "澎湃新闻",
+      "checked_at": "2026-10-12T21:49:17.360+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核实10月12日上海智能制造行动的正式启动、目标与属性"
+    },
+    {
+      "source_group": "国际监管机关",
+      "source_name": "Datatilsynet、Forbrukerrådet",
+      "checked_at": "2026-10-12T21:49:17.360+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "原文与挪威消费者委员会新闻及路透社交叉核对"
+    },
+    {
+      "source_group": "国际官方机构",
+      "source_name": "GOV.UK",
+      "checked_at": "2026-10-12T21:49:17.360+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核验10月12日英国政府发布的AI安全措施及立法状态"
+    }
+  ],
   "checks": {
     "sources": false,
     "legal_status": false,
@@ -26,12 +138,12 @@
   },
   "checked_at": null,
   "last_news_scan_at": null,
-  "updated_at": "2026-10-12T19:14:00+08:00",
+  "updated_at": "2026-10-12T21:49:17.360+08:00",
   "next_actions": [
-    "逐组巡检国内七组媒体及中央地方主管机构",
-    "巡检国际一手及权威媒体",
-    "事实核验并与近7日事件去重",
-    "终扫后进行出版就绪校验"
+    "完成国内七组媒体逐组核查与覆盖记录",
+    "补齐欧盟、美国、日本、韩国等国际一手及权威媒体核验",
+    "扩大至至少10条高质量新闻并逐条事件去重",
+    "完成最近两小时终扫、校验转换器字段后再决定是否设置publication_ready"
   ],
   "last_error": null,
   "publication": {
