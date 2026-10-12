@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Shanghai",
+  "base_main_sha": "3506f0c37ecbbd6030e391b6699a51067768899c",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {
+    "US": "pending",
+    "EU": "pending",
+    "UK": "pending",
+    "JP": "pending",
+    "KR": "pending",
+    "IN": "pending",
+    "CA": "pending",
+    "AU": "pending"
+  },
+  "last_error": null,
+  "next_actions": [
+    "官方来源检索近72小时新事实",
+    "逐条核验与最近7期去重",
+    "终扫和保存可发布正文",
+    "依次写入main三文件并验收Pages"
+  ]
+}
