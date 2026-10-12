@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-12",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-10-12-new-works.html",
+  "newworks_count": 3,
+  "works": [
+    {
+      "title": "Explanation as a legal right beyond the GDPR: Toward a jurisdictionally pluralist framework for algorithmic accountability",
+      "doi": "10.1177/27723577261496788",
+      "source": "https://journals.sagepub.com/doi/10.1177/27723577261496788"
+    },
+    {
+      "title": "Position Statement of the Max Planck Institute of 25 June 2026 on the Future Copyright Framework in Times of Generative AI",
+      "doi": "10.1093/grurint/ikag093",
+      "version": "GRUR International advance article",
+      "source": "https://academic.oup.com/grurint/advance-article/doi/10.1093/grurint/ikag093/8898636"
+    },
+    {
+      "title": "Taking a Business and Human Rights Approach to Addressing Technology-Facilitated Gender-Based Violence",
+      "doi": "10.1017/bhj.2026.10057",
+      "source": "https://www.cambridge.org/core/journals/business-and-human-rights-journal/article/taking-a-business-and-human-rights-approach-to-addressing-technologyfacilitated-genderbased-violence/1D8833E4D6720380965A4F9BC7599D31"
+    }
+  ],
+  "checks": {
+    "original_publication_pages": true,
+    "doi_version_checks": true,
+    "three_items": true,
+    "repository_keyword_deduplication": true,
+    "natural_chinese_review": true
+  },
+  "publication": {
+    "pages_status": null,
+    "online_validation": null
+  }
+}
