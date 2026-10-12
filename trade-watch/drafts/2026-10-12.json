@@ -2,7 +2,7 @@
   "date": "2026-10-12",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "83bd2f10d76b6251a838c96d68312eff70831c91",
-  "phase": "first_batch_verified",
+  "phase": "cross_jurisdiction_verified",
   "publication_ready": false,
   "items": [
     {
@@ -46,23 +46,80 @@
         "https://ofac.treasury.gov/media/937191/download?inline="
       ],
       "checked": true
+    },
+    {
+      "id": "eu-russia-military-listings-1569",
+      "date": "2026-10-12",
+      "jurisdiction": "欧盟",
+      "agency": "欧盟理事会",
+      "stage": "已通过新增制裁列名",
+      "title": "欧盟新增1,569名俄罗斯军工相关个人和实体制裁对象",
+      "facts": "列入826家俄罗斯军工企业及743名相关负责人，涉及导弹、无人机与航空供应链，涉及资产冻结及不得直接间接提供资金或经济资源；需按欧盟官方名单核查交易对手。",
+      "source_urls": [
+        "https://www.consilium.europa.eu/de/press/press-releases/2026/10/12/russia-s-war-of-aggression-against-ukraine-eu-agrees-largest-ever-package-of-listings-targeting-almost-1600-individuals-and-entities-in-russia-s-military-industrial-complex/"
+      ],
+      "checked": true
+    },
+    {
+      "id": "eu-dprk-russia-additional-listings",
+      "date": "2026-10-12",
+      "jurisdiction": "欧盟",
+      "agency": "欧盟理事会",
+      "stage": "已通过制裁列名",
+      "title": "欧盟新增3名个人、4家实体的朝鲜相关制裁列名",
+      "facts": "涉及朝俄军工协作、朝鲜劳工、对朝石油运输及工业投资，包括俄罗斯Samolet Group、Black Horse关联实体、Paekyangsan Shipping，资产冻结和禁止提供经济资源适用。",
+      "source_urls": [
+        "https://www.consilium.europa.eu/ro/press/press-releases/2026/10/12/dprk-council-adds-three-individuals-and-four-entities-to-sanctions-lists-over-nuclear-missile-programmes-and-russia-ties/"
+      ],
+      "checked": true
+    },
+    {
+      "id": "uk-iran-two-designations",
+      "date": "2026-10-12",
+      "jurisdiction": "英国",
+      "agency": "英国外交发展部",
+      "stage": "两名个人新列名即时生效",
+      "title": "英国新增两名伊朗关联个人制裁对象",
+      "facts": "Ruhollah Bazghandi、Shahram Ali Reza Tamarzadeh Jakki因涉嫌参与或协助伊朗支持的境外敌对活动被指定，立即适用资产冻结、旅行禁令、董事任职限制；交易与受益人筛查须更新。",
+      "source_urls": [
+        "https://www.gov.uk/government/news/foreign-secretary-statement-on-iran-12-october",
+        "https://search-uk-sanctions-list.service.gov.uk/designations/IRN0282/Individual"
+      ],
+      "checked": true
+    },
+    {
+      "id": "cn-eu-hybrid-clarification-oct12",
+      "date": "2026-10-12",
+      "jurisdiction": "中国/欧盟",
+      "agency": "中国商务部",
+      "stage": "10月12日公布磋商成果具体原则，执行细则尚未公布",
+      "title": "商务部明确中欧混动汽车安排以2025年30.2万辆为上调基数",
+      "facts": "10月12日新增信息：欧盟自中国进口混动汽车2024年10.7万辆、2025年30.2万辆，双方同意在2025年基础上向上安排，中国配额不低于其他来源地、不得歧视、须符合WTO规则；具体总量和实施时间仍未公布，不得误报已生效配额。",
+      "source_urls": [
+        "https://www.mofcom.gov.cn/syxwfb/art/2026/art_d6a5e2c4e62740868c7f1a7cd061f84a.html"
+      ],
+      "checked": true
     }
   ],
   "coverage": {
     "US": {
       "checked": true,
-      "detail": "OFAC Oct9；USTR Oct9；未重复报道Oct11已收录GL135/Pegasus/ITC等"
+      "detail": "OFAC 10月9日动作和商务部FR复审终裁"
     },
     "EU": {
       "checked": true,
-      "detail": "EUR-Lex Oct9公告和新规；审阅近7期"
+      "detail": "理事会10月12日多组制裁、EUR-Lex 10月9日反倾销法规"
+    },
+    "UK": {
+      "checked": true,
+      "detail": "FCDO 10月12日名单与新闻稿"
     }
   },
   "last_error": null,
   "next_actions": [
-    "核对欧盟聚乙烯醇法规具体生效、企业范围与登记期限",
-    "完成英国、日本、韩国、印度、加拿大、澳大利亚及其他经济体当期官方核验",
-    "完成近七期去重及最终链接核验并分批保存，结束前终扫",
-    "publication_ready=true后按既有路径正常发布"
+    "继续核验10月9—12日美韩钢铁案、欧盟材料贸易救济、其他法域并完成去重",
+    "核验最终一手来源与国内外终扫",
+    "更新完整待发内容与 publication_ready 状态",
+    "按最新SHA提交第036期及首页归档并验收"
   ]
 }
