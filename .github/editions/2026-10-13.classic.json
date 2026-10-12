@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-13",
+  "column": "classic",
+  "status": "verified",
+  "state": "verified",
+  "phase": "deployment_check",
+  "book": "Frank J. Goodnow（古德诺）：《政治与行政：政府研究》",
+  "bibliography": {
+    "author": "Frank J. Goodnow",
+    "originalTitle": "Politics and Administration: A Study in Government",
+    "publisher": "The Macmillan Company",
+    "year": "1900",
+    "edition": "1900年版"
+  },
+  "target_path": "articles/2026-10-13-goodnow-politics-administration.html",
+  "base_main_sha": "25aabd51fd330568db7c19564bef6eb521f9acf0",
+  "sources": [
+    "https://archive.org/details/politicsadminist00goodrich",
+    "https://books.google.com/books?id=KOkJAAAAIAAJ",
+    "https://studylib.net/doc/28324578/frank-goodnow---politics-and-administration--internet-arc...",
+    "https://journals.sagepub.com/doi/abs/10.1177/00953999922019049",
+    "https://onlinelibrary.wiley.com/doi/10.1111/0033-3352.00020",
+    "https://www.cambridge.org/core/journals/social-philosophy-and-policy/article/abs/progressive-origins-of-the-administrative-state-wilson-goodnow-and-landis/589946D8C35D97482D914D771EF73A56"
+  ],
+  "verification": {
+    "title_page_and_1900_edition_checked": true,
+    "complete_primary_text_and_chapter_map_checked": true,
+    "original_preface_and_ten_chapters_checked": true,
+    "ten_chapter_core_arguments_crosschecked": true,
+    "history_duplicate_check": true,
+    "sourced_criticism_checked": true,
+    "later_interpretation_distinguished": true,
+    "natural_chinese_reviewed": true,
+    "digital_extension_distinguished": true,
+    "final_body_complete": true
+  },
+  "history_dedup": {
+    "passed": true,
+    "checked_against": [
+      "classics.html current full index",
+      "classics-history.html older index",
+      "recent classic commits"
+    ],
+    "note": "此前历史索引中的《比较行政法》与本书不同；今日未重复已发布的经典书目。"
+  },
+  "summary": "以国家意志的表达与执行为分析起点，解释正式宪制与实际政治的不一致、行政协调与政党组织的相互作用，并从政治责任及专业行政边界讨论制度改革。",
+  "homepage_summary": "Frank J. Goodnow（古德诺）：《政治与行政：政府研究》",
+  "classics_summary": "Frank J. Goodnow（古德诺）：《政治与行政：政府研究》",
+  "archive_summary": "最新：Frank J. Goodnow（古德诺）：《政治与行政：政府研究》",
+  "checked_at": "2026-10-13T02:09:39+08:00",
+  "last_error": null,
+  "publication": {
+    "deployment_claim": false,
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_result": null,
+    "live_checks": null
+  }
+}
