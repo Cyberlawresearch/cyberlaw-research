@@ -2,7 +2,7 @@
   "date": "2026-10-12",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "83bd2f10d76b6251a838c96d68312eff70831c91",
-  "phase": "main_written_pages_pending",
+  "phase": "published_pages_verified_source_access_issue",
   "publication_ready": true,
   "items": [
     {
@@ -225,10 +225,18 @@
       "detail": "巡检澳大利亚反倾销主管机构及相关贸易公告，未发现达到收录门槛的新决定"
     }
   },
-  "last_error": null,
+  "last_error": {
+    "stage": "source_verification",
+    "tool": "GitHub Actions Trade Watch source diagnostics",
+    "run_id": 38290394015,
+    "text": "Three consilium.europa.eu press-release URLs return HTTP 403 to GitHub Actions requests; all 3 public Trade Watch pages match the deployed commit (HTTP 200). Other 10 specific-source URLs responded successfully.",
+    "retry_count": 2,
+    "does_not_affect_main_publishing": true
+  },
   "next_actions": [
-    "等待本次最终提交对应Pages部署与公开页面、链接验收",
-    "若Pages失败按真实日志定位后做最小必要修复，绝不暂停定时任务"
+    "保留三个欧盟理事会正式公告直达链接，不为规避403削弱检查",
+    "后续正常核查外部站点403属于自动访问限制还是持续故障",
+    "下期继续按北京时间9:00正常运行，不修改或停止定时任务"
   ],
   "dedup_checked_against": [
     "2026-10-11",
@@ -248,8 +256,30 @@
       "trade-watch/archive.html": "548995aaadc7632085a5b561850e2f8d4d9c3f82"
     },
     "pages_run_id": 38290039237,
-    "pages_status": "in_progress",
-    "source_check_status": "pending",
-    "news_count": 10
+    "pages_status": "completed/success",
+    "source_check_status": "failure: official EU Council 403 from GitHub Actions automatic requests; 10 other specific-source links passed",
+    "news_count": 10,
+    "public_pages_verified": true,
+    "public_pages": [
+      {
+        "path": "issues/2026-10-12.html",
+        "status": 200,
+        "news_count": 10
+      },
+      {
+        "path": "index.html",
+        "status": 200,
+        "latest_issue": "2026-10-12"
+      },
+      {
+        "path": "archive.html",
+        "status": 200,
+        "first_issue": "2026-10-12"
+      }
+    ],
+    "source_check_run_id": 38290394015,
+    "source_check_failed_hosts": [
+      "www.consilium.europa.eu"
+    ]
   }
 }
