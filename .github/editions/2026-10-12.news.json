@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-12",
+  "column": "brief",
+  "state": "draft",
+  "publication_ready": false,
+  "phase": "research",
+  "base_main_sha": "ee8764bb0605ae4fbd411bb3db5879521b32b04f",
+  "page": "articles/2026-10-12-tech-law-brief.html",
+  "items": [],
+  "news_count": 0,
+  "distribution": {
+    "domestic": 0,
+    "foreign": 0
+  },
+  "coverage": [],
+  "checks": {
+    "sources": false,
+    "legal_status": false,
+    "original_titles": false,
+    "timeliness": false,
+    "previous_day_event_deduplication": false,
+    "seven_day_history_deduplication": false,
+    "domestic_major_omission_review": false,
+    "natural_chinese_reviewed": false,
+    "foreign_layout": false
+  },
+  "checked_at": null,
+  "last_news_scan_at": null,
+  "updated_at": "2026-10-12T19:14:00+08:00",
+  "next_actions": [
+    "逐组巡检国内七组媒体及中央地方主管机构",
+    "巡检国际一手及权威媒体",
+    "事实核验并与近7日事件去重",
+    "终扫后进行出版就绪校验"
+  ],
+  "last_error": null,
+  "publication": {
+    "main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "online_verification": null
+  }
+}
