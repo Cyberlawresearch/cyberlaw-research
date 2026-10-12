@@ -2,8 +2,8 @@
   "date": "2026-10-12",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "83bd2f10d76b6251a838c96d68312eff70831c91",
-  "phase": "cross_jurisdiction_verified",
-  "publication_ready": false,
+  "phase": "verified_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "eu-aluminium-frp-expiry-review",
@@ -17,7 +17,11 @@
       "source_urls": [
         "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026XC05183"
       ],
-      "checked": true
+      "checked": true,
+      "importance": 5,
+      "scope": "中国原产非合金及合金铝平轧制品（以官方产品范围、排除条款与海关税号为准）对欧出口、材料加工和欧洲进口商。",
+      "impact": "出口生产商应按样本表完成产销量和企业资料申报，保存产品规格、欧盟销售价格、成本及原产地证明；复审期间现有反倾销措施原则上继续，不应把复审立案误作取消税率或新征税。",
+      "deadline": "2026年10月9日公告；抽样资料7日内提交，其他反倾销意见一般37日内提交，部分替代国/投入品意见15日内提交，以公告各程序期限为准。"
     },
     {
       "id": "eu-china-pva-registration",
@@ -30,7 +34,12 @@
       "source_urls": [
         "https://eur-lex.europa.eu/eli/reg_impl/2026/2245/oj"
       ],
-      "checked": true
+      "checked": true,
+      "importance": 5,
+      "scope": "中国Sinopec Chongqing SVW Chemical Co.及Sinopec Great Wall Energy & Chemical Ningxia Co.生产、TARIC 3905 30 00 91的指定聚乙烯醇。",
+      "impact": "欧盟进口商按生产商身份及TARIC代码核对海关进口登记，在进口合同里明确未来可能追溯征税的风险承担；登记本身不是已经决定补税。海关相关退税或减免申请亦会受到暂不决定的安排影响。",
+      "deadline": "条例2026年10月9日公布、10月10日生效，登记有效期为生效后9个月；是否追溯征税须待后续决定。",
+      "deadlines": "条例2026年10月9日公布、10月10日生效，登记有效期为生效后9个月；是否追溯征税须待后续决定。"
     },
     {
       "id": "us-ofac-icc-sanctions-licenses",
@@ -45,7 +54,12 @@
         "https://ofac.treasury.gov/media/937186/download?inline=",
         "https://ofac.treasury.gov/media/937191/download?inline="
       ],
-      "checked": true
+      "checked": true,
+      "importance": 4,
+      "scope": "对国际刑事法院及相关人员或组织提供的服务、软件、通信、金融与跨境结算。",
+      "impact": "涉及美国人、美元清算或美国服务的机构先按SDN和所有权控制要求筛查ICC相关交易，再按GL13—16的具体许可类型判断可否支付会员费、提供电信/企业软件或养老金等，不得把一般许可证视作全面解除制裁。",
+      "deadline": "2026年10月9日正式新增ICC SDN及签发4项一般许可证；GL13相关有限期授权截至2027年4月7日，其他许可按原文。",
+      "deadlines": "2026年10月9日正式新增ICC SDN及签发4项一般许可证；GL13相关有限期授权截至2027年4月7日，其他许可按原文。"
     },
     {
       "id": "eu-russia-military-listings-1569",
@@ -58,7 +72,13 @@
       "source_urls": [
         "https://www.consilium.europa.eu/de/press/press-releases/2026/10/12/russia-s-war-of-aggression-against-ukraine-eu-agrees-largest-ever-package-of-listings-targeting-almost-1600-individuals-and-entities-in-russia-s-military-industrial-complex/"
       ],
-      "checked": true
+      "checked": true,
+      "importance": 5,
+      "scope": "欧盟与俄罗斯军工体系的直接和间接贸易，航空电子、无人机、精密设备、通信及第三方转运采购。",
+      "impact": "在合同签订、出库、出口许可和银行付款前重新筛查买方、最终用户、实控关系与运输代理。被列名公司及其控制的交易涉及资产冻结和禁止提供经济资源，既有客户名单不能替代本轮新列名核查。",
+      "deadline": "欧盟理事会2026年10月12日通过新增列名；具体法律生效按正式公布的理事会法规及决定执行，无答卷窗口。",
+      "analysis": "该批为全新制裁名单变化，未在第035期出现。",
+      "deadlines": "欧盟理事会2026年10月12日通过新增列名；具体法律生效按正式公布的理事会法规及决定执行，无答卷窗口。"
     },
     {
       "id": "eu-dprk-russia-additional-listings",
@@ -71,7 +91,12 @@
       "source_urls": [
         "https://www.consilium.europa.eu/ro/press/press-releases/2026/10/12/dprk-council-adds-three-individuals-and-four-entities-to-sanctions-lists-over-nuclear-missile-programmes-and-russia-ties/"
       ],
-      "checked": true
+      "checked": true,
+      "importance": 4,
+      "scope": "涉朝俄军工项目、船舶成品油运输、劳动服务、工业投资及相关物流和金融服务。",
+      "impact": "石油贸易商、船代、保险和境外工程承包商须核验船舶所有人及运营人、付款路径和最终受益人。不得仅因供应商注册在俄罗斯就忽视朝鲜关联、联合国制裁及欧盟新增列名。",
+      "deadline": "2026年10月12日新增3人4实体列名，具体适用以公布于欧盟官方公报的名单为准。",
+      "deadlines": "2026年10月12日新增3人4实体列名，具体适用以公布于欧盟官方公报的名单为准。"
     },
     {
       "id": "uk-iran-two-designations",
@@ -85,7 +110,12 @@
         "https://www.gov.uk/government/news/foreign-secretary-statement-on-iran-12-october",
         "https://search-uk-sanctions-list.service.gov.uk/designations/IRN0282/Individual"
       ],
-      "checked": true
+      "checked": true,
+      "importance": 4,
+      "scope": "涉及英国主体或英国境内的付款、企业任职、资产和与伊朗关联的第三方交易。",
+      "impact": "检查合同方、银行账户和受益所有人是否涉及两名新指定对象，停止未经授权的受限资产交易；核对既有合同付款履行及英国集团内部制裁筛查名单。",
+      "deadline": "2026年10月12日立即施行资产冻结、旅行禁令及董事资格限制。",
+      "deadlines": "2026年10月12日立即施行资产冻结、旅行禁令及董事资格限制。"
     },
     {
       "id": "cn-eu-hybrid-clarification-oct12",
@@ -98,7 +128,67 @@
       "source_urls": [
         "https://www.mofcom.gov.cn/syxwfb/art/2026/art_d6a5e2c4e62740868c7f1a7cd061f84a.html"
       ],
-      "checked": true
+      "checked": true,
+      "importance": 5,
+      "scope": "对欧出口混合动力车整车及零部件、经销和长期供货合同。",
+      "impact": "整车企业可将2025年欧盟进口中国混动车30.2万辆作为官方披露的磋商基数，在年度产能、欧洲经销网络及供货合同中安排政策变化条款；但尚不得按猜测配额提前更改海关申报或预设限额。",
+      "deadline": "商务部2026年10月12日披露三项原则，具体配额数量、实施办法与生效日期尚待正式规则。",
+      "analysis": "相较10月11日仅有原则性磋商结果，本期新增2024—2025年统计基数、2025年基础上向上安排、配额非歧视及WTO原则。",
+      "deadlines": "商务部2026年10月12日披露三项原则，具体配额数量、实施办法与生效日期尚待正式规则。"
+    },
+    {
+      "id": "us-korea-hotrolled-cvd-final",
+      "date": "2026-10-09",
+      "jurisdiction": "美国",
+      "agency": "美国商务部国际贸易管理局",
+      "stage": "反补贴行政复审终裁",
+      "title": "美国对韩国热轧钢反补贴复审终裁，现代钢铁1.28%、浦项3.68%",
+      "facts": "联邦公报91 FR 64635、案号C-580-884公布2023年度最终复审结果，认定Hyundai Steel 1.28%、POSCO 3.68%的应抵消补贴率；涉及复审期内进口税款核算和此后的保证金率，并非针对中国原产钢材的新增税令。",
+      "source_urls": [
+        "https://www.govinfo.gov/content/pkg/FR-2026-10-09/html/2026-20778.htm"
+      ],
+      "checked": true,
+      "importance": 3,
+      "scope": "韩国原产热轧平板钢材输美及韩国、中国、美国钢铁下游采购竞争。",
+      "impact": "采购韩国钢材的美国进口商应按出口商及复审期核对适用保证金率和税款清算，评估韩国供应与中国等替代来源的到岸成本差异；本终裁不修改中国原产钢材既有独立措施。",
+      "deadline": "2026年10月9日终裁适用；相关复审期进口税额待CBP收到指令，税款清算程序及司法复核窗口按正式公告。",
+      "deadlines": "2026年10月9日终裁适用；相关复审期进口税额待CBP收到指令，税款清算程序及司法复核窗口按正式公告。"
+    },
+    {
+      "id": "us-cambodia-bags-ad-prelim",
+      "date": "2026-10-09",
+      "jurisdiction": "美国",
+      "agency": "美国商务部国际贸易管理局",
+      "stage": "反倾销行政复审初裁",
+      "title": "美国对柬埔寨纸购物袋复审初裁20.08%至73.30%，意见期启动",
+      "facts": "案号A-555-002，初步倾销幅度Nice Packaging、Brandart及TB Packaging均为20.08%，UUPak为73.30%（不利事实推定）。2024年1月至2025年6月的复审期税率尚待终裁，现行进口现金保证金率不因初裁立即变更。",
+      "source_urls": [
+        "https://www.govinfo.gov/content/pkg/FR-2026-10-09/html/2026-20777.htm"
+      ],
+      "checked": true,
+      "importance": 3,
+      "scope": "柬埔寨原产纸购物袋进口美国、在柬制造和供应链转移的印刷包装企业。",
+      "impact": "核对四家被复审出口商的初裁幅度、向美国出口时的真正原产地及当期现金保证金要求；目前20.08%与73.30%是初步计算结果，不是当天新增的正式保证金率，未来终裁可能影响结算与进口成本。",
+      "deadline": "2026年10月9日公布初裁；案件简报21天内提交，反驳简报于其后5天内提交，按ACCESS正式要求操作。",
+      "deadlines": "2026年10月9日公布初裁；案件简报21天内提交，反驳简报于其后5天内提交，按ACCESS正式要求操作。"
+    },
+    {
+      "id": "eu-chem-sanctions-extend",
+      "date": "2026-10-12",
+      "jurisdiction": "欧盟",
+      "agency": "欧盟理事会",
+      "stage": "正式决定延长制裁制度及现有名单期限",
+      "title": "欧盟将化学武器制裁框架延至2031年，31人及6家实体列名再延一年",
+      "facts": "10月12日理事会决定将针对化学武器扩散和使用的限制措施框架延长至2031年10月30日；现行31名个人、6家实体列名延至2027年10月30日。名单内主体继续适用资产冻结、资金和经济资源提供禁令，个人另有入境限制。",
+      "source_urls": [
+        "https://www.consilium.europa.eu/fr/press/press-releases/2026/10/12/chemical-weapons-council-renews-framework-for-restrictive-measures-and-individual-listings/"
+      ],
+      "checked": true,
+      "importance": 3,
+      "scope": "欧盟与涉及化学武器制裁名单主体的设备、技术、物流、金融和其他交易。",
+      "impact": "银行、设备供应商及跨国集团需继续执行37个列名对象的制裁筛查和冻结安排，不应把原名单即将到期误作限制已经终止；若新供应商与列名个人或企业有关联须重新核验控制关系。",
+      "deadline": "制裁框架延至2031年10月30日；31人、6家实体的名单有效期延至2027年10月30日。",
+      "deadlines": "制裁框架延至2031年10月30日；31人、6家实体的名单有效期延至2027年10月30日。"
     }
   ],
   "coverage": {
@@ -113,13 +203,42 @@
     "UK": {
       "checked": true,
       "detail": "FCDO 10月12日名单与新闻稿"
+    },
+    "JP": {
+      "checked": true,
+      "detail": "核对METI近期出口管理更新；10月11日已收录10月16日对俄禁令，无新的决定重复发布"
+    },
+    "KR": {
+      "checked": true,
+      "detail": "核查韩国关税、贸易救济与海关相关公告，日内没有适合独立收录的新增正式动作"
+    },
+    "IN": {
+      "checked": true,
+      "detail": "核对DGTR案件页和10月12日前后听证安排，未把旧案或程序调整凑数"
+    },
+    "CA": {
+      "checked": true,
+      "detail": "巡检加拿大贸易措施与主管机关公告，未发现达到收录门槛的新增措施"
+    },
+    "AU": {
+      "checked": true,
+      "detail": "巡检澳大利亚反倾销主管机构及相关贸易公告，未发现达到收录门槛的新决定"
     }
   },
   "last_error": null,
   "next_actions": [
-    "继续核验10月9—12日美韩钢铁案、欧盟材料贸易救济、其他法域并完成去重",
-    "核验最终一手来源与国内外终扫",
-    "更新完整待发内容与 publication_ready 状态",
-    "按最新SHA提交第036期及首页归档并验收"
-  ]
+    "按GitHub标准Contents API发布完整2026-10-12第036期HTML",
+    "回读后更新trade-watch/index.html和archive.html",
+    "回读main三文件并核验Pages与独立来源诊断"
+  ],
+  "dedup_checked_against": [
+    "2026-10-11",
+    "2026-10-09",
+    "2026-10-04",
+    "2026-10-02",
+    "2026-10-01",
+    "2026-09-30",
+    "2026-09-29"
+  ],
+  "source_verification": "最终10项均附官方机构原始公告、欧盟正式规则或美国Federal Register原始文件；新闻与监管阶段逐项比对。"
 }
