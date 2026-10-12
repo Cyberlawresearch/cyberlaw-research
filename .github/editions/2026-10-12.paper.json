@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-12",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-12-richards-hartzog-duty-loyalty-privacy.html",
+  "selection": "Neil M. Richards; Woodrow Hartzog, A Duty of Loyalty for Privacy Law",
+  "bibliography": {
+    "type": "article",
+    "author": "Neil M. Richards、Woodrow Hartzog",
+    "originalTitle": "A Duty of Loyalty for Privacy Law",
+    "journal": "Washington University Law Review",
+    "year": "2021",
+    "volume": "99",
+    "issue": "3",
+    "pages": "961–1021",
+    "doi": "",
+    "url": "https://washulawreview.org/a-duty-of-loyalty-for-privacy-law/",
+    "cnTitle": "隐私法中的忠实义务"
+  },
+  "versions": {
+    "formal": "Washington University Law Review, Vol. 99, Issue 3 (2021), pp. 961–1021",
+    "working_paper": "SSRN 3642217; first posted in 2020, subsequently revised; not used as formal journal DOI"
+  },
+  "sources": [
+    "https://washulawreview.org/a-duty-of-loyalty-for-privacy-law/",
+    "https://wustllawreview.org/wp-content/uploads/2022/02/Richards-Hartzog-A-Duty-of-Loyalty-for-Privacy.pdf",
+    "https://repository.library.washu.edu/law_scholarship/504/",
+    "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3642217"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-09-20-richards-hartzog-taking-trust-seriously.html",
+    "articles/2026-09-13-balkin-information-fiduciaries.html",
+    "articles/2026-09-21-calo-digital-market-manipulation.html"
+  ],
+  "timeline": null,
+  "body_length": 7337,
+  "base_main_sha": "9514b843499f067bc65b1a10f28d33945a2232ec",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}
