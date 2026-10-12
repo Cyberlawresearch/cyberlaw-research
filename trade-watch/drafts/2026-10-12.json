@@ -2,7 +2,7 @@
   "date": "2026-10-12",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "83bd2f10d76b6251a838c96d68312eff70831c91",
-  "phase": "verified_ready",
+  "phase": "main_written_pages_pending",
   "publication_ready": true,
   "items": [
     {
@@ -227,9 +227,8 @@
   },
   "last_error": null,
   "next_actions": [
-    "按GitHub标准Contents API发布完整2026-10-12第036期HTML",
-    "回读后更新trade-watch/index.html和archive.html",
-    "回读main三文件并核验Pages与独立来源诊断"
+    "等待本次最终提交对应Pages部署与公开页面、链接验收",
+    "若Pages失败按真实日志定位后做最小必要修复，绝不暂停定时任务"
   ],
   "dedup_checked_against": [
     "2026-10-11",
@@ -240,5 +239,17 @@
     "2026-09-30",
     "2026-09-29"
   ],
-  "source_verification": "最终10项均附官方机构原始公告、欧盟正式规则或美国Federal Register原始文件；新闻与监管阶段逐项比对。"
+  "source_verification": "最终10项均附官方机构原始公告、欧盟正式规则或美国Federal Register原始文件；新闻与监管阶段逐项比对。",
+  "publication": {
+    "main_commit": "14b796503c415611bb967b41c2c8aabe9def3d39",
+    "files": {
+      "trade-watch/issues/2026-10-12.html": "234c938a885870375391466b61bebc77c76791c7",
+      "trade-watch/index.html": "bf53409a66355c5433b7b6f7d84eeddcab7fd8a8",
+      "trade-watch/archive.html": "548995aaadc7632085a5b561850e2f8d4d9c3f82"
+    },
+    "pages_run_id": 38290039237,
+    "pages_status": "in_progress",
+    "source_check_status": "pending",
+    "news_count": 10
+  }
 }
