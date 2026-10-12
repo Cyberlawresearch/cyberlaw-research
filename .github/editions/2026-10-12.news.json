@@ -2,8 +2,8 @@
   "date": "2026-10-12",
   "column": "brief",
   "state": "draft",
-  "publication_ready": false,
-  "phase": "writing",
+  "publication_ready": true,
+  "phase": "publishing",
   "base_main_sha": "ee8764bb0605ae4fbd411bb3db5879521b32b04f",
   "page": "articles/2026-10-12-tech-law-brief.html",
   "items": [
@@ -146,26 +146,12 @@
       "fact": "澳大利亚广播公司10月12日报道，联邦政府准备向议会提交《数字注意义务》法案，并考虑删除原征求意见稿中授权部长增列网络伤害类型的权限。绿党则公开要求赋予个人就平台和算法造成的网络伤害提起民事诉讼及索赔的权利，并要求违法罚款与企业全球营业收入挂钩。法案拟覆盖社交媒体、搜索引擎及人工智能聊天机器人，但相关要求目前处于政府拟议及议会协商阶段，尚未成为法律。",
       "status": "verified",
       "deduplication": "近7日简报涉及澳大利亚AI智能体安全事件报告讨论，但未报道10月12日《数字注意义务》立法议程及绿党民事诉权修正要求；并非同一法案和事件。"
-    },
-    {
-      "id": "research-item-11",
-      "domestic": false,
-      "date": "2026-10-12",
-      "jurisdiction": "英国",
-      "agency": "英国人工智能安全研究所（AISI）、英国科技部",
-      "title": "英国部长确认安全研究所重获前沿AI模型评测渠道",
-      "original_title": "UK given access to safety-test latest AI models, minister says",
-      "source_name": "路透社",
-      "url": "https://www.reuters.com/legal/litigation/uk-given-access-safety-test-latest-ai-models-minister-says-2026-10-12/",
-      "fact": "英国人工智能事务部长10月12日表示，英国人工智能安全研究所通过与美国政府和主要模型开发者合作，已获得最新一批前沿人工智能模型的安全评测权限，并开展相关风险测试。此前媒体曾报道英方难以及时取得美国开发的最新模型。部长此次对评测渠道及合作状态作出公开确认，但这种模型测试安排属于机构间合作，并非新设强制性模型许可制度。",
-      "status": "verified",
-      "deduplication": "10月11日当期14条未涉及英国安全研究所的模型访问；与10月12日英国政府就网络风险、严重AI事故报告开展政策研究的新闻主体相关，但本条是另一个可独立核验的前沿模型访问及安全测试进展，非重复发布。"
     }
   ],
-  "news_count": 11,
+  "news_count": 10,
   "distribution": {
     "domestic": 3,
-    "foreign": 8
+    "foreign": 7
   },
   "coverage": [
     {
@@ -186,11 +172,11 @@
     },
     {
       "source_group": "国内媒体第四组",
-      "source_name": "澎湃新闻",
+      "source_name": "澎湃新闻、界面新闻、新京报、南方都市报及地方综合媒体",
       "checked_at": "2026-10-12T21:49:17.360+08:00",
       "status": "checked",
       "found": 1,
-      "notes": "核实10月12日上海智能制造行动的正式启动、目标与属性"
+      "notes": "核实10月12日上海智能制造行动的正式启动、目标与属性；核验澎湃新闻10月12日上海新一代智能制造行动，排除仅转载旧案例和旧部门政策的信息"
     },
     {
       "source_group": "国际监管机关",
@@ -214,7 +200,7 @@
       "checked_at": "2026-10-12T21:59:19.291+08:00",
       "status": "checked",
       "found": 0,
-      "notes": "逐站用10月10至12日新闻与政务、科技、网安关键词检索，检查新华社立法报道发现属8月旧事实，未作为当日新增新闻"
+      "notes": "逐站用10月10至12日新闻与政务、科技、网安关键词检索，检查新华社立法报道发现属8月旧事实，未作为当日新增新闻；补核人民网重庆频道10月12日转载的重庆停车数据新闻，与已入选的10月10日重庆日报同事件，不重复收录"
     },
     {
       "source_group": "国内媒体第二组",
@@ -233,20 +219,12 @@
       "notes": "检索财经报道及科技合规专题，核对财新科技栏目10月12日信息，其中四部门征求意见与已入选官方来源相同，未重复计数"
     },
     {
-      "source_group": "国内媒体第四组",
-      "source_name": "澎湃新闻、界面新闻、新京报、南方都市报及地方综合媒体",
-      "checked_at": "2026-10-12T21:59:19.291+08:00",
-      "status": "checked",
-      "found": 1,
-      "notes": "核验澎湃新闻10月12日上海新一代智能制造行动，排除仅转载旧案例和旧部门政策的信息"
-    },
-    {
       "source_group": "国内媒体第五组",
       "source_name": "36氪、虎嗅、钛媒体、雷峰网、量子位、机器之心、IT之家",
       "checked_at": "2026-10-12T21:59:19.291+08:00",
       "status": "checked",
       "found": 0,
-      "notes": "针对近72小时科技与AI报道专题检索，排除未有正式监管动作或可核验法律进展的产业宣传与融资稿件"
+      "notes": "针对近72小时科技与AI报道专题检索，排除未有正式监管动作或可核验法律进展的产业宣传与融资稿件；实读36氪10月12日《平台规则被绕过，法院怎么判断？》，属于截至9月20日旧案例统计解读，没有新增裁判"
     },
     {
       "source_group": "国内媒体第六组",
@@ -285,29 +263,67 @@
       "source_name": "GOV.UK、Reuters、ABC News",
       "checked_at": "2026-10-12T21:59:19.291+08:00",
       "status": "checked",
+      "found": 1,
+      "notes": "复核GOV.UK同场新闻公告与Reuters英国部长谈话属同一政策发布事件，主动合并为一条；澳大利亚ABC立法协商为独立事件"
+    },
+    {
+      "source_group": "国内中央主管机关补扫",
+      "source_name": "中国政府网、中央网信办、发改委、商务部、国家数据局、市场监管总局",
+      "checked_at": "2026-10-12T22:08:22.665+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "10月10—12日按监管处罚、算法、个人信息、数据出入境及人工智能关键词查阅网站及新闻列表；10月12日市监总局化工领域普通经营者集中简易公示与本简报主题关联不足，未收录；10月10日商务部电商通知已在10月10日历史新闻发布，剔除重复"
+    },
+    {
+      "source_group": "国内社会、金融、司法主管机关补扫",
+      "source_name": "人社部、金融监管总局、人民银行、卫健委、药监局、最高人民法院、最高人民检察院",
+      "checked_at": "2026-10-12T22:08:22.665+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "逐主题检索平台用工、金融AI、医疗AI、药品AI、网安与数字证据、数据保护相关官方文件，检出此前司法案例及旧规解读，不把转载日期当新决定日"
+    },
+    {
+      "source_group": "国内地方主管机关补扫",
+      "source_name": "北京、上海、广东、浙江、江苏、海南、四川、重庆、雄安主要政务门户与主管部门",
+      "checked_at": "2026-10-12T22:08:22.665+08:00",
+      "status": "checked",
       "found": 2,
-      "notes": "核验英国政府AI措施、前沿模型评测状态和澳大利亚拟议数字注意义务的法案阶段"
+      "notes": "复核上海10月12日智能制造行动和重庆10月10日停车联网通告；南京人工智能条例二审10月11日已发布，北京教育AI指引实为9月旧规，均未重复收录"
+    },
+    {
+      "source_group": "国际美国官方补扫",
+      "source_name": "Federal Trade Commission, U.S. Justice Department, U.S. International Trade Commission",
+      "checked_at": "2026-10-12T22:08:22.665+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "FTC当期公开新闻最新多在10月8日之外；10月9日ITC服务器电源337调查已在10月11日栏目发布，中国企业10月10—11日公告是同案延伸报道，不重复计入"
+    },
+    {
+      "source_group": "国际日韩官方补扫",
+      "source_name": "日本个人信息保护委员会PPC、经产省METI、韩国个人信息保护委员会PIPC及科学技术信息通信部",
+      "checked_at": "2026-10-12T22:08:22.665+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "使用日本语、韩语分别定向检索10月10—12日AI、个人信息、数据泄露、法案与监管事项；当前未获取可独立核验、符合72小时的新正式程序动作"
     }
   ],
   "checks": {
-    "sources": false,
-    "legal_status": false,
-    "original_titles": false,
-    "timeliness": false,
-    "previous_day_event_deduplication": false,
-    "seven_day_history_deduplication": false,
-    "domestic_major_omission_review": false,
-    "natural_chinese_reviewed": false,
-    "foreign_layout": false
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "natural_chinese_reviewed": true,
+    "foreign_layout": true
   },
-  "checked_at": null,
-  "last_news_scan_at": null,
-  "updated_at": "2026-10-12T21:59:19.291+08:00",
+  "checked_at": "2026-10-12T22:08:22.665+08:00",
+  "last_news_scan_at": "2026-10-12T22:08:22.665+08:00",
+  "updated_at": "2026-10-12T22:08:22.665+08:00",
   "next_actions": [
-    "复扫国内七组媒体与重点官方来源，查找可能遗漏且符合72小时时限的真实事项",
-    "确认全部条目的来源原题、程序效力、发表日期及最近七日事件级去重",
-    "检验Actions转换器的源数据约束和国内外排版，再执行最后1—2小时消息复扫",
-    "核验完整后才将publication_ready切换为true，回读确认"
+    "等待仓库既定的news-from-draft定时Actions读取ready JSON并基于最新main构建新闻页",
+    "仅在main新闻提交与Pages对应部署completed/success、入口及桌面移动端验收完成后报告正式发布"
   ],
   "last_error": null,
   "publication": {
