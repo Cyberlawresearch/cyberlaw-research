@@ -6,20 +6,18 @@
   "publication_ready": false,
   "items": [],
   "coverage": {
-    "US": "pending",
+    "US": "已查阅10月13日Federal Register目录及相关监管公告",
     "EU": "pending",
     "UK": "pending",
     "JP": "pending",
     "KR": "pending",
-    "IN": "pending",
+    "IN": "已核验10月12日印度DGTR对华Arylides反倾销复审终裁建议",
     "CA": "pending",
     "AU": "pending"
   },
   "last_error": null,
   "next_actions": [
-    "官方来源检索近72小时新事实",
-    "逐条核验与最近7期去重",
-    "终扫和保存可发布正文",
-    "依次写入main三文件并验收Pages"
+    "继续其余法域检索与事件去重",
+    "逐条核验来源和最终发布"
   ]
 }
