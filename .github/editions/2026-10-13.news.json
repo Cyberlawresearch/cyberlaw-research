@@ -2,8 +2,8 @@
   "date": "2026-10-13",
   "column": "brief",
   "state": "draft",
-  "publication_ready": false,
-  "phase": "writing",
+  "publication_ready": true,
+  "phase": "publishing",
   "base_main_sha": "dec6052390e71cb492fd0bda6b3656fb9da0bd09",
   "page": "articles/2026-10-13-tech-law-brief.html",
   "items": [
@@ -187,7 +187,9 @@
       "url": "https://www.reuters.com/legal/litigation/investigators-hunt-french-supermarket-fridge-hackers-no-claim-responsibility-2026-10-13/",
       "fact": "法国调查人员10月13日继续调查连锁超市联网冷藏设施遭入侵事件，路透核实受影响门店至少350家，部分门店继续销毁因冷链中断而变质的商品。警方尚未确定责任人，未发现有团体公开认领事件；相关设备供应商指出，一些设备使用已停止支持或未及时更新的软件。这是前一日事件的新损失范围和调查进度，不能写成新增独立攻击。",
       "status": "verified",
-      "deduplication": "10月12日新闻已收录法国超市冷藏设施遭攻击，本条仅因13日确认至少350门店和调查无责任方、供应商更新义务等实质事实增量而收录，标明同一事件后续。"
+      "deduplication": "10月12日新闻已收录法国超市冷藏设施遭攻击，本条仅因13日确认至少350门店和调查无责任方、供应商更新义务等实质事实增量而收录，标明同一事件后续。",
+      "material_new_event": true,
+      "new_action_details": "2026-10-13进一步确认至少350家门店受损、警方持续调查并无团体认领。"
     },
     {
       "id": "research-item-14",
@@ -201,7 +203,9 @@
       "url": "https://www.reuters.com/business/ahold-has-no-indication-client-data-was-stolen-in-cybersecurity-incident-2026-10-13/",
       "fact": "荷兰零售集团Ahold Delhaize10月13日对前一天披露的网络事件作进一步说明，表示目前没有迹象表明客户数据已被窃取。企业此前为应对网络安全风险临时下线部分系统。荷兰国家网络安全中心同时指出，尚无理由认定该事件与欧洲其他国家出现的零售网络事件有关。此为企业及主管机构最新公开确认的调查事实，不等于已完全排除数据泄露。",
       "status": "verified",
-      "deduplication": "10月12日简报已经记载Ahold首次网络事故公告，本条只收13日客户数据影响评估和荷兰国家网络安全中心关于无已知关联的新增确认。"
+      "deduplication": "10月12日简报已经记载Ahold首次网络事故公告，本条只收13日客户数据影响评估和荷兰国家网络安全中心关于无已知关联的新增确认。",
+      "material_new_event": true,
+      "new_action_details": "2026-10-13企业确认暂无客户资料被盗迹象、荷兰国家网络安全中心尚无跨国事件关联证据。"
     },
     {
       "id": "research-item-15",
@@ -401,27 +405,49 @@
       "status": "checked",
       "found": 0,
       "notes": "实际查阅上海政府官方10月10—13日政策列表：临港知识产权中立评估规则原件9月30日、数据转型补助文件原件9月24日，虽上海政务10月10日再收录，也不是72小时内新规则，故剔除；上海数据局及广东网信门户未检出符合期限的新监管动作"
+    },
+    {
+      "source_group": "国内中央监管与司法终扫",
+      "source_name": "中央网信办网信要闻与网络安全栏目、商务部官网、市场监管总局新闻、最高法、人民银行、工信部、发改委、国家数据局、人社部、金融监管总局、国家卫健委、药监局、最高检",
+      "checked_at": "2026-10-13T21:43:43.948+08:00",
+      "status": "checked",
+      "found": 2,
+      "notes": "最终访问并定向检索10月11—13日监管与司法事项；商务部13日民航两用物项征求意见、四部门12日金融消费者案例已列入；网信办今日要闻主要为非监管主题、10日强网杯活动，9月旧指引与旧规定均排除"
+    },
+    {
+      "source_group": "地方主管机关及国内主题反扫",
+      "source_name": "上海市政府/市数据局、广东网信网、北京市政府、江苏省政府、浙江网信、四川/重庆政府、海南省政府、雄安新区政务信息和全国权威媒体专题检索",
+      "checked_at": "2026-10-13T21:43:43.948+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "实际进行AI立法、算法、平台用工、个人信息、数据跨境、竞争、网安泄露、版权、生物识别、云算力、医疗和金融AI主题反扫；上海临港知识产权中立评估规则虽于10月10日政府政策列表出现，原机构9月30日已有公布，临港数据项目原通知9月24日发布，不能作10月13日新事件；未证实其他新的重大正式监管动作"
+    },
+    {
+      "source_group": "发布前重要新闻终扫",
+      "source_name": "新华社/人民网、财新、新浪科技、Reuters AI与Legal、欧盟官方公告、GOV.UK及网络安全专业媒体",
+      "checked_at": "2026-10-13T21:43:43.948+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "已按最近1—6小时和24小时分别复扫，重点复核商务部意见征求、Seed模型安全机构、前沿AI安全评测、银行AI监管、Meta-Ofcom诉讼、企业网络事件以及AI基础设施；未发现可核验而此前未入选的更重大新独立监管事件"
     }
   ],
   "checks": {
-    "sources": false,
-    "legal_status": false,
-    "original_titles": false,
-    "timeliness": false,
-    "previous_day_event_deduplication": false,
-    "seven_day_history_deduplication": false,
-    "domestic_major_omission_review": false,
-    "natural_chinese_reviewed": false,
-    "foreign_layout": false
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "natural_chinese_reviewed": true,
+    "foreign_layout": true
   },
-  "checked_at": "2026-10-13T21:41:16.403+08:00",
-  "last_news_scan_at": null,
-  "updated_at": "2026-10-13T21:41:16.403+08:00",
+  "checked_at": "2026-10-13T21:43:43.948+08:00",
+  "last_news_scan_at": "2026-10-13T21:43:43.948+08:00",
+  "updated_at": "2026-10-13T21:43:43.948+08:00",
   "next_actions": [
-    "继续核对其他省份及部委近72小时重要法律动作，不以过期官方转载凑数",
-    "检索并逐条比对10月6—12日历史新闻，完成七组国内媒体遗漏复核",
-    "最终1—2小时消息复扫、来源/原题/法律效力复核后设置全部checks并标记publication_ready=true",
-    "及时回读JSON，并追踪21:45或23:20原有GitHub Actions和Pages实际完成状态"
+    "现有Github Actions已按北京时间21:45和23:20既定定时检查当日ready JSON；发布阶段仅由Actions生成main中的新闻正文、首页入口及归档并触发Pages",
+    "回读验收main新闻条目、brief/current-edition日期、Pages对应head SHA及部署后阅读检查，未完成不得称已发布"
   ],
   "last_error": null,
   "publication": {
