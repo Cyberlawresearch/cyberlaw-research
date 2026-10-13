@@ -1,0 +1,533 @@
+{
+  "date": "2026-10-12",
+  "column": "brief",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-12-tech-law-brief.html",
+  "news_count": 22,
+  "distribution": {
+    "domestic": 5,
+    "foreign": 17
+  },
+  "mode": "fact_only",
+  "analysis_pending": true,
+  "published_as_backfill": true,
+  "actual_release_at": "2026-10-13T17:06:59.385779+08:00",
+  "checked_at": "2026-10-13T17:05:17.658+08:00",
+  "last_news_scan_at": "2026-10-13T17:05:17.658+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "natural_chinese_reviewed": true,
+    "foreign_layout": true
+  },
+  "domestic_source_coverage": [
+    {
+      "source_group": "国内主管机关",
+      "source_name": "工业和信息化部",
+      "checked_at": "2026-10-12T21:49:17.360+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核对10月10日汽车产品创新设计与测试验证征求意见公示原文；主管机关其他主题尚在巡视"
+    },
+    {
+      "source_group": "国内地方政府与媒体",
+      "source_name": "重庆日报、重庆市城市管理局官网关联",
+      "checked_at": "2026-10-12T21:49:17.360+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核对10月10日停车场联网通告报道并追溯官方原文链接"
+    },
+    {
+      "source_group": "国内媒体第四组",
+      "source_name": "澎湃新闻、界面新闻、新京报、南方都市报及地方综合媒体",
+      "checked_at": "2026-10-12T21:49:17.360+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核实10月12日上海智能制造行动的正式启动、目标与属性；核验澎湃新闻10月12日上海新一代智能制造行动，排除仅转载旧案例和旧部门政策的信息"
+    },
+    {
+      "source_group": "国际监管机关",
+      "source_name": "Datatilsynet、Forbrukerrådet",
+      "checked_at": "2026-10-12T21:49:17.360+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "原文与挪威消费者委员会新闻及路透社交叉核对"
+    },
+    {
+      "source_group": "国际官方机构",
+      "source_name": "GOV.UK",
+      "checked_at": "2026-10-12T21:49:17.360+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核验10月12日英国政府发布的AI安全措施及立法状态"
+    },
+    {
+      "source_group": "国内媒体第一组",
+      "source_name": "新华社/新华网、人民日报/人民网、央视/央广、中新网",
+      "checked_at": "2026-10-12T21:59:19.291+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "逐站用10月10至12日新闻与政务、科技、网安关键词检索，检查新华社立法报道发现属8月旧事实，未作为当日新增新闻；补核人民网重庆频道10月12日转载的重庆停车数据新闻，与已入选的10月10日重庆日报同事件，不重复收录"
+    },
+    {
+      "source_group": "国内媒体第二组",
+      "source_name": "法治日报、人民法院报、检察日报、正义网、中国劳动保障报",
+      "checked_at": "2026-10-12T21:59:19.291+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "检查司法法治、平台劳动和网络犯罪题材；较多为旧案件解读或此前判决，本次未纳入非72小时的新事项"
+    },
+    {
+      "source_group": "国内媒体第三组",
+      "source_name": "财新、第一财经、21世纪经济报道、经济观察报、证券时报、上证报、中证报、每日经济新闻",
+      "checked_at": "2026-10-12T21:59:19.291+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "检索财经报道及科技合规专题，核对财新科技栏目10月12日信息，其中四部门征求意见与已入选官方来源相同，未重复计数"
+    },
+    {
+      "source_group": "国内媒体第五组",
+      "source_name": "36氪、虎嗅、钛媒体、雷峰网、量子位、机器之心、IT之家",
+      "checked_at": "2026-10-12T21:59:19.291+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "针对近72小时科技与AI报道专题检索，排除未有正式监管动作或可核验法律进展的产业宣传与融资稿件；实读36氪10月12日《平台规则被绕过，法院怎么判断？》，属于截至9月20日旧案例统计解读，没有新增裁判"
+    },
+    {
+      "source_group": "国内媒体第六组",
+      "source_name": "安全内参、FreeBuf、嘶吼、数世咨询",
+      "checked_at": "2026-10-12T21:59:19.291+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "检索近期网安监管和数据泄露，实际查阅安全内参10月12日AI责任保险转载分析；无新监管动作，未作为事件新闻"
+    },
+    {
+      "source_group": "国内媒体第七组",
+      "source_name": "新浪科技、腾讯新闻、网易科技、凤凰网、搜狐",
+      "checked_at": "2026-10-12T21:59:19.291+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "针对10月12日AI立法及数据事件进行复核；发现北京教育AI指引的近期转载原规定出自9月，按过期旧闻剔除"
+    },
+    {
+      "source_group": "东南亚官方监管与立法",
+      "source_name": "印度尼西亚交通部、菲律宾议会新闻与路透社",
+      "checked_at": "2026-10-12T21:59:19.291+08:00",
+      "status": "checked",
+      "found": 2,
+      "notes": "核对印尼总统条例的发布及条文性质、菲律宾两院不同法案文本和法定程序"
+    },
+    {
+      "source_group": "欧盟监管及立法",
+      "source_name": "欧盟理事会新闻与欧盟官方公报",
+      "checked_at": "2026-10-12T21:59:19.291+08:00",
+      "status": "checked",
+      "found": 2,
+      "notes": "核查10月12日欧盟技术供应链列名制裁与AGILE正式通过、未生效及后续出版程序"
+    },
+    {
+      "source_group": "英澳政策与一线新闻媒体",
+      "source_name": "GOV.UK、Reuters、ABC News",
+      "checked_at": "2026-10-12T21:59:19.291+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "复核GOV.UK同场新闻公告与Reuters英国部长谈话属同一政策发布事件，主动合并为一条；澳大利亚ABC立法协商为独立事件"
+    },
+    {
+      "source_group": "国内中央主管机关补扫",
+      "source_name": "中国政府网、中央网信办、发改委、商务部、国家数据局、市场监管总局",
+      "checked_at": "2026-10-12T22:08:22.665+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "10月10—12日按监管处罚、算法、个人信息、数据出入境及人工智能关键词查阅网站及新闻列表；10月12日市监总局化工领域普通经营者集中简易公示与本简报主题关联不足，未收录；10月10日商务部电商通知已在10月10日历史新闻发布，剔除重复"
+    },
+    {
+      "source_group": "国内社会、金融、司法主管机关补扫",
+      "source_name": "人社部、金融监管总局、人民银行、卫健委、药监局、最高人民法院、最高人民检察院",
+      "checked_at": "2026-10-12T22:08:22.665+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "逐主题检索平台用工、金融AI、医疗AI、药品AI、网安与数字证据、数据保护相关官方文件，检出此前司法案例及旧规解读，不把转载日期当新决定日"
+    },
+    {
+      "source_group": "国内地方主管机关补扫",
+      "source_name": "北京、上海、广东、浙江、江苏、海南、四川、重庆、雄安主要政务门户与主管部门",
+      "checked_at": "2026-10-12T22:08:22.665+08:00",
+      "status": "checked",
+      "found": 2,
+      "notes": "复核上海10月12日智能制造行动和重庆10月10日停车联网通告；南京人工智能条例二审10月11日已发布，北京教育AI指引实为9月旧规，均未重复收录"
+    },
+    {
+      "source_group": "国际美国官方补扫",
+      "source_name": "Federal Trade Commission, U.S. Justice Department, U.S. International Trade Commission",
+      "checked_at": "2026-10-12T22:08:22.665+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "FTC当期公开新闻最新多在10月8日之外；10月9日ITC服务器电源337调查已在10月11日栏目发布，中国企业10月10—11日公告是同案延伸报道，不重复计入"
+    },
+    {
+      "source_group": "国际日韩官方补扫",
+      "source_name": "日本个人信息保护委员会PPC、经产省METI、韩国个人信息保护委员会PIPC及科学技术信息通信部",
+      "checked_at": "2026-10-12T22:08:22.665+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "使用日本语、韩语分别定向检索10月10—12日AI、个人信息、数据泄露、法案与监管事项；当前未获取可独立核验、符合72小时的新正式程序动作"
+    },
+    {
+      "source_group": "国内监管与原文补查",
+      "source_name": "市场监管总局食品安全法修订公告、政策说明",
+      "checked_at": "2026-10-13T02:14:26.533+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "重新阅读10月10日正式征求意见公告、食品安全法律草案政策解读，与10月10日商务部品质电商通知事件级去重"
+    },
+    {
+      "source_group": "国内权威法治媒体补查",
+      "source_name": "人民日报、法治日报、司法部智慧普法、第一财经、财新、澎湃、界面、新京报",
+      "checked_at": "2026-10-13T02:14:26.533+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核查食品安全法征求意见的权威转载，追溯市场监管总局原文；检查财经科技报道涉及的既有投融资、旧案与AI规则，避免把转载当新规"
+    },
+    {
+      "source_group": "国内国际交叉调查",
+      "source_name": "Reuters China Moonshot AI arbitration",
+      "checked_at": "2026-10-13T02:14:26.533+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "阅读Reuters香港仲裁当事人和解谈判原文，区分新闻中新披露的和解接触与2024年已经存在的指控及未经证实的事实"
+    },
+    {
+      "source_group": "英国监管和官方公告补查",
+      "source_name": "Ofcom、英国国家医疗数据监护人、司法部、内阁办公室、英印科技合作联合声明",
+      "checked_at": "2026-10-13T02:14:26.533+08:00",
+      "status": "checked",
+      "found": 5,
+      "notes": "逐项阅读10月12日发布页面和文件性质；同日刑事司法视频庭审两份报道合并为同一改革行动，Ofcom修订准则未生效"
+    },
+    {
+      "source_group": "欧洲网络安全与个人数据补查",
+      "source_name": "Ahold Delhaize官方披露、法国零售企业回应、BleepingComputer、欧盟EDPB",
+      "checked_at": "2026-10-13T02:14:26.533+08:00",
+      "status": "checked",
+      "found": 2,
+      "notes": "阅读荷兰零售公司一手网络事件公告和法国食品冷链事件、多家零售企业及巴黎检方回应；EDPB10月12日转载的意大利Wind Tre处罚实际裁决6月5日作出，按旧闻排除"
+    },
+    {
+      "source_group": "国际技术企业安全公告补查",
+      "source_name": "GitLab Docs、Ledger声明交叉核对、BleepingComputer",
+      "checked_at": "2026-10-13T02:14:26.533+08:00",
+      "status": "checked",
+      "found": 2,
+      "notes": "复核GitLab 10月12日发布的正式补丁和CVE范围，核实Ledger渠道设备确认及执法合作；不收录漏洞利用步骤和非法改装细节"
+    },
+    {
+      "source_group": "美国执法与专业媒体补查",
+      "source_name": "美国司法部、USITC、Reuters Legal、BleepingComputer与公开法院记录报道",
+      "checked_at": "2026-10-13T02:14:26.533+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "美国10月12日逢联邦假日部分机构关闭；MIT诉AWS报道虽为10月12日，诉讼10月9日已提交无新程序动作排除；新增10月10日网络勒索被告身份与法庭案卷公开信息，强调与ShinyHunters联系未获官方证实"
+    },
+    {
+      "source_group": "亚太当地语言与专题补查",
+      "source_name": "日本PPC、数字厅、韩国PIPC及科学技术信息通信部、马来西亚个人资料保护部、越南政府新闻",
+      "checked_at": "2026-10-13T02:14:26.533+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "使用日语韩语英语及越南法制关键词检索，核实马来西亚AI个人数据框架征求意见于10月5日开始、越南人工智能法和实施条例已在此前公布，均超出10月12日新增事件窗口；日本Daiichi Kosho事故原始公告10月8日，后续媒体重发排除"
+    },
+    {
+      "source_group": "跨日补发事实终核",
+      "source_name": "市场监管总局、工信部、上海澎湃、重庆日报、Reuters、Ofcom、GOV.UK、GitLab、欧盟理事会、BleepingComputer、印尼交通部",
+      "checked_at": "2026-10-13T17:05:17.658+08:00",
+      "status": "checked",
+      "found": 22,
+      "notes": "经10月13日再次复核日期、原题、事件法律属性与重复情形；特别纠正印尼条例8日发布、10日为主管部门后续解读；新闻事实按10月12日期次窗口确认，10月13日实为补发，不伪称13日新闻。"
+    }
+  ],
+  "items": [
+    {
+      "id": "research-item-1",
+      "domestic": true,
+      "date": "2026-10-12",
+      "jurisdiction": "中国·上海",
+      "agency": "上海市有关部门",
+      "title": "上海启动新一代智能制造行动，提出2028年工业AI应用目标",
+      "original_title": "上海：到2028年，推动8000台人形机器人进工厂",
+      "source_name": "澎湃新闻",
+      "url": "https://www.thepaper.cn/newsDetail_forward_34235219",
+      "fact": "10月12日，上海在中国国际工业博览会开幕式上正式启动加快发展新一代智能制造行动，提出四大工程及19项重点任务。行动计划到2028年推动重点制造企业智能工厂普及，形成2000多个人工智能制造应用场景、10个垂直行业大模型和300个智能体，并推动人形机器人进入工厂。该事项属于产业政策部署，而非已生效的行政监管规则。"
+    },
+    {
+      "id": "research-item-2",
+      "domestic": true,
+      "date": "2026-10-12",
+      "jurisdiction": "中国（香港仲裁）",
+      "agency": "月之暗面与Recurrent.ai相关仲裁当事人",
+      "title": "路透披露月之暗面高管就股东仲裁争议商谈和解，涉及模型技术数据争议",
+      "original_title": "Moonshot execs in talks to settle dispute with shareholder ahead of planned IPO, people say",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/china/moonshot-execs-talks-settle-dispute-with-shareholder-ahead-planned-ipo-people-2026-10-11/",
+      "fact": "路透社在北京时间10月12日首次披露，据知情人士说，月之暗面两名高管正与Recurrent.ai有关方面讨论解决香港仲裁争议。Recurrent.ai方面此前指称有关人员未经授权转移大模型相关数据并损害股东权益；这些属于争议当事人的主张，路透未独立确认指控真实性。报道指出和解尚未确定，仲裁也没有作出认定违法的公开最终裁决。"
+    },
+    {
+      "id": "research-item-3",
+      "domestic": true,
+      "date": "2026-10-10",
+      "jurisdiction": "中国",
+      "agency": "工业和信息化部、公安部、生态环境部、市场监管总局",
+      "title": "四部门就加强汽车产品创新设计安全评估和研发测试公开征求意见",
+      "original_title": "关于公开征求《工业和信息化部 公安部 生态环境部 市场监管总局关于进一步加强汽车产品创新设计和研发测试验证有关管理工作的通知（征求意见稿）》意见的公示",
+      "source_name": "工业和信息化部",
+      "url": "https://www.miit.gov.cn/gzcy/yjzj/art/2026/art_d82e902143264b6d9179e01ee54a414f.html",
+      "fact": "工业和信息化部会同公安部、生态环境部、市场监管总局起草了关于加强汽车产品创新设计和研发测试验证管理的通知，并于10月10日公开征求意见。征求意见稿要求汽车生产企业重视创新设计中的产品安全评估与研发测试验证，相关意见可在11月10日前提交。该文件目前仍处征求意见阶段，不能当作已经施行的强制性规范。"
+    },
+    {
+      "id": "research-item-4",
+      "domestic": true,
+      "date": "2026-10-10",
+      "jurisdiction": "中国",
+      "agency": "国家市场监督管理总局",
+      "title": "市场监管总局就食品安全法全面修订公开征求意见，拟明确外卖和直播平台责任",
+      "original_title": "市场监管总局关于公开征求《中华人民共和国食品安全法（修订草案征求意见稿）》意见的公告",
+      "source_name": "国家市场监督管理总局",
+      "url": "https://www.samr.gov.cn/hd/zjdc/art/2026/art_2e2247ea7dff408da28ae047b1bd96f5.html",
+      "fact": "市场监管总局10月10日公布《中华人民共和国食品安全法（修订草案征求意见稿）》，征求意见截至11月10日。草案增设网络食品经营专节，拟明确网络食品交易平台、直播间运营者、直播营销人员和跨境电商相关主体的食品安全责任，并提出视频公开加工过程、运用互联网和人工智能开展智慧监管等安排。草案仍处公开征求意见阶段，不能作为已生效的法律条款。"
+    },
+    {
+      "id": "research-item-5",
+      "domestic": true,
+      "date": "2026-10-10",
+      "jurisdiction": "中国·重庆",
+      "agency": "重庆市城市管理局",
+      "title": "重庆要求停车场数据接入市级智慧停车应用，明确订单按笔调取",
+      "original_title": "停车引导、通停通付、泊位共享！全市停车场数据将联网接入“渝畅停”",
+      "source_name": "重庆日报",
+      "url": "https://app.cqrb.cn/shishi/2026-10-10/2792558_pc.html",
+      "fact": "重庆日报10月10日报道，重庆市城市管理局近日发布停车场数据联网接入通告，要求有关停车场接入市级智慧停车应用“渝畅停”，通告拟于11月1日起施行。接入数据包括剩余车位、车辆进出场时间和图像等，停车支付订单数据仅在用户使用通停通付时按笔调取，不进行批量获取；采集数据统一存储于指定政务云。"
+    },
+    {
+      "id": "research-item-6",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "国际（软件供应链）",
+      "agency": "GitLab",
+      "title": "GitLab发布紧急安全修复，涉及CI/CD最高风险漏洞与AI智能体权限控制",
+      "original_title": "GitLab Critical Patch Release: 19.4.2, 19.3.5, 19.2.8",
+      "source_name": "GitLab Docs",
+      "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-4-2-released/",
+      "fact": "GitLab于10月12日发布19.4.2、19.3.5和19.2.8安全补丁，修复包括CVE-2026-97229在内的一批漏洞，官方将其中一项CI/CD相关问题评为CVSS 10.0，同时披露GitLab Duo Agent Platform中的人工智能指令处理安全问题。公司要求自行部署的客户尽快升级，并称GitLab.com已经安装修复版本。此项属于开发基础设施安全公告，未据此推断漏洞已经被实际利用。"
+    },
+    {
+      "id": "research-item-7",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "法国及东南亚供应链",
+      "agency": "Ledger、东南亚经销商CryptoBilis",
+      "title": "Ledger确认经销渠道硬件钱包遭非法改装并造成用户资产损失",
+      "original_title": "Ledger confirms spy chip implant behind wallet crypto thefts",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
+      "fact": "10月12日的安全调查报道进一步确认，硬件钱包制造商Ledger已承认部分通过东南亚经销商CryptoBilis销售的设备被非法加装硬件，相关用户报告加密资产异常流失。公司10月10日确认至少一台受影响设备遭改装，10月11日再表示现有异常损失报告均涉及该渠道，并与执法机关合作调查。报道没有证据显示其他经销渠道普遍受影响；案件仍在调查，尚无确定的刑事责任结论。"
+    },
+    {
+      "id": "research-item-8",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "挪威",
+      "agency": "挪威数据保护局（Datatilsynet）",
+      "title": "挪威个人信息监管机构对微软旗下广告技术企业Xandr处以9200万挪威克朗罚款",
+      "original_title": "Norway fines Microsoft's Xandr $9.6 million over Grindr data sharing",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/norway-fines-microsofts-xandr-96-million-over-grindr-data-sharing-2026-10-12/",
+      "fact": "挪威数据保护局10月12日宣布对微软旗下广告技术企业Xandr处以9200万挪威克朗行政罚款，认定其在实时广告交易中违法处理并传播来自Grindr用户的敏感个人信息。监管机构否定广告技术中介仅以原应用已取得同意为由免责的主张，认为接收和继续利用数据的企业同样负有确认处理合法性的责任。该决定针对微软收购之前的历史行为，企业仍可依法提出救济。"
+    },
+    {
+      "id": "research-item-9",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "欧盟",
+      "agency": "欧盟理事会",
+      "title": "欧盟新增近1600项对俄军工供应链制裁名单，涉及半导体和通信设备供应商",
+      "original_title": "Russia’s war of aggression against Ukraine: EU agrees largest-ever package of listings targeting almost 1600 individuals and entities in Russia’s military-industrial complex",
+      "source_name": "欧盟理事会",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/12/russia-s-war-of-aggression-against-ukraine-eu-agrees-largest-ever-package-of-listings-targeting-almost-1600-individuals-and-entities-in-russia-s-military-industrial-complex/",
+      "fact": "欧盟理事会10月12日正式通过新增针对俄罗斯军事工业供应链的限制措施，将826家企业和743名企业负责人列入清单，所涉供应链包括半导体、微电路、计算机、通信和导航设备。相关主体被实施资产冻结，欧盟主体不得直接或间接向其提供资金或经济资源，列名个人还受入境限制。欧盟表示有关法律文件已刊载于《欧盟官方公报》。本轮措施是特定主体列名制裁，而非全面禁止半导体贸易。"
+    },
+    {
+      "id": "research-item-10",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "欧盟",
+      "agency": "欧盟理事会、欧洲议会",
+      "title": "欧盟理事会正式通过AGILE创新资助条例，面向军民两用前沿技术",
+      "original_title": "Programme for agile and rapid defence innovation: Council gives final green light",
+      "source_name": "欧盟理事会",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/12/programme-for-agile-and-rapid-defence-innovation-council-gives-final-green-light/",
+      "fact": "欧盟理事会10月12日正式通过设立AGILE快速国防创新计划的条例，拟以1.15亿欧元支持研发新兴技术和颠覆性技术的中小企业、初创企业及成长期企业，并支持民用技术向国防应用转化。该计划包括加快科研资助、提供试验设施以及简化相关采购。条例仍需由欧洲议会和理事会主席签署并在《欧盟官方公报》公布，公布后二十日才正式生效，首批申请预计2027年初启动。"
+    },
+    {
+      "id": "research-item-11",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "法国",
+      "agency": "法国巴黎检察机关及多家食品零售企业",
+      "title": "法国多家超市联网冷藏设备遭网络攻击，巴黎检方启动调查",
+      "original_title": "Cyberattack shuts down refrigerators at French supermarkets",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/",
+      "fact": "10月12日法国多家大型连锁超市确认冷藏设备受到网络攻击，部分门店冷链运行受影响，出现食品报废和经营损失。媒体报告受影响门店约250至350家，多家零售企业公开回应事件；巴黎检察机关表示已启动调查，以确定受害范围并核实相关损失和事故情况。该事件涉及联网设备安全与重要商业设施连续运营，目前尚不能确定攻击来源和最终法律责任。"
+    },
+    {
+      "id": "research-item-12",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "澳大利亚",
+      "agency": "澳大利亚联邦政府、绿党",
+      "title": "澳大利亚拟调整数字注意义务法案，绿党要求保留用户起诉平台的权利",
+      "original_title": "Greens demand right to sue big tech as Labor prepares online safety laws and trust tax changes",
+      "source_name": "澳大利亚广播公司（ABC News）",
+      "url": "https://www.abc.net.au/news/2026-10-12/greens-push-to-sue-big-tech-over-online-harm-safety-laws-labor/107253674",
+      "fact": "澳大利亚广播公司10月12日报道，联邦政府准备向议会提交《数字注意义务》法案，并考虑删除原征求意见稿中授权部长增列网络伤害类型的权限。绿党则公开要求赋予个人就平台和算法造成的网络伤害提起民事诉讼及索赔的权利，并要求违法罚款与企业全球营业收入挂钩。法案拟覆盖社交媒体、搜索引擎及人工智能聊天机器人，但相关要求目前处于政府拟议及议会协商阶段，尚未成为法律。"
+    },
+    {
+      "id": "research-item-13",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "英国及印度",
+      "agency": "英国商业创新科技部、印度科学技术部",
+      "title": "英印启动技术转化合作项目，并推进联合人工智能研究中心相关合作",
+      "original_title": "8th UK-India Science and Innovation Council Statement",
+      "source_name": "英国政府（GOV.UK）",
+      "url": "https://www.gov.uk/government/news/8th-uk-india-science-and-innovation-council-statement",
+      "fact": "英国和印度10月12日在新德里第八次双边科学创新理事会后发表联合声明，正式启动技术转化合作项目，推动研究成果验证、试点和商业化，并讨论人工智能、关键技术、生命科学及电网韧性方面的合作。声明确认双方将继续推进技术安全倡议框架内的联合人工智能中心等机制。这是双边政策合作与机构安排，不能表述为新设跨境数据传输豁免或统一强制性AI监管标准。"
+    },
+    {
+      "id": "research-item-14",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "英国",
+      "agency": "英国通信管理局Ofcom",
+      "title": "英国Ofcom发布两份新版网络安全行为准则，涉及违法内容和未成年人保护",
+      "original_title": "Online safety regulatory documents and guidance",
+      "source_name": "Ofcom",
+      "url": "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/online-safety-regulatory-documents",
+      "fact": "英国通信管理局Ofcom于10月12日在其《在线安全法》监管文件页面正式列出两份已发布、尚未生效的新版行为准则，分别面向用户间服务的违法内容管理和儿童保护。Ofcom说明这些修订在发布21天后生效，行为准则列明服务提供者履行法定安全职责的推荐措施。该更新不同于此前已经生效的版本，不能提前把本次修订当成现行义务。"
+    },
+    {
+      "id": "research-item-15",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "英国及开放政府伙伴关系成员",
+      "agency": "英国内阁办公室、开放政府伙伴关系",
+      "title": "英国公布2026—2027年开放政府国际议程，将信息真实性列为合作重点",
+      "original_title": "Open Government that Delivers: Trust, Prosperity and Democratic Resilience",
+      "source_name": "英国政府（GOV.UK）",
+      "url": "https://www.gov.uk/government/publications/open-government-that-delivers-trust-prosperity-and-democratic-resilience",
+      "fact": "英国内阁办公室等部门10月12日发布未来一年的开放政府伙伴关系共同主席议程，覆盖2026年10月至2027年9月的国际合作工作。文件将维护信息真实性与公共传播可信度列为五项重点之一，同时涉及公众参与、反腐败及民主韧性。该文件是合作政策议程而非已获议会通过的网络内容治理法案，也未因此赋予监管机构新的处罚权限。"
+    },
+    {
+      "id": "research-item-16",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "英国",
+      "agency": "英国内阁办公室、AI安全研究所、国家网络安全中心等",
+      "title": "英国公布前沿AI风险防御措施，拟研究严重AI事件和险情报告安排",
+      "original_title": "Britain steps up national defences against growing AI risks",
+      "source_name": "英国政府（GOV.UK）",
+      "url": "https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks",
+      "fact": "英国政府10月12日发布人工智能风险防御措施，宣布扩展利用前沿AI识别公共部门网络风险的试点，并由国家网络安全中心和AI安全研究所研究自主AI智能体严重事件的应对能力。政府表示将研究通过《网络安全与韧性法案》相关制度加强防护，探讨识别和报告AI严重事故及未遂险情的措施。这些新增报告制度仍在研究阶段，尚非已经通过的法律义务。"
+    },
+    {
+      "id": "research-item-17",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "英国（英格兰）",
+      "agency": "英国国家医疗数据监护人",
+      "title": "英国国家医疗数据监护人就NHS联邦数据平台提出互操作性与数据主权建议",
+      "original_title": "NDG advises minister on public and professional trust in the FDP",
+      "source_name": "英国政府（GOV.UK）",
+      "url": "https://www.gov.uk/government/publications/ndg-advises-minister-on-public-and-professional-trust-in-the-fdp",
+      "fact": "英国国家医疗数据监护人10月12日公布致卫生创新部长的信函，讨论英国国家医疗服务体系NHS联邦数据平台未来安排。信函建议在选择涉及医疗数据的系统供应商时充分考虑公众及医护专业人员信任，客观公开系统效果与局限，并重视技术互操作、供应商锁定及数据主权，评估开放标准和开源技术。该文件属于法定职责范围内的专业建议，并非针对特定供应商作出的行政处罚或合同决定。"
+    },
+    {
+      "id": "research-item-18",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "英国（英格兰和威尔士）",
+      "agency": "英国司法部、英格兰和威尔士法院与审裁处事务署",
+      "title": "英国推进刑事法院远程庭审试点，公布嫌疑人羁押地视频出庭安排",
+      "original_title": "Technology to bolster justice for victims as government responds to Leveson",
+      "source_name": "英国司法部（GOV.UK）",
+      "url": "https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson",
+      "fact": "英国司法部10月12日公布对刑事法院独立评估报告的回应，提出在至少四个警区试点羁押场所与法院之间的安全视频连线，支持被告首次出庭并减少押送造成的延期，相关安排获1700余万英镑支持。司法部另表示已开展跨地区法官远程审案试点，保留当事人申请面对面听审的程序保障。上述内容是政府宣布的试点及改革措施，并非取消现场庭审或全面替代陪审团制度。"
+    },
+    {
+      "id": "research-item-19",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "菲律宾",
+      "agency": "菲律宾众议院、参议院",
+      "title": "菲律宾众议院通过限制13岁以下儿童使用社交平台法案，待两院协调",
+      "original_title": "Philippine lower house approves bill restricting minors' social media access",
+      "source_name": "路透社",
+      "url": "https://www.reuters.com/world/asia-pacific/philippine-lower-house-approves-bill-restricting-minors-social-media-access-2026-10-12/",
+      "fact": "菲律宾众议院10月12日表决通过一项限制13岁以下儿童访问社交媒体平台的法案。参议院此前通过的版本则更严格，禁止18岁以下未成年人创建社交媒体账户。两院须进一步协调不同版本，并在形成统一文本后提交总统审批。目前只是立法审议进展，并不意味着菲律宾已正式实行全国性13岁以下使用禁令。"
+    },
+    {
+      "id": "research-item-20",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "荷兰",
+      "agency": "Ahold Delhaize",
+      "title": "跨国零售集团Ahold Delhaize披露网络安全事件并临时关闭部分信息系统",
+      "original_title": "Ahold Delhaize takes precautionary measures following cybersecurity incident",
+      "source_name": "Ahold Delhaize Newsroom",
+      "url": "https://newsroom.aholddelhaize.com/ahold-delhaize-takes-precautionary-measures-following-cybersecurity-incident/",
+      "fact": "总部位于荷兰的跨国零售集团Ahold Delhaize于10月12日发布正式公告，确认其网络发生安全事件，并在评估和处置期间主动将部分信息系统下线以降低风险。公司称旗下门店仍正常对消费者开放，同时正在采取措施保护业务基础设施和相关人员权益。截至公告发布时，公司并未确认消费者个人数据外泄或披露攻击原因，因此不能将其表述为已经证实的大规模数据泄露。"
+    },
+    {
+      "id": "research-item-21",
+      "domestic": false,
+      "date": "2026-10-10",
+      "jurisdiction": "印度尼西亚",
+      "agency": "印度尼西亚总统、交通部",
+      "title": "印尼交通部10月10日解读平台运输新规，明确算法透明和骑手保护",
+      "original_title": "Pemerintah Terbitkan Perpres No. 27 Tahun 2026, Menhub Dudy: Berikan Kepastian Hukum Pengemudi Ojek Online",
+      "source_name": "印度尼西亚交通部",
+      "url": "https://www.dephub.go.id/index.php/post/read/pemerintah-terbitkan-perpres-no.-27-tahun-2026%2C-menhub-dudy--berikan-kepastian-hukum-pengemudi-ojek-online",
+      "fact": "印度尼西亚政府于10月8日正式公布第27号总统条例，10月10日交通部发布后续政策说明，介绍平台运输和配送业务中的骑手保护安排。交通部强调合作协议应写明费用与激励机制、交易数据、自动化算法使用和投诉处理方式，并保障司机个人信息和社会保险权益。10月10日的新增事项是主管部门对规则内容及执行安排的公开解释，不能误写成条例当日颁布。"
+    },
+    {
+      "id": "research-item-22",
+      "domestic": false,
+      "date": "2026-10-10",
+      "jurisdiction": "美国（涉及加拿大人员）",
+      "agency": "美国联邦司法机关、联邦调查局",
+      "title": "美国确认一名加拿大网络安全业者面临网络勒索相关指控，涉ShinyHunters联系仍待证实",
+      "original_title": "Cyber exec arrested in case allegedly tied to ShinyHunters hackers",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/cyber-exec-arrested-in-case-allegedly-tied-to-shinyhunters-hackers/",
+      "fact": "10月10日媒体根据美国联邦法院公开记录确认，加拿大网络安全从业者Edward Dubrovsky已因涉嫌合谋威胁泄露机密信息勒索金钱等指控在宾夕法尼亚州出庭，并被移送得克萨斯州继续相关程序。其与ShinyHunters网络勒索团伙的关联来自报道及知情人士判断，联邦调查局尚未公开确认两者就是同一案件。刑事指控尚待审理，被调查者不得被描述为已被判决有罪。"
+    }
+  ],
+  "analysis": {
+    "status": "pending",
+    "task": "网信法新闻分析补充"
+  },
+  "publication": {
+    "article_written": true,
+    "index_updated": true,
+    "briefs_updated": true,
+    "archive_updated": true,
+    "current_edition_updated": true,
+    "pages_status": "awaiting_deployment"
+  }
+}
