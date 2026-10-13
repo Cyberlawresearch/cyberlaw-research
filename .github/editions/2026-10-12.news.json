@@ -3,7 +3,7 @@
   "column": "brief",
   "state": "draft",
   "publication_ready": true,
-  "phase": "publishing",
+  "phase": "completed",
   "base_main_sha": "4847343ec47e89f87a5e4e8a7621672bfc55c341",
   "page": "articles/2026-10-12-tech-law-brief.html",
   "items": [
@@ -560,18 +560,20 @@
   },
   "checked_at": "2026-10-13T17:05:17.658+08:00",
   "last_news_scan_at": "2026-10-13T17:05:17.658+08:00",
-  "updated_at": "2026-10-13T17:05:17.658+08:00",
-  "next_actions": [
-    "由 GitHub Actions 在最新 main 上作为 2026-10-12 历史漏发期次补发，不能改为 2026-10-13 的新闻",
-    "Actions 将实际补发时刻明确写入正式核验记录，网页标识真实补发日期",
-    "核对 Actions 的 main 提交、Pages completed/success、首页及桌面移动端阅读"
-  ],
+  "updated_at": "2026-10-13T17:11:23.873+08:00",
+  "next_actions": [],
   "last_error": null,
   "publication": {
-    "main_sha": null,
-    "pages_run_id": null,
-    "pages_conclusion": null,
-    "online_verification": null
+    "main_sha": "dec6052390e71cb492fd0bda6b3656fb9da0bd09",
+    "pages_run_id": 38374017127,
+    "pages_conclusion": "success",
+    "online_verification": {
+      "state": "passed",
+      "source": "Pages workflow deployed browser and current-column tests",
+      "verified_at": "2026-10-13T17:11:23.873+08:00",
+      "html_url": "https://cyberlawresearch.github.io/cyberlaw-research/articles/2026-10-12-tech-law-brief.html"
+    },
+    "pages_run_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/38374017127"
   },
   "backfill_authorized": true,
   "backfill_reviewed_at": "2026-10-13T17:05:17.658+08:00",
