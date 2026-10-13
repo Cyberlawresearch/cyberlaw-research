@@ -203,54 +203,6 @@
     },
     {
       "id": "research-item-2",
-      "domestic": false,
-      "date": "2026-10-13",
-      "jurisdiction": "国际（34国研究人员）",
-      "agency": "约400名人工智能研究人员及联合倡议签署者",
-      "title": "约400名研究人员倡议建立前沿AI国际监督机制，提出隔离和事故登记要求",
-      "original_title": "Scientists call for international body to oversee advanced AI",
-      "source_name": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/scientists-call-international-body-oversee-advanced-ai-2026-10-13/",
-      "fact": "10月13日，包括Geoffrey Hinton和Yoshua Bengio在内约400名研究人员联名呼吁建立国际机构，协调具有高级网络能力的前沿AI模型的隔离标准和重大安全事件登记。倡议提出高风险模型在安全验证前应与外部网络隔离，并接受独立监督。该文件是跨国研究人员提出的公开倡议，并非已经签署或生效的国际条约。"
-    },
-    {
-      "id": "research-item-3",
-      "domestic": false,
-      "date": "2026-10-13",
-      "jurisdiction": "美国、英国、欧元区",
-      "agency": "美国联储、货币监理署、联邦存款保险公司、欧洲央行、英国央行",
-      "title": "美欧银行监管机构加强排查自主AI智能体风险，追问人工监督和系统恢复安排",
-      "original_title": "Banking watchdogs ramp up AI scrutiny as stability fears mount, sources say",
-      "source_name": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/banking-watchdogs-ramp-up-ai-scrutiny-stability-fears-mount-sources-say-2026-10-13/",
-      "fact": "路透社10月13日援引六名知情人士披露，美国联储、货币监理署和联邦存款保险公司正向银行询问自主AI智能体的权限、人工审批、操作记录以及紧急停止安排。英国央行和欧洲央行也在督促银行检查网络事件后的系统恢复能力及第三方技术依赖。相关情况目前主要是监管问询和监督沟通，不代表这些机构已经共同出台新的约束性AI法规。"
-    },
-    {
-      "id": "research-item-4",
-      "domestic": false,
-      "date": "2026-10-12",
-      "jurisdiction": "美国",
-      "agency": "Character Technologies、美国破产法院",
-      "title": "Character.AI在美国申请破产，拟向迪士尼出售部分知识产权许可",
-      "original_title": "Character.AI files for bankruptcy, to sell some assets to Disney for $20 million",
-      "source_name": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/characterai-files-bankruptcy-agrees-sell-some-assets-disney-20-million-2026-10-13/",
-      "fact": "路透社10月13日报道，生成式AI聊天平台Character.AI于10月12日在美国申请破产保护，并提出将部分知识产权的非独家永久许可作为资产出售给迪士尼，初始出价2000万美元，其他竞买人仍可竞价。公司此前卷入涉及未成年人保护和聊天机器人安全的诉讼。申请破产及资产出售计划尚待法定程序推进，不能表述为法院已批准最终出售。"
-    },
-    {
-      "id": "research-item-5",
-      "domestic": false,
-      "date": "2026-10-13",
-      "jurisdiction": "英国",
-      "agency": "伦敦高等法院、Meta、Ofcom",
-      "title": "Meta在英国高等法院挑战Ofcom在线安全收费和罚款计算办法",
-      "original_title": "Meta challenges UK online safety watchdog over how fees and fines are calculated",
-      "source_name": "Reuters",
-      "url": "https://www.reuters.com/legal/government/meta-challenges-uk-online-safety-watchdog-over-how-fees-fines-are-calculated-2026-10-13/",
-      "fact": "伦敦高等法院10月13日开始审理Meta针对英国通信监管机构Ofcom的司法挑战，争议集中于《在线安全法》实施中监管费和潜在罚款上限是否可按广泛界定的全球收入计算，以及同一集团旗下多项服务共同担责时的计算方法。Meta认为这种算法超过法定授权，Ofcom则坚持其合理性。案件目前处于法庭审理和双方主张阶段，法院尚未作出最终判决。"
-    },
-    {
-      "id": "research-item-6",
       "domestic": true,
       "date": "2026-10-13",
       "jurisdiction": "中国",
@@ -262,7 +214,7 @@
       "fact": "商务部10月13日公布《民用航空领域相关两用物项出口凭证管理办法（征求意见稿）》，拟对飞机发动机、惯性导航设备等两用物项的维修、维护和相关备件出口设立登记取得出口凭证的制度。官方解释，在规定范围内无需逐单申请许可证，同时设置出口后报告和后续监管安排。公众可以在11月13日前提出意见，相关措施目前仍处于征求意见阶段。"
     },
     {
-      "id": "research-item-7",
+      "id": "research-item-3",
       "domestic": true,
       "date": "2026-10-12",
       "jurisdiction": "中国",
@@ -272,6 +224,54 @@
       "source_name": "最高人民法院、新华社",
       "url": "https://app.xinhuanet.com/news/article.html?articleId=202610124e8db3f3b0d04774baeade2b554ddc0c",
       "fact": "最高人民法院、中国人民银行、国家金融监督管理总局和证监会10月12日联合公布六起金融消费者、投资者合法权益保护典型案例。数字金融案例中，基金公司通过App升级设置仅可选择接受仲裁条款或退出登录的选项，试图将存量产品争议移交仲裁。法院认为缺乏当事人真实自愿同意，相关仲裁协议不具约束力。这是对既有裁判的典型案例集中发布，不是新司法解释。"
+    },
+    {
+      "id": "research-item-4",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "国际（34国研究人员）",
+      "agency": "约400名人工智能研究人员及联合倡议签署者",
+      "title": "约400名研究人员倡议建立前沿AI国际监督机制，提出隔离和事故登记要求",
+      "original_title": "Scientists call for international body to oversee advanced AI",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/scientists-call-international-body-oversee-advanced-ai-2026-10-13/",
+      "fact": "10月13日，包括Geoffrey Hinton和Yoshua Bengio在内约400名研究人员联名呼吁建立国际机构，协调具有高级网络能力的前沿AI模型的隔离标准和重大安全事件登记。倡议提出高风险模型在安全验证前应与外部网络隔离，并接受独立监督。该文件是跨国研究人员提出的公开倡议，并非已经签署或生效的国际条约。"
+    },
+    {
+      "id": "research-item-5",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "美国、英国、欧元区",
+      "agency": "美国联储、货币监理署、联邦存款保险公司、欧洲央行、英国央行",
+      "title": "美欧银行监管机构加强排查自主AI智能体风险，追问人工监督和系统恢复安排",
+      "original_title": "Banking watchdogs ramp up AI scrutiny as stability fears mount, sources say",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/banking-watchdogs-ramp-up-ai-scrutiny-stability-fears-mount-sources-say-2026-10-13/",
+      "fact": "路透社10月13日援引六名知情人士披露，美国联储、货币监理署和联邦存款保险公司正向银行询问自主AI智能体的权限、人工审批、操作记录以及紧急停止安排。英国央行和欧洲央行也在督促银行检查网络事件后的系统恢复能力及第三方技术依赖。相关情况目前主要是监管问询和监督沟通，不代表这些机构已经共同出台新的约束性AI法规。"
+    },
+    {
+      "id": "research-item-6",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "美国",
+      "agency": "Character Technologies、美国破产法院",
+      "title": "Character.AI在美国申请破产，拟向迪士尼出售部分知识产权许可",
+      "original_title": "Character.AI files for bankruptcy, to sell some assets to Disney for $20 million",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/characterai-files-bankruptcy-agrees-sell-some-assets-disney-20-million-2026-10-13/",
+      "fact": "路透社10月13日报道，生成式AI聊天平台Character.AI于10月12日在美国申请破产保护，并提出将部分知识产权的非独家永久许可作为资产出售给迪士尼，初始出价2000万美元，其他竞买人仍可竞价。公司此前卷入涉及未成年人保护和聊天机器人安全的诉讼。申请破产及资产出售计划尚待法定程序推进，不能表述为法院已批准最终出售。"
+    },
+    {
+      "id": "research-item-7",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "英国",
+      "agency": "伦敦高等法院、Meta、Ofcom",
+      "title": "Meta在英国高等法院挑战Ofcom在线安全收费和罚款计算办法",
+      "original_title": "Meta challenges UK online safety watchdog over how fees and fines are calculated",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/government/meta-challenges-uk-online-safety-watchdog-over-how-fees-fines-are-calculated-2026-10-13/",
+      "fact": "伦敦高等法院10月13日开始审理Meta针对英国通信监管机构Ofcom的司法挑战，争议集中于《在线安全法》实施中监管费和潜在罚款上限是否可按广泛界定的全球收入计算，以及同一集团旗下多项服务共同担责时的计算方法。Meta认为这种算法超过法定授权，Ofcom则坚持其合理性。案件目前处于法庭审理和双方主张阶段，法院尚未作出最终判决。"
     },
     {
       "id": "research-item-8",

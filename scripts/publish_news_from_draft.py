@@ -314,6 +314,14 @@ def publish(root, draft, now, *, backfill=False):
     day, items, coverage, current, already = verify(root, draft, now, backfill=backfill)
     if already:
         return {"status": "already_published", "date": day}
+    # The draft IDs follow research order. The site groups domestic reports
+    # before foreign ones, so reindex after grouping, without mutating the draft.
+    domestic_items = [entry for entry in items if entry.get("domestic") is True]
+    foreign_items = [entry for entry in items if entry.get("domestic") is not True]
+    items = [
+        dict(entry, id=f"research-item-{position}")
+        for position, entry in enumerate(domestic_items + foreign_items, start=1)
+    ]
     page = generate_page(root, day, items, current, backfilled_at=now if backfill else None)
     update_entrances(root, day, items, page, current)
     next_manifest = copy.deepcopy(current)

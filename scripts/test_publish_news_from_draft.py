@@ -26,11 +26,12 @@ RUN_TIME = datetime.fromisoformat(DAY + "T20:30:00+08:00")
 def synthetic_draft():
     items = []
     for i in range(1, 12):
+        domestic = i in (1, 6, 7, 10)
         items.append({
             "id": f"research-item-{i}",
-            "domestic": i <= 4,
+            "domestic": domestic,
             "date": DAY,
-            "jurisdiction": "中国" if i <= 4 else "测试法域",
+            "jurisdiction": "中国" if domestic else "测试法域",
             "agency": "虚拟测试机构",
             "title": f"示例科技法新闻标题{i}",
             "original_title": f"Fictional News Item {i}",
@@ -119,15 +120,26 @@ def main():
         articles = html.select(".brief-item")
         assert len(articles) == 11
         assert len([a for a in articles if a.find("p", class_="brief-original")]) == 7
+        expected_display = (
+            [item for item in data["items"] if item["domestic"]] +
+            [item for item in data["items"] if not item["domestic"]]
+        )
         for i, article in enumerate(articles, 1):
             assert article["id"] == f"research-item-{i}"
+            assert article.select_one("h3").get_text(strip=True).startswith(f"{i}. ")
             assert len(article.select("p.analysis-pending")) == 3
             assert json.loads(article.select_one("script.brief-insight").string) == {
                 "background": "", "outlook": "",
             }
-            assert article.select_one(".source a")["href"] == data["items"][i-1]["url"]
+            assert article.select_one(".source a")["href"] == expected_display[i-1]["url"]
         record = load(root / ".github/editions" / f"{DAY}.news.json")
         assert record["state"] == "verified"
+        assert [entry["id"] for entry in record["items"]] == [
+            f"research-item-{i}" for i in range(1, 12)
+        ]
+        assert [entry["url"] for entry in record["items"]] == [
+            entry["url"] for entry in expected_display
+        ]
         assert record["analysis_pending"] and record["publication"]["pages_status"] == "awaiting_deployment"
         assert len(record["domestic_source_coverage"]) == 7
 
