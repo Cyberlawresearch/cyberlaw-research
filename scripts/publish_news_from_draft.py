@@ -64,11 +64,19 @@ def new_child(doc, parent, tag, label=None, css_class=None, **attrs):
     return node
 
 
-def verify(root, draft, now):
+def verify(root, draft, now, *, backfill=False):
     now = now.astimezone(TZ)
     day = str(draft.get("date") or "")
     demand(re.fullmatch(r"\d{4}-\d{2}-\d{2}", day), "Invalid issue date")
-    demand(day == now.date().isoformat(), "Draft must match today's Shanghai date")
+    issue_date = date.fromisoformat(day)
+    if backfill:
+        demand(draft.get("backfill_authorized") is True, "Historical backfill not authorized")
+        demand(draft.get("backfill_issue_date") == day and draft.get("backfill_reviewed_at"),
+               "Missing historical backfill review")
+        demand(0 < (now.date() - issue_date).days <= 2,
+               "Backfill limited to the preceding two dates")
+    else:
+        demand(day == now.date().isoformat(), "Draft must match today's Shanghai date")
     demand(draft.get("column") == "brief", "Only the news column is eligible")
     demand(draft.get("publication_ready") is True, "Draft not publication_ready")
     demand(draft.get("state") in ("draft", "verified"), "Invalid draft state")
@@ -120,7 +128,7 @@ def verify(root, draft, now):
         except ValueError as err:
             raise ValueError(f"Invalid event date: {i}") from err
         # Dates with no verified hour/minute are checked conservatively.
-        demand(0 <= (now.date() - event_day).days <= 2,
+        demand(0 <= (issue_date - event_day).days <= 2,
                f"Event outside conservative 72-hour window: {i}")
         domestic += item.get("domestic") is True
     demand(domestic == (draft.get("distribution") or {}).get("domestic"),
@@ -143,7 +151,7 @@ def verify(root, draft, now):
     # URL-level duplicate check; editorial event-level dedup remains mandatory
     # in the draft before publication_ready may be set.
     for offset in range(1, 8):
-        former = (now.date() - timedelta(days=offset)).isoformat()
+        former = (issue_date - timedelta(days=offset)).isoformat()
         older = root / "articles" / f"{former}-tech-law-brief.html"
         if not older.exists():
             continue
@@ -200,13 +208,17 @@ def set_brief_nav(doc, href):
     links[0]["href"] = href
 
 
-def generate_page(root, day, items, current):
+def generate_page(root, day, items, current, *, backfilled_at=None):
     old = root / current["pages"]["brief"]
     demand(old.is_file(), "Previous news HTML is missing")
     doc = soup(old)
     doc.title.string = f'{int(day[:4])}年{int(day[5:7])}月{int(day[8:])}日全球科技法简报｜网信法研究每日推送'
     text(doc.select_one(".article-hero .eyebrow"), "issue eyebrow").string = "每日全球科技法简报 · " + day.replace("-", ".")
-    text(doc.select_one(".article-hero .lead"), "issue lead").string = f'{int(day[:4])}年{int(day[5:7])}月{int(day[8:])}日 · {len(items)}条'
+    lead = text(doc.select_one(".article-hero .lead"), "issue lead")
+    lead.string = f'{int(day[:4])}年{int(day[5:7])}月{int(day[8:])}日 · {len(items)}条'
+    if backfilled_at is not None:
+        released = backfilled_at.astimezone(TZ)
+        lead.string += f" · {released.year}年{released.month}月{released.day}日补发"
     text(doc.body, "page body")["data-analysis-status"] = "pending"
     set_brief_nav(doc, day + "-tech-law-brief.html")
     by_labels = {
@@ -268,7 +280,7 @@ def update_entrances(root, day, items, page, current):
     save(root / "archive.html", str(archive))
 
 
-def issue_record(draft, day, items, coverage, now, page):
+def issue_record(draft, day, items, coverage, now, page, *, backfill=False):
     entries = []
     for entry in items:
         entries.append({key: entry[key] for key in (
@@ -281,6 +293,8 @@ def issue_record(draft, day, items, coverage, now, page):
         "distribution": {"domestic": sum(e["domestic"] is True for e in items),
                          "foreign": sum(e["domestic"] is not True for e in items)},
         "mode": "fact_only", "analysis_pending": True,
+        "published_as_backfill": bool(backfill),
+        "actual_release_at": now.astimezone(TZ).isoformat(),
         "checked_at": draft.get("checked_at") or draft["last_news_scan_at"],
         "last_news_scan_at": draft["last_news_scan_at"],
         "checks": copy.deepcopy(draft["checks"]),
@@ -296,11 +310,11 @@ def issue_record(draft, day, items, coverage, now, page):
     }
 
 
-def publish(root, draft, now):
-    day, items, coverage, current, already = verify(root, draft, now)
+def publish(root, draft, now, *, backfill=False):
+    day, items, coverage, current, already = verify(root, draft, now, backfill=backfill)
     if already:
         return {"status": "already_published", "date": day}
-    page = generate_page(root, day, items, current)
+    page = generate_page(root, day, items, current, backfilled_at=now if backfill else None)
     update_entrances(root, day, items, page, current)
     next_manifest = copy.deepcopy(current)
     next_manifest["pages"]["brief"] = page
@@ -312,7 +326,7 @@ def publish(root, draft, now):
     output_record = root / ".github/editions" / f"{day}.news.json"
     demand(not output_record.exists(), "Verified news record already exists; manual review required")
     save(output_record,
-         json.dumps(issue_record(draft, day, items, coverage, now, page),
+         json.dumps(issue_record(draft, day, items, coverage, now, page, backfill=backfill),
                     ensure_ascii=False, indent=2) + "\n")
     generated = [page, *OUTPUT_FILES, str(output_record.relative_to(root))]
     return {"status": "prepared", "date": day, "count": len(items),
@@ -325,10 +339,11 @@ def main():
     parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--draft", required=True, type=Path)
     parser.add_argument("--now", help="ISO 8601 timestamp, for deterministic offline tests")
+    parser.add_argument("--backfill", action="store_true", help="Publish an explicitly authorized historical edition within two days")
     args = parser.parse_args()
     now = datetime.fromisoformat(args.now) if args.now else datetime.now(TZ)
     demand(now.tzinfo is not None, "Timestamp must include timezone")
-    result = publish(args.root, load(args.draft), now)
+    result = publish(args.root, load(args.draft), now, backfill=args.backfill)
     print(json.dumps(result, ensure_ascii=False))
 
 
