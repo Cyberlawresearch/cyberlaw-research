@@ -2,9 +2,39 @@
   "date": "2026-10-13",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "3506f0c37ecbbd6030e391b6699a51067768899c",
-  "phase": "researching",
+  "phase": "source_review",
   "publication_ready": false,
-  "items": [],
+  "items": [
+    {
+      "id": "india-arylides-review",
+      "date": "2026-10-12",
+      "status": "DGTR复审终裁建议，尚待财政部颁布税令",
+      "source": "https://dgtr.gov.in/sites/default/files/2026-10/NCV%20Arylides%20FF.pdf",
+      "rates": [
+        "24.79%",
+        "26.64%",
+        "44.90%"
+      ]
+    },
+    {
+      "id": "us-vietnam-pressure-pipe",
+      "date": "2026-10-13",
+      "status": "美国商务部反倾销行政复审初裁，越南统一幅度90.80%，非新税率",
+      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-13/html/2026-20816.htm"
+    },
+    {
+      "id": "eu-china-hybrid-quantities",
+      "date": "2026-10-12",
+      "status": "欧盟官员介绍拟议实施参数，尚未公布正式执行规则，较昨日新增35万辆和6%",
+      "source": "https://www.reuters.com/business/autos-transportation/eu-eyes-december-trade-initiatives-after-china-car-import-deal-2026-10-12/"
+    },
+    {
+      "id": "uk-india-fta-implementation",
+      "date": "2026-10-12",
+      "status": "英印部长级实施安排，原协定7月15日生效，无新增关税减免",
+      "source": "https://www.gov.uk/government/news/joint-statement-of-16th-meeting-of-the-india-uk-jetco"
+    }
+  ],
   "coverage": {
     "US": "已查阅10月13日Federal Register目录及相关监管公告",
     "EU": "pending",
@@ -17,7 +47,8 @@
   },
   "last_error": null,
   "next_actions": [
-    "继续其余法域检索与事件去重",
-    "逐条核验来源和最终发布"
+    "补充欧盟及英国独立监管进展",
+    "再查日韩加澳，逐项去重与原始链接核验",
+    "末次终扫后发布"
   ]
 }
