@@ -1,7 +1,7 @@
 name: Publish verified news draft
 
 on:
-  # A code change only runs regression tests. It never publishes news.
+  # Ordinary code changes only run tests. The explicitly tagged Oct 12 recovery push publishes its reviewed draft.
   push:
     branches: [main]
     paths:
@@ -10,12 +10,10 @@ on:
       - "scripts/test_publish_news_from_draft.py"
   # The ChatGPT research task writes only fact-checked news JSON to news-drafts.
   schedule:
-    - cron: "15 20 * * *"
-      timezone: "Asia/Shanghai"
-    - cron: "45 21 * * *"
-      timezone: "Asia/Shanghai"
-    - cron: "20 23 * * *"
-      timezone: "Asia/Shanghai"
+    # GitHub Actions cron expressions are UTC. 12:15, 13:45, 15:20 UTC = 20:15, 21:45, 23:20 in Beijing.
+    - cron: "15 12 * * *"
+    - cron: "45 13 * * *"
+    - cron: "20 15 * * *"
   workflow_dispatch:
 
 permissions:
@@ -43,14 +41,20 @@ jobs:
       - name: Run isolated JSON-to-HTML release tests
         run: python scripts/test_publish_news_from_draft.py
 
-      - name: Read today's explicitly ready draft
+      - name: Read today's ready draft or an explicitly authorized historical backfill
         id: discover
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[news-backfill-2026-10-12]')
         shell: bash
         run: |
           set -euo pipefail
           day="$(TZ=Asia/Shanghai date +%F)"
+          backfill=false
+          if [[ "$GITHUB_EVENT_NAME" == "push" ]]; then
+            day="2026-10-12"
+            backfill=true
+          fi
           echo "day=$day" >> "$GITHUB_OUTPUT"
+          echo "backfill=$backfill" >> "$GITHUB_OUTPUT"
           echo "ready=false" >> "$GITHUB_OUTPUT"
           git fetch --quiet origin refs/heads/news-drafts:refs/remotes/origin/news-drafts
           path=".github/editions/${day}.news.json"
@@ -59,12 +63,13 @@ jobs:
             exit 0
           fi
           git show "refs/remotes/origin/news-drafts:${path}" > "$RUNNER_TEMP/ready-news.json"
-          if python - "$RUNNER_TEMP/ready-news.json" "$day" <<'PY'
+          if python - "$RUNNER_TEMP/ready-news.json" "$day" "$backfill" <<'PY'
           import json,sys
           data=json.load(open(sys.argv[1],encoding="utf-8"))
           good=(data.get("date")==sys.argv[2] and
                 data.get("column")=="brief" and
-                data.get("publication_ready") is True)
+                data.get("publication_ready") is True and
+                (sys.argv[3] != "true" or data.get("backfill_authorized") is True))
           raise SystemExit(0 if good else 1)
           PY
           then
@@ -79,6 +84,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           DAY: ${{ steps.discover.outputs.day }}
+          BACKFILL: ${{ steps.discover.outputs.backfill }}
         shell: bash
         run: |
           set -euo pipefail
@@ -89,7 +95,11 @@ jobs:
             git fetch --quiet origin main
             git reset --hard origin/main
             git clean -fd
-            python scripts/publish_news_from_draft.py --draft "$RUNNER_TEMP/ready-news.json"
+            if [[ "$BACKFILL" == "true" ]]; then
+              python scripts/publish_news_from_draft.py --draft "$RUNNER_TEMP/ready-news.json" --backfill
+            else
+              python scripts/publish_news_from_draft.py --draft "$RUNNER_TEMP/ready-news.json"
+            fi
             page="articles/${DAY}-tech-law-brief.html"
             record=".github/editions/${DAY}.news.json"
             git add -- "$page" index.html briefs.html archive.html "$record" data/current-edition.json
