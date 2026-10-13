@@ -444,19 +444,25 @@
   },
   "checked_at": "2026-10-13T21:43:43.948+08:00",
   "last_news_scan_at": "2026-10-13T21:43:43.948+08:00",
-  "updated_at": "2026-10-13T21:51:50.610+08:00",
+  "updated_at": "2026-10-13T22:47:19.333+08:00",
   "next_actions": [],
   "last_error": null,
   "publication": {
-    "main_sha": "7763ce66eaedea700a842904b8b306e6edde5619",
-    "pages_run_id": 38407962089,
+    "main_sha": "73edd11fde2580641d1c730afa2ec23eac006969",
+    "pages_run_id": 38415923656,
     "pages_conclusion": "success",
-    "pages_run_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/38407962089",
+    "pages_run_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/38415923656",
     "online_verification": {
       "state": "passed",
-      "verified_at": "2026-10-13T21:51:50.610+08:00",
-      "source": "Pages deploy job confirmed success for deployed browser and current-columns/entry-points tests",
+      "verified_at": "2026-10-13T22:47:19.333+08:00",
+      "source": "Pages deployment confirmed reading and current-columns checks for corrected sequential 1–18",
       "html_url": "https://cyberlawresearch.github.io/cyberlaw-research/articles/2026-10-13-tech-law-brief.html"
+    },
+    "numbering_correction": {
+      "commit_sha": "73edd11fde2580641d1c730afa2ec23eac006969",
+      "original_problem": "Domestic-first display used unmodified source IDs, causing heading sequence 1,6,7,2...",
+      "verified_sequence": "1–18",
+      "news_content_changed": false
     }
   }
 }
