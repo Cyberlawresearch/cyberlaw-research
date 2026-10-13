@@ -2,9 +2,9 @@
   "date": "2026-10-12",
   "column": "brief",
   "state": "draft",
-  "publication_ready": false,
-  "phase": "final_review",
-  "base_main_sha": "66af072c4a0bd75abcab5805d715f4d126283d4f",
+  "publication_ready": true,
+  "phase": "publishing",
+  "base_main_sha": "4847343ec47e89f87a5e4e8a7621672bfc55c341",
   "page": "articles/2026-10-12-tech-law-brief.html",
   "items": [
     {
@@ -112,12 +112,12 @@
       "jurisdiction": "挪威",
       "agency": "挪威数据保护局（Datatilsynet）",
       "title": "挪威个人信息监管机构对微软旗下广告技术企业Xandr处以9200万挪威克朗罚款",
-      "original_title": "Datatilsynet gir Microsoft-selskap 92 millioner i gebyr",
-      "source_name": "挪威数据保护局",
-      "url": "https://www.datatilsynet.no/aktuelt/aktuelle-nyheter-2026/datatilsynet-gir-microsoft-selskap-92-millioner-i-bot/",
+      "original_title": "Norway fines Microsoft's Xandr $9.6 million over Grindr data sharing",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/norway-fines-microsofts-xandr-96-million-over-grindr-data-sharing-2026-10-12/",
       "fact": "挪威数据保护局10月12日宣布对微软旗下广告技术企业Xandr处以9200万挪威克朗行政罚款，认定其在实时广告交易中违法处理并传播来自Grindr用户的敏感个人信息。监管机构否定广告技术中介仅以原应用已取得同意为由免责的主张，认为接收和继续利用数据的企业同样负有确认处理合法性的责任。该决定针对微软收购之前的历史行为，企业仍可依法提出救济。",
       "status": "verified",
-      "deduplication": "与10月5日至11日简报中的韩国Coupang处罚诉讼及英国ICO AI数据处理事项主体、违法行为和程序进展均不同，未发现本案重复。"
+      "deduplication": "与10月5日至11日简报中的韩国Coupang处罚诉讼及英国ICO AI数据处理事项主体、违法行为和程序进展均不同，未发现本案重复。；10月13日复核路透原报道与挪威消费者委员会公开文件，替换暂不可访问的监管网页链接。"
     },
     {
       "id": "research-item-9",
@@ -293,13 +293,13 @@
       "date": "2026-10-10",
       "jurisdiction": "印度尼西亚",
       "agency": "印度尼西亚总统、交通部",
-      "title": "印尼公布平台运输总统条例：明确算法解释、骑手权益与平台费用上限",
+      "title": "印尼交通部10月10日解读平台运输新规，明确算法透明和骑手保护",
       "original_title": "Pemerintah Terbitkan Perpres No. 27 Tahun 2026, Menhub Dudy: Berikan Kepastian Hukum Pengemudi Ojek Online",
       "source_name": "印度尼西亚交通部",
-      "url": "https://www.kemenhub.go.id/index.php/post/read/pemerintah-terbitkan-perpres-no.-27-tahun-2026%2C-menhub-dudy--berikan-kepastian-hukum-pengemudi-ojek-online",
-      "fact": "印度尼西亚交通部10月10日正式介绍第27号总统条例，对网约车和平台配送服务中的平台、司机及用户关系作出规范。条例将客运服务平台费用上限设为8%，要求平台合作协议披露费用、激励机制、交易数据和自动化算法使用情况，并保障司机个人信息、社会保险和投诉权利。平台必须在收到投诉后最迟七日内答复，相关系统与合同需按规定在六个月内调整。",
+      "url": "https://www.dephub.go.id/index.php/post/read/pemerintah-terbitkan-perpres-no.-27-tahun-2026%2C-menhub-dudy--berikan-kepastian-hukum-pengemudi-ojek-online",
+      "fact": "印度尼西亚政府于10月8日正式公布第27号总统条例，10月10日交通部发布后续政策说明，介绍平台运输和配送业务中的骑手保护安排。交通部强调合作协议应写明费用与激励机制、交易数据、自动化算法使用和投诉处理方式，并保障司机个人信息和社会保险权益。10月10日的新增事项是主管部门对规则内容及执行安排的公开解释，不能误写成条例当日颁布。",
       "status": "verified",
-      "deduplication": "近7日简报虽关注英国平台劳动算法与电商治理，但没有印尼10月10日公布的第27号总统条例；这是独立正式公布的新规范。"
+      "deduplication": "近7日简报虽关注英国平台劳动算法与电商治理，但没有印尼10月10日公布的第27号总统条例；这是独立正式公布的新规范。；经10月13日补核：总统条例首次正式公布为10月8日，原稿已纠正为交通部10月10日的后续政策说明。"
     },
     {
       "id": "research-item-22",
@@ -537,37 +537,44 @@
       "status": "checked",
       "found": 0,
       "notes": "使用日语韩语英语及越南法制关键词检索，核实马来西亚AI个人数据框架征求意见于10月5日开始、越南人工智能法和实施条例已在此前公布，均超出10月12日新增事件窗口；日本Daiichi Kosho事故原始公告10月8日，后续媒体重发排除"
+    },
+    {
+      "source_group": "跨日补发事实终核",
+      "source_name": "市场监管总局、工信部、上海澎湃、重庆日报、Reuters、Ofcom、GOV.UK、GitLab、欧盟理事会、BleepingComputer、印尼交通部",
+      "checked_at": "2026-10-13T17:05:17.658+08:00",
+      "status": "checked",
+      "found": 22,
+      "notes": "经10月13日再次复核日期、原题、事件法律属性与重复情形；特别纠正印尼条例8日发布、10日为主管部门后续解读；新闻事实按10月12日期次窗口确认，10月13日实为补发，不伪称13日新闻。"
     }
   ],
   "checks": {
     "sources": true,
     "legal_status": true,
     "original_titles": true,
-    "timeliness": false,
+    "timeliness": true,
     "previous_day_event_deduplication": true,
     "seven_day_history_deduplication": true,
     "domestic_major_omission_review": true,
     "natural_chinese_reviewed": true,
     "foreign_layout": true
   },
-  "checked_at": "2026-10-13T02:14:26.533+08:00",
-  "last_news_scan_at": "2026-10-12T22:08:22.665+08:00",
-  "updated_at": "2026-10-13T02:14:26.533+08:00",
+  "checked_at": "2026-10-13T17:05:17.658+08:00",
+  "last_news_scan_at": "2026-10-13T17:05:17.658+08:00",
+  "updated_at": "2026-10-13T17:05:17.658+08:00",
   "next_actions": [
-    "保留10月12日扩检新闻稿为真实历史研究断点；当前日期已是10月13日，原新闻自动发布工作流仅接收当日date且最后终扫已过2小时，因此publication_ready维持false",
-    "不得改写main或历史正文，也不改动news-from-draft发布流程；如需正式刊载10月12日历史漏刊稿，必须采用合法且明确支持历史刊发的既定流程，不以改日期掩盖时效问题",
-    "10月13日当日独立研究任务应重新按当日72小时窗口扫描和去重，不能直接将10月10日事件整体复制进新日期稿"
+    "由 GitHub Actions 在最新 main 上作为 2026-10-12 历史漏发期次补发，不能改为 2026-10-13 的新闻",
+    "Actions 将实际补发时刻明确写入正式核验记录，网页标识真实补发日期",
+    "核对 Actions 的 main 提交、Pages completed/success、首页及桌面移动端阅读"
   ],
-  "last_error": {
-    "stage": "historical_publication_window",
-    "checked_at": "2026-10-13T02:14:26.533+08:00",
-    "code": null,
-    "message": "2026-10-12 news was not found published on main or Pages after the nightly release window; reason not confirmed. The day's pre-publication scan is now stale and the converter only accepts the current Shanghai date. Do not mark ready or assert publication."
-  },
+  "last_error": null,
   "publication": {
     "main_sha": null,
     "pages_run_id": null,
     "pages_conclusion": null,
     "online_verification": null
-  }
+  },
+  "backfill_authorized": true,
+  "backfill_reviewed_at": "2026-10-13T17:05:17.658+08:00",
+  "backfill_issue_date": "2026-10-12",
+  "backfill_reason": "10月12日稿件已完成内容研究但当晚未上线。10月13日经用户明确要求立即补发后逐条重新检查事实与来源，原日期不更改，并保留真实补发时间。历史稿的72小时时效相对10月12日该期研究窗口判断；不是10月13日的新一期。"
 }
