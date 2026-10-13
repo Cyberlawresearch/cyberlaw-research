@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-13",
+  "column": "brief",
+  "state": "draft",
+  "publication_ready": false,
+  "phase": "research",
+  "base_main_sha": "dec6052390e71cb492fd0bda6b3656fb9da0bd09",
+  "page": "articles/2026-10-13-tech-law-brief.html",
+  "items": [
+    {
+      "id": "research-item-1",
+      "domestic": true,
+      "date": "2026-10-13",
+      "jurisdiction": "中国",
+      "agency": "字节跳动Seed研究团队",
+      "title": "字节跳动Seed新设大模型安全与对齐部门，聚焦智能体和前沿风险",
+      "original_title": "字节跳动单独设立大模型安全部门 把控智能体风险",
+      "source_name": "财新网",
+      "url": "https://companies.caixin.com/2026-10-13/102492842.html",
+      "fact": "10月13日，财新向字节跳动核实，Seed模型团队将设立专门负责模型安全和对齐的部门，负责人严林直接向Seed负责人吴永辉汇报。公司说明，新部门将加强智能体模型安全、防范化学、生物、放射和核相关前沿能力风险，并推进模型评估和安全控制。此项是企业内部治理结构调整，不是监管部门新出台的强制性规则。",
+      "status": "verified",
+      "deduplication": "对照10月12日22条及10月11日简报，没有字节跳动Seed本次设立专门安全部门的报道；此前涉及OpenAI/Anthropic安全事故为不同企业与事件。"
+    },
+    {
+      "id": "research-item-2",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "国际（34国研究人员）",
+      "agency": "约400名人工智能研究人员及联合倡议签署者",
+      "title": "约400名研究人员倡议建立前沿AI国际监督机制，提出隔离和事故登记要求",
+      "original_title": "Scientists call for international body to oversee advanced AI",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/scientists-call-international-body-oversee-advanced-ai-2026-10-13/",
+      "fact": "10月13日，包括Geoffrey Hinton和Yoshua Bengio在内约400名研究人员联名呼吁建立国际机构，协调具有高级网络能力的前沿AI模型的隔离标准和重大安全事件登记。倡议提出高风险模型在安全验证前应与外部网络隔离，并接受独立监督。该文件是跨国研究人员提出的公开倡议，并非已经签署或生效的国际条约。",
+      "status": "verified",
+      "deduplication": "10月12日简报报道英国政府AI风险防御政策，未包含10月13日跨国学者新发表的联名倡议；区分倡议与官方现行规则。"
+    },
+    {
+      "id": "research-item-3",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "美国、英国、欧元区",
+      "agency": "美国联储、货币监理署、联邦存款保险公司、欧洲央行、英国央行",
+      "title": "美欧银行监管机构加强排查自主AI智能体风险，追问人工监督和系统恢复安排",
+      "original_title": "Banking watchdogs ramp up AI scrutiny as stability fears mount, sources say",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/banking-watchdogs-ramp-up-ai-scrutiny-stability-fears-mount-sources-say-2026-10-13/",
+      "fact": "路透社10月13日援引六名知情人士披露，美国联储、货币监理署和联邦存款保险公司正向银行询问自主AI智能体的权限、人工审批、操作记录以及紧急停止安排。英国央行和欧洲央行也在督促银行检查网络事件后的系统恢复能力及第三方技术依赖。相关情况目前主要是监管问询和监督沟通，不代表这些机构已经共同出台新的约束性AI法规。",
+      "status": "verified",
+      "deduplication": "10月12日22条没有美英欧银行业AI智能体检查的首次具体披露；与英国一般AI事故研究不同。"
+    },
+    {
+      "id": "research-item-4",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "美国",
+      "agency": "Character Technologies、美国破产法院",
+      "title": "Character.AI在美国申请破产，拟向迪士尼出售部分知识产权许可",
+      "original_title": "Character.AI files for bankruptcy, to sell some assets to Disney for $20 million",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/characterai-files-bankruptcy-agrees-sell-some-assets-disney-20-million-2026-10-13/",
+      "fact": "路透社10月13日报道，生成式AI聊天平台Character.AI于10月12日在美国申请破产保护，并提出将部分知识产权的非独家永久许可作为资产出售给迪士尼，初始出价2000万美元，其他竞买人仍可竞价。公司此前卷入涉及未成年人保护和聊天机器人安全的诉讼。申请破产及资产出售计划尚待法定程序推进，不能表述为法院已批准最终出售。",
+      "status": "verified",
+      "deduplication": "10月12日简报未报道Character.AI破产；此前其他平台青少年保护调查及诉讼不是本公司的当日破产程序。"
+    },
+    {
+      "id": "research-item-5",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "英国",
+      "agency": "伦敦高等法院、Meta、Ofcom",
+      "title": "Meta在英国高等法院挑战Ofcom在线安全收费和罚款计算办法",
+      "original_title": "Meta challenges UK online safety watchdog over how fees and fines are calculated",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/government/meta-challenges-uk-online-safety-watchdog-over-how-fees-fines-are-calculated-2026-10-13/",
+      "fact": "伦敦高等法院10月13日开始审理Meta针对英国通信监管机构Ofcom的司法挑战，争议集中于《在线安全法》实施中监管费和潜在罚款上限是否可按广泛界定的全球收入计算，以及同一集团旗下多项服务共同担责时的计算方法。Meta认为这种算法超过法定授权，Ofcom则坚持其合理性。案件目前处于法庭审理和双方主张阶段，法院尚未作出最终判决。",
+      "status": "verified",
+      "deduplication": "10月12日Ofcom发布的行为准则属于普遍监管文件，10月5日前后针对平台信息调取争议亦非同一案件；本条为10月13日新开庭的收费罚款计算诉讼。"
+    }
+  ],
+  "news_count": 5,
+  "distribution": {
+    "domestic": 1,
+    "foreign": 4
+  },
+  "coverage": [
+    {
+      "source_group": "国内媒体第三组",
+      "source_name": "财新网（公司频道及科技栏目）、第一财经",
+      "checked_at": "2026-10-13T21:31:39.372+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "打开财新10月13日字节跳动Seed原报道并用第一财经同日独立报道核对部门、汇报关系和安全目标；其余财经网站正在继续巡视"
+    },
+    {
+      "source_group": "国内媒体第四组",
+      "source_name": "新京报贝壳财经、澎湃新闻",
+      "checked_at": "2026-10-13T21:31:39.372+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "打开新京报10月13日原文，交叉核对财新所报Seed组织调整，同事件不重复计数"
+    },
+    {
+      "source_group": "国内媒体第五组",
+      "source_name": "IT之家",
+      "checked_at": "2026-10-13T21:31:39.372+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核实10月13日有关大模型安全对齐部门的科技媒体报道；与财新和新京报同一事件，归并"
+    },
+    {
+      "source_group": "国际主流媒体与法律专题",
+      "source_name": "Reuters Legal、Reuters AI",
+      "checked_at": "2026-10-13T21:31:39.372+08:00",
+      "status": "checked",
+      "found": 4,
+      "notes": "逐条阅读10月13日研究人员国际AI监管倡议、金融业AI监管问询、Character.AI破产、Meta对Ofcom诉讼；确认原题及法律程序性质"
+    }
+  ],
+  "checks": {
+    "sources": false,
+    "legal_status": false,
+    "original_titles": false,
+    "timeliness": false,
+    "previous_day_event_deduplication": false,
+    "seven_day_history_deduplication": false,
+    "domestic_major_omission_review": false,
+    "natural_chinese_reviewed": false,
+    "foreign_layout": false
+  },
+  "checked_at": "2026-10-13T21:31:39.372+08:00",
+  "last_news_scan_at": null,
+  "updated_at": "2026-10-13T21:31:39.372+08:00",
+  "next_actions": [
+    "优先完成国内中央地方主管机关、七组媒体和主题反扫，逐组保存coverage",
+    "补齐国际官方机关、主要媒体及法律安全行业来源，新增合格新闻",
+    "核对近7日事件重复、原题及法律状态，完成两小时内终扫，才能ready"
+  ],
+  "last_error": null,
+  "publication": {
+    "main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "online_verification": null
+  }
+}
