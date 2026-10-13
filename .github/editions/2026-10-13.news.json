@@ -216,12 +216,54 @@
       "fact": "美国驻斐济大使馆10月12日通报称，位于斐济苏瓦的一家地区组织网络曾在2026年7月至8月遭入侵，美方向斐济政府和受影响组织提供了安全建议。大使馆没有公开机构名称，并将网络活动归因于所谓与中国有关的攻击者。相关来源归属是美方公开指称，报道中没有独立技术归因或司法结论，不能表述为已经确认的中国官方行为。",
       "status": "verified",
       "deduplication": "与10月9日美国司法部查封七个技术域名是不同的目标及外交通报；这里的新事实为使馆10月12日首次披露的斐济机构事件。"
+    },
+    {
+      "id": "research-item-16",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "美国及英国",
+      "agency": "OpenAI、Anthropic及第三方AI安全评估机构",
+      "title": "路透披露OpenAI与Anthropic独立评测披露范围谈判，评估者公开结论自主权存争议",
+      "original_title": "Behind AI industry's call for independent reviews, a fight over what gets made public",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/behind-ai-industrys-call-independent-reviews-fight-over-what-gets-made-public-2026-10-13/",
+      "fact": "路透社10月13日披露，OpenAI、Anthropic及外部模型评测机构正围绕第三方安全评估结果的公开范围和编辑自主权展开谈判。部分实验室希望在披露评估报告中的技术细节、商业秘密和敏感发现前保留审核权，评估机构则强调独立发表结论的重要性。报道揭示的是有关合同和信息披露安排的协商，尚非监管机关强制要求公布全部评估结果的正式规则。",
+      "status": "verified",
+      "deduplication": "10月12日英国官方前沿AI风险防护政策与本条实验室和独立评测机构的私人合同安排不同；10月13日为路透新披露的评估独立性争议，没有重复旧有模型安全事故。"
+    },
+    {
+      "id": "research-item-17",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "法国、瑞典、丹麦（欧盟）",
+      "agency": "Scaleway、AMD、Nvidia",
+      "title": "法国云服务商Scaleway宣布在瑞典和丹麦建设AI算力设施，推进欧洲本地算力供应",
+      "original_title": "Scaleway to build AMD-powered AI supercomputer in Sweden",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/scaleway-build-amd-powered-ai-supercomputer-sweden-2026-10-13/",
+      "fact": "法国云服务商Scaleway于10月13日在巴黎举行的AI会议上宣布，拟在瑞典建设面向欧洲企业开放的商用AMD芯片人工智能超级计算机，并在丹麦哥本哈根扩建采用Nvidia HGX B300系统的算力站点。公司表示，两项设施旨在扩大欧洲区域内的AI计算能力和本地数据处理选择。项目属于企业新公布的基础设施建设计划，尚不能视为已完工并投入运营。",
+      "status": "verified",
+      "deduplication": "10月12日简报中的欧盟AGILE资助立法和德国训练数据版权研究并非该企业在瑞典丹麦新宣布的算力基础设施计划；同一企业同一天的两项规划并为一条，避免拆分凑数。"
+    },
+    {
+      "id": "research-item-18",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "日本、美国",
+      "agency": "NTT Data Group、Anthropic",
+      "title": "日本媒体称NTT Data与Anthropic商谈在大阪建设日本首个专用数据中心",
+      "original_title": "NTT Data in final talks to build Anthropic's first data centre in Japan, Nikkei reports",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/ntt-data-final-talks-build-anthropics-first-data-centre-japan-nikkei-reports-2026-10-13/",
+      "fact": "路透社10月13日援引《日本经济新闻》报道，日本NTT Data集团正与美国人工智能企业Anthropic进行后期谈判，计划在大阪建设后者在日本的首个数据中心。项目若达成，将涉及AI模型部署、服务器和算力服务采购以及企业客户的数据驻留需求。但截至报道时，双方尚未正式宣布最终合同和投资规模，因此不能把谈判描述为已经签约或正式开工。",
+      "status": "verified",
+      "deduplication": "与10月12日已刊的英国政府模型评估安排以及10月13日Scaleway欧洲算力扩建计划均不同，10月13日首次披露的是NTT Data与Anthropic大阪项目谈判，未将意向视为已签约。"
     }
   ],
-  "news_count": 15,
+  "news_count": 18,
   "distribution": {
     "domestic": 3,
-    "foreign": 12
+    "foreign": 15
   },
   "coverage": [
     {
@@ -311,6 +353,54 @@
       "status": "checked",
       "found": 4,
       "notes": "核实英国Foschini新事故、法国冷链损失及调查新增事实、荷兰Ahold澄清客户数据影响、斐济地区机构美使馆新通报；不收录攻击操作详情"
+    },
+    {
+      "source_group": "国内媒体第六组",
+      "source_name": "FreeBuf、安全内参、嘶吼、数世咨询",
+      "checked_at": "2026-10-13T21:41:16.403+08:00",
+      "status": "inaccessible",
+      "found": 0,
+      "notes": "实际请求FreeBuf主页返回405、secrss安全内参和嘶吼4hou网站超时、数世关联入口无法访问；已通过路透社网络安全报道、网络安全资讯专题检索和工信部网站补查AI安全和数据泄露，未把访问失败计作无新增"
+    },
+    {
+      "source_group": "国内媒体第七组",
+      "source_name": "新浪科技、网易科技、腾讯新闻、凤凰网、搜狐",
+      "checked_at": "2026-10-13T21:41:16.403+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "实际查阅新浪科技10月13日11:30刊发的字节Seed安全对齐部门报道并向财新原报道溯源，其他线索站点用10月13日网络监管、AI安全及平台治理定向检索；既有字节8月成立的数据与安全团队是另一事件，未重复纳入"
+    },
+    {
+      "source_group": "国际专业媒体补扫",
+      "source_name": "Reuters、Associated Press、TechCrunch、The Verge、WIRED、IAPP、BleepingComputer、The Record",
+      "checked_at": "2026-10-13T21:41:16.403+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "围绕独立AI模型评测披露自主权、训练安全、网安与平台监管进行10月13日媒体检索和路透原文回核，新增独立评测报告公开争议；旧事故的分析性复述不作为新事件"
+    },
+    {
+      "source_group": "亚太当地语言补查",
+      "source_name": "日本经济新闻及Reuters英文交叉核验、日本PPC、总务省与经产省",
+      "checked_at": "2026-10-13T21:41:16.403+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "10月13日《日本经济新闻》新披露NTT Data与Anthropic大阪数据中心后期谈判，核实原报道链和未签约法律状态；其余日本个人信息与竞争监管关键词检索没有核实新的正式监管动作"
+    },
+    {
+      "source_group": "欧洲算力政策与产业",
+      "source_name": "Reuters Media & Telecom、Scaleway企业新闻及欧洲产业媒体",
+      "checked_at": "2026-10-13T21:41:16.403+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核对10月13日巴黎AI会议公告，将法国云商Scaleway瑞典AMD超算与丹麦Nvidia算力站点合并为同一日企业北欧扩容公告，标明仍属计划"
+    },
+    {
+      "source_group": "国内地方政府官方网站检查",
+      "source_name": "上海市人民政府、上海市数据局、临港新片区管委会、广东网信网",
+      "checked_at": "2026-10-13T21:41:16.403+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "实际查阅上海政府官方10月10—13日政策列表：临港知识产权中立评估规则原件9月30日、数据转型补助文件原件9月24日，虽上海政务10月10日再收录，也不是72小时内新规则，故剔除；上海数据局及广东网信门户未检出符合期限的新监管动作"
     }
   ],
   "checks": {
@@ -324,14 +414,14 @@
     "natural_chinese_reviewed": false,
     "foreign_layout": false
   },
-  "checked_at": "2026-10-13T21:36:14.409+08:00",
+  "checked_at": "2026-10-13T21:41:16.403+08:00",
   "last_news_scan_at": null,
-  "updated_at": "2026-10-13T21:36:14.409+08:00",
+  "updated_at": "2026-10-13T21:41:16.403+08:00",
   "next_actions": [
-    "完成国内剩余网络安全和线索媒体实际巡视及七组名单覆盖复核",
-    "补充其他重大国内遗漏并复查国际官方机构，确保新闻不因达到10条而收尾",
-    "逐条核查事件与最近七天发表内容、源标题、来源URL和法律状态，发布前1-2小时终扫",
-    "校验news_count、distribution、coverage和checks后才允许publication_ready=true"
+    "继续核对其他省份及部委近72小时重要法律动作，不以过期官方转载凑数",
+    "检索并逐条比对10月6—12日历史新闻，完成七组国内媒体遗漏复核",
+    "最终1—2小时消息复扫、来源/原题/法律效力复核后设置全部checks并标记publication_ready=true",
+    "及时回读JSON，并追踪21:45或23:20原有GitHub Actions和Pages实际完成状态"
   ],
   "last_error": null,
   "publication": {
