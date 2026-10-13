@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>第26课｜KV Cache：为什么生成新词不用重算旧内容？｜网信法技术基础</title>
+<link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../articles/2026-10-11-tech-law-brief.html">全球科技法简报</a><a href="../articles/2026-10-12-richards-hartzog-duty-loyalty-privacy.html">域外法学论文精读</a><a href="../articles/2026-10-13-goodnow-politics-administration.html">法学经典著作</a><a href="../articles/2026-10-12-new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../media-ai.html">权威媒体AI摘编</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main>
+<section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 26 · MODEL CAPABILITIES &amp; INFERENCE · 2026.10.13</div><h1>KV Cache：为什么生成新词不用重算旧内容？</h1><p class="tech-lead">今日问题：模型每次只生成一个词，如何避免重复计算前面已经处理过的文字？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus">
+<div><strong>它是什么</strong><p><b>KV Cache（键值缓存）</b>是语言模型生成回答时，将已处理内容在注意力层算出的<b>键（Key）和值（Value）</b>暂时保存，供后续生成复用的技术。它减少旧内容的重复计算，但不会让模型获得新知识。<sup><a href="#s1">[1]</a></sup></p></div>
+<div><strong>一个直观例子</strong><p>让模型根据一份较长的政策文件写解读。写到第二段时，文件和已经写出的第一段仍会影响下一个词。KV Cache 就像把先前整理好的材料索引留在桌上：继续写时不必从头制作索引，但仍要根据新问题翻看相关材料。</p></div>
+</section>
+<section class="lesson-section"><h2>机制图：旧结果留下，新内容接着算</h2>
+<div class="visual-board" role="group" aria-label="KV缓存复用过去键和值的四步流程">
+<div class="visual-title">以常见的逐词生成模型为例。示意图只解释缓存，不代表模型的全部计算。</div>
+<div class="flow">
+<div class="flow-box"><strong>① 首次读入</strong><span>处理输入，算出各层的 K、V</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>② 留下缓存</strong><span>保存已处理 Token 的 K、V</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>③ 生成新词</strong><span>当前 Q 与过去的 K 匹配，利用对应 V</span></div><div class="flow-arrow">→</div>
+<div class="flow-box"><strong>④ 接着生成</strong><span>下一轮补入新词的 K、V，继续复用旧缓存</span></div>
+</div>
+<p class="tiny-note">缓存复用的是历史 K、V；新一轮仍需计算当前内容，并读取与之相关的历史状态。</p>
+</div>
+<div class="compare-grid">
+<div class="compare-card"><b>没有缓存</b><p>生成每一个新词时，往往要重新计算过去已处理文字的 K、V。</p></div>
+<div class="compare-card"><b>有 KV Cache</b><p>旧 K、V 不再重算，只计算新增部分，再利用历史缓存完成注意力计算。</p></div>
+<div class="compare-card"><b>代价与边界</b><p>缓存需要占用内存；上下文越长，读取历史状态仍可能越耗资源。</p></div>
+</div>
+<p>这里的 <b>Q（Query，查询）</b>表示当前词要寻找什么，<b>K（Key，键）</b>帮助判断前文哪些位置值得关注，<b>V（Value，值）</b>提供被汇入计算的信息。三者都是数值表示，不是普通数据库字段；模型每一层的注意力分别计算，因此缓存也按层保存。<sup><a href="#s1">[1]</a></sup></p>
+<p>生成通常分为两步。<b>预填充（prefill）</b>先处理输入、建立历史状态；<b>解码（decode）</b>再逐步生成新的 <b>Token</b>（模型处理文本的基本单位）。缓存主要让解码阶段省去旧 K、V 的重复计算，不能消除当前词与前文的匹配，也不能突破上下文窗口上限。</p>
+<p>随着回答变长，缓存往往持续占用更多显存。不同实现可采用动态增长、固定空间、量化或转移到其他内存等办法；采用滑动窗口注意力的模型还可能限制保留范围。vLLM 的分页式管理则主要解决多请求下的缓存空间浪费。<sup><a href="#s2">[2]</a></sup><sup><a href="#s3">[3]</a></sup></p>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“有缓存，模型就永久记住聊天。”缓存属于推理运行状态，不等于训练参数更新或长期记忆。具体保留多久取决于服务配置。</span></div>
+<div class="myth"><b>误解 02</b><span>“用了缓存，每个新词几乎不用计算。”当前词的运算和历史状态读取仍然存在，长文本和大量并发请求还可能带来显存压力。</span></div>
+<div class="myth"><b>误解 03</b><span>“缓存只在一次请求中使用，不会有其他风险。”部分服务支持跨请求<b>前缀复用</b>，可能重用相同开头的计算结果，因此还要检查租户隔离和访问控制。<sup><a href="#s4">[4]</a></sup></span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>审查政务大模型，不能只问是否保留聊天记录</h3>
+<p>政务问答可能处理申请材料、政策咨询等信息。即使不把提问用于后续训练，推理期间仍可能形成与输入有关的中间状态。采购和合规评估要核实缓存在哪里、谁能访问、何时释放，以及不同机构的请求能否复用状态。是否构成个人信息处理问题，仍须结合可识别性与具体处理方式判断。</p>
+<p>共享算力系统尤其需要同时验收性能和隔离措施。vLLM 的前缀缓存文档提出利用隔离标识限制复用，说明提升效率不能代替数据安全控制。<sup><a href="#s4">[4]</a></sup></p>
+</div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>推理缓存状态应如何纳入个人信息处理的法律评价？</h3><p>以状态能否关联或恢复原始信息、服务商的实际控制能力和跨租户复用为切口，分析相应安全义务。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>政务大模型共享算力如何建立缓存安全验收标准？</h3><p>针对多部门共用服务，设计缓存隔离、资源释放、跨请求复用控制和性能测试要求。</p></div>
+</div></section>
+<section class="lesson-section"><h2>原始材料</h2><ol class="source-links">
+<li id="s1"><a href="https://huggingface.co/docs/transformers/main/cache_explanation">Hugging Face Transformers, <i>How caching works</i></a>（官方技术文档，2026年10月13日核验）。解释逐词生成中各层 Q/K/V 的复用机制。</li>
+<li id="s2"><a href="https://huggingface.co/docs/transformers/main/kv_cache">Hugging Face Transformers, <i>Cache strategies</i></a>（官方技术文档，2026年10月13日核验）。介绍缓存的内存与速度取舍。</li>
+<li id="s3"><a href="https://arxiv.org/abs/2309.06180">Woosuk Kwon et al., <i>Efficient Memory Management for Large Language Model Serving with PagedAttention</i></a>（SOSP 2023；arXiv:2309.06180）。研究 KV 缓存管理与服务吞吐量。</li>
+<li id="s4"><a href="https://docs.vllm.ai/en/latest/design/prefix_caching/">vLLM, <i>Automatic Prefix Caching</i></a>（项目官方设计文档，2026年10月13日核验）。说明跨请求前缀复用与隔离。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第27课</small><p><b>MoE：为什么大模型可以只调用一部分“专家”？</b>下一课理解专家混合架构的计算分工和资源取舍。</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main>
+<footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
