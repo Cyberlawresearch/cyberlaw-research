@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-13",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-13-edwards-veale-algorithm-explanation.html",
+  "selection": "Lilian Edwards; Michael Veale, Slave to the Algorithm? Why a Right to an Explanation Is Probably Not the Remedy You Are Looking For",
+  "bibliography": {
+    "type": "article",
+    "author": "Lilian Edwards、Michael Veale",
+    "originalTitle": "Slave to the Algorithm? Why a 'Right to an Explanation' Is Probably Not the Remedy You Are Looking For",
+    "journal": "Duke Law & Technology Review",
+    "year": "2017",
+    "volume": "16",
+    "issue": "1",
+    "pages": "18–84",
+    "doi": "",
+    "url": "https://scholarship.law.duke.edu/dltr/vol16/iss1/2/",
+    "cnTitle": "受制于算法？解释权未必是有效救济"
+  },
+  "versions": {
+    "formal": "Duke Law & Technology Review, 16(1) (2017), pp. 18–84",
+    "working_paper": "SSRN 2972855; DOI 10.2139/ssrn.2972855 belongs to the SSRN version, not the journal citation"
+  },
+  "sources": [
+    "https://scholarship.law.duke.edu/dltr/vol16/iss1/2/",
+    "https://discovery.ucl.ac.uk/id/eprint/1574817/1/Veale_slavetothealgorithm_published.pdf",
+    "https://discovery.ucl.ac.uk/id/eprint/1574817/",
+    "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2972855"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-10-07-wachter-mittelstadt-floridi-right-to-explanation.html",
+    "articles/2026-10-06-selbst-powles-meaningful-information-right-to-explanation.html",
+    "articles/2026-09-09-crawford-schultz-big-data-due-process.html"
+  ],
+  "timeline": null,
+  "body_length": 6745,
+  "base_main_sha": "6dba8a6627b5b03b5e54b355772abef6ded873e9",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}
