@@ -3,7 +3,7 @@
   "column": "brief",
   "state": "draft",
   "publication_ready": true,
-  "phase": "publishing",
+  "phase": "completed",
   "base_main_sha": "dec6052390e71cb492fd0bda6b3656fb9da0bd09",
   "page": "articles/2026-10-13-tech-law-brief.html",
   "items": [
@@ -444,16 +444,19 @@
   },
   "checked_at": "2026-10-13T21:43:43.948+08:00",
   "last_news_scan_at": "2026-10-13T21:43:43.948+08:00",
-  "updated_at": "2026-10-13T21:43:43.948+08:00",
-  "next_actions": [
-    "现有Github Actions已按北京时间21:45和23:20既定定时检查当日ready JSON；发布阶段仅由Actions生成main中的新闻正文、首页入口及归档并触发Pages",
-    "回读验收main新闻条目、brief/current-edition日期、Pages对应head SHA及部署后阅读检查，未完成不得称已发布"
-  ],
+  "updated_at": "2026-10-13T21:51:50.610+08:00",
+  "next_actions": [],
   "last_error": null,
   "publication": {
-    "main_sha": null,
-    "pages_run_id": null,
-    "pages_conclusion": null,
-    "online_verification": null
+    "main_sha": "7763ce66eaedea700a842904b8b306e6edde5619",
+    "pages_run_id": 38407962089,
+    "pages_conclusion": "success",
+    "pages_run_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/38407962089",
+    "online_verification": {
+      "state": "passed",
+      "verified_at": "2026-10-13T21:51:50.610+08:00",
+      "source": "Pages deploy job confirmed success for deployed browser and current-columns/entry-points tests",
+      "html_url": "https://cyberlawresearch.github.io/cyberlaw-research/articles/2026-10-13-tech-law-brief.html"
+    }
   }
 }
