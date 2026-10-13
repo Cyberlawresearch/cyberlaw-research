@@ -1,7 +1,7 @@
 {
   "date": "2026-10-13",
   "column": "brief",
-  "state": "draft",
+  "state": "verified",
   "publication_ready": true,
   "phase": "completed",
   "base_main_sha": "dec6052390e71cb492fd0bda6b3656fb9da0bd09",
@@ -23,62 +23,6 @@
     },
     {
       "id": "research-item-2",
-      "domestic": false,
-      "date": "2026-10-13",
-      "jurisdiction": "国际（34国研究人员）",
-      "agency": "约400名人工智能研究人员及联合倡议签署者",
-      "title": "约400名研究人员倡议建立前沿AI国际监督机制，提出隔离和事故登记要求",
-      "original_title": "Scientists call for international body to oversee advanced AI",
-      "source_name": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/scientists-call-international-body-oversee-advanced-ai-2026-10-13/",
-      "fact": "10月13日，包括Geoffrey Hinton和Yoshua Bengio在内约400名研究人员联名呼吁建立国际机构，协调具有高级网络能力的前沿AI模型的隔离标准和重大安全事件登记。倡议提出高风险模型在安全验证前应与外部网络隔离，并接受独立监督。该文件是跨国研究人员提出的公开倡议，并非已经签署或生效的国际条约。",
-      "status": "verified",
-      "deduplication": "10月12日简报报道英国政府AI风险防御政策，未包含10月13日跨国学者新发表的联名倡议；区分倡议与官方现行规则。"
-    },
-    {
-      "id": "research-item-3",
-      "domestic": false,
-      "date": "2026-10-13",
-      "jurisdiction": "美国、英国、欧元区",
-      "agency": "美国联储、货币监理署、联邦存款保险公司、欧洲央行、英国央行",
-      "title": "美欧银行监管机构加强排查自主AI智能体风险，追问人工监督和系统恢复安排",
-      "original_title": "Banking watchdogs ramp up AI scrutiny as stability fears mount, sources say",
-      "source_name": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/banking-watchdogs-ramp-up-ai-scrutiny-stability-fears-mount-sources-say-2026-10-13/",
-      "fact": "路透社10月13日援引六名知情人士披露，美国联储、货币监理署和联邦存款保险公司正向银行询问自主AI智能体的权限、人工审批、操作记录以及紧急停止安排。英国央行和欧洲央行也在督促银行检查网络事件后的系统恢复能力及第三方技术依赖。相关情况目前主要是监管问询和监督沟通，不代表这些机构已经共同出台新的约束性AI法规。",
-      "status": "verified",
-      "deduplication": "10月12日22条没有美英欧银行业AI智能体检查的首次具体披露；与英国一般AI事故研究不同。"
-    },
-    {
-      "id": "research-item-4",
-      "domestic": false,
-      "date": "2026-10-12",
-      "jurisdiction": "美国",
-      "agency": "Character Technologies、美国破产法院",
-      "title": "Character.AI在美国申请破产，拟向迪士尼出售部分知识产权许可",
-      "original_title": "Character.AI files for bankruptcy, to sell some assets to Disney for $20 million",
-      "source_name": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/characterai-files-bankruptcy-agrees-sell-some-assets-disney-20-million-2026-10-13/",
-      "fact": "路透社10月13日报道，生成式AI聊天平台Character.AI于10月12日在美国申请破产保护，并提出将部分知识产权的非独家永久许可作为资产出售给迪士尼，初始出价2000万美元，其他竞买人仍可竞价。公司此前卷入涉及未成年人保护和聊天机器人安全的诉讼。申请破产及资产出售计划尚待法定程序推进，不能表述为法院已批准最终出售。",
-      "status": "verified",
-      "deduplication": "10月12日简报未报道Character.AI破产；此前其他平台青少年保护调查及诉讼不是本公司的当日破产程序。"
-    },
-    {
-      "id": "research-item-5",
-      "domestic": false,
-      "date": "2026-10-13",
-      "jurisdiction": "英国",
-      "agency": "伦敦高等法院、Meta、Ofcom",
-      "title": "Meta在英国高等法院挑战Ofcom在线安全收费和罚款计算办法",
-      "original_title": "Meta challenges UK online safety watchdog over how fees and fines are calculated",
-      "source_name": "Reuters",
-      "url": "https://www.reuters.com/legal/government/meta-challenges-uk-online-safety-watchdog-over-how-fees-fines-are-calculated-2026-10-13/",
-      "fact": "伦敦高等法院10月13日开始审理Meta针对英国通信监管机构Ofcom的司法挑战，争议集中于《在线安全法》实施中监管费和潜在罚款上限是否可按广泛界定的全球收入计算，以及同一集团旗下多项服务共同担责时的计算方法。Meta认为这种算法超过法定授权，Ofcom则坚持其合理性。案件目前处于法庭审理和双方主张阶段，法院尚未作出最终判决。",
-      "status": "verified",
-      "deduplication": "10月12日Ofcom发布的行为准则属于普遍监管文件，10月5日前后针对平台信息调取争议亦非同一案件；本条为10月13日新开庭的收费罚款计算诉讼。"
-    },
-    {
-      "id": "research-item-6",
       "domestic": true,
       "date": "2026-10-13",
       "jurisdiction": "中国",
@@ -92,7 +36,7 @@
       "deduplication": "该文件10月13日正式公开征求意见，与10月12日汽车产品研发测试的四部门征求意见不同；不是旧规则重新发布。"
     },
     {
-      "id": "research-item-7",
+      "id": "research-item-3",
       "domestic": true,
       "date": "2026-10-12",
       "jurisdiction": "中国",
@@ -106,7 +50,119 @@
       "deduplication": "10月12日已发布的新闻中未出现四部门数字金融App强制仲裁示范案例，本条以10月12日正式联合发布为新进展日期，非旧判决作新案。"
     },
     {
+      "id": "research-item-4",
+      "domestic": true,
+      "date": "2026-10-13",
+      "jurisdiction": "中国",
+      "agency": "全国网络安全标准化技术委员会、国家标准化管理委员会",
+      "title": "全国网安标委公布25项网络安全推荐性国家标准制定计划",
+      "original_title": "关于下达25项网络安全推荐性国家标准计划的通知",
+      "source_name": "全国网络安全标准化技术委员会",
+      "url": "https://www.tc260.org.cn/tc260/tzgg/202610/2ac025d624a046199d8895fd6eeee5aa.shtml",
+      "fact": "10月13日，全国网络安全标准化技术委员会秘书处确认，国家标准化管理委员会近日下达由其归口管理的25项网络安全推荐性国家标准计划，包括《网络安全技术 JSON密码使用语法规范》等项目。通知要求各工作组和项目牵头单位制定推进计划、广泛征求意见并按要求完成标准制修订。这是标准立项及组织制定安排，不代表25项标准已经正式发布或生效。",
+      "status": "verified",
+      "deduplication": "新增国内政策标准及AI治理事项，2026-10-13首次公开；10月13日发布时此前遗漏，经官方或主流媒体原文核验；同前一日及最近七天原已发布事件级去重。"
+    },
+    {
+      "id": "research-item-5",
+      "domestic": true,
+      "date": "2026-10-13",
+      "jurisdiction": "中国",
+      "agency": "中国电子技术标准化研究院相关研究团队",
+      "title": "“求索”4.0人工智能全产业链评测基准发布，涵盖AI安全治理",
+      "original_title": "“求索”4.0上线 国内首个人工智能全产业链评测基准发布",
+      "source_name": "央视新闻（新华财经转载）",
+      "url": "https://www.cnfin.com/hg-lb/detail/20261013/4480256_1.html",
+      "fact": "据央视新闻10月13日报道，“求索”4.0人工智能全产业链评测基准正式发布，涉及算力、模型算法、智能系统、行业应用及安全治理。体系包含基础软硬件、模型与智能系统、安全治理、行业落地四个板块和16项测评工具，配套电力、医疗、钢铁等真实业务测试负载。中国电子技术标准化研究院有关人员表示，部分算力、大模型和智能体评测工具对外开源。这是技术评测体系，而非新颁布的强制性法律规范。",
+      "status": "verified",
+      "deduplication": "新增国内政策标准及AI治理事项，2026-10-13首次公开；10月13日发布时此前遗漏，经官方或主流媒体原文核验；同前一日及最近七天原已发布事件级去重。"
+    },
+    {
+      "id": "research-item-6",
+      "domestic": true,
+      "date": "2026-10-13",
+      "jurisdiction": "中国·辽宁",
+      "agency": "辽宁省财政厅、辽宁省数据和政务服务局",
+      "title": "辽宁正式启动算力券补贴政策，智能算力采购最高补贴30%",
+      "original_title": "辽宁：算力券政策正式落地实施",
+      "source_name": "证券时报·人民财讯",
+      "url": "https://www.stcn.com/article/detail/4213854.html",
+      "fact": "10月13日，辽宁财政部门公开介绍，省财政厅会同省数据和政务服务局近日印发《辽宁省算力券政策实施细则》，启动依托省级数字经济专项资金实施的算力券补贴。省内企业、医疗机构、高校和科研机构采购合规智能算力开展模型训练推理、数据标注等业务，可按合同实际金额申请最高30%的补助，同一主体年度上限200万元。申领仍需满足年度采购费用及供给方算力平台登记条件；公布政策实施安排不等于资金已全部拨付。",
+      "status": "verified",
+      "deduplication": "新增国内政策标准及AI治理事项，2026-10-13首次公开；10月13日发布时此前遗漏，经官方或主流媒体原文核验；同前一日及最近七天原已发布事件级去重。"
+    },
+    {
+      "id": "research-item-7",
+      "domestic": true,
+      "date": "2026-10-13",
+      "jurisdiction": "中国·北京",
+      "agency": "北京市经济和信息化局（面壁智能在政策解读会发言）",
+      "title": "北京披露行政复议垂直大模型应用数据及AI新政落地安排",
+      "original_title": "政策直达助企发展北京市AI新政解读会暨AI应用服务交流会圆满举办",
+      "source_name": "北京市经济和信息化局",
+      "url": "https://jxj.beijing.gov.cn/ztzl/ywzt/hbjh/hbdt/hbdt/202610/t20261013_4899810.html",
+      "fact": "北京市经济和信息化局10月13日发布10月10日AI新政解读会情况，介绍“词元经济十条”、人工智能应用服务商资源池申报要求及拟探索的“词元券”等后续举措。会上，面壁智能介绍其协助北京市司法局建设行政复议垂直大模型的实践，并称有关决定输出周期由80天缩短至15天。效率数字来自企业在会议上的介绍，并非独立司法行政绩效评估，也不意味着行政复议的法定审理期限已经改变。",
+      "status": "verified",
+      "deduplication": "新增国内政策标准及AI治理事项，2026-10-13首次公开；10月13日发布时此前遗漏，经官方或主流媒体原文核验；同前一日及最近七天原已发布事件级去重。"
+    },
+    {
       "id": "research-item-8",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "国际（34国研究人员）",
+      "agency": "约400名人工智能研究人员及联合倡议签署者",
+      "title": "约400名研究人员倡议建立前沿AI国际监督机制，提出隔离和事故登记要求",
+      "original_title": "Scientists call for international body to oversee advanced AI",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/scientists-call-international-body-oversee-advanced-ai-2026-10-13/",
+      "fact": "10月13日，包括Geoffrey Hinton和Yoshua Bengio在内约400名研究人员联名呼吁建立国际机构，协调具有高级网络能力的前沿AI模型的隔离标准和重大安全事件登记。倡议提出高风险模型在安全验证前应与外部网络隔离，并接受独立监督。该文件是跨国研究人员提出的公开倡议，并非已经签署或生效的国际条约。",
+      "status": "verified",
+      "deduplication": "10月12日简报报道英国政府AI风险防御政策，未包含10月13日跨国学者新发表的联名倡议；区分倡议与官方现行规则。"
+    },
+    {
+      "id": "research-item-9",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "美国、英国、欧元区",
+      "agency": "美国联储、货币监理署、联邦存款保险公司、欧洲央行、英国央行",
+      "title": "美欧银行监管机构加强排查自主AI智能体风险，追问人工监督和系统恢复安排",
+      "original_title": "Banking watchdogs ramp up AI scrutiny as stability fears mount, sources say",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/banking-watchdogs-ramp-up-ai-scrutiny-stability-fears-mount-sources-say-2026-10-13/",
+      "fact": "路透社10月13日援引六名知情人士披露，美国联储、货币监理署和联邦存款保险公司正向银行询问自主AI智能体的权限、人工审批、操作记录以及紧急停止安排。英国央行和欧洲央行也在督促银行检查网络事件后的系统恢复能力及第三方技术依赖。相关情况目前主要是监管问询和监督沟通，不代表这些机构已经共同出台新的约束性AI法规。",
+      "status": "verified",
+      "deduplication": "10月12日22条没有美英欧银行业AI智能体检查的首次具体披露；与英国一般AI事故研究不同。"
+    },
+    {
+      "id": "research-item-10",
+      "domestic": false,
+      "date": "2026-10-12",
+      "jurisdiction": "美国",
+      "agency": "Character Technologies、美国破产法院",
+      "title": "Character.AI在美国申请破产，拟向迪士尼出售部分知识产权许可",
+      "original_title": "Character.AI files for bankruptcy, to sell some assets to Disney for $20 million",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/characterai-files-bankruptcy-agrees-sell-some-assets-disney-20-million-2026-10-13/",
+      "fact": "路透社10月13日报道，生成式AI聊天平台Character.AI于10月12日在美国申请破产保护，并提出将部分知识产权的非独家永久许可作为资产出售给迪士尼，初始出价2000万美元，其他竞买人仍可竞价。公司此前卷入涉及未成年人保护和聊天机器人安全的诉讼。申请破产及资产出售计划尚待法定程序推进，不能表述为法院已批准最终出售。",
+      "status": "verified",
+      "deduplication": "10月12日简报未报道Character.AI破产；此前其他平台青少年保护调查及诉讼不是本公司的当日破产程序。"
+    },
+    {
+      "id": "research-item-11",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "英国",
+      "agency": "伦敦高等法院、Meta、Ofcom",
+      "title": "Meta在英国高等法院挑战Ofcom在线安全收费和罚款计算办法",
+      "original_title": "Meta challenges UK online safety watchdog over how fees and fines are calculated",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/government/meta-challenges-uk-online-safety-watchdog-over-how-fees-fines-are-calculated-2026-10-13/",
+      "fact": "伦敦高等法院10月13日开始审理Meta针对英国通信监管机构Ofcom的司法挑战，争议集中于《在线安全法》实施中监管费和潜在罚款上限是否可按广泛界定的全球收入计算，以及同一集团旗下多项服务共同担责时的计算方法。Meta认为这种算法超过法定授权，Ofcom则坚持其合理性。案件目前处于法庭审理和双方主张阶段，法院尚未作出最终判决。",
+      "status": "verified",
+      "deduplication": "10月12日Ofcom发布的行为准则属于普遍监管文件，10月5日前后针对平台信息调取争议亦非同一案件；本条为10月13日新开庭的收费罚款计算诉讼。"
+    },
+    {
+      "id": "research-item-12",
       "domestic": false,
       "date": "2026-10-12",
       "jurisdiction": "英国、中国（跨境资产追索）",
@@ -120,7 +176,7 @@
       "deduplication": "对照10月12日22条，没有英国法院就钱志敏比特币民事追索适用法问题的新判决；既有旧程序报道只为背景。"
     },
     {
-      "id": "research-item-9",
+      "id": "research-item-13",
       "domestic": false,
       "date": "2026-10-12",
       "jurisdiction": "美国及国际出版业",
@@ -134,7 +190,7 @@
       "deduplication": "与10月9日媒体起诉OpenAI的新诉讼是不同形式的独立行动；10月12日联盟宣布新增成员与内容记录标准，未刊登在10月12日简报。"
     },
     {
-      "id": "research-item-10",
+      "id": "research-item-14",
       "domestic": false,
       "date": "2026-10-13",
       "jurisdiction": "美国（人工智能实验室）",
@@ -148,7 +204,7 @@
       "deduplication": "前一日英国政府前沿AI事故报告研究及此前Anthropic智能体意外提交表单测试是不同研究；本条限于13日对自复制能力的首次公开实验证据。"
     },
     {
-      "id": "research-item-11",
+      "id": "research-item-15",
       "domestic": false,
       "date": "2026-10-13",
       "jurisdiction": "德国、欧盟",
@@ -162,7 +218,7 @@
       "deduplication": "与10月12日欧盟理事会创新资助条例主题不同；本次新报告具体针对AI训练数据、版权例外和退出规则。"
     },
     {
-      "id": "research-item-12",
+      "id": "research-item-16",
       "domestic": false,
       "date": "2026-10-13",
       "jurisdiction": "英国",
@@ -176,7 +232,7 @@
       "deduplication": "不同于10月12日已收录的荷兰Ahold和法国超市事故，本条是另一家零售商与英国业务的新正式披露。"
     },
     {
-      "id": "research-item-13",
+      "id": "research-item-17",
       "domestic": false,
       "date": "2026-10-13",
       "jurisdiction": "法国",
@@ -188,11 +244,11 @@
       "fact": "法国调查人员10月13日继续调查连锁超市联网冷藏设施遭入侵事件，路透核实受影响门店至少350家，部分门店继续销毁因冷链中断而变质的商品。警方尚未确定责任人，未发现有团体公开认领事件；相关设备供应商指出，一些设备使用已停止支持或未及时更新的软件。这是前一日事件的新损失范围和调查进度，不能写成新增独立攻击。",
       "status": "verified",
       "deduplication": "10月12日新闻已收录法国超市冷藏设施遭攻击，本条仅因13日确认至少350门店和调查无责任方、供应商更新义务等实质事实增量而收录，标明同一事件后续。",
-      "material_new_event": true,
-      "new_action_details": "2026-10-13进一步确认至少350家门店受损、警方持续调查并无团体认领。"
+      "new_action_details": "2026-10-13进一步确认至少350家门店受损、警方持续调查并无团体认领。",
+      "material_new_event": true
     },
     {
-      "id": "research-item-14",
+      "id": "research-item-18",
       "domestic": false,
       "date": "2026-10-13",
       "jurisdiction": "荷兰",
@@ -204,11 +260,11 @@
       "fact": "荷兰零售集团Ahold Delhaize10月13日对前一天披露的网络事件作进一步说明，表示目前没有迹象表明客户数据已被窃取。企业此前为应对网络安全风险临时下线部分系统。荷兰国家网络安全中心同时指出，尚无理由认定该事件与欧洲其他国家出现的零售网络事件有关。此为企业及主管机构最新公开确认的调查事实，不等于已完全排除数据泄露。",
       "status": "verified",
       "deduplication": "10月12日简报已经记载Ahold首次网络事故公告，本条只收13日客户数据影响评估和荷兰国家网络安全中心关于无已知关联的新增确认。",
-      "material_new_event": true,
-      "new_action_details": "2026-10-13企业确认暂无客户资料被盗迹象、荷兰国家网络安全中心尚无跨国事件关联证据。"
+      "new_action_details": "2026-10-13企业确认暂无客户资料被盗迹象、荷兰国家网络安全中心尚无跨国事件关联证据。",
+      "material_new_event": true
     },
     {
-      "id": "research-item-15",
+      "id": "research-item-19",
       "domestic": false,
       "date": "2026-10-12",
       "jurisdiction": "斐济（南太平洋地区）",
@@ -222,7 +278,7 @@
       "deduplication": "与10月9日美国司法部查封七个技术域名是不同的目标及外交通报；这里的新事实为使馆10月12日首次披露的斐济机构事件。"
     },
     {
-      "id": "research-item-16",
+      "id": "research-item-20",
       "domestic": false,
       "date": "2026-10-13",
       "jurisdiction": "美国及英国",
@@ -236,7 +292,7 @@
       "deduplication": "10月12日英国官方前沿AI风险防护政策与本条实验室和独立评测机构的私人合同安排不同；10月13日为路透新披露的评估独立性争议，没有重复旧有模型安全事故。"
     },
     {
-      "id": "research-item-17",
+      "id": "research-item-21",
       "domestic": false,
       "date": "2026-10-13",
       "jurisdiction": "法国、瑞典、丹麦（欧盟）",
@@ -250,7 +306,7 @@
       "deduplication": "10月12日简报中的欧盟AGILE资助立法和德国训练数据版权研究并非该企业在瑞典丹麦新宣布的算力基础设施计划；同一企业同一天的两项规划并为一条，避免拆分凑数。"
     },
     {
-      "id": "research-item-18",
+      "id": "research-item-22",
       "domestic": false,
       "date": "2026-10-13",
       "jurisdiction": "日本、美国",
@@ -264,9 +320,9 @@
       "deduplication": "与10月12日已刊的英国政府模型评估安排以及10月13日Scaleway欧洲算力扩建计划均不同，10月13日首次披露的是NTT Data与Anthropic大阪项目谈判，未将意向视为已签约。"
     }
   ],
-  "news_count": 18,
+  "news_count": 22,
   "distribution": {
-    "domestic": 3,
+    "domestic": 7,
     "foreign": 15
   },
   "coverage": [
@@ -429,6 +485,46 @@
       "status": "checked",
       "found": 0,
       "notes": "已按最近1—6小时和24小时分别复扫，重点复核商务部意见征求、Seed模型安全机构、前沿AI安全评测、银行AI监管、Meta-Ofcom诉讼、企业网络事件以及AI基础设施；未发现可核验而此前未入选的更重大新独立监管事件"
+    },
+    {
+      "source_group": "国内网络安全标准计划",
+      "source_name": "全国网络安全标准化技术委员会",
+      "checked_at": "2026-10-13T23:24:21.725+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "检查10月13日原始通知，25项推荐性国标为制定计划，尚非生效文本"
+    },
+    {
+      "source_group": "人工智能评测基准",
+      "source_name": "央视新闻、新华财经、第一财经",
+      "checked_at": "2026-10-13T23:24:21.725+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核实求索4.0在10月13日正式发布、覆盖AI安全等四板块16项工具，不将技术评测基准当作强制标准"
+    },
+    {
+      "source_group": "地方智能算力财政政策",
+      "source_name": "辽宁财政、证券时报·人民财讯、中国证券报",
+      "checked_at": "2026-10-13T23:24:21.725+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核实辽宁13日公布算力券补贴政策实施情况、30%比例及200万元年度限额，不将政策推出视为已兑付"
+    },
+    {
+      "source_group": "地方司法行政AI应用",
+      "source_name": "北京市经信局10月13日新闻、北京市司法局旧有项目记录",
+      "checked_at": "2026-10-13T23:24:21.725+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "10日召开会议、13日由北京市经信局发布会议情况，80天至15天是面壁智能会议自述；北京市司法局行政复议大模型已于2025年发布，不称13日新产品"
+    },
+    {
+      "source_group": "国内补检排除事项",
+      "source_name": "国家数据局、上海网信办、界面新闻",
+      "checked_at": "2026-10-13T23:24:21.725+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "上海10月10日SDK违规通报已超出13日晚72小时窗口；10月12日人民日报数据登记文章主要回顾9月已开展动作；10月13日界面报道分析10月8日平台用工征求意见稿，无新发布的监管条文或裁判"
     }
   ],
   "checks": {
@@ -442,20 +538,20 @@
     "natural_chinese_reviewed": true,
     "foreign_layout": true
   },
-  "checked_at": "2026-10-13T21:43:43.948+08:00",
-  "last_news_scan_at": "2026-10-13T21:43:43.948+08:00",
-  "updated_at": "2026-10-13T22:47:19.333+08:00",
+  "checked_at": "2026-10-13T23:24:21.725+08:00",
+  "last_news_scan_at": "2026-10-13T23:24:21.725+08:00",
+  "updated_at": "2026-10-13T23:28:26.723+08:00",
   "next_actions": [],
   "last_error": null,
   "publication": {
-    "main_sha": "73edd11fde2580641d1c730afa2ec23eac006969",
-    "pages_run_id": 38415923656,
+    "main_sha": "1c79dcee979cfb3b3d12ca82547ee48f121ade8c",
+    "pages_run_id": 38421854952,
     "pages_conclusion": "success",
-    "pages_run_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/38415923656",
+    "pages_run_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/38421854952",
     "online_verification": {
       "state": "passed",
-      "verified_at": "2026-10-13T22:47:19.333+08:00",
-      "source": "Pages deployment confirmed reading and current-columns checks for corrected sequential 1–18",
+      "source": "Matched GitHub Pages deployment post-deploy contextual reading and current-column checks",
+      "verified_at": "2026-10-13T23:28:26.723+08:00",
       "html_url": "https://cyberlawresearch.github.io/cyberlaw-research/articles/2026-10-13-tech-law-brief.html"
     },
     "numbering_correction": {
@@ -463,6 +559,7 @@
       "original_problem": "Domestic-first display used unmodified source IDs, causing heading sequence 1,6,7,2...",
       "verified_sequence": "1–18",
       "news_content_changed": false
-    }
+    },
+    "supplemental_domestic_items": 4
   }
 }
