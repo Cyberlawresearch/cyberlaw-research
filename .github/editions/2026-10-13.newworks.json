@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-13",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-10-13-new-works.html",
+  "page_blob_sha": "4f37efb1cc2aa605a86df19e891221c44ff2388a",
+  "newworks_count": 3,
+  "works": [
+    {
+      "cn_title": "欧盟《数字服务法》如何规制平台上的性内容",
+      "author": "Carlotta Rigotti",
+      "original_title": "Sexual content, platform governance, and the Digital Services Act",
+      "journal": "International Journal of Law and Information Technology",
+      "year": 2026,
+      "volume": "34",
+      "issue": null,
+      "pages": null,
+      "article_number": "eaag017",
+      "doi": "10.1093/ijlit/eaag017",
+      "source": "https://academic.oup.com/ijlit/article-abstract/doi/10.1093/ijlit/eaag017/8909089",
+      "version": "journal article"
+    },
+    {
+      "cn_title": "军事人工智能的国际规制：如何确保人类控制与责任追究",
+      "author": "Victor Habib Lantyer",
+      "original_title": "Artificial intelligence in the military domain: challenges and an adaptive multilevel governance framework",
+      "journal": "International Journal of Law and Information Technology",
+      "year": 2026,
+      "volume": "34",
+      "issue": null,
+      "pages": null,
+      "article_number": "eaag014",
+      "doi": "10.1093/ijlit/eaag014",
+      "source": "https://academic.oup.com/ijlit/article-abstract/doi/10.1093/ijlit/eaag014/8909099",
+      "version": "journal article"
+    },
+    {
+      "cn_title": "算法版权过滤的法律边界：美国平台安全港是否应当收紧",
+      "author": "Taysir Awad",
+      "original_title": "Bad is often best: rethinking the Digital Millennium Copyright Act in the age of algorithmic copyright enforcement",
+      "journal": "International Journal of Law and Information Technology",
+      "year": 2026,
+      "volume": "34",
+      "issue": null,
+      "pages": null,
+      "article_number": "eaag015",
+      "doi": "10.1093/ijlit/eaag015",
+      "source": "https://academic.oup.com/ijlit/article-abstract/doi/10.1093/ijlit/eaag015/8875744",
+      "version": "journal article"
+    }
+  ],
+  "checks": {
+    "original_publisher_pages_opened": true,
+    "doi_and_version_verified": true,
+    "historical_indices_checked": 2,
+    "historical_issues_compared": 41,
+    "original_title_and_author_dedup": true,
+    "doi_dedup": true,
+    "item_count_three": true,
+    "brief_item_structure": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_directly_matched": true
+  },
+  "publication": {
+    "content_commit": "1bd0fa22f4a5f677fced84c65ccefb4993fe561f",
+    "final_main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "online_validation": null
+  }
+}
