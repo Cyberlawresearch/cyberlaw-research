@@ -174,12 +174,152 @@
       "fact": "Google DeepMind与Google Cloud于10月14日宣布，将通过欧盟RAISE人工智能科学研究计划，为最多200名欧洲科研人员提供部分前沿模型及专业科学工具的直接使用机会，并配套总额300万美元的计算额度。工具包括AlphaFold 3、AlphaGenome及WeatherNext等。该安排属于私人企业支持欧盟科研项目的合作承诺，不是欧盟批准对所有研究者开放模型，也不是新的数据跨境法定豁免。",
       "status": "verified",
       "deduplication": "10月13日日本NTT Data与Anthropic建设项目谈判和Scaleway在北欧扩建算力为不同主体和项目；本条是14日的研究模型开放承诺。"
+    },
+    {
+      "id": "research-item-13",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "美国",
+      "agency": "美国司法部、联邦调查局",
+      "title": "美国司法部查处涉嫌朝鲜远程IT人员渗透企业网络案件，逾70家企业受影响",
+      "original_title": "Justice Department Announces Coordinated Actions to Combat North Korean Remote IT Worker Schemes Affecting More than 70 U.S. Companies",
+      "source_name": "美国司法部",
+      "url": "https://www.justice.gov/opa/pr/justice-department-announces-coordinated-actions-combat-north-korean-remote-it-worker",
+      "fact": "美国司法部10月13日公布针对涉嫌由朝鲜人员冒用身份参与美国企业远程信息技术工作的联合执法行动，涉及逾70家美国公司、两人被捕、相关刑事起诉及在得克萨斯州搜查多个电脑转接场所，约187台设备被扣押。调查机构指相关安排可能被用于获得企业系统权限和非法创收。刑事文件中的事实仍属于控方指控，任何被告在法院依法定罪前均应推定无罪。",
+      "status": "verified",
+      "deduplication": "与10月13日微软等机构打击西非网络诈骗及10月12日个别网络勒索案件不同，这次是美国司法部13日公开的新一轮涉朝鲜远程IT工作执法行动。"
+    },
+    {
+      "id": "research-item-14",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "美国",
+      "agency": "美国司法部、加利福尼亚北区联邦法院",
+      "title": "美国司法部起诉一名OpenAI员工涉嫌非法录音，10月13日首次出庭",
+      "original_title": "Saudi National Arrested for Installing Surreptitious Audio Recording Device at OpenAI",
+      "source_name": "美国司法部",
+      "url": "https://www.justice.gov/opa/pr/saudi-national-arrested-installing-surreptitious-audio-recording-device-openai",
+      "fact": "美国司法部10月13日公布，OpenAI一名工程师因涉嫌在企业会议场所设置设备、企图非法截获口头通信，于10月9日被捕并于13日首次在联邦法院出庭。该案涉及企业技术和商业秘密所在场所的信息安全管理，但公开指控并未证明任何具体模型技术已实际外泄。美国检方依据刑事诉讼文件提起指控，被告的行为是否构成犯罪仍须由司法程序认定。",
+      "status": "verified",
+      "deduplication": "近一周关于OpenAI模型评测异常和安全事件的新闻涉及模型行为与第三方评测，本条为一名员工10月13日首次出庭的全新刑事程序。"
+    },
+    {
+      "id": "research-item-15",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "美国与西非多国",
+      "agency": "美国司法部、跨境执法机构和数字平台企业",
+      "title": "美国司法部通报跨境打击西非网络诈骗行动，移除逾370万个欺诈账户",
+      "original_title": "The Department of Justice Announces Results of Law Enforcement and Private Industry Joint Disruption Week Targeting Online Scam Accounts and Transnational Criminal Networks Operating in West Africa",
+      "source_name": "美国司法部",
+      "url": "https://www.justice.gov/opa/pr/department-justice-announces-results-law-enforcement-and-private-industry-joint-disruption",
+      "fact": "美国司法部10月13日公布与多国执法机构及互联网企业联合开展的打击西非网络诈骗行动结果。通报称，行动期间平台移除超过370万个欺诈社交媒体账户，执法部门实施数十次逮捕，并解救100余名疑似遭人口贩运控制的人员。账户移除、人员拘捕和救助是此次公布的具体行动成果，不能据此推定所有账户操作者均已被司法认定有罪。",
+      "status": "verified",
+      "deduplication": "与微软14日根据美国法院命令处理网络钓鱼服务设施属于不同司法与平台合作行动；本条聚焦西非跨境诈骗团伙及平台账户处置。"
+    },
+    {
+      "id": "research-item-16",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "美国",
+      "agency": "美国哥伦比亚特区联邦巡回上诉法院、Anthropic、美国国防部",
+      "title": "Anthropic申请重新审理五角大楼供应链风险认定案，争议涉及模型安全限制",
+      "original_title": "Anthropic seeks rehearing of case over Pentagon's security risk branding",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/government/anthropic-seeks-rehearing-case-over-pentagons-security-risk-branding-2026-10-14/",
+      "fact": "Anthropic于10月13日向美国联邦上诉法院申请重新审理一项认定美国国防部可将其列为国家安全供应链风险的裁判。上诉法院此前以二比一维持该认定，公司主张法院误解适用法律，也争辩政府因其坚持限制模型用于自主武器和大规模监控而施加报复性措施。重新审理申请尚待法院决定，不能写成风险认定已经被撤销；另外一项加州诉讼依据不同法律作出过不同结论。",
+      "status": "verified",
+      "deduplication": "10月13日国际AI安全倡议与Anthropic自复制研究是不同动作；本条在14日首次公开报道的是13日向法院提出重审申请的重要诉讼进展。"
+    },
+    {
+      "id": "research-item-17",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "美国",
+      "agency": "美国特拉华州联邦法院、Qualcomm、Arm",
+      "title": "美国陪审团认定Arm违反与Qualcomm许可协议，但仅裁定2美元名义赔偿",
+      "original_title": "Delaware jury awards Qualcomm $2 in damages, finds Arm breached license agreement",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/qualcomm-says-jury-found-arm-breached-license-agreement-2026-10-13/",
+      "fact": "美国特拉华州联邦地区法院陪审团10月13日裁定，Arm违反与Qualcomm既有芯片架构许可协议中提供软件补丁和工具的义务，并不当干预Qualcomm与Meta潜在业务合作，但相关两项请求总计仅获2美元名义损害赔偿。陪审团同时就Arm被指的其他多项违约行为作出不利于Qualcomm的认定。相关许可费支付安排与合同条款效力仍待法官处理，不能视为整个许可争议已经终局结案。",
+      "status": "verified",
+      "deduplication": "10月9日简报只报道Qualcomm与Arm进入陪审团裁决阶段，本条是10月13日陪审团正式作出的新裁断，已明确新增法律事实和未决事项。"
+    },
+    {
+      "id": "research-item-18",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "英国、国际货币基金组织",
+      "agency": "英国央行、国际货币基金组织",
+      "title": "英国央行及IMF负责人警示AI网络诈骗损害金融信任，提出国际协作原则",
+      "original_title": "Bank of England and IMF bosses warn of cyber threat to trust in financial system",
+      "source_name": "The Guardian",
+      "url": "https://www.theguardian.com/business/2026/oct/14/bank-of-england-imf-bosses-warning-cyber-threat-to-trust",
+      "fact": "在10月14日曼谷举行的国际金融会议上，英国央行行长Andrew Bailey及国际货币基金组织总裁Kristalina Georgieva共同指出，人工智能技术可能扩大网络诈骗和网络攻击的规模，公众对支付及金融服务安全性的信任因此面临挑战。与会者介绍了国际反网络诈骗合作原则，强调金融机构、数字平台及监管机关共同承担预防责任。这属于国际政策讨论和倡议，不是各国已正式共同实施的金融监管新规。",
+      "status": "verified",
+      "deduplication": "与10月13日美英欧银行AI监管询问报道不同，此次为14日英央行与IMF负责人正式公开讨论网络欺诈治理与信任问题。"
+    },
+    {
+      "id": "research-item-19",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "美国",
+      "agency": "Microsoft安全响应中心",
+      "title": "微软10月安全更新覆盖1411项漏洞，采用风险分组帮助企业安排修补",
+      "original_title": "Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
+      "fact": "微软10月13日发布月度安全更新，涉及1411项安全漏洞，其中包括一项据报已被实际利用的漏洞及两项已公开披露的零日问题。由于需要管理的补丁数量庞大，微软试验性引入15个风险类别，帮助机构按产品和运行环境安排优先修补顺序。公告涉及重要企业系统和开发工具的风险处置，并未证明所有被列漏洞均已造成现实损害。此条只记录官方更新和安全管理要求，不提供攻击利用方法。",
+      "status": "verified",
+      "deduplication": "10月12日GitLab紧急补丁更新属不同软件与漏洞批次，本条是微软10月13日新发布的系统安全更新；一轮补丁作为同一事件，不拆分数量。"
+    },
+    {
+      "id": "research-item-20",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "加拿大及美国",
+      "agency": "加拿大网络安全中心、美国网络安全和基础设施安全局",
+      "title": "加拿大和美国主管机构就Ivanti企业远程接入漏洞发布安全预警",
+      "original_title": "Ivanti security advisory (AV26-1035)",
+      "source_name": "加拿大网络安全中心",
+      "url": "https://www.cyber.gc.ca/en/alerts-advisories/ivanti-security-advisory-av26-1035",
+      "fact": "加拿大网络安全中心10月13日针对Ivanti Connect Secure、Neurons Patch for Intune和Xtraction相关软件发布安全公告，列出受影响版本及更新建议。同日，美国网络安全和基础设施安全局将一项Ivanti Connect Secure漏洞纳入已知被利用漏洞目录，提示机构依规完成修复。这是针对企业远程接入和运维产品的新增风险提示与漏洞治理要求，尚未据此确认所有使用者均已遭入侵。",
+      "status": "verified",
+      "deduplication": "与微软13日综合月度补丁公告、GitLab12日安全修复均为不同产品漏洞与企业安全管理事件，不重算同一漏洞批次。"
+    },
+    {
+      "id": "research-item-21",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "俄罗斯",
+      "agency": "俄罗斯总统、联邦政府及安全部门",
+      "title": "俄罗斯召开高级别网络安全会议，强调防范AI技术武器化风险",
+      "original_title": "Putin convenes top Russian officials to discuss cybersecurity",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/europe/putin-convenes-top-russian-officials-discuss-cybersecurity-2026-10-14/",
+      "fact": "俄罗斯总统10月14日与政府部长、安全部门负责人、央行行长及大型银行负责人召开网络和信息安全专题会议。克里姆林宫称，会议旨在应对人工智能技术被用于攻击经济部门、关键基础设施和金融体系等长期风险。尽管此前俄罗斯多个数据中心遭无人机袭击，发言人强调此次会议不直接针对上述具体事件。官方消息未公布新的强制性网络安全规范或已经生效的行政命令。",
+      "status": "verified",
+      "deduplication": "10月11日和前几期仅报道Yandex数据中心无人机袭击，本条是俄罗斯政府10月14日首次召开的较高层级网络安全专题会议，发言人明确不等同于此前事件调查。"
+    },
+    {
+      "id": "research-item-22",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "国际（人工智能治理）",
+      "agency": "Google DeepMind、Microsoft、人工智能安全会议参与机构",
+      "title": "DeepMind与微软高管呼吁国际前沿AI安全标准，强调对失控智能体的持续评测",
+      "original_title": "Google Deepmind's Hassabis calls AI hacks 'early warning shots'",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/google-deepminds-hassabis-calls-ai-hacks-early-warning-shots-2026-10-14/",
+      "fact": "Google DeepMind负责人Demis Hassabis和微软总裁Brad Smith于10月14日在都柏林人工智能峰会讨论近期模型误用和意外行为，Hassabis认为相关事件凸显建立跨行业模型安全最佳实践的必要性，主张逐步推动国际安全标准和可调整的认证机制。与会者呼吁政府和开发者加强风险测试，但会议发言属于企业负责人提出的治理建议，既非国际机构已成立，也不是具有约束力的全球AI安全法律。",
+      "status": "verified",
+      "deduplication": "10月13日约400名研究人员提出隔离与国际监督倡议是另一独立倡议；本条是14日DeepMind和微软两家企业负责人于正式会议阐述的安全标准与认证主张，主体和政策建议不相同。"
     }
   ],
-  "news_count": 12,
+  "news_count": 22,
   "distribution": {
     "domestic": 5,
-    "foreign": 7
+    "foreign": 17
   },
   "coverage": [
     {
@@ -277,6 +417,46 @@
       "status": "checked",
       "found": 1,
       "notes": "直接核对Google 10月14日RAISE科研通道支持200人及300万美元算力额度"
+    },
+    {
+      "source_group": "美国正式执法与司法原文",
+      "source_name": "U.S. Department of Justice（10月13日三项专项公告）",
+      "checked_at": "2026-10-14T23:44:33.892+08:00",
+      "status": "checked",
+      "found": 3,
+      "notes": "逐条阅读13日涉朝鲜远程IT人员行动、OpenAI员工刑事首次出庭和西非电诈协作三份正式公告，区分指控、拘捕、协作结果和判决"
+    },
+    {
+      "source_group": "美国芯片许可与模型行政司法",
+      "source_name": "Reuters Legal、美国上诉法院与特拉华联邦法院案件新闻",
+      "checked_at": "2026-10-14T23:44:33.892+08:00",
+      "status": "checked",
+      "found": 2,
+      "notes": "核查Anthropic13日重审申请及Arm/Qualcomm13日陪审团名义赔偿新裁断，对照10月9日历史诉讼仅是开审公告"
+    },
+    {
+      "source_group": "英国国际金融及模型监管",
+      "source_name": "Bank of England与IMF曼谷公开会议、The Guardian、Reuters Legal AI",
+      "checked_at": "2026-10-14T23:44:33.892+08:00",
+      "status": "checked",
+      "found": 2,
+      "notes": "复核14日金融网络欺诈合作倡议和DeepMind+Microsoft安全标准公开发言，强调并非法定制度"
+    },
+    {
+      "source_group": "北美网络安全厂商与官方警示",
+      "source_name": "BleepingComputer、加拿大网络安全中心、美国CISA",
+      "checked_at": "2026-10-14T23:44:33.892+08:00",
+      "status": "checked",
+      "found": 2,
+      "notes": "核对微软13日安全补丁总体统计、加拿大13日Ivanti原始公告及CISA已知利用漏洞目录，均不披露操作性利用细节"
+    },
+    {
+      "source_group": "俄罗斯政府AI安全",
+      "source_name": "Kremlin官方发言人、Reuters 2026-10-14",
+      "checked_at": "2026-10-14T23:44:33.892+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "确认14日高级别网络安全会议涉及AI风险，俄官方表示并非此前无人机袭击的直接追责会议"
     }
   ],
   "checks": {
@@ -290,14 +470,14 @@
     "natural_chinese_reviewed": false,
     "foreign_layout": false
   },
-  "checked_at": "2026-10-14T23:38:49.380+08:00",
+  "checked_at": "2026-10-14T23:44:33.892+08:00",
   "last_news_scan_at": null,
-  "updated_at": "2026-10-14T23:38:49.380+08:00",
+  "updated_at": "2026-10-14T23:44:33.892+08:00",
   "next_actions": [
-    "继续国内剩余七组媒体、主管机关及竞争/数据/司法专题反扫，不能以12条作为搜索终点",
-    "扩大美国官方司法网络安全、欧盟、日韩、国际一线媒体新进展候选并反查原文",
-    "逐条核查近7日同一事件与发布法律状态，完成最终两小时内重要新闻复扫后才可将checks标true",
-    "ready后使用现有GitHub Actions发布并核验实际主分支及Pages"
+    "完成国内七组媒体分别检索的状态记录，复核中央与地方政策/标准重大遗漏",
+    "补查韩国、日本、越南当地语言主管机构并做近七日全部新闻事件级对照",
+    "进行最后1—2小时重要来源反扫并核实每项法律程序、原题和发布日期",
+    "最后通过发布脚本门槛校验、JSON回读后才能设置publication_ready=true；Actions生成正式网页及部署Pages"
   ],
   "last_error": null,
   "publication": {
