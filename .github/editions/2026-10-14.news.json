@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-14",
+  "column": "brief",
+  "state": "draft",
+  "publication_ready": false,
+  "phase": "research",
+  "base_main_sha": "1c5f0c873ccafabe3f805c5999d452685a44064c",
+  "page": "articles/2026-10-14-tech-law-brief.html",
+  "items": [
+    {
+      "id": "research-item-1",
+      "domestic": true,
+      "date": "2026-10-14",
+      "jurisdiction": "中国",
+      "agency": "国家版权局、欧盟中国知识产权项目",
+      "title": "国家版权局介绍中欧AI时代版权保护研讨会，明确推动训练与生成内容规则研究",
+      "original_title": "中欧数字环境下版权保护研讨会在银川举办",
+      "source_name": "国家版权局",
+      "url": "https://www.ncac.gov.cn/xxfb/ywxx/202610/t20261014_1012447.html",
+      "fact": "国家版权局10月14日发布消息称，10月13日在银川与欧盟中国知识产权项目联合举办数字环境下版权保护研讨会，议题包括中欧版权立法执法、生成式人工智能时代的著作权保护及跨境侵权取证。版权管理部门在交流中提出，应结合《著作权法实施条例》修订研究适配AI应用的版权配套规则，加强AI生成内容传播监测并依法处置版权投诉。会议交流尚不等于已经修订法律或制定新义务。",
+      "status": "verified",
+      "deduplication": "10月13日当期英国出版商联盟行业许可新闻属于不同主体和动作，10月12日和前七日未刊国家版权局10月14日这次中欧官方会议总结。"
+    },
+    {
+      "id": "research-item-2",
+      "domestic": true,
+      "date": "2026-10-14",
+      "jurisdiction": "中国·广东广州",
+      "agency": "广州市算力产业发展有限公司、南方电网数字电网集团等",
+      "title": "广州成立央地合资城市算力公司，拟推进算电协同和算力统一调度",
+      "original_title": "广州市算力产业发展公司登记成立 注册资本9亿",
+      "source_name": "第一财经",
+      "url": "https://www.yicai.com/brief/103393128.html",
+      "fact": "第一财经10月14日根据企业登记资料报道，广州市算力产业发展有限公司近日登记成立，注册资本9亿元，由南方电网数字电网集团、广州恒运、广州数字科技集团及广东亿迅科技共同出资。广州市相关报道介绍，该公司将推动城市级算力基础设施与电力供给协调规划、算力资源互联调度。现阶段属于新设经营主体及产业基础设施组织安排，不是已经建成的统一算力平台或新的行政许可制度。",
+      "status": "verified",
+      "deduplication": "与10月13日辽宁算力券政策、10月12日上海智能制造行动不同，广州今日披露成立的是央地共同投资的算电协同运营实体。"
+    },
+    {
+      "id": "research-item-3",
+      "domestic": true,
+      "date": "2026-10-14",
+      "jurisdiction": "中国·广东深圳",
+      "agency": "图灵量子、深圳市智城算网科技、亚洲算力算网与量子计算科技",
+      "title": "三家企业签署大湾区量子—超算—AI融合中心合作协议，拟开展跨架构算力调度",
+      "original_title": "粤港澳大湾区量超智融合算力中心将启动",
+      "source_name": "证券时报·人民财讯",
+      "url": "https://www.stcn.com/article/detail/4218864.html",
+      "fact": "在10月14日举办的2026湾芯展上，图灵量子与深圳市智城算网科技、亚洲算力算网与量子计算科技签署战略合作协议，计划共建粤港澳大湾区量子、超级计算和人工智能融合算力中心。各方拟分别承担计算设施建设运营、异构算力接入调度以及光量子计算和软硬件平台支撑。该合作目前是建设协议及未来设施规划，尚不能表述为数据中心已建成、各类算力已经实现互操作或受到统一政府监管。",
+      "status": "verified",
+      "deduplication": "不同于广州新公司成立，深圳该事件是湾芯展当日新签订的异构计算平台合作协议，涉及不同主体和设施。"
+    },
+    {
+      "id": "research-item-4",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "英国",
+      "agency": "英国信息专员办公室ICO、伦敦警察厅",
+      "title": "英国ICO责令伦敦警察厅整改未经批准使用第三方犯罪情报平台的个人信息处理",
+      "original_title": "ICO takes action against Metropolitan Police Service over information governance failures",
+      "source_name": "英国信息专员办公室（ICO）",
+      "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/10/ico-takes-action-against-metropolitan-police-service-over-information-governance-failures/",
+      "fact": "英国信息专员办公室10月14日向伦敦警察厅发出正式谴责与执法通知，认定警务人员未经适当审批使用第三方零售犯罪情报共享平台，缺乏必要的数据保护治理和监督。监管调查发现，2023年至2024年相关平台建立约500个账户，部分账户用于警务活动，2024年曾上传179名人员的个人资料，其中包括未成年人。此次属于对警务数据处理的正式执法，并非对平台所有用户作出普遍处罚。",
+      "status": "verified",
+      "deduplication": "10月12日英国NHS数据治理建议和10月13日Meta-Ofcom收费诉讼为不同机构、处理场景和法律程序。"
+    },
+    {
+      "id": "research-item-5",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "欧盟",
+      "agency": "欧盟普通法院（General Court）、欧洲委员会",
+      "title": "欧盟普通法院驳回Stripchat对《数字服务法》超大型平台认定的诉讼",
+      "original_title": "Digital Services Act: the General Court dismisses Stripchat’s action against its designation as a very large online platform",
+      "source_name": "欧盟法院",
+      "url": "https://curia.europa.eu/site/jcms/d2_5158/en/",
+      "fact": "欧盟普通法院10月14日就T-134/24号Technius诉欧盟委员会案作出判决，驳回Stripchat运营商对依据《数字服务法》将该服务认定为超大型在线平台的挑战。争议集中于月均欧盟服务接收者是否超过4500万及访问量数据和跳出访问的计算方法。法院认可欧盟委员会评估基础的可靠性，原指定决定继续有效；当事人仍可依条件就法律问题向欧盟法院提起上诉。",
+      "status": "verified",
+      "deduplication": "10月12日Ofcom网络安全行为准则与欧盟DSA法院平台规模判定无关；近七天没有刊载本案10月14日新判决。"
+    }
+  ],
+  "news_count": 5,
+  "distribution": {
+    "domestic": 3,
+    "foreign": 2
+  },
+  "coverage": [
+    {
+      "source_group": "中国中央主管机关与版权",
+      "source_name": "国家版权局2026-10-14新闻、澎湃新闻",
+      "checked_at": "2026-10-14T23:35:51.319+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "阅读国家版权局中欧研讨会14日原文，核对实际会议13日、当天正式消息14日、讨论《著作权法实施条例》修订仅属研究建议"
+    },
+    {
+      "source_group": "国内媒体第三组",
+      "source_name": "第一财经、证券时报·人民财讯",
+      "checked_at": "2026-10-14T23:35:51.319+08:00",
+      "status": "checked",
+      "found": 2,
+      "notes": "核对广州央地算力公司登记和深圳湾芯展14日异构算力合作两个独立项目及各自是否已建成"
+    },
+    {
+      "source_group": "英国隐私监管",
+      "source_name": "ICO关于伦敦警察厅个人信息执法决定",
+      "checked_at": "2026-10-14T23:35:51.319+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "查阅英国信息专员办公室10月14日公开的执法和监管新闻，明确通知与谴责法律性质"
+    },
+    {
+      "source_group": "欧盟司法裁判",
+      "source_name": "Court of Justice General Court 2026-10-14 T-134/24, Reuters",
+      "checked_at": "2026-10-14T23:35:51.319+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核实Technius诉委员会10月14日裁判及欧盟普通法院当日官方新闻页面，仅记录DSA指定门槛和裁判结果"
+    }
+  ],
+  "checks": {
+    "sources": false,
+    "legal_status": false,
+    "original_titles": false,
+    "timeliness": false,
+    "previous_day_event_deduplication": false,
+    "seven_day_history_deduplication": false,
+    "domestic_major_omission_review": false,
+    "natural_chinese_reviewed": false,
+    "foreign_layout": false
+  },
+  "checked_at": "2026-10-14T23:35:51.319+08:00",
+  "last_news_scan_at": null,
+  "updated_at": "2026-10-14T23:35:51.319+08:00",
+  "next_actions": [
+    "继续国内中央及地方监管与七组媒体实际巡视并补齐可靠新闻",
+    "完成美国、欧盟、英国及日韩等国际官网与专业媒体近72小时扫查，优先补正式监管与司法进展",
+    "核对上一期及近七期事件级重复、法律状态和原题，终扫并按规则决定是否publication_ready"
+  ],
+  "last_error": null,
+  "publication": {
+    "main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "online_verification": null
+  }
+}
