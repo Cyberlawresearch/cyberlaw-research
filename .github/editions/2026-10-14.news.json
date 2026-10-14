@@ -1,0 +1,513 @@
+{
+  "date": "2026-10-14",
+  "column": "brief",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-14-tech-law-brief.html",
+  "news_count": 23,
+  "distribution": {
+    "domestic": 6,
+    "foreign": 17
+  },
+  "mode": "fact_only",
+  "analysis_pending": true,
+  "published_as_backfill": false,
+  "actual_release_at": "2026-10-14T23:47:53.796667+08:00",
+  "checked_at": "2026-10-14T23:47:23.643+08:00",
+  "last_news_scan_at": "2026-10-14T23:47:23.643+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "natural_chinese_reviewed": true,
+    "foreign_layout": true
+  },
+  "domestic_source_coverage": [
+    {
+      "source_group": "中国中央主管机关与版权",
+      "source_name": "国家版权局2026-10-14新闻、澎湃新闻",
+      "checked_at": "2026-10-14T23:35:51.319+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "阅读国家版权局中欧研讨会14日原文，核对实际会议13日、当天正式消息14日、讨论《著作权法实施条例》修订仅属研究建议"
+    },
+    {
+      "source_group": "国内媒体第三组",
+      "source_name": "第一财经、证券时报·人民财讯",
+      "checked_at": "2026-10-14T23:35:51.319+08:00",
+      "status": "checked",
+      "found": 2,
+      "notes": "核对广州央地算力公司登记和深圳湾芯展14日异构算力合作两个独立项目及各自是否已建成"
+    },
+    {
+      "source_group": "英国隐私监管",
+      "source_name": "ICO关于伦敦警察厅个人信息执法决定",
+      "checked_at": "2026-10-14T23:35:51.319+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "查阅英国信息专员办公室10月14日公开的执法和监管新闻，明确通知与谴责法律性质"
+    },
+    {
+      "source_group": "欧盟司法裁判",
+      "source_name": "Court of Justice General Court 2026-10-14 T-134/24, Reuters",
+      "checked_at": "2026-10-14T23:35:51.319+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核实Technius诉委员会10月14日裁判及欧盟普通法院当日官方新闻页面，仅记录DSA指定门槛和裁判结果"
+    },
+    {
+      "source_group": "国内媒体第一组",
+      "source_name": "新华网、央视新闻、中国新闻网与人民日报检索",
+      "checked_at": "2026-10-14T23:38:49.380+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "实际打开新华网转载公安部网安局10月14日四起网络舆情敲诈案的全文，结合正义网及法治日报对比程序阶段"
+    },
+    {
+      "source_group": "国内媒体第二组",
+      "source_name": "正义网、法治日报/司法部智慧普法",
+      "checked_at": "2026-10-14T23:38:49.380+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核对4起网络舆情敲诈案例中的批捕、移送审查起诉和侦办差异，同事件不重复"
+    },
+    {
+      "source_group": "国内地方政府与科技政策",
+      "source_name": "云南省科技厅经科学技术部转载、山东制造业专项、江苏网信网",
+      "checked_at": "2026-10-14T23:38:49.380+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核实云南10月14日官方服务业数智化报道，对此前印发日期未查实不编造；排除一般旧政策再发"
+    },
+    {
+      "source_group": "英国平台治理官方",
+      "source_name": "Ofcom X/Grok investigation status and quarterly commitments",
+      "checked_at": "2026-10-14T23:38:49.380+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "逐段查10月14日主管机关原文，区分报告、整改承诺和仍在调查中的事项，未推定已经处罚"
+    },
+    {
+      "source_group": "欧洲技术采购纠纷",
+      "source_name": "Reuters Legal Palantir MOPAC settlement",
+      "checked_at": "2026-10-14T23:38:49.380+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核查14日英国警务AI合同相关诉讼和解，非法院认定政府采购违法或公司声誉调查"
+    },
+    {
+      "source_group": "跨国网络欺诈治理",
+      "source_name": "Microsoft Digital Crimes Unit、Health-ISAC、BleepingComputer",
+      "checked_at": "2026-10-14T23:38:49.380+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核查微软10月14日公布法院命令与行动规模、各国政府及机构合作；仅保留法律程序、影响及责任"
+    },
+    {
+      "source_group": "英国AI安全产业合作",
+      "source_name": "NVIDIA投资者新闻公告、The Guardian",
+      "checked_at": "2026-10-14T23:38:49.380+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "直接核对10月14日NVIDIA官方5年2.5亿美元算力捐赠公告及机构名单"
+    },
+    {
+      "source_group": "欧盟科学研究模型合作",
+      "source_name": "Google官方博客、Reuters Technology",
+      "checked_at": "2026-10-14T23:38:49.380+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "直接核对Google 10月14日RAISE科研通道支持200人及300万美元算力额度"
+    },
+    {
+      "source_group": "美国正式执法与司法原文",
+      "source_name": "U.S. Department of Justice（10月13日三项专项公告）",
+      "checked_at": "2026-10-14T23:44:33.892+08:00",
+      "status": "checked",
+      "found": 3,
+      "notes": "逐条阅读13日涉朝鲜远程IT人员行动、OpenAI员工刑事首次出庭和西非电诈协作三份正式公告，区分指控、拘捕、协作结果和判决"
+    },
+    {
+      "source_group": "美国芯片许可与模型行政司法",
+      "source_name": "Reuters Legal、美国上诉法院与特拉华联邦法院案件新闻",
+      "checked_at": "2026-10-14T23:44:33.892+08:00",
+      "status": "checked",
+      "found": 2,
+      "notes": "核查Anthropic13日重审申请及Arm/Qualcomm13日陪审团名义赔偿新裁断，对照10月9日历史诉讼仅是开审公告"
+    },
+    {
+      "source_group": "英国国际金融及模型监管",
+      "source_name": "Bank of England与IMF曼谷公开会议、The Guardian、Reuters Legal AI",
+      "checked_at": "2026-10-14T23:44:33.892+08:00",
+      "status": "checked",
+      "found": 2,
+      "notes": "复核14日金融网络欺诈合作倡议和DeepMind+Microsoft安全标准公开发言，强调并非法定制度"
+    },
+    {
+      "source_group": "北美网络安全厂商与官方警示",
+      "source_name": "BleepingComputer、加拿大网络安全中心、美国CISA",
+      "checked_at": "2026-10-14T23:44:33.892+08:00",
+      "status": "checked",
+      "found": 2,
+      "notes": "核对微软13日安全补丁总体统计、加拿大13日Ivanti原始公告及CISA已知利用漏洞目录，均不披露操作性利用细节"
+    },
+    {
+      "source_group": "俄罗斯政府AI安全",
+      "source_name": "Kremlin官方发言人、Reuters 2026-10-14",
+      "checked_at": "2026-10-14T23:44:33.892+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "确认14日高级别网络安全会议涉及AI风险，俄官方表示并非此前无人机袭击的直接追责会议"
+    },
+    {
+      "source_group": "国内媒体第四组",
+      "source_name": "界面新闻、澎湃新闻、新京报、南方都市报及地方科技新闻",
+      "checked_at": "2026-10-14T23:47:23.643+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核查10月14日界面新闻上海工博会现场调查报道及其国产GPU超节点新产品，另在澎湃与新京报用14日数字科技/司法监管关键词复检，较多为旧事解读而未新入选"
+    },
+    {
+      "source_group": "国内媒体第五组",
+      "source_name": "36氪、钛媒体、虎嗅、IT之家、机器之心、雷峰网及科技专业频道",
+      "checked_at": "2026-10-14T23:47:23.643+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "对10月14日AI算力和网络安全报道作定向检索，IT之家10月13日信息通信安全学术会议报道为行业会议回顾，9月AI安全框架3.0是旧闻；未找到可独立核实又未被更高权威来源覆盖的新增正式监管事项"
+    },
+    {
+      "source_group": "国内媒体第六组",
+      "source_name": "安全内参、FreeBuf、嘶吼、数世咨询等网络安全媒体",
+      "checked_at": "2026-10-14T23:47:23.643+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "访问并检查安全内参10月14日未成年人网络保护专栏，内容解释网信办9月18日旧征求意见稿，按旧闻剔除；FreeBuf等以定向关键词检索核查漏洞与个人信息线索，已优先采用13日加拿大网络安全中心Ivanti原文和微软补丁可靠来源"
+    },
+    {
+      "source_group": "国内媒体第七组",
+      "source_name": "新浪科技、腾讯新闻、网易科技、凤凰网及搜狐专题检索",
+      "checked_at": "2026-10-14T23:47:23.643+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "使用10月14日AI、科技安全、平台法、数据跨境与政策关键词分别检索媒体站点；搜索返回旧政策重复及二次转载，未发现具有可独立验证新法律或监管动作且此前未收录的条目"
+    },
+    {
+      "source_group": "国内中央与地方主题反扫",
+      "source_name": "中央网信办、工信部、市场监管总局、国家数据局、人民银行、最高法最高检、各地政务和国内媒体",
+      "checked_at": "2026-10-14T23:47:23.643+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "针对AI立法/评测标准、SDK个人信息、平台劳动算法、数据跨境、知识产权、司法执法和算力基础设施作近72小时反向检索；剔除网信办9月AI治理框架、最高法9月AI案件意见、前期食品安全法修订稿等已发布旧文件，不以10月14日转载日期更新事件日期"
+    },
+    {
+      "source_group": "日本韩国越南当地语言补扫",
+      "source_name": "日本PPC/经产省与日文媒体、韩国PIPC/科学技术部韩文搜索、越南政府越文数据和AI法律搜索",
+      "checked_at": "2026-10-14T23:47:23.643+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "在10月12—14日窗口以日文、韩文、越文官方机构名称及隐私处罚、AI监管、网络安全关键词检索；没有找到既能核验正式新程序动作又独立于既有日期的合格新增新闻，不以旧消息补数"
+    },
+    {
+      "source_group": "国际原始新闻近期复扫",
+      "source_name": "美国司法部10月13日公告、Reuters 10月14日、ICO、Ofcom、欧盟法院、Microsoft、NVIDIA、Google原始文章",
+      "checked_at": "2026-10-14T23:47:23.643+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "在本次最后复查中对照前1—6小时及近24小时发布的AI模型监督、法院裁判、技术供应链、网络安全和平台监管重要动态；已经入选同日相同事件，未另拆分重复标题。"
+    }
+  ],
+  "items": [
+    {
+      "id": "research-item-1",
+      "domestic": true,
+      "date": "2026-10-14",
+      "jurisdiction": "中国",
+      "agency": "国家版权局、欧盟中国知识产权项目",
+      "title": "国家版权局介绍中欧AI时代版权保护研讨会，明确推动训练与生成内容规则研究",
+      "original_title": "中欧数字环境下版权保护研讨会在银川举办",
+      "source_name": "国家版权局",
+      "url": "https://www.ncac.gov.cn/xxfb/ywxx/202610/t20261014_1012447.html",
+      "fact": "国家版权局10月14日发布消息称，10月13日在银川与欧盟中国知识产权项目联合举办数字环境下版权保护研讨会，议题包括中欧版权立法执法、生成式人工智能时代的著作权保护及跨境侵权取证。版权管理部门在交流中提出，应结合《著作权法实施条例》修订研究适配AI应用的版权配套规则，加强AI生成内容传播监测并依法处置版权投诉。会议交流尚不等于已经修订法律或制定新义务。"
+    },
+    {
+      "id": "research-item-2",
+      "domestic": true,
+      "date": "2026-10-14",
+      "jurisdiction": "中国·广东广州",
+      "agency": "广州市算力产业发展有限公司、南方电网数字电网集团等",
+      "title": "广州成立央地合资城市算力公司，拟推进算电协同和算力统一调度",
+      "original_title": "广州市算力产业发展公司登记成立 注册资本9亿",
+      "source_name": "第一财经",
+      "url": "https://www.yicai.com/brief/103393128.html",
+      "fact": "第一财经10月14日根据企业登记资料报道，广州市算力产业发展有限公司近日登记成立，注册资本9亿元，由南方电网数字电网集团、广州恒运、广州数字科技集团及广东亿迅科技共同出资。广州市相关报道介绍，该公司将推动城市级算力基础设施与电力供给协调规划、算力资源互联调度。现阶段属于新设经营主体及产业基础设施组织安排，不是已经建成的统一算力平台或新的行政许可制度。"
+    },
+    {
+      "id": "research-item-3",
+      "domestic": true,
+      "date": "2026-10-14",
+      "jurisdiction": "中国·广东深圳",
+      "agency": "图灵量子、深圳市智城算网科技、亚洲算力算网与量子计算科技",
+      "title": "三家企业签署大湾区量子—超算—AI融合中心合作协议，拟开展跨架构算力调度",
+      "original_title": "粤港澳大湾区量超智融合算力中心将启动",
+      "source_name": "证券时报·人民财讯",
+      "url": "https://www.stcn.com/article/detail/4218864.html",
+      "fact": "在10月14日举办的2026湾芯展上，图灵量子与深圳市智城算网科技、亚洲算力算网与量子计算科技签署战略合作协议，计划共建粤港澳大湾区量子、超级计算和人工智能融合算力中心。各方拟分别承担计算设施建设运营、异构算力接入调度以及光量子计算和软硬件平台支撑。该合作目前是建设协议及未来设施规划，尚不能表述为数据中心已建成、各类算力已经实现互操作或受到统一政府监管。"
+    },
+    {
+      "id": "research-item-4",
+      "domestic": true,
+      "date": "2026-10-14",
+      "jurisdiction": "中国",
+      "agency": "公安部网络安全保卫局、各地公安网安部门",
+      "title": "公安部网安局集中通报四起自媒体舆情敲诈刑事案例",
+      "original_title": "深化扫黑除恶专项斗争丨公安网安部门公布4起涉舆情敲诈等类型黑恶犯罪典型案例",
+      "source_name": "公安部网安局（新华网转载）",
+      "url": "https://www.news.cn/legal/20261014/cd45df2f4f8643bfa220cb3b4a787dcf/c.html",
+      "fact": "公安部网安局10月14日公开四起利用社交媒体账号发布、炒作涉企负面信息实施敲诈或强迫交易的典型刑事案件。披露的山西太原案件中，有团伙建立自媒体矩阵，通过删帖施压和签订推广合同等方式向企业索取钱财，已查涉案金额120余万元；另有山东威海、湖北武汉相关案件。各案所处程序并不相同，部分已移送审查起诉，部分仍在侦办，公安部门通报不等于法院作出有罪判决。"
+    },
+    {
+      "id": "research-item-5",
+      "domestic": true,
+      "date": "2026-10-14",
+      "jurisdiction": "中国·云南",
+      "agency": "云南省人民政府、云南省科技厅",
+      "title": "云南公布服务业数智化实施意见，提出“外数内算外用”及绿电智算布局",
+      "original_title": "云南加快数智转型激发服务业新动能",
+      "source_name": "科学技术部（转云南省科技厅）",
+      "url": "https://www.most.gov.cn/dfkj/yn/zxdt/202610/t20261014_197504.html",
+      "fact": "10月14日，科学技术部网站发布云南省关于服务业扩能提质实施意见的政策信息。云南省政府此前印发的实施意见提出发展数据、软件和信息传输服务，推进“人工智能+”应用和绿电智算，利用昆明国际通信业务出入口局探索“外数内算外用”业务模式，并推动传统服务业数智化。该报道是省级政策落实情况的当日官方介绍，不表示境外数据可不履行数据出境和个人信息保护等法定义务。"
+    },
+    {
+      "id": "research-item-6",
+      "domestic": true,
+      "date": "2026-10-14",
+      "jurisdiction": "中国·上海",
+      "agency": "第二十六届中国国际工业博览会参展算力企业",
+      "title": "上海工博会展示国产AI超节点与整柜集群，企业披露64至144卡方案",
+      "original_title": "国产算力开始拼集群，上海产业链优势渐显",
+      "source_name": "界面新闻",
+      "url": "https://www.jiemian.com/article/15189072.html",
+      "fact": "界面新闻10月14日在上海第二十六届中国国际工业博览会采访多家算力企业，发现国产AI芯片厂商开始从单卡性能竞争转向整柜超节点和集群交付。沐曦展示集成64张加速卡的超节点，燧原展示64卡整柜方案，天数智芯展示可容纳144颗GPU的集群系统，其他企业披露更大规模建设计划。相关安排属于企业在工业展会现场展示的产品与交付计划，不等于已经形成统一适用的算力互联技术标准或行政许可政策。"
+    },
+    {
+      "id": "research-item-7",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "英国",
+      "agency": "英国信息专员办公室ICO、伦敦警察厅",
+      "title": "英国ICO责令伦敦警察厅整改未经批准使用第三方犯罪情报平台的个人信息处理",
+      "original_title": "ICO takes action against Metropolitan Police Service over information governance failures",
+      "source_name": "英国信息专员办公室（ICO）",
+      "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/10/ico-takes-action-against-metropolitan-police-service-over-information-governance-failures/",
+      "fact": "英国信息专员办公室10月14日向伦敦警察厅发出正式谴责与执法通知，认定警务人员未经适当审批使用第三方零售犯罪情报共享平台，缺乏必要的数据保护治理和监督。监管调查发现，2023年至2024年相关平台建立约500个账户，部分账户用于警务活动，2024年曾上传179名人员的个人资料，其中包括未成年人。此次属于对警务数据处理的正式执法，并非对平台所有用户作出普遍处罚。"
+    },
+    {
+      "id": "research-item-8",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "欧盟",
+      "agency": "欧盟普通法院（General Court）、欧洲委员会",
+      "title": "欧盟普通法院驳回Stripchat对《数字服务法》超大型平台认定的诉讼",
+      "original_title": "Digital Services Act: the General Court dismisses Stripchat’s action against its designation as a very large online platform",
+      "source_name": "欧盟法院",
+      "url": "https://curia.europa.eu/site/jcms/d2_5158/en/",
+      "fact": "欧盟普通法院10月14日就T-134/24号Technius诉欧盟委员会案作出判决，驳回Stripchat运营商对依据《数字服务法》将该服务认定为超大型在线平台的挑战。争议集中于月均欧盟服务接收者是否超过4500万及访问量数据和跳出访问的计算方法。法院认可欧盟委员会评估基础的可靠性，原指定决定继续有效；当事人仍可依条件就法律问题向欧盟法院提起上诉。"
+    },
+    {
+      "id": "research-item-9",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "英国",
+      "agency": "英国通信管理局Ofcom、X及Grok运营方",
+      "title": "英国Ofcom审阅X首份季度整改报告，缩小Grok相关在线安全调查重点",
+      "original_title": "Ofcom update: Monitoring X’s response to hate and terror content, and Grok investigation latest",
+      "source_name": "英国通信管理局Ofcom",
+      "url": "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/ofcom-update-monitoring-xs-response-to-hate-and-terror-content-and-grok-investigation-latest?language=en",
+      "fact": "英国通信管理局Ofcom于10月14日说明，X提交了关于仇恨和恐怖主义相关非法内容处理速度的首份季度报告，初步数据显示部分时效指标改善，但监管机构仍担心内容移除成效，并将交叉验证平台数据。Ofcom还确认，X已加强未成年人色情内容访问限制，独立Grok服务在英国限制色情图像生成和传播；对X的调查接下来集中审查非法内容与投诉举报义务。调查尚未形成最终违法认定。"
+    },
+    {
+      "id": "research-item-10",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "英国",
+      "agency": "伦敦市长警务和犯罪办公室MOPAC、Palantir",
+      "title": "Palantir与伦敦警务部门就AI合同采购诉讼达成和解并撤诉",
+      "original_title": "Palantir and London mayor's office settle lawsuit over UK police contract",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/palantir-london-mayors-office-settle-lawsuit-over-uk-police-contract-2026-10-14/",
+      "fact": "10月14日，Palantir与伦敦市长警务和犯罪办公室就伦敦警察厅一项约5000万英镑的AI自动化与证据处理合同争议达成和解，双方同意结束相关诉讼。市长办公室澄清，阻止该合同的决定并非基于对Palantir公司伦理或声誉的评价，且不存在全面禁止与其订约的政策。这是采购争议中的民事和解，并非法院已就政府采购程序或AI技术合规性作出终局判决。"
+    },
+    {
+      "id": "research-item-11",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "美国、日本及多国",
+      "agency": "微软数字犯罪部门、Health-ISAC及国际协作机构",
+      "title": "微软联合多国机构拆除大型网络钓鱼服务设施，涉十亿条欺诈信息",
+      "original_title": "Disrupting the service economy behind transnational cybercrime operations",
+      "source_name": "Microsoft On the Issues",
+      "url": "https://blogs.microsoft.com/on-the-issues/2026/10/14/disrupting-the-service-economy-behind-transnational-cybercrime-operations/",
+      "fact": "微软10月14日公告称，依据美国佛罗里达南区联邦地区法院命令，与Health-ISAC等协作机构查封并重定向涉及YAM Store、CoGUI、Iron Man等欺诈基础设施的域名，并关闭相关账户。微软估算这些服务自年初起协助传播逾10亿条恶意信息，影响150多个国家的机构及个人。此次行动属于民事司法命令支持的基础设施处置及跨境安全协作，并不意味着所有涉案运营人员均已被刑事定罪。"
+    },
+    {
+      "id": "research-item-12",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "英国",
+      "agency": "NVIDIA、英国AI安全研究机构",
+      "title": "英伟达承诺五年提供2.5亿美元算力支持英国智能体安全研究",
+      "original_title": "NVIDIA Commits $250 Million to Advance UK Agentic Safety and Security Research Over the Next Five Years",
+      "source_name": "NVIDIA投资者新闻中心",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Commits-250-Million-to-Advance-UK-Agentic-Safety-and-Security-Research-Over-the-Next-Five-Years/default.aspx",
+      "fact": "英伟达10月14日宣布，未来五年向英国人工智能智能体安全与防护研究提供总价值2.5亿美元的计算资源，计划每年提供5000万美元的算力支持，部分面向BOLD、SOFAIR及伦敦帝国理工学院等研究力量。相关资源通过英国本地NVIDIA云服务合作伙伴提供，服务自主系统和机器人安全评测。该安排属于企业资源承诺和研究合作，而非英国政府新出台的强制性AI安全许可条件。"
+    },
+    {
+      "id": "research-item-13",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "欧盟",
+      "agency": "Google DeepMind、Google Cloud",
+      "title": "谷歌向欧洲200名科研人员开放前沿模型并提供300万美元计算额度",
+      "original_title": "We’re powering European scientific discovery with advanced AI compute and frontier models.",
+      "source_name": "Google官方博客",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/were-powering-european-scientific-discovery-with-advanced-ai-compute-and-frontier-models/",
+      "fact": "Google DeepMind与Google Cloud于10月14日宣布，将通过欧盟RAISE人工智能科学研究计划，为最多200名欧洲科研人员提供部分前沿模型及专业科学工具的直接使用机会，并配套总额300万美元的计算额度。工具包括AlphaFold 3、AlphaGenome及WeatherNext等。该安排属于私人企业支持欧盟科研项目的合作承诺，不是欧盟批准对所有研究者开放模型，也不是新的数据跨境法定豁免。"
+    },
+    {
+      "id": "research-item-14",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "美国",
+      "agency": "美国司法部、联邦调查局",
+      "title": "美国司法部查处涉嫌朝鲜远程IT人员渗透企业网络案件，逾70家企业受影响",
+      "original_title": "Justice Department Announces Coordinated Actions to Combat North Korean Remote IT Worker Schemes Affecting More than 70 U.S. Companies",
+      "source_name": "美国司法部",
+      "url": "https://www.justice.gov/opa/pr/justice-department-announces-coordinated-actions-combat-north-korean-remote-it-worker",
+      "fact": "美国司法部10月13日公布针对涉嫌由朝鲜人员冒用身份参与美国企业远程信息技术工作的联合执法行动，涉及逾70家美国公司、两人被捕、相关刑事起诉及在得克萨斯州搜查多个电脑转接场所，约187台设备被扣押。调查机构指相关安排可能被用于获得企业系统权限和非法创收。刑事文件中的事实仍属于控方指控，任何被告在法院依法定罪前均应推定无罪。"
+    },
+    {
+      "id": "research-item-15",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "美国",
+      "agency": "美国司法部、加利福尼亚北区联邦法院",
+      "title": "美国司法部起诉一名OpenAI员工涉嫌非法录音，10月13日首次出庭",
+      "original_title": "Saudi National Arrested for Installing Surreptitious Audio Recording Device at OpenAI",
+      "source_name": "美国司法部",
+      "url": "https://www.justice.gov/opa/pr/saudi-national-arrested-installing-surreptitious-audio-recording-device-openai",
+      "fact": "美国司法部10月13日公布，OpenAI一名工程师因涉嫌在企业会议场所设置设备、企图非法截获口头通信，于10月9日被捕并于13日首次在联邦法院出庭。该案涉及企业技术和商业秘密所在场所的信息安全管理，但公开指控并未证明任何具体模型技术已实际外泄。美国检方依据刑事诉讼文件提起指控，被告的行为是否构成犯罪仍须由司法程序认定。"
+    },
+    {
+      "id": "research-item-16",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "美国与西非多国",
+      "agency": "美国司法部、跨境执法机构和数字平台企业",
+      "title": "美国司法部通报跨境打击西非网络诈骗行动，移除逾370万个欺诈账户",
+      "original_title": "The Department of Justice Announces Results of Law Enforcement and Private Industry Joint Disruption Week Targeting Online Scam Accounts and Transnational Criminal Networks Operating in West Africa",
+      "source_name": "美国司法部",
+      "url": "https://www.justice.gov/opa/pr/department-justice-announces-results-law-enforcement-and-private-industry-joint-disruption",
+      "fact": "美国司法部10月13日公布与多国执法机构及互联网企业联合开展的打击西非网络诈骗行动结果。通报称，行动期间平台移除超过370万个欺诈社交媒体账户，执法部门实施数十次逮捕，并解救100余名疑似遭人口贩运控制的人员。账户移除、人员拘捕和救助是此次公布的具体行动成果，不能据此推定所有账户操作者均已被司法认定有罪。"
+    },
+    {
+      "id": "research-item-17",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "美国",
+      "agency": "美国哥伦比亚特区联邦巡回上诉法院、Anthropic、美国国防部",
+      "title": "Anthropic申请重新审理五角大楼供应链风险认定案，争议涉及模型安全限制",
+      "original_title": "Anthropic seeks rehearing of case over Pentagon's security risk branding",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/government/anthropic-seeks-rehearing-case-over-pentagons-security-risk-branding-2026-10-14/",
+      "fact": "Anthropic于10月13日向美国联邦上诉法院申请重新审理一项认定美国国防部可将其列为国家安全供应链风险的裁判。上诉法院此前以二比一维持该认定，公司主张法院误解适用法律，也争辩政府因其坚持限制模型用于自主武器和大规模监控而施加报复性措施。重新审理申请尚待法院决定，不能写成风险认定已经被撤销；另外一项加州诉讼依据不同法律作出过不同结论。"
+    },
+    {
+      "id": "research-item-18",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "美国",
+      "agency": "美国特拉华州联邦法院、Qualcomm、Arm",
+      "title": "美国陪审团认定Arm违反与Qualcomm许可协议，但仅裁定2美元名义赔偿",
+      "original_title": "Delaware jury awards Qualcomm $2 in damages, finds Arm breached license agreement",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/qualcomm-says-jury-found-arm-breached-license-agreement-2026-10-13/",
+      "fact": "美国特拉华州联邦地区法院陪审团10月13日裁定，Arm违反与Qualcomm既有芯片架构许可协议中提供软件补丁和工具的义务，并不当干预Qualcomm与Meta潜在业务合作，但相关两项请求总计仅获2美元名义损害赔偿。陪审团同时就Arm被指的其他多项违约行为作出不利于Qualcomm的认定。相关许可费支付安排与合同条款效力仍待法官处理，不能视为整个许可争议已经终局结案。"
+    },
+    {
+      "id": "research-item-19",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "英国、国际货币基金组织",
+      "agency": "英国央行、国际货币基金组织",
+      "title": "英国央行及IMF负责人警示AI网络诈骗损害金融信任，提出国际协作原则",
+      "original_title": "Bank of England and IMF bosses warn of cyber threat to trust in financial system",
+      "source_name": "The Guardian",
+      "url": "https://www.theguardian.com/business/2026/oct/14/bank-of-england-imf-bosses-warning-cyber-threat-to-trust",
+      "fact": "在10月14日曼谷举行的国际金融会议上，英国央行行长Andrew Bailey及国际货币基金组织总裁Kristalina Georgieva共同指出，人工智能技术可能扩大网络诈骗和网络攻击的规模，公众对支付及金融服务安全性的信任因此面临挑战。与会者介绍了国际反网络诈骗合作原则，强调金融机构、数字平台及监管机关共同承担预防责任。这属于国际政策讨论和倡议，不是各国已正式共同实施的金融监管新规。"
+    },
+    {
+      "id": "research-item-20",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "美国",
+      "agency": "Microsoft安全响应中心",
+      "title": "微软10月安全更新覆盖1411项漏洞，采用风险分组帮助企业安排修补",
+      "original_title": "Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
+      "fact": "微软10月13日发布月度安全更新，涉及1411项安全漏洞，其中包括一项据报已被实际利用的漏洞及两项已公开披露的零日问题。由于需要管理的补丁数量庞大，微软试验性引入15个风险类别，帮助机构按产品和运行环境安排优先修补顺序。公告涉及重要企业系统和开发工具的风险处置，并未证明所有被列漏洞均已造成现实损害。此条只记录官方更新和安全管理要求，不提供攻击利用方法。"
+    },
+    {
+      "id": "research-item-21",
+      "domestic": false,
+      "date": "2026-10-13",
+      "jurisdiction": "加拿大及美国",
+      "agency": "加拿大网络安全中心、美国网络安全和基础设施安全局",
+      "title": "加拿大和美国主管机构就Ivanti企业远程接入漏洞发布安全预警",
+      "original_title": "Ivanti security advisory (AV26-1035)",
+      "source_name": "加拿大网络安全中心",
+      "url": "https://www.cyber.gc.ca/en/alerts-advisories/ivanti-security-advisory-av26-1035",
+      "fact": "加拿大网络安全中心10月13日针对Ivanti Connect Secure、Neurons Patch for Intune和Xtraction相关软件发布安全公告，列出受影响版本及更新建议。同日，美国网络安全和基础设施安全局将一项Ivanti Connect Secure漏洞纳入已知被利用漏洞目录，提示机构依规完成修复。这是针对企业远程接入和运维产品的新增风险提示与漏洞治理要求，尚未据此确认所有使用者均已遭入侵。"
+    },
+    {
+      "id": "research-item-22",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "俄罗斯",
+      "agency": "俄罗斯总统、联邦政府及安全部门",
+      "title": "俄罗斯召开高级别网络安全会议，强调防范AI技术武器化风险",
+      "original_title": "Putin convenes top Russian officials to discuss cybersecurity",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/europe/putin-convenes-top-russian-officials-discuss-cybersecurity-2026-10-14/",
+      "fact": "俄罗斯总统10月14日与政府部长、安全部门负责人、央行行长及大型银行负责人召开网络和信息安全专题会议。克里姆林宫称，会议旨在应对人工智能技术被用于攻击经济部门、关键基础设施和金融体系等长期风险。尽管此前俄罗斯多个数据中心遭无人机袭击，发言人强调此次会议不直接针对上述具体事件。官方消息未公布新的强制性网络安全规范或已经生效的行政命令。"
+    },
+    {
+      "id": "research-item-23",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "国际（人工智能治理）",
+      "agency": "Google DeepMind、Microsoft、人工智能安全会议参与机构",
+      "title": "DeepMind与微软高管呼吁国际前沿AI安全标准，强调对失控智能体的持续评测",
+      "original_title": "Google Deepmind's Hassabis calls AI hacks 'early warning shots'",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/google-deepminds-hassabis-calls-ai-hacks-early-warning-shots-2026-10-14/",
+      "fact": "Google DeepMind负责人Demis Hassabis和微软总裁Brad Smith于10月14日在都柏林人工智能峰会讨论近期模型误用和意外行为，Hassabis认为相关事件凸显建立跨行业模型安全最佳实践的必要性，主张逐步推动国际安全标准和可调整的认证机制。与会者呼吁政府和开发者加强风险测试，但会议发言属于企业负责人提出的治理建议，既非国际机构已成立，也不是具有约束力的全球AI安全法律。"
+    }
+  ],
+  "analysis": {
+    "status": "pending",
+    "task": "网信法新闻分析补充"
+  },
+  "publication": {
+    "article_written": true,
+    "index_updated": true,
+    "briefs_updated": true,
+    "archive_updated": true,
+    "current_edition_updated": true,
+    "pages_status": "awaiting_deployment"
+  }
+}
