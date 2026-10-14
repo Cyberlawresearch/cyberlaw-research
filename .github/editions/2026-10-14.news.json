@@ -3,7 +3,7 @@
   "column": "brief",
   "state": "draft",
   "publication_ready": false,
-  "phase": "research",
+  "phase": "writing",
   "base_main_sha": "1c5f0c873ccafabe3f805c5999d452685a44064c",
   "page": "articles/2026-10-14-tech-law-brief.html",
   "items": [
@@ -76,12 +76,110 @@
       "fact": "欧盟普通法院10月14日就T-134/24号Technius诉欧盟委员会案作出判决，驳回Stripchat运营商对依据《数字服务法》将该服务认定为超大型在线平台的挑战。争议集中于月均欧盟服务接收者是否超过4500万及访问量数据和跳出访问的计算方法。法院认可欧盟委员会评估基础的可靠性，原指定决定继续有效；当事人仍可依条件就法律问题向欧盟法院提起上诉。",
       "status": "verified",
       "deduplication": "10月12日Ofcom网络安全行为准则与欧盟DSA法院平台规模判定无关；近七天没有刊载本案10月14日新判决。"
+    },
+    {
+      "id": "research-item-6",
+      "domestic": true,
+      "date": "2026-10-14",
+      "jurisdiction": "中国",
+      "agency": "公安部网络安全保卫局、各地公安网安部门",
+      "title": "公安部网安局集中通报四起自媒体舆情敲诈刑事案例",
+      "original_title": "深化扫黑除恶专项斗争丨公安网安部门公布4起涉舆情敲诈等类型黑恶犯罪典型案例",
+      "source_name": "公安部网安局（新华网转载）",
+      "url": "https://www.news.cn/legal/20261014/cd45df2f4f8643bfa220cb3b4a787dcf/c.html",
+      "fact": "公安部网安局10月14日公开四起利用社交媒体账号发布、炒作涉企负面信息实施敲诈或强迫交易的典型刑事案件。披露的山西太原案件中，有团伙建立自媒体矩阵，通过删帖施压和签订推广合同等方式向企业索取钱财，已查涉案金额120余万元；另有山东威海、湖北武汉相关案件。各案所处程序并不相同，部分已移送审查起诉，部分仍在侦办，公安部门通报不等于法院作出有罪判决。",
+      "status": "verified",
+      "deduplication": "10月13日金融App仲裁条款典型案例不涉及舆情敲诈；此次为公安部10月14日首次集中公布的四案。"
+    },
+    {
+      "id": "research-item-7",
+      "domestic": true,
+      "date": "2026-10-14",
+      "jurisdiction": "中国·云南",
+      "agency": "云南省人民政府、云南省科技厅",
+      "title": "云南公布服务业数智化实施意见，提出“外数内算外用”及绿电智算布局",
+      "original_title": "云南加快数智转型激发服务业新动能",
+      "source_name": "科学技术部（转云南省科技厅）",
+      "url": "https://www.most.gov.cn/dfkj/yn/zxdt/202610/t20261014_197504.html",
+      "fact": "10月14日，科学技术部网站发布云南省关于服务业扩能提质实施意见的政策信息。云南省政府此前印发的实施意见提出发展数据、软件和信息传输服务，推进“人工智能+”应用和绿电智算，利用昆明国际通信业务出入口局探索“外数内算外用”业务模式，并推动传统服务业数智化。该报道是省级政策落实情况的当日官方介绍，不表示境外数据可不履行数据出境和个人信息保护等法定义务。",
+      "status": "verified",
+      "deduplication": "与10月13日辽宁算力券、广州算电公司成立各自不同，本条体现云南省发布的服务业政策执行安排及国际数据计算业务方向；原正式印发时间未据此猜测。"
+    },
+    {
+      "id": "research-item-8",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "英国",
+      "agency": "英国通信管理局Ofcom、X及Grok运营方",
+      "title": "英国Ofcom审阅X首份季度整改报告，缩小Grok相关在线安全调查重点",
+      "original_title": "Ofcom update: Monitoring X’s response to hate and terror content, and Grok investigation latest",
+      "source_name": "英国通信管理局Ofcom",
+      "url": "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/ofcom-update-monitoring-xs-response-to-hate-and-terror-content-and-grok-investigation-latest?language=en",
+      "fact": "英国通信管理局Ofcom于10月14日说明，X提交了关于仇恨和恐怖主义相关非法内容处理速度的首份季度报告，初步数据显示部分时效指标改善，但监管机构仍担心内容移除成效，并将交叉验证平台数据。Ofcom还确认，X已加强未成年人色情内容访问限制，独立Grok服务在英国限制色情图像生成和传播；对X的调查接下来集中审查非法内容与投诉举报义务。调查尚未形成最终违法认定。",
+      "status": "verified",
+      "deduplication": "10月12日英国Ofcom发布行为准则与10月13日Meta就Ofcom罚款算法起诉不同；本条是14日对X及Grok调查与实际整改数据的新增监管状态。"
+    },
+    {
+      "id": "research-item-9",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "英国",
+      "agency": "伦敦市长警务和犯罪办公室MOPAC、Palantir",
+      "title": "Palantir与伦敦警务部门就AI合同采购诉讼达成和解并撤诉",
+      "original_title": "Palantir and London mayor's office settle lawsuit over UK police contract",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/palantir-london-mayors-office-settle-lawsuit-over-uk-police-contract-2026-10-14/",
+      "fact": "10月14日，Palantir与伦敦市长警务和犯罪办公室就伦敦警察厅一项约5000万英镑的AI自动化与证据处理合同争议达成和解，双方同意结束相关诉讼。市长办公室澄清，阻止该合同的决定并非基于对Palantir公司伦理或声誉的评价，且不存在全面禁止与其订约的政策。这是采购争议中的民事和解，并非法院已就政府采购程序或AI技术合规性作出终局判决。",
+      "status": "verified",
+      "deduplication": "近七日涉及英国Meta诉Ofcom监管收费及NHS数据平台采购建议，但本案为独立警务采购合同诉讼和解，具有新程序动作。"
+    },
+    {
+      "id": "research-item-10",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "美国、日本及多国",
+      "agency": "微软数字犯罪部门、Health-ISAC及国际协作机构",
+      "title": "微软联合多国机构拆除大型网络钓鱼服务设施，涉十亿条欺诈信息",
+      "original_title": "Disrupting the service economy behind transnational cybercrime operations",
+      "source_name": "Microsoft On the Issues",
+      "url": "https://blogs.microsoft.com/on-the-issues/2026/10/14/disrupting-the-service-economy-behind-transnational-cybercrime-operations/",
+      "fact": "微软10月14日公告称，依据美国佛罗里达南区联邦地区法院命令，与Health-ISAC等协作机构查封并重定向涉及YAM Store、CoGUI、Iron Man等欺诈基础设施的域名，并关闭相关账户。微软估算这些服务自年初起协助传播逾10亿条恶意信息，影响150多个国家的机构及个人。此次行动属于民事司法命令支持的基础设施处置及跨境安全协作，并不意味着所有涉案运营人员均已被刑事定罪。",
+      "status": "verified",
+      "deduplication": "10月12日法国冷链攻击及10月13日其他零售商网络事件属不同攻击；本次为14日正式公布的跨国网络钓鱼供应服务关闭行动。"
+    },
+    {
+      "id": "research-item-11",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "英国",
+      "agency": "NVIDIA、英国AI安全研究机构",
+      "title": "英伟达承诺五年提供2.5亿美元算力支持英国智能体安全研究",
+      "original_title": "NVIDIA Commits $250 Million to Advance UK Agentic Safety and Security Research Over the Next Five Years",
+      "source_name": "NVIDIA投资者新闻中心",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Commits-250-Million-to-Advance-UK-Agentic-Safety-and-Security-Research-Over-the-Next-Five-Years/default.aspx",
+      "fact": "英伟达10月14日宣布，未来五年向英国人工智能智能体安全与防护研究提供总价值2.5亿美元的计算资源，计划每年提供5000万美元的算力支持，部分面向BOLD、SOFAIR及伦敦帝国理工学院等研究力量。相关资源通过英国本地NVIDIA云服务合作伙伴提供，服务自主系统和机器人安全评测。该安排属于企业资源承诺和研究合作，而非英国政府新出台的强制性AI安全许可条件。",
+      "status": "verified",
+      "deduplication": "10月13日国际学者AI监督倡议和英国政府10月12日监管政策均不同，本条为企业14日宣布的新安全评测资源投入。"
+    },
+    {
+      "id": "research-item-12",
+      "domestic": false,
+      "date": "2026-10-14",
+      "jurisdiction": "欧盟",
+      "agency": "Google DeepMind、Google Cloud",
+      "title": "谷歌向欧洲200名科研人员开放前沿模型并提供300万美元计算额度",
+      "original_title": "We’re powering European scientific discovery with advanced AI compute and frontier models.",
+      "source_name": "Google官方博客",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/were-powering-european-scientific-discovery-with-advanced-ai-compute-and-frontier-models/",
+      "fact": "Google DeepMind与Google Cloud于10月14日宣布，将通过欧盟RAISE人工智能科学研究计划，为最多200名欧洲科研人员提供部分前沿模型及专业科学工具的直接使用机会，并配套总额300万美元的计算额度。工具包括AlphaFold 3、AlphaGenome及WeatherNext等。该安排属于私人企业支持欧盟科研项目的合作承诺，不是欧盟批准对所有研究者开放模型，也不是新的数据跨境法定豁免。",
+      "status": "verified",
+      "deduplication": "10月13日日本NTT Data与Anthropic建设项目谈判和Scaleway在北欧扩建算力为不同主体和项目；本条是14日的研究模型开放承诺。"
     }
   ],
-  "news_count": 5,
+  "news_count": 12,
   "distribution": {
-    "domestic": 3,
-    "foreign": 2
+    "domestic": 5,
+    "foreign": 7
   },
   "coverage": [
     {
@@ -115,6 +213,70 @@
       "status": "checked",
       "found": 1,
       "notes": "核实Technius诉委员会10月14日裁判及欧盟普通法院当日官方新闻页面，仅记录DSA指定门槛和裁判结果"
+    },
+    {
+      "source_group": "国内媒体第一组",
+      "source_name": "新华网、央视新闻、中国新闻网与人民日报检索",
+      "checked_at": "2026-10-14T23:38:49.380+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "实际打开新华网转载公安部网安局10月14日四起网络舆情敲诈案的全文，结合正义网及法治日报对比程序阶段"
+    },
+    {
+      "source_group": "国内媒体第二组",
+      "source_name": "正义网、法治日报/司法部智慧普法",
+      "checked_at": "2026-10-14T23:38:49.380+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核对4起网络舆情敲诈案例中的批捕、移送审查起诉和侦办差异，同事件不重复"
+    },
+    {
+      "source_group": "国内地方政府与科技政策",
+      "source_name": "云南省科技厅经科学技术部转载、山东制造业专项、江苏网信网",
+      "checked_at": "2026-10-14T23:38:49.380+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核实云南10月14日官方服务业数智化报道，对此前印发日期未查实不编造；排除一般旧政策再发"
+    },
+    {
+      "source_group": "英国平台治理官方",
+      "source_name": "Ofcom X/Grok investigation status and quarterly commitments",
+      "checked_at": "2026-10-14T23:38:49.380+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "逐段查10月14日主管机关原文，区分报告、整改承诺和仍在调查中的事项，未推定已经处罚"
+    },
+    {
+      "source_group": "欧洲技术采购纠纷",
+      "source_name": "Reuters Legal Palantir MOPAC settlement",
+      "checked_at": "2026-10-14T23:38:49.380+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核查14日英国警务AI合同相关诉讼和解，非法院认定政府采购违法或公司声誉调查"
+    },
+    {
+      "source_group": "跨国网络欺诈治理",
+      "source_name": "Microsoft Digital Crimes Unit、Health-ISAC、BleepingComputer",
+      "checked_at": "2026-10-14T23:38:49.380+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核查微软10月14日公布法院命令与行动规模、各国政府及机构合作；仅保留法律程序、影响及责任"
+    },
+    {
+      "source_group": "英国AI安全产业合作",
+      "source_name": "NVIDIA投资者新闻公告、The Guardian",
+      "checked_at": "2026-10-14T23:38:49.380+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "直接核对10月14日NVIDIA官方5年2.5亿美元算力捐赠公告及机构名单"
+    },
+    {
+      "source_group": "欧盟科学研究模型合作",
+      "source_name": "Google官方博客、Reuters Technology",
+      "checked_at": "2026-10-14T23:38:49.380+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "直接核对Google 10月14日RAISE科研通道支持200人及300万美元算力额度"
     }
   ],
   "checks": {
@@ -128,13 +290,14 @@
     "natural_chinese_reviewed": false,
     "foreign_layout": false
   },
-  "checked_at": "2026-10-14T23:35:51.319+08:00",
+  "checked_at": "2026-10-14T23:38:49.380+08:00",
   "last_news_scan_at": null,
-  "updated_at": "2026-10-14T23:35:51.319+08:00",
+  "updated_at": "2026-10-14T23:38:49.380+08:00",
   "next_actions": [
-    "继续国内中央及地方监管与七组媒体实际巡视并补齐可靠新闻",
-    "完成美国、欧盟、英国及日韩等国际官网与专业媒体近72小时扫查，优先补正式监管与司法进展",
-    "核对上一期及近七期事件级重复、法律状态和原题，终扫并按规则决定是否publication_ready"
+    "继续国内剩余七组媒体、主管机关及竞争/数据/司法专题反扫，不能以12条作为搜索终点",
+    "扩大美国官方司法网络安全、欧盟、日韩、国际一线媒体新进展候选并反查原文",
+    "逐条核查近7日同一事件与发布法律状态，完成最终两小时内重要新闻复扫后才可将checks标true",
+    "ready后使用现有GitHub Actions发布并核验实际主分支及Pages"
   ],
   "last_error": null,
   "publication": {
