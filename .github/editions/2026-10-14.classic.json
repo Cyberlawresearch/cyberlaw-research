@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-14",
+  "column": "classic",
+  "state": "verified",
+  "phase": "publishing",
+  "book": "Oliver Wendell Holmes Jr.（霍姆斯）：《普通法》",
+  "bibliography": {
+    "author": "Oliver Wendell Holmes Jr.",
+    "originalTitle": "The Common Law",
+    "publisher": "Little, Brown and Company",
+    "year": "1881",
+    "edition": "1881 first edition"
+  },
+  "target_path": "articles/2026-10-14-holmes-common-law.html",
+  "sources": [
+    "https://www.gutenberg.org/ebooks/2449",
+    "https://sclqld.org.au/catalogue/records/37227",
+    "https://www.nybooks.com/articles/1963/10/17/holmess-common-law/",
+    "https://www.jstor.org/stable/1228740",
+    "https://www.cambridge.org/core/books/abs/taming-the-past/holmess-common-law-as-legal-and-social-science/7B9E6CFC41CC38D94E3A372D41C84AD1"
+  ],
+  "checks": {
+    "publisher_year_author_confirmed": true,
+    "original_book_text_and_eleven_lectures_checked": true,
+    "reading_structure_all_lectures": true,
+    "full_length_commentary": true,
+    "history_index_checked": true,
+    "critical_works_bibliography_checked": true,
+    "clear_distinction_original_vs_later_interpretation": true,
+    "no_unverified_original_pages": true
+  },
+  "publication": {
+    "pages_result": null,
+    "live_check": null
+  }
+}
