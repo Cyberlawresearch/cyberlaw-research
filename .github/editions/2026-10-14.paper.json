@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-14",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-14-schwartz-solove-pii-problem.html",
+  "selection": "Paul M. Schwartz; Daniel J. Solove, The PII Problem: Privacy and a New Concept of Personally Identifiable Information",
+  "bibliography": {
+    "type": "article",
+    "author": "Paul M. Schwartz、Daniel J. Solove",
+    "originalTitle": "The PII Problem: Privacy and a New Concept of Personally Identifiable Information",
+    "journal": "New York University Law Review",
+    "year": "2011",
+    "volume": "86",
+    "issue": "6",
+    "pages": "1814–1894",
+    "doi": "",
+    "url": "https://nyulawreview.org/issues/volume-86-number-6/the-pii-problem-privacy-and-a-new-concept-of-personally-identifiable-information/",
+    "cnTitle": "个人可识别信息的界限：重新理解隐私法的保护对象"
+  },
+  "versions": {
+    "formal": "New York University Law Review 86(6) (December 2011), pp.1814–1894; 81-page official published PDF",
+    "working_paper": "SSRN abstract_id 1909366 denotes a separate working paper; no official journal DOI independently verified"
+  },
+  "sources": [
+    "https://nyulawreview.org/issues/volume-86-number-6/the-pii-problem-privacy-and-a-new-concept-of-personally-identifiable-information/",
+    "https://nyulawreview.org/wp-content/uploads/2018/08/NYULawReview-86-6-Schwartz-Solove.pdf",
+    "https://scholarship.law.gwu.edu/faculty_publications/940/",
+    "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1909366"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-09-29-ohm-broken-promises-privacy.html"
+  ],
+  "timeline": null,
+  "body_length": 4775,
+  "base_main_sha": "1c79dcee979cfb3b3d12ca82547ee48f121ade8c",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}
