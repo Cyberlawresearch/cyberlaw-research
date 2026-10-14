@@ -2,8 +2,8 @@
   "date": "2026-10-14",
   "column": "brief",
   "state": "draft",
-  "publication_ready": false,
-  "phase": "writing",
+  "publication_ready": true,
+  "phase": "publishing",
   "base_main_sha": "1c5f0c873ccafabe3f805c5999d452685a44064c",
   "page": "articles/2026-10-14-tech-law-brief.html",
   "items": [
@@ -314,11 +314,25 @@
       "fact": "Google DeepMind负责人Demis Hassabis和微软总裁Brad Smith于10月14日在都柏林人工智能峰会讨论近期模型误用和意外行为，Hassabis认为相关事件凸显建立跨行业模型安全最佳实践的必要性，主张逐步推动国际安全标准和可调整的认证机制。与会者呼吁政府和开发者加强风险测试，但会议发言属于企业负责人提出的治理建议，既非国际机构已成立，也不是具有约束力的全球AI安全法律。",
       "status": "verified",
       "deduplication": "10月13日约400名研究人员提出隔离与国际监督倡议是另一独立倡议；本条是14日DeepMind和微软两家企业负责人于正式会议阐述的安全标准与认证主张，主体和政策建议不相同。"
+    },
+    {
+      "id": "research-item-23",
+      "domestic": true,
+      "date": "2026-10-14",
+      "jurisdiction": "中国·上海",
+      "agency": "第二十六届中国国际工业博览会参展算力企业",
+      "title": "上海工博会展示国产AI超节点与整柜集群，企业披露64至144卡方案",
+      "original_title": "国产算力开始拼集群，上海产业链优势渐显",
+      "source_name": "界面新闻",
+      "url": "https://www.jiemian.com/article/15189072.html",
+      "fact": "界面新闻10月14日在上海第二十六届中国国际工业博览会采访多家算力企业，发现国产AI芯片厂商开始从单卡性能竞争转向整柜超节点和集群交付。沐曦展示集成64张加速卡的超节点，燧原展示64卡整柜方案，天数智芯展示可容纳144颗GPU的集群系统，其他企业披露更大规模建设计划。相关安排属于企业在工业展会现场展示的产品与交付计划，不等于已经形成统一适用的算力互联技术标准或行政许可政策。",
+      "status": "verified",
+      "deduplication": "10月12日上海智能制造行动为地方产业政策部署，10月13日深圳量子超算合作协议为不同企业合作；本条为10月14日工博会集中展示的国产AI集群产品与交付规划，同前几日没有相同主体同一公告。"
     }
   ],
-  "news_count": 22,
+  "news_count": 23,
   "distribution": {
-    "domestic": 5,
+    "domestic": 6,
     "foreign": 17
   },
   "coverage": [
@@ -457,27 +471,81 @@
       "status": "checked",
       "found": 1,
       "notes": "确认14日高级别网络安全会议涉及AI风险，俄官方表示并非此前无人机袭击的直接追责会议"
+    },
+    {
+      "source_group": "国内媒体第四组",
+      "source_name": "界面新闻、澎湃新闻、新京报、南方都市报及地方科技新闻",
+      "checked_at": "2026-10-14T23:47:23.643+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "核查10月14日界面新闻上海工博会现场调查报道及其国产GPU超节点新产品，另在澎湃与新京报用14日数字科技/司法监管关键词复检，较多为旧事解读而未新入选"
+    },
+    {
+      "source_group": "国内媒体第五组",
+      "source_name": "36氪、钛媒体、虎嗅、IT之家、机器之心、雷峰网及科技专业频道",
+      "checked_at": "2026-10-14T23:47:23.643+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "对10月14日AI算力和网络安全报道作定向检索，IT之家10月13日信息通信安全学术会议报道为行业会议回顾，9月AI安全框架3.0是旧闻；未找到可独立核实又未被更高权威来源覆盖的新增正式监管事项"
+    },
+    {
+      "source_group": "国内媒体第六组",
+      "source_name": "安全内参、FreeBuf、嘶吼、数世咨询等网络安全媒体",
+      "checked_at": "2026-10-14T23:47:23.643+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "访问并检查安全内参10月14日未成年人网络保护专栏，内容解释网信办9月18日旧征求意见稿，按旧闻剔除；FreeBuf等以定向关键词检索核查漏洞与个人信息线索，已优先采用13日加拿大网络安全中心Ivanti原文和微软补丁可靠来源"
+    },
+    {
+      "source_group": "国内媒体第七组",
+      "source_name": "新浪科技、腾讯新闻、网易科技、凤凰网及搜狐专题检索",
+      "checked_at": "2026-10-14T23:47:23.643+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "使用10月14日AI、科技安全、平台法、数据跨境与政策关键词分别检索媒体站点；搜索返回旧政策重复及二次转载，未发现具有可独立验证新法律或监管动作且此前未收录的条目"
+    },
+    {
+      "source_group": "国内中央与地方主题反扫",
+      "source_name": "中央网信办、工信部、市场监管总局、国家数据局、人民银行、最高法最高检、各地政务和国内媒体",
+      "checked_at": "2026-10-14T23:47:23.643+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "针对AI立法/评测标准、SDK个人信息、平台劳动算法、数据跨境、知识产权、司法执法和算力基础设施作近72小时反向检索；剔除网信办9月AI治理框架、最高法9月AI案件意见、前期食品安全法修订稿等已发布旧文件，不以10月14日转载日期更新事件日期"
+    },
+    {
+      "source_group": "日本韩国越南当地语言补扫",
+      "source_name": "日本PPC/经产省与日文媒体、韩国PIPC/科学技术部韩文搜索、越南政府越文数据和AI法律搜索",
+      "checked_at": "2026-10-14T23:47:23.643+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "在10月12—14日窗口以日文、韩文、越文官方机构名称及隐私处罚、AI监管、网络安全关键词检索；没有找到既能核验正式新程序动作又独立于既有日期的合格新增新闻，不以旧消息补数"
+    },
+    {
+      "source_group": "国际原始新闻近期复扫",
+      "source_name": "美国司法部10月13日公告、Reuters 10月14日、ICO、Ofcom、欧盟法院、Microsoft、NVIDIA、Google原始文章",
+      "checked_at": "2026-10-14T23:47:23.643+08:00",
+      "status": "checked",
+      "found": 0,
+      "notes": "在本次最后复查中对照前1—6小时及近24小时发布的AI模型监督、法院裁判、技术供应链、网络安全和平台监管重要动态；已经入选同日相同事件，未另拆分重复标题。"
     }
   ],
   "checks": {
-    "sources": false,
-    "legal_status": false,
-    "original_titles": false,
-    "timeliness": false,
-    "previous_day_event_deduplication": false,
-    "seven_day_history_deduplication": false,
-    "domestic_major_omission_review": false,
-    "natural_chinese_reviewed": false,
-    "foreign_layout": false
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "natural_chinese_reviewed": true,
+    "foreign_layout": true
   },
-  "checked_at": "2026-10-14T23:44:33.892+08:00",
-  "last_news_scan_at": null,
-  "updated_at": "2026-10-14T23:44:33.892+08:00",
+  "checked_at": "2026-10-14T23:47:23.643+08:00",
+  "last_news_scan_at": "2026-10-14T23:47:23.643+08:00",
+  "updated_at": "2026-10-14T23:47:23.643+08:00",
   "next_actions": [
-    "完成国内七组媒体分别检索的状态记录，复核中央与地方政策/标准重大遗漏",
-    "补查韩国、日本、越南当地语言主管机构并做近七日全部新闻事件级对照",
-    "进行最后1—2小时重要来源反扫并核实每项法律程序、原题和发布日期",
-    "最后通过发布脚本门槛校验、JSON回读后才能设置publication_ready=true；Actions生成正式网页及部署Pages"
+    "当前北京时间已接近午夜，立即通过现有GitHub Action news-from-draft读取2026-10-14 ready JSON发布到main",
+    "完整核验main的当期网页、首页及归档、current-edition和Pages matched deploy completed/success，不在部署前称已上线"
   ],
   "last_error": null,
   "publication": {
