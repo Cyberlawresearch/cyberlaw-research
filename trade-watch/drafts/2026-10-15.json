@@ -51,11 +51,16 @@
     "CA": "CITT active investigations checked; no new eligible decision found",
     "AU": "Trade remedies bulletin checked; Oct14 records in previous issue"
   },
-  "last_error": null,
+  "last_error": {
+    "stage": "research_checkpoint",
+    "tool": "mcp__GitHub__update_file",
+    "path": "trade-watch/drafts/2026-10-15.json",
+    "message": "This tool call was blocked by OpenAI's safety checks. Please double check what you are sending.",
+    "retries": 3
+  },
   "next_actions": [
-    "核验过去72小时美国、欧盟、英国、日本、韩国、印度、加拿大及澳大利亚政府官方来源",
-    "与最近7期进行事件级去重",
-    "逐一复核最终稿来源链接和法律阶段",
-    "正式发布并检查Pages"
+    "恢复完整研究断点，审核2026年10月15日候选资料",
+    "近7期去重及来源逐页核验",
+    "验证成功后再发布正文、首页、归档"
   ]
 }
