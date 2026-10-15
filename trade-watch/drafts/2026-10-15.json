@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-15",
+  "base_main_sha": "61274127a0d41dd676bce01d3b4dad8fe11ad0c2",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "核验过去72小时美国、欧盟、英国、日本、韩国、印度、加拿大及澳大利亚政府官方来源",
+    "与最近7期进行事件级去重",
+    "逐一复核最终稿来源链接和法律阶段",
+    "正式发布并检查Pages"
+  ]
+}
