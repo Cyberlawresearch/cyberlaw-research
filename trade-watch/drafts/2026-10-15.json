@@ -3,7 +3,25 @@
   "base_main_sha": "61274127a0d41dd676bce01d3b4dad8fe11ad0c2",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
+  "items": [
+    {
+      "id": "us-truck-bed-covers-cvd",
+      "date": "2026-10-14",
+      "title": "美国对中国皮卡货箱盖反补贴终裁",
+      "stage": "商务部终裁，最终损害裁决待作",
+      "summary": "美国商务部对相关产品反补贴率为11.60%至142.11%，其他企业43.43%。",
+      "scope": "中国皮卡货箱盖对美出口",
+      "impact": "进口清关和保证金应按生产商对应税率核算。",
+      "deadline": "2026年10月14日宣布终裁，正式税令需等待损害程序。",
+      "importance": 5,
+      "sources": [
+        {
+          "label": "美国商务部公告",
+          "url": "https://www.trade.gov/final-affirmative-determination-countervailing-duty-investigation-truck-bed-covers-china"
+        }
+      ]
+    }
+  ],
   "coverage": {
     "US": "Trade.gov 14 Oct CVD final; USITC solar injury vote; mattresses sunset review",
     "UK": "ECJU 12 Oct classification service paused; 14 Oct OGEL expanded",
