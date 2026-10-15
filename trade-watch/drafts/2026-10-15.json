@@ -20,6 +20,25 @@
           "url": "https://www.trade.gov/final-affirmative-determination-countervailing-duty-investigation-truck-bed-covers-china"
         }
       ]
+    },
+    {
+      "id": "usitc-solar-final-injury",
+      "date": "2026-10-14",
+      "jurisdiction": "美国",
+      "agency": "美国国际贸易委员会",
+      "title": "美国对印度、印尼、老挝晶硅光伏电池及组件作出损害肯定性终裁",
+      "stage": "产业损害肯定性终裁，反倾销和反补贴税令尚待商务部正式发布",
+      "summary": "美国国际贸易委员会在相关终裁调查中认定印度、印尼、老挝原产晶硅光伏电池和组件的倾销和受补贴进口对美国产业造成实质损害，商务部将据此签发税令。",
+      "scope": "印度、印尼、老挝原产晶硅光伏电池及组件对美贸易",
+      "impact": "设厂和采购企业应核对光伏电池实际生产地、组件来源及出口商对应税率，避免以转运地替代真实原产地。",
+      "deadline": "10月14日产业损害终裁；公开报告预计11月23日前公布；实际征税以正式税令为准。",
+      "importance": 5,
+      "sources": [
+        {
+          "label": "美国国际贸易委员会第26-147号公告",
+          "url": "https://www.usitc.gov/press_room/news_release/2026/er1014_69351.htm"
+        }
+      ]
     }
   ],
   "coverage": {
