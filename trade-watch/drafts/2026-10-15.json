@@ -4,7 +4,16 @@
   "phase": "researching",
   "publication_ready": false,
   "items": [],
-  "coverage": {},
+  "coverage": {
+    "US": "Trade.gov 14 Oct CVD final; USITC solar injury vote; mattresses sunset review",
+    "UK": "ECJU 12 Oct classification service paused; 14 Oct OGEL expanded",
+    "EU": "Methane imports proposed rule amendment dated 14 Oct",
+    "KR": "13 Oct external trade decree announced",
+    "JP": "JETRO new summary 14 Oct re Russian restrictions; previous issue covered",
+    "IN": "Search performed; no sufficiently verified new major regulatory decision",
+    "CA": "CITT active investigations checked; no new eligible decision found",
+    "AU": "Trade remedies bulletin checked; Oct14 records in previous issue"
+  },
   "last_error": null,
   "next_actions": [
     "核验过去72小时美国、欧盟、英国、日本、韩国、印度、加拿大及澳大利亚政府官方来源",
