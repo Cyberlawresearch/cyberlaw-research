@@ -2,22 +2,65 @@
   "date": "2026-10-16",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "61274127a0d41dd676bce01d3b4dad8fe11ad0c2",
-  "phase": "researching",
+  "phase": "final_source_review",
   "publication_ready": false,
-  "items": [],
+  "items": [
+    {
+      "id": "CN-tech-export",
+      "title": "商务部科技部2026年第48号公告拟修订出口技术目录，临时出口前登记即日生效",
+      "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_a4acff07e134447fbe7bbeb486df3ea6.html",
+      "source_opened": true,
+      "stage": "待保持本期文内准确法律阶段"
+    },
+    {
+      "id": "US-Iran-SDN",
+      "title": "美国OFAC10月15日新增伊朗金融及香港贸易网络制裁",
+      "url": "https://ofac.treasury.gov/recent-actions/20261015",
+      "source_opened": true,
+      "stage": "待保持本期文内准确法律阶段"
+    },
+    {
+      "id": "US-Iran-FF",
+      "title": "OFAC 10月15日伊拉克国际发展银行一般许可证FF10月30日截止",
+      "url": "https://ofac.treasury.gov/media/937246/download?inline=",
+      "source_opened": true,
+      "stage": "待保持本期文内准确法律阶段"
+    },
+    {
+      "id": "US-Lukoil-licenses",
+      "title": "OFAC 10月15日卢克石油128D和130B一般许可证，2027年4月24日截止",
+      "url": "https://ofac.treasury.gov/media/937236/download?inline=",
+      "source_opened": true,
+      "stage": "待保持本期文内准确法律阶段"
+    },
+    {
+      "id": "AU-Pineapple-721",
+      "title": "澳大利亚10月15日菲律宾罐装菠萝措施延续调查，11月23日答卷截止",
+      "url": "https://www.industry.gov.au/australian-trade-remedies-commission/current-cases-and-electronic-public-record-epr/721",
+      "source_opened": true,
+      "stage": "待保持本期文内准确法律阶段"
+    },
+    {
+      "id": "EU-council-methane",
+      "title": "欧盟领导人10月16日欢迎甲烷进口要求推迟提案，尚未生效",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/16/european-council-conclusions-on-competitiveness-the-next-multiannual-financial-framework-and-enlargement-and-reforms/",
+      "source_opened": true,
+      "stage": "待保持本期文内准确法律阶段"
+    }
+  ],
   "coverage": {
-    "US": "pending",
-    "EU": "pending",
-    "UK": "pending",
-    "JP": "pending",
-    "KR": "pending",
-    "IN": "pending",
-    "CA": "pending",
-    "AU": "pending"
+    "US": "已核验",
+    "EU": "已核验",
+    "UK": "已核验",
+    "JP": "已巡视未发现新增足够重要事项",
+    "KR": "已核验",
+    "IN": "已核验",
+    "CA": "已巡视未发现新增足够重要事项",
+    "AU": "已核验"
   },
   "last_error": null,
   "next_actions": [
-    "检索并逐项核验最近72小时来源",
-    "去重并完成网页发布"
+    "核验最终正文条数、事件级去重和URL",
+    "同步正式发布正文及入口并回读主分支"
   ]
 }
