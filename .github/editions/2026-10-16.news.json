@@ -4,16 +4,16 @@
   "state": "verified",
   "phase": "publishing",
   "page": "articles/2026-10-16-tech-law-brief.html",
-  "news_count": 17,
+  "news_count": 18,
   "distribution": {
-    "domestic": 4,
+    "domestic": 5,
     "foreign": 13
   },
   "mode": "fact_only",
   "analysis_pending": true,
   "published_as_backfill": false,
   "actual_release_at": null,
-  "checked_at": "2026-10-16T20:12:47.957+08:00",
+  "checked_at": "2026-10-16T22:09:38.153+08:00",
   "last_news_scan_at": "2026-10-16T20:12:47.957+08:00",
   "checks": {
     "sources": true,
@@ -163,6 +163,14 @@
       "status": "checked",
       "found": 3,
       "notes": "区分政策讲话、企业安全功能、自主投资意见的法律效力与生效条件"
+    },
+    {
+      "source_group": "新华社重大新闻遗漏补核",
+      "source_name": "新华社2026年10月16日18:04正式报道及18:49绿色算力报道",
+      "checked_at": "2026-10-16T22:09:38.153+08:00",
+      "status": "checked",
+      "found": 1,
+      "notes": "先前20:12国内主流媒体巡视漏收当日考察。现已复核新华社原始报道、日期和事件性质，并比对近7日正文，无同一考察事件重复。"
     }
   ],
   "items": [
@@ -177,6 +185,18 @@
       "source_name": "商务部、科学技术部",
       "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_0a31a3c9ac404f7a9b0e917ce3412997.html",
       "fact": "商务部、科技部10月16日联合发布2026年第48号公告，就调整《中国禁止出口限制出口技术目录》向社会征求意见，拟增列人工智能23项、生物医药5项、光伏12项技术，反馈截止11月15日。与目录修订尚处征求意见阶段不同，公告已自发布时起至正式修订实施前，对附件所列技术的出口实行事前登记，范围涉及向境外转让所有权、许可使用和控制权变更等情形，已经开始尚未完成的相关出口也须登记。已公开开源或通过论文进入公共领域的技术不纳入管理范围；具体技术是否属于拟议禁止或限制出口目录，仍须以最终修订为准。"
+    },
+    {
+      "id": "research-item-18",
+      "domestic": true,
+      "date": "2026-10-16",
+      "jurisdiction": "中国·内蒙古乌兰察布",
+      "agency": "新华社（报道）",
+      "title": "习近平考察乌兰察布绿色算力产业，强调算力网建设和算电协同",
+      "original_title": "习近平在内蒙古乌兰察布考察时强调 统筹高质量发展和高水平保护 坚定不移走生态优先绿色发展之路",
+      "source_name": "新华社",
+      "url": "https://www.news.cn/politics/20261016/60525074a4aa42eeb86dbc46e7a7b28f/c.html",
+      "fact": "新华社10月16日报道，习近平当天在内蒙古乌兰察布市察哈尔高新技术开发区，了解内蒙古推进“东数西算”工程枢纽节点建设和绿色算力产业发展情况。他指出，实施“东数西算”工程、构建全国一体化算力网是党中央一项重要部署，要求加强科学规划、要素支撑和安全保障，确保已建成项目高效运行、后续项目如期建设。他还强调，算力中心要落实高效、绿色、安全要求，注重“算电协同”“算水协同”，并推动数字经济与实体经济深度融合。此次报道涉及实地考察及有关发展要求，并非新出台的行政法规或强制性国家标准。"
     },
     {
       "id": "research-item-2",
@@ -384,5 +404,16 @@
     "pages_status": "awaiting_deployment",
     "commit_sha": null,
     "pages_run_id": null
-  }
+  },
+  "correction_log": [
+    {
+      "checked_at": "2026-10-16T22:09:38.153+08:00",
+      "type": "domestic_major_omission_correction",
+      "title": "习近平考察乌兰察布绿色算力产业，强调算力网建设和算电协同",
+      "source_url": "https://www.news.cn/politics/20261016/60525074a4aa42eeb86dbc46e7a7b28f/c.html",
+      "previous_count": 17,
+      "corrected_count": 18,
+      "reason": "新华社18:04已首发，本期20:12复核漏收，予以补录。"
+    }
+  ]
 }
