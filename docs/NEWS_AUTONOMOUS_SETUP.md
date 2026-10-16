@@ -6,4 +6,4 @@
 
 GitHub Actions中运行项目：Autonomous global technology law news。计划每天北京时间19:15、20:15、21:15检查并发布。第一次触发是任务启动，不意味着19:15秒级上线。工作流采用完整来源核验及最少10条合格新闻门槛；无法查证时不发布占位稿，不把API或Pages未完成说成上线。部分新闻来源可能封锁自动读取，人工专业复核仍有价值。
 
-配置密钥后，进入Actions该工作流，选择Run workflow验证。若今天已经发布，任务会跳过研究及API调用；需在明天首次发布前才能测试完整的研究与发布流程。最终只有GitHub Pages completed/success并验证线上current-edition/正文才算完成。单次错误会生成GitHub Issue，不会停用每日计划，也不会强推覆盖其他栏目。GitHub定时事件本身可能被延迟或偶尔丢弃，三个启动时点可降低但不能消除此风险。
+配置密钥后，进入Actions该工作流选择Run workflow，并保留默认的smoke_test=true：可立即验证密钥、API计费账户与实际网络搜索是否可用，且不会修改网站；若要人工运行当日完整发布，选择smoke_test=false。当天新闻已经发布时，完整发布模式会幂等跳过，不会重复更新。最终只有GitHub Pages completed/success并验证线上current-edition/正文才算完成。单次错误会生成GitHub Issue，不会停用每日计划，也不会强推覆盖其他栏目。GitHub定时事件本身可能被延迟或偶尔丢弃，三个启动时点可降低但不能消除此风险。
