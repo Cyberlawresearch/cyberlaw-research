@@ -4,6 +4,12 @@ on:
     - cron: '15 19,20,21 * * *'
       timezone: 'Asia/Shanghai'
   workflow_dispatch:
+    inputs:
+      smoke_test:
+        description: 'Test API credentials and web search, without publishing'
+        type: boolean
+        required: false
+        default: true
   push:
     branches: [main]
     paths:
@@ -44,8 +50,38 @@ jobs:
           else
             echo 'API_KEY_STATUS=missing'
           fi
+  api_smoke_test:
+    if: github.event_name == 'workflow_dispatch' && inputs.smoke_test == true
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install OpenAI SDK
+        run: python -m pip install 'openai>=2.0,<4'
+      - name: Validate separate API billing and live web search without touching GitHub
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python - <<'PY'
+          import os
+          if not os.getenv('OPENAI_API_KEY'):
+              raise SystemExit('API_KEY_STATUS=missing; add it in repository Actions secrets')
+          from openai import OpenAI
+          c=OpenAI(timeout=90,max_retries=1)
+          result=c.responses.create(
+              model='gpt-5.4-mini',
+              tools=[{'type':'web_search'}],
+              tool_choice='required',
+              input='Search for today’s date in a reputable public news source and reply in one short sentence.',
+              max_output_tokens=180)
+          assert result.status=='completed',result.status
+          assert any(getattr(x,'type','')=='web_search_call' for x in result.output),'No web search was executed'
+          print('API_KEY_STATUS=configured; LIVE_WEB_SEARCH=success; NO_CONTENT_PUBLISHED=true')
+          PY
   publish:
-    if: github.event_name != 'push' && github.repository == 'Cyberlawresearch/cyberlaw-research'
+    if: github.event_name != 'push' && !(github.event_name == 'workflow_dispatch' && inputs.smoke_test == true) && github.repository == 'Cyberlawresearch/cyberlaw-research'
     runs-on: ubuntu-latest
     timeout-minutes: 48
     steps:
