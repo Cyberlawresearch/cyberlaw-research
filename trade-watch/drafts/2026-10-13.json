@@ -2,53 +2,58 @@
   "date": "2026-10-13",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "3506f0c37ecbbd6030e391b6699a51067768899c",
-  "phase": "source_review",
+  "phase": "final_source_review",
   "publication_ready": false,
   "items": [
     {
-      "id": "india-arylides-review",
-      "date": "2026-10-12",
-      "status": "DGTR复审终裁建议，尚待财政部颁布税令",
-      "source": "https://dgtr.gov.in/sites/default/files/2026-10/NCV%20Arylides%20FF.pdf",
-      "rates": [
-        "24.79%",
-        "26.64%",
-        "44.90%"
-      ]
+      "id": "OFAC-BofA",
+      "title": "美国OFAC 10月13日美国银行1166万美元和解",
+      "url": "https://ofac.treasury.gov/recent-actions/20261013_33",
+      "source_opened": true,
+      "stage": "待保持本期文内准确法律阶段"
     },
     {
-      "id": "us-vietnam-pressure-pipe",
-      "date": "2026-10-13",
-      "status": "美国商务部反倾销行政复审初裁，越南统一幅度90.80%，非新税率",
-      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-13/html/2026-20816.htm"
+      "id": "India-arylides",
+      "title": "印度DGTR 10月12日对华芳基化合物反倾销日落复审终裁建议",
+      "url": "https://www.dgtr.gov.in/en/anti-dumping-cases/anti-dumping-investigation-concerning-imports-aceto-acetyl-derivatives-also",
+      "source_opened": true,
+      "stage": "待保持本期文内准确法律阶段"
     },
     {
-      "id": "eu-china-hybrid-quantities",
-      "date": "2026-10-12",
-      "status": "欧盟官员介绍拟议实施参数，尚未公布正式执行规则，较昨日新增35万辆和6%",
-      "source": "https://www.reuters.com/business/autos-transportation/eu-eyes-december-trade-initiatives-after-china-car-import-deal-2026-10-12/"
+      "id": "US-Vietnam-pipe",
+      "title": "美国商务部10月13日越南不锈钢承压管反倾销复审初裁",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-13/html/2026-20816.htm",
+      "source_opened": true,
+      "stage": "待保持本期文内准确法律阶段"
     },
     {
-      "id": "uk-india-fta-implementation",
-      "date": "2026-10-12",
-      "status": "英印部长级实施安排，原协定7月15日生效，无新增关税减免",
-      "source": "https://www.gov.uk/government/news/joint-statement-of-16th-meeting-of-the-india-uk-jetco"
+      "id": "UK-PTI",
+      "title": "英国10月13日宣布拟制定针对阿根廷域外措施的贸易利益保护规则",
+      "url": "https://www.gov.uk/government/news/businesses-set-to-be-protected-from-argentinian-economic-coercion",
+      "source_opened": true,
+      "stage": "待保持本期文内准确法律阶段"
+    },
+    {
+      "id": "KR-decree",
+      "title": "韩国10月13日内阁通过对外贸易法实施令修订案，10月22日拟施行",
+      "url": "https://english.motir.go.kr/eng/article/EATCLdfa319ada/2751/view",
+      "source_opened": true,
+      "stage": "待保持本期文内准确法律阶段"
     }
   ],
   "coverage": {
-    "US": "已查阅10月13日Federal Register目录及相关监管公告",
-    "EU": "pending",
-    "UK": "pending",
-    "JP": "pending",
-    "KR": "pending",
-    "IN": "已核验10月12日印度DGTR对华Arylides反倾销复审终裁建议",
-    "CA": "pending",
-    "AU": "pending"
+    "US": "已核验",
+    "EU": "已核验",
+    "UK": "已核验",
+    "JP": "已巡视未发现新增足够重要事项",
+    "KR": "已核验",
+    "IN": "已核验",
+    "CA": "已巡视未发现新增足够重要事项",
+    "AU": "已核验"
   },
   "last_error": null,
   "next_actions": [
-    "补充欧盟及英国独立监管进展",
-    "再查日韩加澳，逐项去重与原始链接核验",
-    "末次终扫后发布"
+    "核验最终正文条数、事件级去重和URL",
+    "同步正式发布正文及入口并回读主分支"
   ]
 }
