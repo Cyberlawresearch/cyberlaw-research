@@ -34,6 +34,16 @@ jobs:
           python -m py_compile scripts/autonomous_news_research.py
           python -m unittest discover -s scripts -p 'test_autonomous_news.py' -v
           python scripts/test_publish_news_from_draft.py
+      - name: Check credential presence without exposing it
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        shell: bash
+        run: |
+          if [ -n "$OPENAI_API_KEY" ]; then
+            echo 'API_KEY_STATUS=configured'
+          else
+            echo 'API_KEY_STATUS=missing'
+          fi
   publish:
     if: github.event_name != 'push' && github.repository == 'Cyberlawresearch/cyberlaw-research'
     runs-on: ubuntu-latest
