@@ -1,66 +1,59 @@
 {
   "date": "2026-10-15",
   "base_main_sha": "61274127a0d41dd676bce01d3b4dad8fe11ad0c2",
-  "phase": "researching",
+  "phase": "final_source_review",
   "publication_ready": false,
   "items": [
     {
-      "id": "us-truck-bed-covers-cvd",
-      "date": "2026-10-14",
-      "title": "美国对中国皮卡货箱盖反补贴终裁",
-      "stage": "商务部终裁，最终损害裁决待作",
-      "summary": "美国商务部对相关产品反补贴率为11.60%至142.11%，其他企业43.43%。",
-      "scope": "中国皮卡货箱盖对美出口",
-      "impact": "进口清关和保证金应按生产商对应税率核算。",
-      "deadline": "2026年10月14日宣布终裁，正式税令需等待损害程序。",
-      "importance": 5,
-      "sources": [
-        {
-          "label": "美国商务部公告",
-          "url": "https://www.trade.gov/final-affirmative-determination-countervailing-duty-investigation-truck-bed-covers-china"
-        }
-      ]
+      "id": "US-truck-CVD",
+      "title": "美商务部10月14日中国皮卡货箱盖CVD终裁",
+      "url": "https://www.trade.gov/final-affirmative-determination-countervailing-duty-investigation-truck-bed-covers-china",
+      "source_opened": true,
+      "stage": "待保持本期文内准确法律阶段"
     },
     {
-      "id": "usitc-solar-final-injury",
-      "date": "2026-10-14",
-      "jurisdiction": "美国",
-      "agency": "美国国际贸易委员会",
-      "title": "美国对印度、印尼、老挝晶硅光伏电池及组件作出损害肯定性终裁",
-      "stage": "产业损害肯定性终裁，反倾销和反补贴税令尚待商务部正式发布",
-      "summary": "美国国际贸易委员会在相关终裁调查中认定印度、印尼、老挝原产晶硅光伏电池和组件的倾销和受补贴进口对美国产业造成实质损害，商务部将据此签发税令。",
-      "scope": "印度、印尼、老挝原产晶硅光伏电池及组件对美贸易",
-      "impact": "设厂和采购企业应核对光伏电池实际生产地、组件来源及出口商对应税率，避免以转运地替代真实原产地。",
-      "deadline": "10月14日产业损害终裁；公开报告预计11月23日前公布；实际征税以正式税令为准。",
-      "importance": 5,
-      "sources": [
-        {
-          "label": "美国国际贸易委员会第26-147号公告",
-          "url": "https://www.usitc.gov/press_room/news_release/2026/er1014_69351.htm"
-        }
-      ]
+      "id": "US-solar-injury",
+      "title": "美USITC10月14日印度印尼老挝光伏双反产业损害终裁",
+      "url": "https://www.usitc.gov/press_room/news_release/2026/er1014_69351.htm",
+      "source_opened": true,
+      "stage": "待保持本期文内准确法律阶段"
+    },
+    {
+      "id": "EU-sanctions",
+      "title": "欧盟10月15日正式新增3人9实体反规避制裁",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/15/closing-loopholes-council-lists-individuals-and-entities-for-circumventing-eu-sanctions/",
+      "source_opened": true,
+      "stage": "待保持本期文内准确法律阶段"
+    },
+    {
+      "id": "UK-excavator-review",
+      "title": "英国10月15日对中国挖掘机启动NE0095、NE0096新出口商复审",
+      "url": "https://public-file.trade-remedies.service.gov.uk/case/ne0095",
+      "source_opened": true,
+      "stage": "待保持本期文内准确法律阶段"
+    },
+    {
+      "id": "US-wood-mouldings",
+      "title": "美国10月15日木制装饰线条CVD法院裁决修正",
+      "url": "https://www.federalregister.gov/documents/2026/10/15/2026-21038/wood-mouldings-and-millwork-products-from-the-peoples-republic-of-china-notice-of-court-decision-not",
+      "source_opened": true,
+      "stage": "待保持本期文内准确法律阶段"
     }
   ],
   "coverage": {
-    "US": "Trade.gov 14 Oct CVD final; USITC solar injury vote; mattresses sunset review",
-    "UK": "ECJU 12 Oct classification service paused; 14 Oct OGEL expanded",
-    "EU": "Methane imports proposed rule amendment dated 14 Oct",
-    "KR": "13 Oct external trade decree announced",
-    "JP": "JETRO new summary 14 Oct re Russian restrictions; previous issue covered",
-    "IN": "Search performed; no sufficiently verified new major regulatory decision",
-    "CA": "CITT active investigations checked; no new eligible decision found",
-    "AU": "Trade remedies bulletin checked; Oct14 records in previous issue"
+    "US": "已核验",
+    "EU": "已核验",
+    "UK": "已核验",
+    "JP": "已巡视未发现新增足够重要事项",
+    "KR": "已核验",
+    "IN": "已核验",
+    "CA": "已巡视未发现新增足够重要事项",
+    "AU": "已核验"
   },
-  "last_error": {
-    "stage": "research_checkpoint",
-    "tool": "mcp__GitHub__update_file",
-    "path": "trade-watch/drafts/2026-10-15.json",
-    "message": "This tool call was blocked by OpenAI's safety checks. Please double check what you are sending.",
-    "retries": 3
-  },
+  "last_error": null,
   "next_actions": [
-    "恢复完整研究断点，审核2026年10月15日候选资料",
-    "近7期去重及来源逐页核验",
-    "验证成功后再发布正文、首页、归档"
-  ]
+    "核验最终正文条数、事件级去重和URL",
+    "同步正式发布正文及入口并回读主分支"
+  ],
+  "timezone": "Asia/Shanghai"
 }
