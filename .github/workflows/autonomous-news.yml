@@ -4,6 +4,12 @@ on:
     - cron: '15 19,20,21 * * *'
       timezone: 'Asia/Shanghai'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/autonomous-news.yml'
+      - 'scripts/autonomous_news_research.py'
+      - 'scripts/test_autonomous_news.py'
 permissions:
   contents: write
   actions: write
@@ -12,8 +18,24 @@ concurrency:
   group: autonomous-tech-law-news
   cancel-in-progress: false
 jobs:
+  code_checks:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install offline test dependencies
+        run: python -m pip install 'requests>=2.32,<3' 'beautifulsoup4==4.13.4'
+      - name: Check research script and run offline unit tests
+        run: |
+          python -m py_compile scripts/autonomous_news_research.py
+          python -m unittest discover -s scripts -p 'test_autonomous_news.py' -v
+          python scripts/test_publish_news_from_draft.py
   publish:
-    if: github.repository == 'Cyberlawresearch/cyberlaw-research'
+    if: github.event_name != 'push' && github.repository == 'Cyberlawresearch/cyberlaw-research'
     runs-on: ubuntu-latest
     timeout-minutes: 48
     steps:
