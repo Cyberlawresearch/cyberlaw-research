@@ -1,43 +1,80 @@
 {
   "date": "2026-10-15",
   "base_main_sha": "61274127a0d41dd676bce01d3b4dad8fe11ad0c2",
-  "phase": "final_source_review",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
-      "id": "US-truck-CVD",
-      "title": "美商务部10月14日中国皮卡货箱盖CVD终裁",
-      "url": "https://www.trade.gov/final-affirmative-determination-countervailing-duty-investigation-truck-bed-covers-china",
-      "source_opened": true,
-      "stage": "待保持本期文内准确法律阶段"
+      "id": "us-china-truck-bed-covers-cvd-final",
+      "event_date": "2026-10-14",
+      "title": "美国对中国皮卡货箱盖作出反补贴终裁，个别税率最高142.11%",
+      "legal_stage": "反补贴最终肯定裁定；损害终裁程序另行完成",
+      "jurisdiction": "美国",
+      "importance": 5,
+      "sources": [
+        "https://www.trade.gov/final-affirmative-determination-countervailing-duty-investigation-truck-bed-covers-china"
+      ],
+      "fact": "美国商务部10月14日宣布对中国皮卡货箱盖反补贴调查作出肯定性终裁。列示企业税率包括11.60%、77.17%和142.11%，其他企业适用43.43%的终裁幅度；最终征税命令须结合美国国际贸易委员会的损害裁定，不能将商务部终裁等同于当日已经签发新征税令。",
+      "impact": "报价和税负核算应按具体生产商与出口商核对对应幅度、现有现金保证金及未来税令，不能以43.43%的其他企业税率覆盖获单独税率或不利事实推定企业。",
+      "key_date": "10月14日宣布商务部终裁；后续产业损害裁决和正式征税令日期需另行核对。"
     },
     {
-      "id": "US-solar-injury",
-      "title": "美USITC10月14日印度印尼老挝光伏双反产业损害终裁",
-      "url": "https://www.usitc.gov/press_room/news_release/2026/er1014_69351.htm",
-      "source_opened": true,
-      "stage": "待保持本期文内准确法律阶段"
+      "id": "us-india-indonesia-laos-solar-injury",
+      "event_date": "2026-10-14",
+      "title": "美国认定印度、印尼及老挝光伏电池及组件进口损害本国产业",
+      "legal_stage": "反倾销和反补贴最终产业损害肯定性裁定",
+      "jurisdiction": "美国",
+      "importance": 5,
+      "sources": [
+        "https://www.usitc.gov/press_room/news_release/2026/er1014_69351.htm"
+      ],
+      "fact": "美国国际贸易委员会10月14日就印度、印度尼西亚及老挝原产晶体硅光伏电池（包括组装成组件）双反调查作出肯定性最终损害裁定。这是产业损害的最终判断，具体AD/CVD税令及海关征收仍由商务部按程序发布。",
+      "impact": "涉及中国企业境外工厂的采购与销售团队应核对电池制造地、组件实质生产过程、供货商税率和交易原产地材料，避免仅以出口港所在国判断适用税令。",
+      "key_date": "10月14日USITC最终投票；正式税令以美国商务部后续公告为准。"
     },
     {
-      "id": "EU-sanctions",
-      "title": "欧盟10月15日正式新增3人9实体反规避制裁",
-      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/15/closing-loopholes-council-lists-individuals-and-entities-for-circumventing-eu-sanctions/",
-      "source_opened": true,
-      "stage": "待保持本期文内准确法律阶段"
+      "id": "eu-anti-circumvention-sanctions-20261015",
+      "event_date": "2026-10-15",
+      "title": "欧盟将三名个人及九家涉嫌协助规避对俄制裁的企业列入名单",
+      "legal_stage": "新增制裁名单已经通过并刊载于欧盟公报",
+      "jurisdiction": "欧盟",
+      "importance": 5,
+      "sources": [
+        "https://www.consilium.europa.eu/en/press/press-releases/2026/10/15/closing-loopholes-council-lists-individuals-and-entities-for-circumventing-eu-sanctions/",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202602333"
+      ],
+      "fact": "欧盟理事会10月15日正式新增三名个人和九家实体，涉及俄罗斯物流商MOVERS GROUP、清关代理DT INIER、土耳其贸易中间商，以及位于阿联酋、印度和塞舌尔的航运及石油贸易实体。该决定以正式名单限制交易，不是新的行业调查或一般性政策声明。",
+      "impact": "立即重新筛查货代、清关代理、船舶管理人、最终买方和受益所有权；欧盟管辖内原则上禁止向列名对象提供资金或经济资源，相关付款、运输及代理安排应逐单核对。",
+      "key_date": "10月15日理事会通过并公布新列名，按正式法律文件规定适用。"
     },
     {
-      "id": "UK-excavator-review",
-      "title": "英国10月15日对中国挖掘机启动NE0095、NE0096新出口商复审",
-      "url": "https://public-file.trade-remedies.service.gov.uk/case/ne0095",
-      "source_opened": true,
-      "stage": "待保持本期文内准确法律阶段"
+      "id": "uk-chinese-excavators-new-exporter-review",
+      "event_date": "2026-10-15",
+      "title": "英国对中国挖掘机启动NE0095和NE0096两项新出口商复审",
+      "legal_stage": "两宗新出口商复审正式立案",
+      "jurisdiction": "英国",
+      "importance": 4,
+      "sources": [
+        "https://public-file.trade-remedies.service.gov.uk/case/ne0095",
+        "https://public-file.trade-remedies.service.gov.uk/case/ne0096"
+      ],
+      "fact": "英国TRA于10月15日分别启动NE0095、NE0096两宗中国特定挖掘机新出口商复审，申请企业均为Liebherr Machinery Dalian Co., Ltd.，涉案商品代码8429521000。新出口商复审将评估申请企业在既有贸易救济措施下的适用待遇，并非调查启动即获新税率或免税。",
+      "impact": "进口商应继续按现有适用税率和申报规则操作，申请方按案件页面提交非保密证据及利害关系人材料；后续是否取得特定企业税率有待TRA结论。",
+      "key_date": "两案均于10月15日立案；后续答复期限按各案件通知与登记页面执行。"
     },
     {
-      "id": "US-wood-mouldings",
-      "title": "美国10月15日木制装饰线条CVD法院裁决修正",
-      "url": "https://www.federalregister.gov/documents/2026/10/15/2026-21038/wood-mouldings-and-millwork-products-from-the-peoples-republic-of-china-notice-of-court-decision-not",
-      "source_opened": true,
-      "stage": "待保持本期文内准确法律阶段"
+      "id": "us-wood-mouldings-cvd-amended",
+      "event_date": "2026-10-15",
+      "title": "美国调整中国木制装饰线条反补贴现金保证金率至8.89%",
+      "legal_stage": "法院裁决后修订反补贴行政复审最终结果",
+      "jurisdiction": "美国",
+      "importance": 4,
+      "sources": [
+        "https://www.federalregister.gov/documents/2026/10/15/2026-21038/wood-mouldings-and-millwork-products-from-the-peoples-republic-of-china-notice-of-court-decision-not"
+      ],
+      "fact": "美国商务部10月15日依据国际贸易法院9月23日判决发布修订结果，确认China Cornici Co., Ltd.和RaoPing HongRong Handicrafts Co., Ltd.纳入2020—2021年反补贴复审，两家企业适用8.89%的现金保证金率。已经完成清算的相关历史进口并不因此自动重新清算。",
+      "impact": "应按进口日期、生产商与出口商身份分开处理未来现金保证金和历史清算；需与反倾销税和其他加征关税分别核算，不得将8.89%理解为全部进口税负。",
+      "key_date": "10月15日公布修订结果，海关执行仍应结合是否上诉及商务部后续指令。"
     }
   ],
   "coverage": {
@@ -52,8 +89,22 @@
   },
   "last_error": null,
   "next_actions": [
-    "核验最终正文条数、事件级去重和URL",
-    "同步正式发布正文及入口并回读主分支"
+    "正式写入正文，更新首页归档并验证部署"
   ],
-  "timezone": "Asia/Shanghai"
+  "timezone": "Asia/Shanghai",
+  "final_source_review": {
+    "checked_urls": 7,
+    "event_level_dedup": "已对最近7期去重；本次仅选此前未正式发布事项",
+    "current_main_issue": "2026-10-14",
+    "checked_jurisdictions": [
+      "US",
+      "EU",
+      "UK",
+      "JP",
+      "KR",
+      "IN",
+      "CA",
+      "AU"
+    ]
+  }
 }
