@@ -1,17 +1,17 @@
 {
   "date": "2026-10-15",
   "pages": {
-    "brief": "articles/2026-10-14-tech-law-brief.html",
+    "brief": "articles/2026-10-15-tech-law-brief.html",
     "paper": "articles/2026-10-15-yeung-hypernudge.html",
     "classic": "articles/2026-10-15-locke-two-treatises-government.html",
     "newworks": "articles/2026-10-15-new-works.html"
   },
   "page_dates": {
-    "brief": "2026-10-14",
+    "brief": "2026-10-15",
     "paper": "2026-10-15",
     "classic": "2026-10-15",
     "newworks": "2026-10-15"
   },
-  "news_count": 23,
+  "news_count": 19,
   "newworks_count": 3
 }
