@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-15",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-15-yeung-hypernudge.html",
+  "selection": "Karen Yeung, ‘Hypernudge’: Big Data as a mode of regulation by design",
+  "bibliography": {
+    "type": "article",
+    "author": "Karen Yeung",
+    "originalTitle": "‘Hypernudge’: Big Data as a mode of regulation by design",
+    "journal": "Information, Communication & Society",
+    "year": "2017",
+    "volume": "20",
+    "issue": "1",
+    "pages": "118–136",
+    "doi": "10.1080/1369118X.2016.1186713",
+    "url": "https://kclpure.kcl.ac.uk/portal/en/publications/hypernudge-big-data-as-a-mode-of-regulation-by-design/",
+    "cnTitle": "“超级助推”：大数据作为设计型规制方式"
+  },
+  "versions": {
+    "formal": "Information, Communication & Society 20(1) (2017), 118–136; published PDF with journal cover, 20 PDF pages",
+    "accepted_manuscript": "King's College London lists a separately available accepted author manuscript; first online 22 May 2016"
+  },
+  "sources": [
+    "https://kclpure.kcl.ac.uk/portal/en/publications/hypernudge-big-data-as-a-mode-of-regulation-by-design/",
+    "https://law.unimelb.edu.au/__data/assets/pdf_file/0003/3290385/Yeung-2017-Hypernudge-Big-Data-as-a-mode-of-regulation-by-.pdf",
+    "https://doi.org/10.1080/1369118X.2016.1186713"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-09-10-solove-privacy-self-management.html",
+    "articles/2026-09-21-calo-digital-market-manipulation.html"
+  ],
+  "timeline": null,
+  "body_length": 5485,
+  "checked_at": "2026-10-16T17:01:06.346+08:00",
+  "base_main_sha": "5169b6ec61f726d8400a7f865115304e33966ad8",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}
