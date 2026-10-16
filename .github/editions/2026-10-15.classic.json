@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-15",
+  "column": "classic",
+  "state": "verified",
+  "status": "verified",
+  "phase": "deployment_check",
+  "book": "John Locke（洛克）：《政府论两篇》",
+  "bibliography": {
+    "author": "John Locke",
+    "originalTitle": "Two Treatises of Government",
+    "publisher": "Awnsham Churchill",
+    "year": "1690",
+    "edition": "1690年初版（题名页年份）"
+  },
+  "base_main_sha": "7bb61466bef7a331442b529e021f98c64612ea89",
+  "target_path": "articles/2026-10-15-locke-two-treatises-government.html",
+  "sources": [
+    "https://davidmhart.com/liberty/Books/1690-Locke_TwoTreatises/Locke_TwoTreatises1690-ebook.html",
+    "https://www.grubstreetproject.headlesschicken.ca/publications/R2930/",
+    "https://en.wikisource.org/wiki/Two_Treatises_of_Government_(1764)",
+    "https://www.gutenberg.org/files/7370/7370-h/7370-h",
+    "https://academic.oup.com/edited-volume/34715/chapter-abstract/296450019",
+    "https://books.google.com/books?id=iwJuQgAACAAJ",
+    "https://academic.oup.com/book/5585",
+    "https://onlinelibrary.wiley.com/doi/10.1111/theo.12022",
+    "https://www.cambridge.org/core/books/god-locke-and-equality/4D826B46BF5FAFBC33EFB09E655BA320"
+  ],
+  "verification": {
+    "original_1690_imprint": true,
+    "first_treatise_eleven_chapters_checked": true,
+    "second_treatise_nineteen_chapters_checked": true,
+    "full_original_systematic_review": true,
+    "editions_distinguished": true,
+    "original_arguments_checked": true,
+    "full_history_deduplication": true,
+    "representative_criticism_sourced": true,
+    "natural_chinese_reviewed": true,
+    "modern_digital_connections_labeled": true,
+    "final_body_complete": true
+  },
+  "history_dedup": {
+    "passed": true,
+    "checked_against": [
+      "classics.html",
+      "classics-history.html",
+      "recent classic commits"
+    ],
+    "selected_new_work": "John Locke, Two Treatises of Government"
+  },
+  "summary": "前篇反驳父权君权及继承正当性的主张，后篇论证自然法、财产、同意、权力界限与政府解体，并区分麦克弗森、塔利、阿尼尔等后世评价。",
+  "homepage_summary": "John Locke（洛克）：《政府论两篇》",
+  "classics_summary": "John Locke（洛克）：《政府论两篇》",
+  "archive_summary": "最新：John Locke（洛克）：《政府论两篇》",
+  "checked_at": "2026-10-16T17:02:39+08:00",
+  "last_error": null,
+  "publication": {
+    "deployment_claim": false,
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_result": null,
+    "live_checks": null
+  }
+}
