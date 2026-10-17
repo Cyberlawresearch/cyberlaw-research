@@ -1,0 +1,428 @@
+{
+  "date": "2026-10-17",
+  "column": "brief",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-17-tech-law-brief.html",
+  "news_count": 19,
+  "distribution": {
+    "domestic": 6,
+    "foreign": 13
+  },
+  "mode": "fact_only",
+  "analysis_pending": true,
+  "published_as_backfill": false,
+  "actual_release_at": null,
+  "checked_at": "2026-10-17T23:45:55.183+08:00",
+  "last_news_scan_at": "2026-10-17T23:45:55.183+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "natural_chinese_reviewed": true,
+    "foreign_layout": true,
+    "local_language_scan_korea_japan_vietnam": true
+  },
+  "domestic_source_coverage": [
+    {
+      "source_group": "中央宏观政策及立法",
+      "source_name": "新华社10月16日国务院常务会议原文、第一财经价格法草案专题",
+      "notes": "两项不同的会议实质动作分别核实程序性质",
+      "found": 2,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    },
+    {
+      "source_group": "地方数据跨境与标准",
+      "source_name": "上海网信办、市数据局文件经人民财讯披露；国家数据局10月15日数标委第二批标准需求",
+      "notes": "逐项核验负面清单/标准申报与正式生效的区别",
+      "found": 2,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    },
+    {
+      "source_group": "地方生成式人工智能监管",
+      "source_name": "网信上海10月15日登记信息公告及10月16日转述",
+      "notes": "核对新增2款、累计255款及上线编号提示",
+      "found": 1,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    },
+    {
+      "source_group": "国内企业AI及安全披露",
+      "source_name": "Reuters采访腾讯混元相关企业回应、Swarmchasers调查线索",
+      "notes": "区分模型测试、意外联网与未被证实的攻击指控",
+      "found": 1,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    },
+    {
+      "source_group": "中国中央部委与司法机关",
+      "source_name": "中国政府网、最高法及相关司法平台、工信部、网信办近72小时专项检索",
+      "notes": "排除已于10月15—16日报道的技术出口、涉军网信、AI安全评测及地方裁判",
+      "found": 0,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    },
+    {
+      "source_group": "国内主流和财经媒体",
+      "source_name": "新华社、人民网、央视、第一财经、人民财讯、澎湃与新京报相关主题检索",
+      "notes": "独立反查政策征求意见、监管处罚、网络安全和算力新闻",
+      "found": 0,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    },
+    {
+      "source_group": "国内地方数字经济与算力",
+      "source_name": "京沪粤浙苏川渝蒙主要数据/财政/通信信息与新闻检索",
+      "notes": "内蒙古领导活动及地方词元中心全国盘点已在10月16日入选，不再重收",
+      "found": 0,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    },
+    {
+      "source_group": "美国州执法：电商与隐私",
+      "source_name": "得州总检察长10月16日与Temu和解公告",
+      "notes": "具体对美境内存储、访问限制和商品检测义务及和解阶段",
+      "found": 1,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    },
+    {
+      "source_group": "美国州执法：算力基础设施",
+      "source_name": "得州总检察长10月15日发函156个数据中心公告",
+      "notes": "延续9月已启动用水调查，新增156封正式函件",
+      "found": 1,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    },
+    {
+      "source_group": "美国联邦立法与模型治理",
+      "source_name": "Reuters北京时间10月17日关于Anthropic向国会提出立法草案报道",
+      "notes": "企业向议员提出构想而非法案通过",
+      "found": 1,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    },
+    {
+      "source_group": "美国联邦司法与消费广告",
+      "source_name": "Reuters10月16日第九巡回特斯拉案；法院裁判来源",
+      "notes": "撤销集体认证但不终局判断自动驾驶宣传是否违法",
+      "found": 1,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    },
+    {
+      "source_group": "美国通信行政法及金融司法",
+      "source_name": "Reuters10月16日联邦第五巡回FCC管理公司授权裁定、Gemini和解申请裁定",
+      "notes": "通信资金授权案及衍生品民事和解复审属于两个独立事件",
+      "found": 2,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    },
+    {
+      "source_group": "欧洲成员国和跨境隐私机关",
+      "source_name": "法国CNIL10月16日两条官方新文件、英国ICO和卢森堡CNPD联合研究",
+      "notes": "一份金融数据资产治理研究、一份职业邮箱推断合法利益指引",
+      "found": 2,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    },
+    {
+      "source_group": "国际广告生态与监控风险",
+      "source_name": "Citizen Lab10月15日AdFection原始调查报告",
+      "notes": "核对为研究团队的公开技术发现，避免法律裁判化及技术细节过度",
+      "found": 1,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    },
+    {
+      "source_group": "日韩越多语言官方和专业媒体",
+      "source_name": "日本PPC会议、日文ITmedia汉堡王泄露披露、韩国PIPC及越南数据法越文官网/主题检索",
+      "notes": "日本新披露重大会员数据泄露，韩国/越南未找到新且未重复的合格事件",
+      "found": 1,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    },
+    {
+      "source_group": "印度平台权利与司法",
+      "source_name": "The Indian Express10月17日独立采访并核对15日印度最高法院命令披露",
+      "notes": "确认15日裁判、17日公开及儿童互联网权利结论",
+      "found": 1,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    },
+    {
+      "source_group": "东南亚网络安全机构",
+      "source_name": "新加坡CSA10月16日PAN-OS漏洞警报及第六届反勒索软件国际合作峰会官方讲话",
+      "notes": "核实实际利用预警和新国际框架工作，区分倡议和有约束力规则",
+      "found": 2,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    },
+    {
+      "source_group": "澳大利亚与其他国际法域",
+      "source_name": "澳大利亚OAIC/ACCC近期主题、加拿大隐私/数字政策以及拉丁美洲AI治理主题检索",
+      "notes": "未发现新、可靠、且不与过去7日重复的高优先级事项",
+      "found": 0,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    },
+    {
+      "source_group": "发布前主题遗漏复核",
+      "source_name": "过去24—72小时中美欧亚科技法司法/数据跨境/AI/网络安全跨主题反向搜索及原文复查",
+      "notes": "最新重点消息包括17日披露的印度法院裁定与Anthropic联邦草案，检索断点按实际时刻",
+      "found": 0,
+      "status": "checked",
+      "checked_at": "2026-10-17T23:45:55.183+08:00"
+    }
+  ],
+  "items": [
+    {
+      "id": "research-item-1",
+      "domestic": true,
+      "date": "2026-10-16",
+      "jurisdiction": "中国",
+      "agency": "国务院常务会议",
+      "title": "国务院常务会议听取“人工智能+”进展汇报，部署算电协同、数据供给和分行业安全治理",
+      "original_title": "李强主持召开国务院常务会议",
+      "source_name": "新华社",
+      "url": "https://www.news.cn/20261016/a446639c01b54dc2b4b77347ad33343a/c.html",
+      "fact": "10月16日召开的国务院常务会议听取“人工智能+”行动进展情况汇报，要求以应用牵引技术创新，促进算电协同、增加高质量数据供给，并围绕实体经济加强供需衔接、联合研发和中试验证。会议同时强调统筹发展与安全，按行业分级分类施策，开展风险研判评估。此次为国务院常务会议对既有行动的部署与督促，并非新出台的人工智能法律或强制性标准。"
+    },
+    {
+      "id": "research-item-2",
+      "domestic": true,
+      "date": "2026-10-16",
+      "jurisdiction": "中国",
+      "agency": "国务院常务会议、全国人大常委会",
+      "title": "国常会原则通过价格法修正草案并拟提请人大审议，强调治理平台低价无序竞争",
+      "original_title": "国常会：要持续规范平台经济领域价格竞争行为，引导企业不断提升产品和服务价值",
+      "source_name": "第一财经（援引国务院常务会议通报）",
+      "url": "https://www.yicai.com/brief/103397158.html",
+      "fact": "国务院常务会议10月16日讨论并原则通过《中华人民共和国价格法（修正草案）》，决定将草案提请全国人大常委会审议。会议提出完善政府定价程序、不正当价格行为认定标准和法律责任，健全行业成本调查、制止低价倾销等配套规则，持续规范平台经济领域价格竞争。草案仍待全国人大常委会审议，会议原则通过不等于《价格法》修正已经生效。"
+    },
+    {
+      "id": "research-item-3",
+      "domestic": true,
+      "date": "2026-10-16",
+      "jurisdiction": "中国·上海",
+      "agency": "上海市网信办、上海市数据局",
+      "title": "上海印发数据跨境流动便利化十项举措，推进负面清单备案和全程网上办理",
+      "original_title": "《上海市推动高水平对外开放 促进数据跨境流动便利化的若干举措》印发",
+      "source_name": "人民财讯（依据上海市网信办、市数据局文件）",
+      "url": "https://www.stcn.com/article/detail/4222085.html",
+      "fact": "上海市网信办、上海市数据局10月16日公布《上海市推动高水平对外开放 促进数据跨境流动便利化的若干举措》，提出十项工作安排。文件要求衔接数据出境安全评估、个人信息出境标准合同、个人信息保护认证与数据出境负面清单制度，并依托“一网通办”升级数据出境服务专区，推动使用负面清单开展数据出境活动的备案全程网上办理。文件还提出探索金融、商贸、医疗健康场景的匿名化应用试点和跨境数据服务平台建设，相关试点并非对个人信息保护义务的普遍豁免。"
+    },
+    {
+      "id": "research-item-4",
+      "domestic": true,
+      "date": "2026-10-15",
+      "jurisdiction": "中国",
+      "agency": "全国数据标准化技术委员会、国家数据局",
+      "title": "全国数标委公布2026年第二批数据领域国家标准需求，10月31日截止申报",
+      "original_title": "关于发布2026年第二批数据领域国家标准需求的通知",
+      "source_name": "国家数据局（全国数标委通知）",
+      "url": "https://www.nda.gov.cn/sjj/zwgk/tzgg/1015/20261015155821338735862_mobile.html",
+      "fact": "国家数据局官网10月15日发布全国数据标准化技术委员会关于2026年第二批数据领域国家标准需求的通知，要求委员、工作组和有关单位围绕拟研制标准及技术文件申报项目。申报须于10月31日前通过全国数标委系统办理，技术文件草案按照通知要求另行提交。通知落款为10月11日，属于新一批标准需求和项目申报安排，尚不意味着清单所涉国家标准已经立项通过或正式实施。"
+    },
+    {
+      "id": "research-item-5",
+      "domestic": true,
+      "date": "2026-10-16",
+      "jurisdiction": "中国",
+      "agency": "腾讯混元、第三方人工智能安全研究者",
+      "title": "腾讯回应第三方模型评测智能体出现非预期浏览行为，称未发现故意针对目标",
+      "original_title": "China's Tencent says AI agents showed unintended browsing behaviour",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/retail-consumer/chinas-tencent-says-ai-agents-showed-unintended-browsing-behaviour-2026-10-16/",
+      "fact": "腾讯混元团队10月16日回应人工智能安全研究者关于智能体反复访问高德地图信息的调查，表示相关行为出现在其用于评测第三方模型的智能体中，不是混元模型发起。腾讯称内部复核未发现故意针对目标或协调攻击的证据，并承认出现了非预期的网络浏览行为。研究者此前根据基础设施和访问记录提出质疑，但相关报道没有确认目标网站发生数据泄露、监管处罚或已认定的网络入侵。"
+    },
+    {
+      "id": "research-item-6",
+      "domestic": true,
+      "date": "2026-10-15",
+      "jurisdiction": "中国·上海",
+      "agency": "上海市网信办",
+      "title": "上海公布10月15日生成式AI服务登记结果，新增2款、累计255款",
+      "original_title": "上海市生成式人工智能服务登记信息公告（10月15日）",
+      "source_name": "网信上海（媒体转载）",
+      "url": "https://m.mysteel.com/a/26101608/F08465BA1D641379_abc.html",
+      "fact": "上海市网信办10月15日发布生成式人工智能服务登记信息公告，截至当日新增2款完成登记的生成式人工智能服务，累计登记数量达到255款。公告提示已上线的相关应用或功能在显著位置或产品详情页面标明上线编号，并依照生成合成内容标识规则加注相应标识。本次披露属于地方服务登记信息更新，不等于所登记模型全部通过统一的安全性能认证。"
+    },
+    {
+      "id": "research-item-7",
+      "domestic": false,
+      "date": "2026-10-16",
+      "jurisdiction": "美国·得克萨斯州",
+      "agency": "州总检察长办公室、Temu",
+      "title": "得州与Temu达成和解，要求当地用户数据存储于美国控制的服务器并加强商品安全检测",
+      "original_title": "Attorney General Paxton Secures First-of-Its-Kind Settlement with Temu to Protect Texans’ Data from the CCP and to Protect Consumers from Toxic Products from China",
+      "source_name": "Texas Office of the Attorney General",
+      "url": "https://www.texasattorneygeneral.gov/news/releases/attorney-general-paxton-secures-first-its-kind-settlement-temu-protect-texans-data-ccp-and-protect",
+      "fact": "得克萨斯州总检察长10月16日宣布就针对跨境电商Temu的数据隐私及商品安全诉讼达成和解，要求其将得州居民个人数据存储在美国境内由美国主体拥有和控制的服务器上，并限制中国境内人员和实体访问，必要业务活动有例外。和解还规定Temu向州政府支付300万美元，并开展年度独立商品安全检测；违反部分数据安全义务可能产生按年度计算的罚款。该安排源于诉讼和解及相应禁令，不能把州方此前的指控直接表述为法院已经全部认定成立。"
+    },
+    {
+      "id": "research-item-8",
+      "domestic": false,
+      "date": "2026-10-15",
+      "jurisdiction": "美国·得克萨斯州",
+      "agency": "州总检察长办公室、数据中心开发项目",
+      "title": "得州要求156个数据中心开发项目补报用水信息，扩大算力设施资源合规调查",
+      "original_title": "Attorney General Ken Paxton Sends Letters to Data Center Developments Across Texas to Ensure Reporting of Water Use and Compliance with Texas Law",
+      "source_name": "Texas Office of the Attorney General",
+      "url": "https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-sends-letters-data-center-developments-across-texas-ensure-reporting",
+      "fact": "得克萨斯州总检察长10月15日宣布向全州156个数据中心开发项目发函，要求其提交最新、准确的用水数据。该行动延续此前针对未回应州水资源开发委员会用水调查的多个数据中心项目开展的合规调查，涉及多个县的建设项目。此次为依法要求提供信息及持续调查，并未公布156个项目均已构成违法，也不是发布新的数据中心用水许可制度。"
+    },
+    {
+      "id": "research-item-9",
+      "domestic": false,
+      "date": "2026-10-17",
+      "jurisdiction": "美国·联邦人工智能立法",
+      "agency": "Anthropic、美国国会议员",
+      "title": "Anthropic据报向美国国会议员提出前沿AI安全立法草案，建议司法审查重大风险模型暂停",
+      "original_title": "Anthropic quietly pitches its own AI safety bill to lawmakers, Politico reports",
+      "source_name": "Reuters（转引Politico调查报道并采访Anthropic）",
+      "url": "https://www.reuters.com/legal/litigation/anthropic-quietly-pitches-its-own-ai-safety-bill-lawmakers-politico-reports-2026-10-16/",
+      "fact": "路透社北京时间10月17日报道，Anthropic代表向美国国会议员介绍了其拟议的前沿人工智能安全法案方案，要求大型模型接受独立风险评估、披露评测结果，并在出现明确且迫近的重大风险时向主管部门报告。报道援引的拟议门槛包括超过10亿美元的可预见损害，或造成50人以上死亡或重伤的风险；有关模型暂停将涉及商务部门和法院的特定程序。该文件属于企业向议员提出的建议方案，尚非国会正式通过的法律，也不是政府已经作出的模型暂停命令。"
+    },
+    {
+      "id": "research-item-10",
+      "domestic": false,
+      "date": "2026-10-17",
+      "jurisdiction": "美国·联邦第九巡回上诉法院",
+      "agency": "美国联邦第九巡回上诉法院、特斯拉",
+      "title": "美国上诉法院撤销特斯拉自动驾驶宣传诉讼集体认证，虚假宣传争议尚未实体裁判",
+      "original_title": "US appeals court blocks class actions over Tesla's self-driving claims",
+      "source_name": "Reuters（援引美国第九巡回上诉法院裁定）",
+      "url": "https://www.reuters.com/business/media-telecom/us-appeals-court-blocks-class-actions-over-teslas-self-driving-claims-2026-10-16/",
+      "fact": "美国联邦第九巡回上诉法院10月16日作出裁定，撤销允许加利福尼亚购车者就特斯拉自动驾驶功能宣传以集体诉讼形式继续追诉的下级法院认证决定。合议庭认为购车者实际接触过哪些宣传内容存在大量个人差异，现有证据不足以维持集体认证。案件所涉宣传是否构成欺诈仍在诉讼中，上诉法院此次仅处理集体诉讼程序资格，不是宣告特斯拉宣传行为合法。"
+    },
+    {
+      "id": "research-item-11",
+      "domestic": false,
+      "date": "2026-10-17",
+      "jurisdiction": "印度",
+      "agency": "印度最高法院",
+      "title": "印度最高法院确认儿童享有互联网使用基本权利，反对以全面禁网代替儿童保护",
+      "original_title": "Internet fundamental right, blanket curbs on children no answer: Supreme Court",
+      "source_name": "The Indian Express（援引10月15日最高法院命令）",
+      "url": "https://indianexpress.com/article/legal-news/children-fundamental-right-internet-supreme-court-blanket-ban-10925649/",
+      "fact": "印度最高法院10月15日就社会平台传播儿童性剥削与虐待影像材料的公益诉讼作出命令，相关裁判于10月17日公开。法院援引印度宪法第19条和第21条，指出儿童也享有通过互联网获取信息、表达及参与生活的基本权利，全面禁止儿童上网并非妥当解决路径。裁判讨论平台删除违法内容、识别报告机制和儿童保护措施，不能将其理解为允许平台不受限制向未成年人提供所有网络服务。"
+    },
+    {
+      "id": "research-item-12",
+      "domestic": false,
+      "date": "2026-10-15",
+      "jurisdiction": "美国·联邦第五巡回上诉法院",
+      "agency": "美国联邦第五巡回上诉法院、联邦通信委员会",
+      "title": "美国上诉法院否定FCC设立普遍服务基金管理公司的授权基础，涉每年约90亿美元补贴",
+      "original_title": "US appeals court invalidates federal $9 billion telecom subsidy fund",
+      "source_name": "Reuters（援引美国第五巡回上诉法院裁定）",
+      "url": "https://www.reuters.com/legal/government/us-appeals-court-invalidates-federal-9-billion-telecom-subsidy-fund-2026-10-16/",
+      "fact": "美国联邦第五巡回上诉法院10月15日裁定，联邦通信委员会1997年设立普遍服务管理公司并授权其征收相关缴费的做法缺乏国会明确授权，违反《政府公司管理法》要求。有关机制支持农村、低收入地区的通信服务，资金规模约每年90亿美元；联邦通信委员会表示正在评估应对选项。裁定并非宣布所有普遍服务补贴当天立即停止，官方表示有关命令最早也要在两个月后才生效。"
+    },
+    {
+      "id": "research-item-13",
+      "domestic": false,
+      "date": "2026-10-16",
+      "jurisdiction": "法国、英国、卢森堡",
+      "agency": "法国CNIL、英国ICO、卢森堡CNPD",
+      "title": "法国、英国及卢森堡隐私监管机关联合发布金融数据资产估值和合规治理研究",
+      "original_title": "De la protection des données à la création de valeur en finance : des autorités européennes publient une étude et des bonnes pratiques",
+      "source_name": "Commission nationale de l'informatique et des libertés (CNIL)",
+      "url": "https://www.cnil.fr/fr/protection-donnees-valeur-finance-etude-autorites-europeennes",
+      "fact": "法国数据保护机关CNIL于10月16日会同英国ICO和卢森堡CNPD发布联合研究，讨论个人信息保护、数据资产估值、财务会计、并购交易和企业治理之间的关系。报告提出数据质量、合法处理、网络韧性及GDPR合规状况会影响数据资产带来的实际价值，面向金融机构和其他以数据为重要资产的企业提供实践建议。研究属于跨国监管机关发布的分析和最佳实践，不是新的GDPR授权处理依据或直接可执行的行政命令。"
+    },
+    {
+      "id": "research-item-14",
+      "domestic": false,
+      "date": "2026-10-16",
+      "jurisdiction": "法国",
+      "agency": "法国数据保护机关CNIL",
+      "title": "法国CNIL明确企业邮箱地址推断与营销使用的GDPR条件，强调公开数据仍受保护",
+      "original_title": "Reconstitution d’adresses électroniques professionnelles : dans quel cadre est-ce autorisé ?",
+      "source_name": "Commission nationale de l'informatique et des libertés (CNIL)",
+      "url": "https://www.cnil.fr/fr/reconstitution-adresses-professionnelles-quel-cadre",
+      "fact": "法国CNIL10月16日公布职业电子邮箱地址推断处理的法律指引，解释企业根据个人姓名、任职组织及已知邮箱命名格式推测联系邮箱时仍须遵守GDPR。监管机关指出，处理可能在满足真实合法目的、合理预期、利益衡量及适当保护措施时依据合法利益进行，并需同时遵守相应的商业营销规则。公开可见的姓名及组织资料不能直接免除数据保护义务；本次属于主管机关规则解释，并非颁布新的欧盟条例。"
+    },
+    {
+      "id": "research-item-15",
+      "domestic": false,
+      "date": "2026-10-15",
+      "jurisdiction": "加拿大·国际数字广告产业",
+      "agency": "多伦多大学Citizen Lab、广告技术企业",
+      "title": "Citizen Lab披露利用定向广告传播零点击商业间谍软件的调查，涉及半岛电视台设备",
+      "original_title": "Exposing AdFection: How Discover-Tech Turned Targeted Ads Into a Pipeline for Zero-Click Mercenary Spyware",
+      "source_name": "University of Toronto Citizen Lab",
+      "url": "https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware/",
+      "fact": "多伦多大学Citizen Lab于10月15日发表调查，称确认半岛电视台部分设备遭遇通过定向网络广告投送的商业间谍软件感染，并追溯相关广告技术服务商和第三方监控企业的参与。研究人员分析大量广告竞价记录，指出定向广告基础设施可能被用于跨网站识别用户并对特定目标设备实施无需点击的攻击。有关结果是独立研究机构的技术归因与公开调查，并不等同于法院已作出刑事定罪或所有曝光用户均遭感染。"
+    },
+    {
+      "id": "research-item-16",
+      "domestic": false,
+      "date": "2026-10-15",
+      "jurisdiction": "日本",
+      "agency": "Burger King Japan日本运营公司",
+      "title": "日本汉堡王披露官方App会员系统遭入侵，约1118万条个人信息外泄",
+      "original_title": "バーガーキング公式アプリに不正アクセス　会員情報約1118万件が漏えい　氏名や電話番号、生年月日など",
+      "source_name": "ITmedia Mobile（依据BK Japan官方公告）",
+      "url": "https://www.itmedia.co.jp/mobile/articles/2610/15/news101.html",
+      "fact": "日本汉堡王运营公司10月15日通报，官方App会员信息管理系统遭第三方未经授权访问，约1118万条会员信息泄露，涉及姓名、电子邮箱、电话、出生日期以及订单使用记录等信息。公司称入侵发生在10月2日至7日，13日确认泄露，随后封锁异常访问并委托外部机构调查。公司表示不保存用户信用卡号码，暂未确认密码泄露或由本次事件造成的后续滥用；上述范围与调查状态均以公司当前披露为准。"
+    },
+    {
+      "id": "research-item-17",
+      "domestic": false,
+      "date": "2026-10-16",
+      "jurisdiction": "新加坡",
+      "agency": "新加坡网络安全局（CSA）",
+      "title": "新加坡CSA警告Palo Alto防火墙软件漏洞已有实际利用，敦促尽快安装安全更新",
+      "original_title": "Active Exploitation of Vulnerability in Palo Alto Networks Products",
+      "source_name": "Cyber Security Agency of Singapore",
+      "url": "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-143/",
+      "fact": "新加坡网络安全局10月16日发布正式安全警报，确认业界报告Palo Alto Networks PAN-OS管理界面严重漏洞已遭实际利用。官方通知指出受影响设备可能面临高权限远程代码执行风险，涉及特定软件版本，建议管理员尽快安装厂商修复更新。警报是对已披露漏洞及在野利用的安全提醒，不能据此推断新加坡所有部署该类防火墙的机构均已发生数据泄露。"
+    },
+    {
+      "id": "research-item-18",
+      "domestic": false,
+      "date": "2026-10-16",
+      "jurisdiction": "新加坡·跨国网络安全合作",
+      "agency": "新加坡网络安全局、国际反勒索软件倡议",
+      "title": "新加坡第六届国际反勒索软件峰会公布共同韧性框架进展，强调政府和企业协同",
+      "original_title": "Address by Minister Josephine Teo at the 6th Counter Ransomware Initiative (CRI) Summit on 16 October 2026",
+      "source_name": "Cyber Security Agency of Singapore",
+      "url": "https://www.csa.gov.sg/news-events/speeches/address-by-minister-josephine-teo-at-the-6th-counter-ransomware-initiative-cri-summit-on-16-october-2026/",
+      "fact": "新加坡10月16日举行第六届国际反勒索软件倡议峰会，主管部长介绍成员共同制定的韧性标准框架，并说明其用途是帮助不同国家提升预防、发现、恢复及跨境协作能力。讲话还指出人工智能正在改变勒索软件攻击的速度与自动化程度，呼吁执法、网络安全机构、金融机关和产业界联合应对。此次披露属于国际合作进展及政府讲话，不代表该框架已成为各参加国共同实施的强制性法律标准。"
+    },
+    {
+      "id": "research-item-19",
+      "domestic": false,
+      "date": "2026-10-15",
+      "jurisdiction": "美国·联邦地区法院",
+      "agency": "美国商品期货交易委员会、Gemini Trust",
+      "title": "美国法官拒绝CFTC与Gemini撤销500万美元和解协议的共同申请",
+      "original_title": "Judge rejects CFTC, Gemini bid to vacate $5 million settlement",
+      "source_name": "Reuters（援引美国联邦地区法院裁定）",
+      "url": "https://www.reuters.com/business/judge-rejects-cftc-gemini-bid-vacate-5-million-settlement-2026-10-16/",
+      "fact": "美国纽约联邦地区法院法官10月15日拒绝商品期货交易委员会与加密资产交易企业Gemini共同提出的申请，不允许双方撤销此前已达成的500万美元民事和解。该和解源自监管机构指控企业在比特币期货产品审批相关环节提供不实或误导性陈述，企业已按照2025年协议支付相应罚款。法院认为双方没有满足推翻既有和解的法律标准，此次争议聚焦于撤销已生效和解的程序条件，而非重新裁定原诉讼的全部实体事实。"
+    }
+  ],
+  "analysis": {
+    "status": "pending",
+    "task": "由另一项独立工作负责分析"
+  },
+  "publication": {
+    "article_written": true,
+    "index_updated": true,
+    "briefs_updated": true,
+    "archive_updated": true,
+    "current_edition_updated": true,
+    "pages_status": "awaiting_deployment",
+    "commit_sha": null,
+    "pages_run_id": null
+  }
+}
