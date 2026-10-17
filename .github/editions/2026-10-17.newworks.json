@@ -3,7 +3,7 @@
   "column": "newworks",
   "state": "verified",
   "page": "articles/2026-10-17-new-works.html",
-  "page_blob_sha": "2df68cafe979b16a487e353660f2c5eba6d778a1",
+  "page_blob_sha": "c5c402250c0b1b2e474ebd0752938a6d66c5bd5d",
   "newworks_count": 3,
   "checked_at": "2026-10-17T23:42:09+08:00",
   "works": [
@@ -90,5 +90,10 @@
     "pages_run_id": null,
     "pages_result": null,
     "online_verified": null
+  },
+  "navigation_only_recheck": {
+    "date_time": "2026-10-17T23:45:55+08:00",
+    "reason": "Another column independently updated latest paper URL; fourth-column paper metadata and three item bodies unchanged",
+    "three_items_confirmed": true
   }
 }
