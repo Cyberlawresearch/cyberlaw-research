@@ -1,7 +1,7 @@
 {
   "date": "2026-10-17",
   "base_main_sha": "ac0cf0b8b2da88865995c55d70849b8bf32c33f2",
-  "phase": "publication_ready",
+  "phase": "committed_waiting_pages",
   "publication_ready": true,
   "items": [
     {
@@ -131,11 +131,26 @@
   },
   "last_error": null,
   "next_actions": [
-    "Write issue 2026-10-17.html as issue 041",
-    "Update main index/archive and validate public deployment"
+    "Check workflow run 39046582528 for final main a8ae843",
+    "Follow postdeployment trade-watch source diagnostics and public content verification"
   ],
   "deduplication": "Compared Oct 16,15,14,13,12,11,09 complete issue headings and event details. Brazil HPDP 9.37% CVD final from 16 Oct Federal Register explicitly excluded because already featured on Oct 14. Oct 15 OFAC SDN and Lukoil excluded. China technology on Oct16 excluded.",
   "source_verification": "Each source independently opened by official page or original DGTR PDF+visual check; CITT specific press release fully indexed and CBSA official timetable opened.",
   "final_sweep": "Oct17 overnight trade export controls US/EU/UK/Japan/Korea/India/Canada/Australia search run; no newly qualifying nonduplicate regulator action",
-  "publication_status": "pending_git_write"
+  "publication_status": "committed_to_main_page_deployment_in_progress",
+  "publication_attempt": {
+    "issue_commit": "10b66d7e553c3e8250f1eb75c7ef38ac1dc90730",
+    "index_commit": "456c3e661a2e78139936b0625a768a698b2b8db1",
+    "archive_commit": "22b1ce859417570ee1b41423da6eaaf858adb63d",
+    "current_main_head": "a8ae84312e1ccaf881569f7c502a7e01bc149b3f",
+    "target_paths": [
+      "trade-watch/issues/2026-10-17.html",
+      "trade-watch/index.html",
+      "trade-watch/archive.html"
+    ],
+    "main_readback": "three files checked: 10 stories, issue 041, homepage current, archive 41 entries",
+    "pages_workflow_run_id": 39046582528,
+    "pages_workflow_status": "in_progress",
+    "source_diagnostics": "pending latest successful Pages"
+  }
 }
