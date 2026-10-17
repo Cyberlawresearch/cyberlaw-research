@@ -1,15 +1,85 @@
 {
   "date": "2026-10-17",
   "base_main_sha": "ac0cf0b8b2da88865995c55d70849b8bf32c33f2",
-  "phase": "researching",
+  "phase": "candidate_verification",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "us-graham-waiver",
+      "date": "2026-10-16",
+      "jurisdiction": "美国",
+      "title": "白宫对Graham法新增涉俄关税及制裁作出豁免",
+      "stage": "行政命令正式签署，法案规定的多项新增加税和制裁被豁免，既有其他制裁不受影响",
+      "sources": [
+        "https://www.whitehouse.gov/presidential-actions/2026/10/implementing-the-lindsey-o-graham-sanctioning-russia-and-iran-act-of-2026/"
+      ],
+      "importance": 5,
+      "checked": "官方行政命令第2、4节"
+    },
+    {
+      "id": "jp-tio2-ad",
+      "date": "2026-10-16",
+      "jurisdiction": "日本",
+      "title": "日本对中国原产金红石型二氧化钛颜料及制剂启动反倾销调查",
+      "stage": "正式立案，未作出倾销和损害最终认定",
+      "sources": [
+        "https://www.mof.go.jp/english/policy/customs_tariff/traderemedy/ka20261016_e.html"
+      ],
+      "importance": 5,
+      "checked": "日本财务省及经济产业省10月16日公告"
+    },
+    {
+      "id": "ca-cups-injury",
+      "date": "2026-10-16",
+      "jurisdiction": "加拿大",
+      "title": "加拿大初步认定中国纸板杯及容器倾销补贴造成产业损害存在合理迹象",
+      "stage": "CITT初步损害肯定裁定，CBSA反倾销反补贴调查继续",
+      "sources": [
+        "https://citt-tcce.gc.ca/en/news/tribunal-issues-determination-reasonable-indication-injury-paperboard-cups-and-containers"
+      ],
+      "importance": 5,
+      "checked": "CITT10月16日公告，CBSA 11月16日前初裁"
+    },
+    {
+      "id": "us-rail-couplers-injury",
+      "date": "2026-10-16",
+      "jurisdiction": "美国",
+      "title": "美国ITC对捷克和印度货运铁路车钩最终作出肯定性损害认定",
+      "stage": "ITC肯定性最终产业损害，税令待商务部发布",
+      "sources": [
+        "https://www.usitc.gov/keywords/title-vii"
+      ],
+      "importance": 4,
+      "checked": "USITC10月16日News Release 26-148"
+    },
+    {
+      "id": "us-ofac-venezuela-60a",
+      "date": "2026-10-16",
+      "jurisdiction": "美国",
+      "title": "OFAC修订委内瑞拉地震救助相关一般许可证60A",
+      "stage": "一般许可证正式发布",
+      "sources": [
+        "https://ofac.treasury.gov/recent-actions/20261016"
+      ],
+      "importance": 3,
+      "checked": "OFAC10月16日发布记录"
+    }
+  ],
+  "coverage": {
+    "US": "checked White House/OFAC/USITC/Commerce",
+    "Japan": "MOF & METI checked",
+    "Canada": "CITT & CBSA checked",
+    "EU": "initial Reuters and Council review; verifying",
+    "UK": "FCDO 16 October sanctions variations reviewed",
+    "Australia": "ATRC case list reviewed",
+    "India": "DGTR review continuing",
+    "SouthKorea": "MOTIE/KTC review continuing"
+  },
   "last_error": null,
   "next_actions": [
-    "检索各法域10月15日至17日的监管原始来源",
-    "核对最近至少7期去重",
-    "逐条核验来源和法律状态",
-    "分阶段保存并正式发布"
+    "验证候选完整原始来源与法律状态和具体期限",
+    "补足欧盟、英国、韩国、印度和澳大利亚扫描",
+    "近7期去重和2小时终扫",
+    "发布前最终回读"
   ]
 }
