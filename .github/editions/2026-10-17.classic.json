@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-17",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-10-17-rousseau-social-contract.html",
+  "target_path": "articles/2026-10-17-rousseau-social-contract.html",
+  "book": {
+    "author": "Jean-Jacques Rousseau",
+    "original_title": "Du contract social; ou, Principes du droit politique",
+    "publisher": "Marc Michel Rey",
+    "year": "1762",
+    "edition": "1762年版"
+  },
+  "sources": [
+    "https://fr.wikisource.org/wiki/Du_contrat_social/%C3%89dition_1762/Texte_entier",
+    "https://old-digitalcollections.nypl.org/collections/du-contract-social-ou-principes-du-droit-politique?filters%5Bpublisher%5D%5B%5D=Chez+Marc+Michel+Rey",
+    "https://plato.stanford.edu/archives/win2018/entries/berlin/",
+    "https://jpe.episciences.org/10715"
+  ],
+  "sections": 32,
+  "checks": {
+    "original_full_text_source_verified": true,
+    "original_edition_bibliography_verified": true,
+    "history_index_checked": true,
+    "critics_with_sources": true,
+    "natural_chinese_reviewed": true,
+    "nonplaceholder": true
+  },
+  "note": "核对1762年版完整文本的卷章目录与重要段落；未声称逐页通读原始影印。"
+}
