@@ -1,7 +1,7 @@
 {
   "date": "2026-10-17",
   "base_main_sha": "ac0cf0b8b2da88865995c55d70849b8bf32c33f2",
-  "phase": "links_corrected_pages_pending",
+  "phase": "published_verified",
   "publication_ready": true,
   "items": [
     {
@@ -130,14 +130,11 @@
     "other": "Brazil, Mexico and ASEAN contexts reviewed as relevant"
   },
   "last_error": null,
-  "next_actions": [
-    "Check new latest GitHub Pages head corresponding to correction commit",
-    "Check automated DOM+source diagnostics all 13 original links"
-  ],
+  "next_actions": [],
   "deduplication": "Compared Oct 16,15,14,13,12,11,09 complete issue headings and event details. Brazil HPDP 9.37% CVD final from 16 Oct Federal Register explicitly excluded because already featured on Oct 14. Oct 15 OFAC SDN and Lukoil excluded. China technology on Oct16 excluded.",
   "source_verification": "Each source independently opened by official page or original DGTR PDF+visual check; CITT specific press release fully indexed and CBSA official timetable opened.",
   "final_sweep": "Oct17 overnight trade export controls US/EU/UK/Japan/Korea/India/Canada/Australia search run; no newly qualifying nonduplicate regulator action",
-  "publication_status": "committed_to_main_page_deployment_in_progress",
+  "publication_status": "published_and_verified",
   "publication_attempt": {
     "issue_commit": "10b66d7e553c3e8250f1eb75c7ef38ac1dc90730",
     "index_commit": "456c3e661a2e78139936b0625a768a698b2b8db1",
@@ -149,9 +146,9 @@
       "trade-watch/archive.html"
     ],
     "main_readback": "three files checked: 10 stories, issue 041, homepage current, archive 41 entries",
-    "pages_workflow_run_id": 39046582528,
-    "pages_workflow_status": "in_progress",
-    "source_diagnostics": "pending latest successful Pages",
+    "pages_workflow_run_id": 39047040843,
+    "pages_workflow_status": "success",
+    "source_diagnostics": "success - 3 public pages status 200 and DOM match; 13/13 links HTTP 200",
     "link_correction_commit": "c99217b345ebff2d5dfd618b0ea04dae6dbfd021",
     "source_check_previous_run_id": 39046769040,
     "source_check_previous_errors": [
@@ -163,6 +160,10 @@
         "url": "https://www.reuters.com/world/china/eu-propose-import-curbs-other-chinese-sectors-says-eu-chief-2026-10-16/",
         "error": "HTTP 401; replaced with official Commission President statement STATEMENT/26/2190"
       }
-    ]
+    ],
+    "final_commit": "c99217b345ebff2d5dfd618b0ea04dae6dbfd021",
+    "source_diagnostics_run_id": 39047232553,
+    "guard_run_id": 39047232617,
+    "guard_status": "success"
   }
 }
