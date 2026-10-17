@@ -1,85 +1,142 @@
 {
   "date": "2026-10-17",
   "base_main_sha": "ac0cf0b8b2da88865995c55d70849b8bf32c33f2",
-  "phase": "candidate_verification",
+  "phase": "sources_verified",
   "publication_ready": false,
   "items": [
     {
-      "id": "us-graham-waiver",
-      "date": "2026-10-16",
+      "id": "US-waiver",
       "jurisdiction": "美国",
-      "title": "白宫对Graham法新增涉俄关税及制裁作出豁免",
-      "stage": "行政命令正式签署，法案规定的多项新增加税和制裁被豁免，既有其他制裁不受影响",
-      "sources": [
+      "date": "2026-10-16",
+      "title": "白宫依《Graham法》豁免拟实施的特定涉俄关税及制裁",
+      "stage": "总统行政命令第4节已豁免所列新增措施",
+      "source_urls": [
         "https://www.whitehouse.gov/presidential-actions/2026/10/implementing-the-lindsey-o-graham-sanctioning-russia-and-iran-act-of-2026/"
       ],
-      "importance": 5,
-      "checked": "官方行政命令第2、4节"
+      "verified": true
     },
     {
-      "id": "jp-tio2-ad",
-      "date": "2026-10-16",
+      "id": "JP-TiO2",
       "jurisdiction": "日本",
-      "title": "日本对中国原产金红石型二氧化钛颜料及制剂启动反倾销调查",
-      "stage": "正式立案，未作出倾销和损害最终认定",
-      "sources": [
+      "date": "2026-10-16",
+      "title": "对华金红石型二氧化钛颜料及制剂启动反倾销调查",
+      "stage": "立案、未终裁，原则上1年内审结",
+      "source_urls": [
         "https://www.mof.go.jp/english/policy/customs_tariff/traderemedy/ka20261016_e.html"
       ],
-      "importance": 5,
-      "checked": "日本财务省及经济产业省10月16日公告"
+      "verified": true
     },
     {
-      "id": "ca-cups-injury",
-      "date": "2026-10-16",
+      "id": "CA-paper-cups",
       "jurisdiction": "加拿大",
-      "title": "加拿大初步认定中国纸板杯及容器倾销补贴造成产业损害存在合理迹象",
-      "stage": "CITT初步损害肯定裁定，CBSA反倾销反补贴调查继续",
-      "sources": [
-        "https://citt-tcce.gc.ca/en/news/tribunal-issues-determination-reasonable-indication-injury-paperboard-cups-and-containers"
+      "date": "2026-10-16",
+      "title": "中国纸板杯及容器初步产业损害肯定认定",
+      "stage": "CITT PI-2026-004，CBSA初裁预计11月16日",
+      "source_urls": [
+        "https://citt-tcce.gc.ca/en/news/tribunal-issues-determination-reasonable-indication-injury-paperboard-cups-and-containers",
+        "https://cbsa-asfc.gc.ca/sima-lmsi/i-e/pcc2026/pcc2026-se-eng.html"
       ],
-      "importance": 5,
-      "checked": "CITT10月16日公告，CBSA 11月16日前初裁"
+      "verified": true
     },
     {
-      "id": "us-rail-couplers-injury",
+      "id": "IN-CPVC",
+      "jurisdiction": "印度",
       "date": "2026-10-16",
-      "jurisdiction": "美国",
-      "title": "美国ITC对捷克和印度货运铁路车钩最终作出肯定性损害认定",
-      "stage": "ITC肯定性最终产业损害，税令待商务部发布",
-      "sources": [
-        "https://www.usitc.gov/keywords/title-vii"
+      "title": "发布CPVC经马来西亚、日本及泰国规避既有反倾销税专项出口商和进口商问卷",
+      "stage": "反规避调查中；11月11日问卷截止",
+      "source_urls": [
+        "https://dgtr.gov.in/sites/default/files/2026-10/CPVC_Anti_Circumvention_Exporter_Questionnaire_FINAL_16.10.26.pdf",
+        "https://dgtr.gov.in/sites/default/files/2026-10/CPVC_Anti_Circumvention_Importer_Questionnaire_FINAL_16.10.26.pdf"
       ],
-      "importance": 4,
-      "checked": "USITC10月16日News Release 26-148"
+      "verified": true
     },
     {
-      "id": "us-ofac-venezuela-60a",
+      "id": "EU-future-tool",
+      "jurisdiction": "欧盟",
       "date": "2026-10-16",
-      "jurisdiction": "美国",
-      "title": "OFAC修订委内瑞拉地震救助相关一般许可证60A",
-      "stage": "一般许可证正式发布",
-      "sources": [
-        "https://ofac.treasury.gov/recent-actions/20261016"
+      "title": "欧委会主席提出对中国其他行业进口采取限制并拟于12月提新工具",
+      "stage": "政策信号、无生效法规和具体额外关税",
+      "source_urls": [
+        "https://www.reuters.com/world/china/eu-propose-import-curbs-other-chinese-sectors-says-eu-chief-2026-10-16/"
       ],
-      "importance": 3,
-      "checked": "OFAC10月16日发布记录"
+      "verified": true
+    },
+    {
+      "id": "US-rail",
+      "jurisdiction": "美国",
+      "date": "2026-10-16",
+      "title": "ITC肯定捷克和印度货运铁路车钩损害终裁",
+      "stage": "USITC最终产业损害；商务部税令后续签发",
+      "source_urls": [
+        "https://www.usitc.gov/press_room/news_release/2026/er1016_69361.htm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "IN-6APA",
+      "jurisdiction": "印度",
+      "date": "2026-10-16",
+      "title": "中国与欧盟6-APA反倾销案产品范围及PCN意见延期至10月23日",
+      "stage": "正式程序期限延长7天，不是征税决定",
+      "source_urls": [
+        "https://dgtr.gov.in/sites/default/files/2026-10/6APA_AD_OI_059_2026_Extension_PUC_PCN.pdf"
+      ],
+      "verified": true
+    },
+    {
+      "id": "IN-copper",
+      "jurisdiction": "印度",
+      "date": "2026-10-16",
+      "title": "中国、泰国和越南内螺纹铜管反倾销案范围及PCN意见延期至10月28日",
+      "stage": "正式程序期限延长7天，未终裁",
+      "source_urls": [
+        "https://dgtr.gov.in/sites/default/files/2026-10/IGT_AD_OI_055_2026_Extension_PUC_PCN%20%282%29.pdf"
+      ],
+      "verified": true
+    },
+    {
+      "id": "US-CBS",
+      "jurisdiction": "美国",
+      "date": "2026-10-16",
+      "title": "USITC中国CBS橡胶促进剂双反终局损害调查排期发布",
+      "stage": "终局损害程序、听证2027年1月14日及书面期限",
+      "source_urls": [
+        "https://www.govinfo.gov/content/pkg/FR-2026-10-16/html/2026-21143.htm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "US-OFAC-60A",
+      "jurisdiction": "美国",
+      "date": "2026-10-16",
+      "title": "OFAC委内瑞拉地震救援60A一般许可证和支付FAQ更新",
+      "stage": "一般许可证正式修订；特定救援税费可付普通途径",
+      "source_urls": [
+        "https://ofac.treasury.gov/recent-actions/20261016",
+        "https://ofac.treasury.gov/faqs/1263"
+      ],
+      "verified": true
     }
   ],
   "coverage": {
-    "US": "checked White House/OFAC/USITC/Commerce",
-    "Japan": "MOF & METI checked",
-    "Canada": "CITT & CBSA checked",
-    "EU": "initial Reuters and Council review; verifying",
-    "UK": "FCDO 16 October sanctions variations reviewed",
-    "Australia": "ATRC case list reviewed",
-    "India": "DGTR review continuing",
-    "SouthKorea": "MOTIE/KTC review continuing"
+    "US": "White House, OFAC, USITC, ITA and Federal Register inspected",
+    "EU": "European Council, Commission public remarks, EUR-Lex and Reuters checked",
+    "UK": "GOV.UK TRA export controls and UK Sanctions List checked; no qualifying new event",
+    "Japan": "Ministry of Finance and METI checked",
+    "SouthKorea": "MOTIR 16 October FTA talks checked; no new enforceable market-access change",
+    "India": "DGTR October 16 PDFs read for 6-APA, copper PUC/PCN, CPVC circumvention exporter/importer",
+    "Canada": "CITT and CBSA original determination/schedule checked",
+    "Australia": "ATRC latest TRN listing 16 October 151 status report; no new qualifying case decision",
+    "other": "Brazil, Mexico and ASEAN contexts reviewed as relevant"
   },
   "last_error": null,
   "next_actions": [
-    "验证候选完整原始来源与法律状态和具体期限",
-    "补足欧盟、英国、韩国、印度和澳大利亚扫描",
-    "近7期去重和2小时终扫",
-    "发布前最终回读"
-  ]
+    "write final studied JSON publication_ready true",
+    "create complete issue 041 main",
+    "refresh home and archive latest",
+    "reread ref=main and correlate Pages deployment"
+  ],
+  "deduplication": "Compared Oct 16,15,14,13,12,11,09 complete issue headings and event details. Brazil HPDP 9.37% CVD final from 16 Oct Federal Register explicitly excluded because already featured on Oct 14. Oct 15 OFAC SDN and Lukoil excluded. China technology on Oct16 excluded.",
+  "source_verification": "Each source independently opened by official page or original DGTR PDF+visual check; CITT specific press release fully indexed and CBSA official timetable opened.",
+  "final_sweep": "Oct17 overnight trade export controls US/EU/UK/Japan/Korea/India/Canada/Australia search run; no newly qualifying nonduplicate regulator action"
 }
