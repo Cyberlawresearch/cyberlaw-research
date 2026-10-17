@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-17",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-17-selbst-boyd-fairness-abstraction.html",
+  "selection": "Andrew D. Selbst、danah boyd、Sorelle A. Friedler、Suresh Venkatasubramanian、Janet Vertesi, Fairness and Abstraction in Sociotechnical Systems",
+  "bibliography": {
+    "type": "article",
+    "author": "Andrew D. Selbst、danah boyd、Sorelle A. Friedler、Suresh Venkatasubramanian、Janet Vertesi",
+    "originalTitle": "Fairness and Abstraction in Sociotechnical Systems",
+    "journal": "Proceedings of the Conference on Fairness, Accountability, and Transparency",
+    "year": "2019",
+    "volume": "",
+    "issue": "",
+    "pages": "59–68",
+    "doi": "10.1145/3287560.3287598",
+    "url": "https://dl.acm.org/doi/10.1145/3287560.3287598",
+    "cnTitle": "算法公平的五个陷阱：技术指标为什么不能代替法律判断"
+  },
+  "versions": {
+    "publication": "ACM FAT* 2019 peer-reviewed conference proceedings, pp.59–68, DOI 10.1145/3287560.3287598; neither a law review nor a journal volume/issue",
+    "full_text": "Authors' publicly hosted 10-page proceedings PDF contains all four sections and bibliography; checked against ACM original record",
+    "ssrn": "No SSRN metadata independently verified; no SSRN claim is made"
+  },
+  "sources": [
+    "https://dl.acm.org/doi/10.1145/3287560.3287598",
+    "https://friedler.net/papers/sts_fat2019.pdf",
+    "https://andrewselbst.com/wp-content/uploads/2019/10/selbst-et-al-fairness-and-abstraction-in-sociotechnical-systems.pdf",
+    "https://collaborate.princeton.edu/en/publications/fairness-and-abstraction-in-sociotechnical-systems/"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-09-16-barocas-selbst-big-data-disparate-impact.html",
+    "articles/2026-09-03-citron-technological-due-process.html",
+    "articles/2026-10-06-selbst-powles-meaningful-information-right-to-explanation.html"
+  ],
+  "timeline": null,
+  "body_length": 7563,
+  "checked_at": "2026-10-17T23:44:37+08:00",
+  "base_main_sha": "4d00d64964372d38727955a06fd9467852c7a63c",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}
