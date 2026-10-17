@@ -1,7 +1,7 @@
 {
   "date": "2026-10-17",
   "base_main_sha": "ac0cf0b8b2da88865995c55d70849b8bf32c33f2",
-  "phase": "committed_waiting_pages",
+  "phase": "links_corrected_pages_pending",
   "publication_ready": true,
   "items": [
     {
@@ -34,7 +34,7 @@
       "stage": "CITT PI-2026-004，CBSA初裁预计11月16日",
       "source_urls": [
         "https://citt-tcce.gc.ca/en/news/tribunal-issues-determination-reasonable-indication-injury-paperboard-cups-and-containers",
-        "https://cbsa-asfc.gc.ca/sima-lmsi/i-e/pcc2026/pcc2026-se-eng.html"
+        "https://www.cbsa-asfc.gc.ca/sima-lmsi/i-e/pcc2026/pcc2026-se-eng.html"
       ],
       "verified": true
     },
@@ -57,7 +57,7 @@
       "title": "欧委会主席提出对中国其他行业进口采取限制并拟于12月提新工具",
       "stage": "政策信号、无生效法规和具体额外关税",
       "source_urls": [
-        "https://www.reuters.com/world/china/eu-propose-import-curbs-other-chinese-sectors-says-eu-chief-2026-10-16/"
+        "https://ec.europa.eu/commission/presscorner/detail/en/statement_26_2190"
       ],
       "verified": true
     },
@@ -131,8 +131,8 @@
   },
   "last_error": null,
   "next_actions": [
-    "Check workflow run 39046582528 for final main a8ae843",
-    "Follow postdeployment trade-watch source diagnostics and public content verification"
+    "Check new latest GitHub Pages head corresponding to correction commit",
+    "Check automated DOM+source diagnostics all 13 original links"
   ],
   "deduplication": "Compared Oct 16,15,14,13,12,11,09 complete issue headings and event details. Brazil HPDP 9.37% CVD final from 16 Oct Federal Register explicitly excluded because already featured on Oct 14. Oct 15 OFAC SDN and Lukoil excluded. China technology on Oct16 excluded.",
   "source_verification": "Each source independently opened by official page or original DGTR PDF+visual check; CITT specific press release fully indexed and CBSA official timetable opened.",
@@ -151,6 +151,18 @@
     "main_readback": "three files checked: 10 stories, issue 041, homepage current, archive 41 entries",
     "pages_workflow_run_id": 39046582528,
     "pages_workflow_status": "in_progress",
-    "source_diagnostics": "pending latest successful Pages"
+    "source_diagnostics": "pending latest successful Pages",
+    "link_correction_commit": "c99217b345ebff2d5dfd618b0ea04dae6dbfd021",
+    "source_check_previous_run_id": 39046769040,
+    "source_check_previous_errors": [
+      {
+        "url": "https://cbsa-asfc.gc.ca/sima-lmsi/i-e/pcc2026/pcc2026-se-eng.html",
+        "error": "SSL hostname mismatch; fixed to www"
+      },
+      {
+        "url": "https://www.reuters.com/world/china/eu-propose-import-curbs-other-chinese-sectors-says-eu-chief-2026-10-16/",
+        "error": "HTTP 401; replaced with official Commission President statement STATEMENT/26/2190"
+      }
+    ]
   }
 }
