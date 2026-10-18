@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-18",
+  "base_main_sha": "c99217b345ebff2d5dfd618b0ea04dae6dbfd021",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {
+    "checked": [],
+    "pending": [
+      "US",
+      "EU",
+      "UK",
+      "JP",
+      "KR",
+      "IN",
+      "CA",
+      "AU"
+    ]
+  },
+  "last_error": null,
+  "next_actions": [
+    "检索过去72小时官方贸易监管更新",
+    "核验最近七期事件级去重",
+    "逐一复核原始来源链接与法律阶段",
+    "完成当日 HTML 和正式发布"
+  ]
+}
