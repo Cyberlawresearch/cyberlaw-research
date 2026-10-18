@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-18",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-10-18-kant-perpetual-peace.html",
+  "target_path": "articles/2026-10-18-kant-perpetual-peace.html",
+  "book": {
+    "author": "Immanuel Kant",
+    "original_title": "Zum ewigen Frieden. Ein philosophischer Entwurf",
+    "publisher": "Friedrich Nicolovius",
+    "year": "1795",
+    "edition": "1795年首版；完整德文电子转录（包括同年勘误），不主张特定印次"
+  },
+  "source_urls": [
+    "https://www.gutenberg.org/files/46873/46873-h/46873-h.htm",
+    "https://www.e-rara.ch/zut/content/titleinfo/7963690",
+    "https://www.davidmhart.com/liberty/GermanClassicalLiberals/Kant/EwigenFrieden-1795/index.html",
+    "https://projekt-gutenberg.org/authors/immanuel-kant/books/zum-ewigen-frieden/chapter/11/",
+    "https://www.openstax.marxists.info/reference/archive/hegel/works/pr/prstate.htm",
+    "https://www.cambridge.org/core/books/abs/rights-of-others/on-hospitality-rereading-kants-cosmopolitan-right/1B280A58674D9122D72FECCF3878791E",
+    "https://isegoria.revistas.csic.es/index.php/isegoria/article/view/184"
+  ],
+  "original_verification": "系统核对1795年德文完整文本：六项预备条款、三项确定条款、自然保证和平的补充、两篇附录、作者注释；未逐页对照藏本原书影印",
+  "version_note": "1796年增订第二版的秘密条款不归入1795年初版论证",
+  "critics": [
+    {
+      "name": "G. W. F. Hegel",
+      "work": "Elements of Philosophy of Right §333 Remark",
+      "url": "https://www.openstax.marxists.info/reference/archive/hegel/works/pr/prstate.htm"
+    },
+    {
+      "name": "Seyla Benhabib",
+      "work": "The Rights of Others, Chapter 1: On Hospitality: Rereading Kant's Cosmopolitan Right",
+      "url": "https://www.cambridge.org/core/books/abs/rights-of-others/on-hospitality-rereading-kants-cosmopolitan-right/1B280A58674D9122D72FECCF3878791E"
+    },
+    {
+      "name": "Jürgen Habermas",
+      "work": "La idea kantiana de paz perpetua. Desde la distancia histórica de doscientos años (Isegoría 16, 1997)",
+      "url": "https://isegoria.revistas.csic.es/index.php/isegoria/article/view/184"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html",
+    "classics-history.html"
+  ],
+  "duplicate_found": false,
+  "sections": 39,
+  "prose_length": 8917,
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  }
+}
