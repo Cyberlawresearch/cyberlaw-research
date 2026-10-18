@@ -3,25 +3,74 @@
   "base_main_sha": "c99217b345ebff2d5dfd618b0ea04dae6dbfd021",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
+  "items": [
+    {
+      "id": "eu-furfuryl-ad",
+      "jurisdiction": "欧盟",
+      "event_date": "2026-10-16",
+      "agency": "欧盟委员会",
+      "headline": "欧盟对中国糠醇正式启动反倾销调查",
+      "status": "正式立案，未征收新税；拟另行规定进口登记",
+      "impact": "对欧糠醇报关归类TARIC 2932 13 00 30、原产地和问卷应诉准备",
+      "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202605408",
+      "secondary": "https://www.gtai.de/de/trade/eu/zoll/antidumping-furfurylalkohol-china-2036060",
+      "verified": true
+    },
+    {
+      "id": "us-semiconductor-337-amend",
+      "jurisdiction": "美国",
+      "event_date": "2026-10-16",
+      "agency": "USITC",
+      "headline": "美国337-TA-1500半导体调查新增专利主张",
+      "status": "委员会不复审行政法官批准修订投诉的初裁；未认定侵权，亦无排除令",
+      "impact": "涉及与Tower Semiconductor相关的美国半导体供应链及诉讼证据义务",
+      "source": "https://www.federalregister.gov/documents/2026/10/16/2026-21124",
+      "verified": true
+    },
+    {
+      "id": "uk-sanctions-variations",
+      "jurisdiction": "英国",
+      "event_date": "2026-10-16",
+      "agency": "FCDO",
+      "headline": "英国更新ISIL及基地组织制裁清单3项既有列名资料",
+      "status": "既有列名资料变更，非新增列名或解除制裁",
+      "impact": "英国制裁交易相关主体、别名、受益人制裁筛查和资产冻结仍继续",
+      "source": "https://assets.publishing.service.gov.uk/media/6ad1ebc9e5db84746b4796e9/Sanctions_Notice__ISIL__Da_esh____Al-Qaeda__16_October_2026.pdf",
+      "verified": true
+    },
+    {
+      "id": "tw-vietnam-steel-injury",
+      "jurisdiction": "台湾地区",
+      "event_date": "2026-10-16",
+      "agency": "经济事务主管部门贸易救济委员会",
+      "headline": "台湾地区公布越南冷轧不锈钢板材初步损害肯定认定",
+      "status": "初步损害肯定；倾销调查继续；非最终税",
+      "impact": "越南对台钢材出口、中国企业第三地供应链原产地证据和报价安排",
+      "source": "https://www.trade.gov.tw/english/Pages/detail.aspx?nodeID=86&pid=821303",
+      "verified": true
+    }
+  ],
   "coverage": {
-    "checked": [],
+    "checked": [
+      "美国（10月16日联邦公报及USITC、OFAC）",
+      "欧盟（10月16日反倾销官报、GTAI）",
+      "英国（FCDO 10月16日名单变更）",
+      "台湾地区（贸易救济委员会10月16日公告）"
+    ],
     "pending": [
-      "US",
-      "EU",
-      "UK",
-      "JP",
-      "KR",
-      "IN",
-      "CA",
-      "AU"
+      "日本",
+      "韩国",
+      "印度",
+      "加拿大",
+      "澳大利亚",
+      "美国、欧盟追加核查"
     ]
   },
   "last_error": null,
   "next_actions": [
-    "检索过去72小时官方贸易监管更新",
-    "核验最近七期事件级去重",
-    "逐一复核原始来源链接与法律阶段",
-    "完成当日 HTML 和正式发布"
+    "复核印度最新日期与应诉期限并保存断点",
+    "核查日本韩国加拿大澳大利亚官方监管部门",
+    "核实10月16日全部候选原始来源与近七期正文是否重合",
+    "生成并发布第042期"
   ]
 }
