@@ -1,0 +1,248 @@
+{
+  "date": "2026-10-18",
+  "column": "brief",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-18-tech-law-brief.html",
+  "news_count": 10,
+  "distribution": {
+    "domestic": 2,
+    "foreign": 8
+  },
+  "mode": "fact_only",
+  "analysis_pending": true,
+  "published_as_backfill": true,
+  "actual_release_at": null,
+  "checked_at": "2026-10-19T21:02:33.326+08:00",
+  "last_news_scan_at": "2026-10-19T21:02:33.326+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "natural_chinese_reviewed": true,
+    "foreign_layout": true,
+    "local_language_scan_korea_japan_vietnam": true
+  },
+  "domestic_source_coverage": [
+    {
+      "source_group": "中央网信办及网安标委",
+      "source_name": "中央网信办及网安标委",
+      "status": "no_new",
+      "found": 0,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "复核近期增量，排除同一旧政策或已经刊发事件。"
+    },
+    {
+      "source_group": "工信部与国家数据局",
+      "source_name": "工信部与国家数据局",
+      "status": "no_new",
+      "found": 0,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "复核近期增量，排除同一旧政策或已经刊发事件。"
+    },
+    {
+      "source_group": "新华社人民日报央视",
+      "source_name": "新华社人民日报央视",
+      "status": "checked",
+      "found": 1,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "按新闻线索核查来源、事件日与发表日，并核对跨日报重复。"
+    },
+    {
+      "source_group": "财新第一财经澎湃与界面",
+      "source_name": "财新第一财经澎湃与界面",
+      "status": "checked",
+      "found": 1,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "按新闻线索核查来源、事件日与发表日，并核对跨日报重复。"
+    },
+    {
+      "source_group": "地方算力机构及产业联盟",
+      "source_name": "地方算力机构及产业联盟",
+      "status": "checked",
+      "found": 2,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "按新闻线索核查来源、事件日与发表日，并核对跨日报重复。"
+    },
+    {
+      "source_group": "欧盟英国监管与司法",
+      "source_name": "欧盟英国监管与司法",
+      "status": "checked",
+      "found": 1,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "按新闻线索核查来源、事件日与发表日，并核对跨日报重复。"
+    },
+    {
+      "source_group": "美国州及联邦部门",
+      "source_name": "美国州及联邦部门",
+      "status": "checked",
+      "found": 1,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "按新闻线索核查来源、事件日与发表日，并核对跨日报重复。"
+    },
+    {
+      "source_group": "日本韩国越南本地语材料",
+      "source_name": "日本韩国越南本地语材料",
+      "status": "checked",
+      "found": 1,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "按新闻线索核查来源、事件日与发表日，并核对跨日报重复。"
+    },
+    {
+      "source_group": "Reuters AP FT及专业媒体",
+      "source_name": "Reuters AP FT及专业媒体",
+      "status": "checked",
+      "found": 8,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "按新闻线索核查来源、事件日与发表日，并核对跨日报重复。"
+    },
+    {
+      "source_group": "网络安全研究与产品公告",
+      "source_name": "网络安全研究与产品公告",
+      "status": "checked",
+      "found": 1,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "按新闻线索核查来源、事件日与发表日，并核对跨日报重复。"
+    }
+  ],
+  "items": [
+    {
+      "id": "research-item-1",
+      "date": "2026-10-18",
+      "jurisdiction": "中国·深圳",
+      "agency": "中国计算机学会、中科曙光",
+      "title": "深圳高性能计算大会展示十万卡国产AI超集群的超智融合应用",
+      "original_title": "我国首个十万卡AI超集群“能装一个宇宙”",
+      "source_name": "央视新闻（经IT之家核验）",
+      "url": "https://m.ithome.com/html/1014456.htm",
+      "fact": "10月18日在深圳举行的全国高性能计算大会展示全国产十万卡AI超集群“曙光8000”，介绍其支持高精度科学计算与大模型训练、推理的融合能力。该系统7月已正式投用并在其他会议展示，本次新进展是大会上的应用成果介绍，不得说成当日首次建成。",
+      "domestic": true
+    },
+    {
+      "id": "research-item-2",
+      "date": "2026-10-18",
+      "jurisdiction": "中国·深圳",
+      "agency": "鲲鹏计算产业、全球计算联盟",
+      "title": "鲲鹏展示4096节点互联的超智协同方案，并参与开放社区发布",
+      "original_title": "鲲鹏亮相第二十二届全国高性能计算学术大会",
+      "source_name": "DOIT",
+      "url": "https://www.doit.com.cn/itnews/860912305782853.html",
+      "fact": "10月18日，鲲鹏在高性能计算大会展示面向科学计算和智能体的超智协同基础设施方案，称依托灵衢互联最大支持4096节点组网。全球计算联盟在大会发起超智协同开放社区，推动算力、软件和应用协作。所述规格属于企业产品能力宣称，并非已投运集群规模或国家强制标准。",
+      "domestic": true
+    },
+    {
+      "id": "research-item-3",
+      "date": "2026-10-18",
+      "jurisdiction": "美国",
+      "agency": "Anthropic",
+      "title": "Anthropic拟以5%股份设立公共利益基金，计划尚待股东批准",
+      "original_title": "Investing in the public benefit",
+      "source_name": "Anthropic",
+      "url": "https://www.anthropic.com/news/public-benefit-fund",
+      "fact": "Anthropic10月18日宣布设立公共利益基金，计划通过全资有限责任公司支持AI安全科研、公益组织及受技术影响的社区。公司拟在股东批准后投入5%的股份，并在后续估值达到条件时由董事会酌情增加。该安排是企业自主方案，并非已经生效的法定义务。",
+      "domestic": false
+    },
+    {
+      "id": "research-item-4",
+      "date": "2026-10-18",
+      "jurisdiction": "美国·英国",
+      "agency": "Anthropic",
+      "title": "Anthropic征询律师意见，研究AI智能体代表用户进行议价的规则",
+      "original_title": "Anthropic turns to lawyers to help AI agents strike deals",
+      "source_name": "Financial Times",
+      "url": "https://www.ft.com/content/f7c26ac0-f5f2-443a-86b2-39d62f7920a9",
+      "fact": "《金融时报》10月18日报道，Anthropic与法律专家研究AI智能体如何代表用户开展商品价格、客户服务和薪酬谈判。讨论事项包括授权指令、签署文件及不同模型能力对交易结果的影响。有关活动属于企业研究与试验，不是新的监管命令或智能体取得独立法律人格的证明。",
+      "domestic": false
+    },
+    {
+      "id": "research-item-5",
+      "date": "2026-10-18",
+      "jurisdiction": "日本",
+      "agency": "SiteGuard、JPCERT/CC",
+      "title": "日本SiteGuard网页防火墙命令执行漏洞出现实际利用，厂商提示修复",
+      "original_title": "Hackers exploit SiteGuard WAF flaw to run commands as system root",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/",
+      "fact": "10月18日网络安全报道根据日本厂商及JPCERT/CC警报指出，SiteGuard Server Edition命令注入漏洞CVE-2026-106931出现实际利用活动。受影响配置可能允许攻击者执行高权限命令，厂商已提供修复版本。受害者数量和信息外泄情况仍未获得公开确认。",
+      "domestic": false
+    },
+    {
+      "id": "research-item-6",
+      "date": "2026-10-17",
+      "jurisdiction": "美国·全球",
+      "agency": "ConnectWise、Microsoft",
+      "title": "ConnectWise云备份身份遭入侵，部分Microsoft 365租户面临供应链安全事件",
+      "original_title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
+      "fact": "ConnectWise10月17日通报，其云备份环境应用身份遭未授权使用，已暂停部分Cloud Backup访问并调查。微软确认观察到相关恶意身份验证活动，Huntress称监测范围内部分Microsoft 365租户受到影响。供应商尚未发现备份存档被侵入的确证，损害范围需要继续核实。",
+      "domestic": false
+    },
+    {
+      "id": "research-item-7",
+      "date": "2026-10-18",
+      "jurisdiction": "美国·特拉华",
+      "agency": "Disney、Character.AI、破产法院",
+      "title": "迪士尼拟聘用Character.AI多数员工，资产交易仍待破产程序完成",
+      "original_title": "Disney agrees to hire the majority of Character.AI’s workforce",
+      "source_name": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "fact": "10月18日媒体根据Character.AI破产程序文件披露，迪士尼已同意向该公司至少60名员工提供聘用机会。迪士尼另提出对部分资产约2000万美元的竞标基准方案，其他投资人仍可能参与竞价。有关安排不等于法院已批准所有资产的出售。",
+      "domestic": false
+    },
+    {
+      "id": "research-item-8",
+      "date": "2026-10-18",
+      "jurisdiction": "英国·埃塞克斯",
+      "agency": "Microsoft、Nscale",
+      "title": "微软退出英国Nscale劳顿人工智能数据中心合作项目",
+      "original_title": "Microsoft pulls out of UK data center deal with Nscale, Telegraph reports",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+      "fact": "路透社10月18日报道，微软退出英国Nscale位于埃塞克斯郡劳顿的一处AI数据中心合作安排。英国媒体披露项目电网接入延迟，Nscale称正研究替代供电并维持双方其他合作。该变动属于特定项目调整，不能表述为微软撤出全部英国算力投资。",
+      "domestic": false
+    },
+    {
+      "id": "research-item-9",
+      "date": "2026-10-16",
+      "jurisdiction": "美国",
+      "agency": "Adobe、Sansec",
+      "title": "Adobe Commerce高危代码执行漏洞攻击路径获披露，厂商已经提供更新",
+      "original_title": "Critical BlockStrap flaw lets hackers run code on Magento servers",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
+      "fact": "10月16日，安全机构Sansec披露Adobe Commerce和Magento相关高危漏洞CVE-2026-103849的可能利用路径，特定情况下可导致服务器执行未经授权的代码。Adobe已提供修复版本。报道当时尚未观察到大规模实际攻击，不能把潜在风险写成已确认的数据泄露。",
+      "domestic": false
+    },
+    {
+      "id": "research-item-10",
+      "date": "2026-10-16",
+      "jurisdiction": "美国·加利福尼亚",
+      "agency": "美国联邦地区法院、私人原告",
+      "title": "美国母亲起诉OpenAI，指控未经家长同意收集未成年人信息",
+      "original_title": "OpenAI sued over allegedly taking minors' information without parental consent",
+      "source_name": "San Francisco Chronicle",
+      "url": "https://www.sfchronicle.com/bayarea/article/openai-lawsuit-parental-consent-22477644.php",
+      "fact": "旧金山媒体报道，一名母亲在加利福尼亚联邦法院起诉OpenAI，主张ChatGPT通过互动交流引导未成年子女提供个人照片、健康和家庭生活资料，未获得有效家长同意。原告要求将其作为集体诉讼处理。现阶段有关行为属于原告主张，法院尚未对违法性或集体认证作出最终判断。",
+      "domestic": false
+    }
+  ],
+  "analysis": {
+    "status": "pending",
+    "task": "不编制法治研判、论文或智库选题。"
+  },
+  "publication": {
+    "article_written": true,
+    "index_updated": true,
+    "briefs_updated": true,
+    "archive_updated": true,
+    "current_edition_updated": true,
+    "pages_status": "awaiting_deployment",
+    "commit_sha": null,
+    "pages_run_id": null
+  }
+}

@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "pages": {
-    "brief": "articles/2026-10-17-tech-law-brief.html",
+    "brief": "articles/2026-10-19-tech-law-brief.html",
     "paper": "articles/2026-10-17-selbst-boyd-fairness-abstraction.html",
     "classic": "articles/2026-10-18-kant-perpetual-peace.html",
     "newworks": "articles/2026-10-17-new-works.html"
   },
   "page_dates": {
-    "brief": "2026-10-17",
+    "brief": "2026-10-19",
     "paper": "2026-10-17",
     "classic": "2026-10-18",
     "newworks": "2026-10-17"
   },
-  "news_count": 19,
+  "news_count": 12,
   "newworks_count": 3
 }

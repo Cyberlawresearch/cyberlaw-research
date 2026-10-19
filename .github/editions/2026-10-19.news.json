@@ -1,0 +1,272 @@
+{
+  "date": "2026-10-19",
+  "column": "brief",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-19-tech-law-brief.html",
+  "news_count": 12,
+  "distribution": {
+    "domestic": 2,
+    "foreign": 10
+  },
+  "mode": "fact_only",
+  "analysis_pending": true,
+  "published_as_backfill": false,
+  "actual_release_at": null,
+  "checked_at": "2026-10-19T21:02:33.326+08:00",
+  "last_news_scan_at": "2026-10-19T21:02:33.326+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "natural_chinese_reviewed": true,
+    "foreign_layout": true,
+    "local_language_scan_korea_japan_vietnam": true
+  },
+  "domestic_source_coverage": [
+    {
+      "source_group": "中央网信办及网安标委",
+      "source_name": "中央网信办及网安标委",
+      "status": "no_new",
+      "found": 0,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "复核近期增量，排除同一旧政策或已经刊发事件。"
+    },
+    {
+      "source_group": "工信部与国家数据局",
+      "source_name": "工信部与国家数据局",
+      "status": "no_new",
+      "found": 0,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "复核近期增量，排除同一旧政策或已经刊发事件。"
+    },
+    {
+      "source_group": "新华社人民日报央视",
+      "source_name": "新华社人民日报央视",
+      "status": "checked",
+      "found": 1,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "按新闻线索核查来源、事件日与发表日，并核对跨日报重复。"
+    },
+    {
+      "source_group": "财新第一财经澎湃与界面",
+      "source_name": "财新第一财经澎湃与界面",
+      "status": "checked",
+      "found": 1,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "按新闻线索核查来源、事件日与发表日，并核对跨日报重复。"
+    },
+    {
+      "source_group": "地方算力机构及产业联盟",
+      "source_name": "地方算力机构及产业联盟",
+      "status": "checked",
+      "found": 2,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "按新闻线索核查来源、事件日与发表日，并核对跨日报重复。"
+    },
+    {
+      "source_group": "欧盟英国监管与司法",
+      "source_name": "欧盟英国监管与司法",
+      "status": "checked",
+      "found": 1,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "按新闻线索核查来源、事件日与发表日，并核对跨日报重复。"
+    },
+    {
+      "source_group": "美国州及联邦部门",
+      "source_name": "美国州及联邦部门",
+      "status": "checked",
+      "found": 1,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "按新闻线索核查来源、事件日与发表日，并核对跨日报重复。"
+    },
+    {
+      "source_group": "日本韩国越南本地语材料",
+      "source_name": "日本韩国越南本地语材料",
+      "status": "checked",
+      "found": 1,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "按新闻线索核查来源、事件日与发表日，并核对跨日报重复。"
+    },
+    {
+      "source_group": "Reuters AP FT及专业媒体",
+      "source_name": "Reuters AP FT及专业媒体",
+      "status": "checked",
+      "found": 10,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "按新闻线索核查来源、事件日与发表日，并核对跨日报重复。"
+    },
+    {
+      "source_group": "网络安全研究与产品公告",
+      "source_name": "网络安全研究与产品公告",
+      "status": "checked",
+      "found": 1,
+      "checked_at": "2026-10-19T21:02:33.326+08:00",
+      "notes": "按新闻线索核查来源、事件日与发表日，并核对跨日报重复。"
+    }
+  ],
+  "items": [
+    {
+      "id": "research-item-1",
+      "date": "2026-10-19",
+      "jurisdiction": "中国·深圳",
+      "agency": "中国计算机学会、算力产业企业",
+      "title": "高性能计算大会讨论推理算力增长，业界关注单位词元成本",
+      "original_title": "推理算力需求快速攀升：智算服务器供不应求，新的万亿级别蓝海市场出现",
+      "source_name": "澎湃新闻",
+      "url": "https://www.thepaper.cn/newsDetail_forward_34278764",
+      "fact": "澎湃新闻10月19日报道，10月18日高性能计算大会上多位企业和研究机构代表讨论AI推理算力需求和服务器供应情况。受访者表示，企业关注点正由训练卡数转向每秒词元产出、单位词元成本和软件优化效率。未来需求比例和市场规模属于产业界判断，非监管机关强制指标。",
+      "domestic": true
+    },
+    {
+      "id": "research-item-2",
+      "date": "2026-10-17",
+      "jurisdiction": "中国",
+      "agency": "长鑫科技集团股份有限公司",
+      "title": "长鑫科技披露前三季度业绩预告，说明AI算力对DRAM需求的影响",
+      "original_title": "长鑫科技：2026年前三季度业绩预告的自愿性披露公告",
+      "source_name": "长鑫科技公告（东方财富披露平台）",
+      "url": "https://data.eastmoney.com/notices/detail/688825/AN202610161830624059.html",
+      "fact": "长鑫科技于10月17日前后披露2026年前三季度业绩预告，预计营业收入约2650亿至2700亿元，归属股东净利润约1310亿至1325亿元。公司解释称，AI算力需求推动DRAM存储市场供需变化和价格上涨，是业绩增长的原因之一。有关数字为企业初步测算，尚未经正式审计。",
+      "domestic": true
+    },
+    {
+      "id": "research-item-3",
+      "date": "2026-10-19",
+      "jurisdiction": "英国",
+      "agency": "英国科学技术委员会",
+      "title": "英国公开AI主权政策建议，涉及本土模型、算力、数据及治理机制",
+      "original_title": "AI sovereignty: preserving UK agency in an AI-enabled world",
+      "source_name": "UK Government",
+      "url": "https://www.gov.uk/government/publications/ai-sovereignty-preserving-uk-agency-in-an-ai-enabled-world",
+      "fact": "英国政府10月19日公开科学技术委员会7月30日提交的AI主权建议信，提出制定跨部门AI主权计划、投资本土数据、算力和人才能力。建议信同时主张保持对先进国际模型的可信访问。新增事件是政府公开旧函，该文件属于独立咨询意见，并非19日新颁布的法律。",
+      "domestic": false
+    },
+    {
+      "id": "research-item-4",
+      "date": "2026-10-19",
+      "jurisdiction": "欧盟·意大利",
+      "agency": "欧盟委员会、KKR",
+      "title": "欧盟委员会就意大利电信固网并购材料向KKR发出异议声明",
+      "original_title": "EU says KKR might have misled it over Telecom Italia deal",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/eu-says-kkr-might-have-misled-it-over-telecom-italia-deal-2026-10-19/",
+      "fact": "欧盟委员会10月19日向KKR发出异议声明，初步怀疑其在收购意大利电信固网NetCo时提交的资料存在误导之处。有关调查涉及长期批发接入协议，KKR可以提交答辩。异议声明只是调查程序中的初步意见，不能认定已处罚或撤销此前交易批准。",
+      "domestic": false
+    },
+    {
+      "id": "research-item-5",
+      "date": "2026-10-19",
+      "jurisdiction": "国际",
+      "agency": "NorForge、网络安全研究人员",
+      "title": "研究者称攻击者利用AI智能体入侵逾百家组织网站",
+      "original_title": "How one hacker used AI agents and a few thousand dollars to break into scores of sites",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/government/how-one-hacker-used-ai-agents-few-thousand-dollars-break-into-scores-sites-2026-10-19/",
+      "fact": "路透社10月19日援引NorForge调查报道，一名攻击者借助开源AI智能体和多个模型探查超过1200家网站，研究者认为已入侵超过100个组织。有关模型调用成本估计为数千美元，部分行动可能访问敏感资料。具体受害及损失尚需独立核实，安全报告不等于司法机关确认犯罪责任。",
+      "domestic": false
+    },
+    {
+      "id": "research-item-6",
+      "date": "2026-10-19",
+      "jurisdiction": "美国",
+      "agency": "Meta、智能体产品用户",
+      "title": "美联社报道Meta智能体代办交易时向他人提供用户家庭住址",
+      "original_title": "AI agents are only as good as the personal information you share. That raises privacy concerns",
+      "source_name": "Associated Press",
+      "url": "https://apnews.com/article/449734d41d3750aad7038b761faa49c9",
+      "fact": "美联社10月19日报道，有用户使用Meta智能体代办商品交易时，系统向潜在买家提供其家庭住址并发送超出预期的消息。个案反映AI智能体执行任务时的个人信息使用和权限边界问题。媒体记录的用户经历不等于主管机关已据此作出行政处罚。",
+      "domestic": false
+    },
+    {
+      "id": "research-item-7",
+      "date": "2026-10-19",
+      "jurisdiction": "美国·全球",
+      "agency": "Microsoft",
+      "title": "微软确认Windows Server十月更新导致部分Exchange邮件系统异常",
+      "original_title": "Microsoft: October Windows Server updates break Exchange sign-in, mail flow",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-windows-server-updates-cause-exchange-issues/amp/",
+      "fact": "微软10月19日的技术说明确认，部分本地Exchange环境安装Windows Server十月安全更新后，发生网页登录失败和邮件投递故障。微软提供临时配置调整方案并继续排查。问题属于更新兼容性异常，不能认定所有Exchange服务器均遭网络入侵。",
+      "domestic": false
+    },
+    {
+      "id": "research-item-8",
+      "date": "2026-10-19",
+      "jurisdiction": "立陶宛",
+      "agency": "立陶宛政府",
+      "title": "立陶宛宣布加强关键基础设施安全防护，应对卫星通信设施疑似破坏",
+      "original_title": "Lithuania to increase security at critical infrastructure, prime minister says",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/lithuania-increase-security-critical-infrastructure-prime-minister-says-2026-10-19/",
+      "fact": "路透社10月19日报道，立陶宛总理表示将增加对关键基础设施的安全保护和应急准备。此前当地一处Starlink通信设施发生疑似人为纵火事件，相关部门继续调查。设施遭破坏的责任归属尚未依法确认，本次新闻属于政府防护部署。",
+      "domestic": false
+    },
+    {
+      "id": "research-item-9",
+      "date": "2026-10-19",
+      "jurisdiction": "美国",
+      "agency": "美国参议院、联邦通信委员会",
+      "title": "美国议员要求FCC拒绝允许使用AI生成政治自动语音电话的豁免申请",
+      "original_title": "Senator urges FCC to reject conservative group's bid to use political AI-generated robocalls",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/us/senator-urges-fcc-reject-conservative-groups-bid-use-political-ai-generated-2026-10-19/",
+      "fact": "10月19日，美国参议院民主党领袖舒默呼吁FCC驳回Club for Growth提出的AI生成政治自动语音拨号规则豁免申请。FCC仍处于征求公众意见与审理申请的程序阶段。议员反对意见不等于主管机关已作出批准或驳回决定。",
+      "domestic": false
+    },
+    {
+      "id": "research-item-10",
+      "date": "2026-10-19",
+      "jurisdiction": "越南·河内",
+      "agency": "越南国家网络安全协会、公安部相关部门",
+      "title": "越南启动校园数字安全行动，预计覆盖约9000名师生",
+      "original_title": "Phát động chiến dịch 'an toàn số cho em' đến các trường học",
+      "source_name": "越南政府门户网站",
+      "url": "https://cms.baochinhphu.vn/phat-dong-chien-dich-an-toan-so-cho-em-den-cac-truong-hoc-102261019101054181.htm",
+      "fact": "越南政府门户网站10月19日报道，Teen Safety School Tour 2026数字安全活动在河内学校启动。主办方计划于10月至12月走进五个省市的十所学校，为约9000名师生介绍个人信息保护、网络诈骗和AI虚假内容识别。该行动为校园数字安全教育项目，不属于新颁布的法律。",
+      "domestic": false
+    },
+    {
+      "id": "research-item-11",
+      "date": "2026-10-19",
+      "jurisdiction": "欧洲",
+      "agency": "德国电信、Orange、Telefónica、Vodafone",
+      "title": "欧洲电信运营商研究联合参与移动卫星通信频谱竞标",
+      "original_title": "European telecom groups mull bid for mobile satellite spectrum",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/aerospace-defense/european-telecom-groups-mull-joint-bid-mobile-satellite-spectrum-2026-10-19/",
+      "fact": "路透社10月19日报道，德国电信、Orange、Telefónica和Vodafone等运营商正在研究共同竞标移动卫星通信频谱的可能性。有关频谱将影响卫星和地面移动网络协同及通信基础设施竞争。企业尚未确认正式递交联合竞标材料或取得频谱许可。",
+      "domestic": false
+    },
+    {
+      "id": "research-item-12",
+      "date": "2026-10-19",
+      "jurisdiction": "巴西",
+      "agency": "巴西高级选举法院、Meta",
+      "title": "巴西选举法院要求Meta说明AI系统是否差别对待总统候选人",
+      "original_title": "TSE dá 24h para Meta provar que IA não favorece Lula ou Flávio",
+      "source_name": "UOL Notícias",
+      "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2026/10/19/meta-tem-24h-para-provar-que-ia-nao-favorece-lula-ou-flavio.ghtm",
+      "fact": "巴西媒体10月19日报道，高级选举法院要求Meta在24小时内提交材料，回应关于其AI工具可能对两名总统候选人差别对待的争议。有关问题尚处证据调查阶段，需要由法院继续评估。限期提交说明属于程序措施，不能表述为法院已判定Meta实施违法操纵。",
+      "domestic": false
+    }
+  ],
+  "analysis": {
+    "status": "pending",
+    "task": "不编制法治研判、论文或智库选题。"
+  },
+  "publication": {
+    "article_written": true,
+    "index_updated": true,
+    "briefs_updated": true,
+    "archive_updated": true,
+    "current_edition_updated": true,
+    "pages_status": "awaiting_deployment",
+    "commit_sha": null,
+    "pages_run_id": null
+  }
+}
