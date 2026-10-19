@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-19",
+  "base_main_sha": "be9c9c06845ccba377a8badaddc56a68e31b8273",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "核对最近七期完整正文与工作流",
+    "巡视美国欧盟英国日本韩国印度加拿大澳大利亚",
+    "逐条来源核验及事件去重",
+    "阶段性保存",
+    "完成终扫并发布"
+  ]
+}
