@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-16",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-10-16-new-works.html",
+  "page_blob_sha": "9671230f06997db15ee960f63865ba5a26b55ad2",
+  "newworks_count": 3,
+  "checked_at": "2026-10-20T23:12:30.595+08:00",
+  "works": [
+    {
+      "author": "Guido Smorto",
+      "original_title": "Simplification or Deregulation? The Digital Omnibus and the Silent Erosion of B2B Protections in the Digital Single Market",
+      "cn_title": "欧盟《数字综合法案》拟废止平台商家保护规则的风险",
+      "journal": "European Journal of Risk Regulation",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "volume": "",
+      "issue": "",
+      "pages": "1–21（First View）",
+      "article_number": "",
+      "doi": "10.1017/err.2026.10155",
+      "source": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/simplification-or-deregulation-the-digital-omnibus-and-the-silent-erosion-of-b2b-protections-in-the-digital-single-market/481C9E7D3365E933E3570415371FE3B4",
+      "published_on": "2026-09-30",
+      "version": "publisher_online",
+      "full_text_access": true
+    },
+    {
+      "author": "Abayomi Ogayemi",
+      "original_title": "From obligation to enforcement: mapping EU AI act and CRA cybersecurity requirements to technical controls for LLM-based autonomous agents",
+      "cn_title": "如何把欧盟人工智能安全义务转化为智能体可验证的技术控制",
+      "journal": "International Journal of Information Security",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "volume": "25",
+      "issue": "",
+      "pages": "",
+      "article_number": "164",
+      "doi": "10.1007/s10207-026-01336-9",
+      "source": "https://link.springer.com/article/10.1007/s10207-026-01336-9",
+      "published_on": "2026-09-18",
+      "version": "publisher_online",
+      "full_text_access": true
+    },
+    {
+      "author": "Jersain Zadamig Llamas Covarrubias",
+      "original_title": "From Ransomware Payment Bans to Payment Governance: A Risk-Based Regulatory Framework for the EU",
+      "cn_title": "欧盟如何单独规制勒索软件赎金支付",
+      "journal": "European Journal of Risk Regulation",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "volume": "",
+      "issue": "",
+      "pages": "1–14（First View）",
+      "article_number": "",
+      "doi": "10.1017/err.2026.10139",
+      "source": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/from-ransomware-payment-bans-to-payment-governance-a-riskbased-regulatory-framework-for-the-eu/C3ABE06E176B50BB03E1E586AFB65668",
+      "published_on": "2026-08-05",
+      "version": "publisher_online",
+      "full_text_access": true
+    }
+  ],
+  "historical_deduplication": {
+    "scope": "58 historical new-works pages plus six 2026-10 supplemental editions",
+    "matched_dois": [],
+    "matched_original_titles": []
+  },
+  "checks": {
+    "publisher_metadata_and_original_titles_checked": true,
+    "publication_and_versions_checked": true,
+    "historical_duplicate_search_done": true,
+    "three_items_and_structure_checked": true,
+    "source_excerpt_or_open_abstract_examined": true,
+    "natural_chinese_reviewed": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_result": null,
+    "online_verified": null
+  }
+}
