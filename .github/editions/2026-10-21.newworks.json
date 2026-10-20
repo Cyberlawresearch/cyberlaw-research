@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-21",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-10-21-new-works.html",
+  "page_blob_sha": "8fefeed9c28c0d4dc9a76fcb246c05ea747e7f4b",
+  "newworks_count": 3,
+  "checked_at": null,
+  "checks": {
+    "publisher_pages_opened": true,
+    "bibliographic_metadata_verified": true,
+    "history_original_title_search": true,
+    "history_doi_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true
+  },
+  "works": [
+    {
+      "author": "Mikheil Bichia",
+      "original_title": "Personal data protection in Georgian higher education accreditation: redress, retention, and targeted reforms",
+      "cn_title": "格鲁吉亚高校认证中的个人信息保护：留存期限与救济",
+      "journal": "International Data Privacy Law",
+      "publisher": "Oxford University Press",
+      "year": 2026,
+      "volume": "16",
+      "issue": "4",
+      "pages": "",
+      "article_number": "ipag024",
+      "doi": "10.1093/idpl/ipag024",
+      "source": "https://academic.oup.com/idpl/advance-article-abstract/doi/10.1093/idpl/ipag024/8916684",
+      "published_on": "2026-10-14",
+      "version": "publisher_online",
+      "full_text_access": false
+    },
+    {
+      "author": "Irene Baceiredo Macho",
+      "original_title": "Securing borders, saving lives? The humanitarian-security paradox of Eurosur",
+      "cn_title": "欧盟边境监控系统的双重使命：数据共享如何影响不遣返原则",
+      "journal": "International Data Privacy Law",
+      "publisher": "Oxford University Press",
+      "year": 2026,
+      "volume": "16",
+      "issue": "4",
+      "pages": "",
+      "article_number": "ipag023",
+      "doi": "10.1093/idpl/ipag023",
+      "source": "https://doi.org/10.1093/idpl/ipag023",
+      "published_on": "2026-10-08",
+      "version": "publisher_online",
+      "full_text_access": false
+    },
+    {
+      "author": "Benjamin Kraudinger、Himanshu Arora",
+      "original_title": "A wolf in sheep’s clothing: the hidden issues in Institutul G. Călinescu",
+      "cn_title": "欧盟公共领域文献校勘成果的版权保护边界",
+      "journal": "Journal of Intellectual Property Law & Practice",
+      "publisher": "Oxford University Press",
+      "year": 2026,
+      "volume": "21",
+      "issue": "9",
+      "pages": "601–604",
+      "article_number": "",
+      "doi": "10.1093/jiplp/jpag075",
+      "source": "https://academic.oup.com/jiplp/advance-article-abstract/doi/10.1093/jiplp/jpag075/8740061",
+      "published_on": "2026-07-22",
+      "version": "publisher_final",
+      "full_text_access": false
+    }
+  ],
+  "publication": {
+    "commit_sha": null,
+    "pages_deploy_status": null,
+    "online_verification": null
+  }
+}
