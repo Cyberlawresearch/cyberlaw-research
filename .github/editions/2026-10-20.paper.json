@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-20",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "published_as_backfill": true,
+  "page": "articles/2026-10-20-gillespie-platforms-not-intermediaries.html",
+  "selection": "Tarleton Gillespie, Platforms Are Not Intermediaries",
+  "bibliography": {
+    "type": "article",
+    "author": "Tarleton Gillespie",
+    "originalTitle": "Platforms Are Not Intermediaries",
+    "journal": "Georgetown Law Technology Review",
+    "year": "2018",
+    "volume": "2",
+    "issue": "2",
+    "pages": "198–216",
+    "doi": "",
+    "url": "https://georgetownlawtechreview.org/platforms-are-not-intermediaries/GLTR-07-2018/",
+    "cnTitle": "平台并非中立中介：内容治理就是平台的核心业务"
+  },
+  "versions": {
+    "publication": "Georgetown Law Technology Review, 2(2) (2018), pp. 198–216",
+    "full_text": "Public 19-page published journal PDF, full argument, sections and reference list reviewed",
+    "ssrn": "No separate working-paper bibliographic claims"
+  },
+  "sources": [
+    "https://georgetownlawtechreview.org/platforms-are-not-intermediaries/GLTR-07-2018/",
+    "https://georgetownlawtechreview.org/wp-content/uploads/2018/07/2.2-Gilespie-pp-198-216.pdf"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-10-04-grimmelmann-virtues-of-moderation.html",
+    "articles/2026-09-19-klonick-new-governors.html"
+  ],
+  "timeline": null,
+  "body_length": 2699,
+  "checked_at": "2026-10-20T23:44:22+08:00",
+  "base_main_sha": "249b0a97cadc9e8facad8f1107bccdddd7932a7b",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}

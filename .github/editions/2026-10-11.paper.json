@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-11",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "published_as_backfill": true,
+  "page": "articles/2026-10-11-solove-hartzog-ftc-privacy-common-law.html",
+  "selection": "Daniel J. Solove、Woodrow Hartzog, The FTC and the New Common Law of Privacy",
+  "bibliography": {
+    "type": "article",
+    "author": "Daniel J. Solove、Woodrow Hartzog",
+    "originalTitle": "The FTC and the New Common Law of Privacy",
+    "journal": "Columbia Law Review",
+    "year": "2014",
+    "volume": "114",
+    "issue": "3",
+    "pages": "583–676",
+    "doi": "",
+    "url": "https://columbialawreview.org/content/the-ftc-and-the-new-common-law-of-privacy/",
+    "cnTitle": "FTC如何形成美国隐私监管的“新普通法”"
+  },
+  "versions": {
+    "publication": "Columbia Law Review, 114(3) (2014), pp. 583–676",
+    "full_text": "Public 94-page published journal PDF, full argument, sections and reference list reviewed",
+    "ssrn": "No separate working-paper bibliographic claims"
+  },
+  "sources": [
+    "https://columbialawreview.org/content/the-ftc-and-the-new-common-law-of-privacy/",
+    "https://columbialawreview.org/wp-content/uploads/2016/04/Solove-Hartzog.pdf"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-09-10-solove-privacy-self-management.html"
+  ],
+  "timeline": null,
+  "body_length": 2087,
+  "checked_at": "2026-10-20T23:39:49+08:00",
+  "base_main_sha": "249b0a97cadc9e8facad8f1107bccdddd7932a7b",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}

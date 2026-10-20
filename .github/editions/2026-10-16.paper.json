@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-16",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "published_as_backfill": true,
+  "page": "articles/2026-10-16-rahman-informational-infrastructure.html",
+  "selection": "K. Sabeel Rahman, Regulating Informational Infrastructure: Internet Platforms as the New Public Utilities",
+  "bibliography": {
+    "type": "article",
+    "author": "K. Sabeel Rahman",
+    "originalTitle": "Regulating Informational Infrastructure: Internet Platforms as the New Public Utilities",
+    "journal": "Georgetown Law Technology Review",
+    "year": "2018",
+    "volume": "2",
+    "issue": "2",
+    "pages": "234–251",
+    "doi": "",
+    "url": "https://georgetownlawtechreview.org/regulating-informational-infrastructure-internet-platforms-as-the-new-public-utilities/GLTR-07-2018/",
+    "cnTitle": "把互联网平台作为公共基础设施来规制"
+  },
+  "versions": {
+    "publication": "Georgetown Law Technology Review, 2(2) (2018), pp. 234–251",
+    "full_text": "Public 18-page published journal PDF, full argument, sections and reference list reviewed",
+    "ssrn": "No separate working-paper bibliographic claims"
+  },
+  "sources": [
+    "https://georgetownlawtechreview.org/regulating-informational-infrastructure-internet-platforms-as-the-new-public-utilities/GLTR-07-2018/",
+    "https://georgetownlawtechreview.org/wp-content/uploads/2018/07/2.2-Rahman-pp-234-51.pdf"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-10-03-cohen-law-platform-economy.html",
+    "articles/2026-09-30-wu-network-neutrality.html"
+  ],
+  "timeline": null,
+  "body_length": 2255,
+  "checked_at": "2026-10-20T23:44:22+08:00",
+  "base_main_sha": "249b0a97cadc9e8facad8f1107bccdddd7932a7b",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}

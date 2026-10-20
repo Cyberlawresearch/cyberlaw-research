@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-18",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "published_as_backfill": true,
+  "page": "articles/2026-10-18-ohm-regulating-at-scale.html",
+  "selection": "Paul Ohm, Regulating at Scale",
+  "bibliography": {
+    "type": "article",
+    "author": "Paul Ohm",
+    "originalTitle": "Regulating at Scale",
+    "journal": "Georgetown Law Technology Review",
+    "year": "2018",
+    "volume": "2",
+    "issue": "2",
+    "pages": "546–556",
+    "doi": "",
+    "url": "https://georgetownlawtechreview.org/regulating-at-scale/GLTR-07-2018/",
+    "cnTitle": "规模化平台应当接受怎样的差异化监管"
+  },
+  "versions": {
+    "publication": "Georgetown Law Technology Review, 2(2) (2018), pp. 546–556",
+    "full_text": "Public 11-page published journal PDF, full argument, sections and reference list reviewed",
+    "ssrn": "No separate working-paper bibliographic claims"
+  },
+  "sources": [
+    "https://georgetownlawtechreview.org/regulating-at-scale/GLTR-07-2018/",
+    "https://georgetownlawtechreview.org/wp-content/uploads/2018/07/2.2-Ohm-pp-546-56.pdf"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-10-16-rahman-informational-infrastructure.html"
+  ],
+  "timeline": null,
+  "body_length": 1858,
+  "checked_at": "2026-10-20T23:44:22+08:00",
+  "base_main_sha": "249b0a97cadc9e8facad8f1107bccdddd7932a7b",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-09",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "published_as_backfill": true,
+  "page": "articles/2026-10-09-calo-code-nudge-notice.html",
+  "selection": "Ryan Calo, Code, Nudge, or Notice?",
+  "bibliography": {
+    "type": "article",
+    "author": "Ryan Calo",
+    "originalTitle": "Code, Nudge, or Notice?",
+    "journal": "Iowa Law Review",
+    "year": "2014",
+    "volume": "99",
+    "issue": "2",
+    "pages": "773–802",
+    "doi": "",
+    "url": "https://ilr.law.uiowa.edu/print/volume-99-issue-2",
+    "cnTitle": "代码、助推还是告知：数字时代的监管方式选择"
+  },
+  "versions": {
+    "publication": "Iowa Law Review, 99(2) (2014), pp. 773–802",
+    "full_text": "Public 30-page published journal PDF, full argument, sections and reference list reviewed",
+    "ssrn": "No separate working-paper bibliographic claims"
+  },
+  "sources": [
+    "https://ilr.law.uiowa.edu/print/volume-99-issue-2",
+    "https://ilr.law.uiowa.edu/sites/ilr.law.uiowa.edu/files/2023-02/ILR-99-2-Calo.pdf"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-09-22-reidenberg-lex-informatica.html",
+    "articles/2026-09-10-solove-privacy-self-management.html"
+  ],
+  "timeline": null,
+  "body_length": 1996,
+  "checked_at": "2026-10-20T23:39:49+08:00",
+  "base_main_sha": "249b0a97cadc9e8facad8f1107bccdddd7932a7b",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}

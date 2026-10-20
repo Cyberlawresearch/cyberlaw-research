@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-19",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "published_as_backfill": true,
+  "page": "articles/2026-10-19-citron-solove-privacy-harms.html",
+  "selection": "Danielle Keats Citron、Daniel J. Solove, Privacy Harms",
+  "bibliography": {
+    "type": "article",
+    "author": "Danielle Keats Citron、Daniel J. Solove",
+    "originalTitle": "Privacy Harms",
+    "journal": "Boston University Law Review",
+    "year": "2022",
+    "volume": "102",
+    "issue": "3",
+    "pages": "793–863",
+    "doi": "",
+    "url": "https://www.bu.edu/bulawreview/2022/04/13/volume-102-number-3/",
+    "cnTitle": "隐私损害为什么难以被法院承认"
+  },
+  "versions": {
+    "publication": "Boston University Law Review, 102(3) (2022), pp. 793–863",
+    "full_text": "Public 71-page published journal PDF, full argument, sections and reference list reviewed",
+    "ssrn": "No separate working-paper bibliographic claims"
+  },
+  "sources": [
+    "https://www.bu.edu/bulawreview/2022/04/13/volume-102-number-3/",
+    "https://www.bu.edu/bulawreview/files/2022/04/CITRON-SOLOVE.pdf"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-09-28-warren-brandeis-right-to-privacy.html",
+    "articles/2026-09-10-solove-privacy-self-management.html"
+  ],
+  "timeline": null,
+  "body_length": 2141,
+  "checked_at": "2026-10-20T23:44:22+08:00",
+  "base_main_sha": "249b0a97cadc9e8facad8f1107bccdddd7932a7b",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}

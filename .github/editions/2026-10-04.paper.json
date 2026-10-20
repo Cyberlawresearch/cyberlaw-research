@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-04",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "published_as_backfill": true,
+  "page": "articles/2026-10-04-grimmelmann-virtues-of-moderation.html",
+  "selection": "James Grimmelmann, The Virtues of Moderation",
+  "bibliography": {
+    "type": "article",
+    "author": "James Grimmelmann",
+    "originalTitle": "The Virtues of Moderation",
+    "journal": "Yale Journal of Law & Technology",
+    "year": "2015",
+    "volume": "17",
+    "issue": "1",
+    "pages": "42–109",
+    "doi": "",
+    "url": "https://yjolt.org/virtues-moderation",
+    "cnTitle": "内容治理的制度价值：开放社区如何维持秩序"
+  },
+  "versions": {
+    "publication": "Yale Journal of Law & Technology, 17(1) (2015), pp. 42–109",
+    "full_text": "Public 68-page published journal PDF, full argument, sections and reference list reviewed",
+    "ssrn": "No separate working-paper bibliographic claims"
+  },
+  "sources": [
+    "https://yjolt.org/virtues-moderation",
+    "https://yjolt.org/sites/default/files/grimmelmann_the-virtues-of-moderation_0.pdf"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-09-19-klonick-new-governors.html"
+  ],
+  "timeline": null,
+  "body_length": 2204,
+  "checked_at": "2026-10-20T23:39:49+08:00",
+  "base_main_sha": "249b0a97cadc9e8facad8f1107bccdddd7932a7b",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}
