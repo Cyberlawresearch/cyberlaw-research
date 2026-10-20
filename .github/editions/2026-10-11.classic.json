@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-11",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-10-11-wollstonecraft-rights-of-woman.html",
+  "target_path": "articles/2026-10-11-wollstonecraft-rights-of-woman.html",
+  "book": {
+    "author": "Mary Wollstonecraft",
+    "original_title": "A Vindication of the Rights of Woman: with Strictures on Political and Moral Subjects",
+    "publisher": "J. Johnson",
+    "year": "1792",
+    "edition": "1792 London first edition bibliographic reference; Gutenberg transcription includes later editorial materials separated"
+  },
+  "source_urls": [
+    "https://www.gutenberg.org/cache/epub/3420/pg3420.html",
+    "https://digital-collections.princeton.edu/i/vindication-rights-woman-strictures/item/dc86efb1-42b3-4f17-94f0-25cf868a5659/metadata",
+    "https://www.britishlibrary.cn/en/works/vindication-of-the-rights-of-woman/",
+    "https://press.uchicago.edu/ucp/books/book/chicago/P/bo5959533.html"
+  ],
+  "original_verification": "核对可公开访问的完整原著目录、通篇主题结构和代表性章节论证，校对基本书目信息；未声称逐页校勘原始影印本；后世编者材料不计入原作者主张。",
+  "critics": [
+    {
+      "name": "Mary Poovey",
+      "work": "The Proper Lady and the Woman Writer (1984), analysis of Wollstonecraft's tension with ideal of the proper lady",
+      "url": "https://press.uchicago.edu/ucp/books/book/chicago/P/bo5959533.html"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html",
+    "classics-history.html"
+  ],
+  "duplicate_found": false,
+  "sections": 31,
+  "prose_length": 4029,
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-20",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-10-20-bastiat-the-law.html",
+  "target_path": "articles/2026-10-20-bastiat-the-law.html",
+  "book": {
+    "author": "Frédéric Bastiat",
+    "original_title": "La Loi",
+    "publisher": "Librairie de Guillaumin et Cie",
+    "year": "1850",
+    "edition": "1850 Paris pamphlet, comparison against complete original French reprint; study headings not part of authorial text"
+  },
+  "source_urls": [
+    "https://bastiat.org/fr/la_loi.html",
+    "https://fr.wikisource.org/wiki/La_Loi_(Fr%C3%A9d%C3%A9ric_Bastiat)",
+    "https://www.davidmhart.com/liberty/Books/1850-Bastiat_LaLoi/Bastiat_LaLoi1850-ebook.html",
+    "https://www.gutenberg.org/ebooks/360"
+  ],
+  "original_verification": "核对可公开访问的完整原著目录、通篇主题结构和代表性章节论证，校对基本书目信息；未声称逐页校勘原始影印本；后世编者材料不计入原作者主张。",
+  "critics": [
+    {
+      "name": "Pierre-Joseph Proudhon",
+      "work": "Qu'est-ce que la propriété? (1840); conceptual counterpoint, not a later review of La Loi",
+      "url": "https://www.gutenberg.org/ebooks/360"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html",
+    "classics-history.html"
+  ],
+  "duplicate_found": false,
+  "sections": 32,
+  "prose_length": 3920,
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  }
+}

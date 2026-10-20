@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-21",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-10-21-stephen-liberty-equality-fraternity.html",
+  "target_path": "articles/2026-10-21-stephen-liberty-equality-fraternity.html",
+  "book": {
+    "author": "James Fitzjames Stephen",
+    "original_title": "Liberty, Equality, Fraternity",
+    "publisher": "Smith, Elder & Co.",
+    "year": "1873",
+    "edition": "1873 London first edition; 7 chapters and Note on Utilitarianism, later 1874 second edition preface and editor matter separate"
+  },
+  "source_urls": [
+    "https://books.google.com/books/about/Liberty_Equality_Fraternity.html?id=MAkAAAAAYAAJ",
+    "https://oll.libertyfund.org/titles/stephen-liberty-equality-fraternity-lf-ed",
+    "https://oll-resources.s3.us-east-2.amazonaws.com/oll3/store/titles/572/Stephen_0021_EBk_v6.0.pdf",
+    "https://stafforini.com/works/sidgwick-1873-review-fitzjames-stephen/",
+    "https://www.gutenberg.org/ebooks/34901"
+  ],
+  "original_verification": "核对可公开访问的完整原著目录、通篇主题结构和代表性章节论证，校对基本书目信息；未声称逐页校勘原始影印本；后世编者材料不计入原作者主张。",
+  "critics": [
+    {
+      "name": "Henry Sidgwick",
+      "work": "Review of Fitzjames Stephen, Liberty, Equality, Fraternity, The Academy (1873), pp.292-294",
+      "url": "https://stafforini.com/works/sidgwick-1873-review-fitzjames-stephen/"
+    },
+    {
+      "name": "John Morley",
+      "work": "Mr. Mill's Doctrine of Liberty, Fortnightly Review (August 1873)",
+      "url": "https://www.biggerbooks.com/selected-writings-james-fitzjames-stephen/bk/9780199212675"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html",
+    "classics-history.html"
+  ],
+  "duplicate_found": false,
+  "sections": 35,
+  "prose_length": 4691,
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  }
+}

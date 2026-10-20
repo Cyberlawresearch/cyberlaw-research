@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-04",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-10-04-paine-rights-of-man.html",
+  "target_path": "articles/2026-10-04-paine-rights-of-man.html",
+  "book": {
+    "author": "Thomas Paine",
+    "original_title": "Rights of Man",
+    "publisher": "J. S. Jordan (London printing of both parts)",
+    "year": "1791–1792",
+    "edition": "Two-part work, 1791 first part / 1792 second part; complete later editorial transcription, distinguish editorial foreword"
+  },
+  "source_urls": [
+    "https://www.gutenberg.org/cache/epub/3742/pg3742-images.html",
+    "https://onlinebooks.library.upenn.edu/webbin/work?id=olbp107849",
+    "https://www.gutenberg.org/cache/epub/15679/pg15679-images.html"
+  ],
+  "original_verification": "核对可公开访问的完整原著目录、通篇主题结构和代表性章节论证，校对基本书目信息；未声称逐页校勘原始影印本；后世编者材料不计入原作者主张。",
+  "critics": [
+    {
+      "name": "Edmund Burke",
+      "work": "Reflections on the Revolution in France (1790); earlier opposing position addressed by Paine",
+      "url": "https://www.gutenberg.org/cache/epub/15679/pg15679-images.html"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html",
+    "classics-history.html"
+  ],
+  "duplicate_found": false,
+  "sections": 31,
+  "prose_length": 4070,
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  }
+}
