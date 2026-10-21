@@ -1,7 +1,7 @@
 {
   "date": "2026-10-20",
   "base_main_sha": "88877891fd23ad76f876275e972ed50ddf2ed964",
-  "phase": "deployment_check",
+  "phase": "completed",
   "publication_ready": true,
   "items": [
     {
@@ -190,10 +190,12 @@
     ],
     "pending": []
   },
-  "last_error": null,
-  "next_actions": [
-    "确认最新main提交3dc5353的Pages 39619379474成功，再保存完成证据"
-  ],
+  "last_error": {
+    "stage": "automated_source_diagnostics",
+    "run_id": 39619871488,
+    "error": "挪威官网对Actions检查器403；独立公开源复核成功，自动诊断例外保留。"
+  },
+  "next_actions": [],
   "prior_progress": {
     "items": [
       {
@@ -260,14 +262,14 @@
   },
   "backfill_policy": "用户明确要求按10月18—21日期补刊；历史期以对应期日最近披露窗口选材，正文保留实际事件日期、签署日期及公报日期，不冒称当日已发布。",
   "publication": {
-    "state": "deployment_pending",
+    "state": "published",
     "main_written": true,
     "main_readback": true,
     "body_commit": "b8a38274818d02f46de3b3ce9a8185827bda2464",
     "three_file_commit": "071f3054ae609ec1bb1e6ee6db7893b338f78df7",
     "deployment_commit": "3dc53530d41678ac87142a49afecb0c3b91a4a4e",
     "pages_run_id": 39619379474,
-    "pages_success": null,
+    "pages_success": true,
     "public_verified": true,
     "observations": [
       "各期正文、当期首页及归档依日期顺序写入并回读。最终首页和归档首项为10月21日第045期。",
@@ -281,6 +283,151 @@
       "deploy_step": "success",
       "post_deploy_checks": "success",
       "note": "后续另一栏目main提交触发新整站部署，等待最新有效提交完成。"
+    },
+    "pages_conclusion": "success",
+    "public_acceptance": [
+      {
+        "path": "issues/2026-10-18.html",
+        "status": 200,
+        "ok": true,
+        "cards": 4
+      },
+      {
+        "path": "issues/2026-10-19.html",
+        "status": 200,
+        "ok": true,
+        "cards": 5
+      },
+      {
+        "path": "issues/2026-10-20.html",
+        "status": 200,
+        "ok": true,
+        "cards": 5
+      },
+      {
+        "path": "issues/2026-10-21.html",
+        "status": 200,
+        "ok": true,
+        "cards": 4
+      },
+      {
+        "path": "index.html",
+        "status": 200,
+        "ok": true,
+        "cards": 0
+      },
+      {
+        "path": "archive.html",
+        "status": 200,
+        "ok": true,
+        "cards": 0
+      }
+    ],
+    "source_link_checks": [
+      {
+        "url": "https://assets.publishing.service.gov.uk/media/6ad1ebc9e5db84746b4796e9/Sanctions_Notice__ISIL__Da_esh____Al-Qaeda__16_October_2026.pdf",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "url": "https://dgtr.gov.in/sites/default/files/2026-10/Corrigendum%20CDC%20English.pdf",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "url": "https://dgtr.gov.in/sites/default/files/2026-10/Extension%20of%20Time%20Line.pdf",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "url": "https://english.motir.go.kr/eng/article/EATCLdfa319ada/2760/view",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "url": "https://ofac.treasury.gov/media/937261/download?inline",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "url": "https://ofac.treasury.gov/recent-actions/20261019",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-16/html/2026-21124.htm",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-19/html/2026-21294.htm",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-19/html/2026-21296.htm",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-19/html/2026-21362.htm",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-20/html/2026-21382.htm",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-20/html/2026-21447.htm",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-20/html/2026-21452.htm",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-20/html/2026-21459.htm",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-21/html/2026-21504.htm",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "url": "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/report/20261019_toushin.html",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "url": "https://www.regjeringen.no/no/aktuelt/gjennomforing-av-eus-21.-sanksjonspakke-i-norsk-rett/id3179837/",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "url": "https://www.tid.gov.hk/en/tradecircular/2026/ci9042026.html",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "url": "https://www.trade.gov.tw/english/Pages/detail.aspx?nodeID=86&pid=821303",
+        "status": 200,
+        "ok": true
+      }
+    ],
+    "source_links_manual_passed": 19,
+    "historical_bodies_unchanged": 41,
+    "automated_source_diagnostics": {
+      "run_id": 39619871488,
+      "conclusion": "failure",
+      "reason": "挪威新闻稿URL对GitHub Actions检查器返回403；同一URL正常公开HTTP请求及网页读取成功。其余3个当期来源、正文首页归档在该工作流均通过。",
+      "manual_resolution": "四期全部19链接独立复核HTTP200；另直接打开并核对官方修订法规PDF，证明生效及LNG义务。保留自动检查失败，不改写或削弱测试。",
+      "official_regulation": "https://www.regjeringen.no/contentassets/529a2fece1ae4da29633dd6ec7eeed45/26_01622-144-endringsforskrift-21.-pakke-622252_1_0.pdf"
     }
   },
   "failure_history": [
@@ -308,6 +455,17 @@
       "tool": "github_fetch",
       "result": "HTTP400 INVALID_ARGUMENT，workflows/pages.yml/runs不是该工具允许入口",
       "resolution": "使用允许的actions/runs集合及run详情读取，未涉及写入拒绝"
+    },
+    {
+      "stage": "automated_source_diagnostics",
+      "time": "2026-10-21T14:47:15Z",
+      "tool": "GitHub Actions Trade Watch source diagnostics",
+      "run_id": 39619871488,
+      "url": "https://www.regjeringen.no/no/aktuelt/gjennomforing-av-eus-21.-sanksjonspakke-i-norsk-rett/id3179837/",
+      "error": "403 Client Error: Forbidden",
+      "attempts": 3,
+      "resolution": "正常公开读取同一来源HTTP200且法规PDF核验成功；自动工作流失败状态保留，不更换检查器身份或弱化测试。"
     }
-  ]
+  ],
+  "completed_at": "2026-10-21T14:48:55.025Z"
 }
