@@ -1,8 +1,8 @@
 {
   "date": "2026-10-19",
   "base_main_sha": "be9c9c06845ccba377a8badaddc56a68e31b8273",
-  "phase": "final_review",
-  "publication_ready": false,
+  "phase": "publishing",
+  "publication_ready": true,
   "items": [
     {
       "id": "us-paipa-designations",
@@ -194,8 +194,8 @@
   },
   "last_error": null,
   "next_actions": [
-    "完成正文DOM链接预检、终扫后保存最终核验",
-    "写入正文首页归档，核验Pages与公开页面"
+    "逐期写入main正文、首页和归档",
+    "对应提交Pages及线上正文来源验收"
   ],
   "prior_progress": {
     "items": [
@@ -249,5 +249,23 @@
       "event": "台湾越南钢材案草稿事件日期",
       "reason": "修正为10月16日披露、10月12日认定"
     }
-  ]
+  ],
+  "checked_at": "2026-10-21T14:39:26.415Z",
+  "last_scan_at": "2026-10-21T14:39:26.415Z",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "dates": true,
+    "seven_issue_deduplication": true,
+    "cross_backfill_deduplication": true,
+    "dom_links": true,
+    "source_links": true
+  },
+  "backfill_policy": "用户明确要求按10月18—21日期补刊；历史期以对应期日最近披露窗口选材，正文保留实际事件日期、签署日期及公报日期，不冒称当日已发布。",
+  "publication": {
+    "state": "pending",
+    "main_written": false,
+    "pages_success": null,
+    "public_verified": null
+  }
 }
