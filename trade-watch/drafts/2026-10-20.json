@@ -3,8 +3,33 @@
   "base_main_sha": "88877891fd23ad76f876275e972ed50ddf2ed964",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "us-deepseek-fascsa",
+      "event_date": "2026-10-20",
+      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-20/html/2026-21447.htm",
+      "headline": "美国公布联邦文职机构DeepSeek采购排除及移除命令",
+      "status": "正式命令公告，非一般市场进口禁令",
+      "verified": true
+    },
+    {
+      "id": "us-hydraulic-cvd-postpone",
+      "event_date": "2026-10-20",
+      "source": "https://www.federalregister.gov/documents/2026/10/20/2026-21452/certain-linear-hydraulic-cylinders-and-parts-thereof-from-the-peoples-republic-of-china-india-and",
+      "headline": "三国液压缸反补贴初裁延至2027年1月19日",
+      "status": "程序延期，非新税令",
+      "verified": true
+    }
+  ],
+  "coverage": {
+    "checked": [
+      "已打开所列美国原始公告及日本财务省公告"
+    ],
+    "pending": [
+      "完成八法域巡视与终扫",
+      "完成近7期逐条去重及正文"
+    ]
+  },
   "last_error": null,
   "next_actions": [
     "核对最近七期正文并完成法域巡视",
