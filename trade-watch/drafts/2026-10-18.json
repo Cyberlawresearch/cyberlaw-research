@@ -1,76 +1,263 @@
 {
   "date": "2026-10-18",
   "base_main_sha": "c99217b345ebff2d5dfd618b0ea04dae6dbfd021",
-  "phase": "researching",
+  "phase": "final_review",
   "publication_ready": false,
   "items": [
     {
-      "id": "eu-furfuryl-ad",
-      "jurisdiction": "欧盟",
-      "event_date": "2026-10-16",
-      "agency": "欧盟委员会",
-      "headline": "欧盟对中国糠醇正式启动反倾销调查",
-      "status": "正式立案，未征收新税；拟另行规定进口登记",
-      "impact": "对欧糠醇报关归类TARIC 2932 13 00 30、原产地和问卷应诉准备",
-      "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202605408",
-      "secondary": "https://www.gtai.de/de/trade/eu/zoll/antidumping-furfurylalkohol-china-2036060",
-      "verified": true
-    },
-    {
       "id": "us-semiconductor-337-amend",
+      "j": "美国",
+      "agency": "USITC",
+      "event": "2026-10-16",
+      "dateNote": "10月16日公报公布；决定于10月13日作出",
+      "title": "美国337-TA-1500半导体案扩大专利主张范围，尚无进口排除决定",
+      "status": "投诉及调查通知修订，不是侵权终裁",
+      "fact": "10月16日《联邦公报》公布，美国国际贸易委员会不复审行政法官第8号初裁，允许GlobalFoundries在337-TA-1500案中增加美国专利8,507,983的从属权利要求8—12及19。被调查方包括Tower在以色列、日本、意大利及美国的相关企业。委员会于10月13日作出决定；本次仅扩大审理的专利主张，没有认定侵权，也未签发排除令。",
+      "scope": "涉Tower晶圆制造服务、相关半导体器件及包含该器件的产品进口。",
+      "impact": "采购相关晶圆或芯片的企业应核对涉案产品和美国进口链条，向供应商确认新增权利要求对应的技术方案及应诉安排，并在供货合同中明确知识产权争议的通知和替代供应机制。",
+      "deadline": "本次公告无统一企业答卷新期限，诉讼日程应以案件具体命令为准。",
+      "sources": [
+        [
+          "https://www.govinfo.gov/content/pkg/FR-2026-10-16/html/2026-21124.htm",
+          "美国《联邦公报》2026-21124号公告"
+        ]
+      ],
+      "verified": true,
+      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-16/html/2026-21124.htm",
       "jurisdiction": "美国",
       "event_date": "2026-10-16",
-      "agency": "USITC",
-      "headline": "美国337-TA-1500半导体调查新增专利主张",
-      "status": "委员会不复审行政法官批准修订投诉的初裁；未认定侵权，亦无排除令",
-      "impact": "涉及与Tower Semiconductor相关的美国半导体供应链及诉讼证据义务",
-      "source": "https://www.federalregister.gov/documents/2026/10/16/2026-21124",
-      "verified": true
+      "deduplication": "已与main最近7期及本次四期交叉核对，无同一新增动作重复"
+    },
+    {
+      "id": "eu-furfuryl-ad",
+      "j": "欧盟",
+      "agency": "欧盟委员会、香港工业贸易署",
+      "event": "2026-10-16",
+      "title": "欧盟对中国糠醇启动反倾销调查，涉案税号和应诉范围需逐项核对",
+      "status": "反倾销调查立案，尚非征税决定",
+      "fact": "欧盟委员会10月16日发布C/2026/5408号公告，对中国大陆原产糠醇启动反倾销调查。香港工业贸易署同日第904/2026号通告确认立案及涉案产品信息，并提供欧盟公告原文入口。产品CAS号为98-00-0，CN编码为ex 2932 13 00，TARIC编码为2932 13 00 30。立案意味着调查启动，不代表已经确定倾销幅度或新增反倾销税。",
+      "scope": "中国糠醇生产商、对欧出口商、欧盟化工进口商及下游采购企业。",
+      "impact": "应按实际化学品成分及产品定义判断是否涉案，保存欧盟销售、成本和原产地资料，并及时核对立案公告中的抽样及问卷安排。税号用于识别产品，不能单凭相近税号判断全部商品均受调查。",
+      "deadline": "10月16日立案；具体提交期限须依欧盟立案公告及个别通知计算。",
+      "sources": [
+        [
+          "https://www.tid.gov.hk/en/tradecircular/2026/ci9042026.html",
+          "香港工业贸易署第904/2026号官方通告及欧盟原文入口"
+        ]
+      ],
+      "verified": true,
+      "source": "https://www.tid.gov.hk/en/tradecircular/2026/ci9042026.html",
+      "jurisdiction": "欧盟",
+      "event_date": "2026-10-16",
+      "deduplication": "已与main最近7期及本次四期交叉核对，无同一新增动作重复"
     },
     {
       "id": "uk-sanctions-variations",
+      "j": "英国",
+      "agency": "FCDO",
+      "event": "2026-10-16",
+      "title": "英国变更三项反恐制裁列名资料，既有冻结及武器禁运继续适用",
+      "status": "既有列名资料变更，非新增或解除制裁",
+      "fact": "英国外交部门10月16日变更ISIL及基地组织制裁机制下三项既有列名，涉及巴基斯坦塔利班、Mounir El Motassadeq及Noor Wali Mehsud。通知明确，三项列名仍受各自列示制裁约束，其中包括资产冻结、武器禁运及适用于有关个人的旅行禁令。企业应区分身份资料更新与新增列名，不能据此判断相关交易已经解禁。",
+      "scope": "有英国制裁连接点的跨境付款、贸易融资、物流服务及交易方筛查。",
+      "impact": "筛查系统应同步更新组织别名、地址及个人识别资料，复核已有客户和付款命中记录。涉及资产冻结的交易，应依据适用例外或许可证判断能否处理，不能仅凭名称变化解除拦截。",
+      "deadline": "10月16日名单资料更新；公告未设置新的普遍交易宽限期。",
+      "sources": [
+        [
+          "https://assets.publishing.service.gov.uk/media/6ad1ebc9e5db84746b4796e9/Sanctions_Notice__ISIL__Da_esh____Al-Qaeda__16_October_2026.pdf",
+          "英国FCDO 10月16日制裁通知"
+        ]
+      ],
+      "verified": true,
+      "source": "https://assets.publishing.service.gov.uk/media/6ad1ebc9e5db84746b4796e9/Sanctions_Notice__ISIL__Da_esh____Al-Qaeda__16_October_2026.pdf",
       "jurisdiction": "英国",
       "event_date": "2026-10-16",
-      "agency": "FCDO",
-      "headline": "英国更新ISIL及基地组织制裁清单3项既有列名资料",
-      "status": "既有列名资料变更，非新增列名或解除制裁",
-      "impact": "英国制裁交易相关主体、别名、受益人制裁筛查和资产冻结仍继续",
-      "source": "https://assets.publishing.service.gov.uk/media/6ad1ebc9e5db84746b4796e9/Sanctions_Notice__ISIL__Da_esh____Al-Qaeda__16_October_2026.pdf",
-      "verified": true
+      "deduplication": "已与main最近7期及本次四期交叉核对，无同一新增动作重复"
     },
     {
       "id": "tw-vietnam-steel-injury",
-      "jurisdiction": "台湾地区",
-      "event_date": "2026-10-16",
+      "j": "中国台湾地区",
       "agency": "经济事务主管部门贸易救济委员会",
-      "headline": "台湾地区公布越南冷轧不锈钢板材初步损害肯定认定",
-      "status": "初步损害肯定；倾销调查继续；非最终税",
-      "impact": "越南对台钢材出口、中国企业第三地供应链原产地证据和报价安排",
+      "event": "2026-10-16",
+      "dateNote": "10月16日公告；初步认定于10月12日作出",
+      "title": "台湾地区公布越南冷轧不锈钢初步损害肯定认定，倾销调查继续",
+      "status": "初步产业损害认定，尚无最终征税决定",
+      "fact": "10月16日官方公告披露，贸易救济委员会已于10月12日认定，越南部分冷轧不锈钢产品被指低于正常价值进口，对本地产业造成实质损害存在合理迹象。该结论属于初步产业损害门槛判断，后续仍由财政主管部门继续调查倾销及相关事项，不能将初步损害认定解释为最终税率。",
+      "scope": "越南冷轧不锈钢板材对台出口及相关钢材加工、采购链。",
+      "impact": "中国企业经越南加工供货时，应保留实际生产工序、原料投入、原产地和物流证据，并与买方明确后续临时措施或最终税款的承担方式。仅经第三地转运不能替代真实原产地判断。",
+      "deadline": "倾销初步认定原则上在收到损害认定通知次日起70日内作出，可依法延期；公开版损害报告预计11月12日后提供。",
+      "sources": [
+        [
+          "https://www.trade.gov.tw/english/Pages/detail.aspx?nodeID=86&pid=821303",
+          "10月16日初步损害认定官方公告"
+        ]
+      ],
+      "verified": true,
       "source": "https://www.trade.gov.tw/english/Pages/detail.aspx?nodeID=86&pid=821303",
-      "verified": true
+      "jurisdiction": "中国台湾地区",
+      "event_date": "2026-10-16",
+      "deduplication": "已与main最近7期及本次四期交叉核对，无同一新增动作重复"
     }
   ],
   "coverage": {
     "checked": [
-      "美国（10月16日联邦公报及USITC、OFAC）",
-      "欧盟（10月16日反倾销官报、GTAI）",
-      "英国（FCDO 10月16日名单变更）",
-      "台湾地区（贸易救济委员会10月16日公告）"
+      {
+        "jurisdiction": "美国",
+        "sources": [
+          "Federal Register 10月16日、19—21日目录及入选公告",
+          "OFAC Recent Actions及10月19日名单与许可证"
+        ],
+        "result": "有入选候选"
+      },
+      {
+        "jurisdiction": "欧盟",
+        "sources": [
+          "DG Trade新闻",
+          "理事会制裁公告",
+          "香港工业贸易署糠醇官方通告"
+        ],
+        "result": "糠醇立案入18日；后续未发现可入选的新决定，目录日期及政策表态不重复填充"
+      },
+      {
+        "jurisdiction": "英国",
+        "sources": [
+          "FCDO反恐制裁10月16日通知",
+          "ECJU出口商通知目录",
+          "TRA官方页面"
+        ],
+        "result": "3项资料变更入18日；19日目录补录14日旧公告不入选"
+      },
+      {
+        "jurisdiction": "日本",
+        "sources": [
+          "财务省2026关税信息",
+          "19日不锈钢答申"
+        ],
+        "result": "不锈钢入19日；钛白粉已在17日发布不重复"
+      },
+      {
+        "jurisdiction": "韩国",
+        "sources": [
+          "产业通商部韩文新闻目录、英文官方公告"
+        ],
+        "result": "20日认证成果入选；展会商业活动剔除"
+      },
+      {
+        "jurisdiction": "印度",
+        "sources": [
+          "DGTR首页及铜线、叉车、装饰纸、己内酰胺案页和文件"
+        ],
+        "result": "铜线计量单位更正及叉车期限入21日；装饰纸名单发布不单独填充"
+      },
+      {
+        "jurisdiction": "加拿大",
+        "sources": [
+          "CBSA SIMA门户、海关通知目录及官方限定搜索"
+        ],
+        "result": "纸容器已在17日发布，未重复；部分旧入口404已更正"
+      },
+      {
+        "jurisdiction": "澳大利亚",
+        "sources": [
+          "ATRC案件目录官方限定检索"
+        ],
+        "result": "镀铝锌钢加速复审已在14日发布，后续媒体报道不重复；目录直接请求503保留"
+      }
     ],
-    "pending": [
-      "日本",
-      "韩国",
-      "印度",
-      "加拿大",
-      "澳大利亚",
-      "美国、欧盟追加核查"
-    ]
+    "pending": []
   },
   "last_error": null,
   "next_actions": [
-    "复核印度最新日期与应诉期限并保存断点",
-    "核查日本韩国加拿大澳大利亚官方监管部门",
-    "核实10月16日全部候选原始来源与近七期正文是否重合",
-    "生成并发布第042期"
+    "完成正文DOM链接预检、终扫后保存最终核验",
+    "写入正文首页归档，核验Pages与公开页面"
+  ],
+  "prior_progress": {
+    "items": [
+      {
+        "id": "eu-furfuryl-ad",
+        "jurisdiction": "欧盟",
+        "event_date": "2026-10-16",
+        "agency": "欧盟委员会",
+        "headline": "欧盟对中国糠醇正式启动反倾销调查",
+        "status": "正式立案，未征收新税；拟另行规定进口登记",
+        "impact": "对欧糠醇报关归类TARIC 2932 13 00 30、原产地和问卷应诉准备",
+        "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202605408",
+        "secondary": "https://www.gtai.de/de/trade/eu/zoll/antidumping-furfurylalkohol-china-2036060",
+        "verified": true
+      },
+      {
+        "id": "us-semiconductor-337-amend",
+        "jurisdiction": "美国",
+        "event_date": "2026-10-16",
+        "agency": "USITC",
+        "headline": "美国337-TA-1500半导体调查新增专利主张",
+        "status": "委员会不复审行政法官批准修订投诉的初裁；未认定侵权，亦无排除令",
+        "impact": "涉及与Tower Semiconductor相关的美国半导体供应链及诉讼证据义务",
+        "source": "https://www.federalregister.gov/documents/2026/10/16/2026-21124",
+        "verified": true
+      },
+      {
+        "id": "uk-sanctions-variations",
+        "jurisdiction": "英国",
+        "event_date": "2026-10-16",
+        "agency": "FCDO",
+        "headline": "英国更新ISIL及基地组织制裁清单3项既有列名资料",
+        "status": "既有列名资料变更，非新增列名或解除制裁",
+        "impact": "英国制裁交易相关主体、别名、受益人制裁筛查和资产冻结仍继续",
+        "source": "https://assets.publishing.service.gov.uk/media/6ad1ebc9e5db84746b4796e9/Sanctions_Notice__ISIL__Da_esh____Al-Qaeda__16_October_2026.pdf",
+        "verified": true
+      },
+      {
+        "id": "tw-vietnam-steel-injury",
+        "jurisdiction": "台湾地区",
+        "event_date": "2026-10-16",
+        "agency": "经济事务主管部门贸易救济委员会",
+        "headline": "台湾地区公布越南冷轧不锈钢板材初步损害肯定认定",
+        "status": "初步损害肯定；倾销调查继续；非最终税",
+        "impact": "越南对台钢材出口、中国企业第三地供应链原产地证据和报价安排",
+        "source": "https://www.trade.gov.tw/english/Pages/detail.aspx?nodeID=86&pid=821303",
+        "verified": true
+      }
+    ],
+    "coverage": {
+      "checked": [
+        "美国（10月16日联邦公报及USITC、OFAC）",
+        "欧盟（10月16日反倾销官报、GTAI）",
+        "英国（FCDO 10月16日名单变更）",
+        "台湾地区（贸易救济委员会10月16日公告）"
+      ],
+      "pending": [
+        "日本",
+        "韩国",
+        "印度",
+        "加拿大",
+        "澳大利亚",
+        "美国、欧盟追加核查"
+      ]
+    },
+    "last_error": null
+  },
+  "access_notes": [
+    "部分Govinfo及FederalRegister网页工具无法打开，使用正常公开HTTP请求成功核验原文。",
+    "EUR-Lex糠醇原文请求返回验证页／HTTP202；正文只采用香港工业贸易署同日官方通告明确确认的立案及产品资料，未推断未读原文中的期限或登记安排。",
+    "部分BIS、USTR旧入口404、CBP403和日本METI403，改以官方检索及财务省等公开来源补查；不视为GitHub权限或安全拒绝。"
+  ],
+  "excluded": [
+    {
+      "event": "日本钛白粉立案",
+      "reason": "10月17日已刊"
+    },
+    {
+      "event": "澳大利亚镀铝锌钢加速复审媒体再报道",
+      "reason": "10月14日已刊"
+    },
+    {
+      "event": "英国10月19日出口商目录更新",
+      "reason": "补录10月12日和14日旧公告"
+    },
+    {
+      "event": "台湾越南钢材案草稿事件日期",
+      "reason": "修正为10月16日披露、10月12日认定"
+    }
   ]
 }
