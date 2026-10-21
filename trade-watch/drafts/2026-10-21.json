@@ -1,25 +1,214 @@
 {
   "date": "2026-10-21",
   "base_main_sha": "a0ac4e49731df88cf2b2c54598290d3b33c2c9ba",
-  "phase": "researching",
+  "phase": "final_review",
   "publication_ready": false,
-  "items": [],
+  "items": [
+    {
+      "id": "in-copper-data-cables-corrigendum",
+      "j": "印度",
+      "agency": "贸易救济总局（DGTR）",
+      "event": "2026-10-21",
+      "title": "印度更正中国铜数据电缆建议反倾销税计量单位，86美元按公里计算",
+      "status": "终裁建议更正，征税仍须中央政府通知",
+      "fact": "印度DGTR 10月21日更正中国铜数据电缆反倾销案终裁建议，将税额表误写的计量单位“MT”改为“KM”。四家列明生产商建议税额为零，其他相关生产商等适用情形为86美元／公里，产品包括CAT 5e至CAT 7A等结构化铜数据电缆及跳线。更正针对9月16日终裁建议，并非本通知自行开始征税。",
+      "scope": "中国铜数据电缆生产商、对印出口商、网络布线产品进口及分销商。",
+      "impact": "应立即修正报价测算和合同税负模型，避免按吨计算每公里税额。适用个别生产商待遇须满足有效商业发票及生产商声明要求，不能仅凭经销商名称认定适用零税额。",
+      "deadline": "10月21日更正；建议措施为中央政府另行发布通知起五年，实际征税状态需另查财政海关通知。",
+      "sources": [
+        [
+          "https://dgtr.gov.in/sites/default/files/2026-10/Corrigendum%20CDC%20English.pdf",
+          "DGTR铜数据电缆终裁建议更正原件"
+        ]
+      ],
+      "verified": true,
+      "source": "https://dgtr.gov.in/sites/default/files/2026-10/Corrigendum%20CDC%20English.pdf",
+      "jurisdiction": "印度",
+      "event_date": "2026-10-21",
+      "deduplication": "已与main最近7期及本次四期交叉核对，无同一新增动作重复"
+    },
+    {
+      "id": "in-forklift-puc-extension",
+      "j": "印度",
+      "agency": "DGTR",
+      "event": "2026-10-21",
+      "title": "印度对中国及日本平衡重式叉车案将产品范围意见期延至10月31日",
+      "status": "产品范围及PCN意见期限延长，调查继续",
+      "fact": "印度DGTR 10月21日在AD/OI/061/2026案中通知，将中国和日本部分平衡重式叉车反倾销调查的产品范围（PUC）及产品控制编号（PCN）方法意见提交期限延长至10月31日。生产商、出口商、进口商及使用者均可在延长期内提交意见。本次调整程序期限，没有作出倾销成立或新增税率决定。",
+      "scope": "中国及日本叉车出口商、印度仓储物流设备进口商和终端使用者。",
+      "impact": "企业应核对产品动力类型、规格及用途是否属于调查范围，对产品差异和可比性提出有依据的意见，并与印度进口商统一型号和销售资料。产品范围意见不同于全面调查问卷，不能混淆两类答卷要求。",
+      "deadline": "产品范围和PCN意见新截止日为2026年10月31日。",
+      "sources": [
+        [
+          "https://dgtr.gov.in/sites/default/files/2026-10/Extension%20of%20Time%20Line.pdf",
+          "DGTR 10月21日叉车案延期通知"
+        ]
+      ],
+      "verified": true,
+      "source": "https://dgtr.gov.in/sites/default/files/2026-10/Extension%20of%20Time%20Line.pdf",
+      "jurisdiction": "印度",
+      "event_date": "2026-10-21",
+      "deduplication": "已与main最近7期及本次四期交叉核对，无同一新增动作重复"
+    },
+    {
+      "id": "us-fence-pickets-revised-schedule",
+      "j": "美国",
+      "agency": "USITC",
+      "event": "2026-10-21",
+      "dateNote": "10月21日公报公布；通知于10月19日签发",
+      "title": "美国中国木栅栏板案调整初步损害程序，书面意见截至10月23日",
+      "status": "初步调查日程调整，未作损害或征税终裁",
+      "fact": "美国国际贸易委员会10月21日公布，中国木栅栏板双反初步调查701-TA-807及731-TA-1808调整程序日程。因商务部将立案决定期限延至11月3日，委员会相应调整安排，书面意见于10月23日美国东部时间下午5时15分截止。公告明确，委员会须在收到商务部立案通知后25日内完成初步认定。",
+      "scope": "中国木栅栏板生产商、美国木制品进口商及相关采购链。",
+      "impact": "出口企业和进口商应在截止前提交与产业损害有关的事实及论据，核对个案材料送达要求。此次进展应与既有木制装饰线条等其他案件区分，不能把排期调整理解为已经征收新的双反税。",
+      "deadline": "书面意见截至10月23日17时15分（美国东部时间）；商务部立案决定期限为11月3日。",
+      "sources": [
+        [
+          "https://www.govinfo.gov/content/pkg/FR-2026-10-21/html/2026-21504.htm",
+          "美国《联邦公报》2026-21504号排期通知"
+        ]
+      ],
+      "verified": true,
+      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-21/html/2026-21504.htm",
+      "jurisdiction": "美国",
+      "event_date": "2026-10-21",
+      "deduplication": "已与main最近7期及本次四期交叉核对，无同一新增动作重复"
+    },
+    {
+      "id": "no-russia-sanctions-effective",
+      "j": "挪威",
+      "agency": "外交部",
+      "event": "2026-10-21",
+      "dateNote": "10月20日公布；10月21日生效",
+      "title": "挪威实施对俄制裁修订，新增LNG交易报告和船舶交易申报要求",
+      "status": "国内制裁法规修订正式生效",
+      "fact": "挪威外交部10月20日公布，落实欧盟第21轮对俄制裁的国内法规修订于10月21日生效。措施涉及金融、能源、加密资产、影子船队和军工供应链，并新增俄罗斯来源LNG向第三国转运或采购的报告义务，以及向第三国出售LNG运输船等交易的申报要求。挪威国内生效日须与欧盟原措施日期分别判断。",
+      "scope": "经挪威开展的能源交易、船舶销售、海事服务及相关融资和物流。",
+      "impact": "有挪威交易连接点的中国企业应重新核对交易主体、船舶、货物原产地及报告义务，并逐项适用过渡条款或许可例外。第三国交易不当然豁免，能源品种及合同日期也会影响适用。",
+      "deadline": "修订于2026年10月21日生效；具体例外、过渡期及报告要求按修订法规执行。",
+      "sources": [
+        [
+          "https://www.regjeringen.no/no/aktuelt/gjennomforing-av-eus-21.-sanksjonspakke-i-norsk-rett/id3179837/",
+          "挪威外交部官方公告及修订法规入口"
+        ]
+      ],
+      "verified": true,
+      "source": "https://www.regjeringen.no/no/aktuelt/gjennomforing-av-eus-21.-sanksjonspakke-i-norsk-rett/id3179837/",
+      "jurisdiction": "挪威",
+      "event_date": "2026-10-21",
+      "deduplication": "已与main最近7期及本次四期交叉核对，无同一新增动作重复"
+    }
+  ],
   "coverage": {
-    "checked": [],
-    "pending": [
-      "美国",
-      "欧盟",
-      "英国",
-      "日本",
-      "韩国",
-      "印度",
-      "加拿大",
-      "澳大利亚"
-    ]
+    "checked": [
+      {
+        "jurisdiction": "美国",
+        "sources": [
+          "Federal Register 10月16日、19—21日目录及入选公告",
+          "OFAC Recent Actions及10月19日名单与许可证"
+        ],
+        "result": "有入选候选"
+      },
+      {
+        "jurisdiction": "欧盟",
+        "sources": [
+          "DG Trade新闻",
+          "理事会制裁公告",
+          "香港工业贸易署糠醇官方通告"
+        ],
+        "result": "糠醇立案入18日；后续未发现可入选的新决定，目录日期及政策表态不重复填充"
+      },
+      {
+        "jurisdiction": "英国",
+        "sources": [
+          "FCDO反恐制裁10月16日通知",
+          "ECJU出口商通知目录",
+          "TRA官方页面"
+        ],
+        "result": "3项资料变更入18日；19日目录补录14日旧公告不入选"
+      },
+      {
+        "jurisdiction": "日本",
+        "sources": [
+          "财务省2026关税信息",
+          "19日不锈钢答申"
+        ],
+        "result": "不锈钢入19日；钛白粉已在17日发布不重复"
+      },
+      {
+        "jurisdiction": "韩国",
+        "sources": [
+          "产业通商部韩文新闻目录、英文官方公告"
+        ],
+        "result": "20日认证成果入选；展会商业活动剔除"
+      },
+      {
+        "jurisdiction": "印度",
+        "sources": [
+          "DGTR首页及铜线、叉车、装饰纸、己内酰胺案页和文件"
+        ],
+        "result": "铜线计量单位更正及叉车期限入21日；装饰纸名单发布不单独填充"
+      },
+      {
+        "jurisdiction": "加拿大",
+        "sources": [
+          "CBSA SIMA门户、海关通知目录及官方限定搜索"
+        ],
+        "result": "纸容器已在17日发布，未重复；部分旧入口404已更正"
+      },
+      {
+        "jurisdiction": "澳大利亚",
+        "sources": [
+          "ATRC案件目录官方限定检索"
+        ],
+        "result": "镀铝锌钢加速复审已在14日发布，后续媒体报道不重复；目录直接请求503保留"
+      }
+    ],
+    "pending": []
   },
   "last_error": null,
   "next_actions": [
-    "接续10月18日至20日草稿，核验原始材料并完成近7期去重",
-    "完成10月21日研究后发布正文、首页、归档并验收Pages"
+    "完成正文DOM链接预检、终扫后保存最终核验",
+    "写入正文首页归档，核验Pages与公开页面"
+  ],
+  "prior_progress": {
+    "items": [],
+    "coverage": {
+      "checked": [],
+      "pending": [
+        "美国",
+        "欧盟",
+        "英国",
+        "日本",
+        "韩国",
+        "印度",
+        "加拿大",
+        "澳大利亚"
+      ]
+    },
+    "last_error": null
+  },
+  "access_notes": [
+    "部分Govinfo及FederalRegister网页工具无法打开，使用正常公开HTTP请求成功核验原文。",
+    "EUR-Lex糠醇原文请求返回验证页／HTTP202；正文只采用香港工业贸易署同日官方通告明确确认的立案及产品资料，未推断未读原文中的期限或登记安排。",
+    "部分BIS、USTR旧入口404、CBP403和日本METI403，改以官方检索及财务省等公开来源补查；不视为GitHub权限或安全拒绝。"
+  ],
+  "excluded": [
+    {
+      "event": "日本钛白粉立案",
+      "reason": "10月17日已刊"
+    },
+    {
+      "event": "澳大利亚镀铝锌钢加速复审媒体再报道",
+      "reason": "10月14日已刊"
+    },
+    {
+      "event": "英国10月19日出口商目录更新",
+      "reason": "补录10月12日和14日旧公告"
+    },
+    {
+      "event": "台湾越南钢材案草稿事件日期",
+      "reason": "修正为10月16日披露、10月12日认定"
+    }
   ]
 }
