@@ -1,40 +1,251 @@
 {
   "date": "2026-10-20",
   "base_main_sha": "88877891fd23ad76f876275e972ed50ddf2ed964",
-  "phase": "researching",
+  "phase": "final_review",
   "publication_ready": false,
   "items": [
     {
       "id": "us-deepseek-fascsa",
-      "event_date": "2026-10-20",
+      "j": "美国",
+      "agency": "国土安全部",
+      "event": "2026-10-20",
+      "title": "美国公布DeepSeek联邦文职机构采购排除及系统移除命令",
+      "status": "正式采购安全命令公告，非一般市场进口禁令",
+      "fact": "美国国土安全部10月20日在《联邦公报》公布依据《联邦采购供应链安全法》作出的命令，排除联邦文职机构采购DeepSeek及适用关联企业开发的IT产品和服务，并要求从相关机构IT系统移除这些产品，以及使用DeepSeek实现方案开发的第三方产品和服务。适用对象是联邦文职机构采购和系统，不应将公告扩大解释为所有美国私人交易一律禁止。",
+      "scope": "向美国联邦文职机构供货的模型、软件、云服务及集成商采购链。",
+      "impact": "面向相关采购项目的中国供应商和境外集成商，应识别产品依赖、模型组件和第三方服务是否包含适用的DeepSeek实现，按正式命令及合同要求核对排除范围，保留替代组件和履约说明。",
+      "deadline": "10月20日公报公告；各项移除及执行期限须对照签署命令和采购要求，不以公报日期替代全部操作期限。",
+      "sources": [
+        [
+          "https://www.govinfo.gov/content/pkg/FR-2026-10-20/html/2026-21447.htm",
+          "国土安全部FASCSA命令公告"
+        ]
+      ],
+      "verified": true,
       "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-20/html/2026-21447.htm",
-      "headline": "美国公布联邦文职机构DeepSeek采购排除及移除命令",
-      "status": "正式命令公告，非一般市场进口禁令",
-      "verified": true
+      "jurisdiction": "美国",
+      "event_date": "2026-10-20",
+      "deduplication": "已与main最近7期及本次四期交叉核对，无同一新增动作重复"
     },
     {
       "id": "us-hydraulic-cvd-postpone",
+      "j": "美国",
+      "agency": "商务部",
+      "event": "2026-10-20",
+      "dateNote": "10月20日公布并适用；文件签署于10月16日",
+      "title": "美国将中国、印度及墨西哥液压缸反补贴初裁延至2027年1月19日",
+      "status": "反补贴调查程序延期，非新税令",
+      "fact": "美国商务部10月20日公布，应申请方请求，将中国、印度和墨西哥部分直线液压缸及零件反补贴调查初裁期限，由原定2026年11月12日延至2027年1月19日。主管机关将利用延长期限审阅答卷及发出补充问卷，终裁原则上仍在初裁后75日内作出。本次未确定补贴成立或新的税率。",
+      "scope": "中国及其他两国液压缸、工程机械零部件对美供货。",
+      "impact": "出口企业应将延期用于核对政府资助、关联采购及销售资料，并与美国客户协调交付和潜在保证金安排。延期不等于调查终止，也不意味着涉案产品不再受其他贸易措施约束。",
+      "deadline": "初裁最迟2027年1月19日；个案补充答卷期限仍按主管机关通知执行。",
+      "sources": [
+        [
+          "https://www.govinfo.gov/content/pkg/FR-2026-10-20/html/2026-21452.htm",
+          "美国《联邦公报》2026-21452号延期公告"
+        ]
+      ],
+      "verified": true,
+      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-20/html/2026-21452.htm",
+      "jurisdiction": "美国",
       "event_date": "2026-10-20",
-      "source": "https://www.federalregister.gov/documents/2026/10/20/2026-21452/certain-linear-hydraulic-cylinders-and-parts-thereof-from-the-peoples-republic-of-china-india-and",
-      "headline": "三国液压缸反补贴初裁延至2027年1月19日",
-      "status": "程序延期，非新税令",
-      "verified": true
+      "deduplication": "已与main最近7期及本次四期交叉核对，无同一新增动作重复"
+    },
+    {
+      "id": "us-small-engines-sunset",
+      "j": "美国",
+      "agency": "USITC",
+      "event": "2026-10-20",
+      "dateNote": "10月20日公报公布；认定于10月16日完成",
+      "title": "美国小型立轴发动机日落复审作出损害肯定认定，取消双反令条件未满足",
+      "status": "五年复审产业损害认定，非重新计算税率",
+      "fact": "美国国际贸易委员会10月20日公布，对中国小型立轴发动机五年复审认定：撤销现有反倾销和反补贴税令，可能在可合理预见期间导致美国产业损害持续或再发。委员会于10月16日完成认定。本次结论涉及现有措施是否继续的产业损害要件，并未为所有企业重新确定倾销或补贴税率。",
+      "scope": "中国小型立轴发动机及涉案产品进口、园林机械和相关采购链。",
+      "impact": "供应商和进口商应继续按有效税令核对产品范围及企业税率，不宜以五年届满为由默认税令失效。包含相关发动机的产品是否受措施覆盖，仍须依税令产品定义判断。",
+      "deadline": "10月16日完成损害认定，10月20日公布；后续税令延续执行须结合商务部公告。",
+      "sources": [
+        [
+          "https://www.govinfo.gov/content/pkg/FR-2026-10-20/html/2026-21459.htm",
+          "USITC小型立轴发动机五年复审认定"
+        ]
+      ],
+      "verified": true,
+      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-20/html/2026-21459.htm",
+      "jurisdiction": "美国",
+      "event_date": "2026-10-20",
+      "deduplication": "已与main最近7期及本次四期交叉核对，无同一新增动作重复"
+    },
+    {
+      "id": "us-trailers-final-injury",
+      "j": "美国",
+      "agency": "USITC",
+      "event": "2026-10-20",
+      "dateNote": "10月20日公报公布；认定于10月15日完成",
+      "title": "美国公布中国厢式拖车双反最终损害认定，区别于此前商务部税率终裁",
+      "status": "USITC最终产业损害肯定认定",
+      "fact": "10月20日《联邦公报》公布，美国国际贸易委员会已于10月15日认定，中国厢式拖车及其组件进口对美国产业造成实质损害。商务部此前已经作出倾销和补贴认定，本次新增的是USITC终局产业损害结论，满足签发相应税令所需的另一项要件。加拿大及墨西哥相关调查程序须分别判断。",
+      "scope": "中国厢式拖车、涉案组件及美国公路运输设备进口。",
+      "impact": "应核对8716.39.00、8716.90.50项下货物与税令产品范围，区分商务部税率决定、USITC损害认定和实际税令。既有订单宜明确税费和现金保证金变化的分担安排。",
+      "deadline": "10月15日完成认定、10月20日公布；正式税令及清算要求以商务部和海关通知为准。",
+      "sources": [
+        [
+          "https://www.govinfo.gov/content/pkg/FR-2026-10-20/html/2026-21382.htm",
+          "USITC中国厢式拖车最终损害认定"
+        ]
+      ],
+      "verified": true,
+      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-20/html/2026-21382.htm",
+      "jurisdiction": "美国",
+      "event_date": "2026-10-20",
+      "deduplication": "已与main最近7期及本次四期交叉核对，无同一新增动作重复"
+    },
+    {
+      "id": "kr-ai-certification-recognition",
+      "j": "韩国",
+      "agency": "产业通商部门、国家技术标准机构",
+      "event": "2026-10-20",
+      "title": "韩国工业AI认证互认形成联合证书成果，适用范围须按认证项目核对",
+      "status": "认证机构互认安排下的证书签发，不等于普遍监管豁免",
+      "fact": "韩国产业通商部门10月20日公布，韩国测试机构KTL与瑞士CertX依据互认安排，向Hyundai AutoEver及Wizcore签发工业AI联合证书。互认项目允许企业使用韩国测试评价结果申请相应境外认证，减少涵盖项目的重复测试。两机构互认自2025年11月开展，本次新增事实是联合证书成果，不能将其解释为自动满足所有欧盟AI监管要求。",
+      "scope": "工业AI质量检测、设备故障预测等系统的国际认证和市场准入证明。",
+      "impact": "向韩国制造业客户供货或经韩方认证进入海外市场的中国企业，应核实证书覆盖的型号、标准及互认测试项目，并单独核对目标市场的法定义务和采购要求。",
+      "deadline": "10月20日签发成果公布；没有据此产生统一的强制认证起日或全面免测安排。",
+      "sources": [
+        [
+          "https://english.motir.go.kr/eng/article/EATCLdfa319ada/2760/view",
+          "韩国产业通商部门10月20日官方公告"
+        ]
+      ],
+      "verified": true,
+      "source": "https://english.motir.go.kr/eng/article/EATCLdfa319ada/2760/view",
+      "jurisdiction": "韩国",
+      "event_date": "2026-10-20",
+      "deduplication": "已与main最近7期及本次四期交叉核对，无同一新增动作重复"
     }
   ],
   "coverage": {
     "checked": [
-      "已打开所列美国原始公告及日本财务省公告"
+      {
+        "jurisdiction": "美国",
+        "sources": [
+          "Federal Register 10月16日、19—21日目录及入选公告",
+          "OFAC Recent Actions及10月19日名单与许可证"
+        ],
+        "result": "有入选候选"
+      },
+      {
+        "jurisdiction": "欧盟",
+        "sources": [
+          "DG Trade新闻",
+          "理事会制裁公告",
+          "香港工业贸易署糠醇官方通告"
+        ],
+        "result": "糠醇立案入18日；后续未发现可入选的新决定，目录日期及政策表态不重复填充"
+      },
+      {
+        "jurisdiction": "英国",
+        "sources": [
+          "FCDO反恐制裁10月16日通知",
+          "ECJU出口商通知目录",
+          "TRA官方页面"
+        ],
+        "result": "3项资料变更入18日；19日目录补录14日旧公告不入选"
+      },
+      {
+        "jurisdiction": "日本",
+        "sources": [
+          "财务省2026关税信息",
+          "19日不锈钢答申"
+        ],
+        "result": "不锈钢入19日；钛白粉已在17日发布不重复"
+      },
+      {
+        "jurisdiction": "韩国",
+        "sources": [
+          "产业通商部韩文新闻目录、英文官方公告"
+        ],
+        "result": "20日认证成果入选；展会商业活动剔除"
+      },
+      {
+        "jurisdiction": "印度",
+        "sources": [
+          "DGTR首页及铜线、叉车、装饰纸、己内酰胺案页和文件"
+        ],
+        "result": "铜线计量单位更正及叉车期限入21日；装饰纸名单发布不单独填充"
+      },
+      {
+        "jurisdiction": "加拿大",
+        "sources": [
+          "CBSA SIMA门户、海关通知目录及官方限定搜索"
+        ],
+        "result": "纸容器已在17日发布，未重复；部分旧入口404已更正"
+      },
+      {
+        "jurisdiction": "澳大利亚",
+        "sources": [
+          "ATRC案件目录官方限定检索"
+        ],
+        "result": "镀铝锌钢加速复审已在14日发布，后续媒体报道不重复；目录直接请求503保留"
+      }
     ],
-    "pending": [
-      "完成八法域巡视与终扫",
-      "完成近7期逐条去重及正文"
-    ]
+    "pending": []
   },
   "last_error": null,
   "next_actions": [
-    "核对最近七期正文并完成法域巡视",
-    "逐条核验监管原始材料、事件去重",
-    "分阶段保存条目与终扫",
-    "正文及首页归档正式发布并验收"
+    "完成正文DOM链接预检、终扫后保存最终核验",
+    "写入正文首页归档，核验Pages与公开页面"
+  ],
+  "prior_progress": {
+    "items": [
+      {
+        "id": "us-deepseek-fascsa",
+        "event_date": "2026-10-20",
+        "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-20/html/2026-21447.htm",
+        "headline": "美国公布联邦文职机构DeepSeek采购排除及移除命令",
+        "status": "正式命令公告，非一般市场进口禁令",
+        "verified": true
+      },
+      {
+        "id": "us-hydraulic-cvd-postpone",
+        "event_date": "2026-10-20",
+        "source": "https://www.federalregister.gov/documents/2026/10/20/2026-21452/certain-linear-hydraulic-cylinders-and-parts-thereof-from-the-peoples-republic-of-china-india-and",
+        "headline": "三国液压缸反补贴初裁延至2027年1月19日",
+        "status": "程序延期，非新税令",
+        "verified": true
+      }
+    ],
+    "coverage": {
+      "checked": [
+        "已打开所列美国原始公告及日本财务省公告"
+      ],
+      "pending": [
+        "完成八法域巡视与终扫",
+        "完成近7期逐条去重及正文"
+      ]
+    },
+    "last_error": null
+  },
+  "access_notes": [
+    "部分Govinfo及FederalRegister网页工具无法打开，使用正常公开HTTP请求成功核验原文。",
+    "EUR-Lex糠醇原文请求返回验证页／HTTP202；正文只采用香港工业贸易署同日官方通告明确确认的立案及产品资料，未推断未读原文中的期限或登记安排。",
+    "部分BIS、USTR旧入口404、CBP403和日本METI403，改以官方检索及财务省等公开来源补查；不视为GitHub权限或安全拒绝。"
+  ],
+  "excluded": [
+    {
+      "event": "日本钛白粉立案",
+      "reason": "10月17日已刊"
+    },
+    {
+      "event": "澳大利亚镀铝锌钢加速复审媒体再报道",
+      "reason": "10月14日已刊"
+    },
+    {
+      "event": "英国10月19日出口商目录更新",
+      "reason": "补录10月12日和14日旧公告"
+    },
+    {
+      "event": "台湾越南钢材案草稿事件日期",
+      "reason": "修正为10月16日披露、10月12日认定"
+    }
   ]
 }
