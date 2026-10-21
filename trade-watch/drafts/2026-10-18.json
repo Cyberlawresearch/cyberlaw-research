@@ -168,8 +168,7 @@
   },
   "last_error": null,
   "next_actions": [
-    "跟踪Pages 39618909329",
-    "验收四份公开正文、首页、归档及全部19个来源链接"
+    "确认最新main提交3dc5353的Pages 39619379474成功，再保存完成证据"
   ],
   "prior_progress": {
     "items": [
@@ -278,13 +277,49 @@
     "main_readback": true,
     "body_commit": "666bbedd67504f91e4767bc3e3a3cedc6997b93b",
     "three_file_commit": "fdb974a95ca50234b0e3f895051365b9d0c9c51c",
-    "deployment_commit": "86e247a1f682c60658c5697416bb5682b2fb2a62",
-    "pages_run_id": 39618909329,
+    "deployment_commit": "3dc53530d41678ac87142a49afecb0c3b91a4a4e",
+    "pages_run_id": 39619379474,
     "pages_success": null,
-    "public_verified": null,
+    "public_verified": true,
     "observations": [
       "各期正文、当期首页及归档依日期顺序写入并回读。最终首页和归档首项为10月21日第045期。",
-      "中间提交Pages因后续main推进而取消，按规则只验收最终有效提交。"
-    ]
-  }
+      "中间提交Pages因后续main推进而取消，按规则只验收最终有效提交。",
+      "四份线上正文、首页、归档DOM正文及URL与main一致；全部19个来源链接部署后复查HTTP200。"
+    ],
+    "source_links_verified": 19,
+    "previous_run": {
+      "id": 39618909329,
+      "conclusion": "cancelled",
+      "deploy_step": "success",
+      "post_deploy_checks": "success",
+      "note": "后续另一栏目main提交触发新整站部署，等待最新有效提交完成。"
+    }
+  },
+  "failure_history": [
+    {
+      "stage": "source_access",
+      "tool": "web.open / HTTP GET",
+      "target": "EUR-Lex C/2026/5408",
+      "result": "网页工具验证页；公开HTTP返回202",
+      "resolution": "仅保留香港工业贸易署官方通告明确核实内容，未推断未读欧盟原文细节"
+    },
+    {
+      "stage": "source_access",
+      "target": "澳大利亚ATRC目录",
+      "result": "直接请求503",
+      "resolution": "保留官方限定检索及既刊对照，未将访问失败记作无新闻"
+    },
+    {
+      "stage": "deployment_check_before_publish",
+      "target": "public issues/2026-10-18至21.html",
+      "result": "404；首页归档为旧内容",
+      "resolution": "部署后六页DOM比对已通过"
+    },
+    {
+      "stage": "workflow_lookup",
+      "tool": "github_fetch",
+      "result": "HTTP400 INVALID_ARGUMENT，workflows/pages.yml/runs不是该工具允许入口",
+      "resolution": "使用允许的actions/runs集合及run详情读取，未涉及写入拒绝"
+    }
+  ]
 }
