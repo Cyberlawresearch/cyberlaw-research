@@ -1,0 +1,346 @@
+{
+  "date": "2026-10-21",
+  "column": "brief",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-21-tech-law-brief.html",
+  "news_count": 18,
+  "distribution": {
+    "domestic": 4,
+    "foreign": 14
+  },
+  "mode": "fact_only",
+  "analysis_pending": true,
+  "published_as_backfill": true,
+  "checked_at": "2026-10-21T22:43:28.500+08:00",
+  "last_news_scan_at": "2026-10-21T22:43:28.500+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "natural_chinese_reviewed": true,
+    "foreign_layout": true,
+    "local_language_scan_korea_japan_vietnam": true
+  },
+  "domestic_source_coverage": [
+    {
+      "source_group": "中国中央重要政策与地方人工智能立法",
+      "source_name": "新华社2026-10-21两办意见、《瞭望》地方AI立法调查",
+      "found": 2,
+      "status": "checked",
+      "checked_at": "2026-10-21T22:43:28.500+08:00"
+    },
+    {
+      "source_group": "国内数据资源和算力基础设施",
+      "source_name": "国家数据集团成立公告、新华社10月21日工信部算力统计",
+      "found": 2,
+      "status": "checked",
+      "checked_at": "2026-10-21T22:43:28.500+08:00"
+    },
+    {
+      "source_group": "国内央地机关标准与司法执法巡视",
+      "source_name": "中央网信办、工信部、国家数据局、网安标委、最高法与主要数字经济地方政策和媒体关键词检索；排除10月20日已刊事项",
+      "found": 0,
+      "status": "checked",
+      "checked_at": "2026-10-21T22:43:28.500+08:00"
+    },
+    {
+      "source_group": "欧盟平台监管与成员国机关",
+      "source_name": "European Commission DSA Booking.com investigation; EU privacy competition official updates",
+      "found": 1,
+      "status": "checked",
+      "checked_at": "2026-10-21T22:43:28.500+08:00"
+    },
+    {
+      "source_group": "美国联邦竞争、法院与模型版权",
+      "source_name": "FTC Publicis/LiveRamp proposed consent; Reuters xAI/NAACP court ruling and Anthropic/lyrics hearing",
+      "found": 3,
+      "status": "checked",
+      "checked_at": "2026-10-21T22:43:28.500+08:00"
+    },
+    {
+      "source_group": "英国政策与基础设施",
+      "source_name": "UK Government digital technology jobs plan and Oman AI data centre investment announcement",
+      "found": 2,
+      "status": "checked",
+      "checked_at": "2026-10-21T22:43:28.500+08:00"
+    },
+    {
+      "source_group": "日本及韩越本地语言来源",
+      "source_name": "日本PPC第373回個人情報保護委員会；韩国PIPC和越南监管主题检索",
+      "found": 1,
+      "status": "checked",
+      "checked_at": "2026-10-21T22:43:28.500+08:00"
+    },
+    {
+      "source_group": "印度金融网络安全",
+      "source_name": "Reuters State Bank of India October 21 data incident",
+      "found": 1,
+      "status": "checked",
+      "checked_at": "2026-10-21T22:43:28.500+08:00"
+    },
+    {
+      "source_group": "澳大利亚AI劳动治理和版权",
+      "source_name": "UTS Human Technology Institute employee surveillance research; News Media Alliance joint copyright statement",
+      "found": 2,
+      "status": "checked",
+      "checked_at": "2026-10-21T22:43:28.500+08:00"
+    },
+    {
+      "source_group": "新加坡网络安全和数字合作",
+      "source_name": "Cyber Security Agency F5 NGINX advisory, MFA official UAE visit summary",
+      "found": 2,
+      "status": "checked",
+      "checked_at": "2026-10-21T22:43:28.500+08:00"
+    },
+    {
+      "source_group": "国际人工智能智能体及开源软件安全",
+      "source_name": "NVIDIA OpenShell October 21 announcement, PHP official new security releases",
+      "found": 2,
+      "status": "checked",
+      "checked_at": "2026-10-21T22:43:28.500+08:00"
+    },
+    {
+      "source_group": "新闻最近7日去重",
+      "source_name": "Oct14—Oct20新闻索引及20日完整事实版，按主体、程序和新动作复核",
+      "found": 0,
+      "status": "checked",
+      "checked_at": "2026-10-21T22:43:28.500+08:00"
+    }
+  ],
+  "items": [
+    {
+      "id": "research-item-1",
+      "domestic": true,
+      "date": "2026-10-21",
+      "jurisdiction": "中国",
+      "agency": "中共中央办公厅、国务院办公厅",
+      "title": "中办、国办发布推动科技创新和产业创新深度融合的意见，部署人工智能应用和新兴技术治理",
+      "original_title": "中共中央办公厅 国务院办公厅关于推动科技创新和产业创新深度融合的意见",
+      "source_name": "新华社",
+      "url": "https://www.news.cn/politics/zywj/20261021/1051fe2956d7454c8d8231420d1239f4/c.html",
+      "fact": "新华社10月21日受权发布《中共中央办公厅 国务院办公厅关于推动科技创新和产业创新深度融合的意见》，要求强化企业科技创新主体地位，打通基础研究、技术攻关和产业应用环节。文件就人工智能、集成电路、机器人等重点领域部署协同研发与成果转化，并提出完善新兴技术安全、伦理和应用治理安排。有关配套政策和制度措施仍需按各主管机关后续安排落实。"
+    },
+    {
+      "id": "research-item-2",
+      "domestic": true,
+      "date": "2026-10-20",
+      "jurisdiction": "中国·雄安新区",
+      "agency": "国务院国资委、国家数据集团",
+      "title": "国家数据集团在雄安新区正式成立，聚焦数据资源开发及国家数据基础设施",
+      "original_title": "国家数据集团在雄安新区成立",
+      "source_name": "人民日报（全国哲学社会科学工作办公室转载）",
+      "url": "https://www.nopss.gov.cn/n1/2026/1021/c432288-40818639.html",
+      "fact": "国家数据集团于10月20日在河北雄安新区正式成立，相关消息于10月21日经中央媒体集中报道。集团将围绕数据资源开发利用、数据基础设施建设和数据流通技术等领域开展经营，服务数字经济基础能力建设。这属于中央企业及产业基础设施组织建设进展，本身并未修改现行数据出境及个人信息处理的法定义务。"
+    },
+    {
+      "id": "research-item-3",
+      "domestic": true,
+      "date": "2026-10-20",
+      "jurisdiction": "中国",
+      "agency": "工业和信息化部",
+      "title": "工信部披露全国智能算力规模达2592 EFLOPS，较上年同期增长约146%",
+      "original_title": "我国智能算力规模达2592 EFLOPS",
+      "source_name": "新华社",
+      "url": "https://www.news.cn/tech/20261021/788a6f0b650c4ed1b06cede2b29aaa83/c.html",
+      "fact": "新华社10月21日报道，工业和信息化部此前一天在新闻发布会上披露，我国智能算力规模达到2592 EFLOPS，同比增长约146%。相关主管部门还介绍了电信网络与数字基础设施建设进展，为大模型训练、推理和行业应用提供算力支撑。该数据属于官方产业运行统计，不是新公布的算力服务行政许可或技术强制标准。"
+    },
+    {
+      "id": "research-item-4",
+      "domestic": true,
+      "date": "2026-10-21",
+      "jurisdiction": "中国·地方立法",
+      "agency": "《瞭望》新闻周刊、地方人大机关",
+      "title": "《瞭望》调查地方人工智能立法进度，江苏和广州等地探索产业与安全制度安排",
+      "original_title": "人工智能地方立法怎样破题",
+      "source_name": "《瞭望》新闻周刊（新华社）",
+      "url": "https://lw.news.cn/20261021/eda436ff568b461f984b5578e807dbda/c.html",
+      "fact": "新华社《瞭望》新闻周刊10月21日发布地方人工智能立法调查，介绍江苏及南京、苏州、广州等地有关地方立法和产业应用治理的推进情况。报道涉及数据资源支持、模型应用安全、产业创新及公共服务等议题，相关审议和征求意见并非同一天发生。处于草案讨论或审议阶段的项目仍须以当地人大最终通过、公布的正式文件为准。"
+    },
+    {
+      "id": "research-item-5",
+      "domestic": false,
+      "date": "2026-10-21",
+      "jurisdiction": "欧盟",
+      "agency": "欧洲委员会",
+      "title": "欧盟委员会正式调查Booking.com的虚假房源和订房诈骗风险，适用《数字服务法》",
+      "original_title": "Commission to investigate how Booking.com combats scams and fraud under the Digital Services Act",
+      "source_name": "European Commission",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/commission-investigate-how-bookingcom-combats-scams-and-fraud-under-digital-services-act",
+      "fact": "欧盟委员会10月21日宣布依据《数字服务法》针对Booking.com正式启动调查，评估平台打击虚假住宿房源、订房诈骗及站内钓鱼信息的风险防范措施。监管机关将进一步收集证据，并审查风险识别、缓解和相关透明度义务的履行情况。正式程序的开启不代表已经作出违反《数字服务法》的最终认定或罚款决定。"
+    },
+    {
+      "id": "research-item-6",
+      "domestic": false,
+      "date": "2026-10-19",
+      "jurisdiction": "美国·联邦竞争监管",
+      "agency": "美国联邦贸易委员会（FTC）",
+      "title": "美国FTC提出Publicis收购LiveRamp的附条件和解，要求保障数字广告市场竞争",
+      "original_title": "FTC Order Preserves Competition in Digital Advertising Ecosystem as Part of Publicis’s Acquisition of LiveRamp",
+      "source_name": "U.S. Federal Trade Commission",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-order-preserves-competition-digital-advertising-ecosystem-part-publiciss-acquisition-liveramp",
+      "fact": "美国联邦贸易委员会10月19日公布Publicis拟收购数字广告数据服务商LiveRamp的拟议同意令，并开放公众意见程序。监管方案拟要求在一定期限内对其他广告服务竞争者提供非歧视性数据及服务接入条件，并设置商业敏感信息隔离措施。拟议同意令仍待完成相应程序，并非当天已生效的最终竞争执法命令。"
+    },
+    {
+      "id": "research-item-7",
+      "domestic": false,
+      "date": "2026-10-20",
+      "jurisdiction": "美国·密西西比州",
+      "agency": "美国联邦地区法院、环境保护署",
+      "title": "美国法院驳回环保署终止NAACP针对xAI数据中心污染诉讼的申请",
+      "original_title": "Trump administration loses bid to block NAACP lawsuit against Musk's xAI over data center",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/government/us-judge-rejects-trump-administration-bid-block-naacp-lawsuit-against-musks-xai-2026-10-20/",
+      "fact": "路透社10月20日报道，美国密西西比州联邦地区法院驳回环境保护署要求终止民权组织NAACP针对xAI数据中心涉嫌违反《清洁空气法》所提公民诉讼的申请。法官认为主管机关可以依法参与案件，但不足以据本次申请直接阻却私人提起的有关执法诉讼。裁定处理的是程序争议，尚未对数据中心是否违反排放要求作出最终实体认定。"
+    },
+    {
+      "id": "research-item-8",
+      "domestic": false,
+      "date": "2026-10-21",
+      "jurisdiction": "美国·加利福尼亚州",
+      "agency": "美国联邦地区法院、Anthropic、音乐出版商",
+      "title": "Anthropic与音乐出版商就模型训练使用受保护歌词的合理使用争议进入关键庭审阶段",
+      "original_title": "Anthropic, music labels to make key arguments in AI training case",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/legalindustry/anthropic-music-labels-make-key-arguments-ai-training-case-2026-10-21/",
+      "fact": "路透社10月21日报道，Anthropic与多家音乐出版商将在美国加利福尼亚州联邦法院就大模型训练使用歌词是否构成版权侵权及合理使用提出主要法律意见。出版商关注训练行为对歌词授权市场的影响，Anthropic则提出相关使用的法律抗辩。报道涉及案件的重要听证安排，并不意味着法院当日已经作出终局判决。"
+    },
+    {
+      "id": "research-item-9",
+      "domestic": false,
+      "date": "2026-10-21",
+      "jurisdiction": "英国",
+      "agency": "英国政府",
+      "title": "英国发布数字与技术岗位计划，强调人工智能及网络安全就业和培训",
+      "original_title": "Digital and Technologies Jobs Plan",
+      "source_name": "UK Government",
+      "url": "https://www.gov.uk/government/publications/digital-and-technologies-jobs-plan/digital-and-technologies-jobs-plan",
+      "fact": "英国政府10月21日发布《数字与技术岗位计划》，提出扩大人工智能、网络安全和其他数字岗位的人才培训、就业指导及企业合作。政府介绍了未来多年增加入门岗位、发展学徒制和改善数字技术就业通道的目标及相关工作安排。该计划属于劳动力与科技产业政策，不是已经生效的全国强制招聘配额。"
+    },
+    {
+      "id": "research-item-10",
+      "domestic": false,
+      "date": "2026-10-21",
+      "jurisdiction": "日本",
+      "agency": "日本个人信息保护委员会",
+      "title": "日本个人信息保护委员会讨论个人信息规则调整和泄露报告要求",
+      "original_title": "第373回 個人情報保護委員会",
+      "source_name": "個人情報保護委員会",
+      "url": "https://www.ppc.go.jp/aboutus/minutes/2026/20261021/",
+      "fact": "日本个人信息保护委员会10月21日举行第373次会议，议程涉及个人信息保护施行规则及特定个人信息处理、泄露报告等行政事项。会议讨论反映监管机关对具体实施规则和监督安排持续进行研究与审议。会议日程与讨论本身不能等同于修订规范已经获得最终批准或正式实施，后续应以委员会决定及正式公布文本为准。"
+    },
+    {
+      "id": "research-item-11",
+      "domestic": false,
+      "date": "2026-10-21",
+      "jurisdiction": "印度",
+      "agency": "印度国家银行（SBI）",
+      "title": "印度国家银行披露网络攻击波及约3897条客户记录，称资金余额未受影响",
+      "original_title": "State Bank of India reports cyberattack involving nearly 3,900 customer records",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/state-bank-india-reports-cyberattack-involving-customer-records-2026-10-21/",
+      "fact": "印度国家银行10月21日披露涉及约3897条客户记录的网络安全事件，相关资料包括部分客户身份联系和贷款业务信息。该行表示已经开展调查和安全处置，并称目前没有发现客户账户余额受到直接影响，同时委托外部专业机构协助核查。最终受影响范围及攻击过程仍以调查确认结果为准，不能据此推断全部客户账户发生资金损失。"
+    },
+    {
+      "id": "research-item-12",
+      "domestic": false,
+      "date": "2026-10-20",
+      "jurisdiction": "澳大利亚",
+      "agency": "悉尼科技大学人类技术研究所",
+      "title": "澳大利亚研究报告建议修订劳动法，限制企业使用AI对员工实施高风险监控",
+      "original_title": "New report calls for federal reform to address harmful worker surveillance",
+      "source_name": "University of Technology Sydney",
+      "url": "https://www.uts.edu.au/news/2026/10/new-report-calls-for-federal-reform-to-address-harmful-worker-surveillance",
+      "fact": "悉尼科技大学人类技术研究所10月20日公布针对员工监控、数据收集与算法管理的研究报告，建议通过修订《公平工作法》对高风险监控措施设置更明确的合理性和透明度要求。研究者还提出改善劳动者申诉途径和集体协商机制，以应对人工智能技术扩大劳动场所监控范围的问题。相关建议尚未转化为澳大利亚已生效的全国劳动监控法规。"
+    },
+    {
+      "id": "research-item-13",
+      "domestic": false,
+      "date": "2026-10-20",
+      "jurisdiction": "澳大利亚·国际版权合作",
+      "agency": "国际媒体与创作者组织联盟",
+      "title": "国际媒体组织联合反对澳大利亚AI训练版权退出机制提案，主张维持授权许可",
+      "original_title": "Dozens of International Media Organizations Back Australian Creatives in Warning Against Copyright Changes",
+      "source_name": "News/Media Alliance",
+      "url": "https://www.newsmediaalliance.org/australia-coalition-copyright-letter/",
+      "fact": "新闻媒体联盟10月20日公布多家国际媒体和内容行业组织针对澳大利亚拟议人工智能训练版权规则的联合公开意见。有关组织反对以权利人事后退出为主要机制允许训练系统使用受版权保护的作品，并强调许可和创作者报酬安排的重要性。这是行业组织针对版权政策讨论提出的立场，不能写成政府已通过相关著作权法修正案。"
+    },
+    {
+      "id": "research-item-14",
+      "domestic": false,
+      "date": "2026-10-21",
+      "jurisdiction": "新加坡",
+      "agency": "新加坡网络安全局（CSA）",
+      "title": "新加坡网络安全局通报F5 NGINX严重安全漏洞，提示机构立即修复",
+      "original_title": "Attackers can exploit critical vulnerabilities in F5 NGINX products to perform remote code execution or cause denial-of-service (DoS) conditions. Patch immediately.",
+      "source_name": "Cyber Security Agency of Singapore",
+      "url": "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-150/",
+      "fact": "新加坡网络安全局10月21日公布针对F5 NGINX有关产品严重安全漏洞的警报，说明在特定条件下可能发生远程代码执行或拒绝服务风险。主管部门建议使用相关软件的运营者盘点受影响资产并按照厂商发布的版本及时安装补丁。安全警报属于风险防范通报，并不意味着已证实当地所有使用单位受到实际入侵或发生数据泄露。"
+    },
+    {
+      "id": "research-item-15",
+      "domestic": false,
+      "date": "2026-10-21",
+      "jurisdiction": "美国·智能体基础设施",
+      "agency": "英伟达（NVIDIA）",
+      "title": "英伟达发布OpenShell智能体安全参考架构，突出访问权限、执行隔离和运行监测",
+      "original_title": "NVIDIA Launches OpenShell Reference Architecture for Safe AI Agents",
+      "source_name": "NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+      "fact": "英伟达10月21日公布OpenShell智能体安全参考架构，提出将运行时权限管理、隔离执行及操作监测纳入企业部署自主智能体的基础设施设计。公司表示架构可与其计算和网络硬件方案配合，并邀请相关云与软件企业探索应用。此次属于企业自愿发布的安全技术方案，不是政府制定或认证的强制性人工智能安全规范。"
+    },
+    {
+      "id": "research-item-16",
+      "domestic": false,
+      "date": "2026-10-21",
+      "jurisdiction": "国际·开源软件供应链",
+      "agency": "PHP语言维护团队",
+      "title": "PHP发布安全更新修复两项严重远程代码执行漏洞，涉及多个受支持版本",
+      "original_title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+      "source_name": "PHP 官方项目",
+      "url": "https://www.php.net/index.php",
+      "fact": "PHP语言维护团队10月21日发布针对多个受支持版本分支的安全更新，修复两项在特定条件下可能造成远程代码执行的严重漏洞。官方提示采用相关PHP运行环境的网站和服务运营者核对具体版本，并通过正式发布渠道部署修复。有关更新属于基础开源软件维护及供应链安全风险处置，并非监管机关对企业违法行为的认定。"
+    },
+    {
+      "id": "research-item-17",
+      "domestic": false,
+      "date": "2026-10-21",
+      "jurisdiction": "新加坡·阿联酋",
+      "agency": "新加坡外交部、阿联酋相关机关",
+      "title": "新加坡与阿联酋在总理访问期间讨论人工智能、网络安全和数字基础设施合作",
+      "original_title": "Official Visit by Prime Minister and Minister for Finance Lawrence Wong to the United Arab Emirates, 20 to 22 October 2026",
+      "source_name": "Singapore Ministry of Foreign Affairs",
+      "url": "https://www.mfa.gov.sg/newsroom/press-statements-transcripts-and-photos/official-visit-by-prime-minister-and-minister-for-finance-lawrence-wong-to-the-united-arab-emirates--20-to-22-october-2026/",
+      "fact": "新加坡外交部10月21日公布总理黄循财访问阿联酋期间的政府交流安排，双方将人工智能、数字基础设施和网络安全列为科技合作的重要议题。有关讨论涉及产业对接、双边合作机制以及未来项目推进方向。新闻属于外交与政策合作进展，现有公布信息不代表两国已正式颁布具有直接法律约束力的统一人工智能监管规则。"
+    },
+    {
+      "id": "research-item-18",
+      "domestic": false,
+      "date": "2026-10-21",
+      "jurisdiction": "英国·阿曼",
+      "agency": "英国政府、阿曼相关部门、Yamna",
+      "title": "英国披露与阿曼共建人工智能数据中心的投资合作计划，首期规模预计超10亿英镑",
+      "original_title": "Major investment to drive growth and jobs across Britain as Sultan of Oman visits UK",
+      "source_name": "UK Government",
+      "url": "https://www.gov.uk/government/news/major-investment-to-drive-growth-and-jobs-across-britain-as-sultan-of-oman-visits-uk",
+      "fact": "英国政府10月21日在阿曼苏丹访英期间公布双方新一轮投资合作事项，包括英国背景企业Yamna拟在阿曼塞拉莱建设人工智能数据中心。政府资料显示项目首期投资计划规模预计超过10亿英镑，将涉及跨境算力设施、能源和相关供应链建设。项目仍属于投资合作和建设计划，不意味着数据中心已经建成投用或全部经营许可已经取得。"
+    }
+  ],
+  "analysis": {
+    "status": "not_included"
+  },
+  "publication": {
+    "article_written": true,
+    "index_updated": true,
+    "briefs_updated": true,
+    "archive_updated": true,
+    "current_edition_updated": true,
+    "pages_status": "awaiting_deployment",
+    "commit_sha": null,
+    "pages_run_id": null
+  }
+}
