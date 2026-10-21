@@ -3,8 +3,33 @@
   "base_main_sha": "be9c9c06845ccba377a8badaddc56a68e31b8273",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "us-ldge-postponement",
+      "event_date": "2026-10-19",
+      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-19/html/2026-21294.htm",
+      "headline": "中国大直径石墨电极反倾销终裁延至2027年2月12日",
+      "status": "延期并将临时措施从4个月延至不超过6个月",
+      "verified": true
+    },
+    {
+      "id": "jp-stainless-recommendation",
+      "event_date": "2026-10-19",
+      "source": "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/report/20261019_toushin.html",
+      "headline": "日本关税审议会支持对中国大陆及台湾地区镍系不锈钢冷轧产品征收反倾销税",
+      "status": "审议会答申，非本次公告直接征税",
+      "verified": true
+    }
+  ],
+  "coverage": {
+    "checked": [
+      "已打开所列美国原始公告及日本财务省公告"
+    ],
+    "pending": [
+      "完成八法域巡视与终扫",
+      "完成近7期逐条去重及正文"
+    ]
+  },
   "last_error": null,
   "next_actions": [
     "核对最近七期完整正文与工作流",
