@@ -1,41 +1,253 @@
 {
   "date": "2026-10-19",
   "base_main_sha": "be9c9c06845ccba377a8badaddc56a68e31b8273",
-  "phase": "researching",
+  "phase": "final_review",
   "publication_ready": false,
   "items": [
     {
-      "id": "us-ldge-postponement",
+      "id": "us-paipa-designations",
+      "j": "美国",
+      "agency": "OFAC",
+      "event": "2026-10-19",
+      "title": "美国依PAIPA列名奇绩创坛等五家中国实体，须核对具体金融限制",
+      "status": "NS-MBS正式列名及一般许可证签发",
+      "fact": "OFAC 10月19日将奇绩创坛投资管理公司、三家相关投资中心及上海至算科技列入非SDN菜单式制裁名单（NS-MBS），适用PAIPA项下财产冻结、外汇、银行付款及投资等限制。名单保留货物进口例外，不能把NS-MBS简单等同于全部SDN限制。OFAC同时签发两项一般许可证。",
+      "scope": "有关中国实体的跨境融资、股债投资、金融结算和相关交易。",
+      "impact": "应以具体主体及所选制裁措施核查交易，不只检索SDN名单。收尾许可证只覆盖指定实体及其满足持股条件的企业，不能据此放行所有当日列名实体交易。",
+      "deadline": "第2号一般许可证授权相关收尾交易至2027年1月19日美国东部标准时间凌晨0时01分；向被冻结主体付款须进入美国境内被冻结账户。",
+      "sources": [
+        [
+          "https://ofac.treasury.gov/recent-actions/20261019",
+          "OFAC 10月19日列名公告"
+        ],
+        [
+          "https://ofac.treasury.gov/media/937261/download?inline",
+          "PAIPA第2号一般许可证"
+        ]
+      ],
+      "verified": true,
+      "source": "https://ofac.treasury.gov/recent-actions/20261019",
+      "jurisdiction": "美国",
       "event_date": "2026-10-19",
+      "deduplication": "已与main最近7期及本次四期交叉核对，无同一新增动作重复"
+    },
+    {
+      "id": "us-ldge-postponement",
+      "j": "美国",
+      "agency": "商务部",
+      "event": "2026-10-19",
+      "dateNote": "10月19日公报公布并适用；文件签署于10月9日",
+      "title": "美国对中国大直径石墨电极反倾销终裁延期，临时措施延长",
+      "status": "终裁期限调整及临时措施延长",
+      "fact": "美国商务部10月19日公布，将中国大直径石墨电极反倾销调查终裁期限延至2027年2月12日，并将临时措施从四个月延长至不超过六个月。调查已于9月30日作出肯定性初裁，本次系应江苏江龙等相关程序申请作出的时间调整，没有公布新的最终税率。",
+      "scope": "中国大直径石墨电极生产商、美国电炉炼钢及相关采购企业。",
+      "impact": "出口商和进口商应重新核算临时措施持续期间的现金保证金、交货和融资安排，不能将终裁延期理解为暂停现有措施。未完成的成本和销售核查仍需按个案要求准备。",
+      "deadline": "终裁最迟2027年2月12日；临时措施不超过六个月。",
+      "sources": [
+        [
+          "https://www.govinfo.gov/content/pkg/FR-2026-10-19/html/2026-21294.htm",
+          "美国《联邦公报》2026-21294号公告"
+        ]
+      ],
+      "verified": true,
       "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-19/html/2026-21294.htm",
-      "headline": "中国大直径石墨电极反倾销终裁延至2027年2月12日",
-      "status": "延期并将临时措施从4个月延至不超过6个月",
-      "verified": true
+      "jurisdiction": "美国",
+      "event_date": "2026-10-19",
+      "deduplication": "已与main最近7期及本次四期交叉核对，无同一新增动作重复"
+    },
+    {
+      "id": "us-canada-lumber-review",
+      "j": "美国／加拿大",
+      "agency": "美国商务部",
+      "event": "2026-10-19",
+      "title": "美国公布加拿大软木材反倾销复审终裁，相关保证金自公布日起调整",
+      "status": "2024年度行政复审最终结果",
+      "fact": "美国商务部10月19日公布加拿大软木材反倾销行政复审最终结果，审查期间为2024年。Canfor、West Fraser及Resolute相关企业组的倾销幅度分别为17.00%、4.71%和13.13%，未被抽中单独审查企业为10.64%。最终结果同时影响审查期进口清算及后续适用的现金保证金。",
+      "scope": "加拿大软木材输美及北美建筑、木制品采购链。",
+      "impact": "应按生产商及出口商身份匹配适用税率，区分本次反倾销幅度与另外适用的反补贴及其他税费。中国企业采购加拿大木材后再加工供美时，还应独立核实产品范围与加工后原产属性。",
+      "deadline": "新保证金安排适用于10月19日及以后相关消费入境；清算指示原则上不早于公布后41日发出。",
+      "sources": [
+        [
+          "https://www.govinfo.gov/content/pkg/FR-2026-10-19/html/2026-21296.htm",
+          "美国《联邦公报》软木材复审终裁"
+        ]
+      ],
+      "verified": true,
+      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-19/html/2026-21296.htm",
+      "jurisdiction": "美国／加拿大",
+      "event_date": "2026-10-19",
+      "deduplication": "已与main最近7期及本次四期交叉核对，无同一新增动作重复"
+    },
+    {
+      "id": "us-tw-nails-review",
+      "j": "美国／中国台湾地区",
+      "agency": "美国商务部",
+      "event": "2026-10-19",
+      "title": "美国对台湾地区两家钢钉企业确定78.17%的复审倾销幅度",
+      "status": "行政复审终裁，非全部出口商统一税率",
+      "fact": "10月19日美国商务部公布台湾地区钢钉2024—2025年度反倾销行政复审终裁，对Faithful Engineering Products和Top Forever Screws确定78.17%的倾销幅度。主管机关采用可获得事实规则，且因无人就初裁提出意见而维持初步结果。其他生产商或出口商仍需按既有个别税率及公告的适用顺序判断。",
+      "scope": "涉案两家企业钢钉对美出口及美国紧固件进口。",
+      "impact": "进口商应在下单和报关前核实实际生产商、出口商与适用保证金率，不得把78.17%泛化为台湾地区所有钢钉出口的税率。供应链资料应能对应发票、生产主体与报关信息。",
+      "deadline": "10月19日起相关新入境货物适用新保证金要求；清算指示原则上不早于公布后35日发出。",
+      "sources": [
+        [
+          "https://www.govinfo.gov/content/pkg/FR-2026-10-19/html/2026-21362.htm",
+          "美国《联邦公报》2026-21362号终裁"
+        ]
+      ],
+      "verified": true,
+      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-19/html/2026-21362.htm",
+      "jurisdiction": "美国／中国台湾地区",
+      "event_date": "2026-10-19",
+      "deduplication": "已与main最近7期及本次四期交叉核对，无同一新增动作重复"
     },
     {
       "id": "jp-stainless-recommendation",
-      "event_date": "2026-10-19",
+      "j": "日本",
+      "agency": "财务省关税及外汇等审议会",
+      "event": "2026-10-19",
+      "title": "日本关税审议会支持对中国大陆及台湾地区镍系冷轧不锈钢征税",
+      "status": "审议会答申，需与政府征税法令区分",
+      "fact": "日本关税及外汇等审议会10月19日就镍系不锈钢冷轧钢带及钢板作出答申，认为依照当日提交的方案，对中国大陆及台湾地区原产或自相关地区出口的涉案产品征收反倾销税是适当的。答申属于政府作出征税安排的重要程序材料，本页本身没有公布新的统一税率或海关实施起日。",
+      "scope": "涉案冷轧不锈钢生产商、日本钢材进口商及汽车、机械采购链。",
+      "impact": "对日供货企业应核对产品成分、规格及生产来源，并继续跟踪正式政令、企业税率表和过渡安排。不能仅凭审议会赞成意见自行套用尚未核实的最终税率。",
+      "deadline": "10月19日答申；最终税率、起征日期及适用期限应以政府正式征税文件为准。",
+      "sources": [
+        [
+          "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/report/20261019_toushin.html",
+          "日本财务省10月19日审议会答申"
+        ]
+      ],
+      "verified": true,
       "source": "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/report/20261019_toushin.html",
-      "headline": "日本关税审议会支持对中国大陆及台湾地区镍系不锈钢冷轧产品征收反倾销税",
-      "status": "审议会答申，非本次公告直接征税",
-      "verified": true
+      "jurisdiction": "日本",
+      "event_date": "2026-10-19",
+      "deduplication": "已与main最近7期及本次四期交叉核对，无同一新增动作重复"
     }
   ],
   "coverage": {
     "checked": [
-      "已打开所列美国原始公告及日本财务省公告"
+      {
+        "jurisdiction": "美国",
+        "sources": [
+          "Federal Register 10月16日、19—21日目录及入选公告",
+          "OFAC Recent Actions及10月19日名单与许可证"
+        ],
+        "result": "有入选候选"
+      },
+      {
+        "jurisdiction": "欧盟",
+        "sources": [
+          "DG Trade新闻",
+          "理事会制裁公告",
+          "香港工业贸易署糠醇官方通告"
+        ],
+        "result": "糠醇立案入18日；后续未发现可入选的新决定，目录日期及政策表态不重复填充"
+      },
+      {
+        "jurisdiction": "英国",
+        "sources": [
+          "FCDO反恐制裁10月16日通知",
+          "ECJU出口商通知目录",
+          "TRA官方页面"
+        ],
+        "result": "3项资料变更入18日；19日目录补录14日旧公告不入选"
+      },
+      {
+        "jurisdiction": "日本",
+        "sources": [
+          "财务省2026关税信息",
+          "19日不锈钢答申"
+        ],
+        "result": "不锈钢入19日；钛白粉已在17日发布不重复"
+      },
+      {
+        "jurisdiction": "韩国",
+        "sources": [
+          "产业通商部韩文新闻目录、英文官方公告"
+        ],
+        "result": "20日认证成果入选；展会商业活动剔除"
+      },
+      {
+        "jurisdiction": "印度",
+        "sources": [
+          "DGTR首页及铜线、叉车、装饰纸、己内酰胺案页和文件"
+        ],
+        "result": "铜线计量单位更正及叉车期限入21日；装饰纸名单发布不单独填充"
+      },
+      {
+        "jurisdiction": "加拿大",
+        "sources": [
+          "CBSA SIMA门户、海关通知目录及官方限定搜索"
+        ],
+        "result": "纸容器已在17日发布，未重复；部分旧入口404已更正"
+      },
+      {
+        "jurisdiction": "澳大利亚",
+        "sources": [
+          "ATRC案件目录官方限定检索"
+        ],
+        "result": "镀铝锌钢加速复审已在14日发布，后续媒体报道不重复；目录直接请求503保留"
+      }
     ],
-    "pending": [
-      "完成八法域巡视与终扫",
-      "完成近7期逐条去重及正文"
-    ]
+    "pending": []
   },
   "last_error": null,
   "next_actions": [
-    "核对最近七期完整正文与工作流",
-    "巡视美国欧盟英国日本韩国印度加拿大澳大利亚",
-    "逐条来源核验及事件去重",
-    "阶段性保存",
-    "完成终扫并发布"
+    "完成正文DOM链接预检、终扫后保存最终核验",
+    "写入正文首页归档，核验Pages与公开页面"
+  ],
+  "prior_progress": {
+    "items": [
+      {
+        "id": "us-ldge-postponement",
+        "event_date": "2026-10-19",
+        "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-19/html/2026-21294.htm",
+        "headline": "中国大直径石墨电极反倾销终裁延至2027年2月12日",
+        "status": "延期并将临时措施从4个月延至不超过6个月",
+        "verified": true
+      },
+      {
+        "id": "jp-stainless-recommendation",
+        "event_date": "2026-10-19",
+        "source": "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/report/20261019_toushin.html",
+        "headline": "日本关税审议会支持对中国大陆及台湾地区镍系不锈钢冷轧产品征收反倾销税",
+        "status": "审议会答申，非本次公告直接征税",
+        "verified": true
+      }
+    ],
+    "coverage": {
+      "checked": [
+        "已打开所列美国原始公告及日本财务省公告"
+      ],
+      "pending": [
+        "完成八法域巡视与终扫",
+        "完成近7期逐条去重及正文"
+      ]
+    },
+    "last_error": null
+  },
+  "access_notes": [
+    "部分Govinfo及FederalRegister网页工具无法打开，使用正常公开HTTP请求成功核验原文。",
+    "EUR-Lex糠醇原文请求返回验证页／HTTP202；正文只采用香港工业贸易署同日官方通告明确确认的立案及产品资料，未推断未读原文中的期限或登记安排。",
+    "部分BIS、USTR旧入口404、CBP403和日本METI403，改以官方检索及财务省等公开来源补查；不视为GitHub权限或安全拒绝。"
+  ],
+  "excluded": [
+    {
+      "event": "日本钛白粉立案",
+      "reason": "10月17日已刊"
+    },
+    {
+      "event": "澳大利亚镀铝锌钢加速复审媒体再报道",
+      "reason": "10月14日已刊"
+    },
+    {
+      "event": "英国10月19日出口商目录更新",
+      "reason": "补录10月12日和14日旧公告"
+    },
+    {
+      "event": "台湾越南钢材案草稿事件日期",
+      "reason": "修正为10月16日披露、10月12日认定"
+    }
   ]
 }
