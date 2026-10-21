@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-21",
+  "base_main_sha": "a0ac4e49731df88cf2b2c54598290d3b33c2c9ba",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {
+    "checked": [],
+    "pending": [
+      "美国",
+      "欧盟",
+      "英国",
+      "日本",
+      "韩国",
+      "印度",
+      "加拿大",
+      "澳大利亚"
+    ]
+  },
+  "last_error": null,
+  "next_actions": [
+    "接续10月18日至20日草稿，核验原始材料并完成近7期去重",
+    "完成10月21日研究后发布正文、首页、归档并验收Pages"
+  ]
+}
