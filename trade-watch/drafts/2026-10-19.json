@@ -1,7 +1,7 @@
 {
   "date": "2026-10-19",
   "base_main_sha": "be9c9c06845ccba377a8badaddc56a68e31b8273",
-  "phase": "publishing",
+  "phase": "deployment_check",
   "publication_ready": true,
   "items": [
     {
@@ -194,8 +194,8 @@
   },
   "last_error": null,
   "next_actions": [
-    "逐期写入main正文、首页和归档",
-    "对应提交Pages及线上正文来源验收"
+    "跟踪Pages 39618909329",
+    "验收四份公开正文、首页、归档及全部19个来源链接"
   ],
   "prior_progress": {
     "items": [
@@ -263,9 +263,18 @@
   },
   "backfill_policy": "用户明确要求按10月18—21日期补刊；历史期以对应期日最近披露窗口选材，正文保留实际事件日期、签署日期及公报日期，不冒称当日已发布。",
   "publication": {
-    "state": "pending",
-    "main_written": false,
+    "state": "deployment_pending",
+    "main_written": true,
+    "main_readback": true,
+    "body_commit": "d45d315e3ed3b50175dcfea1b1b17f3b1a799462",
+    "three_file_commit": "384b0269de6e9337d7e497993cee75234f874efa",
+    "deployment_commit": "86e247a1f682c60658c5697416bb5682b2fb2a62",
+    "pages_run_id": 39618909329,
     "pages_success": null,
-    "public_verified": null
+    "public_verified": null,
+    "observations": [
+      "各期正文、当期首页及归档依日期顺序写入并回读。最终首页和归档首项为10月21日第045期。",
+      "中间提交Pages因后续main推进而取消，按规则只验收最终有效提交。"
+    ]
   }
 }
