@@ -336,5 +336,8 @@
     "commit_sha": null,
     "pages_run_id": null,
     "online_verified": false
-  }
+  },
+  "freshness_72h_verified_ids": [
+    "research-item-7"
+  ]
 }
