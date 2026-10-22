@@ -5,11 +5,16 @@
   "publication_ready": false,
   "items": [],
   "coverage": {},
-  "last_error": null,
+  "last_error": {
+    "stage": "research_checkpoint_update",
+    "tool": "mcp__GitHub__update_file",
+    "path": "trade-watch/drafts/2026-10-22.json",
+    "error": "This tool call was blocked by OpenAI's safety checks. Please double check what you are sending.",
+    "attempts": 1,
+    "date": "2026-10-22"
+  },
   "next_actions": [
-    "核验最近七期事件",
-    "检索10月19日至22日贸易和出口监管官方更新",
-    "按阶段补充候选事项",
-    "核验来源及发布"
+    "人工核查首批核验新闻并保存正文断点",
+    "继续核对欧盟双反废止、美国双反立案等官方原文"
   ]
 }
