@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-23",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-23-almada-regulation-by-design.html",
+  "selection": "Marco Almada, Regulation by Design and the Governance of Technological Futures",
+  "bibliography": {
+    "type": "article",
+    "author": "Marco Almada",
+    "originalTitle": "Regulation by Design and the Governance of Technological Futures",
+    "journal": "European Journal of Risk Regulation",
+    "year": "2023",
+    "volume": "14",
+    "issue": "4",
+    "pages": "697–709",
+    "doi": "10.1017/err.2023.37",
+    "url": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/regulation-by-design-and-the-governance-of-technological-futures/53EC46DA34291D89A6381B80846B99E1",
+    "cnTitle": "将法律写入软件以后：设计规制的权力与长期风险"
+  },
+  "versions": {
+    "publication": "European Journal of Risk Regulation 14(4) (2023), pp. 697–709; first online 17 May 2023",
+    "full_text": "Cambridge University Press publisher full text I–V, footnotes and references completely examined",
+    "ssrn": "No SSRN claims; version of record used",
+    "legislative_context": "EU AI Act references in paper refer to the 2021 proposal, not the 2024 enacted law"
+  },
+  "sources": [
+    "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/regulation-by-design-and-the-governance-of-technological-futures/53EC46DA34291D89A6381B80846B99E1",
+    "https://doi.org/10.1017/err.2023.37"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-09-22-reidenberg-lex-informatica.html",
+    "articles/2026-10-15-yeung-hypernudge.html"
+  ],
+  "timeline": null,
+  "body_length": 3554,
+  "checked_at": "2026-10-23T20:11:27+08:00",
+  "base_main_sha": "23f3c7c993d4c20f664a73550b0e173a9270a93d",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}
