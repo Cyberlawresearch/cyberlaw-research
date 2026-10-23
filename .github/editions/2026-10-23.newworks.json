@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-23",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-10-23-new-works.html",
+  "page_blob_sha": "a54b3b8ab69a104a7958c7404721f91f615e3536",
+  "newworks_count": 3,
+  "checked_at": "2026-10-23T20:36:40+08:00",
+  "checks": {
+    "publisher_pages_opened": true,
+    "bibliographic_metadata_verified": true,
+    "history_original_title_search": true,
+    "history_doi_deduplication": true,
+    "version_verified": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "works": [
+    {
+      "author": "Marcella Favale",
+      "original_title": "The Liability Paradox: copyright ownership, contractual incapacity, and platform exploitation of minor creators under the DSM Directive and DSA",
+      "cn_title": "未成年创作者的版权困局：平台协议、内容过滤与儿童保护",
+      "journal": "International Journal of Law and Information Technology",
+      "publisher": "Oxford University Press",
+      "year": 2026,
+      "volume": "34",
+      "issue": "",
+      "pages": "",
+      "article_number": "eaag016",
+      "doi": "10.1093/ijlit/eaag016",
+      "source": "https://academic.oup.com/ijlit/article-abstract/doi/10.1093/ijlit/eaag016/8965053",
+      "published_on": "2026-10-21",
+      "version": "publisher_online",
+      "full_text_access": false
+    },
+    {
+      "author": "Fernando Barrio",
+      "original_title": "Algorithmic governance of carbon markets: the limits of EU climate law and AI as regulatory infrastructure",
+      "cn_title": "算法成为碳市场监管基础设施后，法律责任如何确定",
+      "journal": "Journal of Environmental Law",
+      "publisher": "Oxford University Press",
+      "year": 2026,
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "article_number": "eqag037",
+      "doi": "10.1093/jel/eqag037",
+      "source": "https://doi.org/10.1093/jel/eqag037",
+      "published_on": "2026-10-15",
+      "version": "publisher_online",
+      "full_text_access": true
+    },
+    {
+      "author": "David Závada",
+      "original_title": "Two worlds, one family: the right to information under the Enforcement and CRM Directives",
+      "cn_title": "版权集体管理中的信息请求权：侵权取证与报酬结算的界限",
+      "journal": "Journal of Intellectual Property Law & Practice",
+      "publisher": "Oxford University Press",
+      "year": 2026,
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "article_number": "jpag089",
+      "doi": "10.1093/jiplp/jpag089",
+      "source": "https://academic.oup.com/jiplp/advance-article/doi/10.1093/jiplp/jpag089/8829039?searchresult=1",
+      "published_on": "2026-09-22",
+      "version": "publisher_online",
+      "full_text_access": true
+    }
+  ],
+  "publication": {
+    "commit_sha": null,
+    "pages_deploy_status": null,
+    "online_verification": null
+  }
+}
