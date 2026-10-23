@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-23",
+  "base_main_sha": "03e431fb692ac9544ad909f3521d8f1ed4dfea33",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "核对美国、欧盟、英国、日本、韩国官方公告及印度、加拿大、澳大利亚资料",
+    "对最近七期逐条去重",
+    "最终链接校验、结束前终扫后发布"
+  ]
+}
