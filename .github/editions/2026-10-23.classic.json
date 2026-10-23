@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-23",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-10-23-locke-letter-concerning-toleration.html",
+  "target_path": "articles/2026-10-23-locke-letter-concerning-toleration.html",
+  "book": {
+    "author": "John Locke",
+    "original_title": "A Letter Concerning Toleration (Epistola de Tolerantia)",
+    "publisher": "Awnsham Churchill",
+    "year": "1689",
+    "edition": "1689 London first English edition, translated by William Popple; original Latin work published in 1689; 1690 sequels excluded"
+  },
+  "source_urls": [
+    "https://davidmhart.com/liberty/Books/1689-Locke_Toleration1/Locke_Toleration-ebook-3volsin1.html",
+    "https://en.wikisource.org/wiki/A_Letter_Concerning_Toleration",
+    "https://search.worldcat.org/fr/title/A-letter-concerning-toleration-%3A-humbly-submitted-andc.-%3A-licensed-Octob.-3.-1689/oclc/153648802",
+    "https://jonahbennett.com/the-argument-of-the-letter-concerning-toleration-briefly-considerd-and-answerd/",
+    "https://books.google.com/books/about/A_Letter_Concerning_Toleration.html?id=9WKsOwAACAAJ"
+  ],
+  "original_verification": "通读公开完整英文书信正文及文末异端与分裂辨析，逐主题核对国家权限、教会自愿、仪式规范、宽容例外和集会论证；对照1689年英文首版转录及WorldCat书目。未声称逐页校勘拉丁文影印本；1690年第二封信与现代编者材料未算作1689年原信。",
+  "critics": [
+    {
+      "name": "Jonas Proast",
+      "work": "The Argument of the Letter concerning Toleration, Briefly Consider'd and Answer'd (Oxford: The Theatre, 1690)",
+      "url": "https://jonahbennett.com/the-argument-of-the-letter-concerning-toleration-briefly-considerd-and-answerd/"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html",
+    "classics-history.html"
+  ],
+  "duplicate_found": false,
+  "sections": 41,
+  "prose_length": 6473,
+  "checked_at": "2026-10-23T20:12:04+08:00",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
