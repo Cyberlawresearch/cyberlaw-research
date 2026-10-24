@@ -14,7 +14,7 @@
 <section class="tech-hero"><div class="wrap"><div class="tech-kicker">CYBERLAW TECHNOLOGY BASICS · ARCHIVE</div><h1>课程总览与历史归档</h1><p class="tech-lead">这里看整套课程的知识关系和往期课程。本期推送从首页直接进入当天课程，不再先经过总览页。</p></div></section>
 <div class="tech-shell">
   <section>
-    <div class="latest-lesson"><div class="lesson-no">27</div><div><div class="tech-kicker">LATEST LESSON · 2026.10.14</div><h2>MoE：为什么大模型可以只调用一部分“专家”？</h2><p>理解专家混合模型怎样按输入选取少量子网络计算，分清总参数量、激活参数量与真实服务成本。</p></div><a href="tech-basics/2026-10-14-moe.html">阅读最新一课 →</a></div>
+    <div class="latest-lesson"><div class="lesson-no">37</div><div><div class="tech-kicker">LATEST LESSON · 2026.10.24</div><h2>本地部署：把模型放在自己服务器上意味着什么？</h2><p>理解模型权重与推理软件如何在组织可控制的环境中运行，并分清本地计算、外部服务调用与数据合规。</p></div><a href="tech-basics/2026-10-24-local-deployment.html">阅读最新一课 →</a></div>
   </section>
 
   <section class="lesson-section course-logic">
@@ -26,7 +26,7 @@
     <div class="course-map-frame">
       <svg class="course-map-svg" viewBox="0 0 1200 680" role="img" aria-labelledby="course-map-title course-map-desc">
         <title id="course-map-title">网信法技术基础八模块课程导图</title>
-        <desc id="course-map-desc">八个模块分四个阶段推进，第二模块 Transformer 与第三模块模型训练与对齐均已完成；第四模块模型能力与推理正在推进，第27课为 MoE。</desc>
+        <desc id="course-map-desc">八个模块分四个阶段推进：第一至第五模块已完成，第37课进入第六模块部署与基础设施，已学习API和本地部署。</desc>
         <path class="map-line" d="M275 340 H315 M585 340 H625 M895 340 H935"/>
         <path class="map-line" d="M295 330 l20 10 -20 10 M605 330 l20 10 -20 10 M915 330 l20 10 -20 10"/>
 
@@ -49,19 +49,19 @@
         <rect class="map-module" x="352" y="295" width="211" height="125" rx="10"/>
         <text class="map-module-no" x="370" y="321">MODULE 03 · DONE</text><text class="map-module-title" x="370" y="350">模型训练与对齐</text>
         <text class="map-module-text" x="370" y="377"><tspan x="370">15 数据集 · 16 SFT · 17 RLHF/DPO</tspan><tspan x="370" dy="22">18 合成数据 · 19 蒸馏 · 20 评测 · 21 后训练</tspan></text>
-        <rect class="map-module active" x="352" y="440" width="211" height="125" rx="10"/>
-        <text class="map-module-no" x="370" y="466">MODULE 04 · IN PROGRESS</text><text class="map-module-title" x="370" y="495">模型能力与推理</text>
-        <text class="map-module-text" x="370" y="522"><tspan x="370">22 上下文 · 23 采样 · 24 幻觉</tspan><tspan x="370" dy="22">25 推理 · 26 KV Cache · 27 MoE</tspan></text>
+        <rect class="map-module" x="352" y="440" width="211" height="125" rx="10"/>
+        <text class="map-module-no" x="370" y="466">MODULE 04 · DONE</text><text class="map-module-title" x="370" y="495">模型能力与推理</text>
+        <text class="map-module-text" x="370" y="515"><tspan x="370">22 上下文 · 23 采样</tspan><tspan x="370" dy="18">24 幻觉 · 25 推理 · 26 KV</tspan><tspan x="370" dy="18">27 MoE · 28 多模态</tspan></text>
 
         <rect class="map-stage" x="640" y="35" width="255" height="610" rx="12"/>
         <text class="map-stage-title" x="662" y="72">第三阶段｜再看懂应用</text>
         <text class="map-stage-sub" x="662" y="96">模型怎样连接知识、工具和基础设施</text>
         <rect class="map-module" x="662" y="155" width="211" height="150" rx="10"/>
-        <text class="map-module-no" x="680" y="181">MODULE 05</text><text class="map-module-title" x="680" y="210">外部知识与智能体</text>
-        <text class="map-module-text" x="680" y="237"><tspan x="680">RAG · 向量数据库 · 工具调用</tspan><tspan x="680" dy="22">Agent · 记忆 · MCP</tspan><tspan x="680" dy="22">跨应用操作</tspan></text>
-        <rect class="map-module" x="662" y="335" width="211" height="150" rx="10"/>
-        <text class="map-module-no" x="680" y="361">MODULE 06</text><text class="map-module-title" x="680" y="390">部署与基础设施</text>
-        <text class="map-module-text" x="680" y="417"><tspan x="680">API · 本地部署 · 量化</tspan><tspan x="680" dy="22">GPU · 成本 · 云边端</tspan><tspan x="680" dy="22">模型服务链</tspan></text>
+        <text class="map-module-no" x="680" y="181">MODULE 05 · DONE</text><text class="map-module-title" x="680" y="210">外部知识与智能体</text>
+        <text class="map-module-text" x="680" y="237"><tspan x="680">29 RAG · 30 向量库</tspan><tspan x="680" dy="22">31 工具 · 32 Agent</tspan><tspan x="680" dy="22">33 记忆 · 34 MCP · 35 跨应用</tspan></text>
+        <rect class="map-module active" x="662" y="335" width="211" height="150" rx="10"/>
+        <text class="map-module-no" x="680" y="361">MODULE 06 · IN PROGRESS</text><text class="map-module-title" x="680" y="390">部署与基础设施</text>
+        <text class="map-module-text" x="680" y="417"><tspan x="680">36 API · 37 本地部署</tspan><tspan x="680" dy="22">量化 · GPU · 成本 · 云边端</tspan><tspan x="680" dy="22">模型服务链</tspan></text>
 
         <rect class="map-stage" x="950" y="35" width="230" height="610" rx="12"/>
         <text class="map-stage-title" x="972" y="72">第四阶段｜进入治理</text>
@@ -74,13 +74,23 @@
         <text class="map-module-text" x="990" y="417"><tspan x="990">可解释 · 可审计 · 责任链</tspan><tspan x="990" dy="22">数据出境 · 平台化</tspan><tspan x="990" dy="22">互操作 · 行政使用</tspan><tspan x="990" dy="22">持续监管</tspan></text>
       </svg>
     </div>
-    <p class="course-map-note">当前进度：第26课，正在推进“模型能力与推理”模块，本模块已完成5课。已学习上下文窗口、采样、幻觉、推理模型与 KV Cache，接下来依次学习 MoE 和多模态。</p>
+    <p class="course-map-note">当前进度：第37课。第四模块“模型能力与推理”7课、第五模块“外部知识与智能体”7课均已完成；第六模块“部署与基础设施”已完成API、本地部署2课。下一课讲量化，理解模型参数的数值表示如何影响运行资源。</p>
     <div class="logic-summary"><strong>最终目标不是背术语，而是能沿技术链条追责任。</strong><p>面对一个AI法律问题时，能够具体追问：数据在哪一步被转换？模型在哪一步计算？谁给了系统权限？是否连接外部服务？风险来自模型、工具调用还是基础设施？</p></div>
   </section>
 
   <section class="lesson-section tech-history">
     <div class="tech-history-head"><h2>历史课程</h2><span>按课程顺序持续更新</span></div>
     <div class="tech-history-list">
+      <a class="tech-history-item" href="tech-basics/2026-10-24-local-deployment.html"><div class="tech-history-no">37</div><div><div class="tech-history-title">本地部署：把模型放在自己服务器上意味着什么？</div><div class="tech-history-desc">理解模型权重、推理软件和本地运行环境，并区分部署地点与实际数据流向。</div></div><div class="tech-history-date">2026.10.24</div></a>
+      <a class="tech-history-item" href="tech-basics/2026-10-23-api.html"><div class="tech-history-no">36</div><div><div class="tech-history-title">API：应用怎样通过网络调用模型服务？</div><div class="tech-history-desc">理解企业应用、模型服务接口与实际推理计算的位置，识别凭证和数据传输边界。</div></div><div class="tech-history-date">2026.10.23</div></a>
+      <a class="tech-history-item" href="tech-basics/2026-10-22-cross-app-actions.html"><div class="tech-history-no">35</div><div><div class="tech-history-title">跨应用操作：智能体怎样在不同系统之间接续任务？</div><div class="tech-history-desc">理解多系统读取、字段转换、独立授权、状态核对与部分失败处置。</div></div><div class="tech-history-date">2026.10.22</div></a>
+      <a class="tech-history-item" href="tech-basics/2026-10-21-workflow-mcp.html"><div class="tech-history-no">34</div><div><div class="tech-history-title">工作流与MCP：怎样把不同工具组织到一起？</div><div class="tech-history-desc">分清业务流程编排与统一工具连接协议，理解客户端、服务端和权限审计。</div></div><div class="tech-history-date">2026.10.21</div></a>
+      <a class="tech-history-item" href="tech-basics/2026-10-20-memory.html"><div class="tech-history-no">33</div><div><div class="tech-history-title">记忆：为什么智能体能记住上次任务，却也可能记错？</div><div class="tech-history-desc">理解短期任务状态和长期记忆的保存、取回与更新，及其个人信息治理要求。</div></div><div class="tech-history-date">2026.10.20</div></a>
+      <a class="tech-history-item" href="tech-basics/2026-10-19-agent.html"><div class="tech-history-no">32</div><div><div class="tech-history-title">Agent：智能体为什么能够连续完成多步骤任务？</div><div class="tech-history-desc">理解目标、工具行动、反馈和任务状态循环，以及工作流与动态智能体的差别。</div></div><div class="tech-history-date">2026.10.19</div></a>
+      <a class="tech-history-item" href="tech-basics/2026-10-18-tool-calling.html"><div class="tech-history-no">31</div><div><div class="tech-history-title">工具调用：模型怎样让外部程序执行任务？</div><div class="tech-history-desc">分清模型提出调用请求、应用程序验证权限、工具实际执行和结果回传四个环节。</div></div><div class="tech-history-date">2026.10.18</div></a>
+      <a class="tech-history-item" href="tech-basics/2026-10-17-vector-database.html"><div class="tech-history-no">30</div><div><div class="tech-history-title">向量数据库：系统怎样找到意思相近的文件？</div><div class="tech-history-desc">理解文本表示、距离检索与近似索引，分清语义相似、条文适用和来源有效性。</div></div><div class="tech-history-date">2026.10.17</div></a>
+      <a class="tech-history-item" href="tech-basics/2026-10-16-rag.html"><div class="tech-history-no">29</div><div><div class="tech-history-title">RAG：为什么模型回答前要先查资料？</div><div class="tech-history-desc">区分外部检索、模型生成与引用核查，理解法律知识库的版本控制、检索遗漏和访问权限。</div></div><div class="tech-history-date">2026.10.16</div></a>
+      <a class="tech-history-item" href="tech-basics/2026-10-15-multimodal.html"><div class="tech-history-no">28</div><div><div class="tech-history-title">多模态：为什么模型能够同时理解文字、图片和声音？</div><div class="tech-history-desc">理解图像、声音、文字如何经过不同预处理进入模型，以及多模态识别与原始证据核查之间的界限。</div></div><div class="tech-history-date">2026.10.15</div></a>
       <a class="tech-history-item" href="tech-basics/2026-10-14-moe.html"><div class="tech-history-no">27</div><div><div class="tech-history-title">MoE：为什么大模型可以只调用一部分“专家”？</div><div class="tech-history-desc">理解专家混合的路由机制、总参数与激活参数差别，以及算力效率和实际法律责任边界。</div></div><div class="tech-history-date">2026.10.14</div></a>
       <a class="tech-history-item" href="tech-basics/2026-10-13-kv-cache.html"><div class="tech-history-no">26</div><div><div class="tech-history-title">KV Cache：为什么生成新词不用重算旧内容？</div><div class="tech-history-desc">理解逐词生成时历史键值缓存的复用机制，以及显存成本、前缀复用与服务隔离的边界。</div></div><div class="tech-history-date">2026.10.13</div></a>
       <a class="tech-history-item" href="tech-basics/2026-10-12-reasoning-models.html"><div class="tech-history-no">25</div><div><div class="tech-history-title">推理模型：为什么复杂问题可以分步骤处理？</div><div class="tech-history-desc">理解推理模型怎样为多步骤求解安排更多中间计算，并区分求解过程、生成的解释与必要的事实核验。</div></div><div class="tech-history-date">2026.10.12</div></a>
