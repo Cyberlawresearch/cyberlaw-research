@@ -2,7 +2,7 @@
   "date": "2026-10-24",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "dccb7bb3efa0190b4d9042ce55635a057ccff2a8",
-  "phase": "source_repair_deployed_pending",
+  "phase": "published_public_verified_source_check_retrying",
   "publication_ready": true,
   "items": [
     {
@@ -116,13 +116,21 @@
     "Australia": "checked_2026-10-23",
     "Other": "regional_sweep_no_high_value"
   },
-  "last_error": null,
+  "last_error": {
+    "stage": "source_diagnostics",
+    "run_id": 40049243397,
+    "job_id": 120739005291,
+    "url": "https://www.industry.gov.au/australian-trade-remedies-commission/current-cases-and-electronic-public-record-epr/723",
+    "message": "HTTPSConnectionPool(host='www.industry.gov.au', port=443): Read timed out. (read timeout=60)",
+    "other_8_sources": "passed",
+    "retry_status": "in_progress, third attempt",
+    "observed_at": "2026-10-24T09:30:47+08:00"
+  },
   "next_actions": [
-    "Delete mistakenly created research JSON copy from main; keep research checkpoint only on trade-watch-drafts",
-    "Verify Pages on final corrected main commit",
-    "Verify all published source links"
+    "Review final outcome of source diagnostics run 40049243397 (third attempt) and archive the actual result",
+    "If Australian case-page HTTP timeout persists, preserve failed source check evidence without modifying published facts; do not claim source diagnostics fully passed."
   ],
-  "updated_at": "2026-10-24T10:05:00+08:00",
+  "updated_at": "2026-10-24T09:30:47+08:00",
   "source_checks": {
     "individual_original_urls": "verified by opening exact web URLs; EU ELI redirects to official EUR-Lex anti-bot; text separately checked against official gazette mirrors",
     "dom_url_check": "pending generated HTML",
@@ -159,5 +167,17 @@
       "ATRC linked specific case 723 HTML source",
       "Reuters signal replaced with formally published U.S. OCTG continuation notice"
     ]
+  },
+  "public_verification": {
+    "commit_sha": "6103f5ff5f5490b5f8138ab0857ed3074a3c3ebd",
+    "pages_workflow_run": 40048917122,
+    "pages_conclusion": "success",
+    "presence_guard_run": 40049243388,
+    "presence_guard_conclusion": "success",
+    "repo_ok": true,
+    "public_ok": true,
+    "news_count": 8,
+    "three_pages_correct": true,
+    "confirmed_at": "2026-10-24T09:19:26+08:00"
   }
 }
