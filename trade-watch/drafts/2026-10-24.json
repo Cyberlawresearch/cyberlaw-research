@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Asia/Shanghai",
+  "base_main_sha": "dccb7bb3efa0190b4d9042ce55635a057ccff2a8",
+  "phase": "source_repair_deployed_pending",
+  "publication_ready": true,
+  "items": [
+    {
+      "id": "uk-strategic-proposal",
+      "date": "2026-10-23",
+      "jurisdiction": "英国",
+      "agency": "ECJU",
+      "title": "英国预告12月拟修订军民两用及半导体出口管制清单",
+      "phase": "预告拟议规则，尚未生效",
+      "impact": "分类比对设备、计算技术和材料的出口许可证适用；GEA001拟于2027-04-01过渡退出",
+      "deadline": "预计11月提交法规，12月初生效，需获批准",
+      "importance": 5,
+      "source": "https://www.gov.uk/government/publications/notice-to-exporters-202624-proposed-amendments-to-uk-strategic-export-controls/notice-to-exporters-202624-proposed-amendments-to-uk-strategic-export-controls"
+    },
+    {
+      "id": "au-glasswool-723",
+      "date": "2026-10-23",
+      "jurisdiction": "澳大利亚",
+      "agency": "ATRC",
+      "title": "澳大利亚对中国和马来西亚玻璃棉保温毡发起反倾销反补贴调查",
+      "phase": "调查立案，尚无税率",
+      "impact": "HS7019.80.00需按密度/厚度/R值核验涉案；对应答卷与供货价格",
+      "deadline": "2026-11-30提交答卷和意见",
+      "importance": 5,
+      "source": "https://www.industry.gov.au/australian-trade-remedies-commission/current-cases-and-electronic-public-record-epr/723"
+    },
+    {
+      "id": "in-ipa-puc",
+      "date": "2026-10-23",
+      "jurisdiction": "印度",
+      "agency": "DGTR",
+      "title": "印度延长进口异丙醇反倾销调查的产品范围与PCN意见期限",
+      "phase": "程序期限延期，非征税决定",
+      "impact": "来自欧盟、韩国、台湾和美国的进口受查；影响跨区域化工原料采购与报价",
+      "deadline": "2026-10-27",
+      "importance": 3,
+      "source": "https://dgtr.gov.in/sites/default/files/2026-10/IPA_Extension_PUC_PCN.pdf"
+    },
+    {
+      "id": "eu-solar-glass-repeal",
+      "date": "2026-10-22",
+      "jurisdiction": "欧盟",
+      "agency": "欧洲委员会",
+      "title": "欧盟撤销中国太阳能玻璃反倾销和反补贴税",
+      "phase": "两项实施条例公布后于10月22日正式生效",
+      "impact": "TARIC 7007 19 80 12、18、80、85复核不再征收反倾销及反补贴税，2025-07-22以来缴税可向成员国海关申请退还且不付利息",
+      "deadline": "自2026-10-22生效；退税按联盟海关法规期限分别计算",
+      "importance": 5,
+      "sources": [
+        "https://eur-lex.europa.eu/eli/reg_impl/2026/2314/oj",
+        "https://eur-lex.europa.eu/eli/reg_impl/2026/2310/oj"
+      ]
+    },
+    {
+      "id": "us-postal-formal-date",
+      "date": "2026-10-22",
+      "jurisdiction": "美国",
+      "agency": "CBP",
+      "title": "美国延长部分国际邮包正式报关合规日期至2027年1月20日",
+      "phase": "最终规则公布，延期确定，不恢复低值免税",
+      "impact": "涉PGA、章节98/99与FTA免税声称的国际邮件进口审查入境类型和申报系统",
+      "deadline": "2027-01-20",
+      "importance": 5,
+      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/html/2026-21600.htm"
+    },
+    {
+      "id": "us-mail-entry13-pga",
+      "date": "2026-10-22",
+      "jurisdiction": "美国",
+      "agency": "CBP",
+      "title": "美国国际邮件Entry Type 13测试临时容许不随附完整PGA电子数据",
+      "phase": "试点修改已于10月22日生效，PGA实体要求未豁免",
+      "impact": "2500美元以下国际邮包ACE电子申报测试，报关行与承运商分类维护PGA数据补交与原始合规",
+      "deadline": "2026-10-22生效；何时停止该临时容许由CBP后续公告",
+      "importance": 4,
+      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/html/2026-21570.htm"
+    },
+    {
+      "id": "ca-surtax-origin-par7",
+      "date": "2026-10-23",
+      "jurisdiction": "加拿大",
+      "agency": "CBSA",
+      "title": "加拿大更新对美附加税通关说明，明确第98、99章例外例外条件",
+      "phase": "10月23日修订现行海关通知第7段，附加税于9月8日已生效",
+      "impact": "美国原产货物入境加拿大按15/25/50%适用税率，98/99章通常豁免；Schedule4与1/2/3联动时仍适用，CARM申报与原产地证明要一致",
+      "deadline": "2026-10-23行政说明更新，不改变9月8日原生效日",
+      "importance": 4,
+      "source": "https://www.cbsa-asfc.gc.ca/publications/cn-ad/cn26-23-eng.html"
+    },
+    {
+      "id": "us-octg-duty-continuation",
+      "date": "2026-10-22",
+      "jurisdiction": "美国",
+      "agency": "美国商务部国际贸易管理局（ITA）",
+      "title": "美国正式延续五国油井管反倾销和部分反补贴令，原有保证金持续征收",
+      "phase": "10月22日正式公告，适用于9月29日的延续令",
+      "impact": "印度、韩国、土耳其、越南、乌克兰油井管进口美国仍按原有反倾销税令收保证金；印度、土耳其保留相关反补贴保证金",
+      "deadline": "2026-09-29延续税令适用日",
+      "importance": 4,
+      "source": "https://www.federalregister.gov/d/2026-21530"
+    }
+  ],
+  "coverage": {
+    "USA": "checked_2026-10-22_23",
+    "EU": "checked_2026-10-21_23",
+    "UK": "checked_2026-10-23",
+    "Japan": "checked_2026-10-23_no_material_new",
+    "Korea": "checked_2026-10-23_no_material_new",
+    "India": "checked_2026-10-23",
+    "Canada": "checked_2026-10-23",
+    "Australia": "checked_2026-10-23",
+    "Other": "regional_sweep_no_high_value"
+  },
+  "last_error": null,
+  "next_actions": [
+    "Verify Pages run associated with 25d8d210",
+    "Verify source diagnostics all original links and published pages after new deploy"
+  ],
+  "updated_at": "2026-10-24T09:56:00+08:00",
+  "source_checks": {
+    "individual_original_urls": "verified by opening exact web URLs; EU ELI redirects to official EUR-Lex anti-bot; text separately checked against official gazette mirrors",
+    "dom_url_check": "pending generated HTML",
+    "event_dedup": "checked against 2026-10-14 to 2026-10-21 published main",
+    "final_sweep": "2026-10-24 morning Asia/Shanghai"
+  },
+  "publication_attempt": {
+    "date": "2026-10-24",
+    "stage": "source_links_repaired_awaiting_pages",
+    "paths": [
+      "trade-watch/issues/2026-10-24.html",
+      "trade-watch/index.html",
+      "trade-watch/archive.html"
+    ],
+    "issue_commit_sha": "136ac1f5b4ed6788665aa53e71682dcd7fe496ab",
+    "index_commit_sha": "a5849cab1a9ff42f60736a99f52137efd256bf03",
+    "final_main_commit_sha": "25d8d2104d38f761fc68a77e8ffa6ed4e028bb30",
+    "results": "all three reread ref main, 8 cards, 9 URLs, latest and archive match; Pages pending",
+    "last_error": null,
+    "pages_run_id": 40048135737,
+    "pages_conclusion": "success",
+    "public_guard_run_id": 40048413469,
+    "public_guard_conclusion": "success",
+    "source_diagnostics_run_id": 40048413412,
+    "source_diagnostics": "next deployment pending",
+    "prior_source_diagnostics_run_id": 40048413412,
+    "prior_source_diagnostics_errors": [
+      "CBSA old domain SSL hostname mismatch",
+      "Australian notice PDF source server timeout",
+      "Reuters 401"
+    ],
+    "link_repairs": [
+      "CBSA official www.cbsa-asfc.gc.ca alternate domain",
+      "ATRC specific case 723 official HTML record",
+      "Reuters signal replaced with 2026-21530 U.S. final continuation notice"
+    ]
+  }
+}
