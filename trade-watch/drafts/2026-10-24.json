@@ -2,7 +2,7 @@
   "date": "2026-10-24",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "dccb7bb3efa0190b4d9042ce55635a057ccff2a8",
-  "phase": "ready_to_publish",
+  "phase": "main_committed_pages_verification",
   "publication_ready": true,
   "items": [
     {
@@ -118,15 +118,28 @@
   },
   "last_error": null,
   "next_actions": [
-    "写入trade-watch/issues/2026-10-24.html",
-    "更新index.html和archive.html",
-    "验证main三文件并验收Pages和原始链接"
+    "确认最终提交3b82afe的Pages构建及来源核验",
+    "复核公开当期首页归档页面实际内容"
   ],
-  "updated_at": "2026-10-24T09:30:00+08:00",
+  "updated_at": "2026-10-24T09:40:00+08:00",
   "source_checks": {
     "individual_original_urls": "verified by opening exact web URLs; EU ELI redirects to official EUR-Lex anti-bot; text separately checked against official gazette mirrors",
     "dom_url_check": "pending generated HTML",
     "event_dedup": "checked against 2026-10-14 to 2026-10-21 published main",
     "final_sweep": "2026-10-24 morning Asia/Shanghai"
+  },
+  "publication_attempt": {
+    "date": "2026-10-24",
+    "stage": "three_files_committed_to_main",
+    "paths": [
+      "trade-watch/issues/2026-10-24.html",
+      "trade-watch/index.html",
+      "trade-watch/archive.html"
+    ],
+    "issue_commit_sha": "136ac1f5b4ed6788665aa53e71682dcd7fe496ab",
+    "index_commit_sha": "a5849cab1a9ff42f60736a99f52137efd256bf03",
+    "final_main_commit_sha": "3b82afe01848d47471f4740b7bd9886665061648",
+    "results": "all three reread ref main, 8 cards, 9 URLs, latest and archive match; Pages pending",
+    "last_error": null
   }
 }
