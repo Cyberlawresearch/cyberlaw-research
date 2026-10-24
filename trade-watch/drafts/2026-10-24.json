@@ -2,7 +2,7 @@
   "date": "2026-10-24",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "dccb7bb3efa0190b4d9042ce55635a057ccff2a8",
-  "phase": "pages_deployed_public_verified",
+  "phase": "source_repair_deployed_pending",
   "publication_ready": true,
   "items": [
     {
@@ -27,7 +27,7 @@
       "impact": "HS7019.80.00需按密度/厚度/R值核验涉案；对应答卷与供货价格",
       "deadline": "2026-11-30提交答卷和意见",
       "importance": 5,
-      "source": "https://www.industry.gov.au/sites/default/files/atrc/public-record/2026-10/723-3-notice-trn-2026-152-initiation-of-investigation-723.pdf"
+      "source": "https://www.industry.gov.au/australian-trade-remedies-commission/current-cases-and-electronic-public-record-epr/723"
     },
     {
       "id": "in-ipa-puc",
@@ -90,19 +90,19 @@
       "impact": "美国原产货物入境加拿大按15/25/50%适用税率，98/99章通常豁免；Schedule4与1/2/3联动时仍适用，CARM申报与原产地证明要一致",
       "deadline": "2026-10-23行政说明更新，不改变9月8日原生效日",
       "importance": 4,
-      "source": "https://www.cbsa.gc.ca/publications/cn-ad/cn26-23-eng.html"
+      "source": "https://www.cbsa-asfc.gc.ca/publications/cn-ad/cn26-23-eng.html"
     },
     {
-      "id": "eu-pet-safeguard-signal",
-      "date": "2026-10-23",
-      "jurisdiction": "欧盟",
-      "agency": "欧洲委员会／欧盟贸易部长",
-      "title": "欧盟贸易官员点名PET塑料进口保障措施，仍处审议可否立案阶段",
-      "phase": "政策信号，非立案、非税令、非配额",
-      "impact": "PET树脂与包装材料出口合同中的进口应诉机制、原产地记录和进口商采购安排受到可能的未来措施影响",
-      "deadline": "未发布立案或生效日期",
-      "importance": 3,
-      "source": "https://www.reuters.com/world/china/eu-ministers-vow-tackle-china-shock-20-through-talks-with-beijing-2026-10-23/"
+      "id": "us-octg-duty-continuation",
+      "date": "2026-10-22",
+      "jurisdiction": "美国",
+      "agency": "美国商务部国际贸易管理局（ITA）",
+      "title": "美国正式延续五国油井管反倾销和部分反补贴令，原有保证金持续征收",
+      "phase": "10月22日正式公告，适用于9月29日的延续令",
+      "impact": "印度、韩国、土耳其、越南、乌克兰油井管进口美国仍按原有反倾销税令收保证金；印度、土耳其保留相关反补贴保证金",
+      "deadline": "2026-09-29延续税令适用日",
+      "importance": 4,
+      "source": "https://www.federalregister.gov/d/2026-21530"
     }
   ],
   "coverage": {
@@ -118,9 +118,11 @@
   },
   "last_error": null,
   "next_actions": [
-    "留意2026-10-24本次提交源链接诊断结果，若失败据真实记录修复来源链接"
+    "Delete mistakenly created research JSON copy from main; keep research checkpoint only on trade-watch-drafts",
+    "Verify Pages on final corrected main commit",
+    "Verify all published source links"
   ],
-  "updated_at": "2026-10-24T09:45:00+08:00",
+  "updated_at": "2026-10-24T10:05:00+08:00",
   "source_checks": {
     "individual_original_urls": "verified by opening exact web URLs; EU ELI redirects to official EUR-Lex anti-bot; text separately checked against official gazette mirrors",
     "dom_url_check": "pending generated HTML",
@@ -129,7 +131,7 @@
   },
   "publication_attempt": {
     "date": "2026-10-24",
-    "stage": "pages_deployed_public_verified",
+    "stage": "source_links_repaired_awaiting_final_pages",
     "paths": [
       "trade-watch/issues/2026-10-24.html",
       "trade-watch/index.html",
@@ -137,7 +139,7 @@
     ],
     "issue_commit_sha": "136ac1f5b4ed6788665aa53e71682dcd7fe496ab",
     "index_commit_sha": "a5849cab1a9ff42f60736a99f52137efd256bf03",
-    "final_main_commit_sha": "3b82afe01848d47471f4740b7bd9886665061648",
+    "final_main_commit_sha": "25d8d2104d38f761fc68a77e8ffa6ed4e028bb30",
     "results": "all three reread ref main, 8 cards, 9 URLs, latest and archive match; Pages pending",
     "last_error": null,
     "pages_run_id": 40048135737,
@@ -145,6 +147,17 @@
     "public_guard_run_id": 40048413469,
     "public_guard_conclusion": "success",
     "source_diagnostics_run_id": 40048413412,
-    "source_diagnostics": "in_progress at last check"
+    "source_diagnostics": "next deployment pending",
+    "prior_source_diagnostics_run_id": 40048413412,
+    "prior_source_diagnostics_errors": [
+      "Old CBSA domain TLS certificate hostname mismatch",
+      "ATRC original notice PDF timed out",
+      "Reuters article returned 401 to source checker"
+    ],
+    "link_repairs": [
+      "CBSA updated to official cbsa-asfc.gc.ca domain",
+      "ATRC linked specific case 723 HTML source",
+      "Reuters signal replaced with formally published U.S. OCTG continuation notice"
+    ]
   }
 }
