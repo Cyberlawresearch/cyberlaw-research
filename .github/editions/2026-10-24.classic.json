@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-24",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-10-24-mill-subjection-of-women.html",
+  "target_path": "articles/2026-10-24-mill-subjection-of-women.html",
+  "book": {
+    "author": "John Stuart Mill",
+    "original_title": "The Subjection of Women",
+    "publisher": "Longmans, Green, Reader, and Dyer",
+    "year": "1869",
+    "edition": "1869 London first edition, four chapters, based on complete original published text"
+  },
+  "source_urls": [
+    "https://www.gutenberg.org/cache/epub/27083/pg27083-images.html",
+    "https://en.wikisource.org/wiki/The_Subjection_of_Women",
+    "https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_2/March_1873/On_the_Equality_of_the_Sexes",
+    "https://www.cambridge.org/core/journals/review-of-politics/article/abs/mills-the-subjection-of-women-the-methodological-limits-of-liberal-feminism/8AE5C272F3CAEF7021D771905435B734"
+  ],
+  "original_verification": "对完整英文著作四章做系统核读：第一章自由推定与习俗的证据缺陷；第二章婚姻、财产、人身与家庭决策；第三章职业与公共任用的资格判断；第四章正义、社会收益和夫妻平等；明确核对第二章的家务分工局限。书目据初版题名页；不混入后世导论和注释。",
+  "critics": [
+    {
+      "name": "James Fitzjames Stephen",
+      "work": "On the Equality of the Sexes, Popular Science Monthly, volume 2, March 1873",
+      "url": "https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_2/March_1873/On_the_Equality_of_the_Sexes",
+      "checked": "full contemporary text"
+    },
+    {
+      "name": "Jennifer Ring",
+      "work": "Mill's The Subjection of Women: The Methodological Limits of Liberal Feminism, The Review of Politics 47(1), 1985, 27–44, DOI 10.1017/S0034670500037736",
+      "url": "https://www.cambridge.org/core/journals/review-of-politics/article/abs/mills-the-subjection-of-women-the-methodological-limits-of-liberal-feminism/8AE5C272F3CAEF7021D771905435B734",
+      "checked": "publisher abstract and bibliographic details; full article not claimed"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html",
+    "classics-history.html"
+  ],
+  "duplicate_found": false,
+  "sections": 42,
+  "prose_length": 7125,
+  "checked_at": "2026-10-24T20:21:01.366+08:00",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
