@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-24",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-24-pasquale-rule-of-persons-not-machines.html",
+  "selection": "Frank Pasquale, A Rule of Persons, Not Machines: The Limits of Legal Automation",
+  "bibliography": {
+    "type": "article",
+    "author": "Frank Pasquale",
+    "originalTitle": "A Rule of Persons, Not Machines: The Limits of Legal Automation",
+    "journal": "The George Washington Law Review",
+    "year": "2019",
+    "volume": "87",
+    "issue": "1",
+    "pages": "1–55",
+    "doi": "",
+    "url": "https://www.gwlr.org/a-rule-of-persons-not-machines-the-limits-of-legal-automation/",
+    "cnTitle": "法律自动化不能替代人的判断：正当程序与责任归属"
+  },
+  "versions": {
+    "publication": "The George Washington Law Review 87(1) (2019), pp. 1–55, publication webpage dated 2019-01-24",
+    "full_text": "The George Washington Law Review official 55-page version of record, introduction, parts I–III, conclusion, footnotes inspected",
+    "preprint": "University of Maryland institutional repository 2018 record states forthcoming; publisher 2019 version controls",
+    "doi": "No DOI independently verified; field left blank"
+  },
+  "sources": [
+    "https://www.gwlr.org/a-rule-of-persons-not-machines-the-limits-of-legal-automation/",
+    "https://www.gwlr.org/wp-content/uploads/2019/01/87-Geo.-Wash.-L.-Rev.-1.pdf",
+    "https://digitalcommons.law.umaryland.edu/fac_pubs/1612/"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-09-03-citron-technological-due-process.html",
+    "articles/2026-09-22-reidenberg-lex-informatica.html",
+    "articles/2026-10-23-almada-regulation-by-design.html"
+  ],
+  "timeline": null,
+  "body_length": 4525,
+  "checked_at": "2026-10-24T20:06:39+08:00",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  },
+  "base_main_sha": "77747c1c222734d64cc46b28bcb25af5fcb1ca88"
+}
