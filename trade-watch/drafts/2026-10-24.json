@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Asia/Shanghai",
+  "base_main_sha": "dccb7bb3efa0190b4d9042ce55635a057ccff2a8",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "读取最近七期与发布规则，核验近72小时原始来源并分阶段保存"
+  ],
+  "updated_at": "2026-10-24T09:00:00+08:00"
+}
