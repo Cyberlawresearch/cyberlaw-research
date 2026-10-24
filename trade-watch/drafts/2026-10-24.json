@@ -4,11 +4,59 @@
   "base_main_sha": "dccb7bb3efa0190b4d9042ce55635a057ccff2a8",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "uk-strategic-proposal",
+      "date": "2026-10-23",
+      "jurisdiction": "英国",
+      "agency": "ECJU",
+      "title": "英国预告12月拟修订军民两用及半导体出口管制清单",
+      "phase": "预告拟议规则，尚未生效",
+      "impact": "分类比对设备、计算技术和材料的出口许可证适用；GEA001拟于2027-04-01过渡退出",
+      "deadline": "预计11月提交法规，12月初生效，需获批准",
+      "importance": 5,
+      "source": "https://www.gov.uk/government/publications/notice-to-exporters-202624-proposed-amendments-to-uk-strategic-export-controls/notice-to-exporters-202624-proposed-amendments-to-uk-strategic-export-controls"
+    },
+    {
+      "id": "au-glasswool-723",
+      "date": "2026-10-23",
+      "jurisdiction": "澳大利亚",
+      "agency": "ATRC",
+      "title": "澳大利亚对中国和马来西亚玻璃棉保温毡发起反倾销反补贴调查",
+      "phase": "调查立案，尚无税率",
+      "impact": "HS7019.80.00需按密度/厚度/R值核验涉案；对应答卷与供货价格",
+      "deadline": "2026-11-30提交答卷和意见",
+      "importance": 5,
+      "source": "https://www.industry.gov.au/sites/default/files/atrc/public-record/2026-10/723-3-notice-trn-2026-152-initiation-of-investigation-723.pdf"
+    },
+    {
+      "id": "in-ipa-puc",
+      "date": "2026-10-23",
+      "jurisdiction": "印度",
+      "agency": "DGTR",
+      "title": "印度延长进口异丙醇反倾销调查的产品范围与PCN意见期限",
+      "phase": "程序期限延期，非征税决定",
+      "impact": "来自欧盟、韩国、台湾和美国的进口受查；影响跨区域化工原料采购与报价",
+      "deadline": "2026-10-27",
+      "importance": 3,
+      "source": "https://dgtr.gov.in/sites/default/files/2026-10/IPA_Extension_PUC_PCN.pdf"
+    }
+  ],
+  "coverage": {
+    "UK": "checked_2026-10-23",
+    "Australia": "checked_2026-10-23",
+    "India": "checked_2026-10-23",
+    "USA": "scanning",
+    "EU": "scanning",
+    "Japan": "scanning",
+    "Korea": "scanning",
+    "Canada": "scanning"
+  },
   "last_error": null,
   "next_actions": [
-    "读取最近七期与发布规则，核验近72小时原始来源并分阶段保存"
+    "核验美欧最新贸易救济、公报与制裁",
+    "日本韩国加拿大最新巡视",
+    "最终来源复核与近七期去重"
   ],
-  "updated_at": "2026-10-24T09:00:00+08:00"
+  "updated_at": "2026-10-24T09:10:00+08:00"
 }
