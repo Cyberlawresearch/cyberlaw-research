@@ -2,7 +2,7 @@
   "date": "2026-10-24",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "dccb7bb3efa0190b4d9042ce55635a057ccff2a8",
-  "phase": "researching",
+  "phase": "source_final_verification",
   "publication_ready": false,
   "items": [
     {
@@ -40,23 +40,87 @@
       "deadline": "2026-10-27",
       "importance": 3,
       "source": "https://dgtr.gov.in/sites/default/files/2026-10/IPA_Extension_PUC_PCN.pdf"
+    },
+    {
+      "id": "eu-solar-glass-repeal",
+      "date": "2026-10-22",
+      "jurisdiction": "欧盟",
+      "agency": "欧洲委员会",
+      "title": "欧盟撤销中国太阳能玻璃反倾销和反补贴税",
+      "phase": "两项实施条例公布后于10月22日正式生效",
+      "impact": "TARIC 7007 19 80 12、18、80、85复核不再征收反倾销及反补贴税，2025-07-22以来缴税可向成员国海关申请退还且不付利息",
+      "deadline": "自2026-10-22生效；退税按联盟海关法规期限分别计算",
+      "importance": 5,
+      "sources": [
+        "https://eur-lex.europa.eu/eli/reg_impl/2026/2314/oj",
+        "https://eur-lex.europa.eu/eli/reg_impl/2026/2310/oj"
+      ]
+    },
+    {
+      "id": "us-postal-formal-date",
+      "date": "2026-10-22",
+      "jurisdiction": "美国",
+      "agency": "CBP",
+      "title": "美国延长部分国际邮包正式报关合规日期至2027年1月20日",
+      "phase": "最终规则公布，延期确定，不恢复低值免税",
+      "impact": "涉PGA、章节98/99与FTA免税声称的国际邮件进口审查入境类型和申报系统",
+      "deadline": "2027-01-20",
+      "importance": 5,
+      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/html/2026-21600.htm"
+    },
+    {
+      "id": "us-mail-entry13-pga",
+      "date": "2026-10-22",
+      "jurisdiction": "美国",
+      "agency": "CBP",
+      "title": "美国国际邮件Entry Type 13测试临时容许不随附完整PGA电子数据",
+      "phase": "试点修改已于10月22日生效，PGA实体要求未豁免",
+      "impact": "2500美元以下国际邮包ACE电子申报测试，报关行与承运商分类维护PGA数据补交与原始合规",
+      "deadline": "2026-10-22生效；何时停止该临时容许由CBP后续公告",
+      "importance": 4,
+      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/html/2026-21570.htm"
+    },
+    {
+      "id": "ca-surtax-origin-par7",
+      "date": "2026-10-23",
+      "jurisdiction": "加拿大",
+      "agency": "CBSA",
+      "title": "加拿大更新对美附加税通关说明，明确第98、99章例外例外条件",
+      "phase": "10月23日修订现行海关通知第7段，附加税于9月8日已生效",
+      "impact": "美国原产货物入境加拿大按15/25/50%适用税率，98/99章通常豁免；Schedule4与1/2/3联动时仍适用，CARM申报与原产地证明要一致",
+      "deadline": "2026-10-23行政说明更新，不改变9月8日原生效日",
+      "importance": 4,
+      "source": "https://www.cbsa.gc.ca/publications/cn-ad/cn26-23-eng.html"
+    },
+    {
+      "id": "eu-pet-safeguard-signal",
+      "date": "2026-10-23",
+      "jurisdiction": "欧盟",
+      "agency": "欧洲委员会／欧盟贸易部长",
+      "title": "欧盟贸易官员点名PET塑料进口保障措施，仍处审议可否立案阶段",
+      "phase": "政策信号，非立案、非税令、非配额",
+      "impact": "PET树脂与包装材料出口合同中的进口应诉机制、原产地记录和进口商采购安排受到可能的未来措施影响",
+      "deadline": "未发布立案或生效日期",
+      "importance": 3,
+      "source": "https://www.reuters.com/world/china/eu-ministers-vow-tackle-china-shock-20-through-talks-with-beijing-2026-10-23/"
     }
   ],
   "coverage": {
+    "USA": "checked_2026-10-22_23",
+    "EU": "checked_2026-10-21_23",
     "UK": "checked_2026-10-23",
-    "Australia": "checked_2026-10-23",
+    "Japan": "checked_2026-10-23_no_material_new",
+    "Korea": "checked_2026-10-23_no_material_new",
     "India": "checked_2026-10-23",
-    "USA": "scanning",
-    "EU": "scanning",
-    "Japan": "scanning",
-    "Korea": "scanning",
-    "Canada": "scanning"
+    "Canada": "checked_2026-10-23",
+    "Australia": "checked_2026-10-23",
+    "Other": "regional_sweep_no_high_value"
   },
   "last_error": null,
   "next_actions": [
-    "核验美欧最新贸易救济、公报与制裁",
-    "日本韩国加拿大最新巡视",
-    "最终来源复核与近七期去重"
+    "复核EU和澳大利亚一手链接、条款与期限",
+    "近七期事件级去重已进行，终扫近1-2小时最新公告",
+    "标记publication_ready后正式写入三份main文件"
   ],
-  "updated_at": "2026-10-24T09:10:00+08:00"
+  "updated_at": "2026-10-24T09:21:00+08:00"
 }
