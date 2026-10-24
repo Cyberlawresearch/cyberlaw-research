@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-24",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-10-24-new-works.html",
+  "page_blob_sha": "4467dd65451555cc0a4fb9cc5238faef832c77ca",
+  "newworks_count": 3,
+  "checked_at": "2026-10-24T20:36:48+08:00",
+  "checks": {
+    "publisher_pages_opened": true,
+    "bibliographic_metadata_verified": true,
+    "history_original_title_search": true,
+    "history_doi_deduplication": true,
+    "version_verified": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "scope": "Full GitHub-indexed historical research pages and former new-works directory",
+    "queries": [
+      "Dworniczak",
+      "Lamsiyah",
+      "Harcourt",
+      "cel.2026.10040",
+      "nlp.2026.10036",
+      "20539517261461461"
+    ],
+    "exact_matches": 0
+  },
+  "works": [
+    {
+      "author": "Dominik Dworniczak",
+      "original_title": "The Promise and Perils of Private Enforcement under EU Law: The Digital Services Act in Context",
+      "cn_title": "DSA私人执行的机遇与风险：平台损害赔偿权如何落地",
+      "journal": "Cambridge Yearbook of European Legal Studies",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "volume": "",
+      "issue": "",
+      "pages": "1–17",
+      "article_number": "",
+      "doi": "10.1017/cel.2026.10040",
+      "source": "https://www.cambridge.org/core/journals/cambridge-yearbook-of-european-legal-studies/article/promise-and-perils-of-private-enforcement-under-eu-law-the-digital-services-act-in-context/20B8BDB3FD93E0932FB5EE08F9C61838",
+      "published_on": "2026-10-08",
+      "version": "journal_first_view",
+      "full_text_access": true
+    },
+    {
+      "author": "Salima Lamsiyah",
+      "original_title": "The same model, different responsibilities: Responsible NLP under the EU AI Act",
+      "cn_title": "同一语言模型为何承担不同法律责任：欧盟AI法的三层责任链",
+      "journal": "Natural Language Processing",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "volume": "32",
+      "issue": "5",
+      "pages": "662–675",
+      "article_number": "",
+      "doi": "10.1017/nlp.2026.10036",
+      "source": "https://www.cambridge.org/core/journals/natural-language-processing/article/same-model-different-responsibilities-responsible-nlp-under-the-eu-ai-act/C39E477E58A2FC925F1B39BD6786118E",
+      "published_on": "2026-09-22",
+      "version": "journal_published",
+      "full_text_access": true
+    },
+    {
+      "author": "Alison Harcourt; Claudio M. Radaelli; Philipp Trein",
+      "original_title": "A question of style? Regulating artificial intelligence in the European Union and the USA",
+      "cn_title": "欧盟与美国AI监管风格之争：统一立法未必更易执行",
+      "journal": "Big Data & Society",
+      "publisher": "SAGE Publications",
+      "year": 2026,
+      "volume": "13",
+      "issue": "3",
+      "pages": "",
+      "article_number": "",
+      "doi": "10.1177/20539517261461461",
+      "source": "https://journals.sagepub.com/doi/10.1177/20539517261461461",
+      "published_on": "2026-07-02",
+      "version": "journal_published",
+      "full_text_access": true
+    }
+  ],
+  "publication": {
+    "commit_sha": null,
+    "pages_deploy_status": null,
+    "online_verification": null
+  }
+}
