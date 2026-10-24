@@ -2,8 +2,8 @@
   "date": "2026-10-24",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "dccb7bb3efa0190b4d9042ce55635a057ccff2a8",
-  "phase": "source_final_verification",
-  "publication_ready": false,
+  "phase": "ready_to_publish",
+  "publication_ready": true,
   "items": [
     {
       "id": "uk-strategic-proposal",
@@ -118,9 +118,15 @@
   },
   "last_error": null,
   "next_actions": [
-    "复核EU和澳大利亚一手链接、条款与期限",
-    "近七期事件级去重已进行，终扫近1-2小时最新公告",
-    "标记publication_ready后正式写入三份main文件"
+    "写入trade-watch/issues/2026-10-24.html",
+    "更新index.html和archive.html",
+    "验证main三文件并验收Pages和原始链接"
   ],
-  "updated_at": "2026-10-24T09:21:00+08:00"
+  "updated_at": "2026-10-24T09:30:00+08:00",
+  "source_checks": {
+    "individual_original_urls": "verified by opening exact web URLs; EU ELI redirects to official EUR-Lex anti-bot; text separately checked against official gazette mirrors",
+    "dom_url_check": "pending generated HTML",
+    "event_dedup": "checked against 2026-10-14 to 2026-10-21 published main",
+    "final_sweep": "2026-10-24 morning Asia/Shanghai"
+  }
 }
