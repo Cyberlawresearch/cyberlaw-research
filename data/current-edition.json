@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-23",
+  "date": "2026-10-24",
   "pages": {
-    "brief": "articles/2026-10-23-tech-law-brief.html",
+    "brief": "articles/2026-10-24-tech-law-brief.html",
     "paper": "articles/2026-10-23-almada-regulation-by-design.html",
     "classic": "articles/2026-10-23-locke-letter-concerning-toleration.html",
     "newworks": "articles/2026-10-23-new-works.html"
   },
   "page_dates": {
-    "brief": "2026-10-23",
+    "brief": "2026-10-24",
     "paper": "2026-10-23",
     "classic": "2026-10-23",
     "newworks": "2026-10-23"
   },
-  "news_count": 18,
+  "news_count": 24,
   "newworks_count": 3
 }
