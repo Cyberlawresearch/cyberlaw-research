@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-25",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-10-25-new-works.html",
+  "page_blob_sha": "ed35b7f944ebc38dd295532e7e1d35295f61cd10",
+  "newworks_count": 3,
+  "checked_at": "2026-10-25T20:38:21+08:00",
+  "checks": {
+    "publisher_pages_opened": true,
+    "bibliographic_metadata_verified": true,
+    "history_original_title_search": true,
+    "history_doi_deduplication": true,
+    "version_verified": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "historical_newworks_pages_checked": 56,
+    "range": "2026-08-28 through 2026-10-24",
+    "fields": [
+      "original_title",
+      "DOI",
+      "author",
+      "publication_version"
+    ],
+    "matches_found": 0
+  },
+  "items": [
+    {
+      "cn_title": "消费者是否应享有委托AI智能体交易的权利：法律认可的安全错觉",
+      "author": "Caroline Cauffman",
+      "original_title": "A Right to Delegate to AI: The Regulatory Safety Halo and the Acceleration of Agentic Consumer Markets",
+      "doi": "10.1017/err.2026.10166",
+      "year": 2026,
+      "publication_date": "2026-10-22",
+      "journal": "European Journal of Risk Regulation",
+      "publisher_page": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/right-to-delegate-to-ai-the-regulatory-safety-halo-and-the-acceleration-of-agentic-consumer-markets/5E5A56BA85F7E9A574090324BBCFF307",
+      "version": "publisher First View journal article",
+      "pages": "1–19"
+    },
+    {
+      "cn_title": "沙特非营利组织如何选择个人信息处理的合法性基础",
+      "author": "Ahmed M. Bamashmoos",
+      "original_title": "Governing Lawful Basis Selection in the Saudi Third Sector: Nonprofit Accountability under the Personal Data Protection Law",
+      "doi": "10.1017/S0957876526000835",
+      "year": 2026,
+      "publication_date": "2026-10-22",
+      "journal": "Voluntas: International Journal of Voluntary and Nonprofit Organizations",
+      "publisher_page": "https://www.cambridge.org/core/journals/voluntas/article/governing-lawful-basis-selection-in-the-saudi-third-sector-nonprofit-accountability-under-the-personal-data-protection-law/FBEAE3A9E724F6AC680F854F6191F9A3",
+      "version": "publisher First View journal article",
+      "pages": "1–9"
+    },
+    {
+      "cn_title": "网络性别暴力的国家保护义务：以印度落实《消除对妇女一切形式歧视公约》为例",
+      "author": "Shirin Naseer; Cameran Ashraf",
+      "original_title": "CEDAW, Digital Violence and State Due Diligence: Assessing India’s Response within a Global Framework",
+      "doi": "10.1007/s12142-026-00774-1",
+      "year": 2026,
+      "publication_date": "2026-10-05",
+      "journal": "Human Rights Review",
+      "publisher_page": "https://link.springer.com/article/10.1007/s12142-026-00774-1",
+      "version": "Springer version of record, online",
+      "pages": null
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": false
+  }
+}
