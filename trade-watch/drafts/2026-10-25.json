@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-25",
+  "timezone": "Asia/Shanghai",
+  "base_main_sha": "579ed57c99344a215d39d079fddc9b25d3f7d0ea",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "读取最近7期并去重",
+    "巡视美国、欧盟、英国、日本、韩国和印度、加拿大、澳大利亚",
+    "核验原始来源并编撰",
+    "完成终扫、保存待发布稿、写入main并验收"
+  ]
+}
