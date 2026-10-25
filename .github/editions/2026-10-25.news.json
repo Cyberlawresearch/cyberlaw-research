@@ -4,15 +4,15 @@
   "state": "verified",
   "phase": "publishing",
   "page": "articles/2026-10-25-tech-law-brief.html",
-  "news_count": 17,
+  "news_count": 16,
   "distribution": {
     "domestic": 3,
-    "foreign": 14
+    "foreign": 13
   },
   "mode": "facts_only",
   "analysis_pending": true,
-  "checked_at": "2026-10-25T19:15:55+08:00",
-  "last_news_scan_at": "2026-10-25T19:15:55+08:00",
+  "checked_at": "2026-10-25T19:19:30+08:00",
+  "last_news_scan_at": "2026-10-25T19:19:30+08:00",
   "checks": {
     "sources": true,
     "legal_status": true,
@@ -42,7 +42,7 @@
       "source_group": "美国联邦与州监管、刑事司法",
       "scope": "FTC、SEC、司法部、罗得岛州总检察长等一手公告；金融证券与数字广告法规新闻检索",
       "status": "searched",
-      "result": "取得政府机构起诉、监管检查重点、嫌疑人引渡和州层面消费者保护诉讼原文"
+      "result": "取得SEC检查重点及司法部引渡原始公告；另核查FTC与罗得岛州报道后，因缺少可验时间戳而未收入10月25日当期"
     },
     {
       "source_group": "欧盟成员国、英国及公共媒体",
@@ -131,21 +131,6 @@
       "seven_day_duplicate": false
     },
     {
-      "date": "2026-10-22",
-      "jurisdiction": "美国罗得岛州",
-      "agency": "罗得岛州总检察长",
-      "title": "美国罗得岛州起诉Meta，指控平台从欺诈广告中获利并损害消费者",
-      "original_title": "Attorney General Neronha sues Meta for fraudulent advertisements",
-      "source_name": "罗得岛州总检察长办公室",
-      "url": "https://riag.ri.gov/press-releases/attorney-general-neronha-sues-meta-fraudulent-advertisements",
-      "fact": "罗得岛州总检察长10月22日宣布对Meta提起消费者保护诉讼，指控其Facebook、Instagram等服务中的诈骗广告侵害消费者利益，并质疑平台对相关广告风险的处置。起诉方请求法院提供禁令及其他民事救济。有关违规事实属于原告主张，尚未获得法院实体裁判认定。",
-      "id": "research-item-5",
-      "domestic": false,
-      "legal_status": "civil_complaint_allegations",
-      "previous_day_duplicate": false,
-      "seven_day_duplicate": false
-    },
-    {
       "date": "2026-10-23",
       "jurisdiction": "美国",
       "agency": "美国证券交易委员会（SEC）",
@@ -154,7 +139,7 @@
       "source_name": "美国SEC",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-109-sec-announces-fiscal-year-2027-examination-priorities",
       "fact": "美国证券交易委员会10月23日发布2027财年检查重点，列出对投资顾问、经纪交易商、基金及其他注册主体的风险导向检查领域。文件关注数字资产、网络安全、客户信息保护以及新技术在金融服务中的使用和风险管理。该文件属于年度检查工作安排，并非直接创设新义务的法规或执法处罚决定。",
-      "id": "research-item-6",
+      "id": "research-item-5",
       "domestic": false,
       "legal_status": "regulatory_examination_priorities",
       "previous_day_duplicate": false,
@@ -169,7 +154,7 @@
       "source_name": "Reuters",
       "url": "https://www.reuters.com/world/senator-says-planned-meta-commercial-terms-update-could-harm-us-businesses-2026-10-23/",
       "fact": "Meta于10月23日宣布，将新商业条款的实施时间从10月30日延至11月20日，以回应出版商和数字广告商的担忧。美国参议员Marsha Blackburn同时质疑条款可能扩大网站内容抓取和使用范围，此前欧洲和英国竞争机构已收到相关投诉。Meta否认其条款具有投诉者所称的无上限使用权，延期不等于监管机关认定违法。",
-      "id": "research-item-7",
+      "id": "research-item-6",
       "domestic": false,
       "legal_status": "company_terms_delay_and_legislative_objection",
       "previous_day_duplicate": false,
@@ -184,7 +169,7 @@
       "source_name": "Reuters",
       "url": "https://www.reuters.com/legal/government/wells-fargo-intuit-others-object-their-shares-being-tokenized-regulatory-2026-10-23/",
       "fact": "路透社10月23日援引监管文件报道，富国银行、Arm和Intuit等六家公司新增反对其股份在OKX与洲际交易所支持的代币化证券平台上交易。相关反对通过平台规定的公司选择退出机制提出，涉及证券代币与发行人授权边界。此次披露的是企业提出异议及平台规则执行情况，不是美国SEC新作出的全面禁止决定。",
-      "id": "research-item-8",
+      "id": "research-item-7",
       "domestic": false,
       "legal_status": "company_regulatory_objections",
       "previous_day_duplicate": false,
@@ -199,7 +184,7 @@
       "source_name": "美国司法部",
       "url": "https://www.justice.gov/opa/pr/chinese-national-extradited-alleged-role-multimillion-dollar-cryptocurrency-scam-targeting",
       "fact": "美国司法部10月23日宣布，涉嫌参与柬埔寨诈骗中心虚拟货币投资骗局的嫌疑人已从荷兰被引渡至美国，并在加利福尼亚州联邦法院出庭。调查人员称识别出174名美国受害人，案件涉及虚假投资平台、数字资产转移及跨境资金流转。嫌疑人面临刑事指控，尚不得将起诉指控等同于有罪判决。",
-      "id": "research-item-9",
+      "id": "research-item-8",
       "domestic": false,
       "legal_status": "extradition_and_criminal_prosecution",
       "previous_day_duplicate": false,
@@ -214,7 +199,7 @@
       "source_name": "Reuters",
       "url": "https://www.reuters.com/legal/litigation/navigate360-says-hackers-accessed-system-potentially-exposed-sensitive-personal-2026-10-23/",
       "fact": "Navigate360于10月23日确认，黑客曾侵入其一套系统并复制数月数据，可能涉及姓名、住址、出生日期及社会安全号码等个人信息。黑客此前宣称窃得包含数百万条犯罪举报记录的数据，但具体数量仍应区分于企业已确认的范围。加拿大安大略省部分警务机关已暂停使用相关服务。",
-      "id": "research-item-10",
+      "id": "research-item-9",
       "domestic": false,
       "legal_status": "data_breach_company_acknowledgement",
       "previous_day_duplicate": false,
@@ -229,7 +214,7 @@
       "source_name": "Reuters",
       "url": "https://www.reuters.com/legal/litigation/pwc-confirms-cybersecurity-incident-involving-employee-learning-records-2026-10-23/",
       "fact": "普华永道10月23日确认，承载员工学习记录的第三方供应商平台发生网络安全事件，并表示已采取措施保护环境及开展审查。勒索团伙声称盗走约590GB资料，但普华永道没有证实该数字。公司称受影响网站不保存客户数据、敏感个人数据或财务信息，其内部网络与运营未受影响。",
-      "id": "research-item-11",
+      "id": "research-item-10",
       "domestic": false,
       "legal_status": "third_party_data_incident",
       "previous_day_duplicate": false,
@@ -244,7 +229,7 @@
       "source_name": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/blackx-uefi-bootkit-exploits-baton-drop-flaw-to-bypass-secure-boot/",
       "fact": "安全研究人员本周披露名为BlackX的UEFI启动级恶意软件，相关攻击活动发生于2026年早些时候，涉及中亚部分外交机构。该恶意软件利用既有的Baton Drop漏洞绕过安全启动，并试图干扰终端安全产品。10月24日专业安全媒体进一步公开技术细节；这是研究披露，不是近期新发生的监管处罚或已证实的全球范围攻击。",
-      "id": "research-item-12",
+      "id": "research-item-11",
       "domestic": false,
       "legal_status": "security_research_disclosure",
       "previous_day_duplicate": false,
@@ -259,7 +244,7 @@
       "source_name": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
       "fact": "网络安全研究人员10月23日披露，已停维护的Time4Popcorn应用更新器存在可导致远程代码执行的设计缺陷，相关设备识别数量达到数百万量级。研究团队此前已采取措施关闭易被利用的更新入口，阻断通过该机制分发恶意程序的潜在路径。公开披露时间与漏洞形成及修复时间不同，尚无证据表明所有安装终端均曾遭实际入侵。",
-      "id": "research-item-13",
+      "id": "research-item-12",
       "domestic": false,
       "legal_status": "vulnerability_research_disclosure",
       "previous_day_duplicate": false,
@@ -274,7 +259,7 @@
       "source_name": "Reuters",
       "url": "https://www.reuters.com/business/media-telecom/czech-coalition-advances-media-overhaul-rushed-overnight-vote-2026-10-24/",
       "fact": "捷克议会10月24日凌晨的表决使公共广播电视筹资改革法案进入后续审议程序，方案拟将现行居民缴纳的公共媒体费用改由国家预算支付。反对者担忧财政拨款机制可能影响公共媒体编辑独立性及对欧盟相关媒体规则的遵守。法案仍需履行立法程序，尚未正式生效。",
-      "id": "research-item-14",
+      "id": "research-item-13",
       "domestic": false,
       "legal_status": "bill_advanced_not_enacted",
       "previous_day_duplicate": false,
@@ -289,24 +274,9 @@
       "source_name": "Reuters",
       "url": "https://www.reuters.com/legal/litigation/att-t-mobile-tighten-ai-guardrails-autonomous-networks-remain-years-away-2026-10-23/",
       "fact": "路透社10月23日报道，AT&T和T-Mobile正在限制人工智能智能体对电信网络及客户信息的访问，采用身份校验、权限约束和人工复核等措施。两家运营商表示，完全自主运行的通信网络仍需时间验证。相关措施属于企业披露的安全治理实践，并非美国通信监管机构发布的新规定。",
-      "id": "research-item-15",
+      "id": "research-item-14",
       "domestic": false,
       "legal_status": "industry_security_practices",
-      "previous_day_duplicate": false,
-      "seven_day_duplicate": false
-    },
-    {
-      "date": "2026-10-22",
-      "jurisdiction": "美国",
-      "agency": "美国联邦贸易委员会（FTC）",
-      "title": "美国FTC起诉冒用政府身份的护照服务网站，指控搜索广告及虚假评价误导消费者",
-      "original_title": "FTC Sues Perpetrators of Government Impersonation Scheme Over Deceptive Ads, Misleading Promises and Fake Reviews",
-      "source_name": "美国FTC",
-      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sues-perpetrators-government-impersonation-scheme-over-deceptive-ads-misleading-promises-fake",
-      "fact": "美国联邦贸易委员会10月22日宣布对GovAssist、Entry及相关负责人提起诉讼，指控其通过付费搜索广告和网站页面冒充政府或官方授权机构，诱导消费者购买护照办理服务并提交财务及个人信息。FTC还指称相关网站虚报服务价格、办理时限并展示虚假好评。案件已向波多黎各地区联邦法院起诉，所述违法行为目前仍为指控。",
-      "id": "research-item-16",
-      "domestic": false,
-      "legal_status": "civil_complaint",
       "previous_day_duplicate": false,
       "seven_day_duplicate": false
     },
@@ -319,11 +289,24 @@
       "source_name": "Reuters",
       "url": "https://www.reuters.com/legal/government/ai-hallucinations-court-filings-show-signs-slowdown-judges-still-sound-alarms-2026-10-23/",
       "fact": "路透社10月23日公布对美国法院文书使用人工智能的跟踪，引用研究者整理的多起存在虚构判例或引注错误的案件，并指出近期出现增长放缓迹象。部分法官仍就提交虚假引用和未经核查材料的问题警告诉讼代理人，强调文书核验责任不因使用生成式人工智能而消失。这是对法院实践的统计报道，并非新颁布的统一司法规则。",
-      "id": "research-item-17",
+      "id": "research-item-15",
       "domestic": false,
       "legal_status": "court_practice_research_report",
       "previous_day_duplicate": false,
       "seven_day_duplicate": false
+    },
+    {
+      "date": "2026-10-23",
+      "jurisdiction": "美国、国际网络安全",
+      "agency": "Cloudflare、VulnCheck及安全研究机构",
+      "title": "网络安全研究者披露AI驱动漏洞发现提速，多家关键软件供应商正紧急修补缺陷",
+      "original_title": "AI-discovered bugs may soon trigger fresh disruptions, cyber experts say",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/ai-discovered-bugs-may-soon-trigger-fresh-disruptions-cyber-experts-say-2026-10-23/",
+      "legal_status": "security_industry_research_reporting",
+      "fact": "路透社10月23日采访七位网络安全专业人士后报道，人工智能辅助代码审查正在缩短软件缺陷发现和攻击利用之间的时间。Cloudflare负责人表示多项关键软件严重漏洞正处于修复阶段，VulnCheck称即将公开的研究显示其跟踪发现的数字漏洞同比增加。受访专家对漏洞发现增加是否必然转化为更多成功网络攻击存在不同判断；有关说法属于研究与媒体披露，并非监管机关发布的新安全规定。",
+      "domestic": false,
+      "id": "research-item-16"
     }
   ],
   "publication": {
@@ -337,5 +320,17 @@
     "pages_run_id": null,
     "online_verified": false
   },
-  "notes": "当期事实版，仅新闻事实、法律状态、外国原题与直链。核验完成不等于Pages上线；部署状态在实际核验后另行确认。"
+  "notes": "在部署结构核验发现整日差值3限制后，删去两项缺少可独立核验精确发布时间的10月22日美国条目；保留已查明10月22日23:06发布的91APP报道，依据现有验证器的 freshness_72h_verified_ids 声明此一确证时效的例外。补入10月23日AI漏洞披露新闻。",
+  "freshness_72h_verified_ids": [
+    "research-item-3"
+  ],
+  "freshness_72h_evidence": [
+    {
+      "id": "research-item-3",
+      "source_url": "https://www.cna.com.tw/news/afe/202610220434.aspx",
+      "source_published_at": "2026-10-22T23:06:00+08:00",
+      "publication_evidence": "中央社正文页显示2026/10/22 23:06，早于2026/10/25 19:15:55+08:00约68小时9分钟，处于72小时内",
+      "verified_at": "2026-10-25T19:19:30+08:00"
+    }
+  ]
 }
