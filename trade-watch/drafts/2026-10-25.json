@@ -2,8 +2,8 @@
   "date": "2026-10-25",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "579ed57c99344a215d39d079fddc9b25d3f7d0ea",
-  "phase": "sources_checked_deduplicated",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "us-outbound-coins",
@@ -175,10 +175,10 @@
   },
   "last_error": null,
   "next_actions": [
-    "完成终扫并回读当日研究断点",
-    "确认全部外部链接DOM解析一致",
-    "设置publication_ready并回读",
-    "写入main当期正文、首页及归档，核对Pages及来源"
+    "按主分支最新状态写入完整第047期HTML",
+    "更新首页及归档",
+    "以main回读并检查Pages与来源校验"
   ],
-  "source_check": "2026-10-25 09:11—09:30 Asia/Shanghai：美国财政部、英财政部、韩国第478次委员会和贸易环境法、印度无缝钢管及挂车车轴终裁/克拉维酸期限原件均逐项打开；最近七期正文事件级对比，八件均未曾刊发。欧盟PET政策信号因独立可达原始来源不足未入选。"
+  "source_check": "2026-10-25 09:11—09:30 Asia/Shanghai：美国财政部、英财政部、韩国第478次委员会和贸易环境法、印度无缝钢管及挂车车轴终裁/克拉维酸期限原件均逐项打开；最近七期正文事件级对比，八件均未曾刊发。欧盟PET政策信号因独立可达原始来源不足未入选。",
+  "final_sweep": "2026-10-25 09:xx Asia/Shanghai：复检美国财政部、欧盟进展、英财政部、韩产业通商部、日财务省、印度DGTR、加CBSA/CITT与澳大利亚贸易救济公开新资料；未发现应替换既有8条的更重大且未经前期收录的官方新决定。"
 }
