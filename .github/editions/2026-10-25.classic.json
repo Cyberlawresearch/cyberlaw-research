@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-25",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-10-25-bentham-fragment-government.html",
+  "target_path": "articles/2026-10-25-bentham-fragment-government.html",
+  "book": {
+    "author": "Jeremy Bentham",
+    "original_title": "A Fragment on Government",
+    "publisher": "T. Payne; P. Elmsly; E. Brooke",
+    "year": "1776",
+    "edition": "1776 London first edition, anonymously published; complete preface, chapters I–V and notes in public English transcription; original bibliographic imprint verified"
+  },
+  "source_urls": [
+    "https://constitution.org/2-Authors/jb/frag_gov.htm",
+    "https://openlibrary.org/books/OL6441982M/A_fragment_on_government",
+    "https://lawcat.berkeley.edu/record/1103046",
+    "https://staging.oll.libertyfund.org/titles/mill-the-collected-works-of-john-stuart-mill-volume-x-essays-on-ethics-religion-and-society",
+    "https://www.cambridge.org/core/journals/canadian-journal-of-philosophy/article/abs/expositor-the-censor-and-the-common-law/FACD6A410BE893B70E16AA1F1789B083",
+    "https://onlinelibrary.wiley.com/doi/full/10.1111/raju.12338"
+  ],
+  "original_verification": "系统核对完整1776年英文转录：序言说明者与批评者、第一章政府起源和服从习惯、第二章政体优点预设、第三章混合宪制、第四章立法主权及限制、第五章法律公开传播，并检查原有注释。1776年初版信息据Open Library和Berkeley Law Library书目交叉核验；未声称逐页校勘扫描件。",
+  "critics": [
+    {
+      "name": "John Stuart Mill",
+      "work": "Bentham (1838), London and Westminster Review; later Collected Works of John Stuart Mill, vol. X",
+      "url": "https://staging.oll.libertyfund.org/titles/mill-the-collected-works-of-john-stuart-mill-volume-x-essays-on-ethics-religion-and-society",
+      "checked": "public full essay; critique of Bentham's broader system, not a 1776-specific refutation"
+    },
+    {
+      "name": "Gerald J. Postema",
+      "work": "The Expositor, the Censor, and the Common Law, Canadian Journal of Philosophy 9(4) (1979), 643–670, doi:10.1080/00455091.1979.10716273",
+      "url": "https://www.cambridge.org/core/journals/canadian-journal-of-philosophy/article/abs/expositor-the-censor-and-the-common-law/FACD6A410BE893B70E16AA1F1789B083",
+      "checked": "journal extract and bibliography; subscription article not claimed as fully read"
+    },
+    {
+      "name": "Michael Lobban",
+      "work": "Postema and the Common Law Tradition, Ratio Juris 35(1) (2022), 71–91, doi:10.1111/raju.12338",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/raju.12338",
+      "checked": "open access article; historiography of later Bentham doctrines distinguished from 1776"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html",
+    "classics-history.html",
+    "all historic daily classic entries indexed through 2026-10-24"
+  ],
+  "duplicate_found": false,
+  "sections": 51,
+  "prose_length": 7341,
+  "checked_at": "2026-10-25T20:21:15+08:00",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
