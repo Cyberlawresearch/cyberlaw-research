@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-25",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-25-cobbe-reviewable-automated-decision-making.html",
+  "selection": "Jennifer Cobbe, Michelle Seng Ah Lee, Jatinder Singh, Reviewable Automated Decision-Making: A Framework for Accountable Algorithmic Systems",
+  "bibliography": {
+    "type": "article",
+    "author": "Jennifer Cobbe, Michelle Seng Ah Lee, Jatinder Singh",
+    "originalTitle": "Reviewable Automated Decision-Making: A Framework for Accountable Algorithmic Systems",
+    "journal": "Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT ’21)",
+    "year": "2021",
+    "volume": "",
+    "issue": "",
+    "pages": "598–609",
+    "doi": "10.1145/3442188.3445921",
+    "url": "https://arxiv.org/abs/2102.04201",
+    "cnTitle": "让自动化决策经得起审查：从模型解释转向全过程问责"
+  },
+  "versions": {
+    "full_text": "arXiv 2102.04201 2021 openly available 12-page PDF read in full",
+    "publication": "ACM FAccT 2021 peer-reviewed conference proceedings pp. 598–609, DOI 10.1145/3442188.3445921; version distinct from arXiv manuscript"
+  },
+  "sources": [
+    "https://arxiv.org/pdf/2102.04201",
+    "https://arxiv.org/abs/2102.04201",
+    "https://doi.org/10.1145/3442188.3445921",
+    "https://www.repository.cam.ac.uk/items/0e615ac2-5b70-431e-b34d-473ef754ccd6"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-09-03-citron-technological-due-process.html",
+    "articles/2026-09-18-desai-kroll-trust-but-verify.html",
+    "articles/2026-10-06-selbst-powles-meaningful-information-right-to-explanation.html"
+  ],
+  "timeline": null,
+  "body_length": 3870,
+  "checked_at": "2026-10-25T20:04:52+08:00",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  },
+  "base_main_sha": "07fdfd51f5afaa8ef2422f8f5ab28617fddf4769"
+}
