@@ -2,7 +2,7 @@
   "date": "2026-10-25",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "579ed57c99344a215d39d079fddc9b25d3f7d0ea",
-  "phase": "publication_ready",
+  "phase": "published_verified",
   "publication_ready": true,
   "items": [
     {
@@ -174,17 +174,14 @@
     "其他": "已巡视贸易主管机关及区域最新信息，未见另有符合标准的新实施措施"
   },
   "last_error": null,
-  "next_actions": [
-    "核验GitHub Pages部署完成",
-    "检查公开页面及部署后来源校验工作流"
-  ],
+  "next_actions": [],
   "source_check": "2026-10-25 09:11—09:30 Asia/Shanghai：美国财政部、英财政部、韩国第478次委员会和贸易环境法、印度无缝钢管及挂车车轴终裁/克拉维酸期限原件均逐项打开；最近七期正文事件级对比，八件均未曾刊发。欧盟PET政策信号因独立可达原始来源不足未入选。",
   "final_sweep": "2026-10-25 09:xx Asia/Shanghai：复检美国财政部、欧盟进展、英财政部、韩产业通商部、日财务省、印度DGTR、加CBSA/CITT与澳大利亚贸易救济公开新资料；未发现应替换既有8条的更重大且未经前期收录的官方新决定。",
   "publication_attempt": {
     "date": "2026-10-25",
     "issue_number": 47,
     "news_count": 8,
-    "stage": "main_confirmed_pages_deploying",
+    "stage": "published_verified",
     "main_commit_sha": "d71b0e384f37bd7290465bd67820adf917e1108d",
     "content_commit_sha": "32742856027f74c507f4e70005f5be9158a03b79",
     "homepage_commit_sha": "c572d76da00da7a10795dea52c680624be5a530e",
@@ -196,7 +193,15 @@
       "trade-watch/archive.html"
     ],
     "pages_run_id": 40149979826,
-    "pages_status": "in_progress",
-    "source_diagnostics": "pending_postdeployment"
+    "pages_status": "success",
+    "source_diagnostics": "pending_postdeployment",
+    "pages_workflow_run_id": 40149979826,
+    "pages_verified_commit": "d71b0e384f37bd7290465bd67820adf917e1108d",
+    "publication_guard_run_id": 40150237389,
+    "publication_guard_status": "success",
+    "source_diagnostics_run_id": 40150237400,
+    "source_diagnostics_status": "success",
+    "site_pages_verified": true,
+    "source_links_verified": true
   }
 }
