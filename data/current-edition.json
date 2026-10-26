@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "pages": {
-    "brief": "articles/2026-10-25-tech-law-brief.html",
+    "brief": "articles/2026-10-26-tech-law-brief.html",
     "paper": "articles/2026-10-25-cobbe-reviewable-automated-decision-making.html",
     "classic": "articles/2026-10-25-bentham-fragment-government.html",
     "newworks": "articles/2026-10-25-new-works.html"
   },
   "page_dates": {
-    "brief": "2026-10-25",
+    "brief": "2026-10-26",
     "paper": "2026-10-25",
     "classic": "2026-10-25",
     "newworks": "2026-10-25"
   },
-  "news_count": 16,
+  "news_count": 11,
   "newworks_count": 3
 }

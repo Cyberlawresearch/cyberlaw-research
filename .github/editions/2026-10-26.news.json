@@ -1,0 +1,253 @@
+{
+  "date": "2026-10-26",
+  "column": "brief",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-26-tech-law-brief.html",
+  "news_count": 11,
+  "distribution": {
+    "domestic": 2,
+    "foreign": 9
+  },
+  "mode": "facts_only",
+  "analysis_pending": true,
+  "checked_at": "2026-10-26T19:11:33+08:00",
+  "last_news_scan_at": "2026-10-26T19:11:33+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "natural_chinese_reviewed": true,
+    "foreign_layout": true,
+    "local_language_scan_korea_japan_vietnam": true
+  },
+  "coverage": [
+    {
+      "source_group": "中国中央机关与标准技术机构",
+      "scope": "网信办、工信部、国家数据局、市场监管、TC260、信通院/CNCERT和新华社及地方主管机构最近72小时定向查询",
+      "status": "searched",
+      "result": "核验10月26日国家安全机关工业设备数据残留提示；排除10月23日18时公告等超过72小时的旧闻。"
+    },
+    {
+      "source_group": "中国地方、财经与专业媒体",
+      "scope": "北京、上海、广东、浙江、江苏、湖南等地方政府及新华社、人民网、央视、第一财经、澎湃、财新、证券时报、安全内参与FreeBuf等媒体和主体反向搜索",
+      "status": "searched",
+      "result": "纳入ASMPT电子装联设备潜在并购首次披露；未将10月26日评论文章当成新发布政策。"
+    },
+    {
+      "source_group": "日本与东亚当地语言",
+      "scope": "日语直接检索首相官邸、官房长官网络安全表态、GMO用户补偿，另巡检日本PPC/JFTC与韩语PIPC/KFTC/MSIT",
+      "status": "searched",
+      "result": "核验日本政府10月26日阁僚会议安排、主动网络防御的法定程序说明和GMO客户赔付；韩国未发现足够新的独立重大事项。"
+    },
+    {
+      "source_group": "越南与亚太当地语言",
+      "scope": "越语检索越南政府及国会、数据安全立法并核对越南《人民报》原文，复查印度数据保护案件和半导体供应链",
+      "status": "searched",
+      "result": "核验越南数据安全法草案的媒体说明及越南晶圆厂ASML采购调查，区分草案、媒体披露和正式法律。"
+    },
+    {
+      "source_group": "欧美隐私、竞争及监管司法",
+      "scope": "美国FTC/DOJ/CISA/NIST/FCC/SEC和州法院、欧盟AI Office/DG COMP/EDPB及成员国CNIL/DPC、英国ICO/CMA/Ofcom等公告，结合Reuters法律报道",
+      "status": "searched",
+      "result": "重点核验印度媒体起诉数字个人数据保护法的新披露、美国生成式AI选举信息传播和训练数据版权诉讼；其他未见可核验当日新决定。"
+    },
+    {
+      "source_group": "国际网络安全与产业基础设施",
+      "scope": "Reuters/AP/Guardian和BleepingComputer/CyberScoop科技与安全栏目、半导体设备、AI算力和光纤基础设施反向检索",
+      "status": "searched",
+      "result": "核验印度塔塔光纤投资、SpaceX融资声明、日本交易平台网络事件和ASMPT竞购，保留消息性质限制。"
+    },
+    {
+      "source_group": "时效、外文原题及事件去重",
+      "scope": "每条打开完整权威原文、核对日期和法律状态，与10月25日完整新闻及10月19—24日新闻目录事件去重；最终重新巡视10月26日最近报道",
+      "status": "searched",
+      "result": "全部入选条目新闻或实质新披露发生于10月25日至26日；无沿用近期已发布同事件原条目的做法。"
+    }
+  ],
+  "items": [
+    {
+      "date": "2026-10-26",
+      "domestic": true,
+      "jurisdiction": "中国",
+      "agency": "国家安全机关、新华社",
+      "title": "国家安全机关提示废旧工业设备的数据残留风险，涉及工控参数和保密信息",
+      "original_title": "",
+      "source_name": "新华网",
+      "url": "https://www.news.cn/legal/20261026/c6d49eff49434617a5bf9efbde65a29f/c.html",
+      "legal_status": "official_security_advisory",
+      "fact": "新华社10月26日刊发国家安全机关提示，部分企业在淘汰生产设备、测控终端和存储介质时，仅作形式性清除，仍可能残留工艺参数、网络配置及其他敏感信息。报道强调设备报废与二次流转环节的数据清理、保密审核及规范处置，并提醒核实受托回收机构的资质和管理措施。这属于安全风险提示，并非当天新增的行政处罚或强制性技术标准。",
+      "id": "research-item-1",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "date": "2026-10-26",
+      "domestic": true,
+      "jurisdiction": "中国香港、国际",
+      "agency": "ASMPT、IDG资本",
+      "title": "路透社称IDG资本领跑ASMPT电子装联设备业务竞购，标的估值或超过10亿美元",
+      "original_title": "IDG leads race for ASMPT's SMT unit valued at over $1 billion, sources say",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/idg-leads-race-asmpts-smt-unit-valued-over-1-billion-sources-say-2026-10-26/",
+      "legal_status": "media_report_unconfirmed_transaction",
+      "fact": "路透社10月26日援引三名知情人士报道，IDG资本在港股上市企业ASMPT的表面贴装技术（SMT）业务潜在收购者中处于领先位置，该业务向人工智能服务器、光通信和汽车电子产业提供电路板装联设备、软件及服务。报道称标的估值可能超过10亿美元，另有机构参与竞购；ASMPT此前公开宣布对相关业务展开战略评估。交易仍在洽谈阶段，未达成最终协议，也没有公布监管审批结论。",
+      "id": "research-item-2",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "date": "2026-10-26",
+      "domestic": false,
+      "jurisdiction": "日本",
+      "agency": "内阁官房、首相官邸",
+      "title": "日本宣布召开网络安全阁僚会议，官房长官明确主动网络防御措施的法定条件",
+      "original_title": "能動的サイバー防御要請「要件に照らし適切に判断」木原官房長官　こんや高市総理出席でサイバーセキュリティー閣僚会議を開催へ",
+      "source_name": "FNNプライムオンライン",
+      "url": "https://www.fnn.jp/articles/-/1139797",
+      "legal_status": "government_press_briefing",
+      "fact": "日本官房长官木原稔10月26日宣布，当地时间18时将举行由首相高市早苗出席的网络安全相关阁僚会议，讨论近期企业遭攻击、大规模个人信息泄露及二次损害的应对。针对GMO要求政府实施主动网络防御的说法，木原表示，是否采取攻击源服务器无害化措施，应由警察或防卫省、自卫队依法律条件判断，不以受害企业是否提出请求为决定依据。会议安排和官房长官法律说明不等于已下达特定网络反制命令。",
+      "id": "research-item-3",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "date": "2026-10-25",
+      "domestic": false,
+      "jurisdiction": "日本",
+      "agency": "GMO Internet Group",
+      "title": "日本GMO集团宣布就外汇交易系统遭网络攻击补偿客户，另提供每人5000日元慰问金",
+      "original_title": "Japanese companies compensate users as cyberattacks buffet economy",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/finance/japan-companies-compensate-users-cyberattacks-buffet-economy-2026-10-26/",
+      "legal_status": "corporate_incident_response",
+      "fact": "GMO Internet Group负责人10月25日宣布，将补偿外汇交易服务遭未授权访问后客户产生的相关损失，并向全部客户提供每人5000日元的慰问款及六个月替代服务。企业称收到疑似攻击方索要赎金及披露客户资料的威胁，将与警方等机关协作并不接受勒索。公司并未确认攻击与近期PHP漏洞事件有关，赔付总成本尚不能确定。",
+      "id": "research-item-4",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "date": "2026-10-26",
+      "domestic": false,
+      "jurisdiction": "印度",
+      "agency": "印度数字新闻出版商协会、最高法院",
+      "title": "路透社首次披露印度21家新闻出版机构起诉数字个人数据保护法，争议涉及记者消息源保密",
+      "original_title": "Ambani, Adani outlets among Indian publishers contesting Modi’s privacy law",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/ambani-adani-outlets-among-indian-publishers-contesting-modis-privacy-law-2026-10-26/",
+      "legal_status": "pending_supreme_court_challenge_newly_disclosed",
+      "fact": "路透社10月26日首次披露，代表21家新闻出版机构的团体已于10月6日向印度最高法院挑战《数字个人数据保护法》有关条款，案件预计10月27日审理。原告认为，媒体缺少明确的新闻活动例外可能使调查报道受到事先同意、删除请求和向政府提供资料要求的影响，并可能暴露记者的保密消息来源。有关条款拟于2027年5月实施，现阶段属于原告的诉讼主张，法院尚未作出本案实体裁判。",
+      "id": "research-item-5",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "date": "2026-10-26",
+      "domestic": false,
+      "jurisdiction": "印度",
+      "agency": "Tata Communications",
+      "title": "印度塔塔通信宣布投资约4.5亿美元建设AI数据中心互联光纤网络",
+      "original_title": "India's Tata Communications to spend $450 million on AI connectivity infrastructure",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/indias-tata-communications-spend-450-million-ai-connectivity-infrastructure-2026-10-26/",
+      "legal_status": "corporate_investment_announcement",
+      "fact": "塔塔通信10月26日宣布计划投资约4.5亿美元，在印度建设约1万公里新的长途高速光纤线路，连接主要人工智能数据中心集群、云服务商和金融等企业用户。项目拟分三阶段推进，首先覆盖孟买—浦那—海得拉巴—金奈走廊，随后延伸至东海岸和印度西部园区。该事项属于企业网络基础设施投资安排，而非已发布的政府网络监管新规。",
+      "id": "research-item-6",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "date": "2026-10-26",
+      "domestic": false,
+      "jurisdiction": "越南、荷兰",
+      "agency": "Viettel、ASML",
+      "title": "路透社调查称越南首座晶圆厂2027年试产目标或延期，与ASML设备采购尚未达成协议",
+      "original_title": "Vietnam's first chip plant unlikely to meet 2027 target, sources say no deal yet with ASML",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/vietnams-first-chip-plant-unlikely-meet-2027-target-sources-say-no-deal-yet-with-2026-10-26/",
+      "legal_status": "investigative_media_report_disputed",
+      "fact": "路透社10月26日披露，越南军方背景企业Viettel负责建设的首座半导体制造工厂虽于今年1月奠基，但现场尚未建成厂房，且与荷兰ASML的深紫外光刻设备采购谈判未达成最终协议。知情人士预计2027年试生产目标可能推迟，涉及项目经验及资金审批等障碍。Viettel对路透社表示建设正按既定计划推进；设备厂商未就谈判置评，延期判断尚未得到越南官方确认。",
+      "id": "research-item-7",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "date": "2026-10-25",
+      "domestic": false,
+      "jurisdiction": "越南",
+      "agency": "国会常务委员会、公安部",
+      "title": "越南媒体披露《数据安全法》草案具体安排，涵盖数据全生命周期和跨境处理",
+      "original_title": "Luật An ninh dữ liệu, nền tảng phát triển kinh tế số bền vững",
+      "source_name": "Báo Nhân Dân（越南《人民报》）",
+      "url": "https://nhandan.vn/luat-an-ninh-du-lieu-nen-tang-phat-trien-kinh-te-so-ben-vung-post997911.html",
+      "legal_status": "legislative_draft_media_explanation",
+      "fact": "越南《人民报》10月25日报道正在推进的《数据安全法》草案，介绍公安部门向国会常务委员会说明的立法理由及部分拟议条款。报道所引草案拟从收集、生成、存储、处理、传输、共享到销毁的全生命周期保护数据完整性、保密性和可用性，并针对大规模数据处理、敏感信息用于人工智能训练及跨境流动等风险补充制度。该报道是对现有立法草案的公开说明，不代表法律已获国会通过或于10月25日生效。",
+      "id": "research-item-8",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "date": "2026-10-26",
+      "domestic": false,
+      "jurisdiction": "美国",
+      "agency": "竞选团队、生成式AI服务商",
+      "title": "路透社调查美国竞选团队尝试优化聊天机器人回答，影响选民获取候选人立场的信息",
+      "original_title": "US political candidates tailor messages for AI models used by voters",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/us-political-candidates-tailor-messages-ai-models-used-by-voters-2026-10-26/",
+      "legal_status": "investigative_media_report",
+      "fact": "路透社10月26日根据访谈和取得的竞选顾问材料报道，美国政治竞选活动正将生成式AI聊天机器人作为新的选民信息渠道，并尝试通过网页内容布局和面向模型的传播策略提高特定政策立场被回答引用的概率。报道披露了顾问推介的具体方法，但并不意味着所有候选人已实际采纳，也未证明特定模型已按付费指令改变回答。此事为媒体调查揭示的选举信息传播实践，并非监管机关对模型操纵作出的违法认定。",
+      "id": "research-item-9",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "date": "2026-10-25",
+      "domestic": false,
+      "jurisdiction": "美国",
+      "agency": "Authentic Brands Group、美国法院",
+      "title": "猫王歌曲权利人起诉Anthropic，指控未经许可使用274首歌曲训练人工智能",
+      "original_title": "Anthropic sued for allegedly using 274 Elvis Presley songs to train AI models",
+      "source_name": "The Guardian",
+      "url": "https://www.theguardian.com/us-news/2026/oct/25/elvis-presley-anthropic-lawsuit-ai-models-music",
+      "legal_status": "civil_complaint_pending",
+      "fact": "《卫报》10月25日报道，持有埃尔维斯·普雷斯利音乐作品权益的Authentic Brands Group对Anthropic提起著作权诉讼，主张其未经许可使用274首歌曲训练人工智能模型，并要求每首涉案作品最高15万美元的法定损害赔偿。相关诉讼于10月23日提交，原告还指控模型可能输出受保护歌词。上述行为和损害金额均属于原告诉称，法院尚未就侵权、合理使用或赔偿作出裁判。",
+      "id": "research-item-10",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "date": "2026-10-25",
+      "domestic": false,
+      "jurisdiction": "美国",
+      "agency": "SpaceX、埃隆·马斯克",
+      "title": "马斯克称SpaceX完成400亿美元GPU相关债务融资，具体交易条款仍待独立确认",
+      "original_title": "Musk says SpaceX raised $40 billion in debt deal, predicts neocloud shakeout",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/musk-says-spacex-raised-40-billion-debt-gpus-2026-10-25/",
+      "legal_status": "unverified_corporate_financing_statement",
+      "fact": "马斯克10月25日表示SpaceX已完成400亿美元债务融资，用于支持计划于2027年上半年交付的图形处理器及人工智能计算能力建设。路透社报道了其声明，但未独立确认交易文件及最终融资条件。马斯克同时预期高度依赖借贷的AI云计算供应商可能出现整合；这属于其商业判断，不是已经发生的市场结果。",
+      "id": "research-item-11",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    }
+  ],
+  "publication": {
+    "article_written": true,
+    "index_updated": true,
+    "briefs_updated": true,
+    "archive_updated": true,
+    "current_edition_updated": true,
+    "pages_status": "awaiting_deployment",
+    "commit_sha": null,
+    "pages_run_id": null,
+    "online_verified": false
+  },
+  "notes": "本期采用中文事实版，仅保留来源原题和新闻事实。对印媒诉讼、越南法案草稿、企业投资/竞购、网络事故等分别标明新披露或法律程序状态；核验JSON的Pages标志留待实际部署后依据运行证据判定。",
+  "freshness_72h_verified_ids": [],
+  "freshness_72h_evidence": []
+}
