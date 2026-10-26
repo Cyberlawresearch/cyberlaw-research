@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-26",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-10-26-mill-utilitarianism.html",
+  "target_path": "articles/2026-10-26-mill-utilitarianism.html",
+  "book": {
+    "author": "John Stuart Mill",
+    "original_title": "Utilitarianism",
+    "publisher": "Parker, Son, and Bourn",
+    "year": "1863",
+    "edition": "1863 London first separate book edition; originally printed in Fraser's Magazine; all five chapters systematically checked against full proofread text, 1879 seventh edition distinguished"
+  },
+  "source_urls": [
+    "https://en.wikisource.org/wiki/Utilitarianism",
+    "https://en.wikisource.org/wiki/Utilitarianism/Chapter_1",
+    "https://en.wikisource.org/wiki/Utilitarianism/Chapter_2",
+    "https://en.wikisource.org/wiki/Utilitarianism/Chapter_3",
+    "https://en.wikisource.org/wiki/Utilitarianism/Chapter_4",
+    "https://en.wikisource.org/wiki/Utilitarianism/Chapter_5",
+    "https://www.gutenberg.org/cache/epub/11224/pg11224.txt",
+    "https://en.wikisource.org/wiki/Principia_Ethica/Chapter_III",
+    "https://www.loc.gov/item/11015966/"
+  ],
+  "original_verification": "系统核对1863年伦敦单行初版公开校对完整五章：导论、功利主义定义、道德约束、功利原则的证明及正义与效用；辅助核对1879年第七版完整转录。初版出版者及年份依原书题名页；不声称逐页校勘原印本或校出版本间全部文字差异。",
+  "critics": [
+    {
+      "name": "Herbert Spencer",
+      "work": "Social Statics (1851); critique addressed in Mill, Utilitarianism (1863), chapter V, author's note",
+      "url": "https://en.wikisource.org/wiki/Utilitarianism/Chapter_5",
+      "checked": "Mill's own note was read; Spencer's entire work not claimed as read"
+    },
+    {
+      "name": "G. E. Moore",
+      "work": "Principia Ethica (1903), chapter III, sections 40-43",
+      "url": "https://en.wikisource.org/wiki/Principia_Ethica/Chapter_III",
+      "checked": "full relevant original criticism examined; targets Mill's proof in chapter IV"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html, all indexed daily classic entries through 2026-10-25",
+    "classics-history.html, earlier legacy classics issues 15–35"
+  ],
+  "duplicate_found": false,
+  "sections": 61,
+  "prose_length": 8045,
+  "checked_at": "2026-10-26T20:12:56+08:00",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
