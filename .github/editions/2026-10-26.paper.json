@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-26",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-26-hartzog-selinger-gunawan-privacy-nicks.html",
+  "selection": "Woodrow Hartzog, Evan Selinger, Johanna Gunawan, Privacy Nicks: How the Law Normalizes Surveillance",
+  "bibliography": {
+    "type": "article",
+    "author": "Woodrow Hartzog, Evan Selinger, Johanna Gunawan",
+    "originalTitle": "Privacy Nicks: How the Law Normalizes Surveillance",
+    "journal": "Washington University Law Review",
+    "year": "2024",
+    "volume": "101",
+    "issue": "3",
+    "pages": "717",
+    "doi": "",
+    "url": "https://wustllawreview.org/privacy-nicks-how-the-law-normalizes-surveillance/",
+    "cnTitle": "隐私的细小侵蚀：法律如何使监视日常化"
+  },
+  "versions": {
+    "full_text": "Entire freely available law review publisher HTML, introduction, main sections, conclusion, footnotes read",
+    "publication": "Washington University Law Review volume 101 issue 3 starting at page 717; BU and Maastricht institutional records assign 2024, publisher auto-citation widget gives 2023; discrepancy disclosed. Unverified end page and DOI omitted."
+  },
+  "sources": [
+    "https://wustllawreview.org/privacy-nicks-how-the-law-normalizes-surveillance/",
+    "https://wustllawreview.org/wp-content/uploads/2024/03/Hartzog-et-al.-Privacy-Nicks.pdf",
+    "https://scholarship.law.bu.edu/faculty_scholarship/3432/",
+    "https://cris.maastrichtuniversity.nl/en/publications/privacy-nicks-how-the-law-normalizes-surveillance/"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-10-19-citron-solove-privacy-harms.html",
+    "articles/2026-09-08-richards-dangers-surveillance.html",
+    "articles/2026-09-10-solove-privacy-self-management.html"
+  ],
+  "timeline": null,
+  "body_length": 4335,
+  "checked_at": "2026-10-26T20:19:03+08:00",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  },
+  "base_main_sha": "6ef7bc46abdc0123e0860f2bc02680297a3a9660"
+}
