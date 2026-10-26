@@ -2,7 +2,7 @@
   "date": "2026-10-26",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "c236b91f1deb318d9756f636b56234194c0c3948",
-  "phase": "ready_for_publication",
+  "phase": "main_written_pages_pending",
   "publication_ready": true,
   "items": [
     {
@@ -128,9 +128,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "直接按第048期写入完整HTML",
-    "以最新SHA顺序更新trade-watch/index.html及archive.html",
-    "ref=main回读三文件、核验Pages提交及公开网页"
+    "核实最终提交触发的Pages工作流结论及任务步骤",
+    "核实公开当期、首页最新入口和归档首项",
+    "核实11条原始来源链接按DOM解析后的URL及可达性"
   ],
   "dedup_checked_against": [
     "2026-10-25",
@@ -146,5 +146,21 @@
     "note": "七项新闻的白宫公告、USTR原文、荷兰海关、法国海关、欧委会FAQ与DGTR原文均已独立打开；EUR-Lex正式规则URI因网站人机验证限制而由相关海关一手公告交叉核对。",
     "count": 7
   },
-  "terminal_scan": "2026-10-26 Asia/Shanghai 当期终扫已完成，排除已报道的英国战略清单、韩国两案、澳大利亚玻璃棉双反及常规新闻。"
+  "terminal_scan": "2026-10-26 Asia/Shanghai 当期终扫已完成，排除已报道的英国战略清单、韩国两案、澳大利亚玻璃棉双反及常规新闻。",
+  "publication_attempt": {
+    "stage": "pages_deploy_and_public_verification",
+    "attempt_count": 1,
+    "files_written": [
+      "trade-watch/issues/2026-10-26.html",
+      "trade-watch/index.html",
+      "trade-watch/archive.html"
+    ],
+    "issue_commit": "c1720bfa3cc536f071c1a57958f5d59d7636dc69",
+    "homepage_commit": "df5d70c18e4a0d1e0d35dcc4ac813cb7c09738b7",
+    "final_main_commit": "cb60e4db09857346e9c26253283fb534c6477b0c",
+    "last_error": null,
+    "github_file_readback": "passed_three_files_date_issue_count_sources_archive_order",
+    "pages_run_id": 40252800735,
+    "pages_status": "pending"
+  }
 }
