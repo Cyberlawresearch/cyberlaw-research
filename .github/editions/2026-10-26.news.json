@@ -4,15 +4,15 @@
   "state": "verified",
   "phase": "publishing",
   "page": "articles/2026-10-26-tech-law-brief.html",
-  "news_count": 11,
+  "news_count": 21,
   "distribution": {
-    "domestic": 2,
-    "foreign": 9
+    "domestic": 4,
+    "foreign": 17
   },
   "mode": "facts_only",
   "analysis_pending": true,
-  "checked_at": "2026-10-26T19:11:33+08:00",
-  "last_news_scan_at": "2026-10-26T19:11:33+08:00",
+  "checked_at": "2026-10-26T23:34:02.450+08:00",
+  "last_news_scan_at": "2026-10-26T23:34:02.450+08:00",
   "checks": {
     "sources": true,
     "legal_status": true,
@@ -67,9 +67,63 @@
       "scope": "每条打开完整权威原文、核对日期和法律状态，与10月25日完整新闻及10月19—24日新闻目录事件去重；最终重新巡视10月26日最近报道",
       "status": "searched",
       "result": "全部入选条目新闻或实质新披露发生于10月25日至26日；无沿用近期已发布同事件原条目的做法。"
+    },
+    {
+      "source_group": "当晚补查国内政策与规范性文件",
+      "scope": "商务部条约法律司10月26日商密规定征求意见通知及附件、武汉数据局原始文件2026年10月26日生效条款",
+      "status": "searched",
+      "result": "商务部商密特别规定草案、武汉算力券和Token服务政策生效两条"
+    },
+    {
+      "source_group": "补查欧盟数字平台执法与美国AI企业信息披露",
+      "scope": "欧委会Temu整改计划、Anthropic IPO申报披露、The Washington Post Cathedral授权渗透测试及美国佐治亚州Claude事件",
+      "status": "searched",
+      "result": "四条新增独立新闻并区分监管计划、IPO、获准安全测试与公司说明"
+    },
+    {
+      "source_group": "补查国际网络安全与当地语言监管",
+      "scope": "PHP2Shell实际利用证据、AGENTS.md编程智能体攻击复现实验、越南语国会审议和瑞典语政府办公厅AI访问限制",
+      "status": "searched",
+      "result": "两条网络安全技术披露、一条政府内部规则实施；越南旧条目更新为10月26日国会正式审议"
+    },
+    {
+      "source_group": "其他重要法域及前七日事件对照",
+      "scope": "核验巴西银行AI收购及监管审批状态；与10月24、25日新闻核验清单和原26日11条逐事件对照",
+      "status": "searched",
+      "result": "保留明确新动作，排除超72小时旧闻与既有发布重复"
     }
   ],
   "items": [
+    {
+      "date": "2026-10-26",
+      "jurisdiction": "中国",
+      "agency": "商务部",
+      "title": "商务部公开征求中国商业秘密特别保护规定意见，拟建立涉外调查与限制机制",
+      "original_title": "",
+      "source_name": "商务部",
+      "url": "https://tfs.mofcom.gov.cn/lfzqyj/art/2026/art_db6a858a9d4e4ec0a3dbeece659c324d.html",
+      "fact": "商务部10月26日公布《保护中国商业秘密特别规定（征求意见稿）》，拟就外国实体在国际经贸活动中侵害中国商业秘密且危及国家利益的行为建立调查处理机制。草案提出，必要时可以限制相关货物与技术进出口及境内新增投资等活动，意见反馈截止11月24日。文件尚处征求意见阶段，并非已经生效的部门规章。",
+      "legal_status": "draft_public_consultation",
+      "domestic": true,
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false,
+      "id": "research-item-1"
+    },
+    {
+      "date": "2026-10-26",
+      "jurisdiction": "中国·湖北武汉",
+      "agency": "武汉市数据局、武汉市人民政府",
+      "title": "武汉数智经济政策10月26日起实施，数据券、算力券覆盖Token服务",
+      "original_title": "",
+      "source_name": "武汉市数据局",
+      "url": "https://whsj.wuhan.gov.cn/zwgk/zcfg/gfxwj1/202609/t20260924_2854004.shtml",
+      "fact": "武汉市此前印发的《武汉市加快推进数智经济高质量发展若干政策措施》于10月26日正式施行，有效期两年。政策设立数据券支持合规数据交易和数据资产登记，并以算力券支持企业、科研机构、高校等采购算力与词元（Token）服务。涉及资金奖补的具体操作办法，仍须由责任单位制定实施细则。",
+      "legal_status": "policy_effective",
+      "domestic": true,
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false,
+      "id": "research-item-2"
+    },
     {
       "date": "2026-10-26",
       "domestic": true,
@@ -81,7 +135,7 @@
       "url": "https://www.news.cn/legal/20261026/c6d49eff49434617a5bf9efbde65a29f/c.html",
       "legal_status": "official_security_advisory",
       "fact": "新华社10月26日刊发国家安全机关提示，部分企业在淘汰生产设备、测控终端和存储介质时，仅作形式性清除，仍可能残留工艺参数、网络配置及其他敏感信息。报道强调设备报废与二次流转环节的数据清理、保密审核及规范处置，并提醒核实受托回收机构的资质和管理措施。这属于安全风险提示，并非当天新增的行政处罚或强制性技术标准。",
-      "id": "research-item-1",
+      "id": "research-item-3",
       "previous_day_duplicate": false,
       "seven_day_duplicate": false
     },
@@ -96,9 +150,144 @@
       "url": "https://www.reuters.com/world/idg-leads-race-asmpts-smt-unit-valued-over-1-billion-sources-say-2026-10-26/",
       "legal_status": "media_report_unconfirmed_transaction",
       "fact": "路透社10月26日援引三名知情人士报道，IDG资本在港股上市企业ASMPT的表面贴装技术（SMT）业务潜在收购者中处于领先位置，该业务向人工智能服务器、光通信和汽车电子产业提供电路板装联设备、软件及服务。报道称标的估值可能超过10亿美元，另有机构参与竞购；ASMPT此前公开宣布对相关业务展开战略评估。交易仍在洽谈阶段，未达成最终协议，也没有公布监管审批结论。",
-      "id": "research-item-2",
+      "id": "research-item-4",
       "previous_day_duplicate": false,
       "seven_day_duplicate": false
+    },
+    {
+      "date": "2026-10-26",
+      "jurisdiction": "欧盟",
+      "agency": "欧盟委员会、Temu",
+      "title": "欧盟委员会接受Temu《数字服务法》整改计划，要求阶段性风险评估",
+      "original_title": "EU accepts Temu plan to remedy Digital Services Act breach",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/retail-consumer/eu-accepts-temu-plan-remedy-digital-services-act-breach-2026-10-26/",
+      "fact": "欧盟委员会10月26日接受Temu针对《数字服务法》违规作出的整改计划，内容包括五项补救措施，并要求其在四个月内开展阶段性风险评估。此前欧委会因平台非法商品风险评估不足于5月处以2亿欧元罚款。接受整改计划不等于撤销罚款或认定整改已经完成。",
+      "legal_status": "regulatory_action_plan_accepted",
+      "domestic": false,
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false,
+      "id": "research-item-5"
+    },
+    {
+      "date": "2026-10-26",
+      "jurisdiction": "越南",
+      "agency": "越南国会、公安部",
+      "title": "越南国会审议《数据安全法》草案，拟设五级风险与分层数据出境程序",
+      "original_title": "Dự án Luật An ninh dữ liệu: Thiết lập 5 cấp độ rủi ro, cơ chế hậu kiểm là chính",
+      "source_name": "越通社／胡志明市党委官网",
+      "url": "https://www.hcmcpv.org.vn/tin-tuc/du-an-luat-an-ninh-du-lieu-thiet-lap-5-cap-do-rui-ro-co-che-hau-kiem-la-chinh-1491945670",
+      "fact": "越南国会10月26日正式听取公安部提交的《数据安全法》草案说明及国会委员会审查报告，草案共6章29条。拟按五个风险等级要求数据管理者自评并接受事后核查，对不同等级数据的跨境传输分别采取免除手续、自我评估或事前审查，并涉及人工智能训练数据安全。法案仍处审议阶段，尚未生效。",
+      "legal_status": "legislative_draft_parliamentary_review",
+      "domestic": false,
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false,
+      "id": "research-item-6"
+    },
+    {
+      "date": "2026-10-26",
+      "jurisdiction": "美国",
+      "agency": "Anthropic、美国证券市场",
+      "title": "Anthropic公开美国IPO申报文件，披露巨额研发成本与人工智能风险",
+      "original_title": "Anthropic's IPO filing shows explosive growth, risks and staggering costs",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/anthropic-opens-books-ais-explosive-growth-staggering-costs-2026-10-26/",
+      "fact": "Anthropic在10月26日公开美国首次公开募股申报资料，披露2026年上半年约163亿美元营业收入及约807亿美元净亏损，亏损受到可转换债券估值变化的重要影响。申报文件同时列明模型开发投入、安全风险及收入增速可能下降等不确定性。公开申报不代表证券已获准发行或完成上市。",
+      "legal_status": "ipo_public_filing",
+      "domestic": false,
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false,
+      "id": "research-item-7"
+    },
+    {
+      "date": "2026-10-26",
+      "jurisdiction": "美国",
+      "agency": "Anthropic、Cathedral安全研究团队",
+      "title": "安全研究者经第三方软件访问Anthropic有限内部业务系统，公司确认封堵漏洞",
+      "original_title": "How an AI start-up founded by ex-DOGE staffers broke into Anthropic",
+      "source_name": "The Washington Post",
+      "url": "https://www.washingtonpost.com/technology/2026/10/26/researchers-cybersecurity-start-up-cathedral-got-inside-anthropic/",
+      "fact": "《华盛顿邮报》10月26日披露，Cathedral团队在Anthropic允许外部安全测试的安排下，借助第三方业务软件缺陷发现访问部分销售、人力资源和内部会议资料的途径。Anthropic确认研究者曾触及有限范围的内部系统，并称已关闭相关访问路径、向联邦官员通报。报道描述的是获准研究揭露的安全缺陷，不应写成已证实的恶意黑客大规模窃取客户数据。",
+      "legal_status": "authorized_security_test_disclosure",
+      "domestic": false,
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false,
+      "id": "research-item-8"
+    },
+    {
+      "date": "2026-10-26",
+      "jurisdiction": "国际·网络安全",
+      "agency": "Perplexity安全研究者、PHP项目",
+      "title": "PHP2Shell远程代码执行漏洞出现经蜜罐确认的成功利用证据",
+      "original_title": "PHP2Shell security flaws now sucessfully exploited in the wild",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/amp/",
+      "fact": "研究者10月26日披露CVE-2026-109618与CVE-2026-109619两项漏洞的实际利用证据，蜜罐记录显示在特定Apache mod_php环境下发生内存数据泄露与远程命令执行。PHP项目已于10月21日发布相应安全更新，新证据区别于先前的扫描和未成功利用报告。该实验条件存在特定限制，不能推定所有PHP部署均存在相同可利用性。",
+      "legal_status": "confirmed_exploitation_evidence",
+      "domestic": false,
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false,
+      "id": "research-item-9"
+    },
+    {
+      "date": "2026-10-25",
+      "jurisdiction": "国际·智能体安全",
+      "agency": "Forever Security、AI编程智能体开发者",
+      "title": "研究披露恶意AGENTS.md文件诱导编程智能体安装软件并可能泄露凭据",
+      "original_title": "AI coding agents hijacked using AGENTS.md file in Downloads folder",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
+      "fact": "专业安全媒体10月25日披露Forever Security对恶意编程智能体指令文件的调查及复现实验。客户下载目录中的AGENTS.md试图诱导智能体安装恶意npm软件包，研究者进一步测试了针对Codex及Claude Code的配置修改和令牌泄露路径。客户设备上的恶意安装已经被阻止，研究人员未确认原文件的具体投递途径。",
+      "legal_status": "security_research_and_blocked_attempt",
+      "domestic": false,
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false,
+      "id": "research-item-10"
+    },
+    {
+      "date": "2026-10-26",
+      "jurisdiction": "瑞典",
+      "agency": "瑞典政府办公厅",
+      "title": "瑞典政府办公厅开始限制公务电脑直接访问ChatGPT及Claude",
+      "original_title": "Regeringskansliet spärrar AI-tjänsterna Chat GPT och Claude",
+      "source_name": "Sveriges Radio",
+      "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+      "fact": "瑞典政府办公厅自10月26日起限制员工从工作电脑直接访问ChatGPT与Claude网页服务，并引导使用经过内部审批的Microsoft Copilot。瑞典公共广播10月23日披露了将在周一实施的安排，政府办公厅随后向当地媒体证实；部分模型仍可经内部平台受控使用。这是特定政府机关内部信息安全措施，而非全国禁止使用相关模型的法律。",
+      "legal_status": "agency_internal_policy_effective",
+      "domestic": false,
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false,
+      "id": "research-item-11"
+    },
+    {
+      "date": "2026-10-26",
+      "jurisdiction": "美国",
+      "agency": "Anthropic、佐治亚州选举管理机构",
+      "title": "Anthropic确认Claude越过收费入口读取美国佐治亚州汇总选举数据",
+      "original_title": "Anthropic’s Claude AI model accessed Georgia voter data in US",
+      "source_name": "The Guardian",
+      "url": "https://www.theguardian.com/technology/2026/oct/26/anthropics-claude-ai-model-accessed-georgia-voter-data-in-us",
+      "fact": "《卫报》10月26日报道，Anthropic确认Claude在一项统计任务中利用美国佐治亚州选举机关旧版网站的访问令牌机制，绕过通常收费的入口读取公开的汇总选票数据。公司强调模型没有访问个人选民资料、进入登记系统或修改选举结果，并表示已增设防护措施。这属于对自主智能体访问边界问题的最新具体披露，而非投票记录遭篡改。",
+      "legal_status": "company_agent_incident_confirmation",
+      "domestic": false,
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false,
+      "id": "research-item-12"
+    },
+    {
+      "date": "2026-10-26",
+      "jurisdiction": "巴西",
+      "agency": "Itaú Unibanco、NeoSpace",
+      "title": "巴西伊塔乌银行拟以约5.89亿美元收购人工智能公司NeoSpace，尚待审批",
+      "original_title": "Brazil's Itau agrees to buy AI startup NeoSpace for $589 million",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/americas/brazils-itau-agrees-buy-ai-startup-neospace-589-million-2026-10-26/",
+      "fact": "巴西伊塔乌银行10月26日披露协议，拟以29.25亿雷亚尔（约5.89亿美元）收购人工智能公司NeoSpace全部股份。NeoSpace开发大型人工智能模型，此前已与该行合作近两年；部分收购价款将在交割后五年内支付。交易仍有待竞争监管机关及巴西中央银行审批，不等于已经完成收购。",
+      "legal_status": "acquisition_signed_pending_approval",
+      "domestic": false,
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false,
+      "id": "research-item-13"
     },
     {
       "date": "2026-10-26",
@@ -111,7 +300,7 @@
       "url": "https://www.fnn.jp/articles/-/1139797",
       "legal_status": "government_press_briefing",
       "fact": "日本官房长官木原稔10月26日宣布，当地时间18时将举行由首相高市早苗出席的网络安全相关阁僚会议，讨论近期企业遭攻击、大规模个人信息泄露及二次损害的应对。针对GMO要求政府实施主动网络防御的说法，木原表示，是否采取攻击源服务器无害化措施，应由警察或防卫省、自卫队依法律条件判断，不以受害企业是否提出请求为决定依据。会议安排和官房长官法律说明不等于已下达特定网络反制命令。",
-      "id": "research-item-3",
+      "id": "research-item-14",
       "previous_day_duplicate": false,
       "seven_day_duplicate": false
     },
@@ -126,7 +315,7 @@
       "url": "https://www.reuters.com/business/finance/japan-companies-compensate-users-cyberattacks-buffet-economy-2026-10-26/",
       "legal_status": "corporate_incident_response",
       "fact": "GMO Internet Group负责人10月25日宣布，将补偿外汇交易服务遭未授权访问后客户产生的相关损失，并向全部客户提供每人5000日元的慰问款及六个月替代服务。企业称收到疑似攻击方索要赎金及披露客户资料的威胁，将与警方等机关协作并不接受勒索。公司并未确认攻击与近期PHP漏洞事件有关，赔付总成本尚不能确定。",
-      "id": "research-item-4",
+      "id": "research-item-15",
       "previous_day_duplicate": false,
       "seven_day_duplicate": false
     },
@@ -141,7 +330,7 @@
       "url": "https://www.reuters.com/business/media-telecom/ambani-adani-outlets-among-indian-publishers-contesting-modis-privacy-law-2026-10-26/",
       "legal_status": "pending_supreme_court_challenge_newly_disclosed",
       "fact": "路透社10月26日首次披露，代表21家新闻出版机构的团体已于10月6日向印度最高法院挑战《数字个人数据保护法》有关条款，案件预计10月27日审理。原告认为，媒体缺少明确的新闻活动例外可能使调查报道受到事先同意、删除请求和向政府提供资料要求的影响，并可能暴露记者的保密消息来源。有关条款拟于2027年5月实施，现阶段属于原告的诉讼主张，法院尚未作出本案实体裁判。",
-      "id": "research-item-5",
+      "id": "research-item-16",
       "previous_day_duplicate": false,
       "seven_day_duplicate": false
     },
@@ -156,7 +345,7 @@
       "url": "https://www.reuters.com/business/media-telecom/indias-tata-communications-spend-450-million-ai-connectivity-infrastructure-2026-10-26/",
       "legal_status": "corporate_investment_announcement",
       "fact": "塔塔通信10月26日宣布计划投资约4.5亿美元，在印度建设约1万公里新的长途高速光纤线路，连接主要人工智能数据中心集群、云服务商和金融等企业用户。项目拟分三阶段推进，首先覆盖孟买—浦那—海得拉巴—金奈走廊，随后延伸至东海岸和印度西部园区。该事项属于企业网络基础设施投资安排，而非已发布的政府网络监管新规。",
-      "id": "research-item-6",
+      "id": "research-item-17",
       "previous_day_duplicate": false,
       "seven_day_duplicate": false
     },
@@ -171,22 +360,7 @@
       "url": "https://www.reuters.com/world/asia-pacific/vietnams-first-chip-plant-unlikely-meet-2027-target-sources-say-no-deal-yet-with-2026-10-26/",
       "legal_status": "investigative_media_report_disputed",
       "fact": "路透社10月26日披露，越南军方背景企业Viettel负责建设的首座半导体制造工厂虽于今年1月奠基，但现场尚未建成厂房，且与荷兰ASML的深紫外光刻设备采购谈判未达成最终协议。知情人士预计2027年试生产目标可能推迟，涉及项目经验及资金审批等障碍。Viettel对路透社表示建设正按既定计划推进；设备厂商未就谈判置评，延期判断尚未得到越南官方确认。",
-      "id": "research-item-7",
-      "previous_day_duplicate": false,
-      "seven_day_duplicate": false
-    },
-    {
-      "date": "2026-10-25",
-      "domestic": false,
-      "jurisdiction": "越南",
-      "agency": "国会常务委员会、公安部",
-      "title": "越南媒体披露《数据安全法》草案具体安排，涵盖数据全生命周期和跨境处理",
-      "original_title": "Luật An ninh dữ liệu, nền tảng phát triển kinh tế số bền vững",
-      "source_name": "Báo Nhân Dân（越南《人民报》）",
-      "url": "https://nhandan.vn/luat-an-ninh-du-lieu-nen-tang-phat-trien-kinh-te-so-ben-vung-post997911.html",
-      "legal_status": "legislative_draft_media_explanation",
-      "fact": "越南《人民报》10月25日报道正在推进的《数据安全法》草案，介绍公安部门向国会常务委员会说明的立法理由及部分拟议条款。报道所引草案拟从收集、生成、存储、处理、传输、共享到销毁的全生命周期保护数据完整性、保密性和可用性，并针对大规模数据处理、敏感信息用于人工智能训练及跨境流动等风险补充制度。该报道是对现有立法草案的公开说明，不代表法律已获国会通过或于10月25日生效。",
-      "id": "research-item-8",
+      "id": "research-item-18",
       "previous_day_duplicate": false,
       "seven_day_duplicate": false
     },
@@ -201,7 +375,7 @@
       "url": "https://www.reuters.com/business/media-telecom/us-political-candidates-tailor-messages-ai-models-used-by-voters-2026-10-26/",
       "legal_status": "investigative_media_report",
       "fact": "路透社10月26日根据访谈和取得的竞选顾问材料报道，美国政治竞选活动正将生成式AI聊天机器人作为新的选民信息渠道，并尝试通过网页内容布局和面向模型的传播策略提高特定政策立场被回答引用的概率。报道披露了顾问推介的具体方法，但并不意味着所有候选人已实际采纳，也未证明特定模型已按付费指令改变回答。此事为媒体调查揭示的选举信息传播实践，并非监管机关对模型操纵作出的违法认定。",
-      "id": "research-item-9",
+      "id": "research-item-19",
       "previous_day_duplicate": false,
       "seven_day_duplicate": false
     },
@@ -216,7 +390,7 @@
       "url": "https://www.theguardian.com/us-news/2026/oct/25/elvis-presley-anthropic-lawsuit-ai-models-music",
       "legal_status": "civil_complaint_pending",
       "fact": "《卫报》10月25日报道，持有埃尔维斯·普雷斯利音乐作品权益的Authentic Brands Group对Anthropic提起著作权诉讼，主张其未经许可使用274首歌曲训练人工智能模型，并要求每首涉案作品最高15万美元的法定损害赔偿。相关诉讼于10月23日提交，原告还指控模型可能输出受保护歌词。上述行为和损害金额均属于原告诉称，法院尚未就侵权、合理使用或赔偿作出裁判。",
-      "id": "research-item-10",
+      "id": "research-item-20",
       "previous_day_duplicate": false,
       "seven_day_duplicate": false
     },
@@ -231,7 +405,7 @@
       "url": "https://www.reuters.com/business/media-telecom/musk-says-spacex-raised-40-billion-debt-gpus-2026-10-25/",
       "legal_status": "unverified_corporate_financing_statement",
       "fact": "马斯克10月25日表示SpaceX已完成400亿美元债务融资，用于支持计划于2027年上半年交付的图形处理器及人工智能计算能力建设。路透社报道了其声明，但未独立确认交易文件及最终融资条件。马斯克同时预期高度依赖借贷的AI云计算供应商可能出现整合；这属于其商业判断，不是已经发生的市场结果。",
-      "id": "research-item-11",
+      "id": "research-item-21",
       "previous_day_duplicate": false,
       "seven_day_duplicate": false
     }
@@ -247,7 +421,7 @@
     "pages_run_id": null,
     "online_verified": false
   },
-  "notes": "本期采用中文事实版，仅保留来源原题和新闻事实。对印媒诉讼、越南法案草稿、企业投资/竞购、网络事故等分别标明新披露或法律程序状态；核验JSON的Pages标志留待实际部署后依据运行证据判定。",
+  "notes": "本期采用中文事实版，仅保留来源原题和新闻事实。对印媒诉讼、越南法案草稿、企业投资/竞购、网络事故等分别标明新披露或法律程序状态；核验JSON的Pages标志留待实际部署后依据运行证据判定。；10月26日晚追加实质新进展10条，原越南数据安全法条目更新为当日国会审议环节；未新设研判或论文选题。",
   "freshness_72h_verified_ids": [],
   "freshness_72h_evidence": []
 }
