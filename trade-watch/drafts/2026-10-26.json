@@ -2,7 +2,7 @@
   "date": "2026-10-26",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "c236b91f1deb318d9756f636b56234194c0c3948",
-  "phase": "researching",
+  "phase": "source_verification",
   "publication_ready": false,
   "items": [
     {
@@ -49,6 +49,70 @@
       "source_urls": [
         "https://dgtr.gov.in/sites/default/files/2026-10/Reschedule%20OH%20Notice%2023.10.2026.pdf"
       ]
+    },
+    {
+      "id": "us-ca-338-scope",
+      "date": "2026-10-23",
+      "jurisdiction": "美国／加拿大",
+      "authority": "美国总统、CBP",
+      "title": "美国调整加拿大商品50%附加关税适用清单，10月30日实施",
+      "status": "总统公告已签署，法定生效日2026-10-30",
+      "summary": "10月23日总统公告修改1930年关税法338条相关附件，取消部分加拿大木胶合板、纸品、设备、冷藏设备及包装材料额外50%税，并对特定阀门、地毯、废料等纳入50%税，按附件HTSUS税号执行，法定适用始于10月30日美国东部时间00:01。",
+      "impact": "进口商须按加拿大原产、具体HTSUS税号及报关消费/仓储提货时间重算税负，跟踪Section 232关税可叠加；不影响中国原产直接对美出口税率。",
+      "deadline": "2026-10-30 00:01 美国东部时间",
+      "importance": 5,
+      "source_urls": [
+        "https://www.whitehouse.gov/presidential-actions/2026/10/further-modifying-the-scope-of-products-of-canada-subject-to-the-additional-duties-imposed-to-offset-canadian-discrimination-against-the-commerce-of-the-united-states-with-respect-to-motor-vehicles/",
+        "https://www.whitehouse.gov/fact-sheets/2026/10/fact-sheet-president-donald-j-trump-further-modifies-canadian-products-subject-to-tariffs-under-section-338/"
+      ]
+    },
+    {
+      "id": "eu-ecom-fee",
+      "date": "2026-10-22",
+      "jurisdiction": "欧盟／荷兰",
+      "authority": "欧盟委员会、荷兰海关",
+      "title": "欧盟正式确定跨境电商进口每报关商品项2欧元处理费，11月1日适用",
+      "status": "授权条例已公布并生效，费率2026-11-01起实际适用",
+      "summary": "授权条例(EU) 2026/2152在10月22日《欧盟公报》公布，规定跨境远程销售进口货物按商品项（实务对应每报关行）缴纳2欧元处理费，货值超过150欧元同样适用，不等于每包裹2欧元。荷兰海关10月22日明确缴费与增值税计算、分月结算。",
+      "impact": "中国跨境电商、仓配平台及欧盟申报方应更新报价和申报行聚合方式、增值税与担保；与既有低值包裹3欧元暂时关税另行计算。",
+      "deadline": "2026-11-01",
+      "importance": 5,
+      "source_urls": [
+        "https://www.douane.nl/onderwerpen/invoer-en-uitvoer/invoer/e-commerce/afhandelingsvergoeding/",
+        "https://eur-lex.europa.eu/eli/reg_del/2026/2152/oj"
+      ]
+    },
+    {
+      "id": "eu-mandarins-duty",
+      "date": "2026-10-23",
+      "jurisdiction": "欧盟",
+      "authority": "欧盟委员会、法国海关总局",
+      "title": "欧盟续征中国产罐装柑橘反倾销税，10月23日起适用",
+      "status": "(EU) 2026/2327日落复审最终续征条例生效",
+      "summary": "欧委会(EU)2026/2327号实施条例10月22日公布，10月23日施行，对特定加工或保藏柑橘维持361.40至531.20欧元/吨从量税，生产商不同税率；无有效制造商声明商业发票适用一般税率。",
+      "impact": "出口罐头柑橘的中国加工企业及欧盟进口商核对2008 30相关CN/TARIC细分号、发票厂商声明与原产地，按厂商税率计算关税；并非针对鲜柑橘。",
+      "deadline": "2026-10-23已生效，续征通常五年",
+      "importance": 5,
+      "source_urls": [
+        "https://eur-lex.europa.eu/eli/reg_impl/2026/2327/oj/eng",
+        "https://www.douane.gouv.fr/sites/default/files/2026-10/22/2026-148%20Avis%20aux%20importateurs%20de%20certains%20agrumes%20pr%C3%A9par%C3%A9s%20ou%20conserv%C3%A9s%20originaires%20de%20Chine.pdf"
+      ]
+    },
+    {
+      "id": "eu-russia-energy-faq",
+      "date": "2026-10-23",
+      "jurisdiction": "欧盟／俄罗斯",
+      "authority": "欧盟委员会金融稳定和资本市场总司",
+      "title": "欧委会更新对俄成品油出口制裁解释，明确转口与关联服务同受约束",
+      "status": "官方制裁合规释义更新，未新增法律禁令",
+      "summary": "10月23日欧委会公布答疑，确认依据(EU)833/2014第3k条及附件XXIII，对俄出口、出售、供应、转让CN2710成品油受禁令约束，第3c条另限制航空燃料及添加剂；相关技术支持、经纪、融资/财务援助包括直接与间接服务。",
+      "impact": "涉及欧洲经营主体及欧盟受管辖能源贸易、物流结算和中转安排的企业应核查货品CN编码、最终目的地、经纪融资及间接供货链，避免以第三地转口误判义务。",
+      "deadline": "2026-10-23释义更新，禁令原已存在",
+      "importance": 3,
+      "source_urls": [
+        "https://finance.ec.europa.eu/publications/export-energy-products-russia_en",
+        "https://finance.ec.europa.eu/document/download/ffdca3d7-5ef8-4cbc-9109-2e4faadc6306_en?filename=faqs-sanctions-russia-+export-energy-products-russia_en.pdf"
+      ]
     }
   ],
   "coverage": {
@@ -64,9 +128,17 @@
   },
   "last_error": null,
   "next_actions": [
-    "扩大搜索近日正式监管文件并排除已收录事件",
-    "补查中国以外区域及产业监管新动作",
-    "逐项终核日期、影响、法律阶段和原始文件",
-    "保存最终去重与发布准备断点"
+    "终核全部7条各原始来源和网页可达性",
+    "最终终扫并剔除过期或重复事实",
+    "制作和发布第048期HTML及更新首页归档"
+  ],
+  "dedup_checked_against": [
+    "2026-10-25",
+    "2026-10-24",
+    "2026-10-21",
+    "2026-10-20",
+    "2026-10-19",
+    "2026-10-18",
+    "2026-10-17"
   ]
 }
