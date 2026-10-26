@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-26",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-10-26-new-works.html",
+  "page_blob_sha": "5f13cb9443b085496e2a660ce1eaa30d58366f4f",
+  "newworks_count": 3,
+  "checked_at": "2026-10-26T20:50:03.896+08:00",
+  "checks": {
+    "publisher_pages_opened": true,
+    "bibliographic_metadata_verified": true,
+    "history_original_title_search": true,
+    "history_doi_deduplication": true,
+    "version_verified": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "historical_newworks_pages_checked": 68,
+    "range": "2026-08-16 through 2026-10-25",
+    "sections": [
+      "new-works/ dated index pages",
+      "articles/ dated research works pages"
+    ],
+    "fields": [
+      "original_title",
+      "DOI",
+      "author",
+      "publication_version"
+    ],
+    "matches_found": 0
+  },
+  "items": [
+    {
+      "cn_title": "监管机构使用AI时应公开什么：欧盟食品与药品科学评估的透明度",
+      "author": "Matthias Hasler",
+      "original_title": "When AI secrecy meets regulatory science transparency: which way for algorithmic transparency at EFSA and EMA?",
+      "doi": "10.1007/s12027-026-00900-z",
+      "year": 2026,
+      "publication_date": "2026-10-20",
+      "journal": "ERA Forum",
+      "publisher_page": "https://link.springer.com/article/10.1007/s12027-026-00900-z",
+      "version": "Springer version of record, online",
+      "volume": null,
+      "issue": null,
+      "pages": null
+    },
+    {
+      "cn_title": "合成医疗数据何时仍属个人数据：欧盟法下的识别风险判断",
+      "author": "Vibeke Binz Vallevik; Anne Kjersti C. Befring; Severin Elvatun; Jan Franz Nygård",
+      "original_title": "Processing of synthetic data in AI development for healthcare and the definition of personal data in EU law",
+      "doi": "10.1093/ijlit/eaag002",
+      "year": 2026,
+      "publication_date": "2026-03-03",
+      "journal": "International Journal of Law and Information Technology",
+      "publisher_page": "https://academic.oup.com/ijlit/article/doi/10.1093/ijlit/eaag002/8504180",
+      "version": "Oxford Academic journal article, version of record",
+      "volume": "34",
+      "issue": null,
+      "article_number": "eaag002"
+    },
+    {
+      "cn_title": "企业董事会用AI作战略决策：为何保留人工确认仍不够",
+      "author": "Michele Mozzarelli; Giulia Schneider",
+      "original_title": "AI and Strategic Decisions: Facing the Incompleteness",
+      "doi": "10.1007/s40804-025-00356-7",
+      "year": 2026,
+      "publication_date": "2026-01-12",
+      "journal": "European Business Organization Law Review",
+      "publisher_page": "https://link.springer.com/article/10.1007/s40804-025-00356-7",
+      "version": "Springer version of record",
+      "volume": "27",
+      "issue": null,
+      "pages": "1–33"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": false
+  }
+}
