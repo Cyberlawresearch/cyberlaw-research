@@ -4,13 +4,69 @@
   "base_main_sha": "c236b91f1deb318d9756f636b56234194c0c3948",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "us-mx-amphenol",
+      "date": "2026-10-23",
+      "jurisdiction": "美国／墨西哥",
+      "authority": "USTR",
+      "title": "美墨快速反应劳工机制完成Amphenol Optimize工厂补救，美国恢复受影响货物进口结关",
+      "status": "实质补救完成与暂停结关措施解除",
+      "summary": "USTR宣布位于墨西哥诺加莱斯的Amphenol Optimize工厂完成劳工补救措施，美财政部被要求恢复此前暂停结关的相关进口货物。",
+      "impact": "供货墨西哥汽车电子及电缆连接器链条的企业核对受影响入境申报、供应商整改和海关结关状态；并非降低一般关税。",
+      "deadline": "2026-10-23宣布解除有关结关暂停",
+      "importance": 4,
+      "source_urls": [
+        "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/october/united-states-announces-successful-resolution-rapid-response-labor-mechanism-matter-amphenol"
+      ]
+    },
+    {
+      "id": "us-mx-penasquito",
+      "date": "2026-10-23",
+      "jurisdiction": "美国／墨西哥",
+      "authority": "USTR",
+      "title": "美墨就Peñasquito矿山劳工权利争议形成补救方案，10月28日前落实关键措施",
+      "status": "快速反应劳工机制补救方案已达成，执行中",
+      "summary": "美国与墨西哥同意Peñasquito矿山争议补救路线，包括复职、补薪和劳工权利培训；并非对矿产品已征新增关税。",
+      "impact": "墨西哥锌铅贵金属及冶炼材料供应链核对矿山来源及美国客户合规条款，关注劳动争议对贸易结关的潜在影响。",
+      "deadline": "2026-10-28落实特定员工复职与补薪",
+      "importance": 4,
+      "source_urls": [
+        "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/october/united-states-and-mexico-announce-course-remediation-minera-penasquito"
+      ]
+    },
+    {
+      "id": "in-pty-oral-hearing",
+      "date": "2026-10-23",
+      "jurisdiction": "印度",
+      "authority": "DGTR",
+      "title": "印度对华涤纶变形丝反倾销调查口头听证改至11月5日",
+      "status": "在审调查程序期限变更，尚无终局征税决定",
+      "summary": "DGTR通知将中国涤纶变形丝PTY案口头听证由10月23日推迟至11月5日15时（印度时间）在线举行。",
+      "impact": "出口涉案丝线的中国纺织企业应及时更新代理参会登记和陈述材料，后续按通知提交书面意见，不能视为已有倾销认定。",
+      "deadline": "2026-11-05 15:00 IST在线听证",
+      "importance": 3,
+      "source_urls": [
+        "https://dgtr.gov.in/sites/default/files/2026-10/Reschedule%20OH%20Notice%2023.10.2026.pdf"
+      ]
+    }
+  ],
+  "coverage": {
+    "美国": "已巡视USTR、Commerce、CBP、OFAC及贸易救济近期公告",
+    "欧盟": "已巡视欧盟贸易救济、EUR-Lex近期公告",
+    "英国": "已巡视出口通知NTE、贸易救济、制裁及关税公告",
+    "日本": "已巡视METI、财务省及贸易救济动态",
+    "韩国": "已巡视产业通商部、贸易委员会公告",
+    "印度": "已巡视DGTR案件及最新听证安排",
+    "加拿大": "已巡视CBSA、全球事务部及贸易救济",
+    "澳大利亚": "已巡视反倾销委员会案件动态",
+    "墨西哥": "已核对USTR美墨快速响应劳工机制"
+  },
   "last_error": null,
   "next_actions": [
-    "检索美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚及重要其他法域",
-    "与最近七期逐条事件去重",
-    "逐一核验监管阶段、原始来源及链接",
-    "保存终扫并发布"
+    "扩大搜索近日正式监管文件并排除已收录事件",
+    "补查中国以外区域及产业监管新动作",
+    "逐项终核日期、影响、法律阶段和原始文件",
+    "保存最终去重与发布准备断点"
   ]
 }
