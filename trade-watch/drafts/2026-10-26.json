@@ -2,7 +2,7 @@
   "date": "2026-10-26",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "c236b91f1deb318d9756f636b56234194c0c3948",
-  "phase": "main_written_pages_pending",
+  "phase": "published_and_verified",
   "publication_ready": true,
   "items": [
     {
@@ -127,11 +127,7 @@
     "墨西哥": "已核对USTR美墨快速响应劳工机制"
   },
   "last_error": null,
-  "next_actions": [
-    "核实最终提交触发的Pages工作流结论及任务步骤",
-    "核实公开当期、首页最新入口和归档首项",
-    "核实11条原始来源链接按DOM解析后的URL及可达性"
-  ],
+  "next_actions": [],
   "dedup_checked_against": [
     "2026-10-25",
     "2026-10-24",
@@ -161,6 +157,13 @@
     "last_error": null,
     "github_file_readback": "passed_three_files_date_issue_count_sources_archive_order",
     "pages_run_id": 40252800735,
-    "pages_status": "pending"
+    "pages_status": "completed_success",
+    "pages_commit": "cb60e4db09857346e9c26253283fb534c6477b0c",
+    "public_page_check": "2026-10-26 issue 7 articles, homepage and archive all HTTP 200 and contents/links match commit",
+    "public_page_check_run_id": 40253099372,
+    "source_check_run_id": 40253099219,
+    "source_check_result": "11 official links automated URL fetch passed; EUR-Lex official ELI links returned HTTP 202 (bot/JS challenge) but domain+ELI specificity maintained; corroborated with Dutch and French customs primary documents",
+    "source_check_count": 11,
+    "completed": true
   }
 }
