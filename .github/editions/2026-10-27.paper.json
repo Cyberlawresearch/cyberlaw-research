@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-27",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-27-viljoen-relational-theory-data-governance.html",
+  "selection": "Salomé Viljoen, A Relational Theory of Data Governance",
+  "bibliography": {
+    "type": "article",
+    "author": "Salomé Viljoen",
+    "originalTitle": "A Relational Theory of Data Governance",
+    "journal": "Yale Law Journal",
+    "year": "2021",
+    "volume": "131",
+    "issue": "2",
+    "pages": "573–654",
+    "doi": "",
+    "url": "https://yalelawjournal.org/article/a-relational-theory-of-data-governance",
+    "cnTitle": "数据治理的关系理论：为什么个人同意不能处理群体性影响"
+  },
+  "versions": {
+    "full_text": "Read original Yale Law Journal 82-page PDF in full, introduction, Parts I-IV, conclusion and footnotes",
+    "publication": "Yale Law Journal 2021, 131(2), 573-654; SSRN earlier working paper separate; no verified publisher DOI"
+  },
+  "sources": [
+    "https://yalelawjournal.org/article/a-relational-theory-of-data-governance",
+    "https://yalelawjournal.org/pdf/131.2_Viljoen_1n12myx5.pdf",
+    "https://michigan.law.umich.edu/faculty-scholarship/faculty-publications/relational-theory-data-governance",
+    "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3727562"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-09-10-solove-privacy-self-management.html",
+    "articles/2026-09-16-barocas-selbst-big-data-disparate-impact.html"
+  ],
+  "timeline": null,
+  "body_length": 3203,
+  "checked_at": "2026-10-27T12:09:11.959Z",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  },
+  "base_main_sha": "9af0debb348dcc53aad2e9a069826a0f659461ec"
+}
