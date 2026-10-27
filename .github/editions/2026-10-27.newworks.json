@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-27",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-10-27-new-works.html",
+  "page_blob_sha": "98cfe3da4b3686a2ecbb26f639013534fdb72fee",
+  "newworks_count": 3,
+  "checked_at": "2026-10-27T12:44:24.194Z",
+  "checks": {
+    "publisher_pages_opened": true,
+    "bibliographic_metadata_verified": true,
+    "history_original_title_search": true,
+    "history_doi_deduplication": true,
+    "version_verified": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "historical_newworks_pages_checked": 69,
+    "range": "2026-08-16 through 2026-10-26",
+    "sections": [
+      "new-works/ dated research index pages",
+      "articles/ dated research works pages"
+    ],
+    "fields": [
+      "original_title",
+      "DOI",
+      "author",
+      "publication_version"
+    ],
+    "matches_found": 0
+  },
+  "items": [
+    {
+      "cn_title": "生成式AI进入律师业务：职业能力、保密义务与专业自主性",
+      "author": "Julija Kalpokienė",
+      "original_title": "Generative AI and legal practice: a complicated relationship",
+      "journal": "ERA Forum",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-10-26",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": "10.1007/s12027-026-00902-x",
+      "publisher_page": "https://link.springer.com/article/10.1007/s12027-026-00902-x",
+      "version": "Springer Nature journal article, version of record, online first"
+    },
+    {
+      "cn_title": "算法治理的宪法正当性：洛克的平等、信托与可争辩的公共权力",
+      "author": "Wendy R. Simon",
+      "original_title": "From Natural Equality to Constitutional Legitimacy: Locke’s Political Anthropology and Algorithmic Governance",
+      "journal": "Philosophy & Technology",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-10-23",
+      "volume": "39",
+      "issue": null,
+      "pages": null,
+      "article_number": "209",
+      "doi": "10.1007/s13347-026-01211-4",
+      "publisher_page": "https://link.springer.com/article/10.1007/s13347-026-01211-4",
+      "version": "Springer Nature journal article, version of record"
+    },
+    {
+      "cn_title": "“网络犯罪3.0”：AI作为犯罪基础设施、工具与攻击目标",
+      "author": "George Zlati",
+      "original_title": "Cybercrime 3.0: the rise of artificial intelligence crime",
+      "journal": "ERA Forum",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-09-22",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": "10.1007/s12027-026-00897-5",
+      "publisher_page": "https://link.springer.com/article/10.1007/s12027-026-00897-5",
+      "version": "Springer Nature journal article, version of record, online first"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": false
+  }
+}
