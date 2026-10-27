@@ -2,7 +2,7 @@
   "date": "2026-10-27",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "5129210ff154e15956902dcfa3fdd11d178c8db2",
-  "phase": "main_written_waiting_pages",
+  "phase": "published_pages_verified_source_diagnostic_warning",
   "publication_ready": true,
   "items": [
     {
@@ -155,11 +155,17 @@
     "加拿大": "已核对CBSA海关公告及加美钢铝汽车磋商；磋商尚无双方宣布的协定",
     "澳大利亚": "已核对澳贸易救济委员会TRN列表，最近重大第2026/152号玻璃棉双反立案已于10月24日报道"
   },
-  "last_error": null,
+  "last_error": {
+    "phase": "automated_source_diagnostics",
+    "tool": "GitHub Actions trade-watch-source-check.yml",
+    "run_id": 40432534932,
+    "source_url": "https://digital-strategy.ec.europa.eu/en/news/commission-accepts-temus-corrective-measures-terminate-breach-digital-services-act",
+    "error": "HTTP 403 for runner requests (official content independently opened in web inspection)",
+    "retry_count": 2
+  },
   "next_actions": [
-    "核实最终主分支提交对应Pages工作流成功",
-    "核实公开issue、index、archive实际内容",
-    "核实贸易新闻9条所有独立来源链接"
+    "保留既有官方公告URL，不降低来源检查标准；将欧委会站点的自动访问403作为访问限制进一步核实",
+    "下次每日运行继续正常执行，不调整定时任务"
   ],
   "dedup_checked_against": [
     "2026-10-26",
@@ -178,7 +184,7 @@
   "terminal_scan": "2026-10-27上午再次检索欧委会、主要法域公告；10月26日欧委会接受Temu整改计划作为新增实质进展，未重复前期征税和调查新闻",
   "dedup_status": "与2026-10-18至2026-10-26最近7个实际在main的期次逐项比对，选择新生效税令、日落复审续征、委员会接受整改计划、调查初裁、终局排期及新增期限，排除旧新闻和无实际进展的普通磋商报道",
   "publication_attempt": {
-    "stage": "pages_deploy_and_public_verification",
+    "stage": "pages_deployed_public_verified",
     "attempt_count": 1,
     "files_written": [
       "trade-watch/issues/2026-10-27.html",
@@ -190,8 +196,10 @@
     "final_main_commit": "2a9b6824affb65110504ef7cc12b54e39aff439e",
     "github_file_readback": "passed 3 main files; issue 049 2026-10-27 9 items; current homepage and archive latest",
     "pages_run_id": 40432093421,
-    "pages_status": "pending",
-    "public_page_check": "web public pages currently not accessible via web tool; GitHub Pages run queued",
-    "last_error": null
+    "pages_status": "success",
+    "public_page_check": "2026-10-27 issue/index/archive all HTTP 200 and content/links verified by trade-watch-source-check run 40432534932; trade-watch-publication-guard run 40432534858 successful",
+    "last_error": "Source diagnostics run 40432534932 failed only because EU Commission digital-strategy.ec.europa.eu returned 403 to GitHub Actions automated request; public issue, homepage, archive all passed; main commit 2a9b6824affb65110504ef7cc12b54e39aff439e successfully deployed",
+    "source_check_run_id": 40432534932,
+    "source_check_status": "10 of 11 source URLs return 200 in GitHub Actions; Commission Temu original source https://digital-strategy.ec.europa.eu/en/news/commission-accepts-temus-corrective-measures-terminate-breach-digital-services-act returns 403 to Actions runner but opens with full official announcement in web inspection"
   }
 }
