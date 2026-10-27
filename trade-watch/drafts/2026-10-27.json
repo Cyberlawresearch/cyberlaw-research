@@ -2,7 +2,7 @@
   "date": "2026-10-27",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "5129210ff154e15956902dcfa3fdd11d178c8db2",
-  "phase": "publication_ready",
+  "phase": "main_written_waiting_pages",
   "publication_ready": true,
   "items": [
     {
@@ -157,9 +157,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "向main写入2026-10-27第049期完整HTML",
-    "更新首页及归档",
-    "回读三文件并核实最终Pages部署和来源链接"
+    "核实最终主分支提交对应Pages工作流成功",
+    "核实公开issue、index、archive实际内容",
+    "核实贸易新闻9条所有独立来源链接"
   ],
   "dedup_checked_against": [
     "2026-10-26",
@@ -176,5 +176,22 @@
     "notes": "Federal Register USTR、Commerce、ITC三类原公告，DGTR PVC初裁PDF(含末页意见期限)，OFAC10月26日FAQ、英国FCDO指定、欧委会Temu官方报道、印度二氧化钛正式Gazette完整转录；印度官方eGazette PDF无法直接打开，以特定公报完整文本镜像并辅以同期独立报道核对"
   },
   "terminal_scan": "2026-10-27上午再次检索欧委会、主要法域公告；10月26日欧委会接受Temu整改计划作为新增实质进展，未重复前期征税和调查新闻",
-  "dedup_status": "与2026-10-18至2026-10-26最近7个实际在main的期次逐项比对，选择新生效税令、日落复审续征、委员会接受整改计划、调查初裁、终局排期及新增期限，排除旧新闻和无实际进展的普通磋商报道"
+  "dedup_status": "与2026-10-18至2026-10-26最近7个实际在main的期次逐项比对，选择新生效税令、日落复审续征、委员会接受整改计划、调查初裁、终局排期及新增期限，排除旧新闻和无实际进展的普通磋商报道",
+  "publication_attempt": {
+    "stage": "pages_deploy_and_public_verification",
+    "attempt_count": 1,
+    "files_written": [
+      "trade-watch/issues/2026-10-27.html",
+      "trade-watch/index.html",
+      "trade-watch/archive.html"
+    ],
+    "issue_commit": "83dcfaf0597948316973bd719580e37615e235bd",
+    "homepage_commit": "d1188eaea9afe605090b9e16286c3f33b9317fae",
+    "final_main_commit": "2a9b6824affb65110504ef7cc12b54e39aff439e",
+    "github_file_readback": "passed 3 main files; issue 049 2026-10-27 9 items; current homepage and archive latest",
+    "pages_run_id": 40432093421,
+    "pages_status": "pending",
+    "public_page_check": "web public pages currently not accessible via web tool; GitHub Pages run queued",
+    "last_error": null
+  }
 }
