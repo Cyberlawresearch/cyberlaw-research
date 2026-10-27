@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-27",
+  "timezone": "Asia/Shanghai",
+  "base_main_sha": "5129210ff154e15956902dcfa3fdd11d178c8db2",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "逐国巡视近72小时主管机构公告",
+    "核验候选新闻及具体来源",
+    "与最近七期事件级去重",
+    "保存最终核验后发布"
+  ]
+}
