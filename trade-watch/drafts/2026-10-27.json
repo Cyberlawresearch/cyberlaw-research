@@ -2,15 +2,83 @@
   "date": "2026-10-27",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "5129210ff154e15956902dcfa3fdd11d178c8db2",
-  "phase": "researching",
+  "phase": "source_and_jurisdiction_verification",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "us-maritime-301-comment",
+      "date": "2026-10-26",
+      "jurisdiction": "美国／中国",
+      "authority": "美国贸易代表办公室 USTR",
+      "title": "美国就进一步暂停对华海事、物流和造船业301措施征求意见",
+      "status": "拟延长暂停期限，尚未最终决定",
+      "summary": "美国贸易代表办公室10月26日刊发联邦公报征求意见，拟将对华海运、港口物流及造船业301措施暂停期由2026年11月9日延长至2027年1月9日。该延长期仍为提议，并非最终生效。",
+      "impact": "运营赴美航线的中国航运与船舶经营企业、美国港口与进口商按现有措施核算2026年11月10日后的可能港口收费；避免将拟议延期当作既有豁免。",
+      "deadline": "2026-10-30 17:00 美国东部时间意见截止；拟议暂停至2027-01-09",
+      "importance": 5,
+      "source_urls": [
+        "https://www.federalregister.gov/documents/2026/10/26/2026-21755/request-for-comments-on-further-suspension-of-section-301-action-chinas-targeting-of-the-maritime"
+      ]
+    },
+    {
+      "id": "india-pvc-cvd-prelim",
+      "date": "2026-10-26",
+      "jurisdiction": "印度／中国",
+      "authority": "印度贸易救济总局 DGTR",
+      "title": "印度对中国悬浮法聚氯乙烯树脂补贴调查作出肯定性初裁，建议征收反补贴税",
+      "status": "DGTR初步裁定并建议税率；尚待财政部决定是否征收临时反补贴税",
+      "summary": "印度DGTR10月26日公布中国悬浮法聚氯乙烯树脂反补贴调查初裁，建议按中国企业不同税率征收每吨83.72至143.82美元反补贴税。仅为主管机关初步建议，并非海关已经开征。",
+      "impact": "中国PVC出口商需核对产品K值与排除范围、生产商身份、应诉数据及印度客户定价安排；初裁可能增加未来税负。",
+      "deadline": "2026-10-26公布；意见自公告日起20日内，具体截止按DGTR通知确认",
+      "importance": 5,
+      "source_urls": [
+        "https://dgtr.gov.in/sites/default/files/2026-10/NCV%20English%20(1).pdf",
+        "https://www.dgtr.gov.in/en/countervailing-duty-investigation/initiation-countervailing-duty-investigation-concerning-imports-1?blink=9374"
+      ]
+    },
+    {
+      "id": "uk-sudan-designations",
+      "date": "2026-10-26",
+      "jurisdiction": "英国／苏丹",
+      "authority": "英国外交、联邦与发展事务部 FCDO",
+      "title": "英国对苏丹冲突相关15人新增实施资产冻结及旅行禁令",
+      "status": "英国已新增指定制裁对象，相关资产冻结生效",
+      "summary": "英国政府10月26日宣布针对苏丹冲突涉严重侵害人权的15名人员实施定向制裁，适用资产冻结及旅行禁令。名单指定不代表对所有苏丹商品实施全面贸易禁运。",
+      "impact": "涉及苏丹贸易、运输、资金收付的企业应更新英国制裁对象及所有权控制筛查，排查支付、供货和保险安排中受管辖资金或经济资源交易。",
+      "deadline": "2026-10-26公布；与具体指定生效时间及官方名单一致",
+      "importance": 4,
+      "source_urls": [
+        "https://www.gov.uk/government/news/uk-sanctions-senior-commanders-implicated-in-campaign-of-rape-in-sudan-and-unveils-new-support-for-survivors",
+        "https://www.gov.uk/guidance/sudan-list-of-designations-and-sanctions-notices"
+      ]
+    },
+    {
+      "id": "india-tio2-add-reimposition",
+      "date": "2026-10-24",
+      "jurisdiction": "印度／中国",
+      "authority": "印度财政部税收局 CBIC",
+      "title": "印度重新对中国二氧化钛征收反倾销税",
+      "status": "2026年第26号海关反倾销税通知发布，恢复实施最终反倾销税",
+      "summary": "印度10月24日公布2026年第26号海关反倾销税通知，对原产或出口自中国的特定二氧化钛产品恢复每吨460至681美元的反倾销税，区别于初裁建议。",
+      "impact": "中国二氧化钛出口企业与印度采购商应核对税目、生产商、有关排除范围、进口到港时点及合同关税分担。",
+      "deadline": "2026-10-24通知发布后实施，按正式文本生效条款核查；五年适用期",
+      "importance": 5,
+      "source_urls": [
+        "https://www.customsmitra.com/notifications/26-2026-customs-add",
+        "https://economictimes.indiatimes.com/industry/cons-products/paints/china-faces-fresh-indian-duties-on-titanium-dioxide-imports-anti-dumping-levy-of-460-681-per-tonne-reimposed-for-five-years/articleshow/135170362.cms"
+      ]
+    }
+  ],
+  "coverage": {
+    "美国": "USTR 2026-10-26 Federal Register 301海事措施通知、财政部OFAC 10-26动态初查",
+    "英国": "2026-10-26制裁公告和指定名单初查",
+    "印度": "2026-10-26 DGTR悬浮法PVC反补贴初裁、10-24 CBIC二氧化钛新税令初查"
+  },
   "last_error": null,
   "next_actions": [
-    "逐国巡视近72小时主管机构公告",
-    "核验候选新闻及具体来源",
-    "与最近七期事件级去重",
-    "保存最终核验后发布"
+    "继续欧盟、日本、韩国、加拿大、澳大利亚及其他法域巡视",
+    "逐一打开初步候选来源及正式税令",
+    "近7期事件去重与核查来源",
+    "终扫并保存publication_ready"
   ]
 }
