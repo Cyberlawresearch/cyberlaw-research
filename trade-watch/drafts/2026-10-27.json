@@ -2,7 +2,7 @@
   "date": "2026-10-27",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "5129210ff154e15956902dcfa3fdd11d178c8db2",
-  "phase": "source_and_jurisdiction_verification",
+  "phase": "dedup_and_final_source_check",
   "publication_ready": false,
   "items": [
     {
@@ -67,18 +67,93 @@
         "https://www.customsmitra.com/notifications/26-2026-customs-add",
         "https://economictimes.indiatimes.com/industry/cons-products/paints/china-faces-fresh-indian-duties-on-titanium-dioxide-imports-anti-dumping-levy-of-460-681-per-tonne-reimposed-for-five-years/articleshow/135170362.cms"
       ]
+    },
+    {
+      "id": "us-small-engine-sunset",
+      "date": "2026-10-26",
+      "jurisdiction": "美国／中国",
+      "authority": "美国商务部国际贸易管理局",
+      "title": "美国正式延续中国产99至225毫升小型立轴发动机反倾销与反补贴税令",
+      "status": "正式续征公告发布，续征生效日2026-10-20",
+      "summary": "商务部10月26日刊登日落复审续征公告，维持自2021年实施的中国特定小型立轴发动机反倾销和反补贴税令；本次不是新案立案，现有保证金继续征收。",
+      "impact": "中国草坪修剪机、清洗机发动机及零组件对美出口须按产品定义核查发动机是否随整机进口，持续按既有企业适用AD/CVD保证金并核实原产地。",
+      "deadline": "续征生效日期2026-10-20；公告发布日期10-26",
+      "importance": 4,
+      "source_urls": [
+        "https://www.federalregister.gov/documents/2026/10/26/2026-21819/certain-small-vertical-shaft-engines-between-99cc-and-up-to-225cc-and-parts-thereof-from-the-peoples"
+      ]
+    },
+    {
+      "id": "us-aluminum-cvd-review-rescission",
+      "date": "2026-10-26",
+      "jurisdiction": "美国／中国",
+      "authority": "美国商务部国际贸易管理局",
+      "title": "美国终止中国产普通合金铝板2025年度反补贴行政复审，现行保证金不变",
+      "status": "反补贴行政复审正式撤销，不等于撤销既有税令",
+      "summary": "美国商务部10月26日终止对中国普通合金铝板2025年反补贴年度复审：两家企业无可复审入境记录，其他企业复审申请已撤回。相关入境货物仍按进口时既有保证金税率结算，2025期次没有产生新复审税率。",
+      "impact": "中国铝材企业及美国进口商核查Alcha、Yinbang、烟台金泰等企业报关入境记录，不可误读为税令取消；CBP最早在公告后35日收到结算指令。",
+      "deadline": "2026-10-26适用；2026-11-30后才可能签发结算指示",
+      "importance": 3,
+      "source_urls": [
+        "https://www.federalregister.gov/documents/2026/10/26/2026-21779/common-alloy-aluminum-sheet-from-the-peoples-republic-of-china-rescission-of-countervailing-duty"
+      ]
+    },
+    {
+      "id": "us-graphite-electrodes-itc",
+      "date": "2026-10-26",
+      "jurisdiction": "美国／中国、印度",
+      "authority": "美国国际贸易委员会 ITC",
+      "title": "美国公布中印大直径石墨电极双反案终局产业损害调查日程",
+      "status": "终局产业损害调查排期，尚未作出最终征税命令",
+      "summary": "ITC10月26日正式公布对原产中印大直径石墨电极双反调查终局阶段安排，2027年2月9日听证，2月2日听证前书面陈述截止，2月17日听证后陈述截止；本次新增具体应诉节点，区别于此前商务部终裁日期调整。",
+      "impact": "涉案中国石墨电极出口商需围绕熔石墨产地认定、石墨化工序、美国行业损害和进口价格向ITC按期递交材料，避免将初步调查或听证排期误认成最终征税。",
+      "deadline": "2027-02-02预听证书面陈述；02-03申请听证发言；02-09听证；02-17听证后陈述",
+      "importance": 4,
+      "source_urls": [
+        "https://www.federalregister.gov/documents/2026/10/26/2026-21754/large-diameter-graphite-electrodes-from-china-and-india-scheduling-of-the-final-phase-of"
+      ]
+    },
+    {
+      "id": "us-ofac-faq-blocking-reporting",
+      "date": "2026-10-26",
+      "jurisdiction": "美国／跨境制裁交易",
+      "authority": "美国财政部外国资产控制办公室 OFAC",
+      "title": "美国OFAC更新冻结、拒绝交易及报告义务的官方问答",
+      "status": "现行制裁义务解释更新，非新增制裁对象或修法",
+      "summary": "OFAC10月26日修订FAQs 10、32—36、41—42、49—50及53，明确冻结财产与拒绝交易的区别，已实际冻结或拒绝的交易须通过ORS在10个工作日内报告，单纯咨询不构成需报告的拒绝交易。",
+      "impact": "拥有美国资金结算或美国金融机构服务的跨境贸易公司，核对付款指令、信用证、提单等交易凭证和SDN筛查结果，对受阻交易依法区分冻结与拒绝并留存报告记录。",
+      "deadline": "2026-10-26新版指引发布；执行既有10个工作日报告时限",
+      "importance": 3,
+      "source_urls": [
+        "https://ofac.treasury.gov/recent-actions/20261026",
+        "https://ofac.treasury.gov/faqs/updated/2026-10-26"
+      ]
     }
   ],
   "coverage": {
-    "美国": "USTR 2026-10-26 Federal Register 301海事措施通知、财政部OFAC 10-26动态初查",
-    "英国": "2026-10-26制裁公告和指定名单初查",
-    "印度": "2026-10-26 DGTR悬浮法PVC反补贴初裁、10-24 CBIC二氧化钛新税令初查"
+    "美国": "已核查10月26 Federal Register 99份文件、USTR海事301征求意见、商务部小型发动机续征、铝板复审撤销、ITC石墨电极、OFAC FAQ",
+    "英国": "已核查新制裁及出口通知；10月26苏丹名单新增确认",
+    "印度": "2026-10-26 DGTR悬浮法PVC反补贴初裁、10-24 CBIC二氧化钛新税令初查",
+    "欧盟": "已核查欧委会贸易救济、EUR-Lex官方近72小时更新，现有跨境电商收费及罐装柑橘续征见10月26期，未发现新增足以重报的决定",
+    "日本": "已核对METI及财务省特殊关税与贸易管理公开索引，无新的可核验实质行动",
+    "韩国": "已检索韩国产业通商资源部、贸易委员会和海关近期公告，未发现可核验新增重大涉华贸易救济决定",
+    "加拿大": "已核对CBSA海关公告及加美钢铝汽车磋商；磋商尚无双方宣布的协定",
+    "澳大利亚": "已核对澳贸易救济委员会TRN列表，最近重大第2026/152号玻璃棉双反立案已于10月24日报道"
   },
   "last_error": null,
   "next_actions": [
-    "继续欧盟、日本、韩国、加拿大、澳大利亚及其他法域巡视",
-    "逐一打开初步候选来源及正式税令",
-    "近7期事件去重与核查来源",
-    "终扫并保存publication_ready"
+    "补核印度钛白粉2026年第26号税令原文与公开镜像",
+    "复核8项来源及关键词",
+    "终扫过去2小时新公告并完成publication_ready写入",
+    "正式发布与Pages验收"
+  ],
+  "dedup_checked_against": [
+    "2026-10-26",
+    "2026-10-25",
+    "2026-10-24",
+    "2026-10-21",
+    "2026-10-20",
+    "2026-10-19",
+    "2026-10-18"
   ]
 }
