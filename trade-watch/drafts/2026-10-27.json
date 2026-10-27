@@ -2,7 +2,7 @@
   "date": "2026-10-27",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "5129210ff154e15956902dcfa3fdd11d178c8db2",
-  "phase": "dedup_and_final_source_check",
+  "phase": "final_validation_completed",
   "publication_ready": false,
   "items": [
     {
@@ -128,13 +128,28 @@
         "https://ofac.treasury.gov/recent-actions/20261026",
         "https://ofac.treasury.gov/faqs/updated/2026-10-26"
       ]
+    },
+    {
+      "id": "eu-temu-dsa-plan",
+      "date": "2026-10-26",
+      "jurisdiction": "欧盟／中国跨境电商",
+      "authority": "欧盟委员会",
+      "title": "欧盟接受Temu纠正违法商品风险评估缺陷的五项整改措施，进入四个月执行期",
+      "status": "欧委会已接受整改计划，仍处实施与独立审计阶段；2026年5月既有罚款未被撤销",
+      "summary": "欧盟委员会10月26日接受Temu依据《数字服务法》提出的五项整改措施，涉及平台专属风险评估、控制措施效果指标、内容审核、推荐算法放大违法商品风险及商家滥用平台功能。该行动是此前200百万欧元处罚后的整改落实阶段，接受计划不代表已通过合规验收。",
+      "impact": "面向欧盟的中国跨境电商平台及入驻商家应核查产品安全测试、CE标志及技术文件、商家身份信息、违法商品下架证据和推荐机制风险，避免整改导致商品下架、流量损失及履约纠纷。",
+      "deadline": "2026-10-26起四个月内落实计划并完成中期风险评估；该评估覆盖至2026-11-30的六个月区间，另在落实后四个月内提交独立审计报告",
+      "importance": 5,
+      "source_urls": [
+        "https://digital-strategy.ec.europa.eu/en/news/commission-accepts-temus-corrective-measures-terminate-breach-digital-services-act"
+      ]
     }
   ],
   "coverage": {
     "美国": "已核查10月26 Federal Register 99份文件、USTR海事301征求意见、商务部小型发动机续征、铝板复审撤销、ITC石墨电极、OFAC FAQ",
     "英国": "已核查新制裁及出口通知；10月26苏丹名单新增确认",
     "印度": "2026-10-26 DGTR悬浮法PVC反补贴初裁、10-24 CBIC二氧化钛新税令初查",
-    "欧盟": "已核查欧委会贸易救济、EUR-Lex官方近72小时更新，现有跨境电商收费及罐装柑橘续征见10月26期，未发现新增足以重报的决定",
+    "欧盟": "欧委会10月26日正式接受Temu DSA五项纠正措施、跨境电商商品安全风险评估；其他欧盟近期贸易措施已在10月26日报告，无重复。",
     "日本": "已核对METI及财务省特殊关税与贸易管理公开索引，无新的可核验实质行动",
     "韩国": "已检索韩国产业通商资源部、贸易委员会和海关近期公告，未发现可核验新增重大涉华贸易救济决定",
     "加拿大": "已核对CBSA海关公告及加美钢铝汽车磋商；磋商尚无双方宣布的协定",
@@ -142,10 +157,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "补核印度钛白粉2026年第26号税令原文与公开镜像",
-    "复核8项来源及关键词",
-    "终扫过去2小时新公告并完成publication_ready写入",
-    "正式发布与Pages验收"
+    "核对9条、改成发布前可读版本并保存ready状态",
+    "写入当期HTML首页归档",
+    "回读三文件及最终Pages/公开页面验收"
   ],
   "dedup_checked_against": [
     "2026-10-26",
@@ -155,5 +169,11 @@
     "2026-10-20",
     "2026-10-19",
     "2026-10-18"
-  ]
+  ],
+  "final_source_check": {
+    "status": "specific_official_legal_documents_opened",
+    "count": 9,
+    "notes": "Federal Register USTR、Commerce、ITC三类原公告，DGTR PVC初裁PDF(含末页意见期限)，OFAC10月26日FAQ、英国FCDO指定、欧委会Temu官方报道、印度二氧化钛正式Gazette完整转录；印度官方eGazette PDF无法直接打开，以特定公报完整文本镜像并辅以同期独立报道核对"
+  },
+  "terminal_scan": "2026-10-27上午再次检索欧委会、主要法域公告；10月26日欧委会接受Temu整改计划作为新增实质进展，未重复前期征税和调查新闻"
 }
