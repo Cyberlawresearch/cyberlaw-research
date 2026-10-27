@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-27",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-10-27-bentham-panopticon-inspection-house.html",
+  "target_path": "articles/2026-10-27-bentham-panopticon-inspection-house.html",
+  "book": {
+    "author": "Jeremy Bentham",
+    "original_title": "Panopticon; or, the Inspection-House",
+    "publisher": "Thomas Byrne",
+    "year": "1791",
+    "edition": "1791 Dublin edition, complete preface and twenty-one Panopticon letters; separate Postscript Parts I-II distinguished, not claimed as read"
+  },
+  "source_urls": [
+    "https://en.wikisource.org/wiki/Panopticon_or_the_Inspection-House",
+    "https://wellcomecollection.org/works/gcef6eap",
+    "https://commons.wikimedia.org/wiki/File:Panopticon_(IA_10059224bsb).pdf",
+    "https://www.ucl.ac.uk/laws/research/research-projects/bentham-project/about-jeremy-bentham/panopticon",
+    "https://www.ucl.ac.uk/engage/museums-collections/auto-icon-jeremy-bentham/panopticon",
+    "https://www.foucault.info/documents/foucault.disciplineAndPunish.panOpticism/",
+    "https://www.themorgan.org/printed-books/109004"
+  ],
+  "original_verification": "已系统核对书信本前言以及Letter I—XXI的全篇连续论证、建筑细节、监狱承包与劳动机制、各类机构适用及学校篇的反对理由。另据Wellcome书目核实都柏林1791年印本，依据UCL澄清Samuel Bentham的构想与另行出版的Postscript，未声称逐页校勘伦敦再印本或阅读全部Postscript。",
+  "critics": [
+    {
+      "name": "Michel Foucault",
+      "work": "Surveiller et punir: Naissance de la prison (1975), Part III, Panopticism; English translation Discipline and Punish",
+      "url": "https://www.foucault.info/documents/foucault.disciplineAndPunish.panOpticism/",
+      "checked": "直接核对公开的Panopticism原书相应章节内容，说明观察预期、规训与权力关系的具名批评"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html: daily classic full index through 2026-10-26",
+    "classics-history.html: legacy issues 15–35"
+  ],
+  "duplicate_found": false,
+  "sections": 72,
+  "prose_length": 9462,
+  "checked_at": "2026-10-27",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
