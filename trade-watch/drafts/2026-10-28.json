@@ -1,7 +1,7 @@
 {
   "date": "2026-10-28",
   "base_main_sha": "ba562ca9dea931258b8174de2c80ba8f48629fb0",
-  "phase": "publication_ready",
+  "phase": "main_written_pages_deploying",
   "publication_ready": true,
   "items": [
     {
@@ -137,9 +137,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "在main新增trade-watch/issues/2026-10-28.html（第050期共9条）",
-    "更新trade-watch/index.html和archive.html",
-    "回读三文件与核对本次部署"
+    "本次提交367de521对应Pages运行40613204423部署完成后核对",
+    "检查公开正文、首页最新入口、归档首项和来源链接",
+    "保留与本次提交相同的核验结果"
   ],
   "dedup_checked_issue_dates": [
     "2026-10-27",
@@ -154,5 +154,24 @@
   "source_verified": true,
   "source_link_count": 10,
   "final_sweep": "2026-10-28 09:00 Asia/Shanghai 当日公开源终扫完成；10月28早间新报道未有足以替代9条且经一手核验的生效监管动作",
-  "dedup_status": "与2026-10-18至10-27最近8期事件级对比；日本10-27内阁决定不同于10-19答申，其余为独立新增事实"
+  "dedup_status": "与2026-10-18至10-27最近8期事件级对比；日本10-27内阁决定不同于10-19答申，其余为独立新增事实",
+  "publication_attempt": {
+    "stage": "all_three_files_written_and_rechecked",
+    "tool": "mcp__GitHub__create_file + mcp__GitHub__update_file",
+    "target_paths": [
+      "trade-watch/issues/2026-10-28.html",
+      "trade-watch/index.html",
+      "trade-watch/archive.html"
+    ],
+    "main_write_commits": [
+      "eb61ce62cede2db4115575b1d13af83e2ab989ef",
+      "8abee1ac7a01ca39ee640d4f87ae4b83818501b3",
+      "367de5217135e4296112069b4e292834762bb0b9"
+    ],
+    "pages_run_id": 40613204423,
+    "pages_status": "in_progress",
+    "page_verification": "pending",
+    "errors": [],
+    "retries": 0
+  }
 }
