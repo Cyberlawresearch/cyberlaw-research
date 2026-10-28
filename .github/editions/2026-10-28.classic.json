@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-28",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-10-28-grotius-mare-liberum.html",
+  "target_path": "articles/2026-10-28-grotius-mare-liberum.html",
+  "book": {
+    "author": "Hugo Grotius",
+    "original_title": "Mare Liberum, sive de iure quod Batavis competit ad Indicana commercia",
+    "publisher": "Oxford University Press",
+    "year": "1916",
+    "edition": "1916 Magoffin English translation (Scott, editor), based on 1633 Latin edition; DBNL catalogues first Latin publication as 1609, while Scott's note says 1608"
+  },
+  "source_urls": [
+    "https://www.gutenberg.org/files/75962/75962-h/75962-h.htm",
+    "https://www.dbnl.org/tekst/groo001mare01_01/",
+    "https://oll.libertyfund.org/titles/hakluyt-the-free-sea-hakluyt-trans",
+    "https://lawcat.berkeley.edu/record/503744",
+    "https://pegasus.law.columbia.edu/record/1511670"
+  ],
+  "original_verification": "系统核对1916年Oxford University Press完整英文译本的卷首致辞、第I—XIII章与附录，核对1633年拉丁底本的译者说明及DBNL所载1609年拉丁文原版十三章章目；区别原书正文、1916年编辑和翻译补注及后世批评。没有声称逐行校勘1609与1633年全文异文。",
+  "critics": [
+    {
+      "name": "William Welwod",
+      "work": "An Abridgement of All Sea-Lawes (1613), ch. XXVII, Of the Community and Propriety of the Seas",
+      "url": "https://oll.libertyfund.org/titles/hakluyt-the-free-sea-hakluyt-trans",
+      "checked": "核验David Armitage编The Free Sea收录其完整具名批评及格劳秀斯后来的答辩，说明近海、捕鱼和共同使用之争"
+    },
+    {
+      "name": "John Selden",
+      "work": "Mare Clausum, seu De Dominio Maris (1635)",
+      "url": "https://lawcat.berkeley.edu/record/503744",
+      "checked": "核对1635年馆藏原版两卷标题及1916年Scott导论明确转录的两个反对命题：海可成为财产，以及英国王权的海域主张"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html: all listed daily classics through 2026-10-27",
+    "classics-history.html: all 21 exported legacy issues 15-35; Grotius De jure belli ac pacis in legacy issue 18 is a different work"
+  ],
+  "duplicate_found": false,
+  "sections": 59,
+  "prose_length": 7579,
+  "checked_at": "2026-10-28",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
