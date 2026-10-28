@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-28",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-10-28-new-works.html",
+  "page_blob_sha": "8dd81099f828c5ed576ae4cda54fe3eb7a8176d8",
+  "newworks_count": 3,
+  "checked_at": "2026-10-28T12:35:18.621Z",
+  "checks": {
+    "publisher_pages_opened": true,
+    "bibliographic_metadata_verified": true,
+    "history_original_title_search": true,
+    "history_doi_deduplication": true,
+    "version_verified": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "historical_newworks_pages_checked": 70,
+    "range": "2026-08-16 through 2026-10-27",
+    "sections": [
+      "new-works/ dated index pages",
+      "articles/ dated new-works pages including 2026-08-28 evening edition"
+    ],
+    "fields": [
+      "original_title",
+      "DOI",
+      "author",
+      "publication_version"
+    ],
+    "matches_found": 0
+  },
+  "items": [
+    {
+      "cn_title": "AI生成图片的著作权归属：如何证明人类创作控制",
+      "author": "Ines Duhanic",
+      "original_title": "From the Soul Life of the Creator to the Black Box of the AI Chatbot: How to Close the Attribution Gap of AI Output?",
+      "journal": "GRUR International",
+      "publisher": "Oxford University Press",
+      "year": 2026,
+      "publication_date": "2026-10-23",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": "ikag091",
+      "doi": "10.1093/grurint/ikag091",
+      "publisher_page": "https://academic.oup.com/grurint/advance-article/doi/10.1093/grurint/ikag091/8993934",
+      "version": "Publisher online-first journal article; abstract accessible, full text subscription restricted"
+    },
+    {
+      "cn_title": "AI智能体自主支付：授权、反洗钱与交易责任如何调整",
+      "author": "David Restrepo Amariles; Damien Charlotin; Liyun He-Guelton",
+      "original_title": "AI Agents in Payments: Applications, Risks and Regulations",
+      "journal": "European Journal of Risk Regulation",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "publication_date": "2026-05-19",
+      "volume": "17",
+      "issue": "3",
+      "pages": "884–907",
+      "article_number": null,
+      "doi": "10.1017/err.2026.10103",
+      "publisher_page": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/ai-agents-in-payments-applications-risks-and-regulations/C2EF22C4CD9513A9A6459D10680A5D12",
+      "version": "Publisher version of record; journal issue September 2026"
+    },
+    {
+      "cn_title": "算法行政国家的法治约束：荷兰如何监督自动化公共决策",
+      "author": "Jurgen Goossens; Johan Wolswinkel",
+      "original_title": "Law and Digitalisation: The Rise of the Algorithmic Administrative State",
+      "journal": "The Constitutional Identity of The Netherlands (edited book chapter)",
+      "publisher": "T.M.C. Asser Press",
+      "year": 2026,
+      "publication_date": "2026-08-25",
+      "volume": null,
+      "issue": null,
+      "pages": "195–212",
+      "article_number": null,
+      "doi": "10.1007/978-94-6265-779-3_12",
+      "publisher_page": "https://link.springer.com/chapter/10.1007/978-94-6265-779-3_12",
+      "version": "Publisher final open-access book chapter"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": false
+  }
+}
