@@ -1,7 +1,7 @@
 {
   "date": "2026-10-28",
   "base_main_sha": "ba562ca9dea931258b8174de2c80ba8f48629fb0",
-  "phase": "main_written_pages_deploying",
+  "phase": "source_access_repair",
   "publication_ready": true,
   "items": [
     {
@@ -80,7 +80,7 @@
       "deadline": "首批约30吨预计2026-10-30后分批运出，尚未确认实际出货",
       "importance": 4,
       "sources": [
-        "https://www.reuters.com/world/asia-pacific/dtec-granted-permit-ship-raw-rare-earths-malaysia-to-us-research-ceo-says-2026-10-27/"
+        "https://www.businesstimes.com.sg/international/asean/startup-granted-permit-ship-raw-rare-earths-malaysia-us-research-ceo"
       ]
     },
     {
@@ -93,7 +93,7 @@
       "deadline": "2026-10-26法院初步禁令，1260H其他限制未变",
       "importance": 4,
       "sources": [
-        "https://www.reuters.com/legal/litigation/alibaba-wins-injunction-against-pentagon-contract-restrictions-tied-china-2026-10-27/"
+        "https://law.justia.com/cases/federal/district-courts/california/candce/5%3A2026cv06227/472746/51/"
       ]
     },
     {
@@ -120,7 +120,7 @@
       "deadline": "尚无正式实施日期，后续需欧盟机构审议",
       "importance": 3,
       "sources": [
-        "https://www.reuters.com/world/uk/britain-eu-finding-way-through-made-europe-concerns-uk-minister-says-2026-10-27/"
+        "https://www.devdiscourse.com/article/international/3997856-britain-and-eu-finding-way-through-made-in-europe-concerns-uk-minister-says"
       ]
     }
   ],
@@ -137,9 +137,8 @@
   },
   "last_error": null,
   "next_actions": [
-    "本次提交367de521对应Pages运行40613204423部署完成后核对",
-    "检查公开正文、首页最新入口、归档首项和来源链接",
-    "保留与本次提交相同的核验结果"
+    "修复3个因自动HTTP限制的新闻来源链接，加入阿里巴巴法院原始裁定",
+    "在main修订当期正文，等待最终提交Pages部署及来源诊断"
   ],
   "dedup_checked_issue_dates": [
     "2026-10-27",
@@ -172,6 +171,17 @@
     "pages_status": "in_progress",
     "page_verification": "pending",
     "errors": [],
-    "retries": 0
+    "retries": 0,
+    "source_check": {
+      "run_id": 40613561241,
+      "pages_ok": 3,
+      "source_ok": 6,
+      "source_blocked": 4,
+      "reasons": [
+        "FT 403",
+        "Reuters 401 three articles"
+      ],
+      "manual_source_verification": "All four original article pages independently opened via external search. To improve direct source usability, substitute three with publicly accessible original court filing and licensed Reuters republications; retain FT primary reporting with UK official tax notice."
+    }
   }
 }
