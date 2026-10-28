@@ -3,13 +3,72 @@
   "base_main_sha": "ba562ca9dea931258b8174de2c80ba8f48629fb0",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "date": "2026-10-27",
+      "jurisdiction": "日本",
+      "agency": "财务省、内阁",
+      "title": "日本内阁决定对中国及台湾地区镍系冷轧不锈钢征收五年反倾销税",
+      "stage": "10月27日内阁已决定，10月30日拟公布政令，10月31日起正式实施；现行3.6%–42.1%临时税率继续至转正",
+      "impact": "核实产品成分规格、生产商、进口税负和日本交货合同",
+      "deadline": "2026-10-31至2031-10-30",
+      "importance": 5,
+      "sources": [
+        "https://www.mof.go.jp/policy/customs_tariff/trade/plan/futou/ka20261027.html"
+      ],
+      "new_fact": "10月19日仅为审议会建议，本次为10月27日内阁正式决定"
+    },
+    {
+      "date": "2026-10-27",
+      "jurisdiction": "美国",
+      "agency": "OFAC",
+      "title": "美国OFAC对Extreme Networks违反对俄制裁行为达成152.97万美元和解",
+      "stage": "正式民事执法和解，涉及九次供应俄罗斯军工企业网络设备与服务",
+      "impact": "核对俄罗斯客户终端实际控制、50%规则、终端用途及软件服务出口",
+      "deadline": "2026-10-27公布并已达成和解",
+      "importance": 5,
+      "sources": [
+        "https://ofac.treasury.gov/recent-actions/20261027"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "jurisdiction": "印度",
+      "agency": "DGTR",
+      "title": "印度明确中国甘氨酸反倾销调查涵盖所有等级，不另设产品控制编码",
+      "stage": "调查程序产品范围决定，尚无临时或最终征税",
+      "impact": "工业级、食品级、药用级各类甘氨酸出口商按统一涉案范围准备数据与抗辩",
+      "deadline": "10月9日原PCN意见期已经结束，后续调查期限待另行公告",
+      "importance": 4,
+      "sources": [
+        "https://dgtr.gov.in/sites/default/files/2026-10/PUC%20PCN%20notificatiion%20Glycine%20ADD.pdf"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "jurisdiction": "加拿大/阿联酋",
+      "agency": "加拿大总理办公室",
+      "title": "加拿大和阿联酋正式签署全面经济伙伴关系协定，预计2027年生效",
+      "stage": "已签署尚未生效，充分实施后覆盖加拿大对阿联酋99%以上出口",
+      "impact": "加拿大原产商品未来准入及原产地证明；中国企业不可自动享受加拿大原产优惠",
+      "deadline": "预计2027年生效，正式日期待完成批准程序",
+      "importance": 4,
+      "sources": [
+        "https://www.pm.gc.ca/en/news/news-releases/2026/10/27/prime-minister-carney-launches-new-strategic-partnership-uae"
+      ]
+    }
+  ],
+  "coverage": {
+    "美国": "已查OFAC、Federal Register、USTR、USITC；确认10月27日OFAC执法和10月26日法院命令",
+    "日本": "已查财务省、经产省；10月27日内阁决定构成相对10月19日答申的新法律阶段",
+    "印度": "已查DGTR；10月27日甘氨酸产品范围与PCN新程序公告",
+    "加拿大": "已查政府总理公告和CBSA；10月27日加阿CEPA签署"
+  },
   "last_error": null,
   "next_actions": [
-    "核对2026年10月25日至28日官方通报与规则",
-    "与最近7期逐事件去重",
-    "逐条打开原始来源并检查链接",
-    "生成并正式发布第050期"
+    "核验英国法院和欧盟市场准入最新动态",
+    "核验马来西亚稀土出口许可与美国法院决定",
+    "保存其余候选并与最近7期去重",
+    "逐条再检查原始来源和最终检索，发布"
   ]
 }
