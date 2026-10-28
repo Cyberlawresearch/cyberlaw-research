@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>第41课｜云、边、端：模型运行位置如何影响速度、数据与责任？｜网信法技术基础</title>
+<link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../briefs.html">全球科技法简报</a><a href="../papers.html">域外法学论文精读</a><a href="../classics.html">法学经典著作</a><a href="../new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 41 · DEPLOYMENT &amp; INFRASTRUCTURE · 2026.10.28</div><h1>云、边、端：模型运行位置如何影响速度、数据与责任？</h1><p class="tech-lead">今日问题：同一种人工智能功能，放在远端机房、附近服务器或用户设备上运行，有什么不同？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus"><div><strong>它是什么</strong><p>云、边、端，是按人工智能推理主要在哪里进行来区分的部署方式。云端通常使用集中管理的远程计算资源；边缘计算把任务放到靠近数据产生或使用地点的节点；端侧计算则在手机、电脑或专用终端上运行模型。这是部署位置的区别，不是三种互不相容的模型。</p></div><div><strong>一个生活例子</strong><p>政务大厅的自助终端要把群众的语音问题转成文字。采用云端方案，语音经网络发送给远程服务器处理；采用边缘方案，可交由大厅所在园区或附近网络节点处理；采用端侧方案，终端自身完成识别。三种方式都能提供功能，但音频经过的设备和网络不同。</p></div></section>
+<section class="lesson-section"><h2>对照图：同一段语音，走了三条不同的路</h2><div class="visual-board" role="group" aria-label="云、边、端三种推理方式中语音数据和计算节点的对照"><div class="visual-title">以下仅比较语音识别主要计算的位置，展示典型路径；实际系统还可能同时连接其他服务。</div><div class="compare-grid"><div class="compare-card"><b>云端｜集中计算</b><p>大厅终端 → 网络 → 远程云机房 → 识别结果返回</p><p><strong>主要计算：</strong>远端服务器</p><p><strong>要核对：</strong>机房区域与网络传输</p></div><div class="compare-card"><b>边缘｜就近计算</b><p>大厅终端 → 局域网或接入网 → 附近计算节点 → 结果返回</p><p><strong>主要计算：</strong>园区服务器或网络边缘节点</p><p><strong>要核对：</strong>节点位置及上行数据</p></div><div class="compare-card"><b>端侧｜设备内计算</b><p>大厅终端 → 本机模型识别 → 本机显示结果</p><p><strong>主要计算：</strong>终端处理器</p><p><strong>要核对：</strong>设备日志及联网功能</p></div></div><p class="tiny-note">关键区别不是界面长什么样，而是原始语音发送到哪里、由哪台设备计算，以及识别结果和日志是否继续传输。</p></div>
+<p>为什么要分开部署？首先是网络往返与算力条件。远程云机房通常便于集中配置较大算力，多个业务可共享资源，但请求要经过网络；边缘节点靠近现场，可减少部分传输距离，适合需要较快响应的任务；端侧不必为每一次计算都连接远端服务器，断网时也可能继续运行。不过，最终速度还取决于设备性能、模型大小、网络状况和排队情况，不能简单断定端侧一定最快。</p>
+<p>其次，部署位置决定数据最初经过哪些环节，却不能单独证明数据没有外传。云端处理不必然发生跨境传输，云机房可能就在境内；边缘处理也不一定完全留在现场，附近节点可以由外部服务商运营；即使语音识别在终端完成，应用也可能另行上传识别文本、使用日志或故障信息。为处理复杂请求，有些系统还会在本地计算不足时调用云端模型，称为<strong>云端回退</strong>。</p>
+<p>再次，部署改变了管理分工。云端由谁配置服务器与访问控制、边缘节点由谁维护、端侧设备由谁更新模型和修补漏洞，都影响实际责任。端侧设备数量多，版本更新和丢失管理可能更困难；边缘节点分散，也需要统一监控与权限管理。把推理放得更近，并不等于安全措施可以减少。</p>
+<div class="law-bridge"><h3>新词备注：边缘节点与云端回退</h3><p>边缘节点，是设在数据源附近、承担一定计算任务的服务器或网关，可以在机构内部，也可以在运营商网络中。云端回退，是本地设备不能完成某项任务时，改由远端服务接手的机制。是否回退、传送什么数据，应由系统实际配置决定。</p></div></section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list"><div class="myth"><b>误解 01</b><span>“放到云上就是数据出境。”云计算说的是资源组织方式，是否出境还要看数据实际发送、访问和存储的位置。</span></div><div class="myth"><b>误解 02</b><span>“端侧运行就完全不联网。”本机推理与软件更新、统计日志、联网检索可以同时存在，须逐项检查。</span></div><div class="myth"><b>误解 03</b><span>“边缘计算必然最快也最安全。”它能减少部分网络传输，但算力、运维和节点访问控制同样影响结果。</span></div></div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>先查实际数据路径，再判断处理义务</h3><p>采购政务或医疗人工智能服务时，不能仅凭“本地部署”“边缘计算”或“端侧智能”的宣传描述认定数据留存在本地。应分别核对原始输入、模型推理、结果存储、调用日志、远程运维、软件更新和云端回退，画出实际的数据流向，并确认处理主体、服务器所在地及访问权限。</p><p>如果敏感信息在终端识别后又被上传用于故障排查，仍需分析上传行为的必要性、处理依据和安全措施；如涉及跨境提供，还须根据实际数据与接收方关系判断适用的规则。合同和验收可要求提交部署拓扑、数据流图及联网功能清单，并在版本变更时更新。</p></div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid"><div class="research-card"><small>法学论文问题</small><h3>混合部署中，谁对跨节点的数据处理承担责任？</h3><p>从输入、边缘推理、云端回退和日志留存的实际控制关系，分析义务与责任如何分配。</p></div><div class="research-card"><small>智库报告问题</small><h3>公共部门如何验收“数据在本地处理”的技术承诺？</h3><p>设计包含网络流量、节点位置、日志传输与回退行为的可复核测试项目。</p></div></div></section>
+<section class="lesson-section"><h2>可靠来源</h2><ol class="source-links"><li id="s1"><a href="https://csrc.nist.gov/pubs/sp/800/145/final">NIST, The NIST Definition of Cloud Computing (SP 800-145, 2011)</a>。解释云计算的资源共享、按需使用及部署模型。</li><li id="s2"><a href="https://www.etsi.org/technical-groups/mec/">ETSI, Multi-access Edge Computing (MEC)</a>。介绍网络边缘计算与不同边缘节点部署方式。</li><li id="s3"><a href="https://ai.google.dev/gemma/docs/integrations/mobile">Google AI for Developers, Deploy Gemma on mobile devices</a>。提供在移动终端执行模型推理的技术实例。</li><li id="s4"><a href="https://learn.microsoft.com/en-us/azure/iot-edge/offline-capabilities">Microsoft Learn, Operate Azure IoT Edge devices offline</a>。说明边缘设备离线运行、缓存及重新联网后的数据上送。</li></ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第42课</small><p>第42课讲模型服务链：一次人工智能请求经过哪些服务，谁对哪一环负责？</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main><footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
