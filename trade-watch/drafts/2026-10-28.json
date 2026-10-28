@@ -1,7 +1,7 @@
 {
   "date": "2026-10-28",
   "base_main_sha": "ba562ca9dea931258b8174de2c80ba8f48629fb0",
-  "phase": "researching",
+  "phase": "dedup_review",
   "publication_ready": false,
   "items": [
     {
@@ -56,19 +56,100 @@
       "sources": [
         "https://www.pm.gc.ca/en/news/news-releases/2026/10/27/prime-minister-carney-launches-new-strategic-partnership-uae"
       ]
+    },
+    {
+      "date": "2026-10-26",
+      "jurisdiction": "美国/欧盟",
+      "agency": "美国贸易代表办公室",
+      "title": "美国USTR警告空客欧洲投资银行贷款可能影响欧美大型民机关税停征协议",
+      "stage": "10月26日正式政策表态，未启动新的关税、调查或报复措施",
+      "impact": "航空制造商与产业链监测现行零或低附加税与合同关税调整条款的适用，勿把可能恢复措施当作已生效关税",
+      "deadline": "无新正式征税日期",
+      "importance": 4,
+      "sources": [
+        "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/october/ambassador-greer-issues-statement-status-us-eu-detente-following-record-breaking-loan-european"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "jurisdiction": "马来西亚/美国",
+      "agency": "马来西亚主管部门（许可据企业披露）",
+      "title": "马来西亚稀土出口研究许可获批，据DTEC称最多可向美国发送700吨",
+      "stage": "企业披露取得有条件研究许可证，具体许可文书未公开，不代表商业原矿全面放开",
+      "impact": "稀土加工验证、上游原矿供应商和技术处理合同应核对研究目的、出口数量、海关许可及最终用途",
+      "deadline": "首批约30吨预计2026-10-30后分批运出，尚未确认实际出货",
+      "importance": 4,
+      "sources": [
+        "https://www.reuters.com/world/asia-pacific/dtec-granted-permit-ship-raw-rare-earths-malaysia-to-us-research-ceo-says-2026-10-27/"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "jurisdiction": "美国",
+      "agency": "美国联邦地区法院",
+      "title": "美国法院就阿里巴巴及五角大楼供应商游说关系发布初步禁令",
+      "stage": "10月26日初步禁令，不撤销1260H列名及相关采购禁令",
+      "impact": "美国国防供应链服务合同和企业之间共用游说服务商的风险识别；2027年间接采购限制依原规则评估",
+      "deadline": "2026-10-26法院初步禁令，1260H其他限制未变",
+      "importance": 4,
+      "sources": [
+        "https://www.reuters.com/legal/litigation/alibaba-wins-injunction-against-pentagon-contract-restrictions-tied-china-2026-10-27/"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "jurisdiction": "英国",
+      "agency": "英国贸易救济署与英国法院",
+      "title": "卡特彼勒徐州公司在英国法院挑战对中国挖掘机18.81%反倾销税",
+      "stage": "司法审查实体争议正在审理，未裁判亦未暂缓现行征税",
+      "impact": "出口英国11至不足80吨挖掘机企业应继续按现行差别税率核价报关，追踪判决对税额计算的影响",
+      "deadline": "10月27日报道审理，尚无终局判决或新的适用日期",
+      "importance": 4,
+      "sources": [
+        "https://www.ft.com/content/71e415ce-87e9-4c29-bce2-b7f3803ac6b9",
+        "https://www.constructionbriefing.com/news/cat-challenges-uk-tariffs-on-chinese-made-excavators-in-court/8134812.article"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "jurisdiction": "英国/欧盟",
+      "agency": "英国商务与贸易大臣、欧盟拟议政策",
+      "title": "英国与欧盟磋商“欧洲制造”采购优惠政策的英国适用安排",
+      "stage": "部长政策表态及磋商，不是已出台的欧盟采购限制",
+      "impact": "中国电动车、电池、清洁技术供应商不宜提前假定英国组装即可获得欧洲采购资格，需依据未来正式原产地和当地含量规则",
+      "deadline": "尚无正式实施日期，后续需欧盟机构审议",
+      "importance": 3,
+      "sources": [
+        "https://www.reuters.com/world/uk/britain-eu-finding-way-through-made-europe-concerns-uk-minister-says-2026-10-27/"
+      ]
     }
   ],
   "coverage": {
     "美国": "已查OFAC、Federal Register、USTR、USITC；确认10月27日OFAC执法和10月26日法院命令",
-    "日本": "已查财务省、经产省；10月27日内阁决定构成相对10月19日答申的新法律阶段",
+    "日本": "10月27日内阁决定新的法律阶段，相对10月19日答申实质更新",
     "印度": "已查DGTR；10月27日甘氨酸产品范围与PCN新程序公告",
-    "加拿大": "已查政府总理公告和CBSA；10月27日加阿CEPA签署"
+    "加拿大": "已查政府总理公告和CBSA；10月27日加阿CEPA签署",
+    "欧盟": "查欧委会贸易、EUR-Lex及相关外交贸易安排；新增USTR空客融资争议及英国欧盟制造政策磋商，均未形成新税令",
+    "英国": "查GOV.UK TRA/ECJU和法院新闻；涉及中国挖掘机反倾销诉讼及欧盟采购政策磋商",
+    "韩国": "查产业通商资源部、贸易委员会及韩语官方公报，未收录已发布阶段重复或无重要新监管动作",
+    "澳大利亚": "查反倾销委员会最新案件及资源出口，10月23日玻璃棉案已经10月24日刊登，避免重复",
+    "马来西亚": "核对10月27日稀土条件出口许可企业披露及官方规则状态"
   },
   "last_error": null,
   "next_actions": [
-    "核验英国法院和欧盟市场准入最新动态",
-    "核验马来西亚稀土出口许可与美国法院决定",
-    "保存其余候选并与最近7期去重",
-    "逐条再检查原始来源和最终检索，发布"
+    "最终复查所有9项原始来源、准确法律阶段和DOM解析链接",
+    "再次终扫新闻源",
+    "回读断点并改为publication_ready=true",
+    "创建main当期完整HTML并更新首页归档验收"
+  ],
+  "dedup_checked_issue_dates": [
+    "2026-10-27",
+    "2026-10-26",
+    "2026-10-25",
+    "2026-10-24",
+    "2026-10-21",
+    "2026-10-20",
+    "2026-10-19",
+    "2026-10-18"
   ]
 }
