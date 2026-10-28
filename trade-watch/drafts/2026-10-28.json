@@ -1,7 +1,7 @@
 {
   "date": "2026-10-28",
   "base_main_sha": "ba562ca9dea931258b8174de2c80ba8f48629fb0",
-  "phase": "main_source_revised_pages_deploying",
+  "phase": "published_with_source_access_diagnostic_exception",
   "publication_ready": true,
   "items": [
     {
@@ -137,8 +137,8 @@
   },
   "last_error": null,
   "next_actions": [
-    "确认最终提交d7462f对应Pages运行40613878847完成",
-    "确认最终校验首页、归档、正文与来源"
+    "保留两条因站点访问限制而返回403的自动诊断记录；原始判决和FT报道已经人工打开核验，不虚称自动检查全部通过",
+    "后续照常按北京时间每天9点执行"
   ],
   "dedup_checked_issue_dates": [
     "2026-10-27",
@@ -167,21 +167,31 @@
       "8abee1ac7a01ca39ee640d4f87ae4b83818501b3",
       "367de5217135e4296112069b4e292834762bb0b9"
     ],
-    "pages_run_id": 40613204423,
-    "pages_status": "in_progress",
-    "page_verification": "original three Pages checked 200 by source diagnostics; revised issue awaiting new Pages deploy",
+    "pages_run_id": 40613878847,
+    "pages_status": "success",
+    "page_verification": "final commit Pages deploy passed; publication guard passed; all three public pages returned 200 and match repository DOM, including 9 cards; 8/10 external URLs pass runner, two have 403",
     "errors": [],
     "retries": 1,
     "source_check": {
-      "run_id": 40613561241,
+      "run_id": 40614209326,
+      "status": "failure",
       "pages_ok": 3,
-      "source_ok": 6,
-      "source_blocked": 4,
-      "reasons": [
-        "FT 403",
-        "Reuters 401 three articles"
-      ],
-      "manual_source_verification": "All four original article pages independently opened via external search. To improve direct source usability, substitute three with publicly accessible original court filing and licensed Reuters republications; retain FT primary reporting with UK official tax notice."
+      "pages_http_status": 200,
+      "news_count": 9,
+      "sources_ok": 8,
+      "sources_count": 10,
+      "sources_blocked": [
+        {
+          "url": "https://law.justia.com/cases/federal/district-courts/california/candce/5%3A2026cv06227/472746/51/",
+          "http": 403,
+          "note": "Court primary source manually opened and verified; automated runner denied"
+        },
+        {
+          "url": "https://www.ft.com/content/71e415ce-87e9-4c29-bce2-b7f3803ac6b9",
+          "http": 403,
+          "note": "Financial Times article manually opened and verified; access restrictions for automation"
+        }
+      ]
     },
     "latest_main_commit": "d7462f792f329d87d2888c997bab467fea1c20cf",
     "error_evidence": {
@@ -194,6 +204,8 @@
       ],
       "source_result": "6/10 HTTP checks passed; 4 blocked by origin robots/access controls rather than wrong news item",
       "note": "HTML was published correctly; corrective source references added after web verification; no weakening of test workflow"
-    }
+    },
+    "publication_guard_run_id": 40614209306,
+    "publication_guard_status": "success"
   }
 }
