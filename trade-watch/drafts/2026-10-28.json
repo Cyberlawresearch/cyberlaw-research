@@ -1,8 +1,8 @@
 {
   "date": "2026-10-28",
   "base_main_sha": "ba562ca9dea931258b8174de2c80ba8f48629fb0",
-  "phase": "dedup_review",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "date": "2026-10-27",
@@ -137,10 +137,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "最终复查所有9项原始来源、准确法律阶段和DOM解析链接",
-    "再次终扫新闻源",
-    "回读断点并改为publication_ready=true",
-    "创建main当期完整HTML并更新首页归档验收"
+    "在main新增trade-watch/issues/2026-10-28.html（第050期共9条）",
+    "更新trade-watch/index.html和archive.html",
+    "回读三文件与核对本次部署"
   ],
   "dedup_checked_issue_dates": [
     "2026-10-27",
@@ -151,5 +150,9 @@
     "2026-10-20",
     "2026-10-19",
     "2026-10-18"
-  ]
+  ],
+  "source_verified": true,
+  "source_link_count": 10,
+  "final_sweep": "2026-10-28 09:00 Asia/Shanghai 当日公开源终扫完成；10月28早间新报道未有足以替代9条且经一手核验的生效监管动作",
+  "dedup_status": "与2026-10-18至10-27最近8期事件级对比；日本10-27内阁决定不同于10-19答申，其余为独立新增事实"
 }
