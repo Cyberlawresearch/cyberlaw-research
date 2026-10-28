@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-28",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-28-khan-amazons-antitrust-paradox.html",
+  "selection": "Lina M. Khan, Amazon’s Antitrust Paradox",
+  "bibliography": {
+    "type": "article",
+    "author": "Lina M. Khan",
+    "originalTitle": "Amazon’s Antitrust Paradox",
+    "journal": "Yale Law Journal",
+    "year": "2017",
+    "volume": "126",
+    "issue": "3",
+    "pages": "710–805",
+    "doi": "",
+    "url": "https://yalelawjournal.org/note/amazons-antitrust-paradox",
+    "cnTitle": "亚马逊的反垄断悖论：低价何以掩盖平台市场力量"
+  },
+  "versions": {
+    "full_text": "Read Yale Law Journal publisher's complete text from introduction through Parts I–VI and conclusion, with original PDF table of contents and notes cross-checked; published PDF 96 pages",
+    "publication": "Formal Yale Law Journal Note, 2017, vol.126 no.3 pp.710–805. No verified DOI; none supplied."
+  },
+  "sources": [
+    "https://yalelawjournal.org/note/amazons-antitrust-paradox",
+    "https://www.yalelawjournal.org/pdf/e.710.Khan.805_zuvfyyeh.pdf",
+    "https://www.jstor.org/stable/i40206442",
+    "https://scholarship.law.columbia.edu/faculty_scholarship/2808/"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-10-16-rahman-informational-infrastructure.html"
+  ],
+  "timeline": null,
+  "body_length": 4497,
+  "checked_at": "2026-10-28T12:01:45.678Z",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}
