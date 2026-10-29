@@ -1,7 +1,7 @@
 {
   "date": "2026-10-29",
   "base_main_sha": "2849fb01b508895dc023049908b0b546b1b5fd56",
-  "phase": "publication_ready",
+  "phase": "published_main_awaiting_pages",
   "publication_ready": true,
   "items": [
     {
@@ -176,5 +176,19 @@
       "selected ASEAN"
     ],
     "finding": "新机器人232布告和华大三企列名公告均已收录；10月22日风机232旧公告及其他旧期重复未收录；美国ITC床垫10月27日正式刊载单列，注明裁定于10月22日作出"
+  },
+  "publication_attempt": {
+    "stage": "main_three_files_verified_pages_in_progress",
+    "final_main_commit": "e21a2ae4d692cde1a686f8f261f42bd3a365139b",
+    "main_files": [
+      "trade-watch/issues/2026-10-29.html",
+      "trade-watch/index.html",
+      "trade-watch/archive.html"
+    ],
+    "main_verified": true,
+    "pages_workflow_run_id": 40799030332,
+    "pages_workflow_status": "in_progress",
+    "source_links_dom_verified_in_main": true,
+    "source_checks_pending": true
   }
 }
