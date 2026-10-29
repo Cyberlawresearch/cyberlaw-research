@@ -1,7 +1,7 @@
 {
   "date": "2026-10-29",
   "base_main_sha": "2849fb01b508895dc023049908b0b546b1b5fd56",
-  "phase": "researching_verified_seven",
+  "phase": "sources_verified",
   "publication_ready": false,
   "items": [
     {
@@ -24,9 +24,9 @@
       "date": "2026-10-28",
       "jurisdiction": "美国",
       "agency": "国土安全部／强迫劳动执法工作组（FLETF）",
-      "title": "美国将华大基因、华大智造等三家中国企业增列UFLPA实体清单",
-      "stage": "10月28日正式提交《联邦公报》公开预览，拟10月29日刊登并更新清单；名单具有禁止进口的可反驳推定法律效果",
-      "summary": "美国国土安全部10月28日公布UFLPA实体清单更新，增列BGI Genomics Co., Ltd.（华大基因）、MGI Tech Co., Ltd.（华大智造）及Shenzhen BGI Technology Co., Ltd.（深圳华大科技，又名BGI Group或BGI Holdings），其中两家同时被纳入另一项来源材料相关子清单。公告预计10月29日正式刊载。《防止强迫维吾尔人劳动法》对所列企业全部或部分生产商品设有强迫劳动可反驳推定，进口商须经海关审查才能争取放行。此为名单变化，并非已对上述企业作出司法刑事定罪。",
+      "title": "美国公布UFLPA实体名单更新，华大基因、华大智造等三家企业拟于10月29日增列",
+      "stage": "10月28日公布、拟于10月29日正式刊载并适用的UFLPA实体名单更新；列名带来进口可反驳推定，并非刑事有罪判决",
+      "summary": "美国国土安全部10月28日预告UFLPA实体清单更新，计划在10月29日正式增列BGI Genomics Co., Ltd.（华大基因）、MGI Tech Co., Ltd.（华大智造）及Shenzhen BGI Technology Co., Ltd.（深圳华大科技，又名BGI Group或BGI Holdings），其中两家同时被纳入另一项来源材料相关子清单。公告拟10月29日正式刊载。《防止强迫维吾尔人劳动法》对所列企业全部或部分生产商品设有强迫劳动可反驳推定，进口商须经海关审查才能争取放行。此为名单变化，并非已对上述企业作出司法刑事定罪。",
       "scope": "上述三家企业及其生产的基因测序仪器、试剂、测试材料、相关零部件和可能由其参与制造的美国进口商品。",
       "impact": "美国进口商和中国医疗器械及生物技术供应商须更新供应商及上游零部件名单筛查，核对产品生产环节有无新增列名企业参与，保存采购凭证、生产批次及物料溯源记录，应对CBP扣留、拒绝放行和供货合同履行风险。",
       "deadline": "公告2026-10-28进入公开预览，计划2026-10-29在《联邦公报》正式刊登；名单更新及海关适用以正式公告为准。",
@@ -42,10 +42,10 @@
       "agency": "美国商务部／国际贸易署",
       "title": "美国正式对中国产厢式拖车及其组件发布反倾销、反补贴税令",
       "stage": "10月28日正式发布AD/CVD税令；海关按ITC最终损害认定公告刊登日恢复保证金和暂停清算，涉及临时措施结束后的豁免空档",
-      "summary": "美国商务部10月28日发布中国产厢式拖车及其组件反倾销和反补贴税令。中国统一反倾销加权倾销幅度130.86%，扣除补贴抵减后的反倾销现金保证金率129.73%；反补贴税令公布的中国企业及其他生产商比率134.75%。此为10月20日公布的产业损害终裁之后新增的正式征税阶段，并非重复调查裁决。",
+      "summary": "美国商务部10月28日发布中国产厢式拖车及其组件反倾销和反补贴税令。中国统一反倾销加权倾销幅度130.86%，扣除补贴抵减后的反倾销现金保证金率129.73%；反补贴税令公布的中国企业及其他生产商比率134.75%。此为10月20日已在前期报道的ITC最终损害认定之后，新增的正式征税税令阶段，并非重复调查裁决。",
       "scope": "中国原产厢式货运拖车及税令列明的相关半挂车组件，相关美国进口商和中国制造商。",
       "impact": "美国进口商须分别按适用AD和CVD保证金率重新计算税负，核对税令的HTSUS编码、生产企业和原产地；已到港或在途货物须按税令有关临时措施期限与保证金恢复日核对报关批次，避免把临时措施空档误认为永久免税。",
-      "deadline": "正式税令2026-10-28公布；保证金恢复以ITC最终损害决定在《联邦公报》的公布日为准；CVD临时措施于10月2日届满，AD临时措施于10月15日届满。",
+      "deadline": "2026-10-28正式税令；AD对10月16日起、CVD对10月3日起至ITC终局损害公告刊登前的部分货物，临时措施结束后的空档不计入相应税款；后续恢复保证金以ITC终局损害公告刊登日为准",
       "importance": 5,
       "sources": [
         "https://public-inspection.federalregister.gov/2026-21929.pdf"
@@ -130,9 +130,10 @@
   },
   "last_error": null,
   "next_actions": [
-    "逐项复核7条原始来源以及HTML DOM解析的真实地址",
-    "补做结束前近期终扫",
-    "写入最终研究断点并发布No.051"
+    "完成最后一轮近时效终扫并保存",
+    "设置publication_ready并回读",
+    "GitHub main正文-首页-归档顺序正式发布",
+    "Actions/Pages线上验收"
   ],
   "dedup_checked_issue_dates": [
     "2026-10-28",
@@ -143,5 +144,22 @@
     "2026-10-21",
     "2026-10-20"
   ],
-  "dedup_status": "逐事件核对前7个已发布期次；厢式拖车在上一周为ITC最终损害，本期新增商部正式双反征税税令；其他六项属未收录独立事实，排除旧政策和无新变化"
+  "dedup_status": "逐事件核对前7个已发布期次；厢式拖车在上一周为ITC最终损害，本期新增商部正式双反征税税令；其他六项属未收录独立事实，排除旧政策和无新变化",
+  "source_verified": true,
+  "source_link_count": 7,
+  "source_verification_details": {
+    "links": [
+      "https://www.whitehouse.gov/presidential-actions/2026/10/adjusting-imports-of-robotics-industrial-machinery-and-their-parts-and-components-into-the-united-states/",
+      "https://public-inspection.federalregister.gov/2026-22094.pdf",
+      "https://public-inspection.federalregister.gov/2026-21929.pdf",
+      "https://www.gov.uk/government/consultations/call-for-input-on-goods-for-cost-of-living-tariff-suspensions/outcome/government-response-call-for-input-on-goods-for-cost-of-living-tariff-suspensions",
+      "https://public-inspection.federalregister.gov/2026-22024.pdf",
+      "https://www.govinfo.gov/content/pkg/FR-2026-10-27/html/2026-21824.htm",
+      "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/october/america-first-seafood-strategy-charts-course-restoring-us-seafood-dominance"
+    ],
+    "all_original_pages_opened": true,
+    "pdf_screen_reviewed": true,
+    "excluded_source": "购物车私营律所请愿稿原始链接返回403且法律重要度较低，已从本期移除",
+    "url_dom_note": "7条来源URL无查询参数；HTML外链href需按HTML转义后DOM回读确认"
+  }
 }
