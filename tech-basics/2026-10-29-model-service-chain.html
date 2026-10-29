@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>第42课｜模型服务链：一次人工智能请求经过哪些服务，谁对哪一环负责？｜网信法技术基础</title>
+<link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../briefs.html">全球科技法简报</a><a href="../papers.html">域外法学论文精读</a><a href="../classics.html">法学经典著作</a><a href="../new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 42 · DEPLOYMENT &amp; INFRASTRUCTURE · 2026.10.29</div><h1>模型服务链：一次人工智能请求经过哪些服务，谁对哪一环负责？</h1><p class="tech-lead">今日问题：界面上只有一次提问，后台为什么可能经过多种服务，出了问题又怎样找到具体环节？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus"><div><strong>它是什么</strong><p><b>模型服务链</b>，是一次人工智能请求从业务应用发出，到完成接入、权限检查、任务分配、模型计算并返回结果所经过的服务和调用关系。使用者看到的是一个回答，后台可能由不同程序、服务器和企业分别承担其中几步。服务链描述的是实际处理过程，不等同于模型训练过程，也不必然等同于企业的合同供应链。</p></div><div><strong>一个生活例子</strong><p>医院内部的智能问答系统收到“这份检查报告中的指标是什么意思”。医院应用先核验用户是否有权查看报告，接入服务再把问题转给指定模型；如果启用了院内知识检索，系统可能先取得相关说明，随后调用推理服务器生成文字，再经业务系统展示。一次回答看似出自一个模型，实际上涉及多个环节。</p></div></section>
+<section class="lesson-section"><h2>机制图：一次请求的典型处理路径</h2><div class="visual-board" role="group" aria-label="人工智能请求经业务应用、接入鉴权、路由编排、模型推理的服务路径">
+<div class="visual-title">以下是常见的分层示例，不是所有系统都具有完全相同的组件；箭头表示请求方向。</div>
+<div class="flow">
+<div class="flow-box"><strong>① 业务应用</strong><span>接收问题、确定业务用途</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>② 接入与鉴权</strong><span>识别调用者、限流、校验权限</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>③ 路由与编排</strong><span>选择模型或附加检索步骤</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>④ 模型推理</strong><span>排队、计算并形成输出</span></div>
+</div>
+<p class="tiny-note">结果再沿调用路径返回应用界面；各节点可能记录请求编号、错误、耗时等信息。知识检索、内容检查或人工复核是按需要增加的环节，不一定发生于每次请求。</p>
+</div>
+<p>首先，用户提交的问题通常由业务应用接收。接入服务可能通过<b>API网关</b>统一处理身份识别、调用次数限制和转发。这里的网关是管理请求入口的程序，并不是负责回答问题的模型。即使模型本身运行正常，网关设置错误也可能使未经授权的请求进入系统，或者把合法请求挡在外面。</p>
+<p>其次，系统需要决定把请求送给哪个服务。这一步称为<b>路由</b>；若请求还须依次经过知识检索、提示词组装或其他处理，安排这些步骤的逻辑称为<b>编排</b>。有些系统按请求类型选择不同模型，也有系统把多个模型组合使用。KServe 的推理图支持顺序、条件选择和流量分配等方式；这说明服务链可能分叉，并非总是一条固定直线。</p>
+<p>进入<b>推理服务</b>后，请求可能等待计算资源，再由模型处理输入并生成输出。推理服务除了加载模型，还要负责并发调度、资源分配与结果返回。NVIDIA Triton 的模型组合机制展示了预处理、推理、后处理可以怎样连接。最终响应还可能经过业务规则检查，才送回界面。分层设计便于扩容和维护，但每增加一个环节，也可能增加数据接触点和故障位置。</p>
+<p>查找故障时，可以给一次请求分配贯穿各服务的<b>追踪标识</b>，将各环节的调用时间和结果关联起来。OpenTelemetry 的追踪机制能够呈现不同调用的先后及耗时；但记录完整问题或回答可能包含个人信息，不应把“便于排障”理解为必须无差别保存原文。</p>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“用户只调用一个模型，就只有一个服务商处理数据。”前端统一入口不代表后台没有检索服务、网关、日志系统或第三方算力，应核对真实调用关系。</span></div>
+<div class="myth"><b>误解 02</b><span>“有一份模型安全评测报告，就覆盖整个服务链。”模型评测不自动证明入口鉴权、外部检索、日志管理和其他服务都安全。</span></div>
+<div class="myth"><b>误解 03</b><span>“请求成功返回，就能知道每一步由谁处理。”没有跨服务追踪和配置记录，事后仍可能无法确定具体处理节点；追踪也不意味着应保存所有输入内容。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>先找实际控制节点，再判断各方义务</h3>
+<p>医院、政务部门或企业采购人工智能应用时，应要求说明业务应用、网关、检索服务、模型服务与日志系统分别由谁运营，数据实际传往哪里，谁能读取输入、输出及运行记录。提供模型、承载算力、开发应用和决定业务用途的主体未必相同，其处理目的、控制权限及合同职责也不能混为一谈。</p>
+<p>例如，若报告内容被发送给外部推理服务，需要核实接收方、数据范围及处理依据；若故障排查系统额外保存了患者问题，则须单独检查日志留存的必要性、权限与期限。发生错误输出或数据泄露时，完整的服务拓扑和可关联的日志，有助于辨别问题出在业务规则、服务路由还是模型计算，并据此分析相应责任。</p>
+</div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>多主体模型服务链中，如何识别各方的数据处理责任？</h3><p>沿实际调用、决策权限和数据控制关系，研究应用提供者、模型服务商及基础设施运营者之间的义务边界。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>公共部门应怎样验收人工智能服务链的可追溯性？</h3><p>围绕服务拓扑、请求编号、跨节点日志、第三方调用及故障演练提出可核验的采购指标。</p></div>
+</div></section>
+<section class="lesson-section"><h2>可靠来源</h2><ol class="source-links">
+<li id="s1"><a href="https://kserve.github.io/website/docs/concepts/resources/inferencegraph">KServe, Inference Graph</a>。官方文档解释顺序路由、条件路由、模型组合和流量分配。</li>
+<li id="s2"><a href="https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/user_guide/ensemble_models.html">NVIDIA Triton Inference Server, Ensemble Models</a>。说明预处理、模型推理及后处理如何组成调用链。</li>
+<li id="s3"><a href="https://opentelemetry.io/blog/2026/genai-observability/">OpenTelemetry, Inside the LLM Call: GenAI Observability (2026)</a>。展示如何关联模型调用、工具调用和延迟等观测信息。</li>
+<li id="s4"><a href="https://docs.vllm.ai/en/stable/cli/serve/">vLLM, Serve Documentation</a>。提供模型在线推理服务及并发调度配置实例。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第43课</small><p>下一课进入“安全与失效”模块，学习提示注入：为什么外部文本可能干扰人工智能系统的指令执行？</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main><footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
