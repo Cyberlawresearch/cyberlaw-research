@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-29",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-10-29-bagehot-english-constitution.html",
+  "target_path": "articles/2026-10-29-bagehot-english-constitution.html",
+  "book": {
+    "author": "Walter Bagehot",
+    "original_title": "The English Constitution",
+    "publisher": "Chapman and Hall",
+    "year": "1873",
+    "edition": "1873 second edition; original 1867 edition by Chapman and Hall"
+  },
+  "source_urls": [
+    "https://www.gutenberg.org/files/4351/4351-h/4351-h.htm",
+    "https://en.wikisource.org/wiki/File:Walter_Bagehot,_The_English_Constitution_(1st_ed,_1867).pdf",
+    "https://onlinebooks.library.upenn.edu/webbin/book/lookupid?key=olbp11149",
+    "https://www.cambridge.org/core/journals/government-and-opposition/article/abs/deferential-english-a-comparative-critique/12440A3DDD4E31EBC12A6FA8DE8BA70A",
+    "https://www.cambridge.org/core/journals/canadian-journal-of-political-science-revue-canadienne-de-science-politique/article/abs/bagehot-the-crown-and-the-canadian-constitution/7AE2BD8505FFBC445AD328DECA622F33",
+    "https://arpi.unipi.it/handle/11568/1013301"
+  ],
+  "original_verification": "系统核对Project Gutenberg所收1873年第二版完整英文原著，包括作者1872年第二版导论与其后八个完整正文部分；参照1867年初版公开书目及1873年第二版馆藏目录核对版本关系。后世评论与当代数字治理联系不当作原作者观点。",
+  "critics": [
+    {
+      "name": "Dennis Kavanagh",
+      "work": "The Deferential English: A Comparative Critique (Government and Opposition, 1971)",
+      "url": "https://www.cambridge.org/core/journals/government-and-opposition/article/abs/deferential-english-a-comparative-critique/12440A3DDD4E31EBC12A6FA8DE8BA70A",
+      "checked": "期刊原页摘要及引用列表，批评将deference概念泛用作英国政治文化的定型解释"
+    },
+    {
+      "name": "David E. Smith",
+      "work": "Bagehot, the Crown and the Canadian Constitution (Canadian Journal of Political Science, 1995)",
+      "url": "https://www.cambridge.org/core/journals/canadian-journal-of-political-science-revue-canadienne-de-science-politique/article/abs/bagehot-the-crown-and-the-canadian-constitution/7AE2BD8505FFBC445AD328DECA622F33",
+      "checked": "期刊原页摘要，批评王权只具象征功能的跨国应用，提出加拿大代表、信息、参与方面的实际作用"
+    },
+    {
+      "name": "Carmelo Calabrò",
+      "work": "Physics and Politics. Genealogia della Costituzione inglese in Walter Bagehot (2019)",
+      "url": "https://arpi.unipi.it/handle/11568/1013301",
+      "checked": "大学机构知识库论文摘要，讨论作者讨论政治与精英敬让的理论前提"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html: entire list of daily classics through 2026-10-28",
+    "classics-history.html: exported historical classics issues 15-35"
+  ],
+  "duplicate_found": false,
+  "sections": 75,
+  "prose_length": 8891,
+  "checked_at": "2026-10-29",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
