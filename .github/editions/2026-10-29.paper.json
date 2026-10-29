@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-29",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-29-strahilevitz-positive-theory-privacy-law.html",
+  "selection": "Lior Jacob Strahilevitz, Toward a Positive Theory of Privacy Law",
+  "bibliography": {
+    "type": "article",
+    "author": "Lior Jacob Strahilevitz",
+    "originalTitle": "Toward a Positive Theory of Privacy Law",
+    "journal": "Harvard Law Review",
+    "year": "2013",
+    "volume": "126",
+    "issue": "7",
+    "pages": "2010–2042",
+    "doi": "",
+    "url": "https://harvardlawreview.org/print/vol-126/toward-a-positive-theory-of-privacy-law/",
+    "cnTitle": "隐私保护的利益分配：为什么美国隐私法呈现今天的样子"
+  },
+  "versions": {
+    "full_text": "Harvard Law Review publisher formal PDF, complete 33 pages, introductory discussion, Parts I–IV, conclusion; crosschecked publisher, JSTOR, Chicago Law School bibliography",
+    "publication": "Harvard Law Review vol.126 no.7 (May 2013) pp.2010–2042; DOI not verified and left blank"
+  },
+  "sources": [
+    "https://harvardlawreview.org/wp-content/uploads/2013/05/vol126_strahilevitz.pdf",
+    "https://harvardlawreview.org/print/vol-126/toward-a-positive-theory-of-privacy-law/",
+    "https://chicagounbound.uchicago.edu/journal_articles/7273/",
+    "https://www.jstor.org/stable/i23412990"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "papers/2026-08-12.html",
+    "articles/2026-09-10-solove-privacy-self-management.html"
+  ],
+  "timeline": null,
+  "body_length": 3355,
+  "checked_at": "2026-10-29T12:07:37.279Z",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}
