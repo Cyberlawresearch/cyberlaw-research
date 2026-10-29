@@ -4,15 +4,15 @@
   "state": "verified",
   "phase": "publishing",
   "page": "articles/2026-10-29-tech-law-brief.html",
-  "news_count": 21,
+  "news_count": 20,
   "distribution": {
-    "domestic": 6,
+    "domestic": 5,
     "foreign": 15
   },
   "mode": "facts_only",
   "analysis_pending": true,
-  "checked_at": "2026-10-29T11:11:46.993Z",
-  "last_news_scan_at": "2026-10-29T11:11:46.993Z",
+  "checked_at": "2026-10-29T11:14:00.572Z",
+  "last_news_scan_at": "2026-10-29T11:14:00.572Z",
   "checks": {
     "sources": true,
     "legal_status": true,
@@ -32,7 +32,7 @@
       "source_group": "国内中央机关及全国技术标准机构",
       "status": "searched",
       "scope": "网信办、工信部、国家数据局、市场监管、标准化、财经和司法主管机关的最近72小时事项与原始通知",
-      "result": "收录工信部29日新一代通信网部门协调会议、全国数标委26日发布的城市智能体等技术文件；剔除23日以前已报道规划"
+      "result": "核实工信部29日新一代通信网部门协调会议；全国数标委26日技术文件虽在实时时间窗口内，但因站点核验采用整日日期口径，本期不予收录，未修改时效验收规则"
     },
     {
       "source_group": "国内地方与中文媒体",
@@ -89,21 +89,6 @@
     },
     {
       "id": "research-item-2",
-      "date": "2026-10-26",
-      "domestic": true,
-      "jurisdiction": "中国",
-      "agency": "全国数据标准化技术委员会、国家数据局",
-      "title": "全国数标委公布城市数字化转型12项技术文件，涵盖城市智能体和可信数据空间",
-      "original_title": "关于发布《城市全域数字化转型标准体系研究报告》及《城市全域数字化转型 城市感知体系建设导则》等12项技术文件的通知",
-      "source_name": "国家数据局／全国数标委",
-      "url": "https://www.nda.gov.cn/sjj/zwgk/tzgg/1026/20261026210239813554415_pc.html",
-      "legal_status": "technical_documents_published",
-      "fact": "国家数据局网站10月26日公布全国数据标准化技术委员会发布的城市全域数字化转型技术文件通知，通知落款为10月23日。此次同时公布标准体系研究报告及12项技术文件，涉及城市智能体应用、可信数据空间运行、数字资源统一调度、人工智能公共服务平台和共性组件等领域。文件属于技术指引及研究材料的公开发布，不能直接等同于强制性国家标准生效。",
-      "previous_day_duplicate": false,
-      "seven_day_duplicate": false
-    },
-    {
-      "id": "research-item-3",
       "date": "2026-10-27",
       "domestic": true,
       "jurisdiction": "中国·湖北",
@@ -118,7 +103,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-4",
+      "id": "research-item-3",
       "date": "2026-10-28",
       "domestic": true,
       "jurisdiction": "中国·上海",
@@ -133,7 +118,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-5",
+      "id": "research-item-4",
       "date": "2026-10-29",
       "domestic": true,
       "jurisdiction": "中国",
@@ -148,7 +133,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-6",
+      "id": "research-item-5",
       "date": "2026-10-29",
       "domestic": true,
       "jurisdiction": "中国、美国",
@@ -163,7 +148,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-7",
+      "id": "research-item-6",
       "date": "2026-10-28",
       "domestic": false,
       "jurisdiction": "美国·纽约州",
@@ -178,7 +163,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-8",
+      "id": "research-item-7",
       "date": "2026-10-29",
       "domestic": false,
       "jurisdiction": "法国",
@@ -193,7 +178,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-9",
+      "id": "research-item-8",
       "date": "2026-10-28",
       "domestic": false,
       "jurisdiction": "欧盟、英国",
@@ -208,7 +193,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-10",
+      "id": "research-item-9",
       "date": "2026-10-28",
       "domestic": false,
       "jurisdiction": "美国",
@@ -223,7 +208,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-11",
+      "id": "research-item-10",
       "date": "2026-10-28",
       "domestic": false,
       "jurisdiction": "美国、俄罗斯、朝鲜",
@@ -238,7 +223,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-12",
+      "id": "research-item-11",
       "date": "2026-10-28",
       "domestic": false,
       "jurisdiction": "英国",
@@ -253,7 +238,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-13",
+      "id": "research-item-12",
       "date": "2026-10-28",
       "domestic": false,
       "jurisdiction": "荷兰、美国、德国",
@@ -268,7 +253,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-14",
+      "id": "research-item-13",
       "date": "2026-10-28",
       "domestic": false,
       "jurisdiction": "日本",
@@ -283,7 +268,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-15",
+      "id": "research-item-14",
       "date": "2026-10-28",
       "domestic": false,
       "jurisdiction": "美国",
@@ -298,7 +283,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-16",
+      "id": "research-item-15",
       "date": "2026-10-28",
       "domestic": false,
       "jurisdiction": "美国",
@@ -313,7 +298,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-17",
+      "id": "research-item-16",
       "date": "2026-10-29",
       "domestic": false,
       "jurisdiction": "美国",
@@ -328,7 +313,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-18",
+      "id": "research-item-17",
       "date": "2026-10-29",
       "domestic": false,
       "jurisdiction": "美国、法国",
@@ -343,7 +328,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-19",
+      "id": "research-item-18",
       "date": "2026-10-27",
       "domestic": false,
       "jurisdiction": "美国·西弗吉尼亚州",
@@ -358,7 +343,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-20",
+      "id": "research-item-19",
       "date": "2026-10-28",
       "domestic": false,
       "jurisdiction": "摩尔多瓦",
@@ -373,7 +358,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-21",
+      "id": "research-item-20",
       "date": "2026-10-28",
       "domestic": false,
       "jurisdiction": "美国、国际网络基础设施",
