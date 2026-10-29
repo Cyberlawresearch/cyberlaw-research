@@ -1,8 +1,8 @@
 {
   "date": "2026-10-29",
   "base_main_sha": "2849fb01b508895dc023049908b0b546b1b5fd56",
-  "phase": "sources_verified",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "date": "2026-10-28",
@@ -130,10 +130,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "完成最后一轮近时效终扫并保存",
-    "设置publication_ready并回读",
-    "GitHub main正文-首页-归档顺序正式发布",
-    "Actions/Pages线上验收"
+    "从本JSON生成完整No.051 HTML并在main创建issues/2026-10-29.html",
+    "依次以最新SHA更新trade-watch/index.html、archive.html",
+    "回读main三文件验收最终Pages"
   ],
   "dedup_checked_issue_dates": [
     "2026-10-28",
@@ -161,5 +160,21 @@
     "pdf_screen_reviewed": true,
     "excluded_source": "购物车私营律所请愿稿原始链接返回403且法律重要度较低，已从本期移除",
     "url_dom_note": "7条来源URL无查询参数；HTML外链href需按HTML转义后DOM回读确认"
+  },
+  "final_sweep": {
+    "done": true,
+    "checked_at_local": "2026-10-29 09:00 Asia/Shanghai",
+    "scope": [
+      "US",
+      "EU",
+      "UK",
+      "Japan",
+      "South Korea",
+      "India",
+      "Canada",
+      "Australia",
+      "selected ASEAN"
+    ],
+    "finding": "新机器人232布告和华大三企列名公告均已收录；10月22日风机232旧公告及其他旧期重复未收录；美国ITC床垫10月27日正式刊载单列，注明裁定于10月22日作出"
   }
 }
