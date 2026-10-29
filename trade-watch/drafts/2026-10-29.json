@@ -1,7 +1,7 @@
 {
   "date": "2026-10-29",
   "base_main_sha": "2849fb01b508895dc023049908b0b546b1b5fd56",
-  "phase": "published_main_awaiting_pages",
+  "phase": "published_and_verified",
   "publication_ready": true,
   "items": [
     {
@@ -129,11 +129,7 @@
     "越南及其他": "USTR10月28日海产品策略新增涉及越南IUU渔业；其他较早措施不再重复"
   },
   "last_error": null,
-  "next_actions": [
-    "从本JSON生成完整No.051 HTML并在main创建issues/2026-10-29.html",
-    "依次以最新SHA更新trade-watch/index.html、archive.html",
-    "回读main三文件验收最终Pages"
-  ],
+  "next_actions": [],
   "dedup_checked_issue_dates": [
     "2026-10-28",
     "2026-10-27",
@@ -178,17 +174,28 @@
     "finding": "新机器人232布告和华大三企列名公告均已收录；10月22日风机232旧公告及其他旧期重复未收录；美国ITC床垫10月27日正式刊载单列，注明裁定于10月22日作出"
   },
   "publication_attempt": {
-    "stage": "main_three_files_verified_pages_in_progress",
+    "stage": "published_and_verified",
     "final_main_commit": "e21a2ae4d692cde1a686f8f261f42bd3a365139b",
+    "main_verified": true,
     "main_files": [
       "trade-watch/issues/2026-10-29.html",
       "trade-watch/index.html",
       "trade-watch/archive.html"
     ],
-    "main_verified": true,
     "pages_workflow_run_id": 40799030332,
-    "pages_workflow_status": "in_progress",
-    "source_links_dom_verified_in_main": true,
-    "source_checks_pending": true
+    "pages_workflow_status": "success",
+    "pages_deploy_job": "success",
+    "source_check_workflow_run_id": 40799421987,
+    "source_check_status": "success",
+    "publication_guard_run_id": 40799422014,
+    "publication_guard_status": "success",
+    "public_urls": [
+      "https://cyberlawresearch.github.io/cyberlaw-research/trade-watch/issues/2026-10-29.html",
+      "https://cyberlawresearch.github.io/cyberlaw-research/trade-watch/",
+      "https://cyberlawresearch.github.io/cyberlaw-research/trade-watch/archive.html"
+    ],
+    "public_page_checks": "three public pages compared to exact main commit; all HTTP 200, issue contains 7 news cards, title and links match",
+    "original_source_links": "7 of 7 original URLs HTTP 200; DOM href compared against main",
+    "evidence_workflow_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/40799421987"
   }
 }
