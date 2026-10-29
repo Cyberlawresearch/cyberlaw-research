@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-29",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-10-29-new-works.html",
+  "page_blob_sha": "10d2a36a24fdcda97e7137f523b8aef9df0bdd43",
+  "newworks_count": 3,
+  "checked_at": "2026-10-29T12:37:18.949Z",
+  "checks": {
+    "publisher_pages_opened": true,
+    "bibliographic_metadata_verified": true,
+    "history_original_title_search": true,
+    "history_doi_deduplication": true,
+    "version_verified": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "historical_newworks_pages_indexed": 71,
+    "range": "2026-08-16 through 2026-10-28",
+    "indexes": [
+      "new-works.html",
+      "new-works-history.html"
+    ],
+    "search_method": "GitHub default-branch code search for each exact original title and DOI across indexed new-works research pages",
+    "fields": [
+      "original_title",
+      "DOI",
+      "author",
+      "publication_version"
+    ],
+    "matches_found": 0
+  },
+  "items": [
+    {
+      "cn_title": "欧盟AI法未设专职合规官：企业内部责任如何组织",
+      "author": "Zhicheng He",
+      "original_title": "Beyond the DPO Model? The EU AI Act’s Accountability Framework Without a Mandated AI Officer",
+      "journal": "European Journal of Risk Regulation",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "publication_date": "2026-10-23",
+      "volume": null,
+      "issue": null,
+      "pages": "1–15 (First View)",
+      "article_number": null,
+      "doi": "10.1017/err.2026.10172",
+      "publisher_page": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/beyond-the-dpo-model-the-eu-ai-acts-accountability-framework-without-a-mandated-ai-officer/2B012046E4078B926A12C87511E6B9F6",
+      "version": "Publisher First View journal article; volume and issue not yet assigned"
+    },
+    {
+      "cn_title": "欧盟数字综合法案的权力再分配：独立监督与标准制定是否被削弱",
+      "author": "Alison Harcourt",
+      "original_title": "The EU Digital Omnibus: A Move Away from Independent Oversight and European Standardisation",
+      "journal": "European Journal of Risk Regulation",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "publication_date": "2026-10-21",
+      "volume": null,
+      "issue": null,
+      "pages": "1–15 (First View)",
+      "article_number": null,
+      "doi": "10.1017/err.2026.10169",
+      "publisher_page": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/eu-digital-omnibus-a-move-away-from-independent-oversight-and-european-standardisation/6B1CB6BD6F4049BAC10EAA43FE341B23",
+      "version": "Publisher First View journal article; volume and issue not yet assigned"
+    },
+    {
+      "cn_title": "政治讽刺被误判为虚假信息时：平台审核与言论自由的边界",
+      "author": "Therese Enarsson",
+      "original_title": "The Disinformation Dilemma: Moderating Political Satire Under the DSA in Light of the European Convention on Human Rights",
+      "journal": "European Journal of Risk Regulation",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "publication_date": "2025-11-18",
+      "volume": "17",
+      "issue": "2",
+      "pages": "401–416",
+      "article_number": null,
+      "doi": "10.1017/err.2025.10062",
+      "publisher_page": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/disinformation-dilemma-moderating-political-satire-under-the-dsa-in-light-of-the-european-convention-on-human-rights/AD4FDB7400831F5328E170B9A01060BB",
+      "version": "Publisher journal volume 17 issue 2 (June 2026); first published online 18 November 2025"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": false
+  }
+}
