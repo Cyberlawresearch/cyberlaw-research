@@ -1,7 +1,7 @@
 {
   "date": "2026-10-30",
   "base_main_sha": "81d1157813e951d1e796b996cf80c214b17eee9a",
-  "phase": "published_main_deployment_pending",
+  "phase": "published_verified",
   "publication_ready": true,
   "items": [
     {
@@ -138,17 +138,17 @@
     "final_sweep": "2026-10-30上午终扫欧盟、美国、英国、日本、韩国、印度、加拿大、澳大利亚公开渠道，未把无实质更新事项纳入"
   },
   "last_error": null,
-  "next_actions": [
-    "验收最新提交对应的Pages运行",
-    "检查网页公开正文首页归档及10个来源链接"
-  ],
+  "next_actions": [],
   "publication": {
     "main_commit": "39c9189ad2cd38fb070af4de6c893a2df09450e6",
-    "main_paths": [
-      "trade-watch/issues/2026-10-30.html",
-      "trade-watch/index.html",
-      "trade-watch/archive.html"
-    ],
-    "news_count": 8
+    "pages_workflow_run_id": 40985146677,
+    "pages": "success",
+    "presence_workflow_run_id": 40985517801,
+    "publication_presence": "success",
+    "source_workflow_run_id": 40985517879,
+    "source_link_check": "10/10 passed",
+    "public_pages": "3/3 passed",
+    "news_count": 8,
+    "issue_url": "https://cyberlawresearch.github.io/cyberlaw-research/trade-watch/issues/2026-10-30.html"
   }
 }
