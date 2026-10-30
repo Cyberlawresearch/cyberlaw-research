@@ -61,20 +61,83 @@
         "https://berita.rtm.gov.my/kes/senarai-berita-kes/senarai-artikel/kastam-gagalkan-cubaan-transit-server-cip-ai-hampir-rm49-5-juta/"
       ],
       "checked": "马来西亚国家媒体转述海关官员公开说明，已打开"
+    },
+    {
+      "id": "eu-pvdf-initiation",
+      "date": "2026-10-28",
+      "jurisdiction": "欧盟",
+      "agency": "欧盟委员会",
+      "stage": "正式反倾销调查立案，尚未征税",
+      "title": "欧盟对中国、印度和日本聚偏二氟乙烯启动反倾销调查",
+      "impact": "PVDF材料出口企业核对CN ex39046980及TARIC 97/98，准备出口价及成本、市场损害资料",
+      "priority": 5,
+      "sources": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202605554",
+        "https://www.handelskammer-hamburg.de/international-aussenwirtschaft/untersuchungsverfahren-ueperpruefungsverfahren-6696770"
+      ],
+      "checked": "德国商会对10月28日欧盟官方公报 C/2026/5554 逐项确认；EUR-Lex浏览器验证触发JS反机器人提示"
+    },
+    {
+      "id": "ca-building-cables-final",
+      "date": "2026-10-27",
+      "jurisdiction": "加拿大",
+      "agency": "CBSA、CITT",
+      "stage": "倾销及部分企业补贴调查终裁，CITT产业损害裁定待11月26日",
+      "title": "加拿大对中国产非铠装建筑电缆作出倾销和补贴终裁，部分出口商补贴调查终止",
+      "impact": "中国电缆制造商应核对商品定义、进口保证金及出口商个别税率，CITT损害裁定前临时税仍执行",
+      "deadline": "2026-11-26",
+      "priority": 5,
+      "sources": [
+        "https://cbsa-asfc.gc.ca/sima-lmsi/i-e/ubc2026/ubc2026-nf-eng.html"
+      ],
+      "checked": "加拿大CBSA正式10月27日公告由官方检索命中，打开出现超时，待重试"
+    },
+    {
+      "id": "kr-diesel-export-relax",
+      "date": "2026-10-29",
+      "jurisdiction": "韩国",
+      "agency": "产业通商部",
+      "stage": "已宣布并将按11月出口量实施的有条件出口配额调整",
+      "title": "韩国11月起有条件放宽柴油出口限额至去年同期110%",
+      "impact": "韩国炼油商满足国内供应和库存要求后可增加柴油外销，能源贸易企业需核对新增出口数量批准与国际制裁合规",
+      "deadline": "2026-11",
+      "priority": 4,
+      "sources": [
+        "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172353/view"
+      ],
+      "checked": "韩国官方10月29日公布，正文已打开"
+    },
+    {
+      "id": "in-glycine-questionnaire-extension",
+      "date": "2026-10-29",
+      "jurisdiction": "印度",
+      "agency": "贸易救济总局DGTR",
+      "stage": "反倾销调查答卷期限延长，非征税决定",
+      "title": "印度对华甘氨酸反倾销调查延长问卷答复期限",
+      "impact": "中国甘氨酸出口商须按延长期限提交产销成本和交易资料，避免丧失个别调查待遇",
+      "priority": 3,
+      "sources": [
+        "https://www.dgtr.gov.in/en/anti-dumping-cases/initiation-anti-dumping-investigation-concerning-imports-glycine-originating-or"
+      ],
+      "checked": "DGTR官方案件索引显示10月29日延期通知，但网站动态详情在浏览器仅显示10月27日，须核实文件和新截止日"
     }
   ],
   "coverage": {
     "USA": "USITC 10月28/29日新决定、FCC 10月29日设备认证规则",
     "Malaysia": "10月28日海关公布先进AI服务器查扣案",
-    "EU": "欧盟对中国硅和PVC进口登记法规正在核验",
-    "UK": "已查制裁名单更新及出口管制通知"
+    "EU": "10月28日PVDF新立案；10月26日PVC/硅登记为72小时边界事项，已查",
+    "UK": "10月29日名单1项纠正与1项俄罗斯变更，暂无大规模新增列名",
+    "Canada": "CBSA 10月27日建筑电缆倾销/补贴终裁",
+    "Korea": "10月29日柴油出口限额放宽，11月适用",
+    "India": "DGTR甘氨酸答卷延期页面待确认",
+    "Japan": "METI当日通报与对外贸易新闻已巡视，未发现同级新增生效事项",
+    "Australia": "ATRC最新案件通知仍为10月23日玻璃棉案件"
   },
   "last_error": null,
   "next_actions": [
-    "补齐加拿大10月27日最终决定和欧盟进口登记原始法规",
-    "查印度29日答卷延期及官方期限",
-    "完成日本韩国澳大利亚政府网站巡视",
-    "去重、原始链接终验和终扫",
-    "发布三份main文件并核对Pages"
+    "核对FCC原始正式决议和欧盟PVDF公告链接",
+    "核对加拿大电缆及印度甘氨酸原文及期限",
+    "按事件级去重、终扫及逐链接核验",
+    "将最终稿分阶段保存并发布三个main文件"
   ]
 }
