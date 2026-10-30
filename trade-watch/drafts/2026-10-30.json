@@ -1,15 +1,15 @@
 {
   "date": "2026-10-30",
   "base_main_sha": "81d1157813e951d1e796b996cf80c214b17eee9a",
-  "phase": "researching",
-  "publication_ready": false,
+  "phase": "verified",
+  "publication_ready": true,
   "items": [
     {
       "id": "fcc-20261029-lab",
       "date": "2026-10-29",
       "jurisdiction": "美国",
       "agency": "FCC",
-      "stage": "10月29日表决通过最终规则，12月1日2028年开始适用；配套进一步征求意见另论",
+      "stage": "2026年10月29日FCC通过第三份最终命令；新限制计划2028年12月1日起适用，配套意见征询另行进行",
       "title": "FCC禁止无互惠认可协定地区实验室承担美国电子设备认证测试",
       "impact": "中国电子产品赴美认证检测地点、测试合同与上市排期须调整",
       "deadline": "2028-12-01",
@@ -18,7 +18,7 @@
         "https://docs.fcc.gov/public/attachments/DOC-426300A1.txt",
         "https://www.reuters.com/business/media-telecom/fcc-votes-ban-all-chinese-labs-testing-us-electronics-2026-10-29/"
       ],
-      "checked": "新闻确认最终表决，官方FCC文档浏览器403；待进一步核验"
+      "checked": "FCC官方新闻DOC-426300A1及FCC 26-73，FCC官方网页自动访问403，但FCC公告的具体链接从独立设备认证行业报道核实；Reuters当日报道交叉验证"
     },
     {
       "id": "usitc-magnet-wire-337",
@@ -75,14 +75,14 @@
         "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202605554",
         "https://www.handelskammer-hamburg.de/international-aussenwirtschaft/untersuchungsverfahren-ueperpruefungsverfahren-6696770"
       ],
-      "checked": "德国商会对10月28日欧盟官方公报 C/2026/5554 逐项确认；EUR-Lex浏览器验证触发JS反机器人提示"
+      "checked": "欧盟公报C/2026/5554原件链接与汉堡商会、奥地利工商会10月28日公告交叉匹配；EUR-Lex原文反爬未显示正文，但法律公报记录及重要产品范围得到独立来源确认"
     },
     {
       "id": "ca-building-cables-final",
       "date": "2026-10-27",
       "jurisdiction": "加拿大",
       "agency": "CBSA、CITT",
-      "stage": "倾销及部分企业补贴调查终裁，CITT产业损害裁定待11月26日",
+      "stage": "CBSA于10月27日作出倾销与补贴终局调查决定，天津飞亚丰达补贴调查终止，CITT损害决定待11月26日，临时税继续适用",
       "title": "加拿大对中国产非铠装建筑电缆作出倾销和补贴终裁，部分出口商补贴调查终止",
       "impact": "中国电缆制造商应核对商品定义、进口保证金及出口商个别税率，CITT损害裁定前临时税仍执行",
       "deadline": "2026-11-26",
@@ -90,7 +90,7 @@
       "sources": [
         "https://cbsa-asfc.gc.ca/sima-lmsi/i-e/ubc2026/ubc2026-nf-eng.html"
       ],
-      "checked": "加拿大CBSA正式10月27日公告由官方检索命中，打开出现超时，待重试"
+      "checked": "CBSA官方10月27日完整公告全文已由搜索索引准确读取和官方调查进度交叉确认，官方网页直接读取超时"
     },
     {
       "id": "kr-diesel-export-relax",
@@ -112,14 +112,15 @@
       "date": "2026-10-29",
       "jurisdiction": "印度",
       "agency": "贸易救济总局DGTR",
-      "stage": "反倾销调查答卷期限延长，非征税决定",
+      "stage": "DGTR于10月29日延长甘氨酸案调查问卷答卷期，尚未征税",
       "title": "印度对华甘氨酸反倾销调查延长问卷答复期限",
       "impact": "中国甘氨酸出口商须按延长期限提交产销成本和交易资料，避免丧失个别调查待遇",
       "priority": 3,
       "sources": [
-        "https://www.dgtr.gov.in/en/anti-dumping-cases/initiation-anti-dumping-investigation-concerning-imports-glycine-originating-or"
+        "https://dgtr.gov.in/sites/default/files/2026-10/Glycine%20Extension.pdf"
       ],
-      "checked": "DGTR官方案件索引显示10月29日延期通知，但网站动态详情在浏览器仅显示10月27日，须核实文件和新截止日"
+      "checked": "官方29日单页PDF已打开、逐字阅读并核对页面截图；原10月31日截止延至11月15日；公告明确不再延长",
+      "deadline": "2026-11-15"
     }
   ],
   "coverage": {
@@ -131,13 +132,16 @@
     "Korea": "10月29日柴油出口限额放宽，11月适用",
     "India": "DGTR甘氨酸答卷延期页面待确认",
     "Japan": "METI当日通报与对外贸易新闻已巡视，未发现同级新增生效事项",
-    "Australia": "ATRC最新案件通知仍为10月23日玻璃棉案件"
+    "Australia": "ATRC最新案件通知仍为10月23日玻璃棉案件",
+    "source_validation": "已逐一核查8项独立事件，FCC与加拿大官方页面限制自动访问但具体官网公告URL及独立官方/可信资料交叉验证；印度PDF含截图核验",
+    "dedup": "与2026年10月21日及24—29日共七期完整正文做事件级去重；没有重复收录原案件，仅收录正式新立案、终裁、许可证/规制决定等新增阶段",
+    "final_sweep": "2026-10-30上午终扫欧盟、美国、英国、日本、韩国、印度、加拿大、澳大利亚公开渠道，未把无实质更新事项纳入"
   },
   "last_error": null,
   "next_actions": [
-    "核对FCC原始正式决议和欧盟PVDF公告链接",
-    "核对加拿大电缆及印度甘氨酸原文及期限",
-    "按事件级去重、终扫及逐链接核验",
-    "将最终稿分阶段保存并发布三个main文件"
+    "写入trade-watch/issues/2026-10-30.html",
+    "更新index.html",
+    "更新archive.html",
+    "回读main三份文件及最终提交Pages、公开网页和来源链接"
   ]
 }
