@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-30",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-10-30-beccaria-crimes-and-punishments.html",
+  "target_path": "articles/2026-10-30-beccaria-crimes-and-punishments.html",
+  "book": {
+    "author": "Cesare Beccaria",
+    "original_title": "Dei delitti e delle pene",
+    "publisher": "Chatto & Windus",
+    "year": "1880",
+    "edition": "Complete 1880 English translation by James Anson Farrer (preface, introduction, 42 chapters). Original anonymous Italian first edition: Livorno, Marco Coltellini, 1764."
+  },
+  "source_urls": [
+    "https://www.gutenberg.org/cache/epub/58700/pg58700-images.html",
+    "https://it.wikisource.org/wiki/Dei_delitti_e_delle_pene",
+    "https://it.wikisource.org/wiki/Opera:Dei_delitti_e_delle_pene",
+    "https://commons.wikimedia.org/wiki/File:Beccaria,_Cesare._%22Dei_delitti_e_delle_pene%22._Livorno,_Marco_Coltellini,_1764.png",
+    "https://wellcomecollection.org/works/t4nue35x",
+    "https://www.treccani.it/enciclopedia/il-problema-della-pena-di-morte_%28Il-Contributo-italiano-alla-storia-del-Pensiero%3A-Diritto%29/",
+    "https://plato.stanford.edu/entries/kant-social-political/",
+    "https://www.philinq.it/index.php/philinq/article/view/94",
+    "https://discovery.ucl.ac.uk/id/eprint/10053947/"
+  ],
+  "original_verification": "系统核对Project Gutenberg公开的1880年James Anson Farrer英译本贝卡里亚正文（作者致读者说明、引言、第一至四十二章及结语），逐章追踪刑罚权源、罪刑法定、证据与酷刑、死刑与替代措施、量刑相称和犯罪预防的论证。以意大利文全书章目核对不同译本重排情况；1764年初刊出版信息据公开初版扉页核实，未声称逐字校勘1764年拉丁/意大利初印本。Farrer所撰历史论述及脚注、伏尔泰等人评论均与作者主张区分。",
+  "critics": [
+    {
+      "name": "Ferdinando Facchinei",
+      "work": "Note ed osservazioni sul libro intitolato Dei delitti e delle pene (1765)",
+      "url": "https://www.treccani.it/enciclopedia/il-problema-della-pena-di-morte_%28Il-Contributo-italiano-alla-storia-del-Pensiero%3A-Diritto%29/",
+      "checked": "根据Treccani意大利法律思想史关于反对死刑与1765年反对者的公开原始研究资料核对争论背景；未声称逐页核读该批评小册子"
+    },
+    {
+      "name": "Immanuel Kant",
+      "work": "Die Metaphysik der Sitten (1797), Rechtslehre, §49",
+      "url": "https://plato.stanford.edu/entries/kant-social-political/",
+      "checked": "核对康德法权论中报应刑与死刑立场的权威研究条目，区别对社会契约和预防论的批评"
+    },
+    {
+      "name": "Mark D. White",
+      "work": "On Beccaria, the Economics of Crime, and the Philosophy of Punishment (Philosophical Inquiries, 2014)",
+      "url": "https://www.philinq.it/index.php/philinq/article/view/94",
+      "checked": "核对期刊论文原始发表信息，指出将贝卡里亚全部简化为经济威慑公式的解释局限"
+    },
+    {
+      "name": "Philip Schofield",
+      "work": "'The first steps rightly directed in the track of legislation': Jeremy Bentham on Cesare Beccaria's Essay on Crimes and Punishments (2019)",
+      "url": "https://discovery.ucl.ac.uk/id/eprint/10053947/",
+      "checked": "核对UCL研究仓库文献，区分边沁的思想继承和对契约论/自然法前提的不同立场"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html: 2026-09 through 2026-10-29 full published daily classics index",
+    "classics-history.html: original exported historical classics issues 15–35",
+    "data/current-edition.json and 2026-10-30 classic record/page existence"
+  ],
+  "duplicate_found": false,
+  "sections": 82,
+  "prose_length": 9110,
+  "checked_at": "2026-10-30",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
