@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-30",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-10-30-new-works.html",
+  "page_blob_sha": "9028fcedd1a00a6c4a6a772ecf4937c3c1cebf1f",
+  "newworks_count": 3,
+  "checked_at": "2026-10-30T12:40:45.788Z",
+  "checks": {
+    "publisher_sources_opened": true,
+    "bibliographic_fields_verified_as_available": true,
+    "history_original_title_search": true,
+    "history_doi_deduplication_for_known_dois": true,
+    "version_verified": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "indexes": [
+      "new-works.html",
+      "new-works-history.html"
+    ],
+    "search_method": "Full default-branch GitHub code search for exact DOI, original titles and grouped authors; no exact duplicates found",
+    "fields": [
+      "original_title",
+      "DOI where available",
+      "author",
+      "publication_version"
+    ],
+    "matches_found": 0
+  },
+  "items": [
+    {
+      "cn_title": "平台内容审核报告如何核验：让汇总数据与单次处置记录相互对应",
+      "author": "Alessia Zornetta",
+      "original_title": "Turning the DSA into a Verification Tool: A Feasible Solution to the Reliability Problem",
+      "journal": "European Journal of Risk Regulation",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "publication_date": "2026-10-30",
+      "volume": null,
+      "issue": null,
+      "pages": "1–14 (First View)",
+      "article_number": null,
+      "doi": "10.1017/err.2026.10119",
+      "publisher_page": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/turning-the-dsa-into-a-verification-tool-a-feasible-solution-to-the-reliability-problem/39DE3B543678059C1D5FB4D83170CA71",
+      "version": "Cambridge publisher First View journal article"
+    },
+    {
+      "cn_title": "超大规模数据中心的电网风险：欧盟为何有数据申报却缺少运行约束",
+      "author": "Robert Szuchy",
+      "original_title": "Governing the Unmeasured Load: Hyperscale Data Centres, Systemic Risk and the Assessment–Management Gap in EU Law",
+      "journal": "European Journal of Risk Regulation",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "publication_date": "2026-10-29",
+      "volume": null,
+      "issue": null,
+      "pages": "1–25 (First View)",
+      "article_number": null,
+      "doi": "10.1017/err.2026.10171",
+      "publisher_page": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/governing-the-unmeasured-load-hyperscale-data-centres-systemic-risk-and-the-assessmentmanagement-gap-in-eu-law/E24C3F466B44826824D3E35301D0D2CC",
+      "version": "Cambridge publisher First View journal article"
+    },
+    {
+      "cn_title": "医院部署医疗人工智能的直接责任：组织管理失误如何构成过错",
+      "author": "Claudia Giorgetti; Giuseppe Contissa; Arianna Giorgetti",
+      "original_title": "Hospitals as AI Deployers: Organisational Failures and Direct Liability Risks",
+      "journal": "European Journal of Risk Regulation",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "publication_date": "2026-10-30",
+      "volume": null,
+      "issue": null,
+      "pages": "1–17 (First View)",
+      "article_number": null,
+      "doi": null,
+      "publisher_page": "https://www.cambridge.org/core/publications/journals/listing?pageNum=1",
+      "version": "Publisher journal listing First View journal article; individual article URL and DOI not yet independently confirmed"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": false
+  }
+}
