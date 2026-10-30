@@ -1,7 +1,7 @@
 {
   "date": "2026-10-30",
   "base_main_sha": "81d1157813e951d1e796b996cf80c214b17eee9a",
-  "phase": "verified",
+  "phase": "published_main_deployment_pending",
   "publication_ready": true,
   "items": [
     {
@@ -15,10 +15,9 @@
       "deadline": "2028-12-01",
       "priority": 5,
       "sources": [
-        "https://docs.fcc.gov/public/attachments/DOC-426300A1.txt",
-        "https://www.reuters.com/business/media-telecom/fcc-votes-ban-all-chinese-labs-testing-us-electronics-2026-10-29/"
+        "https://www.benton.org/headlines/fcc-proceeds-device-test-lab-onshoring-reciprocity-rules"
       ],
-      "checked": "FCC官方新闻DOC-426300A1及FCC 26-73，FCC官方网页自动访问403，但FCC公告的具体链接从独立设备认证行业报道核实；Reuters当日报道交叉验证"
+      "checked": "FCC 10月29日正式决定，由Benton Institute转引FCC新闻通报；FCC官网对自动检查返回403，故发布页面提供可稳定访问的官方通报转引。"
     },
     {
       "id": "usitc-magnet-wire-337",
@@ -88,9 +87,10 @@
       "deadline": "2026-11-26",
       "priority": 5,
       "sources": [
-        "https://cbsa-asfc.gc.ca/sima-lmsi/i-e/ubc2026/ubc2026-nf-eng.html"
+        "https://www.cbsa-asfc.gc.ca/sima-lmsi/i-e/ubc2026/ubc2026-nf-eng.html",
+        "https://www.cbsa-asfc.gc.ca/sima-lmsi/i-e/ubc2026/ubc2026-se-eng.html"
       ],
-      "checked": "CBSA官方10月27日完整公告全文已由搜索索引准确读取和官方调查进度交叉确认，官方网页直接读取超时"
+      "checked": "CBSA 10月27日终裁正文及调查时间表已核验；修正非www域名证书主机名不匹配问题。"
     },
     {
       "id": "kr-diesel-export-relax",
@@ -139,9 +139,16 @@
   },
   "last_error": null,
   "next_actions": [
-    "写入trade-watch/issues/2026-10-30.html",
-    "更新index.html",
-    "更新archive.html",
-    "回读main三份文件及最终提交Pages、公开网页和来源链接"
-  ]
+    "验收最新提交对应的Pages运行",
+    "检查网页公开正文首页归档及10个来源链接"
+  ],
+  "publication": {
+    "main_commit": "39c9189ad2cd38fb070af4de6c893a2df09450e6",
+    "main_paths": [
+      "trade-watch/issues/2026-10-30.html",
+      "trade-watch/index.html",
+      "trade-watch/archive.html"
+    ],
+    "news_count": 8
+  }
 }
