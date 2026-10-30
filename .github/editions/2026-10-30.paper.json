@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-30",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-30-kaminski-jones-constructing-ai-speech.html",
+  "selection": "Margot E. Kaminski; Meg Leta Jones, Constructing AI Speech",
+  "bibliography": {
+    "type": "article",
+    "author": "Margot E. Kaminski; Meg Leta Jones",
+    "originalTitle": "Constructing AI Speech",
+    "journal": "Yale Law Journal Forum",
+    "year": "2024",
+    "volume": "133",
+    "issue": "",
+    "pages": "1212–1266",
+    "doi": "",
+    "url": "https://yalelawjournal.org/forum/constructing-ai-speech",
+    "cnTitle": "AI生成的言论如何进入法律：从“技术颠覆”转向制度塑造"
+  },
+  "versions": {
+    "full_text": "Read the entire publisher's open HTML article from abstract and introduction through Parts I–III and conclusion, including the four regulatory constructions; crosschecked substantive footnote context",
+    "publication": "Yale Law Journal Forum, vol.133 (22 April 2024), pp.1212–1266; no issue or DOI independently verified"
+  },
+  "sources": [
+    "https://yalelawjournal.org/forum/constructing-ai-speech",
+    "https://scholar.law.colorado.edu/faculty-articles/1643/"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-09-04-balkin-free-speech-algorithmic-society.html",
+    "articles/2026-10-20-gillespie-platforms-not-intermediaries.html"
+  ],
+  "timeline": null,
+  "body_length": 3941,
+  "checked_at": "2026-10-30",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}
