@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "pages": {
-    "brief": "articles/2026-10-29-tech-law-brief.html",
+    "brief": "articles/2026-10-30-tech-law-brief.html",
     "paper": "articles/2026-10-29-strahilevitz-positive-theory-privacy-law.html",
     "classic": "articles/2026-10-29-bagehot-english-constitution.html",
     "newworks": "articles/2026-10-29-new-works.html"
   },
   "page_dates": {
-    "brief": "2026-10-29",
+    "brief": "2026-10-30",
     "paper": "2026-10-29",
     "classic": "2026-10-29",
     "newworks": "2026-10-29"
   },
-  "news_count": 20,
+  "news_count": 18,
   "newworks_count": 3
 }
