@@ -3,14 +3,78 @@
   "base_main_sha": "81d1157813e951d1e796b996cf80c214b17eee9a",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "fcc-20261029-lab",
+      "date": "2026-10-29",
+      "jurisdiction": "美国",
+      "agency": "FCC",
+      "stage": "10月29日表决通过最终规则，12月1日2028年开始适用；配套进一步征求意见另论",
+      "title": "FCC禁止无互惠认可协定地区实验室承担美国电子设备认证测试",
+      "impact": "中国电子产品赴美认证检测地点、测试合同与上市排期须调整",
+      "deadline": "2028-12-01",
+      "priority": 5,
+      "sources": [
+        "https://docs.fcc.gov/public/attachments/DOC-426300A1.txt",
+        "https://www.reuters.com/business/media-telecom/fcc-votes-ban-all-chinese-labs-testing-us-electronics-2026-10-29/"
+      ],
+      "checked": "新闻确认最终表决，官方FCC文档浏览器403；待进一步核验"
+    },
+    {
+      "id": "usitc-magnet-wire-337",
+      "date": "2026-10-29",
+      "jurisdiction": "美国",
+      "agency": "USITC",
+      "stage": "337调查立案，尚未认定侵权",
+      "title": "对赣州威拉森特磁线相关产品启动337调查",
+      "impact": "涉案公司与美国进口商面临禁令风险，应保存技术、专利与销售证据",
+      "priority": 4,
+      "sources": [
+        "https://www.usitc.gov/press_room/news_release/2026/er1029_69436.htm"
+      ],
+      "checked": "官方公告已打开"
+    },
+    {
+      "id": "usitc-prestressed-strand-sunset",
+      "date": "2026-10-28",
+      "jurisdiction": "美国",
+      "agency": "USITC",
+      "stage": "五年复审终局产业损害肯定认定，现行双反令继续有效",
+      "title": "中国预应力混凝土钢绞线继续适用美国双反令",
+      "impact": "现有税率和保证金负担持续，进口商应按厂商执行已有税令",
+      "priority": 4,
+      "sources": [
+        "https://www.usitc.gov/press_room/news_release/2026/er1028_69416.htm"
+      ],
+      "checked": "官方公告已打开"
+    },
+    {
+      "id": "malaysia-ai-servers",
+      "date": "2026-10-28",
+      "jurisdiction": "马来西亚",
+      "agency": "皇家海关",
+      "stage": "10月15日查扣、10月28日公布，依2010年战略贸易法调查，非最终定罪",
+      "title": "马来西亚查扣30台载高性能AI芯片服务器",
+      "impact": "经马来西亚中转高性能AI计算设备须核查许可证、商品申报和目的地",
+      "priority": 5,
+      "sources": [
+        "https://berita.rtm.gov.my/kes/senarai-berita-kes/senarai-artikel/kastam-gagalkan-cubaan-transit-server-cip-ai-hampir-rm49-5-juta/"
+      ],
+      "checked": "马来西亚国家媒体转述海关官员公开说明，已打开"
+    }
+  ],
+  "coverage": {
+    "USA": "USITC 10月28/29日新决定、FCC 10月29日设备认证规则",
+    "Malaysia": "10月28日海关公布先进AI服务器查扣案",
+    "EU": "欧盟对中国硅和PVC进口登记法规正在核验",
+    "UK": "已查制裁名单更新及出口管制通知"
+  },
   "last_error": null,
   "next_actions": [
-    "核验近7期去重",
-    "完成美国欧盟英国日本韩国与印度加拿大澳大利亚巡视",
-    "逐条打开原始来源并核对法律阶段",
-    "形成当期正文及链接核验",
-    "提交main三份文件并验收Pages"
+    "补齐加拿大10月27日最终决定和欧盟进口登记原始法规",
+    "查印度29日答卷延期及官方期限",
+    "完成日本韩国澳大利亚政府网站巡视",
+    "去重、原始链接终验和终扫",
+    "发布三份main文件并核对Pages"
   ]
 }
