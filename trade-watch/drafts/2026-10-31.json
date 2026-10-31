@@ -3,13 +3,73 @@
   "base_main_sha": "bb0710e1fd5e66fcdea10b7623147f084d26b9e8",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "date": "2026-10-30",
+      "jurisdiction": "欧盟",
+      "id": "eu-pet-spunbond-2393",
+      "title": "欧盟正式对中国PET纺粘非织造布征收39.8%—48.1%反倾销税",
+      "stage": "最终反倾销税令，10月31日适用",
+      "source": "https://eur-lex.europa.eu/eli/reg_impl/2026/2393/oj",
+      "source_verification": "专业法律媒体及条例编号交叉核对，官方站直连暂未打开",
+      "importance": 5
+    },
+    {
+      "date": "2026-10-30",
+      "jurisdiction": "欧盟",
+      "id": "eu-aspirin-registration-2390",
+      "title": "欧盟对中国产乙酰水杨酸进口实施反倾销登记",
+      "stage": "进口登记，非征税",
+      "source": "https://eur-lex.europa.eu/eli/reg_impl/2026/2390/oj",
+      "source_verification": "专业法律索引交叉核对，官方站直连暂未打开",
+      "importance": 4
+    },
+    {
+      "date": "2026-10-30",
+      "jurisdiction": "欧盟",
+      "id": "eu-steel-ropes-registration-2396",
+      "title": "欧盟对印度、泰国、土耳其钢丝绳进口实施登记",
+      "stage": "进口登记，非征税",
+      "source": "https://eur-lex.europa.eu/eli/reg_impl/2026/2396/oj",
+      "source_verification": "专业法律媒体交叉核对，官方站直连暂未打开",
+      "importance": 4
+    },
+    {
+      "date": "2026-10-30",
+      "jurisdiction": "英国",
+      "id": "uk-defence-offset-policy",
+      "title": "英国公布5000万英镑以上海外国防采购合同本地化补偿安排",
+      "stage": "政策公布，按项目和合同落实",
+      "source": "https://www.gov.uk/government/news/defence-contracts-to-prioritise-british-jobs-and-skills",
+      "source_verification": "官方公告已打开",
+      "importance": 4
+    },
+    {
+      "date": "2026-10-29",
+      "jurisdiction": "英国",
+      "id": "uk-sanctions-revision",
+      "title": "英国更新俄罗斯制裁一项指定资料",
+      "stage": "名单信息变更而非新增制裁对象",
+      "source": "https://www.gov.uk/government/publications/the-uk-sanctions-list",
+      "source_verification": "官方更新日志已打开",
+      "importance": 3
+    }
+  ],
+  "coverage": {
+    "美国": "检索贸易救济、关税、制裁及海关；待复核",
+    "欧盟": "发现3项新规，待原文复核",
+    "英国": "官方国防采购政策及制裁变更已核查",
+    "日本": "新钢材终裁10月31日实施；此前已刊载，先不重复",
+    "韩国": "已做关键词初查，待补充",
+    "印度": "已做关键词初查，待补充",
+    "加拿大": "已核对已刊载对加50%税目调整，待补充",
+    "澳大利亚": "官方案件目录已核查，有10月30日更新待细查"
+  },
   "last_error": null,
   "next_actions": [
-    "核验八个核心法域最新24—72小时监管动态",
-    "回查最近7期事件与来源",
-    "研究断点分阶段写入",
-    "最终开放来源核验与当期发布"
+    "继续美国、韩国、印度、加拿大、澳大利亚及日本原文检索",
+    "对近7期逐条去重并取得具体原始文书链接",
+    "再次复核全部来源可打开状态",
+    "正式发布三文件及Pages验收"
   ]
 }
