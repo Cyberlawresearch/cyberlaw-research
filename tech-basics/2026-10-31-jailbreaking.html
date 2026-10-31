@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>第44课｜越狱：为什么有些提示词可能让模型绕过安全限制？｜网信法技术基础</title>
+<link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../briefs.html">全球科技法简报</a><a href="../papers.html">域外法学论文精读</a><a href="../classics.html">法学经典著作</a><a href="../new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 44 · SAFETY &amp; FAILURE · 2026.10.31</div><h1>越狱：为什么有些提示词可能让模型绕过安全限制？</h1><p class="tech-lead">今日问题：模型已经接受安全训练，为什么仍可能被特殊的提问方式诱导，给出本应拒绝的回答？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus"><div><strong>它是什么</strong><p><b>越狱（Jailbreaking）</b>，是通过特定输入诱导人工智能模型绕开原有安全限制，作出本应拒绝或限制的回答。它并不是取得服务器管理员权限，也不意味着攻击者已经改动模型参数。按照OWASP的分类，越狱是以突破安全规则为目标的一类提示注入；上一课所讲的提示注入，还包括使模型偏离正常任务但未必突破安全规则的情形。</p></div><div><strong>一个生活例子</strong><p>某企业的内部助手被设计为拒绝提供伪造审计证据的具体方法。一般提问时，它能够识别风险并拒绝。有人却把同一目的包装成虚构故事或某种角色任务，试图让模型把“完成创作”放在安全判断之前。如果输出了本应限制的操作性内容，就发生了越狱失效；并非使用虚构情境就必然成功。</p></div></section>
+<section class="lesson-section"><h2>机制图：正常回答与越狱失效在哪里分叉？</h2>
+<div class="visual-board" role="group" aria-label="安全训练与应用规则、诱导性输入、模型判断、拒绝或越狱失效的四步机制图">
+<div class="visual-title">安全训练提供行为倾向，应用规则增加约束；越狱试图让模型在具体语境中偏离这些限制。</div>
+<div class="flow">
+<div class="flow-box"><strong>① 安全约束</strong><span>模型经过安全训练，应用设定回答边界</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>② 诱导性输入</strong><span>使用者改变问题的叙述方式或任务包装</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>③ 模型判断</strong><span>同时处理任务要求与安全限制，可能误判</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>④ 两种结果</strong><span>正确拒绝或安全回应；也可能产生越狱失效</span></div>
+</div>
+<p class="tiny-note">箭头展示风险形成过程，不表示某种说法必然能突破防护。是否成功取决于模型版本、安全训练、应用规则和额外防护。</p></div>
+<p>模型的安全边界通常不是一张绝对不会出错的“禁词表”。模型经过<b>安全对齐</b>，即利用训练反馈等方式学习哪些请求应回答、应拒绝或应安全改写；应用还可设置额外规则和内容检查。模型面对新问题时仍须根据上下文判断请求的真实目的，因此安全训练在未充分覆盖的表达方式上可能出现偏差。</p>
+<p>Wei等研究者把部分越狱失效解释为两种情形：一是“任务目标与安全目标竞争”，即模型过分追求完成提问者要求；二是“泛化不匹配”，即模型在常见场景学会拒绝，却未把相同判断稳定应用到新的表述。<b>泛化</b>就是把已经学到的规则运用到未见过的情境。Anthropic的研究还表明，长上下文中大量示例可能影响模型表现，但不能由此推断所有长输入都有问题。</p>
+<p>研究者常使用<b>红队测试</b>，即在授权的测试环境内主动寻找安全缺陷，检查模型对不同输入是否稳定拒绝。测试要同时看不当放行和正常问题被错误拒绝，不能只看一个“成功率”。即使模型输出失当，能否读取机密文件、调用工具或执行交易，仍取决于外部系统的独立权限校验。</p>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“越狱与提示注入完全相同。”提示注入强调输入对原定行为的干扰；越狱特别强调突破安全限制，两者有关联但关注点不同。</span></div>
+<div class="myth"><b>误解 02</b><span>“安全评测通过一次，就不会再被越狱。”模型更新、输入形式和应用场景都会变化，既有测试只能证明特定条件下的表现。</span></div>
+<div class="myth"><b>误解 03</b><span>“模型答出了不当内容，说明它已获得系统权限。”文本回答失当与实际越权操作是两个问题，后者还要检查工具端的身份、授权和执行控制。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>安全对齐不能替代持续评测和系统控制</h3>
+<p>医疗咨询、政务问答和企业智能体使用同一类模型，面临的损害后果却并不相同。采购与上线验收不能只查看模型厂商的一次通用安全得分，还应结合真实业务任务，对危险请求的拒绝、正常问题的可用性以及敏感操作的权限隔离分别测试，并记录模型版本和测试条件。</p>
+<p>安全表现随版本和使用方式变化时，运营者还需要建立复测、问题报告、人工复核与必要的暂停机制。责任判断应区分模型提供者的安全训练与评测、应用部署者的场景配置，以及业务系统对实际操作的授权控制，不能把所有风险归结为“模型被一句话骗过”。</p>
+</div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>模型安全对齐存在不稳定性时，各主体应承担何种持续注意义务？</h3><p>区分模型固有的拒绝能力、应用部署中的场景风险与工具权限控制，讨论安全评测对责任认定的证明效力。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>重点行业人工智能应用应如何建立跨版本安全复测与应急处置机制？</h3><p>研究统一测试案例、业务风险分级、复测触发条件和高风险输出后的人工接管要求。</p></div>
+</div></section>
+<section class="lesson-section"><h2>可靠来源</h2><ol class="source-links">
+<li id="s1"><a href="https://genai.owasp.org/llmrisk/llm01-prompt-injection/">OWASP，LLM01:2025 Prompt Injection</a>。说明提示注入与越狱的联系及区别。</li>
+<li id="s2"><a href="https://arxiv.org/abs/2307.02483">Wei、Haghtalab、Steinhardt，Jailbroken: How Does LLM Safety Training Fail?（2023）</a>。提出安全目标竞争与泛化不匹配两种解释。</li>
+<li id="s3"><a href="https://www.anthropic.com/research/many-shot-jailbreaking">Anthropic，Many-shot jailbreaking（2024年4月2日）</a>。介绍长上下文对越狱防护形成的挑战及缓解研究。</li>
+<li id="s4"><a href="https://www.nist.gov/publications/adversarial-machine-learning-taxonomy-and-terminology-attacks-and-mitigations-0">NIST，Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations（2025年3月24日）</a>。提供生成式人工智能攻击与缓解措施的分类框架。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第45课</small><p>下一课学习“数据投毒”：为什么被污染的数据可能改变模型的行为？</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main><footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
