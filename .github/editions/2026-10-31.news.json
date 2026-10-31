@@ -4,14 +4,14 @@
   "state": "verified",
   "phase": "publishing",
   "page": "articles/2026-10-31-tech-law-brief.html",
-  "news_count": 18,
+  "news_count": 17,
   "distribution": {
     "domestic": 2,
-    "foreign": 16
+    "foreign": 15
   },
   "mode": "facts_only",
   "analysis_pending": true,
-  "checked_at": "2026-10-31T11:11:37.259Z",
+  "checked_at": "2026-10-31T11:14:36.317Z",
   "last_news_scan_at": "2026-10-31T11:11:37.259Z",
   "checks": {
     "sources": true,
@@ -282,21 +282,6 @@
     },
     {
       "id": "research-item-15",
-      "date": "2026-10-28",
-      "domestic": false,
-      "jurisdiction": "美国、全球",
-      "agency": "美国网络安全和基础设施安全局（CISA）",
-      "title": "美国CISA确认Fragnesia内核提权漏洞遭利用，可与PHP2Shell形成攻击链",
-      "original_title": "CISA warns of Fragnesia Linux flaw chained in PHP2Shell attacks",
-      "source_name": "BleepingComputer及CISA",
-      "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-fragnesia-linux-flaw-chained-in-php2shell-attacks/",
-      "legal_status": "known_exploited_vulnerability_designation",
-      "fact": "美国CISA在10月28日更新已知遭利用漏洞目录，纳入Linux内核权限提升漏洞CVE-2026-46300（Fragnesia）。CISA说明，攻击者可能将其与两项已披露的PHP2Shell漏洞串联，以在受影响服务器获得更高权限，并要求联邦机构按期限处置。此次新进展是内核漏洞的遭利用确认及攻击链警示，不是重复发布先前PHP2Shell补丁消息。",
-      "previous_day_duplicate": false,
-      "seven_day_duplicate": false
-    },
-    {
-      "id": "research-item-16",
       "date": "2026-10-30",
       "domestic": false,
       "jurisdiction": "全球",
@@ -311,7 +296,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-17",
+      "id": "research-item-16",
       "date": "2026-10-30",
       "domestic": false,
       "jurisdiction": "东南亚、全球",
@@ -326,7 +311,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-18",
+      "id": "research-item-17",
       "date": "2026-10-30",
       "domestic": false,
       "jurisdiction": "美国、全球",
