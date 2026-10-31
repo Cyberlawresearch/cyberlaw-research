@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-31",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-10-31-new-works.html",
+  "page_blob_sha": "ed77e36a9c4d86eff1e621ccbe0aadb81e0b6496",
+  "newworks_count": 3,
+  "checked_at": "2026-10-31T12:33:52.670Z",
+  "checks": {
+    "publisher_sources_opened": true,
+    "bibliographic_fields_verified_as_available": true,
+    "history_original_title_search": true,
+    "history_doi_deduplication_for_known_dois": true,
+    "version_verified": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "indexes": [
+      "new-works.html",
+      "new-works-history.html",
+      "historical articles from 2026-08-28 to 2026-10-30"
+    ],
+    "search_method": "Reviewed historical page original titles and checked GitHub code search for each exact title and DOI; no matches found for selected works",
+    "fields": [
+      "original_title",
+      "DOI",
+      "author",
+      "publication_version"
+    ],
+    "matches_found": 0
+  },
+  "items": [
+    {
+      "cn_title": "政府将决策交给AI，何以仍是公共决定：透明、参与与质疑",
+      "author": "Alon Harel; Noam Kolt; Gadi Perl",
+      "original_title": "Genuinely Public AI",
+      "journal": "Legal Theory",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "publication_date": "2026-10-30",
+      "volume": "32",
+      "issue": null,
+      "pages": null,
+      "article_number": "e12",
+      "doi": "10.1017/S1352325226100950",
+      "publisher_page": "https://www.cambridge.org/core/journals/legal-theory/article/genuinely-public-ai/635D989EAAFC908505682DBC101C703A",
+      "version": "Cambridge published journal research article"
+    },
+    {
+      "cn_title": "捷克网络虚假信息治理：言论自由与平台监管的制度边界",
+      "author": "Tina Mizerová",
+      "original_title": "Landscape of Disinformation Regulation in Czechia",
+      "journal": "European Legal Perspectives on Online Disinformation",
+      "publisher": "Springer Nature Switzerland",
+      "year": 2026,
+      "publication_date": "2026-10-01",
+      "volume": "Ius Gentium: Comparative Perspectives on Law and Justice 140",
+      "issue": null,
+      "pages": "101–120",
+      "article_number": null,
+      "doi": "10.1007/978-3-032-25785-7_6",
+      "publisher_page": "https://link.springer.com/chapter/10.1007/978-3-032-25785-7_6",
+      "version": "Springer published open-access proceedings book chapter"
+    },
+    {
+      "cn_title": "英国AI相关发明的专利认定：判准与欧洲协调的争议",
+      "author": "Kathleen Liddell; Mateo Aboy",
+      "original_title": "EMOTIONAL PERCEPTION AND A QUESTIONABLE INTERPRETATION OF “INVENTION”: HARMONISATION IN THE AGE OF ARTIFICIAL INTELLIGENCE",
+      "journal": "The Cambridge Law Journal",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "publication_date": "2026-10-23",
+      "volume": "85",
+      "issue": "2",
+      "pages": "338–342",
+      "article_number": null,
+      "doi": "10.1017/S0008197326101718",
+      "publisher_page": "https://www.cambridge.org/core/journals/cambridge-law-journal/article/emotional-perception-and-a-questionable-interpretation-of-invention-harmonisation-in-the-age-of-artificial-intelligence/72140DF0EB841B47B1326BE23F132E0C",
+      "version": "Cambridge published case note, Case and Comment"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": false
+  }
+}
