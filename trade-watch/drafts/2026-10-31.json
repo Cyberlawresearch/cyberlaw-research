@@ -1,8 +1,8 @@
 {
   "date": "2026-10-31",
   "base_main_sha": "bb0710e1fd5e66fcdea10b7623147f084d26b9e8",
-  "phase": "verification",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "eu-pet-spunbond-2026",
@@ -139,14 +139,15 @@
   },
   "last_error": null,
   "next_actions": [
-    "再次核实每条原始链接与网页法律状态",
-    "将最终草稿设置publication_ready=true并回读",
-    "创建main当期完整正文，更新首页和归档并回读",
-    "核验当前提交Pages与公开页面"
+    "创建第053期完整HTML",
+    "依次更新main首页、归档",
+    "回读三份main文件并核对",
+    "核验与最终main提交相对应的Pages工作流及公开页面"
   ],
   "validation": {
     "dedup_last7": "与2026-10-24至2026-10-30七期全部news-card标题逐项核对；无相同监管阶段重复",
     "sources": "美USITC、英MOD、印DGTR两份原始PDF、欧委会PET公告均已打开；EUR-Lex 2390/2396页面遭自动化访问验证/访问限制，使用法规编号及同期法律资料交叉复核",
-    "final_sweep": "2026-10-31北京时间上午：补查美欧英日韩及印加澳的10月29—30日公开动态；未发现其他可准确落地且未重复的重大监管新决定"
+    "final_sweep": "2026-10-31北京时间上午：补查美欧英日韩及印加澳的10月29—30日公开动态；未发现其他可准确落地且未重复的重大监管新决定",
+    "source_procedure": "逐一核验源页；欧盟官方部分ELI页面只返回反机器人验证，使用同号条例法规索引与欧委会及法律专业媒体确认其合法内容，原始ELI链接保留为出处，待部署检查"
   }
 }
