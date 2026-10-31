@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-31",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-10-31-pozen-privacy-privacy-tradeoffs.html",
+  "selection": "David E. Pozen, Privacy-Privacy Tradeoffs",
+  "bibliography": {
+    "type": "article",
+    "author": "David E. Pozen",
+    "originalTitle": "Privacy-Privacy Tradeoffs",
+    "journal": "The University of Chicago Law Review",
+    "year": "2016",
+    "volume": "83",
+    "issue": "1",
+    "pages": "221–247",
+    "doi": "",
+    "url": "https://lawreview.uchicago.edu/print-archive/privacy-privacy-tradeoffs-0",
+    "cnTitle": "保护隐私也可能损害隐私：法律如何面对不同隐私利益的冲突"
+  },
+  "versions": {
+    "full_text": "Read the entire 27-page published University of Chicago Law Review PDF, pp. 221–247, introduction, Parts I–IV, and conclusion. Verified against publisher, Chicago Unbound and Columbia author repository.",
+    "publication": "2016 print journal vol. 83 no. 1, pp.221–247. Publisher webpage is dated 2017-04-20, not the print publication year. SSRN working paper separate."
+  },
+  "sources": [
+    "https://lawreview.uchicago.edu/sites/default/files/10%20Pozen_SYMP_Final.pdf",
+    "https://lawreview.uchicago.edu/print-archive/privacy-privacy-tradeoffs-0",
+    "https://chicagounbound.uchicago.edu/uclrev/vol83/iss1/10/",
+    "https://scholarship.law.columbia.edu/faculty_scholarship/768/"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-09-05-solove-taxonomy-privacy.html",
+    "articles/2026-10-29-strahilevitz-positive-theory-privacy-law.html"
+  ],
+  "timeline": null,
+  "body_length": 3389,
+  "checked_at": "2026-10-31",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}
