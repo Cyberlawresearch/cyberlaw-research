@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-31",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-10-31-spencer-man-versus-the-state.html",
+  "target_path": "articles/2026-10-31-spencer-man-versus-the-state.html",
+  "book": {
+    "author": "Herbert Spencer",
+    "original_title": "The Man versus the State",
+    "publisher": "Williams & Norgate",
+    "year": "1884",
+    "edition": "First collected edition, four essays originally published in Contemporary Review, with Preface and Postscript; later editions distinguished"
+  },
+  "source_urls": [
+    "https://constitution.org/2-Authors/hs/manvssta.htm",
+    "https://www.davidmhart.com/liberty/EnglishClassicalLiberals/Spencer/1884-ManVersusState/index.html",
+    "https://books.google.com/books/about/The_Man_Versus_the_State.html?id=-zcoAAAAYAAJ",
+    "https://www.huntington.org/collections/lib-124623",
+    "https://www.econlib.org/library/LFBooks/Spencer/spnMvS9.html",
+    "https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_27/June_1885/The_State_versus_the_Man",
+    "https://www.cambridge.org/core/journals/review-of-politics/article/abs/spencer-and-the-liberal-idea-of-community/D1E35D9D40E205C8E44ABFD357081536"
+  ],
+  "original_verification": "系统核对公开的1884年英文结集完整文本：序言、The New Toryism、The Coming Slavery、The Sins of Legislators、The Great Political Superstition、跋语及所列原注；结合原始馆藏及出版书目核验四篇组成、出版社与年份。重点核对政治自由与实质限制、强制/自愿合作、立法累积后果、立法者知识责任、多数权力边界、自然权利及战争与权威关系。未声称逐字校勘1884年印本；后世版增注和编辑导论不作为原版主张。",
+  "critics": [
+    {
+      "name": "Émile de Laveleye",
+      "work": "The State versus the Man: A Criticism of Mr. Herbert Spencer (Popular Science Monthly, June 1885; Eclectic Magazine, June 1885 reprint)",
+      "url": "https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_27/June_1885/The_State_versus_the_Man",
+      "checked": "核对1885年直接批评原文，说明其赞赏斯宾塞分析但质疑自然竞争类比与劳动者救济结论，并非泛泛后世评论"
+    },
+    {
+      "name": "Richard P. Hiskes",
+      "work": "Spencer and the Liberal Idea of Community (The Review of Politics, 45(4), 1983, pp. 595–609, DOI:10.1017/S0034670500045551)",
+      "url": "https://www.cambridge.org/core/journals/review-of-politics/article/abs/spencer-and-the-liberal-idea-of-community/D1E35D9D40E205C8E44ABFD357081536",
+      "checked": "核对期刊原始书目、摘要和可查注释，区分纠正个人主义刻板印象与批评其过度经济化的合作动机"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html：2026年9—10月全量已发布日课标题与入口",
+    "classics-history.html：21部早期导出经典原著索引",
+    "GitHub repository code search: Herbert Spencer, 斯宾塞, The Man versus the State; no same-title classic"
+  ],
+  "duplicate_found": false,
+  "sections": 64,
+  "prose_length": 8612,
+  "checked_at": "2026-10-31",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
