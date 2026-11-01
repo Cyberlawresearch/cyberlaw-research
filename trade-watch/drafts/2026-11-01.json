@@ -1,14 +1,61 @@
 {
   "date": "2026-11-01",
   "base_main_sha": "44850a4e746e5c5eda5c55369893d79c3321f156",
-  "phase": "researching",
+  "phase": "source_review",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "eu-customs-2403",
+      "title": "欧盟统一处理费报关代码和AEO担保细则11月1日起适用",
+      "event_date": "2026-10-29",
+      "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R2403",
+      "stage": "实施条例已发布，2026-11-01起适用",
+      "verification": "欧委会海关改革页面直接指向原始实施条例；全文细节另有辅助交叉验证"
+    },
+    {
+      "id": "ch-cn-fta-upgrade",
+      "title": "中国与瑞士签署自贸协定升级议定书",
+      "event_date": "2026-10-30",
+      "source": "https://www.admin.ch/en/newnsb/Nb4J2LzVCEaA",
+      "stage": "已签署，尚待生效程序"
+    },
+    {
+      "id": "us-octg-preliminary",
+      "title": "美国对奥地利、台湾和阿联酋油井管作出反倾销初裁",
+      "event_date": "2026-10-30",
+      "source": "https://www.trade.gov/commerce-preliminary-antidumping-duty-investigations-oil-country-tubular-goods-octg-austria-taiwan",
+      "stage": "倾销初裁，调查继续"
+    },
+    {
+      "id": "quad-minerals-customs",
+      "title": "美日印澳四方提出优化关键矿产回收跨境通关",
+      "event_date": "2026-10-31",
+      "source": "https://www.foreignminister.gov.au/minister/penny-wong/media-release/quad-joint-press-release-economic-prosperity-and-security",
+      "stage": "联合政策声明、尚非新贸易限制"
+    },
+    {
+      "id": "india-uk-whisky-tariff",
+      "title": "印度对英国产散装苏格兰威士忌优惠税率适用产生争议",
+      "event_date": "2026-10-31",
+      "source": "https://www.reuters.com/world/india/india-meet-liquor-firms-domestic-giants-join-foreign-peers-scotch-dispute-2026-10-31/",
+      "stage": "印度税率适用调查和政府拟协商，非最终新税令"
+    }
+  ],
+  "coverage": {
+    "US": "核查商务部10月30日油井管反倾销初裁及贸易、制裁公告；与往期美国事项去重",
+    "EU": "查欧委会新海关实施条例2026/2403；与10月26日收费金额新闻区分",
+    "UK": "核查贸易救济署新出口商复审与英印关税争议",
+    "Japan": "核查外务省10月31日四方外长声明及经济产业主管动态",
+    "Korea": "核查产业通商部及贸易委员会新闻；无确认应重复的终裁",
+    "India": "核查DGTR及英印自贸协定威士忌税率争议",
+    "Canada": "巡视CBSA公告；10月30日建筑电缆双反已收录",
+    "Australia": "核查外长办公室四方经济安全联合公报及反倾销委员会公告",
+    "Switzerland": "确认10月30日中瑞升级FTA签署及生效阶段"
+  },
   "last_error": null,
   "next_actions": [
-    "核查美欧英日韩及印加澳最新公告",
-    "读取最近7期全文并事件去重",
-    "逐条核查原始来源，更新草稿并正式发布"
+    "核实条例2026/2403官方可直接访问的详细规定",
+    "核对5条来源和最近7期事件去重，终扫",
+    "形成完整网页并发布"
   ]
 }
