@@ -1,7 +1,7 @@
 {
   "date": "2026-11-01",
   "base_main_sha": "44850a4e746e5c5eda5c55369893d79c3321f156",
-  "phase": "ready_to_publish",
+  "phase": "main_written_deployment_check",
   "publication_ready": true,
   "items": [
     {
@@ -54,9 +54,8 @@
   },
   "last_error": null,
   "next_actions": [
-    "按第054期创建完整HTML",
-    "更新main首页与归档并回读",
-    "验收最终提交对应Pages及来源链接"
+    "确认最终提交8365e7e对应Pages构建并执行公开页面验收",
+    "核实独立Trade Watch source diagnostics的页面及来源结果"
   ],
   "dedup_checked_dates": [
     "2026-10-25",
@@ -75,5 +74,17 @@
     "Quad": "澳大利亚外长办公室10月31日四方联合声明已打开并核对跨境废料通关和10百万美元承诺",
     "IndiaUK": "路透社10月31日报道已打开，双方对优惠适用有争议，11月2日拟协商，尚无新最终税令"
   },
-  "final_sweep": "末轮核查美国商务部案件列表、英国贸易救济署、中国挖掘机两项旧复审进展、日经产省、日本外务省、韩产业通商部、印度贸易救济总局、加拿大边境署、澳贸易救济委员会及欧盟近期新闻；未将既有重复措施再次收录。"
+  "final_sweep": "末轮核查美国商务部案件列表、英国贸易救济署、中国挖掘机两项旧复审进展、日经产省、日本外务省、韩产业通商部、印度贸易救济总局、加拿大边境署、澳贸易救济委员会及欧盟近期新闻；未将既有重复措施再次收录。",
+  "main_final_commit": "8365e7e3149e882a3da2df3f6bccd2e468bc4bb6",
+  "main_paths_verified": [
+    "trade-watch/issues/2026-11-01.html",
+    "trade-watch/index.html",
+    "trade-watch/archive.html"
+  ],
+  "main_check": {
+    "issue_items": 5,
+    "source_urls": 7,
+    "archive_entries": 54,
+    "source_href_html_ampersand_verified": true
+  }
 }
