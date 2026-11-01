@@ -1,0 +1,229 @@
+{
+  "date": "2026-11-01",
+  "column": "brief",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-01-tech-law-brief.html",
+  "news_count": 11,
+  "distribution": {
+    "domestic": 1,
+    "foreign": 10
+  },
+  "mode": "facts_only",
+  "analysis_pending": true,
+  "checked_at": "2026-11-01T11:12:11.279Z",
+  "last_news_scan_at": "2026-11-01T11:12:11.279Z",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  },
+  "coverage": [
+    {
+      "source_group": "国内中央机关、地方政府与媒体",
+      "status": "searched",
+      "result": "巡视中央网信部门、工信部、国家数据局、江苏等地方机关与新闻媒体；核查无锡先导区建设消息"
+    },
+    {
+      "source_group": "日、韩、越及亚洲地区官方资料",
+      "status": "searched",
+      "result": "日语核实日本IPA发布指南，韩语和越语独立查询主管机关近期动态，排除摘要信息不能证实的旧事"
+    },
+    {
+      "source_group": "欧洲与英国监管及行政数字化",
+      "status": "searched",
+      "result": "查阅英国规划部门、Ofcom官方报告，核对规则生效及智能体作为行政辅助工具的真实程序性质"
+    },
+    {
+      "source_group": "美国司法、数字竞争与平台治理",
+      "status": "searched",
+      "result": "核查司法部引渡和量刑通告以及Reddit官方登录访问声明，区分审判结果、刑事指控和未来试行计划"
+    },
+    {
+      "source_group": "AI智能体、云与网络安全",
+      "status": "searched",
+      "result": "核实CrowdStrike研究报告、Chainalysis和Northflank安全通报以及Android PoC报告"
+    },
+    {
+      "source_group": "上一日及近七日事件级去重和72小时复核",
+      "status": "searched",
+      "result": "回读10月25日至31日简报逐条来源，排除10月30日已报Cursor、币安、Polymarket、Hugging Face恶意模型及Drupal等重复旧闻"
+    }
+  ],
+  "items": [
+    {
+      "id": "research-item-1",
+      "date": "2026-10-31",
+      "domestic": true,
+      "jurisdiction": "中国",
+      "agency": "江苏省人民政府、工业和信息化部",
+      "title": "无锡启动国家人工智能产业创新应用先导区建设，聚焦物联网与先进制造融合",
+      "original_title": "2026世界物联网博览会在无锡开幕 信长星出席",
+      "source_name": "江苏省人民政府",
+      "url": "https://www.js.gov.cn/art/2026/11/1/art_60095_11852906.html",
+      "legal_status": "industrial_zone_launch",
+      "fact": "江苏省政府11月1日发布消息称，10月31日在无锡举办的2026世界物联网博览会开幕式上，江苏启动无锡国家人工智能产业创新应用先导区建设。工业和信息化部有关负责人表示将支持无锡建设先导区，推动人工智能、物联网和制造业融合，并强调标准建设及安全要求。此次为先导区建设启动和产业政策部署，不是出台新的人工智能监管规章。",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "id": "research-item-2",
+      "date": "2026-10-30",
+      "domestic": false,
+      "jurisdiction": "日本",
+      "agency": "日本信息处理推进机构（IPA）",
+      "title": "日本IPA发布供应链数据互联指南2.0版，衔接开放数据空间架构和平台认证制度",
+      "original_title": "プレス発表 「データ連携の仕組みに関するガイドラインの手引き サプライチェーン共通編 2.0版」を公開",
+      "source_name": "IPA官方新闻稿",
+      "url": "https://www.ipa.go.jp/pressrelease/2026/press20261030.html",
+      "legal_status": "guidance_revision",
+      "fact": "日本信息处理推进机构10月30日公布《数据联动机制指南手引：供应链共通篇》2.0版，更新企业间数据联通的通用业务、功能及设计要求。新版本参考开放数据空间参考架构ODS-RAM V2，调整原则、功能配置与术语，并说明其与特定行业指南及公益数字平台运营者认证制度的关系。该文件是技术及业务设计指导文件，并非新法律。",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "id": "research-item-3",
+      "date": "2026-10-31",
+      "domestic": false,
+      "jurisdiction": "英国",
+      "agency": "英国住房、社区与地方政府部",
+      "title": "英国调整规划申请审批程序，AI辅助工具扩大至15个地方议会",
+      "original_title": "Faster planning decisions as new rules and AI tackle delays",
+      "source_name": "英国政府",
+      "url": "https://www.gov.uk/government/news/faster-planning-decisions-as-new-rules-and-ai-tackle-delays",
+      "legal_status": "rules_effective_and_government_pilot",
+      "fact": "英国政府10月30日宣布，自10月31日起，部分常规规划许可申请将由专业规划官员而非规划委员会作出决定。政府同时公布与Google DeepMind等合作研发的PlanAssist工具扩展至15个地方议会，为工作人员汇总申请、政策及场地限制信息；试点显示部分工作耗时下降58%。政府明确最终审查及决策仍由规划官员负责，该AI工具不自动作出行政决定。",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "id": "research-item-4",
+      "date": "2026-10-30",
+      "domestic": false,
+      "jurisdiction": "美国、全球",
+      "agency": "Reddit",
+      "title": "Reddit宣布拟调整匿名浏览权限，逐步限制未经授权抓取平台内容",
+      "original_title": "About that login screen",
+      "source_name": "Reddit首席执行官公开说明",
+      "url": "https://www.reddit.com/user/spez/comments/1xiupm0/about_that_login_screen/",
+      "legal_status": "corporate_policy_announcement",
+      "fact": "Reddit联合创始人兼首席执行官Steve Huffman近日宣布，网站将逐步转向以登录用户为主的访问模式，并拟在未来数月先于美国以外的部分市场试行。公司称调整旨在改善用户体验、满足不同市场监管要求，并减少未经许可的内容抓取，商业数据授权继续附有使用限制。Reddit表示分享链接和搜索引擎导入的访问方式仍将测试保留，目前宣布的是计划而非全球统一实施的登录禁令。",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "id": "research-item-5",
+      "date": "2026-10-30",
+      "domestic": false,
+      "jurisdiction": "美国、全球",
+      "agency": "Chainalysis",
+      "title": "区块链分析机构Chainalysis披露智能体辅助入侵，部分客户账户资料遭访问",
+      "original_title": "Chainalysis Security Incident Information",
+      "source_name": "Chainalysis官方通报",
+      "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
+      "legal_status": "security_incident_disclosure",
+      "fact": "Chainalysis于10月30日通报，外部攻击者在10月使用公司所称的进攻性智能体技术访问其内部工具和系统。调查确认部分客户平台用户编号、姓名、电子邮箱及组织角色信息遭访问，公司表示尚未发现调查内容、身份凭证或会话令牌遭未经授权访问的证据。具体受影响记录仍在核查，通报明确与近期币安资金失窃事件无关。",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "id": "research-item-6",
+      "date": "2026-10-31",
+      "domestic": false,
+      "jurisdiction": "美国、全球",
+      "agency": "Northflank",
+      "title": "Northflank确认客户AI接口密钥遭异常使用，要求轮换托管环境凭证",
+      "original_title": "Northflank - Status Page: Security incident",
+      "source_name": "Northflank官方状态通报",
+      "url": "https://status.northflank.com/",
+      "legal_status": "security_incident_ongoing",
+      "fact": "云应用平台Northflank在10月30日接到Wiz安全告警后发布安全事件通报，并要求客户假定托管环境变量存在泄露风险，立即撤销和更换相关密钥。公司当天晚间确认接获多名客户报告，其部署在平台上的AI服务API密钥出现未经授权使用；10月31日继续增加数据库凭证轮换及审计日志功能。入侵路径、受影响客户数量与全部损失尚未得到官方确定。",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "id": "research-item-7",
+      "date": "2026-10-31",
+      "domestic": false,
+      "jurisdiction": "美国、全球",
+      "agency": "Android安全研究者、Google",
+      "title": "Android零交互短信拒绝服务漏洞公开利用验证，旧版本设备仍可能受影响",
+      "original_title": "New Android SMS of Death exploit can remotely crash unpatched phones",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/",
+      "legal_status": "proof_of_concept_disclosure",
+      "fact": "安全研究者10月31日公开Android漏洞CVE-2026-58882的概念验证利用方式，攻击者可通过特制短信导致未修复设备的蜂窝通信进程中断，部分情形可能影响正在进行的电话。研究者称Android 14至17的有关版本已通过10月更新修复，较旧版本仍可能面临风险。公开的是漏洞验证与修复情况，不等于已经证实出现大规模在野攻击。",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "id": "research-item-8",
+      "date": "2026-10-29",
+      "domestic": false,
+      "jurisdiction": "美国、全球",
+      "agency": "CrowdStrike",
+      "title": "CrowdStrike披露攻击者使用AI智能体框架实施跨国网络间谍活动",
+      "original_title": "VAPOR PANDA Uses AI-Driven ARTEX to Grow Global Espionage Campaign",
+      "source_name": "CrowdStrike研究报告",
+      "url": "https://www.crowdstrike.com/en-us/blog/vapor-panda-uses-artex-to-scale-global-campaign/",
+      "legal_status": "security_research_disclosure",
+      "fact": "CrowdStrike于10月29日发布报告称，其威胁追踪团队发现被跟踪为VAPOR PANDA的攻击者使用ARTEX智能体框架和多种大语言模型实施并行入侵。该公司在10月17日起的11天内观测到涉及至少14个国家、超过200家机构的攻击活动，包括政府机关、国防、半导体和电信部门。该组织与中国有关联是CrowdStrike的研究归因，并非司法或监管机构的正式认定。",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "id": "research-item-9",
+      "date": "2026-10-30",
+      "domestic": false,
+      "jurisdiction": "美国",
+      "agency": "美国司法部、加利福尼亚北区联邦地区法院",
+      "title": "美国司法部宣布以色列男子因涉嫌Nomad Bridge智能合约盗币案被引渡并首次出庭",
+      "original_title": "Israeli National Extradited to Face Charges for Stealing Nearly $3M in Virtual Currency Heist",
+      "source_name": "美国司法部",
+      "url": "https://www.justice.gov/opa/pr/israeli-national-extradited-face-charges-stealing-nearly-3m-virtual-currency-heist",
+      "legal_status": "extradition_initial_appearance",
+      "fact": "美国司法部10月30日宣布，以色列公民Alexander Gurevich被引渡至美国，并就涉嫌利用Nomad Bridge智能合约漏洞窃取虚拟资产的指控首次出庭。起诉书指其在2022年通过未经授权交易转移价值约289万美元的代币；相关起诉于2023年提出。案件目前属于引渡后刑事起诉阶段，司法部强调被告未经定罪应推定无罪。",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "id": "research-item-10",
+      "date": "2026-10-29",
+      "domestic": false,
+      "jurisdiction": "英国",
+      "agency": "英国通信管理局（Ofcom）",
+      "title": "英国Ofcom公布儿童使用应用商店报告，建议强化年龄识别和内容适龄措施",
+      "original_title": "Report on the use of app stores by children",
+      "source_name": "Ofcom官方报告",
+      "url": "https://www.ofcom.org.uk/online-safety/protecting-children/report-on-the-use-of-app-stores-by-children",
+      "legal_status": "regulatory_research_report",
+      "fact": "英国通信管理局Ofcom于10月29日根据《2023年网络安全法》第161条公布儿童使用应用商店的专题调查。机构指出受调查应用商店的年龄识别措施未能始终可靠判断使用者是否为儿童，并提出可增加有效年龄核验以及改善应用年龄适配和风险信息。Ofcom明确应用商店目前并不属于该法直接规制的服务范围，报告供政府考虑未来规则，并非已生效的应用商店年龄核验义务。",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "id": "research-item-11",
+      "date": "2026-10-29",
+      "domestic": false,
+      "jurisdiction": "美国、叙利亚",
+      "agency": "美国司法部、弗吉尼亚东区联邦地区法院",
+      "title": "美国法院判处原叙利亚政权关联黑客42个月监禁，涉及长期跨国网络入侵",
+      "original_title": "Syrian Man Sentenced for Wide-Ranging Hacking Conspiracy Conducted on Behalf of the Bashar Al Assad Regime",
+      "source_name": "美国司法部",
+      "url": "https://www.justice.gov/opa/pr/syrian-man-sentenced-wide-ranging-hacking-conspiracy-conducted-behalf-bashar-al-assad-regime",
+      "legal_status": "court_sentencing",
+      "fact": "美国司法部10月29日宣布，弗吉尼亚东区联邦法院判处Ahmad Umar Agha监禁42个月，涉及其为前叙利亚政权从事的一系列黑客入侵活动。司法部称该行为在2011至2014年间攻击了约47家西方新闻媒体、企业、非政府组织和政府机构，并包含劫持新闻媒体社交账号发布虚假消息的行为。此次是长期刑事案件的正式量刑裁判，而非新发生的攻击。",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    }
+  ]
+}
