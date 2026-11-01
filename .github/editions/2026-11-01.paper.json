@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-01",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-01-scherer-regulating-ai-systems.html",
+  "selection": "Matthew U. Scherer, Regulating Artificial Intelligence Systems: Risks, Challenges, Competencies, and Strategies",
+  "bibliography": {
+    "type": "article",
+    "author": "Matthew U. Scherer",
+    "originalTitle": "Regulating Artificial Intelligence Systems: Risks, Challenges, Competencies, and Strategies",
+    "journal": "Harvard Journal of Law & Technology",
+    "year": "2016",
+    "volume": "29",
+    "issue": "2",
+    "pages": "353–400",
+    "doi": "",
+    "url": "https://jolt.law.harvard.edu/articles/pdf/v29/29HarvJLTech353.pdf",
+    "cnTitle": "人工智能为何难以规制：风险、机构能力与差异化侵权责任"
+  },
+  "versions": {
+    "full_text": "Read the complete 48-page Harvard Journal of Law & Technology publisher PDF, journal pp.353–400, including introduction, Parts II–IV and conclusion.",
+    "publication": "2016 journal vol.29 issue 2 pp.353–400; SSRN 2015 preprint has its own DOI 10.2139/ssrn.2609777, not assigned to the journal edition."
+  },
+  "sources": [
+    "https://jolt.law.harvard.edu/articles/pdf/v29/29HarvJLTech353.pdf",
+    "https://jolt.law.harvard.edu/articles/v29.php",
+    "https://papers.ssrn.com/abstract=2609777"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-09-23-tutt-fda-for-algorithms.html"
+  ],
+  "timeline": null,
+  "body_length": 3758,
+  "checked_at": "2026-11-01",
+  "publication": {
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null
+  }
+}
