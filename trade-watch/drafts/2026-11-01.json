@@ -1,7 +1,7 @@
 {
   "date": "2026-11-01",
   "base_main_sha": "44850a4e746e5c5eda5c55369893d79c3321f156",
-  "phase": "source_link_recheck",
+  "phase": "published_with_source_diagnostic_warning",
   "publication_ready": true,
   "items": [
     {
@@ -52,10 +52,14 @@
     "Australia": "核查外长办公室四方经济安全联合公报及反倾销委员会公告",
     "Switzerland": "确认10月30日中瑞升级FTA签署及生效阶段"
   },
-  "last_error": null,
+  "last_error": {
+    "phase": "external_source_diagnostic",
+    "workflow_run": 41260137922,
+    "error": "Official Japan MOFA event page returned HTTP 403 from automated GitHub job, while web verification succeeded; all three public Pages and other six sources pass.",
+    "retry_count": 1
+  },
   "next_actions": [
-    "等待最新main提交的Pages成功并检查公开页面",
-    "检查本次最终提交来源核验工作流全部外部链接"
+    "下一期继续正常调度；如官方日本外务省网站对自动化核验开放，可复检该链接"
   ],
   "dedup_checked_dates": [
     "2026-10-25",
@@ -111,5 +115,31 @@
   "source_link_replacements": {
     "quad": "https://www.mofa.go.jp/fp/nsp/pageite_000001_00006.html",
     "india_uk": "https://live.euronext.com/en/financial-news/india-meet-liquor-firms-domestic-giants-join-foreign-peers-scotch-dispute"
+  },
+  "final_publication": {
+    "main_commit": "1fd80677d835c51379b7b3b0e69ccc38241e13b1",
+    "pages_workflow": {
+      "id": 41259884630,
+      "conclusion": "success"
+    },
+    "publication_guard": {
+      "id": 41260137919,
+      "conclusion": "success",
+      "public_pages": "3/3",
+      "news_count": 5
+    },
+    "source_diagnostic": {
+      "id": 41260137922,
+      "conclusion": "failure",
+      "pages": "3/3 pass",
+      "links": "6/7 pass",
+      "unavailable": [
+        {
+          "url": "https://www.mofa.go.jp/fp/nsp/pageite_000001_00006.html",
+          "error": "403 Client Error: Forbidden from GitHub Action",
+          "other_check": "Official article independently opened and matched to Oct31 Quad event"
+        }
+      ]
+    }
   }
 }
