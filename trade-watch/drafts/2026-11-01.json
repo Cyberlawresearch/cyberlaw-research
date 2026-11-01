@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-01",
+  "base_main_sha": "44850a4e746e5c5eda5c55369893d79c3321f156",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "核查美欧英日韩及印加澳最新公告",
+    "读取最近7期全文并事件去重",
+    "逐条核查原始来源，更新草稿并正式发布"
+  ]
+}
