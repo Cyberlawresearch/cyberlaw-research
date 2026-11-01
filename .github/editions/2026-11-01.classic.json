@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-01",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-01-paine-common-sense.html",
+  "target_path": "articles/2026-11-01-paine-common-sense.html",
+  "book": {
+    "author": "Thomas Paine",
+    "original_title": "Common Sense",
+    "publisher": "W. & T. Bradford",
+    "year": "1776",
+    "edition": "Philadelphia enlarged edition, 14 February 1776 (includes Appendix and Quaker Address); first Robert Bell printing January 1776 separately distinguished"
+  },
+  "source_urls": [
+    "https://www.gutenberg.org/files/147/147-h/147-h.htm",
+    "https://www.gutenberg.org/ebooks/147",
+    "https://www.christies.com/en/lot/lot-5562254",
+    "https://www.baumanrarebooks.com/rare-books/paine-thomas/common-sense/61856.aspx",
+    "https://content.www.wellcomecollection.org/works/s5nbrf2n",
+    "https://archive.org/details/plaintruthaddres00chal_1",
+    "https://constitutioncenter.org/the-constitution/historic-document-library/detail/john-adams-thoughts-on-government-1776",
+    "https://press-pubs.uchicago.edu/founders/documents/v1ch4s5.html"
+  ],
+  "original_verification": "系统核对1776年2月14日Bradford增订版《Common Sense》完整英文公开原著，包括引言、四部分、增订附录及致贵格会公开信，对照最早Robert Bell同年1月版书目；未将增订附录或公开信归为初版正文。以原始全文核对社会与政府、世袭王权、北美独立、资源与财政、代表、章程、宗教及战时政治分歧的具体论据。",
+  "critics": [
+    {
+      "name": "James Chalmers (Candidus)",
+      "work": "Plain Truth; Addressed to the Inhabitants of America, Containing Remarks on a Late Pamphlet Entitled Common Sense, Philadelphia: R. Bell, 1776",
+      "url": "https://content.www.wellcomecollection.org/works/s5nbrf2n",
+      "checked": "核对1776年原版书目与公开扫描；质疑独立的安全性、现实可行性和英国混合宪制替代方案"
+    },
+    {
+      "name": "John Adams",
+      "work": "Thoughts on Government, Applicable to the Present State of the American Colonies, 1776",
+      "url": "https://press-pubs.uchicago.edu/founders/documents/v1ch4s5.html",
+      "checked": "核对1776年全文及史料编目；反对仅由单一立法机关控制政府，主张两院及司法独立等约束"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html现有全部已发表经典著作书目和入口",
+    "classics-history.html第15至35期全部导出历史著作，包括耶林《为权利而斗争》已存在，因此未重复选择",
+    "Common Sense与此前10月4日同一作者《人权论》区分为不同出版著作"
+  ],
+  "duplicate_found": false,
+  "sections": 71,
+  "prose_length": 9405,
+  "checked_at": "2026-11-01",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
