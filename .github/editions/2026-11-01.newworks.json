@@ -1,0 +1,99 @@
+{
+  "date": "2026-11-01",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-01-new-works.html",
+  "page_blob_sha": "95dbcc26131f45d61cfb904ec5d0a8d9a52a7064",
+  "newworks_count": 3,
+  "checked_at": "2026-11-01T12:38:30.830Z",
+  "checks": {
+    "publisher_sources_opened": true,
+    "bibliographic_fields_verified_as_available": true,
+    "history_original_title_search": true,
+    "history_doi_deduplication_for_known_dois": true,
+    "version_verified": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "indexes": [
+      "new-works.html",
+      "new-works-history.html",
+      "GitHub code search across all indexed current and historical research-newworks files"
+    ],
+    "fields": [
+      "original_title",
+      "DOI",
+      "author",
+      "publication_version"
+    ],
+    "search_method": "Opened Springer IIC article, Springer book chapter and Oxford Capital Markets Law Journal original issue; checked full exact original title/DOI/author GitHub search including older new-works/ history. Search results returned no prior entries for the three selected DOIs and author/title pairings.",
+    "matches_found": 0
+  },
+  "items": [
+    {
+      "cn_title": "社交平台鼓励分享，版权法却要求排他：平台条款与用户权利的冲突",
+      "author": "Luca Ettore Perriello",
+      "original_title": "Copyright in the Age of Sharing: Platforms, Users, and the Law’s Structural Paradox",
+      "journal": "IIC – International Review of Intellectual Property and Competition Law",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-07-27",
+      "volume": "57",
+      "issue": null,
+      "pages": "946–976",
+      "article_number": null,
+      "doi": "10.1007/s40319-026-01746-1",
+      "publisher_page": "https://link.springer.com/article/10.1007/s40319-026-01746-1",
+      "version": "Springer published open-access journal article"
+    },
+    {
+      "cn_title": "信贷资产由AI筛选后，证券化披露还应说明哪些模型风险",
+      "author": "Tariq Kamal Alhasan; Elena F Pérez Carrillo; Mohammed Alqaisi; Faisal Alabdallat; Maher Kamal Alhasan",
+      "original_title": "The algorithmic pool: AI-mediated receivables, asset quality, and securitization disclosure",
+      "journal": "Capital Markets Law Journal",
+      "publisher": "Oxford University Press",
+      "year": 2026,
+      "publication_date": "2026-10-07",
+      "volume": "21",
+      "issue": "4 (December 2026, in progress)",
+      "pages": null,
+      "article_number": "kmag029",
+      "doi": "10.1093/cmlj/kmag029",
+      "publisher_page": "https://academic.oup.com/cmlj/issue/21/4",
+      "publisher_article_page": "https://academic.oup.com/cmlj/article-abstract/21/4/kmag029/8876151",
+      "version": "Oxford online journal article; Dec 2026 issue in progress"
+    },
+    {
+      "cn_title": "从电子商务指令到DSA、DMA：欧盟如何重塑大型平台监管",
+      "author": "Cornelia Kutterer; Giovanni De Gregorio",
+      "original_title": "Regulating Big Tech: Tracing the Trajectory of Platform Regulation in the Age of AI",
+      "journal": "The Making of a Global Digital Rulebook",
+      "publisher": "Palgrave Macmillan, Singapore",
+      "year": 2026,
+      "publication_date": "2026-08-23",
+      "volume": null,
+      "issue": null,
+      "pages": "319–360",
+      "article_number": null,
+      "doi": "10.1007/978-981-95-9226-5_10",
+      "publisher_page": "https://link.springer.com/chapter/10.1007/978-981-95-9226-5_10",
+      "version": "Published open-access book chapter"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": false
+  },
+  "other_columns_at_record": {
+    "brief": "articles/2026-11-01-tech-law-brief.html",
+    "paper": "articles/2026-11-01-scherer-regulating-ai-systems.html",
+    "classic": "articles/2026-11-01-paine-common-sense.html"
+  }
+}
