@@ -1,7 +1,7 @@
 {
   "date": "2026-11-01",
   "base_main_sha": "44850a4e746e5c5eda5c55369893d79c3321f156",
-  "phase": "main_written_deployment_check",
+  "phase": "source_link_recheck",
   "publication_ready": true,
   "items": [
     {
@@ -54,8 +54,8 @@
   },
   "last_error": null,
   "next_actions": [
-    "确认最终提交8365e7e对应Pages构建并执行公开页面验收",
-    "核实独立Trade Watch source diagnostics的页面及来源结果"
+    "等待最新main提交的Pages成功并检查公开页面",
+    "检查本次最终提交来源核验工作流全部外部链接"
   ],
   "dedup_checked_dates": [
     "2026-10-25",
@@ -75,7 +75,7 @@
     "IndiaUK": "路透社10月31日报道已打开，双方对优惠适用有争议，11月2日拟协商，尚无新最终税令"
   },
   "final_sweep": "末轮核查美国商务部案件列表、英国贸易救济署、中国挖掘机两项旧复审进展、日经产省、日本外务省、韩产业通商部、印度贸易救济总局、加拿大边境署、澳贸易救济委员会及欧盟近期新闻；未将既有重复措施再次收录。",
-  "main_final_commit": "8365e7e3149e882a3da2df3f6bccd2e468bc4bb6",
+  "main_final_commit": "1fd80677d835c51379b7b3b0e69ccc38241e13b1",
   "main_paths_verified": [
     "trade-watch/issues/2026-11-01.html",
     "trade-watch/index.html",
@@ -86,5 +86,30 @@
     "source_urls": 7,
     "archive_entries": 54,
     "source_href_html_ampersand_verified": true
+  },
+  "initial_pages_commit": "8365e7e3149e882a3da2df3f6bccd2e468bc4bb6",
+  "initial_pages_success": true,
+  "initial_public_pages_success": true,
+  "source_diagnostics_previous": {
+    "workflow_run": 41259533841,
+    "stage": "Verify published Trade Watch pages and source links",
+    "result": "failure",
+    "page_checks": "3/3 passed",
+    "links_ok": 5,
+    "links_fail": 2,
+    "failures": [
+      {
+        "url": "https://www.foreignminister.gov.au/minister/penny-wong/media-release/quad-joint-press-release-economic-prosperity-and-security",
+        "error": "Read timed out (60s)"
+      },
+      {
+        "url": "https://www.reuters.com/world/india/india-meet-liquor-firms-domestic-giants-join-foreign-peers-scotch-dispute-2026-10-31/",
+        "error": "401 Client Error: HTTP Forbidden"
+      }
+    ]
+  },
+  "source_link_replacements": {
+    "quad": "https://www.mofa.go.jp/fp/nsp/pageite_000001_00006.html",
+    "india_uk": "https://live.euronext.com/en/financial-news/india-meet-liquor-firms-domestic-giants-join-foreign-peers-scotch-dispute"
   }
 }
