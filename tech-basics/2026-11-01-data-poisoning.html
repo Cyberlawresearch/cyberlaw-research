@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>第45课｜数据投毒：为什么被污染的训练数据可能改变模型行为？｜网信法技术基础</title>
+<link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../briefs.html">全球科技法简报</a><a href="../papers.html">域外法学论文精读</a><a href="../classics.html">法学经典著作</a><a href="../new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 45 · SAFETY &amp; FAILURE · 2026.11.01</div><h1>数据投毒：为什么被污染的训练数据可能改变模型行为？</h1><p class="tech-lead">今日问题：用户没有发出危险指令，模型为什么仍可能持续给出被人为引导的错误答案？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus"><div><strong>它是什么</strong><p><b>数据投毒（Data Poisoning）</b>，是有人故意篡改或混入模型学习时使用的数据，试图让模型形成错误判断、偏向特定答案，甚至在指定条件下出现异常行为。攻击发生在学习环节，而不是要求已经部署的模型当场服从一条恶意指令。</p></div><div><strong>一个生活例子</strong><p>某机构用政策问答样本训练专业助手。假设部分样本被故意改写，把补贴申请条件说反了。模型若学到错误对应关系，日后面对正常提问也可能作出错误指引。这是说明机制的假设情境，并非少数错误样本必然导致投毒成功。</p></div></section>
+<section class="lesson-section"><h2>机制图：污染怎样从数据进入模型？</h2>
+<div class="visual-board" role="group" aria-label="从收集数据、样本被篡改、参与训练到错误输出的四步机制图">
+<div class="visual-title">关键发生在模型学习前后：系统可能把被操纵的样本当作正常学习材料。</div>
+<div class="flow">
+<div class="flow-box"><strong>① 收集数据</strong><span>政策文本、问答示范和标注进入数据集</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>② 数据被污染</strong><span>有人故意替换事实、答案或标签</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>③ 模型学习</strong><span>污染样本参与训练，可能影响参数</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>④ 部署后输出</strong><span>特定问题答错，或触发异常行为</span></div>
+</div>
+<p class="tiny-note">箭头表示可能的影响路径；效果取决于样本数量、训练方式、筛选措施和模型特性。</p></div>
+<p>训练时，模型反复比较自身预测与样本提供的目标，并调整内部<b>参数</b>——影响计算结果的大量数字。<b>标签</b>是样本附带的正确类别或预期答案。如果答案被恶意替换，模型便可能在学习时吸收错误关系。</p>
+<p>投毒可能发生在大规模<b>预训练</b>阶段，也可能发生在使用专业数据继续训练的<b>微调</b>阶段。Carlini等人的研究指出，网络数据集最初登记的网页内容与实际下载时的内容可能不同，攻击者可利用其中的时间差。研究说明了污染渠道的可行性，却不能证明任意少量恶意样本都能控制所有模型。</p>
+<p>有的投毒使整体表现下降，有的只在特定条件下改变回答。后一种情形可能涉及<b>后门（Backdoor）</b>，即只有遇到特定触发条件才表现出的异常行为。因此，模型通过总体准确率测试，也不代表没有定向风险。应核验关键业务样本、保留数据版本，并记录数据从收集、筛选到训练的变化。</p>
+<p>还要区分投毒与上一课的提示注入：如果模型只是在回答时读到带有恶意指令的网页，问题发生在输入处理环节；如果受污染样本经过训练影响了模型后续行为，才是本课讨论的学习阶段风险。外部知识库被篡改也可能造成错误输出，但不一定改变模型参数。</p>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“模型答错就是有人投毒。”过时信息、标注失误和模型能力不足也会造成错误，认定投毒还需调查有意操纵的事实。</span></div>
+<div class="myth"><b>误解 02</b><span>“训练数据很多，就不会受少量污染影响。”有针对性的污染仍可能影响局部行为，须在实际训练条件下评估。</span></div>
+<div class="myth"><b>误解 03</b><span>“平均准确率很高，就能排除后门。”特定触发条件下的错误可能被整体评分掩盖。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>模型采购不能只检查输出，还要检查训练数据完整性</h3>
+<p>政务、医疗和金融等专业应用经常依赖第三方数据供应商与标注人员。发生系统性错误时，应追问训练数据来自哪里、谁能修改、哪个版本进入训练，以及是否保存了检验记录。<b>数据完整性</b>强调数据未经未授权的改动，与数据是否合法取得、是否包含个人信息是不同问题。</p>
+<p>供应商应说明数据来源及版本，开发者应保存筛选和训练记录，部署者应测试关键业务问题。调查事故时，还须区分数据交付、模型训练与业务部署的责任，结合证据判断错误形成的原因。</p>
+</div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>数据投毒导致专业模型错误输出时，数据供应商与开发者的注意义务如何划分？</h3><p>结合数据完整性核验、训练记录和因果关系证明，研究不同环节的责任。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>重点领域人工智能采购如何检验训练数据完整性与后门风险？</h3><p>探索来源和版本清单、定向测试、异常反馈及模型回滚的验收要求。</p></div>
+</div></section>
+<section class="lesson-section"><h2>可靠来源</h2><ol class="source-links">
+<li><a href="https://genai.owasp.org/llmrisk/llm042025-data-and-model-poisoning/">OWASP，LLM04:2025 Data and Model Poisoning</a>。解释不同训练阶段的污染及防护。</li>
+<li><a href="https://www.nist.gov/publications/adversarial-machine-learning-taxonomy-and-terminology-attacks-and-mitigations-0">NIST，Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations（2025年3月24日）</a>。提供对抗性机器学习分类。</li>
+<li><a href="https://arxiv.org/abs/2302.10149">Carlini等，Poisoning Web-Scale Training Datasets is Practical（2023）</a>。分析网络训练数据集的污染渠道。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第46课</small><p>下一课学习“模型抽取”：为什么反复查询可能泄露模型的部分能力？</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main><footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
