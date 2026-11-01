@@ -11,8 +11,8 @@
   },
   "mode": "facts_only",
   "analysis_pending": true,
-  "checked_at": "2026-11-01T11:12:11.279Z",
-  "last_news_scan_at": "2026-11-01T11:12:11.279Z",
+  "checked_at": "2026-11-01T11:15:00.148Z",
+  "last_news_scan_at": "2026-11-01T11:15:00.148Z",
   "checks": {
     "sources": true,
     "legal_status": true,
@@ -57,6 +57,11 @@
       "source_group": "上一日及近七日事件级去重和72小时复核",
       "status": "searched",
       "result": "回读10月25日至31日简报逐条来源，排除10月30日已报Cursor、币安、Polymarket、Hugging Face恶意模型及Drupal等重复旧闻"
+    },
+    {
+      "source_group": "Pages首次构建的72小时时效校验与新增重要进展",
+      "status": "searched",
+      "result": "部署首次因10月29日条目超出校验规则被阻断；根据真实失败日志剔除三条该日期新闻，核查并补入10月30日Character.AI法院裁定、11月1日韩国芯片出口新统计和币安提现恢复及FBI归因，未修改校验程序"
     }
   ],
   "items": [
@@ -167,21 +172,6 @@
     },
     {
       "id": "research-item-8",
-      "date": "2026-10-29",
-      "domestic": false,
-      "jurisdiction": "美国、全球",
-      "agency": "CrowdStrike",
-      "title": "CrowdStrike披露攻击者使用AI智能体框架实施跨国网络间谍活动",
-      "original_title": "VAPOR PANDA Uses AI-Driven ARTEX to Grow Global Espionage Campaign",
-      "source_name": "CrowdStrike研究报告",
-      "url": "https://www.crowdstrike.com/en-us/blog/vapor-panda-uses-artex-to-scale-global-campaign/",
-      "legal_status": "security_research_disclosure",
-      "fact": "CrowdStrike于10月29日发布报告称，其威胁追踪团队发现被跟踪为VAPOR PANDA的攻击者使用ARTEX智能体框架和多种大语言模型实施并行入侵。该公司在10月17日起的11天内观测到涉及至少14个国家、超过200家机构的攻击活动，包括政府机关、国防、半导体和电信部门。该组织与中国有关联是CrowdStrike的研究归因，并非司法或监管机构的正式认定。",
-      "previous_day_duplicate": false,
-      "seven_day_duplicate": false
-    },
-    {
-      "id": "research-item-9",
       "date": "2026-10-30",
       "domestic": false,
       "jurisdiction": "美国",
@@ -196,34 +186,43 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-10",
-      "date": "2026-10-29",
+      "date": "2026-10-30",
       "domestic": false,
-      "jurisdiction": "英国",
-      "agency": "英国通信管理局（Ofcom）",
-      "title": "英国Ofcom公布儿童使用应用商店报告，建议强化年龄识别和内容适龄措施",
-      "original_title": "Report on the use of app stores by children",
-      "source_name": "Ofcom官方报告",
-      "url": "https://www.ofcom.org.uk/online-safety/protecting-children/report-on-the-use-of-app-stores-by-children",
-      "legal_status": "regulatory_research_report",
-      "fact": "英国通信管理局Ofcom于10月29日根据《2023年网络安全法》第161条公布儿童使用应用商店的专题调查。机构指出受调查应用商店的年龄识别措施未能始终可靠判断使用者是否为儿童，并提出可增加有效年龄核验以及改善应用年龄适配和风险信息。Ofcom明确应用商店目前并不属于该法直接规制的服务范围，报告供政府考虑未来规则，并非已生效的应用商店年龄核验义务。",
-      "previous_day_duplicate": false,
-      "seven_day_duplicate": false
+      "jurisdiction": "美国",
+      "agency": "美国特拉华联邦破产法院、美国多州总检察长",
+      "title": "美国法院允许Character.AI推进资产出售程序，暂不批准相关诉讼免责安排",
+      "original_title": "Character.AI moves ahead with asset sale over states' objections",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/characterai-moves-ahead-with-asset-sale-over-states-objections-2026-10-30/",
+      "legal_status": "bankruptcy_bidding_procedures_approved",
+      "fact": "美国特拉华联邦破产法院10月30日批准Character.AI继续推进资产竞价程序，驳回美国41州总检察长关于程序偏向迪士尼的异议。迪士尼拟以2000万美元取得聊天机器人技术的非独家许可，且此前已雇用该公司大部分员工；法官未批准可能免除相关主体法律责任的条款。法院另表示可能指定隐私监察员关注未成年用户聊天记录，资产出售本身仍待后续审查。",
+      "id": "research-item-9"
     },
     {
-      "id": "research-item-11",
-      "date": "2026-10-29",
+      "date": "2026-11-01",
       "domestic": false,
-      "jurisdiction": "美国、叙利亚",
-      "agency": "美国司法部、弗吉尼亚东区联邦地区法院",
-      "title": "美国法院判处原叙利亚政权关联黑客42个月监禁，涉及长期跨国网络入侵",
-      "original_title": "Syrian Man Sentenced for Wide-Ranging Hacking Conspiracy Conducted on Behalf of the Bashar Al Assad Regime",
-      "source_name": "美国司法部",
-      "url": "https://www.justice.gov/opa/pr/syrian-man-sentenced-wide-ranging-hacking-conspiracy-conducted-behalf-bashar-al-assad-regime",
-      "legal_status": "court_sentencing",
-      "fact": "美国司法部10月29日宣布，弗吉尼亚东区联邦法院判处Ahmad Umar Agha监禁42个月，涉及其为前叙利亚政权从事的一系列黑客入侵活动。司法部称该行为在2011至2014年间攻击了约47家西方新闻媒体、企业、非政府组织和政府机构，并包含劫持新闻媒体社交账号发布虚假消息的行为。此次是长期刑事案件的正式量刑裁判，而非新发生的攻击。",
-      "previous_day_duplicate": false,
-      "seven_day_duplicate": false
+      "jurisdiction": "韩国",
+      "agency": "韩国产业通商资源部",
+      "title": "韩国公布10月芯片出口增长259.4%，AI算力需求推动半导体贸易激增",
+      "original_title": "South Korea exports nearly double in October on AI investment boom",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/south-korea-exports-nearly-double-october-strongest-growth-since-1974-2026-11-01/",
+      "legal_status": "official_trade_statistics_released",
+      "fact": "韩国产业通商资源部11月1日公布，韩国10月出口同比增长93.7%至1152.8亿美元，增幅为1974年以来最大，半导体出口同比增长259.4%至564.4亿美元。官方数据显示，人工智能数据中心投资带动芯片和服务器需求，计算机相关出口增长496.6%，对华出口同比增长133.6%。上述为最新贸易统计，并非政府出台新的半导体出口许可决定。",
+      "id": "research-item-10"
+    },
+    {
+      "date": "2026-11-01",
+      "domestic": false,
+      "jurisdiction": "全球、美国",
+      "agency": "币安、美国联邦调查局",
+      "title": "币安称已补足约95%失窃数字资产并恢复部分提现，FBI公开涉案归因",
+      "original_title": "Binance resumes bitcoin, ether withdrawals after covering bulk of stolen $6.3 billion",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/government/binance-resumes-bitcoin-withdrawals-after-covering-bulk-stolen-63-billion-2026-11-01/",
+      "legal_status": "incident_remediation_and_law_enforcement_attribution",
+      "fact": "路透社11月1日报道，币安在约63亿美元数字资产失窃后，称已用自有资金购回约60亿美元代币，约占失窃资产的95%，并自当天起分阶段恢复比特币、以太币及部分稳定币提现。美国联邦调查局10月31日将攻击归因于朝鲜关联组织TraderTraitor，但币安此前称尚未自行确认实施者身份。此次新增进展是资产补足、提现恢复和联邦机构归因，并非对10月30日失窃事实的重复报道。",
+      "id": "research-item-11"
     }
   ]
 }
