@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>第46课｜模型抽取：为什么反复查询可能泄露模型的部分能力？｜网信法技术基础</title>
+<link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../briefs.html">全球科技法简报</a><a href="../papers.html">域外法学论文精读</a><a href="../classics.html">法学经典著作</a><a href="../new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 46 · SAFETY &amp; FAILURE · 2026.11.02</div><h1>模型抽取：为什么反复查询可能泄露模型的部分能力？</h1><p class="tech-lead">今日问题：没有拿到模型文件，仅凭持续使用一个在线接口，也可能复制它的部分能力吗？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus"><div><strong>它是什么</strong><p><b>模型抽取（Model Extraction）</b>是指通过观察一个模型对输入的回答或预测，推测其行为规律，进而建立功能相近的替代模型。攻击者不一定接触原模型的代码、参数或训练数据；抽取成功也不等于取得一份完全相同的模型文件。</p></div><div><strong>一个生活例子</strong><p>某企业提供在线合同风险分类服务，只开放“上传合同片段—返回风险类别”的接口。假设另一方大量提交不同表述的样本，收集系统给出的分类，再把这些问答用于训练自己的分类工具。后者可能学会模仿前者在某些合同上的判断，但未必懂得原模型的全部规则。</p></div></section>
+<section class="lesson-section"><h2>机制图：回答怎样变成替代模型的学习材料？</h2>
+<div class="visual-board" role="group" aria-label="利用在线模型输入和输出训练替代模型的四步机制图"><div class="visual-title">关键不是下载原始模型，而是将多次查询得到的输入与输出配成学习样本。</div>
+<div class="flow">
+<div class="flow-box"><strong>① 提交查询</strong><span>向在线模型输入不同合同片段</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>② 收集回答</strong><span>记录每段文本对应的风险判断</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>③ 训练替代模型</strong><span>把输入与回答组成示范数据</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>④ 测试相似性</strong><span>检查新模型是否模仿原模型行为</span></div>
+</div><p class="tiny-note">这是原理示意而非必然成功的过程；效果取决于模型种类、查询内容、回答细节、查询次数与防护措施。</p></div>
+<p>在线接口通常只允许用户发送请求并获取结果。这种不能直接查看内部参数的使用方式称为<b>黑箱访问</b>。不过，输出本身仍会提供信息：例如，一个分类服务给出“高风险”或“低风险”，便相当于替某个输入添加了一次标注。收集足够有代表性的输入及其输出后，另一模型可以用这些样本学习相近的判断方式。</p>
+<p>被训练出来的<b>替代模型</b>也常称为<b>影子模型（Surrogate Model）</b>。它与原模型可能具有不同结构、参数和训练数据。研究还区分<b>准确率</b>与<b>保真度</b>：前者关注新模型能否把任务做对，后者关注其回答与目标模型是否一致。一个替代模型在常见题上表现不错，并不代表它与原模型在所有输入上完全相同。</p>
+<p>Tramèr等人2016年的研究证明，对若干传统机器学习模型，预测接口可能暴露足以复现相近行为的信息。Jagielski等人2020年的研究进一步区分了追求任务准确率与追求目标模型预测一致性的抽取方式。上述结果受到模型类型和接口条件限制，不能直接推断任何大型语言模型都能靠少量提问被完整复制。</p>
+<p>模型服务商可以结合账户身份、合理的请求频率限制、异常查询模式监测以及输出信息最小化降低风险；但正常的研究评测也可能具有密集查询特征，不能只凭次数认定攻击。还应分清<b>模型抽取</b>与直接窃取模型权重文件、诱导模型泄露训练数据：三者涉及的取得对象和证明事实并不相同。</p>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“没有模型文件就不会泄露模型能力。”反复观察输入与输出，也可能建立功能相近的替代模型。</span></div>
+<div class="myth"><b>误解 02</b><span>“替代模型答案相似，就证明原模型被完整复制。”行为相似只说明特定测试范围内有一致性，未必能证明参数相同，更不能单凭相似认定发生了非法抽取。</span></div>
+<div class="myth"><b>误解 03</b><span>“限制查询次数就能彻底解决。”次数限制有帮助，但不同账号、合法批量使用和查询内容差异都要求结合具体情况判断。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>开放模型服务接口，同时要明确能力保护和正当使用的边界</h3>
+<p>提供模型接口的企业，既希望客户充分使用服务，又可能需要保护投入训练形成的商业成果。出现疑似抽取行为时，应核对接口访问权限、服务协议、查询日志、异常模式和替代模型的实际表现。是否涉及商业秘密侵害、违反合同或不正当竞争，还需分别审查保密措施、行为方式和适用法律，不能仅凭“回答相似”下结论。</p>
+<p>公共部门采购模型服务时，也应要求供应商说明接口访问控制、异常使用监测与记录保存措施，并明确合法测试、第三方评测和互操作研究的允许范围，避免把正常的技术验证一概视为攻击。</p>
+</div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>模型输出的行为相似性，能否构成商业秘密侵害或不正当竞争的证明基础？</h3><p>区分模型文件、预测功能及训练投入，讨论访问行为、相似证据和法定保护要件的关系。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>我国重点行业人工智能服务接口如何兼顾模型能力保护与独立评测？</h3><p>研究查询日志、异常监测、合理使用限额和受控第三方测试的可操作安排。</p></div>
+</div></section>
+<section class="lesson-section"><h2>可靠来源</h2><ol class="source-links">
+<li><a href="https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer">Tramèr等，Stealing Machine Learning Models via Prediction APIs（USENIX Security，2016）</a>。研究仅凭预测接口抽取不同机器学习模型的可能性。</li>
+<li><a href="https://www.usenix.org/conference/usenixsecurity20/presentation/jagielski">Jagielski等，High Accuracy and High Fidelity Extraction of Neural Networks（USENIX Security，2020）</a>。区分准确率与预测一致性两类目标。</li>
+<li><a href="https://www.nist.gov/publications/adversarial-machine-learning-taxonomy-and-terminology-attacks-and-mitigations-0">NIST，Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations（2025年3月24日）</a>。提供对抗性机器学习攻击及缓解措施的分类。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第47课</small><p>下一课学习“隐私泄露”：模型为什么可能在回答中暴露不该披露的信息？</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main><footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
