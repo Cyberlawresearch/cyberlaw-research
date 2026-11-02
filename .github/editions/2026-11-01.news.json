@@ -4,10 +4,10 @@
   "state": "verified",
   "phase": "publishing",
   "page": "articles/2026-11-01-tech-law-brief.html",
-  "news_count": 11,
+  "news_count": 20,
   "distribution": {
-    "domestic": 1,
-    "foreign": 10
+    "domestic": 5,
+    "foreign": 15
   },
   "mode": "facts_only",
   "analysis_pending": true,
@@ -62,11 +62,69 @@
       "source_group": "Pages首次构建的72小时时效校验与新增重要进展",
       "status": "searched",
       "result": "部署首次因10月29日条目超出校验规则被阻断；根据真实失败日志剔除三条该日期新闻，核查并补入10月30日Character.AI法院裁定、11月1日韩国芯片出口新统计和币安提现恢复及FBI归因，未修改校验程序"
+    },
+    {
+      "source_group": "历史补检：国家及行业标准、美国隐私执法、英国外其他地区规则实施及司法",
+      "status": "supplement_checked",
+      "scope": "国家市场监督管理总局、国家标准化管理委员会；工业和信息化部、中国通信标准化协会；工业和信息化部、中国通信标准化协会；工业和信息化部、中国通信标准化协会；土耳其网络安全主管机关；泰国电子交易委员会、电子交易发展局；台湾地区公平交易主管部门、苹果公司；美国密西西比北区联邦地区法院；美国36名州级司法执法负责人及消费者保护机构、通用汽车",
+      "result": "新增9条经过来源复核的事实新闻，不改变旧版标记时间与其他栏目信息。"
     }
   ],
   "items": [
     {
-      "id": "research-item-1",
+      "date": "2026-11-01",
+      "domestic": true,
+      "jurisdiction": "中国",
+      "agency": "国家市场监督管理总局、国家标准化管理委员会",
+      "title": "生成式人工智能服务提供者合规管理国家标准11月1日正式实施",
+      "original_title": "生成式人工智能技术应用社会影响 服务提供者合规管理指南（GB/T 47863—2026）",
+      "source_name": "全国标准信息公共服务平台",
+      "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=E880E14431A653F5B2E96A40817400EB",
+      "legal_status": "recommended_national_standard_effective",
+      "fact": "11月1日，推荐性国家标准GB/T 47863—2026《生成式人工智能技术应用社会影响 服务提供者合规管理指南》正式实施。该标准于7月2日发布，旨在为生成式人工智能服务提供者建立社会影响相关的合规管理机制提供指导。其法律性质为推荐性国家标准，并非当天新制定的行政法规或强制性许可规定。",
+      "id": "research-item-1"
+    },
+    {
+      "date": "2026-11-01",
+      "domestic": true,
+      "jurisdiction": "中国",
+      "agency": "工业和信息化部、中国通信标准化协会",
+      "title": "人工智能系统风险管理行业标准正式实施，覆盖组织、流程和风险防护能力",
+      "original_title": "人工智能 安全治理 系统风险管理能力要求（YD/T 7173—2026）",
+      "source_name": "全国标准信息公共服务平台",
+      "url": "https://std.samr.gov.cn/hb/search/stdHBDetailed?id=5A166B0E8BF72BDAE06397BE0A0A0423",
+      "legal_status": "recommended_industry_standard_effective",
+      "fact": "11月1日，通信行业推荐性标准YD/T 7173—2026《人工智能 安全治理 系统风险管理能力要求》进入实施阶段。标准规定人工智能系统研发和应用主体在组织建设、流程管理及风险防护方面的能力要求，适用于相关主体开展风险管理指导。该标准于7月15日发布，不能将其实施理解为新增强制性行政处罚依据。",
+      "id": "research-item-2"
+    },
+    {
+      "date": "2026-11-01",
+      "domestic": true,
+      "jurisdiction": "中国",
+      "agency": "工业和信息化部、中国通信标准化协会",
+      "title": "大模型训练与推理平台两项通信行业标准同步实施",
+      "original_title": "人工智能 关键基础技术 大模型训练平台技术要求（YD/T 7170—2026）；人工智能 关键基础技术 大模型推理平台技术要求（YD/T 7171—2026）",
+      "source_name": "全国标准信息公共服务平台",
+      "url": "https://std.samr.gov.cn/hb/search/stdHBDetailed?id=5A166B0E8BF42BDAE06397BE0A0A0423",
+      "legal_status": "two_recommended_industry_standards_effective",
+      "fact": "11月1日，YD/T 7170—2026《大模型训练平台技术要求》和YD/T 7171—2026《大模型推理平台技术要求》两项推荐性通信行业标准同步实施。前者涉及训练准备、模型训练、训练评估与人工智能资产管理，后者涵盖模型压缩、部署、推理及平台服务管理。两项标准均于7月15日发布，为平台建设和选型提供技术参考，而非新增市场准入许可要求。",
+      "id": "research-item-3"
+    },
+    {
+      "date": "2026-11-01",
+      "domestic": true,
+      "jurisdiction": "中国",
+      "agency": "工业和信息化部、中国通信标准化协会",
+      "title": "人工智能合成数据生成与管理能力行业标准11月1日实施",
+      "original_title": "人工智能 关键基础技术 合成数据生成和管理能力要求（YD/T 6767—2026）",
+      "source_name": "全国标准信息公共服务平台",
+      "url": "https://std.samr.gov.cn/hb/search/stdHBDetailed?id=5A166B0E8C462BDAE06397BE0A0A0423",
+      "legal_status": "recommended_industry_standard_effective",
+      "fact": "11月1日，通信行业推荐性标准YD/T 6767—2026《人工智能 关键基础技术 合成数据生成和管理能力要求》正式实施。标准将能力要求划分为数据生成、生产流程管理、质量管理和数据管理四个方面，供人工智能数据服务商及大模型开发者建设相关能力和选型时参考。该标准于7月15日发布，本次新增节点是实施日期到来。",
+      "id": "research-item-4"
+    },
+    {
+      "id": "research-item-5",
       "date": "2026-10-31",
       "domestic": true,
       "jurisdiction": "中国",
@@ -81,7 +139,72 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-2",
+      "date": "2026-11-01",
+      "domestic": false,
+      "jurisdiction": "土耳其",
+      "agency": "土耳其网络安全主管机关",
+      "title": "土耳其未满15岁社交媒体账户限制及年龄核验规定开始实施",
+      "original_title": "Sosyal Ağ Sağlayıcı Tarafından Çocuklara Özgü Ayrıştırılmış Hizmet Sunulmasına ve Yaş Doğrulamaya İlişkin Yönetmelik",
+      "source_name": "Hürriyet Daily News",
+      "url": "https://www.hurriyetdailynews.com/turkiye-sets-rules-for-under-15-social-media-ban-227953",
+      "legal_status": "child_social_media_age_rules_effective",
+      "fact": "土耳其10月公布的未成年人社交媒体规则于11月1日生效，要求平台阻止未满15岁的用户注册，并通过政府数字身份系统实施年龄核验。规定还对15至17岁用户设置私人账户、个性化广告和直播功能方面的限制，存量账户核验安排延续至2027年3月底。此次属于既有规则正式实施，不是11月1日新通过的法律。",
+      "id": "research-item-6"
+    },
+    {
+      "date": "2026-11-01",
+      "domestic": false,
+      "jurisdiction": "泰国",
+      "agency": "泰国电子交易委员会、电子交易发展局",
+      "title": "泰国实施社交平台广告主实名核验规则，要求留存广告付款人身份",
+      "original_title": "รัฐบาลคุมเข้มโฆษณาออนไลน์ สกัดมิจฉาชีพหลอกลวงประชาชน เริ่ม 1 พ.ย. นี้ ผู้ลงโฆษณาต้องยืนยันตัวตนก่อนเผยแพร่",
+      "source_name": "泰国政府",
+      "url": "https://www.thaigov.go.th/th/news/170485",
+      "legal_status": "social_media_advertiser_identity_rule_effective",
+      "fact": "11月1日起，泰国要求适用范围内的社交媒体平台在发布付费广告前核验广告主身份，重点防范冒名、投资诈骗等虚假广告。平台应核验个人身份证件或企业登记资料，广告付款人与广告主不同时也须留存付款人信息，并在广告活动结束后保存有关资料至少90天。该项要求依据此前公布的电子交易主管机关规定实施。",
+      "id": "research-item-7"
+    },
+    {
+      "date": "2026-10-31",
+      "domestic": false,
+      "jurisdiction": "中国台湾地区",
+      "agency": "台湾地区公平交易主管部门、苹果公司",
+      "title": "苹果在台湾地区将App Store标准佣金从30%下调至26%，竞争调查暂中止",
+      "original_title": "Adjustments to the Taiwan storefront of the App Store on iOS and iPadOS",
+      "source_name": "Apple Developer",
+      "url": "https://developer.apple.com/news/?id=w9mxlhek",
+      "legal_status": "competition_commitment_commission_change_effective",
+      "fact": "苹果公司自10月31日起将台湾地区App Store标准应用内购买及付费应用交易佣金从30%下调至26%。当地公平交易主管部门此前调查其对开发者的经营限制，并接受苹果提出的费率调整承诺而中止调查，后续将监督承诺履行。此项属于竞争调查中的承诺措施与商业条款调整，不是已经认定违法并作出处罚。",
+      "id": "research-item-8"
+    },
+    {
+      "date": "2026-10-30",
+      "domestic": false,
+      "jurisdiction": "美国·密西西比州",
+      "agency": "美国密西西比北区联邦地区法院",
+      "title": "美国法院驳回xAI数据中心污染诉讼的撤诉请求，案件进入继续审理阶段",
+      "original_title": "OPINION AND ORDER denying 54 Motion to Dismiss for Failure to State a Claim",
+      "source_name": "美国联邦法院裁定（Justia）",
+      "url": "https://docs.justia.com/cases/federal/district-courts/mississippi/msndce/3%3A2026cv00074/52261/139",
+      "legal_status": "federal_motion_to_dismiss_denied",
+      "fact": "美国密西西比北区联邦地区法院10月30日在民权组织等诉xAI及相关主体的环境诉讼中，驳回被告以起诉理由不足为由提出的撤诉请求。案件涉及数据中心燃气发电设备的空气污染及许可争议，相关指控得以继续进入诉讼程序。驳回撤诉申请并不意味着法院已经认定xAI违反《清洁空气法》或确定损害赔偿责任。",
+      "id": "research-item-9"
+    },
+    {
+      "date": "2026-10-29",
+      "domestic": false,
+      "jurisdiction": "美国",
+      "agency": "美国36名州级司法执法负责人及消费者保护机构、通用汽车",
+      "title": "美国多州与通用汽车达成2.2亿美元驾驶与位置数据隐私和解",
+      "original_title": "OFFICE OF CONSUMER PROTECTION ANNOUNCES MULTISTATE SETTLEMENT WITH GENERAL MOTORS",
+      "source_name": "美国夏威夷州消费者保护办公室",
+      "url": "https://www.cca.hawaii.gov/ocp/office-of-consumer-protection-announces-multistate-settlement-with-general-motors/",
+      "legal_status": "multistate_privacy_settlement",
+      "fact": "美国夏威夷州消费者保护办公室10月29日下午公布，多州执法机构与通用汽车就未经充分告知和同意收集、向第三方出售驾驶行为及车辆位置数据等指控达成2.2亿美元和解。和解安排要求通用汽车在收集或披露相关数据前取得用户明确同意，并建立隐私保护、经销商培训及监督机制。该消息发布时间折算为北京时间10月30日上午，符合11月1日简报的72小时窗口；和解不等于法院作出最终违法判决。",
+      "id": "research-item-10"
+    },
+    {
+      "id": "research-item-11",
       "date": "2026-10-30",
       "domestic": false,
       "jurisdiction": "日本",
@@ -96,7 +219,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-3",
+      "id": "research-item-12",
       "date": "2026-10-31",
       "domestic": false,
       "jurisdiction": "英国",
@@ -111,7 +234,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-4",
+      "id": "research-item-13",
       "date": "2026-10-30",
       "domestic": false,
       "jurisdiction": "美国、全球",
@@ -126,7 +249,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-5",
+      "id": "research-item-14",
       "date": "2026-10-30",
       "domestic": false,
       "jurisdiction": "美国、全球",
@@ -141,7 +264,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-6",
+      "id": "research-item-15",
       "date": "2026-10-31",
       "domestic": false,
       "jurisdiction": "美国、全球",
@@ -156,7 +279,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-7",
+      "id": "research-item-16",
       "date": "2026-10-31",
       "domestic": false,
       "jurisdiction": "美国、全球",
@@ -171,7 +294,7 @@
       "seven_day_duplicate": false
     },
     {
-      "id": "research-item-8",
+      "id": "research-item-17",
       "date": "2026-10-30",
       "domestic": false,
       "jurisdiction": "美国",
@@ -196,7 +319,7 @@
       "url": "https://www.reuters.com/legal/litigation/characterai-moves-ahead-with-asset-sale-over-states-objections-2026-10-30/",
       "legal_status": "bankruptcy_bidding_procedures_approved",
       "fact": "美国特拉华联邦破产法院10月30日批准Character.AI继续推进资产竞价程序，驳回美国41州总检察长关于程序偏向迪士尼的异议。迪士尼拟以2000万美元取得聊天机器人技术的非独家许可，且此前已雇用该公司大部分员工；法官未批准可能免除相关主体法律责任的条款。法院另表示可能指定隐私监察员关注未成年用户聊天记录，资产出售本身仍待后续审查。",
-      "id": "research-item-9"
+      "id": "research-item-18"
     },
     {
       "date": "2026-11-01",
@@ -209,7 +332,7 @@
       "url": "https://www.reuters.com/world/asia-pacific/south-korea-exports-nearly-double-october-strongest-growth-since-1974-2026-11-01/",
       "legal_status": "official_trade_statistics_released",
       "fact": "韩国产业通商资源部11月1日公布，韩国10月出口同比增长93.7%至1152.8亿美元，增幅为1974年以来最大，半导体出口同比增长259.4%至564.4亿美元。官方数据显示，人工智能数据中心投资带动芯片和服务器需求，计算机相关出口增长496.6%，对华出口同比增长133.6%。上述为最新贸易统计，并非政府出台新的半导体出口许可决定。",
-      "id": "research-item-10"
+      "id": "research-item-19"
     },
     {
       "date": "2026-11-01",
@@ -222,7 +345,36 @@
       "url": "https://www.reuters.com/legal/government/binance-resumes-bitcoin-withdrawals-after-covering-bulk-stolen-63-billion-2026-11-01/",
       "legal_status": "incident_remediation_and_law_enforcement_attribution",
       "fact": "路透社11月1日报道，币安在约63亿美元数字资产失窃后，称已用自有资金购回约60亿美元代币，约占失窃资产的95%，并自当天起分阶段恢复比特币、以太币及部分稳定币提现。美国联邦调查局10月31日将攻击归因于朝鲜关联组织TraderTraitor，但币安此前称尚未自行确认实施者身份。此次新增进展是资产补足、提现恢复和联邦机构归因，并非对10月30日失窃事实的重复报道。",
-      "id": "research-item-11"
+      "id": "research-item-20"
     }
-  ]
+  ],
+  "freshness_72h_verified_ids": [
+    "research-item-10"
+  ],
+  "supplement": {
+    "date": "2026-11-02",
+    "type": "verified historical supplement",
+    "new_items": 9,
+    "old_count": 11,
+    "source_urls": [
+      "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=E880E14431A653F5B2E96A40817400EB",
+      "https://std.samr.gov.cn/hb/search/stdHBDetailed?id=5A166B0E8BF72BDAE06397BE0A0A0423",
+      "https://std.samr.gov.cn/hb/search/stdHBDetailed?id=5A166B0E8BF42BDAE06397BE0A0A0423",
+      "https://std.samr.gov.cn/hb/search/stdHBDetailed?id=5A166B0E8C462BDAE06397BE0A0A0423",
+      "https://www.hurriyetdailynews.com/turkiye-sets-rules-for-under-15-social-media-ban-227953",
+      "https://www.thaigov.go.th/th/news/170485",
+      "https://developer.apple.com/news/?id=w9mxlhek",
+      "https://docs.justia.com/cases/federal/district-courts/mississippi/msndce/3%3A2026cv00074/52261/139",
+      "https://www.cca.hawaii.gov/ocp/office-of-consumer-protection-announces-multistate-settlement-with-general-motors/"
+    ],
+    "note": "保留原条目事实文本；补充遗漏的标准实施、平台治理、竞争承诺、个人信息保护和司法裁定；不把旧规写成当日出台。原核验时间和检查项不伪造。",
+    "special_72h_case": {
+      "id": "research-item-10",
+      "source": "https://www.cca.hawaii.gov/ocp/office-of-consumer-protection-announces-multistate-settlement-with-general-motors/",
+      "release_time": "2026-10-29 15:42 HST",
+      "beijing_time": "2026-10-30 09:42",
+      "edition_cutoff": "2026-11-01 19:00 CST",
+      "within_72_hours": true
+    }
+  }
 }
