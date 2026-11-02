@@ -3,14 +3,96 @@
   "base_main_sha": "594973616343f30b5d231837fccd1989176b8560",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "au-rebar-708",
+      "event_date": "2026-10-30",
+      "jurisdiction": "澳大利亚",
+      "agency": "Australian Trade Remedies Commission／工业部长",
+      "title": "澳大利亚结束印尼钢筋反倾销加速复审，特定出口商适用保底价格法",
+      "stage": "部长采纳调查结果并作出决定；2026-06-23起追溯适用",
+      "finding": "PT The Master Steel Manufactory倾销幅度0.0%，仅在实际出口价低于保底价时按其差额征收临时倾销税；保底价商业机密",
+      "impact": "对自印尼向澳出口的钢筋须审查生产商、原产地及发票价；中国关联企业在印尼生产也需按真实原产地和厂家归属合规核对",
+      "original_sources": [
+        "https://www.industry.gov.au/sites/default/files/atrc/public-record/2026-10/708-12-notice-trn-atrc-notice-trn-2026-134.pdf"
+      ],
+      "source_verified": true,
+      "status": "candidate"
+    }
+  ],
+  "coverage": {
+    "US": {
+      "checked": true,
+      "sources": [
+        "USTR",
+        "BIS",
+        "Federal Register",
+        "OFAC",
+        "Commerce"
+      ],
+      "note": "10月30日至11月2日结果筛查；既有UFLPA和OCTG等上一期重复不纳入"
+    },
+    "EU": {
+      "checked": true,
+      "sources": [
+        "EUR-Lex",
+        "DG Trade",
+        "Reuters"
+      ],
+      "note": "10月30日PET纺粘、阿司匹林等已载于10月31期；11月1日进口处理费已载于11月1期"
+    },
+    "UK": {
+      "checked": true,
+      "sources": [
+        "UK Sanctions List",
+        "GOV.UK NTE"
+      ],
+      "candidate": "10月30日阿富汗制裁名单5项资料修订，未新增指定对象"
+    },
+    "Japan": {
+      "checked": true,
+      "sources": [
+        "METI",
+        "JETRO"
+      ],
+      "note": "查无可确认为11月2日新增且具有重大直接影响的监管决定"
+    },
+    "Korea": {
+      "checked": true,
+      "sources": [
+        "MOTIE",
+        "Korea Trade Commission"
+      ],
+      "note": "重点案件与近期公告已核查，无已核实可收录新增决定"
+    },
+    "India": {
+      "checked": true,
+      "sources": [
+        "DGTR"
+      ],
+      "note": "阿莫西林10月30程序变化已在10月31期；对叔丁基苯酚听证延期在案件页标有11月1但与9月终裁冲突，暂不收录"
+    },
+    "Canada": {
+      "checked": true,
+      "sources": [
+        "CBSA"
+      ],
+      "note": "10月27日建筑电缆终裁已在10月30期"
+    },
+    "Australia": {
+      "checked": true,
+      "sources": [
+        "ATRC"
+      ],
+      "candidate": "10月30日TRN2026/134确认印尼钢筋特定出口商复审结果"
+    }
+  },
   "last_error": null,
   "next_actions": [
-    "核验最近7期去重及各辖区最近72小时官方信息",
-    "逐一核验原始公告和法律状态",
-    "整理合规影响与期限",
-    "复核来源后发布正文、首页、归档并检查Pages"
+    "筛查美国联邦公报11月2日新增正式规则、欧盟新公告、各国最新制裁清单",
+    "核验更多重大候选及完整最近7期事件级去重",
+    "完成最终来源链接核验及1-2小时终扫",
+    "逐段发布与线上验收"
   ],
-  "updated_at": "2026-11-02T09:02:00+08:00"
+  "updated_at": "2026-11-02T09:05:00+08:00"
 }
