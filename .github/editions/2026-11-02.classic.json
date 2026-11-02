@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-02",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-02-milton-areopagitica.html",
+  "target_path": "articles/2026-11-02-milton-areopagitica.html",
+  "book": {
+    "author": "John Milton",
+    "original_title": "Areopagitica; A Speech of Mr. John Milton for the Liberty of Unlicenc'd Printing, to the Parlament of England",
+    "publisher": "",
+    "year": "1644",
+    "edition": "1644 London printing; title page gives no printer; original-spelling continuous text. Later editorial divisions not original chapters"
+  },
+  "source_urls": [
+    "https://en.wikisource.org/wiki/Areopagitica_(1644)",
+    "https://davidmhart.com/liberty/Books/1644-Milton_Areopagitica/Milton_Areopagitica1644-ebook.html",
+    "https://www.gutenberg.org/ebooks/608",
+    "https://en.wikisource.org/wiki/The_Harvard_Classics_Vol._3/Areopagitica_I",
+    "https://www.cambridge.org/core/books/abs/value-of-milton/areopagitica-toleration-and-free-speech/53B7D77771544EFD5BC13D08F6A025AA",
+    "https://digicoll.lib.berkeley.edu/record/218751/files/fish_stanley_2013.pdf",
+    "https://academic.oup.com/edited-volume/38624/chapter-abstract/335210297"
+  ],
+  "original_verification": "系统核对1644年《Areopagitica》原拼写公开完整英文文本，自致议会陈词、古代出版史论、阅读与德性、事前许可的效果、审查官与印刷成本、求真和宗教辩论、对天主教的排斥，至末段登记、事后追责和呼吁修法。对照1643年6月14日议会印刷许可令原始文字，区分1644年原刊与后世编辑重排及其分析目录；原刊没有章编号，页面中文分节均为本期新加。",
+  "critics": [
+    {
+      "name": "Stanley Fish",
+      "work": "There's No Such Thing as Free Speech, and It's a Good Thing, Too (Oxford University Press, 1994)",
+      "url": "https://digicoll.lib.berkeley.edu/record/218751/files/fish_stanley_2013.pdf",
+      "checked": "结合作者访谈与作品书目信息核查其以弥尔顿宗教排除说明自由表达论证有特定目的与边界；未将后世理论误作弥尔顿原话"
+    },
+    {
+      "name": "John Leonard",
+      "work": "Areopagitica, Toleration and Free Speech, in The Value of Milton (Cambridge University Press, 2016)",
+      "url": "https://www.cambridge.org/core/books/abs/value-of-milton/areopagitica-toleration-and-free-speech/53B7D77771544EFD5BC13D08F6A025AA",
+      "checked": "核查具名论文章节与摘要，辨析自由表达传统、宗教不宽容和宗教目的三种解释张力"
+    },
+    {
+      "name": "Vincent Blasi",
+      "work": "The Classic Arguments for Free Speech 1644–1927, in The Oxford Handbook of Freedom of Speech (2021)",
+      "url": "https://academic.oup.com/edited-volume/38624/chapter-abstract/335210297",
+      "checked": "核查其将1644年论证纳入后世表达自由思想史的研究，未把影响史当成1644年作者自述"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html 2026-09至2026-11-01全部经典著作标题、作者和原名",
+    "classics-history.html旧第15至35期及其中的完整著作名",
+    "2026-11-02.classic.json 与当日正文在发布前不存在；Areopagitica未见于任何现有经典历史标题"
+  ],
+  "duplicate_found": false,
+  "sections": 62,
+  "prose_length": 10976,
+  "checked_at": "2026-11-02",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}

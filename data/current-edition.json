@@ -3,13 +3,13 @@
   "pages": {
     "brief": "articles/2026-11-02-tech-law-brief.html",
     "paper": "articles/2026-11-01-scherer-regulating-ai-systems.html",
-    "classic": "articles/2026-11-01-paine-common-sense.html",
+    "classic": "articles/2026-11-02-milton-areopagitica.html",
     "newworks": "articles/2026-11-01-new-works.html"
   },
   "page_dates": {
     "brief": "2026-11-02",
     "paper": "2026-11-01",
-    "classic": "2026-11-01",
+    "classic": "2026-11-02",
     "newworks": "2026-11-01"
   },
   "news_count": 10,
