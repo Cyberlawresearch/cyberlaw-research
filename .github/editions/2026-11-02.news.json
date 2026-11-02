@@ -1,0 +1,219 @@
+{
+  "date": "2026-11-02",
+  "column": "brief",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-02-tech-law-brief.html",
+  "news_count": 10,
+  "distribution": {
+    "domestic": 2,
+    "foreign": 8
+  },
+  "mode": "facts_only",
+  "analysis_pending": true,
+  "checked_at": "2026-11-02T11:13:56.642Z",
+  "last_news_scan_at": "2026-11-02T11:13:56.642Z",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": false,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": false,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  },
+  "coverage": [
+    {
+      "source_group": "中国中央政策、地方数据治理及专业财经媒体",
+      "status": "searched",
+      "result": "检索政府数据登记、上海官方发布、数字中国建设峰会转载证券日报及赛迪研究院最新报告，筛除既有无锡和备案新闻"
+    },
+    {
+      "source_group": "日本官方与当地语一手通报",
+      "status": "searched",
+      "result": "日语逐一核对Club Tourism、三得利、Istyle和Arara 10月31日至11月2日披露，区分实际泄露与潜在人数"
+    },
+    {
+      "source_group": "韩国及东南亚政府和媒体",
+      "status": "searched",
+      "result": "韩语及英语核查韩国总统国会预算讲话、半导体产业政策及越南、新加坡等近时动态；筛除11月1日已报韩国芯片出口统计"
+    },
+    {
+      "source_group": "欧盟英国与主要监管机关",
+      "status": "searched",
+      "result": "跟踪欧洲央行、英国数字行政与平台监管消息，核对ECB 11月2日风险警示而非处罚"
+    },
+    {
+      "source_group": "美国联邦监管与网络安全",
+      "status": "searched",
+      "result": "查阅CISA KEV官方机器可读目录，核对Ivanti漏洞加入日期、不同处置到期日和法律状态，排除近七天已经刊载的GitLab、PHP、Brotli"
+    },
+    {
+      "source_group": "全球AI产业与基础设施",
+      "status": "searched",
+      "result": "阅读ADNOC、OpenAI和G42合作消息，核对合作协议与正式部署之间的区别"
+    },
+    {
+      "source_group": "近七日事件与日期去重",
+      "status": "searched",
+      "result": "逐事件对照11月1日及10月26日至31日七期标题与重点事实，避免已报安全事件与一般产品发布重复"
+    }
+  ],
+  "items": [
+    {
+      "domestic": true,
+      "date": "2026-10-31",
+      "jurisdiction": "中国",
+      "agency": "上海市虹桥国际中央商务区、上海数据交易所",
+      "title": "上海虹桥设立数据产权登记服务中心，发布数据产权配置白皮书",
+      "original_title": "全国统一数据产权登记有序推进",
+      "source_name": "证券日报（数字中国建设峰会网站转载）",
+      "url": "https://www.digitalchina.gov.cn/2026/xwzx/szkx/202611/t20261102_5388360.htm",
+      "legal_status": "data_rights_service_center_and_guidance",
+      "fact": "10月31日，上海数据交易所围绕数据产权登记举办活动，在虹桥设立数据产权登记服务中心，并组建数据产权登记专家委员会。活动发布《数据产权配置白皮书（2026）》和《数据产权登记100问》，介绍数据产权登记的规则和实际办理情况。此前颁发的首批15份登记证书属于既有进展，此次新增的是服务中心和配套研究材料，并非全国统一登记制度已经立法生效。",
+      "id": "research-item-1",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "domestic": true,
+      "date": "2026-10-31",
+      "jurisdiction": "中国",
+      "agency": "中国电子信息产业发展研究院（赛迪研究院）",
+      "title": "赛迪发布新域新质创新发展趋势报告，提出AI推理需求已超过训练需求",
+      "original_title": "最新报告显示我国人工智能推理数据量首超训练数据量",
+      "source_name": "界面新闻",
+      "url": "https://www.jiemian.com/article/15279237.html",
+      "legal_status": "research_report_released",
+      "fact": "赛迪研究院10月31日发布《新域新质创新发展十大趋势》报告，指出人工智能产业的算力需求正在由模型训练向大规模推理应用扩展。报告引用的2026年6月数据表明，国内模型日均Token调用量约175万亿，推理数据量首次超过训练数据量。报告同时介绍智能工厂和人工智能产业应用进展，属于研究机构的产业趋势判断，并非新出台的行政管理规范。",
+      "id": "research-item-2",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "domestic": false,
+      "date": "2026-10-31",
+      "jurisdiction": "日本",
+      "agency": "株式会社クラブツーリズム（Club Tourism）",
+      "title": "日本旅游企业披露网络入侵，约432万人的个人信息可能受到影响",
+      "original_title": "不正アクセスによる個人情報漏えいに関するお詫びとお知らせについて （第１信）",
+      "source_name": "Club Tourism官方通报",
+      "url": "https://www.club-tourism.co.jp/jpn/news/2026/1031/",
+      "legal_status": "potential_personal_data_breach_disclosure",
+      "fact": "日本旅游企业Club Tourism于10月31日通报，其系统遭未经授权访问，正在核查最多约432万名客户的个人信息是否受到影响。可能涉及姓名、联系方式、国籍、出生日期和紧急联系人等资料，公司表示相关调查仍在进行。通报未将潜在受影响人数等同于已确认泄露人数，亦未认定护照资料或支付信息已经外泄。",
+      "id": "research-item-3",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-02",
+      "jurisdiction": "日本",
+      "agency": "三得利集团（Suntory）",
+      "title": "三得利披露外部云服务遭入侵，约9万名员工及合作人员资料受到影响",
+      "original_title": "外部クラウドサービスへの不正アクセスによる個人情報漏えいに関するお詫び",
+      "source_name": "三得利官方通报",
+      "url": "https://www.suntory.co.jp/note/detail/261102_008203.html",
+      "legal_status": "confirmed_personal_data_breach_disclosure",
+      "fact": "三得利11月2日通报，所使用的外部云服务遭到未经授权访问，约9万名员工及合作相关人员的姓名和电子邮箱等个人信息受到影响。公司还披露活动参加者和招聘申请人的部分信息涉及事件，已向日本个人信息保护委员会报告。公司表示目前没有发现支付卡信息涉及事件的情况，对其他信息的影响仍在核查。",
+      "id": "research-item-4",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-02",
+      "jurisdiction": "日本",
+      "agency": "株式会社アイスタイル（Istyle）",
+      "title": "日本@cosme运营商确认信息泄露，约300万名会员资料可能受波及",
+      "original_title": "不正アクセスによる個人情報漏えいに関するお詫びとお知らせについて",
+      "source_name": "Istyle官方公告",
+      "url": "https://www.istyle.co.jp/news/info/2026/11/1102.html",
+      "legal_status": "personal_data_breach_disclosure",
+      "fact": "日本美妆平台@cosme运营商Istyle于11月2日公布未经授权访问事件，涉及约300万名会员的个人信息。受影响资料范围包括姓名、电子邮箱、地址、电话号码以及部分个人肤质和发质等档案信息。公司表示密码及支付卡资料不在此次已识别的泄露范围，后续调查和通知仍在开展。",
+      "id": "research-item-5",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-02",
+      "jurisdiction": "日本",
+      "agency": "アララ株式会社（Arara）",
+      "title": "日本邮件服务商更新入侵通报，确认约7700万个电子邮箱地址外流",
+      "original_title": "当社が提供する「アララメッセージ」への不正アクセスによる情報流出およびサービス停止について（第２報）",
+      "source_name": "Arara官方第二次公告（PDF）",
+      "url": "https://www.arara.com/dcms_media/other/arara_20261102__.pdf",
+      "legal_status": "security_incident_followup_disclosure",
+      "fact": "日本邮件服务商Arara于11月2日发布针对“Arara Message”的第二次网络安全事件公告，确认在受影响的客户环境中有约7700万个电子邮箱地址外流。公司列明受影响服务器和客户范围，并披露涉事基础设施被用于发送超过700万封钓鱼邮件。相关服务已于10月31日停止，部分客户记录可能互有重叠，不能把不同环境中的数字简单相加。",
+      "id": "research-item-6",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-02",
+      "jurisdiction": "韩国",
+      "agency": "韩国总统府、韩国国会",
+      "title": "韩国总统敦促通过2027年预算案，提出扩大AI及半导体等投资",
+      "original_title": "South Korea's Lee vows to make bold AI investment in record budget push",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/south-koreas-lee-vows-make-bold-ai-investment-record-budget-push-2026-11-02/",
+      "legal_status": "proposed_budget_presidential_speech",
+      "fact": "韩国总统李在明11月2日在国会发表预算施政讲话，敦促批准总规模约820.9万亿韩元的2027年预算案。拟议安排包括约21.3万亿韩元人工智能相关投资，并将半导体、物理人工智能和数据中心建设列为重点。上述资金仍处于预算审议阶段，不能视为国会已经通过的正式拨款。",
+      "id": "research-item-7",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-02",
+      "jurisdiction": "欧洲",
+      "agency": "欧洲中央银行",
+      "title": "欧洲央行警示AI企业估值风险，并关注债券及非银行金融体系压力",
+      "original_title": "ECB flags AI valuations, bond stress and fund losses as main risks",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/finance/ecb-flags-ai-valuations-bond-stress-fund-losses-main-risks-2026-11-02/",
+      "legal_status": "central_bank_financial_stability_warning",
+      "fact": "11月2日，欧洲中央银行官员指出，人工智能相关企业估值偏高可能成为金融市场承压的风险来源之一。欧洲央行同时关注债券市场和非银行金融机构损失可能引发的连锁影响。有关表态属于金融稳定风险警示，后续金融稳定评估报告尚未正式发布，并非针对人工智能企业采取的监管处罚。",
+      "id": "research-item-8",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-02",
+      "jurisdiction": "阿联酋",
+      "agency": "阿布扎比国家石油公司、OpenAI、G42",
+      "title": "阿联酋ADNOC与OpenAI、G42达成工业AI智能体合作安排",
+      "original_title": "ADNOC signs deal with OpenAI and G42 to deploy Frontier AI agents",
+      "source_name": "The Next Web",
+      "url": "https://thenextweb.com/news/adnoc-openai-g42-frontier-ai-deal",
+      "legal_status": "corporate_ai_infrastructure_partnership",
+      "fact": "阿布扎比国家石油公司ADNOC于11月2日公布与OpenAI及G42的人工智能合作安排，计划在工业业务中引入面向专业场景的智能体。合作拟利用G42在阿联酋的人工智能基础设施，支持油气设施规划和运营等业务，并强调数据与系统安全。此次宣布的是合作及后续部署计划，尚不能据此认定相关系统已经全面上线。",
+      "id": "research-item-9",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-02",
+      "jurisdiction": "美国",
+      "agency": "美国网络安全和基础设施安全局（CISA）",
+      "title": "美国CISA所列Ivanti已遭利用漏洞迎来联邦机构11月2日处置期限",
+      "original_title": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
+      "source_name": "CISA已知遭利用漏洞官方目录（原始数据）",
+      "url": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json",
+      "legal_status": "federal_remediation_deadline",
+      "fact": "美国CISA已知遭利用漏洞目录将Ivanti Connect Secure相关漏洞CVE-2026-111357列为须处理的安全风险，并将11月2日设为相关联邦机构的处置期限。该漏洞于10月30日进入目录，因此本次新增的时间节点是联邦修复期限到来，而不是11月2日首次披露漏洞。目录还列示其他相关Ivanti漏洞及不同的完成期限，企业和机构应依各条目具体要求判断修复状态。",
+      "id": "research-item-10",
+      "previous_day_duplicate": false,
+      "seven_day_duplicate": false
+    }
+  ]
+}
