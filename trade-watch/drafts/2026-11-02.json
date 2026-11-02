@@ -1,8 +1,8 @@
 {
   "date": "2026-11-02",
   "base_main_sha": "594973616343f30b5d231837fccd1989176b8560",
-  "phase": "sources_verified",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "au-rebar-708",
@@ -143,14 +143,19 @@
     "final_sweep": {
       "checked": true,
       "notes": "美国商务部10月30 OCTG初裁、欧盟10月30 PET税令、英国10月30国防采购政策均为已发布重复，排除；英国一般许可证10月30到期、澳大利亚复审决定、英国阿富汗5项行政勘误属于新法律节点；无其他满足来源和独立法律动作要求的重要事项"
+    },
+    "original_source_link_validation": {
+      "checked": true,
+      "count": 5,
+      "method": "逐一打开英国GOV.UK两页、英国正式许可证PDF、英国正式制裁勘误PDF及澳大利亚TRN 2026/134官方PDF；对PDF截图核对具体有效期、税率机制、勘误性质"
     }
   },
   "last_error": null,
   "next_actions": [
-    "发布前再次核验全部5个原始链接和期号",
-    "更新 publication_ready 标志并回读",
-    "顺序写入三份main文件，回读验收",
-    "匹配本次最终提交的Pages与来源检查"
+    "完整生成第055期HTML并顺序写入main",
+    "更新首页与归档并逐项回读",
+    "检查对应Pages工作流和公开页面",
+    "记录发布及来源诊断结果"
   ],
-  "updated_at": "2026-11-02T09:11:00+08:00"
+  "updated_at": "2026-11-02T09:13:00+08:00"
 }
