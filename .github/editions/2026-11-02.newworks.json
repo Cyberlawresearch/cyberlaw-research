@@ -1,0 +1,99 @@
+{
+  "date": "2026-11-02",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-02-new-works.html",
+  "page_blob_sha": "b1cc1b5498f4f9f3879b3c1dc14938a6248fc192",
+  "newworks_count": 3,
+  "checked_at": "2026-11-02T12:43:13.198Z",
+  "checks": {
+    "publisher_sources_opened": true,
+    "bibliographic_fields_verified_as_available": true,
+    "history_original_title_search": true,
+    "history_doi_deduplication_for_known_dois": true,
+    "version_verified": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "indexes": [
+      "new-works.html",
+      "new-works-history.html",
+      "62 archived articles dated 2026-08-28 to 2026-11-01",
+      "GitHub indexed historical new-works/ directory and code search"
+    ],
+    "fields": [
+      "original_title",
+      "DOI",
+      "author",
+      "publication_version"
+    ],
+    "search_method": "Opened original Springer Nature and Cambridge University Press publication records; compared original titles and DOIs against all 62 archived articles, and GitHub repository code search including older new-works/ entries. Identified and excluded previously included DOI candidates 10.1093/idpl/ipag002, 10.1017/cfl.2026.10059, 10.1017/cfl.2026.10048. Selected three original titles and DOIs returned no historical matches.",
+    "matches_found": 0
+  },
+  "items": [
+    {
+      "cn_title": "生成式AI训练使用作品，作者报酬应如何分配",
+      "author": "Inger B. Ørstavik",
+      "original_title": "Copyright and Generative AI: Guidance from Economic Incentive Theory for a Nuanced Regime for Author Remuneration",
+      "journal": "IIC – International Review of Intellectual Property and Competition Law",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-10-29",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": "10.1007/s40319-026-01784-9",
+      "publisher_page": "https://link.springer.com/article/10.1007/s40319-026-01784-9",
+      "version": "Published open-access journal article; first online, volume/pages not assigned on publisher page"
+    },
+    {
+      "cn_title": "平台诱导性设计为何违法：区分暗黑模式的事实特征与规范评价",
+      "author": "Marijn Sax",
+      "original_title": "The Double Darkness of Dark Patterns",
+      "journal": "Journal of Consumer Policy",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-10-29",
+      "volume": "49",
+      "issue": null,
+      "pages": null,
+      "article_number": "34",
+      "doi": "10.1007/s10603-026-09636-2",
+      "publisher_page": "https://link.springer.com/article/10.1007/s10603-026-09636-2",
+      "version": "Published open-access journal article"
+    },
+    {
+      "cn_title": "民事索赔如何改变欧盟数字监管：损害赔偿与平台义务的形成",
+      "author": "Dominik Dworniczak",
+      "original_title": "Regulation in the Making: The Governance Effects of Civil Liability in EU Digital Regulation",
+      "journal": "European Journal of Risk Regulation",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "publication_date": "2026-07-10",
+      "volume": null,
+      "issue": null,
+      "pages": "1–17",
+      "article_number": null,
+      "doi": "10.1017/err.2026.10114",
+      "publisher_page": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/regulation-in-the-making-the-governance-effects-of-civil-liability-in-eu-digital-regulation/DAEF1A1439DB5D78988455BF05F995A0",
+      "version": "Published open-access First View journal article"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": false
+  },
+  "other_columns_at_record": {
+    "brief": "articles/2026-11-02-tech-law-brief.html",
+    "paper": "articles/2026-11-02-engstrom-ho-algorithmic-accountability-administrative-state.html",
+    "classic": "articles/2026-11-02-milton-areopagitica.html"
+  }
+}
