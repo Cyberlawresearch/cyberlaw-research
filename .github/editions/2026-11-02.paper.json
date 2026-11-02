@@ -2,7 +2,7 @@
   "date": "2026-11-02",
   "column": "paper",
   "state": "verified",
-  "phase": "deployment_check",
+  "phase": "completed",
   "page": "articles/2026-11-02-engstrom-ho-algorithmic-accountability-administrative-state.html",
   "selection": "David Freeman Engstrom; Daniel E. Ho, Algorithmic Accountability in the Administrative State",
   "bibliography": {
@@ -46,16 +46,12 @@
   "checked_at": "2026-11-02",
   "publication": {
     "content_main_sha": "9ba97347d80f83b2031b2eeba57f2da65a6acbc8",
-    "pages_run_id": 41442916574,
-    "pages_conclusion": "failure",
-    "current_columns": "Pre-deployment gate failed: classics.html first history row is 2026-11-01, while manifest points to 2026-11-02 Milton classic. Third-column correction is outside the permitted scope of this paper task.",
-    "live_page": null
-  },
-  "last_error": {
-    "stage": "github_pages_prepare_content_structure",
-    "job_id": 125269321303,
-    "run_id": 41442916574,
-    "error": "AssertionError: classics.html (scripts/current_columns_gate.py line 110)",
-    "note": "2026-11-02 paper content and links were committed and read back. Deployment did not reach Pages upload."
+    "validated_main_sha": "52b50b2db24e852f2e783c5353f9f55311eaab92",
+    "pages_run_id": 41443340937,
+    "pages_conclusion": "success",
+    "current_columns": "passed",
+    "live_page": "passed",
+    "live_entry_points": "Passed GitHub Pages step: Verify deployed current columns and entry points; contextual reading passed",
+    "recovery": "Initial run 41442916574 failed because the concurrent third-column classics.html listing lagged its main pointer. Classic publishing task independently repaired it in commit cef4ca4a0794a1cbcbb24f6bf4dacf1c524213db; run 41443340937 passed without this paper task editing classic files."
   }
 }
