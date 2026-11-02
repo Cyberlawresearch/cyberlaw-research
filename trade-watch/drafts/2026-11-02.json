@@ -1,7 +1,7 @@
 {
   "date": "2026-11-02",
   "base_main_sha": "594973616343f30b5d231837fccd1989176b8560",
-  "phase": "researching",
+  "phase": "sources_verified",
   "publication_ready": false,
   "items": [
     {
@@ -17,6 +17,47 @@
         "https://www.industry.gov.au/sites/default/files/atrc/public-record/2026-10/708-12-notice-trn-atrc-notice-trn-2026-134.pdf"
       ],
       "source_verified": true,
+      "status": "candidate",
+      "importance": 4,
+      "deadline": "2026年6月23日起追溯适用；10月30日公布决定",
+      "event_dedup": true
+    },
+    {
+      "id": "uk-sectoral-software-licence-expiry",
+      "event_date": "2026-10-30",
+      "jurisdiction": "英国",
+      "agency": "英国商务与贸易部／出口管制联合处",
+      "title": "英国对俄行业软件与技术一般贸易许可证10月30日届满",
+      "stage": "已公布一般许可证的有效期届满；截至检索未发现新续期许可证",
+      "finding": "4月1日生效的General Trade Licence规定仅有效至2026年10月30日。此前允许针对俄境内非主要使用场景、特定2025年4月23日前合同等条件向境外总部跨国企业提供企业软件和技术；有效期届满后不能继续仅依该许可证提供受禁软件或技术。",
+      "impact": "受英国法约束的中资企业英国公司、英国服务商应重新检查俄境内关联公司软件许可、远程交付SaaS、运维合同及付款；在未有适用豁免或其他有效许可证时停止依旧证放行。",
+      "deadline": "2026年10月30日届满；11月起新履行应有独立合法授权。",
+      "importance": 5,
+      "original_sources": [
+        "https://www.gov.uk/government/publications/general-trade-licence-russia-sanctions-sectoral-software-and-technology",
+        "https://assets.publishing.service.gov.uk/media/69cd23d3eafd66b876458bc4/general-trade-licence-russia-sanctions-sectoral-software-and-technology.pdf"
+      ],
+      "source_verified": true,
+      "event_dedup": true,
+      "status": "candidate"
+    },
+    {
+      "id": "uk-afghanistan-sanctions-corrections",
+      "event_date": "2026-10-30",
+      "jurisdiction": "英国",
+      "agency": "英国外交、联邦与发展事务部（FCDO）",
+      "title": "英国修订五名阿富汗制裁对象身份信息，资产冻结仍有效",
+      "stage": "名单行政勘误已于10月30日生效，不是新增制裁指定",
+      "finding": "更新涉及Abdul Latif Mansur、Abdul Ghani Baradar Abdul Ahmad Turk、Amir Khan Motaqi、Abdul-Haq Wassiq、Khairullah Khairkhwah等五名原有对象的护照、身份及关联字段，五人原有资产冻结和旅行禁令维持。",
+      "impact": "英国银行、国际贸易结算和承运保险企业需同步更新姓名别名、护照与制裁身份匹配信息，防止不应放行的付款或货运；不应将行政勘误当成新列名。",
+      "deadline": "2026年10月30日列表修正；即时更新交易对手筛查数据。",
+      "importance": 3,
+      "original_sources": [
+        "https://www.gov.uk/guidance/afghanistan-list-of-designations-and-sanctions-notices",
+        "https://assets.publishing.service.gov.uk/media/6ae4bda3ec36e258a199849f/Sanctions_Notice__Afghanistan__30_October_2026.pdf"
+      ],
+      "source_verified": true,
+      "event_dedup": true,
       "status": "candidate"
     }
   ],
@@ -85,14 +126,31 @@
         "ATRC"
       ],
       "candidate": "10月30日TRN2026/134确认印尼钢筋特定出口商复审结果"
+    },
+    "recent_seven_issues_dedup": {
+      "checked": true,
+      "dates": [
+        "2026-11-01",
+        "2026-10-31",
+        "2026-10-30",
+        "2026-10-29",
+        "2026-10-28",
+        "2026-10-27",
+        "2026-10-26"
+      ],
+      "note": "新三条均未以相同事件及法律节点出现在最近7期"
+    },
+    "final_sweep": {
+      "checked": true,
+      "notes": "美国商务部10月30 OCTG初裁、欧盟10月30 PET税令、英国10月30国防采购政策均为已发布重复，排除；英国一般许可证10月30到期、澳大利亚复审决定、英国阿富汗5项行政勘误属于新法律节点；无其他满足来源和独立法律动作要求的重要事项"
     }
   },
   "last_error": null,
   "next_actions": [
-    "筛查美国联邦公报11月2日新增正式规则、欧盟新公告、各国最新制裁清单",
-    "核验更多重大候选及完整最近7期事件级去重",
-    "完成最终来源链接核验及1-2小时终扫",
-    "逐段发布与线上验收"
+    "发布前再次核验全部5个原始链接和期号",
+    "更新 publication_ready 标志并回读",
+    "顺序写入三份main文件，回读验收",
+    "匹配本次最终提交的Pages与来源检查"
   ],
-  "updated_at": "2026-11-02T09:05:00+08:00"
+  "updated_at": "2026-11-02T09:11:00+08:00"
 }
