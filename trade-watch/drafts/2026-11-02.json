@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-02",
+  "base_main_sha": "594973616343f30b5d231837fccd1989176b8560",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "核验最近7期去重及各辖区最近72小时官方信息",
+    "逐一核验原始公告和法律状态",
+    "整理合规影响与期限",
+    "复核来源后发布正文、首页、归档并检查Pages"
+  ],
+  "updated_at": "2026-11-02T09:02:00+08:00"
+}
