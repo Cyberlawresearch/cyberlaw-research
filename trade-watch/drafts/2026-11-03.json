@@ -3,12 +3,71 @@
   "base_main_sha": "1510293639a127152ec2791473c212f0afd0998d",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "eu-hybrid-safeguard",
+      "date": "2026-10-30",
+      "stage": "investigation",
+      "title": "欧盟新混合动力乘用车保障措施调查立案",
+      "source": "https://www.gov.si/novice/2026-11-02-sodelujte-pri-preiskavi-glede-uvedbe-zascitnega-ukrepa-eu-na-uvoz-novih-hibridnih-vozil/",
+      "status": "source_to_verify"
+    },
+    {
+      "id": "us-agoa",
+      "date": "2026-11-02",
+      "stage": "intent",
+      "title": "美国拟自2027年终止南非和卢旺达AGOA资格",
+      "source": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/october/ambassador-greer-issues-statement-president-trumps-intent-terminate-rwanda-and-south-africa-agoa",
+      "status": "source_to_verify"
+    },
+    {
+      "id": "us-truck-bed",
+      "date": "2026-11-02",
+      "stage": "amended_preliminary",
+      "title": "美国修正中国卡车货厢盖反倾销初裁出口商及现金保证金率",
+      "source": "https://www.federalregister.gov/d/2026-22353",
+      "status": "verified_initial"
+    },
+    {
+      "id": "us-chassis",
+      "date": "2026-11-02",
+      "stage": "sunset_injury",
+      "title": "美国ITC认定撤销中国产半挂车底盘双反税令将导致损害继续",
+      "source": "https://www.federalregister.gov/d/2026-22342",
+      "status": "verified_initial"
+    },
+    {
+      "id": "us-shopping-carts",
+      "date": "2026-11-02",
+      "stage": "investigation",
+      "title": "美国对中国购物车及零件双反调查启动ITC损害调查",
+      "source": "https://www.federalregister.gov/d/2026-22281",
+      "status": "verified_initial"
+    },
+    {
+      "id": "us-sunset",
+      "date": "2026-11-02",
+      "stage": "sunset_initiation",
+      "title": "美国对中国移动式高空作业设备、过锰酸钾启动五年日落复审",
+      "source": "https://www.federalregister.gov/d/2026-22312",
+      "status": "verified_initial"
+    }
+  ],
+  "coverage": {
+    "US": "Commerce、ITC、Federal Register、USTR 11月2日正式文件已巡视，形成7项候选",
+    "EU": "已识别10月30日欧盟混合动力汽车保障措施调查并追查原始公报",
+    "UK": "已识别11月2日CBAM政策摘要文字修订",
+    "India": "已识别DGTR对华化工产品调查的11月2日文件",
+    "Japan": "待终扫",
+    "Korea": "待终扫",
+    "Canada": "待终扫",
+    "Australia": "待终扫"
+  },
   "last_error": null,
   "next_actions": [
-    "读取最近7期正文去重",
-    "逐法域检索核验过去72小时重大监管信息",
-    "逐条核验来源并发布"
+    "打开并核验欧盟、美国、英国、印度具体来源文件及期限",
+    "补齐日本、韩国、加拿大、澳大利亚过去72小时机构巡视",
+    "对照七期正文完成去重、末次检索并阶段性保存",
+    "研究完成后再写入正式三份页面"
   ]
 }
