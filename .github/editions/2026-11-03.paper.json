@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-03",
+  "column": "paper",
+  "state": "verified",
+  "phase": "deployment_check",
+  "page": "articles/2026-11-03-surden-artificial-intelligence-and-law-overview.html",
+  "selection": "Harry Surden, Artificial Intelligence and Law: An Overview",
+  "bibliography": {
+    "type": "article",
+    "author": "Harry Surden",
+    "originalTitle": "Artificial Intelligence and Law: An Overview",
+    "journal": "Georgia State University Law Review",
+    "year": "2019",
+    "volume": "35",
+    "issue": "4",
+    "pages": "1305–1337",
+    "doi": "",
+    "url": "https://gsulawreview.org/api/v1/articles/15109-artificial-intelligence-and-law-an-overview.pdf",
+    "cnTitle": "人工智能如何进入法律实践：从技术能力到司法、行政与合规的判断"
+  },
+  "versions": {
+    "full_text": "Read journal PDF full 33 printed pages (1305–1337) via text extraction including full conclusion; PDF screenshot service returned DisabledError.",
+    "publication": "Georgia State University Law Review, 2019, vol 35 no 4, 1305–1337; distinct from Surden's 2014 Machine Learning and Law."
+  },
+  "sources": [
+    "https://gsulawreview.org/api/v1/articles/15109-artificial-intelligence-and-law-an-overview.pdf",
+    "https://readingroom.law.gsu.edu/gsulr/vol35/iss4/8"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-10-24-pasquale-rule-of-persons-not-machines.html",
+    "articles/2026-09-16-barocas-selbst-big-data-disparate-impact.html"
+  ],
+  "timeline": null,
+  "body_length": 4914,
+  "checked_at": "2026-11-03",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  }
+}
