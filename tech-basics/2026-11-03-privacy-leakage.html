@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>第47课｜模型隐私泄露：为什么生成的回答可能暴露训练数据？｜网信法技术基础</title>
+<link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../briefs.html">全球科技法简报</a><a href="../papers.html">域外法学论文精读</a><a href="../classics.html">法学经典著作</a><a href="../new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 47 · SAFETY &amp; FAILURE · 2026.11.03</div><h1>模型隐私泄露：为什么生成的回答可能暴露训练数据？</h1><p class="tech-lead">今日问题：模型并不是普通资料库，为什么有时仍会说出训练时见过的具体内容？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus"><div><strong>它是什么</strong><p><b>模型隐私泄露</b>是指人工智能系统在运行时，使不应被披露的个人信息或其他敏感内容被他人获得。今天集中解释其中一种机制：生成模型可能记住训练语料的某些片段，并在回答时<b>复现</b>出来。模型不必保存一份可供直接查询的原始数据库，也可能发生这种泄露。</p></div><div><strong>一个生活例子</strong><p>假设一家机构把含有员工私人联系方式的旧文档用于模型训练。后来，有人向模型提出与原文高度接近的问题，模型偶然输出了文档中的完整联系方式。提问者没有权限查阅该文件，却在回答中看到了相关信息。这里的号码只是说明风险的假设例子，并非真实泄露事件。</p></div></section>
+<section class="lesson-section"><h2>机制图：训练文本怎样可能出现在回答里？</h2>
+<div class="visual-board" role="group" aria-label="训练数据记忆与输出泄露的四步机制图"><div class="visual-title">关键风险发生在“训练时形成记忆”与“回答时复现片段”相连接的地方。</div>
+<div class="flow">
+<div class="flow-box"><strong>① 训练数据</strong><span>语料含有不应公开的具体文本</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>② 参数学习</strong><span>某些罕见片段可能被强烈记住</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>③ 用户提问</strong><span>提示与被记住的内容形成关联</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>④ 输出复现</strong><span>回答可能包含原文或近似内容</span></div>
+</div><p class="tiny-note">机制示意，不表示每份训练数据都会被记住，也不表示知道提示词就必然能够提取信息。不同模型、训练方式和防护条件下，风险大小不同。</p></div>
+<p>语言模型训练时通过大量样本调整内部<b>参数</b>，学习怎样预测后续文字。通常它学习的是可迁移的语言规律，但少量具体字符串也可能留下很强的影响。研究把模型对训练样本具体内容的保留称为<b>记忆化（Memorization）</b>。当模型在特定条件下输出与训练样本相同的文字时，就发生了<b>逐字复现</b>。一次复现是否涉及个人信息，还要看内容本身以及能否识别具体个人。</p>
+<p>Carlini等人在2021年发表的研究中，通过查询GPT-2，确实找回了部分训练文本，其中包含公开网页上的联系方式等信息。这证明训练数据复现具有现实技术基础，但实验对象与条件并不能直接套用于所有今天的模型。还要区分另一种风险：<b>成员推断</b>并不要求拿到原始文字，它尝试根据模型反应判断某条记录是否曾进入训练集。Shokri等人2017年的研究讨论了这种攻击；不同任务的可行性差异很大。</p>
+<p>另有一些“AI泄密”事件来自检索增强系统越权读取文件、对话上下文混入秘密或工具输出未做访问控制。这些内容即使从未进入模型训练，也会出现在回答里。因此，排查时要核对信息究竟来自训练参数、实时检索、用户输入还是外部工具，不能看到模型泄露文字就一概认定训练数据被提取。</p>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“训练后只剩参数，就不可能暴露原文。”参数不是普通文档库，但部分训练片段仍可能被模型复现。</span></div>
+<div class="myth"><b>误解 02</b><span>“模型答出一个电话号码，就证明它来自训练集。”也可能来自当前提问、检索结果或工具返回；需要追查具体数据路径。</span></div>
+<div class="myth"><b>误解 03</b><span>“删除原始文件，就能保证模型不再泄露。”删除存储文件不等于已经消除了训练形成的记忆；还需评估模型更新、遗忘处理和输出防护效果。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>个人信息保护不能只检查训练数据收集环节</h3>
+<p>使用个人信息训练模型时，应当依法明确处理目的、处理依据和必要范围，同时评估训练后信息通过模型输出再次披露的风险。模型已经投入使用的，还要检查查询权限、敏感信息输出拦截、异常访问记录与事件处置措施。降低训练数据暴露程度、开展记忆化测试，以及在适当条件下采用隐私保护训练方法，都可能减少风险，但具体效果需要验证。</p>
+<p>如果个人提出删除请求，运营者应说明信息处于原始数据、检索库、日志还是已训练模型的哪个环节，并评估不同删除、模型更新或限制使用措施的实际效果。不能把清除一份源文件直接等同于完成全部处理义务。</p>
+</div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>训练数据可能被模型复现时，个人信息删除义务应如何具体履行？</h3><p>区分源数据删除、检索索引删除、模型记忆减弱和输出限制，分析义务标准及效果证明。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>公共部门采购大模型服务，怎样验证训练数据与应用数据的泄露风险？</h3><p>设计包含权限测试、记忆化抽测、检索边界检查、日志留存和事件响应的验收项目。</p></div>
+</div></section>
+<section class="lesson-section"><h2>可靠来源</h2><ol class="source-links">
+<li><a href="https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting">Carlini等，Extracting Training Data from Large Language Models（USENIX Security，2021）</a>。研究语言模型逐字复现训练样本的风险及其测试条件。</li>
+<li><a href="https://arxiv.org/abs/1610.05820">Shokri等，Membership Inference Attacks against Machine Learning Models（IEEE Symposium on Security and Privacy，2017）</a>。分析从模型输出推断记录是否属于训练集的机制。</li>
+<li><a href="https://www.nist.gov/publications/adversarial-machine-learning-taxonomy-and-terminology-attacks-and-mitigations-0">NIST，Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations（2025年3月24日）</a>。界定机器学习系统的隐私与安全攻击类型和风险缓解思路。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第48课</small><p>下一课学习“权限与沙箱”：为什么限制智能体能调用什么工具，比只要求模型谨慎更重要？</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main><footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
