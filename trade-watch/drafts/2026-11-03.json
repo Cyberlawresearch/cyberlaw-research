@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-03",
+  "base_main_sha": "1510293639a127152ec2791473c212f0afd0998d",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "读取最近7期正文去重",
+    "逐法域检索核验过去72小时重大监管信息",
+    "逐条核验来源并发布"
+  ]
+}
