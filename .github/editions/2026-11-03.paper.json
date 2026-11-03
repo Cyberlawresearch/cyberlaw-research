@@ -2,7 +2,7 @@
   "date": "2026-11-03",
   "column": "paper",
   "state": "verified",
-  "phase": "deployment_check",
+  "phase": "completed",
   "page": "articles/2026-11-03-surden-artificial-intelligence-and-law-overview.html",
   "selection": "Harry Surden, Artificial Intelligence and Law: An Overview",
   "bibliography": {
@@ -44,12 +44,12 @@
   "body_length": 4914,
   "checked_at": "2026-11-03",
   "publication": {
-    "content_main_sha": null,
-    "validated_main_sha": null,
-    "pages_run_id": null,
-    "pages_conclusion": null,
-    "current_columns": null,
-    "live_page": null,
-    "live_entry_points": null
+    "content_main_sha": "32817bfe98a1f2ecca57d8e2e46343a746a3b2b2",
+    "validated_main_sha": "32817bfe98a1f2ecca57d8e2e46343a746a3b2b2",
+    "pages_run_id": 41632790570,
+    "pages_conclusion": "success",
+    "current_columns": "passed",
+    "live_page": "passed",
+    "live_entry_points": "passed: deployed contextual reading and current-columns checks"
   }
 }
