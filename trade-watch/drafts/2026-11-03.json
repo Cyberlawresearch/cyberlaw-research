@@ -1,7 +1,7 @@
 {
   "date": "2026-11-03",
   "base_main_sha": "1510293639a127152ec2791473c212f0afd0998d",
-  "phase": "publication_ready",
+  "phase": "published",
   "publication_ready": true,
   "items": [
     {
@@ -106,12 +106,7 @@
     "Australia": "近72小时贸易救济委员会TRN清单复查，最新为10月30日已于11月2日收录"
   },
   "last_error": null,
-  "next_actions": [
-    "完整第056期正文创建到main",
-    "更新首页和归档",
-    "用main回读三份文件并核对来源DOM链接",
-    "检查最终提交Pages和源链接诊断"
-  ],
+  "next_actions": [],
   "dedup_check": {
     "period": "2026-10-26至2026-11-02共8期",
     "result": "候选均为新独立监管动作，10月15日曾报道皮卡厢盖反补贴终裁，但11月2日为反倾销初裁重大笔误更正、不同程序；10月26日美墨劳工案为Amphenol/Peñasquito，本日为Madobox新个案"
@@ -123,5 +118,22 @@
   "final_sweep": {
     "date": "2026-11-03",
     "result": "再次检索11月3日美国、欧盟、英国、印度、日本及澳大利亚主管机构公告；没有足以替换的更重大且可核验的新监管动作"
+  },
+  "publication_status": {
+    "state": "public_verified",
+    "issue": "trade-watch/issues/2026-11-03.html",
+    "home": "trade-watch/index.html",
+    "archive": "trade-watch/archive.html",
+    "published_main_commit": "c11a61eaf472c928737fcb340d5b4f350f5fb66f",
+    "pages_workflow_run": 41557824807,
+    "pages_conclusion": "success",
+    "source_check_run": 41558291974,
+    "source_check_conclusion": "success",
+    "guard_run": 41558292041,
+    "guard_conclusion": "success",
+    "verified_news_count": 10,
+    "verified_original_source_links": 10,
+    "public_issue_home_archive_verified": true,
+    "verified_at": "2026-11-03T01:17:27Z"
   }
 }
