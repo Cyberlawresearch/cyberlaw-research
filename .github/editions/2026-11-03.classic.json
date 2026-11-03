@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-03",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-03-jhering-struggle-for-law.html",
+  "target_path": "articles/2026-11-03-jhering-struggle-for-law.html",
+  "book": {
+    "author": "Rudolf von Jhering",
+    "original_title": "Der Kampf ums Recht / The Struggle for Law",
+    "publisher": "Callaghan and Company",
+    "year": "1915",
+    "edition": "1915 Chicago English second edition, John J. Lalor translation from German fifth edition (1872 original, publisher of 1872 printing not asserted); Albert Kocourek 1915 introduction is editorial"
+  },
+  "source_urls": [
+    "https://en.wikisource.org/wiki/The_Struggle_for_Law",
+    "https://en.wikisource.org/wiki/The_Struggle_for_Law/Author%27s_Preface",
+    "https://pegasus.law.columbia.edu/record/124957",
+    "https://doi.org/10.1093/ojls/gqi029",
+    "https://journals.law.uj.edu.pl/TPP/pl/article/view/599",
+    "https://journals.law.uj.edu.pl/TPP/en/article/view/597",
+    "https://journals.law.uj.edu.pl/TPP/pl/article/view/598",
+    "https://www.cambridge.org/core/journals/international-journal-of-law-in-context/article/abs/struggle-for-law-some-dilemmas-of-cultural-legality/0B49CEF503BA8FEF5C9D229771B4A094"
+  ],
+  "original_verification": "直接系统核对1915年Callaghan and Company英译第二版（J. J. Lalor自第五德文版翻译）的完整作者序言及全部六章：法律和平与斗争；具体权利的请求；对自身的义务；对社会的义务；与国家的关系；罗马法、程序及制裁。将第五版作者序言与1872年初次演讲区分，并剔除1915年Kocourek编者导论作为原著论证的归属。1872年德文首印出版社未经核验，未虚构。",
+  "critics": [
+    {
+      "name": "Neil Duxbury",
+      "work": "Jhering's Philosophy of Authority, Oxford Journal of Legal Studies 27(1) (2007)",
+      "url": "https://doi.org/10.1093/ojls/gqi029",
+      "checked": "追问法律权威与法感情如何形成，反对仅将耶林作为后来利益法学先驱的简化解释"
+    },
+    {
+      "name": "Christoph-Eric Mecke",
+      "work": "Rudolf von Jhering's 'struggle for law' — the rejection of alternative forms of dispute resolution?, Transformacje Prawa Prywatnego 4 (2017)",
+      "url": "https://journals.law.uj.edu.pl/TPP/pl/article/view/599",
+      "checked": "辨析原著允许善意争议和解，指出本书并不普遍否定替代性争端解决"
+    },
+    {
+      "name": "Josefa Birr",
+      "work": "Jhering's concept of Rechtsgefühl and its role in The Struggle for Law, Transformacje Prawa Prywatnego 4 (2017)",
+      "url": "https://journals.law.uj.edu.pl/TPP/en/article/view/597",
+      "checked": "辨析法感情、社会生活经验和具体权利争议，而非将其等同纯粹情绪"
+    },
+    {
+      "name": "Inge Kroppenberg and Nikolaus Linder",
+      "work": "Domestic trials, and The Struggle for Law, Transformacje Prawa Prywatnego 4 (2017)",
+      "url": "https://journals.law.uj.edu.pl/TPP/pl/article/view/598",
+      "checked": "结合1864—1865年女佣工资诉讼档案考察耶林本人法律实践与思想关系"
+    },
+    {
+      "name": "Roger Cotterrell",
+      "work": "The struggle for law: some dilemmas of cultural legality, International Journal of Law in Context (2009)",
+      "url": "https://www.cambridge.org/core/journals/international-journal-of-law-in-context/article/abs/struggle-for-law-some-dilemmas-of-cultural-legality/0B49CEF503BA8FEF5C9D229771B4A094",
+      "checked": "反思共同法律文化假设在多元社会及不平等权利经验中的限度"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html至2026-11-02已发布全量经典索引，作者、书名及德英文标题严格去重",
+    "classics-history.html早期第15至35期导出全文/著作名称去重",
+    ".github/editions/2026-11-03.classic.json和当日目标正文在发布前均不存在"
+  ],
+  "duplicate_found": false,
+  "sections": 59,
+  "prose_length": 9711,
+  "checked_at": "2026-11-03",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
