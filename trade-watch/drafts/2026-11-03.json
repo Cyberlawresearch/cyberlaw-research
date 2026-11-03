@@ -1,7 +1,7 @@
 {
   "date": "2026-11-03",
   "base_main_sha": "1510293639a127152ec2791473c212f0afd0998d",
-  "phase": "researching",
+  "phase": "source_verification",
   "publication_ready": false,
   "items": [
     {
@@ -51,23 +51,66 @@
       "title": "美国对中国移动式高空作业设备、过锰酸钾启动五年日落复审",
       "source": "https://www.federalregister.gov/d/2026-22312",
       "status": "verified_initial"
+    },
+    {
+      "id": "uk-cbam-cpr",
+      "date": "2026-11-02",
+      "stage": "policy_guidance_update",
+      "title": "英国HMRC澄清2027年CBAM碳价抵扣计算规则示例",
+      "source": "https://www.gov.uk/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary",
+      "status": "verified"
+    },
+    {
+      "id": "in-copolyol",
+      "date": "2026-11-02",
+      "stage": "investigation_product_scope",
+      "title": "印度明确聚合物多元醇调查排除聚酯多元醇，答卷11月17日截止",
+      "source": "https://dgtr.gov.in/sites/default/files/2026-11/PUC%20PCN%20Notification%20%285%29.pdf",
+      "status": "verified_pdf_2pages"
+    },
+    {
+      "id": "us-madobox",
+      "date": "2026-11-02",
+      "stage": "usmca_rrm_review",
+      "title": "美国就墨西哥Madobox纸箱生产设施启动劳工快速反应审查并暂缓结关",
+      "source": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/november/united-states-seeks-mexicos-review-alleged-denial-workers-rights-madobox",
+      "status": "verified"
+    },
+    {
+      "id": "us-wifi",
+      "date": "2026-11-02",
+      "stage": "337_partial_review",
+      "title": "美国ITC就华硕及Plume无线网络设备337案部分复审及终局期限更新",
+      "source": "https://www.federalregister.gov/d/2026-22280",
+      "status": "verified"
+    },
+    {
+      "id": "kr-transformers",
+      "date": "2026-11-02",
+      "stage": "ad_admin_review_prelim",
+      "title": "美国初步认定韩国大功率变压器两家厂商倾销率为零",
+      "source": "https://www.federalregister.gov/d/2026-22343",
+      "status": "verified"
     }
   ],
   "coverage": {
-    "US": "Commerce、ITC、Federal Register、USTR 11月2日正式文件已巡视，形成7项候选",
-    "EU": "已识别10月30日欧盟混合动力汽车保障措施调查并追查原始公报",
-    "UK": "已识别11月2日CBAM政策摘要文字修订",
-    "India": "已识别DGTR对华化工产品调查的11月2日文件",
-    "Japan": "待终扫",
-    "Korea": "待终扫",
-    "Canada": "待终扫",
-    "Australia": "待终扫"
+    "US": "11月2日USTR、Commerce及USITC原始文件逐条核验完成",
+    "EU": "10月30日欧委会混合动力车辆保障调查官方公报及11月2日成员国期限通知核验完成",
+    "UK": "11月2日HMRC CBAM碳价抵扣计算解释更新核验完成",
+    "India": "11月2日DGTR案号6/66/2026对华共聚多元醇产品范围及答卷期限核验完成",
+    "Japan": "近72小时财务省、海关、METI公告和日文新闻复查，未选入不具实质新内容报道",
+    "Korea": "近72小时韩国产业通商部门及海关公告复查；另见美国商务部韩国变压器复审初步结果",
+    "Canada": "近72小时CBSA反倾销案公告及政府贸易更新巡视，无足够新增个案",
+    "Australia": "近72小时贸易救济委员会TRN清单复查，最新为10月30日已于11月2日收录"
   },
   "last_error": null,
   "next_actions": [
-    "打开并核验欧盟、美国、英国、印度具体来源文件及期限",
-    "补齐日本、韩国、加拿大、澳大利亚过去72小时机构巡视",
-    "对照七期正文完成去重、末次检索并阶段性保存",
-    "研究完成后再写入正式三份页面"
-  ]
+    "再核验官方文书链接对应原始事件和精确日期期限",
+    "全部来源确认后记录核验与publication_ready",
+    "生成完整056期当期HTML并直接正式写入main、更新首页归档、回读、部署"
+  ],
+  "dedup_check": {
+    "period": "2026-10-26至2026-11-02共8期",
+    "result": "候选均为新独立监管动作，10月15日曾报道皮卡厢盖反补贴终裁，但11月2日为反倾销初裁重大笔误更正、不同程序；10月26日美墨劳工案为Amphenol/Peñasquito，本日为Madobox新个案"
+  }
 }
