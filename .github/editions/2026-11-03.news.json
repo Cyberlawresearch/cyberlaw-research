@@ -1,0 +1,265 @@
+{
+  "date": "2026-11-03",
+  "column": "brief",
+  "state": "verified",
+  "phase": "deployment_check",
+  "page": "articles/2026-11-03-tech-law-brief.html",
+  "news_count": 15,
+  "distribution": {
+    "domestic": 4,
+    "foreign": 11
+  },
+  "mode": "facts_only",
+  "analysis_pending": true,
+  "checked_at": "2026-11-03T11:12:52.099Z",
+  "last_news_scan_at": "2026-11-03T11:12:52.099Z",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  },
+  "coverage": [
+    {
+      "source_group": "中国中央与地方网信、数据、行业标准及媒体",
+      "status": "searched",
+      "result": "核验11月3日乌镇讲话、金融监管表态及11月2日奖项、国际合作案例；复查中央和地方其他政策线索"
+    },
+    {
+      "source_group": "欧盟及成员国监管、法院和版权",
+      "status": "searched",
+      "result": "核验欧盟外国补贴条例下京东附条件审批、欧盟法院总法律顾问意见；比对历史未见同日重复"
+    },
+    {
+      "source_group": "美国、英国监管和网络安全、AI基础设施",
+      "status": "searched",
+      "result": "逐条查阅NCSC原始年度报告、Marvell收购报道和CISA等安全线索"
+    },
+    {
+      "source_group": "韩国、日本、越南及亚太地区",
+      "status": "searched",
+      "result": "韩语和日语检索并核对韩国PIPC公告、韩国政府与企业表态、日本Nojima事故；越南语检索未发现新的足够重要事项"
+    },
+    {
+      "source_group": "澳大利亚和欧洲重大安全事件",
+      "status": "searched",
+      "result": "核实澳大利亚高院实际听审、欧洲超市冷链疑似入侵和乌俄预警系统安全事件"
+    },
+    {
+      "source_group": "近七日逐事件去重和最近时段重扫",
+      "status": "searched",
+      "result": "查阅2026年11月1日至2日全部新闻条目及10月27日至31日标题；筛除已报道的韩国预算、三得利、Arara和CMA事项"
+    }
+  ],
+  "items": [
+    {
+      "domestic": true,
+      "date": "2026-11-03",
+      "jurisdiction": "中国",
+      "agency": "国务院、世界互联网大会",
+      "title": "李强在乌镇峰会提出人工智能可信可控与网络空间开放合作倡议",
+      "original_title": "李强在2026年世界互联网大会乌镇峰会开幕式上的主旨演讲（全文）",
+      "source_name": "中国驻外使馆刊载讲话全文",
+      "url": "https://na.china-embassy.gov.cn/zgyw/202611/t20261103_12052420.htm",
+      "fact": "11月3日，国务院总理李强在世界互联网大会乌镇峰会开幕式发表主旨演讲，围绕科技赋能、可信可控、普惠均衡、开放对话提出四方面倡议，强调科技创新与数字安全协调推进，反对人为制造数字壁垒。有关内容属于国际网络空间治理的政策倡议，并不是当日制定的新法规。",
+      "legal_status": "policy_speech",
+      "id": "research-item-1"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-03",
+      "jurisdiction": "中国·香港",
+      "agency": "国家金融监督管理总局",
+      "title": "金融监管总局副局长肖远企警示人工智能投资集中与金融风险",
+      "original_title": "AI investment is becoming overly concentrated, Chinese official says",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/finance/ai-investment-is-becoming-overly-concentrated-chinese-official-says-2026-11-03/",
+      "fact": "11月3日，国家金融监督管理总局副局长肖远企在香港金融管理局全球金融领袖投资峰会上表示，全球人工智能投资过度集中，可能提高相关行业杠杆水平、挤压传统产业融资并增加信用风险。他提出应为人工智能发展对宏观经济和金融稳定的影响做好政策准备。这是监管官员公开讲话，并非新监管规则生效。",
+      "legal_status": "regulator_speech",
+      "id": "research-item-2"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-02",
+      "jurisdiction": "中国·浙江",
+      "agency": "国家互联网信息办公室、世界互联网大会",
+      "title": "乌镇峰会发布20项领先科技奖成果，覆盖网络安全和量子计算",
+      "original_title": "2026年世界互联网大会领先科技奖颁奖典礼举行",
+      "source_name": "中国网信网",
+      "url": "https://www.cac.gov.cn/2026-11/02/c_1795373873669037.htm",
+      "fact": "11月2日，世界互联网大会在乌镇发布20个领先科技奖获奖项目，涉及光量子计算、通信网络安全弹性防御、分布式存储以及高性能智能计算等。该届奖项收到43个国家和地区提交的430余项成果。此次为科技成果评选，不是新颁布的强制性技术标准。",
+      "legal_status": "technology_award_announcement",
+      "id": "research-item-3"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-02",
+      "jurisdiction": "中国·浙江",
+      "agency": "世界互联网大会、国家互联网信息办公室",
+      "title": "乌镇发布11项网络空间国际合作案例，涉及跨境网络安全和可信数据生态",
+      "original_title": "开源开放结硕果，共建共享启新程：2026年“携手构建网络空间命运共同体”精品案例在乌镇发布",
+      "source_name": "中国网信网",
+      "url": "https://www.cac.gov.cn/2026-11/02/c_1795373873114798.htm",
+      "fact": "11月2日，世界互联网大会发布11项网络空间国际合作精品案例，从80余个国家和地区提交的360余项申报中遴选产生。案例涉及重大活动跨境网络安全保障、漏洞反馈机制、汽车行业可信数据生态和跨境通信基础设施。它们属于合作实践展示，不代表新的跨境数据条约已经生效。",
+      "legal_status": "international_cooperation_examples",
+      "id": "research-item-4"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-03",
+      "jurisdiction": "欧盟",
+      "agency": "欧盟委员会",
+      "title": "欧盟委员会依据外国补贴条例附条件批准京东收购Ceconomy",
+      "original_title": "JD.com wins EU approval for acquisition of Ceconomy",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/jdcom-wins-eu-approval-acquisition-ceconomy-2026-11-03/",
+      "fact": "11月3日，欧盟委员会批准京东约25亿美元收购德国电子零售企业Ceconomy，条件是落实所提交的承诺措施。委员会此前依据《外国补贴条例》调查优惠融资、税收激励及补助是否可能帮助收购方获得不当优势。此次决定属于附条件批准，并非无条件放行。",
+      "legal_status": "conditional_foreign_subsidies_clearance",
+      "id": "research-item-5"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-03",
+      "jurisdiction": "欧盟",
+      "agency": "欧盟法院总法律顾问",
+      "title": "欧盟法院总法律顾问认为AI聊天机器人引用新闻表达可能侵犯出版商权利",
+      "original_title": "Google's use of press by AI chatbot may infringe copyright rules, EU court adviser says",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/googles-use-press-by-ai-chatbot-may-infringe-copyright-rules-eu-court-adviser-2026-11-03/",
+      "fact": "11月3日，欧盟法院总法律顾问Maciej Szpunar就谷歌Gemini利用新闻出版物生成回答的问题发表意见，认为复制或再利用出版商文章的具体表达，在一定条件下可能侵犯其权利。他区分了不受著作权保护的单纯新闻事实和受保护的表达形式。意见尚未成为欧盟法院最终判决。",
+      "legal_status": "non_binding_advocate_general_opinion",
+      "id": "research-item-6"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-03",
+      "jurisdiction": "韩国",
+      "agency": "韩国总统府、内阁会议",
+      "title": "韩国总统要求研究设立跨部门网络安全统筹机构",
+      "original_title": "South Korea's Lee calls for powerful government-wide cybersecurity body",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/south-koreas-lee-calls-powerful-government-wide-cybersecurity-body-2026-11-03/",
+      "fact": "11月3日，韩国总统李在明在内阁会议上要求研究设立统一协调网络安全工作的机构，并讨论覆盖公共和私营部门的联合工作机制。他指出现有检查和事后应对方式存在局限，需要加强关键基础设施和公共服务的预防性防护。有关机构属于设立倡议，并未于当日正式成立。",
+      "legal_status": "proposed_cybersecurity_coordinator",
+      "id": "research-item-7"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-03",
+      "jurisdiction": "澳大利亚",
+      "agency": "澳大利亚高等法院",
+      "title": "澳大利亚高等法院审理未满16岁社交媒体账户限制的宪法挑战",
+      "original_title": "High Court to consider whether under-16s social media ban is unconstitutional",
+      "source_name": "ABC News",
+      "url": "https://www.abc.net.au/news/2026-11-03/high-court-challenge-to-under-16s-social-media-ban/107336886",
+      "fact": "11月3日，澳大利亚高等法院开始审理针对未满16岁社交媒体账户限制的宪法挑战。Reddit与数字自由项目认为措施限制了宪法所保护的政治交流；联邦政府认为儿童网络安全目的正当、限制程度适当。案件进入听审阶段，法院尚未裁定有关限制违宪。",
+      "legal_status": "constitutional_challenge_hearing",
+      "id": "research-item-8"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-03",
+      "jurisdiction": "英国",
+      "agency": "英国国家网络安全中心（NCSC）",
+      "title": "英国NCSC发布2026年网络安全年度报告，提出AI智能体持续防御计划",
+      "original_title": "NCSC Annual Review 2026",
+      "source_name": "UK National Cyber Security Centre",
+      "url": "https://www.ncsc.gov.uk/collection/annual-review-2026",
+      "fact": "11月3日，英国国家网络安全中心发布2026年度报告，总结2025年9月至2026年8月的网络安全事件与防御工作，介绍其对337起事件的处理经验。报告将人工智能辅助检测、漏洞管理及应急响应列为能力建设方向，并介绍Cyber Shield智能体网络防御计划。对未来攻击的内容属于风险研判，而不是已经发生的事件。",
+      "legal_status": "government_cyber_security_annual_report",
+      "id": "research-item-9"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-02",
+      "jurisdiction": "瑞典等欧洲五国",
+      "agency": "零售企业ICA、Coop等",
+      "title": "欧洲五国超市冷链设备出现疑似网络攻击，部分门店报废商品",
+      "original_title": "Supermarket freezers across Europe hit by suspected cyberattack",
+      "source_name": "Associated Press",
+      "url": "https://apnews.com/article/europe-supermarkets-freezers-cyberattacks-a8ea5b30d67da47957769f29101fe686",
+      "fact": "11月2日，瑞典、比利时、卢森堡、爱尔兰及爱沙尼亚部分超市报告冷藏冷冻设备异常，美联社称事件疑似由网络攻击引起。瑞典一处门店表示冷柜温度被设置为50摄氏度，因此丢弃受影响食品。具体入侵途径、各地事件的关联和责任主体尚待调查确认。",
+      "legal_status": "suspected_cyber_physical_attack",
+      "id": "research-item-10"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-03",
+      "jurisdiction": "韩国",
+      "agency": "韩国个人信息保护委员会",
+      "title": "韩国隐私监管机构公布以事前预防和AI安全为主题的个人信息政策论坛",
+      "original_title": "사전예방 중심 보호체계 혁신, 인공지능 보안 대응 방향에 대해 각계가 함께 모색한다",
+      "source_name": "韩国个人信息保护委员会",
+      "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12607",
+      "fact": "11月3日，韩国个人信息保护委员会公告，将于11月9日联合韩国个人信息保护负责人协会召开政策论坛，讨论个人信息保护法修订后企业负责人及首席个人信息保护官的责任、事前安全投资和人工智能攻击防范。该公告为会议及政策讨论安排，不是新的正式法令或处罚决定。",
+      "legal_status": "regulator_policy_forum_announcement",
+      "id": "research-item-11"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-02",
+      "jurisdiction": "日本",
+      "agency": "家电零售企业Nojima",
+      "title": "日本Nojima公布电商会员系统入侵事件，约700万条信息泄露",
+      "original_title": "サントリーHD不正アクセス被害　10万人超の個人情報漏えい　「ノジマ」「アララ」でも情報流出",
+      "source_name": "富士电视台FNN",
+      "url": "https://www.fnn.jp/articles/FNN/1144861",
+      "fact": "11月2日，日本家电零售企业Nojima披露其电商会员管理系统遭非法访问，约700万条会员资料受到影响，涉及姓名、登录标识等信息。富士电视台报道，受影响系统并未保存信用卡数据。企业已披露事故并开展处置，攻击路径及后续损害仍在调查。",
+      "legal_status": "corporate_data_breach_disclosure",
+      "id": "research-item-12"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-02",
+      "jurisdiction": "韩国",
+      "agency": "韩国国家AI战略委员会、韩国经济人协会",
+      "title": "韩国AI数据中心产业座谈会要求明确供电条件和特别法配套审批期限",
+      "original_title": "AI 데이터센터 투자, 불확실성 줄이고 국산기술에 기회줘야",
+      "source_name": "韩联社",
+      "url": "https://www.yna.co.kr/amp/view/AKR20261102101900003",
+      "fact": "11月2日，韩国国家AI战略委员会与韩国经济人协会举行数据中心产业座谈会，15家企业参加。企业要求在投资选址前明确可供电时间及容量，并建议在计划于2027年3月实施的AI数据中心特别法配套法规中明确许可期限。这些属于座谈会企业提出的政策诉求，尚非已经发布的配套规定。",
+      "legal_status": "industry_policy_consultation",
+      "id": "research-item-13"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-02",
+      "jurisdiction": "美国",
+      "agency": "Marvell Technology、Lumentum",
+      "title": "Marvell拟以1150亿美元收购Lumentum，整合AI数据中心光互连供应链",
+      "original_title": "Marvell doubles down on AI boom with costly $115 billion Lumentum deal",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/marvell-buy-lumentum-115-billion-deal-ai-data-center-bet-2026-11-02/",
+      "fact": "11月2日，Marvell宣布以全股票方式收购光通信组件企业Lumentum，计入债务后的交易价值约1150亿美元，股权价值约1025亿美元。交易旨在强化人工智能数据中心的芯片和光互连能力，预计2028年上半年完成。交易还须接受监管审批，并不意味着已经完成合并。",
+      "legal_status": "announced_merger_pending_regulatory_approval",
+      "id": "research-item-14"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-02",
+      "jurisdiction": "乌克兰、俄罗斯",
+      "agency": "乌克兰空军、俄罗斯紧急情况部",
+      "title": "乌俄公共预警应用遭入侵，向用户推送虚假核攻击及空袭提醒",
+      "original_title": "Hackers hit Ukraine and Russia's emergency apps, send fake nuclear alerts",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/europe/ukrainian-air-force-says-public-air-raid-alert-app-has-been-hacked-2026-11-01/",
+      "fact": "11月1日深夜至2日凌晨，乌克兰公共空袭预警应用和俄罗斯紧急情况部的移动应用先后遭遇入侵或篡改，用户收到虚假的核攻击、化学攻击及空袭提醒。乌克兰暂时停止涉事应用服务，其他预警渠道继续运行；俄方表示正在修复。攻击者身份和两起事件间是否存在联系尚未获得独立证实。",
+      "legal_status": "public_warning_system_cyber_incident",
+      "id": "research-item-15"
+    }
+  ],
+  "publication": {
+    "commit_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "online_acceptance": null
+  }
+}
