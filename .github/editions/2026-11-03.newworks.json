@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-03",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-03-new-works.html",
+  "page_blob_sha": "e877a97e440a5fc6d0903cb90a2a381806cb911a",
+  "newworks_count": 3,
+  "checked_at": "2026-11-03T12:42:00.575Z",
+  "checks": {
+    "first_two_publisher_fulltexts_opened": true,
+    "third_author_affiliated_university_record_opened": true,
+    "third_publisher_fulltext_opened": false,
+    "bibliographic_fields_verified_as_available": true,
+    "history_original_title_search": true,
+    "history_doi_deduplication_for_known_dois": true,
+    "version_verified_as_available": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "indexes": [
+      "new-works.html",
+      "new-works-history.html",
+      "64 archived articles pages",
+      "12 older new-works/YYYY-MM-DD pages"
+    ],
+    "fields": [
+      "original_title",
+      "DOI",
+      "author",
+      "publication_version"
+    ],
+    "search_method": "Directly fetched all 76 historic research-newwork article pages from main and checked three title/DOI pairs; also searched GitHub code index. A previous candidate Senftleben DOI 10.1007/s40319-026-01680-2 was excluded when found in articles/2026-09-03-new-works.html.",
+    "matches_found": 0
+  },
+  "items": [
+    {
+      "cn_title": "前沿人工智能治理不能只靠放慢研发：行为控制、能力准入与决策授权",
+      "author": "Kirti Prakash; Ian van der Linde",
+      "original_title": "Beyond the AI slowdown: the four As for governing frontier AI",
+      "journal": "AI and Ethics",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-10-29",
+      "volume": "6",
+      "issue": null,
+      "pages": null,
+      "article_number": "620",
+      "doi": "10.1007/s43681-026-01449-w",
+      "publisher_page": "https://link.springer.com/article/10.1007/s43681-026-01449-w",
+      "version": "Version of record; open access"
+    },
+    {
+      "cn_title": "AI如何帮助消费者集体索赔：诉讼成本、程序保障与欧盟AI法",
+      "author": "Martin Karim",
+      "original_title": "From Big Data to Big Justice: AI and Automation in EU Consumer Collective Redress",
+      "journal": "Journal of Consumer Policy",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-06-06",
+      "volume": "49",
+      "issue": null,
+      "pages": null,
+      "article_number": "20",
+      "doi": "10.1007/s10603-026-09624-6",
+      "publisher_page": "https://link.springer.com/article/10.1007/s10603-026-09624-6",
+      "version": "Version of record; open access"
+    },
+    {
+      "cn_title": "律师使用生成式AI，职业伦理为何还要约束系统采购与操作流程",
+      "author": "Andrej Krištofík",
+      "original_title": "Wigs and wires: assemblage governance and the professional legal ethics of generative AI",
+      "journal": "Information & Communications Technology Law",
+      "publisher": "Taylor & Francis",
+      "year": 2026,
+      "publication_date": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": "10.1080/13600834.2026.2727755",
+      "publisher_page": "https://www.tandfonline.com/doi/full/10.1080/13600834.2026.2727755",
+      "author_university_record": "https://www.muni.cz/en/research/publications/2592046",
+      "version": "Refereed journal article, 2026; author university records the publisher and DOI; publisher page blocks retrieval; issue/pages not verified"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": false
+  },
+  "other_columns_at_record": {
+    "brief": "articles/2026-11-03-tech-law-brief.html",
+    "paper": "articles/2026-11-03-surden-artificial-intelligence-and-law-overview.html",
+    "classic": "articles/2026-11-03-jhering-struggle-for-law.html"
+  }
+}
