@@ -1,8 +1,8 @@
 {
   "date": "2026-11-03",
   "base_main_sha": "1510293639a127152ec2791473c212f0afd0998d",
-  "phase": "source_verification",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "eu-hybrid-safeguard",
@@ -10,15 +10,17 @@
       "stage": "investigation",
       "title": "欧盟新混合动力乘用车保障措施调查立案",
       "source": "https://www.gov.si/novice/2026-11-02-sodelujte-pri-preiskavi-glede-uvedbe-zascitnega-ukrepa-eu-na-uvoz-novih-hibridnih-vozil/",
-      "status": "source_to_verify"
+      "status": "verified",
+      "dedup": "new_event"
     },
     {
       "id": "us-agoa",
       "date": "2026-11-02",
       "stage": "intent",
       "title": "美国拟自2027年终止南非和卢旺达AGOA资格",
-      "source": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/october/ambassador-greer-issues-statement-president-trumps-intent-terminate-rwanda-and-south-africa-agoa",
-      "status": "source_to_verify"
+      "source": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ambassador-greer-issues-statement-president-trumps-intent-terminate-rwanda-and-south-africa-agoa",
+      "status": "verified",
+      "dedup": "new_event"
     },
     {
       "id": "us-truck-bed",
@@ -26,7 +28,8 @@
       "stage": "amended_preliminary",
       "title": "美国修正中国卡车货厢盖反倾销初裁出口商及现金保证金率",
       "source": "https://www.federalregister.gov/d/2026-22353",
-      "status": "verified_initial"
+      "status": "verified",
+      "dedup": "new_event"
     },
     {
       "id": "us-chassis",
@@ -34,7 +37,8 @@
       "stage": "sunset_injury",
       "title": "美国ITC认定撤销中国产半挂车底盘双反税令将导致损害继续",
       "source": "https://www.federalregister.gov/d/2026-22342",
-      "status": "verified_initial"
+      "status": "verified",
+      "dedup": "new_event"
     },
     {
       "id": "us-shopping-carts",
@@ -42,7 +46,8 @@
       "stage": "investigation",
       "title": "美国对中国购物车及零件双反调查启动ITC损害调查",
       "source": "https://www.federalregister.gov/d/2026-22281",
-      "status": "verified_initial"
+      "status": "verified",
+      "dedup": "new_event"
     },
     {
       "id": "us-sunset",
@@ -50,7 +55,8 @@
       "stage": "sunset_initiation",
       "title": "美国对中国移动式高空作业设备、过锰酸钾启动五年日落复审",
       "source": "https://www.federalregister.gov/d/2026-22312",
-      "status": "verified_initial"
+      "status": "verified",
+      "dedup": "new_event"
     },
     {
       "id": "uk-cbam-cpr",
@@ -58,7 +64,8 @@
       "stage": "policy_guidance_update",
       "title": "英国HMRC澄清2027年CBAM碳价抵扣计算规则示例",
       "source": "https://www.gov.uk/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary",
-      "status": "verified"
+      "status": "verified",
+      "dedup": "new_event"
     },
     {
       "id": "in-copolyol",
@@ -66,7 +73,8 @@
       "stage": "investigation_product_scope",
       "title": "印度明确聚合物多元醇调查排除聚酯多元醇，答卷11月17日截止",
       "source": "https://dgtr.gov.in/sites/default/files/2026-11/PUC%20PCN%20Notification%20%285%29.pdf",
-      "status": "verified_pdf_2pages"
+      "status": "verified",
+      "dedup": "new_event"
     },
     {
       "id": "us-madobox",
@@ -74,7 +82,8 @@
       "stage": "usmca_rrm_review",
       "title": "美国就墨西哥Madobox纸箱生产设施启动劳工快速反应审查并暂缓结关",
       "source": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/november/united-states-seeks-mexicos-review-alleged-denial-workers-rights-madobox",
-      "status": "verified"
+      "status": "verified",
+      "dedup": "new_event"
     },
     {
       "id": "us-wifi",
@@ -82,15 +91,8 @@
       "stage": "337_partial_review",
       "title": "美国ITC就华硕及Plume无线网络设备337案部分复审及终局期限更新",
       "source": "https://www.federalregister.gov/d/2026-22280",
-      "status": "verified"
-    },
-    {
-      "id": "kr-transformers",
-      "date": "2026-11-02",
-      "stage": "ad_admin_review_prelim",
-      "title": "美国初步认定韩国大功率变压器两家厂商倾销率为零",
-      "source": "https://www.federalregister.gov/d/2026-22343",
-      "status": "verified"
+      "status": "verified",
+      "dedup": "new_event"
     }
   ],
   "coverage": {
@@ -105,12 +107,21 @@
   },
   "last_error": null,
   "next_actions": [
-    "再核验官方文书链接对应原始事件和精确日期期限",
-    "全部来源确认后记录核验与publication_ready",
-    "生成完整056期当期HTML并直接正式写入main、更新首页归档、回读、部署"
+    "完整第056期正文创建到main",
+    "更新首页和归档",
+    "用main回读三份文件并核对来源DOM链接",
+    "检查最终提交Pages和源链接诊断"
   ],
   "dedup_check": {
     "period": "2026-10-26至2026-11-02共8期",
     "result": "候选均为新独立监管动作，10月15日曾报道皮卡厢盖反补贴终裁，但11月2日为反倾销初裁重大笔误更正、不同程序；10月26日美墨劳工案为Amphenol/Peñasquito，本日为Madobox新个案"
+  },
+  "source_verification": {
+    "all_10_original_links_opened": true,
+    "notes": "欧委会欧盟公报在EUR-Lex JS校验页无法全文读取；通过成员国主管部门11月2日案例专项公告及其直链确定日期、范围和期限；其他9条原始公告可全文核验。印度两页原始PDF已按页截图核对。"
+  },
+  "final_sweep": {
+    "date": "2026-11-03",
+    "result": "再次检索11月3日美国、欧盟、英国、印度、日本及澳大利亚主管机构公告；没有足以替换的更重大且可核验的新监管动作"
   }
 }
