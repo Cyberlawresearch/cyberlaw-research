@@ -2,7 +2,7 @@
   "date": "2026-11-04",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "c2b5764893cca7bee8ae6c835824928313510e04",
-  "phase": "publication_ready",
+  "phase": "main_committed_awaiting_pages",
   "publication_ready": true,
   "items": [
     {
@@ -151,9 +151,8 @@
   },
   "last_error": null,
   "next_actions": [
-    "正式写入main当期正文",
-    "更新trade-watch首页和归档",
-    "回读并核验本次Pages部署"
+    "核对与最终提交对应的Pages工作流状态",
+    "核对正式网页、首页入口、归档首项和来源链接"
   ],
   "last_updated": "2026-11-04T09:18:00+08:00",
   "events_checked_against": [
@@ -195,5 +194,22 @@
     "final_sweep": "2026-11-04 09:00—09:35 Asia/Shanghai; official USTR, OFAC, UK trade notices, USITC, Federal Register, EU Trade, Japan METI, Korea MOTIR, India DGTR, Canada CBSA, Australia ADC; no replacement with old events",
     "notable_excluded": "USITC magnet wire 337 investigation appears already in 2026-10-30; EU PET spunbond Oct30 previously reported Oct31; Japanese nickel stainless steel Oct27 previously reported Oct28.",
     "last_sources_opened": "2026-11-04"
+  },
+  "publication_attempt": {
+    "date": "2026-11-04",
+    "target_issue": "trade-watch/issues/2026-11-04.html",
+    "issue_commit_sha": "5c9f27b44749c3199ec547df6f040b904e5bc896",
+    "index_commit_sha": "d43c537e24f79855190e4c543a6c4f935c845973",
+    "archive_initial_commit_sha": "19402513c5457ed5d4a9e028e324e5efdbe38325",
+    "archive_correction_sha": "02a182a1e08b68eaf4808dc4f2caf0ee2993419b",
+    "files_written": [
+      "trade-watch/issues/2026-11-04.html",
+      "trade-watch/index.html",
+      "trade-watch/archive.html"
+    ],
+    "issue_count": 7,
+    "main_head_at_check": "02a182a1e08b68eaf4808dc4f2caf0ee2993419b",
+    "status": "all three files written and reread; awaiting final commit Pages deploy and public URL validation",
+    "pages_run_id": 41752075236
   }
 }
