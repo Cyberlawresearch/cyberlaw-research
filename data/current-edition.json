@@ -1,17 +1,17 @@
 {
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "pages": {
-    "brief": "articles/2026-11-03-tech-law-brief.html",
+    "brief": "articles/2026-11-04-tech-law-brief.html",
     "paper": "articles/2026-11-03-surden-artificial-intelligence-and-law-overview.html",
     "classic": "articles/2026-11-03-jhering-struggle-for-law.html",
     "newworks": "articles/2026-11-03-new-works.html"
   },
   "page_dates": {
-    "brief": "2026-11-03",
+    "brief": "2026-11-04",
     "paper": "2026-11-03",
     "classic": "2026-11-03",
     "newworks": "2026-11-03"
   },
-  "news_count": 15,
+  "news_count": 16,
   "newworks_count": 3
 }

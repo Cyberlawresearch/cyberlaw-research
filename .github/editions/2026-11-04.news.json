@@ -1,0 +1,288 @@
+{
+  "date": "2026-11-04",
+  "column": "brief",
+  "state": "verified",
+  "phase": "deployment_check",
+  "page": "articles/2026-11-04-tech-law-brief.html",
+  "news_count": 16,
+  "distribution": {
+    "domestic": 4,
+    "foreign": 12
+  },
+  "mode": "facts_only",
+  "analysis_pending": true,
+  "checked_at": "2026-11-04T11:06:28.785Z",
+  "last_news_scan_at": "2026-11-04T11:06:28.785Z",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  },
+  "coverage": [
+    {
+      "source_group": "国内中央及地方政策、网信数据标准机构与主流财经/专业媒体",
+      "status": "searched",
+      "result": "核对11月3日发改委/国家数据局发布会关于匿名化、人工智能用数与就业风险的具体表态，并核对11月4日世界互联网发展报告发布；其余不符合时效或属于旧闻者排除"
+    },
+    {
+      "source_group": "国内互联网安全及产业一手材料",
+      "status": "searched",
+      "result": "核对腾讯11月4日开源模型安全声明，区别企业发布与监管标准"
+    },
+    {
+      "source_group": "欧盟及成员国监管、司法、执法",
+      "status": "searched",
+      "result": "核对Europol及Eurojust 11月3日网络投资欺诈跨境抓捕与服务器扣押及此前历史无重复"
+    },
+    {
+      "source_group": "美国FTC、司法部、出口管制及半导体基础设施",
+      "status": "searched",
+      "result": "核对FTC支付处理服务拟议和解、Oracle/腾讯交易报道、SK海力士设备许可进展、英伟达合作方报道与AMD权证财报；媒体未经独立确认的内容均注明"
+    },
+    {
+      "source_group": "英国、澳大利亚及亚太隐私与科技竞争机构",
+      "status": "searched",
+      "result": "核对澳大利亚OAIC 11月4日VIQ初步调查终结及韩国特斯拉消费投诉拟提交，区分监管决定与非政府倡议"
+    },
+    {
+      "source_group": "网络安全机构、云厂商与供应链通报",
+      "status": "searched",
+      "result": "直接核对Sekoia、Google/Mandiant、OpsShield、WorkOS公告，区分研究归因、企业自述与已确认损害"
+    },
+    {
+      "source_group": "日语、韩语、越语及东南亚主要监管和本地媒体",
+      "status": "searched",
+      "result": "日韩越当地语媒体与机构反向检索；仅保留有具体新进展且可靠核验的韩国消费者组织事项，未为国别均衡选取低质量旧闻"
+    },
+    {
+      "source_group": "前一日全文、近7日逐事件去重及本次近期复扫",
+      "status": "searched",
+      "result": "比较2026-11-03全部15条及2026-10-28至11-02的每日条目目录，剔除乌镇前日讲话、京东Ceconomy、NCSC年度报告、此前AI标准和各类已报道网络事故的重复；最后核查11月4日较近时段腾讯及芯片消息"
+    }
+  ],
+  "items": [
+    {
+      "domestic": true,
+      "date": "2026-11-03",
+      "jurisdiction": "中国",
+      "agency": "国家发展改革委、国家数据局",
+      "title": "国家数据局提出制定数据合规流通及匿名化指引，研究人工智能用数安全治理机制",
+      "original_title": "国家发展改革委：针对人工智能用数所涉及的数据安全问题，探索新型治理机制",
+      "source_name": "澎湃新闻",
+      "url": "https://m.thepaper.cn/newsDetail_forward_34394109",
+      "fact": "11月3日，国家发展改革委新闻发布会上，国家数据局政策和规划司司长栾婕表示，国家数据产权登记服务系统已经上线运行，将推动登记凭证在交易、资产入表和司法裁判中发挥证明作用。国家数据局拟研究制定数据合规流通、匿名化等指引，探索人工智能用数安全治理机制，并制定全国一体化数据市场相关文件。上述内容属于政策安排和拟开展工作，并非有关指引已经颁布实施。",
+      "legal_status": "official_policy_announcement",
+      "id": "research-item-1"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-03",
+      "jurisdiction": "中国",
+      "agency": "国家发展改革委",
+      "title": "国家发展改革委提出监测人工智能就业替代风险并加强社会保障衔接",
+      "original_title": "如何应对人工智能就业替代风险？国家发展改革委：强化监测预警，加强社保体系同就业结构、工作方式变革的衔接",
+      "source_name": "每日经济新闻",
+      "url": "https://www.mrjjxw.com/articles/2026-11-03/4635862.html",
+      "fact": "11月3日，国家发展改革委创新和高技术发展司副司长王若蒙在新闻发布会上表示，将关注人工智能对就业结构的影响，推动模型训练师、数据标注员等新职业纳入国家职业分类体系。对于岗位替代风险，提出强化监测预警，促进社会保障体系与就业结构、工作方式变化衔接。这是主管部门的政策表态，尚非新的就业保障立法或强制性规定。",
+      "legal_status": "official_policy_announcement",
+      "id": "research-item-2"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-04",
+      "jurisdiction": "中国·浙江",
+      "agency": "中国网络空间研究院、世界互联网大会",
+      "title": "乌镇峰会发布2026年中国及世界互联网发展蓝皮书，梳理人工智能与网络治理现状",
+      "original_title": "在乌镇，遇未来｜《中国互联网发展报告2026》和《世界互联网发展报告2026》蓝皮书发布",
+      "source_name": "华龙网",
+      "url": "https://www.cqnews.net/web/content_1567532321228476416.html",
+      "fact": "11月4日，中国网络空间研究院在世界互联网大会乌镇峰会上发布《中国互联网发展报告2026》和《世界互联网发展报告2026》。前者介绍国内人工智能产业、数字经济及网络安全治理进展，后者梳理全球人工智能战略、治理规则和网络犯罪国际合作。发布的是研究报告及统计资料，并不构成新的法律法规或国家标准。",
+      "legal_status": "institutional_research_report",
+      "id": "research-item-3"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-04",
+      "jurisdiction": "中国",
+      "agency": "腾讯",
+      "title": "腾讯开源Hy4模型，称在训练阶段限制攻击性网络安全内容",
+      "original_title": "Tencent rolls out AI model trained with limited cybersecurity data amid hacking fears",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/tencent-rolls-out-ai-model-trained-with-limited-cybersecurity-data-amid-hacking-2026-11-04/",
+      "fact": "11月4日，腾讯发布开源模型Hy4，并表示训练数据中的网络安全内容主要限于防御用途。腾讯称已经过滤漏洞利用开发、逆向工程和渗透测试等可能提升进攻能力的材料，以降低模型协助网络攻击的风险。上述安全措施属于企业对模型训练与发布的声明，相关效果尚不能据此认定已经获得独立评测。",
+      "legal_status": "company_model_safety_announcement",
+      "id": "research-item-4"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-04",
+      "jurisdiction": "美国、中国",
+      "agency": "甲骨文、腾讯；美国政府（媒体报道）",
+      "title": "报道称甲骨文在美国政府施压后取消与腾讯约70亿美元AI芯片租赁交易",
+      "original_title": "Oracle abandons $7 billion Tencent AI deal under Trump pressure, FT reports",
+      "source_name": "Reuters转述Financial Times",
+      "url": "https://www.reuters.com/world/china/oracle-abandons-7-billion-tencent-ai-deal-under-trump-pressure-ft-reports-2026-11-04/",
+      "fact": "11月4日，路透社援引《金融时报》报道称，甲骨文取消了与腾讯价值约70亿美元的海外人工智能芯片租赁合同。报道称交易原拟在东南亚多处数据中心提供约10万枚先进芯片的使用机会，美国官员曾就合作向甲骨文表达关切。路透社注明未能独立核实，相关企业及白宫当时尚未回应；合同终止原因及具体法律依据仍需进一步确认。",
+      "legal_status": "media_report_unconfirmed",
+      "id": "research-item-5"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-04",
+      "jurisdiction": "美国、中国、韩国",
+      "agency": "美国商务部、SK海力士、Solidigm",
+      "title": "SK海力士在华晶圆厂设备许可受阻，拟议美国存储芯片投资仍待确定",
+      "original_title": "SK Hynix's New York chip plans hit snag over US restrictions on China, sources say",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/china/sk-hynixs-new-york-chip-plans-hit-snag-over-us-restrictions-china-sources-say-2026-11-03/",
+      "fact": "路透社11月3日披露，SK海力士为其中国大连工厂增设美国芯片制造设备寻求出口许可，但美国商务部尚未批准。消息人士称，该公司希望利用大连业务收入支持Solidigm在纽约州的存储芯片建厂计划，初期拟投资约450亿美元。有关许可并未被正式拒绝，美国新工厂的具体选址和投资方案也尚未作最终决定。",
+      "legal_status": "licensing_negotiations_reported",
+      "id": "research-item-6"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-03",
+      "jurisdiction": "美国、中国",
+      "agency": "英伟达及数据中心合作伙伴",
+      "title": "报道称英伟达要求数据中心合作伙伴降低对中国客户的业务敞口",
+      "original_title": "Nvidia orders data centre clients to reduce China exposure, FT reports",
+      "source_name": "Reuters转述Financial Times",
+      "url": "https://www.reuters.com/world/asia-pacific/nvidia-orders-data-centre-clients-reduce-china-exposure-ft-reports-2026-11-03/",
+      "fact": "11月3日，《金融时报》援引知情人士称，英伟达要求数据中心合作伙伴减少对中国客户的业务敞口。路透社转述报道时明确表示尚不能独立核实。这是有关供应链客户管理的媒体消息，不能据此认定美国政府于当日发布了新的出口管制法规。",
+      "legal_status": "media_report_unconfirmed",
+      "id": "research-item-7"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-03",
+      "jurisdiction": "美国",
+      "agency": "AMD、OpenAI、Meta",
+      "title": "AMD披露向OpenAI和Meta提供股权认购激励，第三季度确认10.7亿美元非现金费用",
+      "original_title": "AMD's OpenAI, Meta chip deals trigger $1 billion quarterly charge",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/amds-openai-meta-chip-deals-trigger-1-billion-quarterly-charge-2026-11-04/",
+      "fact": "11月3日，AMD披露其第三季度因与OpenAI、Meta人工智能芯片采购协议相关的认股权证确认约10.7亿美元非现金费用。根据此前公开的交易安排，相关客户在满足约定采购和其他条件后，可能取得AMD一定比例的股权。该笔费用是财务确认结果，不等于两家公司已经实际取得约定的全部股份。",
+      "legal_status": "corporate_financial_disclosure",
+      "id": "research-item-8"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-04",
+      "jurisdiction": "澳大利亚",
+      "agency": "澳大利亚信息专员办公室（OAIC）",
+      "title": "澳大利亚隐私监管机构结束法院录音境外访问初步调查，决定不再采取监管行动",
+      "original_title": "OAIC closes preliminary inquiries into VIQ Solutions",
+      "source_name": "澳大利亚OAIC公告（Mirage News全文转载）",
+      "url": "https://www.miragenews.com/oaic-closes-preliminary-inquiries-into-viq-1771521/",
+      "fact": "11月4日，澳大利亚信息专员办公室公布对法院转录服务商VIQ Solutions的初步调查结果。调查确认，2025年9月至2026年2月，印度分包商三名雇员曾在法院合同授权范围之外访问有限数量的法院听证录音和转录材料。监管机构综合访问范围、法院所采取的保护措施及服务商清算情况，决定不再继续采取监管行动；这不是作出罚款处罚的决定。",
+      "legal_status": "preliminary_inquiry_closed_no_enforcement",
+      "id": "research-item-9"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-02",
+      "jurisdiction": "美国·联邦及华盛顿州",
+      "agency": "美国联邦贸易委员会、华盛顿州",
+      "title": "美国FTC与华盛顿州指控支付服务商隐瞒续约和收费条件，提出60万美元和解方案",
+      "original_title": "FTC, Washington Take Action Against Payment Processor for Deceiving Small Businesses About Costs and Cancellation Terms",
+      "source_name": "美国联邦贸易委员会",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/11/ftc-washington-take-action-against-payment-processor-deceiving-small-businesses-about-costs",
+      "fact": "11月2日，美国联邦贸易委员会和华盛顿州针对Riverside Payments及关联企业提出诉讼指控，并公布拟议和解令。监管方称企业向中小商户推销支付处理服务时，未清楚披露自动续约、设备租赁及提前解约费用。拟议安排包括支付60万美元及允许商户不承担违约罚金解除相关合同，尚须区分监管指控和最终生效的法院命令。",
+      "legal_status": "complaint_and_proposed_settlement",
+      "id": "research-item-10"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-03",
+      "jurisdiction": "欧盟及欧洲多国",
+      "agency": "欧洲刑警组织、欧洲司法合作机构及多国执法机关",
+      "title": "欧洲联合打击跨国虚假交易平台，扣押逾100台服务器并逮捕七名嫌疑人",
+      "original_title": "Investment scams with potential victims in at least 50 countries: over 100 servers seized",
+      "source_name": "Europol",
+      "url": "https://www.europol.europa.eu/media-press/newsroom/news/investment-scams-potential-victims-in-least-50-countries-over-100-servers-seized",
+      "fact": "11月3日，德国等多国执法机关在欧洲刑警组织和欧洲司法合作机构支持下开展协同行动，扣押超过100台服务器并逮捕七名嫌疑人。调查针对据称向犯罪团伙提供虚假网络投资平台和呼叫中心服务的供应商，初步估算损失超过400万欧元，潜在受害者涉及至少50个国家。行动仍属刑事调查与拘捕阶段，涉案人员尚未因此被法院定罪。",
+      "legal_status": "criminal_investigation_and_arrests",
+      "id": "research-item-11"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-04",
+      "jurisdiction": "韩国",
+      "agency": "韩国消费者组织、韩国公平交易委员会（拟收投诉）",
+      "title": "韩国消费者团体拟投诉特斯拉自动驾驶功能宣传，监管部门尚未正式立案",
+      "original_title": "Tesla misled South Korean customers about automated-driving tech, consumer group alleges",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/autos-transportation/tesla-misled-south-korean-customers-about-automated-driving-tech-consumer-group-2026-11-04/",
+      "fact": "11月4日，路透社披露韩国消费者团体准备于5日向韩国公平交易委员会投诉特斯拉，指控其对Full Self-Driving辅助驾驶软件的宣传使消费者误以为有关功能可以在当地大多数车辆上使用。报道援引此前议会证言指出，相关功能的适用车辆范围受到当地认证安排限制。有关投诉在报道时尚未正式提交，监管机关也未就此作出违法认定。",
+      "legal_status": "planned_consumer_complaint",
+      "id": "research-item-12"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-04",
+      "jurisdiction": "国际·移动终端网络安全",
+      "agency": "Sekoia网络安全研究团队",
+      "title": "安全研究披露针对iOS和Android的挂马攻击链，研究机构认为与APT29有关",
+      "original_title": "Poisoned Source: APT29 watering holes target mobile devices with n-day exploits",
+      "source_name": "Sekoia",
+      "url": "https://www.sekoia.com/blog/poisoned-source-apt29-watering-holes-targets-mobile-devices-with-n-day-exploits",
+      "fact": "11月4日，Sekoia发布技术调查，描述攻击者通过受侵入的网站、仿冒域名及乌克兰网站分析服务供应链传播恶意脚本。研究称攻击链利用已有补丁的移动终端漏洞尝试窃取浏览器会话信息、Wi-Fi凭证等数据，并将活动与APT29关联。攻击归因属于研究机构的技术判断，不能视作相关国家机关的正式认定。",
+      "legal_status": "security_research_disclosure",
+      "id": "research-item-13"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-02",
+      "jurisdiction": "国际·云与模型服务",
+      "agency": "Google威胁情报团队、Mandiant",
+      "title": "Google披露大模型算力盗用案件，部分受害机构云账单最高累计约100万美元",
+      "original_title": "The Rise of LLMJacking: How Threat Actors Monetize Compromised Cloud and Model Resources",
+      "source_name": "Google Cloud威胁情报团队",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models",
+      "fact": "11月2日，Google威胁情报团队与Mandiant发布调查，披露攻击者盗取云服务和大模型API访问权限、转售模型推理资源的多起事件。研究人员称个别受害机构单日异常费用超过10万美元，有的机构在取消访问权限之前累计费用达到100万美元。报告描述的是已调查案件及其攻击手法，并未披露统一的受害企业总数。",
+      "legal_status": "security_research_report",
+      "id": "research-item-14"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-03",
+      "jurisdiction": "国际·网络安全供应链",
+      "agency": "OpsShield（cPGuard开发商）",
+      "title": "cPGuard自动更新渠道遭入侵，开发商要求受影响服务器轮换凭证",
+      "original_title": "cPGuard security advisory: Update channel compromise",
+      "source_name": "OpsShield",
+      "url": "https://opsshield.com/notice/cpguard-update-channel-compromise.html",
+      "fact": "11月3日，服务器安全产品cPGuard的开发商OpsShield披露，其更新分发基础设施在11月2日遭入侵，攻击者借助被盗凭证通过合法更新渠道传播窃取信息的脚本。公司确认版本5.88.12至5.88.19涉及受影响更新，并建议用户升级至5.88.25或更高版本、重置相关凭证。是否执行恶意脚本及实际泄露范围须按服务器逐一核查，不能将所有安装旧版的服务器一概视为已泄露数据。",
+      "legal_status": "vendor_security_incident_disclosure",
+      "id": "research-item-15"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-02",
+      "jurisdiction": "美国",
+      "agency": "WorkOS",
+      "title": "身份认证服务商WorkOS披露内部客户关系应用遭AI辅助攻击，生产认证服务未发现受影响",
+      "original_title": "October 30th, 2026 Data Security Incident",
+      "source_name": "WorkOS安全公告",
+      "url": "https://workos.com/security/bulletins/october-30th-2026-data-security-incident",
+      "fact": "WorkOS在11月2日发布安全公告，披露10月30日发现销售团队内部应用遭未经授权访问，部分商业联系人、客户关系资料及沟通摘要被读取。公司调查认为攻击者使用了AI辅助的进攻性安全框架进行侦察和利用尝试。公司称现无证据表明其生产认证服务或应用数据受到访问，调查及受影响客户通知仍在进行。",
+      "legal_status": "company_incident_disclosure",
+      "id": "research-item-16"
+    }
+  ],
+  "publication": {
+    "commit_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "online_acceptance": null
+  }
+}
