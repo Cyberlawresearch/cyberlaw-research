@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-04",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-04-spooner-trial-by-jury.html",
+  "target_path": "articles/2026-11-04-spooner-trial-by-jury.html",
+  "book": {
+    "author": "Lysander Spooner",
+    "original_title": "An Essay on the Trial by Jury",
+    "publisher": "John P. Jewett and Company (Boston); Jewett, Proctor & Worthington (Cleveland)",
+    "year": "1852",
+    "edition": "1852 first-edition complete original text; modern Project Gutenberg digitization is not a revised author edition"
+  },
+  "source_urls": [
+    "https://www.gutenberg.org/files/32984/32984-h/32984-h.htm",
+    "https://www.davidmhart.com/liberty/AmericanLibertarians/Spooner/1852-TrailByJury/index.html",
+    "https://supreme.justia.com/cases/federal/us/156/51/",
+    "https://scholarship.kentlaw.iit.edu/fac_schol/407/",
+    "https://experts.illinois.edu/en/publications/the-dangers-of-race-based-jury-nullification-a-response-to-profes/",
+    "https://repository.law.uic.edu/lawreview/vol30/iss4/2/",
+    "https://www.gutenberg.org/ebooks/32984"
+  ],
+  "original_verification": "核查1852年英文原著完整公开转录的卷首、全部十二章及附录《Taxation》，系统对照章节结构、代表性论证与原版影印的书目和目录。未声称逐字校勘实体初版；后来的电子书介绍及注释不作为原作主张。",
+  "critics": [
+    {
+      "name": "John Marshall Harlan",
+      "work": "Sparf and Hansen v. United States, 156 U.S. 51 (1895), majority opinion",
+      "url": "https://supreme.justia.com/cases/federal/us/156/51/",
+      "checked": "联邦陪审员应接受法院法律指示；属于后来的制度立场，并非对本书的直接评论"
+    },
+    {
+      "name": "Nancy S. Marder",
+      "work": "The Myth of the Nullifying Jury, 93 Northwestern University Law Review 877 (1999)",
+      "url": "https://scholarship.kentlaw.iit.edu/fac_schol/407/",
+      "checked": "区分多种被混称为否决法律的情形，主张程序性陪审团观，不能归为一概反对"
+    },
+    {
+      "name": "Andrew D. Leipold",
+      "work": "The Dangers of Race-Based Jury Nullification: A Response to Professor Butler, 44 UCLA Law Review 109 (1996)",
+      "url": "https://experts.illinois.edu/en/publications/the-dangers-of-race-based-jury-nullification-a-response-to-profes/",
+      "checked": "批评按族群身份区分的陪审团否决方案，非针对斯普纳原书直接批评"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html全部经典著作索引核对，未出现本书或作者",
+    "classics-history.html历史著作索引核对，未出现本书或作者",
+    "11月4日当日正文与classic核验记录在运行开始时均不存在"
+  ],
+  "duplicate_found": false,
+  "sections": 64,
+  "prose_length": 11260,
+  "checked_at": "2026-11-04",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
