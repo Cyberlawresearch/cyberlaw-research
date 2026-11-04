@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>第48课｜权限与沙箱：为什么限制智能体能调用什么工具，比只要求模型谨慎更重要？｜网信法技术基础</title>
+<link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../briefs.html">全球科技法简报</a><a href="../papers.html">域外法学论文精读</a><a href="../classics.html">法学经典著作</a><a href="../new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 48 · SAFETY &amp; FAILURE · 2026.11.04</div><h1>权限与沙箱：为什么限制智能体能调用什么工具，比只要求模型谨慎更重要？</h1><p class="tech-lead">今日问题：如果智能体误解任务，为什么不能只靠提示词要求它“不要乱操作”？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus"><div><strong>它是什么</strong><p><b>权限控制</b>是由应用和外部系统决定一个调用者能够读取、修改或发送哪些内容，而不把最终决定交给模型。<b>沙箱（Sandbox）</b>则把程序运行限定在隔离环境内，约束它能接触的文件、网络和计算资源。两者共同限制智能体即使判断错误时能够造成的实际后果。</p></div><div><strong>一个生活例子</strong><p>某单位让智能体阅读一份采购合同并起草审查意见。它只需要读取指定文件、生成草稿。如果系统同时给它删除整个共享盘、对外群发邮件的能力，那么一次误判或合同中夹带的恶意指令，就可能使普通审查任务变成删文件或发邮件的操作。限定“只读合同、只生成草稿”，风险就会明显收窄。</p></div></section>
+<section class="lesson-section"><h2>机制图：谁决定工具能不能执行？</h2>
+<div class="visual-board" role="group" aria-label="智能体工具调用权限审查的四步流程图"><div class="visual-title">模型可以建议下一步，但工具真正执行之前，应由独立的系统规则检查授权。</div>
+<div class="flow">
+<div class="flow-box"><strong>① 用户委托</strong><span>仅审查指定合同，不授权删除或外发</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>② 模型建议</strong><span>提出读取文件或发送消息的工具请求</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>③ 权限检查</strong><span>按用户身份、操作种类与对象核验；越权即拒绝</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>④ 受限执行</strong><span>仅允许合规操作；高风险动作另行审批并留痕</span></div>
+</div><p class="tiny-note">这是典型设计示意。不同系统的鉴权网关、审批环节和沙箱实现并不相同；沙箱不能替代外部业务系统的访问控制。</p></div>
+<p>大模型输出“调用某个工具”，本质上还是一项建议。真正执行读取、删除或发送操作的是外部程序。<b>最小权限原则</b>要求只授予完成当前任务必需的能力。例如，审查合同需要读取特定目录，却不需要修改整个文件库。系统还应区分使用者自己的权限与智能体可代行的权限：用户本人能删文件，不等于每次交给智能体的任务都包含删除授权。</p>
+<p>执行工具时，系统通常使用<b>访问凭证</b>证明调用者身份，例如限定用途的访问令牌。凭证如果带有整个机构的管理员权限，模型一次错误判断就可能影响他人的资料。因此，不仅要限制模型界面上显示的工具，还应在真正保存数据的文件服务、邮件服务等<b>下游系统</b>逐次检查身份、操作和目标对象。模型说“我已获得授权”，本身不能代替技术验证。</p>
+<p>对于运行代码、处理不可信附件等任务，还可以安排沙箱：只允许访问临时文件夹，关闭不需要的外部网络连接，限制运行时间和资源消耗。沙箱侧重约束运行环境，权限控制侧重约束具体业务操作。容器、虚拟机和专用隔离环境的保护程度不同，也可能因配置失当而失效。即使程序关在沙箱内，若仍持有可删除真实业务数据的有效凭证，外部系统的风险仍然存在。</p>
+<div class="compare-grid">
+<div class="compare-card"><b>只写“谨慎操作”</b><p>属于行为提示；模型可能误判、忽略或被外部内容干扰，不能作为权限边界。</p></div>
+<div class="compare-card"><b>按任务授予权限</b><p>读写分离、限定对象和时间，高风险操作要求明确审批，并由系统拒绝越权请求。</p></div>
+<div class="compare-card"><b>在沙箱中运行</b><p>把代码和临时文件限制在隔离环境，减小误操作波及范围；仍须检查业务凭证。</p></div>
+</div></section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“系统提示词要求守规矩，权限就安全了。”提示词约束生成行为，不能代替应用程序和下游系统执行的权限检查。</span></div>
+<div class="myth"><b>误解 02</b><span>“用户已经登录，智能体就能代替用户做任何事。”登录证明身份，具体任务仍须限定操作范围；付款、删除、外发等动作尤其需要独立授权。</span></div>
+<div class="myth"><b>误解 03</b><span>“放进容器就一定安全。”容器不是绝对隔离；过大的网络权限、共享目录或外部凭证仍可能使风险越过边界。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>智能体的行为边界必须能被核实</h3>
+<p>使用智能体处理合同、个人信息或行政业务时，委托任务、系统授予的操作权限与实际执行记录应当能够相互核对。发生越权操作，不能仅以“模型自行决定”为由跳过对开发、部署、授权和监督环节的调查。要查明是谁配置了工具、使用了哪一主体的凭证、外部服务是否检查权限、有没有审批及日志记录。</p>
+<p>在政务或公共服务场景，采购和验收除了测试回答正确率，还应验证越权请求能否被拒绝、不同人员的数据能否隔离，以及异常操作能否中止并追溯。技术上的最小权限与沙箱措施是履行安全管理职责的具体手段，其法律责任仍需结合处理活动、法定义务及实际控制能力判断。</p>
+</div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>智能体代行操作时，用户授权与系统权限应如何衔接？</h3><p>区分任务委托、技术凭证、业务操作和人工复核，讨论越权行为的归属及注意义务。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>公共部门部署智能体，应设置哪些可验证的权限验收项目？</h3><p>围绕只读默认、按人隔离、敏感操作审批、沙箱配置和日志追溯建立测试清单。</p></div>
+</div></section>
+<section class="lesson-section"><h2>可靠来源</h2><ol class="source-links">
+<li><a href="https://genai.owasp.org/llmrisk/llm062025-excessive-agency/">OWASP，LLM06:2025 Excessive Agency</a>。说明过多工具、过大权限与过度自主性三类风险，以及独立鉴权、最小权限和人工审批措施。</li>
+<li><a href="https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final">NIST，SP 800-53 Rev. 5，Security and Privacy Controls for Information Systems and Organizations</a>。其中AC-6“最小权限”控制要求将访问限制在履行任务所必需的范围。</li>
+<li><a href="https://csrc.nist.gov/pubs/sp/800/190/final">NIST，SP 800-190，Application Container Security Guide（2017）</a>。介绍容器隔离的基本机制、潜在安全风险与配置建议。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第49课</small><p>下一课学习“安全评测”：怎样检验模型和智能体的防护措施是否真的有效？</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main><footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
