@@ -2,7 +2,7 @@
   "date": "2026-11-04",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "c2b5764893cca7bee8ae6c835824928313510e04",
-  "phase": "revised_sources_deployment_pending",
+  "phase": "published_verified",
   "publication_ready": true,
   "items": [
     {
@@ -150,12 +150,8 @@
     "Australia": "反倾销委员会资讯已巡视"
   },
   "last_error": null,
-  "next_actions": [
-    "核对eb42d5e1所对应Pages部署及三份公开页面",
-    "确认新替换的WSAU和Taylorville Daily News来源在GitHub来源检测中均可访问",
-    "将最终来源诊断结果及发布验收状态写入断点"
-  ],
-  "last_updated": "2026-11-04T09:34:00+08:00",
+  "next_actions": [],
+  "last_updated": "2026-11-04T09:39:15+08:00",
   "events_checked_against": [
     "2026-11-03",
     "2026-11-02",
@@ -210,26 +206,30 @@
     ],
     "issue_count": 7,
     "main_head_at_check": "02a182a1e08b68eaf4808dc4f2caf0ee2993419b",
-    "status": "two remaining HTTP 403 syndication source links replaced with matching opened Reuters syndication; Pages redeployment pending",
+    "status": "published_and_verified",
     "pages_run_id": 41752075236,
     "link_correction_commit": "eb42d5e1e67f38ee36a0973081c5420f29851f3a",
-    "latest_pages_run_id": 41753499892,
+    "latest_pages_run_id": 41755044726,
     "source_urls_replaced": [
       "Investing.com -> WSAU",
       "MarketScreener -> Taylorville Daily News"
     ],
-    "new_claim_checked": "Canada paragraph revised to match 11/3 Reuters syndication"
+    "new_claim_checked": "Canada paragraph revised to match 11/3 Reuters syndication",
+    "final_main_commit": "eb42d5e1e67f38ee36a0973081c5420f29851f3a",
+    "final_source_check_run_id": 41755450878,
+    "final_guard_run_id": 41755450741
   },
   "source_diagnostic": {
     "run_id": 41753095192,
-    "deploy_sha": "d1f6b05533cf86672efbfff009c0631d666aeb23",
+    "deploy_sha": "eb42d5e1e67f38ee36a0973081c5420f29851f3a",
     "public_pages": "three pages verified 200 and exact content by action",
-    "failed_links": [
-      "https://www.investing.com/news/economy-news/sk-hynixs-new-york-chip-plans-hit-snag-over-us-restrictions-on-china-sources-say-4996231",
-      "https://www.marketscreener.com/news/trump-says-us-is-close-to-making-a-trade-deal-with-canada-ce785fded889f025"
-    ],
-    "error": "After successful Pages deployment of 01bf2c6, all three public pages matched, 5/7 sources HTTP 200, and 2 syndicated Reuters pages returned HTTP 403; revised issue commit eb42d5e1 submitted for new source validation.",
+    "failed_links": [],
+    "error": null,
     "correction": "substituted authorized same Reuters articles syndicated at alternate specific pages and independently verified them",
-    "last_failed_run_id": 41753940566
+    "last_failed_run_id": 41753940566,
+    "final_status": "passed",
+    "final_run_id": 41755450878,
+    "final_pages": "All 3 public pages HTTP 200 and content+links match deployed GitHub commit",
+    "final_links": "7/7 source links HTTP 200 (decoded DOM hrefs)"
   }
 }
