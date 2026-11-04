@@ -151,9 +151,8 @@
   },
   "last_error": null,
   "next_actions": [
-    "更新正文中三个自动访问401的原始路透社URL为相同报道的可访问同步刊载页面",
-    "重新核验最新main Pages版本及来源链接",
-    "记录最终发布诊断结果"
+    "核对新部署公开页面与替换后的三个链接",
+    "核对来源诊断与发布保障最新结果"
   ],
   "last_updated": "2026-11-04T09:18:00+08:00",
   "events_checked_against": [
@@ -210,8 +209,10 @@
     ],
     "issue_count": 7,
     "main_head_at_check": "02a182a1e08b68eaf4808dc4f2caf0ee2993419b",
-    "status": "all three files written and reread; awaiting final commit Pages deploy and public URL validation",
-    "pages_run_id": 41752075236
+    "status": "source URLs corrected in main; current commit Pages deployment underway",
+    "pages_run_id": 41752075236,
+    "link_correction_commit": "01bf2c66689dfb95135ad9f32fbc99e3ac494ccc",
+    "latest_pages_run_id": 41753499892
   },
   "source_diagnostic": {
     "run_id": 41753095192,
