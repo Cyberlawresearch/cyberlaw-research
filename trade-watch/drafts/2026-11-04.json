@@ -2,7 +2,7 @@
   "date": "2026-11-04",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "c2b5764893cca7bee8ae6c835824928313510e04",
-  "phase": "source_verification",
+  "phase": "final_verification",
   "publication_ready": false,
   "items": [
     {
@@ -151,9 +151,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "最终终扫11月4日上午新公告与重复项",
-    "核实7条原始链接、中文法律阶段、DOM可读性",
-    "保存publication_ready并回读后写入正式正文"
+    "把最终研究断点标为publication_ready",
+    "发布第057期完整正文并更新首页、归档",
+    "核验最终main和对应Pages"
   ],
   "last_updated": "2026-11-04T09:18:00+08:00",
   "events_checked_against": [
@@ -166,5 +166,33 @@
     "2026-10-28"
   ],
   "dedupe_status": "7条均未与最近7期对应监管动作重复；本期加拿大软木与此前其它加拿大案件不重复。",
-  "sources_opened": true
+  "sources_opened": true,
+  "final_checks": {
+    "regions": [
+      "美国",
+      "欧盟",
+      "英国",
+      "日本",
+      "韩国",
+      "印度",
+      "加拿大",
+      "澳大利亚",
+      "荷兰"
+    ],
+    "dedupe_dates": [
+      "2026-11-03",
+      "2026-11-02",
+      "2026-11-01",
+      "2026-10-31",
+      "2026-10-30",
+      "2026-10-29",
+      "2026-10-28"
+    ],
+    "link_count": 7,
+    "links_opened": true,
+    "legal_stage_checked": true,
+    "china_supply_chain_impacts_checked": true,
+    "final_sweep": "2026-11-04 09:00—09:35 Asia/Shanghai; official USTR, OFAC, UK trade notices, USITC, Federal Register, EU Trade, Japan METI, Korea MOTIR, India DGTR, Canada CBSA, Australia ADC; no replacement with old events",
+    "notable_excluded": "USITC magnet wire 337 investigation appears already in 2026-10-30; EU PET spunbond Oct30 previously reported Oct31; Japanese nickel stainless steel Oct27 previously reported Oct28."
+  }
 }
