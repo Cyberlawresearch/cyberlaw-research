@@ -2,8 +2,8 @@
   "date": "2026-11-04",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "c2b5764893cca7bee8ae6c835824928313510e04",
-  "phase": "final_verification",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "uk-steel-authorised-use",
@@ -151,9 +151,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "把最终研究断点标为publication_ready",
-    "发布第057期完整正文并更新首页、归档",
-    "核验最终main和对应Pages"
+    "正式写入main当期正文",
+    "更新trade-watch首页和归档",
+    "回读并核验本次Pages部署"
   ],
   "last_updated": "2026-11-04T09:18:00+08:00",
   "events_checked_against": [
@@ -193,6 +193,7 @@
     "legal_stage_checked": true,
     "china_supply_chain_impacts_checked": true,
     "final_sweep": "2026-11-04 09:00—09:35 Asia/Shanghai; official USTR, OFAC, UK trade notices, USITC, Federal Register, EU Trade, Japan METI, Korea MOTIR, India DGTR, Canada CBSA, Australia ADC; no replacement with old events",
-    "notable_excluded": "USITC magnet wire 337 investigation appears already in 2026-10-30; EU PET spunbond Oct30 previously reported Oct31; Japanese nickel stainless steel Oct27 previously reported Oct28."
+    "notable_excluded": "USITC magnet wire 337 investigation appears already in 2026-10-30; EU PET spunbond Oct30 previously reported Oct31; Japanese nickel stainless steel Oct27 previously reported Oct28.",
+    "last_sources_opened": "2026-11-04"
   }
 }
