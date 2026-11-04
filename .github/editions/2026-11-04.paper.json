@@ -2,7 +2,7 @@
   "date": "2026-11-04",
   "column": "paper",
   "state": "verified",
-  "phase": "publishing",
+  "phase": "completed",
   "page": "articles/2026-11-04-van-loo-new-gatekeepers.html",
   "selection": "Rory Van Loo, The New Gatekeepers: Private Firms as Public Enforcers",
   "bibliography": {
@@ -45,12 +45,12 @@
   "body_length": 4120,
   "checked_at": "2026-11-04",
   "publication": {
-    "content_main_sha": null,
-    "validated_main_sha": null,
-    "pages_run_id": null,
-    "pages_conclusion": null,
-    "current_columns": null,
-    "live_page": null,
-    "live_entry_points": null
+    "content_main_sha": "ffaaa59db0451d1e6d7ea3274e45f7f97adb2d2f",
+    "validated_main_sha": "ffaaa59db0451d1e6d7ea3274e45f7f97adb2d2f",
+    "pages_run_id": 41825584098,
+    "pages_conclusion": "success",
+    "current_columns": "passed",
+    "live_page": "passed: deployed contextual reading test",
+    "live_entry_points": "passed: deployed current columns and entry points"
   }
 }
