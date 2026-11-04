@@ -4,15 +4,15 @@
   "state": "verified",
   "phase": "deployment_check",
   "page": "articles/2026-11-04-tech-law-brief.html",
-  "news_count": 16,
+  "news_count": 18,
   "distribution": {
     "domestic": 4,
-    "foreign": 12
+    "foreign": 14
   },
   "mode": "facts_only",
   "analysis_pending": true,
-  "checked_at": "2026-11-04T11:06:28.785Z",
-  "last_news_scan_at": "2026-11-04T11:06:28.785Z",
+  "checked_at": "2026-11-04T11:09:46.159Z",
+  "last_news_scan_at": "2026-11-04T11:09:46.159Z",
   "checks": {
     "sources": true,
     "legal_status": true,
@@ -67,6 +67,11 @@
       "source_group": "前一日全文、近7日逐事件去重及本次近期复扫",
       "status": "searched",
       "result": "比较2026-11-03全部15条及2026-10-28至11-02的每日条目目录，剔除乌镇前日讲话、京东Ceconomy、NCSC年度报告、此前AI标准和各类已报道网络事故的重复；最后核查11月4日较近时段腾讯及芯片消息"
+    },
+    {
+      "source_group": "最近时段重大遗漏复扫（俄罗斯、台湾地区）",
+      "status": "searched",
+      "result": "进一步核对路透社11月2日俄罗斯总统数据中心容量命令与中央社11月3日台湾地区AI网络安全风险小组；均不在前7日期简报中，新增两条"
     }
   ],
   "items": [
@@ -277,6 +282,32 @@
       "fact": "WorkOS在11月2日发布安全公告，披露10月30日发现销售团队内部应用遭未经授权访问，部分商业联系人、客户关系资料及沟通摘要被读取。公司调查认为攻击者使用了AI辅助的进攻性安全框架进行侦察和利用尝试。公司称现无证据表明其生产认证服务或应用数据受到访问，调查及受影响客户通知仍在进行。",
       "legal_status": "company_incident_disclosure",
       "id": "research-item-16"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-02",
+      "jurisdiction": "俄罗斯",
+      "agency": "俄罗斯总统、数字发展部",
+      "title": "俄罗斯总统签署数据中心预备容量命令，要求私营设施保留10%算力空间",
+      "original_title": "Putin orders private data centres to set aside 10% of capacity to support IT infrastructure",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/technology/putin-orders-private-data-centres-set-aside-10-capacity-support-it-2026-11-02/",
+      "fact": "11月2日，路透社报道俄罗斯总统普京签署命令，要求非国有数据中心所有者预留10%的设施容量，以支持紧急情况下的信息技术基础设施运行。俄罗斯数字发展部须清查私营数据中心资源，专门政府委员会可决定调用预留容量，运营者须在决定后24小时内提供访问。报道还称，对境外数据中心的临时使用需要俄罗斯联邦安全局批准；相关命令并非自愿性行业倡议。",
+      "legal_status": "presidential_decree",
+      "id": "research-item-17"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-03",
+      "jurisdiction": "中国台湾地区",
+      "agency": "台湾地区数位发展主管部门、资通安全主管机构",
+      "title": "台湾地区数位发展部门成立先进AI资安风险应变小组，协调关键基础设施防护",
+      "original_title": "數發部成立先進AI資安風險因應小組　共同強化防護",
+      "source_name": "中央社",
+      "url": "https://www.cna.com.tw/news/afe/202611030152.aspx",
+      "fact": "11月3日，台湾地区数位发展主管部门宣布设立先进人工智能资安风险因应小组，推动政府机关与关键基础设施运营者交换威胁情报并强化防护措施。主管机构称将关注AI智能体相关攻击和已公开漏洞，要求相关单位盘点关键系统、评估暴露风险与落实修补。本次行动属于跨机构网络安全协调安排，并非新颁布的法律。",
+      "legal_status": "government_cybersecurity_coordination",
+      "id": "research-item-18"
     }
   ],
   "publication": {
