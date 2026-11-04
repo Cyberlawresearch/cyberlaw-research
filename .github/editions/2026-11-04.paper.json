@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-04",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-04-van-loo-new-gatekeepers.html",
+  "selection": "Rory Van Loo, The New Gatekeepers: Private Firms as Public Enforcers",
+  "bibliography": {
+    "type": "article",
+    "author": "Rory Van Loo",
+    "originalTitle": "The New Gatekeepers: Private Firms as Public Enforcers",
+    "journal": "Virginia Law Review",
+    "year": "2020",
+    "volume": "106",
+    "issue": "2",
+    "pages": "467–522",
+    "doi": "",
+    "url": "https://www.virginialawreview.org/wp-content/uploads/2020/12/VanLoo_Book.pdf",
+    "cnTitle": "大型平台如何成为监管者：政府借企业监督第三方的制度与风险"
+  },
+  "versions": {
+    "full_text": "Reviewed the complete published journal article, Virginia Law Review volume 106 issue 2, printed pp.467–522 (56 pages), PDF including conclusion and four main parts; web PDF page images checked for first, middle and final page.",
+    "publication": "Published journal edition, 2020, vol.106 no.2 pp.467–522. Boston University author repository separately lists a deposited copy; not cited as a different formal article."
+  },
+  "sources": [
+    "https://www.virginialawreview.org/wp-content/uploads/2020/12/VanLoo_Book.pdf",
+    "https://virginialawreview.org/articles/new-gatekeepers-private-firms-public-enforcers/",
+    "https://scholarship.law.bu.edu/faculty_scholarship/800/"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-10-28-khan-amazons-antitrust-paradox.html",
+    "articles/2026-10-11-solove-hartzog-ftc-privacy-common-law.html"
+  ],
+  "timeline": null,
+  "body_length": 4120,
+  "checked_at": "2026-11-04",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  }
+}
