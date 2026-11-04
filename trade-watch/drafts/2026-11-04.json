@@ -2,7 +2,7 @@
   "date": "2026-11-04",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "c2b5764893cca7bee8ae6c835824928313510e04",
-  "phase": "link_corrected_awaiting_deploy",
+  "phase": "revised_sources_deployment_pending",
   "publication_ready": true,
   "items": [
     {
@@ -95,8 +95,8 @@
       "deadline": "2026年11月3日披露谈判仍在进行；2027年度维护许可另行协商，目前无正式获批或拒批日期。",
       "sources": [
         {
-          "url": "https://www.investing.com/news/economy-news/sk-hynixs-new-york-chip-plans-hit-snag-over-us-restrictions-on-china-sources-say-4996231",
-          "label": "路透社11月3日调查报道（Investing.com同步刊载）"
+          "url": "https://wsau.com/2026/11/03/sk-hynixs-new-york-chip-plans-hit-snag-over-us-restrictions-on-china-sources-say/",
+          "label": "路透社11月3日调查报道（WSAU同步刊载）"
         }
       ]
     },
@@ -124,17 +124,17 @@
       "date": "2026-11-03",
       "jurisdiction": "美国、加拿大",
       "agency": "美国总统、加拿大总理",
-      "stage": "高级别政策表态及实质谈判进展，尚未达成贸易协定",
+      "stage": "高级别政策表态及谈判继续推进，尚未达成贸易协定",
       "rank": 3,
-      "title": "美加确认贸易谈判取得进展，美方据称撤回对加拿大未来贸易协定的否决权要求",
-      "summary": "11月3日，美国总统特朗普表示美加接近达成贸易协议。加拿大总理卡尼则强调谈判尚未完成，但称美方已撤回部分先前要求，其中包括要求美方对加拿大未来与其他国家签署贸易协定拥有最终决定权。此次双方对谈判进展的公开表态尚不构成关税暂停、减让或者新协定签署，现行美加贸易税率和海关措施不因该声明自动调整。",
+      "title": "美加继续推进贸易协议谈判，尚未签署新协定或调整关税",
+      "summary": "11月3日，美国总统特朗普表示美加接近达成贸易协议。加拿大总理卡尼11月1日表示双方已讨论可能的协议框架，谈判团队将在未来数周继续推进。双方近期表态均不构成关税暂停、减让或新协定签署，现行美加贸易税率和海关措施不因相关言论自动调整。",
       "scope": "美加跨境供应链及在加拿大进行加工、组装后进入美国的汽车零部件、木材、金属制品等贸易。",
       "impact": "中国企业在加拿大布局加工和向美国出口时，仍应依据现行USMCA原产地规则和适用附加税率安排报关、定价与合同条款，不得按尚未确定的贸易协议税率报价或改变原产地认定。",
-      "deadline": "2026年11月3日最新表态；目前未披露正式文本、签署日或新的关税实施日。",
+      "deadline": "2026年11月3日美方最新表态；协议尚无正式文本、签署日期或新的关税实施日期。",
       "sources": [
         {
-          "url": "https://www.marketscreener.com/news/trump-says-us-is-close-to-making-a-trade-deal-with-canada-ce785fded889f025",
-          "label": "路透社11月3日报道（MarketScreener同步刊载）"
+          "url": "https://www.taylorvilledailynews.com/trump-says-us-is-close-to-making-a-trade-deal-with-canada/",
+          "label": "路透社11月3日报道（Taylorville Daily News同步刊载）"
         }
       ]
     }
@@ -151,10 +151,11 @@
   },
   "last_error": null,
   "next_actions": [
-    "核对新部署公开页面与替换后的三个链接",
-    "核对来源诊断与发布保障最新结果"
+    "核对eb42d5e1所对应Pages部署及三份公开页面",
+    "确认新替换的WSAU和Taylorville Daily News来源在GitHub来源检测中均可访问",
+    "将最终来源诊断结果及发布验收状态写入断点"
   ],
-  "last_updated": "2026-11-04T09:18:00+08:00",
+  "last_updated": "2026-11-04T09:34:00+08:00",
   "events_checked_against": [
     "2026-11-03",
     "2026-11-02",
@@ -209,21 +210,26 @@
     ],
     "issue_count": 7,
     "main_head_at_check": "02a182a1e08b68eaf4808dc4f2caf0ee2993419b",
-    "status": "source URLs corrected in main; current commit Pages deployment underway",
+    "status": "two remaining HTTP 403 syndication source links replaced with matching opened Reuters syndication; Pages redeployment pending",
     "pages_run_id": 41752075236,
-    "link_correction_commit": "01bf2c66689dfb95135ad9f32fbc99e3ac494ccc",
-    "latest_pages_run_id": 41753499892
+    "link_correction_commit": "eb42d5e1e67f38ee36a0973081c5420f29851f3a",
+    "latest_pages_run_id": 41753499892,
+    "source_urls_replaced": [
+      "Investing.com -> WSAU",
+      "MarketScreener -> Taylorville Daily News"
+    ],
+    "new_claim_checked": "Canada paragraph revised to match 11/3 Reuters syndication"
   },
   "source_diagnostic": {
     "run_id": 41753095192,
     "deploy_sha": "d1f6b05533cf86672efbfff009c0631d666aeb23",
     "public_pages": "three pages verified 200 and exact content by action",
     "failed_links": [
-      "https://www.reuters.com/technology/nexperia-sues-wingtech-its-founder-demanding-compensation-damages-2026-11-03/",
-      "https://www.reuters.com/world/china/sk-hynixs-new-york-chip-plans-hit-snag-over-us-restrictions-china-sources-say-2026-11-03/",
-      "https://www.reuters.com/world/us/trump-says-us-is-close-making-trade-deal-with-canada-2026-11-03/"
+      "https://www.investing.com/news/economy-news/sk-hynixs-new-york-chip-plans-hit-snag-over-us-restrictions-on-china-sources-say-4996231",
+      "https://www.marketscreener.com/news/trump-says-us-is-close-to-making-a-trade-deal-with-canada-ce785fded889f025"
     ],
-    "error": "three Reuters URLs return HTTP 401 to GitHub source diagnostics; human web reader independent source open succeeded",
-    "correction": "substituted authorized same Reuters articles syndicated at alternate specific pages and independently verified them"
+    "error": "After successful Pages deployment of 01bf2c6, all three public pages matched, 5/7 sources HTTP 200, and 2 syndicated Reuters pages returned HTTP 403; revised issue commit eb42d5e1 submitted for new source validation.",
+    "correction": "substituted authorized same Reuters articles syndicated at alternate specific pages and independently verified them",
+    "last_failed_run_id": 41753940566
   }
 }
