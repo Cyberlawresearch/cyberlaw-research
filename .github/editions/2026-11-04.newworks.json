@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-04",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-04-new-works.html",
+  "page_blob_sha": "80d287a5393520049df1f8f01863148cb37fbb0e",
+  "newworks_count": 3,
+  "checked_at": "2026-11-04T12:38:41.044Z",
+  "checks": {
+    "springer_original_fulltext_opened": true,
+    "oxford_original_journal_issue_opened": true,
+    "oxford_article_metadata_and_abstract_verified": true,
+    "oxford_direct_fulltext_opened": false,
+    "original_title_author_doi_verified": true,
+    "formal_journal_versus_working_paper_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "history_page_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html",
+      "new-works-history.html",
+      "65 historical articles/*-new-works.html pages",
+      "12 historical new-works/YYYY-MM-DD.html pages"
+    ],
+    "total_historical_pages": 77,
+    "fields": [
+      "DOI",
+      "original title",
+      "author",
+      "version"
+    ],
+    "matches_found": 0,
+    "notes": "All historical pages and both indexes read in main; exact DOI/title code search independently checked. A 2026-10-18 study (DOI 10.1017/jme.2026.10289) excluded as duplicate."
+  },
+  "items": [
+    {
+      "cn_title": "智能合约接入自主AI后谁来负责：责任追溯与人类主导控制",
+      "author": "Kwok Tung Cheung; Sridhar Ramamoorti",
+      "original_title": "Accountability in smart contracts and agentic AI: How to address the responsibility gap and retain meaningful human control?",
+      "journal": "AI and Ethics",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-10-08",
+      "volume": "6",
+      "issue": null,
+      "pages": null,
+      "article_number": "585",
+      "doi": "10.1007/s43681-026-01434-3",
+      "publisher_page": "https://link.springer.com/article/10.1007/s43681-026-01434-3",
+      "version": "Official open-access journal article, updated after correction of 2026-10-29",
+      "access": "Original publisher full text opened and abstract/body examined"
+    },
+    {
+      "cn_title": "三维生物打印如何改变遗传资源治理：数字序列、专利披露与设施监管",
+      "author": "Riccardo Piselli; Allegra Chiodi",
+      "original_title": "Who Owns Printable Life? From Territorial Biopiracy to Informational Control in 3D Bioprinting",
+      "journal": "GRUR International",
+      "publisher": "Oxford University Press",
+      "year": 2026,
+      "publication_date": "2026-09-15",
+      "volume": "75",
+      "issue": "11",
+      "pages": "1012–1024",
+      "article_number": null,
+      "doi": "10.1093/grurint/ikag088",
+      "publisher_page": "https://academic.oup.com/grurint/article/75/11/1012/8796099",
+      "version": "Final journal article, issue November 2026",
+      "access": "Publisher issue opened; indexed publisher article/full-text excerpts verified; direct article redirects intermittently inaccessible"
+    },
+    {
+      "cn_title": "医疗器械能否设立专利补充保护证书：欧盟法上的条件与制度边界",
+      "author": "Andreas Peters",
+      "original_title": "A Device Protection Certificate for Medical Devices Under EU Law: Doctrinal Feasibility and Legislative Design after Boston Scientific",
+      "journal": "GRUR International",
+      "publisher": "Oxford University Press",
+      "year": 2026,
+      "publication_date": "2026-09-22",
+      "volume": "75",
+      "issue": "11",
+      "pages": "1025–1039",
+      "article_number": null,
+      "doi": "10.1093/grurint/ikag090",
+      "publisher_page": "https://academic.oup.com/grurint/article-abstract/75/11/1025/8829071",
+      "version": "Final journal article, issue November 2026",
+      "access": "Publisher issue opened with original title/pages/DOI; full original abstract verified in indexed publisher listing; direct article redirects inaccessible"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "b5cb697b7b7dda6b266ed6fd2f324fc94b42a9b1",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": false
+  },
+  "other_columns_at_record": {
+    "brief": "articles/2026-11-04-tech-law-brief.html",
+    "paper": "articles/2026-11-04-van-loo-new-gatekeepers.html",
+    "classic": "articles/2026-11-04-spooner-trial-by-jury.html"
+  }
+}
