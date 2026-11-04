@@ -2,7 +2,7 @@
   "date": "2026-11-04",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "c2b5764893cca7bee8ae6c835824928313510e04",
-  "phase": "main_committed_awaiting_pages",
+  "phase": "link_corrected_awaiting_deploy",
   "publication_ready": true,
   "items": [
     {
@@ -95,8 +95,8 @@
       "deadline": "2026年11月3日披露谈判仍在进行；2027年度维护许可另行协商，目前无正式获批或拒批日期。",
       "sources": [
         {
-          "label": "路透社11月3日独家调查报道",
-          "url": "https://www.reuters.com/world/china/sk-hynixs-new-york-chip-plans-hit-snag-over-us-restrictions-china-sources-say-2026-11-03/"
+          "url": "https://www.investing.com/news/economy-news/sk-hynixs-new-york-chip-plans-hit-snag-over-us-restrictions-on-china-sources-say-4996231",
+          "label": "路透社11月3日调查报道（Investing.com同步刊载）"
         }
       ]
     },
@@ -114,8 +114,8 @@
       "deadline": "2026年11月3日企业披露争议；正式送达、受理及开庭日期尚未核实。",
       "sources": [
         {
-          "label": "路透社11月3日双方表态及案件进展报道",
-          "url": "https://www.reuters.com/technology/nexperia-sues-wingtech-its-founder-demanding-compensation-damages-2026-11-03/"
+          "url": "https://live.euronext.com/en/financial-news/nexperia-sues-wingtech-and-its-founder-demanding-compensation-damages",
+          "label": "路透社11月3日报道（Euronext同步刊载）"
         }
       ]
     },
@@ -133,8 +133,8 @@
       "deadline": "2026年11月3日最新表态；目前未披露正式文本、签署日或新的关税实施日。",
       "sources": [
         {
-          "label": "路透社11月3日美加双方公开表态报道",
-          "url": "https://www.reuters.com/world/us/trump-says-us-is-close-making-trade-deal-with-canada-2026-11-03/"
+          "url": "https://www.marketscreener.com/news/trump-says-us-is-close-to-making-a-trade-deal-with-canada-ce785fded889f025",
+          "label": "路透社11月3日报道（MarketScreener同步刊载）"
         }
       ]
     }
@@ -151,8 +151,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "核对与最终提交对应的Pages工作流状态",
-    "核对正式网页、首页入口、归档首项和来源链接"
+    "更新正文中三个自动访问401的原始路透社URL为相同报道的可访问同步刊载页面",
+    "重新核验最新main Pages版本及来源链接",
+    "记录最终发布诊断结果"
   ],
   "last_updated": "2026-11-04T09:18:00+08:00",
   "events_checked_against": [
@@ -211,5 +212,17 @@
     "main_head_at_check": "02a182a1e08b68eaf4808dc4f2caf0ee2993419b",
     "status": "all three files written and reread; awaiting final commit Pages deploy and public URL validation",
     "pages_run_id": 41752075236
+  },
+  "source_diagnostic": {
+    "run_id": 41753095192,
+    "deploy_sha": "d1f6b05533cf86672efbfff009c0631d666aeb23",
+    "public_pages": "three pages verified 200 and exact content by action",
+    "failed_links": [
+      "https://www.reuters.com/technology/nexperia-sues-wingtech-its-founder-demanding-compensation-damages-2026-11-03/",
+      "https://www.reuters.com/world/china/sk-hynixs-new-york-chip-plans-hit-snag-over-us-restrictions-china-sources-say-2026-11-03/",
+      "https://www.reuters.com/world/us/trump-says-us-is-close-making-trade-deal-with-canada-2026-11-03/"
+    ],
+    "error": "three Reuters URLs return HTTP 401 to GitHub source diagnostics; human web reader independent source open succeeded",
+    "correction": "substituted authorized same Reuters articles syndicated at alternate specific pages and independently verified them"
   }
 }
