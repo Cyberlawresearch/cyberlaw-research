@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-05",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-05-chesney-citron-deep-fakes.html",
+  "selection": "Bobby Chesney and Danielle Keats Citron, Deep Fakes: A Looming Challenge for Privacy, Democracy, and National Security",
+  "bibliography": {
+    "type": "article",
+    "author": "Bobby Chesney; Danielle Keats Citron",
+    "originalTitle": "Deep Fakes: A Looming Challenge for Privacy, Democracy, and National Security",
+    "journal": "California Law Review",
+    "year": "2019",
+    "volume": "107",
+    "issue": "6",
+    "pages": "1753–1819",
+    "doi": "10.15779/Z38RV0D15J",
+    "url": "https://www.californialawreview.org/print/deep-fakes-a-looming-challenge-for-privacy-democracy-and-national-security",
+    "cnTitle": "深度伪造如何侵害隐私与公共信任：法律规制为何不能只靠禁止"
+  },
+  "versions": {
+    "full_text": "Read the complete publisher-hosted California Law Review text from introduction through conclusion, cross-checked journal-format PDF table of contents and concluding pages; 2019 published version, vol.107 no.6, pp.1753–1819.",
+    "publication": "The publisher's 2019 journal article is distinguished from SSRN's 2018 initial working paper and December 2019 updated record; the journal's DOI is 10.15779/Z38RV0D15J, distinct from SSRN DOI 10.2139/ssrn.3213954."
+  },
+  "sources": [
+    "https://www.californialawreview.org/print/deep-fakes-a-looming-challenge-for-privacy-democracy-and-national-security",
+    "https://lawcat.berkeley.edu/record/1136469/files/2-Chesney-Citron.34.final_.pdf",
+    "https://scholarship.law.bu.edu/faculty_scholarship/640/",
+    "https://ssrn.com/abstract=3213954"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-09-03-citron-technological-due-process.html",
+    "articles/2026-09-19-klonick-new-governors.html"
+  ],
+  "timeline": null,
+  "body_length": 7339,
+  "checked_at": "2026-11-05",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  }
+}
