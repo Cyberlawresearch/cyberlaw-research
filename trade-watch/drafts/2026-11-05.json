@@ -2,9 +2,55 @@
   "date": "2026-11-05",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "c0f5c2cd19bd7864c6849801d134b0b57eaf215d",
-  "phase": "researching",
-  "publication_ready": false,
+  "phase": "verified",
+  "publication_ready": true,
   "items": [
+    {
+      "id": "in-soda-ash-safeguard",
+      "date": "2026-11-04",
+      "jurisdiction": "印度、全球（含中国）",
+      "agency": "印度商工部贸易救济总局（DGTR）",
+      "stage": "保障措施调查最终建议：建议对纯碱实施两年进口数量限制；尚待印度中央政府决定及公报通知，当前未实施该新配额",
+      "rank": 5,
+      "title": "印度建议对纯碱进口实施两年保障性数量限制，中国首年拟分配46,487吨",
+      "summary": "印度DGTR于11月4日公布纯碱全球保障措施调查最终结论，建议对涉案进口实施两年按原产国分配的数量限制。建议首年总进口配额754,992吨，第二年792,740吨；其中中国首年配额46,487吨、次年48,811吨，并按季度分配。调查涵盖天然和合成纯碱，包括轻质和重质产品。上述数字均属于调查机关提出的措施建议，尚须中央政府决定及正式公报通知才会实施，不能视为已生效的进口配额。",
+      "scope": "全球原产的纯碱（碳酸钠，Soda Ash），主要税目283620；有关发展中国家豁免及出口加工授权进口以正式措施条件为准。",
+      "impact": "中国纯碱出口商和印度玻璃、洗涤剂等制造商应提前核算建议配额的原产国及季度限制，审核原产地证明、进口港口EDI申报、船期和合同供货分配。第三地转运不能直接取得第三国产地配额；新限制尚未生效，现阶段仍须遵循现行海关规则。",
+      "deadline": "DGTR最终建议2026年11月4日发布；两年期限和季度配额如获采纳，应自印度中央政府正式公报规定的实施日期起算，目前尚无公布的生效日。",
+      "sources": [
+        {
+          "label": "印度DGTR《纯碱保障措施数量限制调查最终结论》（11月4日，第59—62页措施建议）",
+          "url": "https://dgtr.gov.in/sites/default/files/2026-11/NCV_English_Soda%20Ash%20FF.pdf"
+        }
+      ]
+    },
+    {
+      "id": "us-ofac-shadow-fleet",
+      "date": "2026-11-04",
+      "jurisdiction": "美国、印度、阿联酋、新加坡、香港、土耳其等",
+      "agency": "美国财政部外国资产控制办公室（OFAC）",
+      "stage": "11月4日发布指定制裁并同步发布海运合规风险提示；列名制裁依指定决定生效，提示为指引而非新的独立禁运法",
+      "rank": 5,
+      "title": "美国制裁涉伊朗影子船队虚假船旗及认证网络，并发布海运欺诈风险提示",
+      "summary": "OFAC 11月4日公布针对协助伊朗石油运输使用虚假船旗、船舶登记与文件的跨国网络制裁，涉及印度等地公司及个人；同时公布识别冒用船旗、虚假注册文件和海上身份信息的合规警示。被列入SDN清单的主体财产依美国制裁规则冻结，涉及其直接或间接合计持有50%及以上权益的实体也可能受阻断。相关风险提示并非自动禁止所有存在船旗争议的船舶。",
+      "scope": "国际油轮、船旗登记认证、航运经纪、保险、港口和油品贸易，尤其涉伊朗及美国金融和物流服务的交易链。",
+      "impact": "中国船东、货代、能源贸易商和银行应核验IMO编号与船旗主管机关登记信息，排查虚假证书、异常AIS/船旗更改，按最新SDN及50%持股规则筛查船舶运营方、受益所有人及服务商；合同中核实船舶身份声明、制裁保证与拒付、改港条款。",
+      "deadline": "2026年11月4日相关制裁指定公布；相关禁止和财产冻结按适用美国制裁规定立即执行，出口、结算和装运须在交易前筛查。",
+      "sources": [
+        {
+          "label": "美国财政部11月4日正式制裁公告",
+          "url": "https://home.treasury.gov/news/press-releases/sb0681/"
+        },
+        {
+          "label": "OFAC11月4日SDN名单变更",
+          "url": "https://ofac.treasury.gov/recent-actions/20261104"
+        },
+        {
+          "label": "OFAC11月4日虚假船旗风险提示",
+          "url": "https://ofac.treasury.gov/media/937316/download?inline="
+        }
+      ]
+    },
     {
       "id": "ca-line-pipe-expiry",
       "date": "2026-11-03",
@@ -48,44 +94,6 @@
       ]
     },
     {
-      "id": "us-rectangular-pipe",
-      "date": "2026-11-04",
-      "jurisdiction": "美国、中国",
-      "agency": "美国商务部国际贸易管理局",
-      "stage": "反倾销行政复审初步结果及39家企业部分撤销复审，既有中国统一税率未修订",
-      "rank": 5,
-      "title": "美国初步认定杭州爱龙方矩形薄壁钢管不符合单独税率条件，适用中国统一255.07%税率",
-      "summary": "11月4日公告指杭州爱龙金属制品未按规定申请或证明单独税率资格，初步视为中国统一实体的一部分；现有统一实体税率255.07%本身并未调整。同时因无可复审进口记录取消其他39家企业本次复审。终裁前不应宣称正式改变相关企业保证金。",
-      "scope": "对美出口壁厚不足4毫米的特定焊接碳素钢方形或矩形薄壁钢管及复审期内相关进口",
-      "impact": "杭州爱龙及涉案供应商应抓紧核查单独税率资格和既有报关记录；美国进口商须按实际出口商、产品范围和清算状态审查税款准备，避免把初裁结果误作新的统一加税。",
-      "deadline": "2026年11月25日前提交书面陈述；11月4日起30日内申请听证；后续终裁另行确认。",
-      "sources": [
-        {
-          "label": "美国《联邦公报》2026-22528号",
-          "url": "https://www.federalregister.gov/d/2026-22528"
-        }
-      ]
-    },
-    {
-      "id": "us-steel-grating",
-      "date": "2026-11-04",
-      "jurisdiction": "美国、中国",
-      "agency": "美国国际贸易委员会（USITC）",
-      "stage": "第三次五年日落复审终局产业损害肯定性裁决，现行双反税令继续维持",
-      "rank": 5,
-      "title": "美国决定继续维持中国产钢格栅反倾销与反补贴税令",
-      "summary": "USITC 11月4日认定，撤销中国钢格栅双反税令可能在合理可预见期间造成美国国内产业实质损害继续或重现，因此现有反倾销和反补贴税令继续有效。决定没有公布新的统一税率。",
-      "scope": "中国原产相关钢制格栅在美国市场的进口",
-      "impact": "中国钢格栅出口企业及美国进口商应继续按既有反倾销及反补贴税令核查生产商、商品范围、保证金和进口申报，不能因五年期限届满推定税负自动取消。",
-      "deadline": "2026年11月4日USITC决定；公开复审报告预计12月17日发布。",
-      "sources": [
-        {
-          "label": "USITC 11月4日终局裁定新闻稿",
-          "url": "https://www.usitc.gov/press_room/news_release/2026/er1104_69469.htm"
-        }
-      ]
-    },
-    {
       "id": "in-caprolactam-scope",
       "date": "2026-11-04",
       "jurisdiction": "印度、中国、俄罗斯、泰国及美国",
@@ -109,44 +117,40 @@
       ]
     },
     {
-      "id": "in-soda-ash-safeguard",
+      "id": "us-rectangular-pipe",
       "date": "2026-11-04",
-      "jurisdiction": "印度、全球（含中国）",
-      "agency": "印度商工部贸易救济总局（DGTR）",
-      "stage": "保障措施调查最终建议：建议对纯碱实施两年进口数量限制；尚待印度中央政府决定及公报通知，当前未实施该新配额",
+      "jurisdiction": "美国、中国",
+      "agency": "美国商务部国际贸易管理局",
+      "stage": "反倾销行政复审初步结果及39家企业部分撤销复审，既有中国统一税率未修订",
       "rank": 5,
-      "title": "印度建议对纯碱进口实施两年保障性数量限制，中国首年拟分配46,487吨",
-      "summary": "印度DGTR于11月4日公布纯碱全球保障措施调查最终结论，建议对涉案进口实施两年按原产国分配的数量限制。建议首年总进口配额754,992吨，第二年792,740吨；其中中国首年配额46,487吨、次年48,811吨，并按季度分配。调查涵盖天然和合成纯碱，包括轻质和重质产品。上述数字均属于调查机关提出的措施建议，尚须中央政府决定及正式公报通知才会实施，不能视为已生效的进口配额。",
-      "scope": "全球原产的纯碱（碳酸钠，Soda Ash），主要税目283620；有关发展中国家豁免及出口加工授权进口以正式措施条件为准。",
-      "impact": "中国纯碱出口商和印度玻璃、洗涤剂等制造商应提前核算建议配额的原产国及季度限制，审核原产地证明、进口港口EDI申报、船期和合同供货分配。第三地转运不能直接取得第三国产地配额；新限制尚未生效，现阶段仍须遵循现行海关规则。",
-      "deadline": "DGTR最终建议2026年11月4日发布；两年期限和季度配额如获采纳，应自印度中央政府正式公报规定的实施日期起算，目前尚无公布的生效日。",
+      "title": "美国初步认定杭州爱龙方矩形薄壁钢管不符合单独税率条件，适用中国统一255.07%税率",
+      "summary": "11月4日公告指杭州爱龙金属制品未按规定申请或证明单独税率资格，初步视为中国统一实体的一部分；现有统一实体税率255.07%本身并未调整。同时因无可复审进口记录取消其他39家企业本次复审。终裁前不应宣称正式改变相关企业保证金。",
+      "scope": "对美出口壁厚不足4毫米的特定焊接碳素钢方形或矩形薄壁钢管及复审期内相关进口",
+      "impact": "杭州爱龙及涉案供应商应抓紧核查单独税率资格和既有报关记录；美国进口商须按实际出口商、产品范围和清算状态审查税款准备，避免把初裁结果误作新的统一加税。",
+      "deadline": "2026年11月25日前提交书面陈述；11月4日起30日内申请听证；后续终裁另行确认。",
       "sources": [
         {
-          "label": "印度DGTR《纯碱保障措施数量限制调查最终结论》（11月4日，第59—62页措施建议）",
-          "url": "https://dgtr.gov.in/sites/default/files/2026-11/NCV_English_Soda%20Ash%20FF.pdf"
+          "label": "美国《联邦公报》2026-22528号复审初裁",
+          "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22528/light-walled-rectangular-pipe-and-tube-from-the-peoples-republic-of-china-preliminary-results-and"
         }
       ]
     },
     {
-      "id": "us-ofac-shadow-fleet",
+      "id": "us-steel-grating",
       "date": "2026-11-04",
-      "jurisdiction": "美国、印度、阿联酋、新加坡、香港、土耳其等",
-      "agency": "美国财政部外国资产控制办公室（OFAC）",
-      "stage": "11月4日发布指定制裁并同步发布海运合规风险提示；列名制裁依指定决定生效，提示为指引而非新的独立禁运法",
+      "jurisdiction": "美国、中国",
+      "agency": "美国国际贸易委员会（USITC）",
+      "stage": "第三次五年日落复审终局产业损害肯定性裁决，现行双反税令继续维持",
       "rank": 5,
-      "title": "美国制裁涉伊朗影子船队虚假船旗及认证网络，并发布海运欺诈风险提示",
-      "summary": "OFAC 11月4日公布针对协助伊朗石油运输使用虚假船旗、船舶登记与文件的跨国网络制裁，涉及印度等地公司及个人；同时公布识别冒用船旗、虚假注册文件和海上身份信息的合规警示。被列入SDN清单的主体财产依美国制裁规则冻结，涉及其直接或间接合计持有50%及以上权益的实体也可能受阻断。相关风险提示并非自动禁止所有存在船旗争议的船舶。",
-      "scope": "国际油轮、船旗登记认证、航运经纪、保险、港口和油品贸易，尤其涉伊朗及美国金融和物流服务的交易链。",
-      "impact": "中国船东、货代、能源贸易商和银行应核验IMO编号与船旗主管机关登记信息，排查虚假证书、异常AIS/船旗更改，按最新SDN及50%持股规则筛查船舶运营方、受益所有人及服务商；合同中核实船舶身份声明、制裁保证与拒付、改港条款。",
-      "deadline": "2026年11月4日相关制裁指定公布；相关禁止和财产冻结按适用美国制裁规定立即执行，出口、结算和装运须在交易前筛查。",
+      "title": "美国决定继续维持中国产钢格栅反倾销与反补贴税令",
+      "summary": "USITC 11月4日认定，撤销中国钢格栅双反税令可能在合理可预见期间造成美国国内产业实质损害继续或重现，因此现有反倾销和反补贴税令继续有效。决定没有公布新的统一税率。",
+      "scope": "中国原产相关钢制格栅在美国市场的进口",
+      "impact": "中国钢格栅出口企业及美国进口商应继续按既有反倾销及反补贴税令核查生产商、商品范围、保证金和进口申报，不能因五年期限届满推定税负自动取消。",
+      "deadline": "2026年11月4日USITC决定；公开复审报告预计12月17日发布。",
       "sources": [
         {
-          "label": "美国财政部11月4日制裁指定新闻稿",
-          "url": "https://home.treasury.gov/news/press-releases/sb0681"
-        },
-        {
-          "label": "OFAC《虚假船旗及船舶登记风险提示》（11月4日）",
-          "url": "https://ofac.treasury.gov/media/937316/download?inline="
+          "label": "USITC 11月4日终局裁定新闻稿",
+          "url": "https://www.usitc.gov/press_room/news_release/2026/er1104_69469.htm"
         }
       ]
     },
@@ -171,21 +175,72 @@
     }
   ],
   "coverage": {
-    "US": "11月4日Federal Register对华钢钉、矩形管复审初裁、USITC钢格栅损害终裁、OFAC针对虚假船旗航运网络指定及指引已核验",
-    "Canada": "11月3日CBSA中国管线管日落复审已核验",
-    "India": "11月4日DGTR己内酰胺范围通知与纯碱保障措施数量限制最终建议已核验，注意纯碱建议尚未生效",
-    "UK": "11月3日英欧食品动植物卫生检疫协议谈判报道已核验；法律阶段限于媒体所述文本谈判进展",
-    "EU": "英欧SPS协议技术文本报道；欧盟贸易总司及欧盟立法数据库11月3—5日更新搜索中，未将旧规则重复列入",
-    "Japan": "METI、财务省11月3—5日贸易和出口管制公开资讯巡视中，未发现新增已核实的重大法律决定",
-    "Korea": "产业通商部门11月3—5日官方贸易/出口政策资讯巡视中",
-    "Australia": "反倾销委员会11月3—5日调查和决定目录巡视中"
+    "US": "11月4日OFAC正式制裁及警示、11月4日美国联邦公报对华钢钉和矩形管初裁、USITC钢格栅终局损害复审逐项核对",
+    "Canada": "CBSA中国管线管11月3日到期复审公告及12月10日答卷时间表完成校对",
+    "India": "DGTR11月4日SETU通知明确纯碱保障数量限制终裁及己内酰胺产品范围通知；原始PDF及SETU公示日期交叉核对",
+    "UK": "GOV.UK贸易、制裁及市场准入新公告与英欧SPS11月3日报道核对；未将不直接影响跨境贸易的国内能源及设计改革纳入",
+    "EU": "欧盟委员会贸易与EUR-Lex 11月3—5日巡视；英欧SPS技术文本进展为媒体报道，未发现其他符合重大性和去重条件的新增欧盟正式规则",
+    "Japan": "日本METI及财务省11月3—5日进出口及经安公告巡视，未发现经核验的新重大贸易监管决定",
+    "Korea": "韩国MOTIR11月4日新闻、对外贸易及政府公告巡视，APEC部长会及韩法合作沟通未形成新的具约束力出口管制或贸易救济决定",
+    "Australia": "澳大利亚贸易救济委员会当前案件目录及11月3—5日公告巡视，未发现符合本期标准新增重大贸易决定"
   },
   "last_error": null,
   "next_actions": [
-    "逐条最后复检8项原始来源与近期网页时间",
-    "完成近7期事件级去重",
-    "结束前搜索并更新研究状态至publication_ready",
-    "写入三份正式HTML并核验Pages"
+    "正式创建058期完整正文",
+    "更新首页、历史归档",
+    "main回读及最终提交对应Pages和来源诊断验收"
   ],
-  "last_updated": "2026-11-05T09:27:00+08:00"
+  "last_updated": "2026-11-05T09:31:00+08:00",
+  "events_checked_against": [
+    "2026-11-04",
+    "2026-11-03",
+    "2026-11-02",
+    "2026-11-01",
+    "2026-10-31",
+    "2026-10-30",
+    "2026-10-29"
+  ],
+  "dedupe_status": "8项均与近7期不重复：印度纯碱数量限制最终结论、美国11月4日新SDN列名和专项风险提示、中国管线管加拿大日落复审、中国钢钉行政复审初裁、中国己内酰胺调查范围和答卷时间调整、中国矩形管初裁、中国钢格栅日落复审终局损害裁定、英欧SPS协定文本谈判报道均为新的独立事实或实质程序阶段。",
+  "sources_opened": true,
+  "final_checks": {
+    "regions": [
+      "美国",
+      "欧盟",
+      "英国",
+      "日本",
+      "韩国",
+      "印度",
+      "加拿大",
+      "澳大利亚"
+    ],
+    "dedupe_dates": [
+      "2026-11-04",
+      "2026-11-03",
+      "2026-11-02",
+      "2026-11-01",
+      "2026-10-31",
+      "2026-10-30",
+      "2026-10-29"
+    ],
+    "link_count": 12,
+    "links_opened": true,
+    "legal_stage_checked": true,
+    "china_supply_chain_impacts_checked": true,
+    "final_sweep": "2026-11-05 09:00—09:30 Asia/Shanghai; official USITC, Federal Register, OFAC and Treasury, EU Trade and EUR-Lex, UK GOV.UK, Japan METI, Korea MOTIR, India DGTR SETU, Canada CBSA, Australia Trade Remedies Commission",
+    "source_status": "All original source URLs opened; Treasury source slash canonical; DGTR 2 PDF screenshot verified; Guardian SPS is media-not-confirmed formal enactment.",
+    "source_urls": [
+      "https://dgtr.gov.in/sites/default/files/2026-11/NCV_English_Soda%20Ash%20FF.pdf",
+      "https://home.treasury.gov/news/press-releases/sb0681/",
+      "https://ofac.treasury.gov/recent-actions/20261104",
+      "https://ofac.treasury.gov/media/937316/download?inline=",
+      "https://www.cbsa-asfc.gc.ca/sima-lmsi/er-rre/lp12026/lp12026-ni-eng.html",
+      "https://www.cbsa-asfc.gc.ca/sima-lmsi/er-rre/lp12026/lp12026-se-eng.html",
+      "https://www.federalregister.gov/documents/2026/11/04/2026-22526/certain-steel-nails-from-the-peoples-republic-of-china-preliminary-results-and-rescission-in-part-of",
+      "https://dgtr.gov.in/sites/default/files/2026-11/PUC%20PCN%20Caprolactam.pdf",
+      "https://www.dgtr.gov.in/en/anti-dumping-cases/initiation-anti-dumping-investigation-concerning-imports-caprolactam-originating",
+      "https://www.federalregister.gov/documents/2026/11/04/2026-22528/light-walled-rectangular-pipe-and-tube-from-the-peoples-republic-of-china-preliminary-results-and",
+      "https://www.usitc.gov/press_room/news_release/2026/er1104_69469.htm",
+      "https://www.theguardian.com/politics/2026/nov/03/deal-finalised-remove-brexit-checks-food-animal-products"
+    ]
+  }
 }
