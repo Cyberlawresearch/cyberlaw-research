@@ -2,7 +2,7 @@
   "date": "2026-11-05",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "c0f5c2cd19bd7864c6849801d134b0b57eaf215d",
-  "phase": "verified",
+  "phase": "committed_pending_pages_verification",
   "publication_ready": true,
   "items": [
     {
@@ -184,13 +184,22 @@
     "Korea": "韩国MOTIR11月4日新闻、对外贸易及政府公告巡视，APEC部长会及韩法合作沟通未形成新的具约束力出口管制或贸易救济决定",
     "Australia": "澳大利亚贸易救济委员会当前案件目录及11月3—5日公告巡视，未发现符合本期标准新增重大贸易决定"
   },
-  "last_error": null,
+  "last_error": {
+    "phase": "public_pages_and_workflow_verification",
+    "tools": [
+      "web.run open Pages URLs",
+      "web.run open GitHub actions URLs",
+      "mcp__GitHub__fetch_commit_workflow_runs"
+    ],
+    "message": "Public Pages open returned Internal Error; GitHub Actions browser fetch returned DisabledError; connector only returns PR-triggered runs, no push Pages status. 3 files in main confirmed, public validation unresolved.",
+    "retries": 2
+  },
   "next_actions": [
-    "创建完整058期HTML后核验main",
-    "更新首页、归档并回读",
-    "核对最终commit的Pages与来源"
+    "检查最终提交349633ec对应的Pages完成状态",
+    "对比公开issue页面、首页入口、归档首项及12条来源链接",
+    "若部署构建失败，依据Actions实际失败日志修正并重试"
   ],
-  "last_updated": "2026-11-05T09:32:00+08:00",
+  "last_updated": "2026-11-05T09:40:00+08:00",
   "events_checked_against": [
     "2026-11-04",
     "2026-11-03",
@@ -242,5 +251,31 @@
       "https://www.usitc.gov/press_room/news_release/2026/er1104_69469.htm",
       "https://www.theguardian.com/politics/2026/nov/03/deal-finalised-remove-brexit-checks-food-animal-products"
     ]
+  },
+  "publication_attempt": {
+    "date": "2026-11-05",
+    "target_issue": "trade-watch/issues/2026-11-05.html",
+    "issue_commit_sha": "58c6f7a7add40123f952ccca904874ee99354861",
+    "index_commit_sha": "cd6df0d4b50e610f913d7d31f796804cc71657fb",
+    "archive_commit_sha": "349633ecdb1d45e3ff6e78041c5c40d8b9fbfda3",
+    "final_main_commit": "349633ecdb1d45e3ff6e78041c5c40d8b9fbfda3",
+    "files_written": [
+      "trade-watch/issues/2026-11-05.html",
+      "trade-watch/index.html",
+      "trade-watch/archive.html"
+    ],
+    "issue_count": 8,
+    "source_count": 12,
+    "github_main_readback": "passed",
+    "public_pages_status": "unverified",
+    "page_workflow_status": "unable_to_verify_push_workflow",
+    "status": "committed_pending_public_verification"
+  },
+  "source_diagnostic": {
+    "result": "sources_individually_opened_and_html_url_strings_matched",
+    "source_count": 12,
+    "public_pages": "web open for three public pages returned Internal Error, so live refresh unverified",
+    "github_actions": "fetch_commit_workflow_runs returned [] (connector filters to PR-triggered runs), combined status [] and GitHub web actions fetch DisabledError; no affirmative current Pages deployment result",
+    "note": "No actual GitHub create/update error; all 3 main files written and re-read."
   }
 }
