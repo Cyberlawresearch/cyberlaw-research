@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-05",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-05-new-works.html",
+  "page_blob_sha": "c27e80d2aca4b06134145a15ec9052faa329a548",
+  "newworks_count": 3,
+  "checked_at": "2026-11-05T12:40:31.039Z",
+  "checks": {
+    "springer_original_fulltext_opened": true,
+    "oxford_original_article_fulltext_opened": true,
+    "original_title_author_doi_verified": true,
+    "formal_publisher_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "history_page_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html",
+      "new-works-history.html",
+      "all 79 historical article and old-format page/list records as of 2026-11-05",
+      "independent repository code searches using three DOI values and original-title phrases"
+    ],
+    "fields": [
+      "DOI",
+      "original title",
+      "author",
+      "version"
+    ],
+    "matches_found": 0
+  },
+  "items": [
+    {
+      "cn_title": "德国如何执行欧盟人工智能法：联邦网络局与行业监管如何分工",
+      "author": "Fabian Teichmann",
+      "original_title": "Enforcing the AI Act at the national level: Germany’s KI-MIG as a blueprint for AI market surveillance in Europe?",
+      "journal": "International Cybersecurity Law Review",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-11-03",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": "10.1365/s43439-026-00177-5",
+      "publisher_page": "https://link.springer.com/article/10.1365/s43439-026-00177-5",
+      "version": "Final open-access journal version of record, issue assignment not yet available",
+      "access": "Publisher article full text and publisher citation opened"
+    },
+    {
+      "cn_title": "医疗与遗传数据共享能否直接适用科研例外：GDPR的合法性基础",
+      "author": "Regina Becker; Edward S. Dove",
+      "original_title": "The EU GDPR and secondary use of health and genetic data for research support purposes",
+      "journal": "International Data Privacy Law",
+      "publisher": "Oxford University Press",
+      "year": 2026,
+      "publication_date": "2026-01-28",
+      "volume": "16",
+      "issue": "2",
+      "pages": null,
+      "article_number": "ipag001",
+      "doi": "10.1093/idpl/ipag001",
+      "publisher_page": "https://academic.oup.com/idpl/article/16/2/ipag001/8443007",
+      "version": "Published Oxford journal article, volume 16 issue 2",
+      "access": "Publisher-hosted open full text and journal citation opened"
+    },
+    {
+      "cn_title": "平台展示造成消费者误认时谁担责：DSA责任豁免与合同救济",
+      "author": "Antonio Legerén-Molina",
+      "original_title": "Defective Consent and Platform Liability Under the Digital Services Act: Appearance, Information Duties and Consumer Reviews",
+      "journal": "Remedies to Digital Vulnerability in European Private Law (DiVE 2025)",
+      "publisher": "Springer, Cham",
+      "year": 2025,
+      "publication_date": "2026-07-01",
+      "volume": null,
+      "issue": null,
+      "pages": "37–58",
+      "article_number": null,
+      "doi": "10.1007/978-3-032-19720-7_3",
+      "publisher_page": "https://link.springer.com/chapter/10.1007/978-3-032-19720-7_3",
+      "version": "Conference-paper/book-chapter version cited by Springer as 2025, first online 1 July 2026; not a journal article",
+      "access": "Publisher chapter full text and final cite record opened"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "41e08a7612774ee057c414e0a52e55fee5084609",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": false
+  },
+  "other_columns_at_record": {
+    "brief": "articles/2026-11-05-tech-law-brief.html",
+    "paper": "articles/2026-11-05-chesney-citron-deep-fakes.html",
+    "classic": "articles/2026-11-05-dicey-law-and-public-opinion.html"
+  }
+}
