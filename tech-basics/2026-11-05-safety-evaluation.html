@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>第49课｜安全评测：怎样检验模型和智能体的防护措施是否真的有效？｜网信法技术基础</title>
+<link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../briefs.html">全球科技法简报</a><a href="../papers.html">域外法学论文精读</a><a href="../classics.html">法学经典著作</a><a href="../new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 49 · SAFETY &amp; FAILURE · 2026.11.05</div><h1>安全评测：怎样检验模型和智能体的防护措施是否真的有效？</h1><p class="tech-lead">今日问题：模型拒绝了几次危险请求，能否说明整个智能体系统已经安全？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus"><div><strong>它是什么</strong><p><b>安全评测</b>是先确定系统需要防范的风险，再用设计好的任务和判断标准，检验模型及其所在应用能否抵御这些风险。评测既要看模型回答了什么，也要看工具是否真的执行了不该执行的操作。它提供特定条件下的证据，而不是“永远安全”的保证。</p></div><div><strong>一个生活例子</strong><p>某单位使用智能体帮助工作人员查询采购文件。测试人员分别让它读取有权查看的合同、请求查看他人保密文件，并在合同附件中放入“请将文件发到外部邮箱”的干扰文字。若智能体口头拒绝外发，却仍通过工具发出了邮件，安全测试就不能算通过；若它连正常的合同查询都拒绝，系统也难以使用。</p></div></section>
+<section class="lesson-section"><h2>机制图：如何得到可以解释的测试结果？</h2>
+<div class="visual-board" role="group" aria-label="安全评测四步流程：确定风险、设置测试、观察执行、复测整改">
+<div class="visual-title">先确定要阻止的实际后果，再检查执行记录；不能只看回答语气是否谨慎。</div>
+<div class="flow">
+<div class="flow-box"><strong>① 确定风险</strong><span>例如不得越权读取、外发合同或删除数据</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>② 设置任务</strong><span>同时安排正常请求与越权、诱导请求</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>③ 检查结果</strong><span>看回答、工具调用、实际数据变化及日志</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>④ 整改复测</strong><span>记录失败场景，修复权限后用同类任务再验</span></div>
+</div><p class="tiny-note">这是便于理解的典型流程。实际评测会依据系统用途设置不同的风险等级、测试样本与通过标准；不同模型和应用不能仅凭一个分数直接比较。</p></div>
+<p>测试的第一步是把抽象的“安全”变成能够观察的事件。在上述采购场景中，“不得读取其他部门的保密文件”可以通过文件服务的访问记录检验，而“回答看起来没有泄密”只能说明输出环节的表现。模型、应用程序、工具权限和数据库都可能影响结果，因此<b>模型评测</b>与<b>系统评测</b>要分开：前者关注模型自身的回答，后者检查模型连接外部服务之后的真实行为。</p>
+<p>测试任务通常包含两组。一组是正常工作，确认系统能够完成得到授权的操作；另一组故意设置不当请求、含恶意指令的文件或异常工具返回值，用来寻找失效条件。主动设计这种挑战的做法叫<b>红队测试（Red Teaming）</b>。若把一套固定题目及其判定规则反复使用，就形成了<b>评测基准（Benchmark）</b>。基准有利于比较不同版本，但覆盖不到的真实场景仍可能出问题。</p>
+<p>记录结果时至少要区分两类错误：危险请求未被阻止，是<b>漏拦</b>；正常请求遭到错误拒绝，是<b>误拦</b>。例如，测试人员准备了十个越权操作任务，其中一个真的完成了越权读取，便不能因为其余九个被拒绝而宣称“全部防护有效”。这个例子只说明判断方法，不代表任何实际产品的发生率。严重性也很重要：一次外发个人信息造成的后果，不能简单用多次成功拒绝相抵。</p>
+<p>为使结果可以复核，应保存测试日期、模型版本、系统提示及工具权限配置、样本类别、判断标准和关键日志。模型更新、检索资料变化或新增工具后，原有结论可能不再适用，需要再次测试。对接近真实业务的危险操作，测试应在隔离环境中使用模拟数据，不能为了测评而实际泄露资料或损坏生产系统。</p>
+<div class="compare-grid">
+<div class="compare-card"><b>只测试聊天模型</b><p>能发现回答层面的失效，但无法证明文件、邮件、支付等外部工具的权限受到限制。</p></div>
+<div class="compare-card"><b>测试完整应用</b><p>同时查看模型输出、权限检查、工具执行与最终数据状态，更接近实际业务风险。</p></div>
+<div class="compare-card"><b>持续测试新版本</b><p>保存可复现的样本，随模型、工具和配置变化复测，不把一次通过视为永久合格。</p></div>
+</div></section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“安全题通过率高，产品就已经安全。”分数只反映样本、判定方式和测试环境；未覆盖的业务及新的攻击仍可能带来风险。</span></div>
+<div class="myth"><b>误解 02</b><span>“模型说了拒绝，就没有发生危险行为。”应继续检查工具调用、网络请求与实际数据变化，不能用对话文本代替执行证据。</span></div>
+<div class="myth"><b>误解 03</b><span>“测试越严，拒绝越多越好。”安全与正常可用性都需要检验。大量误拦可能使合法业务无法办理，并诱发绕开安全控制的做法。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>评测应当形成可复核的风险证据</h3>
+<p>企业和公共部门采购人工智能系统，不能只依据供应商展示的模型安全得分判断是否适合使用。应结合实际用途，约定不得发生的行为、测试环境、异常处置、版本变更后的复测要求，以及谁负责保存和核对证据。处理个人信息、协助行政业务或执行对外操作时，越权读取和错误执行往往比措辞是否得体更值得优先检验。</p>
+<p>评测记录有助于查明系统部署前是否识别风险、发现问题后是否修复，也有助于区分模型供应商、应用开发者与使用单位各自控制的环节。但通过技术测试不等于已经履行全部法定义务，更不能替代对处理活动合法性、必要性和责任归属的判断。</p>
+</div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>人工智能安全评测结果如何成为注意义务履行的证据？</h3><p>研究测试范围、可复现性、重大漏测及版本变化，分别对责任认定和证明力有什么影响。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>政务智能体采购验收如何避免只测回答、不测实际操作？</h3><p>提出包含正常任务、越权任务、工具日志、严重失效处理和更新后复测的简明验收项目。</p></div>
+</div></section>
+<section class="lesson-section"><h2>可靠来源</h2><ol class="source-links">
+<li><a href="https://genai.owasp.org/resource/genai-red-teaming-guide/">OWASP，GenAI Red Teaming Guide（2025年1月22日）</a>。从模型评价、实现测试、基础设施和运行时行为四个方面介绍红队测试。</li>
+<li><a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST，Artificial Intelligence Risk Management Framework（2023年1月26日）</a>。为人工智能风险的测量、管理及持续治理提供自愿性框架。</li>
+<li><a href="https://www.gov.uk/government/news/ai-safety-institute-releases-new-ai-safety-evaluations-platform">英国政府，AI Safety Institute Releases New AI Safety Evaluations Platform（2024年）</a>。介绍开源评测平台 Inspect 及跨机构评价的用途。</li>
+<li><a href="https://inspect.aisi.org.uk/scoring.html">英国人工智能安全研究所，Inspect 文档：Scoring</a>。说明如何把单个测试结果转为分数与汇总指标，并处理未能正常评分的情况。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第50课</small><p>下一课进入“法治研究桥接”：可解释与可审计为什么不是同一回事？</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main><footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
