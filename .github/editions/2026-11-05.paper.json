@@ -2,7 +2,7 @@
   "date": "2026-11-05",
   "column": "paper",
   "state": "verified",
-  "phase": "publishing",
+  "phase": "completed",
   "page": "articles/2026-11-05-chesney-citron-deep-fakes.html",
   "selection": "Bobby Chesney and Danielle Keats Citron, Deep Fakes: A Looming Challenge for Privacy, Democracy, and National Security",
   "bibliography": {
@@ -46,12 +46,12 @@
   "body_length": 7339,
   "checked_at": "2026-11-05",
   "publication": {
-    "content_main_sha": null,
-    "validated_main_sha": null,
-    "pages_run_id": null,
-    "pages_conclusion": null,
-    "current_columns": null,
-    "live_page": null,
-    "live_entry_points": null
+    "content_main_sha": "a8eaa1032fb2c38779eef2605bd4096430d35829",
+    "validated_main_sha": "a8eaa1032fb2c38779eef2605bd4096430d35829",
+    "pages_run_id": 42024285126,
+    "pages_conclusion": "success",
+    "current_columns": "passed: pre-deploy and deployed current-columns and entry-point checks",
+    "live_page": "passed: deployed contextual reading check",
+    "live_entry_points": "passed: deployed home, paper history, archive and current-column entry points"
   }
 }
