@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-05",
+  "timezone": "Asia/Shanghai",
+  "base_main_sha": "c0f5c2cd19bd7864c6849801d134b0b57eaf215d",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "检索11月3日至5日主要法域重大规则及执法决定",
+    "最近7期事件级去重",
+    "逐条开源核验",
+    "复扫及发布"
+  ],
+  "last_updated": "2026-11-05T09:06:00+08:00"
+}
