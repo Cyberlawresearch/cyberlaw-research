@@ -11,8 +11,8 @@
   },
   "mode": "facts_only",
   "analysis_pending": true,
-  "checked_at": "2026-11-05T11:12:45.265Z",
-  "last_news_scan_at": "2026-11-05T11:12:45.265Z",
+  "checked_at": "2026-11-05T11:17:06.844Z",
+  "last_news_scan_at": "2026-11-05T11:17:06.844Z",
   "checks": {
     "sources": true,
     "legal_status": true,
@@ -41,7 +41,7 @@
     {
       "source_group": "美国法院、司法部、金融监管及CISA",
       "status": "searched",
-      "result": "查阅OCC原始非强制检查框架、司法部起诉公告、CISA WordPress新增已利用目录，以及Axon和Brave诉讼、币安事件后对银行询问、超级智能工作组政策表态"
+      "result": "查阅OCC原始非强制检查框架、司法部起诉公告、CISA WordPress新增已利用目录，以及Axon诉讼、11月5日日本漏洞通报政策计划、币安事件后对银行询问、超级智能工作组政策表态"
     },
     {
       "source_group": "英国、欧盟、法国等隐私与技术监管机关",
@@ -62,6 +62,11 @@
       "source_group": "上一日及近七日逐事件去重和发布前近期重大遗漏复扫",
       "status": "searched",
       "result": "核对11月4日全部18条及10月29日至11月3日历史目录，排除已报道的欧盟京东收购、Gemini版权案、银行AI部署与云攻击、俄罗斯算力预留、cPGuard事件等；复扫11月5日国际监管、司法与网络安全新讯"
+    },
+    {
+      "source_group": "发布校验针对2026-11-02新闻的日历日新鲜度检查",
+      "status": "verified_and_corrected",
+      "result": "实测Pages部署前日期校验不接纳11月2日条目，移除该条11月2日版权诉讼报道；独立查阅并替换成11月5日路透社披露的日本政府未公开软件漏洞通报措施计划，法律状态为计划而非生效义务；未修改校验规则"
     }
   ],
   "items": [
@@ -158,15 +163,15 @@
     },
     {
       "domestic": false,
-      "date": "2026-11-02",
-      "jurisdiction": "美国",
-      "agency": "《纽约时报》等出版商、Brave Software",
-      "title": "《纽约时报》等起诉Brave涉嫌抓取版权内容向AI服务供数及绕过付费墙",
-      "original_title": "The New York Times sues Brave web browser for AI scraping and bypassing paywalls",
-      "source_name": "The Verge",
-      "url": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
-      "fact": "11月2日，The Verge报道《纽约时报》及其他新闻出版商起诉Brave Software，指控其抓取新闻内容并通过检索索引向AI企业提供访问，部分原告还质疑浏览器的付费墙绕过功能。相关诉状将内容复制、许可和访问控制列为争议事项。这些均为原告诉讼主张，法院尚未作出侵权认定。",
-      "legal_status": "copyright_lawsuit_filed",
+      "date": "2026-11-05",
+      "jurisdiction": "日本",
+      "agency": "日本政府（据日本经济新闻报道）",
+      "title": "据报日本拟提前向美国AI企业取得未公开软件漏洞信息，准备紧急网络安全措施",
+      "original_title": "Japan to seek software vulnerability data from US AI firms amid cyberattack surge, Nikkei reports",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/japan-seek-software-vulnerability-data-us-ai-firms-amid-cyberattack-surge-nikkei-2026-11-04/",
+      "fact": "11月5日，路透社援引《日本经济新闻》报道，日本政府拟向美国人工智能企业及其他海外科技公司寻求在软件漏洞公开之前取得有关信息，以便政府部门和关键基础设施运营者及时防护。报道还称，政府可能最早于11月6日的部长级会议提出紧急网络安全措施，并计划利用人工智能模拟网络攻击、排查系统弱点。有关措施仍属媒体披露的政策筹备，尚非正式生效的强制性漏洞披露规则。",
+      "legal_status": "reported_government_cybersecurity_plan",
       "id": "research-item-8"
     },
     {
