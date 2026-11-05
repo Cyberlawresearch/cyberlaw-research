@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-05",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-05-dicey-law-and-public-opinion.html",
+  "target_path": "articles/2026-11-05-dicey-law-and-public-opinion.html",
+  "book": {
+    "author": "Albert Venn Dicey",
+    "original_title": "Lectures on the Relation between Law and Public Opinion in England during the Nineteenth Century",
+    "publisher": "Macmillan and Co. (London)",
+    "year": "1919",
+    "edition": "Second edition (1919 printing); authorial introduction dated 1914; first edition issued 1905"
+  },
+  "source_urls": [
+    "https://freecapitalists.org/books/lectures-on-the-relation-between-law-and-public-opinion-in-england-during-the-nineteenth/",
+    "https://oll.libertyfund.org/titles/dicey-lectures-on-the-relation-between-law-and-pubic-opinion-2nd-ed-1919",
+    "https://freecapitalists.org/books/lectures-on-the-relation-between-law-and-public-opinion-in-england-during-the-nineteenth/read/lecture-i-the-relation-between-law-and-public-opinion/",
+    "https://freecapitalists.org/books/lectures-on-the-relation-between-law-and-public-opinion-in-england-during-the-nineteenth/read/lecture-ix-the-debt-of-collectivism-to-benthamism/",
+    "https://freecapitalists.org/books/lectures-on-the-relation-between-law-and-public-opinion-in-england-during-the-nineteenth/read/lecture-xi-judicial-legislation/",
+    "https://freecapitalists.org/books/lectures-on-the-relation-between-law-and-public-opinion-in-england-during-the-nineteenth/read/lecture-xii-relation-between-legislative-opinion-and/",
+    "https://doi.org/10.1093/ojls/gqu015",
+    "https://supremecourt.uk/speeches/lord-hodge-at-max-planck-institute-of-comparative-and-international-private-law-hamburg-germany",
+    "https://books.google.com/books?id=fOWtAAAAMAAJ"
+  ],
+  "original_verification": "系统核查1919年第二版英文全文的全书目录、作者前言、1914年新增导论、十二讲以及关于结社自由与司法造法的附录和讲内分题，并依据代表性原文段落整理论证。没有声称1905年初版逐字校勘。现代数字编辑资料与后世论证均作区分。",
+  "critics": [
+    {
+      "name": "Ben Pontin",
+      "work": "Environmental Law-Making Public Opinion in Victorian Britain: The Cross-Currents of Bentham’s and Coleridge’s Ideas, Oxford Journal of Legal Studies 34(4), 759–790 (2014)",
+      "url": "https://doi.org/10.1093/ojls/gqu015",
+      "checked": "指出戴雪忽略环境法律这一研究领域，并证明三种思潮也参与环境保护立法；并非否定戴雪全书"
+    },
+    {
+      "name": "Lord Hodge",
+      "work": "The Scope of Judicial Law-Making in the Common Law Tradition, UK Supreme Court speech, 28 October 2019",
+      "url": "https://supremecourt.uk/speeches/lord-hodge-at-max-planck-institute-of-comparative-and-international-private-law-hamburg-germany",
+      "checked": "针对第十一讲司法立法的概念进行回应，区分法官造法与议会立法"
+    }
+  ],
+  "dedup_checked": [
+    "核对classics.html全部书目；该书未见重出",
+    "核对classics-history.html全部历史书目；该书未见重出",
+    "明确区别已刊Dicey《英国宪法研究导论》与本书；不同题名及论证对象",
+    "本次运行开始当天正文和classic记录不存在"
+  ],
+  "duplicate_found": false,
+  "sections": 61,
+  "prose_length": 8424,
+  "checked_at": "2026-11-05",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
