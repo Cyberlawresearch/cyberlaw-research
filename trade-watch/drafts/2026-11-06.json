@@ -3,13 +3,48 @@
   "base_main_sha": "0e6e393e19641cc621c1647d9536eff45f5f47f5",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "us-aluminum-sheet",
+      "date": "2026-11-05",
+      "status": "preliminary",
+      "title": "美国对华普通合金铝板行政复审初裁：烟台金泰无单独税率资格，59.72%中国统一税率未调整",
+      "source": "https://www.federalregister.gov/d/2026-22624",
+      "review": "官方正式公告由Justia美国联邦公报全文核读，待完成独立链接测试"
+    },
+    {
+      "id": "us-metal-lockers",
+      "date": "2026-11-05",
+      "status": "final sunset",
+      "title": "美商务部对华金属储物柜反补贴日落复审终裁",
+      "source": "https://www.federalregister.gov/d/2026-22627",
+      "review": "待复核税率和程序"
+    },
+    {
+      "id": "us-millwork-rescission",
+      "date": "2026-11-05",
+      "status": "final rescission",
+      "title": "美国正式终止对华木制装饰线条2025年度反补贴行政复审，旧保证金维持",
+      "source": "https://www.federalregister.gov/d/2026-22631",
+      "review": "官方正式公告全文核读"
+    }
+  ],
+  "coverage": {
+    "us": "11月5日《联邦公报》及USITC已初步核查",
+    "dedupe": "已完整读取2026-10-30至2026-11-05七期，共查阅所有正文和来源，候选中无同事件直接重复",
+    "eu": "欧盟11月5日委员会市场准入动向已巡视，进一步核实正式规则",
+    "uk": "贸易措施及制裁清单已巡视",
+    "japan": "财务省和METI检索已巡视",
+    "korea": "产业贸易通商部检索已巡视",
+    "india": "DGTR检索已巡视",
+    "canada": "CBSA检索已巡视",
+    "australia": "反倾销委员会检索已巡视"
+  },
   "last_error": null,
   "next_actions": [
-    "查阅最近七期全文并去重",
-    "核验过去72小时各法域官方公告",
-    "逐一核验候选来源与监管阶段",
-    "发布正文及更新入口并校验Pages"
+    "详查美国11月5日余下贸易救济决定与申报截止日期",
+    "继续核查欧英日韩印加澳正式公告和法律状态",
+    "候选链接逐个打开并验证",
+    "结束前终扫、publication_ready标记、正文及入口发布"
   ]
 }
