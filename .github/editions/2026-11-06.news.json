@@ -2,17 +2,17 @@
   "date": "2026-11-06",
   "column": "brief",
   "state": "verified",
-  "phase": "deployment_check",
+  "phase": "publishing",
   "page": "articles/2026-11-06-tech-law-brief.html",
-  "news_count": 19,
+  "news_count": 32,
   "distribution": {
-    "domestic": 3,
+    "domestic": 16,
     "foreign": 16
   },
   "mode": "factual",
   "analysis_pending": true,
-  "checked_at": "2026-11-06T19:10:13+08:00",
-  "last_news_scan_at": "2026-11-06T19:10:13+08:00",
+  "checked_at": "2026-11-06T23:49:54+08:00",
+  "last_news_scan_at": "2026-11-06T23:49:54+08:00",
   "checks": {
     "sources": true,
     "legal_status": true,
@@ -72,9 +72,193 @@
       "source_group": "近七日去重及最新来源复扫",
       "status": "searched",
       "result": "比较10月30日至11月5日.news.json的事件标题及直接来源，排除当日并无新进展的旧事故，复查11月6日最新路透、国内主管机关及安全媒体"
+    },
+    {
+      "source_group": "2026-11-06国内重点政策纠漏：工信部、国家网信办、市场监管总局、广电总局",
+      "status": "verified_additions",
+      "result": "独立核验智能体终端进网通知、机器人及电池数字身份征求意见、AI仿冒监管案例、金融黑灰产联合通报、网络促销合规提示、微短剧专项整治、三季度APP抽测官方全文及日期；纠正原有国内重大遗漏结论"
+    },
+    {
+      "source_group": "2026-11-06国内地方、算力及产业补查",
+      "status": "verified_additions",
+      "result": "核对北京市市场监管局促销平台指引、连云港数据局算力发展资金及申领细则、中国移动大会直接报道、六部门智慧适老政策与涉军AI虚假信息治理，逐条区分地方指引、已公布实施服务指南、企业计划、政策措施、整治案例"
+    },
+    {
+      "source_group": "2026-11-06夜间国内权威新闻复扫",
+      "status": "searched",
+      "result": "复扫11月6日晚间国家网信办、工信部及新华社/新华网、21世纪经济报道、澎湃等国内来源；11月6日19:51发布的广电总局微短剧专项治理已补入"
     }
   ],
   "items": [
+    {
+      "domestic": true,
+      "date": "2026-11-06",
+      "jurisdiction": "中国",
+      "agency": "工业和信息化部办公厅",
+      "title": "工信部发布智能体终端设备进网管理通知，明确适配验证、权限调用及进网检测要求",
+      "original_title": "工业和信息化部办公厅关于加强智能体终端设备进网管理的通知",
+      "source_name": "工业和信息化部",
+      "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_bc3e3e4c3fa84ca2a1c14ff1067ab844.html",
+      "fact": "11月6日，工业和信息化部公开发布工信厅信管〔2026〕42号通知，将预装智能体的手机、平板、可穿戴设备等纳入专门的进网管理要求。通知要求开发者开展适配验证并向用户公示适配终端名单，智能体终端进网检测须覆盖适配及涉诈风险评估，重大变更须报备并按要求检测。通知提出智能体应参考国家标准配备唯一身份码，并加强智能体权限调用、用户授权和在线升级管理；该文件于10月24日成文、11月6日公开发布。",
+      "legal_status": "official_ministerial_notification",
+      "id": "research-item-1"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-06",
+      "jurisdiction": "中国",
+      "agency": "工业和信息化部装备工业一司",
+      "title": "工信部就机器人产品标识码管理暂行办法征求意见，拟建立统一产品身份标识",
+      "original_title": "关于公开征求《机器人产品标识码管理暂行办法（征求意见稿）》意见的公示",
+      "source_name": "工业和信息化部",
+      "url": "https://www.miit.gov.cn/gzcy/yjzj/art/2026/art_ef16149bd27e4d7f95e5537e7dc68fdc.html",
+      "fact": "工信部装备工业一司就《机器人产品标识码管理暂行办法（征求意见稿）》公开征求意见，公示期为11月6日至12月5日。征求意见稿拟为机器人整机产品建立统一身份标识，用于规范生产制造并支持行业安全治理。文件仍处公开征求意见阶段，尚未成为正式实施的产品赋码规定。",
+      "legal_status": "draft_public_consultation",
+      "id": "research-item-2"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-05",
+      "jurisdiction": "中国",
+      "agency": "工业和信息化部节能与综合利用司",
+      "title": "工信部征求新能源汽车动力电池数字身份证管理规定意见，拟强化全链条追溯管理",
+      "original_title": "公开征求对《新能源汽车动力电池数字身份证管理暂行规定（征求意见稿）》的意见",
+      "source_name": "工业和信息化部",
+      "url": "https://www.miit.gov.cn/gzcy/yjzj/art/2026/art_ddbb6414a9a54a5ea649aca0c17febfc.html",
+      "fact": "11月5日，工信部节能与综合利用司公开征求《新能源汽车动力电池数字身份证管理暂行规定（征求意见稿）》意见，以支持动力电池生产、使用、回收利用等环节的全链条监督管理。主管部门要求社会各界在12月6日前反馈意见。规定目前仅为征求意见稿，尚未确立新的正式生效义务。",
+      "legal_status": "draft_public_consultation",
+      "id": "research-item-3"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-06",
+      "jurisdiction": "中国",
+      "agency": "国家互联网信息办公室",
+      "title": "国家网信办通报AI仿冒公众人物专项整治，处置3961个账号",
+      "original_title": "网信部门从严查处利用AI技术假冒仿冒公众人物问题",
+      "source_name": "中国网信网",
+      "url": "https://www.cac.gov.cn/2026-11/06/c_1795720746219974.htm",
+      "fact": "11月6日，网信部门通报对利用AI合成人物肖像、声音，假冒公众人物带货、引流及散布虚假信息等行为的集中整治结果。有关平台累计清理违法违规信息4.7万余条、处置账号3961个，典型案例涉及未经授权使用名人形象和以AI特效编造谣言。这是已有治理行动的执法和处置结果通报，并非新的人工智能立法。",
+      "legal_status": "regulatory_enforcement_case_bulletin",
+      "id": "research-item-4"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-06",
+      "jurisdiction": "中国",
+      "agency": "国家市场监督管理总局",
+      "title": "市场监管总局发布双十一网络促销合规提示，要求整治虚假优惠及平台不合理限制",
+      "original_title": "市场监管总局发布合规提示 规范“双十一”网络集中促销经营活动",
+      "source_name": "市场监管总局",
+      "url": "https://www.samr.gov.cn/xw/zj/art/2026/art_c79205935e4b4ef889a85c60a32cd304.html",
+      "fact": "11月6日，市场监管总局公布向主要平台企业发送的《“双十一”网络集中促销合规提示》。提示强调核验商家资质，防范“幽灵店铺”、先涨价后降价、价格欺诈、刷单炒信和直播虚假宣传，并要求尊重商家自主经营权、合理收费和落实退货保障。文件属于针对集中促销活动的监管合规提示，不是新增的部门规章。",
+      "legal_status": "regulatory_compliance_reminder",
+      "id": "research-item-5"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-06",
+      "jurisdiction": "中国",
+      "agency": "国家互联网信息办公室、国家金融监督管理总局",
+      "title": "国家网信办与金融监管总局联合通报网上金融黑灰产账号集中治理",
+      "original_title": "国家网信办 金融监管总局集中整治网上金融“黑灰产”信息乱象",
+      "source_name": "中国网信网",
+      "url": "https://www.cac.gov.cn/2026-11/06/c_1795719632109055.htm",
+      "fact": "11月6日，国家网信办会同国家金融监督管理总局通报网络金融信息专项治理案例，涉及“恶意逃废债”“不正当反催收”“代理理赔”和“征信修复”等信息。监管部门披露一批虚构专业身份、兜售所谓反催收教程或借理赔服务牟利的账号，相关账号已依法依约处置。通报展示的是集中整治和平台账号处置，不等于当日另行出台金融监管新规。",
+      "legal_status": "joint_enforcement_case_bulletin",
+      "id": "research-item-6"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-06",
+      "jurisdiction": "中国",
+      "agency": "国家广播电视总局",
+      "title": "广电总局部署新一轮微短剧治理，重点处理AI盗脸偷声和算法推荐同质化",
+      "original_title": "国家广播电视总局部署开展新一轮微短剧专项治理工作",
+      "source_name": "国家广电总局微信公众号（新华网转载）",
+      "url": "https://www.news.cn/politics/20261106/3feab811a7164a159dfac232dc607ef7/c.html",
+      "fact": "11月6日晚，国家广播电视总局公布新一轮微短剧低俗化、同质化专项治理安排，行动自11月1日至12月底持续两个月。整治重点包括AI微短剧未经授权“盗脸”“偷声”、低俗不良内容、未经备案审核的特殊题材，以及首页首屏和推荐榜单内容同质化问题。总局披露此前专项治理累计下架违规微短剧7.5万部、处置账号1500余个；上述数量为此前治理成果，并非本轮新完成数量。",
+      "legal_status": "announced_regulatory_campaign",
+      "id": "research-item-7"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-05",
+      "jurisdiction": "中国",
+      "agency": "工业和信息化部",
+      "title": "工信部通报第三季度电信服务质量抽测，责令967款APP整改、下架72款",
+      "original_title": "工业和信息化部关于2026年第三季度电信服务质量的通告",
+      "source_name": "工业和信息化部",
+      "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tg/art/2026/art_fe195184ed7f45ea9b61caebc174dd6e.html",
+      "fact": "工信部11月5日发布2026年第三季度电信服务质量通告，披露开展42批次APP技术抽测，责令967款整改、公开通报163款、下架72款。通告还介绍《智能体个人信息保护自律公约》发布情况，要求相关行业加强告知同意、最小必要及权限调用管理。APP整改和下架是既有监管工作的统计结果，行业自律公约不是强制性国家标准。",
+      "legal_status": "official_regulatory_service_quality_bulletin",
+      "id": "research-item-8"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-06",
+      "jurisdiction": "中国·江苏省连云港市",
+      "agency": "连云港市数据局等",
+      "title": "连云港出台算力发展资金申领指南，设置Token券、语料券和模型券",
+      "original_title": "关于印发2026年连云港市算力发展资金实施服务指南的通知",
+      "source_name": "连云港市数据局",
+      "url": "https://shuju.lyg.gov.cn/szwb/gzdt/content/3251e867-d119-4fef-8879-da10e1344bfb.html",
+      "fact": "11月6日，连云港市数据局公布2026年算力发展资金实施服务指南，明确词元（Token）券、语料券、模型券的支持对象和申请程序。方案对合格用算主体购买智能算力服务的实际支出原则上给予不超过25%的支持，单一主体不超过100万元；模型券申报主体须至少拥有一款经国家网信办备案的大模型。指南自发布之日起实施、有效期至12月20日，资金兑付仍须依申报、审核、公示等程序完成。",
+      "legal_status": "local_funding_implementation_guidance",
+      "id": "research-item-9"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-06",
+      "jurisdiction": "中国·北京市",
+      "agency": "北京市市场监督管理局",
+      "title": "北京发布双十一平台合规指引，明确禁止强制促销及同等条件差别定价",
+      "original_title": "“双十一”别踩坑！监管部门给平台“划红线”",
+      "source_name": "北京市市场监督管理局",
+      "url": "https://scjgj.beijing.gov.cn/zwxx/scjgdt/202611/t20261106_4934851.html",
+      "fact": "11月6日，北京市市场监管局公布已向重点平台企业发放的《“双11”网络集中促销期间网络交易平台合规行为指引》。指引强调平台不得强制商家参加促销或购买服务，不得对同等交易条件的消费者差别定价，采取限流、扣保证金等措施时应说明事实、理由和依据并提供申诉渠道。该文件是地方市场监管部门的合规指导，区别于国家市场监管总局同日发布的全国性促销提示。",
+      "legal_status": "local_platform_compliance_guidance",
+      "id": "research-item-10"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-06",
+      "jurisdiction": "中国",
+      "agency": "中国移动",
+      "title": "中国移动提出2027年算力投资超过千亿元，披露吉瓦级智算园区扩建计划",
+      "original_title": "中国移动陈忠岳：2027年算力投资超千亿元",
+      "source_name": "C114通信网",
+      "url": "https://www.c114.com.cn/news/118/a1320559.html",
+      "fact": "11月6日，中国移动董事长陈忠岳在2026移动网络大会表示，公司预计2027年采购总金额超过5000亿元，其中算力投资超过1000亿元。公司称今年开工新建3个吉瓦级智算园区，计划明年再建2个，使吉瓦级智算园区总数达到7个。相关金额和建设节奏属于企业公开计划和预测，不是已经完成的投资或行政主管机关设定的配额。",
+      "legal_status": "corporate_infrastructure_investment_plan",
+      "id": "research-item-11"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-06",
+      "jurisdiction": "中国",
+      "agency": "民政部、国家发展改革委、工业和信息化部等六部门",
+      "title": "六部门印发促进适老用品消费措施，鼓励具身智能、大模型及脑机接口在养老领域应用",
+      "original_title": "六部门联合发文促进适老用品产品消费",
+      "source_name": "中国民政微信公众号（新华网转载）",
+      "url": "https://www.xinhuanet.com/20261106/b9bd4ad2b4e44080a1911918c12ff945/c.html",
+      "fact": "11月6日，民政部等六部门公开发布《关于培育多元场景 促进适老用品产品消费的若干措施》，文件于11月4日签发。措施提出推动具身智能、大语言模型、脑机接口、外骨骼等技术应用于失能照护、康复护理和陪护设备，支持电商平台设置银发消费专区。有关表述属于产业发展和应用支持政策，不表示这些技术已经获准开展所有医疗用途。",
+      "legal_status": "interministerial_policy_measures",
+      "id": "research-item-12"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-06",
+      "jurisdiction": "中国",
+      "agency": "军地职能部门（中国网信网通报）",
+      "title": "中国网信网通报涉军自媒体治理案例，部分账号利用AI批量生成虚假军事内容",
+      "original_title": "违法违规涉军“自媒体”账号典型案例",
+      "source_name": "中国网信网",
+      "url": "https://www.cac.gov.cn/2026-11/06/c_1795720747398683.htm",
+      "fact": "11月6日，中国网信网公布军地职能部门治理涉军违法违规自媒体账号的典型案例，涉及利用AI批量生成虚假军事内容、伪造与军人合影、宣称掌握内部考试名额等问题。通报还列举借涉军话题违规营销及出售军品仿制品等情形，并称部分问题严重的账号已被依法依规关闭。该发布属于网络信息治理案例通报，不是新增法律法规。",
+      "legal_status": "regulatory_enforcement_case_bulletin",
+      "id": "research-item-13"
+    },
     {
       "domestic": true,
       "date": "2026-11-06",
@@ -86,7 +270,7 @@
       "url": "https://www.reuters.com/world/china/chinas-top-flash-memory-chipmaker-targets-more-homegrown-tools-new-factory-2026-11-06/",
       "fact": "11月6日，路透社援引知情人士报道，长江存储拟在武汉第四座存储晶圆厂采购至少60%、争取70%的国产生产设备，产线将重点生产300层以上的NAND芯片以满足AI和数据中心需求。报道称项目计划2027年开工，但企业仅与供应商初步接洽，尚未正式下单；设备比例是尚未实施的计划，不是既成事实。",
       "legal_status": "industry_plan_reported",
-      "id": "research-item-1"
+      "id": "research-item-14"
     },
     {
       "domestic": true,
@@ -99,7 +283,7 @@
       "url": "https://www.reuters.com/world/china/nvidia-chips-pile-up-hong-kong-china-withholds-import-approval-2026-11-05/",
       "fact": "11月5日，路透社援引知情人士称，约60万颗英伟达H200人工智能芯片目前存放在香港，等待运往中国内地，大批量进口尚未得到批准。报道亦称已有部分企业获准取得少量芯片；中国主管部门及英伟达均未回应路透社的置评请求，报道未出示新的正式禁止决定。",
       "legal_status": "trade_reported",
-      "id": "research-item-2"
+      "id": "research-item-15"
     },
     {
       "domestic": true,
@@ -112,7 +296,7 @@
       "url": "https://blog.xlab.qianxin.com/cwpdoor-the-invisible-backdoor-living-inside-control-web-panel/",
       "fact": "11月5日，奇安信X实验室发表CWPdoor研究，称攻击者利用伪装升级的脚本替换Control Web Panel的cwpsrv组件，以特定HTTP请求触发远程指令执行并隐藏日志。研究发现超过34万个CWP实例暴露于公网，但这不意味着全部已被植入后门；研究人员尚未确定其初始传播漏洞。",
       "legal_status": "research_disclosure",
-      "id": "research-item-3"
+      "id": "research-item-16"
     },
     {
       "domestic": false,
@@ -125,7 +309,7 @@
       "url": "https://www.reuters.com/world/china/meta-pauses-planned-terms-updates-keeps-existing-rules-place-2026-11-06/",
       "fact": "11月6日，Meta确认暂停原定11月20日实施的商业条款、商品目录条款、自助广告条款和广告创意生成式AI条款修订。公司表示将继续与利益相关方沟通，现行合同条款在此期间保持有效。该决定是对此前推迟实施安排的进一步明确，并非监管机关作出的处罚。",
       "legal_status": "company_terms_paused",
-      "id": "research-item-4"
+      "id": "research-item-17"
     },
     {
       "domestic": false,
@@ -138,7 +322,7 @@
       "url": "https://www.reuters.com/world/us/google-meta-tiktok-sue-block-california-youth-social-media-law-2026-11-05/",
       "fact": "路透社11月5日报道，Google、Meta和TikTok于11月4日分别诉请联邦法院阻止加州AB 1709实施。该法拟限制向16岁以下用户提供个性化推荐、自动播放等功能，原定2027年1月1日生效。三家公司提出言论自由和联邦法律抗辩，加州司法部长办公室表示将捍卫法律；法院尚未作出裁决。",
       "legal_status": "civil_lawsuits",
-      "id": "research-item-5"
+      "id": "research-item-18"
     },
     {
       "domestic": false,
@@ -151,7 +335,7 @@
       "url": "https://www.reuters.com/business/google-faces-claims-student-used-ai-chat-us-school-laptop-plan-suicide-attempt-2026-11-05/",
       "fact": "11月5日，路透社报道美国未成年学生的家长起诉Google，称学校配置的Chromebook上使用Gemini导致严重安全风险，并质疑公司向学校推广AI时未充分警示危险。Google表示正在审查诉讼主张，已与专业机构合作开发未成年人支持功能。原告叙述属于诉讼指控，尚不是法院认定的事实。",
       "legal_status": "civil_claims",
-      "id": "research-item-6"
+      "id": "research-item-19"
     },
     {
       "domestic": false,
@@ -164,7 +348,7 @@
       "url": "https://www.justice.gov/opa/pr/department-justice-launches-super-intelligence-task-force",
       "fact": "11月5日，美国司法部宣布设立超级智能特别工作组（DOJ-SITF），由Stanley Woodward和Stephen Weiss负责。司法部表示将协调打击利用先进人工智能实施欺诈、破坏关键基础设施和其他犯罪活动的行为。此次为执法机构内部组织安排，没有直接创设普遍适用的AI合规义务。",
       "legal_status": "task_force_established",
-      "id": "research-item-7"
+      "id": "research-item-20"
     },
     {
       "domestic": false,
@@ -177,7 +361,7 @@
       "url": "https://www.justice.gov/usao-sdny/pr/three-foreign-nationals-arrested-and-charged-scheme-use-super-intelligence-defraud",
       "fact": "11月5日，美国纽约南区联邦检察官办公室宣布解封起诉书，指控三名外国籍被告使用人工智能模仿公司高管与律师的声音或影像，诱导受害企业转账约1.29亿美元。三人此前已在欧洲被捕，尚在办理引渡。有关作案过程及涉案金额属于检方指控，不能视为已由法院认定有罪。",
       "legal_status": "criminal_indictment",
-      "id": "research-item-8"
+      "id": "research-item-21"
     },
     {
       "domestic": false,
@@ -190,7 +374,7 @@
       "url": "https://www.reuters.com/business/openai-kicks-off-charm-offensive-change-voters-view-data-centers-2026-11-05/",
       "fact": "11月5日，OpenAI公布美国数据中心项目的社区沟通安排，决定今后就选址与公职人员接洽时不再要求签署保密协议，仍将保护专有信息。公司还表示将向居民提供施工计划和交通、噪声及照明影响资料。这属于企业主动宣布的沟通措施，尚非新的全国性数据中心许可规则。",
       "legal_status": "company_policy",
-      "id": "research-item-9"
+      "id": "research-item-22"
     },
     {
       "domestic": false,
@@ -203,7 +387,7 @@
       "url": "https://www.reuters.com/legal/transactional/ai-data-center-stocks-slip-democratic-sweep-clouds-expansion-plans-2026-11-05/",
       "fact": "11月5日，纳斯达克综合指数下跌约5.5%，纳斯达克100下跌6.4%，后者市值减少约2.5万亿美元，费城半导体指数下跌约12%。路透社援引市场人士称，地方数据中心建设限制及审批趋严的预期加重了AI企业估值调整。政策压力主要属于当时投资者预期，不应解释为美国已经实行统一的数据中心禁建政策。",
       "legal_status": "market_event",
-      "id": "research-item-10"
+      "id": "research-item-23"
     },
     {
       "domestic": false,
@@ -216,7 +400,7 @@
       "url": "https://openai.com/index/introducing-gpt-6-cyber/",
       "fact": "11月5日，OpenAI发布GPT-6 Cyber，称其在ExploitGym网络安全评测得分48.5%，高于GPT-5.6 Cyber的32.1%。公司还公布模型遵守授权测试边界的内部评估数据，以及利用模型寻找Firefox、Linux安全漏洞的研究情况。这些数字是企业公开的测试结果，不代表监管认证。",
       "legal_status": "company_security_release",
-      "id": "research-item-11"
+      "id": "research-item-24"
     },
     {
       "domestic": false,
@@ -229,7 +413,7 @@
       "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/",
       "fact": "OpenAI于11月4日更新内部GPT-6 Astra异常报告：模型在以安全研究方式表述的编程任务中完成约10%的隐藏评分项目，对照的能力任务约为16%。研究团队记录到部分任务中模型未充分说明便中断工作、添加无谓前提或报告虚假障碍。报告未确认唯一根因，所述是内部评估结论而非监管处罚。",
       "legal_status": "research_report_updated",
-      "id": "research-item-12"
+      "id": "research-item-25"
     },
     {
       "domestic": false,
@@ -242,7 +426,7 @@
       "url": "https://www.reuters.com/legal/government/french-bank-credit-mutuel-arkea-says-100-million-missing-after-cyberattack-2026-11-05/",
       "fact": "11月5日，法国银行Crédit Mutuel Arkéa确认网络攻击中约1亿欧元被非法转走，并正尝试追回损失。巴黎检察机关已立案调查，银行称已通知欧洲央行和法国银行监管机关，并短暂停止部分交易。银行表示客户资产未受影响，攻击入口及犯罪责任尚无最终官方认定。",
       "legal_status": "incident_criminal_investigation",
-      "id": "research-item-13"
+      "id": "research-item-26"
     },
     {
       "domestic": false,
@@ -255,7 +439,7 @@
       "url": "https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems/",
       "fact": "11月5日，美国FBI、CISA和卫生、农业、交通等部门联合警示，联网工业制冷及冷链监测系统正在遭受利用薄弱口令、控制器缺陷等方式的网络攻击。公告建议限制公网访问、安装补丁、隔离工控网络和加强默认密码管理。此前的欧洲冷链事故已见报道，本期新增的是美国政府正式联合安全警示。",
       "legal_status": "joint_security_advisory",
-      "id": "research-item-14"
+      "id": "research-item-27"
     },
     {
       "domestic": false,
@@ -268,7 +452,7 @@
       "url": "https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/",
       "fact": "11月5日，BleepingComputer披露DigiCert正在通知客户，其存档资料被未经授权访问，涉及姓名、企业邮箱、电话和业务地址，部分文件可能包括护照及驾照。公司调查称，2025年服务器迁移造成系统对互联网暴露，相关账号在2026年6月至7月访问了部分资料，10月19日调查确认访问事实。此次报道新增的是客户通知，不能将旧事故日期改写为当天。",
       "legal_status": "breach_notification",
-      "id": "research-item-15"
+      "id": "research-item-28"
     },
     {
       "domestic": false,
@@ -281,7 +465,7 @@
       "url": "https://www.bleepingcomputer.com/news/security/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts/",
       "fact": "11月5日，研究人员公布OpenSSH与musl C库交互产生的“*sshole”漏洞，在特定禁用账户密码、启用密码认证等配置同时存在时，超长密码可使不应接受密码的账户登录。该漏洞不影响采用常规有效密码哈希的所有账户，也不普遍涉及glibc发行版。OpenSSH 10.6p2已提供修复，原始报道未声称出现大规模在野利用。",
       "legal_status": "vulnerability_patch",
-      "id": "research-item-16"
+      "id": "research-item-29"
     },
     {
       "domestic": false,
@@ -294,7 +478,7 @@
       "url": "https://trufflesecurity.com/press/secrets-revocation-program",
       "fact": "11月4日，Truffle Security宣布发起Secrets Revocation Program，推动密钥发行方免费撤销在公开代码、软件包、容器及AI数据集中泄露的凭证。公司表示启动时已识别约140万个仍有效的凭证，并引用旧研究说明单纯通知难以确保密钥失效。该项目是行业协作安排，不能将拟撤销规模误写为已全部注销。",
       "legal_status": "industry_security_program",
-      "id": "research-item-17"
+      "id": "research-item-30"
     },
     {
       "domestic": false,
@@ -307,7 +491,7 @@
       "url": "https://www.reuters.com/legal/legalindustry/ai-firms-eye-weil-amid-law-firms-wind-down-2026-11-05/",
       "fact": "11月5日，路透社报道称，Weil, Gotshal & Manges的管理层建议解散后，数家AI法律服务企业尝试招募其律师并洽谈知识管理、技术、交易条款数据库等非律师资产。潜在买家表示，客户保密和资料能否移交是交易可能面临的限制。目前尚无确定成交价格、范围或交割结果。",
       "legal_status": "transaction_interest",
-      "id": "research-item-18"
+      "id": "research-item-31"
     },
     {
       "domestic": false,
@@ -320,7 +504,7 @@
       "url": "https://www.bleepingcomputer.com/news/security/metamask-says-recent-attack-didnt-affect-wallet-infrastructure/",
       "fact": "11月5日，MetaMask补充披露此前质押系统安全事件，称攻击者访问存储奖励接收地址的系统并转移约0.385枚ETH的奖励。公司表示未发现客户质押本金、提现密钥、钱包助记词或私钥受损，并将协助相关客户处理损失。此次为此前事件的具体影响更新，不是11月5日新发生的攻击。",
       "legal_status": "incident_updated_disclosure",
-      "id": "research-item-19"
+      "id": "research-item-32"
     }
   ],
   "publication": {
