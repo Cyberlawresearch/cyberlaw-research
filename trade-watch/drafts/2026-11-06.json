@@ -1,7 +1,7 @@
 {
   "date": "2026-11-06",
   "base_main_sha": "0e6e393e19641cc621c1647d9536eff45f5f47f5",
-  "phase": "publication_ready",
+  "phase": "main_written_pending_pages",
   "publication_ready": true,
   "items": [
     {
@@ -224,8 +224,25 @@
   },
   "last_error": null,
   "next_actions": [
-    "正式创建trade-watch/issues/2026-11-06.html",
-    "更新trade-watch/index.html及archive.html",
-    "读回main三份文件并确认Pages与来源链接"
-  ]
+    "核实最终提交Pages运行状态和来源诊断",
+    "核对公开当期网页、首页、归档及12个链接",
+    "将最终部署验收结果回写本JSON"
+  ],
+  "publication_attempt": {
+    "status": "main_verified",
+    "issue_commit": "c628cfcbc4f9c06dbe1f2f2c37c1d0fef657744e",
+    "index_commit": "25270c634eb704d2132893cfd88b417d3f008537",
+    "archive_commit": "894a0915a8c535b23a2f9789a191878de32480df",
+    "paths": [
+      "trade-watch/issues/2026-11-06.html",
+      "trade-watch/index.html",
+      "trade-watch/archive.html"
+    ],
+    "issue_count": 11,
+    "source_urls": 12,
+    "archive_entries": 59,
+    "pages_workflow_id": 42142805449,
+    "pages_status": "pending",
+    "main_readback": "passed"
+  }
 }
