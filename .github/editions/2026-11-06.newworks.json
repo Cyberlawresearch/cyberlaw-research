@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-06",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-06-new-works.html",
+  "page_blob_sha": "013ac8c1fc45db292d77208492e481a31dd41307",
+  "newworks_count": 3,
+  "checked_at": "2026-11-06T12:40:34.251Z",
+  "checks": {
+    "original_publisher_pages_opened": true,
+    "original_title_author_doi_verified": true,
+    "formal_journal_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "doi_title_author_version_repository_code_search": true,
+    "historical_indexes_checked": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html",
+      "new-works-history.html",
+      "historical file inventories under articles/ and new-works/",
+      "repository-wide code searches for each selected DOI and original title"
+    ],
+    "fields": [
+      "DOI",
+      "original title",
+      "author",
+      "version"
+    ],
+    "matches_found": 0
+  },
+  "items": [
+    {
+      "cn_title": "欧盟金融AI监管为何不能止于技术中立：MiFID II的风险分类",
+      "author": "Alessio Azzutti",
+      "original_title": "AI governance after MiFID II: beyond (mere) technological neutrality?",
+      "journal": "ERA Forum",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-02-02",
+      "volume": "27",
+      "issue": null,
+      "pages": "7–31",
+      "article_number": null,
+      "doi": "10.1007/s12027-026-00871-1",
+      "publisher_page": "https://link.springer.com/article/10.1007/s12027-026-00871-1",
+      "version": "Springer published journal article"
+    },
+    {
+      "cn_title": "东盟电商消费者数据保护：六国规则差异与跨境流通障碍",
+      "author": "Yujie Cai",
+      "original_title": "ASEAN Consumer Data Protection in E-Commerce",
+      "journal": "Journal of Consumer Policy",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-08-11",
+      "volume": "49",
+      "issue": null,
+      "pages": null,
+      "article_number": "26",
+      "doi": "10.1007/s10603-026-09630-8",
+      "publisher_page": "https://link.springer.com/article/10.1007/s10603-026-09630-8",
+      "version": "Springer published journal article"
+    },
+    {
+      "cn_title": "为何拒绝Cookie追踪比同意更费力：隐私选择界面的实证研究",
+      "author": "Marta Sylwestrzak",
+      "original_title": "The Behavioural Implementation of Privacy Regulation: Friction, Salience, and the Implicit Price of Consent",
+      "journal": "Journal of Consumer Policy",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-06-23",
+      "volume": "49",
+      "issue": null,
+      "pages": null,
+      "article_number": "21",
+      "doi": "10.1007/s10603-026-09625-5",
+      "publisher_page": "https://link.springer.com/article/10.1007/s10603-026-09625-5",
+      "version": "Springer published journal article"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "d9c3015f78f2df86996e55a4ca3e8cb35cb4b32b",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": false
+  },
+  "other_columns_at_record": {
+    "brief": "articles/2026-11-06-tech-law-brief.html",
+    "paper": "articles/2026-11-06-williams-accountable-algorithms-public-law-toolbox.html",
+    "classic": "articles/2026-11-06-machiavelli-il-principe.html"
+  }
+}
