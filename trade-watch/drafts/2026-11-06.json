@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-06",
+  "base_main_sha": "0e6e393e19641cc621c1647d9536eff45f5f47f5",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "查阅最近七期全文并去重",
+    "核验过去72小时各法域官方公告",
+    "逐一核验候选来源与监管阶段",
+    "发布正文及更新入口并校验Pages"
+  ]
+}
