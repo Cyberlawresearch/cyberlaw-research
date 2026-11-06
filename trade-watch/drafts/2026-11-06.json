@@ -1,7 +1,7 @@
 {
   "date": "2026-11-06",
   "base_main_sha": "0e6e393e19641cc621c1647d9536eff45f5f47f5",
-  "phase": "main_written_pending_pages",
+  "phase": "published_verified",
   "publication_ready": true,
   "items": [
     {
@@ -223,13 +223,9 @@
     "deduplication": "对2026-10-30至2026-11-05最近7期完整新闻逐一对照，11个事件没有近期同一程序节点重复；制裁针对11月5日新增对象"
   },
   "last_error": null,
-  "next_actions": [
-    "核实最终提交Pages运行状态和来源诊断",
-    "核对公开当期网页、首页、归档及12个链接",
-    "将最终部署验收结果回写本JSON"
-  ],
+  "next_actions": [],
   "publication_attempt": {
-    "status": "main_verified",
+    "status": "published_verified",
     "issue_commit": "c628cfcbc4f9c06dbe1f2f2c37c1d0fef657744e",
     "index_commit": "25270c634eb704d2132893cfd88b417d3f008537",
     "archive_commit": "894a0915a8c535b23a2f9789a191878de32480df",
@@ -242,7 +238,16 @@
     "source_urls": 12,
     "archive_entries": 59,
     "pages_workflow_id": 42142805449,
-    "pages_status": "pending",
-    "main_readback": "passed"
+    "pages_status": "success",
+    "main_readback": "passed",
+    "pages_run": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/42142805449",
+    "source_diagnostic_status": "success",
+    "source_diagnostic_run": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/42143267185",
+    "public_source_links_checked": 12,
+    "portal_link": "https://cyberlawresearch.github.io/cyberlaw-research/trade-watch/",
+    "issue_link": "https://cyberlawresearch.github.io/cyberlaw-research/trade-watch/issues/2026-11-06.html",
+    "archive_link": "https://cyberlawresearch.github.io/cyberlaw-research/trade-watch/archive.html",
+    "main_head_at_verification": "894a0915a8c535b23a2f9789a191878de32480df",
+    "guard_status": "success"
   }
 }
