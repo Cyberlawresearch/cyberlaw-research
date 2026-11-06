@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-06",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-06-machiavelli-il-principe.html",
+  "target_path": "articles/2026-11-06-machiavelli-il-principe.html",
+  "book": {
+    "author": "Niccolò Machiavelli",
+    "original_title": "Il Principe",
+    "publisher": "Antonio Blado d'Asola (Rome, first printing)",
+    "year": "1532",
+    "edition": "1532 Roman first printing confirmed from BnF catalogue; text read through W. K. Marriott's complete English translation (Project Gutenberg eBook #1232); no claim of collation of the 1532 Italian printing"
+  },
+  "source_urls": [
+    "https://www.gutenberg.org/ebooks/1232",
+    "https://www.gutenberg.org/cache/epub/1232/pg1232.txt",
+    "https://catalogue.bnf.fr/ark:/12148/cb30853370h",
+    "https://www.e-rara.ch/zuz/content/titleinfo/14519724",
+    "https://press.uchicago.edu/ucp/books/book/chicago/T/bo5960662.html",
+    "https://en.wikisource.org/wiki/The_Social_Contract/Book_III"
+  ],
+  "original_verification": "系统核对Project Gutenberg所载W. K. Marriott完整英文译本的献辞、26章原文、全书目录与章节间论证衔接，并核实译者引言和另收独立作品不属原著正文；以法国国家图书馆书目核实1532年罗马刊本出版信息。未声称逐字校勘1532年意大利文印本。",
+  "critics": [
+    {
+      "name": "Frederick II of Prussia",
+      "work": "Anti-Machiavel, ou, Essai de critique sur le prince de Machiavel (1740)",
+      "url": "https://www.e-rara.ch/zuz/content/titleinfo/14519724",
+      "checked": "逐章反驳作者关于失信、残酷政治手段的建议"
+    },
+    {
+      "name": "Leo Strauss",
+      "work": "Thoughts on Machiavelli (1958)",
+      "url": "https://press.uchicago.edu/ucp/books/book/chicago/T/bo5960662.html",
+      "checked": "批评对传统政治道德的挑战，并分析第十八章的道德问题"
+    },
+    {
+      "name": "Jean-Jacques Rousseau",
+      "work": "Du contrat social, Book III, Chapter VI (1762)",
+      "url": "https://en.wikisource.org/wiki/The_Social_Contract/Book_III",
+      "checked": "将《君主论》视作可为人民揭露君主统治方式的共和主义作品，属于重新阐释"
+    }
+  ],
+  "dedup_checked": [
+    "逐条查阅classics.html当期及全部已列历史正文入口：未见《君主论》",
+    "逐项查阅classics-history.html第15—35期全部历史导出书目：未见《君主论》",
+    "核对已有Machiavelli相关目录名及2026-11-06当日正文、核验记录；无同书已发布条目"
+  ],
+  "duplicate_found": false,
+  "sections": 74,
+  "prose_length": 10832,
+  "checked_at": "2026-11-06",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
