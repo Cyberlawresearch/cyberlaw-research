@@ -2,7 +2,7 @@
   "date": "2026-11-06",
   "column": "paper",
   "state": "verified",
-  "phase": "deployment_check",
+  "phase": "completed",
   "page": "articles/2026-11-06-williams-accountable-algorithms-public-law-toolbox.html",
   "selection": "Rebecca Williams, Accountable Algorithms: Adopting the Public Law Toolbox Outside the Realm of Public Law",
   "bibliography": {
@@ -46,12 +46,12 @@
   "body_length": 6487,
   "checked_at": "2026-11-06",
   "publication": {
-    "content_main_sha": null,
-    "validated_main_sha": null,
-    "pages_run_id": null,
-    "pages_conclusion": null,
-    "current_columns": null,
-    "live_page": null,
-    "live_entry_points": null
+    "content_main_sha": "e118e3c68339265fb2accf07ff292c26d850f516",
+    "validated_main_sha": "e118e3c68339265fb2accf07ff292c26d850f516",
+    "pages_run_id": 42215567779,
+    "pages_conclusion": "success",
+    "current_columns": "passed: pre-deploy and deployed current-column checks",
+    "live_page": "passed: deployed contextual reading check",
+    "live_entry_points": "passed: deployed home, papers, archive and current-column entry points"
   }
 }
