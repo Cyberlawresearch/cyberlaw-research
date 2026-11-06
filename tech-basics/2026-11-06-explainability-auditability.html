@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>第50课｜可解释与可审计：为什么二者不是同一回事？｜网信法技术基础</title>
+<link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../briefs.html">全球科技法简报</a><a href="../papers.html">域外法学论文精读</a><a href="../classics.html">法学经典著作</a><a href="../new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 50 · LAW &amp; GOVERNANCE · 2026.11.06</div><h1>可解释与可审计：为什么二者不是同一回事？</h1><p class="tech-lead">今日问题：系统能说清为什么给出一个答案，是否就能证明它当时按规定运行？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus"><div><strong>它是什么</strong><p><b>可解释性</b>关注人能否理解人工智能输出的依据、含义与局限；<b>可审计性</b>关注事后能否凭独立记录和证据，核查系统在何时、由谁、按什么配置和程序完成了哪些操作。前者主要帮助理解结果，后者主要帮助核实过程与责任。两者可以相互支持，却不能互相代替。</p></div><div><strong>一个生活例子</strong><p>某政务问答系统告诉申请人：“您不符合补贴条件”，并附上政策条款。条款解释能帮助申请人理解结论；但要核查系统是否引用了已失效文件、有没有查询其个人资料、谁批准了规则更新，就需要保存政策版本、查询时间、调用记录和人工复核情况。</p></div></section>
+<section class="lesson-section"><h2>机制图：同一个回答，怎样从两条路径核查？</h2>
+<div class="visual-board" role="group" aria-label="政务问答同一输出的解释与审计核查流程">
+<div class="visual-title">系统给出“不符合条件”后，解释看“理由能否理解”，审计看“事实过程能否复核”。</div>
+<div class="flow">
+<div class="flow-box"><strong>① 收到问题</strong><span>申请人查询补贴资格</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>② 调用资料</strong><span>检索政策、形成回答</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>③ 输出理由</strong><span>解释条件及政策依据</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>④ 留存证据</strong><span>记录政策版本、权限、操作与复核</span></div>
+</div>
+<div class="compare-grid">
+<div class="compare-card"><b>解释路径：说清理由</b><p>为何判断不符合？依据哪项条件？申请人能否发现事实或规则适用错误？</p></div>
+<div class="compare-card"><b>审计路径：查清经过</b><p>当时使用哪个版本？谁发起请求？查了什么数据？是否经过必要的人工审核？</p></div>
+<div class="compare-card"><b>两条路径结合</b><p>用原始记录验证所称理由是否可靠，再据此改正错误、追究责任。</p></div>
+</div><p class="tiny-note">示意图展示应用层常见的核查节点，并不表示所有模型都会生成完整内部推理记录，也不意味着记录得越多就越合规。</p></div>
+<p>先看解释。系统可以展示所用政策条款、回答所依据的事实，或者说明某一条件为何没有满足。这里的<b>输出解释</b>是给人理解和质疑结果的说明，不必等于模型内部全部计算过程。尤其对生成式模型，回答之后补写的理由可能看似连贯，却未必忠实反映生成该答案的真实原因，因此引用文件仍要独立核对。</p>
+<p>再看审计。系统应在适当节点留下<b>日志（Log）</b>，即按时间记录操作事件的信息，例如请求编号、模型和知识库版本、检索文件、工具调用、权限判断、人工接管及修改。凭这些记录，可尝试重建某一次回答的处理经过。日志本身也可能缺漏或被篡改，所以还要管理访问权限、保存期限和记录完整性；敏感原文并非一律都要长期保存。</p>
+<p>解释与审计的技术要求并不相同。给申请人看的说明应当简洁、能理解且有针对性；提供给审计人员的记录则须足以定位具体事件、核对版本并追溯参与主体。仅有大量日志不代表能够解释一个决定，仅有漂亮的解释也不能证明系统曾按授权流程执行。不同产品在日志粒度、模型可观察程度和复核方式上会有差异。</p>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“模型把理由写得很详细，就已经透明。”理由可能是事后生成的；仍应检查引用来源、实际处理步骤与已知限制。</span></div>
+<div class="myth"><b>误解 02</b><span>“存下聊天记录就能审计。”聊天内容通常无法证明后台调用了哪个知识库版本、是否越权访问或经过人工批准。</span></div>
+<div class="myth"><b>误解 03</b><span>“为了可审计，应永久保存全部输入和个人资料。”记录应符合具体用途、必要性和保存期限要求；审计能力不等于无限留存。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>说明理由与保全证据分别服务于程序保障</h3>
+<p>在行政服务中，申请人需要知道结论所依据的事实和规则，才能提出异议并请求复核；管理机关则需要证据查明系统是否使用过时政策、错误读取信息或绕过人工审批。采购政务智能体时，既应测试能否提供可核对的依据，也应约定必要日志、版本管理和人工复核机制。</p>
+<p>这种区分也体现在比较法资料中。欧盟《人工智能法》针对高风险系统，在第13条规定使部署者能够适当解释和使用输出的透明度要求，在第12条另行设置自动事件记录能力要求。两项要求适用对象、实施安排及具体生效规则应分别判断，不能据此推定所有人工智能产品承担完全相同的义务。</p>
+</div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>算法说明理由义务与行政案卷记录义务如何衔接？</h3><p>研究系统生成的理由、原始操作日志与人工复核记录在程序救济和证据审查中各有什么作用。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>政务智能问答采购如何分别验收解释与审计能力？</h3><p>提出来源可核对、版本可追踪、关键调用有记录、争议可交由人工复核的基础验收指标。</p></div>
+</div></section>
+<section class="lesson-section"><h2>可靠来源</h2><ol class="source-links">
+<li><a href="https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/">美国国家标准与技术研究院（NIST），AI RMF 1.0，第3节“AI Risks and Trustworthiness”（2023年）</a>。分别讨论问责、透明度、可解释性与可理解性等可信赖特征。</li>
+<li><a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/explaining-decisions-made-with-artificial-intelligence/part-1-the-basics-of-explaining-ai/what-goes-into-an-explanation/">英国信息专员办公室（ICO），What Goes into an Explanation?</a>。区分过程性说明与具体决定的结果性说明；该指南正在根据英国法律变化接受复核。</li>
+<li><a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-12">欧盟《人工智能法》第12条（Record-keeping）</a>。规定适用范围内高风险人工智能系统的自动事件记录能力及其用途。</li>
+<li><a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-13">欧盟《人工智能法》第13条（Transparency and provision of information to deployers）</a>。规定适用范围内高风险系统的透明度与向部署者提供信息的要求。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第51课</small><p>责任链：一次人工智能错误可能涉及哪些主体，如何判断责任落在哪一环？</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main><footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
