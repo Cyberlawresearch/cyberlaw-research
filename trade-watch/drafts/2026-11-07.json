@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-07",
+  "timezone": "Asia/Shanghai",
+  "base_main_sha": "3217ed6e5a7acca000eae530e3d3abefabab6728",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "检索并核验美国、欧盟、英国、日本、韩国最新公告",
+    "巡视印度、加拿大、澳大利亚及重点市场",
+    "与2026-11-06至2026-10-31完整正文事件级去重",
+    "核验原始来源链接与法律状态并保存分阶段草稿",
+    "完成终扫，发布正文及更新首页、归档，线上验收"
+  ]
+}
