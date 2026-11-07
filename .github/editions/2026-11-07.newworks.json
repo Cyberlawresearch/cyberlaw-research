@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-07",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-07-new-works.html",
+  "page_blob_sha": "c567ef10b071c42cd3a3304e83b4a47661409654",
+  "newworks_count": 3,
+  "checked_at": "2026-11-07T12:43:25.826Z",
+  "checks": {
+    "original_publisher_pages_opened": true,
+    "original_title_author_doi_verified": true,
+    "formal_journal_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "doi_title_author_version_repository_code_search": true,
+    "historical_indexes_checked": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html",
+      "new-works-history.html",
+      "historical article path inventory under articles/ and new-works/",
+      "repository-wide main code searches for each selected DOI, original title, and author"
+    ],
+    "fields": [
+      "DOI",
+      "original title",
+      "author",
+      "version"
+    ],
+    "matches_found": 0
+  },
+  "items": [
+    {
+      "cn_title": "平台正当性如何判断：权利侵害、用户治理与公众抵制",
+      "author": "Sean Donahue, Jake Stone, Athmeya Jayaram",
+      "original_title": "Platform Legitimacy Between Rights and Rule",
+      "journal": "Philosophy & Technology",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-06-10",
+      "volume": "39",
+      "issue": null,
+      "pages": null,
+      "article_number": "110",
+      "doi": "10.1007/s13347-026-01118-0",
+      "publisher_page": "https://link.springer.com/article/10.1007/s13347-026-01118-0",
+      "version": "Springer published journal article"
+    },
+    {
+      "cn_title": "AI参与组织行动时，责任如何归属：三层行动主体分析",
+      "author": "Ensieh Mahi, Magnus Strand",
+      "original_title": "Layered agency as a basis for allocating accountability for AI",
+      "journal": "AI & SOCIETY",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-08-08",
+      "volume": "41",
+      "issue": null,
+      "pages": "9683–9695",
+      "article_number": null,
+      "doi": "10.1007/s00146-026-03224-1",
+      "publisher_page": "https://link.springer.com/article/10.1007/s00146-026-03224-1",
+      "version": "Springer published journal article"
+    },
+    {
+      "cn_title": "自主网络行动可能误伤时：国家如何履行国际人道法尽职义务",
+      "author": "Marta Stroppa",
+      "original_title": "The use of autonomous cyber capabilities in armed conflict and States’ due diligence obligations to avoid unintended violations of international humanitarian law",
+      "journal": "International Review of the Red Cross",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "publication_date": "2026-03-05",
+      "volume": "108",
+      "issue": "931",
+      "pages": "439–466",
+      "article_number": null,
+      "doi": "10.1017/S181638312610109X",
+      "publisher_page": "https://www.cambridge.org/core/journals/international-review-of-the-red-cross/article/use-of-autonomous-cyber-capabilities-in-armed-conflict-and-states-due-diligence-obligations-to-avoid-unintended-violations-of-international-humanitarian-law/AC7C1608D1AA3C9FED4BD3322876B72C",
+      "version": "Cambridge published journal article"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "581bbaadcb2ffffbb96e6d1bf80e8093db41b5d5",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": false
+  },
+  "other_columns_at_record": {
+    "brief": "articles/2026-11-07-tech-law-brief.html",
+    "paper": "articles/2026-11-07-mackay-weinstein-dynamic-pricing-algorithms.html",
+    "classic": "articles/2026-11-07-spinoza-theologico-political-treatise.html"
+  }
+}
