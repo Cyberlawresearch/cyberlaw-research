@@ -20,7 +20,7 @@
     "timeliness": true,
     "previous_day_event_deduplication": true,
     "seven_day_history_deduplication": true,
-    "domestic_major_omission_review": true,
+    "domestic_major_omission_review": false,
     "local_language_scan_korea_japan_vietnam": true,
     "prior_background_checked": true,
     "natural_chinese_reviewed": true,
@@ -512,5 +512,138 @@
     "pages_run_id": null,
     "pages_conclusion": null,
     "online_acceptance": null
+  },
+  "domestic_source_coverage": [
+    {
+      "source_group": "中央与综合权威媒体",
+      "source_name": "新华社、中国网信网原文",
+      "status": "checked",
+      "urls": [
+        "https://www3.xinhuanet.com/politics/20261106/886845983f7f4a888bbed32a747697e6/c.html",
+        "https://www.cac.gov.cn/2026-11/06/c_1795719652932799.htm"
+      ],
+      "notes": "本轮读取新华社报道及中国网信网原文，发现11月6日16:00公开的科普健康谣言专项行动未见于当期32条及所查近七日记录。仅为所列来源的回溯核对，不声称逐一读遍全部中央媒体；遗漏待编辑处置。",
+      "checked_at": "2026-11-07T03:38:56Z",
+      "review_type": "retrospective_bounded_review"
+    },
+    {
+      "source_group": "法治、司法、劳动与政策媒体",
+      "source_name": "正义网；法治日报与人民法院报访问尝试",
+      "status": "checked",
+      "urls": [
+        "https://www.jcrb.com/livenews/2026/",
+        "https://www.jcrb.com/livenews/2026/202611/t20261106_1047709.html",
+        "https://www.jcrb.com/livenews/2026/202611/t20261106_1047761.html"
+      ],
+      "notes": "已读正义网11月6日索引及两篇报道，发现检察公益诉讼立法、直播虚假广告典型案例发布线索，待官方原文核验；案例判决在2025年10月，不能冒充新判决。法治日报首页超时，人民法院报工具不可访问，中国劳动保障报未获可核验当日原文；本类巡视不完整。",
+      "checked_at": "2026-11-07T03:38:56Z",
+      "review_type": "retrospective_bounded_review"
+    },
+    {
+      "source_group": "财经商业媒体",
+      "source_name": "每日经济新闻",
+      "status": "checked",
+      "urls": [
+        "https://www.nbd.com.cn/newspapers/2026-11-06",
+        "https://www.nbd.com.cn/articles/2026-11-05/4639859.html"
+      ],
+      "notes": "本轮读取11月6日报纸索引与个人信息评论；评论关联11月2日已刊最高检案例，不按评论或见报日期重算新事件。不据代表性来源读取宣称财经媒体全面无新增。",
+      "checked_at": "2026-11-07T03:38:56Z",
+      "review_type": "retrospective_bounded_review"
+    },
+    {
+      "source_group": "综合深度媒体",
+      "source_name": "澎湃新闻",
+      "status": "inaccessible",
+      "urls": [
+        "https://www.thepaper.cn/expressNews/2026-11-06"
+      ],
+      "notes": "搜索返回当日适老用品措施、AI仿冒等摘要，两次直接打开均Timeout fetching；本轮全文核查未完成。后续须重新直接读取相关报道或官方原文；保留历史coverage的澎湃与界面检索记录，不以其替代本轮缺失。",
+      "checked_at": "2026-11-07T03:38:56Z",
+      "review_type": "retrospective_bounded_review"
+    },
+    {
+      "source_group": "科技产业媒体",
+      "source_name": "C114通信网",
+      "status": "checked",
+      "urls": [
+        "https://www.c114.com.cn/news/118/a1320559.html"
+      ],
+      "notes": "读取11月6日10:56中国移动大会报道及可见相关链接，核对2027年算力投资计划，对应现有research-item-11。本轮未逐一巡视36氪、虎嗅、钛媒体、雷峰网、量子位、机器之心。",
+      "checked_at": "2026-11-07T03:38:56Z",
+      "review_type": "retrospective_bounded_review"
+    },
+    {
+      "source_group": "网络安全、数据与合规媒体",
+      "source_name": "奇安信X实验室",
+      "status": "checked",
+      "urls": [
+        "https://blog.xlab.qianxin.com/cwpdoor-the-invisible-backdoor-living-inside-control-web-panel/"
+      ],
+      "notes": "读取发布日期为11月5日的一手研究，区分较早观察到的攻击与新披露，对应现有research-item-16。本轮未独立完成安全内参、FreeBuf全量巡视。",
+      "checked_at": "2026-11-07T03:38:56Z",
+      "review_type": "retrospective_bounded_review"
+    },
+    {
+      "source_group": "线索媒体",
+      "source_name": "新浪资讯汇总",
+      "status": "checked",
+      "urls": [
+        "https://k.sina.cn/article_7857201856_1d45362c001908tu3q.html"
+      ],
+      "notes": "读取11月6日12时人工智能资讯汇总，获得浙江人工智能OPC措施等线索；主管部门原文与首次公布日期未核实，不计作已核实遗漏或可发布稿。",
+      "checked_at": "2026-11-07T03:38:56Z",
+      "review_type": "retrospective_bounded_review"
+    },
+    {
+      "source_group": "全国网络安全标准化技术委员会",
+      "source_name": "全国网络安全标准化技术委员会官网",
+      "status": "checked",
+      "urls": [
+        "https://www.tc260.org.cn/index.jsp",
+        "https://www.tc260.org.cn/tc260/xwdt1/202611/bf8e0cf132e8428cafbeb42c8d7951a0.shtml"
+      ],
+      "notes": "11月4日公告称匿名实体鉴别标准在2026年10月正式发布。不能把公告日期当成标准实际发布日期；是否构成足够的新披露须另行编辑判断。",
+      "checked_at": "2026-11-07T03:38:56Z",
+      "review_type": "retrospective_bounded_review"
+    },
+    {
+      "source_group": "国家标准化主管机构",
+      "source_name": "市场监管总局标准技术司",
+      "status": "checked",
+      "urls": [
+        "https://www.samr.gov.cn/bzjss/tzgg/art/2026/art_4095208446874019868a4267dc284d01.html"
+      ],
+      "notes": "读取11月4日15:48公开、10月30日署名的37项国家标准化指导性技术文件公告，包含学术出版AIGC使用边界指南；附件未展开核验，不能说成强制性国家标准。未见于所查近七日记录，待遗漏判断。",
+      "checked_at": "2026-11-07T03:38:56Z",
+      "review_type": "retrospective_bounded_review"
+    },
+    {
+      "source_group": "人工智能测试评估机构",
+      "source_name": "中国信息通信研究院",
+      "status": "checked",
+      "urls": [
+        "https://aihub.caict.ac.cn/docs/E9krf1WZtzbH"
+      ],
+      "notes": "可读官方摘要确认启动首批政务领域智能体安全测试；全文截断，11月5日只见于搜索日期，首次公开日期和完整依据待核验。不是监管强制认证。",
+      "checked_at": "2026-11-07T03:38:56Z",
+      "review_type": "retrospective_bounded_review"
+    }
+  ],
+  "verification_repair": {
+    "reviewed_at": "2026-11-07T03:38:56Z",
+    "original_publication_verification": false,
+    "complete": false,
+    "original_record_commit": "8f6ced6b03555f4bd85c7cf6e100a9f39ab2fb2f",
+    "reason": "原记录仅有通用coverage，缺少正式domestic_source_coverage；事后核对不能证明原发布时已完整巡视。已按实际回溯查阅补记正式字段，但发现遗漏和未核实线索，因此撤回domestic_major_omission_review的通过结论。",
+    "reader_page_sha256": "5be2ce11d4d1136763dc98a2a9b0572a71aba692a5b505ed79e1650dbd3ede29",
+    "reader_page_changed": false,
+    "remaining_gaps": [
+      "11月6日16:00中国网信网科普健康谣言专项行动早于原23:49终检，未见于当期及近七日所查记录，待编辑处置。",
+      "11月4日市场监管总局/国家标准委AIGC出版指导性技术文件及其他线索待进一步原文、日期、去重与编辑判断。",
+      "法治日报超时、人民法院报不可访问、中国劳动保障报缺当日原文；部分媒体家族仅核对代表性来源。",
+      "地方财政部门本轮未独立重扫，既有连云港数据局记录不能替代财政部门巡视。"
+    ],
+    "preserved": "原coverage、checked_at、last_news_scan_at、32条items、正文和所有读者入口保持不变；当前回溯时间不冒充原始发布前核验时间。"
   }
 }
