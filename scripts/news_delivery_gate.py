@@ -2,8 +2,10 @@
 """Check completed daily news facts without requiring later research analysis."""
 from __future__ import annotations
 
+import argparse
 import json
-from datetime import datetime, timedelta
+import os
+from datetime import date, datetime, timedelta
 from html.parser import HTMLParser
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -35,13 +37,21 @@ class BriefItemCounter(HTMLParser):
             self.count += 1
 
 
-def verify(root: Path, now: datetime) -> str:
+def scheduled_day(now: datetime) -> str | None:
     local = now.astimezone(ZONE)
     if not (local.hour >= 22 or local.hour < 1):
-        return "News deadline check skipped before 22:00 Asia/Shanghai."
-
+        return None
     # Between 00:00 and 00:59, verify the evening edition just ended.
-    day = (local - timedelta(hours=12)).date().isoformat()
+    return (local - timedelta(hours=12)).date().isoformat()
+
+
+def check(root: Path, now: datetime, edition_date: str | None = None) -> dict:
+    day = edition_date or scheduled_day(now)
+    if day is None:
+        return {"status": "skipped", "edition_date": None,
+                "message": "News deadline check skipped outside 22:00–00:59 Asia/Shanghai."}
+    assert date.fromisoformat(day).isoformat() == day, "invalid edition date"
+
     manifest = json.loads((root / "data/current-edition.json").read_text(encoding="utf-8"))
     assert manifest["date"] == max(manifest["page_dates"].values()), "manifest top-level date is not max(page_dates)"
     assert manifest["page_dates"]["brief"] == day, (
@@ -55,6 +65,8 @@ def verify(root: Path, now: datetime) -> str:
     record_path = root / ".github/editions" / f"{day}.news.json"
     assert record_path.is_file(), f"missing news verification record: {record_path}"
     record = json.loads(record_path.read_text(encoding="utf-8"))
+    assert record.get("date") == day, "news verification date does not match edition"
+    assert record.get("column") == "brief", "news verification column is not brief"
     assert record.get("state") == "verified", "news verification state is not verified"
     assert record.get("page") == str(page_path), "news verification page does not match current brief"
     assert record.get("news_count") == manifest["news_count"], "news count mismatch between record and manifest"
@@ -70,7 +82,10 @@ def verify(root: Path, now: datetime) -> str:
     missing = [name for name in FACT_CHECKS if checks.get(name) is not True]
     assert not missing, "news fact verification checks incomplete: " + ", ".join(missing)
     coverage = record.get("domestic_source_coverage") or []
-    assert len(coverage) >= 7, "domestic media group coverage missing or incomplete"
+    assert isinstance(coverage, list) and len(coverage) >= 7, "domestic media group coverage missing or incomplete"
+    groups = [item.get("source_group") for item in coverage]
+    assert all(isinstance(group, str) and group.strip() for group in groups), "missing domestic source group"
+    assert len(set(groups)) == len(groups), "duplicate domestic source group"
     for item in coverage:
         assert item.get("status") in ("checked", "no_new", "inaccessible"), (
             "invalid domestic source coverage status: " + str(item.get("source_group"))
@@ -83,11 +98,45 @@ def verify(root: Path, now: datetime) -> str:
     analysis = record.get("analysis") or {}
     pending = record.get("analysis_pending") is True or analysis.get("status") == "pending"
     status = "analysis pending" if pending else "analysis tracked separately"
-    return (
+    message = (
         f'News factual edition verified for {day}: {page_path} '
         f'({record["news_count"]} items; {status}).'
     )
 
+    return {"status": "verified", "edition_date": day, "page": str(page_path),
+            "news_count": record["news_count"], "message": message}
+
+
+def verify(root: Path, now: datetime) -> str:
+    """Retain the human-readable API for callers; workflow decisions use check()."""
+    return check(root, now)["message"]
+
+
+def main(argv=None, *, root=None, now=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--edition-date", help="Explicitly recheck this published edition (YYYY-MM-DD)")
+    parser.add_argument("--result", type=Path, help="Save machine-readable check evidence")
+    args = parser.parse_args(argv)
+    now = now or datetime.now(ZONE)
+    result = {"status": "failed", "edition_date": args.edition_date or scheduled_day(now)}
+    try:
+        result = check(root or Path.cwd(), now, args.edition_date)
+        print(result["message"])
+    except (AssertionError, ValueError, KeyError, OSError, TypeError) as exc:
+        result["error"] = str(exc)
+        raise
+    finally:
+        result["checked_at"] = now.astimezone(ZONE).isoformat()
+        if args.result:
+            args.result.parent.mkdir(parents=True, exist_ok=True)
+            args.result.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        if output := os.environ.get("GITHUB_OUTPUT"):
+            # A skipped or failed check can never authorize closing an issue.
+            verified_day = result["edition_date"] if result["status"] == "verified" else ""
+            with open(output, "a", encoding="utf-8") as stream:
+                stream.write(f"status={result['status']}\nedition_date={verified_day}\n")
+    return result
+
 
 if __name__ == "__main__":
-    print(verify(Path.cwd(), datetime.now(ZONE)))
+    main()
