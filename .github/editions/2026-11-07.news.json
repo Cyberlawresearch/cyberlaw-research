@@ -4,9 +4,9 @@
   "state": "verified",
   "phase": "publishing",
   "page": "articles/2026-11-07-tech-law-brief.html",
-  "news_count": 21,
+  "news_count": 25,
   "distribution": {
-    "domestic": 2,
+    "domestic": 6,
     "foreign": 19
   },
   "mode": "factual",
@@ -347,6 +347,58 @@
       "fact": "FTC和亚利桑那州、科罗拉多州、印第安纳州、犹他州11月公布对Progress Residential及其所有者Pretium的拟议和解，涉及线上房源展示价格低于实际租金、未充分披露智能家居等经常性费用。拟议金额为4975万美元，其中4850万美元拟用于FTC消费者救济。双方已向法院提交拟议命令，只有获得法院批准签署后才产生相应终局命令效力。",
       "legal_status": "proposed_consumer_protection_settlement",
       "id": "research-item-21"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-06",
+      "jurisdiction": "中国",
+      "agency": "全国人大常委会",
+      "title": "检察公益诉讼法通过，明确违法处理个人信息侵害众多个人权益的民事公益诉讼范围",
+      "original_title": "中华人民共和国检察公益诉讼法",
+      "source_name": "新华网受权发布",
+      "url": "https://www.xinhuanet.com/legal/20261106/a0a69ea861f041d1b52ff4f3545c8b90/c.html",
+      "fact": "全国人大常委会11月6日通过《中华人民共和国检察公益诉讼法》。第三条将个人信息处理者违法处理个人信息、侵害众多个人合法权益的行为列入检察民事公益诉讼范围，并规定相应立案调查、起诉、审判和执行程序。该法自2027年1月1日起施行，目前属于已通过、尚未施行的法律。",
+      "legal_status": "enacted_future_effective",
+      "id": "research-item-22"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-06",
+      "jurisdiction": "中国",
+      "agency": "全国人大常委会",
+      "title": "全国人大常委会批准成立世界人工智能合作组织的协定",
+      "original_title": "全国人民代表大会常务委员会关于批准《关于成立世界人工智能合作组织的协定》的决定",
+      "source_name": "新华网受权发布",
+      "url": "https://www.news.cn/politics/20261106/c4af584570ec48bd889cd079cae2e034/c.html",
+      "fact": "全国人大常委会11月6日通过决定，批准《关于成立世界人工智能合作组织的协定》。该协定由中国政府代表于2026年7月16日在上海签署，本次新增进展是国内批准程序完成，而不是再次签署。批准决定本身不等于确认协定已经在国际层面生效，也不能据此推定组织已经正式运作。",
+      "legal_status": "domestic_treaty_approval",
+      "id": "research-item-23"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-06",
+      "jurisdiction": "中国",
+      "agency": "全国人大常委会；国家税务总局",
+      "title": "税收征管法修订草案公开征求意见，拟明确平台涉税事务办理要求",
+      "original_title": "税收征收管理法修订草案向社会公开征求意见",
+      "source_name": "国家税务总局转载新华社",
+      "url": "https://www.chinatax.gov.cn/chinatax/n810219/n810780/c5253346/content.html",
+      "fact": "经全国人大常委会会议初次审议后，税收征收管理法修订草案11月6日向社会公开征求意见。草案提出，平台企业应当依照规定为平台内经营者、从业人员办理纳税申报等涉税事项，并拟调整税收滞纳金及税收争议行政复议等制度。上述内容仍处于修法征求意见阶段，不能作为已经生效的平台新增法定义务。",
+      "legal_status": "draft_public_consultation",
+      "id": "research-item-24"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-06",
+      "jurisdiction": "中国",
+      "agency": "中央网信办",
+      "title": "中央网信办部署健康科普谣言整治，聚焦AI造假和专业身份冒用",
+      "original_title": "中央网信办部署开展“清朗·整治科普健康类网络谣言”专项行动",
+      "source_name": "中国网信网",
+      "url": "https://www.cac.gov.cn/2026-11/06/c_1795719652932799.htm",
+      "fact": "中央网信办11月6日公布专项行动部署，在全国开展为期两个月的科普健康类网络谣言整治，重点针对编造健康谣言、滥用专业身份、利用人工智能造谣和虚构康复案例引流营销。部署要求平台加强相关账号身份资质核验、权威信息展示及辟谣提示，完善AI生成内容识别处置。此次属于专项治理部署，不是新制定的法律或行政法规。",
+      "legal_status": "special_enforcement_campaign",
+      "id": "research-item-25"
     }
   ],
   "publication": {
@@ -354,5 +406,28 @@
     "pages_run_id": null,
     "pages_conclusion": null,
     "online_acceptance": null
+  },
+  "supplement": {
+    "checked_at": "2026-11-07T20:19:14.897105+08:00",
+    "scope": "仅本次新增四条；不将原一期来源覆盖改记为本轮全面复核",
+    "ids": [
+      "research-item-22",
+      "research-item-23",
+      "research-item-24",
+      "research-item-25"
+    ],
+    "source_review": "逐条阅读受权发布、国家税务总局及中国网信网原文，核对11月6日事件及法律状态",
+    "history_review": "核对10月31日至11月7日正文，四项均未报道；批准协定不重复7月签署，健康谣言行动区别于既有AI冒充公众人物治理",
+    "article_sha256": "59d0f48cf36137d89d03c9c7e3a552cb99f9a0d265135a130fce42e57ddd36d9",
+    "checks": {
+      "sources": true,
+      "timeliness_72h": true,
+      "event_deduplication": true,
+      "existing_21_items_preserved": true
+    },
+    "publication": {
+      "status": "awaiting_deployment"
+    },
+    "notes": "保留既有锚点ID与正文；按国内、国际顺序更新展示序号。"
   }
 }
