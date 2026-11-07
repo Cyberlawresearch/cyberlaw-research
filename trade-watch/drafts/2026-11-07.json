@@ -2,8 +2,8 @@
   "date": "2026-11-07",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "3217ed6e5a7acca000eae530e3d3abefabab6728",
-  "phase": "validating",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "eu-pet-safeguard",
@@ -211,10 +211,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "回读本JSON并确认字段齐全和原始来源逐个有效",
-    "设置publication_ready=true",
-    "完整写入2026-11-07.html并更新index和archive",
-    "核对main以及最终提交Pages和公开页面"
+    "写入今日完整正文至main",
+    "更新并回读首页及归档",
+    "核验本次最终提交的Pages和公开页面及原始来源"
   ],
   "checked_previous_issues": [
     "2026-11-06",
