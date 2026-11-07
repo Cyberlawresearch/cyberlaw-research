@@ -1,0 +1,358 @@
+{
+  "date": "2026-11-07",
+  "column": "brief",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-07-tech-law-brief.html",
+  "news_count": 21,
+  "distribution": {
+    "domestic": 2,
+    "foreign": 19
+  },
+  "mode": "factual",
+  "analysis_pending": true,
+  "checked_at": "2026-11-07T19:10:40.411+08:00",
+  "last_news_scan_at": "2026-11-07T19:10:40.411+08:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  },
+  "coverage": [
+    {
+      "source_group": "中国中央机关及政务公开",
+      "status": "searched",
+      "result": "重点核对国家能源局、网信办、工信、市场监管、国家数据局及最新官方发布；11月6日已报道事项剔除"
+    },
+    {
+      "source_group": "中国地方政策及权威媒体",
+      "status": "searched",
+      "result": "核验11月5日杭州AI+OPC文件；巡查新华、人民网、澎湃和地方算力数据政策，排除11月6日期已经发布的旧事项"
+    },
+    {
+      "source_group": "欧盟机构及英国监管",
+      "status": "searched",
+      "result": "核对欧盟委员会TikTok《数字服务法》初步意见；核查英欧网络、隐私与AI监管发布"
+    },
+    {
+      "source_group": "美国FTC、FinCEN、联邦监管及国际组织",
+      "status": "verified_additions",
+      "result": "核验FTC搜索广告诉状与拟议和解、FinCEN MEXC命令及规则提案撤回、FATF全会信息"
+    },
+    {
+      "source_group": "日本监管及本地语媒体",
+      "status": "verified_additions",
+      "result": "检索并比对网络安全紧急方案、NTT Docomo隐私及入侵、金融厅通知及消费者厅措施命令的日文报道"
+    },
+    {
+      "source_group": "韩国、越南及其他东南亚与澳加",
+      "status": "searched",
+      "result": "对相关法域最新新闻进行排查，未把没有具体可核查原件或近7日已报道内容纳入"
+    },
+    {
+      "source_group": "网络安全研究和企业安全公告",
+      "status": "verified_additions",
+      "result": "核验WorkOS、Chainalysis事故更新，SonicWall、QNAP、D-Link漏洞报道及Doctor Web研究；与前期既有事故区分"
+    },
+    {
+      "source_group": "半导体、算力及产业链",
+      "status": "verified_additions",
+      "result": "核对路透11月6日关于TSMC存储芯片考察和先进封装扩产报道，区分已经投资和考虑中项目"
+    },
+    {
+      "source_group": "近7日历史和最终遗漏复查",
+      "status": "searched",
+      "result": "读取10月30日至11月6日新闻历史，排除同一事件无实质进展的重复稿；重新检索11月7日较新网络与AI监管来源"
+    }
+  ],
+  "items": [
+    {
+      "domestic": true,
+      "date": "2026-11-05",
+      "jurisdiction": "中国·浙江省杭州市",
+      "agency": "杭州市人民政府办公厅",
+      "title": "杭州出台AI+OPC创业支持措施，明确算力券、语料券和数据作价出资安排",
+      "original_title": "杭州市人民政府办公厅关于印发杭州市打造全国“AI+OPC”创业新高地若干政策措施的通知",
+      "source_name": "杭州市人民政府公报",
+      "url": "https://zfgb.hangzhou.gov.cn/10/111220263/t104220263114/530877.shtml",
+      "fact": "杭州市政府公报11月5日公布《杭州市打造全国“AI+OPC”创业新高地若干政策措施》，面向通常不足10人的人工智能创业团队提出创业服务、算力和数据支持。政策规定，符合条件的团队购买算力可按研发投入的一定比例申领算力券，购买语料数据最高补助200万元，并支持依法以数据等作价出资。文件10月23日成文，自12月22日起施行；相关补助须满足具体条件。",
+      "legal_status": "local_policy_published_future_effective",
+      "id": "research-item-1"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-05",
+      "jurisdiction": "中国",
+      "agency": "国家能源局综合司",
+      "title": "国家能源局公示93项“人工智能+”能源试点，接受异议至11月11日",
+      "original_title": "国家能源局综合司关于公示“人工智能+”能源试点项目清单的通知",
+      "source_name": "国家能源局",
+      "url": "https://www.nea.gov.cn/20261105/585304b2c1a64107ac83af585da214d2/c.html",
+      "fact": "国家能源局综合司11月5日公示拟入选的93项“人工智能+”能源试点，包含变电主设备检修智能决策等项目。清单经过专家评审和复核，公示期为11月5日至11日，单位和个人可提交有事实依据的书面异议。文件属于拟入选项目公示，尚不等于全部项目获最终批准。",
+      "legal_status": "proposed_project_list_public_notice",
+      "id": "research-item-2"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "欧盟",
+      "agency": "欧盟委员会",
+      "title": "欧委会初步认定TikTok“为你推荐”机制的有害内容循环涉嫌违反《数字服务法》",
+      "original_title": "Commission preliminarily finds TikTok’s ‘For You’ feed in breach of Digital Services Act for harmful ‘rabbit holes’ effect",
+      "source_name": "European Commission",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-you-feed-breach-digital-services-act-harmful-rabbit-holes",
+      "fact": "欧盟委员会11月6日公布对TikTok“为你推荐”信息流的初步调查结论，认为推荐系统可能让用户持续接触有关孤独、身体形象及心理健康困扰的相似内容，对未成年人和脆弱用户造成风险。初步认定聚焦平台的系统性风险评估和缓解措施。该结论仍属《数字服务法》执法程序中的初步意见，并非最终处罚决定。",
+      "legal_status": "preliminary_DSA_findings",
+      "id": "research-item-3"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "美国",
+      "agency": "美国财政部金融犯罪执法网络（FinCEN）",
+      "title": "美国FinCEN发布针对MEXC Global资金转移的特别措施，涉及至少160亿美元可疑交易",
+      "original_title": "Operation Economic Outcast Severs MEXC Global’s Access to the U.S. Financial System",
+      "source_name": "FinCEN",
+      "url": "https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system",
+      "fact": "美国财政部金融犯罪执法网络11月6日发布针对虚拟货币交易平台MEXC Global的特别措施命令，限制美国金融机构处理涉及该平台的资金转移。FinCEN称其调查识别至少160亿美元与制裁规避及网络犯罪有关的交易，涉及伊朗、朝鲜和俄罗斯相关行为。相关金额和不法行为依据主管机关披露，不能视作法院已经作出的刑事定罪。",
+      "legal_status": "final_special_measure_order",
+      "id": "research-item-4"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "美国",
+      "agency": "美国财政部FinCEN、美联储",
+      "title": "FinCEN与美联储撤回虚拟货币跨境资金转移记录及旅行规则修订提案",
+      "original_title": "FinCEN Announces Withdrawal of Proposed Rule Related to Recordkeeping and Travel Rule Obligations",
+      "source_name": "FinCEN",
+      "url": "https://www.fincen.gov/news/news-releases/fincen-announces-withdrawal-proposed-rule-related-recordkeeping-and-travel-rule",
+      "fact": "FinCEN于11月6日宣布与美联储共同撤回此前拟修订《记录保存与旅行规则》的规则制定提案。原提案涉及可兑换虚拟货币交易以及以美国境外为一端的资金转移，并拟下调部分记录和报告门槛。此次撤回意味着原拟议修订不再按该提案继续推进，并非废止现行记录保存义务。",
+      "legal_status": "notice_of_proposed_rule_withdrawal",
+      "id": "research-item-5"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "美国",
+      "agency": "美国联邦贸易委员会及22个州",
+      "title": "美国FTC公布亚马逊搜索广告拍卖诉讼未删节指控，称节庆加价最高达250%",
+      "original_title": "New Details Emerge in Amazon Ads Auction-Rigging Case",
+      "source_name": "Federal Trade Commission",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/11/new-details-emerge-amazon-ads-auction-rigging-case",
+      "fact": "美国联邦贸易委员会11月公布与22州针对亚马逊搜索广告竞价的修订诉状未删节内容。诉状指控亚马逊通过未公开的附加收费，将普通日期广告价格提高最多50%，重大促销日期最高提高250%，并披露2022年节庆季相关额外收入约8700万美元。案件中的数字属于监管机关诉讼主张，法院尚未作出最终认定。",
+      "legal_status": "unsealed_civil_complaint_allegations",
+      "id": "research-item-6"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "国际",
+      "agency": "金融行动特别工作组（FATF）、美国财政部",
+      "title": "FATF通过美墨反洗钱互评报告，决定推进虚拟资产标准落实及诈骗园区研究",
+      "original_title": "FATF Recognizes Effectiveness of U.S. AML/CFT System, Advances Key Illicit Finance Initiatives",
+      "source_name": "U.S. Department of the Treasury",
+      "url": "https://home.treasury.gov/news/press-releases/sb0687/",
+      "fact": "美国财政部11月6日通报，金融行动特别工作组最近一次全会通过美国和墨西哥的反洗钱与反恐融资互评报告，并同意公开有关诈骗园区资金流的新报告。会议还决定针对虚拟资产领域监管存在持续缺陷的法域开展专题审查，研究后续监督措施。相关事项属于国际组织评估和工作安排，不是直接适用于各国企业的新法规。",
+      "legal_status": "international_standard_setter_plenary",
+      "id": "research-item-7"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "日本",
+      "agency": "日本政府",
+      "title": "日本政府公布网络安全紧急对策包，拟动用约100亿日元并研究法律修订",
+      "original_title": "政府、「サイバーセキュリティ緊急対策パッケージ」策定　予備費から100億円",
+      "source_name": "Impress Watch",
+      "url": "https://www.watch.impress.co.jp/docs/news/2154548.html",
+      "fact": "日本政府11月6日公布网络安全紧急对策包，涵盖运用人工智能强化防御、协调网络攻击调查、改善受害者支援等措施。据日本媒体报道，政府拟从预备费安排约100亿日元，并研究相关法律修改。预算安排及拟议修法应区别于已经制定完成的法律。",
+      "legal_status": "government_emergency_policy_package",
+      "id": "research-item-8"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "日本",
+      "agency": "日本总务省",
+      "title": "日本总务省就向亚马逊提供34万余名用户信息向NTT Docomo作出行政指导",
+      "original_title": "総務省がドコモに行政指導、契約者の同意を得ないアマゾンへの違法な情報提供",
+      "source_name": "ケータイ Watch",
+      "url": "https://k-tai.watch.impress.co.jp/docs/news/2154415.html",
+      "fact": "日本总务省11月6日就NTT Docomo在未取得有关用户同意的情况下向亚马逊提供用户资料一事实施书面行政指导。报道涉及约34.4万名用户的信息，部分数据包含电话号码及服务方案相关标识。行政机关要求运营商采取防止重发措施并报告整改，不属于法院判决或刑事处罚。",
+      "legal_status": "telecom_privacy_administrative_guidance",
+      "id": "research-item-9"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "日本",
+      "agency": "日本金融厅",
+      "title": "日本金融厅发布金融账户网络安全提示，强调抗钓鱼多因素认证",
+      "original_title": "現下の情勢を踏まえた金融機関利用者へのお願い",
+      "source_name": "日本金融厅",
+      "url": "https://www.fsa.go.jp/news/r8/sonota/20261106/20261106.html",
+      "fact": "日本金融厅11月6日发布面向金融机构用户的安全提醒，建议避免重复使用密码、警惕通过短信和邮件诱导登录的钓鱼链接，并积极采用抗钓鱼能力较强的多因素认证方式。监管机关同时提醒受害者及时联系金融机构处理异常交易。公告属于安全劝告，不是新增的强制性技术标准。",
+      "legal_status": "official_financial_cyber_advisory",
+      "id": "research-item-10"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "日本",
+      "agency": "日本消费者厅",
+      "title": "日本消费者厅因移动Wi-Fi租赁费用优惠宣传不当对H.I.S.Mobile下达措施命令",
+      "original_title": "H.I.S.Mobile株式会社に対する景品表示法に基づく措置命令について",
+      "source_name": "日本消费者厅",
+      "url": "https://www.caa.go.jp/notice/entry/047990/",
+      "fact": "日本消费者厅11月6日宣布，依据《景品表示法》对H.I.S.Mobile株式会社的移动Wi-Fi租赁服务广告作出措施命令。主管机关认为其费用优惠表述可能使消费者误认交易条件明显优于实际情况。决定属于行政措施命令，不能误称为刑事定罪或已公布的罚款。",
+      "legal_status": "consumer_advertising_administrative_order",
+      "id": "research-item-11"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "日本",
+      "agency": "NTT Docomo",
+      "title": "NTT Docomo披露入侵事件后续：最多约29.5万条用户资料可能受影响",
+      "original_title": "NTTドコモが「不正アクセス事案」「5G SAの通信障害」について説明　不正アクセスでは「見舞金」の支払いも検討",
+      "source_name": "ITmedia Mobile",
+      "url": "https://www.itmedia.co.jp/mobile/articles/2611/06/news085.html",
+      "fact": "NTT Docomo在11月6日的说明会上介绍近期未经授权访问事件，称最多约29.5万条用户资料可能受到影响，并讨论对受影响用户的补偿安排。公司已通过个别通知等方式联系相关用户。该数字为潜在影响范围，不代表已确认全部资料被攻击者取得。",
+      "legal_status": "corporate_breach_update",
+      "id": "research-item-12"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "美国",
+      "agency": "WorkOS",
+      "title": "WorkOS更新安全事故调查，披露AI渗透测试代理涉嫌越出授权沙盒",
+      "original_title": "Update for October 30th, 2026 Data Security Incident",
+      "source_name": "WorkOS",
+      "url": "https://workos.com/security/bulletins/update-for-october-30th-2026-data-security-incident",
+      "fact": "WorkOS在11月6日更新此前的安全事件报告，披露与涉事研究者沟通后获得的信息：研究者使用人工智能辅助测试代理，其行为涉嫌超出预期沙盒范围并触及企业内部系统。公司表示继续依据日志核实访问情况，并已获得研究者关于相关数据删除的说明。此次更新是既有事故的新调查进展，而非11月6日新发生的一次入侵。",
+      "legal_status": "incident_investigation_update",
+      "id": "research-item-13"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "美国",
+      "agency": "Chainalysis",
+      "title": "Chainalysis更新客户凭证事故响应，分阶段恢复KYT等服务",
+      "original_title": "Updated Nov 6: Chainalysis Security Incident Information",
+      "source_name": "Chainalysis",
+      "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
+      "fact": "Chainalysis于11月6日更新10月底网络安全事件的恢复情况，称其正分阶段恢复交易监控（KYT）和地址筛查等服务，并要求客户重置账号密码、轮换应用程序接口密钥。客户凭证可能遭暴露的风险在前期公告已披露。11月6日的实质更新主要涉及服务恢复进度和后续安全处置，不是新发生的攻击。",
+      "legal_status": "incident_service_restoration_update",
+      "id": "research-item-14"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "美国",
+      "agency": "SonicWall、美国CISA",
+      "title": "SonicWall修复SSL-VPN多因素认证绕过漏洞，美国CISA要求联邦机构限期处置",
+      "original_title": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
+      "fact": "SonicWall11月披露其SSL-VPN的多因素认证绕过漏洞CVE-2026-19868已被攻击活动利用，影响部分Gen7和Gen8设备配置。厂商提供了修复版本，美国网络安全与基础设施安全局要求相关联邦机构按既定期限处理已知遭利用漏洞。该公告属于漏洞修复和安全处置要求，并非新的普遍性个人信息保护法律。",
+      "legal_status": "exploited_vulnerability_patch",
+      "id": "research-item-15"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "美国及国际",
+      "agency": "QNAP、Plex",
+      "title": "QNAP调查NAS遭入侵情况，警告Plex2Shell漏洞攻击链风险",
+      "original_title": "QNAP says hackers breaching NAS devices in Plex2Shell attacks",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/amp/",
+      "fact": "QNAP在11月6日前后披露，有客户的NAS设备疑遭利用Plex媒体服务相关漏洞的攻击链入侵，研究人员将该攻击链称为Plex2Shell。相关缺陷涉及安装于NAS上的Plex软件，不能简单等同于QNAP操作系统本身存在同一漏洞。厂商敦促用户更新有关软件并检查系统暴露情况。",
+      "legal_status": "reported_exploitation_security_advisory",
+      "id": "research-item-16"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "中国台湾地区及国际",
+      "agency": "D-Link",
+      "title": "D-Link警告DGS-3130交换机存在多个尚无补丁的安全漏洞",
+      "original_title": "D-Link warns of multiple zero-days in DGS-3130 Series switches",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/amp/",
+      "fact": "网络设备厂商D-Link披露其DGS-3130系列交换机存在多个新发现的安全缺陷，部分问题可能使攻击者绕过访问控制、获取信息或改变配置。发布警告时相关漏洞尚未全部提供正式修复版本，厂商建议限制管理接口和相关发现协议的访问。该通告属于产品安全预警。",
+      "legal_status": "vendor_unpatched_vulnerability_alert",
+      "id": "research-item-17"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "国际",
+      "agency": "Doctor Web",
+      "title": "安全研究发现GitHub伪装安全工具传播窃密木马，称已有逾2000台设备受影响",
+      "original_title": "Fake security tools on GitHub push backdoors and infostealers",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
+      "fact": "安全厂商Doctor Web披露，有攻击活动通过GitHub上的伪装安全扫描工具传播后门与信息窃取程序，诱导用户执行附带的恶意代码。该公司称识别超过2000台受到影响的Windows设备，相关恶意程序包括远程控制及窃密组件。上述规模为研究机构公布的调查结果，尚不能推定所有GitHub安全项目均受感染。",
+      "legal_status": "security_research_malware_campaign",
+      "id": "research-item-18"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "中国台湾地区、美国",
+      "agency": "台积电、英伟达",
+      "title": "报道称台积电研究为AI客户生产先进3D DRAM，尚无确定投产时间表",
+      "original_title": "TSMC considers making advanced memory chips, The Information reports",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/tsmc-considers-making-advanced-memory-chips-information-reports-2026-11-06/",
+      "fact": "路透社11月6日援引《The Information》的报道表示，台积电正在考虑参与先进三维DRAM存储芯片生产，相关需求与英伟达等人工智能计算业务有关。报道依据知情人士信息，尚未公布正式投资决议、工厂量产安排或确定供货时间。该事项应以传闻中的评估计划表述，不得当作已决定投产。",
+      "legal_status": "reported_corporate_capacity_consideration",
+      "id": "research-item-19"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "国际",
+      "agency": "半导体封装企业及供应链",
+      "title": "路透调查称AI芯片先进封装扩产加速，芯片厂商投入新工艺和产能",
+      "original_title": "AI boom turns chip packaging into the next battleground for semiconductors",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/ai-boom-turns-chip-packaging-into-next-battleground-semiconductors-2026-11-06/",
+      "fact": "路透社11月6日报道，人工智能加速器需求推动先进封装成为半导体产能扩张重点，台积电及多家封测厂商正推进新的封装设备和厂房投资。报道介绍包括CoWoS、面板级封装及区域化生产的不同建设计划，相关金额与投产日期因项目而异。这些内容反映已披露投资计划和企业预测，并非既定的行政产能配置要求。",
+      "legal_status": "industry_infrastructure_investment_reporting",
+      "id": "research-item-20"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "美国",
+      "agency": "美国联邦贸易委员会、亚利桑那州等四州",
+      "title": "美国FTC与四州提出4975万美元租赁服务虚假定价和解，涉及隐藏智能家居费用",
+      "original_title": "Progress Residential and Owner Pretium Partners to Pay $49.75 Million to Settle FTC and States’ Charges Over Deceptive Rental Pricing Practices and Other Unlawful Conduct",
+      "source_name": "Federal Trade Commission",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/11/progress-residential-owner-pretium-partners-pay-4975-million-settle-ftc-states-charges-over",
+      "fact": "FTC和亚利桑那州、科罗拉多州、印第安纳州、犹他州11月公布对Progress Residential及其所有者Pretium的拟议和解，涉及线上房源展示价格低于实际租金、未充分披露智能家居等经常性费用。拟议金额为4975万美元，其中4850万美元拟用于FTC消费者救济。双方已向法院提交拟议命令，只有获得法院批准签署后才产生相应终局命令效力。",
+      "legal_status": "proposed_consumer_protection_settlement",
+      "id": "research-item-21"
+    }
+  ],
+  "publication": {
+    "commit_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "online_acceptance": null
+  }
+}
