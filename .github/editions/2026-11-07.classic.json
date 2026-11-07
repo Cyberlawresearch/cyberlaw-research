@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-07",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-07-spinoza-theologico-political-treatise.html",
+  "target_path": "articles/2026-11-07-spinoza-theologico-political-treatise.html",
+  "book": {
+    "author": "Baruch Spinoza",
+    "original_title": "Tractatus Theologico-Politicus",
+    "publisher": "Jan Rieuwertsz Sr.（实际出版者，阿姆斯特丹；原刊题名页虚列Henricus Künraht、汉堡）",
+    "year": "1670",
+    "edition": "原书首印约1669年底至1670年初（通称1670年初版，T.1）；阅读以R. H. M. Elwes完整英文译本（Project Gutenberg分四部分收录）为准；核对初版书目，未逐字校勘拉丁文首印本"
+  },
+  "source_urls": [
+    "https://www.gutenberg.org/files/989/989-h/989-h.htm",
+    "https://www.gutenberg.org/files/990/990-h/990-h.htm",
+    "https://www.gutenberg.org/files/991/991-h/991-h.htm",
+    "https://www.gutenberg.org/files/992/992-h/992-h.htm",
+    "https://spinozaweb.org/works/4",
+    "https://www.mdpi.com/2409-9287/6/1/23",
+    "https://www.mdpi.com/2409-9287/6/3/67",
+    "https://original.sacred-texts.com/phi/spinoza/corr/corr46.htm"
+  ],
+  "original_verification": "系统核对Elwes译本完整四部分（序言、第一至第二十章）章目、章节论证及相互关系；据Spinoza Web初版T.1核实实际印行地、假署出版者与出版时间；未声称逐字校勘拉丁文初版；编者提要和段落数字不当作原作者文字。",
+  "critics": [
+    {
+      "name": "Lambert van Velthuysen",
+      "work": "1671年1月24日致Isaac Orobio等通信中对Tractatus Theologico-Politicus的批评（斯宾诺莎通信集Letter XLVIII）",
+      "url": "https://original.sacred-texts.com/phi/spinoza/corr/corr46.htm",
+      "checked": "批评原书关于神、必然性和宗教权威的解释可能削弱道德责任；按通信及研究梳理，不虚构原信逐字引文"
+    },
+    {
+      "name": "Jacob Batelier",
+      "work": "Vindiciae miraculorum (1673)",
+      "url": "https://www.mdpi.com/2409-9287/6/1/23",
+      "checked": "就奇迹和宗教见证反驳斯宾诺莎；作品及其作为反驳著作的性质据Henri Krop研究确认"
+    },
+    {
+      "name": "Regnerus van Mansvelt",
+      "work": "Adversus anonymum theologico-politicum liber singularis",
+      "url": "https://www.mdpi.com/2409-9287/6/3/67",
+      "checked": "质疑荷兰尤其阿姆斯特丹的实际宗教宽容程度；依据专题研究中具体归纳"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html从最新至全部当期列表逐条比对，未见斯宾诺莎《神学政治论》或同原书名",
+    "classics-history.html第15至35期历史书目核查，未见同书",
+    "main上2026-11-07 classic正文与核验记录不存在"
+  ],
+  "duplicate_found": false,
+  "sections": 86,
+  "prose_length": 10330,
+  "checked_at": "2026-11-07",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
