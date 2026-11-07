@@ -4,14 +4,85 @@
   "base_main_sha": "3217ed6e5a7acca000eae530e3d3abefabab6728",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "eu-pet-safeguard",
+      "date": "2026-11-06",
+      "jurisdiction": "欧盟",
+      "authority": "欧盟委员会",
+      "title": "欧盟启动PET树脂及上游原料全球保障措施调查，暂未实施进口限制",
+      "status": "保障措施调查已立案，未征税、未设配额",
+      "url": [
+        "https://policy.trade.ec.europa.eu/news/commission-initiates-safeguard-investigation-imports-pet-resin-chemicals-2026-11-06_en",
+        "https://eur-lex.europa.eu/eli/C/2026/5775/oj"
+      ],
+      "importance": 5
+    },
+    {
+      "id": "in-fumed-silica-review",
+      "date": "2026-11-06",
+      "jurisdiction": "印度",
+      "authority": "贸易救济总局DGTR",
+      "title": "印度建议对中国产未经处理气相法二氧化硅反倾销税再延续五年",
+      "status": "日落复审终裁建议，待财政部正式税令",
+      "url": [
+        "https://dgtr.gov.in/sites/default/files/2026-11/Final%20Findings%20UFS%20NCV.pdf"
+      ],
+      "importance": 5
+    },
+    {
+      "id": "cn-enb-investigation",
+      "date": "2026-11-06",
+      "jurisdiction": "中国（原产地欧盟、日本）",
+      "authority": "商务部",
+      "title": "中国对欧盟、日本原产乙叉降冰片烯（ENB）发起反倾销调查",
+      "status": "立案调查，未征税",
+      "url": [
+        "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_f587eac1695442ba86f2db6135b943b9.html"
+      ],
+      "importance": 5
+    },
+    {
+      "id": "cn-aramid-investigation",
+      "date": "2026-11-06",
+      "jurisdiction": "中国（原产地欧盟）",
+      "authority": "商务部",
+      "title": "中国对欧盟原产对位芳纶长丝发起反倾销调查",
+      "status": "立案调查，未征税",
+      "url": [
+        "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_e6c3b466b3c24b698a9fc6a649e2db94.html"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "us-ofac-iran-remitters",
+      "date": "2026-11-06",
+      "jurisdiction": "美国、加拿大、伊朗",
+      "authority": "美国财政部OFAC",
+      "title": "美国新增八家涉嫌便利伊朗交易的加拿大汇款及货币服务机构制裁对象",
+      "status": "正式SDN列名已生效",
+      "url": [
+        "https://ofac.treasury.gov/recent-actions/20261106"
+      ],
+      "importance": 4
+    }
+  ],
+  "coverage": {
+    "EU": "核验欧盟委员会11月6日PET相关保障措施调查公告及欧盟官方公报",
+    "India": "核验DGTR11月6日中国产未经处理气相法二氧化硅日落复审终裁",
+    "China": "核验商务部11月6日针对欧盟日本ENB以及欧盟对位芳纶两项独立反倾销立案",
+    "US": "核验OFAC11月6日涉伊朗加拿大汇兑网络新增指定；待完成其他美国贸易救济核验",
+    "UK": "待终扫",
+    "Japan": "待终扫",
+    "South Korea": "待终扫",
+    "Canada": "待终扫",
+    "Australia": "待终扫"
+  },
   "last_error": null,
   "next_actions": [
-    "检索并核验美国、欧盟、英国、日本、韩国最新公告",
-    "巡视印度、加拿大、澳大利亚及重点市场",
-    "与2026-11-06至2026-10-31完整正文事件级去重",
-    "核验原始来源链接与法律状态并保存分阶段草稿",
-    "完成终扫，发布正文及更新首页、归档，线上验收"
+    "进一步逐一核验美英日研韩加澳等法域原始公告",
+    "补充5—6条高质量候选并事件级去重",
+    "保存第二阶段断点",
+    "完整核验来源、终扫后标记publication_ready并发布"
   ]
 }
