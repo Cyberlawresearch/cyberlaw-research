@@ -2,7 +2,7 @@
   "date": "2026-11-07",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "3217ed6e5a7acca000eae530e3d3abefabab6728",
-  "phase": "publication_ready",
+  "phase": "published",
   "publication_ready": true,
   "items": [
     {
@@ -210,11 +210,7 @@
     "Australia": "检索反倾销委员会及DFAT近期公告，未发现重大新监管决定"
   },
   "last_error": null,
-  "next_actions": [
-    "写入今日完整正文至main",
-    "更新并回读首页及归档",
-    "核验本次最终提交的Pages和公开页面及原始来源"
-  ],
+  "next_actions": [],
   "checked_previous_issues": [
     "2026-11-06",
     "2026-11-05",
@@ -226,5 +222,19 @@
   ],
   "deduplication": "逐篇读取近7期全部50条新闻标题、监管动作及来源，所列10项均为不同案件的新增立案、初裁、最终结论或正式制裁、执行指引；11月6日既有对伊朗船运制裁与本期加拿大汇兑网络制裁为独立列名。",
   "source_validation": "十项共11条独立对应官方公告或原始PDF链接均通过网页逐一打开，DGTR两份PDF已通过截图核验税率表；手套税额单位是每100,000只而非每1,000,000只；公告里的网页日期和法律阶段分别核验。",
-  "final_scan": "2026年11月7日09时后对美国OFAC、USTR、BIS、欧盟贸易部门、英国贸易救济、印度DGTR、日本METI与海关、韩国贸易委员会、加拿大CBSA及环球事务部、澳大利亚反倾销和外交贸易公告作近期终扫；暂无更高优先级非重复法定新措施。"
+  "final_scan": "2026年11月7日09时后对美国OFAC、USTR、BIS、欧盟贸易部门、英国贸易救济、印度DGTR、日本METI与海关、韩国贸易委员会、加拿大CBSA及环球事务部、澳大利亚反倾销和外交贸易公告作近期终扫；暂无更高优先级非重复法定新措施。",
+  "publication": {
+    "status": "verified",
+    "main_sha": "ade2d1f42d06d933347f225e74000dda3a7b15c6",
+    "date": "2026-11-07",
+    "issue_no": 60,
+    "item_count": 10,
+    "source_link_count": 11,
+    "pages_workflow_run": "42322291001",
+    "source_check_run": "42322615705",
+    "presence_run": "42322615635",
+    "issue_url": "https://cyberlawresearch.github.io/cyberlaw-research/trade-watch/issues/2026-11-07.html",
+    "verified_by": "GitHub Pages deployment and source/presence workflow logs (same main SHA)",
+    "note": "Existing complete current issue already present on main; verified without duplicate publication or changes to historic issue files."
+  }
 }
