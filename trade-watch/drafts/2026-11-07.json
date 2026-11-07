@@ -65,24 +65,85 @@
         "https://ofac.treasury.gov/recent-actions/20261106"
       ],
       "importance": 4
+    },
+    {
+      "id": "us-cbs-prelim",
+      "date": "2026-11-04",
+      "jurisdiction": "美国、中国",
+      "authority": "美国商务部",
+      "title": "美国初裁认定中国产CBS橡胶硫化促进剂倾销，中国统一现金保证金率281.69%",
+      "status": "反倾销初裁；终裁拟于2027-01-12，现阶段现金保证金依联邦公报适用",
+      "url": [
+        "https://www.trade.gov/commerce-preliminary-antidumping-duty-investigation-cbs-peoples-republic-china"
+      ],
+      "importance": 5
+    },
+    {
+      "id": "us-wooden-fence",
+      "date": "2026-11-04",
+      "jurisdiction": "美国、中国",
+      "authority": "美国商务部",
+      "title": "美国对中国产木质围栏组件启动反倾销及反补贴调查",
+      "status": "调查立案，109.01%—232.23%系申请方指控倾销幅度，非征收税率",
+      "url": [
+        "https://www.trade.gov/initiation-ad-cvd-investigations-certain-wooden-fence-components-peoples-republic-china"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "us-pulp-negative",
+      "date": "2026-11-06",
+      "jurisdiction": "美国、巴西、挪威",
+      "authority": "美国国际贸易委员会",
+      "title": "美国最终认定巴西和挪威高纯度溶解浆未造成产业损害，相关双反税令不会发布",
+      "status": "最终否定性产业损害裁定",
+      "url": [
+        "https://www.usitc.gov/press_room/news_release/2026/er1106_69477.htm"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "in-medical-gloves",
+      "date": "2026-11-06",
+      "jurisdiction": "印度、马来西亚、泰国",
+      "authority": "印度DGTR",
+      "title": "印度建议对马来西亚、泰国医用检查橡胶手套征收差别反倾销税",
+      "status": "调查机关最终建议，需政府正式税令",
+      "url": [
+        "https://dgtr.gov.in/sites/default/files/2026-11/English%20NCV%20-%20FF%20Rubber%20Gloves.pdf"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "uk-controlled-export-contingency",
+      "date": "2026-11-06",
+      "jurisdiction": "英国",
+      "authority": "英国税务海关总署等",
+      "title": "英国明确海关系统故障期间管制货物与特定目的地出口仍须正常申报",
+      "status": "行政操作指引公布，非新设普遍禁运",
+      "url": [
+        "https://www.gov.uk/guidance/exporting-controlled-goods-from-great-britain-during-hmrc-system-issues"
+      ],
+      "importance": 3
     }
   ],
   "coverage": {
     "EU": "核验欧盟委员会11月6日PET相关保障措施调查公告及欧盟官方公报",
-    "India": "核验DGTR11月6日中国产未经处理气相法二氧化硅日落复审终裁",
+    "India": "核验11月6日气相二氧化硅日落复审与医用检查手套终裁建议",
     "China": "核验商务部11月6日针对欧盟日本ENB以及欧盟对位芳纶两项独立反倾销立案",
-    "US": "核验OFAC11月6日涉伊朗加拿大汇兑网络新增指定；待完成其他美国贸易救济核验",
-    "UK": "待终扫",
-    "Japan": "待终扫",
-    "South Korea": "待终扫",
-    "Canada": "待终扫",
-    "Australia": "待终扫"
+    "US": "已核验OFAC加拿大汇兑制裁、美商务部CBS初裁、木质围栏双反立案、USITC溶解浆最终否定；另巡视钢管新立案",
+    "UK": "已核验HMRC 11月6日出口申报新指引",
+    "Japan": "查阅METI/财务省及贸易救济最新发布，暂未见可与往期去重后的11月5—7日独立重大措施",
+    "South Korea": "查阅韩国贸易委员会、产业通商部门，暂未见可与往期去重后的11月5—7日独立重大措施",
+    "Canada": "查阅CBSA、Global Affairs，OFAC新增列名涉及8家加拿大货币服务商；未发现加拿大政府当日独立重大新措施",
+    "Australia": "检索反倾销委员会及DFAT近期公告，未发现重大新监管决定"
   },
   "last_error": null,
   "next_actions": [
-    "进一步逐一核验美英日研韩加澳等法域原始公告",
-    "补充5—6条高质量候选并事件级去重",
-    "保存第二阶段断点",
-    "完整核验来源、终扫后标记publication_ready并发布"
+    "回查最近7期事件标题与来源排除重复",
+    "逐一核验10项来源并补全具体金额、程序、期限与供应链影响",
+    "结束前对主要法域终扫并确认原始页面稳定",
+    "保存最后研究校核和publication_ready状态",
+    "按仓库规则正式发布并验证Pages"
   ]
 }
