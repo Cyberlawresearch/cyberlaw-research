@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>第51课｜责任链：一次人工智能错误可能涉及哪些主体，如何判断责任落在哪一环？｜网信法技术基础</title>
+<link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../briefs.html">全球科技法简报</a><a href="../papers.html">域外法学论文精读</a><a href="../classics.html">法学经典著作</a><a href="../new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 51 · LAW &amp; GOVERNANCE · 2026.11.07</div><h1>责任链：一次人工智能错误可能涉及哪些主体，如何判断责任落在哪一环？</h1><p class="tech-lead">今日问题：人工智能系统说错了话，为什么不能直接把责任归给“模型”？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus"><div><strong>它是什么</strong><p><b>责任链</b>是分析人工智能系统运行时，沿着数据、模型、应用配置、工具执行和人员管理等环节，查明谁控制了哪个步骤、负有什么义务、错误如何发生及造成何种后果的方法。它首先是技术事实与组织分工的调查路径，不等于法律上已经认定谁应承担责任。</p></div><div><strong>一个生活例子</strong><p>某单位的补贴咨询智能体告诉申请人：“材料不必补交”，结果申请人错过期限。可能是知识库仍保存旧政策，也可能是模型误读新政策、应用没有显示依据，或者工作人员发现异常后未及时更正。看到同一句错误回答，并不能知道是哪一步出了问题。</p></div></section>
+<section class="lesson-section"><h2>机制图：沿一次错误回答，怎样找到具体责任节点？</h2>
+<div class="visual-board" role="group" aria-label="补贴咨询智能体从政策资料到对外答复的责任链">
+<div class="visual-title">沿实际处理过程向前追查；每一步都要问“谁能控制、留下什么证据”。</div>
+<div class="flow">
+<div class="flow-box"><strong>① 政策资料</strong><span>谁更新文件和生效日期？</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>② 模型与检索</strong><span>实际选用了哪个版本和片段？</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>③ 应用与权限</strong><span>谁设置提示、核查与转人工规则？</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>④ 对外服务</strong><span>谁发布回答、受理纠错和补救？</span></div>
+</div>
+<div class="compare-grid">
+<div class="compare-card"><b>技术定位</b><p>对照问题、检索片段、模型输出与页面展示，确定偏差出现在哪一环。</p></div>
+<div class="compare-card"><b>控制与证据</b><p>核实版本、更新记录、调用日志、权限配置、人工复核记录及合同分工。</p></div>
+<div class="compare-card"><b>法律判断</b><p>结合具体义务、过错或法定归责规则、因果关系、损害与救济，判断责任主体。</p></div>
+</div><p class="tiny-note">示意图是常见应用架构，不代表所有系统都采用检索增强生成；有的系统直接调用模型，有的还连接审批、发送消息等工具。</p></div>
+<p>调查先要弄清<b>模型提供方</b>与<b>应用部署方</b>的区别。前者可能提供底层模型或推理接口，后者决定将它接入什么业务、使用哪些政策文件、赋予何种权限。系统还可能涉及资料供应商、软件集成商和实际处理申请的机构。一个企业也可能同时承担多种角色，不能只凭“开发商”“使用者”等名称判断其实际职责。</p>
+<p>其次，要把<b>故障发生点</b>与<b>责任承担者</b>分开。旧文件导致回答错误，技术上可定位到知识库；但谁负有及时更新义务，要查采购合同、工作流程及适用法律。即便模型生成了错误内容，应用提供方是否应设置来源核验、显著提示或人工接管，也需要单独判断。</p>
+<p>最后，要区分<b>可观察记录</b>与<b>因果证明</b>。日志能够说明某次请求使用了哪个模型版本、检索到什么资料、是否触发审核；但日志可能不完整，记录到某个事件也不意味着它就是损害的原因。必要时还要重现问题、比较正确流程，并核查用户是否实际依赖答复。</p>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“答案是模型生成的，错误就全由模型公司负责。”模型生成只是事实环节；具体义务还取决于谁决定用途、管理资料、配置应用及面对用户提供服务。</span></div>
+<div class="myth"><b>误解 02</b><span>“合同约定由供应商负责，就能免除使用单位一切责任。”合同可安排双方分工和追偿，但能否对受影响者免责，仍须依适用的强制性法律及具体关系判断。</span></div>
+<div class="myth"><b>误解 03</b><span>“能从日志找到出错步骤，就已经证明法律责任。”技术追踪提供证据线索，不能替代义务来源、归责要件、因果关系与损害认定。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>谁掌握控制能力，就应具体审查谁承担了相应义务</h3>
+<p>政务智能问答尤其需要区分辅助咨询与正式行政决定。公共机关不能仅因为采用外部模型，就忽略政策更新、错误纠正、人工复核和申请人救济的组织责任；具体法律后果仍要结合系统用途与行政行为性质认定。采购和验收可以要求供应商明确接口边界、版本通知、故障协查与日志交付，同时由使用单位安排对外解释和纠错流程。</p>
+<p>比较法上，欧盟《人工智能法》第25条对特定高风险系统的价值链责任分配及特定修改情形下的主体角色转换作出规定，第26条规定相关部署者的使用和监督义务。它们不是适用于所有聊天机器人的统一赔偿规则，适用范围与实施时间应分别核实。</p>
+</div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>人工智能技术故障链与法律责任链如何衔接？</h3><p>以模型供给、应用集成和公共服务使用为层次，研究控制能力、注意义务及举证责任如何对应。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>政务智能体采购如何形成可执行的多主体责任协查机制？</h3><p>提出版本留痕、事故通报、供应商协查、人工复核与受影响者纠错等可验收要求。</p></div>
+</div></section>
+<section class="lesson-section"><h2>可靠来源</h2><ol class="source-links">
+<li><a href="https://airc.nist.gov/airmf-resources/airmf/5-sec-core/">美国国家标准与技术研究院（NIST），AI Risk Management Framework 1.0，第5节“AI RMF Core”（2023年）</a>。以治理、识别、测量、管理四项功能组织跨生命周期风险管理。</li>
+<li><a href="https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449">经合组织（OECD），Recommendation of the Council on Artificial Intelligence（2019年通过，2024年修订）</a>。第1.5项根据参与者角色和情境强调问责、可追溯性与合作。</li>
+<li><a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-25">欧盟《人工智能法》第25条（Responsibilities along the AI value chain）</a>。规定适用条件下高风险人工智能系统价值链中相关主体的职责及角色变化。</li>
+<li><a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-26">欧盟《人工智能法》第26条（Obligations of deployers of high-risk AI systems）</a>。规定适用范围内部署者的使用、监督、监测和记录等义务。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第52课</small><p>数据出境：调用境外模型时，数据究竟经过哪些技术路径？</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main><footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
