@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-07",
+  "column": "paper",
+  "state": "verified",
+  "phase": "deployment_check",
+  "page": "articles/2026-11-07-mackay-weinstein-dynamic-pricing-algorithms.html",
+  "selection": "Alexander MacKay; Samuel Weinstein, Dynamic Pricing Algorithms, Consumer Harm, and Regulatory Response",
+  "bibliography": {
+    "type": "article",
+    "author": "Alexander MacKay; Samuel Weinstein",
+    "originalTitle": "Dynamic Pricing Algorithms, Consumer Harm, and Regulatory Response",
+    "journal": "Washington University Law Review",
+    "year": "2022",
+    "volume": "100",
+    "issue": "1",
+    "pages": "111–174",
+    "doi": "",
+    "url": "https://wustllawreview.org/dynamic-pricing-algorithms-consumer-harm-and-regulatory-response/",
+    "cnTitle": "算法没有串通，为什么价格还是更高：动态定价与竞争法的边界"
+  },
+  "versions": {
+    "full_text": "Read complete publisher-hosted published HTML, introduction, Part I, Part II (models, empirical study), Part III (doctrine, regulatory options, innovation), conclusion and cited notes.",
+    "publication": "Published Washington University Law Review 100(1) 111-174 (2022); publication metadata cross-checked against Cardozo Law faculty repository; no DOI or working-paper data supplied."
+  },
+  "sources": [
+    "https://wustllawreview.org/dynamic-pricing-algorithms-consumer-harm-and-regulatory-response/",
+    "https://larc.cardozo.yu.edu/faculty-articles/545/"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-10-28-khan-amazons-antitrust-paradox.html"
+  ],
+  "timeline": null,
+  "body_length": 4669,
+  "checked_at": "2026-11-07",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  }
+}
