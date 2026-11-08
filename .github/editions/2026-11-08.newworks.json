@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-08",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-08-new-works.html",
+  "page_blob_sha": "f5952da16156fd041ff35e637ce9a5410f2dd23c",
+  "newworks_count": 3,
+  "checked_at": "2026-11-08T12:38:47.581Z",
+  "checks": {
+    "original_publisher_pages_opened": true,
+    "original_title_author_doi_verified": true,
+    "formal_journal_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "doi_title_author_version_repository_code_search": true,
+    "historical_indexes_checked": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html",
+      "new-works-history.html",
+      "GitHub main repository-wide code search against DOI, exact original titles and names, including articles/ and new-works/"
+    ],
+    "fields": [
+      "DOI",
+      "original title",
+      "author",
+      "journal/workpaper version"
+    ],
+    "matches_found": 0,
+    "note": "All three sources have publisher landing pages; for the two German Law Journal works the issue is labelled October 2025 but publisher states first online publication 2026-04-24."
+  },
+  "items": [
+    {
+      "cn_title": "生成式AI改变数字媒体后，法律应管技术还是管具体损害",
+      "author": "Gilad Abiri",
+      "original_title": "Digital Media Platforms and GenAI: A Case for Domain-Specific Regulation",
+      "journal": "German Law Journal",
+      "publisher": "Cambridge University Press",
+      "year": 2025,
+      "publication_date": "2026-04-24",
+      "volume": "26",
+      "issue": "Special Issue 7",
+      "pages": "1320–1340",
+      "article_number": null,
+      "doi": "10.1017/glj.2026.10184",
+      "publisher_page": "https://www.cambridge.org/core/journals/german-law-journal/article/digital-media-platforms-and-genai-a-case-for-domainspecific-regulation/84BEBC4EE6C5A8214F11C717C411E00A",
+      "version": "Cambridge journal article, October 2025 volume, first published online 2026-04-24"
+    },
+    {
+      "cn_title": "生成式搜索截流与影子封禁：内容可见性受损如何获得法律救济",
+      "author": "Danny Friedmann",
+      "original_title": "Great Disappearance Acts — Generative Search and Shadow Banning",
+      "journal": "German Law Journal",
+      "publisher": "Cambridge University Press",
+      "year": 2025,
+      "publication_date": "2026-04-24",
+      "volume": "26",
+      "issue": "Special Issue 7",
+      "pages": "1211–1234",
+      "article_number": null,
+      "doi": "10.1017/glj.2026.10194",
+      "publisher_page": "https://www.cambridge.org/core/journals/german-law-journal/article/great-disappearance-acts-generative-search-and-shadow-banning/1577721E11ED280DFA9198468DAD5911",
+      "version": "Cambridge journal article, October 2025 volume, first published online 2026-04-24"
+    },
+    {
+      "cn_title": "AI代理自行改变谈判议题与规则时，合同意思和责任如何认定",
+      "author": "Shun Okuhara",
+      "original_title": "Semantic indeterminacy in agentic negotiation: agreement after the recession of the principal",
+      "journal": "AI and Ethics",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-10-07",
+      "volume": "6",
+      "issue": null,
+      "pages": null,
+      "article_number": "583",
+      "doi": "10.1007/s43681-026-01436-1",
+      "publisher_page": "https://link.springer.com/article/10.1007/s43681-026-01436-1",
+      "version": "Springer published journal article"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "fd34da6cbafad6ca357582b621b558723b011112",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": false
+  },
+  "other_columns_at_record": {
+    "brief": "articles/2026-11-08-tech-law-brief.html",
+    "paper": "articles/2026-11-08-citron-sexual-privacy.html",
+    "classic": "articles/2026-11-08-kant-metaphysical-principles-of-right.html"
+  }
+}
