@@ -1,7 +1,7 @@
 {
   "date": "2026-11-08",
   "base_main_sha": "b9bb54f31c322cc76b18810ec51aa73fb394f23a",
-  "phase": "main_written_waiting_pages",
+  "phase": "published_verified",
   "publication_ready": true,
   "items": [
     {
@@ -198,17 +198,8 @@
     "Australia": "ATRC公告及中国钢材和铝材案件已巡视；11月6日主要为在办调查中企业材料递交而非新增税令",
     "Other": "伊朗、里海、中亚运输风险纳入CENTCOM新行动"
   },
-  "last_error": {
-    "stage": "source_link_validation",
-    "workflow_run_id": 42433366391,
-    "error": "Reuters original source returned HTTP 401 in GitHub source diagnostics (all three public pages and other 11 source URLs passed)",
-    "resolution": "Replace in issue with directly verified Anadolu Agency report; retain event and full facts"
-  },
-  "next_actions": [
-    "检查最后一次main提交d6fdf628对应Pages 42433722180部署结论",
-    "核验9条公开正文与首页归档首项；检查14条来源链接最新诊断",
-    "将结果写入本研究断点"
-  ],
+  "last_error": null,
+  "next_actions": [],
   "dedup": {
     "checked_dates": [
       "2026-11-01",
@@ -245,9 +236,9 @@
     "source_links": 14,
     "archive_entries": 61,
     "workflow_run_id": 42433722180,
-    "workflow_status": "queued",
-    "public_verified": false,
-    "publication_status": "main_updated_waiting_deploy",
+    "workflow_status": "success",
+    "public_verified": true,
+    "publication_status": "published_and_verified",
     "previous_publication_evidence": {
       "commit": "16b23df72aa6f50d320bb274e683779cf72d8bbb",
       "pages_run": 42433045705,
@@ -255,6 +246,35 @@
       "pages_checked": true,
       "source_diagnostic_run": 42433366391,
       "source_failure": "Reuters original 401; source replaced in final main"
+    },
+    "pages_workflow_run_id": 42433722180,
+    "pages_workflow_head_sha": "d6fdf6282fb0ed842376c4d6309933ac107c63fa",
+    "source_diagnostic_run_id": 42434027308,
+    "publication_guard_run_id": 42434027375,
+    "public_page_checks": [
+      {
+        "path": "issues/2026-11-08.html",
+        "status": 200,
+        "news_count": 9
+      },
+      {
+        "path": "index.html",
+        "status": 200
+      },
+      {
+        "path": "archive.html",
+        "status": 200
+      }
+    ],
+    "source_links_verified": 14,
+    "source_links_all_ok": true,
+    "verified_at": "2026-11-08T09:26:00+08:00",
+    "confirmation": "main三份文件与最终提交均已核验；Pages工作流42433722180成功，来源检查42434027308核验3页及14个实际来源URL全部成功；发布保障42434027375核验通过。",
+    "resolved_error": {
+      "stage": "source_link_validation",
+      "workflow_run_id": 42433366391,
+      "error": "Reuters original source returned HTTP 401 in GitHub source diagnostics (all three public pages and other 11 source URLs passed)",
+      "resolution": "Replace in issue with directly verified Anadolu Agency report; retain event and full facts"
     }
   }
 }
