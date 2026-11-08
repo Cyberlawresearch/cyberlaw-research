@@ -3,13 +3,47 @@
   "base_main_sha": "b9bb54f31c322cc76b18810ec51aa73fb394f23a",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "title": "FinCEN发布针对MEXC Global与俄罗斯非法融资联系的特别措施禁令",
+      "event_date": "2026-11-06",
+      "jurisdiction": "美国",
+      "stage": "最终命令已发布，但须待《联邦公报》刊登30天后生效",
+      "primary_source": "https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system",
+      "status": "awaiting complete PDF verification"
+    },
+    {
+      "title": "英国延长原产土耳其虹鳟鱼反补贴税",
+      "event_date": "2026-11-05",
+      "jurisdiction": "英国",
+      "stage": "已实施（2026-11-06）",
+      "primary_source": "https://www.gov.uk/government/publications/trade-remedies-notices-countervailing-duty-on-rainbow-trout-from-turkey/trade-remedies-notice-202631-countervailing-duty-rainbow-trout-from-turkey",
+      "status": "confirmed document preliminary review"
+    },
+    {
+      "title": "印度更新中国陶瓷餐具日落复审产品范围、调查程序",
+      "event_date": "2026-11-06",
+      "jurisdiction": "印度",
+      "stage": "调查进展、非终裁",
+      "primary_source": "https://dgtr.gov.in/en/anti-dumping-cases/anti-dumping-investigation-concerning-imports-ceramic-tablewares-and-kitchen",
+      "status": "PDF details to confirm"
+    }
+  ],
+  "coverage": {
+    "United States": "Nov 6 FinCEN order, USITC reviews, Commerce AD notices, USTR call under examination",
+    "European Union": "Nov 6 PET safeguard already in Nov 7 edition; seeking nonduplicative new measures",
+    "United Kingdom": "Nov 5/6 definitive Turkey rainbow trout CVD extension found",
+    "India": "Nov 6 ceramics and isopropyl alcohol questionnaire/product notices being examined",
+    "Japan": "searched METI/MOFA and targeted sources; no eligible material change found yet",
+    "South Korea": "searched MOTIE and targeted sources; no eligible material change found yet",
+    "Canada": "searched CBSA and targeted sources; no eligible material change found yet",
+    "Australia": "Nov 6 ATRC notices screened for meaningful procedural developments"
+  },
   "last_error": null,
   "next_actions": [
-    "核实2026-11-05至08日各法域重大监管事实",
-    "近7期事件级去重",
-    "逐一核实来源并生成正式页面",
-    "在GitHub main发布并验收Pages"
+    "检视官方PDF及法规细则并确认效力和期限",
+    "完成法域巡视、核实新事件并逐条去重",
+    "整理约5—10条有价值的最新事项并复核具体来源",
+    "核验全部条件后设置publication_ready，正式发布和验收"
   ]
 }
