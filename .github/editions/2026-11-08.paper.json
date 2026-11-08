@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-08",
+  "column": "paper",
+  "state": "verified",
+  "phase": "deployment_check",
+  "page": "articles/2026-11-08-citron-sexual-privacy.html",
+  "selection": "Danielle Keats Citron, Sexual Privacy",
+  "bibliography": {
+    "type": "article",
+    "author": "Danielle Keats Citron",
+    "originalTitle": "Sexual Privacy",
+    "journal": "Yale Law Journal",
+    "year": "2019",
+    "volume": "128",
+    "issue": "",
+    "pages": "1870–1960",
+    "doi": "",
+    "url": "https://yalelawjournal.org/article/sexual-privacy",
+    "cnTitle": "性隐私为何应成为独立的法律保护利益：数字侵害、平等与平台责任"
+  },
+  "versions": {
+    "full_text": "Read Yale Law Journal published PDF from introduction through Parts I-III and conclusion, including core doctrinal discussion, market proposals and relevant references.",
+    "publication": "Yale Law Journal volume 128 pages 1870–1960 (2019), published 9 May 2019; cross-checked with Virginia Law and Maryland Law repositories. SSRN is earlier posting/revision metadata; no issue/DOI verified."
+  },
+  "sources": [
+    "https://yalelawjournal.org/pdf/Citron_q8ew5jjf.pdf",
+    "https://yalelawjournal.org/article/sexual-privacy",
+    "https://www.law.virginia.edu/scholarship/publication/danielle-k-citron/1151896",
+    "https://digitalcommons.law.umaryland.edu/fac_pubs/1600/",
+    "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3233805"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-10-31-pozen-privacy-privacy-tradeoffs.html",
+    "articles/2026-11-05-chesney-citron-deep-fakes.html"
+  ],
+  "timeline": null,
+  "body_length": 3946,
+  "checked_at": "2026-11-08",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  }
+}
