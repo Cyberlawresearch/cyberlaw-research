@@ -1,7 +1,7 @@
 {
   "date": "2026-11-08",
   "base_main_sha": "b9bb54f31c322cc76b18810ec51aa73fb394f23a",
-  "phase": "publication_ready",
+  "phase": "main_written_waiting_pages",
   "publication_ready": true,
   "items": [
     {
@@ -205,9 +205,9 @@
     "resolution": "Replace in issue with directly verified Anadolu Agency report; retain event and full facts"
   },
   "next_actions": [
-    "更新trade-watch/issues/2026-11-08.html为9条及14个来源，替换401 Reuters链接",
-    "调整index latest和focus及archive count",
-    "校验main三文件，检查最新Pages和发布链接诊断"
+    "检查最后一次main提交d6fdf628对应Pages 42433722180部署结论",
+    "核验9条公开正文与首页归档首项；检查14条来源链接最新诊断",
+    "将结果写入本研究断点"
   ],
   "dedup": {
     "checked_dates": [
@@ -236,17 +236,25 @@
     "notes": "8项均为2026-11-05—07新公布内容；每项原始链接已通过网页核验，PDF以页图复核；荷兰代表处链接因无法直接打开而剔除，保留欧委会原始公告；最近7期事件级去重；结束前再次搜索Nov7-8贸易及监管公告，未发现足以替换的高价值新决定。；补查美国BIS《联邦公报》2026-22793号11月5日公开检阅最终规则及其4页PDF，页1已截图核验，纳入重要规则；GitHub源诊断显示路透社链接401，其余11条源和三个公开页面200且匹配，故同一事件改为可直接核验的新闻报道链接，不修改校验程序。"
   },
   "publication": {
-    "issue_commit": "882087b3bdd64fd95a0b138b0ef6e7aa07b02e98",
-    "index_commit": "2e44fd37f1e8cb310b85421c50aa9c3412bdead1",
-    "archive_commit": "25d36d8f1e283f0362192f9fec2bd14f03979335",
-    "main_final_sha": "25d36d8f1e283f0362192f9fec2bd14f03979335",
+    "issue_commit": "bcbf32b7d0869b2fe3a27865b85e4dd4a27257c9",
+    "index_commit": "f19a1ad61a9ab08f9ffc5d2bea035cd13b842c5b",
+    "archive_commit": "d6fdf6282fb0ed842376c4d6309933ac107c63fa",
+    "main_final_sha": "d6fdf6282fb0ed842376c4d6309933ac107c63fa",
     "main_files_verified": true,
-    "news_count": 8,
-    "source_links": 12,
+    "news_count": 9,
+    "source_links": 14,
     "archive_entries": 61,
-    "workflow_run_id": 42432918428,
-    "workflow_status": "in_progress",
+    "workflow_run_id": 42433722180,
+    "workflow_status": "queued",
     "public_verified": false,
-    "publication_status": "main_updated_deployment_pending"
+    "publication_status": "main_updated_waiting_deploy",
+    "previous_publication_evidence": {
+      "commit": "16b23df72aa6f50d320bb274e683779cf72d8bbb",
+      "pages_run": 42433045705,
+      "pages_success": true,
+      "pages_checked": true,
+      "source_diagnostic_run": 42433366391,
+      "source_failure": "Reuters original 401; source replaced in final main"
+    }
   }
 }
