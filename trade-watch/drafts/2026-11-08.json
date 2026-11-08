@@ -1,9 +1,31 @@
 {
   "date": "2026-11-08",
   "base_main_sha": "b9bb54f31c322cc76b18810ec51aa73fb394f23a",
-  "phase": "main_written_waiting_pages",
+  "phase": "publication_ready",
   "publication_ready": true,
   "items": [
+    {
+      "id": "us-bis-affiliates-extension",
+      "date": "2026-11-05",
+      "jurisdiction": "美国／美国商务部工业与安全局BIS、《联邦公报》",
+      "title": "美国正式发布出口管制关联实体规则延期文件，50%持股穿透限制继续暂停至2027年1月10日",
+      "stage": "最终规则已进入《联邦公报》公开检阅；定于2026-11-09正式刊登并生效",
+      "rank": 5,
+      "fact": "美国工业与安全局11月5日将《延长暂停对特定列名实体关联企业扩大最终用户管制规则》（FR Doc. 2026-22793）提交《联邦公报》公开检阅，预定11月9日公布并生效。最终规则把原定2026年11月9日结束的“Affiliates Rule”暂停期延长至2027年1月10日。该规则本拟将实体清单、军事最终用户清单等特定列名对象直接或间接合计拥有至少50%股权的未列名关联企业纳入相应出口许可要求；此次只延长暂停期限，不废止原规则，也不解除对已列名实体本身的现行限制。",
+      "scope": "受美国《出口管理条例》EAR约束的出口、再出口及境内转移；与实体清单、军事最终用户清单及相关受制裁股权关联企业交易的全球供应链。",
+      "impact": "中国半导体、先进计算、工业设备和科技企业及境外采购方可据此调整2026年11月10日前后关于未列名关联公司的交易许可判断和合同交货计划，暂不按该50%自动延伸机制新增EAR许可证义务；但须继续筛查交易对象是否本身列名、其他EAR最终用户限制和OFAC独立适用的50%规则，并保留股权证明以应对2027年1月后变化。",
+      "deadline": "最终规则2026年11月5日提交公开检阅，预定11月9日刊登并生效；暂停期延至2027年1月10日。",
+      "sources": [
+        {
+          "url": "https://www.federalregister.gov/d/2026-22793",
+          "label": "《联邦公报》2026-22793号公开检阅记录"
+        },
+        {
+          "url": "https://public-inspection.federalregister.gov/2026-22793.pdf",
+          "label": "BIS最终规则预公布全文（4页）"
+        }
+      ]
+    },
     {
       "id": "us-fincen-mexc",
       "date": "2026-11-06",
@@ -39,8 +61,8 @@
       "deadline": "2026年11月7日宣布设立；未公布统一许可申请截止日，也未公布新的关税或制裁名单。",
       "sources": [
         {
-          "url": "https://www.reuters.com/world/middle-east/expanding-naval-blockade-us-military-looks-restrict-iranian-land-commerce-2026-11-07/",
-          "label": "路透社11月7日关于CENTCOM行动公告的报道"
+          "url": "https://www.aa.com.tr/en/us-israel-iran-war/us-army-announces-new-task-force-to-disrupt-iran-s-supply-routes/4115245",
+          "label": "安纳多卢通讯社11月7日转述CENTCOM行动公告"
         }
       ]
     },
@@ -176,11 +198,16 @@
     "Australia": "ATRC公告及中国钢材和铝材案件已巡视；11月6日主要为在办调查中企业材料递交而非新增税令",
     "Other": "伊朗、里海、中亚运输风险纳入CENTCOM新行动"
   },
-  "last_error": null,
+  "last_error": {
+    "stage": "source_link_validation",
+    "workflow_run_id": 42433366391,
+    "error": "Reuters original source returned HTTP 401 in GitHub source diagnostics (all three public pages and other 11 source URLs passed)",
+    "resolution": "Replace in issue with directly verified Anadolu Agency report; retain event and full facts"
+  },
   "next_actions": [
-    "检查GitHub Pages 42432918428最终部署结论",
-    "核对公开正文、首页与归档、来源12个链接",
-    "保存真实验收状态与任何具体错误"
+    "更新trade-watch/issues/2026-11-08.html为9条及14个来源，替换401 Reuters链接",
+    "调整index latest和focus及archive count",
+    "校验main三文件，检查最新Pages和发布链接诊断"
   ],
   "dedup": {
     "checked_dates": [
@@ -200,13 +227,13 @@
       "印度气相法二氧化硅与医用手套调查结论（11月7日已刊）",
       "英国受管制货物海关故障申报指引（11月7日已刊）"
     ],
-    "new_events": "8条各为本窗口独立新增法律文件、行动组织或政策会谈事实"
+    "new_events": "9条2026-11-05—07日独立新增规则、行动组织、调查程序或政策会谈事实；BIS 50%关联实体规则暂停延长为11月5日公开检阅最终规则，与先前会谈预期不同。"
   },
   "verification": {
     "verified_at": "2026-11-08 Asia/Shanghai",
-    "sources_reviewed": 12,
+    "sources_reviewed": 14,
     "items": 8,
-    "notes": "8项均为2026-11-05—07新公布内容；每项原始链接已通过网页核验，PDF以页图复核；荷兰代表处链接因无法直接打开而剔除，保留欧委会原始公告；最近7期事件级去重；结束前再次搜索Nov7-8贸易及监管公告，未发现足以替换的高价值新决定。"
+    "notes": "8项均为2026-11-05—07新公布内容；每项原始链接已通过网页核验，PDF以页图复核；荷兰代表处链接因无法直接打开而剔除，保留欧委会原始公告；最近7期事件级去重；结束前再次搜索Nov7-8贸易及监管公告，未发现足以替换的高价值新决定。；补查美国BIS《联邦公报》2026-22793号11月5日公开检阅最终规则及其4页PDF，页1已截图核验，纳入重要规则；GitHub源诊断显示路透社链接401，其余11条源和三个公开页面200且匹配，故同一事件改为可直接核验的新闻报道链接，不修改校验程序。"
   },
   "publication": {
     "issue_commit": "882087b3bdd64fd95a0b138b0ef6e7aa07b02e98",
