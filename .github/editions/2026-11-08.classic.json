@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-08",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-08-kant-metaphysical-principles-of-right.html",
+  "target_path": "articles/2026-11-08-kant-metaphysical-principles-of-right.html",
+  "book": {
+    "author": "Immanuel Kant",
+    "original_title": "Metaphysische Anfangsgründe der Rechtslehre",
+    "publisher": "Friedrich Nicolovius (Königsberg); reading translation: T. & T. Clark (Edinburgh)",
+    "year": "1797",
+    "edition": "1797 German first edition bibliographically checked; William Hastie complete English translation, Edinburgh: T. & T. Clark, 1887, systematically read; no claim of verbatim collation with German first printing"
+  },
+  "source_urls": [
+    "https://en.wikisource.org/wiki/The_Philosophy_of_Law",
+    "https://en.wikisource.org/wiki/The_Philosophy_of_Law/Introduction",
+    "https://en.wikisource.org/wiki/The_Philosophy_of_Law/Part_1/Chapter_1",
+    "https://en.wikisource.org/wiki/The_Philosophy_of_Law/Part_1/Chapter_2",
+    "https://en.wikisource.org/wiki/The_Philosophy_of_Law/Part_1/Chapter_3",
+    "https://en.wikisource.org/wiki/The_Philosophy_of_Law/Part_2",
+    "https://en.wikisource.org/wiki/The_Philosophy_of_Law/Supplementary_Explanations",
+    "https://www.digitale-sammlungen.de/en/details/bsb10927012",
+    "https://www.e-rara.ch/zut/content/titleinfo/8060831",
+    "https://sclqld.org.au/catalogue/records/60510",
+    "https://grundlinien.de/en/29/",
+    "https://www.schopenhauers-kosmos.de/Strafe",
+    "https://minerva.mic.ul.ie/vol6/kantian.PDF",
+    "https://plato.stanford.edu/archives/fall2016/entries/kant-social-political/"
+  ],
+  "original_verification": "Wikisource W. Hastie 1887完整英文译本：总导论、法权导论、私法第一至三章、公法第43—62节及补充阐释均逐部分打开核对；1797年初版书目从BSB及ETH馆藏核对；译者说明与作者正文区分。",
+  "critics": [
+    {
+      "name": "G. W. F. Hegel",
+      "work": "Grundlinien der Philosophie des Rechts, §29 remark (1820/1821)",
+      "url": "https://grundlinien.de/en/29/",
+      "checked": "对将法权理解为外在任意选择相互限制的公式提出负面、形式化批评；直接核对§29评注"
+    },
+    {
+      "name": "Arthur Schopenhauer",
+      "work": "Die Welt als Wille und Vorstellung, Book IV, §62 (1819; later editions)",
+      "url": "https://www.schopenhauers-kosmos.de/Strafe",
+      "checked": "直接反对康德以报应本身说明刑罚目的，强调预防与威慑；核对其著作对应论证位置"
+    },
+    {
+      "name": "Hannelore Schröder",
+      "work": "Kant’s Patriarchal Order, in Feminist Interpretations of Immanuel Kant, ed. Robin May Schott (1997), 275–296",
+      "url": "https://minerva.mic.ul.ie/vol6/kantian.PDF",
+      "checked": "通过Mason Cash（2002）学术文章对作品与具体论点进行间接核对；未获取Schröder文章全文"
+    }
+  ],
+  "dedup_checked": [
+    "main classics.html完整日期书目与当日既有入口",
+    "classics-history.html第15—35期及更早书目",
+    "data/books.json历史补充索引",
+    "main现有classic核验指针"
+  ],
+  "duplicate_found": false,
+  "sections": 78,
+  "prose_length": 9233,
+  "checked_at": "2026-11-08",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
