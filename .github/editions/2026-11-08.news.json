@@ -4,10 +4,10 @@
   "state": "verified",
   "phase": "publishing",
   "page": "articles/2026-11-08-tech-law-brief.html",
-  "news_count": 11,
+  "news_count": 20,
   "distribution": {
-    "domestic": 1,
-    "foreign": 10
+    "domestic": 2,
+    "foreign": 18
   },
   "mode": "factual",
   "analysis_pending": true,
@@ -212,6 +212,200 @@
       "url": "https://www3.xinhuanet.com/tech/20261107/21e47a63f43740e5a4f91f2400435c32/c.html",
       "fact": "新华社11月7日在北京举行的第七届世界媒体峰会上发起全球媒体人工智能应用标准共建计划，包括新华社在内的22家中外媒体和专业机构加入。计划围绕信息真实性、数据安全和新闻伦理开展规范研究与联合验证，拟用两年左右形成兼顾共同原则和不同场景的应用规范，并建设应用案例库。此次是跨机构标准共建计划启动，不是国家标准发布或新增法律义务生效。",
       "legal_status": "voluntary_cross_institution_standard_cooperation_launched"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-06",
+      "jurisdiction": "中国",
+      "agency": "澎湃新闻马上测工作室；相关电商及短视频平台",
+      "title": "澎湃实测披露AI仿冒明星带货视频通过四家平台审核，提示标识与肖像授权不能混同",
+      "original_title": "马上测丨百元即可定制“明星带货视频”，AI盗脸非法产业何以猖獗？",
+      "source_name": "澎湃新闻",
+      "url": "https://m.thepaper.cn/newsDetail_forward_34404164",
+      "fact": "澎湃新闻11月6日公布原创调查：记者花350元定制三条AI仿冒明星带货视频，并在抖音、小红书、快手和视频号测试发布，发现勾选或未勾选AI生成标识的样本均通过审核。报道说明，测试结束后已删除全部测试视频并举报涉事店铺。这是媒体披露的样本实测，并非监管机关对四家平台作出的违法认定；AI标识也不等于获得肖像或声音使用授权。",
+      "legal_status": "journalistic_investigation_not_regulatory_finding",
+      "source_published_at": "2026-11-06T15:01:00+08:00",
+      "deduplication": "新增原创测试结果，不重复11月6日网信办专项整治通报；11月1至8日正文未刊该测试或来源。",
+      "background": "11月6日既有简报报道了网信部门AI仿冒公众人物治理通报。本条补充的是媒体对制作交易与平台审核环节的独立样本观察。",
+      "outlook": "若后续监管调查或平台复核确认审核缺口，可能推动对生成工具、发布者和传播平台责任的进一步区分；不能以少量样本推定所有内容或平台均存在相同问题。",
+      "id": "research-item-12"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "新加坡",
+      "agency": "新加坡网络安全局（CSA）、政府科技局（GovTech）及资讯通信媒体发展局（IMDA）",
+      "title": "新加坡三机构联合发布个人 AI 代理安全使用建议，强调权限限制和重要行动确认",
+      "original_title": "Joint Advisory by the Cyber Security Agency of Singapore, Government Technology Agency of Singapore and Infocomm Media Development Authority",
+      "source_name": "新加坡网络安全局",
+      "url": "https://www.csa.gov.sg/alerts-and-advisories/advisories/ad-2026-015/",
+      "fact": "新加坡网络安全局、政府科技局和资讯通信媒体发展局11月6日联合发布个人AI代理使用建议，提醒用户限制账户与数据访问范围，对发消息、删除或共享文件、公开发帖等重要行动保留确认，并定期检查活动和撤销不再需要的权限。建议还涉及持久记忆、提示注入以及代理行为给他人带来的影响。这是消费者安全指引，并非新法律。",
+      "legal_status": "joint_consumer_security_advisory",
+      "evidence": {
+        "published_at": "2026-11-06（官方网页日期，未提供具体时刻）",
+        "checked_at": "2026-11-08T13:37:55.131675+00:00",
+        "source_read": "已打开官方发布页及其链接的 8 页 PDF 全文。PDF 讨论权限、重大行动确认、应用设置、个人信息和记忆、提示注入、对他人的影响及责任。",
+        "deduplication": "对本地仓库 articles/2026-11-01 至 2026-11-08-tech-law-brief.html 按机构、事件名称及 URL 检索未见同一事件，并与既有 11 月 7、8 日条目核对",
+        "pdf_url": "https://isomer-user-content.by.gov.sg/36/b21d4369-83bc-4a8c-bbd7-4875c2b07e6c/Using%20Personal%20AI%20Agents%20Safely%20and%20Securely.pdf",
+        "pdf_title": "Using Personal AI Agents Safely and Securely: What Consumers Should Know",
+        "event_date_evidence": "官方网页标明 6 November 2026；附录所列产品设置截至 5 November 2026，不能用附录日期替代发布日",
+        "caution": "属于建议而非新法；责任取决于具体事实和适用法律，不能写成新设严格责任"
+      },
+      "id": "research-item-13"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "韩国",
+      "agency": "首尔行政法院／韩国个人信息保护委员会（PIPC）",
+      "title": "韩国法院暂缓执行 Coupang 约 2011 亿韩元个人信息侵害罚款，另一泄露案罚款仍维持执行",
+      "original_title": "법원, 쿠팡 2천억대 개인정보 '침해' 과징금 집행정지…'유출' 4천억대는 유지",
+      "source_name": "NEWSIS（纽西斯通讯社）",
+      "url": "https://mobile.newsis.com/view/NISX20261106_0003857949",
+      "fact": "据韩国纽西斯通讯社11月6日报道，首尔行政法院准许Coupang暂缓执行与未经同意收集第三方网站、应用活动记录有关的处罚，涉及约2011亿韩元罚款及纠正、公示命令，暂停至相关撤销诉讼一审判决宣告后30日。另一宗大规模资料泄露案约4235.75亿韩元罚款的暂缓申请此前被驳回。此次是临时停止执行，不是撤销处罚或实体胜诉。",
+      "legal_status": "interim_judicial_stay_of_administrative_penalty",
+      "evidence": {
+        "published_at": "2026-11-06T14:15:32+09:00",
+        "checked_at": "2026-11-08T13:37:55.131675+00:00",
+        "source_read": "已阅读 NEWSIS 原文及 SBS 交叉报道；未取得法院裁定原件，摘要明确归因媒体。",
+        "deduplication": "对本地仓库 articles/2026-11-01 至 2026-11-08-tech-law-brief.html 按机构、事件名称及 URL 检索未见同一事件，并与既有 11 月 7、8 日条目核对",
+        "secondary_url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008834360",
+        "secondary_status": "SBS 2026-11-06 16:13 韩文报道全文已读，交叉确认临时停止执行与两宗处罚区别",
+        "event_date_evidence": "报道明确首尔行政法院行政第一部 11 月 6 日裁定；另一宗暂缓申请于 11 月 5 日被驳回",
+        "amount_evidence": "本次 2011억600만원，即 2011.06 亿韩元；另一案 4235억7500만원，即 4235.75 亿韩元",
+        "caution": "临时停止执行不等于最终撤销；不能混淆未经同意收集第三方活动记录与另一起 3750 万人资料泄露案件"
+      },
+      "id": "research-item-14"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "加拿大",
+      "agency": "加拿大隐私专员办公室（OPC）",
+      "title": "加拿大隐私专员办公室公布智能设备隐私研究成果，涵盖车联网、FemTech 与健康语音 AI",
+      "original_title": "Completed 2025-2026 Contributions Program projects reveal insights related to personal information collection by smart devices",
+      "source_name": "加拿大隐私专员办公室",
+      "url": "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_261106/",
+      "fact": "加拿大隐私专员办公室11月6日公布2025—2026年度资助计划完成项目的研究成果摘要，涉及智能设备个人信息收集、健康相关机器听觉、联网汽车的隐私许可与同意、FemTech和智能手表等主题。这是监管机构资助的独立研究成果公开，不是新规、执法裁决或对相关产品作出合规认证。",
+      "legal_status": "regulator_funded_research_publication",
+      "evidence": {
+        "published_at": "2026-11-06（官方公告日期，未提供具体时刻）",
+        "checked_at": "2026-11-08T13:37:55.131675+00:00",
+        "source_read": "官方公告与链接的已完成研究项目目录均已阅读；目录中七个项目标注 2026-11-06。",
+        "deduplication": "对本地仓库 articles/2026-11-01 至 2026-11-08-tech-law-brief.html 按机构、事件名称及 URL 检索未见同一事件，并与既有 11 月 7、8 日条目核对",
+        "supporting_url": "https://www.priv.gc.ca/en/opc-actions-and-decisions/research/funding-for-privacy-research-and-knowledge-translation/completed-contributions-program-projects/",
+        "event_date_evidence": "公告首部 November 6, 2026、地点 Gatineau, Quebec；项目为 2025—2026 年度，新增事件为 11 月 6 日公布成果",
+        "caution": "七项研究合并为一则，不以项目数凑新闻数；未把项目标题延伸为未经核实的研究结论"
+      },
+      "id": "research-item-15"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "越南",
+      "agency": "商业软件联盟（BSA）／越南公安部",
+      "title": "BSA 就越南数据安全法更新草案提交意见，建议明确云服务和 AI 责任、减少重复评估",
+      "original_title": "BSA Comments on the Updated Draft Law on Data Security",
+      "source_name": "商业软件联盟（BSA）",
+      "url": "https://www.bsa.org/files/policy-filings/en11062026bsavtdraftdsl.pdf",
+      "fact": "商业软件联盟11月6日向越南公安部提交数据安全法更新草案意见，建议减少数据、隐私及网络安全制度之间的重复评估，明确云服务商和客户各自责任，并按模型开发者与部署者的实际控制能力分配AI训练及安全义务。意见还讨论跨境传输、加密密钥管理和实施过渡期。新增事件是行业协会提交意见，所评草案日期为9月28日，不是11月6日新立法或政府已采纳建议。",
+      "legal_status": "industry_submission_on_pending_legislation",
+      "evidence": {
+        "published_at": "2026-11-06（PDF 信函日期，未提供具体时刻）",
+        "checked_at": "2026-11-08T13:37:55.131675+00:00",
+        "source_read": "BSA 官方 6 页 PDF 全文已打开阅读；收件人为越南公安部，抄送国会国防、安全和对外事务委员会。",
+        "deduplication": "对本地仓库 articles/2026-11-01 至 2026-11-08-tech-law-brief.html 按机构、事件名称及 URL 检索未见同一事件，并与既有 11 月 7、8 日条目核对",
+        "event_date_evidence": "信函日期 6 November 2026；正文明确针对 28 September 2026 版本的草案",
+        "pdf_support": "正文有关减少重复评估、数据管理者与处理者职责、按实际控制能力区分 AI 开发者与部署者、跨境传输及密钥管理、过渡期的建议均直接支持摘要；未保存逐页定位，勿虚构页码",
+        "caution": "这是行业协会提出建议，不是立法通过、实施或政府采纳建议；草案版本日期不作为本次新事件日期"
+      },
+      "id": "research-item-16"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-07",
+      "jurisdiction": "美国／欧盟合规",
+      "agency": "Grok API运营方SpaceXSI（x.ai）",
+      "title": "Grok API对七款模型默认启用不可见文本水印，覆盖结构化输出和工具调用参数",
+      "original_title": "Output Watermarking",
+      "source_name": "x.ai开发者文档",
+      "url": "https://docs.x.ai/developers/advanced-api-usage/watermarking",
+      "fact": "Grok官方开发者文档明确，自11月7日起，Grok 4.7等七款模型的API文本输出默认带有不可见水印，适用于全球及区域端点，也覆盖结构化输出和工具调用参数。团队管理员可以按模型关闭水印，开发者可通过响应头确认是否启用。运营方将此列为遵守欧盟《人工智能法》的措施，但该说明本身并非监管机关作出的合规认证。",
+      "legal_status": "company_technical_compliance_measure_activated",
+      "evidence": {
+        "checked_at": "2026-11-08T13:35:00.098377+00:00",
+        "event_date_evidence": "官方文档正文明确Starting November 7, 2026；未把网页抓取日期当公布日期",
+        "source_read": "官方文档全文已打开，正文235—257行载明默认水印、七模型、全球/区域API、退出选项和响应头；317行后载明机制与限制",
+        "deduplication": "对本地main的11月1—8日news.json检索水印、watermark、Grok，未见同一事件",
+        "caution": "只能称运营方措施，不能声称全模型覆盖或监管认证；官方允许管理员退出"
+      },
+      "id": "research-item-17"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "欧元区",
+      "agency": "欧洲中央银行（ECB）",
+      "title": "彭博称欧洲央行考虑审查银行数据中心贷款，关注AI估值变化带来的信用风险",
+      "original_title": "ECB Considers Review of Bank Data Center Lending on AI Risk (1)",
+      "source_name": "Bloomberg News／Bloomberg Law",
+      "url": "https://news.bloomberglaw.com/crypto/ecb-considers-review-of-bank-data-center-lending-on-ai-risk-1",
+      "fact": "彭博社11月6日援引知情人士报道，欧洲央行正考虑审查受监管银行与数据中心相关的贷款，以评估人工智能市场预期和估值变化可能带来的风险。报道说，相关设想已在内部及与部分银行的讨论中提出；利率上升和数据中心建设阻力也是关注因素。这仍是媒体披露的审查设想，并非欧洲央行已正式宣布启动的专项行动。",
+      "legal_status": "reported_supervisory_review_under_consideration",
+      "evidence": {
+        "published_at": "2026-11-06T15:35:00Z",
+        "checked_at": "2026-11-08T13:35:00.098377+00:00",
+        "source_read": "Bloomberg Law原稿可读段落233—238及题名/日期已直接核对，后文付费截断；正文仅使用可读原段支持的内容",
+        "secondary_url": "https://ca.investing.com/news/stock-market-news/ecb-mulls-review-of-bank-lending-tied-to-data-centers--bloomberg-93CH-4939530",
+        "secondary_status": "全文打开，说明方案未定、ECB不予置评；该转述标注AI辅助编辑，因此不单独作为关键事实依据",
+        "deduplication": "11月2日期有ECB一般AI估值风险警示，但未报道此次数据中心贷款专项审查设想；11月6—8期未见此事",
+        "caution": "不能写为已启动审查或确定监管新规"
+      },
+      "id": "research-item-18"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-08",
+      "jurisdiction": "美国",
+      "agency": "美国商务部CAISSI及白宫",
+      "title": "美联社披露美国AI安全评估机构人员被要求向白宫非正式汇报，引发独立性争议",
+      "original_title": "Staff at the US center for AI safety are reporting to the White House, raising independence concerns",
+      "source_name": "Associated Press",
+      "url": "https://apnews.com/article/d3318eb2cf011df53e9ddb3e03d25f13",
+      "fact": "美联社11月8日援引两名前政府官员报道，美国商务部负责AI评估的CAISSI人员近期被要求向白宫一个办公室非正式汇报。报道指出，该机构缺乏正式负责人且已停止公开研究。白宫未具体回应这一安排；报道呈现的独立性担忧属于受访者评价，并非正式认定。",
+      "legal_status": "new_investigative_report_on_evaluation_governance",
+      "evidence": {
+        "published_at": "2026-11-08T08:06:40Z",
+        "checked_at": "2026-11-08T13:35:00.098377+00:00",
+        "source_read": "web open失败后经urllib读取AP原站HTML；JSON-LD datePublished为2026-11-08T08:06:40Z，RichTextStoryBody全文已阅读，保存/tmp/source-0.html。web搜索工具亦返回AP完整新闻正文，可互证",
+        "secondary_url": "https://abcnews.com/US/wireStory/staff-us-center-ai-safety-reporting-white-house-137950879",
+        "secondary_status": "AP授权转载原站HTML已读取，datePublished 2026-11-08T08:06:38.000Z，保存/tmp/source-1.html",
+        "deduplication": "11月6日已刊司法部超级智能工作组，与本次商务部评估机构汇报线不同；11月1—8期未见CAISSI此项新披露",
+        "caution": "CAISSI为该报道采用名称，勿替换为旧名CAISI；非正式汇报安排为匿名来源披露，不能写为已公布组织架构改革；停止发报告是背景，不以11月8日为停止日期",
+        "agency_full_name": "Center for Advancing Innovation and Standards for Super Intelligence (CAISSI)；原文还说其直到近期称 U.S. Center for AI Standards and Innovation"
+      },
+      "id": "research-item-19"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-06",
+      "jurisdiction": "菲律宾",
+      "agency": "菲律宾国家隐私委员会（NPC）",
+      "title": "菲律宾隐私监管机构回应多部门疑似数据泄露，将核实事件并重申72小时通报规则",
+      "original_title": "STATEMENT OF THE NATIONAL PRIVACY COMMISSION ON REPORTED DATA LEAKS INVOLVING GOVERNMENT AGENCIES",
+      "source_name": "菲律宾国家隐私委员会",
+      "url": "https://privacy.gov.ph/statement-of-the-national-privacy-commission-on-reported-data-leaks-involving-government-agencies/",
+      "fact": "菲律宾国家隐私委员会11月6日回应前一日有关多个政府机构疑似数据泄露的报道，称尚未收到相关机构的个人数据泄露通知，将直接联系并核实事实。委员会重申，符合强制通报条件的事件应在知悉或合理相信发生泄露后72小时内通知监管机构及受影响者；媒体传闻本身不等于已经确认泄露或违反数据保护法。",
+      "legal_status": "regulator_verification_of_alleged_breaches",
+      "evidence": {
+        "published_at": "2026-11-06 12:25 PM（原站显示，未单列时区）",
+        "checked_at": "2026-11-08T13:35:00.098377+00:00",
+        "source_read": "官方独立声明页全文已读；57—65行显示日期、未收到通知、拟直接核实、72小时规则以及未经确认的性质",
+        "event_date_evidence": "本条新事项为11月6日监管回应和拟核实行动，疑似事故报道日期为11月5日；并非将11月5日事故当作已确认",
+        "deduplication": "本地11月1—8日核验记录未出现此声明或菲律宾此事件",
+        "caution": "不能写成确认多部门泄露、已罚款或已立案；尚未收到通知不自动构成违法"
+      },
+      "id": "research-item-20"
     }
   ],
   "publication": {
@@ -236,6 +430,27 @@
     },
     "publication": {
       "status": "awaiting_deployment"
+    }
+  },
+  "expansion": {
+    "checked_at": "2026-11-08T13:38:05.646406+00:00",
+    "scope": "本轮新增九条逐源核验与11月1—8日事件去重；原十一条事实与引文保持不变，不声称本轮重读其全部来源。",
+    "evidence_record": ".github/editions/2026-11-08.expansion-review.json",
+    "added_ids": [
+      "research-item-12",
+      "research-item-13",
+      "research-item-14",
+      "research-item-15",
+      "research-item-16",
+      "research-item-17",
+      "research-item-18",
+      "research-item-19",
+      "research-item-20"
+    ],
+    "article_sha256": "7df38fbd7a20b18b4f3955b7faac8dad223ebfb122d851c36529c8018ce661b6",
+    "publication": {
+      "status": "prepared_for_deployment",
+      "final_verification_location": "publication PR body"
     }
   }
 }
