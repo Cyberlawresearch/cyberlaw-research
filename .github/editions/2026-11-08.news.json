@@ -4,9 +4,9 @@
   "state": "verified",
   "phase": "publishing",
   "page": "articles/2026-11-08-tech-law-brief.html",
-  "news_count": 10,
+  "news_count": 11,
   "distribution": {
-    "domestic": 0,
+    "domestic": 1,
     "foreign": 10
   },
   "mode": "factual",
@@ -199,6 +199,19 @@
       "legal_status": "reported_private_funding",
       "domestic": false,
       "id": "research-item-10"
+    },
+    {
+      "id": "research-item-11",
+      "domestic": true,
+      "date": "2026-11-07",
+      "jurisdiction": "中国·北京／国际合作",
+      "agency": "新华通讯社及22家中外媒体、专业机构",
+      "title": "新华社启动全球媒体AI应用标准共建计划，拟用约两年形成联合验证的应用规范",
+      "original_title": "全球媒体人工智能应用标准共建计划正式启动",
+      "source_name": "新华网",
+      "url": "https://www3.xinhuanet.com/tech/20261107/21e47a63f43740e5a4f91f2400435c32/c.html",
+      "fact": "新华社11月7日在北京举行的第七届世界媒体峰会上发起全球媒体人工智能应用标准共建计划，包括新华社在内的22家中外媒体和专业机构加入。计划围绕信息真实性、数据安全和新闻伦理开展规范研究与联合验证，拟用两年左右形成兼顾共同原则和不同场景的应用规范，并建设应用案例库。此次是跨机构标准共建计划启动，不是国家标准发布或新增法律义务生效。",
+      "legal_status": "voluntary_cross_institution_standard_cooperation_launched"
     }
   ],
   "publication": {
@@ -206,5 +219,23 @@
     "pages_run_id": null,
     "pages_conclusion": null,
     "online_acceptance": null
+  },
+  "supplement": {
+    "checked_at": "2026-11-08T20:22:31.008918+08:00",
+    "scope": "独立国内查漏；原十条域外内容未重新逐源核验",
+    "evidence_record": ".github/editions/2026-11-08.domestic-review.json",
+    "added_ids": [
+      "research-item-11"
+    ],
+    "article_sha256": "4a25e2ef2789250721a2589b70d917f0dfa1df34aec4887f3a2bebed750f8dda",
+    "checks": {
+      "source_original_read": true,
+      "event_time_within_72h": true,
+      "nov1_to_nov7_deduplication": true,
+      "original_ten_facts_preserved": true
+    },
+    "publication": {
+      "status": "awaiting_deployment"
+    }
   }
 }

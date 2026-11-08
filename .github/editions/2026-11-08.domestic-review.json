@@ -1,0 +1,87 @@
+{
+  "checked_at": "2026-11-08T20:22:31.008918+08:00",
+  "scope": "基于定向检索、列明入口和候选原文的国内独立复核；不是对每个列名媒体全站逐页穷尽检查。搜索无命中不等于不存在。",
+  "groups": [
+    {
+      "group": "中央监管与司法",
+      "method": "定向检索网信办、工信部、市场监管总局、最高法、最高检；读取网信要闻、工信部移动政策列表及候选原文",
+      "result": "智能体进网、机器人标识码、金融黑灰产均11月6日期已收"
+    },
+    {
+      "group": "中央及专业媒体",
+      "method": "定向检索新华社、人民网、央视、央广、中新网、法治日报、人民法院报、检察日报、劳动保障报；读取中新网法治栏目及命中原文",
+      "result": "新增媒体AI共建计划；专业报刊部分定向检索无可靠新事件，不声称全站核验"
+    },
+    {
+      "group": "标准主管机构",
+      "urls": [
+        "https://www.tc260.org.cn/",
+        "https://www.samr.gov.cn/bzjss/",
+        "https://miittc1.caict.ac.cn/"
+      ],
+      "result": "TC260最新新闻11月4日；标准司相关标准公告11月4日，超时效；工信AI标委网页动态列表正文未展开，不能确认完整覆盖"
+    },
+    {
+      "group": "测试评估机构",
+      "urls": [
+        "https://www.itsec.gov.cn/",
+        "https://www.caict.ac.cn/",
+        "https://bbs.360.cn/forum.php?mod=viewthread&tid=16188040"
+      ],
+      "result": "测评中心首页读取；信通院首页超时；CyberGym 99.4%原始社区稿10月30日，11月6日媒体重报不收"
+    },
+    {
+      "group": "地方数据与财政",
+      "urls": [
+        "https://www.nda.gov.cn/sjj/zwgk/list/index_pc_1.html",
+        "https://ysj.ln.gov.cn/ysj/ztzl/szlnjs/index.shtml",
+        "https://sjj.hunan.gov.cn/"
+      ],
+      "method": "另以11月6日/7日+算力券、数据交易、财政厅定向搜索",
+      "result": "辽宁算力券原通知10月22日；湖南近期多为改革案例或规划解读；财政检索主要为日常采购，不当新产业政策。云南规划线索成文与新闻日期不一，未核得窗口内新增行为，未收"
+    },
+    {
+      "group": "财经媒体",
+      "method": "日期+数据/AI/平台组合检索财新、第一财经、21世纪经济报道、证券时报、经济观察报",
+      "result": "中国移动算力计划11月6日已收；新命中多为采访观点、旧事项解读；未作为新增监管事件"
+    },
+    {
+      "group": "综合媒体",
+      "method": "日期+数据/AI/平台组合检索澎湃、界面、新京报、南方都市报",
+      "result": "澎湃智能指环下架线索原文两种URL访问失败，未仅凭摘要发布；不把域外旧报道重新标为国内"
+    },
+    {
+      "group": "科技安全媒体",
+      "method": "日期+AI/安全组合检索36氪、虎嗅、钛媒体、雷峰网、量子位、机器之心、安全内参、FreeBuf",
+      "result": "已核CyberGym为旧事件；OpenSSH、GPT-6 Cyber、智能体进网已收；其他观点或营销稿不凑数"
+    }
+  ],
+  "accepted": [
+    {
+      "id": "research-item-11",
+      "url": "https://www3.xinhuanet.com/tech/20261107/21e47a63f43740e5a4f91f2400435c32/c.html",
+      "published_at": "2026-11-07T19:17:27+08:00",
+      "event_date": "2026-11-07",
+      "legal_status": "voluntary_cross_institution_standard_cooperation_launched",
+      "background_url": "https://www.news.cn/politics/20261107/2853cb5286064053b1b18588f6c4697e/c.html"
+    }
+  ],
+  "excluded": [
+    {
+      "topic": "AI办公被辞退案",
+      "new_repost": "https://www.chinanews.com.cn/fz/2026/11-06/10727230.shtml",
+      "prior_report": "https://www.chinanews.com/fz/2026/10-15/10714760.shtml",
+      "reason": "同案10月15日已报道，不是新裁判"
+    },
+    {
+      "topic": "出售房东信息获刑",
+      "url": "https://www.chinanews.com/sh/2026/11-06/10726997.shtml",
+      "reason": "11月2日典型案例再解读，判决2025年7月4日"
+    },
+    {
+      "topic": "复刻声音商用案",
+      "url": "https://society.people.com.cn/n1/2026/1107/c1008-40829610.html",
+      "reason": "9月宣判，11月7日为评论稿"
+    }
+  ]
+}
