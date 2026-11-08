@@ -1,0 +1,210 @@
+{
+  "date": "2026-11-08",
+  "column": "brief",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-08-tech-law-brief.html",
+  "news_count": 10,
+  "distribution": {
+    "domestic": 0,
+    "foreign": 10
+  },
+  "mode": "factual",
+  "analysis_pending": true,
+  "checked_at": "2026-11-08T11:15:03.895Z",
+  "last_news_scan_at": "2026-11-08T11:15:03.895Z",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": true,
+    "natural_chinese_reviewed": true,
+    "background_outlook": true,
+    "foreign_layout": true
+  },
+  "coverage": [
+    {
+      "source_group": "中国中央机关、标准化机构及专业媒体",
+      "status": "searched_no_new_addition",
+      "result": "已进行中央网信、工信、法院、国家数据政策及新闻媒体定向与反向搜索；11月6日主要政策、司法事项已在11月6日至7日历史期刊收录"
+    },
+    {
+      "source_group": "中国地方财政、数据与AI产业政策",
+      "status": "searched_no_new_addition",
+      "result": "检索地方数据、算力、AI政策；未发现满足本期时效、核验及去重条件的新增官方文件"
+    },
+    {
+      "source_group": "欧盟成员国、英国与欧洲媒体",
+      "status": "verified_additions",
+      "result": "核验11月6日荷兰数据中心选址抗议和欧洲多国同期行动，区分社会行动与正式公共政策"
+    },
+    {
+      "source_group": "美国联邦、州机关及可靠媒体",
+      "status": "verified_additions",
+      "result": "核验新一届国会AI议案计划、得州拟议数据中心政策、白宫顾问会议取消及OpenAI融资报道"
+    },
+    {
+      "source_group": "日本本地语官方企业公告及安全媒体",
+      "status": "verified_additions",
+      "result": "查阅日语企业公告，核验Maru-Jan、乐敦制药及TeamSpirit公告，对照JNSA专业媒体和原始调查范围"
+    },
+    {
+      "source_group": "韩国、越南及东南亚和大洋洲",
+      "status": "searched_no_new_addition",
+      "result": "使用当地语言及英语查验最新监管与安全报道，未强行补入缺少直接证据或已报道事件"
+    },
+    {
+      "source_group": "国际安全研究及企业公告",
+      "status": "verified_additions",
+      "result": "查阅CTM360新披露的多品牌礼品卡钓鱼报告"
+    },
+    {
+      "source_group": "72小时窗口、11月1日至7日历史与最新来源复查",
+      "status": "searched",
+      "result": "对照近七日各期事件级标题及昨天全部正文，排除同一案件仅复述的消息；当期逐条保留新增披露或独立政策行动"
+    }
+  ],
+  "items": [
+    {
+      "date": "2026-11-07",
+      "jurisdiction": "日本",
+      "agency": "Maru-Jan运营商Signal Talk",
+      "title": "日本网络麻将平台Maru-Jan确认185万余名会员邮箱及密码泄露",
+      "original_title": "オンライン麻雀「Maru-Jan」への不正アクセスによる会員情報流出のお詫びとご報告",
+      "source_name": "Signal Talk（PR TIMES公告）",
+      "url": "https://prtimes.jp/main/html/rd/p/000000136.000009867.html",
+      "fact": "日本网络麻将平台Maru-Jan运营商11月7日公告，外部人员利用后台管理系统非法取得会员数据，涉及185万5578名会员的电子邮箱地址及密码。公司称已修复相关漏洞，并于当日恢复服务，提醒用户变更登录密码。",
+      "legal_status": "company_confirmed_data_breach",
+      "domestic": false,
+      "id": "research-item-1"
+    },
+    {
+      "date": "2026-11-06",
+      "jurisdiction": "日本",
+      "agency": "乐敦制药（Rohto Pharmaceutical）",
+      "title": "日本乐敦制药公布客户数据泄露调查结果，涉及约280万条个人记录",
+      "original_title": "不正アクセスによるお客様の個人データ漏えいに関するお詫びとお知らせ",
+      "source_name": "乐敦制药",
+      "url": "https://www.rohto.co.jp/news/whatsnew/2026/1106_01",
+      "fact": "乐敦制药11月6日更新此前发生的网络入侵调查，确认其客户管理系统中279万7545条客户个人数据遭外部人员取得。公司另发现9715条客户接待记录包含电话沟通中记录的信用卡号码或有效期等信息，并说明此前已向警方及个人信息保护委员会报告。",
+      "legal_status": "confirmed_breach_investigation_update",
+      "domestic": false,
+      "id": "research-item-2"
+    },
+    {
+      "date": "2026-11-06",
+      "jurisdiction": "日本",
+      "agency": "TeamSpirit",
+      "title": "日本企业软件公司TeamSpirit披露开发服务器入侵，逾2.8万人信息外泄",
+      "original_title": "不正アクセスによる情報漏えいに関するお詫びとお知らせ",
+      "source_name": "TeamSpirit",
+      "url": "https://corp.teamspirit.com/news/information/2026/11/2026_1106_01/",
+      "fact": "企业软件服务商TeamSpirit于11月6日披露，攻击者10月27日侵入开发服务器后，利用其中保存的认证信息访问云端数据。经调查，涉及2万8824人的个人信息，其中35人的记录包含敏感信息；公司已采取封堵和凭证更新等措施。",
+      "legal_status": "confirmed_data_breach",
+      "domestic": false,
+      "id": "research-item-3"
+    },
+    {
+      "date": "2026-11-07",
+      "jurisdiction": "日本",
+      "agency": "日本网络安全协会（JNSA）",
+      "title": "日本网络安全协会数据安全测试服务遭入侵，最多1.5万余条信息可能受影响",
+      "original_title": "JNSAの理解度チェックサービスに不正アクセス、最大1万5,128件の個人情報が漏えいの恐れ",
+      "source_name": "CyberSecurity-JP",
+      "url": "https://cybersecurity-jp.com/news/118177",
+      "fact": "日本网络安全协会11月6日就其信息安全理解度检查服务遭未经授权访问公布调查情况。日本安全媒体11月7日报道，相关服务最多有1万5128条个人信息可能受到影响，包括账户信息及有关组织、电子邮箱等资料，协会正调查数据外泄范围。",
+      "legal_status": "suspected_data_breach_investigation",
+      "domestic": false,
+      "id": "research-item-4"
+    },
+    {
+      "date": "2026-11-07",
+      "jurisdiction": "国际",
+      "agency": "网络安全研究机构CTM360",
+      "title": "CTM360披露跨品牌礼品卡钓鱼活动，识别逾千起相关诈骗线索",
+      "original_title": "Gift Card Scams: Fake Rewards & Brand Impersonation",
+      "source_name": "CTM360",
+      "url": "https://www.ctm360.com/reports/gift-card-scams",
+      "fact": "网络安全研究机构CTM360公布针对多个国际品牌的假冒礼品卡诈骗活动调查，识别超过1000起相关欺诈线索。攻击者通过冒充知名品牌和投放社交媒体广告，引导用户进入虚假奖励页面，索取个人及支付信息，部分页面还诱导用户订购收费服务。",
+      "legal_status": "security_research_disclosure",
+      "domestic": false,
+      "id": "research-item-5"
+    },
+    {
+      "date": "2026-11-06",
+      "jurisdiction": "美国",
+      "agency": "美国国会民主党议员",
+      "title": "美国民主党议员拟推动新一轮人工智能立法，涉及模型评测、责任及数据中心电价",
+      "original_title": "Democrats planning flood of AI bills when they take control of Congress",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/democrats-planning-flood-ai-bills-when-they-take-control-congress-2026-11-06/",
+      "fact": "路透社11月6日报道，美国国会民主党议员正在准备一批人工智能相关法案，拟于新一届国会提出。讨论方向包括先进人工智能模型安全评测、人工智能产品造成损害后的责任分配，以及避免数据中心电力成本转嫁普通用电者。",
+      "legal_status": "announced_legislative_plans",
+      "domestic": false,
+      "id": "research-item-6"
+    },
+    {
+      "date": "2026-11-06",
+      "jurisdiction": "美国·得克萨斯州",
+      "agency": "得克萨斯州当选州长Gina Hinojosa",
+      "title": "美国得州当选州长提出数据中心建设限制方案，重点涉及水资源及社区参与",
+      "original_title": "Texas governor-elect says state will have laws to shield citizens from data centers",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/us/texas-governor-elect-says-state-will-have-laws-shield-citizens-data-centers-2026-11-06/",
+      "fact": "得克萨斯州当选州长Gina Hinojosa在11月5日表示，将推动保护居民免受大型数据中心建设影响的州法律。她提出在制定规则前暂缓部分项目推进，重点讨论农村社区水资源、电力需求和地方居民对项目选址的参与。",
+      "legal_status": "governor_elect_policy_pledge",
+      "domestic": false,
+      "id": "research-item-7"
+    },
+    {
+      "date": "2026-11-06",
+      "jurisdiction": "美国",
+      "agency": "美国白宫科技政策机构",
+      "title": "美国白宫取消人工智能高级科技顾问会议，原计划讨论超级智能政策",
+      "original_title": "Trump administration scraps meeting of high-profile tech panel",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/us/trump-administration-scraps-meeting-panel-that-includes-metas-zuckerberg-nvidias-2026-11-06/",
+      "fact": "据路透社11月6日报道，美国政府取消原定当天举行的总统科技顾问委员会会议，参会阵容包括英伟达、Meta等企业高管。会议原计划涉及超级智能技术政策及政府有关工作安排，白宫尚未公布新的正式会期。",
+      "legal_status": "official_meeting_cancellation_report",
+      "domestic": false,
+      "id": "research-item-8"
+    },
+    {
+      "date": "2026-11-06",
+      "jurisdiction": "荷兰及欧洲多国",
+      "agency": "Stop Dirty Data Centres倡议团体",
+      "title": "欧洲多国出现数据中心建设抗议，荷兰活动人士进入微软建设工地",
+      "original_title": "Activists breach Microsoft data centre construction site as protests spread in Europe",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/europe/activists-breach-microsoft-data-centre-construction-site-protests-spread-europe-2026-11-06/",
+      "fact": "路透社11月6日报道，荷兰约百名活动人士进入微软一处数据中心建设工地，抗议项目用电、用水及土地占用问题。欧洲多国团体在11月6日至7日组织相关活动，要求在审批和建设大型数据中心时加强环境资源评估和地方公众参与。",
+      "legal_status": "civil_society_protests",
+      "domestic": false,
+      "id": "research-item-9"
+    },
+    {
+      "date": "2026-11-07",
+      "jurisdiction": "美国",
+      "agency": "OpenAI及投资机构",
+      "title": "OpenAI据报完成约110亿美元融资，估值达到1.25万亿美元",
+      "original_title": "OpenAI gets $11 billion funding at $1.25 trillion valuation, source says",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/openai-secures-11-billion-funding-125-trillion-valuation-bloomberg-news-reports-2026-11-06/",
+      "fact": "路透社11月6日援引知情人士披露，OpenAI获得约110亿美元新融资，交易估值约1.25万亿美元。报道提及软银等机构参与资本安排；相关交易规模与估值为媒体所获信息。",
+      "legal_status": "reported_private_funding",
+      "domestic": false,
+      "id": "research-item-10"
+    }
+  ],
+  "publication": {
+    "commit_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "online_acceptance": null
+  }
+}
