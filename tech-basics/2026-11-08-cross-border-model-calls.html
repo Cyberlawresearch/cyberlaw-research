@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>第52课｜数据出境：调用境外模型时，数据究竟经过哪些技术路径？｜网信法技术基础</title>
+<link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../briefs.html">全球科技法简报</a><a href="../papers.html">域外法学论文精读</a><a href="../classics.html">法学经典著作</a><a href="../new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 52 · LAW &amp; GOVERNANCE · 2026.11.08</div><h1>数据出境：调用境外模型时，数据究竟经过哪些技术路径？</h1><p class="tech-lead">今日问题：企业使用境外人工智能接口，一段输入为什么可能经过多个地点和服务？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus"><div><strong>它是什么</strong><p><b>模型调用中的数据出境路径</b>，是用户输入、系统补充的资料和模型输出在网络传输、服务处理与记录保存中经过的实际节点。判断数据流向，既要看发送给谁，也要看数据在哪里被计算、保存，以及谁能够远程访问。</p></div><div><strong>一个生活例子</strong><p>一家境内企业用智能体审阅供应合同。员工只输入“查找付款风险”，企业系统却可能把合同片段、联系人和交易金额一并放入请求，发送给境外模型。模型答复返回境内后，系统又将结果存进业务记录。屏幕上的一句提问，并不等于实际发送的全部数据。</p></div></section>
+<section class="lesson-section"><h2>机制图：一次调用经过哪些节点？</h2>
+<div class="visual-board" role="group" aria-label="境内用户通过企业应用和网关调用境外模型，生成结果返回并在部分节点形成日志的示意流程">
+<div class="visual-title">以境内企业接入境外推理服务为例：实线表示主要请求与返回路径；各节点还可能保留记录。</div>
+<div class="flow">
+<div class="flow-box"><strong>① 境内用户</strong><span>输入问题，上传或选择合同</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>② 企业应用</strong><span>检索片段，拼接请求，检查权限</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>③ 接口网关</strong><span>鉴权、转发，可能跨区域路由</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>④ 模型推理</strong><span>计算输入，产生回答并返回</span></div>
+</div>
+<div class="compare-grid">
+<div class="compare-card"><b>发送什么</b><p>用户提问、合同片段、系统指令，有时还有工具返回内容。</p></div>
+<div class="compare-card"><b>在哪里处理</b><p>网关所在地不一定等于模型实际运行的区域，需核实服务部署方式。</p></div>
+<div class="compare-card"><b>在哪里留下记录</b><p>企业日志、服务安全记录及输出存储可能分属不同节点和期限。</p></div>
+</div><p class="tiny-note">返回方向为④→③→②→①。示意的是一种常见架构；具体产品可能直连模型，也可能经境内代理或多个云区域。各节点是否保存正文，要依据实际配置核实。</p></div>
+<p>第一步是分清<b>用户输入</b>和<b>实际请求</b>。应用采用检索增强生成（RAG）时，会先从内部资料中挑选相关片段，再与提问一同发送。若应用还调用外部工具，工具返回的信息也可能进入后续模型请求。因此，界面没有直接显示某项数据，不意味着该数据没有进入传输链。</p>
+<p>第二步是区分<b>接口入口</b>和<b>推理地点</b>。API是应用向模型服务提交请求的接口；推理是模型处理输入、生成输出的计算过程。云平台可能在固定区域处理，也可能按部署类型跨区域调度。微软的模型部署文档区分全球、数据区域和区域部署；亚马逊的跨区域推理文档也要求核对实际目标区域。不能仅凭服务商名称或账单地址确定处理地点。</p>
+<p>第三步要分别核对<b>传输、计算、保存和访问</b>。请求经过网络不等于每个中转节点都长期存储正文；推理完成也不必然意味着服务商保留所有输入。相反，安全监测日志、错误排查记录或应用自身保存的对话，可能另有处理规则。即使服务器位于境内，境外主体能远程访问的数据仍需单独核查。</p>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“只发送一个提问，没有发送合同。”应用可能自动添加检索片段、历史上下文和工具结果，应检查请求的实际内容。</span></div>
+<div class="myth"><b>误解 02</b><span>“选择了一个云区域，数据就只在该区域处理。”部分服务采用跨区域推理，应分别核对入口区域、推理区域和存储区域。</span></div>
+<div class="myth"><b>误解 03</b><span>“使用加密连接，就没有数据出境问题。”加密保护传输过程，境外服务处理解密后的内容时，仍然存在跨境提供及处理事实。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>数据出境判断要落实到实际处理链条</h3>
+<p>企业应先弄清输入中是否包含个人信息或重要数据，识别实际境外接收方、访问主体及数据用途，再适用相应规则。我国《个人信息保护法》与2024年《促进和规范数据跨境流动规定》对个人信息出境设置了不同条件和适用安排，并非所有跨境调用都适用同一种程序。合同与采购核查可以要求提供处理区域、跨区域路由、日志留存、分包服务及远程访问的信息，以便将法律判断建立在可验证的技术事实之上。</p>
+</div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>动态路由下的数据出境行为应如何认定？</h3><p>区分传输节点、实际推理区域和境外远程访问，研究数据提供行为的识别及举证责任。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>境外模型服务采购如何核验数据实际流向？</h3><p>研究请求内容抽查、服务区域清单、留存配置与远程访问记录等可操作的验收办法。</p></div>
+</div></section>
+<section class="lesson-section"><h2>可靠来源</h2><ol class="source-links">
+<li><a href="https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/deployment-types">Microsoft Learn，Understanding deployment types in Microsoft Foundry Models</a>。说明全球、数据区域及区域部署的数据处理范围与存储区别。</li>
+<li><a href="https://docs.aws.amazon.com/bedrock/latest/userguide/inference-profiles-support.html">Amazon Bedrock，Supported Regions and models for inference profiles</a>。说明源区域、目标区域与跨区域推理的实际路由核查方法。</li>
+<li><a href="https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm">国家互联网信息办公室，《促进和规范数据跨境流动规定》（2024年3月22日施行）</a>。规定数据出境不同情形下的制度安排。</li>
+<li><a href="https://www.cac.gov.cn/2024-03/22/c_1712776625820516.htm">中国网信网，专家解读《促进和规范数据跨境流动的重要规定》（2024年3月22日）</a>。讨论跨境传输与境外远程访问两类情形。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第53课</small><p>基础设施权力：为什么云平台和算力服务会影响人工智能治理？</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main><footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
