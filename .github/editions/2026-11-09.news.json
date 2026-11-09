@@ -4,10 +4,10 @@
   "state": "verified",
   "phase": "published_pending_deploy",
   "page": "articles/2026-11-09-tech-law-brief.html",
-  "news_count": 10,
+  "news_count": 18,
   "distribution": {
-    "domestic": 1,
-    "foreign": 9
+    "domestic": 4,
+    "foreign": 14
   },
   "mode": "facts_only",
   "analysis_pending": true,
@@ -165,6 +165,188 @@
       "domestic": false,
       "id": "research-item-10",
       "source_checked": true
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-09",
+      "jurisdiction": "中国·上海",
+      "agency": "上海市互联网信息办公室",
+      "source_name": "界面新闻",
+      "original_title": "上海：违规收集个人信息，旅伴博博、AI小地球等3款App被通报",
+      "title": "上海通报三款智能设备App个人信息收集使用问题",
+      "url": "https://www.jiemian.com/article/15311622.html",
+      "fact": "据界面新闻11月9日报道，上海市网信办发布2026年第七批属地App个人信息收集使用问题通报，专项涉及智能设备，旅伴博博、AI小地球、小寻儿童电话手表P7等3款App被通报。",
+      "legal_status": "监管通报",
+      "evidence": {
+        "primary_fulltext_read": false,
+        "official_directory_read": true,
+        "secondary_text": "搜索返回界面快讯完整单段正文；独立打开界面原页失败。新浪界面官方账号同文11/9 16:13交叉支持。",
+        "limits": "不写具体违法条款、处罚、整改期限或已完成整改；未将微信全文标为已核验。",
+        "evidence_refs": [
+          "turn113search1",
+          "turn122search1",
+          "turn122search5",
+          "turn123view1"
+        ],
+        "dedup": "已检索11/2—9本地期刊标题及正文，旅伴博博未命中；不同于11/6全国967款App通报事件。",
+        "within_72h": true,
+        "independent_recheck": "2026-11-09T12:21Z：协调代理通过urllib成功读取原站完整正文；上海为界面快讯全文而非微信原文。"
+      },
+      "id": "research-item-11"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-09",
+      "jurisdiction": "中国",
+      "agency": "开放数据中心委员会／中国信息通信研究院",
+      "source_name": "开放数据中心委员会",
+      "original_title": "DCT 高效智算 | 标准邀约！异构算力集群推理加速技术要求与测试规范",
+      "title": "ODCC征集异构算力集群推理加速标准研讨意见",
+      "url": "https://www.odcc.org.cn/news/p-2119621345076436993.html",
+      "fact": "开放数据中心委员会11月9日发布标准研讨邀约，披露中国信通院牵头推进异构算力集群推理加速技术标准编制。草案拟统一有效吞吐量、芯片利用率等指标与测试口径，覆盖加速能力评测、效能评估及落地验收；线上研讨会定于11月11日举行，面向相关单位与专家征集意见。",
+      "legal_status": "标准编制及研讨征集",
+      "evidence": {
+        "primary_fulltext_read": true,
+        "evidence_ref": "turn82view1",
+        "lines": "159–196",
+        "limits": "原文标题与正文对‘测试规范/测试方法’名称不统一，摘要采用描述性名称；本轮重开失败，依据先前已成功读取全文。",
+        "dedup": "已检索11/2—9本地期刊，异构算力集群未命中；与既有模型评测和其他标准事件不同。",
+        "within_72h": true,
+        "independent_recheck": "2026-11-09T12:21Z：协调代理通过urllib成功读取原站完整正文；上海为界面快讯全文而非微信原文。"
+      },
+      "id": "research-item-12"
+    },
+    {
+      "domestic": true,
+      "date": "2026-11-09",
+      "jurisdiction": "中国·武汉",
+      "agency": "武汉市数据局",
+      "source_name": "武汉市数据局",
+      "original_title": "关于委托第三方审计机构开展算力券发放审计相关服务采购公告",
+      "title": "武汉采购算力券审计服务，核查关联交易和Token服务定价",
+      "url": "https://whsj.wuhan.gov.cn/tzgg_93641/202611/t20261109_2876173.shtml",
+      "fact": "武汉市数据局11月9日公告采购算力券发放审计服务，拟核查申报材料、供需方关联关系及服务提供者资质，对不少于半数申报企业开展现场核验。审计范围包括智算、超算、量子算力及Token服务价格，重点识别虚高定价和不当获取补贴，并评价资金使用绩效。",
+      "legal_status": "政府服务采购公告",
+      "evidence": {
+        "primary_fulltext_read": true,
+        "evidence_ref": "turn82view0",
+        "limits": "属于补贴审计服务采购，不是新颁布的算力券政策；本轮重开失败，依据先前已成功读取全文。",
+        "dedup": "已检索11/2—9本地期刊，算力券发放未命中；区别于已收录连云港算力券政策。",
+        "within_72h": true,
+        "independent_recheck": "2026-11-09T12:21Z：协调代理通过urllib成功读取原站完整正文；上海为界面快讯全文而非微信原文。"
+      },
+      "id": "research-item-13"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-09",
+      "jurisdiction": "韩国",
+      "agency": "韩国个人信息保护委员会（PIPC）",
+      "title": "韩国隐私监管机构发布智能眼镜分析报告，拟年内制定制造商和服务商保护指引",
+      "original_title": "개인정보위, 스마트 글래스 이용 시 유의사항 당부",
+      "source_name": "韩国个人信息保护委员会",
+      "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12628",
+      "fact": "韩国个人信息保护委员会11月9日发布智能眼镜隐私风险分析及使用提醒，要求用户留意影像和语音经手机、AI、云端及第三方服务处理的路径，尊重他人的拍摄、录音拒绝意愿。委员会提出，服务商应明确说明处理目的和流程，用于AI训练须具备合法处理依据；制造商应采用隐私保护设计，使旁人容易识别拍摄或录音状态。委员会计划年内制定涵盖用户、制造商和服务商具体要求的保护指引。",
+      "legal_status": "regulator_risk_report_and_guidance_plan",
+      "evidence": {
+        "published_at": "2026-11-09（官方网页未列具体时刻）",
+        "source_read": "PIPC 官方独立发布页全文已读：55—59行标题与日期；63—72行设备、处理路径和各方注意事项；73行后续具体指引计划；副标题明确年内推进。",
+        "event_date_evidence": "11月9日发布分析报告和使用提醒；年内指引仍为拟制订事项。",
+        "checked_at": "2026-11-09T12:18:03.227535+00:00",
+        "deduplication": "已读取11月2—9日全部标题并按事件核对，四条均未收录；URL与这八期news.json逐一比较无相同。11月3日PIPC政策论坛与本次智能眼镜报告不同，11月8日四条日本企业事故与早稻田不同。",
+        "timeliness": "披露或监管新行动均为11月8—9日，落在11月9日约12:16UTC发布前72小时内。"
+      },
+      "id": "research-item-14"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-09",
+      "jurisdiction": "韩国",
+      "agency": "韩国金融监督院（FSS）／未来资产证券",
+      "title": "韩国金融监督院启动未来资产现场检查，核查客户及员工资料泄露规模与原因",
+      "original_title": "금감원, '계열사 4곳 해킹' 미래에셋 현장점검 착수",
+      "source_name": "韩联社旗下联合金融新闻（Yonhap Infomax）",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4443740",
+      "fact": "据联合金融新闻11月9日报道，韩国金融监督院已对未来资产启动紧急现场检查，核查网络入侵原因、泄露规模及消费者损害。未来资产证券11月7日披露，约3800名客户的账户号码及约35255名员工、离职人员和外包人员的部分信息外泄。此前集团其他成员亦报告遭到入侵或入侵尝试，监管检查同时关注这些事件是否有关联。",
+      "legal_status": "onsite_supervisory_inspection_started",
+      "evidence": {
+        "published_at": "2026-11-09T11:20:00+09:00",
+        "updated_at": "2026-11-09T15:34:00+09:00",
+        "source_read": "网页工具打开失败后用 urllib 读取新闻原站 HTML，去除脚本后的正文全文已读；保存 /tmp/asia9-source-1.txt。",
+        "event_date_evidence": "原文9日金融界消息称已启动检查；证券公司泄露披露日期为7日；新事件为9日现场检查。",
+        "caution": "现场检查进行中；没有罚款或最终责任认定。约3800客户账户与35255员工信息分开表达，不认定全部为不同个人。",
+        "checked_at": "2026-11-09T12:18:03.227535+00:00",
+        "deduplication": "已读取11月2—9日全部标题并按事件核对，四条均未收录；URL与这八期news.json逐一比较无相同。11月3日PIPC政策论坛与本次智能眼镜报告不同，11月8日四条日本企业事故与早稻田不同。",
+        "timeliness": "披露或监管新行动均为11月8—9日，落在11月9日约12:16UTC发布前72小时内。"
+      },
+      "id": "research-item-15"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-08",
+      "jurisdiction": "韩国",
+      "agency": "SM Entertainment及部分关联公司",
+      "title": "SM娱乐披露业务系统遭入侵，部分员工及合作方信息外泄并启动通知",
+      "original_title": "SM엔터·계열사 해킹‥임직원 주민번호·계좌번호 유출",
+      "source_name": "韩国MBC／SM Entertainment官方通报",
+      "url": "https://imnews.imbc.com/news/2026/econo/article/6864098_36932.html",
+      "fact": "SM娱乐11月8日披露，外部攻击者约在11月4日进入电子审批等业务系统，取得部分文件。公司列出的泄露信息涉及姓名、联系方式、地址、银行账户、居民登记号码及合同内容等，具体范围因人而异，正逐一确认并通知。公司已阻断攻击路径、更换相关访问密钥，并配合主管机关和外部机构调查。MBC报道，旗下DearU及Dream Maker亦公布了员工信息泄露情况。",
+      "legal_status": "confirmed_personal_data_breach_disclosure",
+      "evidence": {
+        "published_at": "2026-11-08T21:17:00+09:00",
+        "source_read": "MBC 韩文报道全文及 SM 官方首页完整事故通报均已打开阅读。MBC 9行标日期、25行明确当天发布；官方45—78行列事件、数据种类、通知、阻断和救济。",
+        "primary_url": "https://www.smentertainment.com/",
+        "event_date_evidence": "MBC 11月8日21:17报道明确 SM 今天通过官网公告；事故约11月4日发生，新事件为11月8日披露。",
+        "caution": "不将部分关联公司的员工信息泄露写成全部粉丝、艺人或平台用户数据泄露；官方未给总人数。",
+        "checked_at": "2026-11-09T12:18:03.227535+00:00",
+        "deduplication": "已读取11月2—9日全部标题并按事件核对，四条均未收录；URL与这八期news.json逐一比较无相同。11月3日PIPC政策论坛与本次智能眼镜报告不同，11月8日四条日本企业事故与早稻田不同。",
+        "timeliness": "披露或监管新行动均为11月8—9日，落在11月9日约12:16UTC发布前72小时内。"
+      },
+      "id": "research-item-16"
+    },
+    {
+      "domestic": false,
+      "date": "2026-11-09",
+      "jurisdiction": "日本",
+      "agency": "早稻田大学",
+      "title": "早稻田大学确认MyWaseda用户管理系统遭入侵，3342条个人信息被取得",
+      "original_title": "早稲田大で不正アクセス 約3400件の個人情報流出 PHP脆弱性への対応中に発見",
+      "source_name": "ABEMA TIMES（livedoor转载）／早稻田大学公告",
+      "url": "https://news.livedoor.com/article/detail/32771898/",
+      "fact": "早稻田大学11月9日公布，调查确认MyWaseda登录用户信息管理系统遭第三方入侵，3342条记录被不当取得，其中3261条为包含教职员编号、姓名、邮箱、部门、身份类别及加密存储密码的用户资料，其余81条涉及不同组合的个人信息。学校是在应对PHP漏洞、检查系统时发现8月31日的入侵痕迹，随后扩大调查确认泄露。公布数量为记录条数，同一人可能对应多个邮箱。",
+      "legal_status": "confirmed_personal_data_breach_disclosure",
+      "evidence": {
+        "published_at": "2026-11-09T17:58:00+09:00",
+        "source_read": "补核：urllib已读取livedoor转载ABEMA TIMES报道全文，包括公告第1—3节，保存/tmp/waseda-1.txt；全文明确3342条、3261+81、非人数、8月31日入侵痕迹及PHP检查为发现契机。ABEMA原站前段另读/tmp/waseda-0.txt；未将原站受限后文称为已读。官方页搜索提取仅作交叉核对，不作为唯一核验依据。",
+        "event_date_evidence": "官方正文首部2026年11月9日；8月31日是被发现的入侵时间，不作新闻发布日期。",
+        "caution": "3342为延べ件数而非人数；只称加密存储密码，不自行判断加密算法或破解状态；没有把PHP漏洞检查等同已查明入侵原因。",
+        "checked_at": "2026-11-09T12:19:10.377478+00:00",
+        "deduplication": "已读取11月2—9日全部标题并按事件核对，四条均未收录；URL与这八期news.json逐一比较无相同。11月3日PIPC政策论坛与本次智能眼镜报告不同，11月8日四条日本企业事故与早稻田不同。",
+        "timeliness": "披露或监管新行动均为11月8—9日，落在11月9日约12:16UTC发布前72小时内。",
+        "primary_url": "https://www.waseda.jp/top/news/topic/124183",
+        "secondary_url": "https://cybersecurity-jp.com/news/118221",
+        "secondary_status": "专业媒体全文亦由urllib读取，保存/tmp/waseda-2.txt；日期11月9日，核心数字与事件一致。"
+      },
+      "id": "research-item-17"
+    },
+    {
+      "date": "2026-11-09",
+      "jurisdiction": "法国",
+      "agency": "法国国家信息与自由委员会（CNIL）",
+      "title": "法国CNIL公布十项地方公共机构网络安全处罚，单项罚款最高2万欧元",
+      "original_title": "Cybersécurité des collectivités territoriales : la CNIL prononce dix sanctions",
+      "source_name": "CNIL",
+      "url": "https://www.cnil.fr/fr/sanctions-cybersecurite-collectivites-territoriales",
+      "fact": "法国CNIL 11月9日公布，已在当月针对地方政府和一家公共机构作出十项简化程序处罚，罚款分别为3000至2万欧元。检查发现的问题包括管理员远程访问缺少多因素认证、外包商长期接入或共用账户、日志监测和网络隔离不足，以及未对儿童公共服务和公共场所视频监控等高风险处理事先开展数据保护影响评估。",
+      "legal_status": "administrative_penalties_announced",
+      "published_at": "2026-11-09（原文日期，无具体时刻）",
+      "timestamp_evidence": "CNIL原文turn111view0第13行09 novembre 2026；第17行说明处罚在11月作出。以11月9日新公开公告为新闻时点。",
+      "fact_evidence": "已打开并阅读官方全文：turn111view0第30至58行核实违法类型和罚款区间。",
+      "timeliness": "通过：11月9日新公告。",
+      "domestic": false,
+      "source_checked": true,
+      "deduplication": "已对11月2日至9日新闻清单按事件、标题及主体核对，无同一事件。",
+      "id": "research-item-18"
     }
   ],
   "publication": {
@@ -172,5 +354,25 @@
     "pages_run_id": null,
     "pages_conclusion": null,
     "online_acceptance": null
+  },
+  "expansion": {
+    "checked_at": "2026-11-09T12:21:08.986716+00:00",
+    "scope": "新增条目逐源核验与11月2—9日事件去重；原十条事实与引文保持不变，本轮未重读其全部来源。纯事实体例，结构化背景前瞻留空。",
+    "evidence_record": ".github/editions/2026-11-09.expansion-review.json",
+    "added_ids": [
+      "research-item-11",
+      "research-item-12",
+      "research-item-13",
+      "research-item-14",
+      "research-item-15",
+      "research-item-16",
+      "research-item-17",
+      "research-item-18"
+    ],
+    "article_sha256": "ee25440e5751bdcaba4cf2166a9fdd0cc44e6d03419682517b01178ff012f803",
+    "publication": {
+      "status": "prepared_for_deployment",
+      "final_verification_location": "publication PR body"
+    }
   }
 }
