@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-09",
+  "base_main_sha": "682a088c9f2fe9d715caa07a8e4972a2284046ad",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "检索美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚及必要法域",
+    "与最近七期作事件级去重",
+    "逐一打开原始来源和链接",
+    "终扫后核验发布"
+  ],
+  "updated_at": "2026-11-09T09:00:00+08:00"
+}
