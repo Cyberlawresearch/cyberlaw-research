@@ -1,7 +1,7 @@
 {
   "date": "2026-11-09",
   "base_main_sha": "682a088c9f2fe9d715caa07a8e4972a2284046ad",
-  "phase": "files_written",
+  "phase": "pages_verified_source_retry",
   "publication_ready": true,
   "items": [
     {
@@ -78,12 +78,21 @@
     "Australia": "贸易救济通知和光伏钢管复审决定已核查，收录两则",
     "China": "商务部两项美国产正丙醇期终复审最终裁定已核查"
   },
-  "last_error": null,
+  "last_error": {
+    "stage": "source_diagnostics",
+    "workflow_run_id": 42544665059,
+    "attempt": 2,
+    "failed_sources": [
+      "https://www.industry.gov.au/australian-trade-remedies-commission/archive-cases-and-electronic-public-record-epr/685",
+      "https://www.industry.gov.au/sites/default/files/atrc/public-record/2026-11/667-26-notice-trn-2026-156-extension-of-time-to-publish-statement-of-essential-facts-and-final-report.pdf"
+    ],
+    "detail": "requests.exceptions.ReadTimeout: www.industry.gov.au read timeout=60 seconds; run 42544665059 attempt 2, source-check job 128928879325; page checks all passed, 5/7 source URLs passed"
+  },
   "next_actions": [
-    "等待当前提交Pages构建完成后核对公开页面及7个源链接",
-    "读取本提交对应的Trade Watch source diagnostics完成结果"
+    "检查来源诊断第3次重试结果，若仍超时保留失败证据；不得将仅凭Pages成功视为来源全数验收",
+    "复核经DOM解析的全部7条来源链接；成功后将phase更新为published"
   ],
-  "updated_at": "2026-11-09T09:12:00+08:00",
+  "updated_at": "2026-11-09T09:30:00+08:00",
   "dedup": {
     "checked_issues": [
       "2026-11-02",
@@ -115,7 +124,10 @@
     "issue_count": 5,
     "source_count": 7,
     "pages_run_id": 42544312823,
-    "pages_state": "in_progress",
-    "public_pages_checked": false
+    "pages_state": "success",
+    "public_pages_checked": true,
+    "public_pages_check_evidence": "Trade Watch publication guard run 42544665047: three publicly deployed pages matched final SHA dfba534836b0cd91c10d6324c226016ff5331fba (2026-11-09 09:16 CST)",
+    "source_diagnostics_run_id": 42544665059,
+    "source_diagnostics_status": "attempt 2 failed on two industry.gov.au 60-second read timeouts; other 5 of 7 successful; third attempt requested"
   }
 }
