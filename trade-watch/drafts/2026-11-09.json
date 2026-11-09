@@ -3,14 +3,48 @@
   "base_main_sha": "682a088c9f2fe9d715caa07a8e4972a2284046ad",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "us-301-exclusions",
+      "title": "USTR正式延长178项对华301关税产品排除至2027年1月9日",
+      "date": "2026-11-06",
+      "stage": "正式延期通知",
+      "url": "https://ustr.gov/sites/default/files/files/Issue_Areas/Enforcement/Section%20301/USTR%20FRN%20Extending%20Section%20301%20China%20FTT%20Exclusions%20to%20Jan%202027.pdf",
+      "verified": true
+    },
+    {
+      "id": "us-301-maritime",
+      "title": "USTR正式将中国海运及起重机等301措施暂停延至2027年1月9日",
+      "date": "2026-11-06",
+      "stage": "正式延期通知，11月9日生效",
+      "url": "https://ustr.gov/sites/default/files/files/Issue_Areas/Enforcement/Section%20301/USTR%20Sec%20301%20Ships%20FRN%20Further%20Suspension.pdf",
+      "verified": true
+    },
+    {
+      "id": "au-torque-tubes",
+      "title": "澳大利亚据报11月5日撤销钻孔光伏跟踪支架扭矩管范围扩张决定",
+      "date": "2026-11-05",
+      "stage": "媒体披露，原始决定待核实",
+      "url": "https://reneweconomy.com.au/federal-labor-dumps-anti-dumping-rule-following-solar-industry-warnings-of-rising-costs-delays/",
+      "verified": false
+    }
+  ],
+  "coverage": {
+    "US": "已检索USTR、BIS、OFAC、Federal Register；发现两份11月6日USTR正式通知，继续复核",
+    "EU": "初步检索欧委会、EUR-Lex，续查",
+    "UK": "已检索gov.uk，续查",
+    "Japan": "已检索METI，续查",
+    "Korea": "已检索KTC、MOTIE，续查",
+    "India": "已检索DGTR，续查",
+    "Canada": "已检索CBSA，续查",
+    "Australia": "已检索TRN列表及11月6日媒体，复核撤销决定"
+  },
   "last_error": null,
   "next_actions": [
-    "检索美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚及必要法域",
-    "与最近七期作事件级去重",
-    "逐一打开原始来源和链接",
-    "终扫后核验发布"
+    "继续跨法域检索新的有实质影响的正式决定",
+    "确认澳大利亚撤销令的具体法律文本",
+    "7期去重及逐项来源核验",
+    "结束前终扫"
   ],
   "updated_at": "2026-11-09T09:00:00+08:00"
 }
