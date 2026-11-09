@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-09",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-09-plato-republic.html",
+  "target_path": "articles/2026-11-09-plato-republic.html",
+  "book": {
+    "author": "Plato",
+    "original_title": "Πολιτεία",
+    "publisher": "Clarendon Press（核读的Jowett英译第三版，Oxford）",
+    "year": "1888（所据译本；原著约公元前四世纪，确切年份不详）",
+    "edition": "Benjamin Jowett, The Republic of Plato, third edition revised and corrected throughout, 1888；Gutenberg电子文本沿用该译本，并以1908年分段标识辅助检索，未逐字校勘全部希腊文原文"
+  },
+  "source_urls": [
+    "https://www.gutenberg.org/files/55201/55201-h/55201-h.htm",
+    "https://www.gutenberg.org/ebooks/55201",
+    "https://plato-scroll.com/s/rep-e/",
+    "https://classics.mit.edu/Aristotle/politics.2.two.html",
+    "https://press.princeton.edu/books/paperback/9780691019680/open-society-and-its-enemies-volume-1",
+    "https://www.routledge.com/The-Open-Society-and-Its-Enemies-Volume-One-The-Spell-of-Plato/Popper/p/book/9780415610216"
+  ],
+  "original_verification": "系统查看Project Gutenberg所公开的1888年Jowett英译十卷完整正文，逐卷核对讨论顺序、关键章节与主要论证（第一卷正义辩论；第二卷盖吉斯与起源；第三卷教育；第四卷德性与灵魂；第五卷护卫者及哲学王；第六卷航船、太阳与分线；第七卷洞穴；第八至九卷政体变化与灵魂；第十卷诗艺与艾尔神话）。古希腊文原题另行核对；未声称逐字校勘所有希腊文异文，也未把Jowett的导论视为柏拉图著述。",
+  "critics": [
+    {
+      "name": "Aristotle（亚里士多德）",
+      "work": "Politics, Book II（《政治学》第二卷）",
+      "url": "https://classics.mit.edu/Aristotle/politics.2.two.html",
+      "checked": "直接核对第二卷中对柏拉图《理想国》妻子、子女和财产共有方案的针对性批评。"
+    },
+    {
+      "name": "Karl Popper（卡尔·波普尔）",
+      "work": "The Open Society and Its Enemies, Volume 1: The Spell of Plato（《开放社会及其敌人》第一卷，1945）",
+      "url": "https://press.princeton.edu/books/paperback/9780691019680/open-society-and-its-enemies-volume-1",
+      "checked": "据Princeton University Press及Routledge出版信息核实作品及其具体批评对象（哲学王、知识权威与政治整体主义）；未声称直接查阅该版权著作全文。"
+    }
+  ],
+  "dedup_checked": [
+    "main classics.html全日期著作列表",
+    "classics-history.html历史经典书目",
+    "data/books.json补充索引",
+    "本期已存在classic正文与核验记录核查"
+  ],
+  "duplicate_found": false,
+  "sections": 78,
+  "prose_length": 10134,
+  "checked_at": "2026-11-09",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
