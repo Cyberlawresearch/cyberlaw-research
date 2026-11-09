@@ -1,7 +1,7 @@
 {
   "date": "2026-11-09",
   "base_main_sha": "682a088c9f2fe9d715caa07a8e4972a2284046ad",
-  "phase": "ready_to_publish",
+  "phase": "files_written",
   "publication_ready": true,
   "items": [
     {
@@ -80,9 +80,8 @@
   },
   "last_error": null,
   "next_actions": [
-    "写入2026-11-09第062期完整正文",
-    "更新首页与归档",
-    "核对GitHub main及Pages当前版本、来源链接"
+    "等待当前提交Pages构建完成后核对公开页面及7个源链接",
+    "读取本提交对应的Trade Watch source diagnostics完成结果"
   ],
   "updated_at": "2026-11-09T09:12:00+08:00",
   "dedup": {
@@ -106,5 +105,17 @@
   "final_sweep": {
     "done": true,
     "notes": "结束前复查美国、欧盟、英国、日本、韩国、印度、加拿大及澳大利亚动态，未发现应替换入稿的新增实质决定。"
+  },
+  "publication": {
+    "issue": "trade-watch/issues/2026-11-09.html",
+    "issue_commit": "2e21b28de9c7a8b6a8fb63cd69af357ba3e35d05",
+    "index_commit": "c727915be79ffd2d28ca1d2ea0412290bdd5f5ee",
+    "archive_commit": "dfba534836b0cd91c10d6324c226016ff5331fba",
+    "main_readback_passed": true,
+    "issue_count": 5,
+    "source_count": 7,
+    "pages_run_id": 42544312823,
+    "pages_state": "in_progress",
+    "public_pages_checked": false
   }
 }
