@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-09",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-09-yeung-algorithmic-regulation-critical-interrogation.html",
+  "selection": "Karen Yeung, Algorithmic regulation: A critical interrogation",
+  "bibliography": {
+    "type": "article",
+    "author": "Karen Yeung",
+    "originalTitle": "Algorithmic regulation: A critical interrogation",
+    "journal": "Regulation & Governance",
+    "year": "2018",
+    "volume": "12",
+    "issue": "4",
+    "pages": "505–523",
+    "doi": "10.1111/rego.12158",
+    "url": "https://doi.org/10.1111/rego.12158",
+    "cnTitle": "算法规制如何塑造社会秩序：从实时反馈到预测性干预的合法性问题"
+  },
+  "versions": {
+    "full_text": "Read through the complete publicly posted author-accepted manuscript (introduction, system definition and eight-form taxonomy, social ordering, governance critiques, legal process, conclusion) at ResearchGate. Not the publisher-formatted PDF.",
+    "publication": "Wiley Regulation & Governance 12(4), 505–523, December 2018; first published online July 31, 2017; cross-checked University of Birmingham research publication record."
+  },
+  "sources": [
+    "https://www.researchgate.net/publication/318820255_Algorithmic_regulation_A_critical_interrogation",
+    "https://onlinelibrary.wiley.com/doi/10.1111/rego.12158",
+    "https://research.birmingham.ac.uk/en/publications/algorithmic-regulation-a-critical-interrogation/"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "related_reading": [
+    "articles/2026-10-15-yeung-hypernudge.html",
+    "articles/2026-09-03-citron-technological-due-process.html",
+    "articles/2026-09-07-coglianese-lehr-regulating-by-robot.html"
+  ],
+  "timeline": null,
+  "body_length": 4225,
+  "checked_at": "2026-11-09",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  }
+}
