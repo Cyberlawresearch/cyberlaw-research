@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-09",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-09-new-works.html",
+  "page_blob_sha": "a69d9f90e0b3a777cdaf3b12e1415b37e8abf5a2",
+  "newworks_count": 3,
+  "checked_at": "2026-11-09T12:39:44.113Z",
+  "checks": {
+    "original_publisher_pages_opened": true,
+    "original_title_author_doi_verified": true,
+    "formal_journal_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "doi_title_author_version_repository_code_search": true,
+    "historical_indexes_checked": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html",
+      "new-works-history.html",
+      "Repository code search against each exact DOI, original title, and author across articles/ and new-works/"
+    ],
+    "fields": [
+      "DOI",
+      "original title",
+      "author",
+      "publication version"
+    ],
+    "matches_found": 0,
+    "note": "All three DOI identifiers and original titles were checked against history. Publisher articles directly opened; unconfirmed issue/page fields are null."
+  },
+  "items": [
+    {
+      "cn_title": "《数字服务法》商家追溯资料的删除期限与消费者救济期限错位",
+      "author": "Muhammed Furkan Akıncı",
+      "original_title": "The two clocks problem: trader traceability, retention, and consumer redress under the Digital Services Act",
+      "journal": "International Journal of Law and Information Technology",
+      "publisher": "Oxford University Press",
+      "year": 2026,
+      "publication_date": "2026-11-02",
+      "volume": "34",
+      "issue": null,
+      "pages": null,
+      "article_number": "eaag019",
+      "doi": "10.1093/ijlit/eaag019",
+      "publisher_page": "https://academic.oup.com/ijlit/article-abstract/doi/10.1093/ijlit/eaag019/9006468",
+      "version": "Published journal article"
+    },
+    {
+      "cn_title": "人工智能法中的“人类监督”如何改变行政人员的法律角色",
+      "author": "Ida Koivisto",
+      "original_title": "Humans as Legal Technology: The Emergence of “New Humans” in European Technology Regulation and a Suggestion for a New Approach to Legal Technology",
+      "journal": "German Law Journal",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "publication_date": "2026-06-02",
+      "volume": "27",
+      "issue": "3",
+      "pages": "325–347",
+      "article_number": null,
+      "doi": "10.1017/glj.2026.10214",
+      "publisher_page": "https://www.cambridge.org/core/journals/german-law-journal/article/humans-as-legal-technology-the-emergence-of-new-humans-in-european-technology-regulation-and-a-suggestion-for-a-new-approach-to-legal-technology/BFEF0E06EE96D31B2C25E42369B145DA",
+      "version": "Published journal article"
+    },
+    {
+      "cn_title": "医疗人工智能伦理审查缺乏执行权与医院机构问责机制",
+      "author": "Maria Carla Canato",
+      "original_title": "From ethics washing to enforceable accountability: hospitals as hubs of digital constitutionalism",
+      "journal": "AI & SOCIETY",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-03-21",
+      "volume": "41",
+      "issue": null,
+      "pages": "7719–7733",
+      "article_number": null,
+      "doi": "10.1007/s00146-026-02980-4",
+      "publisher_page": "https://link.springer.com/article/10.1007/s00146-026-02980-4",
+      "version": "Published journal article"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "594403f4e275fba7b38a5da9cae191a2a520c069",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": false
+  },
+  "other_columns_at_record": {
+    "brief": "articles/2026-11-09-tech-law-brief.html",
+    "paper": "articles/2026-11-09-yeung-algorithmic-regulation-critical-interrogation.html",
+    "classic": "articles/2026-11-08-kant-metaphysical-principles-of-right.html"
+  }
+}
