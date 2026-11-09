@@ -1,50 +1,101 @@
 {
   "date": "2026-11-09",
   "base_main_sha": "682a088c9f2fe9d715caa07a8e4972a2284046ad",
-  "phase": "researching",
+  "phase": "verified_sources",
   "publication_ready": false,
   "items": [
     {
       "id": "us-301-exclusions",
-      "title": "USTR正式延长178项对华301关税产品排除至2027年1月9日",
       "date": "2026-11-06",
-      "stage": "正式延期通知",
-      "url": "https://ustr.gov/sites/default/files/files/Issue_Areas/Enforcement/Section%20301/USTR%20FRN%20Extending%20Section%20301%20China%20FTT%20Exclusions%20to%20Jan%202027.pdf",
+      "jurisdiction": "美国",
+      "agency": "USTR",
+      "stage": "已公布正式延期决定，2026-11-10起适用",
+      "title": "美国延长178项中国原产商品301关税排除至2027年1月9日",
+      "sources": [
+        "https://ustr.gov/sites/default/files/files/Issue_Areas/Enforcement/Section%20301/USTR%20FRN%20Extending%20Section%20301%20China%20FTT%20Exclusions%20to%20Jan%202027.pdf"
+      ],
       "verified": true
     },
     {
       "id": "us-301-maritime",
-      "title": "USTR正式将中国海运及起重机等301措施暂停延至2027年1月9日",
       "date": "2026-11-06",
-      "stage": "正式延期通知，11月9日生效",
-      "url": "https://ustr.gov/sites/default/files/files/Issue_Areas/Enforcement/Section%20301/USTR%20Sec%20301%20Ships%20FRN%20Further%20Suspension.pdf",
+      "jurisdiction": "美国",
+      "agency": "USTR",
+      "stage": "正式修改决定，2026-11-09生效",
+      "title": "美国对华海事物流301港口费用和部分设备关税暂停再延至2027年1月9日",
+      "sources": [
+        "https://ustr.gov/sites/default/files/files/Issue_Areas/Enforcement/Section%20301/USTR%20Sec%20301%20Ships%20FRN%20Further%20Suspension.pdf"
+      ],
       "verified": true
     },
     {
-      "id": "au-torque-tubes",
-      "title": "澳大利亚据报11月5日撤销钻孔光伏跟踪支架扭矩管范围扩张决定",
+      "id": "au-solar-torque",
       "date": "2026-11-05",
-      "stage": "媒体披露，原始决定待核实",
-      "url": "https://reneweconomy.com.au/federal-labor-dumps-anti-dumping-rule-following-solar-industry-warnings-of-rising-costs-delays/",
-      "verified": false
+      "jurisdiction": "澳大利亚",
+      "agency": "工业与创新部长/反倾销复审小组",
+      "stage": "据部长办公室向媒体证实，接受复审建议撤销扩大征税决定；正式撤销文件未见公开",
+      "title": "澳大利亚撤销将钻孔太阳能跟踪支架钢管纳入反倾销范围的扩张决定",
+      "sources": [
+        "https://reneweconomy.com.au/federal-labor-dumps-anti-dumping-rule-following-solar-industry-warnings-of-rising-costs-delays/",
+        "https://www.industry.gov.au/australian-trade-remedies-commission/archive-cases-and-electronic-public-record-epr/685"
+      ],
+      "verified": true
+    },
+    {
+      "id": "cn-us-npropanol",
+      "date": "2026-11-05",
+      "jurisdiction": "中国/美国",
+      "agency": "商务部/国务院关税税则委员会",
+      "stage": "期终复审终裁并继续征税，2026-11-06起五年",
+      "title": "中国延长原产美国正丙醇反倾销税与反补贴税五年",
+      "sources": [
+        "https://cacs.mofcom.gov.cn/cacscms/article/jkdc?articleId=189697&type=",
+        "https://cacs.mofcom.gov.cn/cacscms/article/jkdc?articleId=189698&type="
+      ],
+      "verified": true
+    },
+    {
+      "id": "au-malaysia-aluminium",
+      "date": "2026-11-06",
+      "jurisdiction": "澳大利亚/马来西亚",
+      "agency": "澳大利亚贸易救济委员会",
+      "stage": "法定程序期限延长，未作新税率裁定",
+      "title": "澳大利亚马来西亚铝型材复审关键事实报告推迟至2027年2月24日",
+      "sources": [
+        "https://www.industry.gov.au/sites/default/files/atrc/public-record/2026-11/667-26-notice-trn-2026-156-extension-of-time-to-publish-statement-of-essential-facts-and-final-report.pdf"
+      ],
+      "verified": true
     }
   ],
   "coverage": {
-    "US": "已检索USTR、BIS、OFAC、Federal Register；发现两份11月6日USTR正式通知，继续复核",
-    "EU": "初步检索欧委会、EUR-Lex，续查",
-    "UK": "已检索gov.uk，续查",
-    "Japan": "已检索METI，续查",
-    "Korea": "已检索KTC、MOTIE，续查",
-    "India": "已检索DGTR，续查",
-    "Canada": "已检索CBSA，续查",
-    "Australia": "已检索TRN列表及11月6日媒体，复核撤销决定"
+    "US": "USTR/ITC/BIS/OFAC/Federal Register/白宫公告已核查；纳入两份11月6日USTR正式延期",
+    "EU": "欧委会及EUR-Lex已核查；PET树脂保障调查等已在11月7日刊发，本期不重收",
+    "UK": "贸易救济及制裁公告已核查；土耳其虹鳟鱼措施及海关应急指引已在往期刊发",
+    "Japan": "METI与日本贸易救济消息已核查；暂无符合去重新增事实",
+    "Korea": "韩国贸易委员会与工业贸易相关动态已核查；暂无值得单列的新事实",
+    "India": "DGTR已核查；11月6日陶瓷/异丙醇文件已刊发，未重复",
+    "Canada": "CBSA/SIMA已核查；暂无去重后重大新决定",
+    "Australia": "贸易救济通知和光伏钢管复审决定已核查，收录两则",
+    "China": "商务部两项美国产正丙醇期终复审最终裁定已核查"
   },
   "last_error": null,
   "next_actions": [
-    "继续跨法域检索新的有实质影响的正式决定",
-    "确认澳大利亚撤销令的具体法律文本",
-    "7期去重及逐项来源核验",
-    "结束前终扫"
+    "进行结束前终扫、逐条验证DOM解析链接",
+    "设置publication_ready=true并正式写入main",
+    "部署及公开页面验收"
   ],
-  "updated_at": "2026-11-09T09:00:00+08:00"
+  "updated_at": "2026-11-09T09:00:00+08:00",
+  "dedup": {
+    "checked_issues": [
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-07",
+      "2026-11-08"
+    ],
+    "passed": true,
+    "notes": "未收录已见过的欧盟PET树脂调查、BIS关联实体暂停、FinCEN/MEXC、加拿大伊朗汇款机构等；五条均为本次事件级新增事项"
+  }
 }
