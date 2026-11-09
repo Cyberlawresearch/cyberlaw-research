@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>第53课｜基础设施权力：为什么云平台和算力服务会影响人工智能治理？｜网信法技术基础</title>
+<link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../briefs.html">全球科技法简报</a><a href="../papers.html">域外法学论文精读</a><a href="../classics.html">法学经典著作</a><a href="../new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 53 · LAW &amp; GOVERNANCE · 2026.11.09</div><h1>基础设施权力：为什么云平台和算力服务会影响人工智能治理？</h1><p class="tech-lead">今日问题：模型属于开发者，云服务商为什么仍能影响模型能否运行、在哪里运行，以及更换服务有多难？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus"><div><strong>它是什么</strong><p><b>人工智能基础设施权力</b>，是算力和云服务提供者通过资源供给、接入规则、调度安排与服务条件，影响其他主体开发、部署和使用人工智能的能力。它不等于对模型内容拥有所有权，而是对模型运行所依赖条件具有控制力。</p></div><div><strong>一个生活例子</strong><p>一家医院采购了医疗问答系统，模型由软件公司开发，却运行在第三方云平台。若所需计算资源短缺、所在区域暂停服务，或者迁往另一平台成本过高，医院即使拥有应用和数据，也可能难以维持原有服务。问题发生在模型之外，却会影响患者能否使用系统。</p></div></section>
+<section class="lesson-section"><h2>机制图：基础设施在哪些环节产生影响？</h2>
+<div class="visual-board" role="group" aria-label="应用需求经云平台资源管理层获得算力，再运行模型并向用户服务；云平台在资源、区域、配额和接口上影响运行条件">
+<div class="visual-title">以使用公有云部署模型为例。关键控制点位于用户看不到的资源分配环节。</div>
+<div class="flow">
+<div class="flow-box"><strong>① 应用需求</strong><span>需要一定速度、容量和连续运行时间</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>② 云平台管理</strong><span>核对区域、配额、价格，分配实例</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>③ 计算资源</strong><span>在可用芯片与服务器上执行推理</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>④ 模型服务</strong><span>接收请求，生成结果，持续对外提供服务</span></div>
+</div>
+<div class="compare-grid">
+<div class="compare-card"><b>能否进入</b><p>有没有可用的计算实例、部署区域与账户配额？</p></div>
+<div class="compare-card"><b>能否持续</b><p>供应、价格、停机恢复和服务等级如何约定？</p></div>
+<div class="compare-card"><b>能否迁移</b><p>数据、程序、接口与运维配置能否转到另一平台？</p></div>
+</div><p class="tiny-note">这里展示常见云部署链条，并非所有模型都依赖公有云。自建机房、本地部署、专用芯片和不同云服务的资源管理方式可能不同。</p></div>
+<p>先看<b>算力</b>。算力指执行模型计算所需的处理能力；较大的模型或较高并发量往往需要更多计算资源。GPU是擅长大量并行计算的一类芯片，但买到或租到某种GPU，并不等于随时可以在任意地区使用。云平台按机型、区域和账户配额提供资源。亚马逊EC2文档中的<b>容量预留</b>，就是为特定可用区的计算实例预先保留容量的机制，说明供给与分配本身属于需要管理的环节。</p>
+<p>再看<b>云平台</b>。它不仅出租服务器，还提供存储、网络、安全控制和部署接口。企业通过这些服务获得便利，也会逐步形成依赖：模型文件、数据管道、身份权限和监控系统可能采用平台特有配置。若更换供应商，往往需要迁移数据并改造程序。<b>迁移成本</b>包括工程工作量、业务中断风险和可能发生的数据传出费用，不能只比较两家平台的每小时算力价格。</p>
+<p>最后看<b>控制如何变成影响力</b>。供应商可以通过资源可得性、服务条款和技术接口改变使用者的实际选择范围。经济合作与发展组织2025年的研究以云区域和加速器可用情况测量人工智能算力分布，说明不同地点的供给并不均等。英国竞争与市场管理局2025年公布的云服务市场调查最终决定，也把切换障碍与市场竞争作为核心问题。技术依赖只有结合市场地位和实际替代可能性，才能进一步分析其法律后果。</p>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“模型是自己的，运行就完全自主。”模型权重和应用可以归开发者控制，但计算、网络和平台接入仍可能受第三方条件制约。</span></div>
+<div class="myth"><b>误解 02</b><span>“云服务只是普通租赁，换一家即可。”当应用深度使用专有接口、存储和权限体系时，迁移需要实际改造、测试和停机安排。</span></div>
+<div class="myth"><b>误解 03</b><span>“供应商有技术控制力，就一定违法垄断。”技术控制力是事实判断，是否具有市场支配地位、是否存在排除限制竞争行为，还须依据市场和法律证据认定。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>治理不能只检查模型，也要核查服务依赖</h3><p>对持续提供医疗、金融或政务服务的人工智能系统，采购和监管可以同时考察算力保障、服务中断安排、数据导出、接口兼容与替代方案。竞争法关注基础设施控制是否转化为限制市场选择的行为；公共服务治理则更重视供应中断和难以迁移造成的连续性风险。欧盟委员会2026年6月25日对AWS和Azure依据《数字市场法》提出的是守门人认定的初步意见，不能当作已经作出的最终认定。这也提示我们区分基础设施的技术作用、市场权力与具体法律责任。</p></div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>算力资源控制何时构成数字基础设施的市场权力？</h3><p>围绕资源稀缺、平台锁定与可替代性，研究技术控制事实如何转化为竞争法上的相关市场与行为判断。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>公共部门人工智能采购如何降低关键云算力依赖？</h3><p>围绕供应保障、跨平台迁移测试、故障恢复和数据导出，设计可在采购验收中核查的指标。</p></div>
+</div></section>
+<section class="lesson-section"><h2>可靠来源</h2><ol class="source-links">
+<li><a href="https://www.oecd.org/en/publications/measuring-domestic-public-cloud-compute-availability-for-artificial-intelligence_8602a322-en.html">OECD，Measuring domestic public cloud compute availability for artificial intelligence（2025年10月29日）</a>。以云区域及AI计算资源供给测量地域差异。</li>
+<li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html">Amazon EC2，Reserve compute capacity with EC2 On-Demand Capacity Reservations</a>。解释可用区容量预留、实例匹配与账户配额。</li>
+<li><a href="https://www.gov.uk/cma-cases/cloud-services-market-investigation">英国竞争与市场管理局，Cloud services market investigation（最终决定：2025年7月31日）</a>。分析云服务市场的竞争状况与切换障碍。</li>
+<li><a href="https://digital-markets-act.ec.europa.eu/commission-reaches-preliminary-position-amazons-and-microsofts-market-leading-cloud-services-should-2026-06-25_en">欧盟委员会，AWS与Azure可能被认定为守门人的初步意见（2026年6月25日）</a>。说明云市场锁定、切换成本和AI工具的作用，尚非最终指定。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第54课</small><p>互操作：为什么人工智能系统之间能否连接和迁移，会影响竞争与用户选择？</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main><footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
