@@ -1,8 +1,8 @@
 {
   "date": "2026-11-09",
   "base_main_sha": "682a088c9f2fe9d715caa07a8e4972a2284046ad",
-  "phase": "verified_sources",
-  "publication_ready": false,
+  "phase": "ready_to_publish",
+  "publication_ready": true,
   "items": [
     {
       "id": "us-301-exclusions",
@@ -80,11 +80,11 @@
   },
   "last_error": null,
   "next_actions": [
-    "进行结束前终扫、逐条验证DOM解析链接",
-    "设置publication_ready=true并正式写入main",
-    "部署及公开页面验收"
+    "写入2026-11-09第062期完整正文",
+    "更新首页与归档",
+    "核对GitHub main及Pages当前版本、来源链接"
   ],
-  "updated_at": "2026-11-09T09:00:00+08:00",
+  "updated_at": "2026-11-09T09:12:00+08:00",
   "dedup": {
     "checked_issues": [
       "2026-11-02",
@@ -97,5 +97,14 @@
     ],
     "passed": true,
     "notes": "未收录已见过的欧盟PET树脂调查、BIS关联实体暂停、FinCEN/MEXC、加拿大伊朗汇款机构等；五条均为本次事件级新增事项"
+  },
+  "source_check": {
+    "done": true,
+    "source_count": 7,
+    "notes": "逐一打开7个具体原始公告/案件/报道链接并核验；三份USTR/澳大利亚PDF按页核对；含查询参数的两个商务部来源HTML转义后须与原URL一致。"
+  },
+  "final_sweep": {
+    "done": true,
+    "notes": "结束前复查美国、欧盟、英国、日本、韩国、印度、加拿大及澳大利亚动态，未发现应替换入稿的新增实质决定。"
   }
 }
