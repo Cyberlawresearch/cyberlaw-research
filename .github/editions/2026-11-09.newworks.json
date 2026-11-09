@@ -3,9 +3,9 @@
   "column": "newworks",
   "state": "verified",
   "page": "articles/2026-11-09-new-works.html",
-  "page_blob_sha": "a69d9f90e0b3a777cdaf3b12e1415b37e8abf5a2",
+  "page_blob_sha": "8e665519d87b4c9dc679b6c387bbeb29f1bd7719",
   "newworks_count": 3,
-  "checked_at": "2026-11-09T12:39:44.113Z",
+  "checked_at": "2026-11-09T12:45:20.048Z",
   "checks": {
     "original_publisher_pages_opened": true,
     "original_title_author_doi_verified": true,
@@ -85,7 +85,7 @@
   "related_reading": [],
   "timelines": [],
   "publication": {
-    "phase": "publishing",
+    "phase": "deployment_check",
     "body_commit_sha": "594403f4e275fba7b38a5da9cae191a2a520c069",
     "final_commit_sha": null,
     "pages_run_id": null,
