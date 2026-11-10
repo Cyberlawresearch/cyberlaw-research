@@ -2,7 +2,7 @@
   "date": "2026-11-10",
   "column": "paper",
   "state": "verified",
-  "phase": "publishing",
+  "phase": "deployment_check",
   "page": "articles/2026-11-10-adams-prassl-binns-kelly-lyth-directly-discriminatory-algorithms.html",
   "selection": "Jeremias Adams-Prassl, Reuben Binns, Aislinn Kelly-Lyth, Directly Discriminatory Algorithms",
   "bibliography": {
@@ -46,10 +46,11 @@
   "publication": {
     "content_main_sha": null,
     "validated_main_sha": null,
-    "pages_run_id": null,
-    "pages_conclusion": null,
+    "pages_run_id": 42813345507,
+    "pages_conclusion": "failure",
     "current_columns": null,
     "live_page": null,
     "live_entry_points": null
-  }
+  },
+  "last_error": "GitHub Pages run 42813345507 failed during actions/deploy-pages@v4: \"Multiple artifacts named github-pages were unexpectedly found for this workflow run. Artifact count is 2.\""
 }
