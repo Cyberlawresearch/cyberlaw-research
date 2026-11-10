@@ -1,52 +1,59 @@
 {
   "date": "2026-11-10",
   "base_main_sha": "a12e826e4b6cdefff12fcba16bac6681b21ae556",
-  "phase": "verifying",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "cn-tariff",
       "title": "对美24%附加关税暂停两个月，保留10%",
       "date": "2026-11-09",
       "source": "https://gss.mof.gov.cn/gzdt/zhengcefabu/202611/t20261109_4004260.htm",
-      "phase": "正式公告，2026-11-10 13:01生效"
+      "phase": "正式公告，2026-11-10 13:01生效",
+      "checked": true
     },
     {
       "id": "cn-six-controls",
       "title": "六项关键物项出口管制措施暂停至2027-01-10",
       "date": "2026-11-09",
       "source": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_91466027f465467985942a639a9485f4.html",
-      "phase": "正式公告，2026-11-11起"
+      "phase": "正式公告，2026-11-11起",
+      "checked": true
     },
     {
       "id": "cn-16-list",
       "title": "16家美国实体出口管制管控名单限制继续暂停两个月",
       "source": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_4bc4aaa99b4e41feb6030ec59018d212.html",
-      "phase": "政策发布，2026-11-10起"
+      "phase": "政策发布，2026-11-10起",
+      "checked": true
     },
     {
       "id": "cn-11-list",
       "title": "11家美国实体不可靠实体清单相关限制继续暂停",
       "source": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_3acaf2afeea14e19ad15ff771c541d4e.html",
-      "phase": "政策发布，2026-11-10起"
+      "phase": "政策发布，2026-11-10起",
+      "checked": true
     },
     {
       "id": "cn-hanwha",
       "title": "韩华海洋五家美国子公司反制继续暂停",
       "source": "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2026/art_5484f3f9cb5344009c5c1cd4cd937bc9.html",
-      "phase": "商务部令2026年第4号，2026-11-10生效"
+      "phase": "商务部令2026年第4号，2026-11-10生效",
+      "checked": true
     },
     {
       "id": "us-ofac",
       "title": "OFAC更新伊朗制裁对象Volta Shipping别名",
       "source": "https://ofac.treasury.gov/recent-actions/20261109",
-      "phase": "既有名单信息修改，非新增制裁"
+      "phase": "既有名单信息修改，非新增制裁",
+      "checked": true
     },
     {
       "id": "in-clavulanic",
       "title": "印度克拉维酸反倾销案产品范围评论期限延至11月21日",
       "source": "https://dgtr.gov.in/sites/default/files/2026-11/Notification_2nd_Extension_Clavulanic_acid_tracked%20%281%29.pdf",
-      "phase": "调查期间第二次延期"
+      "phase": "调查期间第二次延期",
+      "checked": true
     },
     {
       "id": "cn-port",
@@ -82,13 +89,24 @@
     "已读取2026-11-03至11-09共7期完整正文并按事件级核查：中方11月9日发布六项正式调整是11月8–9日美方公告的独立措施，非旧信息重发。",
     "美国178项301排除、美国港口收费暂停、澳大利亚光伏钢管、美国正丙醇反向措施等前期已有事项本期不重复。"
   ],
-  "sources_checked": [],
+  "sources_checked": [
+    "https://gss.mof.gov.cn/gzdt/zhengcefabu/202611/t20261109_4004260.htm",
+    "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_91466027f465467985942a639a9485f4.html",
+    "https://xxgk.mot.gov.cn/jigou/syj/202611/t20261109_4227425.html",
+    "https://www.mofcom.gov.cn/syxwfb/art/2026/art_4bc4aaa99b4e41feb6030ec59018d212.html",
+    "https://www.mofcom.gov.cn/syxwfb/art/2026/art_3acaf2afeea14e19ad15ff771c541d4e.html",
+    "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2026/art_5484f3f9cb5344009c5c1cd4cd937bc9.html",
+    "https://dgtr.gov.in/sites/default/files/2026-11/Notification_2nd_Extension_Clavulanic_acid_tracked%20%281%29.pdf",
+    "https://publications.parliament.uk/pa/cm5902/cmselect/cmbeis/672/report.html",
+    "https://ofac.treasury.gov/recent-actions/20261109"
+  ],
   "last_error": null,
   "next_actions": [
-    "对九项候选最后核实监管阶段、来源链接、影响、deadline",
-    "检查最新主分支是否已有当期正文",
-    "最后时段新闻终扫，做好完整HTML后再设置publication_ready=true",
-    "GitHub main三份顺序提交及针对最终commit验收"
+    "创建第063期当期完整HTML至main",
+    "更新首页及完整归档",
+    "重新读取main三文件及核验对应Pages部署、公开页面、来源链接"
   ],
-  "updated_at": "2026-11-10T09:19:00+08:00"
+  "updated_at": "2026-11-10T09:25:00+08:00",
+  "source_validation": "全部九项官方公告、议会正式回应或制裁名单修订已通过网页逐一打开核对，印度官方PDF第1页截图核验；本期中文正文明确暂停而非取消、拟议而非已生效、SDN别名修改而非新增指定。",
+  "final_sweep": "2026-11-10早间再次检索美国、欧盟、英国、日本、韩国及印度、加拿大、澳大利亚新公告；未找到比九项事件更适宜新增、且未被最近7期收录的同等重大原始决定。"
 }
