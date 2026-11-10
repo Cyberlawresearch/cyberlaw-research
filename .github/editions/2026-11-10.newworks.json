@@ -87,12 +87,31 @@
   "related_reading": [],
   "timelines": [],
   "publication": {
-    "phase": "publishing",
+    "phase": "deployment_check",
     "body_commit_sha": "7b548aae0d9f50a7a5ab24cf0566a0428f97d92b",
     "final_commit_sha": null,
     "pages_run_id": null,
     "pages_deploy_status": null,
-    "live_verified": null
+    "live_verified": null,
+    "prior_attempts": [
+      {
+        "run_id": 42818060087,
+        "run_attempt": 1,
+        "conclusion": "failure",
+        "failed_step": "Deploy to GitHub Pages",
+        "error": "GitHub Pages returned HTTP 400 because deployment for bbef4d2c063c568a1903f5b5fa8f3d19da70d362 was still in progress.",
+        "other_predeployment_checks": "success"
+      },
+      {
+        "run_id": 42818060087,
+        "run_attempt": 2,
+        "conclusion": "failure",
+        "failed_step": "Deploy to GitHub Pages",
+        "error": "Retry failed because the same run then contained two artifacts named \"github-pages\".",
+        "other_predeployment_checks": "success"
+      }
+    ],
+    "last_successful_validation": "2026-11-10 12:43 UTC: repository check passed; GitHub Actions local browser/current-columns preflight passed on both attempts"
   },
   "other_columns_at_record": {
     "brief": "articles/2026-11-10-tech-law-brief.html",
