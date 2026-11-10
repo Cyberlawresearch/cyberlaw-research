@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-10",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-10-adams-prassl-binns-kelly-lyth-directly-discriminatory-algorithms.html",
+  "selection": "Jeremias Adams-Prassl, Reuben Binns, Aislinn Kelly-Lyth, Directly Discriminatory Algorithms",
+  "bibliography": {
+    "type": "article",
+    "author": "Jeremias Adams-Prassl; Reuben Binns; Aislinn Kelly-Lyth",
+    "originalTitle": "Directly Discriminatory Algorithms",
+    "journal": "The Modern Law Review",
+    "year": "2023",
+    "volume": "86",
+    "issue": "1",
+    "pages": "144–175",
+    "doi": "10.1111/1468-2230.12759",
+    "url": "https://doi.org/10.1111/1468-2230.12759",
+    "cnTitle": "算法歧视何以构成直接歧视：代理变量、训练偏差与平等法的因果判断"
+  },
+  "versions": {
+    "full_text": "Read the entire open-access publisher-hosted final article on Wiley: Introduction; The default assumption: indirectly discriminatory algorithms; Direct algorithmic discrimination; The limits of existing law; Conclusion; accompanying notes.",
+    "publication": "The Modern Law Review 86(1), 144–175, 2023; first online 2022-08-01. Publisher-hosted final version, not an SSRN working paper."
+  },
+  "sources": [
+    "https://onlinelibrary.wiley.com/doi/10.1111/1468-2230.12759",
+    "https://doi.org/10.1111/1468-2230.12759"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "history_scope": "Checked papers.html (2026-09-03 to 2026-11-09), papers-history-1.html (2026-08-07 to 2026-09-02), prior daily headings and paper entries. No match found.",
+  "related_reading": [
+    "articles/2026-09-16-barocas-selbst-big-data-disparate-impact.html"
+  ],
+  "timeline": null,
+  "body_length": 4526,
+  "checked_at": "2026-11-10",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  }
+}
