@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-10",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-10-new-works.html",
+  "page_blob_sha": "841c1c068fedb07f24bbf5b5dafbab8e31673f2c",
+  "newworks_count": 3,
+  "checked_at": "2026-11-10T12:40:13.623Z",
+  "checks": {
+    "original_publisher_pages_opened": true,
+    "original_title_author_doi_verified": true,
+    "formal_publication_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "doi_title_author_version_repository_code_search": true,
+    "historical_indexes_checked": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html",
+      "new-works-history.html",
+      "Repository-wide code search of exact DOI, title, and authors (including articles/ and new-works/ older entries)"
+    ],
+    "fields": [
+      "DOI",
+      "original title",
+      "author",
+      "publication version"
+    ],
+    "matches_found": 0,
+    "note": "Each primary Cambridge or Oxford publisher page was directly inspected on 2026-11-10. 2025 journal volume and 2026 online date distinguished for Elisabeth Paar; unassigned volume/issue values left null. Third item is a published OUP monograph, not a working paper."
+  },
+  "items": [
+    {
+      "cn_title": "退出云服务不等于完成迁移：欧盟《数据法》与DORA的责任分界",
+      "author": "Mahmoud Javadi",
+      "original_title": "Exit without Migration: Cloud Switching and Operational Continuity in EU Law",
+      "journal": "European Journal of Risk Regulation",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "publication_date": "2026-11-03",
+      "volume": null,
+      "issue": null,
+      "pages": "1–15 (First View)",
+      "article_number": null,
+      "doi": "10.1017/err.2026.10178",
+      "publisher_page": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/exit-without-migration-cloud-switching-and-operational-continuity-in-eu-law/BE77A50E75A8C95B238BD0CE5C99EBD0",
+      "version": "Published journal article (First View)"
+    },
+    {
+      "cn_title": "法官使用AI助手仍可能失去独立判断：审判中的人机职责如何划分",
+      "author": "Elisabeth Paar",
+      "original_title": "Artificial Intelligence in Court Proceedings: Judge’s Little Helper or the Beginning of AI’s Hostile Takeover?",
+      "journal": "German Law Journal",
+      "publisher": "Cambridge University Press",
+      "year": 2025,
+      "publication_date": "2026-04-24",
+      "volume": "26",
+      "issue": "Special Issue 7",
+      "pages": "1383–1403",
+      "article_number": null,
+      "doi": "10.1017/glj.2026.10181",
+      "publisher_page": "https://www.cambridge.org/core/journals/german-law-journal/article/artificial-intelligence-in-court-proceedings-judges-little-helper-or-the-beginning-of-ais-hostile-takeover/EB07B24BD131360172F24086B659FA71",
+      "version": "Published journal article (2025 volume; online 2026)"
+    },
+    {
+      "cn_title": "国际组织处理欧盟个人数据：GDPR与国际组织豁免如何衔接",
+      "author": "Zuzanna Gulczynska",
+      "original_title": "EU Data Protection and International Organisations: Bridging EU law and International Law",
+      "journal": null,
+      "publisher": "Oxford University Press",
+      "year": 2026,
+      "publication_date": "2026-10-08",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": "10.1093/oso/9780198981954.001.0001",
+      "publisher_page": "https://academic.oup.com/book/63438",
+      "online_isbn": "9780198981947",
+      "print_isbn": "9780198981954",
+      "version": "Published scholarly monograph"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "7b548aae0d9f50a7a5ab24cf0566a0428f97d92b",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": null
+  },
+  "other_columns_at_record": {
+    "brief": "articles/2026-11-10-tech-law-brief.html",
+    "paper": "articles/2026-11-10-adams-prassl-binns-kelly-lyth-directly-discriminatory-algorithms.html",
+    "classic": "articles/2026-11-10-proudhon-what-is-property.html"
+  }
+}
