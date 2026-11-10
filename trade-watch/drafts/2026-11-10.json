@@ -1,7 +1,7 @@
 {
   "date": "2026-11-10",
   "base_main_sha": "a12e826e4b6cdefff12fcba16bac6681b21ae556",
-  "phase": "pages_deployed_source_diagnostics_pending",
+  "phase": "pages_deployed_source_diagnostic_partial",
   "publication_ready": true,
   "items": [
     {
@@ -100,10 +100,18 @@
     "https://publications.parliament.uk/pa/cm5902/cmselect/cmbeis/672/report.html",
     "https://ofac.treasury.gov/recent-actions/20261109"
   ],
-  "last_error": null,
+  "last_error": {
+    "time": "2026-11-10T09:18:38+08:00",
+    "stage": "source_diagnostics",
+    "tool": "mcp__GitHub__fetch_workflow_job_logs",
+    "run_id": 42734789841,
+    "job_id": 129561263340,
+    "retries": 0,
+    "error": "Trade Watch source diagnostics failed: 403 Client Error: Forbidden for two UK Parliament urls https://committees.parliament.uk/committee/365/business-innovation-science-and-trade-committee/news/218824/government-will-legislate-on-forced-labour-in-supply-chains-after-bist-reports/ and https://publications.parliament.uk/pa/cm5902/cmselect/cmbeis/672/report.html; source pages and three public pages otherwise succeeded."
+  },
   "next_actions": [
-    "核查最终提交f2f4f274的原始来源专项诊断完成结果",
-    "如通过则将断点置为published"
+    "留存Github Actions 42734789841源链接403证据。读者公开页面已校验，勿将源链接403误报为Pages部署失败。",
+    "日后需检查英国议会官方源能否恢复自动访问，不删除对应有价值新闻以换取虚假合格状态。"
   ],
   "updated_at": "2026-11-10T09:25:00+08:00",
   "source_validation": "全部九项官方公告、议会正式回应或制裁名单修订已通过网页逐一打开核对，印度官方PDF第1页截图核验；本期中文正文明确暂停而非取消、拟议而非已生效、SDN别名修改而非新增指定。",
@@ -122,8 +130,8 @@
     "source_link_count": 10,
     "pages_run_id": 42733885767,
     "pages_status": "success",
-    "public_content_validation": "passed by current-commit publication guard 42734789943",
+    "public_content_validation": "GitHub current-commit guard run 42734789943 passed, Pages run 42733885767 succeeded; all three public pages content verified by source workflow",
     "source_diagnostics_run_id": 42734789841,
-    "source_validation": "in_progress"
+    "source_validation": "8/10 source URLs HTTP 200; two UK Parliament original source URLs returned 403 in Actions; independently opened and content verified via web; 10/10 content/target checked."
   }
 }
