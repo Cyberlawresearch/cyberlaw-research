@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>第54课｜互操作：为什么人工智能系统之间能否连接和迁移，会影响竞争与用户选择？｜网信法技术基础</title>
+<link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../briefs.html">全球科技法简报</a><a href="../papers.html">域外法学论文精读</a><a href="../classics.html">法学经典著作</a><a href="../new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 54 · LAW &amp; GOVERNANCE · 2026.11.10</div><h1>互操作：为什么人工智能系统之间能否连接和迁移，会影响竞争与用户选择？</h1><p class="tech-lead">今日问题：同一套人工智能业务，为什么接入另一家模型服务或迁到另一家云平台，仍可能需要重新开发？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus"><div><strong>它是什么</strong><p><b>互操作（interoperability）</b>是不同系统能够按照可理解的规则交换信息、调用功能并协同工作的能力。在人工智能应用中，它涉及模型接口、工具连接、数据格式和运行环境。<b>可迁移</b>则强调能否把数据、配置和业务转到另一服务；两者相关，却不相同。</p></div><div><strong>一个生活例子</strong><p>一家律所用模型A整理合同，并接入内部案例库。后来想试用模型B。若两家接口字段、工具调用和返回格式不同，软件就得改造；若历史检索索引和工作流又被原平台专有格式绑定，更换服务会更难。即使可以切换，模型B的回答也未必与模型A一致。</p></div></section>
+<section class="lesson-section"><h2>机制图：从“能连接”到“能更换”要经过哪些环节？</h2>
+<div class="visual-board" role="group" aria-label="用户任务进入业务应用，经适配层处理接口参数和授权，再由模型A或模型B执行，最后核查输出与业务连续性；迁移还要单独检查数据与配置是否可导出">
+<div class="visual-title">以同一合同审查应用切换模型提供者为例。每一箭头都可能存在技术障碍。</div>
+<div class="flow">
+<div class="flow-box"><strong>① 业务请求</strong><span>合同审查任务、内部知识库</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>② 接口适配</strong><span>转换请求字段、工具描述与授权</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>③ 模型A／B</strong><span>按各自规则处理并返回结果</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>④ 结果验收</strong><span>核对结构、质量、权限与日志</span></div>
+</div>
+<div class="compare-grid">
+<div class="compare-card"><b>接口能否对接</b><p>请求字段、工具调用及错误信息是否可以转换？</p></div>
+<div class="compare-card"><b>资产能否带走</b><p>文档、索引、提示模板和配置能否导出、重建？</p></div>
+<div class="compare-card"><b>业务能否延续</b><p>输出质量、访问权限与审计记录能否继续满足要求？</p></div>
+</div><p class="tiny-note">示意的是一种多模型应用架构，不表示所有模型都共用适配层，也不表示相同接口必然产生相同回答。</p></div>
+<p>第一层是<b>接口兼容</b>。应用通过API（应用程序接口）向模型提交请求。有的服务使用相似的接口形式，但参数名称、可用功能、调用额度与返回格式仍有差异。开发者可以设置<b>适配层</b>，把应用内部的一种请求翻译成不同服务能够接收的请求。翻译能减少改造工作，但不能凭空补出另一模型不支持的能力。</p>
+<p>第二层是<b>工具和数据互通</b>。模型可能需要查询数据库、读取文档或触发工作流。模型上下文协议（MCP）提供一套描述和调用外部工具的规则，帮助不同客户端发现工具、理解参数并发起调用。不过，采用统一协议并不自动授予数据访问权限，仍须由应用和服务端实施授权。把历史知识库从一个平台迁往另一个平台，还可能需要导出原文、重新生成向量索引并检查检索效果。</p>
+<p>第三层是<b>实际可替代性</b>。能够接通模型B，不代表模型B在准确率、响应速度、价格或隐私保护上与模型A等效。不同模型的训练方式和功能限制可能不同，复杂任务还需要重新测试。用户真实的转换成本，因此不仅是改动接口所花的时间，还包括数据迁移、重新验收、人员培训及服务中断风险。</p>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“两家服务都提供API，就一定能够直接替换。”有API只说明存在接入方式，字段、功能及返回行为仍需逐项核对。</span></div>
+<div class="myth"><b>误解 02</b><span>“能把文件下载下来，就实现了完整迁移。”文件导出只是一步，检索索引、权限配置、运行流程和可用性也可能需要重建。</span></div>
+<div class="myth"><b>误解 03</b><span>“互操作越开放越安全。”开放接口可以增加选择，也会扩大连接范围；身份认证、最小权限和调用日志仍必须配套。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>选择权的实现依赖可核查的技术条件</h3><p>在平台竞争研究中，互操作关系到第三方能否接入关键功能，迁移能力则关系到用户能否离开原服务。欧盟《数据法》自2025年9月12日起适用，其中有关数据处理服务切换的规则旨在降低云服务锁定；《数字市场法》第6条第7款对被指定守门人的特定操作系统等功能提出有效互操作要求。两者适用对象与义务范围不同，并不意味着所有人工智能模型必须开放权重或保证输出相同。</p><p>对采购政务、医疗和法律服务智能体的机构，可以将数据导出格式、接口文档、迁移测试、权限隔离和退出安排写进合同与验收要求。研究重点应是哪些障碍属于合理的安全与研发安排，哪些会不必要地限制用户选择或竞争者进入。</p></div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>人工智能技术生态中的互操作义务应如何确定边界？</h3><p>考察接口开放、数据可携带、模型能力差异与网络安全之间的关系，研究何种市场地位和排除行为足以支持特定义务。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>公共部门采购人工智能系统如何防止供应商锁定？</h3><p>围绕统一导出格式、跨模型替换演练、知识库重建成本和连续服务指标，提出可核验的采购标准。</p></div>
+</div></section>
+<section class="lesson-section"><h2>可靠来源</h2><ol class="source-links">
+<li><a href="https://csrc.nist.gov/glossary/term/Interoperability">美国国家标准与技术研究院（NIST），Interoperability 术语解释</a>。提供系统之间通信能力的基本定义。</li>
+<li><a href="https://modelcontextprotocol.io/specification/2025-06-18/server/tools">Model Context Protocol，Tools（2025年6月18日版技术规范）</a>。说明工具发现、调用及工具参数结构。</li>
+<li><a href="https://digital-strategy.ec.europa.eu/en/policies/data-act">欧盟委员会，Data Act</a>。说明《数据法》适用日期及云数据处理服务切换制度。</li>
+<li><a href="https://digital-markets-act.ec.europa.eu/businesses-portal/interoperability_en">欧盟委员会，Interoperability — Digital Markets Act</a>。说明《数字市场法》第6条第7款适用于守门人相关功能的互操作要求。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第55课</small><p>行政使用：人工智能参与行政工作时，哪些技术环节会影响程序保障？</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main><footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
