@@ -3,16 +3,71 @@
   "base_main_sha": "a12e826e4b6cdefff12fcba16bac6681b21ae556",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "cn-tariff",
+      "title": "对美24%附加关税暂停两个月，保留10%",
+      "date": "2026-11-09",
+      "source": "https://gss.mof.gov.cn/gzdt/zhengcefabu/202611/t20261109_4004260.htm",
+      "phase": "正式公告，2026-11-10 13:01生效"
+    },
+    {
+      "id": "cn-six-controls",
+      "title": "六项关键物项出口管制措施暂停至2027-01-10",
+      "date": "2026-11-09",
+      "source": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_91466027f465467985942a639a9485f4.html",
+      "phase": "正式公告，2026-11-11起"
+    },
+    {
+      "id": "cn-16-list",
+      "title": "16家美国实体出口管制管控名单限制继续暂停两个月",
+      "source": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_4bc4aaa99b4e41feb6030ec59018d212.html",
+      "phase": "政策发布，2026-11-10起"
+    },
+    {
+      "id": "cn-11-list",
+      "title": "11家美国实体不可靠实体清单相关限制继续暂停",
+      "source": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_3acaf2afeea14e19ad15ff771c541d4e.html",
+      "phase": "政策发布，2026-11-10起"
+    },
+    {
+      "id": "cn-hanwha",
+      "title": "韩华海洋五家美国子公司反制继续暂停",
+      "source": "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2026/art_5484f3f9cb5344009c5c1cd4cd937bc9.html",
+      "phase": "商务部令2026年第4号，2026-11-10生效"
+    },
+    {
+      "id": "us-ofac",
+      "title": "OFAC更新伊朗制裁对象Volta Shipping别名",
+      "source": "https://ofac.treasury.gov/recent-actions/20261109",
+      "phase": "既有名单信息修改，非新增制裁"
+    },
+    {
+      "id": "in-clavulanic",
+      "title": "印度克拉维酸反倾销案产品范围评论期限延至11月21日",
+      "source": "https://dgtr.gov.in/sites/default/files/2026-11/Notification_2nd_Extension_Clavulanic_acid_tracked%20%281%29.pdf",
+      "phase": "调查期间第二次延期"
+    }
+  ],
+  "coverage": {
+    "US": "OFAC 11月9日名单更新；联邦公报及USTR进一步巡视中",
+    "EU": "欧盟委员会及EUR-Lex初检，继续检查",
+    "UK": "HMRC 11月9日缴税指引更新；TRA进一步巡视",
+    "JP": "METI初检，待核",
+    "KR": "韩国产业通商部/贸易委员会初检，待核",
+    "IN": "DGTR 11月9日克拉维酸案期限变更已核",
+    "CA": "CBSA初检，待核",
+    "AU": "反倾销委员会初检，待核",
+    "CN": "11月9日五类正式延长措施已定位"
+  },
   "dedupe": [],
   "sources_checked": [],
   "last_error": null,
   "next_actions": [
-    "逐个巡视重点法域并核实最近72小时正式公告",
-    "按近7期事件级去重",
-    "复核原始来源及日期、法律阶段和企业影响",
-    "终扫后发布并验收"
+    "确认中国港务费相关原始决定及美欧英日韩最新措施",
+    "逐一完成全部8法域的巡视，按近7期去重",
+    "逐条实地打开外链并进行结束前终扫",
+    "设置publication_ready并正式发布"
   ],
-  "updated_at": "2026-11-10T09:01:17+08:00"
+  "updated_at": "2026-11-10T09:12:00+08:00"
 }
