@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-10",
+  "base_main_sha": "a12e826e4b6cdefff12fcba16bac6681b21ae556",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "dedupe": [],
+  "sources_checked": [],
+  "last_error": null,
+  "next_actions": [
+    "逐个巡视重点法域并核实最近72小时正式公告",
+    "按近7期事件级去重",
+    "复核原始来源及日期、法律阶段和企业影响",
+    "终扫后发布并验收"
+  ],
+  "updated_at": "2026-11-10T09:01:17+08:00"
+}
