@@ -1,7 +1,7 @@
 {
   "date": "2026-11-10",
   "base_main_sha": "a12e826e4b6cdefff12fcba16bac6681b21ae556",
-  "phase": "main_written_pending_pages",
+  "phase": "pages_deployed_source_diagnostics_pending",
   "publication_ready": true,
   "items": [
     {
@@ -102,9 +102,8 @@
   ],
   "last_error": null,
   "next_actions": [
-    "查询与最终提交f2f4f274相符的Pages工作流是否成功",
-    "核验公开当期、首页及归档实际内容和10个外链",
-    "更新断点为published或记录真失败"
+    "核查最终提交f2f4f274的原始来源专项诊断完成结果",
+    "如通过则将断点置为published"
   ],
   "updated_at": "2026-11-10T09:25:00+08:00",
   "source_validation": "全部九项官方公告、议会正式回应或制裁名单修订已通过网页逐一打开核对，印度官方PDF第1页截图核验；本期中文正文明确暂停而非取消、拟议而非已生效、SDN别名修改而非新增指定。",
@@ -122,7 +121,9 @@
     "issue_count": 9,
     "source_link_count": 10,
     "pages_run_id": 42733885767,
-    "pages_status": "in_progress",
-    "public_content_validation": "pending"
+    "pages_status": "success",
+    "public_content_validation": "passed by current-commit publication guard 42734789943",
+    "source_diagnostics_run_id": 42734789841,
+    "source_validation": "in_progress"
   }
 }
