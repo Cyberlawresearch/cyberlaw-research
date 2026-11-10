@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-10",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-10-proudhon-what-is-property.html",
+  "target_path": "articles/2026-11-10-proudhon-what-is-property.html",
+  "book": {
+    "author": "Pierre-Joseph Proudhon",
+    "original_title": "Qu’est-ce que la propriété? ou Recherches sur le principe du droit et du gouvernement",
+    "publisher": "Benj. R. Tucker（1876英译本）",
+    "year": "1876（所据完整英译；1840法文第一篇，1841第二篇）",
+    "edition": "Benjamin R. Tucker, What is Property? An Inquiry into the Principle of Right and of Government; Princeton, Massachusetts, 1876. Gutenberg完整英译电子文本（非1840年法文本传真）"
+  },
+  "source_urls": [
+    "https://www.gutenberg.org/files/360/360-h/360-h.htm",
+    "https://en.wikisource.org/wiki/What_is_Property%3F",
+    "https://davidmhart.com/liberty/OtherWorks/Proudhon/1849-Propriete/index.html",
+    "https://www.cambridge.org/highereducation/books/proudhon-what-is-property/7A109B76BC2C9E40DCF30455384D2BF3",
+    "https://www.connexions.org/CxArchive/MIA/marx/works/1845/holy-family/ch04.htm",
+    "https://bastiat.org/fr/lettre8.html",
+    "https://www.connexions.org/CxArchive/MIA/marx/works/1847/poverty-philosophy/index.htm"
+  ],
+  "original_verification": "逐项核对Gutenberg完整1876英译电子本的第一篇序言及五章（第二章自然权利、先占、成文法；第三章劳动与占有的八节；第四章十个否定命题及附录；第五章正义、社会性、第三种社会形式）和1841年第二篇致布朗基书信的主要论证、书目与历史事项；对照法文第一篇目录。未宣称法文逐字校勘，译者生平材料不视为作者原话。",
+  "critics": [
+    {
+      "name": "Karl Marx and Friedrich Engels（马克思、恩格斯）",
+      "work": "Die heilige Familie（《神圣家族》，1845）第四章",
+      "url": "https://www.connexions.org/CxArchive/MIA/marx/works/1845/holy-family/ch04.htm",
+      "checked": "直接核对关于1840年《什么是所有权？》的肯定与批评；指出其批判仍在政治经济学概念边界内。"
+    },
+    {
+      "name": "Frédéric Bastiat（巴斯夏）",
+      "work": "Gratuité du crédit, Huitième lettre（《无息信贷》第八封信，1849年12月24日）",
+      "url": "https://bastiat.org/fr/lettre8.html",
+      "checked": "核对法文公开信对资本收益及无息信贷的反驳；这是1849年后续争论，不冒称针对1840年原书逐章评论。"
+    }
+  ],
+  "dedup_checked": [
+    "main classics.html全部列名",
+    "classics-history.html全部已迁入第15—35期",
+    "data/books.json辅助索引",
+    "main全文文章文件目录及2026-11-10当期记录"
+  ],
+  "duplicate_found": false,
+  "sections": 73,
+  "prose_length": 10198,
+  "checked_at": "2026-11-10",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
