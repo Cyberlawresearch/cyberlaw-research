@@ -1,7 +1,7 @@
 {
   "date": "2026-11-10",
   "base_main_sha": "a12e826e4b6cdefff12fcba16bac6681b21ae556",
-  "phase": "researching",
+  "phase": "verifying",
   "publication_ready": false,
   "items": [
     {
@@ -47,27 +47,48 @@
       "title": "印度克拉维酸反倾销案产品范围评论期限延至11月21日",
       "source": "https://dgtr.gov.in/sites/default/files/2026-11/Notification_2nd_Extension_Clavulanic_acid_tracked%20%281%29.pdf",
       "phase": "调查期间第二次延期"
+    },
+    {
+      "id": "cn-port",
+      "title": "交通运输部继续暂停美船舶特别港务费及航运造船产业链调查至2027年1月10日",
+      "date": "2026-11-09",
+      "jurisdiction": "中国",
+      "phase": "正式公告第90号、继续暂停",
+      "source": "https://xxgk.mot.gov.cn/jigou/syj/202611/t20261109_4227425.html",
+      "checked": true
+    },
+    {
+      "id": "uk-rbc",
+      "title": "英国议会11月9日公开政府关于强迫劳动供应链尽调及美英贸易的正式答复",
+      "date": "2026-11-09",
+      "jurisdiction": "英国",
+      "phase": "议会公开报告、政府意向及审议，并非生效规则",
+      "source": "https://publications.parliament.uk/pa/cm5902/cmselect/cmbeis/672/report.html",
+      "checked": true
     }
   ],
   "coverage": {
-    "US": "OFAC 11月9日名单更新；联邦公报及USTR进一步巡视中",
-    "EU": "欧盟委员会及EUR-Lex初检，继续检查",
-    "UK": "HMRC 11月9日缴税指引更新；TRA进一步巡视",
-    "JP": "METI初检，待核",
-    "KR": "韩国产业通商部/贸易委员会初检，待核",
-    "IN": "DGTR 11月9日克拉维酸案期限变更已核",
-    "CA": "CBSA初检，待核",
-    "AU": "反倾销委员会初检，待核",
-    "CN": "11月9日五类正式延长措施已定位"
+    "US": "11月9日OFAC伊朗SDN更新核实；Federal Register/ITA/USTR巡视，其他动作与11月9日既往重复已排除",
+    "EU": "欧委会贸易防御及EUR-Lex近72小时核查，未发现足以单独收录的新增重大正式措施",
+    "UK": "11月9日议会政府答复核查完毕；TRA/HMRC及制裁清单巡视",
+    "JP": "METI出口许可/外贸通报与JETRO近72小时巡视",
+    "KR": "产业通商部/贸易委员会及韩媒贸易监管近72小时巡视",
+    "IN": "DGTR 11月9日克拉维酸产品范围及PCN意见期限第二次延期核实",
+    "CA": "CBSA/CITT 近期公告巡视；近72小时未发现值得收录的实质新动作",
+    "AU": "贸易救济委员会及官方公报巡视；11月9日事项已在上一期出现不重复",
+    "CN": "财政部、商务部、交通运输部11月9日正式公告逐条原始核对"
   },
-  "dedupe": [],
+  "dedupe": [
+    "已读取2026-11-03至11-09共7期完整正文并按事件级核查：中方11月9日发布六项正式调整是11月8–9日美方公告的独立措施，非旧信息重发。",
+    "美国178项301排除、美国港口收费暂停、澳大利亚光伏钢管、美国正丙醇反向措施等前期已有事项本期不重复。"
+  ],
   "sources_checked": [],
   "last_error": null,
   "next_actions": [
-    "确认中国港务费相关原始决定及美欧英日韩最新措施",
-    "逐一完成全部8法域的巡视，按近7期去重",
-    "逐条实地打开外链并进行结束前终扫",
-    "设置publication_ready并正式发布"
+    "对九项候选最后核实监管阶段、来源链接、影响、deadline",
+    "检查最新主分支是否已有当期正文",
+    "最后时段新闻终扫，做好完整HTML后再设置publication_ready=true",
+    "GitHub main三份顺序提交及针对最终commit验收"
   ],
-  "updated_at": "2026-11-10T09:12:00+08:00"
+  "updated_at": "2026-11-10T09:19:00+08:00"
 }
