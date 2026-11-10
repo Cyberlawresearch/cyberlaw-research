@@ -1,7 +1,7 @@
 {
   "date": "2026-11-10",
   "base_main_sha": "a12e826e4b6cdefff12fcba16bac6681b21ae556",
-  "phase": "publication_ready",
+  "phase": "main_written_pending_pages",
   "publication_ready": true,
   "items": [
     {
@@ -102,11 +102,27 @@
   ],
   "last_error": null,
   "next_actions": [
-    "创建第063期当期完整HTML至main",
-    "更新首页及完整归档",
-    "重新读取main三文件及核验对应Pages部署、公开页面、来源链接"
+    "查询与最终提交f2f4f274相符的Pages工作流是否成功",
+    "核验公开当期、首页及归档实际内容和10个外链",
+    "更新断点为published或记录真失败"
   ],
   "updated_at": "2026-11-10T09:25:00+08:00",
   "source_validation": "全部九项官方公告、议会正式回应或制裁名单修订已通过网页逐一打开核对，印度官方PDF第1页截图核验；本期中文正文明确暂停而非取消、拟议而非已生效、SDN别名修改而非新增指定。",
-  "final_sweep": "2026-11-10早间再次检索美国、欧盟、英国、日本、韩国及印度、加拿大、澳大利亚新公告；未找到比九项事件更适宜新增、且未被最近7期收录的同等重大原始决定。"
+  "final_sweep": "2026-11-10早间再次检索美国、欧盟、英国、日本、韩国及印度、加拿大、澳大利亚新公告；未找到比九项事件更适宜新增、且未被最近7期收录的同等重大原始决定。",
+  "publication_attempt": {
+    "time": "2026-11-10T09:10-09:20+08:00",
+    "issue_path": "trade-watch/issues/2026-11-10.html",
+    "issue_commit": "c963345a5fdfdc71b34a21477724c311b3f14128",
+    "index_commit": "28320f4ec454bab4de4ea61a22f7b5a3c4e82efc",
+    "archive_commit": "f2f4f2743739c67e91ccb85e597cd33c0ef709b9",
+    "issue_present": true,
+    "homepage_present": true,
+    "archive_present": true,
+    "main_readback_ok": true,
+    "issue_count": 9,
+    "source_link_count": 10,
+    "pages_run_id": 42733885767,
+    "pages_status": "in_progress",
+    "public_content_validation": "pending"
+  }
 }
