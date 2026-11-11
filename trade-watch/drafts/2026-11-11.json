@@ -1,15 +1,66 @@
 {
   "date": "2026-11-11",
   "base_main_sha": "6bc86c1a1820dc2524e023cc82c1a5566c47c2f4",
-  "phase": "researching",
+  "phase": "researching_candidates_US_CA",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "us-ptmeg-cn",
+      "title": "美对华PTMEG反倾销初裁中国统一倾销幅度213.44%",
+      "date": "2026-11-10",
+      "source": "https://public-inspection.federalregister.gov/2026-22942.pdf",
+      "phase": "初步肯定性决定；刊登日起暂停清算和征收保证金",
+      "checked": true
+    },
+    {
+      "id": "us-bricks-circumvention",
+      "title": "美对中国产含微量氧化铝镁碳砖启动全国性反规避调查",
+      "date": "2026-11-10",
+      "source": "https://public-inspection.federalregister.gov/2026-22943.pdf",
+      "phase": "反规避调查立案，尚无规避认定",
+      "checked": true
+    },
+    {
+      "id": "us-ptmeg-kr-vn",
+      "title": "美对韩国和越南PTMEG分别作反倾销初裁",
+      "date": "2026-11-10",
+      "sources": [
+        "https://public-inspection.federalregister.gov/2026-22941.pdf",
+        "https://public-inspection.federalregister.gov/2026-22939.pdf"
+      ],
+      "phase": "分别初步肯定性决定",
+      "checked": true
+    },
+    {
+      "id": "ca-paperboard-extension",
+      "title": "加拿大中国产纸板杯容器双反初裁期限延至12月30日",
+      "date": "2026-11-09",
+      "source": "https://cbsa-asfc.gc.ca/sima-lmsi/i-e/pcc2026/pcc2026-nx-eng.html",
+      "phase": "调查初步阶段延期",
+      "checked": true
+    },
+    {
+      "id": "us-vn-301-extension",
+      "title": "美国将越南知识产权301调查延长三个月至2027年2月28日",
+      "date": "2026-11-10",
+      "source": "https://public-inspection.federalregister.gov/2026-22868.pdf",
+      "phase": "调查期限确定，尚无关税措施",
+      "checked": true
+    }
+  ],
+  "coverage": {
+    "US": "11月10日Federal Register正式目录108件；核查ITA PTMEG多国初裁、镁碳砖反规避立案、USTR越南301调查延期，OFAC11月10日无新名单公告",
+    "CA": "CBSA 11月9日纸板杯容器双反调查延至12月30日，11月10日非铠装建筑电缆终裁理由书公开"
+  },
   "last_error": null,
   "next_actions": [
-    "检索美欧英日韩、巡视印加澳",
-    "至少七期事件级去重",
-    "核验原始来源、法律阶段及全部链接",
-    "整理正式发布正文并回读验收"
-  ]
+    "续查欧盟英国日本韩国及印澳",
+    "补齐美其他对华贸易救济文件、核验全部最终来源",
+    "阶段保存覆盖范围与去重结论",
+    "完成终扫后提交正式正文"
+  ],
+  "dedupe": [
+    "逐条比对11月4—10日共7期64条标题：PTMEG初裁、镁碳砖反规避、越南301延期、纸板杯延期均无同一新增法律动作；近期301对华排除和中国稀土暂停等已刊载，不重复"
+  ],
+  "updated_at": "2026-11-11T09:20:00+08:00"
 }
