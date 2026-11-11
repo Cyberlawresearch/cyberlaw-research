@@ -1,7 +1,7 @@
 {
   "date": "2026-11-11",
   "base_main_sha": "6bc86c1a1820dc2524e023cc82c1a5566c47c2f4",
-  "phase": "source_correction_deploying",
+  "phase": "published_verified_with_source_access_exceptions",
   "publication_ready": true,
   "items": [
     {
@@ -238,24 +238,24 @@
     "CN": "检查财政部、商务部和交通运输部11月9日已在11月10日第063期报道的对美关税、出口管制、港务费、实体清单公告，事件级不重复"
   },
   "last_error": {
-    "stage": "first_source_diagnostic",
+    "stage": "post_deployment_source_diagnostic",
     "tool": "mcp__GitHub__fetch_workflow_job_logs",
-    "job_id": 130254457499,
-    "run_id": 42938527144,
-    "error": "3 of 14 sources failed: Canada cbsa.gc.ca certificate hostname mismatch; Reuters 401; Australia minister.industry.gov.au read timeout. All three public pages independently matched exact 064 issue, homepage, archive.",
-    "time": "2026-11-11T09:26+08:00"
+    "run_id": 42939704544,
+    "job_id": 130258317275,
+    "error": "Source check 12/14 HTTP 200; Reuters original link HTTP 401 from Actions runner; Australian Minister official press-release GET read timeout 60s; all 3 public pages match final commit and 11 stories",
+    "time": "2026-11-11T09:36:15+08:00",
+    "retries": "workflow attempted source HTTP up to 3 times, page checks up to 4"
   },
   "next_actions": [
-    "核查修正来源后main提交3c598000对应Pages部署",
-    "再核查该新提交触发的Trade Watch正式来源诊断",
-    "记录新一轮实际HTTP或诊断错误"
+    "保持当期正式网页和完整原始新闻来源不变；两条外部站点仅在本次官方诊断环境访问受限，原文经独立网页核验。",
+    "下一次例行运行继续检查来源网络可达性；不得关闭每日任务。"
   ],
   "dedupe": [
     "已读取 main 中2026年11月4日至10日最近7期完整正文，按事件级对照；11月10日中国对美关税及六项出口管制等已刊发，本期不重发。",
     "11月10日美国四法域PTMEG初裁、镁碳砖反规避立案为新决定；11月9日印度铝挤压型材反倾销新立案；11月10日印度铜管范围及共聚多元醇问卷延期为新增阶段事实。",
     "11月9日加拿大纸板杯双反初裁延期、11月10日英国制裁既有对象记录变更、意大利调查终结、美国越南301决定期限调整、澳美关键矿产融资会谈均非前七期重复。"
   ],
-  "updated_at": "2026-11-11T09:30:00+08:00",
+  "updated_at": "2026-11-11T09:36:15+08:00",
   "sources_checked": [
     "https://dgtr.gov.in/sites/default/files/2026-11/Eng%20Initiation%20Notification%20Aluminium%20Extrusion%2009.11.2026.pdf",
     "https://www.reuters.com/legal/government/italian-prosecutors-target-amazon-over-sale-chinese-goods-2026-11-10/",
@@ -272,7 +272,7 @@
     "https://public-inspection.federalregister.gov/2026-22868.pdf",
     "https://www.minister.industry.gov.au/king/media/australia-and-usa-work-unlock-critical-minerals-investment"
   ],
-  "source_validation": "逐一通过公开网页或官方PDF核查全部11项的原始文件和法律阶段；所有引用均定位具体公告、官方案件决定、路透报道。美国六份《联邦公报》PDF均截图查验，印度三份通知与英国制裁PDF截图查验；加拿大CBSA官方页面经网页索引全文核对，网页直接读取存在偶发接口访问限制。",
+  "source_validation": "逐一通过公开网页或官方PDF核查全部11项的原始文件和法律阶段；所有引用均定位具体公告、官方案件决定、路透报道。美国六份《联邦公报》PDF均截图查验，印度三份通知与英国制裁PDF截图查验；加拿大CBSA官方页面经网页索引全文核对，网页直接读取存在偶发接口访问限制。 2026-11-11 09:36 对路透社11月10日意大利调查报道和澳大利亚部长11月10日新闻稿再次独立打开，事件事实与日期正确。",
   "final_sweep": "对2026年11月9日至11日美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚官方新公告和主流媒体进行补充搜索；欧盟意大利海关调查11月10日新增程序、印度铝型材11月9日新立案均已纳入；未见其他同等重要且有可信新原始证据的决定。",
   "publication_attempt": {
     "issue_path": "trade-watch/issues/2026-11-11.html",
@@ -286,18 +286,18 @@
     "issue_count": 11,
     "source_link_count": 14,
     "dom_link_values_match_expected": true,
-    "pages_run_id": 42937989818,
-    "pages_status": "awaiting_matching_new_deploy",
-    "public_content_validation": "not_verified",
-    "source_diagnostics": "first run 42938527144: 11/14 source checks passed; Canada SSL hostname mismatch, Reuters HTTP 401, Australia timeout. CBSA hostname corrected to www.cbsa-asfc.gc.ca on main.",
-    "pages_run_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/42937989818",
-    "pages_deployed_head_sha": "dc26678a6e65cc4622955563a84278e95851d93d",
+    "pages_run_id": 42939266916,
+    "pages_status": "success_current_main",
+    "public_content_validation": "GitHub source diagnostics run 42939704544 confirmed all three live pages match deployed SHA 3c598000; issue has 11 news cards, homepage latest and archive top entry match.",
+    "source_diagnostics": "12/14 checks HTTP 200. Reuters original article returned 401 to Actions runner; Australian minister exact official press release timed out (60 seconds) in runner. Both were independently opened through web, content and 2026-11-10 dates verified; actual URLs retained to avoid substituting noncanonical or unrelated sources.",
+    "pages_run_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/42939266916",
+    "pages_deployed_head_sha": "3c598000bf6a04aa1527bc913b076c0d81cf6d4e",
     "page_workflow_checks": [
       "Deploy to GitHub Pages:success",
       "Verify deployed current columns and entry points:success",
       "Trade Watch publication guard:success"
     ],
-    "source_diagnostics_run_id": 42938527144,
+    "source_diagnostics_run_id": 42939704544,
     "final_source_correction_commit": "3c598000bf6a04aa1527bc913b076c0d81cf6d4e",
     "previous_pages_run_id": 42937989818
   }
