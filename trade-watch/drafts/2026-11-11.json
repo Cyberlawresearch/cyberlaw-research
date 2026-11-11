@@ -1,7 +1,7 @@
 {
   "date": "2026-11-11",
   "base_main_sha": "6bc86c1a1820dc2524e023cc82c1a5566c47c2f4",
-  "phase": "research_verified",
+  "phase": "main_written_pages_deploying",
   "publication_ready": true,
   "items": [
     {
@@ -237,18 +237,23 @@
     "AU": "澳贸易救济委员会11月9—11日公告巡视；资源部长11月10日澳美关键矿产EXIM融资会谈无新贷款批准",
     "CN": "检查财政部、商务部和交通运输部11月9日已在11月10日第063期报道的对美关税、出口管制、港务费、实体清单公告，事件级不重复"
   },
-  "last_error": null,
+  "last_error": {
+    "stage": "external_public_page_access",
+    "tool": "web.run / container.requests",
+    "error": "The current web reader reported the three new public URLs as not accessible, and the container network DNS lookup was unavailable. This is not a confirmed Pages deployment failure; current matching Pages run 42937989818 is in_progress.",
+    "time": "2026-11-11T09:25+08:00"
+  },
   "next_actions": [
-    "正式创建 trade-watch/issues/2026-11-11.html 完整正文",
-    "更新 trade-watch/index.html 最新一期、archive.html 置顶",
-    "main 三文件回读校对、Pages和公开网页及来源链接诊断"
+    "查询42937989818最终Pages结论及与最终提交SHA一致性",
+    "检查workflow_run来源诊断及三公开页面和14个来源",
+    "保持每日任务与历史页面原状"
   ],
   "dedupe": [
     "已读取 main 中2026年11月4日至10日最近7期完整正文，按事件级对照；11月10日中国对美关税及六项出口管制等已刊发，本期不重发。",
     "11月10日美国四法域PTMEG初裁、镁碳砖反规避立案为新决定；11月9日印度铝挤压型材反倾销新立案；11月10日印度铜管范围及共聚多元醇问卷延期为新增阶段事实。",
     "11月9日加拿大纸板杯双反初裁延期、11月10日英国制裁既有对象记录变更、意大利调查终结、美国越南301决定期限调整、澳美关键矿产融资会谈均非前七期重复。"
   ],
-  "updated_at": "2026-11-11T09:40:00+08:00",
+  "updated_at": "2026-11-11T09:25:00+08:00",
   "sources_checked": [
     "https://dgtr.gov.in/sites/default/files/2026-11/Eng%20Initiation%20Notification%20Aluminium%20Extrusion%2009.11.2026.pdf",
     "https://www.reuters.com/legal/government/italian-prosecutors-target-amazon-over-sale-chinese-goods-2026-11-10/",
@@ -266,5 +271,22 @@
     "https://www.minister.industry.gov.au/king/media/australia-and-usa-work-unlock-critical-minerals-investment"
   ],
   "source_validation": "逐一通过公开网页或官方PDF核查全部11项的原始文件和法律阶段；所有引用均定位具体公告、官方案件决定、路透报道。美国六份《联邦公报》PDF均截图查验，印度三份通知与英国制裁PDF截图查验；加拿大CBSA官方页面经网页索引全文核对，网页直接读取存在偶发接口访问限制。",
-  "final_sweep": "对2026年11月9日至11日美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚官方新公告和主流媒体进行补充搜索；欧盟意大利海关调查11月10日新增程序、印度铝型材11月9日新立案均已纳入；未见其他同等重要且有可信新原始证据的决定。"
+  "final_sweep": "对2026年11月9日至11日美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚官方新公告和主流媒体进行补充搜索；欧盟意大利海关调查11月10日新增程序、印度铝型材11月9日新立案均已纳入；未见其他同等重要且有可信新原始证据的决定。",
+  "publication_attempt": {
+    "issue_path": "trade-watch/issues/2026-11-11.html",
+    "issue_commit": "e8756d0b1788424758bfc6b74cb9d5c639d4bcbf",
+    "index_commit": "ed411ac2b16c6cf89f160c5df81c2980011a4dcd",
+    "archive_commit": "dc26678a6e65cc4622955563a84278e95851d93d",
+    "main_readback_ok": true,
+    "issue_present": true,
+    "homepage_present": true,
+    "archive_present": true,
+    "issue_count": 11,
+    "source_link_count": 14,
+    "dom_link_values_match_expected": true,
+    "pages_run_id": 42937989818,
+    "pages_status": "in_progress",
+    "public_content_validation": "not_verified",
+    "source_diagnostics": "pending"
+  }
 }
