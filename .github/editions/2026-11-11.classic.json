@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-11",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-11-aristotle-politics.html",
+  "target_path": "articles/2026-11-11-aristotle-politics.html",
+  "book": {
+    "author": "Aristotle（亚里士多德）",
+    "original_title": "Πολιτικά（Politics）",
+    "publisher": "Oxford: Clarendon Press（Jowett英译本）",
+    "year": "1885（英译；古希腊原著约前四世纪）",
+    "edition": "Benjamin Jowett, The Politics of Aristotle, Vol. I, Oxford: Clarendon Press, 1885（完整八卷英文译文）"
+  },
+  "source_urls": [
+    "https://classics.mit.edu/Aristotle/politics.1.one.html",
+    "https://classics.mit.edu/Aristotle/politics.2.two.html",
+    "https://classics.mit.edu/Aristotle/politics.3.three.html",
+    "https://classics.mit.edu/Aristotle/politics.4.four.html",
+    "https://classics.mit.edu/Aristotle/politics.5.five.html",
+    "https://classics.mit.edu/Aristotle/politics.6.six.html",
+    "https://classics.mit.edu/Aristotle/politics.7.seven.html",
+    "https://classics.mit.edu/Aristotle/politics.8.eight.html",
+    "https://oll-resources.s3.us-east-2.amazonaws.com/oll3/store/titles/579/0033-01_Bk_SM.pdf",
+    "https://en.wikisource.org/wiki/Politics_(Jowett)",
+    "https://constitution.org/2-Authors/jjr/socon_01.htm",
+    "https://press.princeton.edu/books/paperback/9780691158341/women-in-western-political-thought"
+  ],
+  "original_verification": "系统核对MIT Internet Classics Archive上Benjamin Jowett完整八卷英译，各卷结构及代表性原文，核实卷一至八覆盖家政奴役、旧政体比较、公民与政体分类、混合政体、政变与稳定、民主寡头的组织、理想城邦与公共教育；并据1885年Clarendon Press初版卷一书名页核实译者、出版地、出版社、年份。未作古希腊文逐字校勘。",
+  "critics": [
+    {
+      "name": "Jean-Jacques Rousseau（卢梭）",
+      "work": "Du contrat social（《社会契约论》），1762年，卷一第二章",
+      "url": "https://constitution.org/2-Authors/jjr/socon_01.htm",
+      "checked": "查阅直接指名亚里士多德并批评自然奴役理论的原文"
+    },
+    {
+      "name": "Susan Moller Okin（奥金）",
+      "work": "Women in Western Political Thought（1979），Part II: Aristotle",
+      "url": "https://press.princeton.edu/books/paperback/9780691158341/women-in-western-political-thought",
+      "checked": "据Princeton University Press书目及内容介绍核对女性主义批评，未声称读取受版权保护的整部批评著作"
+    }
+  ],
+  "dedup_checked": [
+    "main classics.html完整历史66条",
+    "classics-history.html第15—35期",
+    "data/books.json",
+    "articles目录全部可见历史文件名",
+    "当日已有经典正文和edition记录",
+    "最近经典栏目提交"
+  ],
+  "duplicate_found": false,
+  "sections": 85,
+  "prose_length": 10722,
+  "checked_at": "2026-11-11",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
