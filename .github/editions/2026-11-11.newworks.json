@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-11",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-11-new-works.html",
+  "page_blob_sha": "7fa201b70f164fc9222a61bd8d47a86252f3f2ca",
+  "newworks_count": 3,
+  "checked_at": "2026-11-11T12:42:46.464Z",
+  "checks": {
+    "original_publisher_pages_opened": true,
+    "original_title_author_doi_verified": true,
+    "formal_publication_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "doi_title_author_version_repository_code_search": true,
+    "historical_indexes_checked": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html",
+      "new-works-history.html",
+      "GitHub repository-wide code searches for DOI, original title and authors across article pages and edition records"
+    ],
+    "fields": [
+      "DOI",
+      "original title",
+      "author",
+      "publication version"
+    ],
+    "matches_found": 0,
+    "note": "All three primary publisher pages directly examined on 2026-11-11. A previous entry includes Friso Bostoen as a coauthor of a distinct paper about DMA and AI agents, not this 2026 German Law Journal study. Missing Springer journal volume and page fields left null. No unrelated related reading or timelines."
+  },
+  "items": [
+    {
+      "cn_title": "高风险AI产品的网络安全义务如何衔接：欧盟AI法与《网络韧性法案》的双重要求",
+      "author": "Fabian Teichmann",
+      "original_title": "One product, two rulebooks: the cybersecurity of high-risk AI systems between article 15 AI act and the cyber resilience act after the digital omnibus",
+      "journal": "International Cybersecurity Law Review",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-11-03",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": "10.1365/s43439-026-00178-4",
+      "publisher_page": "https://link.springer.com/article/10.1365/s43439-026-00178-4",
+      "version": "Published journal article (online first)"
+    },
+    {
+      "cn_title": "人工智能透明度遇到商业秘密保护：公众知情权如何获得实质保障",
+      "author": "Perry Keller; Tanya Aplin",
+      "original_title": "RECONCILING TRADE SECRETS AND AI PUBLIC TRANSPARENCY",
+      "journal": "The Cambridge Law Journal",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "publication_date": "2026-03-23",
+      "volume": "85",
+      "issue": "1",
+      "pages": "151–185",
+      "article_number": null,
+      "doi": "10.1017/S0008197325101086",
+      "publisher_page": "https://www.cambridge.org/core/journals/cambridge-law-journal/article/reconciling-trade-secrets-and-ai-public-transparency/932A5A443D6CB16EC803911512B5036D",
+      "version": "Published journal article"
+    },
+    {
+      "cn_title": "非洲数字平台竞争监管不宜照搬欧盟DMA：南非、肯尼亚与非洲自贸区的制度选择",
+      "author": "Elettra Bietti; Friso Bostoen; Jacquelene Mwangi",
+      "original_title": "Regulating Competition in African Digital Markets: From Form to Substance",
+      "journal": "German Law Journal",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "publication_date": "2026-06-24",
+      "volume": "27",
+      "issue": "3",
+      "pages": "476–511",
+      "article_number": null,
+      "doi": "10.1017/glj.2026.10224",
+      "publisher_page": "https://www.cambridge.org/core/journals/german-law-journal/article/regulating-competition-in-african-digital-markets-from-form-to-substance/A67CE700CAA66423F9BF544E8B751278",
+      "version": "Published journal article"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "bd4c220d4818af44028200c93e3dc7ccc13560cf",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": null
+  },
+  "other_columns_at_record": {
+    "brief": "articles/2026-11-11-tech-law-brief.html",
+    "paper": "articles/2026-11-11-mayer-schoenberger-systems-information-governance.html",
+    "classic": "articles/2026-11-11-aristotle-politics.html"
+  }
+}
