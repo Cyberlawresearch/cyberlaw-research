@@ -1,66 +1,270 @@
 {
   "date": "2026-11-11",
   "base_main_sha": "6bc86c1a1820dc2524e023cc82c1a5566c47c2f4",
-  "phase": "researching_candidates_US_CA",
-  "publication_ready": false,
+  "phase": "research_verified",
+  "publication_ready": true,
   "items": [
     {
-      "id": "us-ptmeg-cn",
-      "title": "美对华PTMEG反倾销初裁中国统一倾销幅度213.44%",
+      "id": "in-aluminium-extrusion",
+      "date": "2026-11-09",
+      "jurisdiction": "印度",
+      "agency": "印度商工部贸易救济总局（DGTR）",
+      "stage": "反倾销调查正式立案；尚未作出倾销终裁或征收新税",
+      "rank": 5,
+      "title": "印度对中马越泰铝挤压型材及加工制品立案反倾销，门窗、光伏支架也列入调查范围",
+      "body": "印度贸易救济总局11月9日依据职权启动铝挤压型材、结构件及其制品反倾销调查，涉中国、马来西亚、越南和泰国。调查包括型材、棒材、管材、门窗及幕墙部件、散热器和光伏安装支架等。印度行业协会代表228家制造商提出损害主张，涉案四国合计约占印度相关进口量的九成。调查期为2025年4月1日至2026年6月30日。立案仅表示调查开始。",
+      "scope": "印度海关税目第76章相关型材、管件及加工品，最终以产品文字范围为准；已被单独征税的光伏阳极氧化边框是否重叠仍待审查。",
+      "impact": "中国铝型材及建筑、光伏配套产品出口商应按产品用途、规格和加工工序分类建立对印销售、成本及出口价格证据；通过马来西亚、越南、泰国供应的关联工厂也被纳入涉案法域，须分别准备企业答卷和原产地证明。",
+      "deadline": "11月9日立案；涉案产品范围和PCN意见期限为送达通知后15日，问卷资料提交为通知送达后37日，不能按公告日直接起算。",
+      "sources": [
+        {
+          "label": "印度DGTR第6/67/2026号立案通知（PDF）",
+          "url": "https://dgtr.gov.in/sites/default/files/2026-11/Eng%20Initiation%20Notification%20Aluminium%20Extrusion%2009.11.2026.pdf"
+        }
+      ]
+    },
+    {
+      "id": "eu-italy-amazon-customs",
       "date": "2026-11-10",
-      "source": "https://public-inspection.federalregister.gov/2026-22942.pdf",
-      "phase": "初步肯定性决定；刊登日起暂停清算和征收保证金",
-      "checked": true
+      "jurisdiction": "欧盟／意大利",
+      "agency": "米兰检察机关、意大利海关与财政警察",
+      "stage": "刑事调查终结通知已送达；尚未决定起诉，亦无法院违法认定",
+      "rank": 5,
+      "title": "意大利就中国商品进口增值税及关税问题向亚马逊欧洲公司发出调查终结通知",
+      "body": "路透社11月10日披露，米兰检察机关已向亚马逊欧洲公司、两名管理人员及其他电商卖家送达调查终结通知。检方怀疑150多万件主要来自中国的非欧盟商品经电商及仓储网络销售，进口增值税和海关税款未足额申报，初步计算未缴进口增值税超过352万欧元，关税部分仍在核算。亚马逊否认有关指控并表示将抗辩。调查终结通知是可能提出起诉请求前的程序环节。",
+      "scope": "通过意大利电商平台、境内仓储和履约网络进口及销售的非欧盟商品，涉及境外卖家身份核验、海关申报及进口税额。",
+      "impact": "中国跨境电商卖家和履约服务商须逐票核对进口申报主体、报关单、进口增值税缴纳凭证和物流入库记录，确认平台代履约与卖家责任分配；已有调查不意味着平台和卖家均被定罪。",
+      "deadline": "2026年11月10日披露正式调查终结通知；检方是否请求审判及后续庭审日期尚未确定。",
+      "sources": [
+        {
+          "label": "路透社11月10日米兰检方调查报道",
+          "url": "https://www.reuters.com/legal/government/italian-prosecutors-target-amazon-over-sale-chinese-goods-2026-11-10/"
+        }
+      ]
+    },
+    {
+      "id": "us-ptmeg-cn",
+      "date": "2026-11-10",
+      "jurisdiction": "美国／中国",
+      "agency": "美国商务部国际贸易管理局（ITA）",
+      "stage": "反倾销调查初步肯定性裁定；暂缓清算并要求现金保证金，非最终税令",
+      "rank": 5,
+      "title": "美国对中国产PTMEG作反倾销初裁，中国统一幅度213.44%",
+      "body": "美国商务部11月10日刊登聚四亚甲基醚二醇（PTMEG）反倾销初裁，中国统一税率主体估算倾销幅度为213.44%，系采用不利事实推定形成。调查中没有生产商或出口商获得单独税率资格。美国海关将对公告刊登当日及以后入境或提货用于消费的涉案商品暂停清算并收取相应现金保证金。",
+      "scope": "中国产PTMEG及经第三国销售的同一中国原产涉案产品；美国弹性纤维、聚氨酯及特种聚合物原料供应链。",
+      "impact": "中国PTMEG生产商和美国进口商须核对具体产品范围、原产地及入境时间，将213.44%初裁现金保证金计入交易现金流与报价；第三国转卖不改变中国原产货物适用的对应保证金归属。",
+      "deadline": "2026年11月10日公告刊登起实施暂缓清算；非产品范围争议的书面意见期限为公告刊登后14日，反驳意见再后5日；终裁仍待完成。",
+      "sources": [
+        {
+          "label": "美国《联邦公报》2026-22942号中国PTMEG初裁（PDF）",
+          "url": "https://public-inspection.federalregister.gov/2026-22942.pdf"
+        }
+      ]
     },
     {
       "id": "us-bricks-circumvention",
-      "title": "美对中国产含微量氧化铝镁碳砖启动全国性反规避调查",
       "date": "2026-11-10",
-      "source": "https://public-inspection.federalregister.gov/2026-22943.pdf",
-      "phase": "反规避调查立案，尚无规避认定",
-      "checked": true
+      "jurisdiction": "美国／中国",
+      "agency": "美国商务部国际贸易管理局（ITA）",
+      "stage": "全国性反规避调查立案；尚无最终规避认定",
+      "rank": 5,
+      "title": "美国对含微量氧化铝的中国产镁碳耐火砖启动反规避调查",
+      "body": "美国商务部11月10日启动一项覆盖中国全境的反规避调查，审查在镁碳砖中加入重量占比大于零、低于5%的氧化铝，是否构成对既有中国产镁碳砖反倾销和反补贴税令的轻微产品改动规避。调查对象要求氧化镁至少70%，含碳量为微量至30%，并为特定化学结合耐火砖。该决定尚未确认规避成立。",
+      "scope": "中国产特定镁碳耐火砖及其含微量氧化铝变体，钢铁冶炼耐火材料进口贸易。",
+      "impact": "中国耐火材料生产商应保存产品配方、氧化铝实测结果、生产记录与最终用户用途资料；美国采购企业须按实际化学组成和税令覆盖范围重新评估进口申报与潜在税负，不应仅依品名或海关编码认定不涉税。",
+      "deadline": "2026年11月10日正式立案；调查答卷、临时措施及最终决定日期以商务部后续通知为准。",
+      "sources": [
+        {
+          "label": "美国《联邦公报》2026-22943号反规避调查立案（PDF）",
+          "url": "https://public-inspection.federalregister.gov/2026-22943.pdf"
+        }
+      ]
     },
     {
-      "id": "us-ptmeg-kr-vn",
-      "title": "美对韩国和越南PTMEG分别作反倾销初裁",
+      "id": "us-ptmeg-asia",
       "date": "2026-11-10",
+      "jurisdiction": "美国／韩国、越南、台湾地区",
+      "agency": "美国商务部国际贸易管理局（ITA）",
+      "stage": "三个法域分别作反倾销初裁；初步现金保证金安排",
+      "rank": 4,
+      "title": "美国同步公布韩、越及台湾地区PTMEG初裁，相关保证金幅度最高49.79%",
+      "body": "美国商务部11月10日分别公布韩国、越南及台湾地区PTMEG反倾销初裁。韩国Korea PTG暂定25.32%、BASF Company Ltd.为49.79%、其他企业25.32%；越南Hyosung Dong Nai及越南统一幅度均为36.55%；台湾地区Dairen Chemical为7.46%、Formosa Asahi Spandex为26.42%、其他企业7.46%。三份决定分别构成独立调查动作，适用率须按产地和生产出口商匹配。",
+      "scope": "韩、越及台湾地区原产PTMEG对美进口；涉及东亚聚氨酯与弹性纤维原料供应链。",
+      "impact": "中国企业从韩、越、台湾地区采购或在当地关联工厂生产PTMEG出口美国时，应按实际原产地、生产商和出口商组合核对不同初裁幅度；不能将中国产PTMEG的213.44%统一套用于其他法域。",
+      "deadline": "2026年11月10日刊登起相关涉案进口进入暂缓清算及现金保证金阶段；正式终裁、行政核验后的书面辩论安排另行通知。",
       "sources": [
-        "https://public-inspection.federalregister.gov/2026-22941.pdf",
-        "https://public-inspection.federalregister.gov/2026-22939.pdf"
-      ],
-      "phase": "分别初步肯定性决定",
-      "checked": true
+        {
+          "label": "美国商务部韩国PTMEG初裁（2026-22941）",
+          "url": "https://public-inspection.federalregister.gov/2026-22941.pdf"
+        },
+        {
+          "label": "美国商务部越南PTMEG初裁（2026-22939）",
+          "url": "https://public-inspection.federalregister.gov/2026-22939.pdf"
+        },
+        {
+          "label": "美国商务部台湾地区PTMEG初裁（2026-22940）",
+          "url": "https://public-inspection.federalregister.gov/2026-22940.pdf"
+        }
+      ]
     },
     {
       "id": "ca-paperboard-extension",
-      "title": "加拿大中国产纸板杯容器双反初裁期限延至12月30日",
       "date": "2026-11-09",
-      "source": "https://cbsa-asfc.gc.ca/sima-lmsi/i-e/pcc2026/pcc2026-nx-eng.html",
-      "phase": "调查初步阶段延期",
-      "checked": true
+      "jurisdiction": "加拿大／中国",
+      "agency": "加拿大边境服务局（CBSA）",
+      "stage": "反倾销、反补贴调查初步阶段延长；尚无初裁或临时税",
+      "rank": 4,
+      "title": "加拿大将中国纸板杯及容器双反调查初裁期限延至12月30日",
+      "body": "加拿大边境服务局11月9日宣布，将中国产纸板杯及容器反倾销、反补贴调查的初步调查期限从通常90日延至135日，理由包括案件复杂程度、调查对象数量及证据取得难度。初步认定或终止调查的最新期限为12月30日；2026年8月17日已启动的原调查并非本次新立案。",
+      "scope": "中国原产或出口至加拿大的纸板杯及纸制餐饮容器，涉及餐饮包装和纸制品渠道。",
+      "impact": "中国纸杯、纸餐盒生产商应按加拿大公告的产品范围和出口主体整理原产地、生产成本及销售资料，并依据新时间表调整加拿大客户的可能临时税安排；调查尚未作出初裁。",
+      "deadline": "初裁或终止调查截至2026年12月30日；若初裁肯定，后续案卷关闭2027年2月4日、案情陈述2月11日、答辩2月18日。",
+      "sources": [
+        {
+          "label": "加拿大CBSA 11月9日延期通知",
+          "url": "https://www.cbsa.gc.ca/sima-lmsi/i-e/pcc2026/pcc2026-nx-eng.html"
+        },
+        {
+          "label": "加拿大CBSA更新后的调查时间表",
+          "url": "https://www.cbsa-asfc.gc.ca/sima-lmsi/i-e/pcc2026/pcc2026-se-eng.html"
+        }
+      ]
     },
     {
-      "id": "us-vn-301-extension",
-      "title": "美国将越南知识产权301调查延长三个月至2027年2月28日",
+      "id": "in-copolyol-deadline",
       "date": "2026-11-10",
-      "source": "https://public-inspection.federalregister.gov/2026-22868.pdf",
-      "phase": "调查期限确定，尚无关税措施",
-      "checked": true
+      "jurisdiction": "印度／中国",
+      "agency": "印度商工部贸易救济总局（DGTR）",
+      "stage": "反倾销调查答卷期限正式延长；未形成最终征税结论",
+      "rank": 4,
+      "title": "印度将中国共聚多元醇反倾销答卷截止日由11月17日延至11月30日",
+      "body": "印度DGTR 11月10日发函，将羟值不低于23.5的共聚多元醇反倾销调查问卷答卷期限从11月17日调整至11月30日，并表示不再延长。该调查于9月23日启动，11月10日新增事实仅是关键应诉期限变化。",
+      "scope": "中国产及自中国出口、羟值不低于23.5的共聚多元醇，主要影响聚氨酯泡沫和化工材料出口。",
+      "impact": "涉案生产商、出口商及印度进口商应在11月30日前通过SETU系统补齐出口价格、成本、企业关联及产品型号信息，避免因逾期或答卷不完整而被依据现有事实认定。",
+      "deadline": "2026年11月30日为新问卷答卷截止日；官方通知明确不再延期。",
+      "sources": [
+        {
+          "label": "印度DGTR 11月10日共聚多元醇延期函（PDF）",
+          "url": "https://dgtr.gov.in/sites/default/files/2026-11/Extension%20of%20Timeline-CPP.pdf"
+        }
+      ]
+    },
+    {
+      "id": "in-copper-scope",
+      "date": "2026-11-10",
+      "jurisdiction": "印度／越南、马来西亚、泰国",
+      "agency": "印度商工部贸易救济总局（DGTR）",
+      "stage": "反补贴税日落复审的产品范围阶段决定；终裁尚待作出",
+      "rank": 4,
+      "title": "印度铜管反补贴税复审维持原产品范围，越南金田铜业的产品排除请求暂未获准",
+      "body": "印度DGTR 11月10日公布对越南、马来西亚及泰国原产铜管和铜制管件反补贴日落复审的产品范围决定。越南金田铜业要求排除高强耐腐蚀铜锡磷合金管，主管机关现阶段未予采纳，维持原调查范围，明确不采用PCN细分，并保留根据证据后续审查排除的可能。内螺纹铜管及相关沟槽管仍按原产品范围排除。",
+      "scope": "相关三国出口至印度、用于空调和制冷的铜管及铜合金管，通常落入HS7411相关税目。",
+      "impact": "中国投资的东南亚铜管生产企业和对印客户需按现阶段产品范围完成答卷，避免把尚未被接受的排除主张视为免于复审；申报时保留铜合金成分、管型及工业用途证明。",
+      "deadline": "问卷答卷截止2026年11月29日，官方明确不再延期；此次并未决定最终补贴税率。",
+      "sources": [
+        {
+          "label": "印度DGTR 11月10日铜管产品范围与PCN决定（PDF）",
+          "url": "https://dgtr.gov.in/sites/default/files/2026-11/PUC%20PCN_notification.pdf"
+        }
+      ]
+    },
+    {
+      "id": "uk-russia-three-variations",
+      "date": "2026-11-10",
+      "jurisdiction": "英国／俄罗斯相关新加坡中介",
+      "agency": "英国外交、联邦与发展事务部（FCDO）",
+      "stage": "正式变更三项既有指定对象记录；原制裁持续生效，非新指定",
+      "rank": 4,
+      "title": "英国修订俄制裁名单中ALT Capital及两名关联人士记录，资产冻结继续有效",
+      "body": "英国FCDO 11月10日对俄罗斯制裁制度下三项既有指定记录作正式变更，涉及新加坡注册的ALT CAPITAL PTE LTD及Narmina Dadashova、Vladislav Gromov。更新包括指定理由、关联关系及身份信息，三者此前已于2025年10月被指定，相关资产冻结及其他适用限制继续有效；此次不是新增三名制裁对象。",
+      "scope": "与俄罗斯相关的跨境资金、贸易融资、信托服务及涉及新加坡中介的国际供应链交易。",
+      "impact": "中国出口商、货运代理和贸易融资机构应将新增或更新的名称、关联关系和身份信息纳入制裁名单筛查，并对ALT Capital及相关控制关系重核交易对手；是否必须冻结取决于交易适用英国制裁法律的连接点。",
+      "deadline": "名单信息于2026年11月10日更新并继续适用；不涉及等待生效的新增制裁期限。",
+      "sources": [
+        {
+          "label": "英国FCDO 11月10日俄罗斯制裁变更通知（PDF）",
+          "url": "https://assets.publishing.service.gov.uk/media/6af3257fb83b3cae0d0a218c/Sanctions_Notice__Russia__10_November_2026.pdf"
+        }
+      ]
+    },
+    {
+      "id": "us-vietnam-ip-301",
+      "date": "2026-11-10",
+      "jurisdiction": "美国／越南",
+      "agency": "美国贸易代表办公室（USTR）",
+      "stage": "301调查期限正式延长；尚未决定贸易报复措施",
+      "rank": 3,
+      "title": "美国将越南知识产权保护301调查决定期限延至2027年2月28日",
+      "body": "美国USTR 11月10日刊登决定，认定针对越南知识产权保护与执法政策的301调查涉及复杂问题，需要额外调查时间，因此将原六个月决定期延至九个月，最迟于2027年2月28日前决定是否存在可采取行动的行为以及是否实施措施。延期通知自11月3日生效，并未新设对越南进口商品关税。",
+      "scope": "越南知识产权保护与执法政策，及受越南对美贸易规则变化影响的跨境制造、品牌和授权供应链。",
+      "impact": "中国企业在越南生产并出口美国的商品，应继续依现行美国关税和越南原产地规则申报，不应以301调查延期直接调整税率；具有品牌或技术授权业务的企业可同步梳理知识产权证据和供应链合规责任。",
+      "deadline": "2026年11月3日延期决定生效，11月10日刊登；调查决定期限2027年2月28日。",
+      "sources": [
+        {
+          "label": "美国USTR 2026-22868号301调查延期公告（PDF）",
+          "url": "https://public-inspection.federalregister.gov/2026-22868.pdf"
+        }
+      ]
+    },
+    {
+      "id": "au-us-critical-minerals",
+      "date": "2026-11-10",
+      "jurisdiction": "澳大利亚／美国",
+      "agency": "澳大利亚资源部长、美国进出口银行（US EXIM）",
+      "stage": "融资合作会谈及政策信号；没有新增强制贸易管制或已批单项贷款",
+      "rank": 3,
+      "title": "澳美就关键矿产项目融资继续磋商，重点推动澳洲矿产进入美国制造供应链",
+      "body": "澳大利亚资源部长11月10日与美国进出口银行高层会谈，讨论由美方EXIM及澳方出口融资机构支持澳洲关键矿产开采与加工项目。官方表示该合作延续既有澳美关键矿产框架，框架首年宣布支持项目金额超过60亿澳元。此次会谈本身未公布新的具体出口许可、关税减让或贷款批准。",
+      "scope": "澳大利亚关键矿产采选和加工、美国电池、国防及先进制造原材料采购。",
+      "impact": "参与澳洲关键矿产项目的中国投资者与国际供应商，应核对拟融资项目的股权安排、融资资格、采购与最终用户条件，并在商业协议中区分已获批准资金与仍在讨论的融资计划。",
+      "deadline": "2026年11月10日官方公布会谈；新增融资项目的批准条件与执行日期待有关机构后续公布。",
+      "sources": [
+        {
+          "label": "澳大利亚资源部长11月10日关键矿产融资会谈公告",
+          "url": "https://www.minister.industry.gov.au/king/media/australia-and-usa-work-unlock-critical-minerals-investment"
+        }
+      ]
     }
   ],
   "coverage": {
-    "US": "11月10日Federal Register正式目录108件；核查ITA PTMEG多国初裁、镁碳砖反规避立案、USTR越南301调查延期，OFAC11月10日无新名单公告",
-    "CA": "CBSA 11月9日纸板杯容器双反调查延至12月30日，11月10日非铠装建筑电缆终裁理由书公开"
+    "US": "11月10日Federal Register的PTMEG中国、韩国、越南、台湾地区四份初裁，镁碳耐火砖反规避立案，USTR越南知识产权301调查延期，OFAC更新巡视",
+    "EU": "欧委会DG Trade、EUR-Lex和11月10日意大利海关涉电商调查进展；米兰检方11月10日调查终结通知核实；欧委会近72小时无需要重复此前PET保障调查事项的正式新措施",
+    "UK": "FCDO 11月10日俄罗斯制裁通知三项既有对象记录变更；TRA/HMRC常规巡视",
+    "JP": "METI安全保障贸易管理公告及日本外贸动态11月9—11日巡视，无足以单列的新决定；检索排除2025年11月11日旧规",
+    "KR": "韩国产业通商部、贸易委员会当前案件及新公告巡视；2026年11月5日2-乙基己基丙烯酸酯新立案超72小时不收录；美国对韩国PTMEG 11月10日初裁纳入",
+    "IN": "DGTR 11月9日铝挤压制品四国反倾销立案、11月10日共聚多元醇问卷延期及铜管补贴日落复审产品范围决定",
+    "CA": "CBSA 11月9日对华纸板杯容器双反初裁期限由原11月16日延至12月30日，核对修订日程",
+    "AU": "澳贸易救济委员会11月9—11日公告巡视；资源部长11月10日澳美关键矿产EXIM融资会谈无新贷款批准",
+    "CN": "检查财政部、商务部和交通运输部11月9日已在11月10日第063期报道的对美关税、出口管制、港务费、实体清单公告，事件级不重复"
   },
   "last_error": null,
   "next_actions": [
-    "续查欧盟英国日本韩国及印澳",
-    "补齐美其他对华贸易救济文件、核验全部最终来源",
-    "阶段保存覆盖范围与去重结论",
-    "完成终扫后提交正式正文"
+    "正式创建 trade-watch/issues/2026-11-11.html 完整正文",
+    "更新 trade-watch/index.html 最新一期、archive.html 置顶",
+    "main 三文件回读校对、Pages和公开网页及来源链接诊断"
   ],
   "dedupe": [
-    "逐条比对11月4—10日共7期64条标题：PTMEG初裁、镁碳砖反规避、越南301延期、纸板杯延期均无同一新增法律动作；近期301对华排除和中国稀土暂停等已刊载，不重复"
+    "已读取 main 中2026年11月4日至10日最近7期完整正文，按事件级对照；11月10日中国对美关税及六项出口管制等已刊发，本期不重发。",
+    "11月10日美国四法域PTMEG初裁、镁碳砖反规避立案为新决定；11月9日印度铝挤压型材反倾销新立案；11月10日印度铜管范围及共聚多元醇问卷延期为新增阶段事实。",
+    "11月9日加拿大纸板杯双反初裁延期、11月10日英国制裁既有对象记录变更、意大利调查终结、美国越南301决定期限调整、澳美关键矿产融资会谈均非前七期重复。"
   ],
-  "updated_at": "2026-11-11T09:20:00+08:00"
+  "updated_at": "2026-11-11T09:40:00+08:00",
+  "sources_checked": [
+    "https://dgtr.gov.in/sites/default/files/2026-11/Eng%20Initiation%20Notification%20Aluminium%20Extrusion%2009.11.2026.pdf",
+    "https://www.reuters.com/legal/government/italian-prosecutors-target-amazon-over-sale-chinese-goods-2026-11-10/",
+    "https://public-inspection.federalregister.gov/2026-22942.pdf",
+    "https://public-inspection.federalregister.gov/2026-22943.pdf",
+    "https://public-inspection.federalregister.gov/2026-22941.pdf",
+    "https://public-inspection.federalregister.gov/2026-22939.pdf",
+    "https://public-inspection.federalregister.gov/2026-22940.pdf",
+    "https://www.cbsa.gc.ca/sima-lmsi/i-e/pcc2026/pcc2026-nx-eng.html",
+    "https://www.cbsa-asfc.gc.ca/sima-lmsi/i-e/pcc2026/pcc2026-se-eng.html",
+    "https://dgtr.gov.in/sites/default/files/2026-11/Extension%20of%20Timeline-CPP.pdf",
+    "https://dgtr.gov.in/sites/default/files/2026-11/PUC%20PCN_notification.pdf",
+    "https://assets.publishing.service.gov.uk/media/6af3257fb83b3cae0d0a218c/Sanctions_Notice__Russia__10_November_2026.pdf",
+    "https://public-inspection.federalregister.gov/2026-22868.pdf",
+    "https://www.minister.industry.gov.au/king/media/australia-and-usa-work-unlock-critical-minerals-investment"
+  ],
+  "source_validation": "逐一通过公开网页或官方PDF核查全部11项的原始文件和法律阶段；所有引用均定位具体公告、官方案件决定、路透报道。美国六份《联邦公报》PDF均截图查验，印度三份通知与英国制裁PDF截图查验；加拿大CBSA官方页面经网页索引全文核对，网页直接读取存在偶发接口访问限制。",
+  "final_sweep": "对2026年11月9日至11日美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚官方新公告和主流媒体进行补充搜索；欧盟意大利海关调查11月10日新增程序、印度铝型材11月9日新立案均已纳入；未见其他同等重要且有可信新原始证据的决定。"
 }
