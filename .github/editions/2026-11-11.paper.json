@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-11",
+  "column": "paper",
+  "state": "verified",
+  "phase": "deployment_check",
+  "page": "articles/2026-11-11-mayer-schoenberger-systems-information-governance.html",
+  "selection": "Viktor Mayer-Schönberger, Beyond Privacy, Beyond Rights—Toward a “Systems” Theory of Information Governance",
+  "bibliography": {
+    "type": "article",
+    "author": "Viktor Mayer-Schönberger",
+    "originalTitle": "Beyond Privacy, Beyond Rights—Toward a “Systems” Theory of Information Governance",
+    "journal": "California Law Review",
+    "year": "2010",
+    "volume": "98",
+    "issue": "6",
+    "pages": "1853–1885",
+    "doi": "",
+    "url": "https://www.dhi.ac.uk/san/waysofbeing/data/governance-crone-mayerschonberger-2010a.pdf",
+    "cnTitle": "隐私权之外：信息治理为何需要中介机构与制度网络"
+  },
+  "versions": {
+    "full_text": "Read the complete 2010 publisher-paginated California Law Review PDF, from opening argument, Parts I.A-I.C and II.A-II.E to conclusion and relevant footnotes (pp. 1853–1885).",
+    "publication": "2010 final journal article, California Law Review 98(6): 1853–1885. Not an SSRN working paper; journal DOI not independently verified."
+  },
+  "sources": [
+    "https://www.dhi.ac.uk/san/waysofbeing/data/governance-crone-mayerschonberger-2010a.pdf",
+    "https://lawcat.berkeley.edu/nanna/record/1123951/files/fulltext.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0",
+    "https://www.jstor.org/stable/i25799952"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "history_scope": "Checked all papers.html entries 2026-09-03 through 2026-11-10 and papers-history-1.html historical entries 2026-08-07 through 2026-09-02, plus existing indexed paper titles. This original article is not present. A duplicate candidate, Julie E. Cohen's What Privacy Is For, was excluded.",
+  "related_reading": [
+    "articles/2026-09-10-solove-privacy-self-management.html",
+    "articles/2026-10-11-solove-hartzog-ftc-privacy-common-law.html"
+  ],
+  "timeline": null,
+  "body_length": 4517,
+  "checked_at": "2026-11-11",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  },
+  "last_error": null
+}
