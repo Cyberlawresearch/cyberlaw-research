@@ -41,7 +41,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    # Playwright 1.57 chromium browser binaries do not support Ubuntu 26.04 (ubuntu-latest in Nov 2026).
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
