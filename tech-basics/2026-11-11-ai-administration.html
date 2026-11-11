@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>第55课｜行政使用：人工智能参与行政工作时，哪些技术环节会影响程序保障？｜网信法技术基础</title>
+<link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../briefs.html">全球科技法简报</a><a href="../papers.html">域外法学论文精读</a><a href="../classics.html">法学经典著作</a><a href="../new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 55 · LAW &amp; GOVERNANCE · 2026.11.11</div><h1>行政使用：人工智能参与行政工作时，哪些技术环节会影响程序保障？</h1><p class="tech-lead">今日问题：行政机关用了人工智能辅助办理事项，为什么程序保障必须落实到具体的系统操作环节？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus"><div><strong>它是什么</strong><p><b>行政使用人工智能</b>，是行政机关在受理、查找规则、核对事实、形成办理建议或答复公众时使用模型或算法。它可以辅助工作人员，也可能被配置为自动处理某些环节。真正影响程序保障的是：系统在何处作出判断、工作人员能看到什么、相对人有没有机会纠正错误。</p></div><div><strong>一个生活例子</strong><p>居民申请一项住房补贴。智能系统把收入证明识别错了，提示“不符合条件”。如果工作人员只看到一个红色“不通过”，便可能直接采纳；如果系统同时展示原始证明、识别字段、适用规则和错误提示，工作人员就有机会核对，并要求申请人补充说明。</p></div></section>
+<section class="lesson-section"><h2>机制图：补贴申请在哪一步可能失去程序机会？</h2>
+<div class="visual-board" role="group" aria-label="补贴申请经历材料受理、事实识别、规则核对、人工复核和正式告知；每一步分别检查补正、原始材料、规则版本、人工改判与异议渠道">
+<div class="visual-title">同一项申请的典型辅助办理流程：每一步都应有可核查的输入、输出和纠错入口。</div>
+<div class="flow">
+<div class="flow-box"><strong>① 受理材料</strong><span>申请表、证明；允许补正缺项</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>② 识别事实</strong><span>提取收入、住址；保留原始材料</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>③ 匹配规则</strong><span>核对政策版本；标出存疑处</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>④ 复核与告知</strong><span>人员核查、形成决定、说明与救济</span></div>
+</div>
+<div class="compare-grid">
+<div class="compare-card"><b>机器能说明输入吗</b><p>“收入超标”来自哪份证明、哪个识别字段？</p></div>
+<div class="compare-card"><b>人工有改判能力吗</b><p>能查看证据、纠正字段、退回重算并记录理由吗？</p></div>
+<div class="compare-card"><b>当事人能纠错吗</b><p>能获知争议事实、补充材料、陈述意见并申请复核吗？</p></div>
+</div><p class="tiny-note">这是辅助行政办理的示意流程。不同事项的法定环节和权限不同，部分系统仅用于咨询、分流或内部提示，不直接形成行政决定。</p></div>
+<p><b>第一处关口是材料转成数据。</b>纸质证明经OCR（光学字符识别，即把图片上的文字转成机器文本）处理后，系统可能把“8”看成“3”，或遗漏限制条件。识别结果若覆盖了原件，后续审核人员便难以发现错误。系统应让工作人员查看原文、机器提取字段及人工更改记录。</p>
+<p><b>第二处关口是事实与规则的匹配。</b>模型可能通过检索增强生成（RAG，即先检索外部资料，再据此生成答复）查找政策，也可能由专门规则引擎按预设条件判断资格。两者机制不同：前者可能引错条款或误解例外，后者可能使用过期规则。对行政事项而言，应记录具体规则版本与关键事实，而不能只保留一句模型结论。</p>
+<p><b>第三处关口是输出如何进入决定。</b>人机界面如果只显示“建议驳回”，会促使审核员直接点击同意，这称为<b>自动化偏见</b>，即对机器建议过度信赖。真正的人工复核需要看到依据、能够否定建议并保留操作记录。若系统只能提交、不能退回或修改，界面上的“人工确认”可能没有多少实际作用。</p>
+<p><b>第四处关口是对外告知与纠错。</b>模型生成的解释可以帮助起草，但正式告知仍需准确反映适用依据、认定事实和处理结果。申请人提出原件不符、数据过时或者特殊情况时，应当能够进入适当的补正、陈述、复核或法定救济程序。技术日志可帮助重现办理经过，却不能替代面向当事人的理由说明。</p>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“模型只是辅助，行政程序便不会受影响。”机器建议若事实上决定审核顺序、举证负担或处理结论，同样可能改变当事人的实际程序机会。</span></div>
+<div class="myth"><b>误解 02</b><span>“有工作人员点击确认，就完成了人工复核。”还要看工作人员能否理解依据、取得原始材料并独立更改处理结果。</span></div>
+<div class="myth"><b>误解 03</b><span>“保存聊天记录就能查清全部问题。”还需要视系统架构保存材料版本、规则版本、检索结果、人工操作和正式决定之间的关联。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>程序保障需要成为可操作的系统能力</h3><p>行政程序中的事实核查、说明理由和异议处理，要求机关能够指出处理结论所依据的材料与规则。部署人工智能后，技术系统是否保留原始证据、是否记录规则更新、是否允许人工接管，直接关系到这些程序要求能否落实。行政机关仍须依具体法律确定权限、程序和救济，不应把软件配置当作法律上的授权依据。</p><p>OECD关于政府使用人工智能的研究强调透明、监督和问责；NIST人工智能风险管理框架强调在具体应用场景中识别与管理风险。欧盟《人工智能法》第14条则把人的监督能力与界面设计相联系，包括理解系统局限、识别过度依赖以及必要时推翻输出。其制度适用范围和实施日期应依现行欧盟法另行判断。对政务系统而言，关键是将这些治理要求转为实际可测试的功能，而非停留在采购说明书中。</p></div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>智能辅助行政中，程序机会应如何落实到人机交互环节？</h3><p>比较咨询指引、内部辅助审查和自动化决定，研究错误识别、人工复核与相对人陈述机会之间的规范关系。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>政务人工智能采购验收应当核查哪些程序功能？</h3><p>围绕原件回看、规则版本、人工改判、日志关联、错误更正及对外救济入口，设计可复演的验收场景。</p></div>
+</div></section>
+<section class="lesson-section"><h2>可靠来源</h2><ol class="source-links">
+<li><a href="https://www.oecd.org/en/publications/governing-with-artificial-intelligence_795de142-en.html">OECD，Governing with Artificial Intelligence（2025年9月18日）</a>。分析政府使用人工智能的案例、风险与监督治理。</li>
+<li><a href="https://airc.nist.gov/airmf-resources/playbook/">美国国家标准与技术研究院（NIST），AI RMF Playbook</a>。从治理、场景识别、测量与管理组织风险控制。</li>
+<li><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">欧盟《人工智能法》（Regulation (EU) 2024/1689）第14条</a>。提供高风险人工智能系统人类监督和界面能力的制度参考；应结合后续修法及适用时间查阅现行文本。</li>
+</ol></section>
+<section class="next-lesson"><div><small>后续课程预告 · 第56课</small><p>持续监管：为什么人工智能系统上线之后仍要不断检查？</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main><footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
