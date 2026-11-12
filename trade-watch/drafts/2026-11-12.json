@@ -1,7 +1,7 @@
 {
   "date": "2026-11-12",
   "base_main_sha": "e2a4ab9f0eef8af2995516870993207a825da416",
-  "phase": "publication_ready",
+  "phase": "committed_waiting_for_deployment",
   "publication_ready": true,
   "items": [
     {
@@ -106,9 +106,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "创建2026-11-12完整期刊HTML到main",
-    "更新首页与归档",
-    "main回读与对应Pages验收"
+    "核对最终提交Pages作业结论",
+    "公开站点最新一期、首页及归档内容校验",
+    "检查来源专项诊断并记录真实错误或通过结果"
   ],
   "dedup": {
     "checked_issues": [
@@ -123,5 +123,24 @@
     "result": "11 candidates each distinct new act, action, dated change or newly published evidence; Indian ceramic notice newly changes EQR to Nov 18 after Nov 8 scope notice"
   },
   "source_check": "All 11 event URLs individually opened and identified; PDF documents screenshot-checked. UK regulation separate SI link web renderer unsupported, ECJU official notice verified. No generic image added.",
-  "final_sweep": "2026-11-12 09h Asia/Shanghai, official/major news rechecked; no additional higher-priority unreported concrete rule established"
+  "final_sweep": "2026-11-12 09h Asia/Shanghai, official/major news rechecked; no additional higher-priority unreported concrete rule established",
+  "publication_attempt": {
+    "date": "2026-11-12",
+    "status": "three_main_files_written_and_refetched",
+    "files": [
+      "trade-watch/issues/2026-11-12.html",
+      "trade-watch/index.html",
+      "trade-watch/archive.html"
+    ],
+    "issue_commit": "3af32770525b0cdc6148bd7bb306a428904013f5",
+    "homepage_commit": "9534ab832dd61b05e4b4f09b61d7c67e3f7fdfc4",
+    "final_commit": "e24c9a04f34f9d70433d676cd5504c5adc81f722",
+    "main_verified": true,
+    "news_count": 11,
+    "source_count": 11,
+    "pages_run": 43132971858,
+    "pages_state": "in_progress",
+    "tool": "mcp__GitHub__create_file, mcp__GitHub__update_file, mcp__GitHub__fetch_file",
+    "errors": []
+  }
 }
