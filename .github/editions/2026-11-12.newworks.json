@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-12",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-12-new-works.html",
+  "page_blob_sha": "696efcf92fe18458773dd77c680bdd2719c465be",
+  "newworks_count": 3,
+  "checked_at": "2026-11-12T12:41:01.871Z",
+  "checks": {
+    "original_publisher_pages_opened": true,
+    "original_title_author_doi_verified": true,
+    "formal_publication_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "doi_title_author_version_repository_code_search": true,
+    "historical_indexes_checked": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html",
+      "new-works-history.html",
+      "84 linked historical research-newworks HTML articles",
+      "GitHub default-branch code search (DOI, original title, author)"
+    ],
+    "fields": [
+      "DOI",
+      "original title",
+      "author",
+      "publication version"
+    ],
+    "matches_found": 0,
+    "note": "All three original publisher full article pages opened and metadata and source content checked. 84 historical pages linked from two historical indexes checked; repository-wide searches found no DOI/title duplicates. Two German Law Journal articles have October 2025 issue dates but original Cambridge online publication dates of 24 April 2026; the issue date and online date are separately recorded. Related reading and timelines omitted because no direct match warranted inclusion."
+  },
+  "items": [
+    {
+      "cn_title": "数字平台为何不再只是市场中介：生产组织权力与法律规则的重塑",
+      "author": "Ling Hu",
+      "original_title": "When Digital Market Moves Towards Productive Organization: Technological Empowerment and Legal Impact",
+      "journal": "German Law Journal",
+      "publisher": "Cambridge University Press",
+      "year": 2025,
+      "publication_date": "2026-04-24",
+      "volume": "26",
+      "issue": "Special Issue 7 (October 2025)",
+      "pages": "1167–1181",
+      "article_number": null,
+      "doi": "10.1017/glj.2026.10196",
+      "publisher_page": "https://www.cambridge.org/core/journals/german-law-journal/article/when-digital-market-moves-towards-productive-organization-technological-empowerment-and-legal-impact/F6DABA6F7508D804218A7F85C3C02700",
+      "version": "Published journal article, online April 2026; journal issue dated October 2025"
+    },
+    {
+      "cn_title": "生成式AI歧视不能照搬传统算法规则：技术差异与平等法的应对",
+      "author": "Emanuel V. Towfigh",
+      "original_title": "Challenges and Implications of Generative AI for Anti-Discrimination Law and Policy",
+      "journal": "German Law Journal",
+      "publisher": "Cambridge University Press",
+      "year": 2025,
+      "publication_date": "2026-04-24",
+      "volume": "26",
+      "issue": "Special Issue 7 (October 2025)",
+      "pages": "1281–1299",
+      "article_number": null,
+      "doi": "10.1017/glj.2026.10189",
+      "publisher_page": "https://www.cambridge.org/core/journals/german-law-journal/article/challenges-and-implications-of-generative-ai-for-antidiscrimination-law-and-policy/00FEFFEB65E37706DCDF2BDE6C90A34B",
+      "version": "Published journal article, online April 2026; journal issue dated October 2025"
+    },
+    {
+      "cn_title": "医生无法把诊断责任交给AI：医疗过失、解释义务与临床判断权",
+      "author": "Alejandro Leyva; Muhammad Khalid Khan Niazi",
+      "original_title": "Artificial intelligence and the limits of delegated clinical judgment",
+      "journal": "AI and Ethics",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-05-23",
+      "volume": "6",
+      "issue": null,
+      "pages": null,
+      "article_number": "318",
+      "doi": "10.1007/s43681-026-01184-2",
+      "publisher_page": "https://link.springer.com/article/10.1007/s43681-026-01184-2",
+      "version": "Published journal article (version of record)"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "2776a350fa74e259ffec1e940a0d1fd79da9130d",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": null
+  },
+  "other_columns_at_record": {
+    "brief": "articles/2026-11-12-tech-law-brief.html",
+    "paper": "articles/2026-11-12-hildebrandt-algorithmic-regulation-rule-of-law.html",
+    "classic": "articles/2026-11-12-filmer-patriarcha.html"
+  }
+}
