@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-12",
+  "base_main_sha": "e2a4ab9f0eef8af2995516870993207a825da416",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "检索美国、欧盟、英国、日本、韩国与印度、加拿大、澳大利亚新进展",
+    "逐条核实原始来源及法律阶段",
+    "与11月5日至11月11日事件级去重",
+    "终扫并发布当日页面"
+  ]
+}
