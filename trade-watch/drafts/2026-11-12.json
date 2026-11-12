@@ -1,8 +1,8 @@
 {
   "date": "2026-11-12",
   "base_main_sha": "e2a4ab9f0eef8af2995516870993207a825da416",
-  "phase": "verification",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "uk-ecju",
@@ -106,9 +106,22 @@
   },
   "last_error": null,
   "next_actions": [
-    "对照11月5日至11月11日全部往期逐项排除旧事",
-    "最终逐一复核来源、更新时间与法律阶段",
-    "最终终扫并保存publication_ready=true",
-    "写入三个主站页面、验证Pages"
-  ]
+    "创建2026-11-12完整期刊HTML到main",
+    "更新首页与归档",
+    "main回读与对应Pages验收"
+  ],
+  "dedup": {
+    "checked_issues": [
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-07",
+      "2026-11-08",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "result": "11 candidates each distinct new act, action, dated change or newly published evidence; Indian ceramic notice newly changes EQR to Nov 18 after Nov 8 scope notice"
+  },
+  "source_check": "All 11 event URLs individually opened and identified; PDF documents screenshot-checked. UK regulation separate SI link web renderer unsupported, ECJU official notice verified. No generic image added.",
+  "final_sweep": "2026-11-12 09h Asia/Shanghai, official/major news rechecked; no additional higher-priority unreported concrete rule established"
 }
