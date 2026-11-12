@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>第56课｜持续监管：为什么人工智能系统上线之后仍要不断检查？｜网信法技术基础</title>
+<link href="../assets/style.css" rel="stylesheet"/><link href="../assets/tech-basics.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="../index.html">网信法研究每日推送</a><nav class="navlinks"><a href="../briefs.html">全球科技法简报</a><a href="../papers.html">域外法学论文精读</a><a href="../classics.html">法学经典著作</a><a href="../new-works.html">科技法研究新作</a><a href="../tech-basics.html">网信法技术基础</a><a href="../archive.html">历史记录</a></nav></div></header>
+<main><section class="tech-hero"><div class="wrap"><div class="tech-kicker">LESSON 56 · LAW &amp; GOVERNANCE · 2026.11.12</div><h1>持续监管：为什么人工智能系统上线之后仍要不断检查？</h1><p class="tech-lead">今日问题：系统上线前已经测试合格，为什么运行一段时间后还可能需要重新评估？</p></div></section>
+<div class="tech-shell">
+<section class="lesson-focus"><div><strong>它是什么</strong><p><b>持续监管</b>是指人工智能系统投入使用后，持续收集运行情况和问题反馈，定期核查其效果与风险，并根据结果调整控制措施、重新测试或暂停使用。它关注的是系统在真实环境中的表现，而不只是上线前的合格报告。</p></div><div><strong>一个生活例子</strong><p>某地政务问答系统上线时能准确解释住房补贴条件。三个月后，补贴政策调整，系统却仍引用旧文件；同时，用户开始用不同方言和更复杂的问题提问。模型文件可能一行未改，但回答准确率和错误影响已经变化。若只验收一次，工作人员可能直到大量投诉出现才发现问题。</p></div></section>
+<section class="lesson-section"><h2>机制图：从一次验收到持续发现、纠正问题</h2>
+<div class="visual-board" role="group" aria-label="从上线基线、运行监测、发现异常、纠正与复测四步形成持续监测闭环，复测结果返回下一轮监测">
+<div class="visual-title">关键不是“每天重新训练模型”，而是给实际运行建立可检查、可纠正的反馈回路。</div>
+<div class="flow">
+<div class="flow-box"><strong>① 建立基线</strong><span>记录版本、规则、测试题及可接受风险</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>② 监测运行</strong><span>抽查答复、收集投诉与异常日志</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>③ 判断变化</strong><span>区分政策过期、输入变化和系统故障</span></div><div class="flow-arrow" aria-hidden="true">→</div>
+<div class="flow-box"><strong>④ 纠正复测</strong><span>更新知识、限权或暂停；验证后继续监测</span></div>
+</div>
+<div class="compare-grid">
+<div class="compare-card"><b>没有修改模型</b><p>政策文件更新、提问方式变化，也可能降低实际效果。</p></div>
+<div class="compare-card"><b>系统发生更新</b><p>知识库、提示模板、工具权限或供应商版本改变，需要核对影响。</p></div>
+<div class="compare-card"><b>出现异常之后</b><p>先定位受影响环节，再决定纠错、回退、人工接管或停用。</p></div>
+</div><p class="tiny-note">图示为管理闭环，不是所有系统都采用同一测试频率或技术架构。监测内容应与用途、风险及适用规范相匹配。</p></div>
+<p><b>第一步是明确“原来怎样”。</b>上线验收应保留系统版本、所用资料、典型测试问题以及允许的错误范围。没有可比较的起点，就难以判断后续变化来自模型、业务规则还是外部环境。</p>
+<p><b>第二步是发现“现在怎样”。</b>运营方可对实际答复进行抽样复核，记录用户申诉、人工改判、工具调用失败等信号。<b>漂移（drift）</b>指运行中的数据分布或输入与目标的关系随时间变化，造成原有表现不再稳定；但不是所有错误都叫漂移，政策资料过期也可能是独立原因。收集运行数据本身还须控制个人信息与访问权限。</p>
+<p><b>第三步是判断问题有多严重。</b>同样是错误答复，少量非关键表述错误，与错误告知申请截止日期，影响显然不同。可设置<b>触发阈值</b>，即出现某类严重事件或错误比例超过事先规定的范围时，启动专项复核；严重事项还可能需要立即人工接管，而不等统计数量达到阈值。</p>
+<p><b>第四步是纠正并验证。</b>原因在旧政策，可以更新知识库并重测；原因在工具越权，可以缩小权限；若新版本带来普遍错误，可以<b>回滚</b>，即恢复到经确认的较早版本。修复不等于结束，应重新测试高风险场景，并把结论、责任人和时间记录下来，继续下一轮监测。</p>
+</section>
+<section class="lesson-section"><h2>三个常见误解</h2><div class="myth-list">
+<div class="myth"><b>误解 01</b><span>“上线验收通过，就能一直按原方式运行。”验收仅说明当时、在特定测试条件下的表现，无法覆盖未来的政策更新和使用变化。</span></div>
+<div class="myth"><b>误解 02</b><span>“持续监管就是不断重新训练模型。”很多问题可以通过资料更新、权限调整、人工复核或版本回退解决，并不需要改变模型参数。</span></div>
+<div class="myth"><b>误解 03</b><span>“只看模型回答准确率就够了。”智能体实际调用的工具、纠错渠道、申诉结果和用户受到的影响，也可能是重要监测对象。</span></div>
+</div></section>
+<section class="lesson-section"><h2>法治连接</h2><div class="law-bridge"><h3>把上线时的合规判断延伸到系统运行全过程</h3><p>持续监管要求能回答三个具体问题：谁负责发现异常，谁有权决定修复或暂停，何种记录能够证明问题已被处理。对政务系统，错误指引可能影响相对人申请、陈述与寻求救济的机会；对企业服务，还涉及供应商更新告知、数据保护和事故处置的分工。采购合同与内部管理规则可以据此明确抽样频率、重大变更复测、事件升级、日志保存和人工接管权限。</p><p>NIST《人工智能风险管理框架》在“测量”“管理”环节强调运行期间的定期测试、用户反馈、事件应对和变更管理，属于自愿性风险管理框架。欧盟《人工智能法》第72条则对适用范围内的高风险人工智能系统规定上市后监测安排，要求持续收集、记录和分析相关运行数据；具体义务主体、适用时点应依现行法律判断。两者共同提示：技术测试和法律监督都不能只发生在上线之前。</p></div></section>
+<section class="lesson-section"><h2>两个可发展的研究问题</h2><div class="research-grid">
+<div class="research-card"><small>法学论文问题</small><h3>人工智能系统持续变化时，行政机关的程序保障义务如何延续？</h3><p>区分模型更新、知识库变更及实际使用情境变化，分析重新评估、人工接管和纠错救济的触发条件。</p></div>
+<div class="research-card"><small>智库报告问题</small><h3>公共部门人工智能系统如何建立运行监测与停用机制？</h3><p>研究采购验收后的抽样复核、严重错误报告、供应商升级通知、版本回退和跨部门事故协调，形成可核查的管理要求。</p></div>
+</div></section>
+<section class="lesson-section"><h2>可靠来源</h2><ol class="source-links">
+<li><a href="https://airc.nist.gov/airmf-resources/airmf/5-sec-core/">美国国家标准与技术研究院（NIST），AI Risk Management Framework 1.0，核心部分（2023）</a>。其中Measure、Manage及Manage 4.1涉及运行中测量、部署后监测、反馈与处置。</li>
+<li><a href="https://airc.nist.gov/airmf-resources/playbook/">NIST，AI RMF Playbook</a>。给出组织按风险场景选用的实践建议；不是强制性合规清单。</li>
+<li><a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-72">欧盟委员会AI Act Service Desk，《人工智能法》第72条（2026年7月27日整合文本）</a>。核对高风险系统的上市后监测、运行数据收集与监测计划安排。</li>
+</ol></section>
+<section class="next-lesson"><div><small>原定课程完成 · 56 / 56</small><p>八模块课程已完成。可从课程总览按技术链条回顾全部内容。</p></div><a href="../tech-basics.html">课程总览 →</a></section>
+</div></main><footer><div class="wrap">网信法研究每日推送 · 网信法技术基础</div></footer>
+</body></html>
