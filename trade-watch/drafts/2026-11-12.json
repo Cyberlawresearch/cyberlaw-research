@@ -1,7 +1,7 @@
 {
   "date": "2026-11-12",
   "base_main_sha": "e2a4ab9f0eef8af2995516870993207a825da416",
-  "phase": "researching",
+  "phase": "verification",
   "publication_ready": false,
   "items": [
     {
@@ -51,24 +51,64 @@
       "stage": "mid-term review",
       "source": "https://dgtr.gov.in/sites/default/files/2026-11/Notification_Sodium_Cyanide_PUC_PCN_EQR_Extension%20%281%29.pdf",
       "verified": true
+    },
+    {
+      "id": "eu-dfa",
+      "date": "2026-11-11",
+      "title": "欧盟委员会提交数字公平法提案，涉及网购虚假库存、动态定价、会员自动续订等",
+      "stage": "formal legislative proposal; not enacted",
+      "source": "https://commission.europa.eu/law/law-topic/consumer-protection-law/digital-fairness-act_en",
+      "verified": true
+    },
+    {
+      "id": "eu-cpc",
+      "date": "2026-11-11",
+      "title": "欧盟委员会提交消费者保护合作条例修订案，提议对非欧盟经营者要求欧盟代表及跨境执法最高全球营收6%罚款",
+      "stage": "formal legislative proposal; no effective new penalty",
+      "source": "https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-protection-cooperation-regulation_en",
+      "verified": true
+    },
+    {
+      "id": "mx-steel",
+      "date": "2026-11-11",
+      "title": "墨西哥副经济部长证实已移除约1100家不实钢铁厂注册名单，强化对华及东南亚钢材转口溯源",
+      "stage": "official statement of enforcement already undertaken; no new universal tariff",
+      "source": "https://www.reuters.com/world/china/mexico-says-crackdown-asian-steel-shipments-is-paying-off-us-tariff-talks-2026-11-11/",
+      "verified": true
+    },
+    {
+      "id": "us-h200",
+      "date": "2026-11-11",
+      "title": "路透披露美实体清单高校透过中国经销商采购英伟达H200及算力租赁记录",
+      "stage": "journalistic procurement finding, no BIS enforcement decision announced",
+      "source": "https://www.reuters.com/world/pla-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist-2026-11-11/",
+      "verified": true
+    },
+    {
+      "id": "eu-mmg",
+      "date": "2026-11-11",
+      "title": "五矿控股MMG宣布拟修订收购巴西镍业务的欧盟合并审查补救承诺，计划保障对欧镍铁供应",
+      "stage": "company statement about prospective remedies; no EU clearance",
+      "source": "https://www.reuters.com/world/china/mmg-revise-remedies-over-anglo-nickel-mine-bid-2026-11-11/",
+      "verified": true
     }
   ],
   "coverage": {
-    "US": "initial search; further official-source sweep needed",
-    "EU": "initial search; further EUR-Lex sweep needed",
-    "UK": "confirmed Nov 11 ECJU 2026/24 update",
-    "JP": "initial search; no qualifying new rule yet",
-    "KR": "initial search; no qualifying new rule yet",
-    "IN": "DGTR November 11 four distinct notices checked",
-    "CA": "initial search; no qualifying new act yet",
-    "AU": "Nov 11 accelerated review confirmed",
-    "MX": "Nov 11 steel transshipment official statement in Reuters"
+    "US": "BIS, OFAC, Federal Register, Commerce and Reuters scanned; confirmed new Reuters chip procurement finding, no confirmed new legal rule",
+    "EU": "European Commission Nov 11 Digital Fairness and CPC primary proposals plus Reuters MMG merger commitments",
+    "UK": "ECJU Nov 11 Notice to exporters 2026/24 reviewed",
+    "JP": "METI, customs and Japan trade remedies queried, no distinct Nov 10-12 qualifying change found",
+    "KR": "MOTIE, KTC and relevant Korea trade sources queried, no distinct Nov 10-12 qualifying change found",
+    "IN": "DGTR four November 11 formal notices opened and screenshot-verified",
+    "CA": "CBSA current notices scanned; Nov 9 PCC and Oct 27 building cable ruling already in recent editions",
+    "AU": "ATRC notices browsed; formal TRN2026/155 Nov 11 reviewed with PDF screenshot",
+    "MX": "Reuters Nov 11 Mexican deputy economy minister steel registry enforcement statement read"
   },
   "last_error": null,
   "next_actions": [
-    "补充美国联邦公报/OFAC及欧盟、日、韩官方源",
-    "确定至少3条跨区域新事实",
-    "完成对最近7期事件级复核、全部来源复查及终扫",
-    "形成完整正文并发布"
+    "对照11月5日至11月11日全部往期逐项排除旧事",
+    "最终逐一复核来源、更新时间与法律阶段",
+    "最终终扫并保存publication_ready=true",
+    "写入三个主站页面、验证Pages"
   ]
 }
