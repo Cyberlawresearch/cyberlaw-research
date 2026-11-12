@@ -11,7 +11,7 @@
   },
   "mode": "facts_only",
   "analysis_pending": true,
-  "checked_at": "2026-11-12T19:12:06+08:00",
+  "checked_at": "2026-11-12T19:14:23+08:00",
   "last_news_scan_at": "2026-11-12T19:12:06+08:00",
   "checks": {
     "sources": true,
@@ -158,7 +158,7 @@
       "original_title": "Senior US Democratic senators urge administration to preserve Nvidia export records amid China security concerns",
       "source_name": "Reuters",
       "url": "https://www.reuters.com/world/china/senior-us-democratic-senators-urge-administration-preserve-nvidia-export-records-2026-11-12/",
-      "fact": "美国参议员伊丽莎白·沃伦与克里斯·库恩斯11月11日致函商务部长、国务卿及白宫幕僚长，要求保存与英伟达向中国出口芯片有关的文件，并向国会说明相关国家安全风险及出口管制执行情况。函件是国会监督请求，并非对有关企业违法行为的正式认定。",
+      "fact": "美国参议员伊丽莎白·沃伦与克里斯·库恩斯11月11日致函商务部长、国务卿及白宫幕僚长，要求保存与英伟达向中国出口芯片有关的文件，并向国会说明相关国家安全风险及出口管制执行情况。两名参议员还要求就相关国家安全风险向国会提供专题简报。",
       "legal_status": "国会议员监督函件",
       "domestic": false,
       "source_checked": true,
