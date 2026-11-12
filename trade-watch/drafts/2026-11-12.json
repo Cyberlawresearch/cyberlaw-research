@@ -3,13 +3,72 @@
   "base_main_sha": "e2a4ab9f0eef8af2995516870993207a825da416",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "uk-ecju",
+      "date": "2026-11-11",
+      "title": "英国战略出口管制修订条例已提交议会，拟于12月1日实施，GEA001过渡至2027年4月1日",
+      "stage": "laid before Parliament, not yet in force",
+      "source": "https://www.gov.uk/government/publications/notice-to-exporters-202624-proposed-amendments-to-uk-strategic-export-controls/notice-to-exporters-202624-proposed-amendments-to-uk-strategic-export-controls",
+      "verified": true
+    },
+    {
+      "id": "au-al",
+      "date": "2026-11-11",
+      "title": "澳大利亚对佛山亮银铝业启动铝挤压型材加速复审",
+      "stage": "initiated; security from 2026-10-21; submissions Dec 11",
+      "source": "https://www.industry.gov.au/sites/default/files/atrc/public-record/2026-11/726-2-notice-trn-2026-155-initiation-of-accelerated-review-726.pdf",
+      "verified": true
+    },
+    {
+      "id": "in-pers",
+      "date": "2026-11-11",
+      "title": "印度过硫酸盐反倾销保留APS/PPS/SPS PCN并将答卷期限延至11月28日",
+      "stage": "ongoing investigation",
+      "source": "https://dgtr.gov.in/sites/default/files/2026-11/Notification_Persulphates_PUC_PCN_EQR_Extension.pdf",
+      "verified": true
+    },
+    {
+      "id": "in-dcc",
+      "date": "2026-11-11",
+      "title": "印度DCC日落复审保留产品范围且答卷延至11月29日",
+      "stage": "sunset review",
+      "source": "https://dgtr.gov.in/sites/default/files/2026-11/Notification_DCC_PUC_PCN_EQR_Extension%20%281%29.pdf",
+      "verified": true
+    },
+    {
+      "id": "in-ceramic",
+      "date": "2026-11-11",
+      "title": "印度中国陶瓷餐厨用品日落复审答卷延至11月18日",
+      "stage": "sunset review",
+      "source": "https://dgtr.gov.in/sites/default/files/2026-11/Extention%20of%20timeline%20Ceramic.pdf",
+      "verified": true
+    },
+    {
+      "id": "in-nacn",
+      "date": "2026-11-11",
+      "title": "印度中国及欧盟氰化钠中期复审答卷延至11月29日",
+      "stage": "mid-term review",
+      "source": "https://dgtr.gov.in/sites/default/files/2026-11/Notification_Sodium_Cyanide_PUC_PCN_EQR_Extension%20%281%29.pdf",
+      "verified": true
+    }
+  ],
+  "coverage": {
+    "US": "initial search; further official-source sweep needed",
+    "EU": "initial search; further EUR-Lex sweep needed",
+    "UK": "confirmed Nov 11 ECJU 2026/24 update",
+    "JP": "initial search; no qualifying new rule yet",
+    "KR": "initial search; no qualifying new rule yet",
+    "IN": "DGTR November 11 four distinct notices checked",
+    "CA": "initial search; no qualifying new act yet",
+    "AU": "Nov 11 accelerated review confirmed",
+    "MX": "Nov 11 steel transshipment official statement in Reuters"
+  },
   "last_error": null,
   "next_actions": [
-    "检索美国、欧盟、英国、日本、韩国与印度、加拿大、澳大利亚新进展",
-    "逐条核实原始来源及法律阶段",
-    "与11月5日至11月11日事件级去重",
-    "终扫并发布当日页面"
+    "补充美国联邦公报/OFAC及欧盟、日、韩官方源",
+    "确定至少3条跨区域新事实",
+    "完成对最近7期事件级复核、全部来源复查及终扫",
+    "形成完整正文并发布"
   ]
 }
