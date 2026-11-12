@@ -1,7 +1,7 @@
 {
   "date": "2026-11-12",
   "base_main_sha": "e2a4ab9f0eef8af2995516870993207a825da416",
-  "phase": "published_verified",
+  "phase": "published_verified_with_source_diagnostic_exceptions",
   "publication_ready": true,
   "items": [
     {
@@ -104,10 +104,12 @@
     "AU": "ATRC notices browsed; formal TRN2026/155 Nov 11 reviewed with PDF screenshot",
     "MX": "Reuters Nov 11 Mexican deputy economy minister steel registry enforcement statement read"
   },
-  "last_error": null,
-  "next_actions": [
-    "读取来源诊断最终结论；如政府/媒体访问阻断则记录错误而不替换成泛化机构首页"
-  ],
+  "last_error": {
+    "stage": "source_diagnostics",
+    "run": 43133491999,
+    "issue": "7 of 11 original source URLs auto-checked successfully; Reuters x3 401 and Australian government PDF read timeout; primary content independently verified; all public pages and final Pages deployment succeeded."
+  },
+  "next_actions": [],
   "dedup": {
     "checked_issues": [
       "2026-11-05",
@@ -156,7 +158,43 @@
       "errors": []
     },
     "source_diagnostics_run": 43133491999,
-    "source_diagnostics_state": "in_progress",
-    "independent_source_check": "All 11 source URLs opened in web research, including screenshot examination of all cited PDFs."
+    "source_diagnostics_state": "completed_failure_external_source_access",
+    "independent_source_check": "All 11 source URLs opened in web research, including screenshot examination of all cited PDFs.",
+    "source_diagnostics_completed_at": "2026-11-12T09:21:04+08:00",
+    "sources_automated_passed": 7,
+    "sources_total": 11,
+    "failed_source_links": [
+      {
+        "url": "https://www.industry.gov.au/sites/default/files/atrc/public-record/2026-11/726-2-notice-trn-2026-155-initiation-of-accelerated-review-726.pdf",
+        "error": "Requests read timeout 60s; original official PDF independently opened and screenshot-read in web research."
+      },
+      {
+        "url": "https://www.reuters.com/world/china/mexico-says-crackdown-asian-steel-shipments-is-paying-off-us-tariff-talks-2026-11-11/",
+        "error": "Automated requests 401; original story independently opened and checked in web research."
+      },
+      {
+        "url": "https://www.reuters.com/world/china/mmg-revise-remedies-over-anglo-nickel-mine-bid-2026-11-11/",
+        "error": "Automated requests 401; original story independently opened and checked in web research."
+      },
+      {
+        "url": "https://www.reuters.com/world/pla-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist-2026-11-11/",
+        "error": "Automated requests 401; original story independently opened and checked in web research."
+      }
+    ],
+    "source_diagnostics_pages": [
+      {
+        "path": "issues/2026-11-12.html",
+        "ok": true,
+        "news_count": 11
+      },
+      {
+        "path": "index.html",
+        "ok": true
+      },
+      {
+        "path": "archive.html",
+        "ok": true
+      }
+    ]
   }
 }
