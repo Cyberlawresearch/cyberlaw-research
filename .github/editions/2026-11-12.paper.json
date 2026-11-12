@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-12",
+  "column": "paper",
+  "state": "verified",
+  "phase": "deployment_check",
+  "page": "articles/2026-11-12-hildebrandt-algorithmic-regulation-rule-of-law.html",
+  "selection": "Mireille Hildebrandt, Algorithmic regulation and the rule of law",
+  "bibliography": {
+    "type": "article",
+    "author": "Mireille Hildebrandt",
+    "originalTitle": "Algorithmic regulation and the rule of law",
+    "journal": "Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences",
+    "year": "2018",
+    "volume": "376",
+    "issue": "2128",
+    "pages": "20170355",
+    "doi": "10.1098/rsta.2017.0355",
+    "url": "https://cris.vub.be/ws/portalfiles/portal/82589463/rsta.2017.0355.pdf",
+    "cnTitle": "算法规制与法治：为什么预测正确仍不等于依法裁判"
+  },
+  "versions": {
+    "full_text": "Read the complete publisher-version article from title through five sections, notes, conclusion and reference list (VUB PDF).",
+    "publication": "2018 final journal version, 376(2128), article number 20170355, DOI verified."
+  },
+  "sources": [
+    "https://cris.vub.be/ws/portalfiles/portal/82589463/rsta.2017.0355.pdf",
+    "https://doi.org/10.1098/rsta.2017.0355",
+    "https://researchportal.vub.be/en/publications/algorithmic-regulation-and-the-rule-of-law/"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "history_scope": "Reviewed full papers.html index and papers-history-1.html prior index (2026-08-07 through 2026-11-11). No previous reading of this article.",
+  "related_reading": [
+    "articles/2026-11-09-yeung-algorithmic-regulation-critical-interrogation.html",
+    "articles/2026-11-02-engstrom-ho-algorithmic-accountability-administrative-state.html"
+  ],
+  "timeline": null,
+  "body_length": 4510,
+  "checked_at": "2026-11-12",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  },
+  "last_error": null
+}
