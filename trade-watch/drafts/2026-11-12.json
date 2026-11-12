@@ -1,7 +1,7 @@
 {
   "date": "2026-11-12",
   "base_main_sha": "e2a4ab9f0eef8af2995516870993207a825da416",
-  "phase": "committed_waiting_for_deployment",
+  "phase": "published_verified",
   "publication_ready": true,
   "items": [
     {
@@ -106,9 +106,7 @@
   },
   "last_error": null,
   "next_actions": [
-    "核对最终提交Pages作业结论",
-    "公开站点最新一期、首页及归档内容校验",
-    "检查来源专项诊断并记录真实错误或通过结果"
+    "读取来源诊断最终结论；如政府/媒体访问阻断则记录错误而不替换成泛化机构首页"
   ],
   "dedup": {
     "checked_issues": [
@@ -141,6 +139,24 @@
     "pages_run": 43132971858,
     "pages_state": "in_progress",
     "tool": "mcp__GitHub__create_file, mcp__GitHub__update_file, mcp__GitHub__fetch_file",
-    "errors": []
+    "errors": [],
+    "pages_run_conclusion": "success",
+    "presence_guard_run": 43133492001,
+    "presence_guard_conclusion": "success",
+    "presence_evidence": {
+      "checked_at": "2026-11-12T09:17:41+08:00",
+      "repository_ok": true,
+      "public_ok": true,
+      "issue_count": 11,
+      "pages": [
+        "issues/2026-11-12.html",
+        "index.html",
+        "archive.html"
+      ],
+      "errors": []
+    },
+    "source_diagnostics_run": 43133491999,
+    "source_diagnostics_state": "in_progress",
+    "independent_source_check": "All 11 source URLs opened in web research, including screenshot examination of all cited PDFs."
   }
 }
