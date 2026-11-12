@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-12",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-12-filmer-patriarcha.html",
+  "target_path": "articles/2026-11-12-filmer-patriarcha.html",
+  "book": {
+    "author": "Sir Robert Filmer（罗伯特·菲尔默）",
+    "original_title": "Patriarcha: or the Natural Power of Kings",
+    "publisher": "London: Walter Davis",
+    "year": "1680",
+    "edition": "1680 first edition, complete three chapters, EEBO-TCP A41308 transcription; Heylyn prefatory letter distinguished"
+  },
+  "source_urls": [
+    "https://classicslaunch.org/works/patriarcha/read/",
+    "https://github.com/textcreationpartnership/A41308",
+    "https://digital-collections.princeton.edu/i/patriarcha-natural-power-kings-lear/item/a695805f-abf6-4bcb-b140-66345a798d41",
+    "https://oll.libertyfund.org/titles/filmer-patriarcha-or-the-natural-power-of-kings",
+    "https://lonang.com/library/reference/locke-two-treatises-government/loc-102/",
+    "https://lonang.com/library/reference/locke-two-treatises-government/loc-107/",
+    "https://lonang.com/library/reference/locke-two-treatises-government/loc-111/",
+    "https://dev.oll.libertyfund.org/titles/sidney-discourses-concerning-government/read",
+    "https://ojs.lib.uwo.ca/index.php/locke/article/view/8185"
+  ],
+  "original_verification": "据EEBO-TCP A41308提供的1680年完整三章原文核对初版书名页、海林卷首信、目录及第一章十项、第二章十八项、第三章十八项论证提示与相应正文，并核对各章代表性原文，尤其父权继承、人民选择、多数与默示同意、法律、司法和议会论证。没有将海林书信或现代编辑材料视为菲尔默本人主张。",
+  "critics": [
+    {
+      "name": "John Locke（约翰·洛克）",
+      "work": "Two Treatises of Government, First Treatise, chapters II, VII, XI",
+      "url": "https://lonang.com/library/reference/locke-two-treatises-government/",
+      "checked": "已核对第一篇父权与王权、父权与财产权、亚当继承人之辩的原文和章节"
+    },
+    {
+      "name": "Algernon Sidney（阿尔杰农·西德尼）",
+      "work": "Discourses Concerning Government, Chapters I–III (first published 1698)",
+      "url": "https://dev.oll.libertyfund.org/titles/sidney-discourses-concerning-government/read",
+      "checked": "核对首章开篇对Patriarcha直接反驳及各章关键段落和完整目录"
+    },
+    {
+      "name": "James A. Harris",
+      "work": "Treatises of Government and Treatises of Anarchy: Locke versus Filmer Revisited, Locke Studies 19, 2020",
+      "url": "https://ojs.lib.uwo.ca/index.php/locke/article/view/8185",
+      "checked": "仅按期刊公开摘要核实观点，未声称通读整篇论文"
+    }
+  ],
+  "dedup_checked": [
+    "main classics.html全部历史67条（含历史推送入口）",
+    "classics-history.html第15—35期",
+    "data/books.json",
+    "main完整树中与Filmer、Patriarcha相关文件名检索无重复",
+    "2026-11-12 classic page/record不存在（读取时）",
+    "近期经典栏提交及11月11日记录"
+  ],
+  "duplicate_found": false,
+  "sections": 95,
+  "prose_length": 12627,
+  "checked_at": "2026-11-12",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
