@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-13",
+  "column": "paper",
+  "state": "verified",
+  "phase": "deployment_check",
+  "page": "articles/2026-11-13-luguri-strahilevitz-shining-a-light-on-dark-patterns.html",
+  "selection": "Jamie Luguri and Lior Jacob Strahilevitz, Shining a Light on Dark Patterns",
+  "bibliography": {
+    "type": "article",
+    "author": "Jamie Luguri; Lior Jacob Strahilevitz",
+    "originalTitle": "Shining a Light on Dark Patterns",
+    "journal": "Journal of Legal Analysis",
+    "year": "2021",
+    "volume": "13",
+    "issue": "1",
+    "pages": "43–109",
+    "doi": "10.1093/jla/laaa006",
+    "url": "https://academic.oup.com/jla/article/13/1/43/6180579",
+    "cnTitle": "暗黑模式怎样改变消费者选择：界面操纵的实验证据与法律边界"
+  },
+  "versions": {
+    "full_text": "Read the complete openly available 2021 final published journal text, including both studies (N=1,963 and N=3,777), legal analyses, conclusion, notes and appendices. The publicly rendered final journal-version text carries original printed pages 43–109.",
+    "publication": "2021 final journal version, Journal of Legal Analysis 13(1), 43–109, DOI 10.1093/jla/laaa006; distinguish the earlier SSRN draft, which did not contain the final version's two-study analysis."
+  },
+  "sources": [
+    "https://academic.oup.com/jla/article/13/1/43/6180579",
+    "https://www.researchgate.net/publication/350340175_Shining_a_Light_on_Dark_Patterns",
+    "https://doi.org/10.2139/ssrn.3431205"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "history_scope": "Checked entire papers.html and papers-history-1.html (all indexed past readings). No previous full reading of Luguri and Strahilevitz, Shining a Light on Dark Patterns.",
+  "related_reading": [
+    "articles/2026-09-21-calo-digital-market-manipulation.html"
+  ],
+  "timeline": null,
+  "body_length": 4292,
+  "checked_at": "2026-11-13",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  },
+  "last_error": null
+}
