@@ -1,7 +1,7 @@
 {
   "date": "2026-11-13",
   "base_main_sha": "20b0d1c4d6a64753bd4a9f375d74401709863b87",
-  "phase": "publication_ready",
+  "phase": "main_written_await_pages_validation",
   "publication_ready": true,
   "items": [
     {
@@ -120,10 +120,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "创建trade-watch/issues/2026-11-13.html",
-    "更新trade-watch/index.html",
-    "更新trade-watch/archive.html",
-    "从main回读及核验本次Pages与公开页面"
+    "核验最终提交Pages工作流结束状态",
+    "核验GitHub Pages公开网页和来源链接",
+    "更新当日研究断点状态"
   ],
   "dedup": {
     "checked_issues": [
@@ -346,5 +345,25 @@
     "total": 13,
     "status": "each original record individually opened and read; EU EUR-Lex, US Federal Register, USITC, UK gov PDF and govt notice, Canada official, DGTR 3 PDFs; PDF screenshot examination completed; external URLs are exact corresponding acts, not homepages"
   },
-  "final_sweep": "2026-11-13 Asia/Shanghai morning final searches US/EU/UK/JP/KR/IN/CA/AU; no additional nonduplicate high-value formal decision found"
+  "final_sweep": "2026-11-13 Asia/Shanghai morning final searches US/EU/UK/JP/KR/IN/CA/AU; no additional nonduplicate high-value formal decision found",
+  "publication_attempt": {
+    "date": "2026-11-13",
+    "status": "three_main_files_written_and_refetched",
+    "files": [
+      "trade-watch/issues/2026-11-13.html",
+      "trade-watch/index.html",
+      "trade-watch/archive.html"
+    ],
+    "issue_commit": "458919f9f33e526cef1d1c600d39268043f9821e",
+    "homepage_commit": "9c2816ac74227561f5d3ef09036f96950f48474a",
+    "final_commit": "9792bc2c210cd860859259992791bec47ce43aec",
+    "main_verified": true,
+    "news_count": 10,
+    "source_count": 13,
+    "archive_count": 66,
+    "pages_run": 43343319008,
+    "pages_state": "in_progress",
+    "public_website_check": "web open returned inaccessible; pending Pages deployment and publication guard live check",
+    "errors": []
+  }
 }
