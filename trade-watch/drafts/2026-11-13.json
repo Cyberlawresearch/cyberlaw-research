@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-13",
+  "base_main_sha": "20b0d1c4d6a64753bd4a9f375d74401709863b87",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "检索11月10日至13日官方贸易合规动态",
+    "与11月5日至12日期逐项事件级去重",
+    "逐一核验一手来源和法律阶段",
+    "发布正文、首页和归档并验收"
+  ]
+}
