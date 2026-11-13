@@ -1,7 +1,7 @@
 {
   "date": "2026-11-13",
   "base_main_sha": "20b0d1c4d6a64753bd4a9f375d74401709863b87",
-  "phase": "main_written_await_pages_validation",
+  "phase": "published_verified",
   "publication_ready": true,
   "items": [
     {
@@ -119,11 +119,7 @@
     "AU": "澳大利亚贸易救济委员会案件和2026年11月12日相关官方公告已巡查，未重复11月9及12日已有案件。"
   },
   "last_error": null,
-  "next_actions": [
-    "核验最终提交Pages工作流结束状态",
-    "核验GitHub Pages公开网页和来源链接",
-    "更新当日研究断点状态"
-  ],
+  "next_actions": [],
   "dedup": {
     "checked_issues": [
       "2026-11-05",
@@ -362,8 +358,28 @@
     "source_count": 13,
     "archive_count": 66,
     "pages_run": 43343319008,
-    "pages_state": "in_progress",
+    "pages_state": "completed_success",
     "public_website_check": "web open returned inaccessible; pending Pages deployment and publication guard live check",
-    "errors": []
+    "errors": [],
+    "pages_final_sha": "9792bc2c210cd860859259992791bec47ce43aec",
+    "presence_guard_run": 43343747072,
+    "presence_guard_conclusion": "success",
+    "presence_evidence": {
+      "checked_at": "2026-11-13T09:17:17+08:00",
+      "repository_ok": true,
+      "public_ok": true,
+      "news_count": 10,
+      "pages": [
+        "issues/2026-11-13.html",
+        "index.html",
+        "archive.html"
+      ],
+      "errors": []
+    },
+    "source_diagnostics_run": 43343747080,
+    "source_diagnostics_conclusion": "success",
+    "sources_automated_passed": 13,
+    "sources_total": 13,
+    "all_public_links_verified": true
   }
 }
