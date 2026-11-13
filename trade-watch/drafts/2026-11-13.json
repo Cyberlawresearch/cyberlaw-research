@@ -1,7 +1,7 @@
 {
   "date": "2026-11-13",
   "base_main_sha": "20b0d1c4d6a64753bd4a9f375d74401709863b87",
-  "phase": "researching_first_batch_verified",
+  "phase": "researching_second_batch_verified",
   "publication_ready": false,
   "items": [
     {
@@ -45,24 +45,60 @@
       "verified": true
     },
     {
-      "id": "uk-pvc-third-country",
+      "id": "uk-russia-sanctions-1112",
       "date": "2026-11-12",
-      "title": "英国PVC反倾销调查公布选取替代参照第三国文件",
-      "stage": "investigative methodology step, no duty determination",
-      "source": "https://public-file.trade-remedies.service.gov.uk/case/ad0092/submission/1244",
-      "verified": "case page opened; pdf attachment not web accessible"
+      "title": "英国新增20个对俄制裁对象、1项记录调整，涉及Slavneft、SIBUR、煤炭企业及LNG船舶",
+      "stage": "designations already added to UK sanctions list on 2026-11-12",
+      "source": "https://assets.publishing.service.gov.uk/media/6af5ad18cc0dbfec767a509f/Sanctions_Notice__Russia__12_November_2026.pdf",
+      "secondary": "https://www.gov.uk/government/news/ukraine-set-to-be-focus-of-epc-summit-as-uk-sanctions-russias-top-ten-oil-producers",
+      "verified": true
+    },
+    {
+      "id": "us-bedcovers-usitc",
+      "date": "2026-11-12",
+      "title": "美国国际贸易委员会对中国产皮卡货厢盖作出反补贴最终肯定性产业损害裁定，即将发布反补贴税令",
+      "stage": "final injury determination affirmative; Commerce CVD order to follow, not yet order",
+      "source": "https://www.usitc.gov/press_room/news_release/2026/er1112_69497.htm",
+      "verified": true
+    },
+    {
+      "id": "us-cabinets-ad-final",
+      "date": "2026-11-12",
+      "title": "美国木制橱柜浴室柜反倾销行政复审终裁宜兴鹏佳等7.48%，未获单独税率出口商仍按251.64%",
+      "stage": "AD administrative review final; cash deposit rates effective November 12 2026",
+      "source": "https://www.federalregister.gov/documents/2026/11/12/2026-23045/wooden-cabinets-and-vanities-and-components-thereof-from-the-peoples-republic-of-china-final-results",
+      "verified": true
+    },
+    {
+      "id": "us-millwork-cvd-final",
+      "date": "2026-11-12",
+      "title": "美国木质装饰线条及木工制品反补贴复审终裁华泰、银丰、宏佳147.88%，其他抽样未选企业21.39%",
+      "stage": "CVD administrative review final effective November 12 2026",
+      "source": "https://www.federalregister.gov/documents/2026/11/12/2026-22950/wood-mouldings-and-millwork-products-from-the-peoples-republic-of-china-final-results-of",
+      "verified": true
+    },
+    {
+      "id": "us-sk-turkey-line-pipe",
+      "date": "2026-11-12",
+      "title": "美国际贸易委员会肯定性日落复审决定维持韩国和土耳其焊接管线管反倾销税令及土耳其反补贴税令",
+      "stage": "final five-year injury review affirmative, existing orders remain",
+      "source": "https://www.usitc.gov/press_room/news_release/2026/er1112_69498.htm",
+      "verified": true
     }
   ],
   "coverage": {
     "EU": "EUR-Lex 11 Nov regulations 2497/2512; in force Nov 12; new provisional duties verified",
     "IN": "DGTR 12 Nov 3 notices PDFs opened and page 2 screenshots checked",
-    "UK": "TRA AD0092 12 Nov case file new procedural note, attached PDF inaccessible in web; pending inclusion"
+    "UK": "FCDO 12 Nov official sanctions notice 20 additions 1 variation screenshot checked; TRA PVC Nov12 methodology change not prioritized",
+    "US": "Commerce final review notices 2026-23045 and 2026-22950; USITC 12 Nov truck bed covers and welded line pipe injury determinations; BIS and OFAC 12 Nov monitored no independently confirmed priority new act",
+    "KR": "KTC/MOTIE and US Korea line pipe sunset review monitored; USITC Korea/Turkey affirmative determination included"
   },
   "last_error": null,
   "next_actions": [
-    "巡视美国、日韩、加澳等最新决定",
-    "继续逐条打开来源并完成去重终扫",
-    "更新期日JSON ready后写入正文三份文件"
+    "检索日本、韩国、加拿大、澳大利亚末轮及新近欧盟进展",
+    "清理候选并补全事实、法律阶段、期限及影响",
+    "最终源链接核验与就绪标记",
+    "发布第066期"
   ],
   "dedup": {
     "checked_issues": [
