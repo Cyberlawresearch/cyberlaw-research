@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-13",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-13-new-works.html",
+  "page_blob_sha": "f253c8c148964f77924f1e80f515fd6ee13b0723",
+  "newworks_count": 3,
+  "checked_at": "2026-11-13T12:41:38.978Z",
+  "checks": {
+    "original_publisher_pages_opened": true,
+    "original_title_author_doi_verified": true,
+    "formal_publication_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "doi_title_author_version_repository_code_search": true,
+    "historical_indexes_checked": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html",
+      "new-works-history.html",
+      "74 distinct research-newworks HTML pages linked from the two indexes",
+      "GitHub default-branch code search for DOI, title and author variants"
+    ],
+    "fields": [
+      "DOI",
+      "original title",
+      "author",
+      "publication version"
+    ],
+    "matches_found": 0,
+    "note": "SAGE original journal publication pages and Cambridge University Press published full text verified. 74 distinct historical research-newworks HTML pages scanned and exact DOI/title/author code searches returned no matching earlier item. SAGE Social & Legal Studies article is OnlineFirst and does not have assigned volume/issue/pagination. No weak related-reading or timeline links included."
+  },
+  "items": [
+    {
+      "cn_title": "未经许可用数据训练AI：不当得利能否提供另一种救济",
+      "author": "Yangzi Li; Jyh-An Lee",
+      "original_title": "Unjust enrichment as a remedy for AI's unauthorised use of protected data",
+      "journal": "Common Law World Review",
+      "publisher": "SAGE Publications",
+      "year": 2026,
+      "publication_date": "2026-01-05",
+      "volume": "55",
+      "issue": "2",
+      "pages": "65–83",
+      "article_number": null,
+      "doi": "10.1177/14737795251410287",
+      "publisher_page": "https://journals.sagepub.com/doi/abs/10.1177/14737795251410287",
+      "version": "Published journal article; online January 2026, issue June 2026"
+    },
+    {
+      "cn_title": "自动化福利行政的问责缺口：隐形数字劳动与责任分配",
+      "author": "Viviana Ponce de León Solís",
+      "original_title": "The accountability gap: Shadow digital labor and the crisis of accountability in automated welfare",
+      "journal": "Social & Legal Studies",
+      "publisher": "SAGE Publications",
+      "year": 2026,
+      "publication_date": "2026-09-11",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": "10.1177/09646639261489494",
+      "publisher_page": "https://journals.sagepub.com/doi/abs/10.1177/09646639261489494",
+      "version": "Published journal article, OnlineFirst; volume, issue and pages not assigned at verification"
+    },
+    {
+      "cn_title": "董事会如何真正管好AI：加拿大上市公司的治理与披露实证",
+      "author": "Stéphane Rousseau; Catherine Régis",
+      "original_title": "Artificial intelligence and the board of directors: AI governance frameworks and disclosure practices of Canadian-listed corporations",
+      "journal": "Cambridge Forum on AI: Law and Governance",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "publication_date": "2026-11-03",
+      "volume": "2",
+      "issue": null,
+      "pages": null,
+      "article_number": "e24",
+      "doi": "10.1017/cfl.2026.10065",
+      "publisher_page": "https://www.cambridge.org/core/journals/cambridge-forum-on-ai-law-and-governance/article/artificial-intelligence-and-the-board-of-directors-ai-governance-frameworks-and-disclosure-practices-of-canadianlisted-corporations/EC6ED1A7AD2F038720164AA43D6EB132",
+      "version": "Published open-access journal article (version of record)"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "f2db1a65bdb813b43c9ec3d35605d6c78e594cc2",
+    "final_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": null
+  },
+  "other_columns_at_record": {
+    "brief": "articles/2026-11-13-tech-law-brief.html",
+    "paper": "articles/2026-11-13-luguri-strahilevitz-shining-a-light-on-dark-patterns.html",
+    "classic": "articles/2026-11-13-rousseau-discourse-on-inequality.html"
+  }
+}
