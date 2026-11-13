@@ -1,104 +1,129 @@
 {
   "date": "2026-11-13",
   "base_main_sha": "20b0d1c4d6a64753bd4a9f375d74401709863b87",
-  "phase": "researching_second_batch_verified",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "eu-copper-provisional",
       "date": "2026-11-12",
-      "title": "欧盟对中墨越乌盘绕铜管实施临时反倾销税，中国宁波金田33.5%、其他51.5%",
-      "stage": "Implementing Regulation (EU) 2026/2497 in force 2026-11-12; provisional, not final",
-      "source": "https://eur-lex.europa.eu/eli/reg_impl/2026/2497/oj",
+      "title": "欧盟对盘绕精炼铜管实施临时反倾销税，中国宁波金田33.5%、其他企业51.5%",
+      "stage": "临时反倾销税已于11月12日生效，终裁尚未作出",
+      "source": [
+        "https://eur-lex.europa.eu/eli/reg_impl/2026/2497/oj"
+      ],
       "verified": true
     },
     {
-      "id": "eu-acrylic-esters-provisional",
+      "id": "eu-acrylates-provisional",
       "date": "2026-11-12",
-      "title": "欧盟对中国等国丙烯酸丁酯及丙烯酸异辛酯实施临时反倾销税，华谊29%、平湖石化22.3%",
-      "stage": "Implementing Regulation (EU) 2026/2512 in force 2026-11-12; provisional",
-      "source": "https://eur-lex.europa.eu/eli/reg_impl/2026/2512/oj",
+      "title": "欧盟对丙烯酸丁酯和丙烯酸异辛酯实施临时反倾销税，中国适用22.3%至29.0%",
+      "stage": "临时反倾销税已于11月12日生效，终裁尚未作出",
+      "source": [
+        "https://eur-lex.europa.eu/eli/reg_impl/2026/2512/oj"
+      ],
       "verified": true
     },
     {
-      "id": "in-copper-ad-extension",
+      "id": "uk-russia-nov12-sanctions",
       "date": "2026-11-12",
-      "title": "印度内螺纹铜管反倾销调查问卷期限暂延至12月2日，产品范围及PCN待定",
-      "stage": "investigation procedure, no tariff determination",
-      "source": "https://dgtr.gov.in/sites/default/files/2026-11/Letter%20regarding%20clarification%20of%20PUCPCN%20and%20extension%20of%20time%20for%20QR%20filing%20%281%29.pdf",
+      "title": "英国新增20项涉俄制裁指定，涉及Slavneft、SIBUR、煤炭企业及油气运输船舶",
+      "stage": "20项新增制裁指定及1项记录调整已列入英国制裁名单",
+      "source": [
+        "https://assets.publishing.service.gov.uk/media/6af5ad18cc0dbfec767a509f/Sanctions_Notice__Russia__12_November_2026.pdf",
+        "https://www.gov.uk/government/news/ukraine-set-to-be-focus-of-epc-summit-as-uk-sanctions-russias-top-ten-oil-producers"
+      ],
       "verified": true
     },
     {
-      "id": "in-copper-cvd-extension",
+      "id": "us-truck-bed-covers-cvd",
       "date": "2026-11-12",
-      "title": "印度内螺纹铜管反补贴调查问卷暂延至12月3日，与反倾销案件分别办理",
-      "stage": "investigation procedure, no subsidy finding",
-      "source": "https://dgtr.gov.in/sites/default/files/2026-11/Letter%20regarding%20clarification%20of%20PUCPCN%20and%20extension%20of%20time%20for%20QR%20filing%20%282%29.pdf",
+      "title": "美国认定中国产皮卡货厢盖补贴进口造成产业损害，反补贴税令将随后发布",
+      "stage": "反补贴调查最终产业损害肯定性裁定；商务部税令待发布",
+      "source": [
+        "https://www.usitc.gov/press_room/news_release/2026/er1112_69497.htm"
+      ],
       "verified": true
     },
     {
-      "id": "in-tdi-extension",
+      "id": "us-cabinet-ad-final",
       "date": "2026-11-12",
-      "title": "印度中日韩甲苯二异氰酸酯TDI反倾销调查范围维持不变且无PCN，答卷延期至11月27日",
-      "stage": "investigation procedure, no tariff determination",
-      "source": "https://dgtr.gov.in/sites/default/files/2026-11/Letter%20regarding%20clarification%20of%20PUCPCN%20and%20extension%20of%20time%20for%20QR%20filing.pdf",
-      "verified": true
-    },
-    {
-      "id": "uk-russia-sanctions-1112",
-      "date": "2026-11-12",
-      "title": "英国新增20个对俄制裁对象、1项记录调整，涉及Slavneft、SIBUR、煤炭企业及LNG船舶",
-      "stage": "designations already added to UK sanctions list on 2026-11-12",
-      "source": "https://assets.publishing.service.gov.uk/media/6af5ad18cc0dbfec767a509f/Sanctions_Notice__Russia__12_November_2026.pdf",
-      "secondary": "https://www.gov.uk/government/news/ukraine-set-to-be-focus-of-epc-summit-as-uk-sanctions-russias-top-ten-oil-producers",
-      "verified": true
-    },
-    {
-      "id": "us-bedcovers-usitc",
-      "date": "2026-11-12",
-      "title": "美国国际贸易委员会对中国产皮卡货厢盖作出反补贴最终肯定性产业损害裁定，即将发布反补贴税令",
-      "stage": "final injury determination affirmative; Commerce CVD order to follow, not yet order",
-      "source": "https://www.usitc.gov/press_room/news_release/2026/er1112_69497.htm",
-      "verified": true
-    },
-    {
-      "id": "us-cabinets-ad-final",
-      "date": "2026-11-12",
-      "title": "美国木制橱柜浴室柜反倾销行政复审终裁宜兴鹏佳等7.48%，未获单独税率出口商仍按251.64%",
-      "stage": "AD administrative review final; cash deposit rates effective November 12 2026",
-      "source": "https://www.federalregister.gov/documents/2026/11/12/2026-23045/wooden-cabinets-and-vanities-and-components-thereof-from-the-peoples-republic-of-china-final-results",
+      "title": "美国对中国产木制橱柜和浴室柜作出反倾销复审终裁，四家企业适用7.48%",
+      "stage": "反倾销行政复审终裁已公布；相关现金保证金自11月12日起适用",
+      "source": [
+        "https://www.federalregister.gov/documents/2026/11/12/2026-23045/wooden-cabinets-and-vanities-and-components-thereof-from-the-peoples-republic-of-china-final-results"
+      ],
       "verified": true
     },
     {
       "id": "us-millwork-cvd-final",
       "date": "2026-11-12",
-      "title": "美国木质装饰线条及木工制品反补贴复审终裁华泰、银丰、宏佳147.88%，其他抽样未选企业21.39%",
-      "stage": "CVD administrative review final effective November 12 2026",
-      "source": "https://www.federalregister.gov/documents/2026/11/12/2026-22950/wood-mouldings-and-millwork-products-from-the-peoples-republic-of-china-final-results-of",
+      "title": "美国对华木质装饰线条反补贴复审终裁，三家企业147.88%、其他受审企业21.39%",
+      "stage": "反补贴行政复审终裁已公布；企业适用现金保证金率生效",
+      "source": [
+        "https://www.federalregister.gov/documents/2026/11/12/2026-22950/wood-mouldings-and-millwork-products-from-the-peoples-republic-of-china-final-results-of"
+      ],
       "verified": true
     },
     {
-      "id": "us-sk-turkey-line-pipe",
+      "id": "ca-iran-relisting",
+      "date": "2026-11-10",
+      "title": "加拿大恢复对伊朗11家银行、能源和核技术企业制裁，跨境付款筛查范围扩大",
+      "stage": "11家伊朗实体被重新列入加拿大经济制裁名单",
+      "source": [
+        "https://www.canada.ca/en/global-affairs/news/2026/11/minister-anand-announces-reimposition-of-sanctions-against-iranian-entities.html",
+        "https://www.canada.ca/en/global-affairs/news/2026/11/canada-reimposes-sanctions-against-11-iranian-entities.html"
+      ],
+      "verified": true
+    },
+    {
+      "id": "us-korea-turkey-welded-pipe",
       "date": "2026-11-12",
-      "title": "美国际贸易委员会肯定性日落复审决定维持韩国和土耳其焊接管线管反倾销税令及土耳其反补贴税令",
-      "stage": "final five-year injury review affirmative, existing orders remain",
-      "source": "https://www.usitc.gov/press_room/news_release/2026/er1112_69498.htm",
+      "title": "美国维持韩国和土耳其焊接管线管反倾销税令及土耳其反补贴税令",
+      "stage": "五年日落复审最终产业损害肯定性裁定，原有税令继续维持",
+      "source": [
+        "https://www.usitc.gov/press_room/news_release/2026/er1112_69498.htm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "in-copper-ad-cvd-extension",
+      "date": "2026-11-12",
+      "title": "印度分别延长内螺纹铜管反倾销与反补贴调查答卷期限，截止12月2日和3日",
+      "stage": "反倾销及反补贴两案调查继续，答卷暂时延期，尚未征税",
+      "source": [
+        "https://dgtr.gov.in/sites/default/files/2026-11/Letter%20regarding%20clarification%20of%20PUCPCN%20and%20extension%20of%20time%20for%20QR%20filing%20%281%29.pdf",
+        "https://dgtr.gov.in/sites/default/files/2026-11/Letter%20regarding%20clarification%20of%20PUCPCN%20and%20extension%20of%20time%20for%20QR%20filing%20%282%29.pdf"
+      ],
+      "verified": true
+    },
+    {
+      "id": "in-tdi-ad-extension",
+      "date": "2026-11-12",
+      "title": "印度中日韩TDI反倾销调查维持原产品范围，答卷截止日延至11月27日",
+      "stage": "反倾销调查进行中，产品范围及问卷期限程序决定，不构成征税终裁",
+      "source": [
+        "https://dgtr.gov.in/sites/default/files/2026-11/Letter%20regarding%20clarification%20of%20PUCPCN%20and%20extension%20of%20time%20for%20QR%20filing.pdf"
+      ],
       "verified": true
     }
   ],
   "coverage": {
-    "EU": "EUR-Lex 11 Nov regulations 2497/2512; in force Nov 12; new provisional duties verified",
-    "IN": "DGTR 12 Nov 3 notices PDFs opened and page 2 screenshots checked",
-    "UK": "FCDO 12 Nov official sanctions notice 20 additions 1 variation screenshot checked; TRA PVC Nov12 methodology change not prioritized",
-    "US": "Commerce final review notices 2026-23045 and 2026-22950; USITC 12 Nov truck bed covers and welded line pipe injury determinations; BIS and OFAC 12 Nov monitored no independently confirmed priority new act",
-    "KR": "KTC/MOTIE and US Korea line pipe sunset review monitored; USITC Korea/Turkey affirmative determination included"
+    "US": "11月12日美国商务部联邦公报两项对华木制品复审终裁、USITC皮卡盖反补贴最终损害和韩土焊接管日落终裁；OFAC与BIS最新资料已巡查。",
+    "EU": "EUR-Lex11月11日公布、12日生效的铜管和丙烯酸酯两项临时反倾销实施条例已核对。",
+    "UK": "FCDO11月12日对俄制裁正式通知新增20项并有1项变更；TRA当日PVC程序文件已查阅。",
+    "JP": "已用日本经产省、日本贸易管制及贸易救济日文检索核查11月10—13日最新动态；未确认另有符合纳入条件的独立新决定。",
+    "KR": "已用韩国产业通商资源部、贸易委员会韩文及美国针对韩国贸易救济官方资料核查；纳入USITC韩国产焊接管日落复审决定。",
+    "IN": "DGTR11月12日铜管反倾销、反补贴两独立通知及TDI调查通知原PDF均已打开、核对第二页与截止日期。",
+    "CA": "加拿大外交部11月10日重列11家伊朗实体的公告和名单明细均经核对，CBSA新案及既有纸杯调查公告已巡查。",
+    "AU": "澳大利亚贸易救济委员会案件和2026年11月12日相关官方公告已巡查，未重复11月9及12日已有案件。"
   },
   "last_error": null,
   "next_actions": [
-    "检索日本、韩国、加拿大、澳大利亚末轮及新近欧盟进展",
-    "清理候选并补全事实、法律阶段、期限及影响",
-    "最终源链接核验与就绪标记",
-    "发布第066期"
+    "创建trade-watch/issues/2026-11-13.html",
+    "更新trade-watch/index.html",
+    "更新trade-watch/archive.html",
+    "从main回读及核验本次Pages与公开页面"
   ],
   "dedup": {
     "checked_issues": [
@@ -111,6 +136,215 @@
       "2026-11-11",
       "2026-11-12"
     ],
-    "result": "all 6 preliminary candidates distinct actions after previous editions; final check pending"
-  }
+    "result": "10条均为与近八期不重复的正式初裁或终裁、名单变化、独立期限改变；印度铜管反倾销和反补贴两个独立案号在同条中分别列出两份一手来源；11月10日加拿大名单在近72小时内。"
+  },
+  "final_articles": [
+    {
+      "id": "eu-copper-provisional",
+      "place": "欧盟／中国、墨西哥、越南、乌兹别克斯坦",
+      "date": "2026-11-12",
+      "agency": "欧盟委员会",
+      "stage": "临时反倾销税已于11月12日生效，终裁尚未作出",
+      "title": "欧盟对盘绕精炼铜管实施临时反倾销税，中国宁波金田33.5%、其他企业51.5%",
+      "importance": 5,
+      "body": "欧盟委员会11月11日公布第2026/2497号实施条例，自11月12日起对中国、墨西哥、越南和乌兹别克斯坦原产的盘绕精炼铜管、铜管件征收临时反倾销税。中国产品中，宁波金田铜管适用33.5%，其他中国生产商适用51.5%；越南金田和越南海亮分别适用13.8%及12.3%。调查对象为未进一步加工的盘绕精炼铜管，包括光面及内螺纹产品，TARIC编码7411 10 90 10。进口货物放行进入欧盟自由流通时，须提供与临时税额等额的担保；个别税率还须提交符合条例要求的生产商商业发票。本次是临时税，案件仍处最终调查阶段。",
+      "scope": "中国铜管制造企业、越南关联工厂及欧盟进口商，重点涉及制冷、空调和热交换设备用铜管。",
+      "impact": "中国生产商应按生产法人和原产地分别核对TARIC附加代码、发票声明、出口合同税费分担及海关担保。以第三国工厂供货时须保存原产资格和实际加工记录；仅经第三国转运不能自动适用较低税率。",
+      "deadline": "2026年11月12日起实施临时措施；利害关系人申请听证截至11月17日、提交书面意见截至11月27日。",
+      "sources": [
+        {
+          "url": "https://eur-lex.europa.eu/eli/reg_impl/2026/2497/oj",
+          "label": "欧盟第2026/2497号临时反倾销实施条例"
+        }
+      ]
+    },
+    {
+      "id": "eu-acrylates-provisional",
+      "place": "欧盟／中国、沙特、南非、美国",
+      "date": "2026-11-12",
+      "agency": "欧盟委员会",
+      "stage": "临时反倾销税已于11月12日生效，终裁尚未作出",
+      "title": "欧盟对丙烯酸丁酯和丙烯酸异辛酯实施临时反倾销税，中国适用22.3%至29.0%",
+      "importance": 5,
+      "body": "欧盟委员会第2026/2512号实施条例于11月12日生效，对中国、沙特阿拉伯、南非、美国原产的丙烯酸丁酯和丙烯酸异辛酯实施临时反倾销税。中国平湖石化适用22.3%，上海华谊新材料适用29.0%，附件所列其他合作企业适用23.9%，其余中国进口产品为29.0%；沙特、南非、美国分别涉及40.3%、32.4%、39.0%。涉案货物对应TARIC 2916 12 00 15，不包括丙烯酸甲酯、乙酯及条例列明的特种丙烯酸酯。临时征税与进口担保已经实施，最终税率尚待调查完成。",
+      "scope": "生产及向欧盟销售丙烯酸丁酯、丙烯酸异辛酯的化工企业，以及涂料、胶黏剂、树脂和包装材料供应链。",
+      "impact": "出口企业须区分丙烯酸酯具体品种和生产厂商，核实适用附加代码及商业发票声明；进口商应按暂定税率预留担保和采购成本，不能将其他丙烯酸酯错误纳入涉案范围。",
+      "deadline": "临时措施自2026年11月12日起生效；申请听证截至11月17日、书面意见截至11月27日。",
+      "sources": [
+        {
+          "url": "https://eur-lex.europa.eu/eli/reg_impl/2026/2512/oj",
+          "label": "欧盟第2026/2512号临时反倾销实施条例"
+        }
+      ]
+    },
+    {
+      "id": "uk-russia-nov12-sanctions",
+      "place": "英国／俄罗斯及第三国航运",
+      "date": "2026-11-12",
+      "agency": "英国外交、联邦与发展事务部（FCDO）",
+      "stage": "20项新增制裁指定及1项记录调整已列入英国制裁名单",
+      "title": "英国新增20项涉俄制裁指定，涉及Slavneft、SIBUR、煤炭企业及油气运输船舶",
+      "importance": 5,
+      "body": "英国外交、联邦与发展事务部11月12日发布对俄制裁通知，正式增加20个名单对象并调整1项既有记录。新增对象包括俄罗斯石油企业Slavneft、SIBUR Holding、能源工程企业NIPIGAZ、数家煤炭企业、阿联酋交易主体及多艘运送俄罗斯油气的船舶。对指定企业适用资产冻结、信托服务及相关董事任职限制等措施；对指定船舶适用英国港口进入、经营、包租、金融和相关服务限制，须按具体条目识别。英国政府同时确认本次扩展覆盖俄罗斯十大主要石油生产商。",
+      "scope": "俄罗斯原油、液化天然气、煤炭和化工商品贸易，第三国转口、油轮租船、保险结算及相关设备供货。",
+      "impact": "中资贸易商、航运公司、保险与付款机构须按11月12日新名单更新交易对手、实际控制关系及船舶IMO号筛查；涉及英国人员、金融机构、港口或服务的交易，需区分公司资产冻结与指定船舶的专门禁令，并重新核查既有合同履行安排。",
+      "deadline": "名单更新日期为2026年11月12日；新指定及船舶限制已列明，无统一延后生效日期。",
+      "sources": [
+        {
+          "url": "https://assets.publishing.service.gov.uk/media/6af5ad18cc0dbfec767a509f/Sanctions_Notice__Russia__12_November_2026.pdf",
+          "label": "英国FCDO：11月12日对俄制裁正式通知（20项新增、1项变更）"
+        },
+        {
+          "url": "https://www.gov.uk/government/news/ukraine-set-to-be-focus-of-epc-summit-as-uk-sanctions-russias-top-ten-oil-producers",
+          "label": "英国首相办公室：涉俄罗斯能源及影子船队制裁说明"
+        }
+      ]
+    },
+    {
+      "id": "us-truck-bed-covers-cvd",
+      "place": "美国／中国",
+      "date": "2026-11-12",
+      "agency": "美国国际贸易委员会（USITC）",
+      "stage": "反补贴调查最终产业损害肯定性裁定；商务部税令待发布",
+      "title": "美国认定中国产皮卡货厢盖补贴进口造成产业损害，反补贴税令将随后发布",
+      "importance": 5,
+      "body": "美国国际贸易委员会11月12日对中国产皮卡货厢盖（Truck Bed Covers）反补贴调查作出最终产业损害肯定性裁定，案号701-TA-789。委员会认为美国相关产业因商务部认定享受补贴的中国涉案产品进口而受到实质损害。根据最终肯定性损害裁定，美国商务部将发布相应反补贴税令。当天的决定属于最终产业损害认定，并非已刊登的正式征税令；其范围仅限本次反补贴调查，不应混同此前另行开展的反倾销程序。",
+      "scope": "出口美国的中国皮卡货厢盖制造商、美国汽车配件进口商、改装零售和经销网络。",
+      "impact": "出口商和美国进口商应在新反补贴税令刊登后核对产品定义、出口商对应税率和海关现金保证金；对已入境或在途订单，应按当前有效的临时措施与最终税令的衔接分别核算税负。",
+      "deadline": "2026年11月12日作出最终损害裁定；正式反补贴税令的刊登与执行日期待商务部公布。",
+      "sources": [
+        {
+          "url": "https://www.usitc.gov/press_room/news_release/2026/er1112_69497.htm",
+          "label": "美国USITC：皮卡货厢盖反补贴最终损害裁定"
+        }
+      ]
+    },
+    {
+      "id": "us-cabinet-ad-final",
+      "place": "美国／中国",
+      "date": "2026-11-12",
+      "agency": "美国商务部国际贸易署",
+      "stage": "反倾销行政复审终裁已公布；相关现金保证金自11月12日起适用",
+      "title": "美国对中国产木制橱柜和浴室柜作出反倾销复审终裁，四家企业适用7.48%",
+      "importance": 4,
+      "body": "美国商务部11月12日在《联邦公报》公布中国产木制橱柜、浴室柜及其组件2024年4月至2025年3月反倾销行政复审终裁。宜兴鹏佳科技及获单独税率的江苏祥盛、厦门金华南、中山NU Furniture共四家企业的加权平均倾销幅度均为7.48%；未获得单独税率的中国出口商继续按中国统一税率251.64%计算现金保证金。针对复审期间进口记录的最终清算税额按公告适用规则办理，不等同于将所有已进口货物一律按7.48%追缴。",
+      "scope": "对美出口中国木制厨柜、浴室柜及组件的制造和贸易企业，以及美国进口商与家装零售渠道。",
+      "impact": "美国进口商应逐笔核对实际生产商、出口商及是否获得单独税率，更新11月12日起进口货物的保证金参数；历史报关记录需按进口商特定清算率核算并保存反倾销税偿付声明。",
+      "deadline": "2026年11月12日终裁生效；商务部拟不早于刊登后35日向海关发出清算指令，诉讼情形依公告程序处理。",
+      "sources": [
+        {
+          "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23045/wooden-cabinets-and-vanities-and-components-thereof-from-the-peoples-republic-of-china-final-results",
+          "label": "美国《联邦公报》2026-23045号：木制橱柜反倾销复审终裁"
+        }
+      ]
+    },
+    {
+      "id": "us-millwork-cvd-final",
+      "place": "美国／中国",
+      "date": "2026-11-12",
+      "agency": "美国商务部国际贸易署",
+      "stage": "反补贴行政复审终裁已公布；企业适用现金保证金率生效",
+      "title": "美国对华木质装饰线条反补贴复审终裁，三家企业147.88%、其他受审企业21.39%",
+      "importance": 4,
+      "body": "美国商务部11月12日公布中国产木质装饰线条和木工制品2024年度反补贴行政复审终裁。南平华泰木竹、福建银丰进出口贸易及福建宏佳工艺品适用147.88%的最终补贴幅度；本次复审中未被单独抽查的其他企业适用21.39%。对三家企业的高幅度认定涉及依据可获得事实及不利推断作出的计算，而非全中国行业统一税率。商务部将据终裁更新涉案企业现金保证金和复审年度清算安排。",
+      "scope": "中国建筑木线条、门窗饰条、装饰木工制品及美国建材销售供应链。",
+      "impact": "出口企业须根据复审企业名单和关联企业关系匹配对应税率，并区分受审与非受审出口商；新订单需按适用保证金率重算到岸成本，采购方须核查生产厂及合同税负分担。",
+      "deadline": "终裁及相关现金保证金要求自2026年11月12日适用；复审期间清算指令拟不早于公布后35日下发。",
+      "sources": [
+        {
+          "url": "https://www.federalregister.gov/documents/2026/11/12/2026-22950/wood-mouldings-and-millwork-products-from-the-peoples-republic-of-china-final-results-of",
+          "label": "美国《联邦公报》2026-22950号：木质装饰制品反补贴复审终裁"
+        }
+      ]
+    },
+    {
+      "id": "ca-iran-relisting",
+      "place": "加拿大／伊朗",
+      "date": "2026-11-10",
+      "agency": "加拿大外交部（Global Affairs Canada）",
+      "stage": "11家伊朗实体被重新列入加拿大经济制裁名单",
+      "title": "加拿大恢复对伊朗11家银行、能源和核技术企业制裁，跨境付款筛查范围扩大",
+      "importance": 4,
+      "body": "加拿大外交部11月10日宣布，依据《特别经济措施（伊朗）条例》重新对2016年曾获移出名单的11家伊朗实体实施制裁，包括伊朗国家石油公司、国家油轮公司、Mellat银行、Melli银行、工业矿业银行、伊朗出口发展银行、伊朗保险公司及核材料相关企业。加拿大称恢复名单旨在限制相关核项目与资金渠道。措施针对特定实体交易，不是对所有伊朗产品新征一项普遍关税。",
+      "scope": "涉及加拿大银行、保险、付款、技术或在加拿大经营的贸易链条，尤其是伊朗能源及船运、银行结算业务。",
+      "impact": "与伊朗能源、船运或金融机构开展业务的中资企业，应核查加拿大人员、银行及服务参与情况，并对11家新列名主体及其交易关系重新筛查；加拿大金融机构参与的付款、融资及保险安排可能需中止或重新评估。",
+      "deadline": "加拿大2026年11月10日正式宣布恢复相关制裁，未公告额外统一过渡期限。",
+      "sources": [
+        {
+          "url": "https://www.canada.ca/en/global-affairs/news/2026/11/minister-anand-announces-reimposition-of-sanctions-against-iranian-entities.html",
+          "label": "加拿大外交部：恢复11家伊朗实体制裁公告"
+        },
+        {
+          "url": "https://www.canada.ca/en/global-affairs/news/2026/11/canada-reimposes-sanctions-against-11-iranian-entities.html",
+          "label": "加拿大外交部：11家重列名实体明细"
+        }
+      ]
+    },
+    {
+      "id": "us-korea-turkey-welded-pipe",
+      "place": "美国／韩国、土耳其",
+      "date": "2026-11-12",
+      "agency": "美国国际贸易委员会（USITC）",
+      "stage": "五年日落复审最终产业损害肯定性裁定，原有税令继续维持",
+      "title": "美国维持韩国和土耳其焊接管线管反倾销税令及土耳其反补贴税令",
+      "importance": 4,
+      "body": "美国国际贸易委员会11月12日在韩国、土耳其原产焊接管线管（Welded Line Pipe）五年日落复审中，认定撤销现有贸易救济措施很可能在可预见期间内造成美国相关产业损害继续或再度发生。因此，韩国和土耳其焊接管线管反倾销税令及土耳其反补贴税令将继续保留。本次属于既有措施的延续，并非针对韩国或土耳其新立案调查，也未新增针对中国的税令。",
+      "scope": "在韩国或土耳其生产的焊接管线管及美国油气、基础设施采购供应链，包括在上述国家设立生产设施的中国投资企业。",
+      "impact": "在韩、土两国安排对美出口的中国企业应按生产原产地、供应商和产品范围确认现行双反税负，避免将第三国转口当作规避原产地及既有税令的方式；美国买方应在报价中继续计入相应税款。",
+      "deadline": "2026年11月12日作出日落复审最终肯定性决定；既有税令继续适用，具体企业税率按现行税令及后续复审确定。",
+      "sources": [
+        {
+          "url": "https://www.usitc.gov/press_room/news_release/2026/er1112_69498.htm",
+          "label": "美国USITC：韩国、土耳其焊接管线管日落复审决定"
+        }
+      ]
+    },
+    {
+      "id": "in-copper-ad-cvd-extension",
+      "place": "印度／中国、泰国、越南",
+      "date": "2026-11-12",
+      "agency": "印度商工部贸易救济总局（DGTR）",
+      "stage": "反倾销及反补贴两案调查继续，答卷暂时延期，尚未征税",
+      "title": "印度分别延长内螺纹铜管反倾销与反补贴调查答卷期限，截止12月2日和3日",
+      "importance": 4,
+      "body": "印度DGTR11月12日分别对中国、泰国及越南原产内螺纹铜管（Internally Grooved Copper Tubes and Pipes）发布程序通知。反倾销案6/53/2026原定11月12日提交的问卷暂延至12月2日；反补贴案6/54/2026原定11月13日答卷暂延至12月3日。两案均因产品范围（PUC）及产品控制编码（PCN）技术意见尚未审定而延期。DGTR明确，若最终PUC/PCN公布后的15日答卷期超过上述截止日，将另行通知更晚的期限；目前没有最终倾销、补贴认定或新增税率。",
+      "scope": "中国、泰国、越南向印度出口的内螺纹铜管及印度空调、热交换器与制冷设备原料采购。",
+      "impact": "涉案出口商应按反倾销和反补贴独立案号分别准备价格、成本、补贴与生产数据，并保留产品型号、内螺纹结构和实物技术参数，以便在最终PUC/PCN确定后调整答卷。两份问卷截止日期不可混用。",
+      "deadline": "反倾销案暂定2026年12月2日、反补贴案暂定12月3日；最终产品编码公布后仍可能延长。",
+      "sources": [
+        {
+          "url": "https://dgtr.gov.in/sites/default/files/2026-11/Letter%20regarding%20clarification%20of%20PUCPCN%20and%20extension%20of%20time%20for%20QR%20filing%20%281%29.pdf",
+          "label": "印度DGTR：6/53/2026号反倾销案延期通知"
+        },
+        {
+          "url": "https://dgtr.gov.in/sites/default/files/2026-11/Letter%20regarding%20clarification%20of%20PUCPCN%20and%20extension%20of%20time%20for%20QR%20filing%20%282%29.pdf",
+          "label": "印度DGTR：6/54/2026号反补贴案延期通知"
+        }
+      ]
+    },
+    {
+      "id": "in-tdi-ad-extension",
+      "place": "印度／中国、日本、韩国",
+      "date": "2026-11-12",
+      "agency": "印度商工部贸易救济总局（DGTR）",
+      "stage": "反倾销调查进行中，产品范围及问卷期限程序决定，不构成征税终裁",
+      "title": "印度中日韩TDI反倾销调查维持原产品范围，答卷截止日延至11月27日",
+      "importance": 3,
+      "body": "印度DGTR11月12日在甲苯二异氰酸酯（TDI）反倾销调查7/24/2026号案中，确认维持9月30日立案公告所列产品范围；因各方未在规定期内提出PCN划分方案，本案暂不采用新的PCN方法。调查机关同时将问卷答卷期限由11月12日延长15天至11月27日，并明确此次不再继续延期。调查针对中国、日本和韩国原产或出口的TDI，现阶段不存在新终裁税率。",
+      "scope": "中国、日本、韩国TDI生产商与印度聚氨酯、泡沫材料、家具和汽车零部件产业采购。",
+      "impact": "对印度出口TDI的企业应按原立案产品范围汇总出口价格、成本、内销及关联交易数据，11月27日前完成SETU平台答卷；对拟申请特定产品排除的企业，须以可核查技术和销售资料提出证据。",
+      "deadline": "2026年11月27日为延期后的答卷截止日；DGTR注明不再批准进一步延期。",
+      "sources": [
+        {
+          "url": "https://dgtr.gov.in/sites/default/files/2026-11/Letter%20regarding%20clarification%20of%20PUCPCN%20and%20extension%20of%20time%20for%20QR%20filing.pdf",
+          "label": "印度DGTR：7/24/2026号TDI反倾销调查通知"
+        }
+      ]
+    }
+  ],
+  "source_check": {
+    "total": 13,
+    "status": "each original record individually opened and read; EU EUR-Lex, US Federal Register, USITC, UK gov PDF and govt notice, Canada official, DGTR 3 PDFs; PDF screenshot examination completed; external URLs are exact corresponding acts, not homepages"
+  },
+  "final_sweep": "2026-11-13 Asia/Shanghai morning final searches US/EU/UK/JP/KR/IN/CA/AU; no additional nonduplicate high-value formal decision found"
 }
