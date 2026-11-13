@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-13",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-13-rousseau-discourse-on-inequality.html",
+  "target_path": "articles/2026-11-13-rousseau-discourse-on-inequality.html",
+  "book": {
+    "author": "Jean-Jacques Rousseau（让-雅克·卢梭）",
+    "original_title": "Discours sur l’origine et les fondements de l’inégalité parmi les hommes",
+    "publisher": "Amsterdam: Marc-Michel Rey",
+    "year": "1755",
+    "edition": "1755 first edition bibliographic record verified at BnF; research text is complete French Wikisource transcription of dedication, preface, first and second parts and author notes; comparison with incomplete 1910 Harvard Classics English translation"
+  },
+  "source_urls": [
+    "https://catalogue.bnf.fr/ark:/12148/cb31257451k",
+    "https://fr.wikisource.org/wiki/Discours_sur_l%E2%80%99origine_et_les_fondements_de_l%E2%80%99in%C3%A9galit%C3%A9_parmi_les_hommes",
+    "https://fr.wikisource.org/wiki/%C3%80_la_R%C3%A9publique_de_Gen%C3%A8ve",
+    "https://fr.wikisource.org/wiki/Discours_sur_l%E2%80%99origine_et_les_fondements_de_l%E2%80%99in%C3%A9galit%C3%A9_parmi_les_hommes/Pr%C3%A9face",
+    "https://fr.wikisource.org/wiki/Discours_sur_l%E2%80%99origine_et_les_fondements_de_l%E2%80%99in%C3%A9galit%C3%A9_parmi_les_hommes/Premi%C3%A8re_partie",
+    "https://fr.wikisource.org/wiki/Discours_sur_l%E2%80%99origine_et_les_fondements_de_l%E2%80%99in%C3%A9galit%C3%A9_parmi_les_hommes/Seconde_partie",
+    "https://fr.wikisource.org/wiki/Discours_sur_l%E2%80%99origine_et_les_fondements_de_l%E2%80%99in%C3%A9galit%C3%A9_parmi_les_hommes/Notes",
+    "https://www.gutenberg.org/ebooks/11136",
+    "https://bureaudumercure.org/mercure/text/2563605",
+    "https://www.site-magister.com/volrous.htm",
+    "https://www.journals.uchicago.edu/doi/10.1086/387491"
+  ],
+  "original_verification": "已核对公开法文全文五个组成部分：1754年6月12日献辞、作者前言、第一部分、第二部分、原书注释；逐主题对照区分自然与政治不平等、可完善性、怜悯、语言形成、劳动与土地占有、富人的契约、官职世袭、专断权力。1910年哈佛经典英译本省略献辞、前言和注释，仅供交叉阅读，不当作完整译本。",
+  "critics": [
+    {
+      "name": "Voltaire（伏尔泰）",
+      "work": "Lettre à Jean-Jacques Rousseau, 30 août 1755, reproduced in Mercure de France, November 1755, pp. 56–63",
+      "url": "https://bureaudumercure.org/mercure/text/2563605",
+      "checked": "检索历史刊载书目并对照公开信件原文，批评将文明批判理解为退回原始生活"
+    },
+    {
+      "name": "Arthur O. Lovejoy",
+      "work": "The Supposed Primitivism of Rousseau's Discourse on Inequality, Modern Philology 21(2), 1923, pp. 165–186",
+      "url": "https://www.journals.uchicago.edu/doi/10.1086/387491",
+      "checked": "仅验证期刊文献题名、作者、日期与论题，不将未完整阅读的论文结论作为明确主张"
+    }
+  ],
+  "dedup_checked": [
+    "main classics.html 历史全部条目（含《社会契约论》为不同作品）",
+    "classics-history.html 更早经典记录",
+    "data/books.json",
+    "2026-11-13.classic.json/正文此前不存在",
+    "main 最新历史经典著作目录"
+  ],
+  "duplicate_found": false,
+  "sections": 75,
+  "prose_length": 10283,
+  "checked_at": "2026-11-13",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
