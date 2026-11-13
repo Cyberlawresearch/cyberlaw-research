@@ -1,15 +1,80 @@
 {
   "date": "2026-11-13",
   "base_main_sha": "20b0d1c4d6a64753bd4a9f375d74401709863b87",
-  "phase": "researching",
+  "phase": "researching_first_batch_verified",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "eu-copper-provisional",
+      "date": "2026-11-12",
+      "title": "欧盟对中墨越乌盘绕铜管实施临时反倾销税，中国宁波金田33.5%、其他51.5%",
+      "stage": "Implementing Regulation (EU) 2026/2497 in force 2026-11-12; provisional, not final",
+      "source": "https://eur-lex.europa.eu/eli/reg_impl/2026/2497/oj",
+      "verified": true
+    },
+    {
+      "id": "eu-acrylic-esters-provisional",
+      "date": "2026-11-12",
+      "title": "欧盟对中国等国丙烯酸丁酯及丙烯酸异辛酯实施临时反倾销税，华谊29%、平湖石化22.3%",
+      "stage": "Implementing Regulation (EU) 2026/2512 in force 2026-11-12; provisional",
+      "source": "https://eur-lex.europa.eu/eli/reg_impl/2026/2512/oj",
+      "verified": true
+    },
+    {
+      "id": "in-copper-ad-extension",
+      "date": "2026-11-12",
+      "title": "印度内螺纹铜管反倾销调查问卷期限暂延至12月2日，产品范围及PCN待定",
+      "stage": "investigation procedure, no tariff determination",
+      "source": "https://dgtr.gov.in/sites/default/files/2026-11/Letter%20regarding%20clarification%20of%20PUCPCN%20and%20extension%20of%20time%20for%20QR%20filing%20%281%29.pdf",
+      "verified": true
+    },
+    {
+      "id": "in-copper-cvd-extension",
+      "date": "2026-11-12",
+      "title": "印度内螺纹铜管反补贴调查问卷暂延至12月3日，与反倾销案件分别办理",
+      "stage": "investigation procedure, no subsidy finding",
+      "source": "https://dgtr.gov.in/sites/default/files/2026-11/Letter%20regarding%20clarification%20of%20PUCPCN%20and%20extension%20of%20time%20for%20QR%20filing%20%282%29.pdf",
+      "verified": true
+    },
+    {
+      "id": "in-tdi-extension",
+      "date": "2026-11-12",
+      "title": "印度中日韩甲苯二异氰酸酯TDI反倾销调查范围维持不变且无PCN，答卷延期至11月27日",
+      "stage": "investigation procedure, no tariff determination",
+      "source": "https://dgtr.gov.in/sites/default/files/2026-11/Letter%20regarding%20clarification%20of%20PUCPCN%20and%20extension%20of%20time%20for%20QR%20filing.pdf",
+      "verified": true
+    },
+    {
+      "id": "uk-pvc-third-country",
+      "date": "2026-11-12",
+      "title": "英国PVC反倾销调查公布选取替代参照第三国文件",
+      "stage": "investigative methodology step, no duty determination",
+      "source": "https://public-file.trade-remedies.service.gov.uk/case/ad0092/submission/1244",
+      "verified": "case page opened; pdf attachment not web accessible"
+    }
+  ],
+  "coverage": {
+    "EU": "EUR-Lex 11 Nov regulations 2497/2512; in force Nov 12; new provisional duties verified",
+    "IN": "DGTR 12 Nov 3 notices PDFs opened and page 2 screenshots checked",
+    "UK": "TRA AD0092 12 Nov case file new procedural note, attached PDF inaccessible in web; pending inclusion"
+  },
   "last_error": null,
   "next_actions": [
-    "检索11月10日至13日官方贸易合规动态",
-    "与11月5日至12日期逐项事件级去重",
-    "逐一核验一手来源和法律阶段",
-    "发布正文、首页和归档并验收"
-  ]
+    "巡视美国、日韩、加澳等最新决定",
+    "继续逐条打开来源并完成去重终扫",
+    "更新期日JSON ready后写入正文三份文件"
+  ],
+  "dedup": {
+    "checked_issues": [
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-07",
+      "2026-11-08",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "result": "all 6 preliminary candidates distinct actions after previous editions; final check pending"
+  }
 }
