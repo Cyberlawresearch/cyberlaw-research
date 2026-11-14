@@ -1,15 +1,55 @@
 {
   "date": "2026-11-14",
   "base_main_sha": "b4d22484aeeee6ed5557dcc18f22db5f28ca52db",
-  "phase": "researching",
+  "phase": "verifying_sources",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "us-solar-cit-amended",
+      "date": "2026-11-13",
+      "title": "美国修订中国光伏电池反倾销复审终裁，晶科4.76%、东方日升0%",
+      "stage": "法院判决落实后的修订终裁已于11月13日刊登；适用日11月8日",
+      "source": [
+        "https://www.federalregister.gov/documents/2026/11/13/2026-23154/crystalline-silicon-photovoltaic-cells-whether-or-not-assembled-into-modules-from-the-peoples"
+      ],
+      "verified": true
+    },
+    {
+      "id": "us-metal-lockers-preliminary",
+      "date": "2026-11-13",
+      "title": "美国对中国产金属储物柜复审初裁，浙江兴意64.36%，十家企业撤销复审",
+      "stage": "反倾销行政复审初裁和部分撤销，非最终税率",
+      "source": [
+        "https://www.federalregister.gov/documents/2026/11/13/2026-23150/certain-metal-lockers-and-parts-thereof-from-the-peoples-republic-of-china-preliminary-results-and"
+      ],
+      "verified": true
+    },
+    {
+      "id": "us-ofac-guatemala-nov13",
+      "date": "2026-11-13",
+      "title": "美国新增危地马拉贩毒组织制裁名单并改变既有组织制裁依据",
+      "stage": "OFAC正式SDN列名已生效",
+      "source": [
+        "https://ofac.treasury.gov/recent-actions/20261113"
+      ],
+      "verified": true
+    }
+  ],
+  "coverage": {
+    "US": "11月13日《联邦公报》光伏电池修订终裁与金属柜初裁、OFAC危地马拉实体列名已逐页核对",
+    "EU": "欧盟委员会、EUR-Lex新公告已查询；11月12日两案临时税已于11月13日收录，不重复",
+    "UK": "英国贸易救济、制裁指定公告已查，11月12日涉俄制裁在上期已有",
+    "JP": "METI日文出口管理资讯已检索，未发现72小时重大新的正式决定",
+    "KR": "韩国贸易委员会与政府资讯已检索，涉及高精度地图对外转移许可的监管实施进展",
+    "IN": "印度DGTR 11月13日三案通知主要为调查员邮箱调整；另核实英印贸易协定苏格兰威士忌进口分类扣货",
+    "CA": "CBSA公告与加拿大贸易救济资讯已查，未发现新的独立重大决定",
+    "AU": "澳大利亚贸易救济委员会11月13日月度报告及案件公告已查，新月报不足单列"
+  },
   "last_error": null,
   "next_actions": [
-    "核验近七期条目",
-    "逐一巡视各法域官方来源并检索过去72小时动态",
-    "核对事实、链接和关键期限",
-    "更新HTML并部署验收"
+    "核验英印海关争议与美中首届贸易委员会会议和韩国地图数据许可进展",
+    "再查近七期事件重合",
+    "终扫、补充重要度与实务影响",
+    "完成发布"
   ]
 }
