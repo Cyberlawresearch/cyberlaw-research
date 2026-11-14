@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-14",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-14-hume-enquiry-principles-of-morals.html",
+  "target_path": "articles/2026-11-14-hume-enquiry-principles-of-morals.html",
+  "book": {
+    "author": "David Hume（大卫·休谟）",
+    "original_title": "An Enquiry Concerning the Principles of Morals",
+    "publisher": "London: A. Millar",
+    "year": "1751",
+    "edition": "1751 initial edition bibliography and full text (nine sections, two original appendices and dialogue), not later 1764/1777 expanded appendices"
+  },
+  "source_urls": [
+    "https://en.wikisource.org/wiki/An_Enquiry_Concerning_the_Principles_of_Morals",
+    "https://en.wikisource.org/wiki/An_Enquiry_Concerning_the_Principles_of_Morals/Chapter_1",
+    "https://en.wikisource.org/wiki/An_Enquiry_Concerning_the_Principles_of_Morals/Chapter_2",
+    "https://en.wikisource.org/wiki/An_Enquiry_Concerning_the_Principles_of_Morals/Chapter_3",
+    "https://en.wikisource.org/wiki/An_Enquiry_Concerning_the_Principles_of_Morals/Chapter_4",
+    "https://en.wikisource.org/wiki/An_Enquiry_Concerning_the_Principles_of_Morals/Chapter_5",
+    "https://en.wikisource.org/wiki/An_Enquiry_Concerning_the_Principles_of_Morals/Chapter_6",
+    "https://en.wikisource.org/wiki/An_Enquiry_Concerning_the_Principles_of_Morals/Chapter_7",
+    "https://en.wikisource.org/wiki/An_Enquiry_Concerning_the_Principles_of_Morals/Chapter_8",
+    "https://en.wikisource.org/wiki/An_Enquiry_Concerning_the_Principles_of_Morals/Chapter_9",
+    "https://en.wikisource.org/wiki/An_Enquiry_Concerning_the_Principles_of_Morals/Appendix_1",
+    "https://en.wikisource.org/wiki/An_Enquiry_Concerning_the_Principles_of_Morals/Appendix_2",
+    "https://en.wikisource.org/wiki/An_Enquiry_Concerning_the_Principles_of_Morals/A_Dialogue",
+    "https://ci.nii.ac.jp/ncid/BB07181050",
+    "https://en.wikisource.org/wiki/Index:An_Enquiry_Concerning_the_Principles_of_Morals_-_Hume_(1751).djvu",
+    "https://openlibrary.org/books/OL6626669M/Essays_on_the_active_powers_of_man.",
+    "https://www.earlymoderntexts.com/assets/pdfs/reid1788essay5_2.pdf"
+  ],
+  "original_verification": "逐部分系统核对1751年初版转写的九节正文、附录一《论道德情感》、附录二《再论正义》和最后的对话；另核查初版书名页及1751版目录。对照后期文本新增附录，但未将其归入初版。书中正义丰裕/匮乏假设、财产习惯、国际秩序、效用与同情、四类美德、规则体系和习俗对话已反映在正文。",
+  "critics": [
+    {
+      "name": "Thomas Reid（托马斯·里德）",
+      "work": "Essays on the Active Powers of Man (1788), Essay V, chapter V, on whether justice is natural or artificial",
+      "url": "https://www.earlymoderntexts.com/assets/pdfs/reid1788essay5_2.pdf",
+      "checked": "核对公开现代英语整理文本中针对Hume正义人为德性与义务根据的直接反驳；并核查1788年作品书目；不将现代英语改写词句当作初版原文"
+    }
+  ],
+  "dedup_checked": [
+    "main classics.html 69项历史索引含往期密尔与里德作品",
+    "classics-history.html 早期条目",
+    "data/books.json",
+    "main articles目录与本日2026-11-14经典记录",
+    "既往《道德原则研究》未出现"
+  ],
+  "duplicate_found": false,
+  "sections": 91,
+  "prose_length": 11823,
+  "checked_at": "2026-11-14",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
