@@ -99,11 +99,22 @@ def main():
         incomplete["coverage"] = incomplete["coverage"][:6]
         expect_failure(root, incomplete, "Seven domestic source")
         incomplete = copy.deepcopy(data)
+        incomplete["domestic_source_coverage"] = []
+        expect_failure(root, incomplete, "Seven domestic source")
+        incomplete = copy.deepcopy(data)
+        incomplete["domestic_source_coverage"] = [copy.deepcopy(data["coverage"][0])] * 7
+        expect_failure(root, incomplete, "Duplicate domestic source")
+        incomplete = copy.deepcopy(data)
         incomplete["items"][0]["url"] = "http://example.org/unsafe"
         expect_failure(root, incomplete, "HTTPS")
         incomplete = copy.deepcopy(data)
         incomplete["items"][0]["date"] = (RUN_TIME.date() - timedelta(days=3)).isoformat()
         expect_failure(root, incomplete, "72-hour window")
+
+        # Global research progress may coexist with the canonical domestic audit.
+        # Prefer the explicit domestic field rather than unrelated global coverage.
+        data["domestic_source_coverage"] = copy.deepcopy(data["coverage"])
+        data["coverage"] = [{"source_group": "global progress", "status": "searched"}]
 
         result = publish(root, data, RUN_TIME)
         assert result["status"] == "prepared", result
@@ -155,7 +166,7 @@ def main():
 
         # A second identical run never rewrites the same published edition.
         assert publish(root, data, RUN_TIME)["status"] == "already_published"
-    print("Structured news release: 8 negative/positive checks and idempotence passed.")
+    print("Structured news release: positive/negative checks, canonical coverage and idempotence passed.")
 
 
 if __name__ == "__main__":
