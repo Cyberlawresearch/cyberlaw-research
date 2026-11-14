@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-14",
+  "base_main_sha": "b4d22484aeeee6ed5557dcc18f22db5f28ca52db",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "核验近七期条目",
+    "逐一巡视各法域官方来源并检索过去72小时动态",
+    "核对事实、链接和关键期限",
+    "更新HTML并部署验收"
+  ]
+}
