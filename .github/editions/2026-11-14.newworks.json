@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-14",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-14-new-works.html",
+  "page_blob_sha": "abc8339d4d926250f4f14b6ef85bffd219544519",
+  "newworks_count": 3,
+  "checked_at": "2026-11-14T12:41:47.040Z",
+  "checks": {
+    "original_publisher_pages_opened": true,
+    "original_title_author_doi_verified": true,
+    "formal_publication_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "doi_title_author_version_repository_code_search": true,
+    "historical_indexes_checked": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html",
+      "new-works-history.html",
+      "GitHub main code search for each DOI, title and author against existing repository records",
+      "2026-08-28 through 2026-11-13 new-works historical index entries"
+    ],
+    "fields": [
+      "DOI",
+      "original title",
+      "authors",
+      "formal publication version"
+    ],
+    "matches_found": 0,
+    "note": "All three Springer Nature original publication pages and full open-access article abstracts were inspected on 2026-11-14. GitHub main code searches of DOI/title/author variants produced no duplicate newwork entries. Prior historical entries remain unchanged. No weak related-reading or timeline links added."
+  },
+  "items": [
+    {
+      "cn_title": "数字平台成为公共传播关键设施后，欧盟法律如何保障信息流通",
+      "author": "Christoph Deppe",
+      "original_title": "Digital Platforms as Critical Infrastructure: German and European Union Policy Responses to Safeguarding Democratic Information Environments in Times of Crisis",
+      "journal": "European Journal for Security Research",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-11-09",
+      "doi": "10.1007/s41125-026-00120-z",
+      "publisher_page": "https://link.springer.com/article/10.1007/s41125-026-00120-z",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "version": "Springer Nature open-access original journal article; first formally online in November 2026; volume, issue and pagination not assigned on publisher page"
+    },
+    {
+      "cn_title": "卫星影像用于人权调查，怎样才能成为可靠的司法证据",
+      "author": "Myriam Redondo Escudero; Yvonne McDermott",
+      "original_title": "Building Consensus on Satellite Imagery in Human Rights Investigations across Epistemic Communities: Insights from Journalism and Law",
+      "journal": "Human Rights Review",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-11-07",
+      "doi": "10.1007/s12142-026-00776-z",
+      "publisher_page": "https://link.springer.com/article/10.1007/s12142-026-00776-z",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "version": "Springer Nature open-access original journal article; first formally online in November 2026; volume, issue and pagination not assigned on publisher page"
+    },
+    {
+      "cn_title": "德国数字政务也是关键基础设施，安全义务如何落实到地方政府",
+      "author": "Bastian Manteuffel; Sebastian Dumm; Gary S. Schaal",
+      "original_title": "Critical, Digital, and Secure? Governing Resilience in the Digital Administration under Conditions of Fragmented Governance",
+      "journal": "European Journal for Security Research",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-11-06",
+      "doi": "10.1007/s41125-026-00119-6",
+      "publisher_page": "https://link.springer.com/article/10.1007/s41125-026-00119-6",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "version": "Springer Nature open-access original journal article; first formally online in November 2026; volume, issue and pagination not assigned on publisher page"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "78d9bcbc7ba9a1208d745b8691e589bc3f095315",
+    "last_complete_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": null
+  }
+}
