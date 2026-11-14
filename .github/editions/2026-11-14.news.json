@@ -4,15 +4,15 @@
   "state": "verified",
   "phase": "publishing",
   "page": "articles/2026-11-14-tech-law-brief.html",
-  "news_count": 15,
+  "news_count": 16,
   "distribution": {
-    "domestic": 2,
+    "domestic": 3,
     "foreign": 13
   },
   "mode": "facts_only",
   "analysis_pending": true,
-  "checked_at": "2026-11-14T19:06:46+08:00",
-  "last_news_scan_at": "2026-11-14T19:06:46+08:00",
+  "checked_at": "2026-11-14T19:11:52+08:00",
+  "last_news_scan_at": "2026-11-14T19:11:52+08:00",
   "checks": {
     "sources": true,
     "legal_status": true,
@@ -20,7 +20,7 @@
     "timeliness": true,
     "previous_day_event_deduplication": true,
     "seven_day_history_deduplication": true,
-    "domestic_major_omission_review": false,
+    "domestic_major_omission_review": true,
     "local_language_scan_korea_japan_vietnam": true,
     "prior_background_checked": false,
     "natural_chinese_reviewed": true,
@@ -28,13 +28,13 @@
     "foreign_layout": true
   },
   "coverage": {
-    "china": "已查中央网信办转发的国家发展改革委“人工智能+”政策、地方知识产权与数据治理线索；中央及地方重大消息遗漏复核尚未覆盖全部列名机构，因此不标记国内遗漏全面复核完成。",
+    "china": "完成中央网信办、国家数据局、全国数据标准化机构及国内全国性新闻、法律、财经、综合、AI科技和网安媒体九类重大遗漏复核；新增11月13日国家数据局发布的具身智能与四个行业标准工作组消息。",
     "japan_korea_vietnam": "日语检索京成电铁泄露公告及媒体，韩语和越语进行了当地语近期监管关键词查询，未从结果中选入缺少可核验新增动作的旧闻。",
     "united_states": "核对Reuters美国各州社交平台诉讼、联储报告、商务及财政官员出口管制进展、跨国供应链安全和AI智能体支付。",
     "europe_security": "核对Trezor企业官方报告、Check Point研究机构原文、德国无人机供应商和日本铁路网络安全披露；未发现明确可靠的新欧盟法令或CNIL、DPC处罚适合本期。",
     "other": "印度电信行政程序核查、币安安全事故恢复和台湾地区金融信息安全会议。",
     "dedup": "阅读11月7日至13日简报标题、完整11月13日正文及近7日期目录；排除昨日已报道的新加坡Megaspeed调查、AI开发者诉讼、Apache漏洞、微软故障；本期Megaspeed仅报道美国财政部长最新批评，印度仅报11月14日总理办公室召见新动作。",
-    "last_scan": "本次发布前另检索2026年11月14日中外监管、数据安全、人工智能与相关专业媒体新消息；不将未经全文核查的搜索摘要计入本期。"
+    "last_scan": "本次终检检索国家数据局、网信办、主流媒体、标准与技术机构于11月13日至14日重大增量；结合其他法域和安全一手材料核查后，排除已刊旧闻及无实质动作的产品报道。"
   },
   "items": [
     {
@@ -72,6 +72,22 @@
     {
       "id": "research-item-3",
       "event_date": "2026-11-13",
+      "jurisdiction": "中国",
+      "agency": "全国数据标准化技术委员会、国家数据局",
+      "title": "全国数标委成立具身智能数据标准起草组，并设四个行业标准工作组",
+      "original_title": "全国数据标准化技术委员会2026年第二次“标准周”活动在厦门举行",
+      "source_name": "国家数据局",
+      "url": "https://www.nda.gov.cn/sjj/jgsz/jld/llh/llhldhd/1113/20261113153701287999907_pc.html",
+      "fact": "国家数据局11月13日公布全国数标委第二次“标准周”活动进展。会议于11月10日在厦门开幕，期间正式成立具身智能数据标准起草工作组，以及气象、卫生健康、电力和商务四个行业应用标准起草工作组；11月10日至13日安排集中讨论67项标准和46项技术文件。",
+      "legal_status": "标准起草工作组设立及标准研讨",
+      "domestic": true,
+      "source_checked": true,
+      "evidence_source_opened": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-4",
+      "event_date": "2026-11-13",
       "jurisdiction": "日本",
       "agency": "京成电铁",
       "title": "日本京成电铁订票系统遭入侵，最多约337万条乘客信息可能外泄",
@@ -86,7 +102,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-4",
+      "id": "research-item-5",
       "event_date": "2026-11-13",
       "jurisdiction": "美国纽约州",
       "agency": "联邦地区法院、NetChoice",
@@ -102,7 +118,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-5",
+      "id": "research-item-6",
       "event_date": "2026-11-14",
       "jurisdiction": "印度",
       "agency": "总理办公室、电信部",
@@ -118,7 +134,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-6",
+      "id": "research-item-7",
       "event_date": "2026-11-13",
       "jurisdiction": "美国",
       "agency": "联邦储备委员会",
@@ -134,7 +150,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-7",
+      "id": "research-item-8",
       "event_date": "2026-11-13",
       "jurisdiction": "美国、新加坡",
       "agency": "美国财政部、商务部",
@@ -150,7 +166,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-8",
+      "id": "research-item-9",
       "event_date": "2026-11-13",
       "jurisdiction": "美国",
       "agency": "OpenAI、支付卡组织",
@@ -166,7 +182,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-9",
+      "id": "research-item-10",
       "event_date": "2026-11-14",
       "jurisdiction": "全球",
       "agency": "币安",
@@ -182,7 +198,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-10",
+      "id": "research-item-11",
       "event_date": "2026-11-13",
       "jurisdiction": "以色列、国际",
       "agency": "Check Point Research",
@@ -198,7 +214,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-11",
+      "id": "research-item-12",
       "event_date": "2026-11-12",
       "jurisdiction": "捷克、东南亚",
       "agency": "Trezor",
@@ -214,7 +230,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-12",
+      "id": "research-item-13",
       "event_date": "2026-11-13",
       "jurisdiction": "德国",
       "agency": "Quantum Systems、德国军方",
@@ -230,7 +246,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-13",
+      "id": "research-item-14",
       "event_date": "2026-11-13",
       "jurisdiction": "美国",
       "agency": "Amazon",
@@ -246,7 +262,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-14",
+      "id": "research-item-15",
       "event_date": "2026-11-13",
       "jurisdiction": "美国",
       "agency": "Uber、第三方服务商",
@@ -262,7 +278,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-15",
+      "id": "research-item-16",
       "event_date": "2026-11-13",
       "jurisdiction": "美国",
       "agency": "联邦航空管理局",
@@ -283,5 +299,52 @@
     "pages_run_id": null,
     "pages_status": null,
     "online_check": null
-  }
+  },
+  "domestic_source_coverage": [
+    {
+      "source_group": "中央数据及网信主管机关",
+      "status": "checked",
+      "notes": "逐篇查阅国家网信办11月13日转发人工智能+政策、国家数据局11月13日数标委标准周原文，复核是否漏掉新标准工作组"
+    },
+    {
+      "source_group": "国内标准化与AI评测机构",
+      "status": "checked",
+      "notes": "核对全国数标委标准组和昨天已报道信通院AI安全评测框架，依事件级去重选入新设标准组事项"
+    },
+    {
+      "source_group": "新华社、人民日报与央视央广",
+      "status": "checked",
+      "notes": "检索11月13日至14日人工智能、算力、数据政策消息，使用央视11月13日国家发改委采访一手报道，排除已刊旧闻"
+    },
+    {
+      "source_group": "法院、检察院与法治媒体",
+      "status": "no_new",
+      "notes": "巡查近期中国网络信息法、平台算法与科技领域裁判报道和法治日报渠道，未发现比既有事项更新且经证实的重大裁判"
+    },
+    {
+      "source_group": "财新、第一财经及21世纪经济报道",
+      "status": "no_new",
+      "notes": "分别检索人工智能算力、芯片、数据治理当日新闻线索，排除11月11日至13日已刊重大算力采购及旧报道"
+    },
+    {
+      "source_group": "证券时报与其他财经媒体",
+      "status": "no_new",
+      "notes": "检索11月13日至14日先进计算、芯片出口、模型服务相关新增动作，未以产品营销新闻补数"
+    },
+    {
+      "source_group": "澎湃、界面、新京报等综合媒体",
+      "status": "no_new",
+      "notes": "检索AI平台治理、信息安全和政府政策新闻，未发现经核验的重大新监管动作"
+    },
+    {
+      "source_group": "36氪、虎嗅、钛媒体及AI专业媒体",
+      "status": "no_new",
+      "notes": "扫描智能体、算力、AI监管线索，排除普通发布会和无新法律或关键产业变化的产品报道"
+    },
+    {
+      "source_group": "安全内参、FreeBuf及网安媒体",
+      "status": "no_new",
+      "notes": "检索国内网络安全漏洞披露、安全评测及产业安全事件，未发现需取代本期已选入事件的新高价值公告"
+    }
+  ]
 }
