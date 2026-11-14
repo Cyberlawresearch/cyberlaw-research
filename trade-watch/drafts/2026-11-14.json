@@ -1,8 +1,8 @@
 {
   "date": "2026-11-14",
   "base_main_sha": "b4d22484aeeee6ed5557dcc18f22db5f28ca52db",
-  "phase": "final_sweep",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "us-solar-cit-amended",
@@ -77,9 +77,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "再次终扫11月14日早间公告",
-    "校验来源链接与DOM实际URL",
-    "确认publication_ready后写main并验收"
+    "按当前main目标SHA正式发布完整正文、首页、归档",
+    "ref=main回读",
+    "核验当次Pages及公开链接"
   ],
   "final_articles": [
     {
@@ -208,5 +208,11 @@
       "2026-11-13"
     ],
     "result": "6条均为近七期未收录的独立法律行动或事实进展。美国金属储物柜AD复审初裁与11月5日CVD日落复审不同案；中美首次贸易委员会会议不同于11月8日一般视频经贸磋商。"
+  },
+  "final_sweep": {
+    "date": "2026-11-14",
+    "result": "已检索11月14日早间美欧英日韩、印加澳官方来源及权威媒体，新发现未形成可核验且独立于6条的重大法律事项；不补普通新闻。6条原始来源均已逐一打开，法律阶段、时间和近7期去重已复核。",
+    "source_count": 6,
+    "unique_urls": 6
   }
 }
