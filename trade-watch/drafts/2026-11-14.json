@@ -1,7 +1,7 @@
 {
   "date": "2026-11-14",
   "base_main_sha": "b4d22484aeeee6ed5557dcc18f22db5f28ca52db",
-  "phase": "publication_ready",
+  "phase": "repository_written_pages_unverified",
   "publication_ready": true,
   "items": [
     {
@@ -75,11 +75,15 @@
     "CA": "CBSA公告与加拿大贸易救济资讯已查，未发现新的独立重大决定",
     "AU": "澳大利亚贸易救济委员会11月13日月度报告及案件公告已查，新月报不足单列"
   },
-  "last_error": null,
+  "last_error": {
+    "stage": "pages_public_verification",
+    "reason": "公开站点及最终提交的 Pages 运行无法通过当前可用读取渠道确认；非 GitHub 写入失败",
+    "retry_count": 2
+  },
   "next_actions": [
-    "按当前main目标SHA正式发布完整正文、首页、归档",
-    "ref=main回读",
-    "核验当次Pages及公开链接"
+    "查询最终提交4d9eed97fbd33ac7757aa8d3fac350be378aa868对应Pages构建及部署结果",
+    "核对公开当期全文、首页、归档内容与6个来源链接",
+    "如确有部署错误按AGENTS.md检查具体工作流失败步骤并重试"
   ],
   "final_articles": [
     {
@@ -214,5 +218,44 @@
     "result": "已检索11月14日早间美欧英日韩、印加澳官方来源及权威媒体，新发现未形成可核验且独立于6条的重大法律事项；不补普通新闻。6条原始来源均已逐一打开，法律阶段、时间和近7期去重已复核。",
     "source_count": 6,
     "unique_urls": 6
+  },
+  "publication_attempt": {
+    "date": "2026-11-14",
+    "stage": "pages_public_verification",
+    "write_results": [
+      {
+        "path": "trade-watch/issues/2026-11-14.html",
+        "commit_sha": "761207f14cd652e317b75a7a32439da93b37ae4c",
+        "verified_main": true
+      },
+      {
+        "path": "trade-watch/index.html",
+        "commit_sha": "5145b78ed180d8b4717f2ab0b71db26baceb8547",
+        "verified_main": true
+      },
+      {
+        "path": "trade-watch/archive.html",
+        "commit_sha": "4d9eed97fbd33ac7757aa8d3fac350be378aa868",
+        "verified_main": true
+      }
+    ],
+    "final_commit_sha": "4d9eed97fbd33ac7757aa8d3fac350be378aa868",
+    "main_verification": {
+      "issue_count": 6,
+      "source_links": 6,
+      "homepage_latest": "2026-11-14",
+      "archive_first": "2026-11-14",
+      "all_passed": true
+    },
+    "pages_check": {
+      "status": "unverified",
+      "attempts": 2,
+      "errors": [
+        "web.open three public pages: URL not accessible (Internal Error), repeated with final commit query parameter",
+        "container requests on GitHub Pages and GitHub API: DNS NameResolutionError",
+        "GitHub fetch_commit_workflow_runs for final commit: returned empty list; this action only searches pull_request-triggered workflow runs, so cannot determine push Pages run",
+        "Opera browser go_to_page: User input required; non-interactive run"
+      ]
+    }
   }
 }
