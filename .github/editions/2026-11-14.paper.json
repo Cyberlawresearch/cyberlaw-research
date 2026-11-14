@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-14",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-14-ayres-balkin-law-ai-risky-agents.html",
+  "selection": "Ian Ayres and Jack M. Balkin, The Law of AI is the Law of Risky Agents Without Intentions",
+  "bibliography": {
+    "type": "article",
+    "author": "Ian Ayres; Jack M. Balkin",
+    "originalTitle": "The Law of AI is the Law of Risky Agents Without Intentions",
+    "journal": "The University of Chicago Law Review Online",
+    "year": "2024",
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://lawreview.uchicago.edu/online-archive/law-ai-law-risky-agents-without-intentions",
+    "cnTitle": "人工智能没有主观意图，法律如何追究人的责任：代理关系与风险规制"
+  },
+  "versions": {
+    "full_text": "Read the entire official open HTML text of the University of Chicago Law Review Online essay, Nov 27 2024: Introduction; Ascribed Intentions and Objective Standards; Why Ascribed Intentions and Objective Standards?; Applications (Defamatory Hallucinations and Copyright Infringement); Conclusion and notes.",
+    "publication": "2024 University of Chicago Law Review Online essay; this web publication does not supply a volume, issue, pagination, or DOI. No SSRN version was used for citation."
+  },
+  "sources": [
+    "https://lawreview.uchicago.edu/online-archive/law-ai-law-risky-agents-without-intentions"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "history_scope": "Compared paper titles and links against every indexed entry in papers.html and papers-history-1.html, including all September–November readings. No earlier reading of the exact Ayres/Balkin essay.",
+  "related_reading": [
+    "articles/2026-09-13-balkin-information-fiduciaries.html"
+  ],
+  "timeline": null,
+  "body_length": 4804,
+  "checked_at": "2026-11-14",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  },
+  "last_error": null
+}
