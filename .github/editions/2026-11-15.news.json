@@ -1,0 +1,532 @@
+{
+  "date": "2026-11-15",
+  "column": "brief",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-15-tech-law-brief.html",
+  "news_count": 14,
+  "distribution": {
+    "domestic": 8,
+    "foreign": 6
+  },
+  "mode": "fact_only",
+  "analysis_pending": true,
+  "checked_at": "2026-11-15T11:12:10.838+00:00",
+  "last_news_scan_at": "2026-11-15T11:12:10.838+00:00",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": false,
+    "natural_chinese_reviewed": true,
+    "background_outlook": false,
+    "foreign_layout": true
+  },
+  "coverage": {
+    "domestic_sources": [
+      {
+        "group": "中央部门",
+        "source": "国家市场监管总局",
+        "entry_url": "https://www.samr.gov.cn/xw/sj/art/2026/art_0db8cadd0fe142c8b3896e66869350a5.html",
+        "query_or_section": "11月13日国家标准公告",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "流程工业智能工厂国家标准"
+        ],
+        "notes": "打开公告核对GB/T编号与2027年实施日期"
+      },
+      {
+        "group": "中央部门",
+        "source": "交通运输部",
+        "entry_url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202611/t20261113_4227676.html",
+        "query_or_section": "人工智能＋交通运输",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "354项交通运输AI应用场景"
+        ],
+        "notes": "打开交通运输部全文"
+      },
+      {
+        "group": "中央部门",
+        "source": "国家知识产权局",
+        "entry_url": "https://www.cnipa.gov.cn/art/2026/11/13/art_75_209094.html",
+        "query_or_section": "知识产权金融试点",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "16项试点典型案例"
+        ],
+        "notes": "打开三部门联合案例原始清单"
+      },
+      {
+        "group": "地方数据与监管",
+        "source": "上海市人民政府",
+        "entry_url": "https://www.shanghai.gov.cn/nw4411/20261114/c1295ad657484dc9b2bc819d568cdea9.html",
+        "query_or_section": "科学数据管理办法 AI数据集",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "上海科学数据管理办法"
+        ],
+        "notes": "核对报道日11月14日与施行日11月1日"
+      },
+      {
+        "group": "地方数据与监管",
+        "source": "北京市经济和信息化局",
+        "entry_url": "https://jxj.beijing.gov.cn/zwgk/2024zcwj/202611/t20261113_4945499.html",
+        "query_or_section": "工业数据安全案例",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "工业数据安全案例征集"
+        ],
+        "notes": "核对通知发布时间11月14日，落款11月12日，报送截止12月15日"
+      },
+      {
+        "group": "地方数据与监管",
+        "source": "武汉市政府、长江日报",
+        "entry_url": "https://www.wuhan.gov.cn/sy/whyw/202611/t20261115_2879888.shtml",
+        "query_or_section": "具身智能、数据集、湖北产业政策",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "具身智能科创沙龙与产业方向"
+        ],
+        "notes": "11月15日发布，属政策讨论和产业报道，非新增正式规则，本期未选入"
+      },
+      {
+        "group": "财经媒体",
+        "source": "财联社·科创板日报",
+        "entry_url": "https://www.cls.cn/detail/2534439",
+        "query_or_section": "浙江智算产业 2026-11-14",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "浙江算力统计"
+        ],
+        "notes": "打开原记者采写报道并核对统计口径时间"
+      },
+      {
+        "group": "财经媒体",
+        "source": "每日经济新闻",
+        "entry_url": "https://www.mrjjxw.com/articles/2026-11-13/4647320.html",
+        "query_or_section": "闻泰科技安世跨境商标裁判",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "闻泰科技11月13日晚披露荷兰判决"
+        ],
+        "notes": "明确裁判发生于11月2日，披露发生于11月13日"
+      },
+      {
+        "group": "综合媒体",
+        "source": "界面新闻、上海市经信委",
+        "entry_url": "https://www.jiemian.com/article/15332149.html",
+        "query_or_section": "工业操作系统标准工作组",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "工作组筹建、中试验证方阵"
+        ],
+        "notes": "核查11月12—13日大会，避免误写标准已发布"
+      },
+      {
+        "group": "权威媒体",
+        "source": "国务院和央地官方新闻渠道",
+        "entry_url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202611/t20261113_4227676.html",
+        "query_or_section": "新华社 人民日报 央视 中新社 人工智能 数据 标准 2026年11月13日至15日",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "按权威媒体来源组检索并交叉回到交通运输部等主管机关原文；本来源组新闻部分与以上已入选条目重合"
+      },
+      {
+        "group": "专业法律媒体",
+        "source": "中国法院/检察机关与法治媒体主题搜索",
+        "entry_url": "https://www.cac.gov.cn/2026-09/15/c_1790876152357946.htm",
+        "query_or_section": "2026年11月13日至15日 AI数据 司法裁判 安全处罚",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "近期检索结果所示案例发布时间较早，排除超72小时旧闻，未标成查阅所有法院机关"
+      },
+      {
+        "group": "标准化评测",
+        "source": "全国数标委、国家数据局和标准化主题搜索",
+        "entry_url": "https://www.nda.gov.cn/sjj/jgsz/jld/llh/llhldhd/1113/20261113153701287999907_mobile.html",
+        "query_or_section": "TC260 TC609 TC28 人工智能标准 11月13日至15日",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [
+          "全国数标委标准周"
+        ],
+        "notes": "数标委标准周及工作组11月14日简报已刊，排除同事件重复；TC260/TC28直接新公告未从搜索结果核实"
+      },
+      {
+        "group": "科技和网络安全媒体",
+        "source": "36氪、虎嗅、雷峰网、FreeBuf主题检索",
+        "entry_url": "https://www.jiemian.com/article/15332149.html",
+        "query_or_section": "2026年11月13日至15日 智能体 工业操作系统 漏洞 AI安全",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "反向媒体检索未发现需要替换已选政府和一手来源的新进展；未声称逐篇打开全部媒体首页"
+      },
+      {
+        "group": "主题反向复查",
+        "source": "国家网信办、国家数据局关键词检索",
+        "entry_url": "https://www.nda.gov.cn/sjj/jgsz/jld/llh/llhldhd/1113/20261113153701287999907_mobile.html",
+        "query_or_section": "网信 数据交易 工业数据安全 个人信息 AI+ 2026-11-15/14/13",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [
+          "数标委标准周"
+        ],
+        "notes": "对照11月14日已刊的标准组事件及11月13日AI安全评测，未重复入选"
+      }
+    ],
+    "domestic_major_omission_review": "源头官方公告、地方规则及项目、标准工作、权威及专业、财经与科技媒体分组检索后，再按具身智能、工业数据、地方算力、欧盟隐私及网络安全反向核查；未把数标委标准周、原11月13日AI评测及海外Megaspeed旧动态重复编发",
+    "international": "打开意大利Garante、爱尔兰DPC、Cursor正式报告；检索加拿大全国新闻、美国参议院AI芯片听证及微软事故恢复；日语韩语越语关键词交叉检索未产生合格新事件",
+    "seven_day_dedup": "逐日读取11月8日至14日新闻记录标题，排除11月13日旧闻以及11月14日昨日已刊的AI+国家发改委/具身数据标准/美国Megaspeed评论等已报道事件",
+    "final_scan": "发布前按2026-11-15当天国内部委、标准、科技媒体与欧美监管机构最近1—2小时公告进行主题复查；未发现可确认的重要增量替换所选条目"
+  },
+  "items": [
+    {
+      "date": "2026-11-14",
+      "jurisdiction": "中国·上海",
+      "agency": "上海市科学技术委员会、上海市数据局",
+      "title": "上海公布科学数据管理办法，明确高质量科学数据集可纳入科研评价",
+      "original_title": "把更多高质量科学数据“喂”给AI 上海出台首部专门规范科学数据管理的政府文件",
+      "source_name": "上海市人民政府门户网站（解放日报）",
+      "url": "https://www.shanghai.gov.cn/nw4411/20261114/c1295ad657484dc9b2bc819d568cdea9.html",
+      "fact": "上海市政府网站11月14日披露，市科委、市数据局联合印发《上海市科学数据管理办法（试行）》，该办法已于11月1日施行，有效期至2028年10月31日。文件共7章28条，覆盖政府财政预算资金支持形成的科学数据，建立“一平台、多中心”的汇聚共享体系，明确高质量科学数据集可以作为科研成果纳入科研评价，并规定数据汇交、授权利用和安全管理安排。",
+      "legal_status": "已施行的地方规范性文件近期公开披露",
+      "domestic": true,
+      "id": "research-item-1",
+      "event_date": "2026-11-14",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "date": "2026-11-14",
+      "jurisdiction": "中国·北京",
+      "agency": "北京市经济和信息化局",
+      "title": "北京启动工业领域数据安全典型案例征集，覆盖重要数据识别和跨境处理",
+      "original_title": "北京市经济和信息化局关于组织开展北京市工业领域数据安全典型案例征集工作的通知",
+      "source_name": "北京市经济和信息化局",
+      "url": "https://jxj.beijing.gov.cn/zwgk/2024zcwj/202611/t20261113_4945499.html",
+      "fact": "北京市经济和信息化局11月14日公布工业领域数据安全典型案例征集通知，面向本市工业企业和软件信息技术企业，重点征集数据分类分级、重要数据识别备案、风险评估以及数据共享、出境、委托处理和云服务等场景的保护实践。企业须已实施相关方案并取得实际成效，各区推荐单位须在12月15日前报送材料；本次是案例征集和遴选工作。",
+      "legal_status": "行政主管部门案例征集通知",
+      "domestic": true,
+      "id": "research-item-2",
+      "event_date": "2026-11-14",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "date": "2026-11-13",
+      "jurisdiction": "中国",
+      "agency": "市场监管总局、国家标准化管理委员会",
+      "title": "市场监管总局发布流程工业智能工厂业务管理国家推荐性标准",
+      "original_title": "智能工厂建设有了统一标尺",
+      "source_name": "国家市场监督管理总局",
+      "url": "https://www.samr.gov.cn/xw/sj/art/2026/art_0db8cadd0fe142c8b3896e66869350a5.html",
+      "fact": "市场监管总局11月13日宣布批准发布《智能制造 流程工业智能工厂业务管理规范》（GB/T 48536—2026），实施日期为2027年5月1日。该推荐性国家标准覆盖研发设计、生产制造、运营支撑、全链协同及管理方法五个模块，提出贯穿原料、工艺、设备和产品的数据采集管理框架，并将数字孪生、人工智能以及安全风险分级管控纳入智能工厂管理要求。",
+      "legal_status": "推荐性国家标准已发布、待实施",
+      "domestic": true,
+      "id": "research-item-3",
+      "event_date": "2026-11-13",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "date": "2026-11-13",
+      "jurisdiction": "中国",
+      "agency": "交通运输部",
+      "title": "交通运输部公布首批354项“人工智能＋交通运输”典型应用场景项目",
+      "original_title": "“人工智能+交通运输”应用场景丰富多样",
+      "source_name": "交通运输部官方网站（中国交通新闻网）",
+      "url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202611/t20261113_4227676.html",
+      "fact": "交通运输部11月13日介绍，已推出首批354项“人工智能＋交通运输”典型应用场景项目清单。项目覆盖智能驾驶、智慧公路、智能航运、智能建养、出行服务、智慧货运和安全监管，分为攻关突破、创新示范、应用推广三类，后续将以部省联动方式跟踪项目进展、培育标杆并建立典型成果库。清单属于应用试点项目部署。",
+      "legal_status": "部门典型场景项目清单",
+      "domestic": true,
+      "id": "research-item-4",
+      "event_date": "2026-11-13",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "date": "2026-11-13",
+      "jurisdiction": "中国",
+      "agency": "国家金融监督管理总局、国家知识产权局、国家版权局",
+      "title": "三部门发布16个知识产权金融试点案例，涵盖软件与数据领域融资",
+      "original_title": "国家金融监督管理总局 国家知识产权局 国家版权局联合发布知识产权金融生态综合试点典型案例",
+      "source_name": "国家知识产权局",
+      "url": "https://www.cnipa.gov.cn/art/2026/11/13/art_75_209094.html",
+      "fact": "金融监管总局、国家知识产权局和国家版权局11月13日共同公布16个知识产权金融生态综合试点典型案例。案例涉及专利质押贷款、科技成果转化、软件及数据相关企业的版权金融服务、知识产权信托和银行数字风控等实践，其中北京地区展示知识产权质押融资服务网络建设，江苏地区展示线上化风险补偿与专利转化贷款模式。此次发布是试点经验汇总。",
+      "legal_status": "三部门联合公布典型案例",
+      "domestic": true,
+      "id": "research-item-5",
+      "event_date": "2026-11-13",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "date": "2026-11-13",
+      "jurisdiction": "中国·上海",
+      "agency": "工业和信息化部工业软件标准化技术委员会",
+      "title": "工业操作系统标准工作组启动筹建，聚焦系统互联互通与智能体协同",
+      "original_title": "2026工业操作系统大会在沪召开",
+      "source_name": "界面新闻（据上海市经济和信息化委员会）",
+      "url": "https://www.jiemian.com/article/15332149.html",
+      "fact": "上海市经信委11月13日介绍，11月12日至13日举行的工业操作系统大会上，工业和信息化部工业软件标准化技术委员会工业操作系统标准工作组启动筹建。拟推进的重点包括参考架构、互联互通、兼容适配和测试评价；会议还发布工业操作系统技术产业研究报告，并启动钢铁、矿山、轨道交通与核电领域的中试验证协作。当前进展是标准工作组织筹建，而非标准正式发布。",
+      "legal_status": "工业技术标准工作组织启动筹建",
+      "domestic": true,
+      "id": "research-item-6",
+      "event_date": "2026-11-13",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "date": "2026-11-14",
+      "jurisdiction": "中国·浙江",
+      "agency": "浙江省通信管理局及算力产业",
+      "title": "浙江披露智能算力占比达96％，已建算力中心113家",
+      "original_title": "浙江算力规模超198EFLOPS，智算占比96%，AI正走进乡村、医院和路口|一线",
+      "source_name": "科创板日报、财联社原创调查",
+      "url": "https://www.cls.cn/detail/2534439",
+      "fact": "《科创板日报》11月14日对浙江人工智能与算力产业进行了实地报道，据浙江省通信管理等主管机构披露的截至2026年10月数据，全省已建算力中心113家，投用算力规模超过198EFLOPS，其中智能算力占比约96％。报道还梳理了地方算力集群和医疗、交通、农村等应用场景的建设进展；相关规模属于统计口径披露，并非当日新增建设项目。",
+      "legal_status": "地方算力产业统计及实地调查报道",
+      "domestic": true,
+      "id": "research-item-7",
+      "event_date": "2026-11-14",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "date": "2026-11-13",
+      "jurisdiction": "中国、荷兰",
+      "agency": "闻泰科技、荷兰海牙地方法院",
+      "title": "闻泰科技披露安世半导体商标临时程序裁决及中荷裁判适用限制",
+      "original_title": "荷兰法院部分驳回请求，*ST闻泰最新披露！",
+      "source_name": "每日经济新闻（据闻泰科技11月13日公告）",
+      "url": "https://www.mrjjxw.com/articles/2026-11-13/4647320.html",
+      "fact": "闻泰科技11月13日晚间披露，荷兰海牙地方法院商事庭已于11月2日就安世半导体有关知识产权争议作出临时程序裁决，驳回Nexperia B.V.要求对安世中国在欧盟和比荷卢地区实施商标侵权临时禁令的请求。法院同时要求安世中国不得在欧盟境内援引或使用江苏省高级人民法院作出的相关裁定。新进展是11月13日公司公开披露此前裁判结果。",
+      "legal_status": "上市公司披露域外法院既有临时裁判",
+      "domestic": true,
+      "id": "research-item-8",
+      "event_date": "2026-11-13",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "date": "2026-11-14",
+      "jurisdiction": "意大利",
+      "agency": "意大利个人数据保护局（Garante）",
+      "title": "意大利隐私监管机构因Facebook相册访问行为对Meta罚款8.05亿欧元",
+      "original_title": "Facebook: il Garante Privacy sanziona Meta per 805 milioni di euro",
+      "source_name": "意大利个人数据保护局",
+      "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/10321080",
+      "fact": "意大利个人数据保护局11月14日公布决定，因Facebook安卓应用在未经单独、充分告知同意的情况下读取用户手机相册照片、视频及元数据，对Meta Platforms Ireland罚款8.05亿欧元，涉及约2000万名意大利安卓用户。监管机构依据意大利隐私法第122条及电子隐私规则作出处理，要求公司在60日内为相关功能设置独立的同意请求并默认关闭。机构强调调查并未认定相册内容被用于人工智能训练。",
+      "legal_status": "隐私监管机构行政处罚及整改命令",
+      "domestic": false,
+      "id": "research-item-9",
+      "event_date": "2026-11-14",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "date": "2026-11-13",
+      "jurisdiction": "爱尔兰、欧盟",
+      "agency": "爱尔兰数据保护委员会（DPC）",
+      "title": "爱尔兰DPC罚Tinder运营商1100万欧元，认定自动数据下载未完整履行访问权",
+      "original_title": "Data Protection Commission fines MTCH €11 million following Inquiry into Tinder users’ personal data requests",
+      "source_name": "爱尔兰数据保护委员会",
+      "url": "https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-fines-mtch-eu11-million-following-inquiry-tinder-users-personal-data",
+      "fact": "爱尔兰数据保护委员会11月13日公布对Tinder运营商MTCH Technology Services的最终调查决定，处以1100万欧元罚款并予以申诫。调查发现，Tinder的“Download My Data”自助工具没有向提出请求的用户完整提供其个人数据，部分信息被遗漏或仅以摘要提供，违反《通用数据保护条例》第15条第3款关于提供个人数据副本的要求。该调查始于2020年。",
+      "legal_status": "GDPR跨境监管最终行政处罚",
+      "domestic": false,
+      "id": "research-item-10",
+      "event_date": "2026-11-13",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "date": "2026-11-13",
+      "jurisdiction": "加拿大",
+      "agency": "安大略省上诉法院",
+      "title": "加拿大安大略省上诉法院驳回OpenAI管辖权上诉，新闻版权诉讼继续在加审理",
+      "original_title": "Court allows news publishers’ copyright lawsuit against OpenAI to go ahead",
+      "source_name": "加拿大通讯社（经Winnipeg Free Press刊载）",
+      "url": "https://www.winnipegfreepress.com/arts-and-life/entertainment/2026/11/13/court-allows-news-publishers-copyright-lawsuit-against-openai-to-go-ahead",
+      "fact": "加拿大安大略省上诉法院11月13日驳回OpenAI提出的管辖权上诉，允许多家加拿大新闻出版机构针对其使用新闻内容训练人工智能模型的版权诉讼继续在安大略省法院进行。原告包括加拿大通讯社、Torstar、《环球邮报》及加拿大广播公司等；OpenAI主张争议应在美国审理。上诉裁决处理的是诉讼管辖问题，尚未认定模型训练行为是否侵犯版权。",
+      "legal_status": "上诉法院管辖权程序裁决",
+      "domestic": false,
+      "id": "research-item-11",
+      "event_date": "2026-11-13",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "date": "2026-11-13",
+      "jurisdiction": "美国",
+      "agency": "Cursor",
+      "title": "Cursor公布开发工具供应链入侵调查，第三方密钥泄露波及部分智能体工作记录",
+      "original_title": "An update on our recent security incident",
+      "source_name": "Cursor官方事件调查",
+      "url": "https://cursor.com/blog/security-incident-update",
+      "fact": "人工智能编程工具Cursor于11月13日发布网络安全事件调查进展，确认攻击者使用其发放给模型服务商Fireworks的泄露访问密钥，复制了用于共享的部分代码智能体历史运行记录，并从未完整清理的凭证进一步进入部分非生产系统及客户支持资料。Cursor表示不足0.01％的客户有API凭证暴露，已吊销相关密钥、轮换凭证并重建扩展市场安全审查流程；这一调查说明是对此前10月事件的新增披露。",
+      "legal_status": "企业安全事故调查新进展",
+      "domestic": false,
+      "id": "research-item-12",
+      "event_date": "2026-11-13",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "date": "2026-11-13",
+      "jurisdiction": "美国",
+      "agency": "美国参议院银行委员会、商务部",
+      "title": "美国参议院要求商务部长就先进AI芯片出口审查出席听证",
+      "original_title": "Lutnick Will Testify Before Congress Amid Allegations He Resisted Megaspeed Crackdown",
+      "source_name": "Forbes（援引参议院邀请函及商务部回应）",
+      "url": "https://www.forbes.com/sites/saradorn/2026/11/13/lutnick-will-testify-before-congress-amid-allegations-he-resisted-megaspeed-crackdown/",
+      "fact": "美国媒体11月13日报道，参议院银行委员会主席已致函商务部长卢特尼克和英伟达高管，要求就先进人工智能芯片出口审查及国家安全问题作证，拟定的公开作证日期分别为12月3日和12月10日。商务部发言人表示卢特尼克同意自愿出席；有关动作发生在Megaspeed芯片流向和部门监管分歧受到关注之后，现阶段属于国会监督程序安排。",
+      "legal_status": "国会听证邀请及官员回应",
+      "domestic": false,
+      "id": "research-item-13",
+      "event_date": "2026-11-13",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "date": "2026-11-13",
+      "jurisdiction": "美国、全球",
+      "agency": "微软",
+      "title": "微软确认全球Microsoft 365故障恢复，并解释网络容量升级引起的问题",
+      "original_title": "Microsoft says services fully recovered after global outage",
+      "source_name": "Türkiye Today（综合微软服务状态公告与法新社报道）",
+      "url": "https://www.turkiyetoday.com/business/microsoft-says-services-fully-recovered-after-global-outage-3232356",
+      "fact": "微软11月13日确认，前一天开始影响Outlook、Teams、Copilot等产品的跨区域服务故障已经恢复，受影响环境的电子邮件积压也已处理。公司称故障与早前网络容量升级及后续网络变更引起的技术问题有关，未发现网络攻击或人工智能系统导致故障的证据。此次恢复是此前服务中断报道之后的明确处置进展。",
+      "legal_status": "重大数字基础设施故障恢复与原因披露",
+      "domestic": false,
+      "id": "research-item-14",
+      "event_date": "2026-11-13",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    }
+  ],
+  "publication": {
+    "commit_sha": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "online_check": null
+  },
+  "domestic_source_coverage": [
+    {
+      "source_group": "中央部门",
+      "source_name": "国家市场监管总局",
+      "checked_at": "2026-11-15T11:12:10.838+00:00",
+      "status": "checked",
+      "url": "https://www.samr.gov.cn/xw/sj/art/2026/art_0db8cadd0fe142c8b3896e66869350a5.html",
+      "notes": "打开公告核对GB/T编号与2027年实施日期"
+    },
+    {
+      "source_group": "中央部门",
+      "source_name": "交通运输部",
+      "checked_at": "2026-11-15T11:12:10.838+00:00",
+      "status": "checked",
+      "url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202611/t20261113_4227676.html",
+      "notes": "打开交通运输部全文"
+    },
+    {
+      "source_group": "中央部门",
+      "source_name": "国家知识产权局",
+      "checked_at": "2026-11-15T11:12:10.838+00:00",
+      "status": "checked",
+      "url": "https://www.cnipa.gov.cn/art/2026/11/13/art_75_209094.html",
+      "notes": "打开三部门联合案例原始清单"
+    },
+    {
+      "source_group": "地方数据与监管",
+      "source_name": "上海市人民政府",
+      "checked_at": "2026-11-15T11:12:10.838+00:00",
+      "status": "checked",
+      "url": "https://www.shanghai.gov.cn/nw4411/20261114/c1295ad657484dc9b2bc819d568cdea9.html",
+      "notes": "核对报道日11月14日与施行日11月1日"
+    },
+    {
+      "source_group": "地方数据与监管",
+      "source_name": "北京市经济和信息化局",
+      "checked_at": "2026-11-15T11:12:10.838+00:00",
+      "status": "checked",
+      "url": "https://jxj.beijing.gov.cn/zwgk/2024zcwj/202611/t20261113_4945499.html",
+      "notes": "核对通知发布时间11月14日，落款11月12日，报送截止12月15日"
+    },
+    {
+      "source_group": "地方数据与监管",
+      "source_name": "武汉市政府、长江日报",
+      "checked_at": "2026-11-15T11:12:10.838+00:00",
+      "status": "checked",
+      "url": "https://www.wuhan.gov.cn/sy/whyw/202611/t20261115_2879888.shtml",
+      "notes": "11月15日发布，属政策讨论和产业报道，非新增正式规则，本期未选入"
+    },
+    {
+      "source_group": "财经媒体",
+      "source_name": "财联社·科创板日报",
+      "checked_at": "2026-11-15T11:12:10.838+00:00",
+      "status": "checked",
+      "url": "https://www.cls.cn/detail/2534439",
+      "notes": "打开原记者采写报道并核对统计口径时间"
+    },
+    {
+      "source_group": "财经媒体",
+      "source_name": "每日经济新闻",
+      "checked_at": "2026-11-15T11:12:10.838+00:00",
+      "status": "checked",
+      "url": "https://www.mrjjxw.com/articles/2026-11-13/4647320.html",
+      "notes": "明确裁判发生于11月2日，披露发生于11月13日"
+    },
+    {
+      "source_group": "综合媒体",
+      "source_name": "界面新闻、上海市经信委",
+      "checked_at": "2026-11-15T11:12:10.838+00:00",
+      "status": "checked",
+      "url": "https://www.jiemian.com/article/15332149.html",
+      "notes": "核查11月12—13日大会，避免误写标准已发布"
+    },
+    {
+      "source_group": "权威媒体",
+      "source_name": "国务院和央地官方新闻渠道",
+      "checked_at": "2026-11-15T11:12:10.838+00:00",
+      "status": "no_new",
+      "url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202611/t20261113_4227676.html",
+      "notes": "按权威媒体来源组检索并交叉回到交通运输部等主管机关原文；本来源组新闻部分与以上已入选条目重合"
+    },
+    {
+      "source_group": "专业法律媒体",
+      "source_name": "中国法院/检察机关与法治媒体主题搜索",
+      "checked_at": "2026-11-15T11:12:10.838+00:00",
+      "status": "no_new",
+      "url": "https://www.cac.gov.cn/2026-09/15/c_1790876152357946.htm",
+      "notes": "近期检索结果所示案例发布时间较早，排除超72小时旧闻，未标成查阅所有法院机关"
+    },
+    {
+      "source_group": "标准化评测",
+      "source_name": "全国数标委、国家数据局和标准化主题搜索",
+      "checked_at": "2026-11-15T11:12:10.838+00:00",
+      "status": "no_new",
+      "url": "https://www.nda.gov.cn/sjj/jgsz/jld/llh/llhldhd/1113/20261113153701287999907_mobile.html",
+      "notes": "数标委标准周及工作组11月14日简报已刊，排除同事件重复；TC260/TC28直接新公告未从搜索结果核实"
+    },
+    {
+      "source_group": "科技和网络安全媒体",
+      "source_name": "36氪、虎嗅、雷峰网、FreeBuf主题检索",
+      "checked_at": "2026-11-15T11:12:10.838+00:00",
+      "status": "no_new",
+      "url": "https://www.jiemian.com/article/15332149.html",
+      "notes": "反向媒体检索未发现需要替换已选政府和一手来源的新进展；未声称逐篇打开全部媒体首页"
+    },
+    {
+      "source_group": "主题反向复查",
+      "source_name": "国家网信办、国家数据局关键词检索",
+      "checked_at": "2026-11-15T11:12:10.838+00:00",
+      "status": "no_new",
+      "url": "https://www.nda.gov.cn/sjj/jgsz/jld/llh/llhldhd/1113/20261113153701287999907_mobile.html",
+      "notes": "对照11月14日已刊的标准组事件及11月13日AI安全评测，未重复入选"
+    }
+  ]
+}
