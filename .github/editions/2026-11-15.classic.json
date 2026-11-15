@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-15",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-15-thibaut-unified-civil-code.html",
+  "target_path": "articles/2026-11-15-thibaut-unified-civil-code.html",
+  "book": {
+    "author": "Anton Friedrich Justus Thibaut（安东·弗里德里希·尤斯图斯·蒂堡）",
+    "original_title": "Ueber die Nothwendigkeit eines allgemeinen bürgerlichen Rechts für Deutschland",
+    "publisher": "Heidelberg: Mohr und Zimmer",
+    "year": "1814",
+    "edition": "1814年初版（67页）；德文完整阅读据1914年Jacques Stern校录本第一编，非1914年编者导论或增订本"
+  },
+  "source_urls": [
+    "https://www.gutenberg.org/files/50813/50813-h/50813-h.htm#page_35",
+    "https://www.gutenberg.org/files/50813/50813-h/50813-h.htm#page_32",
+    "https://www.gutenberg.org/files/50813/50813-h/50813-h.htm#page_7",
+    "https://www.gutenberg.org/files/50813/50813-h/50813-h.htm#page_69",
+    "https://www.gutenberg.org/files/50813/50813-h/50813-h.htm#page_162",
+    "https://www.gutenberg.org/files/50813/50813-h/50813-h.htm#page_174",
+    "https://digi.ub.uni-heidelberg.de/diglit/thibaut1814"
+  ],
+  "original_verification": "完整核对1814年蒂堡原著初版的书名页、1814年6月19日前言及连续小册子正文，采用1914年Jacques Stern忠实校录本第一编第35至68页。阅读顺序涵盖邦国政治分立与法律统一、广义bürgerliches Recht（含私法、刑法、诉讼）、形式/实质立法质量、罗马法及地方法冲突、法院与公民负担、法学教育、跨邦交易、集体编纂、修订程序、地方差异与传统、成本反对以及婚姻财产模板。区分1814年初版、同年增订和后出回应；未核验初印物理影像每一个字，不作逐字影印校勘声明。",
+  "critics": [
+    {
+      "name": "Friedrich Carl von Savigny（弗里德里希·卡尔·冯·萨维尼）",
+      "work": "Vom Beruf unsrer Zeit für Gesetzgebung und Rechtswissenschaft (Heidelberg: Mohr und Zimmer, 1814), §§2–3, 6, 10–11；尤其第11节Thibauts Vorschlag",
+      "url": "https://www.gutenberg.org/files/50813/50813-h/50813-h.htm",
+      "checked": "系统对读萨维尼同年完整作品中法律历史形成、法典整体结构、当前学术条件、跨邦协作起草能力的反驳，并与蒂堡同年《海德堡文学年鉴》59号的后出回应作版本区分"
+    }
+  ],
+  "dedup_checked": [
+    "main classics.html完整69个近现代索引条目，未收录蒂堡本书",
+    "main classics-history.html第15—35期早期导出著作，含萨维尼《论当代立法与法学的使命》但没有蒂堡本书",
+    "data/books.json存量书目",
+    "main当日articles与2026-11-15.classic.json不存在，历史书名、作者与原题交叉核对"
+  ],
+  "duplicate_found": false,
+  "sections": 95,
+  "prose_length": 11292,
+  "checked_at": "2026-11-15",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
