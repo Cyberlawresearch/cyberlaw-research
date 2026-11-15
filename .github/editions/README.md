@@ -50,6 +50,14 @@
 
 新闻正文继续保留标准 `.brief-item`、`.brief-fact`、`.brief-meta`、`.source`、`data-citation`、`data-event-date` 以及结构化 `brief-insight`。72小时时效、质量优先且不设硬性最低条数、外文原题、事件级去重和其他内容要求以 `AGENTS.md`、`BRIEF_STRUCTURE.md` 及现行脚本为准，不通过删除或弱化验收测试来发布。
 
+## 国内新闻来源覆盖审计（所有后续新期次适用）
+
+新闻任务启动时须读取仓库根目录 `DOMESTIC_SOURCE_AUDIT.md` 并完成逐项巡视。新闻记录内使用 `coverage.domestic_sources`（或信息等效的数组）存储实际查阅的机构、媒体、网页入口、真实检索结果与访问失败事项。不能再用 `coverage.china: "中央机关和媒体均已检查"` 这类无法核对的笼统描述证明国内已全面巡视。保留旧期记录不回填虚构来源或时间。
+
+如果 `distribution.domestic` 少于6，另保存 `coverage.domestic_low_count_review`：第二轮具体查阅来源及URL、主题检索、候选及去重和剔除原因、实际完成状态。未完成上述检查时，`checks.domestic_major_omission_review`（或旧记录使用的 `checked.domestic_major_omission_review`）保持 false 或 null，`state` 不得写成全面核验已完成。任何程序验证只能证明记录字段齐全，不能代替来源真核验。
+
+来源数、国内稿件数都不是配额：符合时效和重要性的新进展应全部保留；真正无合格新闻时也可少于6条。文字只写事实与必要法律状态，避免尾部防御性套话。
+
 ## 新闻断点续作
 
 ### 先保存真实进度
