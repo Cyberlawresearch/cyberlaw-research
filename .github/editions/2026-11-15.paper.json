@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-15",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-15-novelli-hacker-ai-regulatory-sandboxes.html",
+  "selection": "Getting Regulatory Sandboxes Right: Design and Governance Under the AI Act",
+  "bibliography": {
+    "type": "article",
+    "author": "Claudio Novelli; Philipp Hacker; Simon McDougall; Jessica Morley; Antonino Rotolo; Luciano Floridi",
+    "originalTitle": "Getting Regulatory Sandboxes Right: Design and Governance Under the AI Act",
+    "journal": "European Journal of Risk Regulation",
+    "year": "2026",
+    "volume": "17",
+    "issue": "3",
+    "pages": "926–952",
+    "doi": "10.1017/err.2026.10096",
+    "url": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/getting-regulatory-sandboxes-right-design-and-governance-under-the-ai-act/E85D318E227C721BF4823F7930DDA937",
+    "cnTitle": "人工智能监管沙盒怎样真正发挥作用：从准入、测试到退出的制度设计"
+  },
+  "versions": {
+    "full_text": "Read all of Cambridge University Press's published open-access HTML: abstract, introduction, Sections II–VI, conclusions and footnotes.",
+    "publication": "European Journal of Risk Regulation, Volume 17, Issue 3, September 2026, pp. 926–952; first published online 1 April 2026. No SSRN version used."
+  },
+  "sources": [
+    "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/getting-regulatory-sandboxes-right-design-and-governance-under-the-ai-act/E85D318E227C721BF4823F7930DDA937"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "history_scope": "Compared all indexed articles in papers.html and papers-history-1.html and recent repository paper files. No matching essay or duplicate original title.",
+  "related_reading": [],
+  "timeline": null,
+  "body_length": 5251,
+  "checked_at": "2026-11-15",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  },
+  "last_error": null
+}
