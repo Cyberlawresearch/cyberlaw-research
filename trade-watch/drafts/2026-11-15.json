@@ -3,13 +3,47 @@
   "base_main_sha": "9481aa2b4de3749abd50ecea929ff116aa788c97",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "us-chassis-continuation",
+      "jurisdiction": "美国",
+      "date": "2026-11-13",
+      "stage": "正式续征已生效；适用日11月2日",
+      "title": "美国延续中国产集装箱底盘及部件反倾销、反补贴税令",
+      "source": "https://www.federalregister.gov/documents/2026/11/13/2026-23177/certain-chassis-and-subassemblies-thereof-from-the-peoples-republic-of-china-continuation-of",
+      "verified": true
+    },
+    {
+      "id": "us-chlorinated-isocyanurates-cvd",
+      "jurisdiction": "美国",
+      "date": "2026-11-13",
+      "stage": "2023年度反补贴行政复审终裁；11月13日起保证金调整",
+      "title": "中国产氯代异氰尿酸盐反补贴终裁菏泽华意18.71%，其他企业10.81%",
+      "source": "https://www.federalregister.gov/d/2026-23079",
+      "verified": true
+    },
+    {
+      "id": "eu-ferro-safeguard-review",
+      "jurisdiction": "欧盟",
+      "date": "2026-11-13",
+      "stage": "现行保障措施复审立案；不等于撤销或改税",
+      "title": "欧盟启动铁合金元素保障措施复审，12月初提交意见",
+      "source": "https://op.europa.eu/en/publication-detail/-/publication/3a450161-df04-11f1-ba80-01aa75ed71a1/language-en",
+      "verified": true
+    }
+  ],
+  "coverage": {
+    "US": "已查美国联邦公报11月13日商务部条目及贸易救济复审",
+    "EU": "已查欧盟官方公报11月13日铁合金保障措施复审及公告索引",
+    "UK": "初查英国制裁与出口管制公告",
+    "JP": "初查经济产业省",
+    "KR": "初查韩国产业通商资源部"
+  },
   "last_error": null,
   "next_actions": [
-    "核查近72小时美欧英日韩与印加澳主管机构及法规公告",
-    "核对最近至少7期事件并逐条核验原始链接",
-    "终扫、排版、更新 main 三份文件及 Pages 验收"
+    "补充各法域近72小时原始公告，核对印加澳",
+    "补充美国其余正式初终裁、欧盟原产地及其他制度",
+    "分组保存并进行最终原始链接与事件去重检查"
   ],
   "updated_at": "2026-11-15T09:04:15+08:00"
 }
