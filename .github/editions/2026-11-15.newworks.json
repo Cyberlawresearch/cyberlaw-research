@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-15",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-15-new-works.html",
+  "page_blob_sha": "6cd064b290ef888a23c4c9166ca7860fc248009d",
+  "newworks_count": 3,
+  "checked_at": "2026-11-15T12:37:14.808Z",
+  "checks": {
+    "original_publisher_pages_opened": true,
+    "original_title_author_doi_verified": true,
+    "formal_publication_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "doi_title_author_version_repository_code_search": true,
+    "historical_indexes_checked": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html (current and full newworks historical index)",
+      "new-works-history.html (older newworks index)",
+      "GitHub main code search for exact DOI, original title, and author variations against all indexed repository files"
+    ],
+    "fields": [
+      "DOI",
+      "original title",
+      "author",
+      "formal journal version or published book edition"
+    ],
+    "matches_found": 0,
+    "note": "Original Springer Nature journal version-of-record pages and Springer Cham book bibliography were opened and inspected. Repository code search by DOI, title and author found no prior inclusion. A different Jake Stone publication in earlier history is not a duplicate. No weak related reading links or timelines added."
+  },
+  "items": [
+    {
+      "cn_title": "生成式AI作品的作者资格，能否以承担责任的能力来判断",
+      "author": "Caterina Moruzzi",
+      "original_title": "AI and the Responsibility-Bearing Status of Authorship",
+      "journal": "Philosophy & Technology",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-11-14",
+      "doi": "10.1007/s13347-026-01235-w",
+      "publisher_page": "https://link.springer.com/article/10.1007/s13347-026-01235-w",
+      "volume": "39",
+      "issue": null,
+      "pages": null,
+      "article_number": "225",
+      "version": "Formal open-access version of record published 2026-11-14; volume 39, article 225",
+      "type": "article"
+    },
+    {
+      "cn_title": "生成式AI正在集中信息入口，数字公地如何避免被少数模型控制",
+      "author": "Jake Iain Stone",
+      "original_title": "The Digital Commons and the Infrastructural Power of Generative AI",
+      "journal": "Philosophy & Technology",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-11-14",
+      "doi": "10.1007/s13347-026-01204-3",
+      "publisher_page": "https://link.springer.com/article/10.1007/s13347-026-01204-3",
+      "volume": "39",
+      "issue": null,
+      "pages": null,
+      "article_number": "224",
+      "version": "Formal open-access version of record published 2026-11-14; volume 39, article 224",
+      "type": "article"
+    },
+    {
+      "cn_title": "AI辅助发明如何认定创造性：欧洲专利审查中的技术人员标准",
+      "author": "Anna Chiettini",
+      "original_title": "Artificial Intelligence and Inventive Step: A European Patent Law Perspective",
+      "journal": "Munich Studies on Innovation and Competition (series, volume 23)",
+      "publisher": "Springer Cham",
+      "year": 2026,
+      "publication_date": "2026-10-31",
+      "doi": "10.1007/978-3-032-41497-7",
+      "publisher_page": "https://link.springer.com/book/10.1007/978-3-032-41497-7",
+      "volume": "23 (series)",
+      "issue": null,
+      "pages": "XV, 351",
+      "article_number": null,
+      "version": "Open access published eBook 2026-10-31; physical hardcover published 2026-11-01; book DOI not a journal DOI",
+      "type": "book"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "c69d8cd2dbe909c27d0ca1a3edb56a9aec8562fe",
+    "last_complete_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": null
+  }
+}
