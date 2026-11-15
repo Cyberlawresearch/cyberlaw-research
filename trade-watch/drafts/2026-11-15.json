@@ -1,7 +1,7 @@
 {
   "date": "2026-11-15",
   "base_main_sha": "9481aa2b4de3749abd50ecea929ff116aa788c97",
-  "phase": "main_written_and_verified",
+  "phase": "published_and_verified",
   "publication_ready": true,
   "items": [
     {
@@ -188,12 +188,8 @@
     "Other": "核对东非共同体修订原产地规则及英国欧盟植物卫生贸易安排。"
   },
   "last_error": null,
-  "next_actions": [
-    "检查Pages工作流43662097820最终结论与提交SHA",
-    "公开页面加载后比较三页面的内容、日期、来源链接并保存异常",
-    "按已核验结果更新publication phase"
-  ],
-  "updated_at": "2026-11-15T09:16:00+08:00",
+  "next_actions": [],
+  "updated_at": "2026-11-15T09:18:04+08:00",
   "link_verification": {
     "sources_count": 9,
     "notes": "逐项检索原始公告及对应案件内容；部分美国官方FR与欧盟官方出版链接在网页抓取端出现访问拒绝/429，事实由公报原文镜像及官方出版索引交叉核实，部署后继续诊断。",
@@ -219,7 +215,11 @@
       "archive_history_preserved": true
     },
     "pages_run_id": 43662097820,
-    "pages_status": "in_progress",
-    "public_verification": "not yet verified"
+    "pages_status": "completed_success",
+    "public_verification": "passed: issues/2026-11-15.html, index.html, archive.html all exact DOM content/links matched final commit; nine news cards",
+    "page_verification_run_id": 43662410939,
+    "source_diagnostics_run_id": 43662410976,
+    "source_link_verification": "passed: nine external source URLs returned HTTP 200 with correct redirects; no failed links",
+    "final_commit": "3c47ba34fee88a3c8acf45210e069136586cfa61"
   }
 }
