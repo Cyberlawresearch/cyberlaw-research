@@ -1,7 +1,7 @@
 {
   "date": "2026-11-15",
   "base_main_sha": "9481aa2b4de3749abd50ecea929ff116aa788c97",
-  "phase": "sources_verified_and_deduplicated",
+  "phase": "main_written_and_verified",
   "publication_ready": true,
   "items": [
     {
@@ -189,15 +189,37 @@
   },
   "last_error": null,
   "next_actions": [
-    "立即按当前 SHA 正式写入2026-11-15.html完整正文",
-    "依次更新首页、归档",
-    "ref=main回读、验收Pages提交及公开内容",
-    "更新草稿publication_attempt和结果"
+    "检查Pages工作流43662097820最终结论与提交SHA",
+    "公开页面加载后比较三页面的内容、日期、来源链接并保存异常",
+    "按已核验结果更新publication phase"
   ],
   "updated_at": "2026-11-15T09:16:00+08:00",
   "link_verification": {
     "sources_count": 9,
     "notes": "逐项检索原始公告及对应案件内容；部分美国官方FR与欧盟官方出版链接在网页抓取端出现访问拒绝/429，事实由公报原文镜像及官方出版索引交叉核实，部署后继续诊断。",
     "html_amp": "Escape all href query ampersands and compare parsed URLs."
+  },
+  "publication": {
+    "issue_number": 68,
+    "item_count": 9,
+    "issue": "trade-watch/issues/2026-11-15.html",
+    "index": "trade-watch/index.html",
+    "archive": "trade-watch/archive.html",
+    "commits": {
+      "issue": "86721d1de583d694e713b2db50de9fd50e10d34f",
+      "index": "ec4c3f9ff594f47b17cb38d02e4353462c0e542d",
+      "final": "3c47ba34fee88a3c8acf45210e069136586cfa61"
+    },
+    "main_readback": {
+      "issue_sha": "e479da866d3b9c804d8329fe30808aa97afa25d1",
+      "index_sha": "c9a05762b963778d99caa7ada7e5b2c603f2e888",
+      "archive_sha": "87f3a5adc29410b4d686553d44e8fc37716111b1",
+      "count": 9,
+      "source_links": 9,
+      "archive_history_preserved": true
+    },
+    "pages_run_id": 43662097820,
+    "pages_status": "in_progress",
+    "public_verification": "not yet verified"
   }
 }
