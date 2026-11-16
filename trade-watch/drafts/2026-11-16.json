@@ -1,13 +1,69 @@
 {
   "date": "2026-11-16",
   "base_main_sha": "6ef108172fd26ba9a49918a1513378b45598e58c",
-  "phase": "researching",
+  "phase": "researching-us-initial",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "us-lockers-cvd",
+      "jurisdiction": "美国",
+      "title": "美国中国产金属储物柜反补贴复审初裁，浙江兴意暂定21.74%",
+      "date": "2026-11-16",
+      "stage": "反补贴行政复审初裁",
+      "source": "https://www.federalregister.gov/d/2026-23271",
+      "deadline": "初裁刊登21日内提出案件意见",
+      "status": "verified"
+    },
+    {
+      "id": "us-pea-protein-ad",
+      "jurisdiction": "美国",
+      "title": "美国对中国产豌豆蛋白反倾销复审初裁：部分企业零税率，另有企业44.44%",
+      "date": "2026-11-16",
+      "stage": "反倾销行政复审初裁",
+      "source": "https://www.federalregister.gov/d/2026-23260",
+      "deadline": "2026-12-07案件陈述",
+      "status": "verified"
+    },
+    {
+      "id": "us-diamond-blades",
+      "jurisdiction": "美国",
+      "title": "美国正式延续中国产金刚石锯片反倾销税令",
+      "date": "2026-11-16",
+      "stage": "日落复审后续行最终决定",
+      "source": "https://www.federalregister.gov/d/2026-23253",
+      "deadline": "2026-10-30续行生效",
+      "status": "verified"
+    },
+    {
+      "id": "us-china-scope-apps",
+      "jurisdiction": "美国",
+      "title": "美国披露四项涉华钢材、管件双反范围裁定申请",
+      "date": "2026-11-16",
+      "stage": "9月申请披露，尚非范围裁定",
+      "source": "https://www.federalregister.gov/d/2026-23250",
+      "deadline": "按各涉案范围程序通知",
+      "status": "verified"
+    },
+    {
+      "id": "us-mexico-tankcars",
+      "jurisdiction": "美国／墨西哥",
+      "title": "美国对墨西哥铁路罐车及部件同时启动反倾销和反补贴调查",
+      "date": "2026-11-16",
+      "stage": "11月9日立案，16日登载",
+      "source": "https://www.federalregister.gov/d/2026-23290",
+      "additional_source": "https://www.federalregister.gov/d/2026-23291",
+      "deadline": "2026-11-30产品范围意见、12月10反驳",
+      "status": "verified"
+    }
+  ],
+  "coverage": {
+    "US": "美国商务部、Federal Register 11月16日正式通知初轮完成",
+    "Mexico": "美国正式立案墨西哥铁路罐车双反，两个独立来源已打开"
+  },
   "last_error": null,
   "next_actions": [
-    "核对近7期事件、2026年11月13—16日美欧英日韩及印加澳官方监管动态",
-    "核对来源与法定期限，保存候选并发布"
+    "检索并核对欧盟、英国、日本、韩国、印度、加拿大、澳大利亚近72小时主管机构公告",
+    "完善更多国家重要新闻、逐条复核来源、去重和最终终扫",
+    "将publication_ready置true后写完整三文件"
   ]
 }
