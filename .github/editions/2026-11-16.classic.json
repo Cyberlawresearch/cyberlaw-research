@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-16",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-16-more-utopia.html",
+  "target_path": "articles/2026-11-16-more-utopia.html",
+  "book": {
+    "author": "Thomas More（托马斯·莫尔）",
+    "original_title": "Libellus vere aureus nec minus salutaris quam festivus de optimo reipublicae statu deque nova insula Utopia",
+    "publisher": "Louvain: Thierry (Dirk) Martens",
+    "year": "1516",
+    "edition": "1516年拉丁文初版；本期正文据Gilbert Burnet 1684年英译本完整阅读，经Henry Morley辑录，未逐字校勘拉丁原文"
+  },
+  "source_urls": [
+    "https://www.gutenberg.org/files/2130/2130-h/2130-h.htm",
+    "https://extra.shu.ac.uk/emls/iemls/work/chapters/utop-chp.html",
+    "https://www.marxists.org/archive/kautsky/1888/more/ch13.htm",
+    "https://www.marxists.org/archive/kautsky/1888/more/ch12.htm",
+    "https://orbi.uliege.be/handle/2268/222653",
+    "https://academic.oup.com/edited-volume/55364/chapter-abstract/431296249"
+  ],
+  "original_verification": "完整核对Project Gutenberg刊载的Gilbert Burnet英译两卷正文，从第一卷拉斐尔与‘莫尔’讨论盗窃刑罚、圈地、宫廷谏言和财产制度，到第二卷五十四城、官制、劳动、公共分配、旅行许可、奴隶、婚姻、战争、宗教以及末段对话。已把Henry Morley后出导言与莫尔正文分开；不声称逐字读过1516年拉丁文影印本。书目及初版刊印另据Renaud Adam与Andrew W. Taylor研究核验。",
+  "critics": [
+    {
+      "name": "Karl Kautsky（卡尔·考茨基）",
+      "work": "Thomas More and his Utopia (1888), Part III Chapters IV–V",
+      "url": "https://www.marxists.org/archive/kautsky/1888/more/ch13.htm",
+      "checked": "核对其从经济关系和社会平等角度解读《乌托邦》的具体论点，强调系后世阐释"
+    },
+    {
+      "name": "Romuald Ian Lakowski（罗穆阿尔德·伊恩·拉科夫斯基）",
+      "work": "Sir Thomas More and the Art of Dialogue (PhD thesis, University of British Columbia, 1993), Ch. 3; web revision 'The Dialogue in Book I of Utopia' (1996)",
+      "url": "https://extra.shu.ac.uk/emls/iemls/work/chapters/utop-chp.html",
+      "checked": "核实其反对把作品约化为单一政治宣言，并强调两卷对话、发言主体和卷首材料的关系"
+    }
+  ],
+  "dedup_checked": [
+    "main classics.html全部2026-09至2026-11近期历史索引，查找Utopia、乌托邦、Thomas More、托马斯·莫尔未发现本书",
+    "main classics-history.html历史第15—35期完整迁入索引，交叉核对未发现本书",
+    "data/books.json存量经典书目，未发现本书",
+    "main当日articles和2026-11-16.classic.json不存在"
+  ],
+  "duplicate_found": false,
+  "sections": 112,
+  "prose_length": 11021,
+  "checked_at": "2026-11-16",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
