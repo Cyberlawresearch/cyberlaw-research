@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-16",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-16-bradford-brussels-effect.html",
+  "selection": "The Brussels Effect",
+  "bibliography": {
+    "type": "article",
+    "author": "Anu Bradford",
+    "originalTitle": "The Brussels Effect",
+    "journal": "Northwestern University Law Review",
+    "year": "2012",
+    "volume": "107",
+    "issue": "1",
+    "pages": "1–68",
+    "doi": "",
+    "url": "https://northwesternlawreview.org/issues/the-brussels-effect/",
+    "cnTitle": "欧盟规则为何走向全球：布鲁塞尔效应的五项条件与法律边界"
+  },
+  "versions": {
+    "full_text": "Read all of the 2012 publisher-paginated Northwestern University Law Review PDF: introduction, parts I–V, conclusion and notes, pages 1–68.",
+    "publication": "Formal journal article, Northwestern University Law Review 107(1), 2012, pp. 1–68; 2012-12-01 journal issue date. Did not substitute a later working paper or book."
+  },
+  "sources": [
+    "https://northwesternlawreview.org/issues/the-brussels-effect/",
+    "https://scholarship.law.columbia.edu/faculty_scholarship/271/",
+    "https://life.eui.eu/wp-content/uploads/sites/28/2016/04/EU-02-Scott-Bradford-1.pdf"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "history_scope": "Checked all 69 main entries in papers.html and all 13 archival entries in papers-history-1.html for the original title, author and related versions; no match.",
+  "related_reading": [],
+  "timeline": null,
+  "body_length": 3982,
+  "checked_at": "2026-11-16",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  },
+  "last_error": null
+}
