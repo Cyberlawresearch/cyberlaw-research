@@ -1,8 +1,8 @@
 {
   "date": "2026-11-16",
   "base_main_sha": "6ef108172fd26ba9a49918a1513378b45598e58c",
-  "phase": "candidate-fact-checked",
-  "publication_ready": false,
+  "phase": "publication-ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "us-lockers-cvd",
@@ -209,9 +209,8 @@
   },
   "last_error": null,
   "next_actions": [
-    "完成每个最终原始来源链接最后一轮打开核验和联结检查",
-    "完成结束前终扫后将publication_ready设为true",
-    "生成当期完整HTML并写入main及更新首页归档、线上验收"
+    "依照本JSON正式写入main当期完整HTML，顺序更新首页与归档",
+    "ref=main三文件回读并按最终提交检查Pages及公开页面"
   ],
   "dedup": {
     "checked": [
@@ -224,5 +223,29 @@
       "2026-11-15"
     ],
     "notes": "中国产金属储物柜11月14日为反倾销复审初裁，本期为不同案件的反补贴复审初裁；其他候选未与上7期发生同监管动作重复"
+  },
+  "source_verification": {
+    "urls": [
+      "https://www.federalregister.gov/d/2026-23271",
+      "https://www.federalregister.gov/d/2026-23260",
+      "https://www.federalregister.gov/d/2026-23253",
+      "https://www.federalregister.gov/d/2026-23250",
+      "https://www.federalregister.gov/d/2026-23290",
+      "https://www.federalregister.gov/d/2026-23291",
+      "https://www.federalregister.gov/d/2026-23267",
+      "https://www.federalregister.gov/d/2026-23278",
+      "https://www.federalregister.gov/d/2026-23270",
+      "https://www.federalregister.gov/d/2026-23234",
+      "https://www.federalregister.gov/d/2026-23257",
+      "https://www.federalregister.gov/d/2026-23275"
+    ],
+    "opened": true,
+    "checked_at": "2026-11-16 Asia/Shanghai 当期检索",
+    "html_query_entities_checked": true,
+    "notes": "12个Federal Register具体公告链接均已逐一打开到对应案件，双独立监管动作分别引用；未采用存在新旧时间或独立文书疑点的新闻"
+  },
+  "final_sweep": {
+    "completed": true,
+    "notes": "终扫覆盖11月16日欧美贸易救济、欧盟对俄拟制裁、Pax Silica消息；未将未经正式生效的措施按新法发布，未重复近7期"
   }
 }
