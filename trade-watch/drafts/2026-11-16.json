@@ -1,7 +1,7 @@
 {
   "date": "2026-11-16",
   "base_main_sha": "6ef108172fd26ba9a49918a1513378b45598e58c",
-  "phase": "publication-ready",
+  "phase": "main-written-awaiting-pages",
   "publication_ready": true,
   "items": [
     {
@@ -209,8 +209,8 @@
   },
   "last_error": null,
   "next_actions": [
-    "依照本JSON正式写入main当期完整HTML，顺序更新首页与归档",
-    "ref=main三文件回读并按最终提交检查Pages及公开页面"
+    "等待与最终提交739a0a44对应的Pages运行完成并核验部署",
+    "核对公开正文、首页和归档最新入口及12条来源链接"
   ],
   "dedup": {
     "checked": [
@@ -247,5 +247,21 @@
   "final_sweep": {
     "completed": true,
     "notes": "终扫覆盖11月16日欧美贸易救济、欧盟对俄拟制裁、Pax Silica消息；未将未经正式生效的措施按新法发布，未重复近7期"
+  },
+  "publication_attempt": {
+    "phase": "pages-verification",
+    "result": "three-files-confirmed-in-main",
+    "issue_commit_sha": "b8c897b1857f71ddc20a535845337204849da74b",
+    "index_commit_sha": "a54cbefc403ec67f7d67a9eca121308071573f6c",
+    "final_commit_sha": "739a0a44c967695fe50aa9ebe3200335a0a0c13f",
+    "pages_run_id": 43784871622,
+    "pages_status": "in_progress",
+    "main_issue_exists": true,
+    "main_index_updated": true,
+    "main_archive_updated": true,
+    "files_readback_confirmed": true,
+    "items_count": 10,
+    "source_count": 12,
+    "errors": []
   }
 }
