@@ -2,8 +2,8 @@
   "date": "2026-11-17",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "45f8ac82f897c5b94eb687f5b70794b7da0b55a9",
-  "phase": "source_verified",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "us-bis-remote-compute",
@@ -39,6 +39,19 @@
         "https://www.industry.gov.au/australian-trade-remedies-commission/current-cases-and-electronic-public-record-epr/724"
       ],
       "importance": 5
+    },
+    {
+      "id": "pax-silica-declaration",
+      "date": "2026-11-15",
+      "published": "2026-11-16",
+      "jurisdiction": "美国、日本、韩国、英国、澳大利亚、印度等",
+      "title": "美国与九国签署Pax Silica《旧金山宣言》，建立先进计算产业链合作工作组",
+      "stage": "11月15日签署，11月16日公开确认，非具有直接许可或关税约束力的法规",
+      "source_urls": [
+        "https://www.gov.il/en/pages/israel-signs-the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity-16-nov-2026",
+        "https://www.reuters.com/world/china/us-allies-team-up-protect-ai-tech-infrastructure-amid-china-rivalry-2026-11-16/"
+      ],
+      "importance": 4
     },
     {
       "id": "us-cabinets-cvd-final",
@@ -89,19 +102,18 @@
     "US": "11月16日Federal Register商务部双反公告、BIS先进算力临时最终规则、OFAC及USITC公告已核对；对照11月16日069期去重",
     "EU": "EUR-Lex及欧委会DG TRADE 11月16日冷轧钢终裁公告已核对",
     "UK": "ECJU战略出口管制、TRA公开案件清单和交通部11月16日海运燃料征求意见已核对；TRA玻璃容器案仅新增材料上传、未作初终裁",
-    "Japan": "经产省11月公告、贸易管理及2026年镍系不锈钢案件巡视；近72小时未检出足够重大且可核验的新决定",
-    "Korea": "产业通商资源部英文与韩文官方信息、海关进出口管制资讯巡视；无高质量的11月16日新增重大监管动作",
-    "India": "DGTR官网What's New核对；最近11月13日电子邮箱资料更新不作为重大贸易决定，近期案件多已在既往期收录",
+    "Japan": "经产省11月公告、贸易管理及2026年镍系不锈钢案件巡视；近72小时未检出足够重大且可核验的新决定；11月15日参与Pax Silica宣言签署的实质新外交协调成果已核实并纳入",
+    "Korea": "产业通商资源部英文与韩文官方信息、海关进出口管制资讯巡视；无高质量的11月16日新增重大监管动作；11月15日参与Pax Silica宣言签署的实质新外交协调成果已核实并纳入",
+    "India": "DGTR官网What's New核对；最近11月13日电子邮箱资料更新不作为重大贸易决定，近期案件多已在既往期收录；11月15日Pax Silica参与国签署合作宣言已核实并纳入",
     "Canada": "CBSA SIMA贸易救济及政府制裁公告巡视；纸板杯案件的12月30日延期已在11月11日收录，不重复",
     "Australia": "ATRC案件索引和724号中国结构木材案11月16日立案；反倾销审查小组铁路车轮复核案件信息巡视，后者原页无法独立打开故不收录",
     "Other": "墨西哥钢筋11月16日复审终裁核对，印度输美螺纹钢杆11月16日复审终裁核对"
   },
   "last_error": null,
   "next_actions": [
-    "最后终扫；生成完整HTML",
-    "将publication_ready更新为true并回读",
-    "正式提交正文、首页、归档",
-    "核对最终提交Pages和三个公开页面"
+    "创建完整第070期issue HTML",
+    "更新最新一期首页及往期归档",
+    "用main回读三个文件、对应提交的Pages和公开页面核验"
   ],
   "deduplication": {
     "checked_issues": [
@@ -118,5 +130,6 @@
       "11月16日金属储物柜、豌豆蛋白、金刚石锯片、墨西哥罐车等069期事项",
       "11月13日木制橱柜反倾销终裁"
     ]
-  }
+  },
+  "final_sweep": "2026-11-17 09时许（Asia/Shanghai）完成美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚及主要经济体近期公告与媒体终扫；8条已逐一独立核对链接；对7期去重。Pax Silica美国原始新闻稿网页403，改用已检索的以色列外交部当日发布正式消息及路透社具体报道，原始消息页可定位但网页正文对抓取器不可读；正式简报依以色列官方消息核对签署与政策法律阶段。"
 }
