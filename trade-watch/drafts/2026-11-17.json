@@ -2,7 +2,7 @@
   "date": "2026-11-17",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "45f8ac82f897c5b94eb687f5b70794b7da0b55a9",
-  "phase": "publication_ready",
+  "phase": "main_written_awaiting_deployment",
   "publication_ready": true,
   "items": [
     {
@@ -111,9 +111,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "创建完整第070期issue HTML",
-    "更新最新一期首页及往期归档",
-    "用main回读三个文件、对应提交的Pages和公开页面核验"
+    "核验最新提交对应Pages部署结果",
+    "尝试核验三个公开页面和来源链接；若访问工具不支持则保存确切限制",
+    "更新研究断点实际结果"
   ],
   "deduplication": {
     "checked_issues": [
@@ -131,5 +131,17 @@
       "11月13日木制橱柜反倾销终裁"
     ]
   },
-  "final_sweep": "2026-11-17 09时许（Asia/Shanghai）完成美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚及主要经济体近期公告与媒体终扫；8条已逐一独立核对链接；对7期去重。Pax Silica美国原始新闻稿网页403，改用已检索的以色列外交部当日发布正式消息及路透社具体报道，原始消息页可定位但网页正文对抓取器不可读；正式简报依以色列官方消息核对签署与政策法律阶段。"
+  "final_sweep": "2026-11-17 09时许（Asia/Shanghai）完成美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚及主要经济体近期公告与媒体终扫；8条已逐一独立核对链接；对7期去重。Pax Silica美国原始新闻稿网页403，改用已检索的以色列外交部当日发布正式消息及路透社具体报道，原始消息页可定位但网页正文对抓取器不可读；正式简报依以色列官方消息核对签署与政策法律阶段。",
+  "repo_commit": "d56852d4252a1fe9e6868ff4c7dc3d4251b9e622",
+  "repo_readback": {
+    "issue": "trade-watch/issues/2026-11-17.html",
+    "index": "trade-watch/index.html",
+    "archive": "trade-watch/archive.html",
+    "items": 8,
+    "source_links": 11,
+    "archive_issues": 70,
+    "all_three_match": true
+  },
+  "pages_run_id": 43993813069,
+  "pages_status": "pending"
 }
