@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-17",
+  "timezone": "Asia/Shanghai",
+  "base_main_sha": "45f8ac82f897c5b94eb687f5b70794b7da0b55a9",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "检索各必查法域和原始监管公告",
+    "与最近七期逐条去重",
+    "逐一核验来源链接、法律阶段及中国企业影响",
+    "终扫与发布验收"
+  ]
+}
