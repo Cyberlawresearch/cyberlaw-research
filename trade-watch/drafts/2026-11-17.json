@@ -2,7 +2,7 @@
   "date": "2026-11-17",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "45f8ac82f897c5b94eb687f5b70794b7da0b55a9",
-  "phase": "main_written_awaiting_deployment",
+  "phase": "published_with_source_diagnostics_warnings",
   "publication_ready": true,
   "items": [
     {
@@ -109,11 +109,15 @@
     "Australia": "ATRC案件索引和724号中国结构木材案11月16日立案；反倾销审查小组铁路车轮复核案件信息巡视，后者原页无法独立打开故不收录",
     "Other": "墨西哥钢筋11月16日复审终裁核对，印度输美螺纹钢杆11月16日复审终裁核对"
   },
-  "last_error": null,
+  "last_error": {
+    "phase": "source_diagnostics",
+    "tool": "GitHub Actions Trade Watch source diagnostics",
+    "run_id": 43994390427,
+    "issue": "3 external sources failed direct automated GET (403, 60s timeout, 401); all three publicly published pages passed exact DOM checks",
+    "action": "Preserved logs and artifact; do not imply all 11 source checks passed"
+  },
   "next_actions": [
-    "核验最新提交对应Pages部署结果",
-    "尝试核验三个公开页面和来源链接；若访问工具不支持则保存确切限制",
-    "更新研究断点实际结果"
+    "Follow upcoming daily run; if site access resumes, source diagnostics can be rerun without modifying the published issue."
   ],
   "deduplication": {
     "checked_issues": [
@@ -143,5 +147,62 @@
     "all_three_match": true
   },
   "pages_run_id": 43993813069,
-  "pages_status": "pending"
+  "pages_status": "pending",
+  "published": true,
+  "deployment": {
+    "workflow_run_id": 43993813069,
+    "conclusion": "success",
+    "head_sha": "d56852d4252a1fe9e6868ff4c7dc3d4251b9e622"
+  },
+  "publication_guard": {
+    "workflow_run_id": 43994390440,
+    "conclusion": "success",
+    "public_issue_home_archive_verified": true
+  },
+  "public_checks": {
+    "issue": {
+      "path": "trade-watch/issues/2026-11-17.html",
+      "status": 200,
+      "dom_match": true,
+      "news_count": 8
+    },
+    "index": {
+      "path": "trade-watch/index.html",
+      "status": 200,
+      "dom_match": true,
+      "latest_issue": "2026-11-17"
+    },
+    "archive": {
+      "path": "trade-watch/archive.html",
+      "status": 200,
+      "dom_match": true,
+      "first_issue": "2026-11-17",
+      "entries": 70
+    }
+  },
+  "source_diagnostics": {
+    "workflow_run_id": 43994390427,
+    "workflow_conclusion": "failure",
+    "total_sources": 11,
+    "auto_verified": 8,
+    "failed": [
+      {
+        "url": "https://www.gov.il/en/pages/israel-signs-the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity-16-nov-2026",
+        "error": "HTTP 403 Forbidden",
+        "type": "site access restriction"
+      },
+      {
+        "url": "https://www.industry.gov.au/australian-trade-remedies-commission/current-cases-and-electronic-public-record-epr/724",
+        "error": "Read timed out (60s)",
+        "type": "source server timeout"
+      },
+      {
+        "url": "https://www.reuters.com/world/china/us-allies-team-up-protect-ai-tech-infrastructure-amid-china-rivalry-2026-11-16/",
+        "error": "HTTP 401 Forbidden",
+        "type": "publisher access restriction"
+      }
+    ],
+    "evidence_artifact_id": 14289236309,
+    "evidence_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/43994390427/artifacts/14289236309"
+  }
 }
