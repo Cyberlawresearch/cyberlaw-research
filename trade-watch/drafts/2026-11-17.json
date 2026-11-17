@@ -2,62 +2,121 @@
   "date": "2026-11-17",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "45f8ac82f897c5b94eb687f5b70794b7da0b55a9",
-  "phase": "researching",
+  "phase": "source_verified",
   "publication_ready": false,
   "items": [
     {
       "id": "us-bis-remote-compute",
       "date": "2026-11-16",
       "jurisdiction": "美国",
-      "title": "BIS出台高级半导体境外数据中心远程算力出口管制临时最终规则",
-      "stage": "已公布临时最终规则，联邦公报预计11月19日刊登且于刊登日生效（截至本次查验尚未生效）",
+      "title": "BIS公布先进半导体和境外数据中心远程算力临时最终规则",
+      "stage": "公布，定于11月19日刊登并于刊登日生效；11月17日尚未生效",
       "source_urls": [
         "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology",
         "https://public-inspection.federalregister.gov/2026-23529.pdf"
       ],
-      "verified": true,
       "importance": 5
     },
     {
       "id": "eu-cold-rolled-final",
       "date": "2026-11-16",
       "jurisdiction": "欧盟",
-      "title": "欧盟对印度、日本、台湾、土耳其、越南冷轧钢产品征收最终反倾销税",
-      "stage": "2026/2547号实施条例，11月16日公布，11月17日生效",
+      "title": "欧盟对印度、日本、台湾、土耳其及越南冷轧扁平钢材征收最终反倾销税",
+      "stage": "EU 2026/2547正式实施条例，11月16日公布、11月17日生效",
       "source_urls": [
         "https://eur-lex.europa.eu/eli/reg_impl/2026/2547/oj",
         "https://policy.trade.ec.europa.eu/news/commission-imposes-anti-dumping-duties-certain-cold-rolled-flat-steel-products-2026-11-16_en"
       ],
-      "verified": true,
       "importance": 5
+    },
+    {
+      "id": "au-timber-initiation",
+      "date": "2026-11-16",
+      "jurisdiction": "澳大利亚",
+      "title": "澳大利亚对中国结构木材启动反倾销和反补贴调查",
+      "stage": "已立案，尚未征收新税；出口商答卷12月23日截止",
+      "source_urls": [
+        "https://www.industry.gov.au/australian-trade-remedies-commission/current-cases-and-electronic-public-record-epr/724"
+      ],
+      "importance": 5
+    },
+    {
+      "id": "us-cabinets-cvd-final",
+      "date": "2026-11-16",
+      "jurisdiction": "美国",
+      "title": "美国中国木制橱柜及浴室柜反补贴复审终裁，部分企业113.08%",
+      "stage": "最终复审；与11月12日反倾销终裁独立",
+      "source_urls": [
+        "https://www.federalregister.gov/d/2026-23264"
+      ],
+      "importance": 5
+    },
+    {
+      "id": "us-mexico-rebar-final",
+      "date": "2026-11-16",
+      "jurisdiction": "美国",
+      "title": "美国对墨西哥钢筋反倾销复审终裁，Deacero集团11.38%",
+      "stage": "最终复审，11月16日起适用新保证金",
+      "source_urls": [
+        "https://www.federalregister.gov/d/2026-23277"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "us-india-rod-final",
+      "date": "2026-11-16",
+      "jurisdiction": "美国",
+      "title": "美国印度碳钢和合金钢螺纹杆反倾销终裁，相关出口商0%及1.69%",
+      "stage": "复审终裁，11月16日起适用新保证金",
+      "source_urls": [
+        "https://www.federalregister.gov/d/2026-23272"
+      ],
+      "importance": 4
     },
     {
       "id": "uk-maritime-fuel-consult",
       "date": "2026-11-16",
       "jurisdiction": "英国",
-      "title": "英国征询海运燃料温室气体监管方案意见",
-      "stage": "征求意见，未生效",
+      "title": "英国就海运燃料温室气体强度制度启动咨询，拟2030年实施",
+      "stage": "政策咨询，非现行新合规义务；2027年2月22日23:59截止",
       "source_urls": [
         "https://www.gov.uk/government/consultations/uk-maritime-fuel-regulation-reducing-shipping-sector-emissions/setting-the-direction-of-a-uk-maritime-fuel-regulation"
       ],
-      "verified": true,
       "importance": 3
     }
   ],
   "coverage": {
-    "US": "BIS 11月16日新临时最终规则、联邦公报11月16日刊载材料已核对；继续检查其他机构",
-    "EU": "欧委会11月16日冷轧钢终裁和EUR-Lex Regulation 2026/2547已核对",
-    "UK": "ECJU、制裁、贸易救济及11月16日海运燃料规则咨询已巡视",
-    "Japan": "待复核官方日文公告",
-    "Korea": "待复核官方韩文公告",
-    "India": "待复核DGTR",
-    "Canada": "待复核CBSA",
-    "Australia": "待复核ADC"
+    "US": "11月16日Federal Register商务部双反公告、BIS先进算力临时最终规则、OFAC及USITC公告已核对；对照11月16日069期去重",
+    "EU": "EUR-Lex及欧委会DG TRADE 11月16日冷轧钢终裁公告已核对",
+    "UK": "ECJU战略出口管制、TRA公开案件清单和交通部11月16日海运燃料征求意见已核对；TRA玻璃容器案仅新增材料上传、未作初终裁",
+    "Japan": "经产省11月公告、贸易管理及2026年镍系不锈钢案件巡视；近72小时未检出足够重大且可核验的新决定",
+    "Korea": "产业通商资源部英文与韩文官方信息、海关进出口管制资讯巡视；无高质量的11月16日新增重大监管动作",
+    "India": "DGTR官网What's New核对；最近11月13日电子邮箱资料更新不作为重大贸易决定，近期案件多已在既往期收录",
+    "Canada": "CBSA SIMA贸易救济及政府制裁公告巡视；纸板杯案件的12月30日延期已在11月11日收录，不重复",
+    "Australia": "ATRC案件索引和724号中国结构木材案11月16日立案；反倾销审查小组铁路车轮复核案件信息巡视，后者原页无法独立打开故不收录",
+    "Other": "墨西哥钢筋11月16日复审终裁核对，印度输美螺纹钢杆11月16日复审终裁核对"
   },
   "last_error": null,
   "next_actions": [
-    "继续完成日本、韩国、印度、加拿大、澳大利亚巡视和美欧其他监管事项",
-    "终选约8—10条并完成去重和逐链核验",
-    "终扫再设publication_ready=true并写入发布"
-  ]
+    "最后终扫；生成完整HTML",
+    "将publication_ready更新为true并回读",
+    "正式提交正文、首页、归档",
+    "核对最终提交Pages和三个公开页面"
+  ],
+  "deduplication": {
+    "checked_issues": [
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12",
+      "2026-11-13",
+      "2026-11-14",
+      "2026-11-15",
+      "2026-11-16"
+    ],
+    "result": "七项均有11月16日新规则、正式立案、终裁或新征询等独立事件；木制橱柜CVD与此前木柜AD为不同程序",
+    "duplicates_excluded": [
+      "11月16日金属储物柜、豌豆蛋白、金刚石锯片、墨西哥罐车等069期事项",
+      "11月13日木制橱柜反倾销终裁"
+    ]
+  }
 }
