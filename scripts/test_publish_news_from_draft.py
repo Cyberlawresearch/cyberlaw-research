@@ -149,7 +149,18 @@ def main():
             assert str(home.select_one(f'[data-daily-column="{name}"]')) == str(
                 before.select_one(f'[data-daily-column="{name}"]')
             ), f"Other column changed: {name}"
-        assert home.select_one('[data-daily-column="brief"]')["href"] == latest["pages"]["brief"]
+        current_brief = home.select_one('[data-daily-column="brief"]')
+        assert current_brief is not None
+        if current_brief.name == "a":
+            assert current_brief["href"] == latest["pages"]["brief"]
+        else:
+            assert current_brief["data-page"] == latest["pages"]["brief"]
+            assert current_brief.select_one("h2 a")["href"] == latest["pages"]["brief"]
+            assert current_brief.select_one(".brief-home-more")["href"] == latest["pages"]["brief"]
+            assert current_brief.select_one(".brief-home-lead h3 a")["href"] == latest["pages"]["brief"] + "#research-item-1"
+            headline_links = current_brief.select(".brief-home-link")
+            assert len(headline_links) == 6
+            assert all(link["href"].startswith(latest["pages"]["brief"] + "#research-item-") for link in headline_links)
         history = BeautifulSoup((root / "briefs.html").read_text(encoding="utf-8"), "html.parser")
         assert history.select_one(".issue-row .issue-action")["href"] == latest["pages"]["brief"]
 
