@@ -85,7 +85,10 @@ def validate(m):
     cards=home.select('.portal-card[data-daily-column]')
     assert len(cards)==4
     assert [a.get('data-daily-column') for a in cards]==KEYS
-    assert [a.get('href') for a in cards]==paths
+    assert [(a.get('data-page') if a.name != 'a' else a.get('href')) for a in cards]==paths
+    if cards[0].name != 'a':
+        assert cards[0].select_one('h2 a[href="'+paths[0]+'"]') is not None
+        assert cards[0].select_one('.brief-home-more[href="'+paths[0]+'"]') is not None
     stamps=[card.select_one('.portal-latest small') for card in cards]
     assert all(stamps)
     for key,node in zip(KEYS,stamps):assert m['page_dates'][key].replace('-','.') in node.get_text(),key

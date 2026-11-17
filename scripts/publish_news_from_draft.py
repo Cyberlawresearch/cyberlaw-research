@@ -251,10 +251,59 @@ def update_entrances(root, day, items, page, current):
     index = soup(root / "index.html")
     brief = text(index.select_one('.portal-card[data-daily-column="brief"]'),
                  "home news card")
-    brief["href"] = page
+    if brief.name == "a":
+        brief["href"] = page
+    else:
+        brief["data-page"] = page
     text(brief.select_one(".portal-latest small"), "home news date").string = display + " · 最新一期"
     titles = [item["title"].strip()[:22] for item in items[:4]]
     text(brief.select_one(".portal-latest strong"), "home news summary").string = f'{count}条｜' + "；".join(titles)
+    if brief.name != "a":
+        tm = text(brief.select_one(".portal-card-head time"), "home brief date")
+        tm.string = display
+        tm["datetime"] = day
+        domestic = [x for x in items if x.get("domestic") is True]
+        foreign = [x for x in items if x.get("domestic") is not True]
+        text(brief.select_one(".brief-home-heading p span"), "home count").string = f"{count}条新闻"
+        text(brief.select_one(".brief-home-count"), "home regional count").string = f"国内{len(domestic)} · 国际{len(foreign)}"
+        lead = items[0]
+        feature = text(brief.select_one(".brief-home-lead"), "home feature")
+        lead_link = text(feature.select_one("h3 a"), "feature link")
+        lead_link["href"] = page + "#" + lead["id"]
+        lead_link.string = lead["title"]
+        text(feature.select_one(".brief-lead-summary"), "feature summary").string = lead["fact"][:140].rstrip("，。") + ("……" if len(lead["fact"]) > 140 else "")
+        text(feature.select_one(".brief-lead-label"), "feature region").string = "本期要闻 / " + lead["jurisdiction"]
+        art = feature.select_one(".brief-art-link")
+        if art is not None:
+            art["href"] = page + "#" + lead["id"]
+        groups = brief.select(".brief-headlines-group")
+        demand(len(groups) == 2, "Missing domestic or international group")
+        for block, subset in zip(groups, (domestic, foreign)):
+            go = text(block.select_one(".brief-group-heading a"), "brief group link")
+            go["href"] = page
+            go.string = f"全部{len(subset)}条 →"
+            ul = text(block.select_one("ul.brief-home-headlines"), "brief group list")
+            ul.clear()
+            for item in subset[:3]:
+                li = new_child(index, ul, "li")
+                a = new_child(index, li, "a", css_class="brief-home-link", href=page+"#"+item["id"])
+                new_child(index, a, "h4", item["title"])
+                p = new_child(index, a, "p", css_class="brief-home-meta")
+                new_child(index, p, "span", item["jurisdiction"])
+                time = new_child(index, p, "time", item["date"])
+                time["datetime"] = item["date"]
+        more = text(brief.select_one(".brief-home-more"), "complete brief link")
+        more["href"] = page
+        ms = more.select_one("span")
+        if ms is not None:
+            ms.string = f"阅读完整简报 · 共{count}条"
+        summary_date = index.select_one(".edition-summary time")
+        if summary_date is not None:
+            summary_date["datetime"] = day
+            summary_date.string = display
+        summary = index.select_one(".edition-summary span:last-child")
+        if summary is not None:
+            summary.string = f"新闻{count}条 · 精读1篇 · 经典1部 · 新作{current.get('newworks_count', 3)}项"
     set_brief_nav(index, page)
     save(root / "index.html", str(index))
 
