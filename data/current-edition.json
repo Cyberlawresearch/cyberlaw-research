@@ -1,17 +1,17 @@
 {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "pages": {
-    "brief": "articles/2026-11-16-tech-law-brief.html",
+    "brief": "articles/2026-11-17-tech-law-brief.html",
     "paper": "articles/2026-11-16-bradford-brussels-effect.html",
     "classic": "articles/2026-11-16-more-utopia.html",
     "newworks": "articles/2026-11-15-new-works.html"
   },
   "page_dates": {
-    "brief": "2026-11-16",
+    "brief": "2026-11-17",
     "paper": "2026-11-16",
     "classic": "2026-11-16",
     "newworks": "2026-11-15"
   },
-  "news_count": 18,
+  "news_count": 21,
   "newworks_count": 3
 }
