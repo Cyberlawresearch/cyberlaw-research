@@ -255,6 +255,8 @@ def update_entrances(root, day, items, page, current):
         brief["href"] = page
     else:
         brief["data-page"] = page
+        title_link = text(brief.select_one("h2 a"), "editorial brief title link")
+        title_link["href"] = page
     text(brief.select_one(".portal-latest small"), "home news date").string = display + " · 最新一期"
     titles = [item["title"].strip()[:22] for item in items[:4]]
     text(brief.select_one(".portal-latest strong"), "home news summary").string = f'{count}条｜' + "；".join(titles)
