@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-17",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-17-dewey-the-public-and-its-problems.html",
+  "target_path": "articles/2026-11-17-dewey-the-public-and-its-problems.html",
+  "book": {
+    "author": "John Dewey（约翰·杜威）",
+    "original_title": "The Public and Its Problems",
+    "publisher": "New York: Henry Holt and Company",
+    "year": "1927",
+    "edition": "1927年初版；本期依据Standard Ebooks所刊完整六章英文正文及Project Gutenberg电子文本核读；Alan Swallow后出重印本不作为1927年初版"
+  },
+  "source_urls": [
+    "https://github.com/standardebooks/john-dewey_the-public-and-its-problems/tree/master/src/epub/text",
+    "https://standardebooks.org/ebooks/john-dewey/the-public-and-its-problems",
+    "https://www.gutenberg.org/ebooks/71000",
+    "https://openlibrary.org/works/OL111348W/The_public_and_its_problems",
+    "https://www.gutenberg.org/ebooks/76966",
+    "https://doi.org/10.1080/00335630.2024.2319119",
+    "https://plato.stanford.edu/entries/dewey-political/"
+  ],
+  "original_verification": "完整读取并按章节系统核对Standard Ebooks公开源库六章英文原书正文，六章依次为Search for the Public、Discovery of the State、The Democratic State、The Eclipse of the Public、Search for the Great Community、The Problem of Method；对各章起点、概念转换、重要例证、结尾与段落体系逐章核对。对照Project Gutenberg目录和原书书目信息、Open Library所载初版出版信息，明确区别1927年首版、Alan Swallow重印和电子整理说明。",
+  "critics": [
+    {
+      "name": "Walter Lippmann（沃尔特·李普曼）",
+      "work": "The Phantom Public (1925), Harcourt, Brace and Company",
+      "url": "https://www.gutenberg.org/ebooks/76966",
+      "checked": "直接前置批评，1925年成书先于杜威1927年本书，本期区分回应关系与后出评论"
+    },
+    {
+      "name": "Ned O’Gorman",
+      "work": "How liberals lost the public: Walter Lippmann, John Dewey, and the critique of traditional democratic theory, Quarterly Journal of Speech 110(3), 2024, pp.419–441",
+      "url": "https://doi.org/10.1080/00335630.2024.2319119",
+      "checked": "核对2024年研究的明确批评：杜威与李普曼同样削弱统一公众观，知识方法可能取代政治权力问题；作为后世观点而非原作者论断"
+    }
+  ],
+  "dedup_checked": [
+    "main classics.html全部历史条目，未含John Dewey及The Public and Its Problems",
+    "main classics-history.html第15—35期历史完整索引，未含此书",
+    "main data/books.json存量书目，未含此书",
+    "2026-11-17当天正文与classic核验记录在初检时不存在"
+  ],
+  "duplicate_found": false,
+  "sections": 101,
+  "prose_length": 12064,
+  "checked_at": "2026-11-17",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
