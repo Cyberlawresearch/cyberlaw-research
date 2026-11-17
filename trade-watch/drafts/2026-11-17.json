@@ -4,13 +4,60 @@
   "base_main_sha": "45f8ac82f897c5b94eb687f5b70794b7da0b55a9",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "us-bis-remote-compute",
+      "date": "2026-11-16",
+      "jurisdiction": "美国",
+      "title": "BIS出台高级半导体境外数据中心远程算力出口管制临时最终规则",
+      "stage": "已公布临时最终规则，联邦公报预计11月19日刊登且于刊登日生效（截至本次查验尚未生效）",
+      "source_urls": [
+        "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology",
+        "https://public-inspection.federalregister.gov/2026-23529.pdf"
+      ],
+      "verified": true,
+      "importance": 5
+    },
+    {
+      "id": "eu-cold-rolled-final",
+      "date": "2026-11-16",
+      "jurisdiction": "欧盟",
+      "title": "欧盟对印度、日本、台湾、土耳其、越南冷轧钢产品征收最终反倾销税",
+      "stage": "2026/2547号实施条例，11月16日公布，11月17日生效",
+      "source_urls": [
+        "https://eur-lex.europa.eu/eli/reg_impl/2026/2547/oj",
+        "https://policy.trade.ec.europa.eu/news/commission-imposes-anti-dumping-duties-certain-cold-rolled-flat-steel-products-2026-11-16_en"
+      ],
+      "verified": true,
+      "importance": 5
+    },
+    {
+      "id": "uk-maritime-fuel-consult",
+      "date": "2026-11-16",
+      "jurisdiction": "英国",
+      "title": "英国征询海运燃料温室气体监管方案意见",
+      "stage": "征求意见，未生效",
+      "source_urls": [
+        "https://www.gov.uk/government/consultations/uk-maritime-fuel-regulation-reducing-shipping-sector-emissions/setting-the-direction-of-a-uk-maritime-fuel-regulation"
+      ],
+      "verified": true,
+      "importance": 3
+    }
+  ],
+  "coverage": {
+    "US": "BIS 11月16日新临时最终规则、联邦公报11月16日刊载材料已核对；继续检查其他机构",
+    "EU": "欧委会11月16日冷轧钢终裁和EUR-Lex Regulation 2026/2547已核对",
+    "UK": "ECJU、制裁、贸易救济及11月16日海运燃料规则咨询已巡视",
+    "Japan": "待复核官方日文公告",
+    "Korea": "待复核官方韩文公告",
+    "India": "待复核DGTR",
+    "Canada": "待复核CBSA",
+    "Australia": "待复核ADC"
+  },
   "last_error": null,
   "next_actions": [
-    "检索各必查法域和原始监管公告",
-    "与最近七期逐条去重",
-    "逐一核验来源链接、法律阶段及中国企业影响",
-    "终扫与发布验收"
+    "继续完成日本、韩国、印度、加拿大、澳大利亚巡视和美欧其他监管事项",
+    "终选约8—10条并完成去重和逐链核验",
+    "终扫再设publication_ready=true并写入发布"
   ]
 }
