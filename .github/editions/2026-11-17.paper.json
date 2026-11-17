@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-17",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-17-calo-robotics-lessons-cyberlaw.html",
+  "selection": "Robotics and the Lessons of Cyberlaw",
+  "bibliography": {
+    "type": "article",
+    "author": "Ryan Calo",
+    "originalTitle": "Robotics and the Lessons of Cyberlaw",
+    "journal": "California Law Review",
+    "year": "2015",
+    "volume": "103",
+    "issue": "3",
+    "pages": "513–563",
+    "doi": "",
+    "url": "https://digitalcommons.law.uw.edu/faculty-articles/23/",
+    "cnTitle": "当机器走进现实世界：机器人法为什么不能照搬网络法"
+  },
+  "versions": {
+    "full_text": "Read the complete 2015 author-archived PDF carrying published California Law Review pagination 513–563, introduction, Parts I–III, conclusion and notes. Washington University cover page is an archive wrapper, not a separate journal issue.",
+    "publication": "Formal journal article California Law Review 103(3) (2015), pp. 513–563; SSRN Legal Studies Research Paper No. 2014-08 distinguished from formal journal version."
+  },
+  "sources": [
+    "https://techpolicylab.uw.edu/wp-content/uploads/2018/06/Robotics-Lessons-Cyberlaw-Calo.pdf",
+    "https://digitalcommons.law.uw.edu/faculty-articles/23/",
+    "https://www.jstor.org/stable/i24758480",
+    "https://www.californialawreview.org/online/the-path-of-robotics-law"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "history_scope": "Checked full papers.html (71 prior h3 entries including historical navigation heading) and papers-history-1.html (13 additional entries), comparing titles/author/versions. No Ryan Calo Robotics and the Lessons of Cyberlaw entry.",
+  "related_reading": [
+    "articles/2026-11-14-ayres-balkin-law-ai-risky-agents.html",
+    "articles/2026-08-31-lessig-law-of-the-horse.html"
+  ],
+  "timeline": null,
+  "body_length": 4395,
+  "checked_at": "2026-11-17",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  },
+  "last_error": null
+}
