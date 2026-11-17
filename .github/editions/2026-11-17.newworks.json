@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-17",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-17-new-works.html",
+  "page_blob_sha": "195949cc198cbd1c22d6dcc602a46ac1e09f8984",
+  "newworks_count": 3,
+  "checked_at": "2026-11-17T12:36:13.756Z",
+  "checks": {
+    "original_publisher_pages_opened": true,
+    "original_title_author_doi_verified": true,
+    "formal_publication_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "doi_title_author_version_repository_code_search": true,
+    "historical_indexes_checked": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html latest and historical issues index",
+      "new-works-history.html older index",
+      "GitHub main repository-wide code search for original titles, authors, article names/variants and publisher identifiers, including indexed historical articles/ and new-works/"
+    ],
+    "fields": [
+      "DOI (not listed on publisher pages)",
+      "exact original English title",
+      "author",
+      "published peer-reviewed journal version"
+    ],
+    "matches_found": 0,
+    "note": "All three 2026-09-29 European Journal of Law and Technology publication pages were opened and their titles, authors, abstracts, formal issue and year checked. Publisher pages do not list DOI or pagination; no values inferred. Repository searches did not find prior newworks inclusion. No broad-topic related links or timelines added."
+  },
+  "items": [
+    {
+      "cn_title": "《数据法》强制共享数据，又为何限制开发竞争产品",
+      "author": "Sascha Hurst",
+      "original_title": "Competing with Data: Challenges for the Non-Compete Obligations under the Data Act",
+      "journal": "European Journal of Law and Technology",
+      "publisher": "European Journal of Law and Technology",
+      "year": 2026,
+      "publication_date": "2026-09-29",
+      "volume": "17",
+      "issue": "2",
+      "pages": null,
+      "article_number": null,
+      "doi": null,
+      "publisher_page": "https://ejlt.org/index.php/ejlt/article/view/1131",
+      "version": "Peer-reviewed article published on journal's official page in Vol. 17 No. 2 (2026); DOI and page range not specified on original publication page",
+      "type": "article"
+    },
+    {
+      "cn_title": "以国家安全之名扩大AI警务，能否绕开欧盟数据保护法",
+      "author": "Markus Naarttijärvi",
+      "original_title": "EU Law, Artificial Intelligence and National Security Policing: Where Concept Creep meets Competence Creep",
+      "journal": "European Journal of Law and Technology",
+      "publisher": "European Journal of Law and Technology",
+      "year": 2026,
+      "publication_date": "2026-09-29",
+      "volume": "17",
+      "issue": "2",
+      "pages": null,
+      "article_number": null,
+      "doi": null,
+      "publisher_page": "https://ejlt.org/index.php/ejlt/article/view/1092",
+      "version": "Peer-reviewed article published on journal's official page in Vol. 17 No. 2 (2026); DOI and page range not specified on original publication page",
+      "type": "article"
+    },
+    {
+      "cn_title": "女性健康应用数据为何可能落在GDPR敏感数据保护之外",
+      "author": "Aniketh Rao",
+      "original_title": "Special Category Data in EU Data Protection Law and FemTech Data: A Substantive Equality Perspective on the Right to Data Protection",
+      "journal": "European Journal of Law and Technology",
+      "publisher": "European Journal of Law and Technology",
+      "year": 2026,
+      "publication_date": "2026-09-29",
+      "volume": "17",
+      "issue": "2",
+      "pages": null,
+      "article_number": null,
+      "doi": null,
+      "publisher_page": "https://ejlt.org/index.php/ejlt/article/view/1055",
+      "version": "Peer-reviewed article published on journal's official page in Vol. 17 No. 2 (2026); DOI and page range not specified on original publication page",
+      "type": "article"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "dcc2bbe22ebd3ec9e5bbc823b5311f03e8ae3e99",
+    "last_complete_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": null
+  }
+}
