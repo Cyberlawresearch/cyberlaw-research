@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-18",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-18-spencer-social-statics.html",
+  "target_path": "articles/2026-11-18-spencer-social-statics.html",
+  "book": {
+    "author": "Herbert Spencer（赫伯特·斯宾塞）",
+    "original_title": "Social Statics: or, The Conditions Essential to Happiness Specified, and the First of Them Developed",
+    "publisher": "London: John Chapman",
+    "year": "1851",
+    "edition": "1851年伦敦John Chapman初版；依据Online Library of Liberty所刊1851年完整原版英文正文系统核读；不混同1892年修订缩订本"
+  },
+  "source_urls": [
+    "https://dev.oll.libertyfund.org/titles/spencer-social-statics-1851/read",
+    "https://oll.libertyfund.org/titles/spencer-social-statics-1851",
+    "https://books.google.com/books?id=Lbstq7tsuDMC",
+    "https://www.gutenberg.org/cache/epub/12506/pg12506.html",
+    "https://supreme.justia.com/cases/federal/us/198/45/",
+    "https://readingroo.ms/7/6/8/8/76881/76881-h/76881-h.htm"
+  ],
+  "original_verification": "按Online Library of Liberty刊载的1851年初版英文全文，系统核对导论、四部分三十二章的目录、主要命题、各章代表性原文段落和相互论证关系，并区分初版正文、后出修订缩订本和附属编辑内容；未声称逐字校勘不同实体印次。",
+  "critics": [
+    {
+      "name": "Oliver Wendell Holmes Jr.（小奥利弗·温德尔·霍姆斯）",
+      "work": "Lochner v. New York, 198 U.S. 45 (1905), Holmes dissent",
+      "url": "https://supreme.justia.com/cases/federal/us/198/45/",
+      "checked": "反对意见明确点名斯宾塞的Social Statics，质疑把特定经济理论直接当作宪法要求。"
+    },
+    {
+      "name": "Thomas Henry Huxley（托马斯·亨利·赫胥黎）",
+      "work": "Administrative Nihilism (1871)",
+      "url": "https://www.gutenberg.org/cache/epub/12506/pg12506.html",
+      "checked": "对斯宾塞的有限国家理论及公共教育问题提出实质批评，非对此书逐章评注。"
+    },
+    {
+      "name": "F. M. H.（公开书评仅署首字母）",
+      "work": "The Monist, vol. III (1892–1893), review of the abridged 1892 Social Statics",
+      "url": "https://readingroo.ms/7/6/8/8/76881/76881-h/76881-h.htm",
+      "checked": "同时代书评比较了删节本与早期观点在土地、妇女政治权利及国家参与方面的变化，未臆测作者全名。"
+    }
+  ],
+  "dedup_checked": [
+    "main的classics.html全部历史经典条目：虽有Herbert Spencer《个人与国家》，但未收《社会静力学》",
+    "main的classics-history.html既有第15—35期历史索引无本书",
+    "main的data/books.json既有书目无本书",
+    "2026-11-18在初检时不存在classic核验记录，classics最新仍为2026-11-17"
+  ],
+  "duplicate_found": false,
+  "sections": 108,
+  "prose_length": 13164,
+  "checked_at": "2026-11-18",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
