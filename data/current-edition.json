@@ -1,17 +1,17 @@
 {
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "pages": {
-    "brief": "articles/2026-11-17-tech-law-brief.html",
+    "brief": "articles/2026-11-18-tech-law-brief.html",
     "paper": "articles/2026-11-17-calo-robotics-lessons-cyberlaw.html",
     "classic": "articles/2026-11-17-dewey-the-public-and-its-problems.html",
     "newworks": "articles/2026-11-17-new-works.html"
   },
   "page_dates": {
-    "brief": "2026-11-17",
+    "brief": "2026-11-18",
     "paper": "2026-11-17",
     "classic": "2026-11-17",
     "newworks": "2026-11-17"
   },
-  "news_count": 21,
+  "news_count": 19,
   "newworks_count": 3
 }
