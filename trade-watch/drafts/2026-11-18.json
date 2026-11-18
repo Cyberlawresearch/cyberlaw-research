@@ -2,7 +2,7 @@
   "date": "2026-11-18",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "dc2295b05e8de5d60d08a130e85d1d203f739b4d",
-  "phase": "main_written_pages_in_progress",
+  "phase": "published_public_pages_verified_source_diagnostics_incomplete",
   "publication_ready": true,
   "items": [
     {
@@ -119,10 +119,18 @@
     "Australia": "澳贸易救济委员会中国蒸压加气混凝土双反725号16日立案、715号HSS加速复审部长期限延至12月16日、EX0106热轧钢卷豁免调查终止已核；691号铝门窗EPR只是利益相关方材料上传，不作为新裁决",
     "Other": "美泰互惠贸易协定谈判实质完成，白宫联合声明已打开；检查东盟和大洋洲相关供应链动态"
   },
-  "last_error": null,
+  "last_error": {
+    "stage": "external_source_automated_diagnostics",
+    "action": "GitHub Actions Trade Watch source diagnostics",
+    "target": "run 44215422132 / job 134503931368",
+    "result": "cancelled",
+    "detail": "Job verify published Trade Watch pages and source links cancelled at 2026-11-18T01:31:35Z after 8-minute timeout. No completed per-URL diagnostic report was written; do not infer any broken source URL.",
+    "attempts": 1,
+    "at": "2026-11-18T01:31:35Z"
+  },
   "next_actions": [
-    "确认最新主分支 fff2f8b4 对应 Pages 工作流执行结果",
-    "验收九条正文、首页、归档及12条具体来源"
+    "三份读者页面已在最终 main 提交对应的 Pages 上线并经发布守护完整核验；无需重复写入",
+    "来源诊断工作流运行 44215422132 在约8分钟后取消，待有可行的独立/后续专项 URL 检查时补全12条来源的自动通过记录；本期完整来源及已核对官方原文保留"
   ],
   "deduplication": {
     "checked_issues": [
@@ -329,7 +337,19 @@
     "archive_entries": 71,
     "all_three_match": true
   },
-  "pages_run_id": null,
-  "pages_status": "new deploy queued",
-  "published": false
+  "pages_run_id": 44214878627,
+  "pages_status": "success (matched final main commit)",
+  "published": true,
+  "public_validation": {
+    "commit": "fff2f8b431beedbf6f449081d57b41b04326052f",
+    "pages_workflow_run_id": 44214878627,
+    "pages_workflow_conclusion": "success",
+    "publication_guard_run_id": 44215422168,
+    "guard_result": "repository_ok=true, public_ok=true; 3 public pages ok; HTTP 200",
+    "issue_count": 9,
+    "source_links_in_html": 12,
+    "source_checker_run_id": 44215422132,
+    "source_checker_result": "cancelled: 8-minute job timeout during source verification; source diagnostic did not complete",
+    "checked_at": "2026-11-18T09:32:00+08:00"
+  }
 }
