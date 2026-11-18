@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-18",
+  "timezone": "Asia/Shanghai",
+  "base_main_sha": "dc2295b05e8de5d60d08a130e85d1d203f739b4d",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "核对近七期事件级去重与各法域最近72小时权威公告",
+    "核验来源后分阶段保存研究断点",
+    "完成页面写入及本次提交的上线验收"
+  ]
+}
