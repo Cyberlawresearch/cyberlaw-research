@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-18",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-18-veale-borgesius-demystifying-draft-ai-act.html",
+  "selection": "Demystifying the Draft EU Artificial Intelligence Act",
+  "bibliography": {
+    "type": "article",
+    "author": "Michael Veale; Frederik Zuiderveen Borgesius",
+    "originalTitle": "Demystifying the Draft EU Artificial Intelligence Act: Analysing the good, the bad, and the unclear elements of the proposed approach",
+    "journal": "Computer Law Review International",
+    "year": "2021",
+    "volume": "22",
+    "issue": "4",
+    "pages": "97–112",
+    "doi": "10.9785/cri-2021-220402",
+    "url": "https://discovery.ucl.ac.uk/id/eprint/10131593/",
+    "cnTitle": "欧盟人工智能法为何不能只照搬产品安全监管：风险分级、技术标准与权利救济"
+  },
+  "versions": {
+    "full_text": "Read the full 16-page 2021 formally typeset journal PDF (Computer Law Review International 22(4), 97–112), introduction, sections I–VII, substantive arguments, conclusion, table and footnotes; UCL Discovery open access.",
+    "publication": "Journal version published in August 2021, distinguished from OSF preprint (DOI 10.31235/osf.io/38p5f) and from the later adopted EU AI Act Regulation (EU) 2024/1689."
+  },
+  "sources": [
+    "https://discovery.ucl.ac.uk/id/eprint/10131593/1/Veale_10.9785_cri-2021-220402.pdf",
+    "https://discovery.ucl.ac.uk/id/eprint/10131593/",
+    "https://www.degruyterbrill.com/de/document/doi/10.9785/cri-2021-220402/html",
+    "https://eur-lex.europa.eu/eli/reg/2024/1689",
+    "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-113"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "history_scope": "Checked complete papers.html (72 issue rows including history navigation) and papers-history-1.html (13 issue rows); neither lists Veale and Zuiderveen Borgesius (2021) Demystifying the Draft EU Artificial Intelligence Act. Compared author-title-journal and recognized published/preprint versions.",
+  "related_reading": [
+    "articles/2026-11-13-luguri-strahilevitz-shining-a-light-on-dark-patterns.html",
+    "articles/2026-10-17-selbst-boyd-fairness-abstraction.html"
+  ],
+  "timeline": null,
+  "body_length": 6086,
+  "checked_at": "2026-11-18",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  },
+  "last_error": null
+}
