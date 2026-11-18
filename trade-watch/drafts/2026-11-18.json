@@ -2,7 +2,7 @@
   "date": "2026-11-18",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "dc2295b05e8de5d60d08a130e85d1d203f739b4d",
-  "phase": "publication_ready",
+  "phase": "main_written_pages_in_progress",
   "publication_ready": true,
   "items": [
     {
@@ -121,8 +121,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "写入main第071期正文及首页、归档",
-    "回读main三文件并验证该最终提交对应的Pages与来源"
+    "核验Pages运行44213929573最终结论应匹配主分支90febc98",
+    "检验公开网页正文九条、首页最新入口、归档首项与12个来源链接",
+    "记录上线验证结果"
   ],
   "deduplication": {
     "checked_issues": [
@@ -318,5 +319,18 @@
     "https://www.industry.gov.au/sites/default/files/atrc/public-record/2026-11/715-8-trn-2026-167-notice-for-longer-period-of-time-for-the-declaration-of-the-minister.pdf",
     "https://www.industry.gov.au/sites/default/files/atrc/public-record/2026-11/ex0106-4-notice-trn-2026-164-cessation-of-exemption-inquiry.pdf"
   ],
-  "final_sweep": "11月18日本轮研究完成八个必查法域及东盟重要经济体巡视、最近7期去重、9条具体公告逐条打开核验；2份印度、3份澳大利亚及英国制裁PDF截图核对；欧盟MMM/Anglo新增客户警告区别于既有补救提案。"
+  "final_sweep": "11月18日本轮研究完成八个必查法域及东盟重要经济体巡视、最近7期去重、9条具体公告逐条打开核验；2份印度、3份澳大利亚及英国制裁PDF截图核对；欧盟MMM/Anglo新增客户警告区别于既有补救提案。",
+  "repo_commit": "90febc98fb24de2284b9b906cf8db725370c43c6",
+  "repo_readback": {
+    "issue": "trade-watch/issues/2026-11-18.html",
+    "index": "trade-watch/index.html",
+    "archive": "trade-watch/archive.html",
+    "count": 9,
+    "source_links": 12,
+    "archive_entries": 71,
+    "all_three_match": true
+  },
+  "pages_run_id": 44213929573,
+  "pages_status": "in_progress",
+  "published": false
 }
