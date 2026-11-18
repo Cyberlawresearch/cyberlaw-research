@@ -2,7 +2,7 @@
   "date": "2026-11-18",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "dc2295b05e8de5d60d08a130e85d1d203f739b4d",
-  "phase": "researching_verified_first_group",
+  "phase": "research_complete_pending_final_verification",
   "publication_ready": false,
   "items": [
     {
@@ -50,19 +50,88 @@
         "https://dgtr.gov.in/sites/default/files/2026-11/16-11-2026_Notice_Meeting%20on%20PUC%20and%20PCN_AD_OI_061_2026.pdf"
       ],
       "importance": 4
+    },
+    {
+      "id": "us-thailand-art-nov17",
+      "date": "2026-11-17",
+      "jurisdiction": "美国／泰国",
+      "title": "美泰宣布互惠贸易协定谈判实质完成，签署及生效尚待国内程序",
+      "stage": "11月17日签署联合声明，协定本身尚未签署且未生效",
+      "source_urls": [
+        "https://www.whitehouse.gov/briefings-statements/2026/11/joint-statement-on-an-agreement-between-the-united-states-of-america-and-the-kingdom-of-thailand-on-reciprocal-trade/"
+      ],
+      "importance": 5
+    },
+    {
+      "id": "au-aac-725",
+      "date": "2026-11-16",
+      "jurisdiction": "澳大利亚／中国",
+      "title": "澳大利亚正式立案调查中国产蒸压加气混凝土砌块和板材倾销及补贴",
+      "stage": "11月16日正式双反立案，出口商答卷12月23日、进口商分批答卷，尚无初裁",
+      "source_urls": [
+        "https://www.industry.gov.au/australian-trade-remedies-commission/current-cases-and-electronic-public-record-epr/725",
+        "https://www.industry.gov.au/sites/default/files/atrc/public-record/2026-11/725-3-notice-trn-2026-153-initiation-of-investigation-725.pdf"
+      ],
+      "importance": 5
+    },
+    {
+      "id": "au-hss-715-delay",
+      "date": "2026-11-17",
+      "jurisdiction": "澳大利亚／中国",
+      "title": "澳大利亚将中国空心结构型钢715号加速复审部长决定期延长至12月16日",
+      "stage": "11月16日签发、17日公开，部长决定期限由11月25日延后21天，尚无最终决定",
+      "source_urls": [
+        "https://www.industry.gov.au/sites/default/files/atrc/public-record/2026-11/715-8-trn-2026-167-notice-for-longer-period-of-time-for-the-declaration-of-the-minister.pdf"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "au-steel-ex0106",
+      "date": "2026-11-16",
+      "jurisdiction": "澳大利亚／中国",
+      "title": "澳大利亚终止对中国1800毫米宽热轧钢卷的单独反倾销豁免调查，现有宽度豁免继续适用",
+      "stage": "11月16日终止EX0106调查，不改变2026年9月已准许的宽度不少于1580毫米的豁免条件",
+      "source_urls": [
+        "https://www.industry.gov.au/sites/default/files/atrc/public-record/2026-11/ex0106-4-notice-trn-2026-164-cessation-of-exemption-inquiry.pdf"
+      ],
+      "importance": 4
     }
   ],
   "coverage": {
-    "US": "已巡视BIS 11月16日规则已入上一期；Federal Register/USITC近期贸易救济，继续核查17日新增",
-    "EU": "已核查欧委会贸易及EUR-Lex，17日暂无优先级足够的新决定，继续终扫",
-    "UK": "已核查11月17日FCDO正式新增9个制裁指定、英欧峰会SPS与CBAM谈判信号",
-    "India": "已核查11月17日DGTR中国产涤纶变形丝调查延期和叉车答卷程序变化",
-    "Canada": "已核查11月17日加总理办公室双边钢铝减免与32税目调整"
+    "US": "白宫11月17日正式确认美泰ART谈判实质完成但未正式生效；BIS此前11月16日远程算力规则已入070期；核查ITA联邦公告未见比既往更重要独立新决定",
+    "EU": "核查欧盟委员会DG TRADE和EUR-Lex 11月16—18日贸易救济/原产地和重要监管；11月16日冷轧钢终裁已入070期，排除重复，未发现新的高权重可核实决定",
+    "UK": "FCDO11月17日全球人权及国际人道法机制新增9项实体名单，正式公告及新闻稿核验；UK-EU尚待签署SPS安排11月15日已报道，不重复",
+    "India": "DGTR11月17日聚酯变形丝调查截止延期至2027年5月19日及中日叉车PUC/PCN会议12月1日、答卷期再定；两份正式通知已核",
+    "Canada": "加拿大总理11月17日公布对华钢铝32税目扩大及至2028年底延长贸易减免的双方安排，既有宽免截至2026年底和2027年起新安排分开",
+    "Japan": "经产省安全出口控制、JETRO近3日公告核对；11月17日区域石油储备合作提议尚未形成具体贸易管制，未收录",
+    "Korea": "产业通商资源部战略物项、海关近3日核查；未见独立权威重大措施；11月15日供应链宣言已入070期",
+    "Australia": "澳贸易救济委员会中国蒸压加气混凝土双反725号16日立案、715号HSS加速复审部长期限延至12月16日、EX0106热轧钢卷豁免调查终止已核；691号铝门窗EPR只是利益相关方材料上传，不作为新裁决",
+    "Other": "美泰互惠贸易协定谈判实质完成，白宫联合声明已打开；检查东盟和大洋洲相关供应链动态"
   },
   "last_error": null,
   "next_actions": [
-    "补充美欧日韩、澳大利亚及周边重点法域核查",
-    "分阶段保存候选并完成七期去重和来源核验",
-    "最终写入和Pages本次提交验收"
-  ]
+    "最终逐条复核8条来源真实可打开并对法律阶段与截止日复校",
+    "以最新main生成第071期正文、首页、归档并分路径提交",
+    "核对本次GitHub Pages提交与公开3页"
+  ],
+  "deduplication": {
+    "checked_issues": [
+      "2026-11-11",
+      "2026-11-12",
+      "2026-11-13",
+      "2026-11-14",
+      "2026-11-15",
+      "2026-11-16",
+      "2026-11-17"
+    ],
+    "duplicates_excluded": [
+      "美国BIS远程算力临时最终规则",
+      "欧盟五地冷轧钢反倾销终裁",
+      "澳大利亚结构木材724号调查",
+      "英国俄制裁11月12日新增20项",
+      "美日印韩十国Pax Silica宣言",
+      "英欧拟11月20日签署SPS安排"
+    ],
+    "result": "八项均为不同贸易安排、制裁指定、首次立案、程序关键期限变化或独立终止调查；未重复11月11—17已收录事项"
+  }
 }
