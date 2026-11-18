@@ -2,7 +2,7 @@
   "date": "2026-11-18",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "dc2295b05e8de5d60d08a130e85d1d203f739b4d",
-  "phase": "research_complete_pending_final_verification",
+  "phase": "final_verification",
   "publication_ready": false,
   "items": [
     {
@@ -26,6 +26,17 @@
       "source_urls": [
         "https://www.gov.uk/government/news/uk-cracks-down-on-companies-building-settlements-in-the-west-bank-and-groups-blocking-aid-access-into-gaza",
         "https://www.gov.uk/guidance/global-human-rights-and-international-humanitarian-law-list-of-designations-and-sanctions-notices"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "eu-mmg-anglo-nickel-closure-letter",
+      "date": "2026-11-17",
+      "jurisdiction": "欧盟／巴西／中国",
+      "title": "英美资源17日警告若欧盟否决MMG巴西镍矿收购将封存并拟关闭两座矿山",
+      "stage": "公司致欧洲主要铁镍客户的正式商业警告；欧委会并购审查未作出否决或批准",
+      "source_urls": [
+        "https://mining.com.au/anglo-warns-of-ferronickel-supply-disruption-if-mmg-deal-fails/"
       ],
       "importance": 4
     },
@@ -99,7 +110,7 @@
   ],
   "coverage": {
     "US": "白宫11月17日正式确认美泰ART谈判实质完成但未正式生效；BIS此前11月16日远程算力规则已入070期；核查ITA联邦公告未见比既往更重要独立新决定",
-    "EU": "核查欧盟委员会DG TRADE和EUR-Lex 11月16—18日贸易救济/原产地和重要监管；11月16日冷轧钢终裁已入070期，排除重复，未发现新的高权重可核实决定",
+    "EU": "核对欧委会竞争并购审查及Reuters 11月17日英美资源CEO致客户信：若欧委会否决MMG巴西铁镍资产收购则拟封存和关闭Barro Alto与Codemin，12月21日预计作决定；不将媒体所称可能否决写成正式否决；与11月12日既有救济修改构成独立新企业通知。11月16日冷轧钢终裁已在070期，不重复",
     "UK": "FCDO11月17日全球人权及国际人道法机制新增9项实体名单，正式公告及新闻稿核验；UK-EU尚待签署SPS安排11月15日已报道，不重复",
     "India": "DGTR11月17日聚酯变形丝调查截止延期至2027年5月19日及中日叉车PUC/PCN会议12月1日、答卷期再定；两份正式通知已核",
     "Canada": "加拿大总理11月17日公布对华钢铝32税目扩大及至2028年底延长贸易减免的双方安排，既有宽免截至2026年底和2027年起新安排分开",
@@ -110,9 +121,8 @@
   },
   "last_error": null,
   "next_actions": [
-    "最终逐条复核8条来源真实可打开并对法律阶段与截止日复校",
-    "以最新main生成第071期正文、首页、归档并分路径提交",
-    "核对本次GitHub Pages提交与公开3页"
+    "已完成各法域巡查和七期去重，继续逐条DOM目标链接验收",
+    "核对研究JSON及法律状态，设置publication_ready后写main"
   ],
   "deduplication": {
     "checked_issues": [
@@ -132,6 +142,6 @@
       "美日印韩十国Pax Silica宣言",
       "英欧拟11月20日签署SPS安排"
     ],
-    "result": "八项均为不同贸易安排、制裁指定、首次立案、程序关键期限变化或独立终止调查；未重复11月11—17已收录事项"
+    "result": "九项独立事项，MMG/Anglo内容为11月17日新致客户封矿警告，不重复11月12日补救承诺调整提案；其余新规则、重要日期变化、初始立案与终止调查与最近7期均有不同程序事实"
   }
 }
