@@ -2,14 +2,67 @@
   "date": "2026-11-18",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "dc2295b05e8de5d60d08a130e85d1d203f739b4d",
-  "phase": "researching",
+  "phase": "researching_verified_first_group",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "ca-cn-tariff-remission",
+      "date": "2026-11-17",
+      "jurisdiction": "加拿大／中国",
+      "title": "中加延长并扩大关税减免安排，加拿大将中国部分钢铝减免延至2028年底并新增32个税目",
+      "stage": "2026年11月17日双方公布具体新经贸安排；针对生效安排待有关执行细则确认",
+      "source_urls": [
+        "https://www.pm.gc.ca/en/news/news-releases/2026/11/17/prime-minister-carney-advances-canadas-strategic-partnership-china",
+        "https://www.pm.gc.ca/en/news/backgrounders/2026/11/17/prime-minister-carney-advances-canadas-strategic-partnership-china"
+      ],
+      "importance": 5
+    },
+    {
+      "id": "uk-israel-sanctions",
+      "date": "2026-11-17",
+      "jurisdiction": "英国",
+      "title": "英国新指定9个涉西岸建设及阻碍援助实体，实施资产冻结等限制",
+      "stage": "11月17日新增制裁指定已生效",
+      "source_urls": [
+        "https://www.gov.uk/government/news/uk-cracks-down-on-companies-building-settlements-in-the-west-bank-and-groups-blocking-aid-access-into-gaza",
+        "https://www.gov.uk/guidance/global-human-rights-and-international-humanitarian-law-list-of-designations-and-sanctions-notices"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "in-pty-deadline",
+      "date": "2026-11-17",
+      "jurisdiction": "印度",
+      "title": "印度将中国产涤纶变形丝反倾销调查完成期限延至2027年5月19日",
+      "stage": "法定调查完成期限已正式延长，未作终裁",
+      "source_urls": [
+        "https://dgtr.gov.in/sites/default/files/2026-11/PTY_Notice_Extension_of_Timeline_17.11.2026.pdf"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "in-forklift-extension",
+      "date": "2026-11-17",
+      "jurisdiction": "印度／中国、日本",
+      "title": "印度叉车反倾销调查就涉案产品与型号分类12月1日召开会议，答卷截止暂待另行通知",
+      "stage": "既有调查程序新会议及答卷期延长，未作终裁",
+      "source_urls": [
+        "https://dgtr.gov.in/sites/default/files/2026-11/16-11-2026_Notice_Meeting%20on%20PUC%20and%20PCN_AD_OI_061_2026.pdf"
+      ],
+      "importance": 4
+    }
+  ],
+  "coverage": {
+    "US": "已巡视BIS 11月16日规则已入上一期；Federal Register/USITC近期贸易救济，继续核查17日新增",
+    "EU": "已核查欧委会贸易及EUR-Lex，17日暂无优先级足够的新决定，继续终扫",
+    "UK": "已核查11月17日FCDO正式新增9个制裁指定、英欧峰会SPS与CBAM谈判信号",
+    "India": "已核查11月17日DGTR中国产涤纶变形丝调查延期和叉车答卷程序变化",
+    "Canada": "已核查11月17日加总理办公室双边钢铝减免与32税目调整"
+  },
   "last_error": null,
   "next_actions": [
-    "核对近七期事件级去重与各法域最近72小时权威公告",
-    "核验来源后分阶段保存研究断点",
-    "完成页面写入及本次提交的上线验收"
+    "补充美欧日韩、澳大利亚及周边重点法域核查",
+    "分阶段保存候选并完成七期去重和来源核验",
+    "最终写入和Pages本次提交验收"
   ]
 }
