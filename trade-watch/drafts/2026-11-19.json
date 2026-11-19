@@ -3,13 +3,46 @@
   "base_main_sha": "6b2a066b091dd1741d26856943143d9638795600",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "us-ofac-gold-1118",
+      "date": "2026-11-18",
+      "jurisdiction": "美国",
+      "authority": "OFAC",
+      "stage": "已生效制裁名单指定",
+      "headline": "OFAC新增3名个人及3个实体制裁，涵盖黎巴嫩及土耳其黄金贸易网络",
+      "source": "https://ofac.treasury.gov/recent-actions/20261118",
+      "status": "verified"
+    },
+    {
+      "id": "us-cpsc-button-1118",
+      "date": "2026-11-18",
+      "jurisdiction": "美国",
+      "authority": "CPSC",
+      "stage": "直接最终规则，拟2027-02-13生效，2026-12-18重要反对意见截止",
+      "headline": "钮扣电池及含此类电池消费品强制标准换版为ANSI/UL 4200A-2026",
+      "source": "https://www.federalregister.gov/d/2026-23435",
+      "status": "verified via published mirrored Federal Register text; official URL browser inaccessible"
+    },
+    {
+      "id": "uk-india-whisky-1118",
+      "date": "2026-11-18",
+      "jurisdiction": "英国／印度",
+      "authority": "英国政府及印度海关",
+      "stage": "争议协调和政策表态，非新关税法令",
+      "headline": "英国政府11月18日确认紧急交涉印度散装威士忌归类及关税问题",
+      "source": "https://www.reuters.com/world/uk/uk-says-ministers-urgently-working-with-india-tariff-dispute-scotch-whisky-2026-11-18/",
+      "status": "candidate (event from 11/14 edition requires new action distinction)"
+    }
+  ],
+  "coverage": {
+    "US": "OFAC 11/18 SDN涉黎巴嫩/土耳其黄金交易；CPSC 11/18钮扣电池产品安全直接终规则；USITC 11/18公告初筛",
+    "UK": "英印苏格兰威士忌关税归类争议11/18政府新表态，筛选政策信号；英国新出口/制裁检索中"
+  },
   "last_error": null,
   "next_actions": [
-    "检索八个重点法域及关键经济体2026-11-16至19贸易合规动态",
-    "核验原始来源并与最近7期事件去重",
-    "分阶段保存候选与最终核验",
-    "制作第072期并发布后核验"
+    "完成欧盟、日本、韩国、印度、加拿大、澳大利亚定向查验及来源",
+    "复查美国商务部和联邦公报新增规则",
+    "近七期去重、全部来源核验、终扫、制作并发布"
   ]
 }
