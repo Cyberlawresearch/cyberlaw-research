@@ -1,7 +1,7 @@
 {
   "date": "2026-11-19",
   "base_main_sha": "6b2a066b091dd1741d26856943143d9638795600",
-  "phase": "validated",
+  "phase": "main_written_pages_pending",
   "publication_ready": true,
   "items": [
     {
@@ -99,14 +99,26 @@
   },
   "last_error": null,
   "next_actions": [
-    "创建2026-11-19第072期完整HTML",
-    "更新index和archive（保留历史）",
-    "ref main回读、同提交Pages及公开页面验收"
+    "等待当前提交对应Pages完成并检查具体作业结果",
+    "检验公开当期、首页、归档与10个来源实际URL",
+    "保存public_validation结果"
   ],
   "final_sweep": "2026-11-19北京当日完成美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚及东盟定向检索；最后回查欧盟理事会18日晚新增欧印尼签署授权；与2026-11-12至18至少7期正文逐条事件级去重；确认英国印酒案新增162.5%综合税负不同于11月14日扣货消息；排除重复的澳洲725号调查、美国BIS远程算力规则、11月17日加拿大宽免、11月14日东盟DEFA签署；逐条打开8项具体原始来源，PDF截图核对印度2项及USITC；来源FR CPSC官方网页工具无法直接打开，已独立核对11月18日联邦公报编号2026-23435全文镜像和原始页锚点。",
   "source_validation": {
     "checked": 8,
     "total_source_links": 10,
     "notes": "Federal Register/CPSC primary exact docket accessible in search/mirror but browser direct official temporarily inaccessible; legal details corroborated; FT paywall article landing accessible and indexed report supports policy signal."
-  }
+  },
+  "repo_commit": "fd003459b69fb43b3bb915ef8c26f5e2b2f3527f",
+  "repo_readback": {
+    "issue": "trade-watch/issues/2026-11-19.html",
+    "index": "trade-watch/index.html",
+    "archive": "trade-watch/archive.html",
+    "count": 8,
+    "source_links": 10,
+    "archive_entries": 72,
+    "all_three_match": true
+  },
+  "pages_run_id": 44435182362,
+  "pages_status": "in_progress, deploy job build factual context index at check time"
 }
