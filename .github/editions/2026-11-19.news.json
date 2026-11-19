@@ -11,7 +11,7 @@
     "domestic": 6,
     "foreign": 13
   },
-  "checked_at": "2026-11-19T11:12:38.929Z",
+  "checked_at": "2026-11-19T11:24:50.274Z",
   "last_news_scan_at": null,
   "checks": {
     "sources": true,
@@ -225,9 +225,40 @@
       {
         "source": "越南语检索；未核验符合要求新增",
         "checked_at": null
+      },
+      {
+        "source": "路透社11月19日欧盟委员会网络攻击报道",
+        "entry_url": "https://www.reuters.com/legal/litigation/eu-commission-targeted-cyberattack-politico-reports-2026-11-19/",
+        "checked_at": null,
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "欧盟委员会遭遇网络攻击，多套人事及医疗报销系统受影响"
+        ]
+      },
+      {
+        "source": "路透社11月19日英国金融业网络韧性报道",
+        "entry_url": "https://www.reuters.com/legal/government/uk-finance-sector-cyber-incidents-hit-second-highest-level-five-years-2026-11-19/",
+        "checked_at": null,
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "英国金融监管局披露10月38起网络安全事件，并就金融业网络韧性指引征求意见"
+        ]
       }
     ],
-    "notes": "本次已核对正文所引用原始报告或主管机关公开材料，未逐项巡视的国内来源保留未检查状态。发布前1—2小时复扫未覆盖完整名单，因此不得宣称国内重大遗漏全面复核完成。"
+    "notes": "本次已核对正文所引用原始报告或主管机关公开材料，未逐项巡视的国内来源保留未检查状态。发布前1—2小时复扫未覆盖完整名单，因此不得宣称国内重大遗漏全面复核完成。",
+    "seven_day_dedup": "核对2026-11-12至2026-11-18已刊新闻事件题名。11月15日已刊意大利对Meta罚款8.05亿欧元与爱尔兰对Tinder罚款1100万欧元，虽EDPB在11月17—18日发布英文新闻稿，却不构成新实质进展，已从本期删除并以11月19日欧盟委员会网络攻击披露与英国金融业网络韧性指导草案两则新增事件替换。其他17项未发现相同事件重复。",
+    "excluded_prior_edition_duplicates": [
+      {
+        "subject": "Meta意大利相册罚款",
+        "previous": "2026-11-15",
+        "reason": "同一行政处罚决定，11月18日EDPB重新披露并非新的罚款或新程序"
+      },
+      {
+        "subject": "Tinder爱尔兰数据访问权罚款",
+        "previous": "2026-11-15",
+        "reason": "同一行政处罚决定，11月17日EDPB重新披露并非新进展"
+      }
+    ]
   },
   "items": [
     {
@@ -321,34 +352,36 @@
       "seven_day_dedup_checked": true
     },
     {
-      "event_date": "2026-11-18",
-      "jurisdiction": "意大利·欧盟",
-      "agency": "意大利个人数据保护局",
+      "event_date": "2026-11-19",
+      "jurisdiction": "欧盟",
+      "agency": "欧盟委员会",
       "domestic": "国际",
-      "title": "意大利数据保护局对Meta处以8.05亿欧元罚款，认定Facebook相册访问未取得特定同意",
-      "original_title": "Italian DPA fines Meta EUR 805 million for unlawful access to Facebook users’ photo galleries",
-      "url": "https://www.edpb.europa.eu/news/italian-dpa-fines-meta-eur-805-million-for-unlawful-access-to-facebook-users-photo-galleries_en",
-      "source_name": "欧洲数据保护委员会",
-      "legal_status": "行政罚款及限期合规命令，决定11月13日作出，11月18日公布",
-      "fact": "欧洲数据保护委员会11月18日公布，意大利数据保护局在11月13日的决定中，对Meta Platforms Ireland处以8.05亿欧元行政罚款。监管调查认为，Facebook在安卓设备上提供图库内容推荐功能时未取得充分、具体的用户同意，违反意大利《个人数据保护法》第122条，涉及约2000万名潜在用户。监管机关要求Meta在60日内改为单独请求同意并默认关闭该功能。",
+      "title": "欧盟委员会遭遇网络攻击，多套人事及医疗报销系统受影响",
+      "original_title": "EU Commission targeted in cyberattack, Politico reports",
+      "url": "https://www.reuters.com/legal/litigation/eu-commission-targeted-cyberattack-politico-reports-2026-11-19/",
+      "source_name": "路透社",
+      "legal_status": "网络安全事件调查与委员会公开回应",
+      "fact": "路透社11月19日引述Politico报道，欧盟委员会近期遭遇网络攻击，部分人事工资、工时管理和医疗费用报销系统在约10天的故障期间被下线。委员会发言人确认机构已对发现的网络攻击采取应对措施并通知有关人员。事件可能涉及个人数据，但具体影响范围仍在调查中。",
       "id": "research-item-7",
       "source_checked": true,
-      "seven_day_dedup_checked": true
+      "seven_day_dedup_checked": true,
+      "date": "2026-11-19"
     },
     {
-      "event_date": "2026-11-17",
-      "jurisdiction": "爱尔兰·欧盟",
-      "agency": "爱尔兰数据保护委员会",
+      "event_date": "2026-11-19",
+      "jurisdiction": "英国",
+      "agency": "英国金融行为监管局、英格兰银行",
       "domestic": "国际",
-      "title": "爱尔兰数据监管机构对Tinder运营方罚款1100万欧元，认定个人数据访问请求处理违法",
-      "original_title": "Irish Data Protection Commission fines MTCH EUR 11 million following Inquiry into Tinder users’ personal data requests",
-      "url": "https://www.edpb.europa.eu/news/irish-data-protection-commission-fines-mtch-eur-11-million-following-inquiry-into-tinder-users_en",
-      "source_name": "欧洲数据保护委员会",
-      "legal_status": "GDPR行政处罚和整改命令，11月17日对外公布",
-      "fact": "爱尔兰数据保护委员会11月17日宣布，对Tinder服务运营方MTCH Technology Services处以合计1100万欧元罚款，并要求三个月内完成整改。监管调查认定，Tinder的“下载我的数据”自助工具没有向用户交付其全部个人数据，部分信息被省略或仅以摘要提供，违反《通用数据保护条例》第15条第3款。监管决定于11月13日作出。",
+      "title": "英国金融监管局披露10月38起网络安全事件，并就金融业网络韧性指引征求意见",
+      "original_title": "UK finance sector cyber incidents hit second-highest level in five years",
+      "url": "https://www.reuters.com/legal/government/uk-finance-sector-cyber-incidents-hit-second-highest-level-five-years-2026-11-19/",
+      "source_name": "路透社",
+      "legal_status": "监管事件数据披露、网络韧性指导意见征求意见",
+      "fact": "路透社11月19日报道，英国金融行为监管局10月收到38起金融业网络安全事件报告，为近五年单月第二高，仅次于2023年6月的49起。金融行为监管局与英格兰银行提出面向银行、保险等金融机构的网络韧性指导意见草案，涉及治理、事件应对、业务恢复和供应链风险管理。有关指导意见正在征求意见，截止日期为2027年2月26日。",
       "id": "research-item-8",
       "source_checked": true,
-      "seven_day_dedup_checked": true
+      "seven_day_dedup_checked": true,
+      "date": "2026-11-19"
     },
     {
       "event_date": "2026-11-19",
@@ -521,6 +554,6 @@
     "pages_run_id": null,
     "pages_status": null,
     "online_check": null,
-    "notes": "等待提交后读取实际Pages工作流与线上验收"
+    "notes": "去重复核完成后更新两则事件，等待最新提交的Pages部署和线上复核"
   }
 }
