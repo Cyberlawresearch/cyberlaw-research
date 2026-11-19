@@ -1,7 +1,7 @@
 {
   "date": "2026-11-19",
   "base_main_sha": "6b2a066b091dd1741d26856943143d9638795600",
-  "phase": "published_public_validated",
+  "phase": "published_public_validated_source_diagnostic_partial",
   "publication_ready": true,
   "items": [
     {
@@ -98,15 +98,15 @@
     "ASEAN": "东盟DEFA 11/14签署，超本期72小时；马来西亚食品安全保证规则实于8月颁布9月指引，11/17 JETRO报道不视为新政策"
   },
   "last_error": null,
-  "next_actions": [
-    "待对应source diagnostics结束后记录10条外链访问专项结果，不修改已通过公开页面",
-    "保持每日任务设置不变"
-  ],
+  "next_actions": [],
   "final_sweep": "2026-11-19北京当日完成美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚及东盟定向检索；最后回查欧盟理事会18日晚新增欧印尼签署授权；与2026-11-12至18至少7期正文逐条事件级去重；确认英国印酒案新增162.5%综合税负不同于11月14日扣货消息；排除重复的澳洲725号调查、美国BIS远程算力规则、11月17日加拿大宽免、11月14日东盟DEFA签署；逐条打开8项具体原始来源，PDF截图核对印度2项及USITC；来源FR CPSC官方网页工具无法直接打开，已独立核对11月18日联邦公报编号2026-23435全文镜像和原始页锚点。",
   "source_validation": {
     "checked": 8,
     "total_source_links": 10,
-    "notes": "Federal Register/CPSC primary exact docket accessible in search/mirror but browser direct official temporarily inaccessible; legal details corroborated; FT paywall article landing accessible and indexed report supports policy signal."
+    "notes": "Federal Register/CPSC primary exact docket accessible in search/mirror but browser direct official temporarily inaccessible; legal details corroborated; FT paywall article landing accessible and indexed report supports policy signal.",
+    "auto_http200": 6,
+    "auto_rejected": 4,
+    "external_human_inspection": "Official Council, FT article landing and two Reuters articles all opened independently with correct article titles and facts; 403/401 restrictions in Github Actions remain."
   },
   "repo_commit": "fd003459b69fb43b3bb915ef8c26f5e2b2f3527f",
   "repo_readback": {
@@ -128,7 +128,30 @@
     "publication_guard_run_id": 44436373505,
     "guard_result": "repository_ok=true, public_ok=true; 3 pages (issue/index/archive) HTTP 200 and matching content; 8 cards",
     "source_checker_run_id": 44436373438,
-    "source_checker_result": "in_progress",
-    "checked_at": "2026-11-19T09:22:25+08:00"
+    "source_checker_result": "completed: failure; 6/10 URLs automated HTTP200, 4 blocked by source publishers; all 3 public pages passed",
+    "checked_at": "2026-11-19T09:22:25+08:00",
+    "source_result_details": [
+      {
+        "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/18/eu-indonesia-council-greenlights-signature-of-landmark-trade-and-investment-agreements/",
+        "status": 403,
+        "note": "web tool opened official Council article and verified Nov18 content"
+      },
+      {
+        "url": "https://www.ft.com/content/6b278daf-6fdf-4951-af8a-227f25c4e0b7",
+        "status": 403,
+        "note": "web tool opened correct specific FT article title, full text paywalled"
+      },
+      {
+        "url": "https://www.reuters.com/world/india/india-charge-bulk-scotch-imports-1625-duty-tax-amid-uk-pact-standoff-2026-11-18/",
+        "status": 401,
+        "note": "web tool independently opened Reuters full Nov18 text and confirmed 162.5%, 75% upfront"
+      },
+      {
+        "url": "https://www.reuters.com/world/uk/uk-says-ministers-urgently-working-with-india-tariff-dispute-scotch-whisky-2026-11-18/",
+        "status": 401,
+        "note": "web tool independently opened Reuters Nov18 article and UK spokesperson statement"
+      }
+    ],
+    "pages_checker_source_line": "PAGE CHECK issue/index/archive each HTTP200, full content match; source checker run 44436373438"
   }
 }
