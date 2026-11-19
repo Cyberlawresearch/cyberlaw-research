@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-19",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-19-bougiakiotis-abolishing-consent-privacy-law.html",
+  "selection": "The Case for Abolishing Consent in Data Privacy Law",
+  "bibliography": {
+    "type": "article",
+    "author": "Emmanouil Bougiakiotis",
+    "originalTitle": "The Case for Abolishing Consent in Data Privacy Law",
+    "journal": "German Law Journal",
+    "year": "2026",
+    "volume": "27",
+    "issue": "4",
+    "pages": "624–650",
+    "doi": "10.1017/glj.2026.10222",
+    "url": "https://www.cambridge.org/core/journals/german-law-journal/article/case-for-abolishing-consent-in-data-privacy-law/8B935A1D802611B458F3C6A9E07FA4E4",
+    "cnTitle": "同意为何不能保护所有人的隐私：数据外部性、公共利益与个人权利"
+  },
+  "versions": {
+    "full_text": "Read complete Cambridge Core formally published open-access full text, introduction, sections B–F, conclusion, and annotations.",
+    "publication": "German Law Journal 27(4), 624–650 (2026), publisher online date 2026-08-11; no conflation with working paper."
+  },
+  "sources": [
+    "https://www.cambridge.org/core/journals/german-law-journal/article/case-for-abolishing-consent-in-data-privacy-law/8B935A1D802611B458F3C6A9E07FA4E4",
+    "https://doi.org/10.1017/glj.2026.10222"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "history_scope": "Reviewed complete papers.html (73 issue rows) and papers-history-1.html (13 entries); no Bougiakiotis / The Case for Abolishing Consent in Data Privacy Law.",
+  "related_reading": [
+    "articles/2026-10-27-viljoen-relational-theory-data-governance.html",
+    "articles/2026-09-10-solove-privacy-self-management.html",
+    "articles/2026-10-12-richards-hartzog-duty-loyalty-privacy.html"
+  ],
+  "timeline": null,
+  "body_length": 6714,
+  "checked_at": "2026-11-19",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  },
+  "last_error": null
+}
