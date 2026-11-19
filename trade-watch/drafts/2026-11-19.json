@@ -33,16 +33,63 @@
       "headline": "英国政府11月18日确认紧急交涉印度散装威士忌归类及关税问题",
       "source": "https://www.reuters.com/world/uk/uk-says-ministers-urgently-working-with-india-tariff-dispute-scotch-whisky-2026-11-18/",
       "status": "candidate (event from 11/14 edition requires new action distinction)"
+    },
+    {
+      "id": "us-usitc-potassium",
+      "date": "2026-11-18",
+      "jurisdiction": "美国／中国",
+      "authority": "USITC",
+      "headline": "美国ITC公告中国磷酸钾盐双反五年期加速复审，11月24日截止书面意见",
+      "stage": "五年期加速复审日程；未作撤销或续行最终决定",
+      "source": "https://public-inspection.federalregister.gov/2026-23507.pdf",
+      "status": "official PDF read and screenshot verified"
+    },
+    {
+      "id": "in-amoxy-deadline",
+      "date": "2026-11-16",
+      "jurisdiction": "印度／中国",
+      "authority": "DGTR",
+      "headline": "印度中国产阿莫西林三水合物反倾销调查问卷截止日至11月26日且不再延长",
+      "stage": "调查中，程序性期限调整，未征税",
+      "source": "https://dgtr.gov.in/sites/default/files/2026-11/Amoxy%20Exten.pdf",
+      "status": "official PDF page screenshot verified"
+    },
+    {
+      "id": "in-hotrolled-interested",
+      "date": "2026-11-18",
+      "jurisdiction": "印度／中国、日本、俄罗斯",
+      "authority": "DGTR",
+      "headline": "印度公布中日俄热轧平板钢反倾销案52家登记方及非保密材料送达义务",
+      "stage": "调查中，注册利害关系方名单与信息交换程序",
+      "source": "https://dgtr.gov.in/sites/default/files/2026-11/Registered%20interested%20party%20%289%29.pdf",
+      "status": "official PDF pages screenshot verified"
+    },
+    {
+      "id": "uk-eu-china-trade-alignment",
+      "date": "2026-11-18",
+      "jurisdiction": "英国／欧盟／中国",
+      "authority": "英欧贸易谈判",
+      "headline": "英欧峰会前关税及中国商品转口规则协调出现分歧，尚无新措施",
+      "stage": "政策谈判信号、非协定条款或新税令",
+      "source": "https://www.ft.com/content/6b278daf-6fdf-4951-af8a-227f25c4e0b7",
+      "status": "specific article opened; paywall; reports UK resistance to draft communique"
     }
   ],
   "coverage": {
     "US": "OFAC 11/18 SDN涉黎巴嫩/土耳其黄金交易；CPSC 11/18钮扣电池产品安全直接终规则；USITC 11/18公告初筛",
-    "UK": "英印苏格兰威士忌关税归类争议11/18政府新表态，筛选政策信号；英国新出口/制裁检索中"
+    "UK": "英印苏格兰威士忌关税归类争议11/18政府新表态，筛选政策信号；英国新出口/制裁检索中",
+    "EU": "欧盟贸易总司11/16最新反倾销公告已收录第070期；UK-EU 11/18关税政策谈判出现新分歧，仍属政策信号",
+    "India": "DGTR官网11/18热轧平板钢案52家注册参加方名单及非保密材料互送程序，11/16阿莫西林三水合物答卷延至11/26（不再延期）；英印威士忌11/18披露162.5%实际分类税负",
+    "Japan": "JETRO、经济产业省最新贸易/出口管制检索及印度对日案件交叉核对，未见过去72小时独立新决定",
+    "Korea": "产业通商资源部、贸易委员会、出口管制和涉韩贸易救济11/16-19定向检索，未检出足够独立新法律事实",
+    "Canada": "CBSA、总理办公室11/17中加宽免及磋商已列入11/18期，不重复",
+    "Australia": "ATRC贸易救济通知首页最新17日EX0106、16日中国木材及AAC调查均已见11/16-18期，未见新公告",
+    "ASEAN": "东盟DEFA 11/14签署，超本期72小时；马来西亚食品安全保证规则实于8月颁布9月指引，11/17 JETRO报道不视为新政策"
   },
   "last_error": null,
   "next_actions": [
-    "完成欧盟、日本、韩国、印度、加拿大、澳大利亚定向查验及来源",
-    "复查美国商务部和联邦公报新增规则",
-    "近七期去重、全部来源核验、终扫、制作并发布"
+    "在终扫中确认各项候选法律阶段、原始来源及去重",
+    "写入最终草稿 publication_ready=true",
+    "发布 issue/index/archive 并核验 Pages"
   ]
 }
