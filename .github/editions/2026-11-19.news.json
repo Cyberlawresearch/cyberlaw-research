@@ -1,0 +1,526 @@
+{
+  "date": "2026-11-19",
+  "column": "brief",
+  "state": "verified",
+  "phase": "publishing",
+  "mode": "fact_only",
+  "analysis_pending": true,
+  "page": "articles/2026-11-19-tech-law-brief.html",
+  "news_count": 19,
+  "distribution": {
+    "domestic": 6,
+    "foreign": 13
+  },
+  "checked_at": "2026-11-19T11:12:38.929Z",
+  "last_news_scan_at": null,
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": false,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": false,
+    "natural_chinese_reviewed": true,
+    "background_outlook": false,
+    "foreign_layout": true
+  },
+  "coverage": {
+    "domestic_sources": [
+      {
+        "group": "中央机关",
+        "source": "国家数据局",
+        "entry_url": "https://www.nda.gov.cn/sjj/zwgk/tzgg/1118/20261118203149832876736_pc.html",
+        "checked_at": null,
+        "query_or_section": "2026年11月17日至19日相关公告、专栏或新闻正文",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "第二批可信数据空间试点"
+        ],
+        "notes": "已实际打开内容或对应栏目；逐站访问时间未单独记录"
+      },
+      {
+        "group": "重点地方",
+        "source": "江苏省人民政府",
+        "entry_url": "https://www.jiangsu.gov.cn/art/2026/11/17/art_46144_11861186.html",
+        "checked_at": null,
+        "query_or_section": "2026年11月17日至19日相关公告、专栏或新闻正文",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "数字江苏建设“十五五”规划"
+        ],
+        "notes": "已实际打开内容或对应栏目；逐站访问时间未单独记录"
+      },
+      {
+        "group": "权威媒体",
+        "source": "人民网江苏频道",
+        "entry_url": "https://js.people.com.cn/n2/2026/1119/c358232-41754649.html",
+        "checked_at": null,
+        "query_or_section": "2026年11月17日至19日相关公告、专栏或新闻正文",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "江苏出台平台经济新政"
+        ],
+        "notes": "已实际打开内容或对应栏目；逐站访问时间未单独记录"
+      },
+      {
+        "group": "综合媒体",
+        "source": "澎湃新闻",
+        "entry_url": "https://www.thepaper.cn/newsDetail_forward_34504292",
+        "checked_at": null,
+        "query_or_section": "2026年11月17日至19日相关公告、专栏或新闻正文",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "江苏平台经济33条措施"
+        ],
+        "notes": "已实际打开内容或对应栏目；逐站访问时间未单独记录"
+      },
+      {
+        "group": "重点地方",
+        "source": "北京市人民政府门户网站",
+        "entry_url": "https://www.beijing.gov.cn/ywdt/gzdt/202611/t20261119_4951806.html",
+        "checked_at": null,
+        "query_or_section": "2026年11月17日至19日相关公告、专栏或新闻正文",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "北京市零碳工厂工作方案"
+        ],
+        "notes": "已实际打开内容或对应栏目；逐站访问时间未单独记录"
+      },
+      {
+        "group": "重点地方",
+        "source": "北京市科委中关村管委会",
+        "entry_url": "https://kw.beijing.gov.cn/xwdt/kcyx/xwdtscyqld/202611/t20261119_4951972.html",
+        "checked_at": null,
+        "query_or_section": "2026年11月17日至19日相关公告、专栏或新闻正文",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "未名·AI Park揭牌"
+        ],
+        "notes": "已实际打开内容或对应栏目；逐站访问时间未单独记录"
+      },
+      {
+        "group": "中央机关",
+        "source": "交通运输部",
+        "entry_url": "https://xxgk.mot.gov.cn/jigou/kjs/202611/t20261119_4228053.html",
+        "checked_at": null,
+        "query_or_section": "2026年11月17日至19日相关公告、专栏或新闻正文",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "第二批180项交通智能体案例"
+        ],
+        "notes": "已实际打开内容或对应栏目；逐站访问时间未单独记录"
+      },
+      {
+        "group": "标准评测",
+        "source": "全国数据标准化技术委员会",
+        "entry_url": "https://www.tc609.org.cn/tc609/tzgg/zylist.shtml",
+        "checked_at": null,
+        "query_or_section": "2026年11月17日至19日相关公告、专栏或新闻正文",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "重要数据识别目录等6项国家标准征求意见；未入选：公告11月16日，时间窗边界不明确"
+        ],
+        "notes": "已实际打开内容或对应栏目；逐站访问时间未单独记录"
+      },
+      {
+        "group": "标准评测",
+        "source": "TC609标准周",
+        "entry_url": "https://www.tc609.org.cn/tc609/standardweek/2026/2026_2nd.shtml",
+        "checked_at": null,
+        "query_or_section": "2026年11月17日至19日相关公告、专栏或新闻正文",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [
+          "标准周11月10日已举办，超出72小时"
+        ],
+        "notes": "已实际打开内容或对应栏目；逐站访问时间未单独记录"
+      },
+      {
+        "group": "中央机关",
+        "source": "中央网信办",
+        "entry_url": "https://www.cac.gov.cn/",
+        "checked_at": null,
+        "query_or_section": null,
+        "status": "not_checked",
+        "candidate_titles": [],
+        "notes": "未逐项完成独立来源巡视"
+      },
+      {
+        "group": "法治媒体",
+        "source": "法治日报、人民法院报、检察日报",
+        "entry_url": null,
+        "checked_at": null,
+        "query_or_section": null,
+        "status": "not_checked",
+        "candidate_titles": [],
+        "notes": "未逐项完成独立来源巡视"
+      },
+      {
+        "group": "财经媒体",
+        "source": "财新、第一财经、21世纪经济报道等",
+        "entry_url": null,
+        "checked_at": null,
+        "query_or_section": null,
+        "status": "not_checked",
+        "candidate_titles": [],
+        "notes": "未逐项完成独立来源巡视"
+      },
+      {
+        "group": "科技网安媒体",
+        "source": "36氪、FreeBuf、信通院、CNCERT",
+        "entry_url": null,
+        "checked_at": null,
+        "query_or_section": null,
+        "status": "not_checked",
+        "candidate_titles": [],
+        "notes": "未逐项完成独立来源巡视"
+      },
+      {
+        "group": "重点地方",
+        "source": "上海、广东、浙江、四川、贵州等主管部门",
+        "entry_url": null,
+        "checked_at": null,
+        "query_or_section": null,
+        "status": "not_checked",
+        "candidate_titles": [],
+        "notes": "未逐项完成独立来源巡视"
+      }
+    ],
+    "domestic_low_count_review": null,
+    "international_sources": [
+      {
+        "source": "欧洲数据保护委员会",
+        "checked_at": null
+      },
+      {
+        "source": "路透社",
+        "checked_at": null
+      },
+      {
+        "source": "美国CISA",
+        "checked_at": null
+      },
+      {
+        "source": "韩国个人信息保护委员会",
+        "checked_at": null
+      },
+      {
+        "source": "日本个人信息保护委员会",
+        "checked_at": null
+      },
+      {
+        "source": "日本数字厅",
+        "checked_at": null
+      },
+      {
+        "source": "英国ICO",
+        "checked_at": null
+      },
+      {
+        "source": "美国FTC/司法部相关公开信息",
+        "checked_at": null
+      },
+      {
+        "source": "越南语检索；未核验符合要求新增",
+        "checked_at": null
+      }
+    ],
+    "notes": "本次已核对正文所引用原始报告或主管机关公开材料，未逐项巡视的国内来源保留未检查状态。发布前1—2小时复扫未覆盖完整名单，因此不得宣称国内重大遗漏全面复核完成。"
+  },
+  "items": [
+    {
+      "event_date": "2026-11-18",
+      "jurisdiction": "中国",
+      "agency": "国家数据局",
+      "domestic": "国内",
+      "title": "国家数据局启动第二批可信数据空间试点，明确企业、行业和城市三类申报条件",
+      "original_title": "国家数据局综合司关于组织开展第二批可信数据空间创新发展试点工作的通知",
+      "url": "https://www.nda.gov.cn/sjj/zwgk/tzgg/1118/20261118203149832876736_pc.html",
+      "source_name": "国家数据局",
+      "legal_status": "正式发布试点申报通知",
+      "fact": "国家数据局综合司11月18日发布国数综资源〔2026〕53号通知，开展第二批企业、行业和城市可信数据空间创新发展试点，重点推动数据与人工智能双向赋能。每个申报主体限报一个项目，2025年试点单位不能重复申报；项目试点周期三年。申报单位须于12月4日前完成线上填报，推荐单位须于12月11日前完成审核推荐。",
+      "id": "research-item-1",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-17",
+      "jurisdiction": "中国·江苏",
+      "agency": "江苏省人民政府办公厅",
+      "domestic": "国内",
+      "title": "江苏出台平台经济33项措施，部署算法治理、数据出境合规和词元券支持",
+      "original_title": "江苏发文规范平台经济发展：依法打击算法霸权、数据滥用",
+      "url": "https://www.thepaper.cn/newsDetail_forward_34504292",
+      "source_name": "澎湃新闻",
+      "legal_status": "省级政策正式公布，2026年12月11日起施行",
+      "fact": "江苏省政府11月17日公布《促进平台经济创新和规范健康发展若干措施》，从人工智能服务平台、生产性服务平台、企业培育和规范监管等八方面提出33项举措，12月11日起施行。文件提出依法打击算法霸权、数据滥用和流量垄断，推动平台企业开展网络数据分类分级保护及数据安全风险评估，并指导数据出境合规。政策还支持地方按规定向采购智能算力服务的企业发放词元券。",
+      "id": "research-item-2",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-17",
+      "jurisdiction": "中国·江苏",
+      "agency": "江苏省人民政府办公厅",
+      "domestic": "国内",
+      "title": "江苏公布“十五五”数字建设规划，提出统一数据产权登记与词元交易",
+      "original_title": "省政府办公厅关于印发数字江苏建设“十五五”规划的通知",
+      "url": "https://www.jiangsu.gov.cn/art/2026/11/17/art_46144_11861186.html",
+      "source_name": "江苏省人民政府",
+      "legal_status": "省级五年专项规划公开发布",
+      "fact": "江苏省政府网站11月17日公开《数字江苏建设“十五五”规划》，明确到2030年数字经济核心产业增加值占地区生产总值的比重达到13.5％，数据产业规模约7000亿元。规划提出建立全省统一数据产权登记体系，完善数据流通交易监管、收益分配与示范合同，并探索词元交易、智能体交易市场和按量计费模式。规划还部署长三角算力枢纽、可信数据空间和数据基础设施建设。",
+      "id": "research-item-3",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-19",
+      "jurisdiction": "中国·北京",
+      "agency": "北京市经济和信息化局",
+      "domestic": "国内",
+      "title": "北京发布零碳工厂培育方案，将大型智算设施纳入建设与能效管理",
+      "original_title": "《北京市零碳工厂培育建设工作方案（2026—2030年）》发布 5年内北京将培育建设100家零碳工厂",
+      "url": "https://www.beijing.gov.cn/ywdt/gzdt/202611/t20261119_4951806.html",
+      "source_name": "北京市政府门户网站·北京日报",
+      "legal_status": "地方工作方案已印发并公开报道",
+      "fact": "北京市政府门户网站11月19日披露，市经济和信息化局印发《北京市零碳工厂培育建设工作方案（2026—2030年）》，提出到2030年力争培育建设100家零碳工厂，并将算力设施列入重点领域。方案要求纳入的零碳算力设施具有独立供配电和制冷系统，除智算中心外规模不少于3000个标准机架，电能利用效率达到国家标准2级及以上。有关项目须达到非化石能源消费占比不低于85％等核心指标，并按年度披露绩效。",
+      "id": "research-item-4",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-19",
+      "jurisdiction": "中国",
+      "agency": "交通运输部办公厅",
+      "domestic": "国内",
+      "title": "交通运输部公布第二批180项交通大模型与智能体应用典型案例",
+      "original_title": "交通运输部办公厅关于印发综合交通运输大模型智能体创新应用典型案例名单（第二批）的通知",
+      "url": "https://xxgk.mot.gov.cn/jigou/kjs/202611/t20261119_4228053.html",
+      "source_name": "交通运输部政府信息公开",
+      "legal_status": "案例名单正式公开",
+      "fact": "交通运输部政府信息公开栏目11月19日公布交办科技函〔2026〕2503号通知，发布综合交通运输大模型智能体创新应用第二批典型案例名单，收录180项优秀作品。名单来自第二届综合交通运输大模型智能体创新应用大赛，提供案例简介供交通主管部门及有关单位工作参考。通知落款日期为11月16日，网站公开日期为11月19日。",
+      "id": "research-item-5",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-18",
+      "jurisdiction": "中国·北京海淀",
+      "agency": "北京大学、北京市海淀区",
+      "domestic": "国内",
+      "title": "北京大学与海淀区共建人工智能创新转化园区，形成三级联动空间布局",
+      "original_title": "未名·AI Park揭牌",
+      "url": "https://kw.beijing.gov.cn/xwdt/kcyx/xwdtscyqld/202611/t20261119_4951972.html",
+      "source_name": "北京市科学技术委员会、中关村管委会",
+      "legal_status": "人工智能创新基础设施项目揭牌",
+      "fact": "11月18日，北京大学与海淀区共建的“未名·AI Park”正式揭牌，北京市科学技术委员会网站19日发布消息。园区按照“启动区—拓展区—辐射区”三级联动格局建设，依托北京大学科研资源与海淀创新产业空间，推动科研成果转化、创新创业及科技人才协同。项目属于校地合作创新基础设施建设。",
+      "id": "research-item-6",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-18",
+      "jurisdiction": "意大利·欧盟",
+      "agency": "意大利个人数据保护局",
+      "domestic": "国际",
+      "title": "意大利数据保护局对Meta处以8.05亿欧元罚款，认定Facebook相册访问未取得特定同意",
+      "original_title": "Italian DPA fines Meta EUR 805 million for unlawful access to Facebook users’ photo galleries",
+      "url": "https://www.edpb.europa.eu/news/italian-dpa-fines-meta-eur-805-million-for-unlawful-access-to-facebook-users-photo-galleries_en",
+      "source_name": "欧洲数据保护委员会",
+      "legal_status": "行政罚款及限期合规命令，决定11月13日作出，11月18日公布",
+      "fact": "欧洲数据保护委员会11月18日公布，意大利数据保护局在11月13日的决定中，对Meta Platforms Ireland处以8.05亿欧元行政罚款。监管调查认为，Facebook在安卓设备上提供图库内容推荐功能时未取得充分、具体的用户同意，违反意大利《个人数据保护法》第122条，涉及约2000万名潜在用户。监管机关要求Meta在60日内改为单独请求同意并默认关闭该功能。",
+      "id": "research-item-7",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-17",
+      "jurisdiction": "爱尔兰·欧盟",
+      "agency": "爱尔兰数据保护委员会",
+      "domestic": "国际",
+      "title": "爱尔兰数据监管机构对Tinder运营方罚款1100万欧元，认定个人数据访问请求处理违法",
+      "original_title": "Irish Data Protection Commission fines MTCH EUR 11 million following Inquiry into Tinder users’ personal data requests",
+      "url": "https://www.edpb.europa.eu/news/irish-data-protection-commission-fines-mtch-eur-11-million-following-inquiry-into-tinder-users_en",
+      "source_name": "欧洲数据保护委员会",
+      "legal_status": "GDPR行政处罚和整改命令，11月17日对外公布",
+      "fact": "爱尔兰数据保护委员会11月17日宣布，对Tinder服务运营方MTCH Technology Services处以合计1100万欧元罚款，并要求三个月内完成整改。监管调查认定，Tinder的“下载我的数据”自助工具没有向用户交付其全部个人数据，部分信息被省略或仅以摘要提供，违反《通用数据保护条例》第15条第3款。监管决定于11月13日作出。",
+      "id": "research-item-8",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-19",
+      "jurisdiction": "欧盟及充分性认定第三方",
+      "agency": "欧洲数据保护委员会与相关国家监管机构",
+      "domestic": "国际",
+      "title": "欧洲数据保护委员会确定2027年国际协作议题，聚焦智能眼镜与隐私保护式年龄核验",
+      "original_title": "EDPB and DPAs from countries and organisation with EU adequacy decision take stock of progress and set 2027 priorities",
+      "url": "https://www.edpb.europa.eu/news/edpb-and-dpas-from-countries-and-organisation-with-eu-adequacy-decision-take-stock-of-progress_en",
+      "source_name": "欧洲数据保护委员会",
+      "legal_status": "监管机构合作议题和工作重点公布",
+      "fact": "欧洲数据保护委员会11月19日通报，其与获欧盟数据保护充分性认定的国家及国际组织监管机构于17日举行会议，并确定2027年两个重点知识交流议题：智能眼镜等可穿戴设备、隐私保护式年龄核验。与会者还同意继续讨论执法合作及跨境信息共享。这是监管机构工作协作安排。",
+      "id": "research-item-9",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-18",
+      "jurisdiction": "美国·亚利桑那州",
+      "agency": "亚利桑那州总检察长",
+      "domestic": "国际",
+      "title": "美国亚利桑那州对OpenAI等企业开展刑事调查，关注失控AI智能体侵入银行账户风险",
+      "original_title": "Arizona says it is investigating OpenAI, other firms over possible rogue agents",
+      "url": "https://www.reuters.com/legal/transactional/arizona-says-it-is-investigating-openai-other-firms-over-possible-rogue-agents-2026-11-19/",
+      "source_name": "路透社",
+      "legal_status": "刑事调查启动，尚未提出指控",
+      "fact": "亚利桑那州总检察长Kris Mayes于11月18日表示，州检察机关已对OpenAI及其他人工智能企业启动刑事调查，关注自主AI智能体可能进入银行系统和账户的情况。州检方正在研究有关行为是否持续违反该州法律，并已与当地银行沟通。Mayes没有披露其他受调查企业名称；调查启动并不意味着已提出刑事指控。",
+      "id": "research-item-10",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-18",
+      "jurisdiction": "美国·加利福尼亚州",
+      "agency": "美国联邦第九巡回上诉法院",
+      "domestic": "国际",
+      "title": "美国上诉法院审理xAI挑战加州训练数据披露法案，围绕商业秘密和言论自由展开辩论",
+      "original_title": "Musk's xAI urges US appeals court to block California AI disclosure law",
+      "url": "https://www.reuters.com/legal/government/musks-xai-urges-us-appeals-court-block-california-ai-disclosure-law-2026-11-18/",
+      "source_name": "路透社",
+      "legal_status": "上诉口头辩论，尚无终局裁判",
+      "fact": "美国联邦第九巡回上诉法院11月18日审理xAI申请阻止加州生成式人工智能训练数据透明度法律执行的上诉。该法律要求生成式AI开发者公开训练数据集摘要，自2026年1月1日起施行。法庭就第一修正案、商业秘密及披露范围向双方提出问题，口头辩论结束时尚未作出终局裁判。",
+      "id": "research-item-11",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-18",
+      "jurisdiction": "美国",
+      "agency": "美国司法部职业责任办公室",
+      "domestic": "国际",
+      "title": "美国司法部披露两起政府律师使用AI违规案例，涉及虚构引用和保密文件上传",
+      "original_title": "Two US Justice Department lawyers face misconduct inquiries over AI use",
+      "url": "https://www.reuters.com/legal/government/two-us-justice-department-lawyers-face-misconduct-inquiries-over-ai-use-2026-11-18/",
+      "source_name": "路透社",
+      "legal_status": "职业责任违规认定并移送纪律审查部门",
+      "fact": "美国司法部职业责任办公室11月17日披露两起涉及人工智能的职业行为问题，路透社18日获得并报道相关摘要。其中一名联邦检察官因在法院文件中使用虚构引文并误导法官被认定违规，另一名律师将受限材料上传至公开AI平台。两案均被移送司法部职业不当行为审查部门，后续纪律处理仍待决定。",
+      "id": "research-item-12",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-19",
+      "jurisdiction": "德国",
+      "agency": "德国联邦信息安全局",
+      "domestic": "国际",
+      "title": "德国联邦信息安全局将年度网络安全威胁评估上调至“紧张至危急”",
+      "original_title": "German authorities lift threat level to IT security to 'tense to critical'",
+      "url": "https://www.reuters.com/legal/litigation/german-authorities-lift-threat-level-it-security-tense-critical-2026-11-19/",
+      "source_name": "路透社",
+      "legal_status": "国家网络安全年度评估报告发布",
+      "fact": "德国联邦信息安全局11月19日发布年度信息安全评估，将威胁形势由去年的“紧张”调整为“紧张至危急”。机构指出，自主AI系统与高性能模型正在使漏洞发现和攻击更快、更廉价、更有针对性。其网络风险指数在2026年年中达到238点，较2025年同期的124点明显上升。",
+      "id": "research-item-13",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-17",
+      "jurisdiction": "美国",
+      "agency": "美国网络安全和基础设施安全局",
+      "domestic": "国际",
+      "title": "美国CISA针对Java4Shell高危漏洞发布紧急补丁警报，提示存在无身份验证远程执行风险",
+      "original_title": "Critical Java Vulnerability Requires Immediate Patching",
+      "url": "https://content.govdelivery.com/accounts/USDHSCISA/bulletins/4332a87",
+      "source_name": "美国CISA官方公告",
+      "legal_status": "国家网络安全安全警报和修补建议",
+      "fact": "美国网络安全和基础设施安全局11月17日针对CVE-2026-114938发布紧急安全警报。该漏洞影响特定x86-64 Java虚拟机的Base64解码器，特制输入可能导致虚拟机崩溃，并在特定条件下允许未经身份验证的远程代码执行。CISA敦促机构识别相关运行环境并尽快安装供应商补丁，优先处理联网系统。",
+      "id": "research-item-14",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-18",
+      "jurisdiction": "韩国",
+      "agency": "韩国个人信息保护委员会",
+      "domestic": "国际",
+      "title": "韩国个人信息保护委员会就Java4Shell通报数据泄露风险，要求强化数据库与接口访问控制",
+      "original_title": "개인정보위, Java 보안 취약점 관련 개인정보 대량 유출 예방조치 당부",
+      "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&nttId=12660",
+      "source_name": "韩国个人信息保护委员会",
+      "legal_status": "个人信息安全风险防范公告",
+      "fact": "韩国个人信息保护委员会11月18日就Java运行环境中的“Java4Shell”漏洞发布风险警示，要求运行Java系统的公共部门及企业尽快核查受影响版本并采取安全措施。委员会提醒，受影响应用若拥有超出业务需要的数据库访问权限，或缺乏异常批量查询和下载监控，可能放大个人信息外泄风险。该公告属于安全防范指导，并非处罚决定。",
+      "id": "research-item-15",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-18",
+      "jurisdiction": "日本",
+      "agency": "日本个人信息保护委员会",
+      "domestic": "国际",
+      "title": "日本个人信息保护委员会发布带照片身份证件图像删除提醒",
+      "original_title": "「運転免許証等の顔写真付きの公的身分証明書の画像の消去について（注意喚起）」の公表（令和８年11月18日）",
+      "url": "https://www.ppc.go.jp/news/press/2026/261118_houdou/",
+      "source_name": "日本个人信息保护委员会",
+      "legal_status": "官方注意提醒公告发布",
+      "fact": "日本个人信息保护委员会11月18日在2026年度新闻发布栏目公布有关删除驾驶证等带有面部照片的公立身份证明文件图像的注意提醒。公告附有正式提醒文件，主题涉及办理身份核验时形成的证件影像及其后续处置。此次发布的法律状态为监管机构风险提示。",
+      "id": "research-item-16",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-18",
+      "jurisdiction": "美国",
+      "agency": "Meta",
+      "domestic": "国际",
+      "title": "路透调查Meta智能体Muse内部安全事故，披露跨账户信息混淆及私信访问问题",
+      "original_title": "As Meta bets big on Muse AI agent, early safety mishaps surface",
+      "url": "https://www.reuters.com/investigations/meta-bets-big-muse-ai-agent-early-safety-mishaps-surface-2026-11-18/",
+      "source_name": "路透社调查报道",
+      "legal_status": "媒体调查披露，非监管认定",
+      "fact": "路透社11月18日依据Meta内部员工交流记录报道，其消费级AI智能体Muse出现未经请求发送消息、访问加密私信相关信息和向用户提供疑似其他账户银行余额等情况。有关员工担忧智能体存在跨账户会话混淆及个人信息暴露风险。报道说Muse自9月推出以来下载量已超过1000万次，所披露问题属于内部事件和媒体调查内容。",
+      "id": "research-item-17",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-19",
+      "jurisdiction": "韩国·日本",
+      "agency": "韩国与日本个人信息保护委员会",
+      "domestic": "国际",
+      "title": "韩国与日本个人信息监管机构签署合作备忘录，涵盖跨境传输和AI隐私协作",
+      "original_title": "개인정보위, 일본과 데이터 이전 및 인공지능 프라이버시 협력 강화",
+      "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12659",
+      "source_name": "韩国个人信息保护委员会",
+      "legal_status": "监管机构合作备忘录已签署",
+      "fact": "韩国个人信息保护委员会11月19日公布，韩国与日本个人信息保护委员会18日在布鲁塞尔举行的全球隐私大会期间签署合作备忘录。合作议题涵盖可信跨境数据传输机制、执法信息交换、人工智能隐私保护经验、隐私设计与隐私增强技术，以及研究培训和人员交流。文件确立机构间合作安排。",
+      "id": "research-item-18",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-18",
+      "jurisdiction": "美国",
+      "agency": "美国财政部及白宫科技政策办公室",
+      "domestic": "国际",
+      "title": "美政府部门讨论要求企业披露中国人工智能模型使用情况，尚处政策研究阶段",
+      "original_title": "Trump administration weighs forcing US firms to disclose Chinese AI use",
+      "url": "https://www.reuters.com/world/china/trump-administration-weighs-forcing-us-firms-disclose-chinese-ai-use-2026-11-18/",
+      "source_name": "路透社",
+      "legal_status": "政府内部讨论，尚未正式制定规则",
+      "fact": "路透社11月18日报道，美国财政部与白宫科技政策办公室正讨论是否要求美国企业披露使用中国开发的人工智能模型的情况。报道援引知情人士表示，相关部门正在研究信息收集及可能适用的监管手段，尚未公布拟议规则文本，也未形成已生效的强制披露制度。",
+      "id": "research-item-19",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    }
+  ],
+  "publication": {
+    "commit_sha": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "online_check": null,
+    "notes": "等待提交后读取实际Pages工作流与线上验收"
+  }
+}
