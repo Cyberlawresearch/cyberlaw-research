@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-19",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-19-new-works.html",
+  "page_blob_sha": "9ac40b609f154b945d1ad134d14efbc9da5e1a51",
+  "newworks_count": 3,
+  "checked_at": "2026-11-19T12:40:47.752Z",
+  "checks": {
+    "publisher_original_source_verified": true,
+    "original_title_author_doi_verified": true,
+    "publication_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "historical_91_html_pages_checked": true,
+    "github_code_search_done": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html及new-works-history.html历史索引",
+      "main中的91个研究新作HTML正文逐页检查DOI和原始题名",
+      "GitHub仓库代码搜索所选作品原题、DOI",
+      "新作候选版权论文10.1007/s40319-026-01784-9与2026-11-02重复，已剔除"
+    ],
+    "exact_hits_for_selected": 0,
+    "version_distinction": "两项正式期刊论文和一项Springer正式会议论文集章节；后者2026年在线首发但书目年份2027",
+    "source_navigation_notes": "第1及第3项已打开Springer出版原文；第2项已在网页检索中取得Springer出版社原始全文摘要及书目信息，直接打开章节页受到访问限制，没有声称完成无法读取部分的核验。"
+  },
+  "items": [
+    {
+      "cn_title": "欧盟网络安全报告义务如何把企业变成强制性情报收集节点",
+      "author": "Fabian Teichmann",
+      "original_title": "From voluntary sharing to mandated sensing: how European union cyber regulation conscripts private intelligence",
+      "journal": "International Politics",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-11-17",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": "10.1057/s41311-026-00858-2",
+      "publisher_page": "https://link.springer.com/article/10.1057/s41311-026-00858-2",
+      "version": "2026年11月17日Springer在线首发的正式期刊论文；期卷页码未提供"
+    },
+    {
+      "cn_title": "AI解释了预测结果，为什么仍不能代替法律上的决定理由",
+      "author": "Madeleine Waller; Paul Waller; Karen Yeung",
+      "original_title": "Legal Obligations for AI Explainability: Open Questions on Technical Methods",
+      "journal": "Explainable Artificial Intelligence (xAI 2026), Communications in Computer and Information Science",
+      "publisher": "Springer, Cham",
+      "year": 2027,
+      "publication_date": "2026-11-17",
+      "volume": "3179",
+      "issue": null,
+      "pages": "381–404",
+      "article_number": null,
+      "doi": "10.1007/978-3-032-45473-7_19",
+      "publisher_page": "https://link.springer.com/chapter/10.1007/978-3-032-45473-7_19",
+      "version": "xAI 2026会议论文集章节；2026-11-17在线出版，正式书目年度2027。不可混同为2027才首发"
+    },
+    {
+      "cn_title": "AI预测昏迷患者的治疗意愿，不能替代患者的预先医疗指示",
+      "author": "Hoda Hosseiny; Shervin MirzaeiGhazi",
+      "original_title": "Relational Autonomy and the Limits of the Personalised Patient Preference Predictor",
+      "journal": "Philosophy & Technology",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-11-17",
+      "volume": "39",
+      "issue": null,
+      "pages": null,
+      "article_number": "227",
+      "doi": "10.1007/s13347-026-01238-7",
+      "publisher_page": "https://link.springer.com/article/10.1007/s13347-026-01238-7",
+      "version": "2026年11月17日正式期刊在线发表，第39卷文章号227"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "e3cbd386a8b88bf4ec4e967c7ab6993d5c832689",
+    "last_complete_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": null
+  }
+}
