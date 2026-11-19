@@ -1,8 +1,8 @@
 {
   "date": "2026-11-19",
   "base_main_sha": "6b2a066b091dd1741d26856943143d9638795600",
-  "phase": "researching",
-  "publication_ready": false,
+  "phase": "validated",
+  "publication_ready": true,
   "items": [
     {
       "id": "us-ofac-gold-1118",
@@ -29,10 +29,11 @@
       "date": "2026-11-18",
       "jurisdiction": "英国／印度",
       "authority": "英国政府及印度海关",
-      "stage": "争议协调和政策表态，非新关税法令",
-      "headline": "英国政府11月18日确认紧急交涉印度散装威士忌归类及关税问题",
-      "source": "https://www.reuters.com/world/uk/uk-says-ministers-urgently-working-with-india-tariff-dispute-scotch-whisky-2026-11-18/",
-      "status": "candidate (event from 11/14 edition requires new action distinction)"
+      "stage": "海关归类执法及争议，英国政府11月18日声明，非统一新关税令",
+      "headline": "印度海关对部分散装苏格兰威士忌按162.5%综合税负计征，英方交涉",
+      "source": "https://www.reuters.com/world/india/india-charge-bulk-scotch-imports-1625-duty-tax-amid-uk-pact-standoff-2026-11-18/",
+      "status": "two Nov18 Reuters reports opened; 11/14 original dispute prior edition, added 162.5% combined taxes and provisional 75% cash plus bank guarantee",
+      "extra_source": "https://www.reuters.com/world/uk/uk-says-ministers-urgently-working-with-india-tariff-dispute-scotch-whisky-2026-11-18/"
     },
     {
       "id": "us-usitc-potassium",
@@ -73,12 +74,22 @@
       "stage": "政策谈判信号、非协定条款或新税令",
       "source": "https://www.ft.com/content/6b278daf-6fdf-4951-af8a-227f25c4e0b7",
       "status": "specific article opened; paywall; reports UK resistance to draft communique"
+    },
+    {
+      "id": "eu-indonesia-cepa-authorization",
+      "date": "2026-11-18",
+      "jurisdiction": "欧盟／印度尼西亚",
+      "authority": "欧盟理事会",
+      "headline": "欧盟理事会批准签署并临时适用欧印尼全面经济伙伴和投资保护协定",
+      "stage": "理事会授权签署及后续临时适用；尚未签署、未生效，临时适用需完成相互通知",
+      "source": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/18/eu-indonesia-council-greenlights-signature-of-landmark-trade-and-investment-agreements/",
+      "status": "official Council 2026-11-18 page opened and verified; 98.5% tariff lines future liberalized; GSP expires 2027-01-01"
     }
   ],
   "coverage": {
     "US": "OFAC 11/18 SDN涉黎巴嫩/土耳其黄金交易；CPSC 11/18钮扣电池产品安全直接终规则；USITC 11/18公告初筛",
     "UK": "英印苏格兰威士忌关税归类争议11/18政府新表态，筛选政策信号；英国新出口/制裁检索中",
-    "EU": "欧盟贸易总司11/16最新反倾销公告已收录第070期；UK-EU 11/18关税政策谈判出现新分歧，仍属政策信号",
+    "EU": "欧盟贸易总司11/16最新反倾销公告已收录第070期；UK-EU 11/18关税政策谈判出现新分歧，仍属政策信号；11月18日欧盟理事会正式批准欧印尼CEPA/IPA签署及临时适用（新阶段）",
     "India": "DGTR官网11/18热轧平板钢案52家注册参加方名单及非保密材料互送程序，11/16阿莫西林三水合物答卷延至11/26（不再延期）；英印威士忌11/18披露162.5%实际分类税负",
     "Japan": "JETRO、经济产业省最新贸易/出口管制检索及印度对日案件交叉核对，未见过去72小时独立新决定",
     "Korea": "产业通商资源部、贸易委员会、出口管制和涉韩贸易救济11/16-19定向检索，未检出足够独立新法律事实",
@@ -88,8 +99,14 @@
   },
   "last_error": null,
   "next_actions": [
-    "在终扫中确认各项候选法律阶段、原始来源及去重",
-    "写入最终草稿 publication_ready=true",
-    "发布 issue/index/archive 并核验 Pages"
-  ]
+    "创建2026-11-19第072期完整HTML",
+    "更新index和archive（保留历史）",
+    "ref main回读、同提交Pages及公开页面验收"
+  ],
+  "final_sweep": "2026-11-19北京当日完成美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚及东盟定向检索；最后回查欧盟理事会18日晚新增欧印尼签署授权；与2026-11-12至18至少7期正文逐条事件级去重；确认英国印酒案新增162.5%综合税负不同于11月14日扣货消息；排除重复的澳洲725号调查、美国BIS远程算力规则、11月17日加拿大宽免、11月14日东盟DEFA签署；逐条打开8项具体原始来源，PDF截图核对印度2项及USITC；来源FR CPSC官方网页工具无法直接打开，已独立核对11月18日联邦公报编号2026-23435全文镜像和原始页锚点。",
+  "source_validation": {
+    "checked": 8,
+    "total_source_links": 10,
+    "notes": "Federal Register/CPSC primary exact docket accessible in search/mirror but browser direct official temporarily inaccessible; legal details corroborated; FT paywall article landing accessible and indexed report supports policy signal."
+  }
 }
