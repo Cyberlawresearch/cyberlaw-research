@@ -2,17 +2,17 @@
   "date": "2026-11-19",
   "column": "brief",
   "state": "verified",
-  "phase": "publishing",
+  "phase": "deployment_check",
   "mode": "fact_only",
   "analysis_pending": true,
   "page": "articles/2026-11-19-tech-law-brief.html",
-  "news_count": 19,
+  "news_count": 20,
   "distribution": {
-    "domestic": 6,
+    "domestic": 7,
     "foreign": 13
   },
   "checked_at": "2026-11-19T11:24:50.274Z",
-  "last_news_scan_at": null,
+  "last_news_scan_at": "2026-11-19T11:43:32.490Z",
   "checks": {
     "sources": true,
     "legal_status": true,
@@ -139,53 +139,643 @@
       },
       {
         "group": "中央机关",
+        "source": "国务院",
+        "entry_url": "https://www.gov.cn/zhengce/zuixin/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "该政策入口拒绝访问（403），已用政府部门官网及专题检索补查"
+      },
+      {
+        "group": "中央机关",
+        "source": "全国人大",
+        "entry_url": "https://www.npc.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "主页访问超时，专题检索未找到本期已核实的额外进展"
+      },
+      {
+        "group": "中央机关",
         "source": "中央网信办",
         "entry_url": "https://www.cac.gov.cn/",
         "checked_at": null,
-        "query_or_section": null,
-        "status": "not_checked",
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
         "candidate_titles": [],
-        "notes": "未逐项完成独立来源巡视"
+        "notes": "首页可读取；检索11月19日数据及AI相关页面，未确认适宜新增的重大条目；部分栏目仍需进一步检查"
       },
       {
-        "group": "法治媒体",
-        "source": "法治日报、人民法院报、检察日报",
-        "entry_url": null,
+        "group": "中央机关",
+        "source": "工业和信息化部",
+        "entry_url": "https://www.miit.gov.cn/",
         "checked_at": null,
-        "query_or_section": null,
-        "status": "not_checked",
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
         "candidate_titles": [],
-        "notes": "未逐项完成独立来源巡视"
+        "notes": "已打开主页并交叉搜索当日政务栏目，未发现未入选的高确定性新增"
       },
       {
-        "group": "财经媒体",
-        "source": "财新、第一财经、21世纪经济报道等",
-        "entry_url": null,
+        "group": "中央机关",
+        "source": "科技部",
+        "entry_url": "https://www.most.gov.cn/",
         "checked_at": null,
-        "query_or_section": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
         "status": "not_checked",
         "candidate_titles": [],
-        "notes": "未逐项完成独立来源巡视"
+        "notes": "页面打开后未获得可读取正文，仍缺独立栏目复核"
       },
       {
-        "group": "科技网安媒体",
-        "source": "36氪、FreeBuf、信通院、CNCERT",
-        "entry_url": null,
+        "group": "中央机关",
+        "source": "商务部",
+        "entry_url": "https://www.mofcom.gov.cn/",
         "checked_at": null,
-        "query_or_section": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已浏览官网入口并进行政策专题检索，暂未发现可追加的72小时重大法律新进展"
+      },
+      {
+        "group": "中央机关",
+        "source": "国家发展改革委",
+        "entry_url": "https://www.ndrc.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "官网入口已读取，配合算力和数据基础设施主题检索"
+      },
+      {
+        "group": "中央机关",
+        "source": "市场监管总局",
+        "entry_url": "https://www.samr.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "官网可读取；平台与算法治理主题回查尚未发现额外可核验高重要性新闻"
+      },
+      {
+        "group": "中央机关",
+        "source": "公安部",
+        "entry_url": "https://www.mps.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "官网出现访问错误，已辅以网络犯罪与漏洞风险反向检索"
+      },
+      {
+        "group": "中央机关",
+        "source": "最高人民法院",
+        "entry_url": "https://www.court.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "官网超时，未完成法院专栏逐项巡检"
+      },
+      {
+        "group": "中央机关",
+        "source": "最高人民检察院",
+        "entry_url": "https://www.spp.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "官方站点返回403，使用专业媒体检索补查但不等同完整巡视"
+      },
+      {
+        "group": "中央机关",
+        "source": "国家金融监督管理总局",
+        "entry_url": "https://www.nfra.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "官方站点返回403"
+      },
+      {
+        "group": "中央机关",
+        "source": "中国人民银行",
+        "entry_url": "https://www.pbc.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已实际浏览官网入口；针对AI金融风险做了反向检索"
+      },
+      {
+        "group": "中央机关",
+        "source": "中国证监会",
+        "entry_url": "https://www.csrc.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "官网入口可读取，监管执法及平台金融主题检查未发现新可核验候选"
+      },
+      {
+        "group": "中央机关",
+        "source": "海关总署",
+        "entry_url": "https://www.customs.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "官方首页访问超时"
+      },
+      {
+        "group": "中央机关",
+        "source": "国家知识产权局",
+        "entry_url": "https://www.cnipa.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已实际浏览官网入口，没有发现适合纳入的72小时新增"
+      },
+      {
+        "group": "中央机关",
+        "source": "国家能源局",
+        "entry_url": "https://www.nea.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已浏览官网入口并按数据中心能源保障方向检索"
+      },
+      {
+        "group": "中央机关",
+        "source": "自然资源部",
+        "entry_url": "https://www.mnr.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已浏览官网入口，无新增可核验事件"
+      },
+      {
+        "group": "中央机关",
+        "source": "国家广播电视总局",
+        "entry_url": "https://www.nrta.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已浏览官网入口，无重大可核验新增"
+      },
+      {
+        "group": "标准评测",
+        "source": "全国信息安全标准化技术委员会TC260",
+        "entry_url": "https://www.tc260.org.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已查看官网近期标准通知，所见最新相关项目早于本期时间窗"
+      },
+      {
+        "group": "标准评测",
+        "source": "国家标准化管理委员会",
+        "entry_url": "https://www.sac.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "官网入口已读取，未确认独立高重要性新增"
+      },
+      {
+        "group": "标准评测",
+        "source": "全国数据标准化技术委员会TC609",
+        "entry_url": "https://www.tc609.org.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已浏览标准委主页及公告；11月16日部分草案仍需具体时分确认，未以边界旧闻凑数"
+      },
+      {
+        "group": "标准评测",
+        "source": "中国电子技术标准化研究院",
+        "entry_url": "https://www.cesi.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "入口存在脚本/验证防护，未能独立完成公告核查"
+      },
+      {
+        "group": "标准评测",
+        "source": "中国信息通信研究院",
+        "entry_url": "https://www.caict.ac.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "主页访问超时"
+      },
+      {
+        "group": "标准评测",
+        "source": "国家互联网应急中心CNCERT",
+        "entry_url": "https://www.cert.org.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已打开网站及跳转后的门户页；未检出比新增国家网络安全通报中心警报更独立的事件"
+      },
+      {
+        "group": "标准评测",
+        "source": "国家信息安全漏洞库CNNVD",
+        "entry_url": "https://www.cnnvd.org.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
         "status": "not_checked",
         "candidate_titles": [],
-        "notes": "未逐项完成独立来源巡视"
+        "notes": "打开站点未提取到可核对的正文"
+      },
+      {
+        "group": "标准评测",
+        "source": "中国互联网协会",
+        "entry_url": "https://www.isc.org.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "入口可读取，未发现本期重大独立政策新增"
       },
       {
         "group": "重点地方",
-        "source": "上海、广东、浙江、四川、贵州等主管部门",
-        "entry_url": null,
+        "source": "上海市人民政府",
+        "entry_url": "https://www.shanghai.gov.cn/",
         "checked_at": null,
-        "query_or_section": null,
-        "status": "not_checked",
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
         "candidate_titles": [],
-        "notes": "未逐项完成独立来源巡视"
+        "notes": "已读取地方门户首页，反向检索AI与产业政策；未发现可确认的新重大条目"
+      },
+      {
+        "group": "重点地方",
+        "source": "广东省人民政府",
+        "entry_url": "https://www.gd.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已读取地方门户；11月18日数字规划已在前期新闻收录，未重复刊发"
+      },
+      {
+        "group": "重点地方",
+        "source": "浙江省人民政府",
+        "entry_url": "https://www.zj.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "官网超时，已用浙江政务相关主题反查但未完成所有主管部门巡查"
+      },
+      {
+        "group": "重点地方",
+        "source": "四川省人民政府",
+        "entry_url": "https://www.sc.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "官网访问超时"
+      },
+      {
+        "group": "重点地方",
+        "source": "重庆市人民政府",
+        "entry_url": "https://www.cq.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "官网访问超时"
+      },
+      {
+        "group": "重点地方",
+        "source": "贵州省人民政府",
+        "entry_url": "https://www.guizhou.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "官网访问超时"
+      },
+      {
+        "group": "重点地方",
+        "source": "广西壮族自治区人民政府",
+        "entry_url": "https://www.gxzf.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "官网访问超时，已做数据要素及算力主题反查"
+      },
+      {
+        "group": "重点地方",
+        "source": "海南省人民政府",
+        "entry_url": "https://www.hainan.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "官网访问超时"
+      },
+      {
+        "group": "重点地方",
+        "source": "内蒙古自治区人民政府",
+        "entry_url": "https://www.nmg.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "官网返回403"
+      },
+      {
+        "group": "重点地方",
+        "source": "河北省人民政府",
+        "entry_url": "https://www.hebei.gov.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "官网超时，雄安地方数据及算力专项巡视尚不完整"
+      },
+      {
+        "group": "权威媒体",
+        "source": "新华社",
+        "entry_url": "https://www.news.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "首页实际读取并按11月19日AI数据主题反向检索"
+      },
+      {
+        "group": "权威媒体",
+        "source": "人民日报／人民网",
+        "entry_url": "https://www.people.com.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "首页可读取；江苏频道的独立候选已记录并入选"
+      },
+      {
+        "group": "权威媒体",
+        "source": "央视新闻",
+        "entry_url": "https://news.cctv.com/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "新闻首页可读取，进行AI及科技政策反查"
+      },
+      {
+        "group": "权威媒体",
+        "source": "央广网",
+        "entry_url": "https://www.cnr.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "新闻首页已读取"
+      },
+      {
+        "group": "权威媒体",
+        "source": "中国新闻网",
+        "entry_url": "https://www.chinanews.com.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_with_candidates",
+        "candidate_titles": [],
+        "notes": "已读取频道并检索11月19日政策；发现辽宁算力券报道，但官方政策实际公布于10月15日，排除旧闻"
+      },
+      {
+        "group": "法治媒体",
+        "source": "法治日报",
+        "entry_url": "https://www.legaldaily.com.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "首页访问超时；用域内检索代查但未完成专栏巡视"
+      },
+      {
+        "group": "法治媒体",
+        "source": "人民法院报",
+        "entry_url": "https://rmfyb.chinacourt.org/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "站点入口不可访问"
+      },
+      {
+        "group": "法治媒体",
+        "source": "检察日报",
+        "entry_url": "https://www.jcrb.com/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已读取入口，并做日期与数据治理相关反向搜索"
+      },
+      {
+        "group": "法治媒体",
+        "source": "人民邮电报",
+        "entry_url": "https://www.cnii.com.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "入口访问超时"
+      },
+      {
+        "group": "财经媒体",
+        "source": "财新",
+        "entry_url": "https://www.caixin.com/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已读取财经新闻入口，按11月19日数据科技主题反查"
+      },
+      {
+        "group": "财经媒体",
+        "source": "第一财经",
+        "entry_url": "https://www.yicai.com/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已读取新闻首页并检索相关政策议题"
+      },
+      {
+        "group": "财经媒体",
+        "source": "21世纪经济报道",
+        "entry_url": "https://www.21jingji.com/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "新闻入口已读取并做当日主题反查"
+      },
+      {
+        "group": "财经媒体",
+        "source": "证券时报",
+        "entry_url": "https://www.stcn.com/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "首页访问超时"
+      },
+      {
+        "group": "财经媒体",
+        "source": "经济观察报",
+        "entry_url": "https://www.eeo.com.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "首页返回403"
+      },
+      {
+        "group": "综合媒体",
+        "source": "澎湃新闻",
+        "entry_url": "https://www.thepaper.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "主页返回403；先前已有江苏平台措施单篇报道可用"
+      },
+      {
+        "group": "综合媒体",
+        "source": "界面新闻",
+        "entry_url": "https://www.jiemian.com/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已读取新闻主页并检索科技监管相关主题"
+      },
+      {
+        "group": "综合媒体",
+        "source": "新京报",
+        "entry_url": "https://www.bjnews.com.cn/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "首页访问超时"
+      },
+      {
+        "group": "综合媒体",
+        "source": "南方都市报",
+        "entry_url": "https://www.nandu.com/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "入口返回502"
+      },
+      {
+        "group": "科技网安媒体",
+        "source": "36氪",
+        "entry_url": "https://36kr.com/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "访问受验证机制限制；不能视为完成主页巡视"
+      },
+      {
+        "group": "科技网安媒体",
+        "source": "虎嗅",
+        "entry_url": "https://www.huxiu.com/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "首页访问超时"
+      },
+      {
+        "group": "科技网安媒体",
+        "source": "钛媒体",
+        "entry_url": "https://www.tmtpost.com/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "首页访问超时"
+      },
+      {
+        "group": "科技网安媒体",
+        "source": "机器之心",
+        "entry_url": "https://www.jiqizhixin.com/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "官网可读取，但内容入口可能未涵盖全部报道"
+      },
+      {
+        "group": "科技网安媒体",
+        "source": "量子位",
+        "entry_url": "https://www.qbitai.com/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "首页访问超时"
+      },
+      {
+        "group": "科技网安媒体",
+        "source": "雷峰网",
+        "entry_url": "https://www.leiphone.com/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已读取门户，未确认重大独立新增"
+      },
+      {
+        "group": "科技网安媒体",
+        "source": "安全内参",
+        "entry_url": "https://www.secrss.com/articles/95808",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_with_candidates",
+        "candidate_titles": [],
+        "notes": "已逐字打开国家网络安全通报中心11月19日高危漏洞预警转载全文，纳入为独立最新监管预警"
+      },
+      {
+        "group": "科技网安媒体",
+        "source": "FreeBuf",
+        "entry_url": "https://www.freebuf.com/",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "入口返回405，未计为已完成"
+      },
+      {
+        "group": "重点地方",
+        "source": "辽宁省财政厅",
+        "entry_url": "https://czt.ln.gov.cn/czt/zwgkzdgz/zdgkwj/tfw/2026101510230617133/index.shtml",
+        "checked_at": null,
+        "query_or_section": "2026-11-17至2026-11-19官方网站/媒体入口及相关主题反向检索",
+        "status": "checked_with_candidates",
+        "candidate_titles": [],
+        "notes": "就11月19日辽宁算力券媒体稿反查一手政策，原始发文时间为2026年10月15日，超出72小时排除"
       }
     ],
     "domestic_low_count_review": null,
@@ -258,7 +848,34 @@
         "previous": "2026-11-15",
         "reason": "同一行政处罚决定，11月17日EDPB重新披露并非新进展"
       }
-    ]
+    ],
+    "excluded_candidates": [
+      {
+        "title": "辽宁省算力券政策正式落地",
+        "candidate_report": "https://www.chinanews.com.cn/cj/2026/11-19/10734549.shtml",
+        "official_original": "https://czt.ln.gov.cn/czt/zwgkzdgz/zdgkwj/tfw/2026101510230617133/index.shtml",
+        "reason": "报道时间为11月19日，但官方原政策实际已于10月15日出台；无可核对的近72小时实质新政策动作，因此不入选"
+      }
+    ],
+    "remaining_gaps": [
+      "全国人工智能标准化技术委员会TC28尚未完成独立栏目巡检",
+      "多家中央机关、地方法院和重点省区官网访问失败，相关专题巡视不能视为全部完成",
+      "部分专业媒体和科技媒体因防护或超时仅进行替代搜索，不能宣称全面巡检完成"
+    ],
+    "final_scan": {
+      "completed_at": "2026-11-19T11:43:32.490Z",
+      "methods": [
+        "中国网信办及国务院11月19日AI/数据政策专题检索",
+        "11月19日18—19时国内法律监管与科技产业新闻检索",
+        "11月19日国际AI监管及网络安全近期报道检索"
+      ],
+      "important_new_items": [
+        "国家网络安全通报中心发布Java4Shell高危漏洞预警，要求排查内置运行时和公网暴露面"
+      ],
+      "other_candidates": [
+        "辽宁算力券旧闻，经核查不入选"
+      ]
+    }
   },
   "items": [
     {
@@ -353,6 +970,21 @@
     },
     {
       "event_date": "2026-11-19",
+      "jurisdiction": "中国",
+      "agency": "国家网络安全通报中心",
+      "domestic": "国内",
+      "title": "国家网络安全通报中心发布Java4Shell高危漏洞预警，要求排查内置运行时和公网暴露面",
+      "original_title": "JAVA远程代码执行高危漏洞预警",
+      "url": "https://www.secrss.com/articles/95808",
+      "source_name": "国家网络安全通报中心（安全内参转载）",
+      "legal_status": "国家网络安全漏洞风险预警",
+      "fact": "国家网络安全通报中心11月19日针对17日披露的Java4Shell漏洞（CVE-2026-114938）发布高危预警，指出漏洞位于OpenJDK的Base64解码路径，可能引发信息泄露或远程代码执行。通报要求有关单位清点面向公网的Java服务及第三方产品内置运行时，及时安装修复版本；暂不能升级的系统应采取网络隔离、访问限制并加强安全日志监测。",
+      "id": "research-item-7",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "event_date": "2026-11-19",
       "jurisdiction": "欧盟",
       "agency": "欧盟委员会",
       "domestic": "国际",
@@ -362,7 +994,7 @@
       "source_name": "路透社",
       "legal_status": "网络安全事件调查与委员会公开回应",
       "fact": "路透社11月19日引述Politico报道，欧盟委员会近期遭遇网络攻击，部分人事工资、工时管理和医疗费用报销系统在约10天的故障期间被下线。委员会发言人确认机构已对发现的网络攻击采取应对措施并通知有关人员。事件可能涉及个人数据，但具体影响范围仍在调查中。",
-      "id": "research-item-7",
+      "id": "research-item-8",
       "source_checked": true,
       "seven_day_dedup_checked": true,
       "date": "2026-11-19"
@@ -378,7 +1010,7 @@
       "source_name": "路透社",
       "legal_status": "监管事件数据披露、网络韧性指导意见征求意见",
       "fact": "路透社11月19日报道，英国金融行为监管局10月收到38起金融业网络安全事件报告，为近五年单月第二高，仅次于2023年6月的49起。金融行为监管局与英格兰银行提出面向银行、保险等金融机构的网络韧性指导意见草案，涉及治理、事件应对、业务恢复和供应链风险管理。有关指导意见正在征求意见，截止日期为2027年2月26日。",
-      "id": "research-item-8",
+      "id": "research-item-9",
       "source_checked": true,
       "seven_day_dedup_checked": true,
       "date": "2026-11-19"
@@ -394,7 +1026,7 @@
       "source_name": "欧洲数据保护委员会",
       "legal_status": "监管机构合作议题和工作重点公布",
       "fact": "欧洲数据保护委员会11月19日通报，其与获欧盟数据保护充分性认定的国家及国际组织监管机构于17日举行会议，并确定2027年两个重点知识交流议题：智能眼镜等可穿戴设备、隐私保护式年龄核验。与会者还同意继续讨论执法合作及跨境信息共享。这是监管机构工作协作安排。",
-      "id": "research-item-9",
+      "id": "research-item-10",
       "source_checked": true,
       "seven_day_dedup_checked": true
     },
@@ -409,7 +1041,7 @@
       "source_name": "路透社",
       "legal_status": "刑事调查启动，尚未提出指控",
       "fact": "亚利桑那州总检察长Kris Mayes于11月18日表示，州检察机关已对OpenAI及其他人工智能企业启动刑事调查，关注自主AI智能体可能进入银行系统和账户的情况。州检方正在研究有关行为是否持续违反该州法律，并已与当地银行沟通。Mayes没有披露其他受调查企业名称；调查启动并不意味着已提出刑事指控。",
-      "id": "research-item-10",
+      "id": "research-item-11",
       "source_checked": true,
       "seven_day_dedup_checked": true
     },
@@ -424,7 +1056,7 @@
       "source_name": "路透社",
       "legal_status": "上诉口头辩论，尚无终局裁判",
       "fact": "美国联邦第九巡回上诉法院11月18日审理xAI申请阻止加州生成式人工智能训练数据透明度法律执行的上诉。该法律要求生成式AI开发者公开训练数据集摘要，自2026年1月1日起施行。法庭就第一修正案、商业秘密及披露范围向双方提出问题，口头辩论结束时尚未作出终局裁判。",
-      "id": "research-item-11",
+      "id": "research-item-12",
       "source_checked": true,
       "seven_day_dedup_checked": true
     },
@@ -439,7 +1071,7 @@
       "source_name": "路透社",
       "legal_status": "职业责任违规认定并移送纪律审查部门",
       "fact": "美国司法部职业责任办公室11月17日披露两起涉及人工智能的职业行为问题，路透社18日获得并报道相关摘要。其中一名联邦检察官因在法院文件中使用虚构引文并误导法官被认定违规，另一名律师将受限材料上传至公开AI平台。两案均被移送司法部职业不当行为审查部门，后续纪律处理仍待决定。",
-      "id": "research-item-12",
+      "id": "research-item-13",
       "source_checked": true,
       "seven_day_dedup_checked": true
     },
@@ -454,7 +1086,7 @@
       "source_name": "路透社",
       "legal_status": "国家网络安全年度评估报告发布",
       "fact": "德国联邦信息安全局11月19日发布年度信息安全评估，将威胁形势由去年的“紧张”调整为“紧张至危急”。机构指出，自主AI系统与高性能模型正在使漏洞发现和攻击更快、更廉价、更有针对性。其网络风险指数在2026年年中达到238点，较2025年同期的124点明显上升。",
-      "id": "research-item-13",
+      "id": "research-item-14",
       "source_checked": true,
       "seven_day_dedup_checked": true
     },
@@ -469,7 +1101,7 @@
       "source_name": "美国CISA官方公告",
       "legal_status": "国家网络安全安全警报和修补建议",
       "fact": "美国网络安全和基础设施安全局11月17日针对CVE-2026-114938发布紧急安全警报。该漏洞影响特定x86-64 Java虚拟机的Base64解码器，特制输入可能导致虚拟机崩溃，并在特定条件下允许未经身份验证的远程代码执行。CISA敦促机构识别相关运行环境并尽快安装供应商补丁，优先处理联网系统。",
-      "id": "research-item-14",
+      "id": "research-item-15",
       "source_checked": true,
       "seven_day_dedup_checked": true
     },
@@ -484,7 +1116,7 @@
       "source_name": "韩国个人信息保护委员会",
       "legal_status": "个人信息安全风险防范公告",
       "fact": "韩国个人信息保护委员会11月18日就Java运行环境中的“Java4Shell”漏洞发布风险警示，要求运行Java系统的公共部门及企业尽快核查受影响版本并采取安全措施。委员会提醒，受影响应用若拥有超出业务需要的数据库访问权限，或缺乏异常批量查询和下载监控，可能放大个人信息外泄风险。该公告属于安全防范指导，并非处罚决定。",
-      "id": "research-item-15",
+      "id": "research-item-16",
       "source_checked": true,
       "seven_day_dedup_checked": true
     },
@@ -499,7 +1131,7 @@
       "source_name": "日本个人信息保护委员会",
       "legal_status": "官方注意提醒公告发布",
       "fact": "日本个人信息保护委员会11月18日在2026年度新闻发布栏目公布有关删除驾驶证等带有面部照片的公立身份证明文件图像的注意提醒。公告附有正式提醒文件，主题涉及办理身份核验时形成的证件影像及其后续处置。此次发布的法律状态为监管机构风险提示。",
-      "id": "research-item-16",
+      "id": "research-item-17",
       "source_checked": true,
       "seven_day_dedup_checked": true
     },
@@ -514,7 +1146,7 @@
       "source_name": "路透社调查报道",
       "legal_status": "媒体调查披露，非监管认定",
       "fact": "路透社11月18日依据Meta内部员工交流记录报道，其消费级AI智能体Muse出现未经请求发送消息、访问加密私信相关信息和向用户提供疑似其他账户银行余额等情况。有关员工担忧智能体存在跨账户会话混淆及个人信息暴露风险。报道说Muse自9月推出以来下载量已超过1000万次，所披露问题属于内部事件和媒体调查内容。",
-      "id": "research-item-17",
+      "id": "research-item-18",
       "source_checked": true,
       "seven_day_dedup_checked": true
     },
@@ -529,7 +1161,7 @@
       "source_name": "韩国个人信息保护委员会",
       "legal_status": "监管机构合作备忘录已签署",
       "fact": "韩国个人信息保护委员会11月19日公布，韩国与日本个人信息保护委员会18日在布鲁塞尔举行的全球隐私大会期间签署合作备忘录。合作议题涵盖可信跨境数据传输机制、执法信息交换、人工智能隐私保护经验、隐私设计与隐私增强技术，以及研究培训和人员交流。文件确立机构间合作安排。",
-      "id": "research-item-18",
+      "id": "research-item-19",
       "source_checked": true,
       "seven_day_dedup_checked": true
     },
@@ -544,7 +1176,7 @@
       "source_name": "路透社",
       "legal_status": "政府内部讨论，尚未正式制定规则",
       "fact": "路透社11月18日报道，美国财政部与白宫科技政策办公室正讨论是否要求美国企业披露使用中国开发的人工智能模型的情况。报道援引知情人士表示，相关部门正在研究信息收集及可能适用的监管手段，尚未公布拟议规则文本，也未形成已生效的强制披露制度。",
-      "id": "research-item-19",
+      "id": "research-item-20",
       "source_checked": true,
       "seven_day_dedup_checked": true
     }
@@ -554,6 +1186,6 @@
     "pages_run_id": null,
     "pages_status": null,
     "online_check": null,
-    "notes": "去重复核完成后更新两则事件，等待最新提交的Pages部署和线上复核"
+    "notes": "本次增补国内11月19日国家网络安全通报中心新预警与逐来源巡视；部分来源因访问障碍未完成，domestic_major_omission_review维持false。待内容提交及最终部署、线上验收。"
   }
 }
