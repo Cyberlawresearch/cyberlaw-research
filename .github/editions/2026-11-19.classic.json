@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-19",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-19-hobbes-de-cive.html",
+  "target_path": "articles/2026-11-19-hobbes-de-cive.html",
+  "book": {
+    "author": "Thomas Hobbes（托马斯·霍布斯）",
+    "original_title": "Philosophicall Rudiments Concerning Government and Society",
+    "publisher": "London: printed by J. G. for R. Royston",
+    "year": "1651",
+    "edition": "1651年伦敦完整英文版；拉丁文De Cive的1642年初版与1647年增订版另作区分"
+  },
+  "source_urls": [
+    "https://en.wikisource.org/wiki/Philosophicall_Rudiments_Concerning_Government_and_Society",
+    "https://commons.wikimedia.org/wiki/File:Philosophicall_Rudiments_Concerning_Government_and_Society_(De_Cive).pdf",
+    "https://onlinelibrary.wiley.com/doi/10.1002/9781405164689.biblio",
+    "https://en.wikisource.org/wiki/Discourse_on_the_Origin_of_Inequality_Among_Men/Part_I",
+    "https://www.jstor.org/stable/j.ctv1131gwv",
+    "https://en.wikipedia.org/wiki/De_Cive"
+  ],
+  "original_verification": "本期系统核对Wikisource的1651年英文献辞、作者序言及分为Liberty四章、Dominion十章、Religion四章的十八章完整文本与各章代表性论述；未声称逐字比对拉丁语不同印本。",
+  "critics": [
+    {
+      "name": "Jean-Jacques Rousseau（让-雅克·卢梭）",
+      "work": "Discours sur l'origine et les fondements de l'inégalité parmi les hommes (1755), Part I",
+      "url": "https://en.wikisource.org/wiki/Discourse_on_the_Origin_of_Inequality_Among_Men/Part_I",
+      "checked": "直接批评霍布斯将社会形成后的欲望投射到自然状态；非本书逐章书评"
+    },
+    {
+      "name": "Richard Cumberland（理查德·坎伯兰）",
+      "work": "De Legibus Naturae (1672)",
+      "url": "https://www.jstor.org/stable/j.ctv1131gwv",
+      "checked": "以共同善与社会性批判霍布斯伦理体系；为体系批评而非本书逐章评论"
+    }
+  ],
+  "dedup_checked": [
+    "main/classics.html全数公开书名，未出现De Cive、Philosophicall Rudiments或《论公民》",
+    "main/classics-history.html第15—35期书目未出现本书",
+    "main/data/books.json未出现本书",
+    "此前霍布斯《利维坦》与本书并非同一本书，未重复选书"
+  ],
+  "duplicate_found": false,
+  "sections": 92,
+  "prose_length": 10975,
+  "checked_at": "2026-11-19",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
