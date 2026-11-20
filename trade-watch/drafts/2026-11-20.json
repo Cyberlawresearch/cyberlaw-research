@@ -1,7 +1,7 @@
 {
   "date": "2026-11-20",
   "base_main_sha": "573816440cf3f16b2a56612e1f5ccb69b26df3a1",
-  "phase": "researching",
+  "phase": "deduplicated",
   "publication_ready": false,
   "items": [
     {
@@ -83,19 +83,40 @@
     }
   ],
   "coverage": {
-    "US": "OFAC 11/19 sanctions, GL131L; BIS 11/19 effective remote-access rule; congressional report and semiconductor foundry measures",
-    "EU": "11/19 Jordan investment facilitation negotiations; 11/16 existing steel final measure already in 11/17 issue",
-    "UK": "11/18 robot-mower China dumping initiation + 11/19 registration; 11/19 Korean steel definitive duty; 11/19 cryptographic OIEL change",
-    "Japan": "pending",
-    "Korea": "pending",
-    "India": "pending",
-    "Canada": "pending",
-    "Australia": "pending"
+    "US": "查阅美国联邦公报2026-23529、OFAC 11月19日制裁和一般许可、美国众议院航天报告；拟入选美国规则生效及两项OFAC实质措施。",
+    "EU": "查阅欧委会贸易新闻与11月19日约旦SIFA谈判启动公告；11月16日冷轧钢措施与11月17日期刊重复不收录。",
+    "UK": "核验11月18日对华机器人割草机调查及19日登记、11月19日韩国热轧钢最终反倾销生效、密码专用OIEL取消公告。",
+    "Japan": "查询METI 11月17—20日出口管理、对外贸易及反倾销更新，未发现具备新增监管效力且可核验的重大事项。",
+    "Korea": "查询韩国贸易产业与韩国新闻11月17—20日更新；1万亿美元出口额为宏观数据不作为监管事项收录；英国对韩钢板终裁作为英国监管动作收录。",
+    "India": "查DGTR最新通知，11月17日涤纶变形丝调查延期已在11月18日第071期报道，按事件去重排除；11月18日热轧钢登记方名单与11月19日第072期重复。",
+    "Canada": "查询CBSA/加拿大政府近期钢铝、贸易救济与制裁，11月17日对华钢铝宽免政策已在11月18日第071期收录，不重复。",
+    "Australia": "查询澳大利亚贸易救济委员会最新TRN及贸易调查，11月17—18日结构木材、混凝土及型钢程序已在第070—071期收录，不重复。",
+    "Other": "关注东盟、泰国、越南等，未见过去72小时足以替代本期已核实事项的正式监管变动。"
   },
   "last_error": null,
   "next_actions": [
-    "查日本韩国印度加拿大澳大利亚及其他地区最近72小时官方公告",
-    "比对近7日全文事件级去重",
-    "逐条打开最终来源、结尾终扫、准备发布"
-  ]
+    "终扫11月19日晚及11月20日新监管事实，核对最终7个原始来源",
+    "更新publication_ready=true并回读",
+    "main写入11月20日第073期完整正文、首页、归档并验证"
+  ],
+  "duplicate_check": {
+    "reviewed_issues": [
+      "2026-11-13",
+      "2026-11-14",
+      "2026-11-15",
+      "2026-11-16",
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19"
+    ],
+    "excluded": [
+      "印度DGTR 11月17日涤纶变形丝调查延期——已见11月18日第071期",
+      "欧盟冷轧钢终裁——11月17日第070期",
+      "加拿大钢铝宽免——11月18日第071期",
+      "印热轧钢NCV——11月19日第072期"
+    ],
+    "conditional": [
+      "美国BIS远程算力规则11月17日已有发布信息；仅以11月19日正式生效与晶圆代工业务执行变化为本期新增"
+    ]
+  }
 }
