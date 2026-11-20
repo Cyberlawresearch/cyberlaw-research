@@ -1,7 +1,7 @@
 {
   "date": "2026-11-20",
   "base_main_sha": "573816440cf3f16b2a56612e1f5ccb69b26df3a1",
-  "phase": "main_published_pages_in_progress",
+  "phase": "published_pages_verified_source_diagnostics_running",
   "publication_ready": true,
   "items": [
     {
@@ -113,9 +113,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "继续核查最终main提交的Pages run 44650952429至完成",
-    "通过Pages对应触发的trade-watch-source-check工作流确认当期正文及13来源链接在公开页面通过",
-    "完成后标记draft发布状态；若确实访问不通保持如实说明"
+    "取得最终源诊断workflow 44651445533状态及实际source检查结果",
+    "如失败保存具体失败来源链接和原因且不谎称全部通过",
+    "回读草稿，发布状态更新"
   ],
   "duplicate_check": {
     "reviewed_issues": [
@@ -154,12 +154,43 @@
   "pages_workflow": {
     "id": 44650952429,
     "head_sha": "e6c3aec01a49c0883cdfd17c3b0aff010c738d31",
-    "status": "in_progress",
-    "last_observed_stage": "Install isolated context test browser",
+    "status": "completed",
+    "conclusion": "success",
     "url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/44650952429"
   },
   "public_pages_validation": {
-    "ok": false,
-    "reason": "Pages最新提交的部署尚在进行，公开GitHub Pages URL通过网页检索工具访问失败，不能据GitHub main回读声称公开页面验收完成。"
+    "ok": true,
+    "guard_run_id": 44651445430,
+    "guard_conclusion": "success",
+    "checked_at": "2026-11-20T09:09:16+08:00",
+    "expected_date": "2026-11-20",
+    "commit": "e6c3aec01a49c0883cdfd17c3b0aff010c738d31",
+    "news_count": 8,
+    "repository_ok": true,
+    "public_ok": true,
+    "pages": [
+      {
+        "path": "issues/2026-11-20.html",
+        "ok": true,
+        "status": 200
+      },
+      {
+        "path": "index.html",
+        "ok": true,
+        "status": 200
+      },
+      {
+        "path": "archive.html",
+        "ok": true,
+        "status": 200
+      }
+    ],
+    "errors": []
+  },
+  "source_diagnostics": {
+    "run_id": 44651445533,
+    "status": "in_progress",
+    "manual_source_link_check": "11 distinct official source URLs independently opened using web browser and matched subject; source diagnosis workflow checking published link targets and all three public pages.",
+    "source_links_in_html": 13
   }
 }
