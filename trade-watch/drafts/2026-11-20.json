@@ -1,12 +1,12 @@
 {
   "date": "2026-11-20",
   "base_main_sha": "573816440cf3f16b2a56612e1f5ccb69b26df3a1",
-  "phase": "deduplicated",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "uk-robot-mowers",
-      "stage": "verified_candidate",
+      "stage": "source_opened_verified",
       "date": "2026-11-19",
       "jurisdiction": "英国",
       "headline": "对中国产机器人割草机启动反倾销调查并开始进口登记",
@@ -14,72 +14,90 @@
         "https://www.gov.uk/government/news/tra-investigates-imported-robot-lawn-mowers",
         "https://www.gov.uk/government/publications/trade-remedies-notices-robot-lawn-mowers-from-china-anti-dumping/trade-remedies-notice-202633-registration-of-imports-of-robot-lawn-mowers-originating-from-china"
       ],
-      "deadline": "2026-12-03"
+      "deadline": "2026-12-03",
+      "decision": "include"
     },
     {
       "id": "uk-crypto",
-      "stage": "verified_candidate",
+      "stage": "source_opened_verified",
       "date": "2026-11-19",
       "jurisdiction": "英国",
       "headline": "12月1日废止密码技术专用OIEL并迁移至军事/两用许可申请",
       "source_urls": [
         "https://www.gov.uk/government/publications/notice-to-exporters-202625-cryptographic-oiels-will-be-discontinued/notice-to-exporters-202625-cryptographic-oiels-will-be-discontinued"
       ],
-      "deadline": "2026-12-01"
+      "deadline": "2026-12-01",
+      "decision": "include"
     },
     {
       "id": "uk-korea-steel",
-      "stage": "verified_candidate",
+      "stage": "source_opened_verified",
       "date": "2026-11-19",
       "jurisdiction": "英国／韩国",
       "headline": "热轧钢板最终反倾销税7.04%至23.07%，宽度超过2100mm税率0%",
       "source_urls": [
         "https://www.gov.uk/government/publications/trade-remedies-notice-hot-rolled-steel-plates-originating-from-south-korea-anti-dumping/trade-remedies-notice-202632-definitive-anti-dumping-measure-on-hot-rolled-steel-plate-originating-from-south-korea"
-      ]
+      ],
+      "decision": "include"
     },
     {
       "id": "us-lukoil-gl",
-      "stage": "verified_candidate",
+      "stage": "source_opened_verified",
       "date": "2026-11-19",
       "jurisdiction": "美国",
       "headline": "OFAC更新卢克石油境外资产交易通用许可131L：销售磋商至12月19日、维护清盘至2月20日",
       "source_urls": [
         "https://ofac.treasury.gov/recent-actions/20261119",
         "https://ofac.treasury.gov/faqs/updated/2026-11-19"
-      ]
+      ],
+      "decision": "include"
     },
     {
       "id": "us-scam-sanction",
-      "stage": "verified_candidate",
+      "stage": "source_opened_verified",
       "date": "2026-11-19",
       "jurisdiction": "美国／缅甸",
       "headline": "OFAC新增缅甸网络诈骗相关主体SDN指定",
       "source_urls": [
         "https://ofac.treasury.gov/recent-actions/20261119",
         "https://home.treasury.gov/news/press-releases/sb0695/"
-      ]
+      ],
+      "decision": "include"
     },
     {
       "id": "us-remote-bis",
-      "stage": "verified_candidate",
+      "stage": "source_opened_verified",
       "date": "2026-11-19",
       "jurisdiction": "美国／中国",
       "headline": "BIS先进芯片远程使用临时最终规则正式生效并指定报告邮箱；TSMC收紧代工订单",
       "source_urls": [
-        "https://www.federalregister.gov/d/2026-23529",
-        "https://media.bis.gov/si/exclusionnotesubmission",
-        "https://www.reuters.com/world/china/tsmc-tightens-china-ai-chip-curbs-new-us-rules-close-manufacturing-loophole-2026-11-19/"
-      ]
+        "https://www.federalregister.gov/d/2026-23529"
+      ],
+      "decision": "include",
+      "new_information": "新规11月19日正式生效，既有境外数据中心90日许可过渡，2027年1月19日意见截止；11月17日已报道规则发布，不重复旧事实。"
     },
     {
       "id": "eu-jordan-invest",
-      "stage": "verified_candidate",
+      "stage": "source_opened_verified",
       "date": "2026-11-19",
       "jurisdiction": "欧盟／约旦",
       "headline": "欧盟与约旦启动可持续投资便利化协定谈判",
       "source_urls": [
         "https://policy.trade.ec.europa.eu/news/eu-and-jordan-launch-negotiations-sustainable-investment-facilitation-agreement-2026-11-19_en"
-      ]
+      ],
+      "decision": "include"
+    },
+    {
+      "id": "us-narcotics-sanctions",
+      "stage": "source_opened_verified",
+      "date": "2026-11-19",
+      "jurisdiction": "美国／加拿大／澳大利亚／新西兰",
+      "headline": "OFAC新增跨国毒品网络SDN并提供有限清盘许可",
+      "source_urls": [
+        "https://ofac.treasury.gov/recent-actions/20261119",
+        "https://home.treasury.gov/news/press-releases/sb0696/"
+      ],
+      "decision": "include"
     }
   ],
   "coverage": {
@@ -95,9 +113,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "终扫11月19日晚及11月20日新监管事实，核对最终7个原始来源",
-    "更新publication_ready=true并回读",
-    "main写入11月20日第073期完整正文、首页、归档并验证"
+    "在main新增完整2026-11-20期正文，然后以最新SHA更新index、archive",
+    "回读main三文件，核对2026-11-20、073、8条和来源链接",
+    "验收当前提交的Pages和三份公开页面，检查来源诊断"
   ],
   "duplicate_check": {
     "reviewed_issues": [
@@ -118,5 +136,8 @@
     "conditional": [
       "美国BIS远程算力规则11月17日已有发布信息；仅以11月19日正式生效与晶圆代工业务执行变化为本期新增"
     ]
-  }
+  },
+  "sources_verified": true,
+  "terminal_sweep_completed": true,
+  "sources_verified_notes": "逐一打开英国政府2026/32、33号公告及TRA新闻、ECJU 2026/25、OFAC 11/19名单变更及财政部两项制裁新闻、FAQ1224/1225、2026-23529联邦公报；欧委会约旦专门公告搜索全文与该国贸易详情交叉核验，欧委会原公告页面网页直开出现环境访问错误但搜索内容可核验。未采用需PDF截图失败的来源。"
 }
