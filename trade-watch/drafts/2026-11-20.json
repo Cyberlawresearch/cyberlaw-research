@@ -1,7 +1,7 @@
 {
   "date": "2026-11-20",
   "base_main_sha": "573816440cf3f16b2a56612e1f5ccb69b26df3a1",
-  "phase": "publication_ready",
+  "phase": "main_published_pages_in_progress",
   "publication_ready": true,
   "items": [
     {
@@ -113,9 +113,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "在main新增完整2026-11-20期正文，然后以最新SHA更新index、archive",
-    "回读main三文件，核对2026-11-20、073、8条和来源链接",
-    "验收当前提交的Pages和三份公开页面，检查来源诊断"
+    "继续核查最终main提交的Pages run 44650952429至完成",
+    "通过Pages对应触发的trade-watch-source-check工作流确认当期正文及13来源链接在公开页面通过",
+    "完成后标记draft发布状态；若确实访问不通保持如实说明"
   ],
   "duplicate_check": {
     "reviewed_issues": [
@@ -139,5 +139,27 @@
   },
   "sources_verified": true,
   "terminal_sweep_completed": true,
-  "sources_verified_notes": "逐一打开英国政府2026/32、33号公告及TRA新闻、ECJU 2026/25、OFAC 11/19名单变更及财政部两项制裁新闻、FAQ1224/1225、2026-23529联邦公报；欧委会约旦专门公告搜索全文与该国贸易详情交叉核验，欧委会原公告页面网页直开出现环境访问错误但搜索内容可核验。未采用需PDF截图失败的来源。"
+  "sources_verified_notes": "逐一打开英国政府2026/32、33号公告及TRA新闻、ECJU 2026/25、OFAC 11/19名单变更及财政部两项制裁新闻、FAQ1224/1225、2026-23529联邦公报；欧委会约旦专门公告搜索全文与该国贸易详情交叉核验，欧委会原公告页面网页直开出现环境访问错误但搜索内容可核验。未采用需PDF截图失败的来源。",
+  "main_publication": {
+    "issue": "trade-watch/issues/2026-11-20.html",
+    "issue_sha": "eceb6db7f04b7cdfd64122f05ef4db2168e47987",
+    "index_sha": "e53d541bb4cebaf3dc0e232111e5721efacbd9ce",
+    "archive_sha": "47aaf5783484e9991e91390dc7328467a88d99a1",
+    "final_main_sha": "e6c3aec01a49c0883cdfd17c3b0aff010c738d31",
+    "issue_count": 8,
+    "external_source_links": 13,
+    "archive_entries": 73,
+    "readback_verified": true
+  },
+  "pages_workflow": {
+    "id": 44650952429,
+    "head_sha": "e6c3aec01a49c0883cdfd17c3b0aff010c738d31",
+    "status": "in_progress",
+    "last_observed_stage": "Install isolated context test browser",
+    "url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/44650952429"
+  },
+  "public_pages_validation": {
+    "ok": false,
+    "reason": "Pages最新提交的部署尚在进行，公开GitHub Pages URL通过网页检索工具访问失败，不能据GitHub main回读声称公开页面验收完成。"
+  }
 }
