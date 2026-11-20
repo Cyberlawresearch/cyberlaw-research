@@ -6,15 +6,15 @@
   "mode": "fact_only",
   "analysis_pending": true,
   "page": "articles/2026-11-20-tech-law-brief.html",
-  "news_count": 18,
+  "news_count": 20,
   "distribution": {
-    "domestic": 5,
+    "domestic": 7,
     "foreign": 13
   },
-  "checked_at": "2026-11-20T11:17:48.800Z",
-  "last_news_scan_at": "2026-11-20T11:17:48.800Z",
+  "checked_at": "2026-11-20T11:33:37.939Z",
+  "last_news_scan_at": "2026-11-20T11:33:37.939Z",
   "checks": {
-    "sources": true,
+    "sources": false,
     "legal_status": true,
     "original_titles": true,
     "timeliness": true,
@@ -83,11 +83,45 @@
           "Beijing to bar young 'red-chip' firms from listing outside mainland China, sources say"
         ],
         "notes": "只有匿名来源报道的沟通口径，无公开新规，不写成正式规章"
+      },
+      {
+        "group": "中央网信与权威财经媒体",
+        "source": "国家网信办公告／第一财经完整报道（网页直接打开受限）",
+        "entry_url": "https://www.yicai.com/news/103448375.html",
+        "checked_at": "2026-11-20T11:33:37.939Z",
+        "query_or_section": "11月20日9—10月生成式AI备案更新；跨核央视网和PANews原文短讯",
+        "status": "access_failed",
+        "candidate_titles": [
+          "国家网信办：9月至10月新增133款生成式人工智能服务在国家网信办完成备案"
+        ],
+        "notes": "已取得一财全文搜索页及两处独立转述核对全部数值；网页直接打开返回DisabledError，未将来源直接访问视为完成；保留核查局限。"
+      },
+      {
+        "group": "中央机关／标准评测",
+        "source": "工业和信息化部科技司—推荐性国标报批稿公示",
+        "entry_url": "https://www.miit.gov.cn/jgsj/kjs/jscx/bzgf/art/2026/art_9ab6780df3b6468cba6904e735f1540f.html",
+        "checked_at": "2026-11-20T11:33:37.939Z",
+        "query_or_section": "标准规范11月19日公示",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "关于公开征求《智能网联汽车 基于直连通信技术的安全预警系统技术规范》等2项国家标准和2项国家标准外文版报批意见的公示"
+        ],
+        "notes": "实际打开工信部原始公示并核对日期、标准类别、公众反馈期。"
       }
     ],
     "domestic_low_count_review": {
       "completed": false,
-      "reason": "国内仅5条，已实施针对监管、法院、智能工厂、AI应用登记和数据出海的反向检索，但中央及地方所有清单来源未逐项复核，不能认定专项重大遗漏审查完成。"
+      "reason": "补查新增国家网信办133款服务备案/224款应用登记及工信部推荐性标准报批公示，当期国内从5条增至7条；中央、地方、标准化与媒体全清单仍有来源未逐项完成，国家网信办短讯直接打开失败。",
+      "followup_candidates": [
+        {
+          "title": "国家网信办公布9—10月生成式AI备案数据，新增模型133款、应用登记224款",
+          "url": "https://www.yicai.com/news/103448375.html"
+        },
+        {
+          "title": "工信部公示智能网联汽车安全预警国标报批稿及充电信息安全标准外文版",
+          "url": "https://www.miit.gov.cn/jgsj/kjs/jscx/bzgf/art/2026/art_9ab6780df3b6468cba6904e735f1540f.html"
+        }
+      ]
     },
     "international_sources": [
       {
@@ -215,8 +249,8 @@
       "背景与前瞻字段按事实版留空"
     ],
     "final_scan": {
-      "checked_at": "2026-11-20T11:13:40.630Z",
-      "notes": "2026年11月20日对国内人工智能/网络安全及Reuters科技法重大新闻的最近窗口进行网络检索，尚未完成所有来源组覆盖。"
+      "checked_at": "2026-11-20T11:33:37.939Z",
+      "notes": "补查近2小时国家网信办备案动态及工信部标准公示，查阅国内政策与日、韩监管近期候选；无法声称全部来源组及当地语言全文已完成。"
     }
   },
   "items": [
@@ -294,7 +328,38 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-6",
+      "event_date": "2026-11-20",
+      "jurisdiction": "中国",
+      "agency": "国家互联网信息办公室",
+      "domestic": "国内",
+      "title": "国家网信办公布9—10月生成式AI备案数据，新增模型133款、应用登记224款",
+      "original_title": "国家网信办：9月至10月新增133款生成式人工智能服务在国家网信办完成备案",
+      "url": "https://www.yicai.com/news/103448375.html",
+      "source_name": "第一财经（据网信中国）",
+      "legal_status": "生成式人工智能服务备案及地方应用登记信息公告",
+      "fact": "国家网信办11月20日公布2026年9月至10月生成式人工智能服务备案信息，新增133款服务完成备案，其中3款为手机端侧服务、1款为拟人化互动服务，另有1款变更备案信息。同期，通过接口调用已备案模型能力的应用或功能新增224款完成地方网信办登记。截至10月31日，全国累计1245款生成式人工智能服务完成备案、955款应用或功能完成登记。",
+      "source_checked": false,
+      "seven_day_dedup_checked": true,
+      "verification_note": "第一财经11月20日17:38刊发完整短讯，央视网报道及PANews同源转载交叉核对具体数值；新闻网页直接打开受限（DisabledError），未将直接打开标为完成。",
+      "id": "research-item-6"
+    },
+    {
+      "event_date": "2026-11-19",
+      "jurisdiction": "中国",
+      "agency": "工业和信息化部科技司",
+      "domestic": "国内",
+      "title": "工信部公示智能网联汽车安全预警国标报批稿及充电信息安全标准外文版",
+      "original_title": "关于公开征求《智能网联汽车 基于直连通信技术的安全预警系统技术规范》等2项国家标准和2项国家标准外文版报批意见的公示",
+      "url": "https://www.miit.gov.cn/jgsj/kjs/jscx/bzgf/art/2026/art_9ab6780df3b6468cba6904e735f1540f.html",
+      "source_name": "工业和信息化部",
+      "legal_status": "推荐性国家标准报批稿公开征求意见，公示期11月20日至26日",
+      "fact": "工业和信息化部科技司11月19日发布公示，公开征求《智能网联汽车 基于直连通信技术的安全预警系统技术规范》等2项推荐性国家标准，以及《电动汽车充电系统信息安全技术要求及试验方法》等2项推荐性国家标准外文版的报批意见。相关标准化技术组织已完成文本编制，报批稿可在工业和信息化标准信息服务平台查阅。公示期为11月20日至26日。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "id": "research-item-7"
+    },
+    {
+      "id": "research-item-8",
       "event_date": "2026-11-19",
       "jurisdiction": "美国",
       "agency": "美国众议院相关委员会",
@@ -309,7 +374,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-7",
+      "id": "research-item-9",
       "event_date": "2026-11-19",
       "jurisdiction": "美国／中国台湾地区",
       "agency": "美国商务部工业与安全局、台积电",
@@ -324,7 +389,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-8",
+      "id": "research-item-10",
       "event_date": "2026-11-19",
       "jurisdiction": "英国",
       "agency": "英国调查权力审裁庭",
@@ -339,7 +404,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-9",
+      "id": "research-item-11",
       "event_date": "2026-11-19",
       "jurisdiction": "英国",
       "agency": "竞争与市场管理局（CMA）",
@@ -354,7 +419,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-10",
+      "id": "research-item-12",
       "event_date": "2026-11-18",
       "jurisdiction": "法国",
       "agency": "法国国家信息与自由委员会（CNIL）",
@@ -369,7 +434,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-11",
+      "id": "research-item-13",
       "event_date": "2026-11-18",
       "jurisdiction": "国际组织／欧盟",
       "agency": "全球隐私大会（GPA）",
@@ -384,7 +449,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-12",
+      "id": "research-item-14",
       "event_date": "2026-11-20",
       "jurisdiction": "美国",
       "agency": "Signal",
@@ -399,7 +464,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-13",
+      "id": "research-item-15",
       "event_date": "2026-11-20",
       "jurisdiction": "欧盟",
       "agency": "欧洲中央银行",
@@ -414,7 +479,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-14",
+      "id": "research-item-16",
       "event_date": "2026-11-20",
       "jurisdiction": "美国·加利福尼亚州",
       "agency": "加州总检察长办公室",
@@ -429,7 +494,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-15",
+      "id": "research-item-17",
       "event_date": "2026-11-20",
       "jurisdiction": "美国",
       "agency": "美国众议院民主党议员",
@@ -444,7 +509,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-16",
+      "id": "research-item-18",
       "event_date": "2026-11-20",
       "jurisdiction": "澳大利亚",
       "agency": "昆士兰州有关规划程序、Zerra DC",
@@ -459,7 +524,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-17",
+      "id": "research-item-19",
       "event_date": "2026-11-18",
       "jurisdiction": "美国·俄勒冈州",
       "agency": "波特兰市议会",
@@ -474,7 +539,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-18",
+      "id": "research-item-20",
       "event_date": "2026-11-20",
       "jurisdiction": "法国",
       "agency": "法国视听与数字传播监管局（Arcom）",
@@ -494,6 +559,6 @@
     "pages_run_id": null,
     "pages_status": null,
     "online_check": null,
-    "notes": "新闻事实核对和近七日逐事件去重已开展。国内来源逐项覆盖不完整，domestic_major_omission_review=false；部署仅以实际Actions与线上回读为准。；对一条时间临界候选作了替换，以江苏11月18日原始备案公告为准。"
+    "notes": "当期内容在main原有18条基础上增补两项，国家网信办短讯可从第一财经完整搜索页及央视网、PANews核对，但直接页面打开失败；工信部源文已直接打开。其他来源巡视未全部完成，未把核验项置真。Pages须按最终有效main commit单独验收。"
   }
 }
