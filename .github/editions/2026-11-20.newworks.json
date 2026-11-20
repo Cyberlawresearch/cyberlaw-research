@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-20",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-20-new-works.html",
+  "page_blob_sha": "98b7cb14cf4714bd1ce89fde56a03749c49743b4",
+  "newworks_count": 3,
+  "checked_at": "2026-11-20T12:44:37.612Z",
+  "checks": {
+    "publisher_original_source_verified": true,
+    "original_title_author_doi_verified": true,
+    "publication_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "historical_92_html_pages_checked": true,
+    "github_code_search_done": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html 及 new-works-history.html 历史索引",
+      "main 历史科技法研究新作正文92页：articles 80页，new-works 目录早期12页；逐页检查3个DOI及原题",
+      "GitHub 搜索所选原题及DOI"
+    ],
+    "exact_hits_for_selected": 0,
+    "version_distinction": "第一项2026-11-17在线首发但正式论文集书目年份2027；另外两项为2026年正式期刊论文",
+    "source_navigation_notes": "三项均打开Springer出版来源并核实原题、作者、DOI及出版版本"
+  },
+  "items": [
+    {
+      "cn_title": "欧盟高风险AI的透明度义务，不止于向个人解释结果",
+      "author": "Lars Arnesen; David Hui",
+      "original_title": "The Role of Explainable AI to Ensure ‘Transparent’ AI Systems as Required by EU Law – Moving Beyond the Right to Explanation",
+      "journal": "Explainable Artificial Intelligence (xAI 2026), Communications in Computer and Information Science",
+      "publisher": "Springer, Cham",
+      "year": 2027,
+      "publication_date": "2026-11-17",
+      "volume": "3179",
+      "issue": null,
+      "pages": "444–472",
+      "article_number": null,
+      "doi": "10.1007/978-3-032-45473-7_22",
+      "publisher_page": "https://link.springer.com/chapter/10.1007/978-3-032-45473-7_22",
+      "version": "2026-11-17 在线首发的 xAI 2026 Springer 正式论文集章节，书目年份 2027"
+    },
+    {
+      "cn_title": "AI用真实信息操纵用户，欧盟《人工智能法》为何仍可能管不到",
+      "author": "Fabian M. Teichmann",
+      "original_title": "Manipulation without Lies: AI Hyperpersuasion and the Limits of the Deception Paradigm",
+      "journal": "Philosophy & Technology",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-11-17",
+      "volume": "39",
+      "issue": null,
+      "pages": null,
+      "article_number": "228",
+      "doi": "10.1007/s13347-026-01245-8",
+      "publisher_page": "https://link.springer.com/article/10.1007/s13347-026-01245-8",
+      "version": "2026-11-17 正式期刊论文，第39卷文章号228"
+    },
+    {
+      "cn_title": "用AI翻译隐私政策和用户协议，怎样防止简化后误导用户",
+      "author": "Alexander Kriebitz; Caitlin C. Corrigan; Yuxiao Li; Gjergji Kasneci",
+      "original_title": "The ethical dimension of AI systems in legal jargon translation: a preliminary assessment",
+      "journal": "AI and Ethics",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-11-03",
+      "volume": "6",
+      "issue": null,
+      "pages": null,
+      "article_number": "630",
+      "doi": "10.1007/s43681-026-01466-9",
+      "publisher_page": "https://link.springer.com/article/10.1007/s43681-026-01466-9",
+      "version": "2026-11-03 正式发表的期刊论文，第6卷文章号630"
+    }
+  ],
+  "related_reading": [
+    {
+      "item": 1,
+      "page": "articles/2026-11-19-new-works.html#research-item-2",
+      "reason": "均具体比较欧盟AI解释技术与法律说明义务；今日作品将问题扩展至产品生命周期内的透明度责任"
+    }
+  ],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "0f9853e4098a1a11969ce95aff07ea9e8ad8d635",
+    "last_complete_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": null
+  }
+}
