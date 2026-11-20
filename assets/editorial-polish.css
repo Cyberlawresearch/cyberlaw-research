@@ -1,0 +1,91 @@
+/* Editorial palette and typography refinement, November 2026.
+   System/CJK font stack: no external font requests, no alteration to reader functionality. */
+:root {
+  --paper: #faf9f6;
+  --ink: #25342f;
+  --body: #33423c;
+  --muted: #64736b;
+  --line: #d6dcd4;
+  --quiet: #f1f3ed;
+  --accent: #945640;
+  --link: #365f64;
+  --serif: "Noto Serif CJK SC", "Source Han Serif SC", "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --sans: "PingFang SC", "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+}
+body.editorial-live { background: var(--paper); color: var(--ink); font-family: var(--sans); line-height: 1.78; }
+body.editorial-live a:hover { color: var(--accent); }
+body.editorial-live ::selection { background: #dbe4db; color: #23372e; }
+.masthead { padding-top: 27px; padding-bottom: 24px; }
+.brand { font-family: var(--serif); font-size: 27px; font-weight: 650; letter-spacing: .026em; color: #253e33; }
+.site-tools { color: #617168; font-size: 12px; }
+.navbar { background: rgba(250,249,246,.975); backdrop-filter: blur(10px); }
+.nav-inner { border-top-color: #87958b; border-bottom-color: var(--line); }
+.nav-links { gap: 23px; }
+.nav-links a { color: #495c51; font-size: 12.5px; font-weight: 500; letter-spacing: .005em; }
+.nav-links a[aria-current="page"] { color: #93543f; }
+.nav-links a[aria-current="page"]::after { background: #a16750; }
+.search-trigger { color: #425f55; font-size: 12px; }
+.home-hero { padding-top: 35px; padding-bottom: 35px; background: linear-gradient(95deg, rgba(236,241,234,.42), rgba(250,249,246,0) 65%); }
+.hero-eyebrow { color: #996049; font: 500 10.5px/1.6 Georgia,serif; letter-spacing: .17em; }
+.home-hero h1 { color: #233b30; font: 650 38px/1.46 var(--serif); letter-spacing: .026em; }
+.hero-description { color: #5b6c61; font-size: 14px; line-height: 1.9; }
+.edition-summary { color: #66746c; font-size: 11.5px; }
+.edition-summary time { color: #3d6052; }
+.portal-card { border-bottom-color: var(--line); }
+.portal-brief { border-right-color: var(--line); }
+.portal-no { color: #66766c; font-size: 10.6px; letter-spacing: .10em; }
+.portal-no b { color: #95573f; font-weight: 600; }
+.portal-card-head time { color: #67786d; font-size: 11px; }
+.brief-home-heading h2 { color: #2b493d; font: 650 22px/1.6 var(--sans); letter-spacing: .007em; }
+.brief-home-heading>p { color: #66766c; font-size: 11.5px; }
+.brief-home-count { color: #667d6e; font-size: 11px; }
+.brief-home-lead { padding-top: 26px; padding-bottom: 25px; }
+.brief-lead-label { color: #9a5942; font-size: 11px; letter-spacing: .06em; }
+.brief-lead-label>span { color: #adb4ac; }
+.brief-home-lead h3 { color: #20382e; font: 650 27px/1.61 var(--serif); letter-spacing: .009em; }
+.brief-lead-summary { color: #59695f; font-size: 13.5px; line-height: 1.94; text-align: left; }
+.brief-home-sections { border-top-color: #cfd7cc; }
+.brief-group-heading h3 { color: #355749; font-size: 13.5px; letter-spacing: .02em; }
+.brief-group-heading h3::before { content: ''; display: inline-block; width: 3px; height: 12px; margin-right: 8px; background: #a2674e; vertical-align: -1px; }
+.brief-group-heading>a { color: #5d7468; font-size: 11px; }
+.brief-home-headlines>li { border-bottom-color: #e0e5dd; }
+.brief-home-link h4 { color: #2f4139; font: 550 16.2px/1.76 var(--serif); }
+.brief-home-meta, .brief-home-meta time { color: #617168; font-size: 10.7px; }
+.portal-action { color: #3e5e50; font-size: 12px; }
+.portal-action>span:first-child { text-decoration-color: #bacbbd; }
+.portal-card:not(.portal-brief) h2 { color: #304d40; font-size: 16px; font-weight: 650; }
+.portal-card:not(.portal-brief) .portal-copy h3 { color: #2a3b34; font: 600 18px/1.68 var(--serif); }
+.portal-card:not(.portal-brief):hover .portal-copy h3 { color: var(--accent); }
+.portal-card:not(.portal-brief) .portal-meta { color: #647468; font-size: 11px; }
+.portal-card:not(.portal-brief) .portal-description { color: #68776d; font-size: 11.5px; line-height: 1.85; }
+.history-entry { border-top-color: var(--line); }
+.site-footer { border-top-color: #cbd5cb; color: #69786e; }
+.footer-note { color: #758277; }
+@media (max-width: 1100px) and (min-width: 761px) {
+  .nav-links { gap: 15px; }
+  .nav-links a { font-size: 12px; }
+  .brief-home-lead h3 { font-size: 24px; }
+  .portal-card:not(.portal-brief) .portal-copy h3 { font-size: 17px; }
+}
+@media (max-width: 760px) {
+  .masthead { padding-top: 19px; padding-bottom: 18px; }
+  .brand { font-size: 22px; }
+  .home-hero { padding-top: 26px; padding-bottom: 26px; }
+  .home-hero h1 { font-size: clamp(23px,6.4vw,27px); white-space: nowrap; letter-spacing: .015em; line-height: 1.5; }
+  .hero-description { font-size: 13.2px; }
+  .brief-home-heading h2 { font-size: 19px; }
+  .brief-home-lead h3 { font-size: 23px; line-height: 1.67; }
+  .brief-lead-summary { font-size: 12.7px; }
+  .brief-home-link h4 { font-size: 17px; line-height: 1.8; }
+  .brief-group-heading h3 { font-size: 13.5px; }
+  .portal-card:not(.portal-brief) h2 { font-size: 15px; }
+  .portal-card:not(.portal-brief) .portal-copy h3 { font-size: 19px; }
+  .portal-card:not(.portal-brief) .portal-description { font-size: 11.5px; }
+}
+@media (max-width: 390px) {
+  .brand { font-size: 20.5px; }
+  .home-hero h1 { font-size: 23px; }
+  .brief-home-lead h3 { font-size: 21.5px; }
+  .portal-card:not(.portal-brief) .portal-copy h3 { font-size: 18.2px; }
+}
+@media print { .home-hero { background: transparent; } }
