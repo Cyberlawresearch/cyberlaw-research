@@ -3,12 +3,99 @@
   "base_main_sha": "573816440cf3f16b2a56612e1f5ccb69b26df3a1",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "uk-robot-mowers",
+      "stage": "verified_candidate",
+      "date": "2026-11-19",
+      "jurisdiction": "英国",
+      "headline": "对中国产机器人割草机启动反倾销调查并开始进口登记",
+      "source_urls": [
+        "https://www.gov.uk/government/news/tra-investigates-imported-robot-lawn-mowers",
+        "https://www.gov.uk/government/publications/trade-remedies-notices-robot-lawn-mowers-from-china-anti-dumping/trade-remedies-notice-202633-registration-of-imports-of-robot-lawn-mowers-originating-from-china"
+      ],
+      "deadline": "2026-12-03"
+    },
+    {
+      "id": "uk-crypto",
+      "stage": "verified_candidate",
+      "date": "2026-11-19",
+      "jurisdiction": "英国",
+      "headline": "12月1日废止密码技术专用OIEL并迁移至军事/两用许可申请",
+      "source_urls": [
+        "https://www.gov.uk/government/publications/notice-to-exporters-202625-cryptographic-oiels-will-be-discontinued/notice-to-exporters-202625-cryptographic-oiels-will-be-discontinued"
+      ],
+      "deadline": "2026-12-01"
+    },
+    {
+      "id": "uk-korea-steel",
+      "stage": "verified_candidate",
+      "date": "2026-11-19",
+      "jurisdiction": "英国／韩国",
+      "headline": "热轧钢板最终反倾销税7.04%至23.07%，宽度超过2100mm税率0%",
+      "source_urls": [
+        "https://www.gov.uk/government/publications/trade-remedies-notice-hot-rolled-steel-plates-originating-from-south-korea-anti-dumping/trade-remedies-notice-202632-definitive-anti-dumping-measure-on-hot-rolled-steel-plate-originating-from-south-korea"
+      ]
+    },
+    {
+      "id": "us-lukoil-gl",
+      "stage": "verified_candidate",
+      "date": "2026-11-19",
+      "jurisdiction": "美国",
+      "headline": "OFAC更新卢克石油境外资产交易通用许可131L：销售磋商至12月19日、维护清盘至2月20日",
+      "source_urls": [
+        "https://ofac.treasury.gov/recent-actions/20261119",
+        "https://ofac.treasury.gov/faqs/updated/2026-11-19"
+      ]
+    },
+    {
+      "id": "us-scam-sanction",
+      "stage": "verified_candidate",
+      "date": "2026-11-19",
+      "jurisdiction": "美国／缅甸",
+      "headline": "OFAC新增缅甸网络诈骗相关主体SDN指定",
+      "source_urls": [
+        "https://ofac.treasury.gov/recent-actions/20261119",
+        "https://home.treasury.gov/news/press-releases/sb0695/"
+      ]
+    },
+    {
+      "id": "us-remote-bis",
+      "stage": "verified_candidate",
+      "date": "2026-11-19",
+      "jurisdiction": "美国／中国",
+      "headline": "BIS先进芯片远程使用临时最终规则正式生效并指定报告邮箱；TSMC收紧代工订单",
+      "source_urls": [
+        "https://www.federalregister.gov/d/2026-23529",
+        "https://media.bis.gov/si/exclusionnotesubmission",
+        "https://www.reuters.com/world/china/tsmc-tightens-china-ai-chip-curbs-new-us-rules-close-manufacturing-loophole-2026-11-19/"
+      ]
+    },
+    {
+      "id": "eu-jordan-invest",
+      "stage": "verified_candidate",
+      "date": "2026-11-19",
+      "jurisdiction": "欧盟／约旦",
+      "headline": "欧盟与约旦启动可持续投资便利化协定谈判",
+      "source_urls": [
+        "https://policy.trade.ec.europa.eu/news/eu-and-jordan-launch-negotiations-sustainable-investment-facilitation-agreement-2026-11-19_en"
+      ]
+    }
+  ],
+  "coverage": {
+    "US": "OFAC 11/19 sanctions, GL131L; BIS 11/19 effective remote-access rule; congressional report and semiconductor foundry measures",
+    "EU": "11/19 Jordan investment facilitation negotiations; 11/16 existing steel final measure already in 11/17 issue",
+    "UK": "11/18 robot-mower China dumping initiation + 11/19 registration; 11/19 Korean steel definitive duty; 11/19 cryptographic OIEL change",
+    "Japan": "pending",
+    "Korea": "pending",
+    "India": "pending",
+    "Canada": "pending",
+    "Australia": "pending"
+  },
   "last_error": null,
   "next_actions": [
-    "检索八个法域过去72小时的官方贸易监管动态",
-    "比对11月13日至19日事件",
-    "逐一核验原始来源并发布"
+    "查日本韩国印度加拿大澳大利亚及其他地区最近72小时官方公告",
+    "比对近7日全文事件级去重",
+    "逐条打开最终来源、结尾终扫、准备发布"
   ]
 }
