@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-20",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-20-rangone-megale-ai-law-rulemaking.html",
+  "selection": "Risks Without Rights? The EU AI Act’s Approach to AI in Law and Rule-Making",
+  "bibliography": {
+    "type": "article",
+    "author": "Nicoletta Rangone; Luca Megale",
+    "originalTitle": "Risks Without Rights? The EU AI Act’s Approach to AI in Law and Rule-Making",
+    "journal": "European Journal of Risk Regulation",
+    "year": "2025",
+    "volume": "16",
+    "issue": "Special Issue 3",
+    "pages": "1082–1097",
+    "doi": "10.1017/err.2025.13",
+    "url": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/risks-without-rights-the-eu-ai-acts-approach-to-ai-in-law-and-rulemaking/3AD4822C291C6591BAFD26524CD44C12",
+    "cnTitle": "人工智能参与立法和规则制定，谁来守住民主程序：欧盟人工智能法的规制盲区"
+  },
+  "versions": {
+    "full_text": "Read full open-access formally published Cambridge Core article: introduction, Parts II-V, conclusion, and footnotes (1-133).",
+    "publication": "European Journal of Risk Regulation 16 (Special Issue 3), 1082–1097 (2025). Published online 13 March 2025; issue September 2025. Formal journal version, not SSRN preprint."
+  },
+  "sources": [
+    "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/risks-without-rights-the-eu-ai-acts-approach-to-ai-in-law-and-rulemaking/3AD4822C291C6591BAFD26524CD44C12",
+    "https://doi.org/10.1017/err.2025.13"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "history_scope": "Checked all entries listed in papers.html and papers-history-1.html, and same-day paper page and record on main; no prior Rangone/Megale Risks Without Rights entry.",
+  "related_reading": [
+    "articles/2026-11-12-hildebrandt-algorithmic-regulation-rule-of-law.html"
+  ],
+  "timeline": null,
+  "body_length": 7336,
+  "checked_at": "2026-11-20",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  },
+  "last_error": null
+}
