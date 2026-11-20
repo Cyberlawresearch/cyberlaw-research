@@ -1,0 +1,501 @@
+{
+  "date": "2026-11-20",
+  "column": "brief",
+  "state": "verified",
+  "phase": "publishing",
+  "mode": "fact_only",
+  "analysis_pending": true,
+  "page": "articles/2026-11-20-tech-law-brief.html",
+  "news_count": 18,
+  "distribution": {
+    "domestic": 5,
+    "foreign": 13
+  },
+  "checked_at": "2026-11-20T11:13:40.630Z",
+  "last_news_scan_at": "2026-11-20T11:13:40.630Z",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": false,
+    "local_language_scan_korea_japan_vietnam": false,
+    "prior_background_checked": false,
+    "natural_chinese_reviewed": true,
+    "background_outlook": false,
+    "foreign_layout": true
+  },
+  "coverage": {
+    "domestic_sources": [
+      {
+        "group": "法治媒体",
+        "source": "新京报／最高检典型案例",
+        "entry_url": "https://www.bjnews.com.cn/detail/1795151591129775.html",
+        "checked_at": "2026-11-20T11:13:40.630Z",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "偷走AI服务器电源核心技术，四人犯侵犯商业秘密罪被判刑"
+        ],
+        "notes": "核对最高检11月20日公布与2026年3月法院既有判决的区别"
+      },
+      {
+        "group": "中央机关",
+        "source": "工业和信息化部—智能工厂",
+        "entry_url": "https://www.miit.gov.cn/jgsj/zbys/znzz/art/2026/art_fbff51edb1c346f8a560f56b03b009e9.html",
+        "checked_at": "2026-11-20T11:13:40.630Z",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "工业和信息化部等六部门办公厅（综合司）关于印发2026年度领航级智能工厂培育名单的通知"
+        ],
+        "notes": "核查通知11月17日签发、11月18日晚公开"
+      },
+      {
+        "group": "重点地方",
+        "source": "北京市生成式人工智能服务登记",
+        "entry_url": "https://news.bjd.com.cn/2026/11/19/12036629.shtml",
+        "checked_at": "2026-11-20T11:13:40.630Z",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "北京市新增106款已完成登记的生成式人工智能服务"
+        ],
+        "notes": "读取北京日报转载的北京市网信部门登记公告"
+      },
+      {
+        "group": "中央机关",
+        "source": "工业和信息化部—5G工业互联网",
+        "entry_url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_a11e683f156a4314a20423c0a9f9d682.html",
+        "checked_at": "2026-11-20T11:13:40.630Z",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "工业和信息化部办公厅关于组织开展2026年“5G+工业互联网”融合应用城市试点申报工作的通知"
+        ],
+        "notes": "核对正式申报通知于11月17日发布和12月18日申报期限"
+      },
+      {
+        "group": "财经媒体",
+        "source": "路透社—中国红筹企业",
+        "entry_url": "https://www.reuters.com/world/beijing-bar-young-red-chip-firms-listing-outside-mainland-china-sources-say-2026-11-20/",
+        "checked_at": "2026-11-20T11:13:40.630Z",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "Beijing to bar young 'red-chip' firms from listing outside mainland China, sources say"
+        ],
+        "notes": "只有匿名来源报道的沟通口径，无公开新规，不写成正式规章"
+      }
+    ],
+    "domestic_low_count_review": {
+      "completed": false,
+      "reason": "国内仅5条，已实施针对监管、法院、智能工厂、AI应用登记和数据出海的反向检索，但中央及地方所有清单来源未逐项复核，不能认定专项重大遗漏审查完成。"
+    },
+    "international_sources": [
+      {
+        "source": "路透社",
+        "entry_url": "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/",
+        "checked_at": "2026-11-20T11:13:40.630Z",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "US signed off on sales of nearly 900,000 AI chips to China in six months, House committee says"
+        ]
+      },
+      {
+        "source": "路透社",
+        "entry_url": "https://www.reuters.com/world/china/tsmc-tightens-china-ai-chip-curbs-new-us-rules-close-manufacturing-loophole-2026-11-19/",
+        "checked_at": "2026-11-20T11:13:40.630Z",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "TSMC tightens China AI chip curbs as new US rules close manufacturing loophole, sources say"
+        ]
+      },
+      {
+        "source": "路透社",
+        "entry_url": "https://www.reuters.com/business/retail-consumer/uk-tribunal-confirms-government-order-demanding-access-apple-data-2026-11-19/",
+        "checked_at": "2026-11-20T11:13:40.630Z",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "UK tribunal confirms government order demanding access to Apple data"
+        ]
+      },
+      {
+        "source": "英国政府官网／CMA",
+        "entry_url": "https://www.gov.uk/government/calls-for-evidence/developer-experience-with-iam-and-kubernetes",
+        "checked_at": "2026-11-20T11:13:40.630Z",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "Developer experience with IAM and Kubernetes"
+        ]
+      },
+      {
+        "source": "法国CNIL",
+        "entry_url": "https://www.cnil.fr/fr/conservation-des-mots-de-passe-sanction-5-millions-deuros",
+        "checked_at": "2026-11-20T11:13:40.630Z",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "Conservation des mots de passe clients en clair : la CNIL prononce une sanction de 5 millions d’euros"
+        ]
+      },
+      {
+        "source": "全球隐私大会",
+        "entry_url": "https://globalprivacyassembly.com/international-authorities-gather-at-the-48th-global-privacy-assembly-annual-conference/",
+        "checked_at": "2026-11-20T11:13:40.630Z",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "International authorities gather at the 48th Global Privacy Assembly annual conference to advance privacy protection for individuals at a time of rapid technological change"
+        ]
+      },
+      {
+        "source": "路透社",
+        "entry_url": "https://www.reuters.com/legal/litigation/signal-restricts-screenshots-block-ai-agents-reading-messages-2026-11-20/",
+        "checked_at": "2026-11-20T11:13:40.630Z",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "Signal restricts screenshots to block AI agents from reading messages"
+        ]
+      },
+      {
+        "source": "路透社",
+        "entry_url": "https://www.reuters.com/legal/government/ecbs-lagarde-cyber-threat-boosted-by-ai-is-my-top-worry-2026-11-20/",
+        "checked_at": "2026-11-20T11:13:40.630Z",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "ECB's Lagarde: cyber threat boosted by AI is my top worry"
+        ]
+      },
+      {
+        "source": "卫报",
+        "entry_url": "https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china",
+        "checked_at": "2026-11-20T11:13:40.630Z",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "California investigates Nvidia over whether chip exports ended up in China"
+        ]
+      },
+      {
+        "source": "路透社",
+        "entry_url": "https://www.reuters.com/business/finance/democrats-open-probe-into-nvidia-influence-us-megaspeed-investigation-2026-11-20/",
+        "checked_at": "2026-11-20T11:13:40.630Z",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "Democrats open probe into Nvidia influence on US Megaspeed investigation"
+        ]
+      },
+      {
+        "source": "路透社",
+        "entry_url": "https://www.reuters.com/world/asia-pacific/anthropics-australian-data-centre-overwhelmingly-opposed-by-residents-2026-11-20/",
+        "checked_at": "2026-11-20T11:13:40.630Z",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "Anthropic's Australian data centre overwhelmingly opposed by residents"
+        ]
+      },
+      {
+        "source": "Axios",
+        "entry_url": "https://www.axios.com/local/portland/2026/11/18/city-government-ai-moratorium",
+        "checked_at": "2026-11-20T11:13:40.630Z",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "Portland considers halting new AI contracts"
+        ]
+      },
+      {
+        "source": "路透社",
+        "entry_url": "https://www.reuters.com/business/media-telecom/french-regulator-defends-applying-political-balance-rules-influencers-2026-11-20/",
+        "checked_at": "2026-11-20T11:13:40.630Z",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "French regulator defends applying political balance rules to influencers"
+        ]
+      }
+    ],
+    "seven_day_dedup": "逐事件比对2026-11-13至2026-11-19历史新闻标题和11月19日全文；台积电受美国新管制的订单暂停、最高检公布此前裁判等均为新进展；排除前期同事件纯重复。",
+    "remaining_gaps": [
+      "国内中央机关、标准测试机构、重点地方及科技与法治媒体逐项巡视不完整",
+      "日语、韩语、越南语本期未能全部做网页全文核验；不标记完成",
+      "背景与前瞻字段按事实版留空"
+    ],
+    "final_scan": {
+      "checked_at": "2026-11-20T11:13:40.630Z",
+      "notes": "2026年11月20日对国内人工智能/网络安全及Reuters科技法重大新闻的最近窗口进行网络检索，尚未完成所有来源组覆盖。"
+    }
+  },
+  "items": [
+    {
+      "id": "research-item-1",
+      "event_date": "2026-11-20",
+      "jurisdiction": "中国",
+      "agency": "最高人民检察院、浙江省检察机关",
+      "domestic": "国内",
+      "title": "最高检公布AI服务器液冷电源商业秘密案，四人获刑判决已生效",
+      "original_title": "偷走AI服务器电源核心技术，四人犯侵犯商业秘密罪被判刑",
+      "url": "https://www.bjnews.com.cn/detail/1795151591129775.html",
+      "source_name": "新京报",
+      "legal_status": "典型案例发布；2026年3月24日一审判决已生效",
+      "fact": "最高人民检察院11月20日发布检察机关服务新质生产力发展典型案例，披露一起涉及AI服务器液冷供电设备的技术秘密犯罪案件。涉案ATS电路及控制时序信息的商业价值经评估为506万余元；杭州滨江区法院已于2026年3月24日判处四人一年至三年有期徒刑、均适用缓刑并处罚金。四人未上诉，判决已经生效，本次新增进展是最高检公开典型案例。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-2",
+      "event_date": "2026-11-19",
+      "jurisdiction": "中国",
+      "agency": "工业和信息化部等六部门",
+      "domestic": "国内",
+      "title": "六部门公布2026年领航级智能工厂培育名单，要求推进工业智能体和数据集建设",
+      "original_title": "工业和信息化部等六部门办公厅（综合司）关于印发2026年度领航级智能工厂培育名单的通知",
+      "url": "https://www.miit.gov.cn/jgsj/zbys/znzz/art/2026/art_fbff51edb1c346f8a560f56b03b009e9.html",
+      "source_name": "工业和信息化部",
+      "legal_status": "正式印发培育名单",
+      "fact": "工业和信息化部等六部门11月18日公布2026年度领航级智能工厂培育名单，通知于11月17日签发。有关地方主管部门被要求支持名单内工厂建设，指导企业构建高质量数据集、开发工业智能体、探索先进制造模式和建设智慧供应链。名单经过地方推荐、专家评审、实地核查、答辩及公示，属于培育项目遴选结果。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-3",
+      "event_date": "2026-11-19",
+      "jurisdiction": "中国·北京",
+      "agency": "北京市互联网信息办公室",
+      "domestic": "国内",
+      "title": "北京公布新一批106款已登记生成式AI应用，累计登记服务达352款",
+      "original_title": "北京市新增106款已完成登记的生成式人工智能服务",
+      "url": "https://news.bjd.com.cn/2026/11/19/12036629.shtml",
+      "source_name": "北京日报",
+      "legal_status": "生成式人工智能服务登记信息公开",
+      "fact": "北京市网信部门11月19日公布新一批106款已完成登记的生成式人工智能服务，累计已登记服务达到352款。有关登记针对通过接口等方式提供的生成式人工智能应用，服务提供者应按要求公示登记编号，并履行人工智能生成合成内容标识等规定。本次公布的是服务登记情况，不是对所有底层大模型重新备案。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-4",
+      "event_date": "2026-11-19",
+      "jurisdiction": "中国",
+      "agency": "工业和信息化部",
+      "domestic": "国内",
+      "title": "工信部启动2026年“5G＋工业互联网”融合应用城市试点申报",
+      "original_title": "工业和信息化部办公厅关于组织开展2026年“5G+工业互联网”融合应用城市试点申报工作的通知",
+      "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_a11e683f156a4314a20423c0a9f9d682.html",
+      "source_name": "工业和信息化部",
+      "legal_status": "申报通知公开，尚未遴选最终试点",
+      "fact": "工业和信息化部11月17日公开2026年“5G＋工业互联网”融合应用城市试点申报通知，并在本周相关产业活动期间推进试点启动。试点围绕地方政策、网络基础设施、行业应用、产业生态和公共服务，以地级及以上城市为单位申报，地域相近城市可以联合申报。申报材料须在12月18日前报送，后续还需评审、现场考察和结果公示。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-5",
+      "event_date": "2026-11-20",
+      "jurisdiction": "中国",
+      "agency": "中国证监会（据路透社报道）",
+      "domestic": "国内",
+      "title": "路透披露红筹企业境外上市备案审核口径趋严，科技初创企业或受影响",
+      "original_title": "Beijing to bar young 'red-chip' firms from listing outside mainland China, sources say",
+      "url": "https://www.reuters.com/world/beijing-bar-young-red-chip-firms-listing-outside-mainland-china-sources-say-2026-11-20/",
+      "source_name": "路透社",
+      "legal_status": "媒体援引知情人士；尚无对应公开新规文本",
+      "fact": "路透社11月20日援引知情人士称，中国证监会近期向部分律师事务所传达，2023年境外上市新规出台后设立的红筹企业可能需要先将注册地迁回境内，才能申请境外上市。红筹架构在科技初创企业境外融资中较为常见。报道所述为监管沟通及审核口径变化，尚未见到监管机构公开发布相应新规文本。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-6",
+      "event_date": "2026-11-19",
+      "jurisdiction": "美国",
+      "agency": "美国众议院相关委员会",
+      "domestic": "国际",
+      "title": "美众议院披露半年间近88万枚对华AI芯片获准销售，区分许可与实际交付",
+      "original_title": "US signed off on sales of nearly 900,000 AI chips to China in six months, House committee says",
+      "url": "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/",
+      "source_name": "路透社",
+      "legal_status": "美国国会披露出口许可资料",
+      "fact": "美国众议院相关委员会11月19日公布资料，显示2025年12月至2026年5月美国主管部门批准了涉及近88万枚人工智能芯片的对华销售许可。委员会同时披露申请涉及的芯片数量明显高于获批数量。披露数字是许可批准规模，不等于相关芯片已经全部出口或交付。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-7",
+      "event_date": "2026-11-19",
+      "jurisdiction": "美国／中国台湾地区",
+      "agency": "美国商务部工业与安全局、台积电",
+      "domestic": "国际",
+      "title": "台积电据报暂停部分面向中国客户的先进芯片代工订单",
+      "original_title": "TSMC tightens China AI chip curbs as new US rules close manufacturing loophole, sources say",
+      "url": "https://www.reuters.com/world/china/tsmc-tightens-china-ai-chip-curbs-new-us-rules-close-manufacturing-loophole-2026-11-19/",
+      "source_name": "路透社",
+      "legal_status": "美国新出口规则生效后的企业合规调整；具体订单据媒体调查",
+      "fact": "路透社11月19日报道，美国新近实施的先进半导体出口管制规则收紧了中国芯片设计企业通过境外代工获取先进制程的条件。知情人士称，台积电已暂停部分16纳米及更先进工艺的相关订单，除非客户取得美国主管部门许可。台积电表示将遵守适用法律，个别订单暂停情况主要来自媒体援引知情人士。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-8",
+      "event_date": "2026-11-19",
+      "jurisdiction": "英国",
+      "agency": "英国调查权力审裁庭",
+      "domestic": "国际",
+      "title": "英国审裁庭确认政府曾向苹果发出加密数据访问命令，实体争议仍待审理",
+      "original_title": "UK tribunal confirms government order demanding access to Apple data",
+      "url": "https://www.reuters.com/business/retail-consumer/uk-tribunal-confirms-government-order-demanding-access-apple-data-2026-11-19/",
+      "source_name": "路透社",
+      "legal_status": "审裁庭对公开披露作出决定，实体争议尚未终局",
+      "fact": "英国调查权力审裁庭11月19日作出程序性决定，确认政府曾向苹果发出与加密数据访问有关的技术能力通知，并允许公开说明该通知存在。苹果就通知合法性提出的实体挑战尚未审结。该决定涉及秘密调查权命令的公开范围，不代表法院已最终判定数据访问要求是否合法。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-9",
+      "event_date": "2026-11-19",
+      "jurisdiction": "英国",
+      "agency": "竞争与市场管理局（CMA）",
+      "domestic": "国际",
+      "title": "英国竞争监管机构征询云服务IAM与Kubernetes迁移障碍证据",
+      "original_title": "Developer experience with IAM and Kubernetes",
+      "url": "https://www.gov.uk/government/calls-for-evidence/developer-experience-with-iam-and-kubernetes",
+      "source_name": "英国政府官网／CMA",
+      "legal_status": "正式公开征集证据",
+      "fact": "英国竞争与市场管理局11月19日发起云服务开发者体验证据征集，重点调查身份与访问管理（IAM）和Kubernetes服务的使用及迁移便利程度。征集旨在了解多云部署和更换云供应商是否仍存在技术障碍，英国境内外开发者均可提交反馈。该程序为市场情况证据收集，尚非新一轮竞争违法裁决。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-10",
+      "event_date": "2026-11-18",
+      "jurisdiction": "法国",
+      "agency": "法国国家信息与自由委员会（CNIL）",
+      "domestic": "国际",
+      "title": "法国隐私监管机构因明文保存密码等问题罚款500万欧元",
+      "original_title": "Conservation des mots de passe clients en clair : la CNIL prononce une sanction de 5 millions d’euros",
+      "url": "https://www.cnil.fr/fr/conservation-des-mots-de-passe-sanction-5-millions-deuros",
+      "source_name": "法国CNIL",
+      "legal_status": "GDPR行政罚款决定",
+      "fact": "法国CNIL于11月18日公布对一家公司的500万欧元罚款决定，认定其客户密码和账户安全问题答案的保护措施不足，并存在个人数据保存时间过长等问题。监管机构依据《通用数据保护条例》作出处罚，并公开决定以提示基本数据安全义务。CNIL在公开说明中没有披露被处罚公司的名称。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-11",
+      "event_date": "2026-11-18",
+      "jurisdiction": "国际组织／欧盟",
+      "agency": "全球隐私大会（GPA）",
+      "domestic": "国际",
+      "title": "全球隐私大会通过AI与隐私保护合作决议，并制定未来四年工作计划",
+      "original_title": "International authorities gather at the 48th Global Privacy Assembly annual conference to advance privacy protection for individuals at a time of rapid technological change",
+      "url": "https://globalprivacyassembly.com/international-authorities-gather-at-the-48th-global-privacy-assembly-annual-conference/",
+      "source_name": "全球隐私大会",
+      "legal_status": "监管机构协作决议和工作计划，非直接约束性法律",
+      "fact": "全球隐私大会11月18日公布第48届大会闭门会议成果。来自多国和地区的数据保护监管机构在11月16日至17日会议上确定新一轮四年战略计划，并通过涉及新技术与个人信息保护的合作决议。相关成果属于监管机构国际协作和共同政策方向，不是直接在各法域生效的统一法律。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-12",
+      "event_date": "2026-11-20",
+      "jurisdiction": "美国",
+      "agency": "Signal",
+      "domestic": "国际",
+      "title": "Signal推出默认屏幕截取限制，阻止AI智能体直接读取加密聊天画面",
+      "original_title": "Signal restricts screenshots to block AI agents from reading messages",
+      "url": "https://www.reuters.com/legal/litigation/signal-restricts-screenshots-block-ai-agents-reading-messages-2026-11-20/",
+      "source_name": "路透社",
+      "legal_status": "企业产品隐私安全措施",
+      "fact": "路透社11月20日报道，Signal开始在部分设备上默认限制截屏访问，以减少系统级人工智能智能体读取加密聊天界面的机会。用户在触发相关操作时会收到提示，并可根据设备支持情况调整设置。该措施针对终端屏幕读取路径，不改变端到端加密的基本工作原理。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-13",
+      "event_date": "2026-11-20",
+      "jurisdiction": "欧盟",
+      "agency": "欧洲中央银行",
+      "domestic": "国际",
+      "title": "欧洲央行行长警示AI驱动的网络攻击成为金融体系迫切风险",
+      "original_title": "ECB's Lagarde: cyber threat boosted by AI is my top worry",
+      "url": "https://www.reuters.com/legal/government/ecbs-lagarde-cyber-threat-boosted-by-ai-is-my-top-worry-2026-11-20/",
+      "source_name": "路透社",
+      "legal_status": "央行行长公开讲话，非正式监管规则",
+      "fact": "欧洲中央银行行长拉加德11月20日在法兰克福举行的欧洲银行业大会上表示，日益复杂的人工智能智能体可能放大金融网络攻击威胁。她将AI与网络攻击结合造成的风险称为最令其担忧的问题之一，并呼吁政策制定者给予更多重视。有关表述为公开风险判断，没有同时发布新的金融业法定义务。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-14",
+      "event_date": "2026-11-20",
+      "jurisdiction": "美国·加利福尼亚州",
+      "agency": "加州总检察长办公室",
+      "domestic": "国际",
+      "title": "加州对英伟达发出调查传票，核查芯片流向中国及证券信息披露问题",
+      "original_title": "California investigates Nvidia over whether chip exports ended up in China",
+      "url": "https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china",
+      "source_name": "卫报",
+      "legal_status": "调查及取证阶段，未作出违法认定",
+      "fact": "加利福尼亚州总检察长办公室向英伟达发出调查传票，调查该公司的先进芯片是否经由有关交易流向中国，以及投资者是否获得准确风险披露。加州总检察长11月20日对外说明调查方向，涉及出口限制、公司治理和州证券法问题。传票属于调查取证措施，不代表违法事实已经得到认定。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-15",
+      "event_date": "2026-11-20",
+      "jurisdiction": "美国",
+      "agency": "美国众议院民主党议员",
+      "domestic": "国际",
+      "title": "美众议员调查英伟达是否影响商务部对Megaspeed芯片转运案的调查",
+      "original_title": "Democrats open probe into Nvidia influence on US Megaspeed investigation",
+      "url": "https://www.reuters.com/business/finance/democrats-open-probe-into-nvidia-influence-us-megaspeed-investigation-2026-11-20/",
+      "source_name": "路透社",
+      "legal_status": "国会监督调查及函询",
+      "fact": "路透社11月20日报道，美国众议院民主党议员对英伟达是否影响商务部调查新加坡云服务商Megaspeed一事展开问询。议员关注先进人工智能芯片可能经第三国转运及相关执法程序，已发函要求说明调查和企业接触情况。函询目前属于国会监督活动，并不等于已查明监管机构受到不当干预。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-16",
+      "event_date": "2026-11-20",
+      "jurisdiction": "澳大利亚",
+      "agency": "昆士兰州有关规划程序、Zerra DC",
+      "domestic": "国际",
+      "title": "Anthropic澳大利亚数据中心规划收到595份反对或暂缓意见",
+      "original_title": "Anthropic's Australian data centre overwhelmingly opposed by residents",
+      "url": "https://www.reuters.com/world/asia-pacific/anthropics-australian-data-centre-overwhelmingly-opposed-by-residents-2026-11-20/",
+      "source_name": "路透社",
+      "legal_status": "项目规划公众意见程序，未作许可终局决定",
+      "fact": "路透社11月20日报道，以Anthropic为主要租户的澳大利亚Western Downs Digital Park数据中心项目在规划公众意见阶段收到595份反对或要求暂缓的提交，另有两份支持、一份中立。规划的计算负载最高达1.44吉瓦，居民主要关注电力、水资源、噪声、道路和住房压力。开发商表示将继续与社区沟通，项目并未因意见数量而自动被否决。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-17",
+      "event_date": "2026-11-18",
+      "jurisdiction": "美国·俄勒冈州",
+      "agency": "波特兰市议会",
+      "domestic": "国际",
+      "title": "美国波特兰市拟暂停新增政府AI采购合同，审议隐私和民权保护措施",
+      "original_title": "Portland considers halting new AI contracts",
+      "url": "https://www.axios.com/local/portland/2026/11/18/city-government-ai-moratorium",
+      "source_name": "Axios",
+      "legal_status": "市议员提出的拟议条例，尚未正式通过",
+      "fact": "俄勒冈州波特兰市议会议长提出暂缓政府采购和部署新人工智能技术的条例方案，等待城市建立更明确的个人信息、网络安全和民权保护措施。草案还涉及既有AI用途范围与政府使用情况公开。有关禁令仍处于提案阶段，不是已实施的全市AI禁令。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-18",
+      "event_date": "2026-11-20",
+      "jurisdiction": "法国",
+      "agency": "法国视听与数字传播监管局（Arcom）",
+      "domestic": "国际",
+      "title": "法国监管机构拟对大型网络主播适用选举报道政治平衡规则",
+      "original_title": "French regulator defends applying political balance rules to influencers",
+      "url": "https://www.reuters.com/business/media-telecom/french-regulator-defends-applying-political-balance-rules-influencers-2026-11-20/",
+      "source_name": "路透社",
+      "legal_status": "政策方案及监管机构公开解释，非已完成执法",
+      "fact": "法国视听与数字传播监管机构Arcom在11月20日回应争议，解释拟将选举期间政治曝光平衡要求扩展至部分拥有大量受众的网络主播和内容创作者。方案拟要求相关账号在总统选举期间为不同候选人的观点提供适当曝光，类似传统广播电视领域的平衡规则。具体适用范围和执行机制仍在讨论中。",
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    }
+  ],
+  "publication": {
+    "commit_sha": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "online_check": null,
+    "notes": "新闻事实核对和近七日逐事件去重已开展。国内来源逐项覆盖不完整，domestic_major_omission_review=false；部署仅以实际Actions与线上回读为准。"
+  }
+}
