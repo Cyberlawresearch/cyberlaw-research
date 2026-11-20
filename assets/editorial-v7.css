@@ -250,3 +250,64 @@ body.editorial-live { background:var(--paper); color:var(--ink); font-family:var
 }
 @media(max-width:420px){.home-hero h1{font-size:23px}.brief-home-lead h3{font-size:20px}.portal-classic .portal-copy h3{font-size:18px!important}}
 @media print{.masthead::before{background:none}.home-hero{background:none}.portal-card:not(.portal-brief){background:none!important}.portal-brief .brief-home-more{background:none;color:var(--ink);border-color:#ddd}}
+
+
+/* V8 · Dark-ink typographic hierarchy.
+   Keep the restrained multi-colour identity in borders and folio marks.
+   All editorial copy uses readable near-black shades and graduated weights. */
+:root {
+  --ink: #1c2023;
+  --body: #272d30;
+  --muted: #3d464b;
+  --link: #243f4b;
+  --accent: #95564f;
+}
+body.editorial-live { color:var(--ink); }
+body.editorial-live a { text-decoration-color:currentColor; }
+.brand { color:#171b1e; font-weight:750; }
+.site-tools,.site-tools a { color:#303639; font-weight:550; }
+.nav-links a { color:#262c30; font-weight:650; }
+.nav-links a[aria-current="page"] { color:#20272d; font-weight:750; }
+.search-trigger { color:#242b31; font-weight:650; }
+.hero-eyebrow { color:#34383b; font-weight:650; }
+.home-hero h1 { color:#151a1d; font-weight:750; }
+.hero-description { color:#282f32; font-weight:600; }
+.edition-summary { color:#353d40; font-weight:550; }
+.edition-summary time { color:#252a2d; font-weight:650; }
+.edition-divider { color:#596167; }
+.portal-no { color:#3a4247; font-weight:650; }
+.portal-no b { color:var(--section-color,#34566b); font-weight:750; }
+.portal-card-head time { color:#343c40; font-weight:600; }
+.brief-home-heading h2 { color:#171c20; font-weight:750; }
+.brief-home-heading>p,.brief-home-count { color:#31383c; font-weight:600; }
+.brief-lead-label { color:#30383b; font-weight:600; }
+.brief-home-lead h3 { color:#141a1f; font-weight:750; }
+.brief-lead-summary { color:#2b3236; font-size:13.5px; font-weight:500; }
+.brief-group-heading h3,
+.brief-headlines-group:nth-child(2) .brief-group-heading h3 { color:#1d2428; font-weight:750; }
+.brief-group-heading>a,
+.brief-headlines-group:nth-child(2) .brief-group-heading>a { color:#2a3237; font-weight:650; }
+.brief-home-link h4 { color:#202529; font-size:16px; font-weight:650; }
+.brief-home-meta,.brief-home-meta time { color:#3b4348; font-weight:550; }
+.portal-brief .brief-home-more { color:#1e2a30; font-weight:700; }
+.portal-brief .brief-home-more>span:last-child { color:#27373f; }
+.portal-card:not(.portal-brief) h2 { color:#191e22; font-weight:750; }
+.portal-card:not(.portal-brief) .portal-copy h3 { color:#1d2226; font-weight:700; }
+.portal-card:not(.portal-brief) .portal-meta { color:#343c40; font-weight:550; }
+.portal-card:not(.portal-brief) .portal-description { color:#363d41; font-weight:500; }
+.portal-card:not(.portal-brief) .portal-action { color:#242c31; font-weight:700; }
+.portal-card:not(.portal-brief) .portal-action>span:first-child { text-decoration-color:#7f9295; }
+.portal-classic .portal-copy h3 { color:#1e2226!important; font-weight:650!important; }
+.portal-classic .portal-meta { color:#35393d!important; font-weight:550!important; }
+.history-entry strong { color:#1c2327; font-weight:750; }
+.history-entry a { color:#283238; font-weight:650; }
+.site-footer,.footer-links a { color:#333b40; font-weight:500; }
+.footer-note { color:#424a4e; font-weight:450; }
+@media(max-width:760px) {
+  .brand { font-weight:750; }
+  .brief-home-lead h3 { color:#14191d; font-weight:750; }
+  .brief-home-link h4 { color:#1b2125; font-weight:650; }
+  .portal-card:not(.portal-brief) .portal-copy h3 { color:#1f2529; font-weight:700; }
+  .portal-classic .portal-copy h3 { color:#1e2226!important; font-weight:650!important; }
+  .brief-lead-summary { font-size:12.7px; }
+}
