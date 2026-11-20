@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-20",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-20-pufendorf-duty-man-citizen.html",
+  "target_path": "articles/2026-11-20-pufendorf-duty-man-citizen.html",
+  "book": {
+    "author": "Samuel von Pufendorf（塞缪尔·冯·普芬道夫）",
+    "original_title": "De Officio Hominis et Civis Juxta Legem Naturalem Libri Duo",
+    "publisher": "Lund: sumtibus Adami Junghans",
+    "year": "1673",
+    "edition": "1673年隆德拉丁文初版；正文系统核读Frank Gardner Moore于1927年的完整英译本（晚于初版的拉丁底本），核对1673年书影与全书结构"
+  },
+  "source_urls": [
+    "https://sourcelibrary.org/book/de-officio-hominis-et-civis-pufendorf",
+    "https://lonang.com/library/reference/pufendorf-duty-man-and-citizen/",
+    "https://lonang.com/library/reference/pufendorf-duty-man-and-citizen/puf-001/",
+    "https://lonang.com/library/reference/pufendorf-duty-man-and-citizen/puf-103/",
+    "https://lonang.com/library/reference/pufendorf-duty-man-and-citizen/puf-104/",
+    "https://lonang.com/library/reference/pufendorf-duty-man-and-citizen/puf-201/",
+    "https://lonang.com/library/reference/pufendorf-duty-man-and-citizen/puf-205/",
+    "https://lonang.com/library/reference/pufendorf-duty-man-and-citizen/puf-218/",
+    "https://oll.libertyfund.org/titles/tooke-the-whole-duty-of-man-according-to-the-law-of-nature-1673-2003",
+    "https://www.cambridge.org/core/books/abs/leibniz-political-writings/opinion-on-the-principles-of-pufendorf-1706/8F6C23D965817C02E59A8EDB8B80E0D0",
+    "https://doi.org/10.1080/09608788.2012.693064"
+  ],
+  "original_verification": "核对原版书影题名页、第一卷17章及第二卷18章的完整目录，并以Moore 1927年英文全译本系统核读两卷35章的论证，区分后人导论、英译、编者注释和1673年作者文本；未声称逐字校勘拉丁原版。",
+  "critics": [
+    {
+      "name": "Gottfried Wilhelm Leibniz（戈特弗里德·威廉·莱布尼茨）",
+      "work": "Opinion on the Principles of Pufendorf (1706)",
+      "url": "https://www.cambridge.org/core/books/abs/leibniz-political-writings/opinion-on-the-principles-of-pufendorf-1706/8F6C23D965817C02E59A8EDB8B80E0D0",
+      "checked": "直接批评自然法的社会性范围、命令论与正义根基；区分1706年作者原论与后人编注"
+    },
+    {
+      "name": "Christopher Johns",
+      "work": "Leibniz, Pufendorf, and the Possibility of Moral Self-Governance (2013)",
+      "url": "https://doi.org/10.1080/09608788.2012.693064",
+      "checked": "具名后世学术研究，分析道德自治与义务的理论争论；不冒充普芬道夫原文或当代的直接书评"
+    }
+  ],
+  "dedup_checked": [
+    "main/classics.html自2026-09-03起全部公开书目：未出现本书",
+    "main/classics-history.html第15—35期全部书名：未出现本书",
+    "main/data/books.json全部登记书目：未出现本书",
+    "已区分历史出现的普芬道夫以外自然法作者及相近主题，未重复选书"
+  ],
+  "duplicate_found": false,
+  "sections": 96,
+  "prose_length": 10045,
+  "checked_at": "2026-11-20",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
