@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-21",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-21-new-works.html",
+  "page_blob_sha": "7012fa6345c7eadbeeb505e523f7dc03c2b5235b",
+  "newworks_count": 3,
+  "checked_at": "2026-11-21T12:30:32.451Z",
+  "checks": {
+    "publisher_original_source_verified": true,
+    "original_title_author_doi_verified": true,
+    "publication_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "historical_93_html_pages_checked": true,
+    "github_code_search_done": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "main new-works.html and new-works-history.html historical indexes",
+      "Main history: 93 distinct indexed research works HTML pages (articles and new-works): title and DOI full-text scan, no exact matches",
+      "GitHub code search for all 3 DOIs, no matches"
+    ],
+    "exact_hits_for_selected": 0,
+    "version_distinction": "All three are Springer publisher version-of-record journal articles; first 2026-11-19, second 2026-09-15, third 2026-04-17; missing third article number, issue and pages intentionally omitted",
+    "source_navigation_notes": "Opened and read each publisher full article, checking title, authors, journal, publication date, DOI and abstract/full discussion"
+  },
+  "items": [
+    {
+      "cn_title": "智能体上线后风险不断变化，监管义务如何随使用关系调整",
+      "author": "Huansheng Ning; Jianguo Ding",
+      "original_title": "Governing Agentic AI: An Onto-Relational-Sophic (ORS) Framework for Deployment-Sensitive Governance",
+      "journal": "AI and Ethics",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-11-19",
+      "volume": "6",
+      "issue": null,
+      "pages": null,
+      "article_number": "675",
+      "doi": "10.1007/s43681-026-01546-w",
+      "publisher_page": "https://link.springer.com/article/10.1007/s43681-026-01546-w",
+      "version": "2026-11-19 version of record, Volume 6, article 675"
+    },
+    {
+      "cn_title": "聊天机器人生成的文字，是否应受美国宪法言论自由保护",
+      "author": "Tamara Dobler; Daniel Bracker",
+      "original_title": "Should the Legal Concept of Speech Include Chatbot Output in US Law?",
+      "journal": "Philosophy & Technology",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-09-15",
+      "volume": "39",
+      "issue": null,
+      "pages": null,
+      "article_number": "174",
+      "doi": "10.1007/s13347-026-01187-1",
+      "publisher_page": "https://link.springer.com/article/10.1007/s13347-026-01187-1",
+      "version": "2026-09-15 version of record, Volume 39, article 174"
+    },
+    {
+      "cn_title": "生态监测数据跨国共享，怎样兼顾数据主权和收益公平",
+      "author": "Joaquín David Rodríguez Álvarez",
+      "original_title": "Beyond data silos: federated governance as legal response to planetary ecological collapse",
+      "journal": "International Environmental Agreements: Politics, Law and Economics",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-04-17",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": "10.1007/s10784-026-09718-z",
+      "publisher_page": "https://link.springer.com/article/10.1007/s10784-026-09718-z",
+      "version": "2026-04-17 online version of record; volume, issue and pages not stated on publisher page"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "eecd0d2c209c78613c9f22159e866c8114886fda",
+    "last_complete_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": null
+  }
+}
