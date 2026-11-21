@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-21",
+  "base_main_sha": "0f424d4c3d188e6d52b99fa39516284a029b3422",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "检索美欧英日韩与印度加拿大澳大利亚官方来源",
+    "与最近7期事件级去重并核验链接",
+    "按阶段写入草稿并完成正式发布"
+  ]
+}
