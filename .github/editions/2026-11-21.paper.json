@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-21",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-21-douek-content-moderation-systems-thinking.html",
+  "selection": "Content Moderation as Systems Thinking",
+  "bibliography": {
+    "type": "article",
+    "author": "Evelyn Douek",
+    "originalTitle": "Content Moderation as Systems Thinking",
+    "journal": "Harvard Law Review",
+    "year": "2022",
+    "volume": "136",
+    "issue": "2",
+    "pages": "526–607",
+    "url": "https://harvardlawreview.org/print/vol-136/content-moderation-as-systems-thinking/",
+    "cnTitle": "平台内容治理不能只靠逐帖申诉：从个案纠错转向系统性问责"
+  },
+  "versions": {
+    "full_text": "Read complete 82-page printed article, including Introduction, Parts I-IV, Conclusion, and footnotes; journal publisher PDF pages 526-607.",
+    "publication": "Harvard Law Review, Vol. 136, No. 2, December 2022, pp. 526-607. Official published journal text; no unverified DOI or working-paper identifier."
+  },
+  "sources": [
+    "https://harvardlawreview.org/print/vol-136/content-moderation-as-systems-thinking/",
+    "https://harvardlawreview.org/wp-content/uploads/2022/11/136-Harv.-L.-Rev.-526.pdf",
+    "https://harvardlawreview.org/forum/vol-136/of-systems-thinking-and-straw-men/"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "history_scope": "Checked all rows in papers.html and papers-history-1.html, most recent column-2 commits, and same-day paper file and record on main; no previous Evelyn Douek 'Content Moderation as Systems Thinking' entry.",
+  "related_reading": [
+    "articles/2026-09-19-klonick-new-governors.html",
+    "articles/2026-10-04-grimmelmann-virtues-of-moderation.html"
+  ],
+  "timeline": null,
+  "body_length": 6187,
+  "checked_at": "2026-11-21",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  },
+  "last_error": null
+}
