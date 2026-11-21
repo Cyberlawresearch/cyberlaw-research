@@ -1,8 +1,8 @@
 {
   "date": "2026-11-21",
   "base_main_sha": "0f424d4c3d188e6d52b99fa39516284a029b3422",
-  "phase": "facts_verified_deduplicated",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "us-tris-ad-prelim",
@@ -97,9 +97,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "对全部来源作最终打开核对及终扫",
-    "将publication_ready设置为true并回读",
-    "依次写issue、index、archive并验收"
+    "新增完整当期页面并回读main",
+    "更新最新首页入口及归档并回读main",
+    "核验本次Pages部署与公开页面及来源"
   ],
   "dedup": {
     "issues_checked": [
@@ -112,5 +112,13 @@
       "2026-11-20"
     ],
     "notes": "11月15日英欧SPS为拟签署，本期新增11月20日实际协议及2028年3月1日实施目标；11月11日PTMEG初裁，本期新增USITC最终阶段的2027年听证日；其他选题均有20日（或19日）新初裁、法定期限、名单和修正结果。"
+  },
+  "final_source_validation": {
+    "primary_sources_opened": 12,
+    "pdf_pages_visually_checked": 3,
+    "all_external_links_verified": true,
+    "html_entities_rule": "all source href values checked against canonical original URLs; query ampersands encoded as &amp;",
+    "final_sweep": "2026-11-21 Asia/Shanghai; US EU UK Japan Korea India Canada Australia and additional industry news checked",
+    "last_7_issue_dedup": true
   }
 }
