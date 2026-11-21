@@ -10,6 +10,11 @@ on:
     types: [completed]
     branches: [main]
   workflow_dispatch:
+    inputs:
+      edition_date:
+        description: 'Optional published news edition to recheck (YYYY-MM-DD); does not publish content'
+        required: false
+        type: string
 
 permissions:
   contents: read
@@ -45,11 +50,18 @@ jobs:
       - name: Test news delivery safeguard
         run: python scripts/test_news_delivery_gate.py
       - name: Check scheduled news delivery after 22:00
+        id: news_delivery
+        env:
+          EDITION_DATE: ${{ github.event.inputs.edition_date }}
         shell: bash
         run: |
           set -euo pipefail
           mkdir -p "$RUNNER_TEMP/release-check"
-          python scripts/news_delivery_gate.py 2>&1 | tee "$RUNNER_TEMP/release-check/news-delivery.txt"
+          args=(--result "$RUNNER_TEMP/release-check/news-delivery.json")
+          if [[ "$GITHUB_EVENT_NAME" == workflow_dispatch && -n "$EDITION_DATE" ]]; then
+            args+=(--edition-date "$EDITION_DATE")
+          fi
+          python scripts/news_delivery_gate.py "${args[@]}" 2>&1 | tee "$RUNNER_TEMP/release-check/news-delivery.txt"
       - name: Verify safeguard schedule
         env:
           GH_TOKEN: ${{ github.token }}
@@ -58,34 +70,28 @@ jobs:
           grep -F "cron: '17,47 20-23,0 * * *'" .github/workflows/daily-release.yml
           grep -F "timezone: 'Asia/Shanghai'" .github/workflows/daily-release.yml
       - name: Close resolved safeguard issue
-        if: success()
+        if: success() && steps.news_delivery.outputs.status == 'verified'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: |
-          python - <<'PY'
-          import json, subprocess
-          from datetime import datetime, timedelta
-          from zoneinfo import ZoneInfo
-          day=(datetime.now(ZoneInfo('Asia/Shanghai'))-timedelta(hours=12)).date().isoformat()
-          marker='<!-- daily-release:'+day+' -->'
-          endpoint='repos/Cyberlawresearch/cyberlaw-research/issues'
-          rows=json.loads(subprocess.check_output(['gh','api',endpoint+'?state=open&per_page=100'],text=True))
-          for row in rows:
-              if marker in (row.get('body') or ''):
-                  subprocess.run(['gh','api','--method','PATCH',endpoint+'/'+str(row['number']),'-f','state=closed'],check=True)
-                  print('Closed resolved safeguard issue #'+str(row['number']))
-          PY
+        run: python scripts/close_daily_release_issue.py "$RUNNER_TEMP/release-check/news-delivery.json"
       - name: Report safeguard failure outside reader pages
         if: failure()
         env:
           GH_TOKEN: ${{ github.token }}
+          EDITION_DATE: ${{ github.event.inputs.edition_date }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           python - <<'PY'
           import json, os, subprocess
-          from datetime import datetime, timedelta
+          from datetime import date, datetime, timedelta
           from zoneinfo import ZoneInfo
           day=(datetime.now(ZoneInfo('Asia/Shanghai'))-timedelta(hours=12)).date().isoformat()
+          requested=os.environ.get('EDITION_DATE', '')
+          if requested:
+              try:
+                  if date.fromisoformat(requested).isoformat() == requested: day=requested
+              except ValueError:
+                  pass
           marker='<!-- daily-release:'+day+' -->'
           endpoint='repos/Cyberlawresearch/cyberlaw-research/issues'
           rows=json.loads(subprocess.check_output(['gh','api',endpoint+'?state=open&per_page=100'],text=True))
