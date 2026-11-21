@@ -1,7 +1,7 @@
 {
   "date": "2026-11-21",
   "base_main_sha": "0f424d4c3d188e6d52b99fa39516284a029b3422",
-  "phase": "main_written_pages_pending",
+  "phase": "publication_verified",
   "publication_ready": true,
   "items": [
     {
@@ -96,11 +96,7 @@
     "澳大利亚": "反倾销委员会和海关公告动态巡视；已报道案件无新裁决不重复"
   },
   "last_error": null,
-  "next_actions": [
-    "检查最终提交ab8f6a4的Pages workflow是否完成",
-    "核验公开页面及来源链接是否通过本期专项检查",
-    "记录最终发布结论"
-  ],
+  "next_actions": [],
   "dedup": {
     "issues_checked": [
       "2026-11-14",
@@ -133,6 +129,20 @@
     "workflow_run_id": 44847831678,
     "workflow_status": "pending at first check",
     "public_pages": "web opening returned inaccessible; await final commit deployment and retry",
-    "verified_external_source_pages": 12
+    "verified_external_source_pages": 12,
+    "final_commit": "ab8f6a4a76e3511dc9766d0f70ecb20654de1ce4",
+    "pages_workflow_run_id": 44847831678,
+    "pages_conclusion": "success",
+    "pages_deploy_job": "success",
+    "guard_workflow_run_id": 44848331515,
+    "guard_public_content_verification": "success",
+    "source_diagnostics_run_id": 44848331459,
+    "source_diagnostics_conclusion": "success",
+    "external_source_links_passed": 12,
+    "external_source_links_total": 12,
+    "homepage_latest": "2026-11-21 第074期",
+    "archive_first": "2026-11-21 第074期",
+    "issue_news_count": 11,
+    "head_at_verification": "ab8f6a4a76e3511dc9766d0f70ecb20654de1ce4"
   }
 }
