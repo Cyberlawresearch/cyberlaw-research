@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-21",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-21-spooner-no-treason-constitution-no-authority.html",
+  "target_path": "articles/2026-11-21-spooner-no-treason-constitution-no-authority.html",
+  "book": {
+    "author": "Lysander Spooner（莱桑德·斯普纳）",
+    "original_title": "No Treason. No. VI. The Constitution of No Authority",
+    "publisher": "Boston: Published by the Author",
+    "year": "1870",
+    "edition": "1870年波士顿作者自刊第六号（十九节及附录）；核读Wikisource原版校录全文，并对照Gutenberg及OLL完整重印"
+  },
+  "source_urls": [
+    "https://en.wikisource.org/wiki/No_Treason/6",
+    "https://en.wikisource.org/wiki/Index:No_Treason,_v6.djvu",
+    "https://www.gutenberg.org/ebooks/36145",
+    "https://oll.libertyfund.org/titles/spooner-no-treason-no-vi-the-constitution-of-no-authority-1870",
+    "https://www.davidmhart.com/liberty/AmericanLibertarians/Spooner/1867-70-No_Treason/index.html",
+    "https://oll.libertyfund.org/publications/liberty-matters/randy-barnett-lysander-spooner",
+    "https://press.princeton.edu/books/paperback/9780691123769/restoring-the-lost-constitution"
+  ],
+  "original_verification": "系统核对1870年原作的十九节与附录，包含投票、税收、未签署宪法、委托代理、誓言、国际条约、战争债务及附录；校对题名页，区别1870年No.VI与1867年No.I/II、现代汇编和2016年评论。",
+  "critics": [
+    {
+      "name": "Randy E. Barnett",
+      "work": "The Significance of Lysander Spooner (2016)",
+      "url": "https://oll.libertyfund.org/publications/liberty-matters/randy-barnett-lysander-spooner",
+      "checked": "直接论证无同意不意味着不存在其他法律正当性基础；提出宪法先约束政府官员及权利保障的替代方案。"
+    },
+    {
+      "name": "Roderick T. Long",
+      "work": "Response to Randy Barnett in Liberty Matters: The Significance of Lysander Spooner (2016)",
+      "url": "https://oll.libertyfund.org/publications/liberty-matters/randy-barnett-lysander-spooner",
+      "checked": "对Barnett替代宪法正当性方案的推论提出不同观点，区分独立道德义务和成文法创设的义务。"
+    }
+  ],
+  "dedup_checked": [
+    "main/classics.html 全部公开经典书目：书名及No Treason／Constitution of No Authority均未收录",
+    "main/classics-history.html 全部历史第15至35期：未出现本作",
+    "main/data/books.json：未收录本作",
+    "已区别同作者2026-11-04《论陪审团审判》——不同作品、不同主题"
+  ],
+  "duplicate_found": false,
+  "sections": 72,
+  "prose_length": 8509,
+  "checked_at": "2026-11-21",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
