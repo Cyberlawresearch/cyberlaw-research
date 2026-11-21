@@ -1,7 +1,7 @@
 {
   "date": "2026-11-21",
   "base_main_sha": "0f424d4c3d188e6d52b99fa39516284a029b3422",
-  "phase": "publication_ready",
+  "phase": "main_written_pages_pending",
   "publication_ready": true,
   "items": [
     {
@@ -97,9 +97,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "新增完整当期页面并回读main",
-    "更新最新首页入口及归档并回读main",
-    "核验本次Pages部署与公开页面及来源"
+    "检查最终提交ab8f6a4的Pages workflow是否完成",
+    "核验公开页面及来源链接是否通过本期专项检查",
+    "记录最终发布结论"
   ],
   "dedup": {
     "issues_checked": [
@@ -120,5 +120,19 @@
     "html_entities_rule": "all source href values checked against canonical original URLs; query ampersands encoded as &amp;",
     "final_sweep": "2026-11-21 Asia/Shanghai; US EU UK Japan Korea India Canada Australia and additional industry news checked",
     "last_7_issue_dedup": true
+  },
+  "publication": {
+    "date": "2026-11-21",
+    "issue_path": "trade-watch/issues/2026-11-21.html",
+    "news_count": 11,
+    "source_count": 12,
+    "commit_issue": "0d6fada678af0fdd6f12d6532f2bacd4a21290da",
+    "commit_index": "feda28ed067d5e2c55b71ec0df2cbc8c176b7b8f",
+    "commit_final": "ab8f6a4a76e3511dc9766d0f70ecb20654de1ce4",
+    "main_readback": true,
+    "workflow_run_id": 44847831678,
+    "workflow_status": "pending at first check",
+    "public_pages": "web opening returned inaccessible; await final commit deployment and retry",
+    "verified_external_source_pages": 12
   }
 }
