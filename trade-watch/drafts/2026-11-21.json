@@ -1,14 +1,60 @@
 {
   "date": "2026-11-21",
   "base_main_sha": "0f424d4c3d188e6d52b99fa39516284a029b3422",
-  "phase": "researching",
+  "phase": "researching_us_uk",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "uk-excavator-absorption",
+      "title": "英国对华履带式挖掘机吸收复审初步建议税率40.18%—80.16%，12月7日意见截止",
+      "url": "https://www.gov.uk/government/news/tra-proposes-increasing-anti-dumping-measure-on-excavators",
+      "verified": true
+    },
+    {
+      "id": "uk-eu-ets-cbam",
+      "title": "英欧峰会确定排放交易市场衔接方向，目标2028年1月1日实施并处理CBAM互免",
+      "url": "https://www.gov.uk/government/publications/ukeu-summit-2026-key-documents/uk-eu-summit-2026-explainer-ets-linking-html",
+      "verified": true
+    },
+    {
+      "id": "uk-eu-sps",
+      "title": "英国公布英欧SPS贸易系统切换安排，2028年3月1日实施目标，TRACES过渡",
+      "url": "https://www.gov.uk/guidance/changes-to-digital-systems-for-trading-sps-goods",
+      "verified": true
+    },
+    {
+      "id": "us-ofac-iran-nov20",
+      "title": "美国OFAC新增4名涉伊朗油气及Mahan Air个人SDN对象",
+      "url": "https://ofac.treasury.gov/recent-actions/20261120",
+      "verified": true
+    },
+    {
+      "id": "us-rail-couplers-orders",
+      "title": "美国对捷克、印度铁路车钩及零件正式发布反倾销税令",
+      "url": "https://www.federalregister.gov/documents/2026/11/20/2026-23626/certain-freight-rail-couplers-and-parts-thereof-from-the-czech-republic-and-india-amended-final",
+      "verified": true
+    },
+    {
+      "id": "us-shopping-carts-petitions",
+      "title": "美国延长中国产购物车双反申请立案审查期限",
+      "url": "https://www.federalregister.gov/documents/2026/11/20/2026-23622/notice-of-extension-of-the-deadline-for-determining-the-adequacy-of-the-antidumping-and",
+      "verified": true
+    }
+  ],
+  "coverage": {
+    "美国": "Federal Register 11月19—20日、OFAC 11月20日、BIS及USTR已检索",
+    "英国": "TRA及GOV.UK贸易救济、英欧峰会、俄罗斯制裁已检索",
+    "欧盟": "委员会贸易新闻、EUR-Lex及英欧峰会官方信息已检索",
+    "印度": "DGTR 11月20日案件新进展已识别",
+    "日本": "METI及出口管理公告初步检索",
+    "韩国": "产业通商、财政及贸易公告初步检索",
+    "加拿大": "CBSA、外贸公告初步检索",
+    "澳大利亚": "反倾销委员会及海关公告初步检索"
+  },
   "last_error": null,
   "next_actions": [
-    "检索美欧英日韩与印度加拿大澳大利亚官方来源",
-    "与最近7期事件级去重并核验链接",
-    "按阶段写入草稿并完成正式发布"
+    "核验美国其他案件具体期限及印度DGTR PDF详情",
+    "完成其他法域终扫和最近7期事件级去重",
+    "分阶段回读草稿并发布"
   ]
 }
