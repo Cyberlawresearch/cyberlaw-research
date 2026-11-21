@@ -1,60 +1,116 @@
 {
   "date": "2026-11-21",
   "base_main_sha": "0f424d4c3d188e6d52b99fa39516284a029b3422",
-  "phase": "researching_us_uk",
+  "phase": "facts_verified_deduplicated",
   "publication_ready": false,
   "items": [
     {
+      "id": "us-tris-ad-prelim",
+      "title": "美国对中国产三羟甲基氨基甲烷作出反倾销肯定性初裁：9.07%至132.59%",
+      "url": "https://www.trade.gov/commerce-preliminary-antidumping-duty-investigations-tris-hydroxymethyl-aminomethane-peoples",
+      "status": "初裁，待终裁和ITC损害终裁",
+      "verified": true
+    },
+    {
       "id": "uk-excavator-absorption",
-      "title": "英国对华履带式挖掘机吸收复审初步建议税率40.18%—80.16%，12月7日意见截止",
+      "title": "英国拟将中国履带式挖掘机反倾销税提高至40.18%—80.16%，12月7日意见截止",
       "url": "https://www.gov.uk/government/news/tra-proposes-increasing-anti-dumping-measure-on-excavators",
+      "status": "吸收复审初步建议，未实施新税率",
       "verified": true
     },
     {
       "id": "uk-eu-ets-cbam",
-      "title": "英欧峰会确定排放交易市场衔接方向，目标2028年1月1日实施并处理CBAM互免",
+      "title": "英欧达成ETS市场衔接协议方向，目标2028年1月启用并安排CBAM互免",
       "url": "https://www.gov.uk/government/publications/ukeu-summit-2026-key-documents/uk-eu-summit-2026-explainer-ets-linking-html",
+      "status": "达成协议安排，法律文本及实施待完成",
       "verified": true
     },
     {
       "id": "uk-eu-sps",
-      "title": "英国公布英欧SPS贸易系统切换安排，2028年3月1日实施目标，TRACES过渡",
+      "title": "英欧SPS协议公布2028年3月1日实施目标及TRACES切换要求",
       "url": "https://www.gov.uk/guidance/changes-to-digital-systems-for-trading-sps-goods",
+      "status": "签订框架与实施指导，尚未切换",
       "verified": true
     },
     {
-      "id": "us-ofac-iran-nov20",
-      "title": "美国OFAC新增4名涉伊朗油气及Mahan Air个人SDN对象",
-      "url": "https://ofac.treasury.gov/recent-actions/20261120",
-      "verified": true
-    },
-    {
-      "id": "us-rail-couplers-orders",
-      "title": "美国对捷克、印度铁路车钩及零件正式发布反倾销税令",
-      "url": "https://www.federalregister.gov/documents/2026/11/20/2026-23626/certain-freight-rail-couplers-and-parts-thereof-from-the-czech-republic-and-india-amended-final",
+      "id": "us-ptmeg-usitc-final-phase",
+      "title": "美国PTMEG四地反倾销案进入ITC最终损害调查阶段，2027年1月20日听证",
+      "url": "https://www.federalregister.gov/documents/2026/11/20/2026-23624/polytetramethylene-ether-glycol-ptmeg-from-china-south-korea-taiwan-and-vietnam-scheduling-of-the",
+      "status": "新程序安排，非终裁",
       "verified": true
     },
     {
       "id": "us-shopping-carts-petitions",
-      "title": "美国延长中国产购物车双反申请立案审查期限",
+      "title": "美国对中国产购物车双反申请延长立案审查至12月7日",
       "url": "https://www.federalregister.gov/documents/2026/11/20/2026-23622/notice-of-extension-of-the-deadline-for-determining-the-adequacy-of-the-antidumping-and",
+      "status": "申请审查延长，尚未决定立案",
+      "verified": true
+    },
+    {
+      "id": "us-ofac-iran-nov20",
+      "title": "美国OFAC新增4名涉伊朗航空与能源网络制裁对象",
+      "url": "https://ofac.treasury.gov/recent-actions/20261120",
+      "status": "SDN即时生效",
+      "verified": true
+    },
+    {
+      "id": "us-rail-couplers-orders",
+      "title": "美国正式对捷克和印度铁路车钩及配件发布反倾销税令",
+      "url": "https://www.federalregister.gov/documents/2026/11/20/2026-23626/certain-freight-rail-couplers-and-parts-thereof-from-the-czech-republic-and-india-amended-final",
+      "status": "正式税令11月20日适用",
+      "verified": true
+    },
+    {
+      "id": "in-antibiotic-deadlines",
+      "title": "印度两项对华抗生素上游原料反倾销案答卷截止统一延至11月30日",
+      "urls": [
+        "https://dgtr.gov.in/sites/default/files/2026-11/Letter%20regarding%20further%20extension%20of%20time%20for%20QR%20filing%20PenG.pdf",
+        "https://dgtr.gov.in/sites/default/files/2026-11/Letter%20regarding%20further%20extension%20of%20time%20for%20QR%20filing%206APA.pdf"
+      ],
+      "status": "两项既有调查程序期限变化",
+      "verified": true
+    },
+    {
+      "id": "in-halo-rubber-disclosure",
+      "title": "印度发布对中国、新加坡、美国卤化丁基橡胶反倾销案事实披露，11月27日答复",
+      "url": "https://dgtr.gov.in/sites/default/files/2026-11/Issue%20of%20Disclosure%20Statement.pdf",
+      "status": "最终裁定前事实披露，未终裁",
+      "verified": true
+    },
+    {
+      "id": "us-ca-lumber-cvd-amended",
+      "title": "美国修订加拿大软木反补贴复审终裁税率：Resolute 12.35%、非抽样企业14.08%",
+      "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23520/certain-softwood-lumber-products-from-canada-amended-final-results-of-countervailing-duty",
+      "status": "复审终裁因计算错误修订",
       "verified": true
     }
   ],
   "coverage": {
-    "美国": "Federal Register 11月19—20日、OFAC 11月20日、BIS及USTR已检索",
-    "英国": "TRA及GOV.UK贸易救济、英欧峰会、俄罗斯制裁已检索",
-    "欧盟": "委员会贸易新闻、EUR-Lex及英欧峰会官方信息已检索",
-    "印度": "DGTR 11月20日案件新进展已识别",
-    "日本": "METI及出口管理公告初步检索",
-    "韩国": "产业通商、财政及贸易公告初步检索",
-    "加拿大": "CBSA、外贸公告初步检索",
-    "澳大利亚": "反倾销委员会及海关公告初步检索"
+    "美国": "美国商务部国际贸易署20日Tris反倾销初裁；Federal Register 19—20日贸易救济及USITC程序；OFAC 20日新增指定",
+    "欧盟": "20日英欧峰会ETS与SPS文件；EUR-Lex、欧委会贸易措施动态巡视，未以旧规充数",
+    "英国": "20日TRA吸收复审初步建议；英欧峰会ETS法律安排、SPS系统切换规则",
+    "日本": "经济产业省特殊关税、出口管制及日方公告与当日新闻巡视；已公布11月21日为旧调查期限不视为新措施",
+    "韩国": "产业通商与关税、经贸规制新消息巡视；无可确认同级重大新行动",
+    "印度": "DGTR 20日Pen G和6-APA答卷延期函及卤化丁基橡胶披露通知原始PDF逐页核验",
+    "加拿大": "CBSA与美国对加软木反补贴复审改算公告巡视",
+    "澳大利亚": "反倾销委员会和海关公告动态巡视；已报道案件无新裁决不重复"
   },
   "last_error": null,
   "next_actions": [
-    "核验美国其他案件具体期限及印度DGTR PDF详情",
-    "完成其他法域终扫和最近7期事件级去重",
-    "分阶段回读草稿并发布"
-  ]
+    "对全部来源作最终打开核对及终扫",
+    "将publication_ready设置为true并回读",
+    "依次写issue、index、archive并验收"
+  ],
+  "dedup": {
+    "issues_checked": [
+      "2026-11-14",
+      "2026-11-15",
+      "2026-11-16",
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19",
+      "2026-11-20"
+    ],
+    "notes": "11月15日英欧SPS为拟签署，本期新增11月20日实际协议及2028年3月1日实施目标；11月11日PTMEG初裁，本期新增USITC最终阶段的2027年听证日；其他选题均有20日（或19日）新初裁、法定期限、名单和修正结果。"
+  }
 }
