@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-22",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-22-winstanley-law-of-freedom.html",
+  "target_path": "articles/2026-11-22-winstanley-law-of-freedom.html",
+  "book": {
+    "author": "Gerrard Winstanley（杰拉德·温斯坦利）",
+    "original_title": "The Law of Freedom in a Platform: Or, True Magistracy Restored",
+    "publisher": "London: Printed by J. M. for the Author; sold by Giles Calvert",
+    "year": "1652",
+    "edition": "1652年伦敦初刊；系统核对Oxford Text Creation Partnership A66685旧拼写转录的献辞、致读者、六章、六十二条拟议法律和原刊目录；区分题名页Jerrard与现代Gerrard拼法、后世重排本及批评"
+  },
+  "source_urls": [
+    "https://tianmu.org/good-work-library/commons/diggers/the-law-of-freedom-in-a-platform",
+    "https://www.davidmhart.com/liberty/Levellers/Winstanley/1652-LawFreedom/index.html",
+    "https://theanarchistlibrary.org/library/gerrard-winstanley-the-law-of-freedom-in-a-platform",
+    "https://openlibrary.org/books/OL21160096M/The_law_of_freedom_in_a_platform_or_True_magistracy_restored",
+    "https://petermarshall.net/books/demanding-the-impossible/",
+    "https://theanarchistlibrary.org/library/peter-h-marshall-demanding-the-impossible",
+    "https://onlinelibrary.wiley.com/doi/10.1111/j.1467-9248.2004.00475.x"
+  ],
+  "original_verification": "核查1652年原书完整六章、卷首献辞、致读者、卷末目录和第六章六十二条规定，逐项核对王权与共和国、土地共用、选举年任制、官职、公共仓储、教育、证据、刑罚等核心命题及其矛盾；对照另一完整英文重排版本，明确没有以摘要代替原书。",
+  "critics": [
+    {
+      "name": "Peter H. Marshall",
+      "work": "Demanding the Impossible: A History of Anarchism (1992)",
+      "url": "https://theanarchistlibrary.org/library/peter-h-marshall-demanding-the-impossible",
+      "checked": "直接批评后期方案中的监督员、劳动纪律、父权结构与体罚，同其反强制自由理想存在张力。"
+    },
+    {
+      "name": "Darren Webb",
+      "work": "The Bitter Product of Defeat? Reflections on Winstanley's Law of Freedom (Political Studies 52(2), 2004)",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1467-9248.2004.00475.x",
+      "checked": "质疑把1652年制度化方案简单看成失败后思想背弃，强调乌托邦写作体裁与较早思想的连续性。"
+    }
+  ],
+  "dedup_checked": [
+    "main/classics.html历史全部索引未出现本书或该作者",
+    "main/classics-history.html第15—35期21部旧索引无本书",
+    "main/data/books.json旧书目无本书",
+    "main仓库中此前经典索引未见The Law of Freedom in a Platform或温斯坦利"
+  ],
+  "duplicate_found": false,
+  "sections": 94,
+  "prose_length": 11312,
+  "checked_at": "2026-11-22",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
