@@ -1,7 +1,7 @@
 {
   "date": "2026-11-22",
   "base_main_sha": "e5f641f08bcee940256631f6e64b864688a934c6",
-  "phase": "pages_deploying",
+  "phase": "redeploying_after_source_url_fix",
   "publication_ready": true,
   "items": [
     {
@@ -118,8 +118,8 @@
       "deadline": "相关BIS措施2026年11月19日已开始实施；路透社11月19日披露代工调整并于11月20日更新，许可审批时间应按案件单独确定。",
       "sources": [
         {
-          "label": "路透社11月19日报道（20日更新）：台积电暂停部分中国客户先进代工订单",
-          "url": "https://www.reuters.com/world/china/tsmc-tightens-china-ai-chip-curbs-new-us-rules-close-manufacturing-loophole-2026-11-19/"
+          "label": "《台北时报》11月20日刊载路透社报道：台积电暂停部分中国客户先进代工订单",
+          "url": "https://www.taipeitimes.com/News/biz/archives/2026/11/20/2003868041"
         }
       ],
       "new_fact": "已有11月19日BIS规则生效新闻；本次仅收录11月19—20日媒体新披露的具体代工暂停、许可与供应商筛查执行事实。"
@@ -138,8 +138,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "当前main最新提交的Pages部署完成后核验3份公开页面及全部来源链接",
-    "保持当日内容与版式不变"
+    "核验修订提交的Pages部署与三份公开页面",
+    "核验更换后的10个原始新闻链接",
+    "记录最终核验结果"
   ],
   "de_duplication": {
     "issue_dates": [
@@ -199,6 +200,18 @@
     },
     "external_pages_verified": false,
     "repository_verified": true,
-    "last_error": null
+    "last_error": null,
+    "previous_diagnostics": {
+      "run_id": 44970485918,
+      "commit": "8c832ade3773cd70b69d6951be469fa9394dc262",
+      "published_pages_ok": 3,
+      "source_urls_ok": 9,
+      "source_urls_total": 10,
+      "failed_source": "https://www.reuters.com/world/china/tsmc-tightens-china-ai-chip-curbs-new-us-rules-close-manufacturing-loophole-2026-11-19/",
+      "error": "401 Client Error: HTTP Forbidden",
+      "evidence_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/44970485918/artifacts/14732204961"
+    },
+    "corrected_main_commit": "dbbbe053a733b72dd1ae08cd6ee95115657f9a98",
+    "replacement_source_url": "https://www.taipeitimes.com/News/biz/archives/2026/11/20/2003868041"
   }
 }
