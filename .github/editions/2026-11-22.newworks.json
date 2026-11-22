@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-22",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-22-new-works.html",
+  "page_blob_sha": "2bc933294a51529d3832b4d918421f180fefa8db",
+  "newworks_count": 3,
+  "checked_at": "2026-11-22T12:36:28.471Z",
+  "checks": {
+    "publisher_original_source_verified": true,
+    "original_title_author_doi_verified": true,
+    "publication_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "historical_94_html_pages_checked": true,
+    "github_code_search_done": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "Both research works historical indexes: new-works.html and new-works-history.html",
+      "94 unique main historical research-works HTML pages under articles/ and new-works/, full-text checks against each selected DOI and original title",
+      "GitHub code search for selected original titles and DOIs, no matches"
+    ],
+    "exact_hits_for_selected": 0,
+    "version_distinction": "Manica: latest publisher online research article, issue/pages not assigned; Weingerl: Springer journal version of record, volume 27 pp.109–125; Rothweiler et al.: Springer journal version of record, volume 6 article 669.",
+    "source_navigation_notes": "Publisher's research article and DOI-based cached original abstract, plus Taylor & Francis journal latest-articles listing read for Manica; publisher full HTML articles read for both Springer works; author/title/publication dates and known bibliographic fields crosschecked."
+  },
+  "items": [
+    {
+      "cn_title": "欧盟五部数字法规究竟由谁塑造：理事会与议会的立法分工",
+      "author": "Luís Manica",
+      "original_title": "Who wrote Europe’s digital rulebook? Institutional authorship and the balance of power in EU digital regulation",
+      "journal": "Journal of European Integration",
+      "publisher": "Taylor & Francis",
+      "year": 2026,
+      "publication_date": "2026-10-29",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": "10.1080/07036337.2026.2750311",
+      "publisher_page": "https://doi.org/10.1080/07036337.2026.2750311",
+      "publisher_journal_index": "https://www.tandfonline.com/action/showAxaArticles?journalCode=geui20",
+      "version": "Taylor & Francis research article, published online 29 October 2026; latest articles not assigned to volume/issue"
+    },
+    {
+      "cn_title": "平台用户既是买家又是卖家，欧盟消费者身份如何认定",
+      "author": "Petra Weingerl",
+      "original_title": "The notion of consumer in EU law: between traditional concepts and digital realities",
+      "journal": "ERA Forum",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-04-07",
+      "volume": "27",
+      "issue": null,
+      "pages": "109–125",
+      "article_number": null,
+      "doi": "10.1007/s12027-026-00875-x",
+      "publisher_page": "https://link.springer.com/article/10.1007/s12027-026-00875-x",
+      "version": "Springer journal version of record, Volume 27 pp.109–125"
+    },
+    {
+      "cn_title": "开放科研数据被AI重新组合后，生物安全责任该由谁承担",
+      "author": "Elisabeth Mira Rothweiler; Mehrunisha Suleman; Jonathan Krause",
+      "original_title": "The scientist’s AI-pprentice: how open science shapes biosecurity risks by generating capabilities of AI tools in life science research",
+      "journal": "AI and Ethics",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-11-18",
+      "volume": "6",
+      "issue": null,
+      "pages": null,
+      "article_number": "669",
+      "doi": "10.1007/s43681-026-01518-0",
+      "publisher_page": "https://link.springer.com/article/10.1007/s43681-026-01518-0",
+      "version": "Springer journal version of record, volume 6 article 669"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "3a8c4a71a3c69f7be8337d589405902f1cc40a32",
+    "last_complete_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": null
+  }
+}
