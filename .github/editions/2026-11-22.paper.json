@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-22",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-22-selbst-barocas-intuitive-appeal-explainable-machines.html",
+  "selection": "The Intuitive Appeal of Explainable Machines",
+  "bibliography": {
+    "type": "article",
+    "author": "Andrew D. Selbst; Solon Barocas",
+    "originalTitle": "The Intuitive Appeal of Explainable Machines",
+    "journal": "Fordham Law Review",
+    "year": "2018",
+    "volume": "87",
+    "issue": "3",
+    "pages": "1085–1139",
+    "url": "https://ir.lawnet.fordham.edu/flr/vol87/iss3/11/",
+    "cnTitle": "算法解释为何仍不能证明决定正当：从可理解性走向模型开发过程的问责"
+  },
+  "versions": {
+    "full_text": "Read original Fordham Law Review published PDF (55 pages; introduction, four main parts, conclusion, and supporting notes).",
+    "publication": "Formal 2018 Fordham Law Review 87(3), 1085–1139. Not conflated with SSRN working-paper version; DOI omitted."
+  },
+  "sources": [
+    "https://ir.lawnet.fordham.edu/flr/vol87/iss3/11/",
+    "https://fordhamlawreview.org/wp-content/uploads/2018/11/11_Selbst-Barocas-1085-1139.pdf",
+    "https://fordhamlawreview.org/issuescategory/december-2018-vol-87-no-3/"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "history_scope": "Checked 76 papers.html index rows and 13 papers-history-1.html rows, same-day record and recent main paper submissions; no prior article with this original title.",
+  "related_reading": [
+    "articles/2026-09-16-barocas-selbst-big-data-disparate-impact.html",
+    "articles/2026-10-13-edwards-veale-algorithm-explanation.html",
+    "articles/2026-10-06-selbst-powles-meaningful-information-right-to-explanation.html"
+  ],
+  "timeline": null,
+  "body_length": 5365,
+  "checked_at": "2026-11-22",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  },
+  "last_error": null
+}
