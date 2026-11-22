@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-22",
+  "base_main_sha": "e5f641f08bcee940256631f6e64b864688a934c6",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "核查美国、欧盟、英国、日本、韩国及印度、加拿大、澳大利亚过去72小时最新公告",
+    "与2026-11-15至11-21七期正文做事件级去重",
+    "逐条打开原始来源并核查法律阶段、期限及中国企业影响",
+    "发布三份HTML并核验Pages"
+  ]
+}
