@@ -1,7 +1,7 @@
 {
   "date": "2026-11-22",
   "base_main_sha": "e5f641f08bcee940256631f6e64b864688a934c6",
-  "phase": "pages_validation",
+  "phase": "pages_deploying",
   "publication_ready": true,
   "items": [
     {
@@ -138,9 +138,8 @@
   },
   "last_error": null,
   "next_actions": [
-    "继续读取44969998255最终提交Pages任务状态",
-    "对照最终commit三份公开页面",
-    "核验10个链接并记录部署结果"
+    "当前main最新提交的Pages部署完成后核验3份公开页面及全部来源链接",
+    "保持当日内容与版式不变"
   ],
   "de_duplication": {
     "issue_dates": [
@@ -179,8 +178,9 @@
   },
   "publication_attempt": {
     "date": "2026-11-22",
-    "stage": "main three files written; final-commit Pages run in progress",
-    "target_commit": "ff4ada7489c9618ebeae4494affe273b8b67d35b",
+    "stage": "all three main files fully written and verified; latest main Pages build in progress",
+    "last_trade_watch_commit": "ff4ada7489c9618ebeae4494affe273b8b67d35b",
+    "current_main_commit": "8c832ade3773cd70b69d6951be469fa9394dc262",
     "main_paths": [
       "trade-watch/issues/2026-11-22.html",
       "trade-watch/index.html",
@@ -188,8 +188,17 @@
     ],
     "html_news_count": 5,
     "source_urls": 10,
-    "workflow_run_id": 44969998255,
+    "first_pages_run": {
+      "id": 44969998255,
+      "status": "cancelled",
+      "reason": "subsequent unrelated media-ai update to main superseded commit"
+    },
+    "latest_pages_run": {
+      "id": 44970084107,
+      "status": "in_progress"
+    },
     "external_pages_verified": false,
+    "repository_verified": true,
     "last_error": null
   }
 }
