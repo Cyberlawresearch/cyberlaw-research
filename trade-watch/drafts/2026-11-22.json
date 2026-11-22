@@ -1,7 +1,7 @@
 {
   "date": "2026-11-22",
   "base_main_sha": "e5f641f08bcee940256631f6e64b864688a934c6",
-  "phase": "publication_ready",
+  "phase": "pages_validation",
   "publication_ready": true,
   "items": [
     {
@@ -138,9 +138,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "创建trade-watch/issues/2026-11-22.html完整正文",
-    "更新main首页、往期归档",
-    "回读三份文件并验收最终commit的Pages与公开URL"
+    "继续读取44969998255最终提交Pages任务状态",
+    "对照最终commit三份公开页面",
+    "核验10个链接并记录部署结果"
   ],
   "de_duplication": {
     "issue_dates": [
@@ -176,5 +176,20 @@
       "https://www.reuters.com/world/china/tsmc-tightens-china-ai-chip-curbs-new-us-rules-close-manufacturing-loophole-2026-11-19/"
     ],
     "notes": "欧盟委员会Press Corner特定公告页可打开但网页正文需JS；欧盟贸易总司同日协定状态页完整可读。印度PDF已阅读税率表并查看末页截图；所有来源独立打开核验。"
+  },
+  "publication_attempt": {
+    "date": "2026-11-22",
+    "stage": "main three files written; final-commit Pages run in progress",
+    "target_commit": "ff4ada7489c9618ebeae4494affe273b8b67d35b",
+    "main_paths": [
+      "trade-watch/issues/2026-11-22.html",
+      "trade-watch/index.html",
+      "trade-watch/archive.html"
+    ],
+    "html_news_count": 5,
+    "source_urls": 10,
+    "workflow_run_id": 44969998255,
+    "external_pages_verified": false,
+    "last_error": null
   }
 }
