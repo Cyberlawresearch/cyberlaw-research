@@ -1,8 +1,8 @@
 {
   "date": "2026-11-22",
   "base_main_sha": "e5f641f08bcee940256631f6e64b864688a934c6",
-  "phase": "final_source_review",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "eu-indonesia-signed",
@@ -133,13 +133,48 @@
     "日本": "已巡视METI公告及出口管制",
     "韩国": "已巡视MOTIR及海关、全球芯片供货，未将11月19日已发布的BIS规制重复收录",
     "加拿大": "已巡视11月21日Canada Gazette，发现先前11月9日反倾销延期旧决议，不重复",
-    "澳大利亚": "已巡视贸易救济检索，未见优先级相当且未收录的新裁定"
+    "澳大利亚": "已巡视贸易救济检索，未见优先级相当且未收录的新裁定",
+    "end_sweep": "已对照最近7期全条目及最新检索结果，2026-11-22北京时间当次结束前复核未发现更高优先级且可核实的新监管决定"
   },
   "last_error": null,
   "next_actions": [
-    "复查最近7期事件级去重及原始链接",
-    "结束前终扫并确认法律阶段与关键期限",
-    "将完整研究断点标记publication_ready并回读",
-    "完整生成当期页面、更新首页和归档、验证Pages"
-  ]
+    "创建trade-watch/issues/2026-11-22.html完整正文",
+    "更新main首页、往期归档",
+    "回读三份文件并验收最终commit的Pages与公开URL"
+  ],
+  "de_duplication": {
+    "issue_dates": [
+      "2026-11-15",
+      "2026-11-16",
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19",
+      "2026-11-20",
+      "2026-11-21"
+    ],
+    "checked": true,
+    "excluded": [
+      "11月19日BIS规则生效：11月20日期已收录，仅新增台积电具体订单处置",
+      "欧印尼协定获授权签署：11月19日期已收录，本期新增正式签署",
+      "11月20日OFAC四名伊朗SDN：11月21日期已收录，本期只保留古巴FAQ两条新解释",
+      "印度抗生素原料答卷延期：11月21日期已收录"
+    ],
+    "new_event_count": 5
+  },
+  "link_review": {
+    "status": "opened",
+    "urls": [
+      "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2532",
+      "https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/indonesia/eu-indonesia-agreements_en",
+      "https://eur-lex.europa.eu/eli/reg/2024/1157/oj/eng",
+      "https://environment.ec.europa.eu/news/commission-publishes-draft-list-countries-authorised-import-eu-waste-2026-09-18_en",
+      "https://www.dgtr.gov.in/en/anti-dumping-cases/anti-dumping-investigation-concerning-imports-semi-finished-ophthalmic-lenses",
+      "https://dgtr.gov.in/sites/default/files/2026-11/NCV%20English_Semi%20Finished%20Opthalmic%20Lenses.pdf",
+      "https://ofac.treasury.gov/faqs/1277",
+      "https://ofac.treasury.gov/faqs/1278",
+      "https://ofac.treasury.gov/recent-actions/20261120",
+      "https://www.reuters.com/world/china/tsmc-tightens-china-ai-chip-curbs-new-us-rules-close-manufacturing-loophole-2026-11-19/"
+    ],
+    "notes": "欧盟委员会Press Corner特定公告页可打开但网页正文需JS；欧盟贸易总司同日协定状态页完整可读。印度PDF已阅读税率表并查看末页截图；所有来源独立打开核验。"
+  }
 }
