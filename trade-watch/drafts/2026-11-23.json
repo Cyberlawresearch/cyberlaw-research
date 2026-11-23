@@ -2,124 +2,163 @@
   "date": "2026-11-23",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "9737601206348d463e4853ba2fa8ea86a489d7c2",
-  "phase": "researching-eu-jp-uk-asean",
+  "phase": "verified-candidates-deduplicated",
   "publication_ready": false,
   "items": [
     {
-      "id": "us-india-czech-rail-ad",
+      "id": "jp-galvanized-steel-recommendation",
       "date": "2026-11-20",
-      "jurisdiction": "美国／捷克／印度",
-      "title": "美国正式对捷克及印度铁路货运车钩发布反倾销税令",
-      "phase": "正式税令",
-      "source_urls": [
-        "https://www.federalregister.gov/d/2026-23626"
-      ],
-      "status": "confirmed_pending_rates"
-    },
-    {
-      "id": "us-india-rail-cvd",
-      "date": "2026-11-20",
-      "jurisdiction": "美国／印度",
-      "title": "美国对印度铁路货运车钩发布反补贴税令",
-      "phase": "正式税令",
-      "source_urls": [
-        "https://www.federalregister.gov/d/2026-23625"
-      ],
-      "rates": "9.71%／75%",
-      "status": "confirmed"
-    },
-    {
-      "id": "us-iran-oil-sdn",
-      "date": "2026-11-20",
-      "jurisdiction": "美国／伊朗",
-      "title": "OFAC将四名伊朗石油资金经手人列入SDN名单",
-      "phase": "名单指定已生效",
-      "source_urls": [
-        "https://ofac.treasury.gov/recent-actions/20261120",
-        "https://home.treasury.gov/news/press-releases/sb0697/"
-      ],
-      "status": "confirmed"
-    },
-    {
-      "id": "us-france-steel-zero",
-      "date": "2026-11-20",
-      "jurisdiction": "美国／法国",
-      "title": "美国法国中厚钢板反倾销复审终裁Dillinger France为0%",
-      "phase": "复审终裁",
-      "source_urls": [
-        "https://www.federalregister.gov/d/2026-23623"
-      ],
-      "status": "confirmed_optional"
-    },
-    {
-      "id": "jp-potassium-hydroxide",
-      "date": "2026-11-20",
-      "jurisdiction": "日本／中国／韩国",
-      "title": "日本审议会建议续征中国和韩国产氢氧化钾反倾销税",
-      "phase": "正式咨询答复，待政府政令落实",
-      "source_urls": [
-        "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/report/20261120c_toushin.html"
+      "place": "日本／中国、韩国／日本财务省关税与外汇等审议会",
+      "headline": "日本建议对中韩热镀锌钢板、钢带征收反倾销税，中国产品拟税率50.1%或55.3%",
+      "stage": "审议会正式答申；最终征税政令待公布，尚非新增正式征税",
+      "rank": 5,
+      "body": "日本财务省11月20日公布关税与外汇等审议会的答申，认为对中国和韩国产热镀锌钢带及钢板征收反倾销税符合课税条件。配套调查资料建议，对中国鞍钢及部分样本外主体适用50.1%，湖南华菱涟源钢铁及其他相关主体适用55.3%；韩国产品拟为29.2%至38.0%。调查已历经初步决定和当事方意见程序，本次新增的是审议会同意作出最终征税决定的正式意见，并非已经出台新的终局征税政令。",
+      "scope": "涉及日本税号7210.49、7212.30、7225.92和7226.99项下的涉案热镀锌钢板、钢带及其建筑、家电等下游采购链。",
+      "impact": "中国出口商应按生产商身份和产品规格分别测算拟议50.1%或55.3%税负，核对发票所列生产厂、实际加工及原产地；日本买方需在新政令出台后重新核对进口报关及价格调整条款。",
+      "deadline": "2026年11月20日审议会答申；正式适用日期与最终税率待日本政府发布政令，调查材料提出课税期限为最长五年。",
+      "sources": [
+        {
+          "url": "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/report/20261120a_toushin.html",
+          "label": "日本财务省11月20日正式答申"
+        },
+        {
+          "url": "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/proceedings_tokusyu/material/20261120/kanb20261120siryo2-2.pdf",
+          "label": "日本财务省：调查结论、建议税率与涉案税号"
+        }
       ]
     },
     {
-      "id": "jp-galvanized-steel",
+      "id": "jp-potassium-hydroxide-renewal",
       "date": "2026-11-20",
-      "jurisdiction": "日本／中国／韩国",
-      "title": "日本审议会建议对中国、韩国热镀锌钢板与钢带征收反倾销税",
-      "phase": "正式咨询答复，非最终征税决定",
-      "source_urls": [
-        "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/report/20261120a_toushin.html"
+      "place": "日本／中国、韩国／日本财务省关税与外汇等审议会",
+      "headline": "日本审议会建议继续对中韩氢氧化钾征收反倾销税，最长延续五年",
+      "stage": "日落复审后的正式咨询答复；政府延长课税的政令仍待公布",
+      "rank": 5,
+      "body": "日本财务省11月20日公布对中国和韩国产氢氧化钾反倾销税征收期限的咨询答复。审议会认为，现行措施到期后倾销进口和国内产业损害有持续或再发生的可能，建议延长征税期限，期限原则上不超过五年，适用税率维持现有水平。本次答复形成于到期复审，并非新发起立案，也未公布提高现行税率的决定。",
+      "scope": "面向日本出口氢氧化钾的中国、韩国化工企业，以及日本电子化学品、洗涤剂、肥皂和其他工业化学品用户。",
+      "impact": "供应商应继续区分涉案产品与不同化工品规格，按现行反倾销税估算报价，并为可能延长征税的多年供货合同设置成本条款；延长措施实际起算日应以政令核对。",
+      "deadline": "日本审议会2026年11月20日建议延长，延长政令及新适用起止日待政府公布；建议课税期限不超过五年。",
+      "sources": [
+        {
+          "url": "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/report/20261120c_toushin.html",
+          "label": "日本财务省11月20日：氢氧化钾税令延长期限答申"
+        },
+        {
+          "url": "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/proceedings_tokusyu/material/20261120/kanb20261120siryo4-2.pdf",
+          "label": "日本财务省：期满调查及延税建议资料"
+        }
       ]
     },
     {
-      "id": "jp-bisphenol",
+      "id": "us-india-rail-couplers-cvd-order",
       "date": "2026-11-20",
-      "jurisdiction": "日本／韩国／中国台湾地区",
-      "title": "日本审议会建议对韩国产及中国台湾地区产双酚A征反倾销税",
-      "phase": "正式咨询答复，非最终征税决定",
-      "source_urls": [
-        "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/report/20261120b_toushin.html"
+      "place": "美国／印度／美国商务部国际贸易署、美国国际贸易委员会",
+      "headline": "美国正式对印度铁路货运车钩实施反补贴税令，四家企业最高75%",
+      "stage": "最终反补贴税令已发布；与此前反倾销税令属于独立措施",
+      "rank": 5,
+      "body": "美国商务部11月20日在《联邦公报》正式发布对印度货运铁路车钩和零件的反补贴税令。Kharagpur补贴率9.71%，Texmaco、Bhilai和Jupiter均为75%，其他生产商及出口商9.71%。美国国际贸易委员会此前作出肯定性损害终裁，新税令所对应的现金保证金及暂停清算自11月13日起恢复。本次新增的是反补贴正式征税决定，区别于11月20日另行公布、前期简报已报道的反倾销税令。",
+      "scope": "印度原产货运铁路车钩及零件；在印度生产、委托组装或采购该产品的中国企业及美国铁路装备进口商。",
+      "impact": "美国进口商应按印度实际生产主体分别计提9.71%或75%的反补贴保证金，并与独立的反倾销税令分开核算；应核对批次进口日期、加工产地、车钩组件与合同税费承担条款。",
+      "deadline": "税令2026年11月20日刊登；11月13日起恢复相关保证金。2026年7月1日至11月12日进口批次因暂行反补贴措施届满适用不同处理规则。",
+      "sources": [
+        {
+          "url": "https://www.federalregister.gov/d/2026-23625",
+          "label": "美国《联邦公报》2026-23625号：印度铁路车钩反补贴正式税令"
+        }
       ]
     },
     {
-      "id": "eu-silicon-expiry-notice",
+      "id": "eu-china-silicon-expiry-warning",
       "date": "2026-11-20",
-      "jurisdiction": "欧盟／中国",
-      "title": "欧盟公布中国产硅反倾销措施2027年8月拟届满通知",
-      "phase": "届满预告，措施仍有效，尚非期满复审启动",
-      "source_urls": [
-        "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A52026XC06045"
+      "place": "欧盟／中国／欧盟委员会贸易与经济安全总司",
+      "headline": "欧盟发布中国产硅反倾销措施到期预告，2027年5月前为申请复审关键窗口",
+      "stage": "即将届满公告；未启动期满复审，现行反倾销税仍在执行",
+      "rank": 4,
+      "body": "欧盟于11月20日在《官方公报》发布C/2026/6045号公告，说明中国原产硅反倾销措施如未启动期满复审，将于2027年8月13日届满。现有税令依据实施条例（EU）2022/1394，征税适用范围还延伸至经韩国及中国台湾地区发运的相关硅产品。公告为申请复审的程序提醒，既未宣布税令当日取消，也未作出新的倾销认定。",
+      "scope": "向欧盟出口硅的中国生产商、经韩国和中国台湾地区发运的硅供应链，以及欧盟合金、化工和电池材料采购企业。",
+      "impact": "出口企业应保留生产地与转运路线证据，核对现行税令对经第三地发运货物的适用文字；进口商不应提前取消反倾销成本，未来是否续行取决于欧盟生产商申请及委员会复审决定。",
+      "deadline": "公告日期2026年11月20日；拟届满日2027年8月13日，欧盟生产商须至少提前三个月提出复审申请，即原则上2027年5月13日前。",
+      "sources": [
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A52026XC06045",
+          "label": "欧盟《官方公报》C/2026/6045：中国产硅反倾销措施届满预告"
+        }
       ]
     },
     {
-      "id": "uk-russia-lng-revocation",
+      "id": "uk-russia-lng-soars-revocation",
       "date": "2026-11-20",
-      "jurisdiction": "英国／俄罗斯",
-      "title": "英国正式撤销LNG SOARS船舶俄罗斯航运制裁指定",
-      "phase": "已生效名单撤销",
-      "source_urls": [
-        "https://assets.publishing.service.gov.uk/media/6b00141ce715e1cb9d5d5070/Sanctions_Notice__Russia__20_November_2026.pdf"
+      "place": "英国／俄罗斯／英国外交、联邦与发展事务部",
+      "headline": "英国撤销LNG SOARS液化天然气船舶的俄制裁指定，涉及IMO 9307205",
+      "stage": "制裁船舶指定撤销正式生效；不代表其他涉俄限制一并解除",
+      "rank": 4,
+      "body": "英国外交、联邦与发展事务部11月20日公告，正式从英国俄罗斯制裁名单撤销液化天然气运输船LNG SOARS（船舶唯一编号RUS3470、IMO号9307205）的航运制裁指定。该船原受英国港口准入、停泊和航行相关限制，此次为单一船舶的正式撤销，不是俄罗斯航运制裁整体终止。",
+      "scope": "涉俄液化天然气运输、船舶保险、融资、租船和英国港口服务，以及使用第三国船运链的能源贸易商。",
+      "impact": "船东、租船人和结算机构可按IMO号更新英国船舶制裁筛查记录，但仍应核实船舶所有人、经营人、货物、航线以及其他法域或其他英国制裁条款；在合同与港口申请中保留对应撤销通知。",
+      "deadline": "英国制裁名单变更日期为2026年11月20日，即日起按更新后指定状态核验。",
+      "sources": [
+        {
+          "url": "https://assets.publishing.service.gov.uk/media/6b00141ce715e1cb9d5d5070/Sanctions_Notice__Russia__20_November_2026.pdf",
+          "label": "英国外交部11月20日俄罗斯制裁名单撤销通知"
+        }
       ]
     },
     {
-      "id": "uk-eu-sps-practical-guidance",
+      "id": "jp-bpa-ad-recommendation",
       "date": "2026-11-20",
-      "jurisdiction": "英国／欧盟及第三国",
-      "title": "英国发布英欧SPS制度及TRACES操作衔接指引，目标2028年3月",
-      "phase": "新公布实施准备指引，非新规定生效",
-      "source_urls": [
-        "https://www.gov.uk/guidance/changes-to-importing-and-exporting-food-animals-and-plants",
-        "https://www.gov.uk/guidance/changes-to-digital-systems-for-trading-sps-goods"
+      "place": "日本／韩国、中国台湾地区／日本财务省关税与外汇等审议会",
+      "headline": "日本建议对韩国及中国台湾地区双酚A征收反倾销税，拟议税率2.4%至8.7%",
+      "stage": "审议会正式答申；政府最终课税政令待公布",
+      "rank": 3,
+      "body": "日本11月20日公布针对韩国及中国台湾地区原产双酚A（BPA）的反倾销调查咨询答复，建议实施反倾销税。调查资料列示韩国产品拟议税率7.0%，中国台湾地区长春塑胶2.4%、南亚塑胶及其他相关主体8.7%，并明确韩国LG Chem不在拟征税主体之列。上述为调查后拟税率，不是已经生效的进口附加税。",
+      "scope": "韩国、中国台湾地区原产双酚A，日本聚碳酸酯、环氧树脂生产企业及亚洲石化原料供应链。",
+      "impact": "日本进口商应核查制造商身份、拟税率分组及适用排除情形，重新测算树脂原料采购成本；中国相关化工企业评估日本下游客户替换供应来源时，应区别生产国原产地与第三国转口。",
+      "deadline": "审议会答复日2026年11月20日；最终政令生效日另行确定，资料提出课税期限最多五年。",
+      "sources": [
+        {
+          "url": "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/report/20261120b_toushin.html",
+          "label": "日本财务省11月20日：双酚A反倾销答申"
+        },
+        {
+          "url": "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/proceedings_tokusyu/material/20261120/kanb20261120siryo3-2.pdf",
+          "label": "日本财务省：双酚A建议税率及适用企业"
+        }
       ]
     },
     {
-      "id": "indonesia-soybean-import-plan",
+      "id": "indonesia-soybean-import-permit-proposal",
       "date": "2026-11-20",
-      "jurisdiction": "印度尼西亚／美国等",
-      "title": "印尼拟于2027年1月收紧大豆进口许可与到港检验",
-      "phase": "主管官员确认的拟议措施，尚未实施",
-      "source_urls": [
-        "https://www.reuters.com/markets/asia/indonesia-planning-tighter-soybean-import-controls-minister-says-2026-11-20/"
+      "place": "印度尼西亚／美国及其他供货国／印尼贸易与食品事务主管部门",
+      "headline": "印尼拟自2027年1月加强大豆进口许可和检验，美国对印尼供应链或受影响",
+      "stage": "官员确认的政策方案；尚未公布并生效新的进出口管理法规",
+      "rank": 3,
+      "body": "据路透社11月20日报道，印尼负责食品事务的官员证实贸易部门正在推动对大豆进口增加许可及检验要求，政府文件所列计划实施日期为2027年1月1日。印尼大豆主要从美国采购，2025年美国供应占进口金额大部分。印尼方面提出加强进口质量、技术规格和病虫害监管，现阶段属于拟议管制安排，而非已经开始执行的新证照义务。",
+      "scope": "向印尼出口大豆的美国及其他国家贸易商、印尼豆制品加工商，以及跨国大豆贸易、仓储、检验及货运企业。",
+      "impact": "出口商和印尼进口商应在谈判2027年交货合同时明确许可证申请主体、商品检验、合格证明、延迟清关及仓储费用分担，但当前发运仍依已实施的进口规定办理。",
+      "deadline": "消息于2026年11月20日披露；政府文件目标为2027年1月1日开始实施，正式规则及申办细则待发布。",
+      "sources": [
+        {
+          "url": "https://www.reuters.com/markets/asia/indonesia-planning-tighter-soybean-import-controls-minister-says-2026-11-20/",
+          "label": "路透社11月20日：印尼拟新增大豆进口许可及检验措施"
+        }
+      ]
+    },
+    {
+      "id": "us-france-steel-ctl-final",
+      "date": "2026-11-20",
+      "place": "美国／法国／美国商务部国际贸易署",
+      "headline": "美国法国中厚钢板反倾销复审终裁：Dillinger France倾销幅度为0%",
+      "stage": "反倾销行政复审终裁，指定企业新保证金适用0%",
+      "rank": 3,
+      "body": "美国商务部11月20日公布法国原产碳钢及合金钢定尺中厚钢板2024年5月至2025年4月行政复审终裁，认定Dillinger France S.A.倾销幅度为0%，维持此前初裁结果。此次为指定企业的年度复审结论，并非撤销法国全部同类钢板反倾销税令，其他不在本次复审范围的出口商仍适用其现行税率。",
+      "scope": "法国产中厚钢板及美国重型制造、机械、能源项目材料供应商，包括跨国产地替代采购。",
+      "impact": "美国进口商应核查法国实际生产商、出口商和本次复审期间，单独调整Dillinger France未来进口保证金，复核历史货物的清算安排；采购合同不得将0%税率用于不匹配的其他企业。",
+      "deadline": "终裁2026年11月20日适用；复审期为2024年5月1日至2025年4月30日，后续清算依据海关指令。",
+      "sources": [
+        {
+          "url": "https://www.federalregister.gov/d/2026-23623",
+          "label": "美国《联邦公报》2026-23623号：法国中厚钢板反倾销复审终裁"
+        }
       ]
     }
   ],
@@ -136,9 +175,27 @@
   },
   "last_error": null,
   "next_actions": [
-    "再次核实日本审议会税率与政策阶段",
-    "取得欧盟原始PDF可访问地址、确认三个月提前申请期",
-    "阅读全文并与最近7期逐条去重",
-    "末轮近72小时终扫，补充候选，阶段保存，正式发布"
-  ]
+    "发布前末轮核查11月23日重大更新",
+    "逐项原文及HTML DOM来源链接最后核验",
+    "设定publication_ready并回读后写入完整HTML",
+    "更新首页归档，核验GitHub Pages和来源"
+  ],
+  "dedup": {
+    "checked_issues": [
+      "2026-11-16",
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19",
+      "2026-11-20",
+      "2026-11-21",
+      "2026-11-22"
+    ],
+    "excluded": [
+      "2026-11-21已刊登美国铁路车钩反倾销正式税令；本期只保留此前未刊登的反补贴独立税令",
+      "2026-11-21已刊登OFAC伊朗11月20日四人新增指定，全部排除",
+      "2026-11-21已刊登英欧SPS与TRACES 2028年3月1日过渡安排，排除",
+      "2026-11-22已刊登欧盟与印尼签署协议、印度眼镜镜片复审，排除",
+      "2026-11-21已刊登美国购物车双反申请延长审查，排除"
+    ]
+  }
 }
