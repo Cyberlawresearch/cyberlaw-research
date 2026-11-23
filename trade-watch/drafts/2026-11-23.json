@@ -2,8 +2,8 @@
   "date": "2026-11-23",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "9737601206348d463e4853ba2fa8ea86a489d7c2",
-  "phase": "verified-candidates-deduplicated",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "jp-galvanized-steel-recommendation",
@@ -163,7 +163,7 @@
     }
   ],
   "coverage": {
-    "US": "已检查OFAC 11月20日制裁名单和美国联邦公报11月20日贸易救济；11月23日联邦公报目录仍需复核",
+    "US": "20日联邦公报和OFAC官方资料；已对11月21日伊朗SDN及铁路车钩反倾销去重，仅保留独立印度铁路车钩反补贴正式税令、法国钢板复审终裁",
     "Japan": "财务省11月20日关税审议会三项正式答申，核对日本产地与对华税项；未当作最终征税政令",
     "UK": "11月20日英国环境食品农村事务部SPS实施指引、FCDO俄罗斯名单两份更新；11月21已报道英欧框架不再简单重复",
     "EU": "核验EUR-Lex 11月20日C/2026/6045号中国硅反倾销拟届满公告，仍未发起复审，现行措施未结束",
@@ -175,10 +175,10 @@
   },
   "last_error": null,
   "next_actions": [
-    "发布前末轮核查11月23日重大更新",
-    "逐项原文及HTML DOM来源链接最后核验",
-    "设定publication_ready并回读后写入完整HTML",
-    "更新首页归档，核验GitHub Pages和来源"
+    "写入完整trade-watch/issues/2026-11-23.html",
+    "更新main首页和归档",
+    "回读main三个文件、核对日期/期号/条数和DOM链接",
+    "检查对应主分支最终提交的Pages和公开访问并更新published断点"
   ],
   "dedup": {
     "checked_issues": [
@@ -197,5 +197,9 @@
       "2026-11-22已刊登欧盟与印尼签署协议、印度眼镜镜片复审，排除",
       "2026-11-21已刊登美国购物车双反申请延长审查，排除"
     ]
-  }
+  },
+  "event_dedup_passed": true,
+  "source_verification_passed": true,
+  "final_sweep_completed": true,
+  "final_sweep_summary": "2026-11-23亚洲上海上午对美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚及印尼再检索，未找到需要替换的更重大新增官方决定；已删除与11月21日期完全重复的伊朗SDN、英欧SPS与美捷印铁路车钩反倾销旧事件，仅保留反补贴独立新税令。"
 }
