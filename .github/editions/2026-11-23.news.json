@@ -6,12 +6,12 @@
   "page": "articles/2026-11-23-tech-law-brief.html",
   "mode": "fact_only",
   "analysis_pending": true,
-  "news_count": 17,
+  "news_count": 18,
   "distribution": {
-    "domestic": 7,
+    "domestic": 8,
     "foreign": 10
   },
-  "checked_at": "2026-11-23T11:08:39.036Z",
+  "checked_at": "2026-11-23T11:13:10.462Z",
   "last_news_scan_at": "2026-11-23T11:08:39.036Z",
   "checks": {
     "sources": true,
@@ -271,9 +271,21 @@
         "status": "not_checked",
         "candidate_titles": [],
         "notes": "尚未逐站查阅，不计入完成核验"
+      },
+      {
+        "group": "司法机关",
+        "source": "最高人民法院知识产权法庭",
+        "entry_url": "https://ipc.court.gov.cn/zh-cn/news/view-6322.html",
+        "checked_at": "2026-11-23T11:13:10.462Z",
+        "query_or_section": "2026-11-21人工智能辅助审判意见征询",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "最高法就规范人工智能辅助审判工作征求意见，明确法官主导和院内安全运行原则"
+        ],
+        "notes": "直接打开最高人民法院11月21日原始报道，核对文件处于起草征求意见阶段，未列为已发布规范"
       }
     ],
-    "domestic_major_omission_review": "已查阅国家数据局、工信部、TC260和人民日报的具体一手来源；部分中央、地方和财经媒体未逐站完成，保留false，不将来源组概括等同全面覆盖。",
+    "domestic_major_omission_review": "已查阅国家数据局、工信部、TC260和人民日报的具体一手来源；部分中央、地方和财经媒体未逐站完成，保留false，不将来源组概括等同全面覆盖。；增补最高人民法院11月21日人工智能辅助审判规范意见征询重要线索；仍未完成国内全面逐站检索。",
     "international": "直接检索韩语PIPC并打开11月23日两份官方公告，检查日本PPC新公告列表；越南语直接核验及国际多法域全面巡视未完成。直接阅读Reuters和BleepingComputer各项报道。",
     "seven_day_dedup": "对照2026-11-16至22日每日核验记录全部标题和11月22日完整正文；排除已有中新数据协议、NVIDIA调查、Signal安全功能、Mercari泄露、美国Agent攻击及已报道的国别旧政策。",
     "last_scan": "本轮打开11月23日TC260、韩国PIPC、Reuters以及11月21至23日国家数据局和安全媒体页面；未对所有应巡来源完成最后1-2小时独立复扫。"
@@ -393,6 +405,22 @@
     },
     {
       "id": "research-item-8",
+      "date": "2026-11-21",
+      "event_date": "2026-11-21",
+      "jurisdiction": "中国",
+      "agency": "最高人民法院",
+      "title": "最高法就规范人工智能辅助审判工作征求意见，明确法官主导和院内安全运行原则",
+      "original_title": "法官主导、技术辅助、提质增效",
+      "source_name": "最高人民法院知识产权法庭（人民法院新闻传媒总社）",
+      "url": "https://ipc.court.gov.cn/zh-cn/news/view-6322.html",
+      "fact": "最高人民法院11月21日披露，已就起草中的《关于规范人工智能辅助审判工作的意见》举行两场征求意见座谈会，邀请人大代表、政协委员、法学界、律师和中央有关部门提出建议。相关大模型辅助审判系统已依托全国法院“一张网”在部分中基层法院试点，会议提出坚持法官主导、技术辅助，并在法院内部运行环境加强数据可靠性、运行监测和司法责任控制。目前文件仍处起草和征求意见阶段。",
+      "legal_status": "最高人民法院内部规范性意见起草及座谈征询",
+      "domestic": true,
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-9",
       "date": "2026-11-23",
       "event_date": "2026-11-23",
       "jurisdiction": "韩国",
@@ -408,7 +436,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-9",
+      "id": "research-item-10",
       "date": "2026-11-23",
       "event_date": "2026-11-23",
       "jurisdiction": "韩国",
@@ -424,7 +452,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-10",
+      "id": "research-item-11",
       "date": "2026-11-23",
       "event_date": "2026-11-23",
       "jurisdiction": "美国",
@@ -440,7 +468,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-11",
+      "id": "research-item-12",
       "date": "2026-11-23",
       "event_date": "2026-11-23",
       "jurisdiction": "欧洲",
@@ -456,7 +484,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-12",
+      "id": "research-item-13",
       "date": "2026-11-23",
       "event_date": "2026-11-23",
       "jurisdiction": "美国",
@@ -472,7 +500,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-13",
+      "id": "research-item-14",
       "date": "2026-11-22",
       "event_date": "2026-11-22",
       "jurisdiction": "全球",
@@ -488,7 +516,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-14",
+      "id": "research-item-15",
       "date": "2026-11-22",
       "event_date": "2026-11-22",
       "jurisdiction": "德国、全球",
@@ -504,7 +532,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-15",
+      "id": "research-item-16",
       "date": "2026-11-21",
       "event_date": "2026-11-21",
       "jurisdiction": "美国、全球",
@@ -520,7 +548,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-16",
+      "id": "research-item-17",
       "date": "2026-11-21",
       "event_date": "2026-11-21",
       "jurisdiction": "美国、全球",
@@ -536,7 +564,7 @@
       "seven_day_dedup_checked": true
     },
     {
-      "id": "research-item-17",
+      "id": "research-item-18",
       "date": "2026-11-21",
       "event_date": "2026-11-21",
       "jurisdiction": "全球",
