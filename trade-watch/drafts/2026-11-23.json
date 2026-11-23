@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-23",
+  "timezone": "Asia/Shanghai",
+  "base_main_sha": "9737601206348d463e4853ba2fa8ea86a489d7c2",
+  "phase": "researching",
+  "publication_ready": false,
+  "items": [],
+  "coverage": {},
+  "last_error": null,
+  "next_actions": [
+    "核查8个必查经济体的近72小时官方贸易及制裁动态",
+    "与最近7期事件级去重",
+    "逐一打开官方来源并核实法律阶段",
+    "最终回扫后发布第076期"
+  ]
+}
