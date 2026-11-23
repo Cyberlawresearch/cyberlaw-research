@@ -1,0 +1,555 @@
+{
+  "date": "2026-11-23",
+  "column": "brief",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-23-tech-law-brief.html",
+  "mode": "fact_only",
+  "analysis_pending": true,
+  "news_count": 17,
+  "distribution": {
+    "domestic": 7,
+    "foreign": 10
+  },
+  "checked_at": "2026-11-23T11:08:39.036Z",
+  "last_news_scan_at": "2026-11-23T11:08:39.036Z",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": false,
+    "local_language_scan_korea_japan_vietnam": false,
+    "prior_background_checked": false,
+    "natural_chinese_reviewed": true,
+    "background_outlook": false,
+    "foreign_layout": true
+  },
+  "coverage": {
+    "domestic_sources": [
+      {
+        "group": "中央机关",
+        "source": "工业和信息化部",
+        "entry_url": "https://www.miit.gov.cn/jgsj/kjs/jscx/zscqhcggl/art/2026/art_22eeec7dce2b4f368a95acb458df03c8.html",
+        "checked_at": "2026-11-23T11:08:39.036Z",
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "计量重点项目遴选"
+        ],
+        "notes": "已打开原报道或官方页面并核对本次增量及日期"
+      },
+      {
+        "group": "标准评测",
+        "source": "全国网安标委TC260",
+        "entry_url": "https://www.tc260.org.cn/tc260/xwdt1/202611/f0a7797e4e2944938b68f8082179b169.shtml",
+        "checked_at": "2026-11-23T11:08:39.036Z",
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "网安标准化10月工作月报"
+        ],
+        "notes": "已打开原报道或官方页面并核对本次增量及日期"
+      },
+      {
+        "group": "中央数据",
+        "source": "国家数据局—可信数据空间",
+        "entry_url": "https://www.nda.gov.cn/sjj/swdt/mtsy/1122/20261122124728759725897_mobile.html",
+        "checked_at": "2026-11-23T11:08:39.036Z",
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "首批可信数据空间阶段进展"
+        ],
+        "notes": "已打开原报道或官方页面并核对本次增量及日期"
+      },
+      {
+        "group": "中央数据",
+        "source": "国家数据局—具身智能标准",
+        "entry_url": "https://www.nda.gov.cn/sjj/swdt/mtsy/1122/20261122201646034268538_pc.html",
+        "checked_at": "2026-11-23T11:08:39.036Z",
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "具身智能数据标准研制"
+        ],
+        "notes": "已打开原报道或官方页面并核对本次增量及日期"
+      },
+      {
+        "group": "中央数据",
+        "source": "国家数据局—世界计算大会",
+        "entry_url": "https://www.nda.gov.cn/sjj/ywpd/sjzg/1121/20261121163827783032901_mobile.html",
+        "checked_at": "2026-11-23T11:08:39.036Z",
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "词元计量质量标准政策讲话"
+        ],
+        "notes": "已打开原报道或官方页面并核对本次增量及日期"
+      },
+      {
+        "group": "中央数据",
+        "source": "国家数据局—健康数据合作",
+        "entry_url": "https://www.nda.gov.cn/sjj/swdt/mtsy/1121/20261121082610811728608_pc.html",
+        "checked_at": "2026-11-23T11:08:39.036Z",
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "世界数据组织医疗健康专委会"
+        ],
+        "notes": "已打开原报道或官方页面并核对本次增量及日期"
+      },
+      {
+        "group": "权威媒体",
+        "source": "人民日报",
+        "entry_url": "https://paper.people.com.cn/rmrb/pc/content/202611/23/content_30192605.html",
+        "checked_at": "2026-11-23T11:08:39.036Z",
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "AI能力建设国际研讨班"
+        ],
+        "notes": "已打开原报道或官方页面并核对本次增量及日期"
+      },
+      {
+        "group": "日本监管",
+        "source": "日本个人信息保护委员会PPC",
+        "entry_url": "https://www.ppc.go.jp/news/press/2026/",
+        "checked_at": "2026-11-23T11:08:39.036Z",
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已核查公开栏目，近期条目无本期合格新增"
+      },
+      {
+        "group": "韩国监管",
+        "source": "韩国个人信息保护委员会PIPC",
+        "entry_url": "https://pipc.go.kr/np/cop/bbs/selectBoardList.do?bbsId=BS074&mCode=C010010000",
+        "checked_at": "2026-11-23T11:08:39.036Z",
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "AI个人信息特例施行令征求意见",
+          "韩国电力公社泄露调查"
+        ],
+        "notes": "已打开原报道或官方页面并核对本次增量及日期"
+      },
+      {
+        "group": "国际媒体",
+        "source": "Reuters—金融智能体",
+        "entry_url": "https://www.reuters.com/legal/litigation/some-us-banks-tighten-ai-agent-controls-concern-about-models-escaping-safeguards-2026-11-23/",
+        "checked_at": "2026-11-23T11:08:39.036Z",
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "美国银行AI agent access controls"
+        ],
+        "notes": "已打开原报道或官方页面并核对本次增量及日期"
+      },
+      {
+        "group": "国际媒体",
+        "source": "Reuters—欧洲主权云",
+        "entry_url": "https://www.reuters.com/business/finance/europes-cloud-sovereignty-push-gains-ground-us-hyperscalers-remain-dominant-2026-11-23/",
+        "checked_at": "2026-11-23T11:08:39.036Z",
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "European sovereign cloud contracts"
+        ],
+        "notes": "已打开原报道或官方页面并核对本次增量及日期"
+      },
+      {
+        "group": "安全媒体",
+        "source": "BleepingComputer—Cisco",
+        "entry_url": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+        "checked_at": "2026-11-23T11:08:39.036Z",
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "CISA Cisco Expressway exploitation"
+        ],
+        "notes": "已打开原报道或官方页面并核对本次增量及日期"
+      },
+      {
+        "group": "安全媒体",
+        "source": "BleepingComputer—GL.iNet",
+        "entry_url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+        "checked_at": "2026-11-23T11:08:39.036Z",
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "GoodCloud infection follow-up"
+        ],
+        "notes": "已打开原报道或官方页面并核对本次增量及日期"
+      },
+      {
+        "group": "安全媒体",
+        "source": "BleepingComputer—Cleverbridge",
+        "entry_url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+        "checked_at": "2026-11-23T11:08:39.036Z",
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "Cleverbridge notification"
+        ],
+        "notes": "已打开原报道或官方页面并核对本次增量及日期"
+      },
+      {
+        "group": "安全媒体",
+        "source": "BleepingComputer—Rackspace",
+        "entry_url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+        "checked_at": "2026-11-23T11:08:39.036Z",
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "Rackspace Spot disclosure and restoration"
+        ],
+        "notes": "已打开原报道或官方页面并核对本次增量及日期"
+      },
+      {
+        "group": "安全媒体",
+        "source": "BleepingComputer—Microsoft",
+        "entry_url": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+        "checked_at": "2026-11-23T11:08:39.036Z",
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "Entra tenant metadata disclosure"
+        ],
+        "notes": "已打开原报道或官方页面并核对本次增量及日期"
+      },
+      {
+        "group": "安全媒体",
+        "source": "BleepingComputer—HUMAN",
+        "entry_url": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
+        "checked_at": "2026-11-23T11:08:39.036Z",
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "BADBOX 3.0 report"
+        ],
+        "notes": "已打开原报道或官方页面并核对本次增量及日期"
+      },
+      {
+        "group": "专业媒体",
+        "source": "财新、证券时报、第一财经等",
+        "entry_url": "",
+        "checked_at": null,
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "not_checked",
+        "candidate_titles": [],
+        "notes": "尚未逐站查阅，不计入完成核验"
+      },
+      {
+        "group": "地方机关",
+        "source": "京沪粤浙苏川渝黔蒙琼雄安专门部门逐站核验",
+        "entry_url": "",
+        "checked_at": null,
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "not_checked",
+        "candidate_titles": [],
+        "notes": "尚未逐站查阅，不计入完成核验"
+      },
+      {
+        "group": "标准评测",
+        "source": "TC609、TC28、CNCERT、信通院直接公告逐站核验",
+        "entry_url": "",
+        "checked_at": null,
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "not_checked",
+        "candidate_titles": [],
+        "notes": "尚未逐站查阅，不计入完成核验"
+      },
+      {
+        "group": "其他国内机关",
+        "source": "国务院、人大、网信办、法院、检察、金融监管逐站核验",
+        "entry_url": "",
+        "checked_at": null,
+        "query_or_section": "2026-11-21至23日科技法与人工智能法律政策、安全及产业重要动向",
+        "status": "not_checked",
+        "candidate_titles": [],
+        "notes": "尚未逐站查阅，不计入完成核验"
+      }
+    ],
+    "domestic_major_omission_review": "已查阅国家数据局、工信部、TC260和人民日报的具体一手来源；部分中央、地方和财经媒体未逐站完成，保留false，不将来源组概括等同全面覆盖。",
+    "international": "直接检索韩语PIPC并打开11月23日两份官方公告，检查日本PPC新公告列表；越南语直接核验及国际多法域全面巡视未完成。直接阅读Reuters和BleepingComputer各项报道。",
+    "seven_day_dedup": "对照2026-11-16至22日每日核验记录全部标题和11月22日完整正文；排除已有中新数据协议、NVIDIA调查、Signal安全功能、Mercari泄露、美国Agent攻击及已报道的国别旧政策。",
+    "last_scan": "本轮打开11月23日TC260、韩国PIPC、Reuters以及11月21至23日国家数据局和安全媒体页面；未对所有应巡来源完成最后1-2小时独立复扫。"
+  },
+  "items": [
+    {
+      "id": "research-item-1",
+      "date": "2026-11-23",
+      "event_date": "2026-11-23",
+      "jurisdiction": "中国",
+      "agency": "全国网络安全标准化技术委员会",
+      "title": "全国网安标委公布标准化进展，智能体数据处理安全与个人信息影响评估标准进入专家审查",
+      "original_title": "《网络安全标准化工作月报》2026年10月",
+      "source_name": "全国网络安全标准化技术委员会",
+      "url": "https://www.tc260.org.cn/tc260/xwdt1/202611/f0a7797e4e2944938b68f8082179b169.shtml",
+      "fact": "全国网安标委11月23日公布10月标准化工作月报，披露组织39项网络安全国家标准征求意见稿专家审查，其中包括《数据安全技术 智能体数据处理安全要求》《数据安全技术 个人信息安全影响评估方法》和云计算安全参考架构等。月报还介绍25项推荐性国家标准计划的参编组织工作，并披露《智能体安全参考模型》《人工智能基础模型安全评估》等国际预研项目立项进展。相关内容反映标准研制和审查程序的进度。",
+      "legal_status": "标准研制及专家审查进展",
+      "domestic": true,
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-2",
+      "date": "2026-11-22",
+      "event_date": "2026-11-22",
+      "jurisdiction": "中国",
+      "agency": "国家数据局",
+      "title": "国家数据局披露首批可信数据空间试点进展，形成457个数据集与136个行业AI模型",
+      "original_title": "新闻直播间 | 什么是可信数据空间？新数据基础设施正在为生活提供便利→",
+      "source_name": "国家数据局转载央视新闻",
+      "url": "https://www.nda.gov.cn/sjj/swdt/mtsy/1122/20261122124728759725897_mobile.html",
+      "fact": "国家数据局11月22日披露，2025年启动的首批可信数据空间试点已覆盖13座城市、22个行业和28家企业，带动形成457个高质量数据集、136个人工智能垂直模型。试点应用包括交通物流、医疗健康、碳足迹核算以及新材料研发等领域。上海城市级可信数据空间已用于虹桥交通枢纽多交通方式信息的协同服务。",
+      "legal_status": "试点进展披露",
+      "domestic": true,
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-3",
+      "date": "2026-11-22",
+      "event_date": "2026-11-22",
+      "jurisdiction": "中国",
+      "agency": "国家数据局",
+      "title": "具身智能数据国家标准启动研制，计划在“十五五”期间形成20余项专项标准",
+      "original_title": "联播 | 我国启动具身智能数据国家标准研制",
+      "source_name": "国家数据局转载央视新闻",
+      "url": "https://www.nda.gov.cn/sjj/swdt/mtsy/1122/20261122201646034268538_pc.html",
+      "fact": "国家数据局11月22日宣布具身智能数据国家标准研制正式启动，计划在“十五五”期间陆续形成20余项专项国家标准，并同步开展标准试点验证。相关标准研制拟服务人形机器人、特种作业机器人及工业协作机械臂等不同应用场景。这项工作目前处于标准制定与试点安排阶段。",
+      "legal_status": "国家标准研制启动",
+      "domestic": true,
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-4",
+      "date": "2026-11-23",
+      "event_date": "2026-11-23",
+      "jurisdiction": "中国",
+      "agency": "市场监管总局、工业和信息化部",
+      "title": "两部门公布计量支撑新质生产力发展十大重点项目，覆盖芯片、人工智能与量子科技",
+      "original_title": "市场监管总局 工业和信息化部 联合发布计量支撑产业新质生产力发展2026年度重点项目",
+      "source_name": "工业和信息化部",
+      "url": "https://www.miit.gov.cn/jgsj/kjs/jscx/zscqhcggl/art/2026/art_22eeec7dce2b4f368a95acb458df03c8.html",
+      "fact": "工业和信息化部11月23日公布与市场监管总局联合遴选的2026年度十项重点计量项目，涉及新一代信息技术、人工智能、量子科技、集成电路等产业方向。两部门此前收到116项申报，经专家评审选定晶圆验收测试系统现场原位校准等项目，并提出开展关键计量技术攻关和跟踪指导。这是产业计量能力建设的项目安排。",
+      "legal_status": "部门重点项目遴选公布",
+      "domestic": true,
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-5",
+      "date": "2026-11-21",
+      "event_date": "2026-11-21",
+      "jurisdiction": "中国",
+      "agency": "国家数据局",
+      "title": "国家数据局提出完善词元计量计费和质量测评标准，规范算力模型数据服务交付",
+      "original_title": "刘烈宏出席2026世界计算大会开幕式并致辞",
+      "source_name": "国家数据局",
+      "url": "https://www.nda.gov.cn/sjj/ywpd/sjzg/1121/20261121163827783032901_mobile.html",
+      "fact": "国家数据局11月21日披露局长刘烈宏20日在世界计算大会发表的政策讲话，提出加快构建词元生产、流通、消费的产业生态。讲话指出，算力租赁、模型供给和数据能力正在形成按调用计价的智能服务交付方式，下一步将完善词元计量计费、质量测评等标准规范，并引导行业避免低质量重复建设。相关标准仍属于政策部署方向。",
+      "legal_status": "部门政策讲话及拟制定标准方向",
+      "domestic": true,
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-6",
+      "date": "2026-11-21",
+      "event_date": "2026-11-21",
+      "jurisdiction": "中国",
+      "agency": "世界数据组织、北京数据集团等",
+      "title": "世界数据组织医疗健康专业委员会启动，拟推动医疗数据跨境合作与安全流通规则",
+      "original_title": "朝闻天下 | 世界数据组织医疗健康专委会启动运行",
+      "source_name": "国家数据局转载央视新闻",
+      "url": "https://www.nda.gov.cn/sjj/swdt/mtsy/1121/20261121082610811728608_pc.html",
+      "fact": "国家数据局11月21日刊载报道，世界数据组织医疗健康专业委员会20日在北京启动运行，由北京数据集团、北京大学医学部等近百家国内外单位联合组建。该专业平台拟开展医疗健康数据安全流通规则和标准研制、可信数据空间共建，以及高质量医疗数据集和AI医疗应用合作。有关规则和合作项目尚处后续推进阶段。",
+      "legal_status": "国际行业合作平台成立",
+      "domestic": true,
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-7",
+      "date": "2026-11-23",
+      "event_date": "2026-11-23",
+      "jurisdiction": "中国",
+      "agency": "人工智能能力建设研讨班主办机构",
+      "title": "第五期人工智能能力建设研讨班结束，37国政府官员交流AI治理与产业应用",
+      "original_title": "第五期人工智能能力建设研讨班举行",
+      "source_name": "人民日报",
+      "url": "https://paper.people.com.cn/rmrb/pc/content/202611/23/content_30192605.html",
+      "fact": "《人民日报》11月23日报道，第五期人工智能能力建设研讨班于11月16日至21日在上海、杭州举行，参加者包括来自37个国家的政府官员。活动围绕人工智能发展趋势、产业应用和人工智能能力建设普惠计划展开，并安排数智医疗、具身智能等应用场景考察。这是国际人工智能能力建设合作活动。",
+      "legal_status": "国际能力建设活动完成",
+      "domestic": true,
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-8",
+      "date": "2026-11-23",
+      "event_date": "2026-11-23",
+      "jurisdiction": "韩国",
+      "agency": "个人信息保护委员会（PIPC）",
+      "title": "韩国就个人信息保护法AI开发例外条款公布施行令修正案，细化风险评估与事前审议",
+      "original_title": "“개인정보 보호법 인공지능 특례” 세부 기준 마련 … 개인정보 보호법 시행령 개정안 입법예고",
+      "source_name": "韩国个人信息保护委员会",
+      "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C010010000&nttId=12663",
+      "fact": "韩国个人信息保护委员会11月23日就《个人信息保护法施行令》部分修正案启动立法预告，公开征求意见至2027年1月4日。草案拟细化利用合法收集的个人信息开发人工智能的例外条件，要求加强访问权限限制、内部管理与数据销毁，并就涉及敏感信息、儿童信息、持续跟踪或重大决策的技术开发设置事前风险评估。相关程序须经委员会审议，拟与2027年3月9日施行的修订法律衔接。",
+      "legal_status": "施行令修正案立法预告",
+      "domestic": false,
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-9",
+      "date": "2026-11-23",
+      "event_date": "2026-11-23",
+      "jurisdiction": "韩国",
+      "agency": "个人信息保护委员会（PIPC）",
+      "title": "韩国监管机构调查韩国电力公社数据泄露，客户与采购系统用户资料可能大规模外流",
+      "original_title": "개인정보위, 한전 개인정보 유출사고 조사 착수",
+      "source_name": "韩国个人信息保护委员会",
+      "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C010010000&nttId=12664",
+      "fact": "韩国个人信息保护委员会11月23日宣布，就韩国电力公社（KEPCO）报告的客户及电子采购系统资料外泄成立应急调查组并开展现场检查。企业于22日向监管机构报告约65万名客户及约87万名采购系统用户的信息可能遭泄露，涉及身份识别、联系方式及部分账户或支付卡资料。监管机构将调查事故经过及安全措施、通知与报告义务履行情况。",
+      "legal_status": "个人信息泄露事件正式调查",
+      "domestic": false,
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-10",
+      "date": "2026-11-23",
+      "event_date": "2026-11-23",
+      "jurisdiction": "美国",
+      "agency": "美国银行业机构",
+      "title": "美国多家银行收紧内部AI智能体系统访问权限，强化凭证隔离和紧急停止措施",
+      "original_title": "Some US banks tighten AI-agent controls on concern about models escaping safeguards",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/some-us-banks-tighten-ai-agent-controls-concern-about-models-escaping-safeguards-2026-11-23/",
+      "fact": "路透社11月23日报道，多家美国大型及中型银行正对内部AI智能体实施更严格的访问控制，限制其可接触的业务系统、凭证种类和持续运行时间。部分机构还测试紧急断开机制、行为日志和关键金融业务的人工接管流程，涉及贷款、反欺诈和金融犯罪审查等场景。有关措施为银行内部风险管理实践，并非统一发布的新增联邦监管规定。",
+      "legal_status": "行业内部安全治理措施披露",
+      "domestic": false,
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-11",
+      "date": "2026-11-23",
+      "event_date": "2026-11-23",
+      "jurisdiction": "欧洲",
+      "agency": "欧洲公共部门及云服务供应商",
+      "title": "欧洲公共采购加强主权云要求，跨境司法管辖和供应商依赖成为云服务选择因素",
+      "original_title": "Europe's cloud sovereignty push gains ground, but US hyperscalers remain dominant",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/finance/europes-cloud-sovereignty-push-gains-ground-us-hyperscalers-remain-dominant-2026-11-23/",
+      "fact": "路透社11月23日报道，欧洲政府及受监管行业在云服务采购中更频繁设置数据主权、可控性及减少供应商锁定的要求。报道列举欧盟委员会和多个欧洲国家公共机构的合同安排，也指出微软、亚马逊和谷歌等美国服务商仍在市场中占重要地位，并通过主权云产品参与竞争。相关趋势主要体现在采购标准与供应商安排的变化。",
+      "legal_status": "政府采购与市场实践调查",
+      "domestic": false,
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-12",
+      "date": "2026-11-23",
+      "event_date": "2026-11-23",
+      "jurisdiction": "美国",
+      "agency": "网络安全和基础设施安全局（CISA）",
+      "title": "美国CISA将Cisco Expressway高危远程执行漏洞列为遭利用风险并催促修补",
+      "original_title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
+      "source_name": "BleepingComputer、CISA",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+      "fact": "BleepingComputer11月23日报道，美国网络安全和基础设施安全局（CISA）已将Cisco Expressway企业通信网关的一项高危漏洞列为已在攻击中遭利用的漏洞，并要求联邦机构加快修补。该漏洞涉及认证或凭证检查缺陷，攻击者可能在受影响的集群设备上获得远程命令执行权限。Cisco此前已发布安全修复，CISA要求相关防御方优先排查暴露设备。",
+      "legal_status": "已知遭利用漏洞警示与联邦修补要求",
+      "domestic": false,
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-13",
+      "date": "2026-11-22",
+      "event_date": "2026-11-22",
+      "jurisdiction": "全球",
+      "agency": "GL.iNet",
+      "title": "GL.iNet确认云远程管理服务被利用，部分路由器和远控设备遭植入后门",
+      "original_title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+      "source_name": "BleepingComputer、GL.iNet",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+      "fact": "GL.iNet于11月20日确认GoodCloud远程管理服务存在被攻击者利用的漏洞，11月22日的进一步调查披露部分客户路由器和KVM远程管理设备已被植入恶意软件及反向连接后门。厂商称已修复云端入侵路径，但云端修复不会自动清除已感染设备内的恶意程序。受影响设备数量和攻击者是否获取用户数据仍在调查中。",
+      "legal_status": "厂商安全事件公告及后续调查",
+      "domestic": false,
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-14",
+      "date": "2026-11-22",
+      "event_date": "2026-11-22",
+      "jurisdiction": "德国、全球",
+      "agency": "Cleverbridge",
+      "title": "跨境软件支付平台Cleverbridge确认支付卡资料被窃，已向受影响用户发出通知",
+      "original_title": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
+      "source_name": "BleepingComputer、Cleverbridge",
+      "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+      "fact": "软件订阅及电商支付服务商Cleverbridge自11月20日起通知受影响客户，其支付系统在此前攻击中发生数据外泄。11月22日公开的客户通知显示，失窃资料涉及支付卡号、到期日和CVV/CVC安全码；厂商确认支付卡数据遭复制，并已向监管机构、警方和卡组织通报。攻击者入侵方式及受影响客户规模尚未公布。",
+      "legal_status": "企业数据泄露通知及监管报备",
+      "domestic": false,
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-15",
+      "date": "2026-11-21",
+      "event_date": "2026-11-21",
+      "jurisdiction": "美国、全球",
+      "agency": "Rackspace Spot",
+      "title": "Rackspace披露云容器平台遭凭证入侵，攻击者可读取客户Kubernetes密钥",
+      "original_title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
+      "source_name": "BleepingComputer、Rackspace",
+      "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+      "fact": "Rackspace向客户披露，其Spot云容器服务在11月17日遭攻击者利用泄露凭证访问，攻击者可在部分客户集群创建容器并读取Kubernetes Secrets以及相关API令牌。公司于11月21日宣布管理服务恢复，并采取撤销会话、轮换密钥和删除未经授权容器等措施。客户被要求更换可能暴露的令牌与敏感凭证，并核查相关日志。",
+      "legal_status": "云平台安全事件及恢复公告",
+      "domestic": false,
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-16",
+      "date": "2026-11-21",
+      "event_date": "2026-11-21",
+      "jurisdiction": "美国、全球",
+      "agency": "Microsoft Entra Connect Health",
+      "title": "微软确认Entra身份同步监控服务元数据遭越权读取，已修补并通知客户",
+      "original_title": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
+      "source_name": "BleepingComputer、Microsoft",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+      "fact": "微软11月20日完成调查，确认Entra Connect Health接口漏洞曾造成租户管理员邮箱及部分配置元数据被未经授权访问，并于11月21日前后向受影响机构发出通知。公司称已于11月19日实施服务器端修复，没有发现用户密码、身份验证令牌或有效密钥被披露，也没有发现未经授权的配置变更。受影响机构获建议警惕针对管理员账户的定向钓鱼风险。",
+      "legal_status": "企业安全事件确认及修复通知",
+      "domestic": false,
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    },
+    {
+      "id": "research-item-17",
+      "date": "2026-11-21",
+      "event_date": "2026-11-21",
+      "jurisdiction": "全球",
+      "agency": "HUMAN Security Satori研究团队",
+      "title": "研究报告称BADBOX 3.0僵尸网络单日产生400亿次虚假广告请求，涉及安卓设备与住宅代理",
+      "original_title": "BADBOX botnet returns with record-breaking 40 billion daily ad requests",
+      "source_name": "HUMAN Security、BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
+      "fact": "网络安全公司HUMAN的Satori研究团队最新披露，BADBOX 3.0在高峰时每天生成约400亿次广告竞价请求，涉嫌通过受感染的安卓电视盒、手机等设备实施广告欺诈。研究人员还发现恶意软件将受感染设备接入住宅代理网络，部分设备的网络访问能力可能被第三方利用。HUMAN称已参与相关恶意基础设施阻断，并持续过滤可识别的欺诈流量。",
+      "legal_status": "网络安全研究报告及私营机构处置",
+      "domestic": false,
+      "source_checked": true,
+      "seven_day_dedup_checked": true
+    }
+  ]
+}
