@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-23",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-23-godwin-political-justice.html",
+  "target_path": "articles/2026-11-23-godwin-political-justice.html",
+  "book": {
+    "author": "William Godwin（威廉·戈德温）",
+    "original_title": "An Enquiry Concerning Political Justice, and Its Influence on General Virtue and Happiness",
+    "publisher": "London: G. G. J. and J. Robinson",
+    "year": "1793",
+    "edition": "1793年英文初版，两卷；系统核对第一卷前四编、第二卷后四编及全书序言和目录；区分1796年第二版与1798年第三版"
+  },
+  "source_urls": [
+    "https://dev.oll.libertyfund.org/titles/godwin-an-enquiry-concerning-political-justice-vol-i/read",
+    "https://dev.oll.libertyfund.org/titles/godwin-an-enquiry-concerning-political-justice-vol-ii/read",
+    "https://davidmhart.com/liberty/EnglishClassicalLiberals/Godwin/1793-PoliticalJustice/index.html",
+    "https://constitution.org/1-Constitution/cmt/malthus/population.htm",
+    "https://plato.stanford.edu/entries/godwin/",
+    "https://www.cambridge.org/core/books/cambridge-companion-to-british-literature-of-the-french-revolution-in-the-1790s/A631466BC7A7A09B2ECF0D96FDAE3DF5/listing"
+  ],
+  "original_verification": "系统核对1793年两卷完整英文文本第一至八编（第一卷政治制度的重要性、社会原则、政府原则及其他道德政治原则；第二卷立法与行政权、政治制度与意见、犯罪与惩罚、财产），并核对费内隆救援例、社会契约、国家教育、言论、刑罚证据与财产和人口各章。原书与后世增订及研究区分。",
+  "critics": [
+    {
+      "name": "Thomas Robert Malthus",
+      "work": "An Essay on the Principle of Population (London: J. Johnson, 1798), first edition, chapters X–XV",
+      "url": "https://constitution.org/1-Constitution/cmt/malthus/population.htm",
+      "checked": "1798年初版第十至十五章直接批评戈德温的财产平等构想、人口与粮食供给、性欲变化、长寿猜想及理性可完善论。"
+    }
+  ],
+  "dedup_checked": [
+    "main/classics.html 全部历史著作目录无戈德温《政治正义论》",
+    "main/classics-history.html较早期历史书目无本书",
+    "main/data/books.json旧书目无本书"
+  ],
+  "duplicate_found": false,
+  "sections": 33,
+  "prose_length": 13381,
+  "checked_at": "2026-11-23",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
