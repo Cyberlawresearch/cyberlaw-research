@@ -2,15 +2,64 @@
   "date": "2026-11-23",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "9737601206348d463e4853ba2fa8ea86a489d7c2",
-  "phase": "researching",
+  "phase": "researching-us-uk",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "us-india-czech-rail-ad",
+      "date": "2026-11-20",
+      "jurisdiction": "美国／捷克／印度",
+      "title": "美国正式对捷克及印度铁路货运车钩发布反倾销税令",
+      "phase": "正式税令",
+      "source_urls": [
+        "https://www.federalregister.gov/d/2026-23626"
+      ],
+      "status": "confirmed_pending_rates"
+    },
+    {
+      "id": "us-india-rail-cvd",
+      "date": "2026-11-20",
+      "jurisdiction": "美国／印度",
+      "title": "美国对印度铁路货运车钩发布反补贴税令",
+      "phase": "正式税令",
+      "source_urls": [
+        "https://www.federalregister.gov/d/2026-23625"
+      ],
+      "rates": "9.71%／75%",
+      "status": "confirmed"
+    },
+    {
+      "id": "us-iran-oil-sdn",
+      "date": "2026-11-20",
+      "jurisdiction": "美国／伊朗",
+      "title": "OFAC将四名伊朗石油资金经手人列入SDN名单",
+      "phase": "名单指定已生效",
+      "source_urls": [
+        "https://ofac.treasury.gov/recent-actions/20261120",
+        "https://home.treasury.gov/news/press-releases/sb0697/"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "us-france-steel-zero",
+      "date": "2026-11-20",
+      "jurisdiction": "美国／法国",
+      "title": "美国法国中厚钢板反倾销复审终裁Dillinger France为0%",
+      "phase": "复审终裁",
+      "source_urls": [
+        "https://www.federalregister.gov/d/2026-23623"
+      ],
+      "status": "confirmed_optional"
+    }
+  ],
+  "coverage": {
+    "US": "已检查OFAC 11月20日制裁名单和美国联邦公报11月20日贸易救济；11月23日联邦公报目录仍需复核"
+  },
   "last_error": null,
   "next_actions": [
-    "核查8个必查经济体的近72小时官方贸易及制裁动态",
-    "与最近7期事件级去重",
-    "逐一打开官方来源并核实法律阶段",
-    "最终回扫后发布第076期"
+    "核实铁路车钩反倾销税率与保证金生效日起算",
+    "检索欧盟、英国、日本、韩国及印度加拿大澳大利亚最新动态",
+    "近7期事件级回查与官方原始来源完整核验",
+    "完成末轮终扫再发布"
   ]
 }
