@@ -2,7 +2,7 @@
   "date": "2026-11-23",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "9737601206348d463e4853ba2fa8ea86a489d7c2",
-  "phase": "main_written_verified",
+  "phase": "source_verification_repair",
   "publication_ready": true,
   "items": [
     {
@@ -138,8 +138,8 @@
       "deadline": "消息于2026年11月20日披露；政府文件目标为2027年1月1日开始实施，正式规则及申办细则待发布。",
       "sources": [
         {
-          "url": "https://www.reuters.com/markets/asia/indonesia-planning-tighter-soybean-import-controls-minister-says-2026-11-20/",
-          "label": "路透社11月20日：印尼拟新增大豆进口许可及检验措施"
+          "url": "https://www.brecorder.com/news/40449961/indonesia-planning-tighter-soybean-import-controls-minister-says",
+          "label": "路透社11月20日报道（Business Recorder刊载）：印尼大豆进口许可与检验方案"
         }
       ]
     },
@@ -173,12 +173,18 @@
     "Australia": "澳大利亚贸易救济委员会与复审小组案卷核查；11月18日中国及韩国钢材复审距今超过72小时，不纳入",
     "Indonesia": "11月20日副部长证实拟2027年1月推大豆进口许可证、到港检验，尚未生效，路透社原文核实"
   },
-  "last_error": null,
+  "last_error": {
+    "stage": "source-check",
+    "workflow_run_id": 45092653363,
+    "workflow_job_id": 137425471287,
+    "target": "https://www.reuters.com/markets/asia/indonesia-planning-tighter-soybean-import-controls-minister-says-2026-11-20/",
+    "error": "GitHub Actions requests received HTTP 401 on the original Reuters article; 10 other source URLs and 3 public pages passed (HTTP 200, content matched)",
+    "attempts": 1,
+    "main_sha": "2721898f949d64f8537dae7fca3635c4a848edf3"
+  },
   "next_actions": [
-    "检查2721898f对应Pages工作流是否成功",
-    "在线检查当期正文、首页最新一期及归档首项",
-    "外部来源11条链接核验及文档DOM对照",
-    "更新最终published状态"
+    "将受401限制的Reuters原站链接改为正文同一篇路透社报道的《Business Recorder》授权转载页，不更改事实、法律阶段",
+    "重新提交单篇URL修改、检查最终提交Pages及来源诊断"
   ],
   "dedup": {
     "checked_issues": [
