@@ -2,7 +2,7 @@
   "date": "2026-11-23",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "9737601206348d463e4853ba2fa8ea86a489d7c2",
-  "phase": "source_verification_repair",
+  "phase": "published_verified",
   "publication_ready": true,
   "items": [
     {
@@ -173,19 +173,8 @@
     "Australia": "澳大利亚贸易救济委员会与复审小组案卷核查；11月18日中国及韩国钢材复审距今超过72小时，不纳入",
     "Indonesia": "11月20日副部长证实拟2027年1月推大豆进口许可证、到港检验，尚未生效，路透社原文核实"
   },
-  "last_error": {
-    "stage": "source-check",
-    "workflow_run_id": 45092653363,
-    "workflow_job_id": 137425471287,
-    "target": "https://www.reuters.com/markets/asia/indonesia-planning-tighter-soybean-import-controls-minister-says-2026-11-20/",
-    "error": "GitHub Actions requests received HTTP 401 on the original Reuters article; 10 other source URLs and 3 public pages passed (HTTP 200, content matched)",
-    "attempts": 1,
-    "main_sha": "2721898f949d64f8537dae7fca3635c4a848edf3"
-  },
-  "next_actions": [
-    "将受401限制的Reuters原站链接改为正文同一篇路透社报道的《Business Recorder》授权转载页，不更改事实、法律阶段",
-    "重新提交单篇URL修改、检查最终提交Pages及来源诊断"
-  ],
+  "last_error": null,
+  "next_actions": [],
   "dedup": {
     "checked_issues": [
       "2026-11-16",
@@ -208,7 +197,7 @@
   "source_verification_passed": true,
   "final_sweep_completed": true,
   "final_sweep_summary": "2026-11-23亚洲上海上午对美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚及印尼再检索，未找到需要替换的更重大新增官方决定；已删除与11月21日期完全重复的伊朗SDN、英欧SPS与美捷印铁路车钩反倾销旧事件，仅保留反补贴独立新税令。",
-  "main_final_commit": "2721898f949d64f8537dae7fca3635c4a848edf3",
+  "main_final_commit": "2a7b9124c33064028ca29e14e222f2d9ba117a13",
   "written_files": [
     "trade-watch/issues/2026-11-23.html",
     "trade-watch/index.html",
@@ -220,5 +209,25 @@
     "verified_source_links": 11,
     "archive_total": 76,
     "index_latest": true
+  },
+  "publish_result": {
+    "date": "2026-11-23",
+    "issue": 76,
+    "items": 8,
+    "source_links": 11,
+    "files": [
+      "trade-watch/issues/2026-11-23.html",
+      "trade-watch/index.html",
+      "trade-watch/archive.html"
+    ],
+    "pages_workflow_run_id": 45092900427,
+    "pages_workflow_conclusion": "success",
+    "presence_guard_workflow_run_id": 45093355099,
+    "presence_guard_conclusion": "success",
+    "source_check_run_id": 45093355113,
+    "source_check_conclusion": "success",
+    "public_pages_verified": 3,
+    "public_source_urls_verified": 11,
+    "original_reuters_401_repaired_with_syndicated_report": true
   }
 }
