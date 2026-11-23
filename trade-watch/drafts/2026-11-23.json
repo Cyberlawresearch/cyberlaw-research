@@ -2,7 +2,7 @@
   "date": "2026-11-23",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "9737601206348d463e4853ba2fa8ea86a489d7c2",
-  "phase": "researching-us-uk",
+  "phase": "researching-eu-jp-uk-asean",
   "publication_ready": false,
   "items": [
     {
@@ -50,16 +50,95 @@
         "https://www.federalregister.gov/d/2026-23623"
       ],
       "status": "confirmed_optional"
+    },
+    {
+      "id": "jp-potassium-hydroxide",
+      "date": "2026-11-20",
+      "jurisdiction": "日本／中国／韩国",
+      "title": "日本审议会建议续征中国和韩国产氢氧化钾反倾销税",
+      "phase": "正式咨询答复，待政府政令落实",
+      "source_urls": [
+        "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/report/20261120c_toushin.html"
+      ]
+    },
+    {
+      "id": "jp-galvanized-steel",
+      "date": "2026-11-20",
+      "jurisdiction": "日本／中国／韩国",
+      "title": "日本审议会建议对中国、韩国热镀锌钢板与钢带征收反倾销税",
+      "phase": "正式咨询答复，非最终征税决定",
+      "source_urls": [
+        "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/report/20261120a_toushin.html"
+      ]
+    },
+    {
+      "id": "jp-bisphenol",
+      "date": "2026-11-20",
+      "jurisdiction": "日本／韩国／中国台湾地区",
+      "title": "日本审议会建议对韩国产及中国台湾地区产双酚A征反倾销税",
+      "phase": "正式咨询答复，非最终征税决定",
+      "source_urls": [
+        "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/report/20261120b_toushin.html"
+      ]
+    },
+    {
+      "id": "eu-silicon-expiry-notice",
+      "date": "2026-11-20",
+      "jurisdiction": "欧盟／中国",
+      "title": "欧盟公布中国产硅反倾销措施2027年8月拟届满通知",
+      "phase": "届满预告，措施仍有效，尚非期满复审启动",
+      "source_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A52026XC06045"
+      ]
+    },
+    {
+      "id": "uk-russia-lng-revocation",
+      "date": "2026-11-20",
+      "jurisdiction": "英国／俄罗斯",
+      "title": "英国正式撤销LNG SOARS船舶俄罗斯航运制裁指定",
+      "phase": "已生效名单撤销",
+      "source_urls": [
+        "https://assets.publishing.service.gov.uk/media/6b00141ce715e1cb9d5d5070/Sanctions_Notice__Russia__20_November_2026.pdf"
+      ]
+    },
+    {
+      "id": "uk-eu-sps-practical-guidance",
+      "date": "2026-11-20",
+      "jurisdiction": "英国／欧盟及第三国",
+      "title": "英国发布英欧SPS制度及TRACES操作衔接指引，目标2028年3月",
+      "phase": "新公布实施准备指引，非新规定生效",
+      "source_urls": [
+        "https://www.gov.uk/guidance/changes-to-importing-and-exporting-food-animals-and-plants",
+        "https://www.gov.uk/guidance/changes-to-digital-systems-for-trading-sps-goods"
+      ]
+    },
+    {
+      "id": "indonesia-soybean-import-plan",
+      "date": "2026-11-20",
+      "jurisdiction": "印度尼西亚／美国等",
+      "title": "印尼拟于2027年1月收紧大豆进口许可与到港检验",
+      "phase": "主管官员确认的拟议措施，尚未实施",
+      "source_urls": [
+        "https://www.reuters.com/markets/asia/indonesia-planning-tighter-soybean-import-controls-minister-says-2026-11-20/"
+      ]
     }
   ],
   "coverage": {
-    "US": "已检查OFAC 11月20日制裁名单和美国联邦公报11月20日贸易救济；11月23日联邦公报目录仍需复核"
+    "US": "已检查OFAC 11月20日制裁名单和美国联邦公报11月20日贸易救济；11月23日联邦公报目录仍需复核",
+    "Japan": "财务省11月20日关税审议会三项正式答申，核对日本产地与对华税项；未当作最终征税政令",
+    "UK": "11月20日英国环境食品农村事务部SPS实施指引、FCDO俄罗斯名单两份更新；11月21已报道英欧框架不再简单重复",
+    "EU": "核验EUR-Lex 11月20日C/2026/6045号中国硅反倾销拟届满公告，仍未发起复审，现行措施未结束",
+    "Korea": "韩国贸易委员会官方调查列表，最新中国无缝钢管案仍为10月8日；未发现近72小时新增决定",
+    "India": "DGTR更新检查，11月20日半成品眼镜镜片、青霉素G与6-APA事项前期已载，不重复",
+    "Canada": "CBSA反倾销与反补贴案卷及近日期索引已核查，暂无具备独立新阶段的重大事实",
+    "Australia": "澳大利亚贸易救济委员会与复审小组案卷核查；11月18日中国及韩国钢材复审距今超过72小时，不纳入",
+    "Indonesia": "11月20日副部长证实拟2027年1月推大豆进口许可证、到港检验，尚未生效，路透社原文核实"
   },
   "last_error": null,
   "next_actions": [
-    "核实铁路车钩反倾销税率与保证金生效日起算",
-    "检索欧盟、英国、日本、韩国及印度加拿大澳大利亚最新动态",
-    "近7期事件级回查与官方原始来源完整核验",
-    "完成末轮终扫再发布"
+    "再次核实日本审议会税率与政策阶段",
+    "取得欧盟原始PDF可访问地址、确认三个月提前申请期",
+    "阅读全文并与最近7期逐条去重",
+    "末轮近72小时终扫，补充候选，阶段保存，正式发布"
   ]
 }
