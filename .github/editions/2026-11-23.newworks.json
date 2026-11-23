@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-23",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-23-new-works.html",
+  "page_blob_sha": "a139c94544b5bc94944d3fa89b4b408b11e9095e",
+  "newworks_count": 3,
+  "checked_at": "2026-11-23T12:38:31.501Z",
+  "checks": {
+    "publisher_original_source_verified": true,
+    "original_title_author_doi_verified": true,
+    "publication_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "historical_indexes_checked": true,
+    "github_code_search_done": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html and new-works-history.html, current main",
+      "GitHub repository code search of all 3 exact original titles, 3 DOIs and author/title combinations across historical articles and edition records"
+    ],
+    "matches_found_for_selected": 0,
+    "scope_note": "Historical indexes read and exact repository code searches performed; this record does not assert that every historical page was individually fetched.",
+    "version_distinction": "All 3 items are publisher journal articles; Oxford is an advance article without allocated volume, issue or page range; MDPI has volume/issue/article number; Springer has assigned volume and pages."
+  },
+  "items": [
+    {
+      "cn_title": "英国AI生成作品的著作权归属：计算机生成作品条款不能取代独创性判断",
+      "author": "Ying Ye",
+      "original_title": "The boundaries of copyright law in regulating AI-generated content: lessons from the UK",
+      "journal": "Journal of Intellectual Property Law & Practice",
+      "publisher": "Oxford University Press",
+      "year": 2026,
+      "publication_date": "2026-11-20",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": "jpag097",
+      "doi": "10.1093/jiplp/jpag097",
+      "publisher_page": "https://academic.oup.com/jiplp/advance-article-abstract/doi/10.1093/jiplp/jpag097/9104299",
+      "version": "Oxford University Press published journal advance article; issue and page range not yet assigned"
+    },
+    {
+      "cn_title": "韩国行政机关使用高影响AI：合法性审查如何贯穿决策全过程",
+      "author": "Wanwoo Nam",
+      "original_title": "Governing High-Impact AI in Public Administration: A Public-Law Life-Cycle Model for Korea",
+      "journal": "Laws",
+      "publisher": "MDPI",
+      "year": 2026,
+      "publication_date": "2026-11-18",
+      "volume": "15",
+      "issue": "6",
+      "pages": null,
+      "article_number": "170",
+      "doi": "10.3390/laws15060170",
+      "publisher_page": "https://www.mdpi.com/2075-471X/15/6/170",
+      "version": "MDPI journal version of record, volume 15 issue 6 article 170"
+    },
+    {
+      "cn_title": "产品维修需要共享数据，欧盟商业秘密保护应如何调整",
+      "author": "Maria Lillà Montagnani; Laura Zoboli",
+      "original_title": "Circular by Design? Rethinking Trade Secret Protection and Data Governance in the EU Circular Economy",
+      "journal": "IIC - International Review of Intellectual Property and Competition Law",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-04-16",
+      "volume": "57",
+      "issue": null,
+      "pages": "671–690",
+      "article_number": null,
+      "doi": "10.1007/s40319-026-01709-6",
+      "publisher_page": "https://link.springer.com/article/10.1007/s40319-026-01709-6",
+      "version": "Springer Nature journal version of record, volume 57, pp. 671–690"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "10e68dd599783c4cc6eebaa571b6f8d7821bf6a4",
+    "last_complete_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": null
+  }
+}
