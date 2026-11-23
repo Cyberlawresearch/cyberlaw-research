@@ -2,7 +2,7 @@
   "date": "2026-11-23",
   "timezone": "Asia/Shanghai",
   "base_main_sha": "9737601206348d463e4853ba2fa8ea86a489d7c2",
-  "phase": "publication_ready",
+  "phase": "main_written_verified",
   "publication_ready": true,
   "items": [
     {
@@ -175,10 +175,10 @@
   },
   "last_error": null,
   "next_actions": [
-    "写入完整trade-watch/issues/2026-11-23.html",
-    "更新main首页和归档",
-    "回读main三个文件、核对日期/期号/条数和DOM链接",
-    "检查对应主分支最终提交的Pages和公开访问并更新published断点"
+    "检查2721898f对应Pages工作流是否成功",
+    "在线检查当期正文、首页最新一期及归档首项",
+    "外部来源11条链接核验及文档DOM对照",
+    "更新最终published状态"
   ],
   "dedup": {
     "checked_issues": [
@@ -201,5 +201,18 @@
   "event_dedup_passed": true,
   "source_verification_passed": true,
   "final_sweep_completed": true,
-  "final_sweep_summary": "2026-11-23亚洲上海上午对美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚及印尼再检索，未找到需要替换的更重大新增官方决定；已删除与11月21日期完全重复的伊朗SDN、英欧SPS与美捷印铁路车钩反倾销旧事件，仅保留反补贴独立新税令。"
+  "final_sweep_summary": "2026-11-23亚洲上海上午对美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚及印尼再检索，未找到需要替换的更重大新增官方决定；已删除与11月21日期完全重复的伊朗SDN、英欧SPS与美捷印铁路车钩反倾销旧事件，仅保留反补贴独立新税令。",
+  "main_final_commit": "2721898f949d64f8537dae7fca3635c4a848edf3",
+  "written_files": [
+    "trade-watch/issues/2026-11-23.html",
+    "trade-watch/index.html",
+    "trade-watch/archive.html"
+  ],
+  "main_readback": {
+    "issue_number": 76,
+    "item_count": 8,
+    "verified_source_links": 11,
+    "archive_total": 76,
+    "index_latest": true
+  }
 }
