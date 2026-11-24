@@ -1,7 +1,7 @@
 {
   "date": "2026-11-24",
   "base_main_sha": "bea1f25d9b07357274d88e04dee181ec84910be4",
-  "phase": "publication_ready",
+  "phase": "main_written",
   "publication_ready": true,
   "items": [
     {
@@ -155,8 +155,7 @@
   },
   "last_error": null,
   "next_actions": [
-    "发布三份HTML并回读",
-    "核验Pages部署及公开网页"
+    "核验最终提交对应Pages及公开页面"
   ],
   "dedup": {
     "dates": [
@@ -186,5 +185,22 @@
     ],
     "note": "全部入选来源逐一打开并复核正文；EUR-Lex PDF截图接口返回DisabledError，原文全文已读取。加拿大轮胎延期公告直接打开超时，未收入。"
   },
-  "final_sweep": "11月23日至24日各主要法域官方公告、联邦公报、欧盟公报、英国制裁及贸易救济公告、亚洲及澳加案件检索复核；无其他经核实且达到收录标准的新增事件。"
+  "final_sweep": "11月23日至24日各主要法域官方公告、联邦公报、欧盟公报、英国制裁及贸易救济公告、亚洲及澳加案件检索复核；无其他经核实且达到收录标准的新增事件。",
+  "publication_attempt": {
+    "time": "2026-11-24",
+    "phase": "main_written",
+    "final_commit": "641cde2aacbba34902bf63bc711af5aaf82cb9c2",
+    "files": [
+      "trade-watch/issues/2026-11-24.html",
+      "trade-watch/index.html",
+      "trade-watch/archive.html"
+    ],
+    "readback": {
+      "ok": true,
+      "items": 7,
+      "links": 10,
+      "archive_count": 77
+    },
+    "pages": "pending verification"
+  }
 }
