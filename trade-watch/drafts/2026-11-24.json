@@ -1,7 +1,7 @@
 {
   "date": "2026-11-24",
   "base_main_sha": "bea1f25d9b07357274d88e04dee181ec84910be4",
-  "phase": "researching",
+  "phase": "dedup_checked",
   "publication_ready": false,
   "items": [
     {
@@ -32,7 +32,7 @@
       "body": "加拿大边境服务局11月23日公布调查终裁。列名出口商倾销幅度为23.6%至229.3%，其他出口商为335.4%；其他出口商补贴金额为每立方米506.92元人民币。对补贴幅度低于1%的多家企业终止补贴调查。未来反倾销税的计算依据正常价值等规则，并非直接把列名企业终裁倾销幅度作为未来固定税率。",
       "scope": "中国原产或出口的涉案装饰及其他非结构胶合板，以及加拿大木材、家具及室内装饰采购商。",
       "impact": "出口商与进口商应核实实际生产商、出口商以及正常价值通知，区分列名企业和其他出口商的税负；合同结算应考虑临时税款与最终产业损害裁定后的税款处理。",
-      "deadline": "11月23日终裁，12月8日计划发布理由说明；最终征税取决于加拿大国际贸易法庭损害裁定。",
+      "deadline": "11月23日终裁，12月8日计划发布理由说明，12月22日加拿大国际贸易法庭计划作出损害裁定；此前继续适用临时税。",
       "sources": [
         {
           "url": "https://www.cbsa-asfc.gc.ca/sima-lmsi/i-e/donp22026/donp22026-nf-eng.html",
@@ -47,7 +47,7 @@
       "headline": "美国扩大伊朗相关制裁名单，波及香港及中东贸易公司",
       "stage": "SDN名单新增指定已实施",
       "rank": 5,
-      "body": "美国财政部海外资产控制办公室11月23日更新SDN名单，新增多家贸易、机械零件、建材和货币兑换相关企业。其中包括香港GrandeZ Trading Limited、阿联酋Grand Target Heavy Equipment and Machinery Spare Parts Trading L.L.C.等，部分条目明确标注行政命令13902下的次级制裁风险。",
+      "body": "美国财政部海外资产控制办公室11月23日更新SDN名单，新增多家贸易、机械零件、建材和货币兑换相关企业。其中包括香港GrandeZ Trading Limited、阿联酋Grand Target Heavy Equipment and Machinery Spare Parts Trading L.L.C.等，部分条目明确标注行政命令13902下的次级制裁风险。 财政部说明，此次行动共制裁超过24家换汇机构、代理公司及有关人员，依据第13902、13224及13871号行政命令。",
       "scope": "与伊朗及中东贸易相关的机械、建材、转口贸易、货款结算和金融中介。",
       "impact": "企业应更新交易对手及实际控制人筛查，结合注册地址、注册号码核实名单匹配，并检查中东代理收付款、美元结算、转运及合同中的制裁中止条款。",
       "deadline": "名单于11月23日更新；相关美国管辖交易应立即按新增指定处理。",
@@ -55,6 +55,10 @@
         {
           "url": "https://ofac.treasury.gov/recent-actions/20261123",
           "label": "美国OFAC 11月23日伊朗相关名单更新"
+        },
+        {
+          "url": "https://home.treasury.gov/news/press-releases/sb0699",
+          "label": "美国财政部：伊朗影子银行网络制裁说明"
         }
       ]
     },
@@ -75,16 +79,95 @@
           "label": "美国《联邦公报》2026-23751号"
         }
       ]
+    },
+    {
+      "id": "uk-myanmar-sanctions",
+      "date": "2026-11-23",
+      "place": "英国／缅甸／外交、联邦与发展事务部",
+      "headline": "英国新增五名缅甸军方人员制裁指定，并拟限制航空燃料供应",
+      "stage": "五项指定已实施；航空燃料措施待立法",
+      "rank": 4,
+      "body": "英国政府11月23日宣布对五名缅甸军方人员实施资产冻结、旅行禁令及董事资格限制。其中四人依据《2021年缅甸制裁条例》列名，一人依据《2026年全球人权与国际人道法制裁条例》列名。英国同时宣布拟通过立法进一步限制航空燃料供应。",
+      "scope": "涉缅金融、物流、能源贸易和航空燃料供应。",
+      "impact": "与缅甸开展业务的企业应重新筛查交易对手及其所有权、控制权，核查英国管辖连接点；燃料供应商应审查转售及最终用途合同条款，为拟议措施预留履约调整空间。",
+      "deadline": "五项指定11月23日生效；航空燃料新增限制尚待立法明确适用日期。",
+      "sources": [
+        {
+          "url": "https://www.gov.uk/government/news/uk-leads-global-action-with-major-new-measures-against-myanmar-military-following-landmark-genocide-judgment",
+          "label": "英国政府措施说明"
+        },
+        {
+          "url": "https://assets.publishing.service.gov.uk/media/6b045944e676615eab145929/Sanctions_Notice__Myanmar__23_November_2026.pdf",
+          "label": "缅甸制裁名单变更公告"
+        },
+        {
+          "url": "https://assets.publishing.service.gov.uk/media/6b046bfc5d1e916c0914593a/Sanctions_Notice__Global_Human_Rights_and_International_Humanitarian_Law__23_November_2026.pdf",
+          "label": "全球人权与国际人道法制裁名单变更公告"
+        }
+      ]
+    },
+    {
+      "id": "us-korea-coldrolled-cvd",
+      "date": "2026-11-23",
+      "place": "美国／韩国／商务部国际贸易署",
+      "headline": "美国对韩国冷轧钢板反补贴复审作出初裁，现代钢铁0.66%、浦项1.10%",
+      "stage": "行政复审初裁及部分撤销",
+      "rank": 4,
+      "body": "美国商务部11月23日公布韩国特定冷轧钢板反补贴行政复审初裁，并部分撤销复审。现代钢铁初裁净补贴率为0.66%，浦项钢铁为1.10%。最终复审结果公布后，才按最终确定的补贴率调整相关现金保证金。",
+      "scope": "韩国原产涉案冷轧钢材及北美汽车、家电、机械等采购链。",
+      "impact": "使用韩国钢材的中国在美制造企业及贸易商应核对实际生产商、原产地与现有保证金率，区分初裁税率与报关时适用的税率；采购合同可约定复审终裁后的价款调整。",
+      "deadline": "11月23日公告；听证申请在公布后30日内提交；案件陈述期限为最终核查报告发布后7日，反驳意见为其后5日。",
+      "sources": [
+        {
+          "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23802/certain-cold-rolled-steel-flat-products-from-the-republic-of-korea-preliminary-results-and",
+          "label": "美国《联邦公报》复审初裁公告"
+        }
+      ]
+    },
+    {
+      "id": "us-magnesia-sunset",
+      "date": "2026-11-23",
+      "place": "美国／中国、墨西哥／美国国际贸易委员会",
+      "headline": "美国明确中墨镁碳砖双反措施加速期满复审日程",
+      "stage": "加速期满复审程序安排",
+      "rank": 4,
+      "body": "美国国际贸易委员会11月23日公布中国产及墨西哥产镁碳砖反倾销税令和中国产镁碳砖反补贴税令的加速期满复审日程。委员会此前于10月5日决定采取加速程序，本次公告新增工作人员报告及书面意见的具体提交时间，并将复审期限延长最多90日。",
+      "scope": "钢铁冶炼耐火材料、镁碳砖出口商及美国钢铁企业。",
+      "impact": "中国出口商应按现行税令继续测算税负，核查美国进口商库存与长期采购合同，及时协调参与复审的主体在规定期限内提交基于现有记录的意见。",
+      "deadline": "2027年1月13日计划发布工作人员报告；1月20日前提交书面意见，原则上不得引入新事实材料。",
+      "sources": [
+        {
+          "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23810/magnesia-carbon-bricks-from-china-and-mexico-scheduling-of-expedited-five-year-reviews",
+          "label": "美国《联邦公报》加速期满复审日程"
+        }
+      ]
     }
   ],
   "coverage": {
     "US": "11月23日联邦公报、OFAC最新行动",
     "EU": "11月23日欧盟官方公报C/2026/6060",
-    "Canada": "CBSA 11月23日案件清单及胶合板终裁；轮胎延期待复核"
+    "Canada": "CBSA 11月23日案件清单及胶合板终裁；轮胎延期待复核",
+    "UK": "11月23日FCDO两项名单及航空燃料政策说明",
+    "Japan": "巡视METI、财务省贸易与出口管理；未核实新增重大措施",
+    "Korea": "巡视KTC、产业主管部门及美国涉韩贸易救济公告，收录韩国冷轧钢复审",
+    "India": "DGTR案件清单与塑料加工机械更正原件；原件日期2025年6月26日，不收录",
+    "Australia": "ATRC 691、723、705案件卷宗；最新材料主要为当事方提交，未核实新实质决定"
   },
   "last_error": null,
   "next_actions": [
-    "完成英国、日本、韩国、印度、澳大利亚巡视及剩余候选核验",
-    "近7期事件级去重和终扫"
-  ]
+    "最终来源核验及结束前终扫",
+    "生成正文与入口、发布并验收"
+  ],
+  "dedup": {
+    "dates": [
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19",
+      "2026-11-20",
+      "2026-11-21",
+      "2026-11-22",
+      "2026-11-23"
+    ],
+    "result": "逐期完整读取并比对；7项均为新立案、终裁、名单指定、初裁或新程序日程，不重复前期已报道事项。"
+  }
 }
