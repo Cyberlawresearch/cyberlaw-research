@@ -1,8 +1,8 @@
 {
   "date": "2026-11-24",
   "base_main_sha": "bea1f25d9b07357274d88e04dee181ec84910be4",
-  "phase": "dedup_checked",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "eu-composite-safeguard",
@@ -155,8 +155,8 @@
   },
   "last_error": null,
   "next_actions": [
-    "最终来源核验及结束前终扫",
-    "生成正文与入口、发布并验收"
+    "发布三份HTML并回读",
+    "核验Pages部署及公开网页"
   ],
   "dedup": {
     "dates": [
@@ -169,5 +169,22 @@
       "2026-11-23"
     ],
     "result": "逐期完整读取并比对；7项均为新立案、终裁、名单指定、初裁或新程序日程，不重复前期已报道事项。"
-  }
+  },
+  "source_verification": {
+    "status": "verified",
+    "links": [
+      "https://eur-lex.europa.eu/eli/C/2026/6060/oj/eng/pdf",
+      "https://www.cbsa-asfc.gc.ca/sima-lmsi/i-e/donp22026/donp22026-nf-eng.html",
+      "https://ofac.treasury.gov/recent-actions/20261123",
+      "https://home.treasury.gov/news/press-releases/sb0699",
+      "https://www.federalregister.gov/documents/2026/11/23/2026-23751/plastic-balloons-from-china-institution-of-antidumping-and-countervailing-duty-investigations-and",
+      "https://www.gov.uk/government/news/uk-leads-global-action-with-major-new-measures-against-myanmar-military-following-landmark-genocide-judgment",
+      "https://assets.publishing.service.gov.uk/media/6b045944e676615eab145929/Sanctions_Notice__Myanmar__23_November_2026.pdf",
+      "https://assets.publishing.service.gov.uk/media/6b046bfc5d1e916c0914593a/Sanctions_Notice__Global_Human_Rights_and_International_Humanitarian_Law__23_November_2026.pdf",
+      "https://www.federalregister.gov/documents/2026/11/23/2026-23802/certain-cold-rolled-steel-flat-products-from-the-republic-of-korea-preliminary-results-and",
+      "https://www.federalregister.gov/documents/2026/11/23/2026-23810/magnesia-carbon-bricks-from-china-and-mexico-scheduling-of-expedited-five-year-reviews"
+    ],
+    "note": "全部入选来源逐一打开并复核正文；EUR-Lex PDF截图接口返回DisabledError，原文全文已读取。加拿大轮胎延期公告直接打开超时，未收入。"
+  },
+  "final_sweep": "11月23日至24日各主要法域官方公告、联邦公报、欧盟公报、英国制裁及贸易救济公告、亚洲及澳加案件检索复核；无其他经核实且达到收录标准的新增事件。"
 }
