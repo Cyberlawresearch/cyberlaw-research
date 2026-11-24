@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-24",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-24-jellinek-declaration-rights.html",
+  "target_path": "articles/2026-11-24-jellinek-declaration-rights.html",
+  "book": {
+    "author": "Georg Jellinek（格奥尔格·耶利内克）",
+    "original_title": "Die Erklärung der Menschen- und Bürgerrechte. Ein Beitrag zur modernen Verfassungsgeschichte",
+    "publisher": "Duncker & Humblot",
+    "year": "1895",
+    "edition": "1901年Max Farrand经作者授权的英译本（作者修订）；以1895年德文初版为成书依据"
+  },
+  "source_urls": [
+    "https://dev.gutenberg.org/cache/epub/29815/pg29815-images.html",
+    "https://www.gutenberg.org/ebooks/29815",
+    "https://openlibrary.org/books/OL7147830M/The_declaration_of_the_rights_of_man_and_of_citizens",
+    "https://www.elysee.fr/en/french-presidency/the-declaration-of-the-rights-of-man-and-of-the-citizen",
+    "https://www.cambridge.org/core/journals/law-and-history-review/article/abs/revisiting-the-rights-of-man-georg-jellinek-on-rights-and-the-state/98A9B2A5D35F3F115978BECD09B1CEBE",
+    "https://education.persee.fr/doc/revin_1775-6014_1904_num_48_2_5123_t1_0187_0000_2",
+    "https://www.academia.edu/118039715/Sur_linfluence_en_histoire_des_id%C3%A9es"
+  ],
+  "original_verification": "核对1901年经作者授权并修订的Max Farrand英译完整文本九章：法国宣言公法意义、卢梭、美国独立宣言、各州权利法案、十七条文本比较、英国传统、宗教自由、权利的政治形成、个人与国家历史关系；核对题名页和译者序。不宣称逐字校勘1895年德文版或后续版。",
+  "critics": [
+    {
+      "name": "Émile Boutmy",
+      "work": "La Déclaration des droits de l’homme et du citoyen et M. Jellinek, Annales des sciences politiques 17 (1902), 415–443",
+      "url": "https://www.cambridge.org/core/journals/law-and-history-review/article/abs/revisiting-the-rights-of-man-georg-jellinek-on-rights-and-the-state/98A9B2A5D35F3F115978BECD09B1CEBE",
+      "checked": "通过Kelly研究和思想史争论研究核对具名批评与刊载信息，未声称读完1902年原文。",
+      "additional_url": "https://www.academia.edu/118039715/Sur_linfluence_en_histoire_des_id%C3%A9es"
+    },
+    {
+      "name": "Achille Mestre",
+      "work": "1904年书评",
+      "url": "https://education.persee.fr/doc/revin_1775-6014_1904_num_48_2_5123_t1_0187_0000_2",
+      "checked": "核对书评原文及宣言效力争论。"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html全部历史索引",
+    "classics-history.html完整旧索引",
+    "data/books.json",
+    "main递归树当日路径检查"
+  ],
+  "duplicate_found": false,
+  "sections": 38,
+  "prose_length": 13028,
+  "han_characters": 11935,
+  "checked_at": "2026-11-24",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
