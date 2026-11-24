@@ -153,9 +153,15 @@
     "India": "DGTR案件清单与塑料加工机械更正原件；原件日期2025年6月26日，不收录",
     "Australia": "ATRC 691、723、705案件卷宗；最新材料主要为当事方提交，未核实新实质决定"
   },
-  "last_error": null,
+  "last_error": {
+    "phase": "public_page_verification",
+    "tool": "web.open",
+    "error": "URL is not accessible via this tool（两次检查均未返回网页正文）",
+    "retries": 1,
+    "main_files_present": true
+  },
   "next_actions": [
-    "核验最终提交对应Pages及公开页面"
+    "Pages部署完成后核验当期、首页、归档的公开内容及源链接；目前仓库写入及回读已通过"
   ],
   "dedup": {
     "dates": [
@@ -201,6 +207,24 @@
       "links": 10,
       "archive_count": 77
     },
-    "pages": "pending verification"
+    "pages": {
+      "run_id": 45301588512,
+      "run_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/45301588512",
+      "head_sha": "641cde2aacbba34902bf63bc711af5aaf82cb9c2",
+      "status": "in_progress",
+      "job": "latest",
+      "step": "Allow only the current main commit to deploy",
+      "source_diagnostics": "尚无最终提交完成后的有效诊断结果；现有诊断任务为skipped",
+      "public_pages": {
+        "attempts": 2,
+        "status": "not_verified",
+        "error": "web.open: URL is not accessible via this tool",
+        "paths": [
+          "issues/2026-11-24.html",
+          "index.html",
+          "archive.html"
+        ]
+      }
+    }
   }
 }
