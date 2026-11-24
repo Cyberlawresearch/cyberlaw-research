@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-24",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-24-new-works.html",
+  "page_blob_sha": "9e9acd6d10e292f8b223c22aa5ffa2137bb9d1aa",
+  "newworks_count": 3,
+  "checked_at": "2026-11-24T12:30:31.833Z",
+  "checks": {
+    "publisher_original_source_verified": true,
+    "original_title_author_doi_verified": true,
+    "publication_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "historical_indexes_checked": true,
+    "github_code_search_done": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html and new-works-history.html, main",
+      "GitHub default-branch repository code search: three journal DOIs, original titles, all author names, and Machado/Anjos SSRN DOI; inspected matching Fia entry dated 2026-09-16 (different work)"
+    ],
+    "matches_found_for_selected": 0,
+    "scope_note": "All history indexes read and repository-wide search performed; individual full-page scan was attempted but exceeded tool-call limit, not asserted complete.",
+    "version_distinction": "Machado and Anjos journal DOI ipaf008 distinguished from SSRN 5348994; Fia and Loddo journal article numbers verified on publisher pages."
+  },
+  "items": [
+    {
+      "cn_title": "欧盟与巴西如何认定完全自动化决策",
+      "author": "Diego Machado、Lucas Anjos",
+      "original_title": "Is that a fully automated decision? Comparing ADM regulation under EU and Brazil’s data protection law",
+      "journal": "International Data Privacy Law",
+      "publisher": "Oxford University Press",
+      "year": 2025,
+      "publication_date": "2025-09-16",
+      "volume": "15",
+      "issue": "4",
+      "pages": "372–397",
+      "article_number": null,
+      "doi": "10.1093/idpl/ipaf008",
+      "publisher_page": "https://academic.oup.com/idpl/article-abstract/15/4/372/8255844",
+      "version": "Published journal version of record"
+    },
+    {
+      "cn_title": "数据市场中的公平原则应当保护什么",
+      "author": "Tommaso Fia",
+      "original_title": "Fairness in market instrumental data law",
+      "journal": "International Journal of Law and Information Technology",
+      "publisher": "Oxford University Press",
+      "year": 2025,
+      "publication_date": "2025-07-15",
+      "volume": "33",
+      "issue": null,
+      "pages": null,
+      "article_number": "eaaf012",
+      "doi": "10.1093/ijlit/eaaf012",
+      "publisher_page": "https://academic.oup.com/ijlit/article-abstract/doi/10.1093/ijlit/eaaf012/8202774",
+      "version": "Published journal version of record"
+    },
+    {
+      "cn_title": "数字系统如何在没有明文规则时约束人的行为",
+      "author": "Olimpia Giuliana Loddo",
+      "original_title": "Regulatory digital artefacts: digital regulation with and without rules",
+      "journal": "International Journal of Law and Information Technology",
+      "publisher": "Oxford University Press",
+      "year": 2025,
+      "publication_date": "2025-12-18",
+      "volume": "33",
+      "issue": null,
+      "pages": null,
+      "article_number": "eaaf016",
+      "doi": "10.1093/ijlit/eaaf016",
+      "publisher_page": "https://academic.oup.com/ijlit/article/doi/10.1093/ijlit/eaaf016/8383453",
+      "version": "Published journal version of record"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "c384ee29a82b82bad5c08f7cb38d5b0fc7cacf44",
+    "last_complete_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": null
+  }
+}
