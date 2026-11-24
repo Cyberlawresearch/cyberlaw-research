@@ -1,0 +1,285 @@
+{
+  "date": "2026-11-24",
+  "state": "draft",
+  "publication_ready": false,
+  "phase": "source_coverage_review_incomplete",
+  "base_main_sha": "641cde2aacbba34902bf63bc711af5aaf82cb9c2",
+  "items": [
+    {
+      "id": "news-1",
+      "date": "2026-11-23",
+      "jurisdiction": "中国",
+      "institution": "国家数据局、教育部",
+      "title": "两部门启动数据领域高技能人才集群培养计划",
+      "summary": "全国数据职业教育教学指导委员会成立，两部门启动数据领域高技能人才集群培养计划，围绕数据产业人才培养部署相关任务。计划面向2030年推进数据领域职业教育与产业需求衔接。",
+      "original_title": "央视新闻 | 两部门：实施数据领域高技能人才集群培养计划",
+      "source_url": "https://www.nda.gov.cn/sjj/swdt/mtsy/1123/20261123162254445879166_pc.html",
+      "legal_status": "培养计划",
+      "source_opened": true,
+      "review_status": "candidate",
+      "insight": "",
+      "background": "",
+      "research_topics": []
+    },
+    {
+      "id": "news-2",
+      "date": "2026-11-22",
+      "jurisdiction": "中国、美国",
+      "institution": "商务部、FCC",
+      "title": "商务部回应美国拟限制中国电信运营商获取互联网电话号码资源",
+      "summary": "商务部新闻发言人就美国联邦通信委员会拟禁止中国电信运营商直接获取美国互联网电话号码资源答记者问。商务部表示反对，敦促美方撤销有关措施，并表示将采取必要措施维护中国企业合法权益。FCC于11月19日表决推进相关提议。",
+      "original_title": "商务部新闻发言人就美国联邦通信委员会拟禁止中国电信运营商直接获取美国互联网电话号码资源答记者问",
+      "source_url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_a8a703480a3a4720a247c584d9f77eeb.html",
+      "legal_status": "政策回应；美国提议",
+      "source_opened": true,
+      "review_status": "candidate",
+      "insight": "",
+      "background": "",
+      "research_topics": []
+    },
+    {
+      "id": "news-3",
+      "date": "2026-11-24",
+      "jurisdiction": "中国",
+      "institution": "工业和信息化部",
+      "title": "前三季度数字产业收入同比增长14.8%",
+      "summary": "据工信部公布的数据，前三季度数字产业收入32.41万亿元，同比增长14.8%；利润总额2.78万亿元，同比增长23.4%。数字产品制造业和数字技术应用业收入分别为19.32万亿元、13.09万亿元。",
+      "original_title": "工信部：前三季度数字产业收入32.41万亿元同比增长14.8%",
+      "source_url": "https://www.guandian.cn/article/20261124/632108.html",
+      "legal_status": "产业统计；已读媒体报道，官方直链待复核",
+      "source_opened": true,
+      "review_status": "candidate",
+      "insight": "",
+      "background": "",
+      "research_topics": []
+    },
+    {
+      "id": "news-4",
+      "date": "2026-11-24",
+      "jurisdiction": "澳大利亚",
+      "institution": "议会联合特别委员会",
+      "title": "澳大利亚议会委员会建议建立AI训练创作者报酬及数据中心许可制度",
+      "summary": "澳大利亚议会联合特别委员会提出46项建议，包括为人工智能训练涉及的创作者建立报酬机制，以及针对数据中心的用水、用电和选址制定许可要求。报告还建议完善人工智能事故监测和报告安排。",
+      "original_title": "AI inquiry backs creator payments, tougher safeguards and data centre licensing",
+      "source_url": "https://www.abc.net.au/news/2026-11-24/labor-and-coalition-find-common-ground-on-ai/107422394",
+      "legal_status": "议会委员会建议",
+      "source_opened": true,
+      "review_status": "candidate",
+      "insight": "",
+      "background": "",
+      "research_topics": []
+    },
+    {
+      "id": "news-5",
+      "date": "2026-11-23",
+      "jurisdiction": "国际组织",
+      "institution": "联合国",
+      "title": "联合国秘书长呼吁加强人工智能安全领域多边合作",
+      "summary": "联合国秘书长在巴巴多斯布里奇敦人工智能安全特别峰会上呼吁建立多边风险管理和独立监督机制。他提出推动评估方法、风险术语及事故信息共享的互操作性，加强各国治理能力。",
+      "original_title": "SECRETARY-GENERAL REMARKS AT THE BRIDGETOWN SPECIAL SUMMIT ON AI SAFETY",
+      "source_url": "https://easterncaribbean.un.org/en/326534-secretary-general-remarks-bridgetown-special-summit-ai-safety",
+      "legal_status": "讲话；政策倡议",
+      "source_opened": true,
+      "review_status": "candidate",
+      "insight": "",
+      "background": "",
+      "research_topics": [],
+      "additional_sources": [
+        "https://www.news.cn/world/20261124/9db51366dfa14c359547b39a45c89639/c.html"
+      ]
+    },
+    {
+      "id": "news-6",
+      "date": "2026-11-23",
+      "jurisdiction": "西班牙",
+      "institution": "西甲联盟、西班牙数据保护局",
+      "title": "西甲联盟披露网络攻击及数据外泄事件",
+      "summary": "西甲联盟披露，11月14日至16日期间发生网络攻击并有数据被提取，涉及球迷平台及俱乐部相关信息。联盟已向警方和西班牙数据保护局报告，正在调查受影响数据的范围。",
+      "original_title": "LaLiga data extracted in cyber attack",
+      "source_url": "https://www.reuters.com/legal/litigation/laliga-data-extracted-cyber-attack-2026-11-23/",
+      "legal_status": "事故披露及调查",
+      "source_opened": true,
+      "review_status": "candidate",
+      "insight": "",
+      "background": "",
+      "research_topics": []
+    },
+    {
+      "id": "news-7",
+      "date": "2026-11-23",
+      "jurisdiction": "英国",
+      "institution": "Next",
+      "title": "英国零售商Next披露线上供应商网络安全事件",
+      "summary": "Next披露其线上供应商发生网络安全事件，部分公司数据受到未经授权访问。根据公司当时掌握的证据，尚未发现客户数据受到影响，调查正在进行。",
+      "original_title": "UK's Next flags cyber breach at online supplier, says no customer data compromised",
+      "source_url": "https://www.reuters.com/legal/government/uks-next-flags-cyber-breach-online-supplier-says-no-customer-data-compromised-2026-11-23/",
+      "legal_status": "企业事故披露",
+      "source_opened": true,
+      "review_status": "candidate",
+      "insight": "",
+      "background": "",
+      "research_topics": []
+    },
+    {
+      "id": "news-8",
+      "date": "2026-11-23",
+      "jurisdiction": "美国",
+      "institution": "K&L Gates",
+      "title": "美国律所K&L Gates就数据安全事件通知客户及监管机构",
+      "summary": "K&L Gates披露其工作站于4月遭未经授权的远程访问，涉及部分含社会保障号码和医疗信息的文件。律所于9月完成相关审查，并正在代表客户通知可能受影响的人员；此前已向佛蒙特州有关机关报告。",
+      "original_title": "Law firm K&L Gates notifies clients, state authorities about data security breach",
+      "source_url": "https://www.reuters.com/legal/litigation/law-firm-kl-gates-notifies-clients-state-authorities-about-data-security-breach-2026-11-23/",
+      "legal_status": "新增通知及事故披露",
+      "source_opened": true,
+      "review_status": "candidate",
+      "insight": "",
+      "background": "",
+      "research_topics": []
+    },
+    {
+      "id": "news-9",
+      "date": "2026-11-22",
+      "jurisdiction": "美国",
+      "institution": "OpenRouter",
+      "title": "OpenRouter披露推理服务商数据处理违规并移除相关供应商",
+      "summary": "OpenRouter披露在推理供应商审查中发现安全及数据处理政策违规，已移除三家供应商，并将125个端点排除出零数据保留适用范围，其中包括预防性调整。平台已通知相关客户，并开展对数据处理及网络路径的核查。",
+      "original_title": "Data Processing Incidents on Inference Providers",
+      "source_url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "legal_status": "企业安全事件公告",
+      "source_opened": true,
+      "review_status": "candidate",
+      "insight": "",
+      "background": "",
+      "research_topics": []
+    },
+    {
+      "id": "news-10",
+      "date": "2026-11-24",
+      "jurisdiction": "美国、新加坡",
+      "institution": "美国商务部、新加坡政府",
+      "title": "美国将Megaspeed等企业列入限制名单，新加坡披露正在调查",
+      "summary": "路透社报道，美国将Megaspeed、阿里巴巴在新加坡的子公司Apex等企业列入限制名单。11月24日，新加坡总理表示有关部门正在调查Megaspeed是否违反当地法律。",
+      "original_title": "Singapore investigating Nvidia-linked Megaspeed after US blacklisting",
+      "source_url": "https://www.reuters.com/world/singapore-investigating-nvidia-linked-megaspeed-after-us-blacklisting-2026-11-24/",
+      "legal_status": "新增限制措施及调查披露",
+      "source_opened": true,
+      "review_status": "candidate",
+      "insight": "",
+      "background": "",
+      "research_topics": [],
+      "additional_sources": [
+        "https://www.reuters.com/business/us-blacklist-megaspeed-chip-firm-linked-nvidia-scandal-source-says-2026-11-23/"
+      ]
+    },
+    {
+      "id": "news-11",
+      "date": "2026-11-24",
+      "jurisdiction": "马来西亚",
+      "institution": "马来西亚总理",
+      "title": "马来西亚总理回应美国芯片限制措施",
+      "summary": "马来西亚总理在11月24日刊发的采访中表示，将关注涉及美国企业的相关条件，同时继续与中国开展合作。采访内容涉及美国芯片限制措施及马来西亚对外科技合作立场。",
+      "original_title": "US chip curbs won't impact Malaysia's China ties, PM says",
+      "source_url": "https://www.reuters.com/business/media-telecom/us-chip-curbs-wont-impact-malaysias-china-ties-pm-says-2026-11-24/",
+      "legal_status": "新刊采访；政策表态",
+      "source_opened": true,
+      "review_status": "candidate",
+      "insight": "",
+      "background": "",
+      "research_topics": []
+    }
+  ],
+  "checks": {
+    "source_coverage_complete": false,
+    "domestic_major_omission_review": false,
+    "international_coverage_complete": false,
+    "all_items_final_verified": false,
+    "seven_day_dedup_complete": false,
+    "final_scan_complete": false,
+    "layout_complete": false
+  },
+  "coverage": {
+    "domestic": {
+      "opened": [
+        "国家数据局新闻原文及地方动态",
+        "商务部答记者问",
+        "中央网信办",
+        "工信部",
+        "市场监管总局",
+        "最高法",
+        "发改委",
+        "人民银行",
+        "证监会",
+        "国家知识产权局",
+        "国家能源局",
+        "TC260",
+        "TC609",
+        "CNCERT",
+        "观点网"
+      ],
+      "unavailable_or_incomplete": [
+        "国务院最新政策403",
+        "人大超时",
+        "科技部无可读正文",
+        "最高检403",
+        "金融监管总局超时",
+        "公安部超时",
+        "信通院412",
+        "部分地方、标准机构及专业媒体尚未逐项完成"
+      ],
+      "extra_reverse_search": "国内候选不足6条，已开展额外主题检索，仍未完成全部覆盖"
+    },
+    "international": {
+      "opened": [
+        "联合国",
+        "ABC澳大利亚",
+        "Reuters",
+        "OpenRouter",
+        "日本PPC",
+        "韩国PIPC",
+        "越南公安部",
+        "AP"
+      ],
+      "incomplete": [
+        "美国联邦及州机关逐项巡视",
+        "欧盟及成员国监管机构逐项巡视",
+        "英国及其他法域逐项巡视",
+        "日本韩国越南本地语完整复核"
+      ]
+    },
+    "dedup": "已读取11月17—23日新闻记录标题，进行候选初步比对；尚未完成逐条最终复核。",
+    "excluded_or_pending": [
+      {
+        "topic": "公安部公布10起AI工具编造传播网络谣言案例",
+        "reason": "人民网及司法部转载链接正文无法直接读取，未纳入",
+        "urls": [
+          "https://society.people.com.cn/n1/2026/1124/c1008-40839556.html",
+          "https://legalinfo.moj.gov.cn/pub/sfbzhfx/zhfxfzzx/fzzxyw/202611/t20261124_542183.html"
+        ]
+      },
+      {
+        "topic": "重庆词元产业计划",
+        "reason": "11月24日转载的文件落款10月29日，尚未核实首发是否在72小时内"
+      },
+      {
+        "topic": "越南数据安全法",
+        "reason": "11月20日通过，超出72小时窗口"
+      },
+      {
+        "topic": "欧盟学院数据泄露",
+        "reason": "已读取AP报道，原文标题及与前期欧委会安全事件关系待最终复核",
+        "url": "https://apnews.com/article/european-commission-cyberattack-website-artex-ai-02e1f69e46ad9f82484b66b2f86df53b"
+      }
+    ]
+  },
+  "next_actions": [
+    "补足国内地方、标准化、专业媒体及国际机构覆盖",
+    "逐条复核事件日期、来源原题和法律状态，排除重复事件",
+    "完成发布前终扫与页面校验后方可提交main"
+  ],
+  "last_error": "来源访问受阻及覆盖尚未完成；未满足发布条件",
+  "publication": {
+    "main_committed": false,
+    "pages_deployed": false,
+    "online_verified": false
+  }
+}
