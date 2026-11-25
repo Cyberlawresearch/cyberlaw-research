@@ -1,7 +1,7 @@
 {
   "date": "2026-11-25",
   "base_main_sha": "fce743855083f90493cf3241869a22157d734ee8",
-  "phase": "dedup_completed",
+  "phase": "source_checked",
   "publication_ready": false,
   "items": [
     {
@@ -56,12 +56,12 @@
       "body": "美国商务部发布反规避初裁，认定在越南以中国原产热轧钢生产的涉案钢制车轮规避对华反倾销、反补贴税令，适用全国范围初裁。海关将对自2026年3月19日立案日起尚未清算的涉案进口暂停清算并收取保证金。使用非中国原产热轧钢的产品须结合认证资格和文件要求确定待遇。",
       "scope": "涉案越南加工钢制车轮及其中国热轧钢投入品。",
       "impact": "出口商和美国进口商应核对钢材炉批、采购凭证与生产记录，评估历史报关保证金风险，核实认证资格后再申报，不宜仅凭越南成品原产地证明判断双反税适用。",
-      "deadline": "11月24日公告；案件陈述通常在公告后14日内提交，反驳意见其后7日内提交。",
+      "deadline": "11月24日公告；案件陈述12月8日前提交，反驳意见12月15日前提交；听证申请12月24日前提出。",
       "rank": 5,
       "sources": [
         {
-          "url": "https://thefederalregister.org/documents/2026-23943/certain-steel-wheels-from-the-people-s-republic-of-china-preliminary-affirmative-determination-of-circumvention-of-the-a",
-          "label": "美国联邦公报2026-23943号（全文转载）"
+          "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23943/certain-steel-wheels-from-the-peoples-republic-of-china-preliminary-affirmative-determination-of",
+          "label": "美国联邦公报2026-23943号"
         }
       ]
     },
@@ -71,20 +71,20 @@
       "region": "中国／美国",
       "agency": "中国商务部",
       "title": "中国延长对美部分关键矿产特别出口限制的暂停期",
-      "stage": "主管机关宣布延长暂停期",
-      "body": "据路透社及中央社11月24日报道，中国商务部宣布将2024年第46号公告第二款的暂停期延长两个月，涉及对美镓、锗、锑、超硬材料相关两用物项原则上不予许可及石墨两用物项更严格的最终用户和最终用途审查。原有一般两用物项出口许可及针对美国军事用户、军事用途的禁止性规定仍适用。",
+      "stage": "商务部公告已公布，11月28日起延长暂停",
+      "body": "中国商务部11月24日公布2026年第59号公告，将2024年第46号公告第二款的暂停期延长两个月，涉及对美镓、锗、锑、超硬材料相关两用物项原则上不予许可及石墨两用物项更严格的最终用户和最终用途审查。原有一般两用物项出口许可及针对美国军事用户、军事用途的禁止性规定仍适用。",
       "scope": "关键矿产相关两用物项及美国半导体、光纤、新能源电池等供应链。",
       "impact": "供应商可据暂停期限重新安排民用订单和出口许可申请，但须核对物项清单、实际最终用户与用途，不能以延期替代一般出口许可或放松军事用途筛查。",
       "deadline": "新暂停期为2026年11月28日至2027年1月27日。",
       "rank": 5,
       "sources": [
         {
-          "url": "https://www.reuters.com/markets/commodities/china-extends-suspension-ban-us-bound-gallium-germanium-antimony-exports-2026-11-24/",
-          "label": "路透社：商务部宣布延长暂停期"
+          "url": "https://aqygzj.mofcom.gov.cn/qdml/art/2026/art_98ae61c2a60f43638304f2e6a43f952f.html",
+          "label": "商务部公告2026年第59号"
         },
         {
-          "url": "https://www.cna.com.tw/news/acn/202611240273.aspx",
-          "label": "中央社：公告条款与暂停期限"
+          "url": "https://www.reuters.com/markets/commodities/china-extends-suspension-ban-us-bound-gallium-germanium-antimony-exports-2026-11-24/",
+          "label": "路透社：适用物项及背景"
         }
       ]
     },
@@ -148,12 +148,12 @@
       "rank": 4,
       "sources": [
         {
-          "url": "https://thefederalregister.org/documents/2026-23942/certain-corrosion-resistant-steel-products-from-the-peoples-republic-of-china-preliminary-negative-determination-of-cir",
-          "label": "美国联邦公报2026-23942号（全文转载）"
+          "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23942/certain-corrosion-resistant-steel-products-from-the-peoples-republic-of-china-preliminary-negative",
+          "label": "美国联邦公报2026-23942号"
         },
         {
-          "url": "https://thefederalregister.org/documents/2026-23944/certain-corrosion-resistant-steel-products-from-the-socialist-republic-of-vietnam-preliminary-negative-determination-of-",
-          "label": "美国联邦公报2026-23944号（全文转载）"
+          "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23944/certain-corrosion-resistant-steel-products-from-the-socialist-republic-of-vietnam-preliminary",
+          "label": "美国联邦公报2026-23944号"
         }
       ]
     },
@@ -170,6 +170,10 @@
       "deadline": "11月24日适用；商务部计划在公告至少35日后向海关发出清算指令。",
       "rank": 4,
       "sources": [
+        {
+          "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23939/certain-passenger-vehicle-and-light-truck-tires-from-the-peoples-republic-of-china-final-results-of",
+          "label": "美国联邦公报2026-23939号"
+        },
         {
           "url": "https://thefederalregister.org/documents/2026-23939/certain-passenger-vehicle-and-light-truck-tires-from-the-peoples-republic-of-china-final-results-of-antidumping-duty-ad",
           "label": "美国联邦公报2026-23939号（全文转载）"
@@ -190,6 +194,10 @@
       "rank": 4,
       "sources": [
         {
+          "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23941/hydrofluorocarbon-blends-from-the-peoples-republic-of-china-final-results-of-antidumping-duty",
+          "label": "美国联邦公报2026-23941号"
+        },
+        {
           "url": "https://thefederalregister.org/documents/2026-23941/hydrofluorocarbon-blends-from-the-peoples-republic-of-china-final-results-of-antidumping-duty-administrative-review-202",
           "label": "美国联邦公报2026-23941号（全文转载）"
         }
@@ -209,8 +217,7 @@
   },
   "last_error": null,
   "next_actions": [
-    "终核全部来源",
-    "终扫后发布"
+    "确认最新消息及发布"
   ],
   "dedup": {
     "dates": [
@@ -261,5 +268,13 @@
       }
     ],
     "result": "9条候选均为11月24日独立新事件或新法律阶段。昨日胶合板、玻璃纤维、伊朗名单及旧BIS远程算力措施不重复；本期美国法院裁决、两项印尼初裁、钢制车轮初裁、轮胎和制冷剂终裁、欧盟混动车配额、中国关键矿产延期、301调查报道、英国也门制裁均与前7期不同。"
+  },
+  "source_check": {
+    "complete": true,
+    "count": 16,
+    "method": "逐一打开具体公告、法令及报道；联邦公报官方链接通过文档归档页直达。轮胎和HFC官方页面已首次打开，重复读取遇到Request Access，保留已打开的相同公报全文归档链接作为补充；其他均直接打开。商务部第59号公告从管制局清单目录进入核实。",
+    "issues": [
+      "联邦公报23939、23941再次读取出现访问验证，已核对全文转载并保留补充链接。"
+    ]
   }
 }
