@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-25",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-25-new-works.html",
+  "page_blob_sha": "ccd0d28aaff8f768ceecc8e674a2bc1881521908",
+  "newworks_count": 3,
+  "checked_at": "2026-11-25T20:30:12+08:00",
+  "checks": {
+    "publisher_original_source_verified": true,
+    "original_title_author_doi_verified": true,
+    "publication_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "historical_indexes_checked": true,
+    "github_code_search_done": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html",
+      "new-works-history.html",
+      "archive.html",
+      "GitHub default-branch code search by article identifiers, distinctive original titles and author names"
+    ],
+    "matches_found_for_selected": 0,
+    "scope_note": "Both historical indexes checked and repository code searches completed. Individual archived HTML pages were not exhaustively fetched. Rupprecht Podszun matched a different September 19 article; that page was opened to distinguish the works. Other duplicate candidates were excluded.",
+    "version_distinction": "First two articles are published journal advance articles (not working papers); no volume or issue asserted. Third is the Springer Nature version of record."
+  },
+  "items": [
+    {
+      "cn_title": "数字平台竞争监管如何影响国际数字贸易",
+      "author": "Shin-yi Peng",
+      "original_title": "Reviving the trade and competition nexus in digital platform governance",
+      "journal": "Journal of International Economic Law",
+      "publisher": "Oxford University Press",
+      "year": 2026,
+      "publication_date": "2026-10-21",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": "jgag033",
+      "doi": "10.1093/jiel/jgag033",
+      "publisher_page": "https://academic.oup.com/jiel/advance-article/doi/10.1093/jiel/jgag033/8965369",
+      "version": "Published journal advance article"
+    },
+    {
+      "cn_title": "欧盟与英国数字平台监管如何借助市场主体参与改进执法",
+      "author": "Jasper van den Boom、Sarah Hinck、Rupprecht Podszun、Oles Andriychuk",
+      "original_title": "The iterative nature of digital regulation: stakeholder-driven enforcement in the DMA and DMCCA",
+      "journal": "Journal of European Competition Law & Practice",
+      "publisher": "Oxford University Press",
+      "year": 2026,
+      "publication_date": "2026-03-31",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": "lpag013",
+      "doi": "10.1093/jeclap/lpag013",
+      "publisher_page": "https://academic.oup.com/jeclap/advance-article/doi/10.1093/jeclap/lpag013/8566324",
+      "version": "Published journal advance article"
+    },
+    {
+      "cn_title": "法院使用人工智能时如何保障当事人的异议权与救济权",
+      "author": "Shahzeb Murad",
+      "original_title": "Algorithmic equity and digital jurisprudence: contestable AI, cybersecurity, and blockchain evidence in contemporary justice systems",
+      "journal": "AI and Ethics",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-11-23",
+      "volume": "6",
+      "issue": null,
+      "pages": null,
+      "article_number": "681",
+      "doi": "10.1007/s43681-026-01538-w",
+      "publisher_page": "https://link.springer.com/article/10.1007/s43681-026-01538-w",
+      "version": "Published journal version of record"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "29ca5e7be4495db57676c385741294b9d4199516",
+    "last_complete_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": null
+  }
+}
