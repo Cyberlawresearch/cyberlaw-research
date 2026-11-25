@@ -1,9 +1,32 @@
 {
   "date": "2026-11-25",
   "base_main_sha": "fce743855083f90493cf3241869a22157d734ee8",
-  "phase": "researching_verified_first_batch",
+  "phase": "researching_second_batch",
   "publication_ready": false,
   "items": [
+    {
+      "id": "us-huawei-verdict",
+      "date": "2026-11-24",
+      "region": "美国",
+      "agency": "纽约东区联邦地区法院、司法部",
+      "title": "美国陪审团就华为涉伊朗制裁及银行欺诈案作出有罪裁决",
+      "stage": "陪审团裁决，尚待量刑及上诉程序",
+      "body": "美国司法部11月24日宣布，纽约东区联邦法院陪审团认定华为及三家子公司在涉伊朗制裁、银行和电信欺诈、商业秘密及洗钱共谋等罪名上有罪。路透社报道，华为面临的12项指控中10项获有罪裁决，敲诈勒索共谋与妨碍司法共谋两项获无罪裁决；华为律师表示预计提出上诉。",
+      "scope": "华为及涉案子公司，跨境银行结算、受制裁市场业务及技术合作。",
+      "impact": "企业应保证银行客户尽职调查资料与实际业务、关联公司控制关系、最终客户相符；对受制裁地区项目审查支付路径和许可依据，并建立第三方技术资料的授权及留痕机制。裁决本身未新增出口管制清单。",
+      "deadline": "11月24日作出裁决；据路透社，量刑定于2027年9月14日。",
+      "rank": 5,
+      "sources": [
+        {
+          "url": "https://www.justice.gov/opa/pr/chinese-tech-giant-huawei-and-subsidiaries-convicted-sanctions-violations-fraud-conspiracy",
+          "label": "美国司法部11月24日公告"
+        },
+        {
+          "url": "https://www.reuters.com/legal/litigation/chinas-huawei-convicted-us-criminal-trial-stemming-iran-business-2026-11-24/",
+          "label": "路透社：陪审团裁决、量刑时间及华为回应"
+        }
+      ]
+    },
     {
       "id": "eu-hybrid-quota",
       "date": "2026-11-24",
@@ -43,6 +66,52 @@
       ]
     },
     {
+      "id": "cn-us-critical-materials",
+      "date": "2026-11-24",
+      "region": "中国／美国",
+      "agency": "中国商务部",
+      "title": "中国延长对美部分关键矿产特别出口限制的暂停期",
+      "stage": "主管机关宣布延长暂停期",
+      "body": "据路透社及中央社11月24日报道，中国商务部宣布将2024年第46号公告第二款的暂停期延长两个月，涉及对美镓、锗、锑、超硬材料相关两用物项原则上不予许可及石墨两用物项更严格的最终用户和最终用途审查。原有一般两用物项出口许可及针对美国军事用户、军事用途的禁止性规定仍适用。",
+      "scope": "关键矿产相关两用物项及美国半导体、光纤、新能源电池等供应链。",
+      "impact": "供应商可据暂停期限重新安排民用订单和出口许可申请，但须核对物项清单、实际最终用户与用途，不能以延期替代一般出口许可或放松军事用途筛查。",
+      "deadline": "新暂停期为2026年11月28日至2027年1月27日。",
+      "rank": 5,
+      "sources": [
+        {
+          "url": "https://www.reuters.com/markets/commodities/china-extends-suspension-ban-us-bound-gallium-germanium-antimony-exports-2026-11-24/",
+          "label": "路透社：商务部宣布延长暂停期"
+        },
+        {
+          "url": "https://www.cna.com.tw/news/acn/202611240273.aspx",
+          "label": "中央社：公告条款与暂停期限"
+        }
+      ]
+    },
+    {
+      "id": "us-301-capacity",
+      "date": "2026-11-24",
+      "region": "美国",
+      "agency": "美国贸易代表办公室（USTR）",
+      "title": "美国据报将公布针对16个经济体制造业产能的301调查结果及关税方案",
+      "stage": "媒体报道的政策信号，未公布正式新税率",
+      "body": "路透社11月24日援引知情人士称，美国政府拟公布制造业结构性产能过剩301调查结果，可能提出按经济体差异设置的新增关税。USTR于3月11日正式启动针对中国、欧盟、日本、韩国、印度、墨西哥等16个经济体的调查。报道发布时具体税率及商品范围尚不明确。",
+      "scope": "16个被调查经济体的制造业商品及跨国生产、采购链。",
+      "impact": "输美企业可按不同商品和生产地测算新增关税情景，复核合同中的税费调整条款和原产地证据；实际报关仍按当期适用税则和现行措施执行。",
+      "deadline": "11月24日媒体披露；正式方案发布时间、意见期限及生效日尚未确定。",
+      "rank": 5,
+      "sources": [
+        {
+          "url": "https://www.reuters.com/world/us/trump-administration-set-unveil-new-tariffs-after-probe-on-excess-factory-2026-11-24/",
+          "label": "路透社11月24日报道"
+        },
+        {
+          "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/march/ustr-initiates-section-301-investigations-relating-structural-excess-capacity-and-production",
+          "label": "USTR 3月11日正式立案公告"
+        }
+      ]
+    },
+    {
       "id": "uk-yemen-houthi",
       "date": "2026-11-24",
       "region": "英国",
@@ -64,22 +133,84 @@
           "label": "OFSI通用许可INT/2026/11404204"
         }
       ]
+    },
+    {
+      "id": "us-indonesia-core",
+      "date": "2026-11-24",
+      "region": "美国／印度尼西亚",
+      "agency": "商务部国际贸易管理局",
+      "title": "美国对印尼加工中越钢材的耐腐蚀钢产品作出两项反规避否定性初裁",
+      "stage": "两项全国范围否定性初裁，待核查及终裁",
+      "body": "美国商务部11月24日分别公布两项反规避初裁，初步认定印尼使用中国原产热轧或冷轧钢、以及使用越南原产冷轧钢生产的涉案耐腐蚀钢产品，未在全国范围构成对相应中国产或越南产耐腐蚀钢双反税令的规避。商务部仍拟核查相关资料后作出终裁。",
+      "scope": "印尼加工并输美的涉案镀层耐腐蚀钢产品及上游中国、越南钢材。",
+      "impact": "印尼加工企业及中国钢材供应商应保存原料采购、生产加工及实际投入记录，支持后续核查，并继续区分其他双反税令和钢铁进口措施，不能将本次初裁理解为对所有转口钢材免税。",
+      "deadline": "11月24日公告；听证申请须在公告后30日内提出；案件陈述期限另行通知，反驳意见在其后7日内提交。",
+      "rank": 4,
+      "sources": [
+        {
+          "url": "https://thefederalregister.org/documents/2026-23942/certain-corrosion-resistant-steel-products-from-the-peoples-republic-of-china-preliminary-negative-determination-of-cir",
+          "label": "美国联邦公报2026-23942号（全文转载）"
+        },
+        {
+          "url": "https://thefederalregister.org/documents/2026-23944/certain-corrosion-resistant-steel-products-from-the-socialist-republic-of-vietnam-preliminary-negative-determination-of-",
+          "label": "美国联邦公报2026-23944号（全文转载）"
+        }
+      ]
+    },
+    {
+      "id": "us-tires-final",
+      "date": "2026-11-24",
+      "region": "美国",
+      "agency": "商务部国际贸易管理局",
+      "title": "美国对中国乘用车及轻型卡车轮胎反倾销复审作出终裁",
+      "stage": "行政复审终裁，保证金安排生效",
+      "body": "美国商务部公布2024年8月1日至2025年7月31日反倾销行政复审终裁，三角轮胎、山东永盛橡胶及山东中一橡胶未取得单独税率资格，归入中国统一实体，适用既有76.46%税率；复审期内相关进口将按该税率清算。已取得单独税率且不在本次复审范围的出口商继续执行现有企业税率。",
+      "scope": "中国原产涉案乘用车及轻型卡车轮胎。",
+      "impact": "进口商应核对实际出口商及适用税率，重新测算历史进口清算负担和新订单保证金，不能以其他供应商的单独税率申报。",
+      "deadline": "11月24日适用；商务部计划在公告至少35日后向海关发出清算指令。",
+      "rank": 4,
+      "sources": [
+        {
+          "url": "https://thefederalregister.org/documents/2026-23939/certain-passenger-vehicle-and-light-truck-tires-from-the-peoples-republic-of-china-final-results-of-antidumping-duty-ad",
+          "label": "美国联邦公报2026-23939号（全文转载）"
+        }
+      ]
+    },
+    {
+      "id": "us-hfc-final",
+      "date": "2026-11-24",
+      "region": "美国",
+      "agency": "商务部国际贸易管理局",
+      "title": "美国对中国氢氟碳化物混合物反倾销复审作出终裁",
+      "stage": "行政复审终裁，保证金安排生效",
+      "body": "美国商务部公布2024年8月1日至2025年7月31日反倾销复审终裁，附件所列12家中国生产商或出口商未能证明具备单独税率资格，被归入适用216.37%税率的中国统一实体。复审期内这些企业相关进口按该税率清算；其他已获单独税率且未纳入本次复审的企业保持原有税率。",
+      "scope": "中国原产涉案氢氟碳化物混合物及制冷、空调供应链。",
+      "impact": "制冷剂贸易商应按实际出口商身份核查保证金税率及历史清算责任；经第三国贸易商销售的货物须确认上游中国供货商的适用税率，并保存交易和税费承担记录。",
+      "deadline": "11月24日适用；清算指令计划在公告至少35日后发出。",
+      "rank": 4,
+      "sources": [
+        {
+          "url": "https://thefederalregister.org/documents/2026-23941/hydrofluorocarbon-blends-from-the-peoples-republic-of-china-final-results-of-antidumping-duty-administrative-review-202",
+          "label": "美国联邦公报2026-23941号（全文转载）"
+        }
+      ]
     }
   ],
   "coverage": {
-    "EU": "EUR-Lex 已核验条例",
-    "US": "联邦公报当日目录及反规避公告全文；继续核验",
-    "UK": "政府公告及通用许可已打开",
-    "Japan": "已检索，主管机关访问受限，继续复核",
-    "Korea": "已查看主管机关，继续检索",
-    "India": "已查看DGTR更新，继续复核",
-    "Canada": "主管机关访问超时，继续检索",
-    "Australia": "已检索，继续复核"
+    "US": "USTR、司法部、联邦公报当日公告、OFAC及路透社检索",
+    "EU": "EUR-Lex、欧盟贸易措施公告及相关报道",
+    "UK": "英国政府、OFSI公告检索",
+    "Japan": "METI安全保障贸易管理及日文检索；未取得符合时限的新独立事项",
+    "Korea": "产业主管机构、韩文检索、韩联社；无入选新增措施",
+    "India": "DGTR案件页，部分24日更新为旧案材料，不纳入",
+    "Canada": "CBSA案件、复审公告及媒体检索；新事项不足，昨日胶合板不重复",
+    "Australia": "主管部门反倾销复审及公告检索，未找到符合时限的新事项",
+    "Other": "中国、越南、印度尼西亚及中东涉贸易事项"
   },
   "last_error": null,
   "next_actions": [
-    "补查贸易救济终裁及其他法域",
-    "去重",
-    "来源终核与临近发布终扫"
+    "近7期事件级去重",
+    "逐条复核原始链接",
+    "临近发布终扫"
   ]
 }
