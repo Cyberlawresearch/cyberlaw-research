@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" fill="none">
+  <title>芯片、数据网络与机械臂</title>
+
+  <g stroke="#567584" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M24 9v8m8-8v8m8-8v8M24 47v8m8-8v8m8-8v8M9 24h8m-8 8h8m-8 8h8M47 24h8m-8 8h8m-8 8h8"/>
+    <rect x="17" y="17" width="30" height="30" rx="2" fill="#E8EEEB"/>
+    <rect x="25" y="25" width="14" height="14" rx="1" fill="#567584" stroke="none"/>
+    <path d="M21 43h7m15-22v7" stroke="#A4B8B7" stroke-width="1.4"/>
+    <circle cx="42" cy="22" r="2" fill="#AD786B" stroke="none"/>
+  </g>
+
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="m94 16 26 16 25-18m-51 2 1 34 25-18 25 17m-50 1 50-1m0-35v35" stroke="#A1B7B4" stroke-width="1.8"/>
+    <path d="m94 16 26 16-25 18m25-18 25 17" stroke="#61877F" stroke-width="2.2"/>
+    <circle cx="94" cy="16" r="5" fill="#6D918B"/>
+    <circle cx="95" cy="50" r="4.5" fill="#A0B6B0"/>
+    <circle cx="145" cy="14" r="4.5" fill="#AD786B"/>
+    <circle cx="145" cy="49" r="5" fill="#698998"/>
+    <path d="m120 23 8 4.5v9l-8 4.5-8-4.5v-9Z" fill="#547D76"/>
+    <path d="m116 30 4 2.3 4-2.3m-4 2.3V37" stroke="#EDF2EC" stroke-width="1.6"/>
+  </g>
+
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="m199 46-7-16 20-15 13 11" stroke="#567584" stroke-width="7"/>
+    <path d="m194 30 18-14" stroke="#7A9A91" stroke-width="6"/>
+    <path d="m214 17 10 8" stroke="#A9BDB7" stroke-width="5"/>
+    <circle cx="192" cy="30" r="5.4" fill="#567584"/>
+    <circle cx="192" cy="30" r="1.9" fill="#F8F8F1"/>
+    <circle cx="212" cy="15" r="5.2" fill="#567584"/>
+    <circle cx="212" cy="15" r="1.8" fill="#F8F8F1"/>
+    <circle cx="225" cy="26" r="4" fill="#AD786B"/>
+    <path d="M225 30v5m0 0-5 5 3 4m2-9 5 5-3 4" stroke="#567584" stroke-width="2.3"/>
+    <path d="M192 50a7 7 0 0 1 14 0v2h-14Z" fill="#6D918B"/>
+    <path d="M187 52h25v4h-25Z" fill="#567584"/>
+  </g>
+</svg>
