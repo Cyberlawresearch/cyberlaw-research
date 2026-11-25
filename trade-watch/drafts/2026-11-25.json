@@ -1,8 +1,8 @@
 {
   "date": "2026-11-25",
   "base_main_sha": "fce743855083f90493cf3241869a22157d734ee8",
-  "phase": "source_checked",
-  "publication_ready": false,
+  "phase": "ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "us-huawei-verdict",
@@ -217,7 +217,8 @@
   },
   "last_error": null,
   "next_actions": [
-    "确认最新消息及发布"
+    "写入当期HTML、首页、归档",
+    "回读与Pages验收"
   ],
   "dedup": {
     "dates": [
@@ -276,5 +277,11 @@
     "issues": [
       "联邦公报23939、23941再次读取出现访问验证，已核对全文转载并保留补充链接。"
     ]
-  }
+  },
+  "terminal_scan": {
+    "complete": true,
+    "scope": "发布前复查近1–2小时新增报道、USTR、BIS、OFAC、英国政府及欧盟条例；未找到已公布的301新税率或其他足以替换本期事项的新增正式措施",
+    "result": "保留301政策信号表述；欧盟配额耗尽禁止入境、有效期与证明要求复核一致。"
+  },
+  "issue_number": "078"
 }
