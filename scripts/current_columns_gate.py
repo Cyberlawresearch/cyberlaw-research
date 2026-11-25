@@ -99,16 +99,20 @@ def validate(m):
     assert home_tech is not None and target('index.html',home_tech.get('href'))==TECH_PATH,TECH_LABEL
     tech_card=home.select_one('.portal-card-tech')
     assert tech_card is not None and TECH_LABEL in canonical_name(tech_card.get_text(' ',strip=True))
-    latest_tech=target('index.html',tech_card.get('href'))
-    assert latest_tech and latest_tech.startswith('tech-basics/') and latest_tech.endswith('.html')
-    assert (ROOT/latest_tech).is_file(),latest_tech
-    latest_doc=soup(latest_tech)
-    assert latest_doc.select_one('main h1') and latest_doc.select_one('.tech-kicker'),latest_tech
+    course_overview=target('index.html',tech_card.get('href'))
+    assert course_overview==TECH_PATH,course_overview
     assert tech_card.select_one('.home-course-path') is not None
     tech_page=soup(TECH_PATH)
+    assert tech_page.select_one('main h1') and tech_page.select_one('.tech-kicker'),TECH_PATH
     assert tech_page.select_one('svg.course-map-svg') is not None
-    assert len(tech_page.select('.tech-history-item'))>=2
-    assert tech_page.select_one(f'a[href="{latest_tech}"]') is not None
+    lessons=tech_page.select('#course-directory .tech-history-item')
+    lesson_paths=[target(TECH_PATH,a.get('href')) for a in lessons]
+    course_files={p.relative_to(ROOT).as_posix() for p in (ROOT/'tech-basics').glob('*.html')}
+    assert len(lesson_paths)>=2 and len(lesson_paths)==len(set(lesson_paths)),TECH_PATH
+    assert set(lesson_paths)==course_files,'course directory must preserve every lesson'
+    assert [int(a.select_one('.tech-history-no').get_text(strip=True)) for a in lessons]==list(range(1,len(lessons)+1)),'course directory must follow learning order'
+    first_lesson=soup(lesson_paths[0])
+    assert first_lesson.select_one('main h1') and first_lesson.select_one('.tech-kicker'),lesson_paths[0]
     assert (ROOT/TECH_CSS).is_file()
     for p,listing in zip(paths,HISTORIES):
         first=soup(listing).select_one('.issue-list .issue-row')
@@ -126,7 +130,7 @@ def validate(m):
     works=docs[3].select('.brief-item');assert len(works)==m['newworks_count']==3
     assert len(docs[1].select_one('.article-body').get_text(' ',strip=True))>=2500
     assert len(docs[2].select_one('.article-body').get_text(' ',strip=True))>=4500
-    return {'date':m['date'],'page_dates':m['page_dates'],'pages':paths,'news':len(news),'newworks':len(works),'tech_basics':latest_tech,'status':'passed'}
+    return {'date':m['date'],'page_dates':m['page_dates'],'pages':paths,'news':len(news),'newworks':len(works),'tech_basics':course_overview,'course_lessons':len(lessons),'status':'passed'}
 
 def read_url(url):
     req=Request(url,headers={'User-Agent':'cyberlaw-current-columns-gate'})
@@ -134,8 +138,8 @@ def read_url(url):
 
 def remote_check(m,base):
     base=base.rstrip('/')+'/'
-    home=soup('index.html');tech_card=home.select_one('.portal-card-tech');latest_tech=target('index.html',tech_card.get('href'))
-    paths=['index.html','archive.html',*HISTORIES,TECH_PATH,TECH_CSS,latest_tech,*m['pages'].values(),'data/current-edition.json']
+    first_lesson=target(TECH_PATH,soup(TECH_PATH).select_one('#course-directory .tech-history-item').get('href'))
+    paths=['index.html','archive.html',*HISTORIES,TECH_PATH,TECH_CSS,first_lesson,*m['pages'].values(),'data/current-edition.json']
     for attempt in range(12):
         try:
             if json.loads(read_url(urljoin(base,'data/current-edition.json')+'?v='+str(attempt)))==m:break
@@ -151,7 +155,7 @@ def remote_check(m,base):
             except Exception:pass
             time.sleep(5)
         else:raise AssertionError('deployed page differs: '+path)
-    return {'remote':'passed','base':base,'tech_basics':latest_tech}
+    return {'remote':'passed','base':base,'tech_basics':TECH_PATH}
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--sync-nav',action='store_true');p.add_argument('--base');args=p.parse_args()
