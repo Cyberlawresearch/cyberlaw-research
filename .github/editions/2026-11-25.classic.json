@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-25",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-25-humboldt-limits-of-state-action.html",
+  "target_path": "articles/2026-11-25-humboldt-limits-of-state-action.html",
+  "book": {
+    "author": "Wilhelm von Humboldt（威廉·冯·洪堡）",
+    "original_title": "Ideen zu einem Versuch, die Gränzen der Wirksamkeit des Staats zu bestimmen",
+    "publisher": "E. Trewendt",
+    "year": "1851",
+    "edition": "1851年德文单行本；正文据Joseph Coulthard, Jun.译1854年英文版 The Sphere and Duties of Government（John Chapman）"
+  },
+  "source_urls": [
+    "https://en.wikisource.org/wiki/The_Sphere_and_Duties_of_Government",
+    "https://oll.libertyfund.org/titles/coulthard-the-sphere-and-duties-of-government-1792-1854",
+    "https://openlibrary.org/books/OL250012M/Ideen_zu_einem_Versuch_die_Gra%CC%88nzen_der_Wirksamkeit_des_Staats_zu_bestimmen",
+    "https://www.cambridge.org/core/books/the-limits-of-state-action/7E704E7E73A910CE1B498314F677CDCA",
+    "https://www.gutenberg.org/files/34901/34901-h/34901-h.htm?source=post_page---------------------------",
+    "https://www.cambridge.org/core/journals/review-of-politics/article/abs/selfdevelopment-and-the-liberal-state-the-cases-of-john-stuart-mill-and-wilhelm-von-humboldt/36E3F060CA6A01379C3EEE3DA6CA5EBF",
+    "https://lawliberty.org/classic/the-states-moral-boundaries/"
+  ],
+  "original_verification": "核对1851年德文单行本馆藏书目，查阅1854年英译本题名页、译者序、全书目录及十六章逐章网页，系统对照各章实质论证与章节概要；第三章手稿缺文不补写。未作德文逐字校勘。",
+  "chapter_sources": [
+    "https://en.wikisource.org/wiki/The_Sphere_and_Duties_of_Government/Introduction",
+    "https://en.wikisource.org/wiki/The_Sphere_and_Duties_of_Government/Chapter_2",
+    "https://en.wikisource.org/wiki/The_Sphere_and_Duties_of_Government/Chapter_3",
+    "https://en.wikisource.org/wiki/The_Sphere_and_Duties_of_Government/Chapter_4",
+    "https://en.wikisource.org/wiki/The_Sphere_and_Duties_of_Government/Chapter_5",
+    "https://en.wikisource.org/wiki/The_Sphere_and_Duties_of_Government/Chapter_6",
+    "https://en.wikisource.org/wiki/The_Sphere_and_Duties_of_Government/Chapter_7",
+    "https://en.wikisource.org/wiki/The_Sphere_and_Duties_of_Government/Chapter_8",
+    "https://en.wikisource.org/wiki/The_Sphere_and_Duties_of_Government/Chapter_9",
+    "https://en.wikisource.org/wiki/The_Sphere_and_Duties_of_Government/Chapter_10",
+    "https://en.wikisource.org/wiki/The_Sphere_and_Duties_of_Government/Chapter_11",
+    "https://en.wikisource.org/wiki/The_Sphere_and_Duties_of_Government/Chapter_12",
+    "https://en.wikisource.org/wiki/The_Sphere_and_Duties_of_Government/Chapter_13",
+    "https://en.wikisource.org/wiki/The_Sphere_and_Duties_of_Government/Chapter_14",
+    "https://en.wikisource.org/wiki/The_Sphere_and_Duties_of_Government/Chapter_15",
+    "https://en.wikisource.org/wiki/The_Sphere_and_Duties_of_Government/Chapter_16"
+  ],
+  "critics": [
+    {
+      "name": "Andrew Valls",
+      "work": "Self–Development and the Liberal State: The Cases of John Stuart Mill and Wilhelm von Humboldt",
+      "url": "https://www.cambridge.org/core/journals/review-of-politics/article/abs/selfdevelopment-and-the-liberal-state-the-cases-of-john-stuart-mill-and-wilhelm-von-humboldt/36E3F060CA6A01379C3EEE3DA6CA5EBF",
+      "checked": "期刊公开摘要；核对自我发展及国家职责的比较论点，未声称阅读全文。"
+    },
+    {
+      "name": "Max Skjönsberg",
+      "work": "The State’s Moral Boundaries",
+      "url": "https://lawliberty.org/classic/the-states-moral-boundaries/",
+      "checked": "正文中青年与成熟洪堡的教育立场及其可能调和的分析。"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html全部历史索引",
+    "classics-history.html完整旧索引",
+    "data/books.json",
+    "最新main递归树当日路径检查"
+  ],
+  "duplicate_found": false,
+  "sections": 35,
+  "prose_length": 13297,
+  "han_characters": 12021,
+  "checked_at": "2026-11-25",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "article_blob_sha": "758c0be9ad1a3d9c1adbe29e51bcfa325bbdd0f2",
+  "base_main_sha": "d5dca8e893de9513ea6f95313997d540eebec878",
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
