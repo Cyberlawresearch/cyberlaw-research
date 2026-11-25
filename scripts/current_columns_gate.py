@@ -6,13 +6,13 @@ from pathlib import Path
 from urllib.parse import urljoin, urlsplit
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup
+from apply_site_brand import canonical_name, SITE_NAME, TECH_LABEL
 
 ROOT=Path(__file__).resolve().parents[1]
 MANIFEST=ROOT/'data/current-edition.json'
 KEYS=['brief','paper','classic','newworks']
 LABELS=['全球科技法简报','域外法学论文精读','法学经典著作','科技法研究新作']
 HISTORIES=['briefs.html','papers.html','classics.html','new-works.html']
-TECH_LABEL='网信法技术基础'
 TECH_PATH='tech-basics.html'
 TECH_CSS='assets/course-map.css'
 
@@ -43,11 +43,13 @@ def sync_navigation(paths):
                 href=posixpath.relpath(paths[LABELS.index(label)],parent)
                 if a.get('href')!=href:a['href']=href;modified=True
         tech_href=posixpath.relpath(TECH_PATH,parent)
-        tech=next((x for x in nav.select('a') if x.get_text(strip=True)==TECH_LABEL),None)
+        tech=next((x for x in nav.select('a') if canonical_name(x.get_text(strip=True))==TECH_LABEL),None)
         if tech is None:
             tech=d.new_tag('a',href=tech_href);tech.string=TECH_LABEL;nav.append(tech);modified=True
         elif tech.get('href')!=tech_href:
             tech['href']=tech_href;modified=True
+        if tech.get_text(strip=True)!=TECH_LABEL:
+            tech.string=TECH_LABEL;modified=True
         if modified:
             file.write_text(str(d),encoding='utf-8');changed+=1
     return changed
@@ -73,13 +75,13 @@ def validate(m):
         assert days[key].isoformat() in Path(p).name,(key,p)
         d=soup(p);docs.append(d)
         assert d.select_one('main h1') and d.select_one('.article-body'),p
-        assert d.select_one('.brand') and d.select_one('.brand').get_text(strip=True)=='网信法研究每日推送'
+        assert d.select_one('.brand') and canonical_name(d.select_one('.brand').get_text(strip=True))==SITE_NAME
         text=d.select_one('main').get_text(' ',strip=True)
         assert not any(x in text for x in ['本期最值得先看','正文待补','待发布正文','占位内容']),p
         for label,dest in zip(LABELS,paths):
             a=next((x for x in d.select('.navlinks a') if x.get_text(strip=True)==label),None)
             assert a is not None and target(p,a.get('href'))==dest,(p,label)
-        tech=next((x for x in d.select('.navlinks a') if x.get_text(strip=True)==TECH_LABEL),None)
+        tech=next((x for x in d.select('.navlinks a') if canonical_name(x.get_text(strip=True))==TECH_LABEL),None)
         assert tech is not None and target(p,tech.get('href'))==TECH_PATH,(p,TECH_LABEL)
     home=soup('index.html')
     cards=home.select('.portal-card[data-daily-column]')
@@ -93,10 +95,10 @@ def validate(m):
     assert all(stamps)
     for key,node in zip(KEYS,stamps):assert m['page_dates'][key].replace('-','.') in node.get_text(),key
     assert len(home.select('a[href="archive.html"]'))==1
-    home_tech=next((x for x in home.select('.navlinks a') if x.get_text(strip=True)==TECH_LABEL),None)
+    home_tech=next((x for x in home.select('.navlinks a') if canonical_name(x.get_text(strip=True))==TECH_LABEL),None)
     assert home_tech is not None and target('index.html',home_tech.get('href'))==TECH_PATH,TECH_LABEL
     tech_card=home.select_one('.portal-card-tech')
-    assert tech_card is not None and '网信法技术基础' in tech_card.get_text(' ',strip=True)
+    assert tech_card is not None and TECH_LABEL in canonical_name(tech_card.get_text(' ',strip=True))
     latest_tech=target('index.html',tech_card.get('href'))
     assert latest_tech and latest_tech.startswith('tech-basics/') and latest_tech.endswith('.html')
     assert (ROOT/latest_tech).is_file(),latest_tech

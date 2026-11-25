@@ -52,6 +52,7 @@ jobs:
         shell: bash
         run: |
           python scripts/apply_interior_design.py --materialize-only
+          python scripts/apply_site_brand.py --names-only
           python - <<'PY'
           from pathlib import Path
           import re
@@ -101,7 +102,7 @@ jobs:
                   if 'ai-media-digest' in path.name:
                       extra = f'<script defer src="{prefix}assets/media-sentence-favorites.js?v=1"></script>'
                   else:
-                      extra = f'<script defer src="{prefix}assets/favorites.js?v=4"></script><script defer src="{prefix}assets/context-tools.js?v=3"></script><script defer src="{prefix}assets/context-refine.js?v=8"></script><script defer src="{prefix}assets/context-insight.js?v=1"></script><script defer src="{prefix}assets/citation-refine.js?v=1"></script><script defer src="{prefix}assets/notes-inline.js?v=4"></script>'
+                      extra = f'<script defer src="{prefix}assets/favorites.js?v=4"></script><script defer src="{prefix}assets/context-tools.js?v=4"></script><script defer src="{prefix}assets/context-refine.js?v=8"></script><script defer src="{prefix}assets/context-insight.js?v=1"></script><script defer src="{prefix}assets/citation-refine.js?v=2"></script><script defer src="{prefix}assets/notes-inline.js?v=4"></script>'
               elif path.name in tool_pages:
                   extra = f'<script defer src="{prefix}assets/research-tools.js?v=3"></script>'
               text = path.read_text(encoding='utf-8', errors='ignore')
@@ -110,7 +111,9 @@ jobs:
                   path.write_text(text, encoding='utf-8')
           PY
       - name: Apply shared interior-page design
-        run: python scripts/apply_interior_design.py
+        run: |
+          python scripts/apply_interior_design.py
+          python scripts/apply_site_brand.py
       - name: Install isolated context test browser
         run: |
           python -m pip install playwright==1.57.0

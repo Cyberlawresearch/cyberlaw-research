@@ -1,6 +1,6 @@
-# 网信法研究每日推送
+# 科技法研究每日推送
 
-每日四个研究栏目包括全球科技法简报、域外法学论文精读、法学经典著作和科技法研究新作；另有独立的“网信法技术基础”教学序列。
+每日四个研究栏目包括全球科技法简报、域外法学论文精读、法学经典著作和科技法研究新作；另有独立的“科技法技术基础”教学序列。
 
 执行内容更新前，先阅读 [AGENTS.md](AGENTS.md)、[BRIEF_STRUCTURE.md](BRIEF_STRUCTURE.md) 与 [.github/editions/README.md](.github/editions/README.md)，并读取最新 main、`data/current-edition.json` 和对应栏目历史。四栏独立研究、独立核验、独立发布，不以同日四栏全部完成作为单栏发布前提。
 

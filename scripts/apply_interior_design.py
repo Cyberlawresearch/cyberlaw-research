@@ -16,7 +16,7 @@ from pathlib import Path
 import re
 
 
-VERSION = "20261125a"
+VERSION = "20261125b"
 BODY = re.compile(r"<body\b(?:[^\"'>]|\"[^\"]*\"|'[^']*')*>", re.I)
 HEAD_END = re.compile(r"</head\s*>", re.I)
 BLOCK = re.compile(

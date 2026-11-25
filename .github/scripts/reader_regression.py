@@ -211,7 +211,7 @@ def live_checks(browser, site, output):
                 time.sleep(4)
             assert matched, f'Deployed asset does not match checkout: {asset}'
         navigate('index.html'); login('researcher20')
-        assert '网信法研究每日推送' in page.locator('.brand').inner_text()
+        assert '科技法研究每日推送' in page.locator('.brand').inner_text()
         for selector in ('.account-favorites', '.account-notes', '.account-settings'):
             assert page.locator(selector).is_visible()
         navigate('articles/2026-09-02-lessig-code.html')

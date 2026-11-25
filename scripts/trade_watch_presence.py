@@ -14,6 +14,7 @@ from zoneinfo import ZoneInfo
 
 import requests
 from bs4 import BeautifulSoup
+from apply_site_brand import canonical_name, TECH_LABEL
 
 BASE = 'https://cyberlawresearch.github.io/cyberlaw-research/trade-watch/'
 
@@ -75,15 +76,16 @@ def deployed_expected(document, relative: str):
     prepared = BeautifulSoup(str(document), 'html.parser')
     nav = prepared.select_one('.navlinks')
     if nav:
-        label = '网信法技术基础'
+        label = TECH_LABEL
         href = posixpath.relpath('tech-basics.html', posixpath.dirname('trade-watch/' + relative))
-        link = next((a for a in nav.select('a') if text(a) == label), None)
+        link = next((a for a in nav.select('a') if canonical_name(text(a)) == label), None)
         if link is None:
             link = prepared.new_tag('a', href=href)
             link.string = label
             nav.append(link)
         else:
             link['href'] = href
+            link.string = label
     return prepared
 
 

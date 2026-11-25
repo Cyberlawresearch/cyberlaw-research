@@ -212,7 +212,7 @@ def generate_page(root, day, items, current, *, backfilled_at=None):
     old = root / current["pages"]["brief"]
     demand(old.is_file(), "Previous news HTML is missing")
     doc = soup(old)
-    doc.title.string = f'{int(day[:4])}年{int(day[5:7])}月{int(day[8:])}日全球科技法简报｜网信法研究每日推送'
+    doc.title.string = f'{int(day[:4])}年{int(day[5:7])}月{int(day[8:])}日全球科技法简报｜科技法研究每日推送'
     text(doc.select_one(".article-hero .eyebrow"), "issue eyebrow").string = "每日全球科技法简报 · " + day.replace("-", ".")
     lead = text(doc.select_one(".article-hero .lead"), "issue lead")
     lead.string = f'{int(day[:4])}年{int(day[5:7])}月{int(day[8:])}日 · {len(items)}条'

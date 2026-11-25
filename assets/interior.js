@@ -19,7 +19,7 @@
     if (text.includes("域外法学论文精读")) return "paper";
     if (text.includes("法学经典著作")) return "classic";
     if (text.includes("科技法研究新作")) return "newworks";
-    if (text.includes("网信法技术基础")) return "tech";
+    if (text.includes("科技法技术基础") || text.includes("网信法技术基础")) return "tech";
     if (text.includes("权威媒体AI摘编")) return "media";
     if (text.includes("历史记录") || text.includes("历史归档")) return "archive";
     return "";

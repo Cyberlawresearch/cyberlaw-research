@@ -1,0 +1,109 @@
+/* Shared site signature. Load after the homepage and interior stylesheets.
+   Keep the existing brand link, icons and account controls intact. */
+.site-identity {
+  --identity-icon-width: 0px;
+  --identity-icon-gap: 0px;
+  display: grid;
+  justify-items: start;
+  align-content: center;
+  gap: 3px;
+  min-width: 0;
+  max-width: 100%;
+}
+.site-identity > .brand { margin: 0; }
+.site-identity > .site-byline {
+  display: block;
+  box-sizing: border-box;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
+  padding-left: calc(var(--identity-icon-width) + var(--identity-icon-gap));
+  color: #536169;
+  font: 500 .875rem/1.5 var(--sans, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif);
+  letter-spacing: .015em;
+  white-space: nowrap;
+}
+
+/* The homepage keeps its approved masthead proportions and original logo. */
+body.editorial-live .masthead > .site-identity {
+  --identity-icon-width: 38px;
+  --identity-icon-gap: 11px;
+  flex: 0 1 auto;
+  align-self: center;
+}
+
+/* The identity block occupies the former brand cell; tools remain in theirs. */
+body.interior-page .top .nav > .site-identity {
+  --identity-icon-width: 31px;
+  --identity-icon-gap: 12px;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+}
+body.interior-page .top .nav > .site-identity > .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--identity-icon-gap);
+  width: fit-content;
+  min-width: 0;
+  max-width: 100%;
+  color: #171b1e;
+  font: 750 1.58rem/1.4 var(--serif);
+  letter-spacing: .015em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+body.interior-page .top .nav > .site-identity > .brand:hover { color: var(--accent); }
+body.interior-page:has(.top .site-identity) :is(main, section, article, h2, h3)[id] {
+  scroll-margin-top: 185px;
+}
+
+/* The login card has no logo gutter or navigation row. */
+.login-card > .site-identity {
+  gap: 4px;
+  margin-bottom: 20px;
+}
+body.interior-page .login-card .site-identity > .login-brand {
+  margin: 0;
+  color: #30464f;
+  font: 650 1rem/1.6 var(--serif);
+  letter-spacing: .02em;
+}
+
+@media (min-width: 801px) and (max-width: 1100px) {
+  body.interior-page .top .nav > .site-identity > .brand { font-size: 1.4rem; }
+}
+@media (max-width: 800px) {
+  body.interior-page .top .nav > .site-identity {
+    --identity-icon-width: 24px;
+    --identity-icon-gap: 8px;
+    gap: 2px;
+  }
+  body.interior-page .top .nav > .site-identity > .brand {
+    font-size: clamp(1rem, 4.4vw, 1.3rem);
+  }
+  body.interior-page:has(.top .site-identity) :is(main, section, article, h2, h3)[id] {
+    scroll-margin-top: 155px;
+  }
+}
+@media (max-width: 760px) {
+  body.editorial-live .masthead > .site-identity {
+    --identity-icon-width: 32px;
+    --identity-icon-gap: 9px;
+    gap: 3px;
+  }
+}
+@media (max-width: 360px) {
+  body.interior-page .top .nav > .site-identity {
+    --identity-icon-width: 20px;
+    --identity-icon-gap: 6px;
+  }
+  body.interior-page .top .nav > .site-identity > .brand { font-size: 1rem; }
+  .site-identity > .site-byline { letter-spacing: 0; }
+}
+@media (max-width: 350px) {
+  body.editorial-live .masthead > .site-identity { --identity-icon-width: 29px; }
+}
+@media print {
+  .site-identity > .site-byline { color: #333; font-size: 10pt; }
+}

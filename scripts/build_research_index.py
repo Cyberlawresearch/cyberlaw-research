@@ -120,7 +120,7 @@ for folder in ['articles','papers','new-works']:
 for path in paths:
     raw=path.read_text(encoding='utf-8',errors='ignore'); npath=str(path).replace('\\','/')
     title=first(r'<h1[^>]*>(.*?)</h1>',raw) or first(r'<title[^>]*>(.*?)</title>',raw)
-    body=first(r'<main[^>]*>(.*?)</main>',raw) or strip_tags(raw); body=re.sub(r'网信法研究每日推送\s*','',body)
+    body=first(r'<main[^>]*>(.*?)</main>',raw) or strip_tags(raw); body=re.sub(r'(?:科技法|网信法)研究每日推送\s*','',body)
     category=classify(raw,path); date=date_for(path,raw); tags=tags_for(title+' '+body)
     records.append({'id':npath,'path':npath,'title':title,'pageTitle':first(r'<title[^>]*>(.*?)</title>',raw),'date':date,'category':category,'tags':tags,'topics':topics_for(title+' '+body),'excerpt':excerpt(body),'text':body[:14000]})
 

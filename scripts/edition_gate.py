@@ -6,6 +6,7 @@ import hashlib,json,posixpath,re
 from pathlib import Path
 from urllib.parse import urljoin,urlsplit
 from bs4 import BeautifulSoup
+from apply_site_brand import canonical_name, SITE_NAME
 ROOT=Path(__file__).resolve().parents[1]
 MANIFEST=ROOT/'data/current-edition.json'
 LABELS=['全球科技法简报','域外法学论文精读','法学经典著作','科技法研究新作']
@@ -40,7 +41,7 @@ def validate(m):
   assert d.select_one('main h1') and d.select_one('.article-body'),p
   text=d.select_one('main').get_text(' ',strip=True)
   assert not any(bad in text for bad in ['本期最值得先看','Cyberlaw Research','正文待补','待发布正文','占位内容']),p
-  assert d.select_one('.brand').get_text(strip=True)=='网信法研究每日推送'
+  assert canonical_name(d.select_one('.brand').get_text(strip=True))==SITE_NAME
   for label,dest in zip(LABELS,paths):
    a=next((a for a in d.select('.navlinks a') if a.get_text(strip=True)==label),None)
    assert a is not None and target(p,a.get('href'))==dest,(p,label)

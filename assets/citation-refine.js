@@ -51,7 +51,7 @@ function infoFor(target){
   const originalTitle=target?.dataset.originalTitle||src?.dataset.originalTitle||src?.getAttribute('title')||'';const sourceName=cleanText(src?.textContent||'');const date=dateFrom(meta);const foreign=!/中国|北京|上海|深圳|福建|内蒙古|国家|国务院|最高人民|市场监管|网信|工信|数据局/.test(meta);
   return{type:'news',cnTitle,originalTitle:cleanText(originalTitle)||cnTitle,sourceName,date,url:src?.href||location.href,foreign,access};
  }
- return{type:'web',cnTitle,originalTitle:cnTitle,sourceName:'网信法研究每日推送',date:dateFrom(meta),url:location.href,access};
+ return{type:'web',cnTitle,originalTitle:cnTitle,sourceName:'科技法研究每日推送',date:dateFrom(meta),url:location.href,access};
 }
 const pagesStart=p=>String(p||'').split(/[–—-]/)[0].trim();
 function gb(i){if(i.type==='article')return`${i.author||''}. ${i.originalTitle||i.cnTitle}[J]. ${i.journal||''}${i.year?`, ${i.year}`:''}${i.volume?`, ${i.volume}`:''}${i.issue?`(${i.issue})`:''}${i.pages?`: ${i.pages}`:''}.${i.doi?` DOI:${i.doi}.`:i.url?` ${i.url}.`:''}`.replace(/\.\s*\./g,'.');if(i.type==='book')return`${i.author||''}. ${i.originalTitle||i.cnTitle}[M]. ${i.edition?`${i.edition}. `:''}${i.publisher||''}${i.year?`, ${i.year}`:''}.${i.url?` ${i.url}.`:''}`.replace(/\.\s*\./g,'.');return`${i.sourceName||''}. ${i.originalTitle||i.cnTitle}[EB/OL]. ${i.date?`(${i.date})`:''}[${i.access}]. ${i.url}.`;}

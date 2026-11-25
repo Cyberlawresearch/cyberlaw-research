@@ -13,7 +13,7 @@ from playwright.sync_api import sync_playwright
 ROOT = Path(__file__).resolve().parents[2]
 # Minimal reproduction of the existing header rules, not a replacement site stylesheet.
 BASE_CSS = '''*{box-sizing:border-box}body{margin:0;line-height:1.8}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}.top{position:sticky;top:0}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-size:20px;font-weight:700;letter-spacing:.04em;text-decoration:none}.navlinks{display:flex;gap:20px;font-size:14px;flex-wrap:wrap}@media(max-width:800px){.nav{align-items:flex-start;padding-top:18px;padding-bottom:18px}.navlinks{display:none}}'''
-HEADER = '''<header class="top"><div class="wrap nav"><a class="brand">网信法研究每日推送</a><nav class="navlinks"><a>全球科技法简报</a><a>域外法学论文精读</a><a>法学经典著作</a><a>科技法研究新作</a><a>历史记录</a></nav><div class="account-nav"><a class="account-favorites">我的收藏</a><a class="account-notes">我的笔记</a><a class="account-settings">账号设置</a><span class="account-user">researcher20</span><button class="account-logout">退出</button></div></div></header>'''
+HEADER = '''<header class="top"><div class="wrap nav"><a class="brand">科技法研究每日推送</a><nav class="navlinks"><a>全球科技法简报</a><a>域外法学论文精读</a><a>法学经典著作</a><a>科技法研究新作</a><a>历史记录</a></nav><div class="account-nav"><a class="account-favorites">我的收藏</a><a class="account-notes">我的笔记</a><a class="account-settings">账号设置</a><span class="account-user">researcher20</span><button class="account-logout">退出</button></div></div></header>'''
 RESULTS = []
 
 
@@ -31,7 +31,7 @@ def header_metrics(page):
 
 def assert_header(page):
     result = header_metrics(page)
-    assert result['brand'] == '网信法研究每日推送', result
+    assert result['brand'] == '科技法研究每日推送', result
     assert result['brandHeight'] <= 45 and result['headerHeight'] <= 180, result
     assert result['brandFits'] and result['controlsFit'] and not result['overflow'], result
     return result
