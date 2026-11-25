@@ -154,6 +154,10 @@ def main():
     total, changed = apply(args.root.resolve(), names_only=args.names_only)
     mode = "names" if args.names_only else "name and byline"
     print(f"Shared site {mode}: {total} pages, {changed} updated.")
+    if args.names_only:
+        from apply_editorial_language import inspect, self_test
+        self_test()
+        inspect(args.root.resolve())
     if not args.names_only:
         from site_quality import inspect_site, sync_archive_media
         sync_archive_media(args.root.resolve())
