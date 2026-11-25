@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-25",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-25-bryson-diamantis-grant-synthetic-persons.html",
+  "selection": "Of, for, and by the people: the legal lacuna of synthetic persons",
+  "bibliography": {
+    "type": "article",
+    "author": "Joanna J. Bryson; Mihailis E. Diamantis; Thomas D. Grant",
+    "originalTitle": "Of, for, and by the people: the legal lacuna of synthetic persons",
+    "journal": "Artificial Intelligence and Law",
+    "year": "2017",
+    "volume": "25",
+    "issue": "3",
+    "pages": "273–291",
+    "doi": "10.1007/s10506-017-9214-9",
+    "url": "https://link.springer.com/article/10.1007/s10506-017-9214-9",
+    "cnTitle": "人工智能需要法律人格吗：电子人格、责任承担与权利救济"
+  },
+  "versions": {
+    "full_text": "Springer Nature publisher's complete open-access HTML version of record, sections 1–5, notes 1–20 and references, read in full.",
+    "publication": "Published 8 September 2017; volume 25 issue 3, pages 273–291, DOI checked against Bath research portal. CC BY 4.0."
+  },
+  "sources": [
+    "https://link.springer.com/article/10.1007/s10506-017-9214-9",
+    "https://researchportal.bath.ac.uk/en/publications/of-for-and-by-the-people-the-legal-lacuna-of-synthetic-persons/",
+    "https://eur-lex.europa.eu/eli/reg/2024/1689"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "history_scope": "Reviewed papers.html, papers-history-1.html and main tree, checked recent paper commits and today's missing record; no earlier entry of Bryson/Diamantis/Grant paper.",
+  "related_reading": [
+    "articles/2026-11-14-ayres-balkin-law-ai-risky-agents.html"
+  ],
+  "timeline": null,
+  "body_length": 3881,
+  "checked_at": "2026-11-25",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  },
+  "last_error": null
+}
