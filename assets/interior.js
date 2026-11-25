@@ -130,6 +130,7 @@
     ensureLink("index.html", "首页", true);
     ensureLink("media-ai.html", "权威媒体AI摘编");
     ensureLink("search.html", "检索");
+    ensureLink("tools.html", "研究工具");
     ensureLink("archive.html", "历史归档");
 
     const section = body.dataset.interiorSection;

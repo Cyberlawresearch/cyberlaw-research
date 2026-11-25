@@ -33,7 +33,7 @@ def main():
                 errors = []
                 page.on('pageerror', lambda error: errors.append(str(error)))
 
-                for asset in ('context-refine.js', 'context-insight.js', 'news-layout-fix.css'):
+                for asset in ('context-refine.js', 'context-insight.js', 'news-layout-fix.css', 'research-tools.js', 'account.js', 'research-tools.css'):
                     expected = (ROOT/'assets'/asset).read_bytes()
                     for attempt in range(10):
                         response = context.request.get(urljoin(base, f'assets/{asset}?v=context-test-{attempt}'))
@@ -162,6 +162,39 @@ def main():
                 assert not errors, errors
                 page.screenshot(path=str(output.parent/f'context-topics-{width}.png'))
                 results.append({'test':f'context-ui-{width}','status':'passed','detail':'Direct related-reading links, narrow same-event timelines, background/outlook, exact anchors and foreign-news layout pass responsively.'})
+                # Tool regressions use an isolated browser and synthetic account data.
+                page.goto(urljoin(base, 'search.html'), wait_until='domcontentloaded')
+                page.wait_for_function("Array.from(document.querySelector('#search-cat').options).some(o=>o.value==='科技法技术基础')")
+                page.locator('#search-cat').select_option(label='科技法技术基础')
+                assert page.locator('#search-count').inner_text() == '56'
+                assert page.locator('#search-results .result-card').count() == 30
+                page.locator('[data-search-page="next"]').click()
+                assert page.locator('#search-results .result-card').count() == 26
+                page.locator('#search-q').fill('Token')
+                assert 0 < int(page.locator('#search-count').inner_text()) <= 56
+                page.locator('#search-reset').click()
+                assert int(page.locator('#search-count').inner_text()) > 120
+                assert page.locator('#search-results .result-card').count() == 30
+                page.locator('#search-cat').select_option(label='权威媒体AI摘编')
+                assert int(page.locator('#search-count').inner_text()) > 0
+                assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth + 1')
+                page.goto(urljoin(base,'account.html'),wait_until='domcontentloaded')
+                page.evaluate("""() => {
+                  localStorage.setItem('cyberlawFullFavoritesV2::researcher20',JSON.stringify([{id:'test-favorite',title:'测试收藏'}]));
+                  localStorage.setItem('cyberlawNotesV1::researcher20',JSON.stringify([{id:'test-note',title:'测试笔记'}]));
+                  localStorage.setItem('cyberlawIdeaStateV2::researcher20',JSON.stringify({'test-idea':'待研究'}));
+                }""")
+                page.reload(wait_until='domcontentloaded')
+                assert '完整收藏 1 项' in page.locator('#account-storage-summary').inner_text()
+                assert '笔记 1 条' in page.locator('#account-storage-summary').inner_text()
+                with page.expect_download() as info:
+                    page.locator('#account-export').click()
+                data=json.loads(Path(info.value.path()).read_text(encoding='utf-8'))
+                assert set(data)=={'schema','version','account','exportedAt','collections','excerpts','notes','ideaStates'}
+                assert data['collections'][0]['id']=='test-favorite' and data['notes'][0]['id']=='test-note'
+                assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth + 1')
+                assert not errors, errors
+                results.append({'test':f'research-tools-{width}','status':'passed','detail':'Search counts, course/media filters, pagination, responsive layout and private local-data export passed.'})
                 context.close()
             browser.close()
     except Exception as error:

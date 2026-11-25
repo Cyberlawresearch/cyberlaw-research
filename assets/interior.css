@@ -389,3 +389,7 @@ body.interior-page .login-submit { min-height:46px; border-radius:3px; backgroun
   body.interior-page .article-body h2 { break-after:avoid; }
   body.interior-page :is(.wrap,.article-wrap,.article-shell) { max-width:none; }
 }
+
+/* Keep filter controls and account backup actions usable on narrow phones. */
+@media(max-width:480px){body.interior-page .tool-controls>input,body.interior-page .tool-controls>select,body.interior-page .tool-controls input[type="search"]{min-width:0;width:100%;max-width:100%;flex:1 1 100%}body.interior-page .account-card .tool-controls button{max-width:100%;white-space:normal;overflow-wrap:anywhere}}
+body.interior-page .account-card .tool-controls a{align-self:center;text-underline-offset:3px}body.interior-page #account-signout{background:transparent;color:var(--ink);border:1px solid var(--line);padding:8px 15px;cursor:pointer}

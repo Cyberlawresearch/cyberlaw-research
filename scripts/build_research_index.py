@@ -67,6 +67,8 @@ def first(pattern,s,default=''):
 
 def classify(raw,path):
     t=strip_tags(raw); n=path.name
+    if path.parent.name=='tech-basics':return '科技法技术基础'
+    if 'ai-media-digest' in n:return '权威媒体AI摘编'
     if 'tech-law-brief' in n:return '全球科技法简报'
     if 'new-works' in n or path.parent.name=='new-works':return '科技法研究新作'
     if '每日法学经典著作' in t or 'LEGAL CLASSIC' in t:return '法学经典著作'
@@ -112,17 +114,18 @@ def h3_blocks(raw):
         out.append((strip_tags(m.group(1)),raw[m.end():end]))
     return out
 
-records=[]; ideas=[]; news=[]; newworks=[]; paths=[]
-for folder in ['articles','papers','new-works']:
+records=[]; ideas=[]; news=[]; newworks=[]; paths=[]; idea_serial=0
+for folder in ['articles','papers','new-works','tech-basics']:
     p=ROOT/folder
     if p.exists():paths += sorted(p.glob('*.html'))
 
 for path in paths:
     raw=path.read_text(encoding='utf-8',errors='ignore'); npath=str(path).replace('\\','/')
     title=first(r'<h1[^>]*>(.*?)</h1>',raw) or first(r'<title[^>]*>(.*?)</title>',raw)
-    body=first(r'<main[^>]*>(.*?)</main>',raw) or strip_tags(raw); body=re.sub(r'(?:科技法|网信法)研究每日推送\s*','',body)
+    search_raw=re.sub(r'<p\b[^>]*class=["\'][^"\']*\banalysis-pending\b[^"\']*["\'][^>]*>.*?</p>','',raw,flags=re.S|re.I)
+    body=first(r'<main[^>]*>(.*?)</main>',search_raw) or strip_tags(search_raw); body=re.sub(r'(?:科技法|网信法)研究每日推送\s*','',body)
     category=classify(raw,path); date=date_for(path,raw); tags=tags_for(title+' '+body)
-    records.append({'id':npath,'path':npath,'title':title,'pageTitle':first(r'<title[^>]*>(.*?)</title>',raw),'date':date,'category':category,'tags':tags,'topics':topics_for(title+' '+body),'excerpt':excerpt(body),'text':body[:14000]})
+    records.append({'id':npath,'path':npath,'title':title,'pageTitle':first(r'<title[^>]*>(.*?)</title>',raw),'date':date,'category':category,'tags':tags,'topics':topics_for(title+' '+body),'excerpt':excerpt(body),'text':body})
 
     if category=='全球科技法简报':
         blocks=re.findall(r'<article\b[^>]*class=["\'][^"\']*brief-item[^"\']*["\'][^>]*>(.*?)</article>',raw,re.S|re.I)
@@ -137,8 +140,12 @@ for path in paths:
                     if am:src_url=html.unescape(am.group(1)); src_name=strip_tags(am.group(2))
                 kind='智库选题' if '智库选题参考' in txt[:20] else ('论文选题' if '论文选题' in txt[:16] else '')
                 if kind:
-                    tm=re.search(r'《([^》]+)》',txt); idea_title=tm.group(1) if tm else re.sub(r'^(智库选题参考|论文选题)[:：]?','',txt).split('。',1)[0][:80]
-                    ideas.append({'id':f'{npath}:{len(ideas)}','kind':kind,'title':idea_title,'description':txt,'source':it,'date':date,'path':npath,'tags':tags_for(it+' '+txt)})
+                    # Keep the historical numbering even when filtering empty placeholders.
+                    serial=idea_serial; idea_serial+=1
+                    substance=re.sub(r'^(智库选题参考|论文选题)\s*[:：]?\s*','',txt).strip()
+                    if not substance or substance in {'待补','待补充','暂无','待定','—','-','无'}:continue
+                    tm=re.search(r'《([^》]+)》',substance); idea_title=tm.group(1) if tm else substance.split('。',1)[0][:80]
+                    ideas.append({'id':f'{npath}:{serial}','kind':kind,'title':idea_title,'description':txt,'source':it,'date':date,'path':npath,'tags':tags_for(it+' '+txt)})
             full=strip_tags(block); nd=item_date(meta,date)
             news.append({'id':f'{npath}#research-item-{idx}','path':npath,'anchor':f'research-item-{idx}','title':it,'date':nd,'meta':meta,'sourceName':src_name,'sourceUrl':src_url,'summary':excerpt(' '.join(facts[:2]),220),'tags':tags_for(it+' '+meta+' '+full),'topics':topics_for(it+' '+meta+' '+full),'keywords':keywords_for(it,meta,full)})
 
