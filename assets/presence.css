@@ -1,0 +1,16 @@
+/* Administrator's small, editorial-style presence panel. */
+#presence-admin[hidden],#presence-dashboard[hidden],#presence-verify-form[hidden],#presence-issued[hidden]{display:none!important}
+.presence-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.presence-heading h2{margin:6px 0 0}.presence-role,.presence-label{font-size:.85rem;color:#65726d}
+.presence-metric{padding:15px 0;border-top:1px solid #d8dbd3;border-bottom:1px solid #d8dbd3}
+#presence-count{display:block;font:600 2rem/1.2 Georgia,serif;font-variant-numeric:tabular-nums;margin-top:5px}
+.presence-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #e2e3dd;gap:12px;flex-wrap:wrap}
+.presence-account{display:inline-flex;align-items:center;gap:9px;font-weight:600}.presence-account:before{content:"";width:7px;height:7px;border-radius:50%;background:#397657}
+.presence-row time{font-size:.85rem;color:#54615b;font-variant-numeric:tabular-nums}
+.presence-empty{font-size:.9rem;color:#65726d;padding:14px 0}
+.presence-issue{margin:18px 0;border-block:1px solid #d8dbd3;padding:12px 0}
+.presence-issue summary{cursor:pointer;font-weight:600}
+#presence-admin button{font:inherit;padding:8px 13px;border:1px solid #a8b1a8;background:#fbfcf9;color:#354d41;border-radius:3px;cursor:pointer}
+#presence-admin button:disabled{opacity:.55;cursor:default}
+#presence-issued input,#presence-issue-account{max-width:100%;width:100%;box-sizing:border-box;padding:10px;border:1px solid #b9c2b9;border-radius:3px;margin:8px 0;font:inherit}
+#presence-issued-key{font-family:ui-monospace,monospace;min-width:0}#presence-issued{margin-top:14px}

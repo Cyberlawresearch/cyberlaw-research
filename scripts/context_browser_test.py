@@ -195,6 +195,50 @@ def main():
                 assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth + 1')
                 assert not errors, errors
                 results.append({'test':f'research-tools-{width}','status':'passed','detail':'Search counts, course/media filters, pagination, responsive layout and private local-data export passed.'})
+                # Presence UI test: no real account credentials or online events in CI.
+                presence_api = 'https://btgmuyuhmjzgxmpkglah.supabase.co/functions/v1/site-presence'
+                calls = []
+                def presence_stub(route):
+                    request = route.request
+                    headers = {'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'content-type, apikey, authorization', 'Access-Control-Allow-Methods': 'POST, OPTIONS', 'Content-Type': 'application/json'}
+                    if request.method == 'OPTIONS':
+                        route.fulfill(status=204, headers=headers, body='')
+                        return
+                    data = request.post_data_json
+                    calls.append({k: v for k, v in data.items() if k != 'key'})
+                    good = data.get('key') == 'a' * 64
+                    if not good:
+                        route.fulfill(status=401, headers=headers, body=json.dumps({'ok':False,'error':'unauthorized'}))
+                    elif data['action'] == 'verify' and data.get('account') == 'researcher02':
+                        route.fulfill(status=200, headers=headers, body=json.dumps({'ok':True,'account':'researcher02','admin':True}))
+                    elif data['action'] == 'online':
+                        route.fulfill(status=200, headers=headers, body=json.dumps({'ok':True,'online':[{'account':'researcher02','last_seen':'2026-11-25T11:00:00Z'},{'account':'researcher03','last_seen':'2026-11-25T11:01:00Z'}]}))
+                    else:
+                        route.fulfill(status=403, headers=headers, body=json.dumps({'ok':False,'error':'forbidden'}))
+                context.route(presence_api, presence_stub)
+                page.goto(urljoin(base,'account.html'), wait_until='domcontentloaded')
+                assert page.locator('#presence-admin').is_hidden()
+                context.add_cookies([{'name':'cyberlaw_user','value':'researcher02','url':base,'sameSite':'Lax'}])
+                page.reload(wait_until='domcontentloaded')
+                page.locator('#presence-verify-form').wait_for()
+                assert page.locator('#presence-dashboard').is_hidden()
+                assert not calls, 'legacy cookie alone must not query the backend'
+                page.locator('#presence-verify-key').fill('b'*64)
+                page.locator('#presence-verify-form button').click()
+                page.wait_for_function("document.getElementById('presence-status').textContent.includes('不正确')")
+                assert page.locator('#presence-dashboard').is_hidden()
+                page.locator('#presence-verify-key').fill('a'*64)
+                page.locator('#presence-verify-form button').click()
+                page.locator('#presence-dashboard').wait_for()
+                assert page.locator('#presence-count').inner_text() == '2'
+                assert page.locator('.presence-row').count() == 2
+                assert all(set(x) <= {'action','account'} for x in calls)
+                assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth + 1')
+                page.locator('#presence-disconnect').click()
+                assert page.locator('#presence-dashboard').is_hidden()
+                assert page.evaluate("sessionStorage.getItem('technologyLawPresenceSessionV1') === null")
+                context.unroute(presence_api, presence_stub)
+                results.append({'test':f'presence-admin-{width}','status':'passed','detail':'Non-admin hidden, legacy cookie alone rejected, verified 02 dashboard, logout removes token, no page paths, mobile layout; mock API.'})
                 context.close()
             browser.close()
     except Exception as error:
