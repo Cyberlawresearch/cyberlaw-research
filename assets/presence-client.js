@@ -10,10 +10,10 @@
   const current=()=>{try{const s=JSON.parse(sessionStorage.getItem(storageKey)||'null');return s&&validAccount(s.account)&&validKey(s.key)?s:null}catch{return null}};
   function forget(){try{sessionStorage.removeItem(storageKey);sessionStorage.removeItem(pingKey)}catch{}}
   function setSession(account,key){sessionStorage.setItem(storageKey,JSON.stringify({account,key}));sessionStorage.setItem(pingKey,String(Date.now()))}
-  async function call(action,key,account=''){
+  async function call(action,key,account='',params={}){
     const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),8000);
     try{
-      const r=await fetch(endpoint,{method:'POST',mode:'cors',credentials:'omit',cache:'no-store',signal:abort.signal,headers:{'Content-Type':'application/json','apikey':publishable},body:JSON.stringify({action,key,account})});
+      const r=await fetch(endpoint,{method:'POST',mode:'cors',credentials:'omit',cache:'no-store',signal:abort.signal,headers:{'Content-Type':'application/json','apikey':publishable},body:JSON.stringify({action,key,account,...params})});
       const data=await r.json();
       if(!r.ok||!data?.ok)throw new Error(data?.error==='unauthorized'?'unauthorized':data?.error==='forbidden'?'forbidden':'unavailable');
       return data;
@@ -44,9 +44,11 @@
     if(!panel||auth?.user!=='researcher02')return;
     panel.hidden=false;
     const form=$('presence-verify-form'),status=$('presence-status'),dashboard=$('presence-dashboard'),list=$('presence-online-list'),count=$('presence-count'),refreshButton=$('presence-refresh'),issueForm=$('presence-issue-form'),select=$('presence-issue-account'),issued=$('presence-issued'),issueStatus=$('presence-issue-status'),issuedKey=$('presence-issued-key');
-    let refreshing=false,verified=false,issuing=false;
+    let refreshing=false,verified=false,issuing=false,historyBusy=false,historyPage=1,historyTotal=0,historyEpoch=0;
+    const historyDays=$('presence-history-days'),historyAccount=$('presence-history-account'),historyRows=$('presence-history-rows'),historyStatus=$('presence-history-status'),historyPager=$('presence-history-pager');
+    const historyRefresh=$('presence-history-refresh'),historyPrev=$('presence-history-prev'),historyNext=$('presence-history-next');
     const clearList=()=>{list.replaceChildren();count.textContent='—'};
-    function reset(msg='尚未验证后台身份。'){verified=false;dashboard.hidden=true;form.hidden=false;clearList();issued.hidden=true;issuedKey.value='';issueStatus.textContent='';status.textContent=msg}
+    function reset(msg='尚未验证后台身份。'){verified=false;historyEpoch++;historyBusy=false;dashboard.hidden=true;form.hidden=false;clearList();clearHistory();issued.hidden=true;issuedKey.value='';issueStatus.textContent='';status.textContent=msg}
     function render(rows){
       list.replaceChildren();
       const users=Array.isArray(rows)?rows.filter(r=>validAccount(r.account)&&Number.isFinite(Date.parse(r.last_seen))):[];
@@ -60,13 +62,58 @@
         time.title=new Date(r.last_seen).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai',hour12:false})+'（北京时间）';row.append(name,time);list.append(row);
       });
     }
+
+    function clearHistory(message='尚未查询。'){
+      historyRows.replaceChildren();historyPage=1;historyTotal=0;historyPager.hidden=true;historyStatus.textContent=message;
+      historyRefresh.disabled=false;historyDays.disabled=false;historyAccount.disabled=false;
+    }
+    function renderHistory(data){
+      historyRows.replaceChildren();
+      const rows=Array.isArray(data.rows)?data.rows.filter(r=>validAccount(r.account)&&/^\d{4}-\d{2}-\d{2}$/.test(r.active_date)&&Number.isFinite(Date.parse(r.first_seen))&&Number.isFinite(Date.parse(r.last_seen))):[];
+      historyTotal=Number.isInteger(data.total)&&data.total>=0?data.total:0;
+      historyPage=Number.isInteger(data.page)&&data.page>=1?data.page:1;
+      const pages=Math.max(1,Math.ceil(historyTotal/50));
+      const fmt=new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false});
+      rows.forEach(r=>{
+        const tr=document.createElement('tr');
+        [r.active_date,r.account,fmt.format(new Date(r.first_seen)),fmt.format(new Date(r.last_seen))].forEach(value=>{const td=document.createElement('td');td.textContent=value;tr.append(td)});
+        historyRows.append(tr);
+      });
+      if(!rows.length){const tr=document.createElement('tr'),td=document.createElement('td');td.colSpan=4;td.textContent='所选范围暂无记录。';tr.append(td);historyRows.append(tr)}
+      historyStatus.textContent='共 '+historyTotal+' 条账号日记录'+(historyTotal?' · 第 '+historyPage+' / '+pages+' 页':'')+'（北京时间）';
+      historyPager.hidden=pages<=1;$('presence-history-page').textContent=historyPage+' / '+pages;
+      historyPrev.disabled=historyPage<=1;historyNext.disabled=historyPage>=pages;
+    }
+    async function refreshHistory(page=1){
+      const s=current();if(!verified||!s||s.account!=='researcher02'||historyBusy)return;
+      const epoch=++historyEpoch;
+      historyBusy=true;historyRefresh.disabled=true;historyDays.disabled=true;historyAccount.disabled=true;historyPrev.disabled=true;historyNext.disabled=true;
+      historyStatus.textContent='正在查询…';
+      try{
+        const result=await call('history',s.key,historyAccount.value,{days:Number(historyDays.value),page});
+        if(epoch!==historyEpoch||!verified||current()?.key!==s.key)return;
+        renderHistory(result);
+      }catch(e){
+        if(epoch!==historyEpoch)return;
+        if(e?.message==='unauthorized'||e?.message==='forbidden'){forget();reset('后台身份已失效，请重新验证。')}
+        else clearHistory('历史活跃记录暂时无法获取，请重试。');
+      }finally{
+        if(epoch===historyEpoch){historyBusy=false;historyRefresh.disabled=false;historyDays.disabled=false;historyAccount.disabled=false}
+      }
+    }
+    for(let i=1;i<=20;i++){const option=document.createElement('option');option.value=option.textContent='researcher'+String(i).padStart(2,'0');historyAccount.append(option)}
+    historyRefresh.addEventListener('click',()=>refreshHistory(1));
+    historyDays.addEventListener('change',()=>refreshHistory(1));
+    historyAccount.addEventListener('change',()=>refreshHistory(1));
+    historyPrev.addEventListener('click',()=>refreshHistory(historyPage-1));
+    historyNext.addEventListener('click',()=>refreshHistory(historyPage+1));
     async function refresh(){
       const s=current();if(!s||s.account!=='researcher02'||refreshing)return;
       refreshing=true;refreshButton.disabled=true;
       try{
         const data=await call('online',s.key);
         const live=current();if(!live||live.key!==s.key)return;
-        verified=true;form.hidden=true;dashboard.hidden=false;render(data.online);
+        const first=!verified;verified=true;form.hidden=true;dashboard.hidden=false;render(data.online);if(first)void refreshHistory(1);
         status.textContent='已验证管理员身份 · 最近活跃时间（北京时间）';
       }catch(e){
         if(e?.message==='unauthorized'||e?.message==='forbidden'){forget();reset('后台身份已失效，请重新验证。')}

@@ -117,8 +117,8 @@ def transform(source: str, relative: Path, *, names_only: bool = False) -> str:
         prefix = "../" * len(relative.parent.parts)
         resources = ("\n<!-- shared-site-brand:start -->\n"
                      f'<link rel="stylesheet" href="{prefix}assets/site-brand.css?v={VERSION}">\n'
-                     f'<script defer src="{prefix}assets/presence-client.js?v=20261125p"></script>\n'
-                     f'<link rel="stylesheet" href="{prefix}assets/presence.css?v=20261125p">\n'
+                     f'<script defer src="{prefix}assets/presence-client.js?v=20261125h"></script>\n'
+                     f'<link rel="stylesheet" href="{prefix}assets/presence.css?v=20261125h">\n'
                      "<!-- shared-site-brand:end -->\n")
         edits.append((parser.head_end, parser.head_end, resources))
     for start, end, replacement in sorted(edits, reverse=True):

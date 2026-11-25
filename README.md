@@ -25,4 +25,4 @@
 
 ## 当前在线账号
 
-在线状态后台独立验证访问密钥；只有 researcher02 可查阅实时名单。原有账号密码和本机研究资料不改动。运行与密钥管理见 [ONLINE_PRESENCE.md](ONLINE_PRESENCE.md)。
+在线状态后台独立验证访问密钥；只有 researcher02 可查阅实时名单与400天每日活跃汇总。原有账号密码和本机研究资料不改动。运行与密钥管理见 [ONLINE_PRESENCE.md](ONLINE_PRESENCE.md)。

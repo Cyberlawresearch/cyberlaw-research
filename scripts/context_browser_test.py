@@ -213,6 +213,13 @@ def main():
                         route.fulfill(status=200, headers=headers, body=json.dumps({'ok':True,'account':'researcher02','admin':True}))
                     elif data['action'] == 'online':
                         route.fulfill(status=200, headers=headers, body=json.dumps({'ok':True,'online':[{'account':'researcher02','last_seen':'2026-11-25T11:00:00Z'},{'account':'researcher03','last_seen':'2026-11-25T11:01:00Z'}]}))
+                    elif data['action'] == 'history':
+                        assert data.get('days') in (7,30,90,366,400)
+                        assert isinstance(data.get('page'),int)
+                        rows=[{'active_date':'2026-11-25','account':'researcher02','first_seen':'2026-11-25T10:00:00Z','last_seen':'2026-11-25T11:00:00Z'},{'active_date':'2026-11-24','account':'researcher03','first_seen':'2026-11-24T10:00:00Z','last_seen':'2026-11-24T11:01:00Z'}]
+                        if data.get('account'):
+                            rows=[row for row in rows if row['account']==data['account']]
+                        route.fulfill(status=200, headers=headers, body=json.dumps({'ok':True,'rows':rows,'total':len(rows),'page':1,'page_size':50}))
                     else:
                         route.fulfill(status=403, headers=headers, body=json.dumps({'ok':False,'error':'forbidden'}))
                 context.route(presence_api, presence_stub)
@@ -232,11 +239,21 @@ def main():
                 page.locator('#presence-dashboard').wait_for()
                 assert page.locator('#presence-count').inner_text() == '2'
                 assert page.locator('.presence-row').count() == 2
-                assert all(set(x) <= {'action','account'} for x in calls)
+                page.wait_for_function("document.getElementById('presence-history-status').textContent.includes('共 2 条')")
+                assert page.locator('#presence-history-rows tr').count()==2
+                page.locator('#presence-history-days').select_option('400')
+                page.wait_for_function("!document.getElementById('presence-history-days').disabled")
+                page.locator('#presence-history-account').select_option('researcher03')
+                page.wait_for_function("document.getElementById('presence-history-status').textContent.includes('共 1 条')")
+                assert 'researcher03' in page.locator('#presence-history-rows').inner_text()
+                assert 'researcher02' not in page.locator('#presence-history-rows').inner_text()
+                assert any(x.get('action')=='history' and x.get('days')==400 and x.get('account')=='researcher03' for x in calls)
+                assert all(set(x) <= {'action','account','days','page'} for x in calls)
                 assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth + 1')
                 page.locator('#presence-disconnect').click()
                 assert page.locator('#presence-dashboard').is_hidden()
                 assert page.evaluate("sessionStorage.getItem('technologyLawPresenceSessionV1') === null")
+                assert page.locator('#presence-history-rows tr').count()==0
                 context.unroute(presence_api, presence_stub)
                 results.append({'test':f'presence-admin-{width}','status':'passed','detail':'Non-admin hidden, legacy cookie alone rejected, verified 02 dashboard, logout removes token, no page paths, mobile layout; mock API.'})
                 context.close()
