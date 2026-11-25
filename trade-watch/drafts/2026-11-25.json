@@ -1,7 +1,7 @@
 {
   "date": "2026-11-25",
   "base_main_sha": "fce743855083f90493cf3241869a22157d734ee8",
-  "phase": "ready",
+  "phase": "main_written_pages_pending",
   "publication_ready": true,
   "items": [
     {
@@ -215,10 +215,13 @@
     "Australia": "主管部门反倾销复审及公告检索，未找到符合时限的新事项",
     "Other": "中国、越南、印度尼西亚及中东涉贸易事项"
   },
-  "last_error": null,
+  "last_error": {
+    "stage": "public_page_verification",
+    "detail": "两次公开网页访问均返回 Internal Error: URL is not accessible via this tool；Pages 对应最新 main 仍在部署，不能认定已公开上线。",
+    "retry_count": 1
+  },
   "next_actions": [
-    "写入当期HTML、首页、归档",
-    "回读与Pages验收"
+    "以最新保留三份文件的main提交核验Pages部署、公开正文、首页、归档及来源专项检查"
   ],
   "dedup": {
     "dates": [
@@ -283,5 +286,42 @@
     "scope": "发布前复查近1–2小时新增报道、USTR、BIS、OFAC、英国政府及欧盟条例；未找到已公布的301新税率或其他足以替换本期事项的新增正式措施",
     "result": "保留301政策信号表述；欧盟配额耗尽禁止入境、有效期与证明要求复核一致。"
   },
-  "issue_number": "078"
+  "issue_number": "078",
+  "publication_attempt": {
+    "date": "2026-11-25",
+    "status": "main_written_pages_pending",
+    "issue_commit": "48a3feb567b037d75f55a5a70cb010c05d5fbf03",
+    "index_commit": "305405b6377cf73264d269d433e1d31b9cbc9072",
+    "final_trade_watch_commit": "5cca2f9e43ff7e6db7be86e37b3ac41ba1c88e5e",
+    "latest_main": "53a9deaad3bbbecf322c234e6b97d6b7965b869f",
+    "main_readback": {
+      "issue": "a9bf817f43e69bd2e5fb0362e7cc32de692e1055",
+      "index": "45a4f0827642d64b5853847cd6d524f282135608",
+      "archive": "b478a2b73b1e7bccfec66d784055a78e065b033c",
+      "date_and_number": true,
+      "items": 9,
+      "source_links": 16,
+      "source_url_match": true,
+      "focus_links": true,
+      "archive_first": "issues/2026-11-25.html",
+      "latest": "issues/2026-11-25.html",
+      "latest_main_blobs_unchanged": true
+    },
+    "pages_run": {
+      "id": 45523041889,
+      "status": "in_progress",
+      "conclusion": null,
+      "url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/45523041889"
+    },
+    "public_checks": {
+      "attempts": 2,
+      "paths": [
+        "issues/2026-11-25.html",
+        "index.html",
+        "archive.html"
+      ],
+      "result": "web open returned Internal Error: URL is not accessible via this tool for all three paths, including latest SHA query parameter retry. No HTTP status established; public content not verified."
+    },
+    "source_diagnostics": "对应最新提交的部署后来源专项诊断尚无成功结果"
+  }
 }
