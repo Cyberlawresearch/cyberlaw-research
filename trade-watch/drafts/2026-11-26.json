@@ -1,7 +1,7 @@
 {
   "date": "2026-11-26",
   "base_main_sha": "d31ea4e9892d21dbf4b74992d2bb5c59ed641735",
-  "phase": "deduplicated",
+  "phase": "source_verified",
   "publication_ready": false,
   "items": [
     {
@@ -158,11 +158,62 @@
   },
   "last_error": null,
   "next_actions": [
-    "最终来源与终扫核验后设置publication_ready"
+    "保存终扫记录并标记发布准备完成"
   ],
   "summary": "美国正式公布14个经济体制造业产能过剩301调查认定及拟议关税；欧盟提出第22轮对俄制裁；美国拟调整巴西飞机和食糖关税，更正中国豌豆蛋白初裁税率并续行钢绞线双反税令；加拿大延后对华卡客车轮胎双反初裁。",
   "dedup": {
     "dates": "2026-11-19至2026-11-25",
     "result": "已获取并逐条对照七期完整正文；301为正式认定及提案，Tris为实际刊登、保证金执行及终裁延期，其他未重复；排除混动车配额重复报道。"
+  },
+  "source_verification": {
+    "method": "逐一打开每条正文实际链接，核对对应日期、文件编号、法律阶段及核心事实",
+    "links": [
+      {
+        "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural",
+        "status": "opened",
+        "item": "us-301-capacity"
+      },
+      {
+        "url": "https://ustr.gov/sites/default/files/files/Press/Releases/2026/China%20FRN.pdf",
+        "status": "opened",
+        "item": "us-301-capacity"
+      },
+      {
+        "url": "https://cyprus.representation.ec.europa.eu/news/statement-president-von-der-leyen-22nd-package-sanctions-against-russia-2026-11-23_en",
+        "status": "opened",
+        "item": "eu-russia-22"
+      },
+      {
+        "url": "https://apnews.com/article/ecad86868390f6602b346c70d1fa5757",
+        "status": "opened",
+        "item": "eu-russia-22"
+      },
+      {
+        "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-invites-public-comment-proposed-modifications-section-301-action-regarding-brazils-unreasonable",
+        "status": "opened",
+        "item": "us-brazil-301"
+      },
+      {
+        "url": "https://www.federalregister.gov/documents/2026/11/25/2026-23984/certain-pea-protein-from-the-peoples-republic-of-china-preliminary-results-partial-rescission-and",
+        "status": "opened",
+        "item": "us-pea-correction"
+      },
+      {
+        "url": "https://www.cbsa-asfc.gc.ca/sima-lmsi/i-e/tbt2026/tbt2026-nx-eng.html",
+        "status": "opened",
+        "item": "ca-truck-tires"
+      },
+      {
+        "url": "https://www.federalregister.gov/documents/2026/11/25/2026-23992/prestressed-concrete-steel-wire-strand-from-the-peoples-republic-of-china-continuation-of",
+        "status": "opened",
+        "item": "us-pc-strand"
+      },
+      {
+        "url": "https://www.federalregister.gov/documents/2026/11/25/2026-23983/trishydroxymethylaminomethane-from-the-peoples-republic-of-china-preliminary-affirmative",
+        "status": "opened",
+        "item": "us-tris-provisional"
+      }
+    ],
+    "notes": "联邦公报短链接及GovInfo初次路径访问失败，已从全文存档跳转至三个具体联邦公报正文并成功打开；最终使用具体联邦公报URL。美联社短链接成功重定向至对应文章。"
   }
 }
