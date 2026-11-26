@@ -1,7 +1,7 @@
 {
   "date": "2026-11-26",
   "base_main_sha": "d31ea4e9892d21dbf4b74992d2bb5c59ed641735",
-  "phase": "publication_ready",
+  "phase": "main_written_pages_pending",
   "publication_ready": true,
   "items": [
     {
@@ -156,9 +156,14 @@
     "CA": "CBSA案件检索",
     "AU": "贸易救济委员会公告检索"
   },
-  "last_error": null,
+  "last_error": {
+    "action": "web.open public page verification",
+    "message": "URL is not accessible via this tool",
+    "date": "2026-11-26",
+    "retries": 1
+  },
   "next_actions": [
-    "创建完整正文、更新首页及归档，回读并验收Pages"
+    "Verify completed Pages workflow for final main commit; inspect publication guard public-page step and source diagnostics logs; do not claim public release until current issue, index, archive and source links pass."
   ],
   "summary": "美国正式公布14个经济体制造业产能过剩301调查认定及拟议关税；欧盟提出第22轮对俄制裁；美国拟调整巴西飞机和食糖关税，更正中国豌豆蛋白初裁税率并续行钢绞线双反税令；加拿大延后对华卡客车轮胎双反初裁。",
   "dedup": {
@@ -219,5 +224,79 @@
   "final_sweep": {
     "date": "2026-11-26",
     "result": "结束前再次查询11月25—26日主要法域及贸易监管动态，未发现应另行收录的已核验实质变化；韩国混动车报道已在昨日欧盟配额事件覆盖。"
+  },
+  "publication_attempt": {
+    "date": "2026-11-26",
+    "stage": "main_written_pages_pending",
+    "main_commit": "18bffa4e5180c7aca860896bdbbfb20886fb5ce6",
+    "files": [
+      {
+        "path": "trade-watch/issues/2026-11-26.html",
+        "sha": "487a2a64f92cab8baa5eedac4126e4fc8ec65400",
+        "verified": true
+      },
+      {
+        "path": "trade-watch/index.html",
+        "sha": "6550c75a0f36d9a3b53114b45c6c41ced2506998",
+        "verified": true
+      },
+      {
+        "path": "trade-watch/archive.html",
+        "sha": "d1fd6f13a390a4c34bf154d26612b488bac9131e",
+        "verified": true
+      }
+    ],
+    "item_count": 7,
+    "source_count": 9,
+    "source_href_match": true,
+    "workflow_runs": [
+      {
+        "id": 45733085963,
+        "name": "Trade Watch source diagnostics",
+        "status": "completed",
+        "conclusion": "skipped",
+        "head_sha": "18bffa4e5180c7aca860896bdbbfb20886fb5ce6"
+      },
+      {
+        "id": 45733086144,
+        "name": "Trade Watch publication guard",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "18bffa4e5180c7aca860896bdbbfb20886fb5ce6"
+      },
+      {
+        "id": 45733083738,
+        "name": "Trade Watch source diagnostics",
+        "status": "completed",
+        "conclusion": "skipped",
+        "head_sha": "18bffa4e5180c7aca860896bdbbfb20886fb5ce6"
+      },
+      {
+        "id": 45733083868,
+        "name": "Trade Watch publication guard",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "18bffa4e5180c7aca860896bdbbfb20886fb5ce6"
+      },
+      {
+        "id": 45733074519,
+        "name": "Deploy static site to Pages",
+        "status": "queued",
+        "conclusion": null,
+        "head_sha": "18bffa4e5180c7aca860896bdbbfb20886fb5ce6"
+      }
+    ],
+    "public_page_attempts": [
+      {
+        "attempt": 1,
+        "result": "web.open: three Pages URLs not accessible via this tool"
+      },
+      {
+        "attempt": 2,
+        "result": "web.open: three URLs with final commit cache-busting parameter not accessible via this tool"
+      }
+    ],
+    "public_verification": "pending",
+    "unwritten_files": []
   }
 }
