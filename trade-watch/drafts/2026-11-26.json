@@ -3,10 +3,51 @@
   "base_main_sha": "d31ea4e9892d21dbf4b74992d2bb5c59ed641735",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "us-301-capacity",
+      "title": "美国公布14个经济体产能过剩301调查认定及关税提案",
+      "date": "2026-11-25",
+      "source": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural",
+      "stage": "正式认定、拟议措施",
+      "new_fact": "较11月25日媒体预告，公布正式认定和税率方案，1月5日意见截止"
+    },
+    {
+      "id": "us-brazil-301",
+      "title": "美国拟对巴西飞机及配额外食糖调整税负",
+      "date": "2026-11-25",
+      "source": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-invites-public-comment-proposed-modifications-section-301-action-regarding-brazils-unreasonable",
+      "stage": "拟议措施"
+    },
+    {
+      "id": "us-pea-correction",
+      "title": "美国更正中国豌豆蛋白反倾销复审初裁税率",
+      "date": "2026-11-25",
+      "source": "https://thefederalregister.org/documents/2026-23984/certain-pea-protein-from-the-people-s-republic-of-china-preliminary-results-partial-rescission-and-preliminary-determina",
+      "stage": "初裁更正",
+      "rate": "43.31%"
+    },
+    {
+      "id": "ca-truck-tires",
+      "title": "加拿大延长对华卡客车轮胎双反初裁期限",
+      "date": "2026-11-23",
+      "source": "https://www.cbsa-asfc.gc.ca/sima-lmsi/i-e/tbt2026/tbt2026-nx-eng.html",
+      "stage": "初裁期限延期",
+      "deadline": "2027-01-13"
+    }
+  ],
+  "coverage": {
+    "US": "USTR、联邦公报、OFAC已检索",
+    "EU": "欧盟贸易与公报检索；混动车旧闻排除",
+    "UK": "贸易救济、出口管制、制裁检索",
+    "JP": "财务省及经产省检索",
+    "KR": "贸易部门及媒体检索",
+    "IN": "DGTR及贸易新闻检索",
+    "CA": "CBSA案件检索",
+    "AU": "贸易救济委员会公告检索"
+  },
   "last_error": null,
   "next_actions": [
-    "读取近7期并检索核验各法域"
+    "补充候选、正式来源及去重、终扫"
   ]
 }
