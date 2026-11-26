@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-26",
+  "column": "brief",
+  "state": "draft",
+  "page": "articles/2026-11-26-tech-law-brief.html",
+  "updated_at": "2026-11-26T19:00:05+08:00",
+  "base_main_sha": "18bffa4e5180c7aca860896bdbbfb20886fb5ce6",
+  "phase": "research",
+  "items": [],
+  "news_count": 0,
+  "coverage": {
+    "domestic_sources": []
+  },
+  "checks": {
+    "sources": false,
+    "legal_status": false,
+    "original_titles": false,
+    "timeliness": false,
+    "previous_day_event_deduplication": false,
+    "seven_day_history_deduplication": false,
+    "local_language_scan_korea_japan_vietnam": false,
+    "domestic_major_omission_review": false
+  },
+  "next_actions": [
+    "检索及逐项核验",
+    "近七日去重",
+    "复扫及发布"
+  ],
+  "last_error": null,
+  "publication_ready": false,
+  "publication": {
+    "commit_sha": null,
+    "pages_run_id": null,
+    "online_verified": null
+  }
+}
