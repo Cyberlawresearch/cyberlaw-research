@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-26",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-26-green-human-oversight-government-algorithms.html",
+  "selection": "The flaws of policies requiring human oversight of government algorithms",
+  "bibliography": {
+    "type": "article",
+    "author": "Ben Green",
+    "originalTitle": "The flaws of policies requiring human oversight of government algorithms",
+    "journal": "Computer Law & Security Review",
+    "year": "2022",
+    "volume": "45",
+    "issue": "",
+    "pages": "105681",
+    "doi": "10.1016/j.clsr.2022.105681",
+    "url": "https://doi.org/10.1016/j.clsr.2022.105681",
+    "cnTitle": "政府算法为何不能只靠人工复核：从个案监督到行政机关的制度问责"
+  },
+  "versions": {
+    "full_text": "Author-hosted 22-page Elsevier version of record, sections 1–6, table 1, appendix and references consulted; CC BY 4.0.",
+    "publication": "Formal journal volume 45, July 2022, article 105681, DOI cross-checked with publisher-indexed record; SSRN DOI distinct."
+  },
+  "sources": [
+    "https://doi.org/10.1016/j.clsr.2022.105681",
+    "https://www.benzevgreen.com/wp-content/uploads/2022/04/22-clsr.pdf",
+    "https://ssrn.com/abstract=3921216",
+    "https://eur-lex.europa.eu/eli/reg/2024/1689",
+    "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "history_scope": "Reviewed papers.html and papers-history-1.html titles and complete main tree; no earlier Ben Green paper matching title; today's record and article absent. Rechecked latest main and both history indexes before rebasing onto concurrent update.",
+  "related_reading": [
+    "articles/2026-11-02-engstrom-ho-algorithmic-accountability-administrative-state.html"
+  ],
+  "timeline": null,
+  "body_length": 4943,
+  "checked_at": "2026-11-26",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  },
+  "last_error": null
+}
