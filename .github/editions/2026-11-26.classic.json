@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-26",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-26-belloc-servile-state.html",
+  "target_path": "articles/2026-11-26-belloc-servile-state.html",
+  "book": {
+    "author": "Hilaire Belloc（希莱尔·贝洛克）",
+    "original_title": "The Servile State",
+    "publisher": "T. N. Foulis",
+    "year": "1912",
+    "edition": "1912年英文版；据 Project Gutenberg 64882 电子转录及 ALB Library 同本全文核对"
+  },
+  "source_urls": [
+    "https://www.gutenberg.org/ebooks/64882",
+    "https://alb-lang.org/library/read/64882",
+    "https://pubmed.ncbi.nlm.nih.gov/33967100/",
+    "https://orwell.ru/library/articles/notes/english/e_notew",
+    "https://reason.com/1978/12/01/choosing-an-ism/"
+  ],
+  "original_verification": "核对1912年英文题名页、全书提要、引言、九节及第八节后的收购附录、结论和尾注；依据 ALB Library 的 Gutenberg 64882 完整电子转录系统核对各部分论证。Gutenberg 直接访问返回503，改用同本完整转录；未声称逐字校勘原版书影。",
+  "chapter_sources": [
+    "https://alb-lang.org/library/read/64882"
+  ],
+  "critics": [
+    {
+      "name": "George Orwell",
+      "work": "Notes on the Way (1940)",
+      "url": "https://orwell.ru/library/articles/notes/english/e_notew",
+      "checked": "核对原文对贝洛克预测及小所有制方案的批评"
+    },
+    {
+      "name": "Eric Mack",
+      "work": "Choosing an \"Ism\": Two Flawed Views (1978)",
+      "url": "https://reason.com/1978/12/01/choosing-an-ism/",
+      "checked": "核对书评正文对法律特权、制度分类及预测的批评"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html全部历史索引",
+    "classics-history.html完整旧索引",
+    "data/books.json",
+    "最新main递归树当日路径检查"
+  ],
+  "duplicate_found": false,
+  "sections": 38,
+  "prose_length": 12375,
+  "han_characters": 11413,
+  "checked_at": "2026-11-26",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "article_blob_sha": "f1c4d7adaccf7196e41fca9ec1ce6561a13bcf7b",
+  "base_main_sha": "18bffa4e5180c7aca860896bdbbfb20886fb5ce6",
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
