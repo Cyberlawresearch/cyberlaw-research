@@ -464,6 +464,118 @@
       "background": "",
       "outlook": "",
       "state": "candidate"
+    },
+    {
+      "id": "cn-ai-rumors",
+      "jurisdiction": "中国",
+      "agency": "公安部网安局",
+      "event_date": "2026-11-24",
+      "title": "公安部网安局公布十起利用人工智能工具编造传播网络谣言典型案例",
+      "original_title": "公安部网安局公布10起AI造谣典型案例：张家界玻璃桥坍塌、诺如病毒再袭等在列",
+      "url": "https://m.sohu.com/a/1105503973_114760?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+      "fact": "11月24日，公安部网安局公布2026年度十起利用人工智能工具编造传播网络谣言典型案例。案例涉及使用人工智能生成虚假灾害、食品安全、公共卫生和教育信息，以及冒用他人形象直播带货；属地公安机关分别依法采取刑事强制措施或行政处罚。",
+      "legal_status": "典型案例通报；IT之家转载通报全文，公安部官网访问超时。",
+      "sources": [
+        {
+          "url": "https://m.sohu.com/a/1105503973_114760?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "original_title": "公安部网安局公布10起AI造谣典型案例：张家界玻璃桥坍塌、诺如病毒再袭等在列",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    },
+    {
+      "id": "cn-ai-standards",
+      "jurisdiction": "中国",
+      "agency": "市场监管总局、工业和信息化部",
+      "event_date": "2026-11-24",
+      "title": "市场监管总局披露人工智能国际标准研制进展及跨境合规互认试点",
+      "original_title": "从参与到主导 中国人工智能标准成体系出海",
+      "url": "https://sh.ccic.com/xwdt/yndt/art/2026/art_ecc1011a5e6246dfb7f1feb0a475a085.html",
+      "fact": "11月24日，市场监管总局召开人工智能国际标准化专题新闻发布会，介绍我国牵头研制29项基础共性国际标准、49项行业应用国际标准的进展。总局已发布15项人工智能国家标准外文版，并在上海、河北等五个自贸试验区推进标准化自主开放试点，涉及人工智能数据跨境和产品合规互认。",
+      "legal_status": "新闻发布会披露研制进度及试点安排，未将研制项目表述为全部已发布标准。",
+      "sources": [
+        {
+          "url": "https://sh.ccic.com/xwdt/yndt/art/2026/art_ecc1011a5e6246dfb7f1feb0a475a085.html",
+          "original_title": "从参与到主导 中国人工智能标准成体系出海",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    },
+    {
+      "id": "cn-privacy-auditors",
+      "jurisdiction": "中国",
+      "agency": "中国网络空间安全协会（中央网信办指导）",
+      "event_date": "2026-11-25",
+      "title": "第三批个人信息保护合规审计人员能力评价工作启动",
+      "original_title": "关于开展第三批个人信息保护合规审计人员能力评价工作的通知",
+      "url": "https://www.cac.gov.cn/2026-11/25/c_1797277551485213.htm",
+      "fact": "11月25日，中国网信网发布中国网络空间安全协会开展第三批个人信息保护合规审计人员能力评价的通知，报名截至11月30日，拟于12月底组织现场笔试。通知明确初、中、高级审计员报考条件，高级人员另须参加面试；从2027年起，高级审计员报考须先取得中级资质并具备两年相关工作经历。",
+      "legal_status": "行业能力评价工作通知，非新行政许可。",
+      "sources": [
+        {
+          "url": "https://www.cac.gov.cn/2026-11/25/c_1797277551485213.htm",
+          "original_title": "关于开展第三批个人信息保护合规审计人员能力评价工作的通知",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    },
+    {
+      "id": "cn-sichuan-credit",
+      "jurisdiction": "中国",
+      "agency": "四川省发展改革委、四川省大数据中心",
+      "event_date": "2026-11-25",
+      "title": "四川修订省级公共信用信息细目，规范数据归集范围与责任部门",
+      "original_title": "四川省进一步规范公共信用信息细目 有力提升信用信息归集实效",
+      "url": "https://www.ndrc.gov.cn/xwdt/dt/dfdt/202611/t20261125_1409060.html",
+      "fact": "11月25日，国家发展改革委转载四川省发展改革委消息，四川省发展改革委与省大数据中心联合印发《四川省省级公共信用信息细目（2026年版）》。新版细目优化信息分类、数据项和来源部门，规范公共信用信息归集共享；截至10月底，四川省社会信用信息平台累计归集各类信用信息超过63亿条。",
+      "legal_status": "地方公共信用数据管理文件已印发；首次印发日期仍待核查。",
+      "sources": [
+        {
+          "url": "https://www.ndrc.gov.cn/xwdt/dt/dfdt/202611/t20261125_1409060.html",
+          "original_title": "四川省进一步规范公共信用信息细目 有力提升信用信息归集实效",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
     }
   ],
   "news_count": 0,
@@ -522,6 +634,146 @@
         "entry_url": "https://wap.stockstar.com/detail/IG2026112600029624",
         "status": "access_failed",
         "notes": "DisabledError"
+      },
+      {
+        "group": "中央机关",
+        "source": "中央网信办",
+        "entry_url": "https://www.cac.gov.cn/",
+        "status": "checked_with_candidates",
+        "notes": "首页见第三批合规审计人员能力评价通知；已打开具体文件；网络安全标识属已刊事项。"
+      },
+      {
+        "group": "中央机关",
+        "source": "商务部",
+        "entry_url": "https://www.mofcom.gov.cn/",
+        "status": "checked_partial",
+        "notes": "首页实际打开；未完成所有司局巡视。"
+      },
+      {
+        "group": "中央机关",
+        "source": "市场监管总局",
+        "entry_url": "https://www.samr.gov.cn/",
+        "status": "checked_partial",
+        "notes": "首页实际打开；另核查11月24日新闻发布会实录转载。"
+      },
+      {
+        "group": "标准化",
+        "source": "TC260",
+        "entry_url": "https://www.tc260.org.cn/",
+        "status": "checked_no_new_on_homepage",
+        "notes": "首页最新月报11月23日已刊；11月20日通知属旧闻。"
+      },
+      {
+        "group": "标准化",
+        "source": "TC609",
+        "entry_url": "https://www.tc609.org.cn/",
+        "status": "checked_no_new_on_homepage",
+        "notes": "首页可见通知最新11月19日，未见72小时新增。"
+      },
+      {
+        "group": "标准化",
+        "source": "中国信通院",
+        "entry_url": "https://www.caict.ac.cn/",
+        "status": "access_failed",
+        "notes": "HTTP 412"
+      },
+      {
+        "group": "中央机关",
+        "source": "最高人民法院",
+        "entry_url": "https://www.court.gov.cn/index.html",
+        "status": "checked_partial",
+        "notes": "人工智能辅助审判座谈会属前期已刊事项。"
+      },
+      {
+        "group": "中央机关",
+        "source": "最高人民检察院",
+        "entry_url": "https://www.spp.gov.cn/",
+        "status": "access_failed",
+        "notes": "HTTP 403"
+      },
+      {
+        "group": "中央机关",
+        "source": "公安部",
+        "entry_url": "https://www.mps.gov.cn/",
+        "status": "access_failed",
+        "notes": "400 Timeout fetching；另核查IT之家转载十起典型案例全文。"
+      },
+      {
+        "group": "中央机关",
+        "source": "国务院",
+        "entry_url": "https://www.gov.cn/",
+        "status": "access_failed",
+        "notes": "HTTP 403"
+      },
+      {
+        "group": "中央机关",
+        "source": "全国人大",
+        "entry_url": "https://www.npc.gov.cn/",
+        "status": "access_failed",
+        "notes": "400 Timeout fetching"
+      },
+      {
+        "group": "中央机关",
+        "source": "工信部",
+        "entry_url": "https://www.miit.gov.cn/",
+        "status": "access_failed",
+        "notes": "400 Timeout fetching；具体通信网方案文件及解读已读。"
+      },
+      {
+        "group": "中央机关",
+        "source": "科技部",
+        "entry_url": "https://www.most.gov.cn/",
+        "status": "access_failed",
+        "notes": "页面无可读文本。"
+      },
+      {
+        "group": "中央机关",
+        "source": "国家数据局",
+        "entry_url": "https://www.nda.gov.cn/",
+        "status": "access_failed",
+        "notes": "首页无可读文本；具体行动计划已读。"
+      },
+      {
+        "group": "中央机关",
+        "source": "国家发展改革委",
+        "entry_url": "https://www.ndrc.gov.cn/",
+        "status": "checked_with_candidates",
+        "notes": "首页实际打开，已核查四川公共信用细目动态。"
+      },
+      {
+        "group": "中央机关",
+        "source": "国家金融监督管理总局",
+        "entry_url": "https://www.nfra.gov.cn/",
+        "status": "access_failed",
+        "notes": "HTTP 403"
+      },
+      {
+        "group": "媒体",
+        "source": "IT之家（搜狐转载）",
+        "entry_url": "https://m.sohu.com/a/1105503973_114760?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "status": "checked_with_candidates",
+        "notes": "已打开并核查公安部案例通报正文。"
+      },
+      {
+        "group": "标准化",
+        "source": "中国检验认证集团上海公司",
+        "entry_url": "https://sh.ccic.com/xwdt/yndt/art/2026/art_ecc1011a5e6246dfb7f1feb0a475a085.html",
+        "status": "checked_with_candidates",
+        "notes": "已打开11月24日发布会实录，区分国际标准研制与国家标准外文版计划。"
+      },
+      {
+        "group": "重点地方",
+        "source": "四川（国家发展改革委转载）",
+        "entry_url": "https://www.ndrc.gov.cn/xwdt/dt/dfdt/202611/t20261125_1409060.html",
+        "status": "checked_with_candidates",
+        "notes": "11月25日消息已读；印发日期需补查。"
+      },
+      {
+        "group": "中央机关",
+        "source": "中央网信办",
+        "entry_url": "https://www.cac.gov.cn/2026-11/25/c_1797277551485213.htm",
+        "status": "checked_with_candidates",
+        "notes": "11月25日正式发布通知，通知落款11月24日。"
       }
     ],
     "international_sources": [
@@ -572,8 +824,34 @@
         "source": "越南语",
         "status": "search_only",
         "notes": "检索到11月20日数据安全法通过，超出窗口；尚未完成巡视"
+      },
+      {
+        "source": "越南语 VnEconomy",
+        "status": "search_only",
+        "url": "https://vneconomy.vn/diem-tin-18h-ngay-2511-s1246.htm",
+        "notes": "11月25日AI网络攻击线索，未核查报道全文与原始安全通报，不计入候选。"
       }
-    ]
+    ],
+    "history_review": {
+      "main_dates_opened": [
+        "2026-11-19",
+        "2026-11-20",
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "main_dates_missing": [
+        "2026-11-24",
+        "2026-11-25"
+      ],
+      "draft_24": "已读取11条未发布候选；MiniMax 11月26日公开识别及回应为相较OpenRouter早期报道的新进展",
+      "draft_25": "未发现（404）",
+      "note": "已进行历史标题层面对照，未完成逐事件完整正文复核。"
+    },
+    "final_review": {
+      "completed": false,
+      "notes": "国内中央机关部分网站无正文或访问失败；重点地方、媒体、其他国际固定来源组未完成逐项巡视；未完成发布前最后1—2小时全面复扫。"
+    }
   },
   "checks": {
     "sources": false,
@@ -586,17 +864,23 @@
     "domestic_major_omission_review": false
   },
   "next_actions": [
-    "核对近7日正文和24/25日未发稿记录",
-    "核查广东官方全文及湖北首次公开日期",
-    "继续国内机关/标准/地方/媒体及国际监管机构巡视",
-    "最终时效和去重检查；通过后才发布"
+    "补查中央机关、重点地方、标准评测及全部指定媒体和国际监管机构；完成来源巡视与重大遗漏复核。",
+    "核对湖北词元措施、广东算力规划、四川公共信用细目首次公开日期；核查余下候选时效、法律状态和原始来源。",
+    "逐事件完成七日历史去重和发布前复扫；所有检查如实记录。",
+    "查明当前 main Pages Prepare content structure 失败原因；仅在当期内容具备发布条件时原子提交并验证实际部署。"
   ],
-  "last_error": null,
+  "last_error": "现有 main 的 Pages 工作流 45733074519 在 Prepare content structure 失败；当期候选稿保存在 news-drafts，不推进 main 或网站入口。",
   "publication_ready": false,
   "publication": {
     "commit_sha": null,
     "pages_run_id": null,
-    "online_verified": null
+    "online_verified": null,
+    "existing_main_head": "18bffa4e5180c7aca860896bdbbfb20886fb5ce6",
+    "existing_main_pages_run_id": 45733074519,
+    "existing_main_pages_status": "completed",
+    "existing_main_pages_conclusion": "failure",
+    "existing_main_pages_failed_step": "Prepare content structure",
+    "online_read_attempt": "current-edition.json 与 briefs.html 网页读取不可用，未完成线上验收。"
   },
-  "candidate_count": 16
+  "candidate_count": 20
 }
