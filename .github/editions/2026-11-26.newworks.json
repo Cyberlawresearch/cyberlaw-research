@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-26",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-26-new-works.html",
+  "page_blob_sha": "0a7837acb049d08442037d06ced3346216da9bb5",
+  "newworks_count": 3,
+  "checked_at": "2026-11-26T12:30:21Z",
+  "checks": {
+    "publisher_original_source_verified": true,
+    "original_title_author_doi_verified": true,
+    "publication_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "historical_indexes_checked": true,
+    "github_code_search_done": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html",
+      "new-works-history.html",
+      "archive.html",
+      "recursive main repository tree",
+      "GitHub default-branch code search by DOI, exact original titles, distinctive title phrases and authors"
+    ],
+    "historical_body_paths": 98,
+    "matches_found_for_selected": 0,
+    "scope_note": "Both historical indexes and the full recursive tree checked, plus repository-wide code search. A full individual-page scan was attempted but exceeded the per-script tool-call limit; no claim of exhaustive individual page reading. Hine and Floridi matched an unrelated article in 2026-09-20-new-works.html, which was opened and differentiated. Previously collected sandbox, data loyalty and copyright articles were excluded.",
+    "version_distinction": "Two published journal articles and one published first-edition eBook; no working-paper DOI used."
+  },
+  "items": [
+    {
+      "cn_title": "算法系统造成损害，部署机构为何能逃避责任",
+      "author": "Aftab Haider、András Szeberényi",
+      "original_title": "Institutional responsibility for harm caused by algorithmic systems",
+      "journal": "Discover Global Society",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-11-24",
+      "volume": "4",
+      "issue": null,
+      "pages": null,
+      "article_number": "314",
+      "doi": "10.1007/s44282-026-00685-z",
+      "publisher_page": "https://link.springer.com/article/10.1007/s44282-026-00685-z",
+      "version": "Published journal version of record"
+    },
+    {
+      "cn_title": "欧美与中国大型科技企业反垄断执法对数字主权的影响",
+      "author": "Emmie Hine、Luciano Floridi",
+      "original_title": "The Impact of Modern Big Tech Antitrust on Digital Sovereignty",
+      "journal": "Digital Society",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-02-18",
+      "volume": "5",
+      "issue": null,
+      "pages": null,
+      "article_number": "8",
+      "doi": "10.1007/s44206-026-00249-3",
+      "publisher_page": "https://link.springer.com/article/10.1007/s44206-026-00249-3",
+      "version": "Published journal version of record"
+    },
+    {
+      "cn_title": "数字经济中的数据利用规则：巴西与欧盟比较",
+      "author": "Daniela Copetti Cravo",
+      "original_title": "Law and the Digital Economy: Unlocking Data through Regulation in Brazil and the European Union",
+      "journal": null,
+      "publisher": "Springer Cham",
+      "year": 2026,
+      "publication_date": "2026-09-29",
+      "volume": null,
+      "issue": null,
+      "pages": "VII, 202",
+      "article_number": null,
+      "doi": "10.1007/978-3-032-36672-6",
+      "publisher_page": "https://link.springer.com/book/10.1007/978-3-032-36672-6",
+      "version": "First edition, published eBook"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "062f4bb529d7abca8b0347c11bcef8d5b5538631",
+    "last_complete_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": null
+  }
+}
