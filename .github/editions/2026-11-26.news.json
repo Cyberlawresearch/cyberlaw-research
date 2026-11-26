@@ -3,13 +3,577 @@
   "column": "brief",
   "state": "draft",
   "page": "articles/2026-11-26-tech-law-brief.html",
-  "updated_at": "2026-11-26T19:00:05+08:00",
+  "updated_at": null,
   "base_main_sha": "18bffa4e5180c7aca860896bdbbfb20886fb5ce6",
   "phase": "research",
-  "items": [],
+  "items": [
+    {
+      "id": "cn-network",
+      "jurisdiction": "中国",
+      "agency": "工信部、国家网信办、国家发展改革委",
+      "event_date": "2026-11-26",
+      "title": "三部门公开新一代通信网建设实施方案，部署海外数据中心和云服务节点",
+      "original_title": "三部门关于印发《新一代通信网建设实施方案》的通知",
+      "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_808db1814bb74a0e87965d66e74f5b4b.html",
+      "fact": "三部门11月26日公开工信部联通信〔2026〕267号文件，成文日期为11月17日。实施方案提出到2030年建成覆盖完善的新一代通信网，推进6G、卫星互联网和国际网络建设；配套解读明确统筹部署海外数据中心和云服务节点。",
+      "legal_status": "已印发，公开发布",
+      "sources": [
+        {
+          "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_808db1814bb74a0e87965d66e74f5b4b.html",
+          "original_title": "三部门关于印发《新一代通信网建设实施方案》的通知",
+          "opened": true,
+          "checked_at": null
+        },
+        {
+          "url": "https://www.miit.gov.cn/zwgk/zcjd/art/2026/art_4638b2ae59814b7fafda3c31d8febb9d.html",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    },
+    {
+      "id": "cn-token-hubei",
+      "jurisdiction": "中国",
+      "agency": "湖北省数据局",
+      "event_date": "2026-11-25",
+      "title": "国家数据局公开湖北词元经济十条措施，探索公共数据按词元计价及出海",
+      "original_title": "地方动态 | 湖北省数据局关于印发《关于促进词元经济发展的若干措施》的通知",
+      "url": "https://www.nda.gov.cn/sjj/swdt/dfdt/1125/20261125092027432710518_pc.html",
+      "fact": "国家数据局11月25日公开转载湖北省数据局11月20日印发的鄂数发〔2026〕28号文件。措施提出建设词元工厂和交易市场，探索将公共数据授权运营产品以模型调用、智能体服务形式供给，按词元计价并按调用分成，同时支持境内能力中心与海外本地生产结合、来数加工及词元出海。",
+      "legal_status": "已印发；公开转载日期已核对，首次公开日期待核实",
+      "sources": [
+        {
+          "url": "https://www.nda.gov.cn/sjj/swdt/dfdt/1125/20261125092027432710518_pc.html",
+          "original_title": "地方动态 | 湖北省数据局关于印发《关于促进词元经济发展的若干措施》的通知",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    },
+    {
+      "id": "cn-digital-economy",
+      "jurisdiction": "中国",
+      "agency": "国家数据局",
+      "event_date": "2026-11-24",
+      "title": "国家数据局组织实施数字经济发展“十五五”行动计划",
+      "original_title": "国家数据局组织实施数字经济发展“十五五”行动计划",
+      "url": "https://www.nda.gov.cn/sjj/swdt/xwfb/1124/20261124203714873213896_pc.html",
+      "fact": "国家数据局11月24日公布行动计划的五方面任务，提出完善数据流通利用规则、价格形成和收益分配机制，建设全国一体化算力网。计划部署推进制定数字经济促进法，并探索布局数据跨境流动服务基础设施，到2030年数字经济核心产业增加值占GDP比重达到12.5%。",
+      "legal_status": "行动计划部署",
+      "sources": [
+        {
+          "url": "https://www.nda.gov.cn/sjj/swdt/xwfb/1124/20261124203714873213896_pc.html",
+          "original_title": "国家数据局组织实施数字经济发展“十五五”行动计划",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    },
+    {
+      "id": "cn-digital-society",
+      "jurisdiction": "中国",
+      "agency": "国家数据局",
+      "event_date": "2026-11-24",
+      "title": "国家数据局组织实施数字社会发展“十五五”行动计划",
+      "original_title": "国家数据局组织实施数字社会发展“十五五”行动计划",
+      "url": "https://www.nda.gov.cn/sjj/swdt/xwfb/1124/20261124204008205921882_mobile.html",
+      "fact": "国家数据局11月24日公布行动计划，部署人工智能赋能教育、医疗医保医药数据协同以及城市全域数字化转型。计划提出深化公共数据和企业数据融合应用，健全数字社会相关标准和评价机制，完善政府、行业组织、平台企业及消费者共同参与的治理机制。",
+      "legal_status": "行动计划部署",
+      "sources": [
+        {
+          "url": "https://www.nda.gov.cn/sjj/swdt/xwfb/1124/20261124204008205921882_mobile.html",
+          "original_title": "国家数据局组织实施数字社会发展“十五五”行动计划",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    },
+    {
+      "id": "cn-guangdong-compute",
+      "jurisdiction": "中国",
+      "agency": "广东省政务服务和数据管理局、广东省发展改革委",
+      "event_date": "2026-11-26",
+      "title": "广东公布算力发展“十五五”规划，提出数据中心能耗管控与跨境算力走廊建设",
+      "original_title": "广东：实施存量数据中心优化行动 推动中小型低效数据中心改造为高效边缘算力中心",
+      "url": "https://finance.eastmoney.com/a/202611263940616370.html",
+      "fact": "财联社11月26日报道广东两部门印发算力发展规划，提出将能源利用水平和综合效益纳入算力项目准入、资源配置及验收约束，推动存量低效数据中心改造。另据当日公开的规划转载，广东将推进粤港澳跨境算力走廊及数算电网协同建设。",
+      "legal_status": "规划印发（媒体报道，待查官方全文）",
+      "sources": [
+        {
+          "url": "https://finance.eastmoney.com/a/202611263940616370.html",
+          "original_title": "广东：实施存量数据中心优化行动 推动中小型低效数据中心改造为高效边缘算力中心",
+          "opened": true,
+          "checked_at": null
+        },
+        {
+          "url": "https://www.smartcity.team/policies/xinjijian/%E5%B9%BF%E4%B8%9C%E7%AE%97%E5%8A%9B%E5%8D%81%E4%BA%94%E4%BA%94%E8%A7%84%E5%88%92/",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    },
+    {
+      "id": "cn-minimax-data",
+      "jurisdiction": "中国、美国、新加坡",
+      "agency": "MiniMax、Dragos、Atlas Cloud",
+      "event_date": "2026-11-26",
+      "title": "安全研究人员披露MiniMax推理服务数据处理事件的新发现",
+      "original_title": "Data from Chinese AI firm MiniMax accessed by unidentified parties, researcher says",
+      "url": "https://www.reuters.com/world/data-chinese-ai-firm-minimax-accessed-by-unidentified-parties-researcher-says-2026-11-26/",
+      "fact": "路透社11月26日报道，Dragos研究人员首次公开确认此前匿名披露的AI推理数据安全事件涉及MiniMax，并称部分提交给模型的私人链接后来被访问。MiniMax表示安全系统曾保存并自动检查部分链接，已删除相关记录，未发现所核查请求的完整对话或回答向第三方披露的证据。Atlas Cloud表示已停止转发请求并提示客户评估数据暴露风险。",
+      "legal_status": "研究披露与企业声明；非监管结论",
+      "sources": [
+        {
+          "url": "https://www.reuters.com/world/data-chinese-ai-firm-minimax-accessed-by-unidentified-parties-researcher-says-2026-11-26/",
+          "original_title": "Data from Chinese AI firm MiniMax accessed by unidentified parties, researcher says",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    },
+    {
+      "id": "cn-minimax-app",
+      "jurisdiction": "中国、美国",
+      "agency": "苹果、MiniMax",
+      "event_date": "2026-11-26",
+      "title": "苹果因未成年人保护争议下架MiniMax旗下Talkie应用",
+      "original_title": "Apple pulls MiniMax AI chatbot from App Store over child safety concerns",
+      "url": "https://www.reuters.com/business/retail-consumer/apple-pulls-minimax-ai-chatbot-app-store-over-child-safety-concerns-2026-11-26/",
+      "fact": "路透社11月26日报道，苹果本周将MiniMax的AI陪伴应用Talkie从全球App Store下架，此前媒体调查指其与未成年用户的互动存在安全问题。该应用此前标注18岁以上适用，但其年龄核验方式受到批评；苹果和MiniMax未立即回应置评请求。",
+      "legal_status": "平台下架（媒体报道）",
+      "sources": [
+        {
+          "url": "https://www.reuters.com/business/retail-consumer/apple-pulls-minimax-ai-chatbot-app-store-over-child-safety-concerns-2026-11-26/",
+          "original_title": "Apple pulls MiniMax AI chatbot from App Store over child safety concerns",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    },
+    {
+      "id": "us-chip-impact",
+      "jurisdiction": "美国、中国",
+      "agency": "美国商务部、智谱、月之暗面",
+      "event_date": "2026-11-26",
+      "title": "路透社披露境外算力管制及反蒸馏措施对中国模型研发的新影响",
+      "original_title": "US chip curbs, distillation crackdown threaten Chinese AI model development, sources say",
+      "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
+      "fact": "路透社11月26日援引知情人士称，智谱下一代旗舰模型的研发进度落后于原计划；月之暗面预计若境外算力供应完全中断，主要模型的迭代周期可能延长至一年以上。报道将上述风险与美国11月19日生效的境外算力许可规定及美国模型企业加强防蒸馏措施相联系，两家中国企业未立即回应置评请求。",
+      "legal_status": "媒体披露，预测非确定结果",
+      "sources": [
+        {
+          "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
+          "original_title": "US chip curbs, distillation crackdown threaten Chinese AI model development, sources say",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    },
+    {
+      "id": "us-sea-nvidia",
+      "jurisdiction": "美国、东南亚",
+      "agency": "英伟达及制造合作伙伴",
+      "event_date": "2026-11-26",
+      "title": "英伟达据报暂停向四个东南亚国家发运搭载其芯片的服务器",
+      "original_title": "Nvidia halts server shipments to four Southeast Asian countries, FT reports",
+      "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/",
+      "fact": "路透社11月26日援引《金融时报》报道，英伟达要求制造合作伙伴暂停向马来西亚、新加坡、泰国和印度尼西亚发运相关服务器。此举发生在美国先进芯片新增出口许可要求生效之后，暂停时长尚不明确；相关企业未立即回应置评请求。",
+      "legal_status": "媒体报道的企业措施",
+      "sources": [
+        {
+          "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/",
+          "original_title": "Nvidia halts server shipments to four Southeast Asian countries, FT reports",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    },
+    {
+      "id": "eu-quantum",
+      "jurisdiction": "欧盟",
+      "agency": "欧盟委员会",
+      "event_date": "2026-11-25",
+      "title": "欧盟委员会提出量子法案及主权科技股权基金方案",
+      "original_title": "Commission proposes Quantum Act and new Sovereign Tech Equity Fund to strengthen Europe's industrial capacity and security",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/commission-proposes-quantum-act-and-new-sovereign-tech-equity-fund-strengthen-europes-industrial",
+      "fact": "欧盟委员会11月25日提出量子法案草案，围绕研究、产业应用和供应链安全构建共同框架，并部署数字系统向后量子密码技术过渡。提案同时为设立主权科技股权基金奠定基础，拟协调欧盟及成员国量子研发和产业计划。",
+      "legal_status": "立法提案",
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/news/commission-proposes-quantum-act-and-new-sovereign-tech-equity-fund-strengthen-europes-industrial",
+          "original_title": "Commission proposes Quantum Act and new Sovereign Tech Equity Fund to strengthen Europe's industrial capacity and security",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    },
+    {
+      "id": "jp-ppc",
+      "jurisdiction": "日本",
+      "agency": "个人信息保护委员会",
+      "event_date": "2026-11-25",
+      "title": "日本个人信息保护委员会讨论修法配套政令与规则草案",
+      "original_title": "第377回 個人情報保護委員会",
+      "url": "https://www.ppc.go.jp/aboutus/minutes/2026/20261125/",
+      "fact": "日本个人信息保护委员会11月25日举行第377次会议，讨论个人信息保护法修订后的政令、规则及指南制定安排，并公开更新工作时间表。议题包括适当的数据利用、按风险制定规则，以及OECD可信自由数据流动专家社区会议成果。",
+      "legal_status": "委员会审议及配套规则草案",
+      "sources": [
+        {
+          "url": "https://www.ppc.go.jp/aboutus/minutes/2026/20261125/",
+          "original_title": "第377回 個人情報保護委員会",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    },
+    {
+      "id": "kr-mergers",
+      "jurisdiction": "韩国",
+      "agency": "个人信息保护委员会",
+      "event_date": "2026-11-26",
+      "title": "韩国公布三起企业合并个人信息事前检查结果，涉及Gmarket与速卖通",
+      "original_title": "개인정보위, 기업결합 관련 사전 실태점검 결과 발표",
+      "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C010010000&nttId=12670",
+      "fact": "韩国个人信息保护委员会11月26日公布前一日审议通过的企业合并事前检查结果，涉及航空、电商和名片信息服务企业。委员会确认Gmarket与速卖通韩国分开运营境内用户数据，并建议Gmarket加强对阿里集团受托处理企业的监督；同时发布业务转让和合并个人信息转移注意事项。",
+      "legal_status": "事前检查及监管建议",
+      "sources": [
+        {
+          "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C010010000&nttId=12670",
+          "original_title": "개인정보위, 기업결합 관련 사전 실태점검 결과 발표",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    },
+    {
+      "id": "kr-precheck",
+      "jurisdiction": "韩国",
+      "agency": "个人信息保护委员会",
+      "event_date": "2026-11-26",
+      "title": "韩国公布六项新技术服务事前适当性审查后续检查结果",
+      "original_title": "사전적정성 검토제, 사전 협의에 그치지 않고 현장까지 챙긴다",
+      "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C010010000&nttId=12669",
+      "fact": "韩国个人信息保护委员会11月26日公布对六项通过事前适当性审查的服务的履行检查结果，覆盖人脸支付、AI个性化搜索、诊疗对话自动记录等场景。六项服务均落实主要约定措施，其中一家企业主动将有关信息保存期限缩短75%以上。",
+      "legal_status": "监管检查结果",
+      "sources": [
+        {
+          "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C010010000&nttId=12669",
+          "original_title": "사전적정성 검토제, 사전 협의에 그치지 않고 현장까지 챙긴다",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    },
+    {
+      "id": "kr-mydata",
+      "jurisdiction": "韩国",
+      "agency": "个人信息保护委员会及相关部门",
+      "event_date": "2026-11-26",
+      "title": "韩国公布个人信息安全传输计划，拟逐步以API替代公共网站数据抓取",
+      "original_title": "내 정보, 더 안전하게 전송하여 국민 편익 높인다",
+      "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C010010000&nttId=12668",
+      "fact": "韩国相关部门11月26日在国家政策协调会议公布个人信息安全传输计划。调查发现754家经营者针对129家公共机构网站开展3,164项数据抓取，计划拟自2027年起推动相关机构逐步采用API等安全传输方式，并按服务风险制定差异化安全标准。",
+      "legal_status": "政策计划",
+      "sources": [
+        {
+          "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C010010000&nttId=12668",
+          "original_title": "내 정보, 더 안전하게 전송하여 국민 편익 높인다",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    },
+    {
+      "id": "it-ch-ai-cyber",
+      "jurisdiction": "意大利、瑞士",
+      "agency": "网络安全主管机构",
+      "event_date": "2026-11-25",
+      "title": "意大利与瑞士网络安全机构警示自主AI智能体攻击风险",
+      "original_title": "Italy and Switzerland warn of autonomous AI-driven cyberattacks",
+      "url": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
+      "fact": "BleepingComputer于11月25日报道，意大利和瑞士网络安全机构警示利用自主AI智能体实施自动化网络攻击的活动，涉及关键基础设施组织。两国机构建议减少互联网暴露系统、优先修补漏洞，并加强异常活动监测。",
+      "legal_status": "安全通报（可靠媒体，意大利原文访问403）",
+      "sources": [
+        {
+          "url": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
+          "original_title": "Italy and Switzerland warn of autonomous AI-driven cyberattacks",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    },
+    {
+      "id": "us-supplychain",
+      "jurisdiction": "美国",
+      "agency": "Eclypsium",
+      "event_date": "2026-11-25",
+      "title": "InfraTrust报告披露基础设施设备已遭利用漏洞多数来自第三方组件",
+      "original_title": "InfraTrust warns of exploited supply chain flaws in network appliances",
+      "url": "https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/",
+      "fact": "BleepingComputer于11月25日报道Eclypsium最新InfraTrust报告。报告统计10月15日至11月19日23家基础设施厂商的373项安全公告，其中38项涉及已知遭利用漏洞，33项修复的漏洞来自设备内置的第三方软件组件。",
+      "legal_status": "安全研究报告",
+      "sources": [
+        {
+          "url": "https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/",
+          "original_title": "InfraTrust warns of exploited supply chain flaws in network appliances",
+          "opened": true,
+          "checked_at": null
+        }
+      ],
+      "deduplication": {
+        "completed": false
+      },
+      "analysis": "",
+      "thinktank": "",
+      "paper": "",
+      "background": "",
+      "outlook": "",
+      "state": "candidate"
+    }
+  ],
   "news_count": 0,
   "coverage": {
-    "domestic_sources": []
+    "domestic_sources": [
+      {
+        "group": "中央机关",
+        "source": "工信部",
+        "entry_url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_808db1814bb74a0e87965d66e74f5b4b.html",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "三部门公开新一代通信网建设实施方案，部署海外数据中心和云服务节点"
+        ]
+      },
+      {
+        "group": "中央机关",
+        "source": "国家数据局",
+        "entry_url": "https://www.nda.gov.cn/sjj/swdt/xwfb/1124/20261124203714873213896_pc.html",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "国家数据局公开湖北词元经济十条措施，探索公共数据按词元计价及出海",
+          "国家数据局组织实施数字经济发展“十五五”行动计划",
+          "国家数据局组织实施数字社会发展“十五五”行动计划"
+        ]
+      },
+      {
+        "group": "重点地方",
+        "source": "广东（财联社报道）",
+        "entry_url": "https://finance.eastmoney.com/a/202611263940616370.html",
+        "status": "checked_with_candidates",
+        "notes": "官方全文待查"
+      },
+      {
+        "group": "财经媒体",
+        "source": "财联社",
+        "entry_url": "https://finance.eastmoney.com/a/202611263940616370.html",
+        "status": "checked_with_candidates"
+      },
+      {
+        "group": "财经媒体",
+        "source": "我的钢铁网",
+        "entry_url": "https://news.mysteel.com/a/26112616/536239B10729485D.html",
+        "status": "access_failed",
+        "notes": "411"
+      },
+      {
+        "group": "财经媒体",
+        "source": "同花顺",
+        "entry_url": "https://m.10jqka.com.cn/20261126/c682246794.shtml",
+        "status": "access_failed",
+        "notes": "DisabledError"
+      },
+      {
+        "group": "财经媒体",
+        "source": "证券时报转载（证券之星）",
+        "entry_url": "https://wap.stockstar.com/detail/IG2026112600029624",
+        "status": "access_failed",
+        "notes": "DisabledError"
+      }
+    ],
+    "international_sources": [
+      {
+        "source": "Reuters",
+        "status": "checked_with_candidates",
+        "urls": [
+          "https://www.reuters.com/world/data-chinese-ai-firm-minimax-accessed-by-unidentified-parties-researcher-says-2026-11-26/",
+          "https://www.reuters.com/business/retail-consumer/apple-pulls-minimax-ai-chatbot-app-store-over-child-safety-concerns-2026-11-26/",
+          "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
+          "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/"
+        ]
+      },
+      {
+        "source": "欧盟委员会",
+        "status": "checked_with_candidates",
+        "url": "https://digital-strategy.ec.europa.eu/en/news/commission-proposes-quantum-act-and-new-sovereign-tech-equity-fund-strengthen-europes-industrial"
+      },
+      {
+        "source": "日本PPC（日语）",
+        "status": "checked_with_candidates",
+        "url": "https://www.ppc.go.jp/aboutus/minutes/2026/20261125/"
+      },
+      {
+        "source": "韩国PIPC（韩语）",
+        "status": "checked_with_candidates",
+        "urls": [
+          "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C010010000&nttId=12670",
+          "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C010010000&nttId=12669",
+          "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C010010000&nttId=12668"
+        ]
+      },
+      {
+        "source": "BleepingComputer",
+        "status": "checked_with_candidates",
+        "urls": [
+          "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
+          "https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/"
+        ]
+      },
+      {
+        "source": "意大利ACN",
+        "status": "access_failed",
+        "url": "https://www.acn.gov.it/portale/w/impiego-di-agenti-di-ia-in-campagne-di-compromissione-automatizzate",
+        "notes": "403"
+      },
+      {
+        "source": "越南语",
+        "status": "search_only",
+        "notes": "检索到11月20日数据安全法通过，超出窗口；尚未完成巡视"
+      }
+    ]
   },
   "checks": {
     "sources": false,
@@ -22,9 +586,10 @@
     "domestic_major_omission_review": false
   },
   "next_actions": [
-    "检索及逐项核验",
-    "近七日去重",
-    "复扫及发布"
+    "核对近7日正文和24/25日未发稿记录",
+    "核查广东官方全文及湖北首次公开日期",
+    "继续国内机关/标准/地方/媒体及国际监管机构巡视",
+    "最终时效和去重检查；通过后才发布"
   ],
   "last_error": null,
   "publication_ready": false,
@@ -32,5 +597,6 @@
     "commit_sha": null,
     "pages_run_id": null,
     "online_verified": null
-  }
+  },
+  "candidate_count": 16
 }
