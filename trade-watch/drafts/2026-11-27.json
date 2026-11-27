@@ -1,36 +1,168 @@
 {
   "date": "2026-11-27",
   "base_main_sha": "ea663df919873b5eaa776ab93b143bcd27113700",
-  "phase": "researching",
+  "phase": "source_verified",
   "publication_ready": false,
   "items": [
     {
       "id": "eu-annex-iv",
-      "date": "2026-11-25",
+      "date": "2026-11-26",
+      "jurisdiction": "欧盟",
+      "agency": "欧盟理事会",
       "title": "欧盟新增15家俄罗斯出口限制实体并移除中国玉沙集团",
-      "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1795697667652&uri=CELEX%3A32026R2632",
-      "stage": "26日公布、27日生效"
+      "rank": 5,
+      "stage": "正式条例，11月27日生效",
+      "facts": "欧盟理事会11月25日通过第2026/2632号条例，26日刊登官方公报，在第833/2014号条例附件IV增加15家俄罗斯实体，同时移除中国湖北玉沙集团有限公司（原第708项）。附件IV涉及与俄罗斯军事和工业体系有关的特定实体，适用更严格的两用物项及先进技术出口限制。本次为已通过的独立名单调整，并非此前公布的第22轮制裁提案。",
+      "scope": "涉及列名交易对手的两用物项及先进技术出口、再出口和相关服务。",
+      "impact": "向俄罗斯销售或经第三国交付相关物项的企业应更新交易对手名单及最终用户核查；玉沙集团被移出附件IV后，仍应逐项核对货物分类及其他适用限制，不宜直接据此恢复所有交易。",
+      "deadline": "2026年11月27日生效。",
+      "sources": [
+        {
+          "label": "欧盟官方公报：条例（EU）2026/2632",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1795697667652&uri=CELEX%3A32026R2632"
+        },
+        {
+          "label": "欧盟理事会11月25日公告",
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/25/russia-s-war-of-aggression-against-ukraine-eu-restricts-trade-with-15-entities-linked-to-russia-s-military-and-industrial-complex/"
+        }
+      ]
     },
     {
       "id": "ca-cables",
       "date": "2026-11-26",
+      "jurisdiction": "加拿大",
+      "agency": "加拿大国际贸易法庭（CITT）",
       "title": "加拿大对华非铠装建筑电缆作出损害终裁",
-      "source": "https://www.canada.ca/en/international-trade-tribunal/news/2026/11/tribunal-finds-injurycertain-unarmoured-building-cables-from-china.html",
-      "stage": "终裁，双反征收"
+      "rank": 5,
+      "stage": "产业损害肯定性终裁",
+      "facts": "加拿大国际贸易法庭在NQ-2026-003案中认定，中国原产或出口的部分非铠装建筑电缆的倾销及补贴对加拿大国内产业造成损害。随着损害终裁作出，加拿大边境服务局将依照该案最终认定和税收规则征收相应反倾销税及反补贴税。",
+      "scope": "涉案非铠装建筑电缆、加拿大建筑电气供应链。",
+      "impact": "中国生产商及加拿大进口商应按具体型号、产品范围和生产商适用的正常价值、补贴金额核算双反税负，分别核对反倾销和反补贴待遇，并调整报价及在途订单税费承担条款。",
+      "deadline": "11月26日作出终裁；法庭拟于12月11日公布理由。",
+      "sources": [
+        {
+          "label": "加拿大国际贸易法庭案件公告",
+          "url": "https://www.canada.ca/en/international-trade-tribunal/news/2026/11/tribunal-finds-injurycertain-unarmoured-building-cables-from-china.html"
+        }
+      ]
     },
     {
       "id": "us-usmca-auto",
       "date": "2026-11-25",
-      "title": "美国汽车美国成分认定延期",
-      "source": "https://www.federalregister.gov/documents/2026/11/27/2026-24076/extending-deadlines-for-submissions-by-importers-of-automobiles-qualifying-for-preferential-tariff",
-      "stage": "25日预公开，27日刊登"
+      "jurisdiction": "美国",
+      "agency": "美国商务部国际贸易管理局（ITA）",
+      "title": "美国延长美墨加协定汽车美国成分认定提交期限",
+      "rank": 5,
+      "stage": "正式通知预公开，11月27日刊登",
+      "facts": "美国商务部将符合美墨加协定优惠待遇的进口汽车美国成分认定申请期限延后。既有认定可继续适用于2027年3月1日前进口的相应汽车；下一认定周期为2027年3月1日至2028年2月29日。该认定关系到第232条汽车关税按非美国成分价值计征的待遇。",
+      "scope": "加拿大、墨西哥生产并出口美国的符合条件汽车及其零部件供应链。",
+      "impact": "在墨西哥、加拿大配套的中国零部件企业应协助整车厂按实际零部件来源和价值更新材料清单，区分USMCA原产资格和美国成分价值认定；美国成分下降时须按要求及时报告，避免低报应税价值。",
+      "deadline": "2026年12月30日为下一周期提交期限；后续周期提交期限为2027年11月30日。",
+      "sources": [
+        {
+          "label": "美国联邦公报2026-24076号通知",
+          "url": "https://www.federalregister.gov/documents/2026/11/27/2026-24076/extending-deadlines-for-submissions-by-importers-of-automobiles-qualifying-for-preferential-tariff"
+        }
+      ]
+    },
+    {
+      "id": "uk-steel-use",
+      "date": "2026-11-26",
+      "jurisdiction": "英国",
+      "agency": "英国商业贸易部（DBT）",
+      "title": "英国特定钢材授权用途免税机制正式适用",
+      "rank": 4,
+      "stage": "正式实施安排，11月26日起适用",
+      "facts": "英国钢铁贸易措施项下的授权用途机制自11月26日起实施，涉及用于制造管线管的特定热轧板卷及厚板（类别1、7），以及用于制造光亮钢棒的相关钢材（类别1、12A、12B）。符合指定用途并取得授权的进口加工企业可按规定享受关税减免；其他贸易救济措施仍分别适用。",
+      "scope": "英国钢材进口加工、管线管及光亮钢棒生产。",
+      "impact": "供应商应与英国进口商核对商品类别、加工用途、海关授权及用途核销记录，报价时分别计算钢铁贸易措施和可能适用的反倾销、反补贴税，不将授权用途减免误作普遍免税。",
+      "deadline": "2026年11月26日起适用。此前11月4日期报道拟实施安排，本次新增实际适用节点。",
+      "sources": [
+        {
+          "label": "英国商业贸易部实施通知",
+          "url": "https://www.gov.uk/government/publications/uks-steel-trade-measure-from-1-july-2026/implementation-notifications-on-the-transitional-exemption-quota-administration-and-the-ukraine-exclusion"
+        }
+      ]
+    },
+    {
+      "id": "in-aluminium",
+      "date": "2026-11-26",
+      "jurisdiction": "印度",
+      "agency": "印度贸易救济总局（DGTR）",
+      "title": "印度延长四国铝挤压型材反倾销调查产品范围意见期限",
+      "rank": 4,
+      "stage": "调查程序进展，未作倾销裁定",
+      "facts": "印度贸易救济总局在6/67/2026-DGTR案中通知，将中国、马来西亚、越南及泰国铝挤压型材反倾销调查的涉案产品范围（PUC）和产品控制编号（PCN）意见提交期延长10天。11月11日期已报道调查立案，本次新增具体程序期限。",
+      "scope": "涉案铝挤压型材及印度建筑、交通、电气等下游采购。",
+      "impact": "出口商应按合金、截面、加工状态、用途等梳理型号差异，针对产品范围和PCN提交证据及分类建议，避免差异较大的产品被纳入不合理的价格比较。该延期针对范围和PCN意见，应另行核对调查问卷期限。",
+      "deadline": "2026年12月6日为本次延长后的意见截止日。",
+      "sources": [
+        {
+          "label": "印度DGTR 11月26日延期通知",
+          "url": "https://dgtr.gov.in/sites/default/files/2026-11/Notice%20Alu%20Extrus%20PUC%20PCN.pdf"
+        },
+        {
+          "label": "印度DGTR案件页",
+          "url": "https://www.dgtr.gov.in/en/anti-dumping-cases/suo-moto-anti-dumping-investigation-concerning-imports-aluminium-extrusion"
+        }
+      ]
+    },
+    {
+      "id": "uk-hmrc-export",
+      "date": "2026-11-26",
+      "jurisdiction": "英国",
+      "agency": "英国税务海关总署（HMRC）",
+      "title": "英国披露两起无证出口两用物项和解处罚",
+      "rank": 4,
+      "stage": "已支付行政和解款，执法信息更新",
+      "facts": "英国政府11月26日更新战略出口及制裁违法和解清单，披露两起涉及未经许可出口两用物项的案件：10月支付256,504.99英镑，8月支付469,853.40英镑。公开信息涉及多批次集团内货运以及维修、服务等业务中的出口活动，未披露企业名称。",
+      "scope": "英国两用物项出口、集团内部调拨及跨境维修服务。",
+      "impact": "在英国运营的中国企业应将集团内部发运、返修、替换件和售后设备出口纳入物项分类与许可流程，留存许可证适用范围、发运记录和最终用户资料；不能因不涉及对外销售而省略许可核查。",
+      "deadline": "和解款分别于2026年8月、10月支付；11月26日公开更新。",
+      "sources": [
+        {
+          "label": "英国政府和解执法记录",
+          "url": "https://www.gov.uk/government/publications/businesses-agreeing-to-a-compound-settlement-for-strategic-export-and-sanction-offences/agreed-compound-settlements-for-strategic-export-and-sanction-offences"
+        }
+      ]
     },
     {
       "id": "nl-match",
       "date": "2026-11-26",
-      "title": "荷兰政府反对美国MATCH法案",
-      "source": "https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/",
-      "stage": "政策表态"
+      "jurisdiction": "荷兰／美国",
+      "agency": "荷兰政府、美国国会",
+      "title": "荷兰政府反对美国拟议MATCH芯片设备限制",
+      "rank": 4,
+      "stage": "政策表态，法案尚未生效",
+      "facts": "据路透社报道，荷兰主管部长11月26日向议会表示，拟议MATCH法案涉及芯片制造设备出口限制，可能损害欧洲利益；荷兰将与欧洲伙伴协调，并在法案通过的情况下争取美国不实施相关限制。美国国会仍在讨论将相关内容纳入国防授权立法。",
+      "scope": "先进及深紫外光刻等半导体制造设备供应链。",
+      "impact": "中国晶圆制造企业及欧洲设备供应商宜针对拟议限制准备备选供货及维修安排，核查设备、备件和技术服务合同的许可变更条款；现阶段继续以已生效的美国及荷兰出口管制规则确定交易许可。",
+      "deadline": "11月26日荷兰政府表态；法案最终文本、通过及实施日期尚未确定。",
+      "sources": [
+        {
+          "label": "路透社11月26日报道",
+          "url": "https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/"
+        }
+      ]
+    },
+    {
+      "id": "us-aeb",
+      "date": "2026-11-24",
+      "jurisdiction": "美国",
+      "agency": "美国国家公路交通安全管理局（NHTSA）",
+      "title": "美国拟将乘用车辆自动紧急制动安全标准合规期限推迟两年",
+      "rank": 3,
+      "stage": "拟议规则，待征求意见及最终决定",
+      "facts": "NHTSA提出修改联邦机动车安全标准FMVSS No. 127合规时间，将一般制造商自动紧急制动及行人自动紧急制动要求的合规日期由2029年9月1日推迟至2031年9月1日，小规模制造商、最终阶段制造商及改装企业相应推迟至2032年9月1日。",
+      "scope": "输美轻型车辆及自动制动系统、传感器和控制软件供应链。",
+      "impact": "整车及零部件厂商可根据拟议时间调整测试与认证资源计划，但在最终规则正式公布前仍应按现行标准期限管理项目，并与客户明确可能的时间调整和验收要求。",
+      "deadline": "拟议规则意见期为联邦公报刊登后60日；案件编号NHTSA-2026-2476。",
+      "sources": [
+        {
+          "label": "NHTSA 11月24日拟议规则公告",
+          "url": "https://www.nhtsa.gov/press-releases/trumps-transportation-department-extends-automatic-emergency-braking-mandate-two"
+        }
+      ]
     }
   ],
   "coverage": {
@@ -45,7 +177,9 @@
   },
   "last_error": null,
   "next_actions": [
-    "核实印度延期及英国钢铁授权用途生效、HMRC执法",
-    "复核其余原文、近7期去重和终扫"
-  ]
+    "最终来源URL与正文核验",
+    "正式发布"
+  ],
+  "dedup": "2026-11-20至26七期完整正文读取、标题及事件比对；英国钢材、印度铝型材为新实施节点及延期；欧盟附件IV名单为独立正式调整。",
+  "source_verification": "原始公告逐一打开，印度PDF已核对页面；荷兰政策表态使用Reuters。"
 }
