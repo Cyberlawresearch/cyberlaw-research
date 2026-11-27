@@ -53,7 +53,9 @@ class Polish(HTMLParser):
         self.stack = []
         self.edits = []
 
-    def offset(self):
+    def source_offset(self):
+        # HTMLParser keeps its current column in the integer attribute `offset`.
+        # Use a distinct name for our absolute source position helper.
         line, col = self.getpos()
         return self.offsets[line-1] + col
 
@@ -67,7 +69,7 @@ class Polish(HTMLParser):
         # Update Chinese title metadata only, never an original title, URL or source.
         if not blocked:
             raw = self.get_starttag_text()
-            pos = self.offset()
+            pos = self.source_offset()
             for m in re.finditer(r"(?<![\w:-])(title|aria-label)\s*=\s*(['\"])(.*?)\2", raw, re.S | re.I):
                 before = html.unescape(m.group(3))
                 after = replacements(self.path, before)
@@ -106,7 +108,7 @@ class Polish(HTMLParser):
         heading = any(tag in {"h1","h2","h3","h4","summary"} for tag, _ in self.stack)
         updated = replacements(self.path, text, heading)
         if updated != text:
-            pos = self.offset()
+            pos = self.source_offset()
             self.edits.append((pos, pos+len(text), updated))
 
 def transform(source, path):
@@ -170,6 +172,16 @@ def self_test():
     assert transform(out,"articles/2026-10-02-balkin-free-speech-triangle.html")[0] == out
     media,_ = transform('<p class="hit-mode">正文命中</p><blockquote>正文命中</blockquote><p>7篇正文命中</p>',"media-ai.html")
     assert "7篇在正文中涉及相关主题" in media and "<blockquote>正文命中</blockquote>" in media
+    multiline = ('<html>\n<head><title>自由表达是三角形</title></head>\n'
+                 '<body>\n<p title="自由表达是三角形">自由表达是三角形</p>\n'
+                 '<q title="自由表达是三角形">自由表达是三角形</q>\n'
+                 '</body></html>')
+    polished, count = transform(multiline, "articles/2026-10-02-balkin-free-speech-triangle.html")
+    assert count == 3
+    assert '<p title="言论自由的三角结构">言论自由的三角结构</p>' in polished
+    assert '<q title="自由表达是三角形">自由表达是三角形</q>' in polished
+    assert polished.count('\n') == multiline.count('\n')
+    assert transform(polished, "articles/2026-10-02-balkin-free-speech-triangle.html")[0] == polished
 
 if __name__ == "__main__":
     self_test()
