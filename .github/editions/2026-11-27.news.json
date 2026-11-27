@@ -6,10 +6,10 @@
   "page": "articles/2026-11-27-tech-law-brief.html",
   "mode": "fact_only",
   "analysis_pending": false,
-  "news_count": 17,
+  "news_count": 19,
   "distribution": {
     "domestic": 7,
-    "international": 10
+    "international": 12
   },
   "checked_at": null,
   "updated_at": null,
@@ -706,6 +706,42 @@
         }
       ],
       "complete": false
+    },
+    "supplementary_international_review": {
+      "checked_languages": [
+        "日语",
+        "韩语",
+        "越南语",
+        "英语"
+      ],
+      "sources": [
+        {
+          "source": "韩国个人信息保护委员会",
+          "url": "https://pipc.go.kr/np/cop/bbs/selectBoardList.do?bbsId=BS074&mCode=C020010000&nttId=12550",
+          "result": "发现27日紧急应对公告；26日多项其他政策已刊"
+        },
+        {
+          "source": "日本个人信息保护委员会",
+          "url": "https://www.ppc.go.jp/aboutus/minutes/2026/20261125/",
+          "result": "25日第377次会议修法配套文件，已刊"
+        },
+        {
+          "source": "越南政府网站、公安部",
+          "url": "https://mps.gov.vn/chinh-sach-phap-luat/bai-viet/quoc-hoi-thong-qua-luat-an-ninh-du-lieu-1795173003",
+          "result": "返回多为旧闻，未发现可核实的本期新增；完整巡视仍待完成"
+        },
+        {
+          "source": "澳大利亚通信主管部门",
+          "url": "https://www.infrastructure.gov.au/department/media/news/digital-duty-care-law-passed",
+          "result": "发现数字注意义务立法已获议会通过的官方消息"
+        },
+        {
+          "source": "英国ICO",
+          "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/11/developers-creating-agentic-ai-services-for-consumers-reminded-to-meet-their-data-protection-responsibilities",
+          "result": "智能体隐私要求已刊"
+        }
+      ],
+      "complete": false
     }
   },
   "deduplication": {
@@ -723,9 +759,9 @@
   },
   "final_html_sha256": null,
   "next_actions": [
-    "已补5条国内候选，继续使用可靠替代来源获取可读原文并复核；并行巡视未完成来源组，保留访问失败事实",
-    "复核全期候选、近七日事件去重及准确72小时窗口；不以单站访问成功为必要条件，但不虚构直接访问",
-    "内容核验完成后基于最新main原子提交并验收Pages"
+    "19条候选已保存，国内7条、国际12条。按可靠替代来源口径继续核验，区分实际读取具体正文与仅见摘要、直接访问失败",
+    "复核全期候选及事件去重，继续巡视尚未完成的来源组并复扫最近新闻",
+    "满足发布条件后原子提交main，跟踪真实Pages部署和线上验收"
   ],
   "last_error": {
     "stage": "source_recheck",
@@ -1208,6 +1244,79 @@
         "direct_open_success": false,
         "direct_open_error": "Cache miss",
         "cross_source_checked": false
+      }
+    },
+    {
+      "key": "kr-emergency-data-breach-response",
+      "date": "2026-11-27",
+      "event_date": "2026-11-27",
+      "jurisdiction": "韩国",
+      "agency": "个人信息保护委员会",
+      "title": "韩国启动个人信息泄露紧急应对和检查机制，针对AI攻击扩散开展专项检查",
+      "original_title": "개인정보위, 유출 긴급대응 및 점검지원 체계 가동",
+      "source_name": "韩国个人信息保护委员会",
+      "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12674",
+      "fact": "11月27日，韩国个人信息保护委员会宣布启动泄露事故紧急应对与检查支持机制。该委员会公布，今年1—10月收到1019起泄露申报，其中公共部门271起、民间部门748起，已超过去年全年447起的两倍。为应对人工智能辅助网络攻击，委员会将加强主管部门间威胁信息共享，并从12月起集中检查三个月。",
+      "legal_status": "监管应急机制启动及检查安排公布",
+      "additional_sources": [
+        {
+          "source_name": "韩国政府政策简报",
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148976669&pWise=main&pWiseMain=R2",
+          "title": "개인정보 유출신고 10월까지 1019건…긴급 대응체계 가동"
+        },
+        {
+          "source_name": "电子新闻（韩国）",
+          "url": "https://www.etnews.com/20261126000534",
+          "title": "개인정보위, 유출사고 긴급 대응체계 가동…3개월 집중점검"
+        }
+      ],
+      "verification_note": "韩语检索取得主管机关具体公告正文、政府政策报道和行业媒体完整报道，交叉核对数据与检查安排。11月26日已刊的企业合并检查、适当性审查及数据传输安排属于不同事件。",
+      "domestic": false,
+      "id": "brief-2026-11-27-18",
+      "source_checked": false,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月20—26日各期标题，未发现同一新增动作，待终检",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "indexed_article_text_read": true,
+        "cross_source_checked": true,
+        "direct_open_success": null
+      }
+    },
+    {
+      "key": "au-digital-duty-of-care-passed",
+      "date": "2026-11-27",
+      "event_date": "2026-11-25",
+      "jurisdiction": "澳大利亚",
+      "agency": "联邦议会、基础设施及通信主管部门",
+      "title": "澳大利亚议会通过数字注意义务立法，将AI聊天机器人纳入网络安全义务范围",
+      "original_title": "Digital Duty of Care law passed",
+      "source_name": "澳大利亚基础设施、交通、区域发展、通信、体育与艺术部",
+      "url": "https://www.infrastructure.gov.au/department/media/news/digital-duty-care-law-passed",
+      "fact": "11月27日，澳大利亚基础设施及通信主管部门发布消息，确认数字注意义务立法已获议会通过，将在获得御准后12个月生效。立法要求社交平台、应用程序、游戏和人工智能聊天机器人等网络服务采取措施防范严重网络伤害，并为未成年人提供额外保护。违反相关注意义务的网络服务最高可面临1.092亿澳元或全球收入5%（取较高值）的罚款，个人及团体也可依法提起诉讼。",
+      "legal_status": "议会通过，官方公布御准后12个月生效安排",
+      "additional_sources": [
+        {
+          "source_name": "美联社",
+          "url": "https://apnews.com/article/b3f044575e9d8106f30a14eee2b89a81",
+          "title": "Australia passes online safety law, putting Big Tech at risk of multibillion-dollar fines"
+        }
+      ],
+      "verification_note": "澳大利亚政府27日公告正文确认通过及生效安排；美联社25日报道议会通过。区别于11月24日澳大利亚议会AI调查报告及建议。未确认御准日期，不写已经生效。",
+      "domestic": false,
+      "id": "brief-2026-11-27-19",
+      "source_checked": false,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月20—26日各期标题，未发现同一新增动作，待终检",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "indexed_article_text_read": true,
+        "cross_source_checked": true,
+        "direct_open_success": null
       }
     }
   ]
