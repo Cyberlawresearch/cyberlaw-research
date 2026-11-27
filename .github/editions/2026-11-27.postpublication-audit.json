@@ -1,0 +1,94 @@
+{
+  "edition": "2026-11-27",
+  "scope": "发布后国内来源补扫；不替代完整发布前核验",
+  "base_published_main": "92396d106add652f413ebc7779e90c04800b006b",
+  "state": "partial",
+  "checks": {
+    "domestic_major_omission_review": false,
+    "all_sources_opened_for_candidates": false,
+    "final_recent_rescan": false
+  },
+  "notes": "19条正文已上线。以下为23时巡检实查所得，保留未完成项，不将部分补扫标为全量通过。原稿与发布记录不改写。",
+  "source_checks": [
+    {
+      "group": "地方政府",
+      "source": "江苏省数据局",
+      "url": "https://jszwb.jiangsu.gov.cn/art/2026/11/26/art_88541_11865761.html",
+      "status": "indexed_full_text_read",
+      "published_at": "2026-11-26 10:25",
+      "event_date": "2026-11-25",
+      "finding": "常州人工智能+政务推进会发布市应用场景清单，启动新一轮征集；平台采用备案国产大模型本地化私有部署，内网闭环推理并具审计溯源功能。",
+      "disposition": "合格补充候选，待完成与当期全条目复核及最终发布验收。"
+    },
+    {
+      "group": "标准主管部门及地方政府",
+      "source": "国家标准委",
+      "url": "https://www.sac.gov.cn/xw/tzgg/art/2026/art_f9ee6bfe62c445628a9370803ec4a24b.html",
+      "status": "indexed_full_text_read",
+      "published_at": "2026-11-17 20:11",
+      "finding": "2026年度207个国家标准化试点项目下达通知，落款11月13日，建设周期2027—2028年。"
+    },
+    {
+      "group": "地方政府",
+      "source": "江苏省数据局",
+      "url": "https://jszwb.jiangsu.gov.cn/art/2026/11/27/art_71871_11866234.html",
+      "status": "indexed_full_text_read",
+      "published_at": "2026-11-27 10:18",
+      "finding": "江苏公共数据管理试点入选、地方建设安排及既有标准体系。",
+      "disposition": "国家名单已于11月17日公布，不把入选写成11月27日的新批准；地方实施增量仍需单独判断。"
+    },
+    {
+      "group": "地方政府",
+      "source": "江苏省数据局",
+      "url": "https://jszwb.jiangsu.gov.cn/art/2026/11/27/art_71871_11866220.html",
+      "status": "document_read_attachment_not_read",
+      "finding": "第二批培育数据企业名单公示；未读取附件，不记企业数量。"
+    },
+    {
+      "group": "地方政府",
+      "source": "江苏省数据局",
+      "url": "https://jszwb.jiangsu.gov.cn/art/2026/11/25/art_19420_11865847.html",
+      "status": "article_read_event_date_pending",
+      "finding": "扬州OPC社区团体标准，原始发布活动时间尚待核实。"
+    },
+    {
+      "group": "中央部门",
+      "source": "国家广电总局",
+      "url": "https://www.nrta.gov.cn/",
+      "status": "partial",
+      "finding": "27日转载行业版权自律公约，原发布活动24日；不将转载写作新事件。"
+    },
+    {
+      "group": "中央部门",
+      "source": "人民银行",
+      "url": "https://www.pbc.gov.cn/",
+      "status": "partial",
+      "finding": "27日金融稳定报告发布消息已读；附件未核验，不判定全文无相关事项。"
+    },
+    {
+      "group": "地方政府",
+      "source": "北京市经济和信息化局、上海市数据局、广东省政务服务和数据管理局",
+      "status": "lists_read",
+      "finding": "北京零碳工厂、广东算力规划均已刊；上海列表未发现本次确认的新事件。"
+    },
+    {
+      "group": "地方政府",
+      "source": "浙江、四川、重庆、贵州、海南、内蒙古、雄安",
+      "status": "incomplete",
+      "finding": "存在动态页面、超时或403；不记为已覆盖，不重试拒绝访问的动作。"
+    },
+    {
+      "group": "中央部门、行业机构、新闻媒体",
+      "source": "商务部、国家知识产权局、能源局、自然资源部、电子技术标准化研究院、新华社、央视、央广",
+      "status": "partial",
+      "finding": "部分列表可读，部分动态为空或超时、500；未完成所有规定来源逐项核验。"
+    }
+  ],
+  "pending": [
+    "逐项完成国内全来源补扫与入选候选直接核验",
+    "将准确的新事实与近七日已刊事项及本期19条再作事件级去重",
+    "有必要才补充已上线期次；保持原日期及原文锚点",
+    "在真实核验完整后填报国内来源覆盖字段，保留无法访问原因",
+    "不降低新闻核验门槛，不回填未经证实的true"
+  ]
+}
