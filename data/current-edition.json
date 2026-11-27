@@ -1,17 +1,17 @@
 {
   "date": "2026-11-27",
   "pages": {
-    "brief": "articles/2026-11-26-tech-law-brief.html",
+    "brief": "articles/2026-11-27-tech-law-brief.html",
     "paper": "articles/2026-11-27-ebers-truly-risk-based-ai-regulation.html",
     "classic": "articles/2026-11-27-th-green-political-obligation.html",
     "newworks": "articles/2026-11-27-new-works.html"
   },
   "page_dates": {
-    "brief": "2026-11-26",
+    "brief": "2026-11-27",
     "paper": "2026-11-27",
     "classic": "2026-11-27",
     "newworks": "2026-11-27"
   },
-  "news_count": 22,
+  "news_count": 19,
   "newworks_count": 3
 }
