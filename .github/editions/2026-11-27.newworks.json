@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-27",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-27-new-works.html",
+  "page_blob_sha": "9b5fb966c36c550a94bbabe982ca73da9e783436",
+  "newworks_count": 3,
+  "checked_at": "2026-11-27T12:30:41Z",
+  "checks": {
+    "publisher_original_source_verified": true,
+    "original_title_author_doi_verified": true,
+    "publication_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "historical_indexes_checked": true,
+    "github_code_search_done": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html",
+      "new-works-history.html",
+      "archive.html",
+      "recursive main repository tree",
+      "GitHub code search across repository for DOI, original title phrases, author names"
+    ],
+    "historical_body_paths": 100,
+    "matches_found_for_selected": 0,
+    "scope_note": "Historical indexes and full repository tree inspected; selected DOIs, title phrases and author names searched across the default branch, no prior newworks hits. Yan Fang author match in genealogy seed, not prior newworks. Individual historical pages were not all fetched. DOI/title searches also excluded multiple previously published candidates.",
+    "version_distinction": "Three publisher journal articles; DOI is the published journal DOI, not a working-paper DOI."
+  },
+  "items": [
+    {
+      "cn_title": "平台协助刑事执法时如何维持公众信任",
+      "author": "Yan Fang",
+      "original_title": "Symbolic ambivalence: how platform companies navigate contested law",
+      "journal": "Law & Society Review",
+      "publisher": "Cambridge University Press",
+      "year": 2026,
+      "publication_date": "2026-05-26",
+      "volume": "60",
+      "issue": "2",
+      "pages": "234–264",
+      "article_number": null,
+      "doi": "10.1017/lsr.2025.10087",
+      "publisher_page": "https://www.cambridge.org/core/journals/law-and-society-review/article/symbolic-ambivalence-how-platform-companies-navigate-contested-law/87CF43AE1627C4C03EC1CC306C7E06CB",
+      "version": "Published journal version of record"
+    },
+    {
+      "cn_title": "人工智能训练使用盗版文献库的著作权规制",
+      "author": "Michelle Rademeyer、Niloufer Selvadurai",
+      "original_title": "Out from the shadows: developing effective copyright laws for AI training datasets and shadow libraries",
+      "journal": "Journal of Intellectual Property Law & Practice",
+      "publisher": "Oxford University Press",
+      "year": 2026,
+      "publication_date": "2025-11-24",
+      "volume": "21",
+      "issue": "1",
+      "pages": "22–35",
+      "article_number": null,
+      "doi": "10.1093/jiplp/jpaf072",
+      "publisher_page": "https://academic.oup.com/jiplp/article-abstract/21/1/22/8341529",
+      "version": "Published journal version of record"
+    },
+    {
+      "cn_title": "欧盟《数字市场法》制定过程中平台与第三方经营者的权力博弈",
+      "author": "Victorine Verlooy、Vincent Heimburg、Maximilian Schreieck、Manuel Wiesche",
+      "original_title": "Power contestation and regulation in digital platform ecosystems—The case of the EU’s Digital Markets Act",
+      "journal": "Electronic Markets",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-01-13",
+      "volume": "36",
+      "issue": null,
+      "pages": null,
+      "article_number": "7",
+      "doi": "10.1007/s12525-025-00858-9",
+      "publisher_page": "https://link.springer.com/article/10.1007/s12525-025-00858-9",
+      "version": "Published journal version of record"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "988852b1c2bd3a01e8318f1b62cd66a5c2b506cf",
+    "last_complete_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": null
+  }
+}
