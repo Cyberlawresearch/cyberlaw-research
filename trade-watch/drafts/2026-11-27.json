@@ -1,8 +1,8 @@
 {
   "date": "2026-11-27",
   "base_main_sha": "ea663df919873b5eaa776ab93b143bcd27113700",
-  "phase": "source_verified",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "eu-annex-iv",
@@ -177,9 +177,11 @@
   },
   "last_error": null,
   "next_actions": [
-    "最终来源URL与正文核验",
-    "正式发布"
+    "写入当期正文、首页和归档",
+    "回读与公开页面验收"
   ],
   "dedup": "2026-11-20至26七期完整正文读取、标题及事件比对；英国钢材、印度铝型材为新实施节点及延期；欧盟附件IV名单为独立正式调整。",
-  "source_verification": "原始公告逐一打开，印度PDF已核对页面；荷兰政策表态使用Reuters。"
+  "source_verification": "原始公告逐一打开，印度PDF已核对页面；荷兰政策表态使用Reuters。",
+  "final_scan": "已复查11月26日至27日最新贸易、海关、出口管制动态，覆盖日本、韩国、澳大利亚补查；未发现需额外纳入的已核实重大新事项。",
+  "summary": "欧盟调整俄罗斯出口限制实体名单；加拿大对华建筑电缆作出损害终裁；美国延长汽车美国成分认定申请期限；英国钢材授权用途减免实施并披露出口管制执法，印度延长铝挤压型材调查意见期。"
 }
