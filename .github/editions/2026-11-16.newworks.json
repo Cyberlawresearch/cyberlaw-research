@@ -1,0 +1,121 @@
+{
+  "date": "2026-11-16",
+  "column": "newworks",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-16-new-works.html",
+  "newworks_count": 3,
+  "checked_at": "2026-11-27T11:05:01+08:00",
+  "body_sha256": "3d6c3e0f8814197d13a7f843f32b81cd950b8f6bbbc9c321b23014ae99e700d5",
+  "checks": {
+    "publisher_original_source_verified": true,
+    "original_title_author_doi_verified": true,
+    "publication_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "historical_indexes_checked": true,
+    "repository_full_text_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "items": [
+    {
+      "cnTitle": "公共部门算法审计为何仍会遗漏严重损害",
+      "author": "Nel Escher、Nikola Banovic、Ben Green",
+      "originalTitle": "Algorithm Auditing Policies Rest on Flawed Assumptions About Public Sector Systems",
+      "journal": "The 2026 ACM Conference on Fairness, Accountability, and Transparency",
+      "publisher": "Association for Computing Machinery",
+      "year": "2026",
+      "volume": "",
+      "issue": "",
+      "pages": "2162–2185",
+      "articleNumber": "",
+      "doi": "10.1145/3805689.3812280",
+      "url": "https://doi.org/10.1145/3805689.3812280",
+      "publication_date": "2026-06",
+      "full_text": "https://www.benzevgreen.com/wp-content/uploads/2026/06/26-facct.pdf"
+    },
+    {
+      "cnTitle": "医疗人工智能监管沙盒如何连接数据合规与技术评估",
+      "author": "Ilaria De Gasperis",
+      "originalTitle": "Regulatory Sandboxes in Artificial Intelligence: bridging the gap between technology and law",
+      "journal": "BioLaw Journal – Rivista di BioDiritto",
+      "publisher": "Università di Trento",
+      "year": "2025",
+      "volume": "",
+      "issue": "3",
+      "pages": "297–315",
+      "articleNumber": "",
+      "doi": "10.15168/2284-4503-3743",
+      "url": "https://teseo.unitn.it/biolaw/en/article/view/3743",
+      "publication_date": "2025-10-23",
+      "full_text": "https://teseo.unitn.it/biolaw/article/download/3743/4067"
+    },
+    {
+      "cnTitle": "人工智能监管沙盒如何把项目经验转化为规则知识",
+      "author": "Armando Guio Español、Pascal D. Koenig",
+      "originalTitle": "Regulatory sandboxes for AI in the majority world: A learning-centric approach to legal adaptation",
+      "journal": "Cambridge Forum on AI: Law and Governance",
+      "publisher": "Cambridge University Press",
+      "year": "2025",
+      "volume": "1",
+      "issue": "",
+      "pages": "",
+      "articleNumber": "e42",
+      "doi": "10.1017/cfl.2025.10015",
+      "url": "https://www.cambridge.org/core/journals/cambridge-forum-on-ai-law-and-governance/article/regulatory-sandboxes-for-ai-in-the-majority-world-a-learningcentric-approach-to-legal-adaptation/2352427E99FCEA2B34F4B8DB1DC18095",
+      "publication_date": "2025-12-10",
+      "full_text": "https://doi.org/10.1017/cfl.2025.10015"
+    }
+  ],
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html",
+      "new-works-history.html",
+      "papers.html",
+      "papers-history-1.html",
+      "archive.html",
+      "All local tracked HTML and JSON files of baseline main, searched by title, DOI and authors"
+    ],
+    "matches_found_for_selected": 0,
+    "excluded_duplicates": [
+      "Personal data protection in experimental AI governance (already 2026-08-23)",
+      "Operationalising AI Regulatory Sandboxes under the EU AI Act (already 2026-08-17)",
+      "Experimentalism beyond ex ante regulation (already 2026-10-04)"
+    ]
+  },
+  "source_access": [
+    {
+      "source": "https://doi.org/10.1145/3805689.3812280",
+      "result": "Publisher DOI fetch returned HTTP403; author-hosted complete formal PDF and author bibliography read; university primary research page corroborated the publication."
+    },
+    {
+      "source": "https://teseo.unitn.it/biolaw/en/article/view/3743",
+      "result": "Official journal page and 19-page PDF read, including healthcare case discussion and conclusions."
+    },
+    {
+      "source": "https://www.cambridge.org/core/journals/cambridge-forum-on-ai-law-and-governance/article/regulatory-sandboxes-for-ai-in-the-majority-world-a-learningcentric-approach-to-legal-adaptation/2352427E99FCEA2B34F4B8DB1DC18095",
+      "result": "Official publisher full text read, including date, bibliographic information, methods, six cases, limits and conclusion."
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "backfill": {
+    "is_backfill": true,
+    "edition_date": "2026-11-16",
+    "prepared_at": "2026-11-27T11:05:01+08:00",
+    "published_at": null,
+    "reason": "Historical newworks edition absent from main; newly researched recovery. All selected works publicly available before edition date.",
+    "baseline_main_sha": "20e2c9e54880d92bd6c32e5ddf8e31d8d12caf9a",
+    "latest_pointer_policy": "Keep the existing 2026-11-26 newworks as latest."
+  },
+  "publication": {
+    "phase": "awaiting_main_integration",
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  }
+}

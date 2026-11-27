@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-24",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-24-escher-codeifying-law.html",
+  "selection": "Code-ifying the Law: How Disciplinary Divides Afflict the Development of Legal Software",
+  "bibliography": {
+    "type": "article",
+    "author": "Nel Escher、Jeffrey Bilik、Nikola Banovic、Ben Green",
+    "originalTitle": "Code-ifying the Law: How Disciplinary Divides Afflict the Development of Legal Software",
+    "journal": "Proceedings of the ACM on Human-Computer Interaction",
+    "publisher": "Association for Computing Machinery",
+    "year": "2024",
+    "volume": "8",
+    "issue": "CSCW2",
+    "pages": "1–37",
+    "articleNumber": "398",
+    "doi": "10.1145/3686937",
+    "url": "https://doi.org/10.1145/3686937",
+    "cnTitle": "法律写进软件以后为何仍会出错：法律解释、开发分工与程序检验"
+  },
+  "checked_at": "2026-11-27T11:05:01+08:00",
+  "body_sha256": "cc33ee1ff0fbefd727b6dfd6988ff68789e65c6b9002817126e4b19b4b0ef001",
+  "body_length": 5525,
+  "versions": {
+    "publication": "ACM version of record, 8 November 2024, volume 8, CSCW2, article 398, 37 pages.",
+    "full_text": "Author-hosted complete formal PDF downloaded; introduction, methods, limitations, results sections 4–7 and discussion section 8 read; tables and appendix text reviewed. CC BY 4.0."
+  },
+  "sources": [
+    "https://doi.org/10.1145/3686937",
+    "https://www.benzevgreen.com/wp-content/uploads/2023/08/24-cscw.pdf",
+    "https://cyber.harvard.edu/story/2024-11/code-ifying-law"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true
+  },
+  "history_scope": "Read both paper indexes, both newworks indexes and archive; scanned all tracked HTML and JSON for original title, DOI, distinctive title terms and author names. No prior selected work found.",
+  "related_reading": [
+    "articles/2026-10-25-cobbe-reviewable-automated-decision-making.html",
+    "articles/2026-09-03-citron-technological-due-process.html"
+  ],
+  "timeline": null,
+  "backfill": {
+    "is_backfill": true,
+    "edition_date": "2026-11-24",
+    "prepared_at": "2026-11-27T11:05:01+08:00",
+    "published_at": null,
+    "reason": "Historical paper edition absent from main; newly researched recovery, not a recovered original draft.",
+    "baseline_main_sha": "20e2c9e54880d92bd6c32e5ddf8e31d8d12caf9a",
+    "latest_pointer_policy": "Keep the existing 2026-11-26 paper as latest."
+  },
+  "publication": {
+    "phase": "awaiting_main_integration",
+    "content_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  },
+  "last_error": null
+}

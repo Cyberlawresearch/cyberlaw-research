@@ -1,0 +1,106 @@
+{
+  "checked_at": "2026-11-27T11:34:26+08:00",
+  "scope": "六个在更栏目，核心四栏及媒体近30日到期日历，贸易另查11月27日早刊；已完结56课不恢复日更。",
+  "calendar_checks": [
+    {
+      "column": "briefs.html",
+      "period": [
+        "2026-10-28",
+        "2026-11-26"
+      ],
+      "missing": [],
+      "broken_article_links": []
+    },
+    {
+      "column": "papers.html",
+      "period": [
+        "2026-10-28",
+        "2026-11-26"
+      ],
+      "missing": [],
+      "broken_article_links": []
+    },
+    {
+      "column": "classics.html",
+      "period": [
+        "2026-10-28",
+        "2026-11-26"
+      ],
+      "missing": [],
+      "broken_article_links": []
+    },
+    {
+      "column": "new-works.html",
+      "period": [
+        "2026-10-28",
+        "2026-11-26"
+      ],
+      "missing": [],
+      "broken_article_links": []
+    },
+    {
+      "column": "media-ai.html",
+      "through": "2026-11-26",
+      "missing": []
+    },
+    {
+      "column": "trade-watch/archive.html",
+      "through": "2026-11-27",
+      "missing": []
+    }
+  ],
+  "backfills": [
+    {
+      "date": "2026-11-24",
+      "column": "brief",
+      "count": 21
+    },
+    {
+      "date": "2026-11-25",
+      "column": "brief",
+      "count": 24
+    },
+    {
+      "date": "2026-11-26",
+      "column": "brief",
+      "count": 22
+    },
+    {
+      "date": "2026-11-24",
+      "column": "paper",
+      "count": 1
+    },
+    {
+      "date": "2026-11-16",
+      "column": "newworks",
+      "count": 3
+    }
+  ],
+  "cause": {
+    "file": "scripts/apply_editorial_language.py",
+    "error": "TypeError: 'int' object is not callable",
+    "explanation": "Polish.offset方法与HTMLParser.offset整数实例字段冲突，使共享构建失败。",
+    "repair_commit": "375255ff0c48a91c111e43cca6c4b9fce8ed86e9",
+    "verified_pages_run": 45931528912,
+    "pages_conclusion": "success"
+  },
+  "safeguard_fix": "只在新闻门禁输出实际verified后关闭当期异常；白天skipped不再关闭。",
+  "corrected_history_links": {
+    "papers": [
+      "2026-11-11",
+      "2026-11-07",
+      "2026-11-03",
+      "2026-10-23"
+    ],
+    "classics": [
+      "2026-11-20"
+    ]
+  },
+  "nov06_followup": "旧Issue57列举的网信办11月6日专项行动已在11月7日第6条/research-item-25收录，不重复加入11月6日；旧原始核验局限保留。",
+  "publication": {
+    "status": "prepared_for_atomic_publication",
+    "commit_sha": null,
+    "pages_run_id": null,
+    "online_verified_at": null
+  }
+}

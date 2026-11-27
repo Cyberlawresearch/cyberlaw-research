@@ -1,0 +1,4265 @@
+{
+  "date": "2026-11-26",
+  "column": "brief",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-26-tech-law-brief.html",
+  "mode": "fact_only",
+  "analysis_pending": true,
+  "news_count": 22,
+  "distribution": {
+    "domestic": 10,
+    "foreign": 12
+  },
+  "checked_at": "2026-11-27T03:31:29+00:00",
+  "updated_at": "2026-11-27T11:33:26+08:00",
+  "last_news_scan_at": "2026-11-27T03:27:19+00:00",
+  "historical_backfill": {
+    "edition_date": "2026-11-26",
+    "prepared_on": "2026-11-27",
+    "notes": "补发26日完整日；材料公开或新进展日期为25日至26日。事件发生地时区单独核对，27日转载仅辅助核验已于26日公开的路透报道。",
+    "cutoff_date": "2026-11-26",
+    "cutoff_timezone_policy": "以来源所在法域标示的26日及以前公开日期核对；只有日期时不编造时分。中国晚间稿纳入26日完整日，不纳入27日事件。"
+  },
+  "content_verified": true,
+  "publication_ready": true,
+  "base_main_sha": "20e2c9e54880d92bd6c32e5ddf8e31d8d12caf9a",
+  "checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": false,
+    "natural_chinese_reviewed": true,
+    "background_outlook": false,
+    "foreign_layout": true,
+    "foreign_layout_structure": true,
+    "all_sources_successfully_accessed": false
+  },
+  "coverage": {
+    "domestic_sources": [
+      {
+        "group": "中央机关",
+        "source": "国务院",
+        "entry_url": "https://www.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "403；未将首页失败记为已完成巡视",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "全国人大",
+        "entry_url": "https://www.npc.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "访问超时；未将检索摘要记为全文",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "中央网信办",
+        "entry_url": "https://www.cac.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "新一代通信网建设实施方案"
+        ],
+        "notes": "首页近期通信网方案已核入选；旧标准指南与近7日条目去重",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "工业和信息化部",
+        "entry_url": "https://www.miit.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "三部门关于印发《新一代通信网建设实施方案》的通知"
+        ],
+        "notes": "首页及26日通信网方案、解读实际打开",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "科技部",
+        "entry_url": "https://www.most.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "仅返回0行可读正文，未能巡视栏目",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "商务部",
+        "entry_url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_48dd1ca5a38f43bf944c2ba1b2bc522b.html",
+        "checked_at": "2026-11-27T03:31:29+00:00",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "服务贸易发展“十五五”规划"
+        ],
+        "notes": "最终复扫纠正首页初查遗漏：实际读取26日09:12通知、同日解读和24页附件，19日签发、26日首次公开，AI服务出海和数据跨境条款已入选。22日FCC回应已在24期，不复用。",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "国家数据局",
+        "entry_url": "https://www.nda.gov.cn/sjj/hdjl/yjzq/yjzqform/list/index_pc.html?code=ff808081-a1d5596e-01a2-17aa8b5d-096b",
+        "checked_at": "2026-11-27T03:31:29+00:00",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "关于完善数据规则 赋能人工智能创新发展的若干意见（公开征求意见稿）"
+        ],
+        "notes": "复扫官网公开征求意见列表/详情，实际读取公告与5页官方PDF；征求意见11月26日至12月6日，已入选。26日ISO欧洲采用转载已在24日总局发布会披露，剔重；数字经济/数字社会计划归25期。",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "国家发展改革委",
+        "entry_url": "https://www.ndrc.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "关于发布对外投资管理办法配套格式文本（2026年版）的通知"
+        ],
+        "notes": "已读首页及26日对外投资配套格式通知；一般对外投资文书变更与科技议题联系不足，未单列",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "市场监管总局",
+        "entry_url": "https://www.samr.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "市场监管总局开展网络交易平台信用共治活动"
+        ],
+        "notes": "已读网络交易平台信用共治原文；沪新数字身份2.0报道实际事件为20日，排除旧闻",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "公安部",
+        "entry_url": "https://www.mps.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "访问超时",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "最高人民法院",
+        "entry_url": "https://www.court.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "首页AI辅助审判交流与既有23日条目重复，未新增",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "最高人民检察院",
+        "entry_url": "https://www.spp.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "403",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "国家金融监督管理总局",
+        "entry_url": "https://www.nfra.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "403",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "中国人民银行",
+        "entry_url": "https://www.pbc.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "首页金融科技奖、统计及机构会见，未核出26日合格科技法新增；未覆盖所有司局",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "中国证监会",
+        "entry_url": "https://www.csrc.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "访问超时",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "海关总署",
+        "entry_url": "https://www.customs.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "访问超时",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "国家知识产权局",
+        "entry_url": "https://www.cnipa.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "第二十三届上海知识产权国际论坛举行"
+        ],
+        "notes": "首页发现上海国际知识产权论坛并打开原文，作为26日披露25日事件入选",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "国家能源局",
+        "entry_url": "https://www.nea.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "近期文件包括19日虚拟电厂报告、18日流域水风光意见等，超过本次窗口不入选",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "自然资源部",
+        "entry_url": "https://www.mnr.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已读首页；所见规划培训等条目无已确认科技法新增，未覆盖全部栏目",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "中央机关",
+        "source": "国家广播电视总局",
+        "entry_url": "https://www.nrta.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已读首页总局动态；未找到已确认符合窗口的AI及数据治理新动作",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "标准评测",
+        "source": "全国网络安全标准化技术委员会TC260",
+        "entry_url": "https://www.tc260.org.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "最新月报23日、智能门锁指南20日均已刊或超窗",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "标准评测",
+        "source": "全国数据标准化技术委员会TC609",
+        "entry_url": "https://www.tc609.org.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "首页可读，未见26日新增候选，未覆盖所有微信外链",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "标准评测",
+        "source": "国家标准化管理委员会",
+        "entry_url": "https://www.sac.gov.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "首页近栏无可确认26日新的标准动作",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "标准评测",
+        "source": "中国信息通信研究院",
+        "entry_url": "https://www.caict.ac.cn/",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "主站412，保留访问失败；实际改读官方AIhub栏目及两篇评测全文，发布时间分别11月11日、16日，均超窗。没有把工具抓取日期当评测发布日期。",
+        "checked_at_precision": "batch_completion_time",
+        "alternatives": [
+          {
+            "url": "https://aihub.caict.ac.cn/docs/qj8jygJ76Fvp",
+            "status": "read",
+            "published_on": "2026-11-16"
+          },
+          {
+            "url": "https://aihub.caict.ac.cn/docs/PdvNPVDt33Fm",
+            "status": "read",
+            "published_on": "2026-11-11"
+          }
+        ],
+        "reviewed_at": "2026-11-27T03:31:29+00:00",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "标准评测",
+        "source": "CNCERT",
+        "entry_url": "https://www.cert.org.cn/portal/index.htm",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "24日Cling风险通告已分配24日补稿；25日周报仅作检索背景，未拆旧闻",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "标准评测",
+        "source": "全国人工智能标准化技术委员会TC28／中国电子技术标准化研究院",
+        "entry_url": "https://www.cesi.cn/",
+        "checked_at": "2026-11-27T03:31:29+00:00",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "实际访问CESI，仅返回JavaScript云防护页；TC28入口亦不可达。替代读取CESI相关机构碳计量页面（最新11月20日旧会议信息）及24日市场监管总局完整发布会；据第62段确认ISO/IEC 5259-4欧洲采用是旧披露。未声称成功遍历受阻栏目。",
+        "checked_at_precision": "batch_completion_time",
+        "alternatives": [
+          {
+            "url": "https://www.tc28.org.cn/",
+            "status": "access_failed"
+          },
+          {
+            "url": "https://www.cc.cesi.cn/",
+            "status": "read"
+          },
+          {
+            "url": "https://www.samr.gov.cn/hd/zxft/art/2026/art_1fe10d5e599e49209fd5191ba1159e00.html",
+            "status": "read"
+          }
+        ],
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "权威媒体",
+        "source": "新华社",
+        "entry_url": "https://www3.xinhuanet.com/tech/20261126/134151d541c445c0987c3f8fd3b012c8/c.html",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "国家数据局拟进一步完善数据规则赋能人工智能创新发展"
+        ],
+        "notes": "已打开国家数据局26日23:15数据规则报道，补入当日完整日窗口",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "财经媒体",
+        "source": "财联社／东方财富网",
+        "entry_url": "https://finance.eastmoney.com/a/202611263940616370.html",
+        "checked_at": "2026-11-27T03:13:05Z",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "广东：实施存量数据中心优化行动 推动中小型低效数据中心改造为高效边缘算力中心"
+        ],
+        "notes": "已读广东算力规划报道；重大原始附件未取得，保留局限",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "重点地方",
+        "source": "广东省政务服务和数据管理局",
+        "entry_url": "https://zfsg.gd.gov.cn/zwgk/gggs/content/post_4976840.html",
+        "checked_at": "2026-11-27T03:31:29+00:00",
+        "query_or_section": "2026年11月24日至26日公开的科技法、AI、数据、平台、算力及网络安全动态；11月27日历史补发核查",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "广东省算力发展“十五五”规划"
+        ],
+        "notes": "实际读到26日14:00官网完整规划，印发落款11月6日，已更正日期与正式名称；词元行动计划、公共数据开放办法两原文均实际读到11月20日公开，超过26期窗口，剔除。",
+        "checked_at_precision": "batch_completion_time",
+        "audit_provenance": "build_fix: actual 11/27 retrieval and 11/24–26 historical review"
+      },
+      {
+        "group": "重点地方",
+        "source": "上海数据局",
+        "entry_url": "https://sdb.sh.gov.cn/",
+        "checked_at": "2026-11-27T03:01:50.409976+00:00",
+        "status": "checked_list_no_dated_candidates",
+        "http_status": 200,
+        "text_length": 1443,
+        "dated_snippets": [],
+        "relevant_links": [
+          {
+            "text": "市教委、市数据局签署深化教育数据分析应用与决策服务战略合作协议",
+            "url": "/gzdt/20260708/ab6d2b867e14484390c3408a06afd20e.html"
+          },
+          {
+            "text": "市教委、市数据局签署深化教育数据分析应用与决策服务战略合作协议",
+            "url": "/gzdt/20260708/ab6d2b867e14484390c3408a06afd20e.html"
+          },
+          {
+            "text": "2026全球数商大会即将启幕，多个行业高质量数据集现场发布",
+            "url": "/gzdt/20261030/4684fe5a380f4e3cabd9baa910d37071.html"
+          },
+          {
+            "text": "2026全球数商大会10月30日开幕！以“数智共生 链接世界”打造国际数据要素交流平台",
+            "url": "/gzdt/20261030/61b477573af14ce7b398410de60c2309.html"
+          },
+          {
+            "text": "国家数据局组织实施数字社会发展“十五五”行动计划",
+            "url": "/gnyw/20261125/f2c761af2a7b469989ffe327b3e176b2.html"
+          },
+          {
+            "text": "国家数据局组织实施数字经济发展“十五五”行动计划",
+            "url": "/gnyw/20261125/3337f731eca643a3b323f83d0835ab72.html"
+          },
+          {
+            "text": "联播 | 数据领域高技能人才集群培养计划启动实施",
+            "url": "/gnyw/20261124/885d51a9efd74ad794606129f2708b2c.html"
+          },
+          {
+            "text": "上海市密码管理局 上海市数据局关于印发《上海市电子印章管理实施细则》的通知",
+            "url": "/zcwj/zcwj/20261026/7795e413ab67420486343e5c741d6447.html"
+          },
+          {
+            "text": "上海市数据局、上海市通信管理局关于征集第一批算力生态合作伙伴的通知",
+            "url": "/zcwj/zcwj/20260605/da80be4fd75043c3989614d645e99c75.html"
+          },
+          {
+            "text": "上海市数据局关于开展2026年度上海市数商企业优秀产品评选申报工作的通知",
+            "url": "/zcwj/zcwj/20260518/c9749f9fa8034a6db328b567da71bd40.html"
+          },
+          {
+            "text": "上海市数据局关于开展2026年第一批城市数字化转型专项免申即享的通知",
+            "url": "/zcwj/zcwj/20260324/52b84ba489a04ffb9574a1a95aad5307.html"
+          },
+          {
+            "text": "上海市数据局关于发布《大数据资源平台治理分析管理要求》等六项上海市地方标准化指导性技术文件的公告",
+            "url": "/zcwj/zcwj/20260123/147c34d3fc4b40c9934a2ca147929390.html"
+          },
+          {
+            "text": "上海市数据局关于开展2025年度上海市数商企业优秀产品评选申报工作的通知",
+            "url": "/zcwj/zcwj/20251015/51808d30ceaf4f42b4e23d943705c53f.html"
+          },
+          {
+            "text": "上海市数据局关于征集2025年上海市可信数据空间创新发展试点项目的通知",
+            "url": "/zcwj/zcwj/20251013/3a8d1643d3f04a9b98012d10092734a5.html"
+          },
+          {
+            "text": "上海市数据局关于征集2025年上海市高质量数据集先行先试项目的通知",
+            "url": "/zcwj/zcwj/20251013/8e75978e66cc470b9c5a71467fb25994.html"
+          },
+          {
+            "text": "上海市数据局关于开展城市数字化转型专项工作的通知",
+            "url": "/zcwj/zcwj/20250915/26baf1b84b5041b18734e6f46ad5a332.html"
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "当前实取列表含25日转载两项NDA行动计划，已分配25期；电子印章细则10月26日，排除。未将门户无内嵌日期等同无新闻。"
+      },
+      {
+        "group": "重点地方",
+        "source": "广东数据局",
+        "entry_url": "https://zfsg.gd.gov.cn/",
+        "checked_at": "2026-11-27T03:01:50.411248+00:00",
+        "status": "checked_list_no_dated_candidates",
+        "http_status": 200,
+        "text_length": 3368,
+        "dated_snippets": [],
+        "relevant_links": [
+          {
+            "text": "数据要闻",
+            "url": "https://zfsg.gd.gov.cn/xxfb/sjyw/index.html"
+          },
+          {
+            "text": "全国数据标准化技术委员会2026年第二次“标准周”活动在厦门举行",
+            "url": "https://zfsg.gd.gov.cn/xxfb/sjyw/content/post_4985227.html"
+          },
+          {
+            "text": "国家数据局综合司关于组织开展第二批可信数据空间创新发展试点工作的通知",
+            "url": "https://zfsg.gd.gov.cn/xxfb/sjyw/content/post_4985226.html"
+          },
+          {
+            "text": "以创新激活数据要素价值（人民时评）",
+            "url": "https://zfsg.gd.gov.cn/xxfb/sjyw/content/post_4980591.html"
+          },
+          {
+            "text": "国家数据局政策和规划司负责人在国家发展改革委奋进“十五五”系列新闻发布会上答记者问",
+            "url": "https://zfsg.gd.gov.cn/xxfb/sjyw/content/post_4978866.html"
+          },
+          {
+            "text": "国家数据局召开行业高质量数据集链主工作座谈会 深化高质量数据集建设“以需定供”“以用促建”",
+            "url": "https://zfsg.gd.gov.cn/xxfb/sjyw/content/post_4978860.html"
+          },
+          {
+            "text": "关于2026年“数据要素×”大赛全国总决赛获奖项目名单的公示",
+            "url": "https://zfsg.gd.gov.cn/xxfb/sjyw/content/post_4973474.html"
+          },
+          {
+            "text": "数据开放驶入“快车道”，广东印发实施公共数据开放办法",
+            "url": "https://zfsg.gd.gov.cn/xxfb/ywsd/content/post_4980805.html"
+          },
+          {
+            "text": "融通大湾区 服务零距离——粤港澳政务服务跨境通办创新实践项目荣获省“先锋杯”工作创新赛一等奖",
+            "url": "https://zfsg.gd.gov.cn/xxfb/ywsd/content/post_4978917.html"
+          },
+          {
+            "text": "省政务和数据局召开党组（扩大）会议 传达学习贯彻党的二十届五中全会精神",
+            "url": "https://zfsg.gd.gov.cn/xxfb/ywsd/content/post_4974856.html"
+          },
+          {
+            "text": "广东省政务服务和数据管理局 广东省发展和改革委员会关于印发《广东省算力发展“十五五”规划》的通知",
+            "url": "https://zfsg.gd.gov.cn/zwgk/gggs/content/post_4976840.html"
+          },
+          {
+            "text": "广东省政务服务和数据管理局等12部门关于印发《广东省促进词元经济高质量发展行动计划（2026—2027年）》的通知",
+            "url": "https://zfsg.gd.gov.cn/zwgk/gggs/content/post_4982697.html"
+          },
+          {
+            "text": "广东省政务服务和数据管理局关于印发《广东省公共数据开放办法》的通知",
+            "url": "https://zfsg.gd.gov.cn/zwgk/gggs/content/post_4982257.html"
+          },
+          {
+            "text": "关于征集社会化无人机服务企业入驻广东省政务领域无人机管理平台（2027—2028年）的公告",
+            "url": "https://zfsg.gd.gov.cn/zwgk/gggs/content/post_4979763.html"
+          },
+          {
+            "text": "2025年度广东省政务服务数据事务中心部门决算",
+            "url": "https://zfsg.gd.gov.cn/zwgkczyjs/content/post_4946945.html"
+          },
+          {
+            "text": "2025年度广东省政务服务和数据管理局（本级）部门决算",
+            "url": "https://zfsg.gd.gov.cn/zwgkczyjs/content/post_4946940.html"
+          },
+          {
+            "text": "2025年度广东省政务服务和数据管理局部门决算",
+            "url": "https://zfsg.gd.gov.cn/zwgkczyjs/content/post_4946936.html"
+          },
+          {
+            "text": "广东省政务服务和数据管理局2025年度部门整体支出绩效自评报告",
+            "url": "https://zfsg.gd.gov.cn/zwgkczyjs/content/post_4890883.html"
+          },
+          {
+            "text": "2026年广东省政务服务和数据管理局（本级）部门预算",
+            "url": "https://zfsg.gd.gov.cn/zwgkczyjs/content/post_4855725.html"
+          },
+          {
+            "text": "2026年广东省政务服务和数据管理局部门预算",
+            "url": "https://zfsg.gd.gov.cn/zwgkczyjs/content/post_4855723.html"
+          },
+          {
+            "text": "广东省政务服务和数据管理局省数据资源“一网共享”平台运营服务(2025年)项目采购需求征求意见公告",
+            "url": "https://gdgpo.czt.gd.gov.cn/maincms-web/noticeGd?type=notice&id=de473b16-0d76-4c7b-ab10-2a32a1846c29&channel=fca71be5-fc0c-45db-96af-f513e9abda9d&openTenderCode=%E6%97%A0&channelName=%E9%87%87%E8%B4%AD%E9%A1%B9%E7%9B%AE%E4%BF%A1%E6%81%AF"
+          },
+          {
+            "text": "省数字政府项目管理平台升级改造及运维运营(2025年)项目招标公告",
+            "url": "https://gdgpo.czt.gd.gov.cn/maincms-web/noticeGd?type=notice&id=e48ec0b2-b9ad-4975-ad24-f65193b33f48&channel=fca71be5-fc0c-45db-96af-f513e9abda9d&openTenderCode=GPCGD263256FG038F&channelName=%E9%87%87%E8%B4%AD%E9%A1%B9%E7%9B%AE%E4%BF%A1%E6%81%AF"
+          },
+          {
+            "text": "省“粤政易”平台、省电子公文交换系统升级及运营运维服务(2025年)项目招标公告",
+            "url": "https://gdgpo.czt.gd.gov.cn/maincms-web/noticeGd?type=notice&id=5a82bd55-afa8-4ef1-b0a2-d20e83c30dd0&channel=fca71be5-fc0c-45db-96af-f513e9abda9d&openTenderCode=GPCGD253256FG312F&channelName=%E9%87%87%E8%B4%AD%E9%A1%B9%E7%9B%AE%E4%BF%A1%E6%81%AF"
+          },
+          {
+            "text": "省数字政府网络安全公共支撑（2025年）项目之数字政府资产安全管理服务招标公告",
+            "url": "https://gdgpo.czt.gd.gov.cn/maincms-web/noticeGd?type=notice&id=9b63f3e5-1195-40a2-b6d5-47707de18ab1&channel=fca71be5-fc0c-45db-96af-f513e9abda9d&openTenderCode=GPCGD253256FG297F&channelName=%E9%87%87%E8%B4%AD%E9%A1%B9%E7%9B%AE%E4%BF%A1%E6%81%AF"
+          },
+          {
+            "text": "省数字政府网络安全公共支撑（2025年）项目之省数字安全智能监测中枢服务招标公告",
+            "url": "https://gdgpo.czt.gd.gov.cn/maincms-web/noticeGd?type=notice&id=ec6205bf-de56-4c8d-b768-0625e87be0ab&channel=fca71be5-fc0c-45db-96af-f513e9abda9d&openTenderCode=GPCGD253256FG281F&channelName=%E9%87%87%E8%B4%AD%E9%A1%B9%E7%9B%AE%E4%BF%A1%E6%81%AF"
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "26日算力规划已回官网完整核实纳入；两项20日政策另实际打开核日，超过窗口。"
+      },
+      {
+        "group": "重点地方",
+        "source": "浙江数据局",
+        "entry_url": "https://data.zj.gov.cn/",
+        "checked_at": "2026-11-27T03:01:50.412025+00:00",
+        "status": "checked_list_no_dated_candidates",
+        "http_status": 200,
+        "text_length": 108,
+        "dated_snippets": [],
+        "relevant_links": [],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "数据局首页无有效正文链接；改用经信厅直连栏目与驻京办政策转载，保留原入口可读性限制。"
+      },
+      {
+        "group": "重点地方",
+        "source": "江苏数据局",
+        "entry_url": "https://sj.jiangsu.gov.cn/",
+        "checked_at": "2026-11-27T03:01:50.412813+00:00",
+        "status": "access_failed",
+        "error": "HTTP Error 503: Service Unavailable",
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "原入口失败；补查正确jszwb.jiangsu.gov.cn栏目，25日OPC报道原活动13日、17日已报道，排除旧事件。"
+      },
+      {
+        "group": "重点地方",
+        "source": "四川数据局",
+        "entry_url": "https://dsj.sc.gov.cn/",
+        "checked_at": "2026-11-27T03:01:50.413512+00:00",
+        "status": "access_failed",
+        "error": "HTTP Error 503: Service Unavailable",
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "原数据局入口失败；改用省经信厅/发改委直连实际列表。26日通信网方案与中央同事件归并；脑机接口代表产品是产业展示，工业互联网节点入库公示不作为本期重大制度新增。"
+      },
+      {
+        "group": "重点地方",
+        "source": "重庆数据局",
+        "entry_url": "https://dsjj.cq.gov.cn/",
+        "checked_at": "2026-11-27T03:01:50.414301+00:00",
+        "status": "checked_list_no_dated_candidates",
+        "http_status": 200,
+        "text_length": 2459,
+        "dated_snippets": [],
+        "relevant_links": [
+          {
+            "text": "买算力最高补贴1000万元！重庆制定词元驱动数据产业措施",
+            "url": "https://mp.weixin.qq.com/s/iqEiTF2q4bIcVvhmLxdocQ"
+          },
+          {
+            "text": "通用人工智能何以“通用”？山城智变 渝见未来",
+            "url": "https://mp.weixin.qq.com/s/P2wV-GpbBIG0TAqLFKJl8A"
+          },
+          {
+            "text": "让“数据流”变成“价值流” 重庆与东盟共筑算力底座",
+            "url": "https://wap.cqrb.cn/xcq/NewsDetail?classId=943&newsId=2829307&staticUrl=https%3A%2F%2Ft.cqrb.cn%2F4nwEC"
+          },
+          {
+            "text": "买算力最高补贴1000万元！重庆制定词元驱动数据产业措施",
+            "url": "https://mp.weixin.qq.com/s/iqEiTF2q4bIcVvhmLxdocQ"
+          },
+          {
+            "text": "新华社：重庆斩获“数据要素×”大赛全国总决赛11项大奖",
+            "url": "https://h.xinhuaxmt.com/vh512/share/13344021?docid=13344021&newstype=1001&d=13528a0"
+          },
+          {
+            "text": "通用人工智能大会在渝开幕 袁家军出席开幕式并致辞 尚勇高松...",
+            "url": "https://mp.weixin.qq.com/s/3j5w4ZLVsi-lO9ehJf_oQQ"
+          },
+          {
+            "text": "人民日报 | 全国统一的数据产权登记制度正式实施 数据流通交...",
+            "url": "https://mp.weixin.qq.com/s/q_ivek4Fu6RMKBNPM4pUcw"
+          },
+          {
+            "text": "重庆市大数据应用发展管理局关于2026年重庆市工程技术大数据...",
+            "url": "./zwgk_533/zdmsxx/202611/t20261106_16366298.html"
+          },
+          {
+            "text": "重庆市大数据应用发展管理局关于开展2026年第二批算力券兑现...",
+            "url": "./zwgk_533/zdmsxx/202610/t20261009_16206634.html"
+          },
+          {
+            "text": "关于重庆市公共数据开放系统网站域名变更的公告",
+            "url": "./zwgk_533/zdmsxx/202609/t20260918_16097800.html"
+          },
+          {
+            "text": "重庆市大数据应用发展管理局关于公开征求《重庆市培育发展词...",
+            "url": "./sy_533/bmdt/sj/202609/t20260910_16056901.html"
+          },
+          {
+            "text": "关于公布2026年“数据要素×”大赛重庆分赛获奖名单的通知",
+            "url": "./zwgk_533/zdmsxx/202609/t20260903_16024942.html"
+          },
+          {
+            "text": "重庆市大数据应用发展管理局 重庆市财政局关于印发《重庆市促进词元驱动的数据产业高质量发展若干措施》的通知",
+            "url": "./zwgk_533/zcwj/zcqtwj/202611/t20261111_16399302.html"
+          },
+          {
+            "text": "重庆市人民政府办公厅关于印发《重庆市建设新型能源算力枢纽实施方案》的通知",
+            "url": "./zwgk_533/zcwj/zcqtwj/202607/t20260731_15876621.html"
+          },
+          {
+            "text": "重庆市大数据应用发展管理局2026年研究课题遴选公告",
+            "url": "./zwgk_533/zcwj/zcqtwj/202607/t20260722_15839639.html"
+          },
+          {
+            "text": "重庆市大数据应用发展管理局关于开展第五批公共数据“跑起来”示范场景建设申报工作的通知",
+            "url": "./zwgk_533/zcwj/zcqtwj/202603/t20260311_15520441.html"
+          },
+          {
+            "text": "重庆市大数据应用发展管理局关于开展2026年第一批算力券兑现工作的通知",
+            "url": "./zwgk_533/zcwj/zcqtwj/202603/t20260311_15520439.html"
+          },
+          {
+            "text": "《重庆市工程技术大数据智能化专业职称申报条件》政策解读",
+            "url": "./zwgk_533/zcjd/202306/t20230629_12103842.html"
+          },
+          {
+            "text": "《重庆市电子政务云平台安全管理办法（试行）》政策解读",
+            "url": "./zwgk_533/zcjd/bmjd/202209/t20220919_11122092.html"
+          },
+          {
+            "text": "渝公网安备 50010502002744号",
+            "url": "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50010502002744"
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "当前列表词元措施11月11日、算力券10月9日均旧；25日城市运行治理条例由25期核原文采用。"
+      },
+      {
+        "group": "重点地方",
+        "source": "贵州数据局",
+        "entry_url": "https://dsj.guizhou.gov.cn/",
+        "checked_at": "2026-11-27T03:01:50.415176+00:00",
+        "status": "checked_list_with_candidates",
+        "http_status": 200,
+        "text_length": 4374,
+        "dated_snippets": [
+          "更多 >>\nAI科普·双百黔行 | 贵州省人工智能科普“双百行动”普安县、册亨县专场活动举行\n2026-11-24\n热词破译局｜高质量数据集：给大模型备好“优质口粮”\n2026-11-17"
+        ],
+        "relevant_links": [
+          {
+            "text": "国家数据局组织实施数字社会发展“十五五”行动计划",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/gnyw/202611/t20261126_91145288.html"
+          },
+          {
+            "text": "国家数据局组织实施数字经济发展“十五五”行动计划",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/gnyw/202611/t20261126_91145271.html"
+          },
+          {
+            "text": "新闻联播 | 我国启动具身智能数据国家标准研制",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/gnyw/202611/t20261124_91133169.html"
+          },
+          {
+            "text": "不用再一家家上门找客户！互认互通全国数据需求池2.0平台已汇聚100余个需求",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/gnyw/202611/t20261119_91119678.html"
+          },
+          {
+            "text": "聚焦企业 | “上架”京东天猫！数据宝AI词元服务能“网购”了",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/gnyw/202611/t20261103_91066307.html"
+          },
+          {
+            "text": "贵安具身智能数据工厂里，训练师“手把手”教人形机器人干活",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/snyw/202611/t20261126_91145632.html"
+          },
+          {
+            "text": "外资企业 “贵州行” | 算力充沛、场景丰富！贵州诚邀外资抢抓数智发展新机遇",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/snyw/202611/t20261126_91145599.html"
+          },
+          {
+            "text": "聚焦企业 | 出海东盟拓新局！数据宝携“三合一”平台亮相马来西亚数据中心展",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/snyw/202611/t20261126_91145372.html"
+          },
+          {
+            "text": "【热词破译局】研发经费：藏在数据里的贵州创新密码",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/snyw/202611/t20261126_91145348.html"
+          },
+          {
+            "text": "粤黔携手抢占人工智能新赛道“智”高点！",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/snyw/202611/t20261126_91145321.html"
+          },
+          {
+            "text": "市州动态 | 惠水培训大数据技能为产业园输送人才",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/szdt/202611/t20261126_91145628.html"
+          },
+          {
+            "text": "市州动态 | 黔东南发展数据标注600余人端上数字饭碗",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/szdt/202611/t20261113_91102750.html"
+          },
+          {
+            "text": "市州动态 | 数智赋能提质效 云端逐梦开新局——黔南州推动大数据产业高质量发展综述",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/szdt/202611/t20261111_91096959.html"
+          },
+          {
+            "text": "国家数据局综合司关于组织开展第二批可信数据空间创新发展试点工作的通知",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/tzgg/202611/t20261119_91122398.html"
+          },
+          {
+            "text": "省大数据局关于开展2026年度省级数据产业潜力型、成长型、龙头型企业申报工作的通知",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/tzgg/202610/t20261023_91024608.html"
+          },
+          {
+            "text": "关于2026年贵州省大数据人才实训基地遴选结果的公示",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/tzgg/202610/t20261009_90969993.html"
+          },
+          {
+            "text": "省大数据局关于2026年度工程系列大数据专业技术职务任职资格评审政策性审查结果的公示",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/tzgg/202609/t20260930_90955470.html"
+          },
+          {
+            "text": "省大数据局关于征集“城市大脑”建设 典型案例的通知",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/tzgg/202609/t20260910_90857707.html"
+          },
+          {
+            "text": "关于2026年“数据要素×”大赛全国总决赛项目名单的公示",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/tzgg/202609/t20260909_90855090.html"
+          },
+          {
+            "text": "关于举办2026年“数据要素×”大赛全国总决赛的通知",
+            "url": "https://dsj.guizhou.gov.cn/xwzx/tzgg/202609/t20260909_90855021.html"
+          },
+          {
+            "text": "贵州算力券",
+            "url": "https://www.gzsuanli.com/"
+          },
+          {
+            "text": "工程系列大数据专业职称申报",
+            "url": "https://gzrswt.gzsrs.cn:8007/ssologin/login?service=https%3A%2F%2Frcrs.gzsrs.cn%3A9999%2Fips%2FindexCasLogin"
+          },
+          {
+            "text": "数据基础设施",
+            "url": "https://dsj.guizhou.gov.cn/zwgk/zdlyxx/jscs/"
+          },
+          {
+            "text": "数据资源",
+            "url": "https://dsj.guizhou.gov.cn/zwgk/zdlyxx/sjzytg/"
+          },
+          {
+            "text": "贵州：算力之上 看数字文创汇成产业星河",
+            "url": "https://dsj.guizhou.gov.cn/zwgk/zdlyxx/jscs/202611/t20261125_91137597.html"
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "26日两项NDA计划属转载，与25期同事件；26日数据工厂、企业展会、人才培训、粤黔产业合作等为产业动态，无所见独立重大规范/执法新增。"
+      },
+      {
+        "group": "重点地方",
+        "source": "广西数据局",
+        "entry_url": "https://dsjfzj.gxzf.gov.cn/",
+        "checked_at": "2026-11-27T03:01:50.416018+00:00",
+        "status": "access_failed",
+        "error": "HTTP Error 503: Service Unavailable",
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "旧入口不可达，补查dsj.gxzf.gov.cn亦503；替代主题检索未取得窗口内可核的新公告，保留覆盖限制。"
+      },
+      {
+        "group": "重点地方",
+        "source": "海南数据局",
+        "entry_url": "https://dsj.hainan.gov.cn/",
+        "checked_at": "2026-11-27T03:01:50.417402+00:00",
+        "status": "checked_list_no_dated_candidates",
+        "http_status": 200,
+        "text_length": 2395,
+        "dated_snippets": [],
+        "relevant_links": [
+          {
+            "text": "国家数据局",
+            "url": "https://www.nda.gov.cn/sjj/index_pc.html"
+          },
+          {
+            "text": "公共数据开发利用",
+            "url": "https://dsj.hainan.gov.cn/sjzy/"
+          },
+          {
+            "text": "数据共享开放",
+            "url": "https://dsj.hainan.gov.cn/sjzy/sjgxkf/"
+          },
+          {
+            "text": "公共数据授权运营",
+            "url": "https://dsj.hainan.gov.cn/sjzy/sjcpcs/"
+          },
+          {
+            "text": "平台支撑",
+            "url": "https://dsj.hainan.gov.cn/szjc/ptzc/"
+          },
+          {
+            "text": "公共数据开发利用",
+            "url": "javascript:void(0);"
+          },
+          {
+            "text": "数据共享开放",
+            "url": "https://dsj.hainan.gov.cn/sjzy/sjgxkf/"
+          },
+          {
+            "text": "公共数据授权运营",
+            "url": "https://dsj.hainan.gov.cn/sjzy/sjcpcs/"
+          },
+          {
+            "text": "国际数据综合服务中心",
+            "url": "https://dsj.hainan.gov.cn/sjzy/gjsjzhfwzx/"
+          },
+          {
+            "text": "数据基础",
+            "url": "javascript:void(0);"
+          },
+          {
+            "text": "平台支撑",
+            "url": "https://dsj.hainan.gov.cn/szjc/ptzc/"
+          },
+          {
+            "text": "省大数据发展中心荣获2026年海南省基层理论宣讲擂台赛优秀奖",
+            "url": "./ywdt/jwyw/202611/t20261127_4186389.html"
+          },
+          {
+            "text": "省大数据发展中心传达学习党的二十届五中全会精神",
+            "url": "./ywdt/jwyw/202611/t20261104_4173501.html"
+          },
+          {
+            "text": "海南警察学院与海南省大数据发展中心签署战略合作框架协议",
+            "url": "./ywdt/jwyw/202610/t20261029_4170223.html"
+          },
+          {
+            "text": "省大数据发展中心党委召开干部任职大会",
+            "url": "./ywdt/jwyw/202609/t20260910_4144491.html"
+          },
+          {
+            "text": "全省基层“一表通”民政补贴数据应用场景专题培训会顺利举办",
+            "url": "./ywdt/jwyw/202607/t20260720_4113889.html"
+          },
+          {
+            "text": "关于2026年度海南省大数据工程领域高级职称申报提供继续教育...",
+            "url": "./jgjs/gsgg/202611/t20261105_4174213.html"
+          },
+          {
+            "text": "海南省大数据发展中心2026年信息技术主管岗拟聘用人员公示",
+            "url": "./jgjs/gsgg/202610/t20261016_4162996.html"
+          },
+          {
+            "text": "关于开展2026年度海南省大数据工程领域 高级职称评审与认定工...",
+            "url": "./jgjs/gsgg/202609/t20260923_4152691.html"
+          },
+          {
+            "text": "海南省大数据发展中心关于征集海南省政务信息化专家的通知",
+            "url": "./jgjs/gsgg/202608/t20260817_4129144.html"
+          },
+          {
+            "text": "海南省大数据发展中心招聘公告",
+            "url": "./jgjs/gsgg/202606/t20260625_4099373.html"
+          },
+          {
+            "text": "国家数据局组织实施数字经济发展“十五五”行动计划",
+            "url": "./mtbd/202611/t20261127_4186453.html"
+          },
+          {
+            "text": "国家数据局 | 关于2026年“数据要素×”大赛全国总决赛获奖项...",
+            "url": "./mtbd/202610/t20261026_4168133.html"
+          },
+          {
+            "text": "四部门联合印发《关于加快推进“人工智能＋人社”应用发展的实施意见》",
+            "url": "./zcfg/zybs/202607/t20260713_4109277.html"
+          },
+          {
+            "text": "《海南省支持人工智能OPC创新发展的若干措施》发布",
+            "url": "./zcfg/hnxd/202605/t20260519_4078109.html"
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "当前页面27日宣讲获奖在26截止后；国家数字经济计划27日转载为24日既有事件；25日项目成交和废标属于常规采购。"
+      },
+      {
+        "group": "重点地方",
+        "source": "内蒙古政务服务与数据局",
+        "entry_url": "https://zwfw.nmg.gov.cn/",
+        "checked_at": "2026-11-27T03:01:50.419017+00:00",
+        "status": "checked_list_with_candidates",
+        "http_status": 200,
+        "text_length": 2683,
+        "dated_snippets": [
+          "不动产服务专区让不动产“动”起来\n以往办理房产买卖、赠与、抵押登记等不动产业务，材料繁杂、窗口分散，群众需要来回跑腿。\n2026-11-23 10:40:26\n想开超市还在多头跑？“一件事” 联办，线上轻松搞定！\n想开社区超市，以前办证部门多、材料要反复提交，来回跑窗口，手续繁琐，耽误开业。 现在不用多头跑啦！"
+        ],
+        "relevant_links": [
+          {
+            "text": "国家政务服务平台",
+            "url": "http://gjzwfw.www.gov.cn/"
+          },
+          {
+            "text": "自治区政务服务与数据管理局",
+            "url": "javascript:void(0);"
+          },
+          {
+            "text": "内蒙古自治区算力奖励申领专区",
+            "url": "javascript:;"
+          },
+          {
+            "text": "“蒙企通”民营企业综合服务平台",
+            "url": "javascript:;"
+          },
+          {
+            "text": "蒙检在线服务平台",
+            "url": "javascript:;"
+          },
+          {
+            "text": "蒙公网安备 15010502001062号",
+            "url": ""
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "已读服务专区与工信厅当前列表；23日智能网联车培训对应2025年旧办法，24日企业集群会议和职称名单未见本期重大科技法增量。"
+      },
+      {
+        "group": "重点地方",
+        "source": "河北雄安新区",
+        "entry_url": "https://www.xiongan.gov.cn/",
+        "checked_at": "2026-11-27T03:01:50.424315+00:00",
+        "status": "checked_list_with_candidates",
+        "http_status": 200,
+        "text_length": 3418,
+        "dated_snippets": [
+          "2026-11-26\n河北省委常委会召开扩大会议\n2026-11-24\n十届河北省委第十轮巡视集中反馈会议在石家庄召开\n2026-11-21",
+          "2026-11-25\n关于河北省2026年家电以旧换新、数码和智能产品购新补贴及自主品类补贴活动截止时间的公告\n2026-11-24\n河北雄安新区公安局2026年公开招聘警务辅助人员公告\n2026-11-24",
+          "2026-11-24\n河北雄安新区公安局2026年公开招聘警务辅助人员公告\n2026-11-24\n雄安新区2026年第三季度职称考核认定结果公示\n2026-11-22",
+          "2026-11-24\n雄安新区2026年第三季度职称考核认定结果公示\n2026-11-22\n关于河北雄安新区2026年11月份水生生物增殖放流的公示\n2026-11-21",
+          "更多\n雄安新区召开党工委委员（扩大）会议\n2026-11-23\n雄安新区召开党工委委员（扩大）会议\n2026-11-16",
+          "2026-11-25\n变“独角戏”为“共同事”！雄安新区这场食安宣传入楼入户更入心\n2026-11-24\n报名啦！雄安新区征集河北省第三届职业技能大赛参赛选手及裁判\n2026-11-24",
+          "2026-11-24\n报名啦！雄安新区征集河北省第三届职业技能大赛参赛选手及裁判\n2026-11-24\n从“云端”到后厨，雄安新区全链条守护“舌尖安全”\n2026-11-24",
+          "2026-11-24\n从“云端”到后厨，雄安新区全链条守护“舌尖安全”\n2026-11-24\n“你点我查”！雄安新区全力守护“舌尖上的安全”\n2026-11-24",
+          "2026-11-24\n“你点我查”！雄安新区全力守护“舌尖上的安全”\n2026-11-24\n更多\n长图丨一地三区！河北未来五年主要奋斗目标来了"
+        ],
+        "relevant_links": [
+          {
+            "text": "冀公网安备13062902000079号",
+            "url": "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=13062902000079"
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "24—26日列表为食品安全、招聘、技能竞赛等；算力互联节点原稿11月19日，数据安全比选11月2日，均超窗。"
+      },
+      {
+        "group": "权威媒体",
+        "source": "新华网",
+        "entry_url": "https://www.news.cn/tech/",
+        "checked_at": "2026-11-27T03:01:50.425802+00:00",
+        "status": "checked_list_no_dated_candidates",
+        "http_status": 200,
+        "text_length": 1121,
+        "dated_snippets": [],
+        "relevant_links": [
+          {
+            "text": "数据报告厅",
+            "url": "/tech/sjbgt/index.html"
+          },
+          {
+            "text": "人工智能训练师“解锁”具身智能产业新图景（组图）",
+            "url": "/tech/20261118/bb2e69cb572944eda195593d1f8f332b/c.html"
+          },
+          {
+            "text": "国家数据局拟进一步完善数据规则赋能人工智能创新发展",
+            "url": "/tech/20261127/4ef661ba45154fc3b827a137d37e2c5d/c.html"
+          },
+          {
+            "text": "人工智能训练师走俏 具身智能产业“解锁”新图景",
+            "url": "/tech/20261126/6e4c81d1926f43eba6e96d4063d5b433/c.html"
+          },
+          {
+            "text": "大模型不是终点 人工智能还会出现新赛道",
+            "url": "https://www.news.cn/tech/20250730/cda19d3f2482433fadf480ad3d27fa4d/c.html"
+          },
+          {
+            "text": "2026“人工智能+”行业应用创新案例征集启动",
+            "url": "https://www.news.cn/tech/20260903/5d7b2412311643ceb34548b3d5b27220/c.html"
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "门户实际取得26/27条目；26日23:15数据规则回国家数据局官方公告与附件入选，26日全总发布会19:49原稿另读并入选。27日转载不作为新事件日。"
+      },
+      {
+        "group": "权威媒体",
+        "source": "人民网",
+        "entry_url": "http://it.people.com.cn/",
+        "checked_at": "2026-11-27T03:01:50.426263+00:00",
+        "status": "access_failed",
+        "http_status": 200,
+        "text_length": 0,
+        "dated_snippets": [],
+        "relevant_links": [],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "原IT栏目正文为空，保留不可读；相关中央重大政策以主管部门、新华社和中新社实际原文交叉补查。"
+      },
+      {
+        "group": "权威媒体",
+        "source": "央视",
+        "entry_url": "https://news.cctv.com/tech/",
+        "checked_at": "2026-11-27T03:01:50.429332+00:00",
+        "status": "checked_list_no_dated_candidates",
+        "http_status": 200,
+        "text_length": 253,
+        "dated_snippets": [],
+        "relevant_links": [],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "技术栏目只返回很少正文，不能视为完整日期列表；24日AI标准发布会央视报道由总局完整实录核验，同事件不重复；26数据规则以NDA官方附件补查。"
+      },
+      {
+        "group": "权威媒体",
+        "source": "央广网",
+        "entry_url": "https://tech.cnr.cn/",
+        "checked_at": "2026-11-27T03:01:50.430666+00:00",
+        "status": "checked_list_no_dated_candidates",
+        "http_status": 200,
+        "text_length": 1950,
+        "dated_snippets": [],
+        "relevant_links": [
+          {
+            "text": "最高45%！AI服务器签约后还要涨价，算力争夺战正在改写采购规则",
+            "url": "https://www.cnr.cn/tech/techds/20261125/t20261125_527882534.shtml"
+          },
+          {
+            "text": "杨元庆：未来80%海量算力或产生于端侧及边缘侧",
+            "url": "https://www.cnr.cn/tech/mxhrdt/20261120/t20261120_527878207.shtml"
+          },
+          {
+            "text": "姜照：人工智能赋能服务消费的全球实践",
+            "url": "https://www.cnr.cn/tech/mxhrdt/20261113/t20261113_527870844.shtml"
+          },
+          {
+            "text": "赵志国：关于人工智能时代加快发展新质生产力，推动数实融合发展的若干思考",
+            "url": "https://www.cnr.cn/tech/mxhrdt/20261107/t20261107_527865338.shtml"
+          },
+          {
+            "text": "算力狂欢的“倒计时”，投行测算AI资本开支拐点渐近",
+            "url": "https://www.cnr.cn/tech/techgsrw/20261127/t20261127_527884754.shtml"
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "当前25日AI服务器涨价为产业价格报道，20日边缘算力讲话已超窗；27日AI资本开支分析超过截止，未列独立法律新闻。"
+      },
+      {
+        "group": "权威媒体",
+        "source": "中新网",
+        "entry_url": "https://www.chinanews.com.cn/it/",
+        "checked_at": "2026-11-27T03:01:50.431630+00:00",
+        "status": "access_failed",
+        "http_status": 200,
+        "text_length": 5,
+        "dated_snippets": [],
+        "relevant_links": [],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "IT入口动态不可读；全总26日发布会新闻经中新社检索线索追到新华社、新京报、澎湃现场原稿实读，HK售票事故以香港政府原始公告核实。"
+      },
+      {
+        "group": "法治媒体",
+        "source": "法治网",
+        "entry_url": "http://www.legaldaily.com.cn/",
+        "checked_at": "2026-11-27T03:01:55.401613+00:00",
+        "status": "checked_list_no_dated_candidates",
+        "http_status": 200,
+        "text_length": 2637,
+        "dated_snippets": [],
+        "relevant_links": [
+          {
+            "text": "市场监管总局开展网络交易平台信用共治活动",
+            "url": "http://www.legaldaily.com.cn/index/content/2026-11/27/content_9498615.html"
+          },
+          {
+            "text": "市场监管总局开展网络交易平台信用共治活动",
+            "url": "http://www.legaldaily.com.cn/index/content/2026-11/27/content_9498615.html"
+          },
+          {
+            "text": "中华人民共和国反跨境腐败法",
+            "url": "http://www.legaldaily.com.cn/index/content/2026-11/13/content_9490733.html"
+          },
+          {
+            "text": "公安部网安局公布2起不履行安全保护义务案",
+            "url": "http://www.legaldaily.com.cn/index/content/2026-11/25/content_9497074.html"
+          },
+          {
+            "text": "国家数据局拟完善数据规则赋能人工智能创新发展",
+            "url": "http://www.legaldaily.com.cn/index/content/2026-11/27/content_9498588.html"
+          },
+          {
+            "text": "人工智能训练师走俏,具身智能产业\"解锁\"新图景",
+            "url": "http://www.legaldaily.com.cn/index/content/2026-11/26/content_9497886.html"
+          },
+          {
+            "text": "市场监管总局开展网络交易平台信用共治活动",
+            "url": "http://www.legaldaily.com.cn/index/content/2026-11/27/content_9498637.html"
+          },
+          {
+            "text": "舆情监测平台登录",
+            "url": "http://publicopinion.legaldaily.com.cn/"
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "当前列表26/27转载的平台信用共治、NDA数据规则均已回官方核实收26；25日公安安全义务两案回新华网原稿，归25期。"
+      },
+      {
+        "group": "法治媒体",
+        "source": "人民法院报",
+        "entry_url": "https://rmfyb.chinacourt.org/",
+        "checked_at": "2026-11-27T03:01:55.458415+00:00",
+        "status": "access_failed",
+        "error": "HTTP Error 503: Service Unavailable",
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "原电子报入口失败；替代实际检查最高法门户和裁判/科技主题反搜，保留原电子报访问限制。"
+      },
+      {
+        "group": "法治媒体",
+        "source": "检察日报",
+        "entry_url": "https://newspaper.jcrb.com/",
+        "checked_at": "2026-11-27T03:01:55.606007+00:00",
+        "status": "access_failed",
+        "error": "HTTP Error 503: Service Unavailable",
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "原电子报入口失败；替代法治网已取栏目和司法/数据主题反搜，保留电子报访问限制。"
+      },
+      {
+        "group": "法治媒体",
+        "source": "人民邮电报",
+        "entry_url": "https://paper.cnii.com.cn/",
+        "checked_at": "2026-11-27T03:01:55.831615+00:00",
+        "status": "access_failed",
+        "error": "HTTP Error 503: Service Unavailable",
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "原电子报入口失败；通信网方案直接以工信部26日通知和解读完整核实。"
+      },
+      {
+        "group": "财经媒体",
+        "source": "财新",
+        "entry_url": "https://www.caixin.com/",
+        "checked_at": "2026-11-27T03:01:55.862153+00:00",
+        "status": "checked_list_with_candidates",
+        "http_status": 200,
+        "text_length": 5089,
+        "dated_snippets": [
+          "图集｜德国Z世代掀起73城抗议 要教育不要国防军\n0\n11月23日 17:48\n科技\n0",
+          "黄仁勋“风暴眼”\n掌舵英伟达33年的黄仁勋站在全球AI革命最中心，他去职的短中长期影响是什么？\n出版:2026-11-23\n年度期号:45 总期号:1232\n【封面文章】"
+        ],
+        "relevant_links": [
+          {
+            "text": "数据",
+            "url": "https://caixindata.com?source=caixinweb"
+          },
+          {
+            "text": "数据通",
+            "url": "https://cxdata.caixin.com/pc/?source=caixinweb"
+          },
+          {
+            "text": "企业数据库",
+            "url": "https://entities.caixin.com/companies?source=caixinweb"
+          },
+          {
+            "text": "数据通Claw🦞",
+            "url": "https://cxdata.caixin.com/nexus/#/CaixindataClaw?source=caixinweb"
+          },
+          {
+            "text": "数据",
+            "url": "https://caixindata.com?source=caixinweb"
+          },
+          {
+            "text": "夜读精选｜瑞银：内地严管跨境投资 香港楼价升势2027年料止步",
+            "url": "https://www.caixin.com/2026-11-26/102508991.html"
+          },
+          {
+            "text": "中资租户占比高 美国算力新规冲击柔佛算力枢纽",
+            "url": "https://www.caixin.com/2026-11-26/102509010.html"
+          },
+          {
+            "text": "瑞银：内地严管跨境投资 香港楼价升势2027年料止步",
+            "url": "https://www.caixin.com/2026-11-26/102508962.html"
+          },
+          {
+            "text": "香港接连发生大规模资料外泄 AI时代网络安全风险加剧(含视频)",
+            "url": "https://www.caixin.com/2026-11-26/102508891.html"
+          },
+          {
+            "text": "数据通热点",
+            "url": "https://cxdata.caixin.com/index/newsTab?originReferrer=hotnewswidget"
+          },
+          {
+            "text": "特别呈现 | 从高性能台式机跃迁至本地AI算力中枢，联想ThinkCentre X Tower闪耀2026 APEC峰会",
+            "url": "https://promote.caixin.com/2026-11-25/102508544.html"
+          },
+          {
+            "text": "特别呈现 | 从市场进入到贸易走廊：企业跨境资金管理的新考题",
+            "url": "https://promote.caixin.com/2026-11-24/102506900.html"
+          },
+          {
+            "text": "生成式人工智能服务：Beijing-AskCaiXin-20261118S0312",
+            "url": "https://beian.cac.gov.cn/"
+          },
+          {
+            "text": "京公网安备 11010502034662号",
+            "url": "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502034662"
+          },
+          {
+            "text": "财新数据通",
+            "url": "http://course.caixin.com/?channel=02301"
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "当前列表26日东南亚算力出口限制、香港数据外泄为已收事件线索；未读取或冒称读取付费全文，分别回路透和HK政府原文。"
+      },
+      {
+        "group": "财经媒体",
+        "source": "第一财经",
+        "entry_url": "https://www.yicai.com/",
+        "checked_at": "2026-11-27T03:01:55.913372+00:00",
+        "status": "checked_list_with_candidates",
+        "http_status": 200,
+        "text_length": 10327,
+        "dated_snippets": [
+          "陈吉宁涉嫌严重违纪违法正接受中央纪委国家监委审查调查\n中央政治局委员、上海市委书记陈吉宁涉嫌严重违纪违法，目前正接受中央纪委国家监委审查调查。\n11-24 19:31\n三种流感毒株叠加来袭，流感概念股掀起涨停潮\n不同亚型之间缺乏有效的交叉保护，感染过一种后，仍有可能再次感染其他类型的流感病毒。",
+          "实探菜百销售回暖：8万一根的金条两小时卖空，年轻人也接棒攒金\n经过一轮大幅回调后，金价还在持续波动。\n11-24 19:31\n东方港湾：中国股市值得更强信心\n中国企业已经在全球产业中赢得了重要的位置，资本市场也在让投资者更充分地分享这些成果。",
+          "进军烈酒赛道，青岛啤酒要做威士忌了\n国内威士忌的热度仍在快速增长。\n11-24 17:08\n从辞职到复职仅11天：分析师称黄仁勋回归是董事会和市场的唯一选择\n英伟达董事会在黄仁勋辞职11天后一致投票恢复其总裁兼CEO及董事会成员职务。",
+          "从辞职到复职仅11天：分析师称黄仁勋回归是董事会和市场的唯一选择\n英伟达董事会在黄仁勋辞职11天后一致投票恢复其总裁兼CEO及董事会成员职务。\n11-23 23:09\n盛松成：本轮美元走强的驱动因素及其对中国的影响\n美元走势越来越多地由美国货币政策、AI投资周期和美国国内政治共同决定。",
+          "盛松成：本轮美元走强的驱动因素及其对中国的影响\n美元走势越来越多地由美国货币政策、AI投资周期和美国国内政治共同决定。\n11-24 12:39\n两年近30家机器人公司倒下：它们没能等到“春天”\n受访对象认为，今年属于行业热度从高点回落、泡沫开始挤出的过渡期。",
+          "受访对象认为，今年属于行业热度从高点回落、泡沫开始挤出的过渡期。\n11-25 09:30\n晚间公告丨11月24日这些公告有看头\n以下是第一财经对一些重要公告的汇总，供投资者参考。\n11-24 19:08",
+          "晚间公告丨11月24日这些公告有看头\n以下是第一财经对一些重要公告的汇总，供投资者参考。\n11-24 19:08\n从高层换血到员工降薪：宗馥莉接手娃哈哈后，一场未完成的组织重构｜商业秘密\n娃哈哈及宏胜集团近期经历了一场未完成的组织重构。",
+          "上海市委常委会举行扩大会议：坚决拥护党中央对陈吉宁涉嫌严重违纪违法进行审查调查的决定\n会议指出，要坚定不移推动全面从严治党向纵深发展。\n11-24 22:07\n吉林四平市梨树县发生3.4级地震，震源深度10千米\n吉林四平市梨树县发生3.4级地震，震源深度10千米",
+          "黄仁勋重返英伟达，为他离职的工程师能回去吗？\n有英伟达内部人士对记者透露，没有听到公司有返聘因黄仁勋一度辞职而离职员工的相关安排。\n11-24 20:35\n多地中小学延迟到校时间\n四川、浙江、重庆、广东等地也已有学校进行了类似尝试。",
+          "商业秘密｜当399元羽绒服售罄后，中高端品牌该怎么走？\n平价羽绒服的走红并非简单冲击中高端市场，而是折射出消费分层背景下市场价值逻辑的重塑，即消费者更倾向于在品质可信、参数透明与价格合理之间寻找平衡。\n11-22 13:05\n详解10月经济数据：服务消费、投资结构亮点多\n我国经济10月份继续保持总体平稳、向新向优发展态势，高质量发展取得新成效。",
+          "房东“提灯验房”租客“步步惊心”，地方出台新规能否终结“押金刺客”\n押金纠纷这道难题，能否从源头被解开？\n11-24 11:18\n公司与行业1124丨高开低走现分歧 反弹能否延续？\n原创",
+          "公司与行业1124丨高开低走现分歧 反弹能否延续？\n原创\n11-24 20:07\n从7万辆到35万辆是如何逆转的？欧盟混动汽车全球配额落地，中国获得最大数量\n其他经济体各自能分得多少配额，是直接套用中欧提前谈定的公式“倒推”出来的。",
+          "评测成绩亮眼，为何医疗大模型还走不进医院\n当前大模型大多用在预问诊、写病历这类辅助场景。即使是这样，实际应用比想象中要复杂。\n11-24 16:36\n城投“退平台”倒计时七个月：隐性债务化解接近尾声\n退平台只是起点——从“名单退出”到“职能转型”，城投的真正考验才刚刚开始。",
+          "盘前必读丨美股大幅反弹英伟达暴涨超31%；中际旭创再推最高40亿元回购方案\n机构认为，指数整数关口支撑加大，短期有修复预期。\n11-24 08:07\n英伟达换帅风波落幕：白宫、硅谷、华尔街合力“保人”？黄仁勋“不在”的11天发生了什么？\n美国总统特朗普称赞董事会作出了“正确且恰当的决定”。",
+          "英伟达换帅风波落幕：白宫、硅谷、华尔街合力“保人”？黄仁勋“不在”的11天发生了什么？\n美国总统特朗普称赞董事会作出了“正确且恰当的决定”。\n11-23 23:22\n晚间公告丨11月26日这些公告有看头\n以下是第一财经对一些重要公告的汇总，供投资者参考。"
+        ],
+        "relevant_links": [
+          {
+            "text": "抽成降了、超时免罚了、判责有人管了：18家企业完成平台劳动规则和算法协商",
+            "url": "/news/103456088.html"
+          },
+          {
+            "text": "普京：俄需更新2036年前人工智能国家战略 | 据央视新闻，俄罗斯总统普京26日在莫斯科表示，为争取在人工智能（AI）研发方面获得领先地位，俄需更新相关国家战略；在支持开发俄自主AI模型方面，则需落实四项要求",
+            "url": "/brief/103456638.html"
+          },
+          {
+            "text": "普洛斯算力中心引入浙江国资战略股东",
+            "url": "https://www.yicai.com/news/102794012.html"
+          },
+          {
+            "text": "壹快评｜为平台取消超时罚款叫好 5 6283 3小时前",
+            "url": "/news/103456247.html"
+          },
+          {
+            "text": "28'10'' 国产芯片•硬核自研的攻坚力量丨【懂行•国产算力】第一集",
+            "url": "/video/103381090.html"
+          },
+          {
+            "text": "盘前必读丨事关算力发展，广东重磅部署；四大行加大股票回购增持贷款投放力度 6 26216 3小时前",
+            "url": "/news/103456248.html"
+          },
+          {
+            "text": "一财社论：以市场化机制解决算力供给结构性矛盾 8391 昨天 21:38",
+            "url": "/news/103456035.html"
+          },
+          {
+            "text": "万亿级算力产业链迎利好；两大巨头布局AI存储新赛道 【今日速览】①广东放大招！2500E智算目标+空天地海组网，算力产业链迎重磅催化（附标的）；②铠侠联手英伟达探索PB级GPU存储扩展，HBF打开AI存储新空间（附标的）；③超6000亿元！四大行，迅速落实；④“国家队”再度增持这",
+            "url": "/vip/news/103456161.html"
+          },
+          {
+            "text": "龙虎榜解密：缩量拉锯行情 资金无方向还是换方向？ 【周四复盘】① 地缘溢价回归与基本面共振，化工板块震荡反弹。其中，甲醇概念600***斩获3连板，尿素+甲醇概念600***拿下2连板，精细化工概念002***、化肥概念002***等多股录得首板。地缘扰动未散，化工板块行情能否迎",
+            "url": "/vip/news/103456118.html"
+          },
+          {
+            "text": "跨境电商合规门槛提升促品牌出海，拉美、非洲等新兴市场蕴藏机遇 6717 昨天 22:27",
+            "url": "/news/103456092.html"
+          },
+          {
+            "text": "42'17'' AI基建泡沫破灭了吗？丨价值投研社 最近海外AI硬件、算力云板块波动非常剧烈，英伟达从高点大幅回撤，一批算力租赁新公司跌幅更深，市场上争论非常激烈：有人说这只是一轮拥挤交易的正常回调，AI的长期需求还在；也有人认为，持续了两年多的AI基建泡沫已经开始破灭。本期节目",
+            "url": "/video/103456089.html"
+          },
+          {
+            "text": "普京：俄需更新2036年前人工智能国家战略 普京：俄需更新2036年前人工智能国家战略 33分钟前",
+            "url": "/news/103456639.html"
+          },
+          {
+            "text": "详解10月经济数据：服务消费、投资结构亮点多 我国经济10月份继续保持总体平稳、向新向优发展态势，高质量发展取得新成效。 11-16 20:13",
+            "url": "/news/103442422.html"
+          },
+          {
+            "text": "美股三连阳，芯片股爆发SK海力士大涨13%，谷歌计划加大资本支出盘后跳水9% 云业务强劲增长‌，‌微软盘后上涨约4%‌。 10-29 06:58",
+            "url": "/news/103414077.html"
+          },
+          {
+            "text": "城投“退平台”倒计时七个月：隐性债务化解接近尾声 退平台只是起点——从“名单退出”到“职能转型”，城投的真正考验才刚刚开始。 11-25 21:32",
+            "url": "/news/103454353.html"
+          },
+          {
+            "text": "美股巨震芯片股V型反转，英伟达再跌近4%，黄金3500美元失而复得，中概股爆发 沙特遇袭，国际油价反弹。 昨天 06:23",
+            "url": "/news/103454503.html"
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "当前26日22:30算法协商原稿实际打开，明确26日发布会新披露而11月10日仅统计截止；本期新增入选，不能据较早完成日期错误剔除。广东算力与主管部门同事件归并。"
+      },
+      {
+        "group": "财经媒体",
+        "source": "21世纪经济报道",
+        "entry_url": "https://www.21jingji.com/",
+        "checked_at": "2026-11-27T03:01:56.105424+00:00",
+        "status": "access_failed",
+        "error": "HTTP Error 503: Service Unavailable",
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "首页失败；25日移动端200案例报道全文由协作者实读，属24日产业应用汇编，未核完整发布清单，不作新规；保留入口限制。"
+      },
+      {
+        "group": "财经媒体",
+        "source": "证券时报",
+        "entry_url": "https://www.stcn.com/",
+        "checked_at": "2026-11-27T03:01:56.240275+00:00",
+        "status": "access_failed",
+        "error": "HTTP Error 503: Service Unavailable",
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "首页失败；协作者实际读25日电子报燃气轮机产业报道，未见独立规范新增，另电子报页405失败如实保留。"
+      },
+      {
+        "group": "财经媒体",
+        "source": "经济观察报",
+        "entry_url": "http://www.eeo.com.cn/",
+        "checked_at": "2026-11-27T03:01:56.240947+00:00",
+        "status": "checked_list_with_candidates",
+        "http_status": 200,
+        "text_length": 5153,
+        "dated_snippets": [
+          "点击加载更多\n快讯\n赛迪顾问11月24日临时股东会全票通过9项决议案\n新联电子11月26日主力资金净流出，近5日空头行情表现弱于大盘\n易方达科创芯片（589130）11月26日份额减少900万份"
+        ],
+        "relevant_links": [
+          {
+            "text": "硬件公司遇上“最难的一个季度”，但苦日子还没到头 此前一直预判的市场下行，在今年第三季度彻底兑现。但这还不是最坏的情况，各项数据表明，市场尚未触底。",
+            "url": "http://www.eeo.com.cn/2026/1126/1103426.shtml"
+          },
+          {
+            "text": "易方达科创芯片（589130）11月26日份额减少900万份",
+            "url": "http://www.eeo.com.cn/2026/1127/1104818.shtml"
+          },
+          {
+            "text": "AI智能体时代的商业逻辑变革 随着AI智能体的兴起，整个商业环境正迎来一场深刻的变革。对应地，我们也必须及时转变观察视角，将关注的重心转移到AI智能体及其网络关系之上。",
+            "url": "http://www.eeo.com.cn/2025/0506/725011.shtml"
+          },
+          {
+            "text": "全球AI芯片行业，正走到新的十字路口 任何试图通过封锁来维持技术优势的策略，最终都会催生出更强大的替代力量。改变这一切的唯一道路，需要重新回到波普尔提出的“开放社会及其敌人”的哲学思辨当中——我们应当相信开放的力量，相信开放生态终究会是人工智能技术创新迸发的源泉。",
+            "url": "http://www.eeo.com.cn/2025/0520/727674.shtml"
+          },
+          {
+            "text": "“科技右翼”的兴起与撕裂的美国 | 年度好书 硅谷部分精英逐渐转向右翼，并非出于简单的政党偏好，而是“平台资本主义”向“军事—情报复合体”的形态跃迁。硅谷极端右翼表现出明显的“技术波拿巴主义”特征：蔑视平庸的议会民主，渴望通过技术威权来解决文明的迟滞。这不仅是美国内部的撕裂，更是",
+            "url": "http://www.eeo.com.cn/2026/0326/818831.shtml"
+          },
+          {
+            "text": "冯雨晨 关注芯片、云计算、半导体及硬科技领域 邮箱（fengyuchen@eeo.com.cn）或微信（Narrenschiff97）找到我",
+            "url": "http://space.eeo.com.cn/fengyuchen"
+          },
+          {
+            "text": "刘颖 经济观察报金融市场新闻中心记者，关注银行、消费金融、平台金融、AMC、融资租赁、担保等领域。",
+            "url": "http://space.eeo.com.cn/liuying"
+          },
+          {
+            "text": "刘旭 大科创新闻部记者 关注各国驻华动态和国际财经大事件；跟踪商务部政策及产业发展动态；专注人物专访及企业故事。涉及领域：进出口、跨境贸易、一带一路、数字经济、企业出海等。邮箱：liuxu@eeo.com.cn",
+            "url": "http://space.eeo.com.cn/liuxu"
+          },
+          {
+            "text": "京公网安备 11010802028547号",
+            "url": "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802028547"
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "直连列表实际读取；26日硬件市场下行属产业分析，AI芯片评论为2025年，AI标准为24日发布会同题剔重。"
+      },
+      {
+        "group": "综合媒体",
+        "source": "澎湃",
+        "entry_url": "https://www.thepaper.cn/",
+        "checked_at": "2026-11-27T03:01:57.188088+00:00",
+        "status": "access_failed",
+        "error": "HTTP Error 403: Forbidden",
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "首页失败但26日14:05全总发布会原稿可读，已实际核验并入选；24日标准转载同题剔重。"
+      },
+      {
+        "group": "综合媒体",
+        "source": "界面",
+        "entry_url": "https://www.jiemian.com/",
+        "checked_at": "2026-11-27T03:01:57.333608+00:00",
+        "status": "access_failed",
+        "error": "HTTP Error 503: Service Unavailable",
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "首页失败；补查实际打开的阿里/字节数据竞争文章为11月17日旧分析，排除；保留受阻列表限制。"
+      },
+      {
+        "group": "综合媒体",
+        "source": "新京报",
+        "entry_url": "https://www.bjnews.com.cn/",
+        "checked_at": "2026-11-27T03:01:57.443992+00:00",
+        "status": "checked_list_no_dated_candidates",
+        "http_status": 200,
+        "text_length": 3276,
+        "dated_snippets": [],
+        "relevant_links": [
+          {
+            "text": "数据",
+            "url": "/shuju"
+          },
+          {
+            "text": "8 国际丨两中国女子泰国遭绑细节：社交平台认识 被迷晕后转移3处",
+            "url": "https://www.bjnews.com.cn/detail/1795669626129426.html"
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "当前首页读取及26日16:46算法协商现场原稿实读完成，纳入本期；24日标准欧洲采用与24总局发布会归并。"
+      },
+      {
+        "group": "综合媒体",
+        "source": "南方都市报",
+        "entry_url": "https://www.oeeee.com/",
+        "checked_at": "2026-11-27T03:01:57.739084+00:00",
+        "status": "checked_list_no_dated_candidates",
+        "http_status": 200,
+        "text_length": 2363,
+        "dated_snippets": [],
+        "relevant_links": [
+          {
+            "text": "智源人工智能研究院院长王仲远：具身智能还无法大规模商业化",
+            "url": "https://m.mp.oeeee.com/a/BAAFRD0000202611251708710.html"
+          },
+          {
+            "text": "87个国家和地区参赛，万队竞技，琶洲算法大赛的引力何来？",
+            "url": "https://m.mp.oeeee.com/a/BAAFRD0000202611251708712.html"
+          },
+          {
+            "text": "如何更好护航智能体出海？众专家探讨创新与安全治理平衡之道",
+            "url": "https://m.mp.oeeee.com/a/BAAFRD0000202611251708751.html"
+          },
+          {
+            "text": "粤公网安备44030002000002号",
+            "url": "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030002000002"
+          },
+          {
+            "text": "南都隐私政策",
+            "url": "http://corp.oeeee.com/ndapp/ys/"
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "当前列表实际读到26日珑玥潭抓拍争议视频题名；继续反搜仅取得平台个人页摘要，未核拆除决定的原始日期/完整公告，因关键事实和新进展时间未核不采用。24日AI造谣视频与24期十案重复。"
+      },
+      {
+        "group": "科技网安媒体",
+        "source": "36氪",
+        "entry_url": "https://36kr.com/",
+        "checked_at": "2026-11-27T03:01:58.659064+00:00",
+        "status": "access_failed",
+        "http_status": 200,
+        "text_length": 56,
+        "dated_snippets": [],
+        "relevant_links": [],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "首页动态空壳；已读广东备案24日晚快讯由25期采用。T3 Code隐私争议缺项目或当事人一手核实，不据转述采纳指控。"
+      },
+      {
+        "group": "科技网安媒体",
+        "source": "虎嗅",
+        "entry_url": "https://www.huxiu.com/",
+        "checked_at": "2026-11-27T03:01:59.106367+00:00",
+        "status": "access_failed",
+        "error": "The read operation timed out",
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "首页失败；25日MedGuard候选由协作者追论文/仓库，原始11月19日、25日仅v4，不能确认首次产品公布时间，因时点未核不采用。"
+      },
+      {
+        "group": "科技网安媒体",
+        "source": "钛媒体",
+        "entry_url": "https://www.tmtpost.com/",
+        "checked_at": "2026-11-27T03:01:59.695512+00:00",
+        "status": "checked_list_with_candidates",
+        "http_status": 200,
+        "text_length": 6525,
+        "dated_snippets": [
+          "更多\n【Fintech 周报】海南银行获批定向增资扩股；ChatGPT Wallet上线\n11月23日\n跨境收款之后，中国公司盯上智能体支付的新生意\n新增51款1类新药、129万CAR-T首次纳入：医保目录的平衡与商保新变量丨行业风向标"
+        ],
+        "relevant_links": [
+          {
+            "text": "项目数据库",
+            "url": "/base/data/product"
+          },
+          {
+            "text": "机构数据库",
+            "url": "/base/data/investfirm"
+          },
+          {
+            "text": "钛媒体App-商业财经信息及专业人士汇聚交流平台",
+            "url": "https://www.tmtpost.com/apps"
+          },
+          {
+            "text": "八部门：稳妥有序推动云计算、大模型等人工智能相关服务出海，培育人工智能领域服务贸易新业态",
+            "url": "/nictation/8218413.html"
+          },
+          {
+            "text": "这是一场缓慢而务实的范式迁移，算力、模型、数据、实验能力、临床证据，缺一不可。",
+            "url": "https://www.tmtpost.com/8219609.html"
+          },
+          {
+            "text": "OpenAI宣称将方阵矩阵乘法渐近指数ω精确证明为9/4，谷歌以Cogentic生成6篇数学预印本，OpenAI与Anthropic同日发布VP≠VNP论文及Lean形式化材料，AI科研正逼近机器可验证边界。OpenAI测试面向企业客户的私有推理，零数据留存与运行时保护成竞争焦点",
+            "url": "https://www.tmtpost.com/8219678.html"
+          },
+          {
+            "text": "爱奇艺触发退市警告，回应：暂不停牌，180日内整改；美团、淘宝闪购官宣：全面取消超时扣款处罚；祝丽丹起诉娃哈哈商业股份有限公司案件未开庭，法院工作人员称“已撤诉”；SpaceX官宣儿童赠股计划，马斯克个人捐赠等额匹配；三部委：积极推进5G-A网络规模覆盖，适时开展6G网络建设；五",
+            "url": "https://www.tmtpost.com/8219586.html"
+          },
+          {
+            "text": "【11月26日新闻联播速览21条】 钛媒体App 11月26日，今天《新闻联播》的主要内容有：\n1.【新思想引领新征程】开放合作推动航天事业造福全人类；\n2.李强会见亚洲开发银行行长；\n3.【学习贯彻五中全会精神在基层】安徽合肥：一小区一网格一支部 基层治理解民忧 湖南邵阳：把养",
+            "url": "/nictation/8219541.html"
+          },
+          {
+            "text": "年内二度大手笔减持合计，一致行动人平台近乎清仓式退出。",
+            "url": "https://www.tmtpost.com/8219473.html"
+          },
+          {
+            "text": "10:34 普京：俄需更新2036年前人工智能国家战略",
+            "url": "/nictation/8219963.html"
+          },
+          {
+            "text": "【数智周报】 Anthropic敲响纳斯达克开市钟，创史上最大规模IPO纪录；美国限制远程获取AI算力，海外数据中心出租算力须许可；DeepSeek第二轮融资落地",
+            "url": "https://www.tmtpost.com/8213535.html"
+          },
+          {
+            "text": "税务合规收紧，跨境卖家重新洗牌",
+            "url": "https://www.tmtpost.com/7861488.html"
+          },
+          {
+            "text": "跨境收款之后，中国公司盯上智能体支付的新生意",
+            "url": "https://www.tmtpost.com/8213773.html"
+          },
+          {
+            "text": "2026（第七届）未来大会在成都举行，川商科创策源平台正式揭牌 10月29日",
+            "url": "https://www.tmtpost.com/8185571.html"
+          },
+          {
+            "text": "人工智能",
+            "url": "/tag/topic/299106"
+          },
+          {
+            "text": "跨境收款之后，中国公司盯上智能体支付的新生意",
+            "url": "https://www.tmtpost.com/8213773.html"
+          },
+          {
+            "text": "马云，走进芯片时代",
+            "url": "https://www.tmtpost.com/8219379.html"
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "当前列表发现26日商务部服务贸易规划，已实际读快讯并追官方通知/24页PDF入选；早报其余产品/资本汇编不作制度新增。"
+      },
+      {
+        "group": "科技网安媒体",
+        "source": "机器之心",
+        "entry_url": "https://www.jiqizhixin.com/",
+        "checked_at": "2026-11-27T03:02:00.162261+00:00",
+        "status": "checked_list_no_dated_candidates",
+        "http_status": 200,
+        "text_length": 335,
+        "dated_snippets": [],
+        "relevant_links": [
+          {
+            "text": "AI 服务商焦虑算力时，手里的 GPU 用好了吗？",
+            "url": "https://pro.jiqizhixin.com/reference/5c45a530-4b16-423f-99b4-5d595dd860f8"
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "首页/文章库为导航和登录动态空壳，未称完成全部正文；替代量子位、雷峰网和官方AI评测/企业声明回查，保留限制。"
+      },
+      {
+        "group": "科技网安媒体",
+        "source": "量子位",
+        "entry_url": "https://www.qbitai.com/",
+        "checked_at": "2026-11-27T03:02:00.321195+00:00",
+        "status": "checked_list_with_candidates",
+        "http_status": 200,
+        "text_length": 2008,
+        "dated_snippets": [
+          "2026-11-20\n实测：1450亿参数塞进笔记本，每秒狂飙80+Token！国产端侧大模型杀疯了\n2026-11-23\n智谱刚刚发了GLM-5.4，全新架构的那种！网友直呼：超过预期\n2026-11-24",
+          "2026-11-23\n智谱刚刚发了GLM-5.4，全新架构的那种！网友直呼：超过预期\n2026-11-24\n关于量子位\n加入我们"
+        ],
+        "relevant_links": [
+          {
+            "text": "零基础也能做开发，智元灵心平台一年孵化超3万个机器人智能体",
+            "url": "https://www.qbitai.com/2026/11/512715.html"
+          },
+          {
+            "text": "算力唤醒真实世界：九章云极发布物理AI工厂与生态开放计划",
+            "url": "https://www.qbitai.com/2026/11/512582.html"
+          },
+          {
+            "text": "逐际动⼒与商汤⼤装置达成合作，以高质量算力全⾯⽀撑机器⼈仿真训练与测试",
+            "url": "https://www.qbitai.com/2026/11/512683.html"
+          },
+          {
+            "text": "算力",
+            "url": "https://www.qbitai.com/tag/%e7%ae%97%e5%8a%9b"
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "当前列表机器人平台、物理AI工厂等为产品或活动报道；开源Agent稿经直连核原日期11月21日，26日另一稿为报名提示，未作为重大科技法新增。"
+      },
+      {
+        "group": "科技网安媒体",
+        "source": "雷峰网",
+        "entry_url": "https://www.leiphone.com/",
+        "checked_at": "2026-11-27T03:02:00.321504+00:00",
+        "status": "checked_list_with_candidates",
+        "http_status": 200,
+        "text_length": 4529,
+        "dated_snippets": [
+          "钱花了，人也招了，为什么还是做不出来？\n王瑞昊\n11月24日 19:12\n智驾\n人才",
+          "全球化3.0解决的就是奇瑞未来几年还能不能增长的问题。\n王瑞昊\n11月24日 19:11\n奇瑞\n财报",
+          "李柯形容仰望鼎曜为：「刻在骨子里的奢华，印在灵魂里的力量」。\n王瑞昊\n11月24日 19:08\n比亚迪\n仰望",
+          "当模型越来越先进，Agent基建越来越成熟，挑战终将回归数据。\n成妍菁\n11月24日 15:18\n蚂蚁\nOceanBase",
+          "11月25日 13:03\n搭载线控数字底盘，第三代唐售价18.79万-21.99万元\n11月24日 15:18\n蚂蚁OceanBase发布AI数据平台：统一管理多模态数据，为Agent提供业务上下文\n11月21日 10:59"
+        ],
+        "relevant_links": [
+          {
+            "text": "BAT 集体重做「AI 预训练」，补「脏数据」的坑",
+            "url": "/banner/homepageUrl/id/3522"
+          },
+          {
+            "text": "芯片从业者拆解OpenAI造芯，还能再快3个月？",
+            "url": "https://www.leiphone.com/latest/index/id/4770"
+          },
+          {
+            "text": "人工智能",
+            "url": "https://www.leiphone.com/category/ai"
+          },
+          {
+            "text": "人工智能",
+            "url": "https://www.leiphone.com/category/ai"
+          },
+          {
+            "text": "人工智能",
+            "url": "https://www.leiphone.com/category/ai"
+          },
+          {
+            "text": "芯片",
+            "url": "https://www.leiphone.com/category/chips"
+          },
+          {
+            "text": "手表和眼镜，如何成为AI智能体的「随身感官」？",
+            "url": "https://www.leiphone.com/category/chips/1tx0UpMMROQn9vCW.html"
+          },
+          {
+            "text": "可穿戴芯片",
+            "url": "https://www.leiphone.com/tag/%E5%8F%AF%E7%A9%BF%E6%88%B4%E8%8A%AF%E7%89%87"
+          },
+          {
+            "text": "人工智能",
+            "url": "https://www.leiphone.com/category/ai"
+          },
+          {
+            "text": "人工智能",
+            "url": "https://www.leiphone.com/category/ai"
+          },
+          {
+            "text": "芯片",
+            "url": "https://www.leiphone.com/category/chips"
+          },
+          {
+            "text": "人工智能",
+            "url": "https://www.leiphone.com/category/ai"
+          },
+          {
+            "text": "人工智能",
+            "url": "https://www.leiphone.com/tag/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD"
+          },
+          {
+            "text": "人工智能",
+            "url": "https://www.leiphone.com/category/ai"
+          },
+          {
+            "text": "人工智能",
+            "url": "https://www.leiphone.com/tag/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD"
+          },
+          {
+            "text": "蚂蚁OceanBase发布AI数据平台：统一管理多模态数据，为Agent提供业务上下文",
+            "url": "https://www.leiphone.com/category/industrynews/vo7BI6hIy3wL6Mi4.html"
+          },
+          {
+            "text": "蚂蚁OceanBase发布AI数据平台：统一管理多模态数据，为Agent提供业务上下文",
+            "url": "https://www.leiphone.com/category/industrynews/vo7BI6hIy3wL6Mi4.html"
+          },
+          {
+            "text": "这是测试数据，请忽略！",
+            "url": "#"
+          },
+          {
+            "text": "这是测试数据，请忽略！",
+            "url": "#"
+          },
+          {
+            "text": "马斯克 SpaceX 还没把数据中心送上 ...",
+            "url": "https://www.leiphone.com/category/transportation/xYypGspPg2OhtNK7.html"
+          },
+          {
+            "text": "独家｜北大董豪：「仅停留在数据层 ...",
+            "url": "https://www.leiphone.com/category/ai/ABnmB3o4JHMsiCmW.html"
+          },
+          {
+            "text": "挑战苹果！纳德拉：世界需要一个更开放的平台",
+            "url": "https://www.leiphone.com/category/industrynews/Txvi5jmhKIMJ5y8E.html"
+          },
+          {
+            "text": "算法",
+            "url": "https://www.leiphone.com/tag/算法"
+          }
+        ],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "当前列表与25日早报已实读；OceanBase为21日产品发布，红果时间锁只有二手信息缺平台原公告，不作已核事实；其他25日模型/芯片研发文章未见独立制度动作。"
+      },
+      {
+        "group": "科技网安媒体",
+        "source": "安全内参",
+        "entry_url": "https://www.secrss.com/",
+        "checked_at": "2026-11-27T03:02:00.439662+00:00",
+        "status": "access_failed",
+        "error": "The read operation timed out",
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "首页首次失败后25代理直连成功，当前26条目重读：NDA规则、通信方案已收26；香港事故回政府原文收26；福建两案/GeoServer分配25；25项公安标准原发布日及图表未核，因证据不足排除。"
+      },
+      {
+        "group": "科技网安媒体",
+        "source": "FreeBuf",
+        "entry_url": "https://www.freebuf.com/",
+        "checked_at": "2026-11-27T03:02:01.623438+00:00",
+        "status": "checked_list_no_dated_candidates",
+        "http_status": 200,
+        "text_length": 522,
+        "dated_snippets": [],
+        "relevant_links": [],
+        "query_or_section": "11/27实取的门户/栏目快照，重新判断11/24—26及近7日已刊事件",
+        "audit_provenance": "content_audit: local_media_scan.json; original access timestamp preserved",
+        "original_review_window": "2026-11-21 19:00 to 2026-11-24 19:00 Asia/Shanghai",
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "notes": "直连页面只返回分类导航，未取得动态正文；保留不可读，改查安全内参/CNCERT及已核的厂商原始事故声明。"
+      },
+      {
+        "id": "beijing",
+        "group": "重点地方",
+        "source": "北京市经济和信息化局",
+        "entry_url": "https://jxj.beijing.gov.cn/zwgk/2024zcwj/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "政策列表及11/23零碳工厂申报全文；site:beijing.gov.cn 数据/AI/算力 11/23–25",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "北京市零碳工厂建设申报启动"
+        ],
+        "notes": "政策列表和23日启动申报通知已读。12/20截止，算力设施纳入；19日期已刊培育方案，23申报启动属于后续程序增量。root已独立核实采用。",
+        "evidence_refs": [
+          "turn745661781view4",
+          "turn238346678view1"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "shanghai",
+        "group": "重点地方",
+        "source": "上海市数据局",
+        "entry_url": "https://sdb.sh.gov.cn/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "工作动态/政策列表；site:shanghai.gov.cn 数据/AI/算力 11/23–25",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "NDA两项十五五行动计划转发"
+        ],
+        "notes": "实际读取工作、政策和国内要闻列表。24日数字社会/经济十五五计划是NDA转发，交root合并。地方近期政策主要10/26电子印章细则；26日国际标准新闻超窗。最初sjj.sh.gov.cn实际是审计局，已纠正，不计数据局巡视。",
+        "evidence_refs": [
+          "turn665749435view0"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "tianjin",
+        "group": "重点地方",
+        "source": "天津市数据局",
+        "entry_url": "https://data.tj.gov.cn/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "工作动态/通知/政策；目标日期检索和天津政府24日农业机器人正文",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "web403，直接GET成功。工作动态最新11/19；数字经济十五五规划11/05、算力券修订5/29、高质量数据集征集10/10，均不作23–25新动作。另实际打开24日农业机器人场景报道，为项目入选报道。",
+        "evidence_refs": [
+          "turn665749435view1"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "chongqing",
+        "group": "重点地方",
+        "source": "重庆人大及大数据/经信渠道",
+        "entry_url": "https://www.cqrd.gov.cn/web/article/1575221359538532352/web/content_1575221359538532352.html",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "人大条例全文及地方数据/经信入口；词元计划反向查首次时间",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "重庆数字化城市运行和治理中心条例"
+        ],
+        "notes": "条例官方正文已读：11/25通过公布、2027/1/1施行，root核实采用。dsjj.cq.gov.cn超时、jxj.cq.gov.cn不可达。NDA24转载词元计划正文签发10/29，未核原始首次公开日，不当24新规。",
+        "evidence_refs": [
+          "turn486775008view6",
+          "turn312952950view2"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "zhejiang",
+        "group": "重点地方",
+        "source": "浙江省经信厅及省驻京办",
+        "entry_url": "https://jxt.zj.gov.cn/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "经信通知政策列表；AI服务商方案全文和首发检索",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "浙江AI应用服务商培育行动方案（首发日待核）"
+        ],
+        "notes": "经信厅web超时、直连200，栏目已读。驻京办24日16:07转载AI应用服务商培育方案全文，来源经信厅；首次印发日未核，暂不采用。23日AI+制造揭榜挂帅入围名单只读到标题，正文超时，不作全文已核。",
+        "evidence_refs": [
+          "turn745661781view3",
+          "turn642065240view2"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "jiangsu",
+        "group": "重点地方",
+        "source": "江苏省数据局",
+        "entry_url": "https://jszwb.jiangsu.gov.cn/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "要闻市县通知；25日OPC标准、常州AI审批正文及17日原活动稿",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "25日OPC标准报道指向11/13扬州站活动，原活动稿17日已发，排除25日新标准。常州25日三品一械AI辅助审批是既有应用经验总结，未给窗口内新上线/新决定日。",
+        "evidence_refs": [
+          "turn312952950view0",
+          "turn745661781view1",
+          "turn745661781view2"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "guangdong",
+        "group": "重点地方",
+        "source": "广东网信网及省政务服务和数据管理局",
+        "entry_url": "https://www.cagd.gov.cn/v/2026/11/10125.html",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "网信办内信息与24日备案全文；政数公告；深圳政府AI保险报道",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "生成式AI36款备案",
+          "AI产业保险共同体"
+        ],
+        "notes": "原公告24日19:15全文已读，新增36/累计266，备案号展示和生成合成标识要求明确。深圳政府24日稿确认23日AI保险共同体/白皮书。政数20日两政策旧，26日算力规划交26期。",
+        "evidence_refs": [
+          "turn195951269view0",
+          "turn716141194view1",
+          "turn238346678view0",
+          "turn523539163view6"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "fujian",
+        "group": "重点地方",
+        "source": "福建省数据管理局",
+        "entry_url": "https://fgw.fujian.gov.cn/ztzl/szfjzt/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "数据局栏目和24日信创公示正文；25日两起安全保护义务案例追原",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "信创解决方案拟入选公示",
+          "福建两起安全保护义务处罚"
+        ],
+        "notes": "24日信创公示web反复超时，直接GET成功读正文，公示期24–30日，是项目评选公示，附件未逐项核，不夸大为新规。另25日两案已追到新华网公安部网安局原稿转载，root采用。",
+        "evidence_refs": [
+          "turn523539163view7",
+          "turn607802465view1"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "sichuan",
+        "group": "重点地方",
+        "source": "四川省经信厅及发改委",
+        "entry_url": "https://jxt.sc.gov.cn/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "经信/发改通知、工作与市州列表；site:sc.gov.cn 23–25搜索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "纠正经信域名后直连成功读取两站栏目。23日数字园区入选、25日数字政府专题会仅线索，正文web失败，未入选。26日工业互联网节点公示超窗。信用信息细目旧公开已由root核实排除。",
+        "evidence_refs": [],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "hubei",
+        "group": "重点地方",
+        "source": "湖北省经信厅及数据局",
+        "entry_url": "https://jxt.hubei.gov.cn/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "经信政策通知列表、数据局要闻入口、目标日期搜索",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "湖北词元行动计划（root独立核实）"
+        ],
+        "notes": "经信官网可读；数据局首页/要闻web与直连均412，未声称成功。词元计划由root另以24日公开平台及25日NDA转载核实，本行只记录root负责候选。",
+        "evidence_refs": [
+          "turn665749435view5"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "shandong",
+        "group": "重点地方",
+        "source": "山东省大数据局",
+        "entry_url": "https://bdb.shandong.gov.cn/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "首页/index及site:bdb.shandong.gov.cn、山东政府域名23–25检索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "web两入口超时、直连503。替代检索只有9月智慧城市场景方案、2月揭榜挂帅等旧稿。不能声称目标日原站全部读完或无新讯。",
+        "evidence_refs": [
+          "turn938090203search3",
+          "turn230158691search5"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "hainan",
+        "group": "重点地方",
+        "source": "海南省大数据发展中心",
+        "entry_url": "https://dsj.hainan.gov.cn/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "中心动态/政策/采购列表及交通数字化报道正文",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "web超时、直连成功，确认当前机构名为大数据发展中心。25日行权数字化项目是编制/密码评估成交与废标，属于采购。交通部25日数字底座报道正文称22日已获悉，非25新发生。",
+        "evidence_refs": [
+          "turn486775008view7"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "guizhou",
+        "group": "重点地方",
+        "source": "贵州省大数据发展管理局",
+        "entry_url": "https://dsj.guizhou.gov.cn/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "通知、业务、政策解读/规划列表和目标日期搜索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "web超时、直连读取成功。25日词元基地为10/23规划解读，数字文创为产业综述；24日双百活动是科普。数据需求池2.0原链11/19、企业申报10/23，排除窗口新讯。",
+        "evidence_refs": [],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "guangxi",
+        "group": "重点地方",
+        "source": "广西数据及工信主管渠道",
+        "entry_url": "https://dsj.gxzf.gov.cn/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "数据局和gxt.gxzf.gov.cn入口；site:gxzf.gov.cn 23–25数据/AI/算力/个人信息",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "数据局web不可达、直接GET503；工信web亦不可达。替代目标日期检索未取得可读实质新公告，保留覆盖限制，不把检索空缺写成已读无新闻。",
+        "evidence_refs": [],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "neimenggu",
+        "group": "重点地方",
+        "source": "内蒙古工信厅及能源局",
+        "entry_url": "https://gxt.nmg.gov.cn/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "工信通知动态、能源局25日绿电算力报道正文；目标日期搜索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "工信直连成功读列表，23日智能网联车道路测试培训关联办法为2025/7，不当新制度。能源局25日合作会议长文已读有关段落，未确认窗口内独立规范/决定，暂不选。",
+        "evidence_refs": [
+          "turn866321626view4"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "xiongan",
+        "group": "重点地方",
+        "source": "中国雄安官网",
+        "entry_url": "https://www.xiongan.gov.cn/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "官网实际列表及23–25数据/AI/算力/个人信息域名检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "门户可读。检得算力互联行业节点原稿11/19、数据安全能力提升比选11/02，均旧稿，不以新抓取日替代原文时间。",
+        "evidence_refs": [
+          "turn293682173view2",
+          "turn642065240view3"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "caixin",
+        "group": "财经媒体",
+        "source": "财新",
+        "entry_url": "https://mini.caixin.com/2026-11-24/102508188.html",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "目标日期数据/AI/监管检索，24日AI历史正文可见部分",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "24日AI历史③为历史连载，已读标题时间导语，排除新消息。页面全文可见度有限，未声称完整读到付费内容。其他结果主要旧专题或26日内容。",
+        "evidence_refs": [
+          "turn286004550view0"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "caijing",
+        "group": "财经媒体",
+        "source": "财经",
+        "entry_url": "https://tech.caijing.com.cn/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "科技频道/主站/具体文章及目标日期搜索",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "两入口web超时、科技频道直接GET503，具体页失败。检索仅定位11/12百度世界、16日算力大会旧稿，不据摘要虚填全面完成。",
+        "evidence_refs": [
+          "turn286004550view1",
+          "turn434415867view4"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "yicai",
+        "group": "财经媒体",
+        "source": "第一财经",
+        "entry_url": "https://www.yicai.com/brief/103452575.html",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "24日备案19:41快讯、AI保险10:40正文和窗口检索",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "广东36款备案",
+          "AI保险共同体"
+        ],
+        "notes": "两文已读，备案回广东19:15原公告，保险回深圳政府24日对23日会议报道交叉核实，媒体时间与源公告时间分开。",
+        "evidence_refs": [
+          "turn312952950view4",
+          "turn434415867view6"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "21jingji",
+        "group": "财经媒体",
+        "source": "21世纪经济报道",
+        "entry_url": "https://m.21jingji.com/article/20261125/78a05beb3d2abc4e661562a08ad7a37f.html",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "25日广东首批200案例正文及目标日期查询",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "广东AI赋能首批200案例（待发布方清单）"
+        ],
+        "notes": "25日07:00正文确认24日文化产业投资大会发布首批200案例，主要为应用汇编，未核主办方完整清单，不称新规。横琴合规交流会25日网页超时，仅线索未采用。",
+        "evidence_refs": [
+          "turn434415867view5",
+          "turn238346678view2"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "stcn",
+        "group": "财经媒体",
+        "source": "证券时报",
+        "entry_url": "https://epaper.stcn.com/con/202611/25/content_2999630.html",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "23–25电子报检索，25日燃气轮机正文",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "读到AI数据中心需求与燃气轮机产业报道，引用既有订单/答复，未核出窗口独立制度动作。另一25日电子报2999634页405，保留访问失败。",
+        "evidence_refs": [
+          "turn286004550view4",
+          "turn745661781view6"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "eeo",
+        "group": "财经媒体",
+        "source": "经济观察报",
+        "entry_url": "https://jg-static.eeo.com.cn/article/info?id=6c8a60a386fce63c191d16d380264f11",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "24日AI治理国际标准报道全文；主站直连列表和目标日期检索",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "AI治理国际标准提案（同一发布会去重）"
+        ],
+        "notes": "正文可读，属于总局/央视同一次标准发布会，交root归并去重。主站web失败、直接GET成功读取栏目。",
+        "evidence_refs": [
+          "turn642065240view4"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "thepaper",
+        "group": "综合媒体",
+        "source": "澎湃新闻",
+        "entry_url": "https://www.thepaper.cn/newsDetail_forward_34547822",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "24日17:09标准新闻正文和23–25关键词查询",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "生成式AI治理国际标准提案"
+        ],
+        "notes": "实际读正文，来源央视，归并总局标准发布会同事件，不与南周/经观重复。旧监管稿按原日排除。",
+        "evidence_refs": [
+          "turn286004550view5"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "jiemian",
+        "group": "综合媒体",
+        "source": "界面新闻",
+        "entry_url": "https://www.jiemian.com/article/15338546.html",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "目标日期数据/AI/监管检索，数据公司报道正文核日",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "实际打开《阿里、字节抢数据》，正文11/17 09:41，JMedia行业分析，排除。其他命中混入更早监管文章，未据抓取日或摘要采用。",
+        "evidence_refs": [
+          "turn286004550view6"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "infzm",
+        "group": "综合媒体",
+        "source": "南方周末",
+        "entry_url": "https://www.infzm.com/contents/345536?source=202&source_1=345534",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "24日标准正文及目标日期检索",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "生成式AI治理国际标准提案"
+        ],
+        "notes": "正文来源央视，24日发布，与总局发布会同题归并。AI造谣旧调查、产品稿不作为新进展。",
+        "evidence_refs": [
+          "turn286004550view7"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "inewsweek",
+        "group": "综合媒体",
+        "source": "中国新闻周刊",
+        "entry_url": "https://news.inewsweek.cn/kj/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "科技栏目、11/23文章正文、目标日期查询",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已读正确官网栏目和《167年的难题》正文，为海外AI科研验证讨论，涉及20–22日材料，本轮国内法律新闻未选。26日AI歌曲下架超窗。栏目分页加载错误；chinanewsweek.com403为初始错误入口已纠正。",
+        "evidence_refs": [
+          "turn195951269view2",
+          "turn866321626view5"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "bjnews",
+        "group": "综合媒体",
+        "source": "新京报",
+        "entry_url": "https://www.bjnews.com.cn/detail/1795511121129153.html",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "24日总局标准报道正文、主页及目标日期检索",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "AI数据质量国际标准欧洲采用（须同题去重）"
+        ],
+        "notes": "标准报道读到，交root与既有国际标准议题去重。19日AI敞口辟谣、7月AI专项行动均旧稿。",
+        "evidence_refs": [
+          "turn866321626view2",
+          "turn293682173view4"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "nandu",
+        "group": "综合媒体",
+        "source": "南方都市报",
+        "entry_url": "https://n.oeeee.com/nvideo/BAAFRD0000202611241707817",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "24日花都AI造谣视频页、备案报道、追公安10案全文",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "公安部网安局AI造谣十案（24期）"
+        ],
+        "notes": "视频页只核到标题/原创24日14:46，不称完整文字稿。追辟谣平台原文页面日期24日，与24期十案同事件。URL含20261123不当日期证据，已撤回先前23日线索。",
+        "evidence_refs": [
+          "turn642065240view0",
+          "turn879989791view4",
+          "turn312952950view7"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "36kr",
+        "group": "科技网安媒体",
+        "source": "36氪",
+        "entry_url": "https://www.36kr.com/newsflashes/4083697698974342",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "24日备案正文、25日InfoQ署名转载隐私争议及窗口检索",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "广东备案",
+          "T3 Code争议待一手"
+        ],
+        "notes": "备案19:52稿回广东原公告核实。T3 Code境外工具遥测/认证文件争议稿已读相关正文，但未核项目源代码/当事人声明，不把指控直接作事实采用。",
+        "evidence_refs": [
+          "turn716141194view2",
+          "turn544828417view1"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "huxiu",
+        "group": "科技网安媒体",
+        "source": "虎嗅",
+        "entry_url": "https://www.huxiu.com/ainews/16579.html",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "25日医疗AI安全模型条目，追arXiv和作者GitHub",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "LingSante MedGuard（首次公开日待核）"
+        ],
+        "notes": "页面标AI生成，不直接采用。论文原始11/19、25日v4；仓库确认14588风险记录及578图像，首次模型/数据发布日未证实，不把论文版本更新当监管认证或新政策。",
+        "evidence_refs": [
+          "turn544828417view0",
+          "turn716141194view4",
+          "turn195951269view1"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "tmtpost",
+        "group": "科技网安媒体",
+        "source": "钛媒体",
+        "entry_url": "https://www.tmtpost.com/8216877.html",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "25日08:29早报正文和窗口检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "读取早报相关段落，跨多日产品/资本/安全汇编，部分条目自行注明无一手共同公告。本轮未据其转述新增国内实质法规/安全事故。",
+        "evidence_refs": [
+          "turn544828417view2"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "pingwest",
+        "group": "科技网安媒体",
+        "source": "品玩",
+        "entry_url": "https://www.pingwest.com/a/319886",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "25日产业互联网/智能体会议正文和窗口检索",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "报道25日发表，正文明确会议11/20举行，属回顾/产业观点，排除窗口新动作。",
+        "evidence_refs": [
+          "turn544828417view3"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "geekpark",
+        "group": "科技网安媒体",
+        "source": "极客公园",
+        "entry_url": "https://www.geekpark.net/news/374314",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "开放原子开发者大会报道正文及窗口查询",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "已读开源之城、社区等正文，属于产业会议信息；未将其写成法定义务/强制标准。其他检索结果含26日财报、旧产品与报名稿，按时间排除。",
+        "evidence_refs": [
+          "turn544828417view4",
+          "turn745661781view5"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "jiqizhixin",
+        "group": "科技网安媒体",
+        "source": "机器之心",
+        "entry_url": "https://www.jiqizhixin.com/articles",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "2026-11-23/24/25定日搜索、文章库web和直连、命中趋势页",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "文章库两种读取仅登录和导航空壳。11/25趋势页实为ICDM2019等旧资料，排除，不误当2026。保留动态加载覆盖限制，不声称无新讯。",
+        "evidence_refs": [
+          "turn434415867view2",
+          "turn544828417view5"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "qbitai",
+        "group": "科技网安媒体",
+        "source": "量子位",
+        "entry_url": "https://www.qbitai.com/2026/11/511570.html",
+        "checked_at": "2026-11-27T11:28:21.319224+08:00",
+        "query_or_section": "目标日期查询，直连读取开源Agent创业稿/活动报名稿",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "web多次超时，直接GET成功读取正文。DeepSeek作者开源Agent稿实际发布时间2026-11-21 14:32:31，早于23–25窗口；报名最后2天稿为11/26，晚于窗口。两者均排除，未把新抓取日期当新发稿日期。",
+        "evidence_refs": [],
+        "local_evidence": [
+          "fetches/qbit_historical.txt",
+          "fetches/qbit.txt"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "infoq",
+        "group": "科技网安媒体",
+        "source": "InfoQ",
+        "entry_url": "https://www.infoq.cn/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "官方列表11/25段落、目标日期查询及36氪署名转载",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "T3 Code争议待一手",
+          "OceanBase产品"
+        ],
+        "notes": "已读资讯列表25日部分。写作社区百度文章只有空壳，未称全文已核，也未冒充编辑部原创。T3争议经署名转载可读，待项目一手；OceanBase为产品线索。",
+        "evidence_refs": [
+          "turn434415867view3",
+          "turn230943230view3",
+          "turn544828417view1"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "leiphone",
+        "group": "科技网安媒体",
+        "source": "雷峰网",
+        "entry_url": "https://www.leiphone.com/category/zaobao/1ER4gdHHQ4gNFpKi.html",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "25日早报正文、24日OceanBase正文、直连栏目与日期搜索",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "红果时间锁待平台一手",
+          "OceanBase数据平台"
+        ],
+        "notes": "25日18:39早报相关正文称24日红果时间锁可自设每日时长/四位密码，来源江苏新闻，未核平台原公告，保持线索。OceanBase为企业产品发布，不称新监管义务。",
+        "evidence_refs": [
+          "turn449204953view4",
+          "turn449204953view5"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "secrss",
+        "group": "科技网安媒体",
+        "source": "安全内参",
+        "entry_url": "https://www.secrss.com/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "政策栏目、直连25日资讯、四项高重要候选正文并回原源",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "福建两案",
+          "GeoServer公开",
+          "香港售票网留26",
+          "公安25标准待核"
+        ],
+        "notes": "福建两案追到新华网25日09:07公安原稿；GeoServer项目23日披露已核，补丁10月发布；香港25日19:35官方公告交26。25项公安标准25日仅转载，原日期/图片清单未核成，不采用。",
+        "evidence_refs": [
+          "turn879989791view1",
+          "turn879989791view2",
+          "turn879989791view3",
+          "turn254992422view0",
+          "turn607802465view1",
+          "turn719814302view3"
+        ],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "id": "freebuf",
+        "group": "科技网安媒体",
+        "source": "FreeBuf",
+        "entry_url": "https://www.freebuf.com/",
+        "checked_at": "2026-11-27T03:27:23+00:00",
+        "query_or_section": "目标日期搜索、直连首页及两篇AI安全正文尝试",
+        "status": "access_failed",
+        "candidate_titles": [],
+        "notes": "直连首页只有推荐标题和分类，动态列表未加载。两篇推荐正文web失败，不能把首页摘要当正文或据此宣布25日无新事，保留访问限制。",
+        "evidence_refs": [],
+        "audit_provenance": "automation_audit: source-audit-extra.json; original access and 23–25 judgement preserved",
+        "original_review_window": {
+          "from": "2026-11-23T00:00:00+08:00",
+          "to": "2026-11-25T23:59:59+08:00",
+          "note": "实际核查在11/27，不回填虚假11/25核查时间；香港25日19:35事件经root安排留26，避免跨期重复。"
+        },
+        "window_reassessed_at": "2026-11-27T03:31:29+00:00",
+        "reassessment_for_26": "不将原23–25日排除结论直接搬为26日无新增。各已发现候选按下列important_candidate_reviews分配或排除；当下26/27列表另由build_fix实读。"
+      },
+      {
+        "group": "反向主题检索",
+        "source": "主题反向检索1",
+        "entry_url": null,
+        "checked_at": null,
+        "reviewed_at": "2026-11-27T03:31:29+00:00",
+        "query_or_section": "\"2026\" \"11月26日\" 人工智能 算法备案 安全评估 智能体",
+        "search_recency_days": 7,
+        "target_historical_window": "2026-11-24 through 2026-11-26",
+        "status": "checked_with_candidates",
+        "notes": "旧算法备案/智能体公告按原日排除；26通信网方案、StreamLake当事人新声明入选。",
+        "timestamp_note": "检索工具调用实际在11/27执行，逐调用精确时间未另录，不虚填；reviewed_at是本次结果归并时间。"
+      },
+      {
+        "group": "反向主题检索",
+        "source": "主题反向检索2",
+        "entry_url": null,
+        "checked_at": null,
+        "reviewed_at": "2026-11-27T03:31:29+00:00",
+        "query_or_section": "\"2026\" \"11月25日\" 个人信息 数据跨境 公共数据 可信数据空间",
+        "search_recency_days": 7,
+        "target_historical_window": "2026-11-24 through 2026-11-26",
+        "status": "checked_with_candidates",
+        "notes": "北京可信数据空间归24期；NDA两项行动计划归25期；26AI用数草案与服贸数据跨境安排已追官方全文入选。",
+        "timestamp_note": "检索工具调用实际在11/27执行，逐调用精确时间未另录，不虚填；reviewed_at是本次结果归并时间。"
+      },
+      {
+        "group": "反向主题检索",
+        "source": "主题反向检索3",
+        "entry_url": null,
+        "checked_at": null,
+        "reviewed_at": "2026-11-27T03:31:29+00:00",
+        "query_or_section": "\"2026\" \"11月26日\" 平台 反垄断 未成年人 监管",
+        "search_recency_days": 7,
+        "target_historical_window": "2026-11-24 through 2026-11-26",
+        "status": "checked_with_candidates",
+        "notes": "普通经营者集中公示不具独立科技法重大增量；26平台信用共治、26全总算法协商成果实际核原文入选。",
+        "timestamp_note": "检索工具调用实际在11/27执行，逐调用精确时间未另录，不虚填；reviewed_at是本次结果归并时间。"
+      },
+      {
+        "group": "反向主题检索",
+        "source": "主题反向检索4",
+        "entry_url": null,
+        "checked_at": null,
+        "reviewed_at": "2026-11-27T03:31:29+00:00",
+        "query_or_section": "\"2026\" \"11月25日\" 人工智能 数据 法院 处罚",
+        "search_recency_days": 7,
+        "target_historical_window": "2026-11-24 through 2026-11-26",
+        "status": "checked_with_candidates",
+        "notes": "25福建两项保护义务案例归25期；AI造谣十案归24期；未把媒体转载日当处罚作出日。",
+        "timestamp_note": "检索工具调用实际在11/27执行，逐调用精确时间未另录，不虚填；reviewed_at是本次结果归并时间。"
+      },
+      {
+        "group": "反向主题检索",
+        "source": "主题反向检索5",
+        "entry_url": null,
+        "checked_at": null,
+        "reviewed_at": "2026-11-27T03:31:29+00:00",
+        "query_or_section": "\"2026\" \"11月26日\" 网络安全 漏洞 反诈",
+        "search_recency_days": 7,
+        "target_historical_window": "2026-11-24 through 2026-11-26",
+        "status": "checked_with_candidates",
+        "notes": "24Cling归24期；25GeoServer风险通报回23日项目披露、补丁10月，归25期；香港事故官方25晚公告入26。公安25标准发布日期未核，排除不确证时点的候选。",
+        "timestamp_note": "检索工具调用实际在11/27执行，逐调用精确时间未另录，不虚填；reviewed_at是本次结果归并时间。"
+      },
+      {
+        "group": "反向主题检索",
+        "source": "主题反向检索6",
+        "entry_url": null,
+        "checked_at": null,
+        "reviewed_at": "2026-11-27T03:31:29+00:00",
+        "query_or_section": "\"2026\" \"11月26日\" 芯片 算力 云 数据中心",
+        "search_recency_days": 7,
+        "target_historical_window": "2026-11-24 through 2026-11-26",
+        "status": "checked_with_candidates",
+        "notes": "26广东算力规划、通信网方案、路透东南亚发货暂停和企业研发受影响新披露入选；不重复19日算力规则本身。",
+        "timestamp_note": "检索工具调用实际在11/27执行，逐调用精确时间未另录，不虚填；reviewed_at是本次结果归并时间。"
+      },
+      {
+        "group": "反向主题检索",
+        "source": "主题反向检索7",
+        "entry_url": null,
+        "checked_at": null,
+        "reviewed_at": "2026-11-27T03:31:29+00:00",
+        "query_or_section": "\"2026\" \"11月26日\" 数据要素 标准 征求意见",
+        "search_recency_days": 7,
+        "target_historical_window": "2026-11-24 through 2026-11-26",
+        "status": "checked_with_candidates",
+        "notes": "26NDA公开征求意见官方动态页及附件实际读到；ISO欧洲采用是24日既有披露排除；TC28/CAICT受阻入口保留并查可读官方替代。",
+        "timestamp_note": "检索工具调用实际在11/27执行，逐调用精确时间未另录，不虚填；reviewed_at是本次结果归并时间。"
+      },
+      {
+        "group": "反向主题检索",
+        "source": "主题反向检索8",
+        "entry_url": null,
+        "checked_at": null,
+        "reviewed_at": "2026-11-27T03:31:29+00:00",
+        "query_or_section": "\"2026\" \"11月26日\" 人工智能 官方回应 企业 披露",
+        "search_recency_days": 7,
+        "target_historical_window": "2026-11-24 through 2026-11-26",
+        "status": "checked_with_candidates",
+        "notes": "26StreamLake公司直接承认配置错误与处理措施是24OpenRouter通报后的新进展；Talkie为另一项苹果下架事件，分别核时点，非同事件拆分。",
+        "timestamp_note": "检索工具调用实际在11/27执行，逐调用精确时间未另录，不虚填；reviewed_at是本次结果归并时间。"
+      },
+      {
+        "group": "权威媒体",
+        "source": "新华社全总发布会原稿",
+        "entry_url": "https://www3.xinhuanet.com/politics/20261126/33a53b57e10747adb2a05092554a5f6d/c.html",
+        "checked_at": "2026-11-27T03:31:29+00:00",
+        "query_or_section": "26日19:49发布会原发全文",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "18家平台算法协商成果"
+        ],
+        "notes": "与新京报26日16:46和澎湃26日14:05现场稿交叉实际读取，入选26；不能因截至11月10日已完成而忽略26日的新披露。"
+      },
+      {
+        "group": "重点地方",
+        "source": "北京市政府部门动态",
+        "entry_url": "https://www.beijing.gov.cn/ywdt/zybwdt/index.html",
+        "checked_at": "2026-11-27T03:31:29+00:00",
+        "query_or_section": "24—26日期列表",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "个人医保用药记录查询服务",
+          "AI国际标准新闻"
+        ],
+        "notes": "医保查询为服务功能，不作为重大规范/执法增量；国际标准24日同事件已刊；另25期采用零碳申报，不重复。"
+      },
+      {
+        "group": "中央机关",
+        "source": "工信部科技司",
+        "entry_url": "https://www.miit.gov.cn/jgsj/kjs/index.html",
+        "checked_at": "2026-11-27T03:31:29+00:00",
+        "query_or_section": "24—26标准和工作动态",
+        "status": "checked_with_candidates",
+        "candidate_titles": [
+          "北斗短报文管理办法征求意见"
+        ],
+        "notes": "24日北斗征求意见交24期已补入；26日一般充电设施技术标准、19日AI相关列表未形成另一个已核本期重大增量。"
+      },
+      {
+        "group": "中央机关",
+        "source": "市场监管总局反垄断执法栏目",
+        "entry_url": "https://www.samr.gov.cn/jzxts/index.html",
+        "checked_at": "2026-11-27T03:31:29+00:00",
+        "query_or_section": "24—26公开列表",
+        "status": "checked_no_qualifying_item",
+        "candidate_titles": [],
+        "notes": "实际读普通经营者集中公示列表；搜索误显26日铜业事项原日为11月10日，百度相关条目为20日，未把抓取日当新决定日期。"
+      }
+    ],
+    "foreign_local_language_sources": [
+      {
+        "source": "韩国PIPC",
+        "language": "ko",
+        "status": "checked_with_candidates",
+        "entry_url": "https://pipc.go.kr/np/cop/bbs/selectBoardList.do?bbsId=BS074&mCode=B030020000",
+        "notes": "实际打开4条韩文官方原文；医疗数据指南页面为26日而正文公告日为27日，排除。"
+      },
+      {
+        "source": "朝日电视台／共同社",
+        "language": "ja",
+        "status": "checked_with_candidates",
+        "entry_url": "https://news.tv-asahi.co.jp/news_economy/articles/000550485.html",
+        "notes": "实际打开Park24补偿安排日文报道；Park24官网403，未标已完成。"
+      },
+      {
+        "source": "越南司法部",
+        "language": "vi",
+        "status": "checked_with_candidates",
+        "entry_url": "https://moj.gov.vn/portal/tin-tuc/chi-tiet/bao-am-tuan-thu-phap-luat-khi-ung-dung-tri-tue-nhan-tao-trong-pho-bien-giao-duc-phap-luat-tp3ukpabbb.html",
+        "notes": "实际打开越南文，逐条核对AI普法草案中的人工审核、官方来源、测试与转人工。"
+      }
+    ],
+    "excluded_candidates": [
+      {
+        "title": "韩国医疗领域数据保护指南",
+        "reason": "网页26日，正文明确27日发布；不将次日事件放入26日"
+      },
+      {
+        "title": "沪新数字身份跨境互认2.0",
+        "reason": "26日转载但事项于20日已发生，超过窗口且无新增"
+      },
+      {
+        "title": "越南数据安全法通过",
+        "reason": "26日转载、实际20日通过，缺乏窗口内新动作"
+      },
+      {
+        "title": "国家发改委对外投资配套格式文本",
+        "reason": "26日公开确有新增，但与本期科技法主线联系较弱，未单列"
+      },
+      {
+        "title": "前日分配事项",
+        "reason": "湖北词元、数字经济、数字社会、量子、PPC、意瑞合作、供应链安全、隐私审计、四川信用、AI谣言、标准发布会、广东AI备案、重庆城运条例、DIWASS与UKRI均已交24/25日去重，不复用"
+      },
+      {
+        "title": "ISO/IEC 5259-4:2024被欧洲采用",
+        "source_url": "https://www.samr.gov.cn/hd/zxft/art/2026/art_1fe10d5e599e49209fd5191ba1159e00.html",
+        "reason": "复核24日市场监管总局发布会第62段已公开欧洲采用进展，26日为转载，不构成新动作；从26日移除并换为香港城市售票网资料事故。",
+        "reviewed_at": "2026-11-27T03:24:44+00:00"
+      }
+    ],
+    "shared_audit_provenance": [
+      {
+        "path": "backfill-news24/2026-11-24.news.json",
+        "actual_source_entries": 87,
+        "use": "中央/标准失败与访问事实对照；完整候选用于跨期去重，不直接沿用24日窗口结论。"
+      },
+      {
+        "path": "backfill-news24/local_media_scan.json",
+        "actual_source_entries": 37,
+        "use": "当前抓取列表在本次重新逐项判断26日窗口，原始访问时间保留。"
+      },
+      {
+        "path": "backfill-news25/source-audit-extra.json",
+        "actual_source_entries": 39,
+        "use": "39个实际补扫单元及候选处理证据保留，原23—25范围不冒充26排除结论。"
+      }
+    ],
+    "important_candidate_reviews": [
+      {
+        "id": "fujian-duty-cases",
+        "decision": "root_adopted_2026-11-25",
+        "title": "网警依法查处2起不履行安全保护义务案",
+        "url": "https://www.news.cn/legal/20261125/e3639bd7927a4f26a0389c7c5ad32bfd/c.html",
+        "published_at": "2026-11-25T09:07:09+08:00",
+        "source": "新华网原文转载公安部网安局微信公众号",
+        "facts": [
+          "宁德某公司安全管理制度不健全、核心设备接触管理存在隐患，受到警告并责令限期改正。",
+          "厦门某公司仓储系统有访问漏洞，防护不齐且未做网络安全风险评估即运行，受到警告并责令限期改正。"
+        ],
+        "limits": [
+          "处罚决定日未披露，称25日公开案例，不称两案当天作出处罚。",
+          "没有罚款、实际数据泄露或企业实名可写。"
+        ],
+        "evidence_refs": [
+          "turn607802465view1",
+          "turn719814302view2",
+          "turn879989791view2"
+        ]
+      },
+      {
+        "id": "geoserver",
+        "decision": "root_adopted_2026-11-25",
+        "title": "GeoServer Security Update - November 2026",
+        "url": "https://geoserver.org/vulnerability/2026/11/23/cve-update.html",
+        "published_on": "2026-11-23",
+        "source": "GeoServer项目/Jody Garnett",
+        "facts": [
+          "11/23在CVE分配及安全通告公布后披露漏洞细节。",
+          "修复已随10月3.0.2、2.28.6、2.27.7版本发布，采用先修复后披露政策。",
+          "官方确认多环漏洞链可组合取得管理员会话并导致远程代码执行。"
+        ],
+        "cnvd_reprint": {
+          "url": "https://www.secrss.com/articles/95999",
+          "published_on": "2026-11-25",
+          "stated_source": "CNVD漏洞平台",
+          "announcement_number": "CNTA-2026-0008",
+          "limit": "CNVD原站不可达；CNCERT漏洞公告栏目未列25日原文，未取得CNVD原URL。"
+        },
+        "limits": [
+          "不能称25日发布补丁。",
+          "不扩展利用步骤，正文只写风险和受影响版本/修复建议。"
+        ],
+        "evidence_refs": [
+          "turn719814302view3",
+          "turn879989791view3"
+        ]
+      },
+      {
+        "id": "hongkong-urbtix",
+        "decision": "root_assigned_2026-11-26",
+        "title": "康文署公布資訊保安事故",
+        "url": "https://www.info.gov.hk/gia/general/202611/25/P2026112500564.htm",
+        "published_at": "2026-11-25T19:35:00+08:00",
+        "facts": [
+          "康文署24日收到外判承办商通报，城市售票网被非法进入。",
+          "初步调查涉及约130万用户的用户名/姓名、电话与电邮。",
+          "系统不登记身份证件资料，信用卡资料被遮蔽；已报警并报告隐私专员等。"
+        ],
+        "evidence_refs": [
+          "turn254992422view0"
+        ]
+      },
+      {
+        "id": "mps-25-standards",
+        "decision": "exclude_pending_original_date_and_list",
+        "title": "《关键信息基础设施安全运维指南》等25项公共安全行业标准发布",
+        "url": "https://www.secrss.com/articles/95991",
+        "reprint_date": "2026-11-25",
+        "stated_source": "公安信安标委",
+        "reason": "只核到25日转载称近日公安部2026年第3号标准公告，原公告发布日期不明。25项清单为2张图，两次GET均503；公安标准化信息服务平台标准公告页为空。不能断言25日新发布，也不能断言已证实旧发布，暂不采用。",
+        "attempted_primary_urls": [
+          "https://ywtb.mps.gov.cn/gabzh/portal/orgInfo/34",
+          "https://ywtb.mps.gov.cn/gabzh/portal/tzgg",
+          "https://ywtb.mps.gov.cn/gabzh/portal/pageStdBzgg"
+        ],
+        "failed_image_urls": [
+          "https://s.secrss.com/anquanneican/b38729f32880231fe0d07791f4cf79b8.png",
+          "https://s.secrss.com/anquanneican/189980a7593a449b477ae7769c8129d0.png"
+        ],
+        "evidence_refs": [
+          "turn879989791view1",
+          "turn719814302view0",
+          "turn607802465view0",
+          "turn131932995view0"
+        ]
+      },
+      {
+        "id": "ai-rumor-ten-cases",
+        "decision": "same_event_as_2026-11-24_edition",
+        "title": "公安部网安局公布2026年度使用AI工具编造传播网络谣言10起典型案例",
+        "url": "https://www.piyao.org.cn/20261123/75c60abf68864c34b7324ec83fcdfac0/c.html",
+        "visible_publication_date": "2026-11-24",
+        "reason": "页面明确24日且正文今日公布；URL中的23不作为日期。南都24日花都视频是该批第二案例，去重。",
+        "evidence_refs": [
+          "turn879989791view4",
+          "turn642065240view0"
+        ]
+      },
+      {
+        "id": "zj-service-providers",
+        "decision": "exclude_pending_first_publication_date",
+        "url": "https://www.zjb.zj.gov.cn/zwgk/fdzdgknr/zczx/art/2026/art_11b35923fda743c49bfa069165a97096.html",
+        "reprint_at": "2026-11-24T16:07:00+08:00",
+        "reason": "官方转载全文可读，原经信厅首次印发/公开时间未证实。不得仅以转载日期作为当日新政策。"
+      },
+      {
+        "id": "yangzhou-opc",
+        "decision": "exclude_prior_event",
+        "url": "https://jszwb.jiangsu.gov.cn/art/2026/11/25/art_19420_11865847.html",
+        "event_date": "2026-11-13",
+        "earlier_report_date": "2026-11-17",
+        "earlier_report_url": "https://jszwb.jiangsu.gov.cn/art/2026/11/17/art_19583_11861313.html",
+        "reason": "25日标准报道指向已发生的扬州站活动，不能把转载/总结当25发布。"
+      },
+      {
+        "id": "beijing-zero-carbon",
+        "decision": "root_adopted_2026-11-25_as_followup",
+        "url": "https://jxj.beijing.gov.cn/zwgk/2024zcwj/202611/t20261123_4955490.html",
+        "published_on": "2026-11-23",
+        "reason": "19日期已讲培育方案；23日申报启动和12/20截止是程序增量，避免重复重讲方案。"
+      },
+      {
+        "id": "shenzhen-ai-insurance",
+        "decision": "root_adopted_2026-11-25",
+        "url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/zwdt/content/post_13075710.html",
+        "published_at": "2026-11-24T12:02:00+08:00",
+        "event_date": "2026-11-23",
+        "reason": "深圳政府转载特区报明确23日活动发布保险共同体与AI产业风险治理白皮书，另与一财24日正文交叉核。"
+      },
+      {
+        "id": "nda-ai-data-rules",
+        "decision": "included_2026-11-26",
+        "reason": "公告26日发布，官方附件实读；12月6日意见截止。"
+      },
+      {
+        "id": "gd-compute-plan",
+        "decision": "included_2026-11-26",
+        "reason": "官方26日公开，6日印发，正文已修正。"
+      },
+      {
+        "id": "services-trade-plan",
+        "decision": "included_2026-11-26",
+        "reason": "官方26日09:12公开，19日印发，AI服务出海/数据跨境为重要新增，不因20条上限排除。"
+      },
+      {
+        "id": "platform-algorithm-bargaining",
+        "decision": "included_2026-11-26",
+        "reason": "26日发布会新披露，11月10日为统计截止，已核原发全文。"
+      },
+      {
+        "id": "iso-europe-adoption",
+        "decision": "excluded_same_event_as_2026-11-24",
+        "reason": "24日总局发布会第62段已披露；26只是转载，原20条草稿已更正。"
+      },
+      {
+        "id": "gd-token-and-open-data",
+        "decision": "excluded_prior_publication",
+        "urls": [
+          "https://zfsg.gd.gov.cn/zwgk/gggs/content/post_4982697.html",
+          "https://zfsg.gd.gov.cn/zwgk/gggs/content/post_4982257.html"
+        ],
+        "reason": "本次均实际读取官网原文，公开时间均11月20日，超过26期回查窗口，无新动作。"
+      },
+      {
+        "id": "longyuetan-photography",
+        "decision": "excluded_insufficient_original_date_and_primary_confirmation",
+        "reason": "26日南都首页视频标题已读；反搜只能取得个人页片段，未核拆除决定原始日期和完整依据，不据标题写成已核行政处罚。"
+      },
+      {
+        "id": "ai-song-removal",
+        "decision": "excluded_insufficient_primary_confirmation",
+        "reason": "共享媒体巡视提示26日AI歌曲下架新闻，但未取得平台原公告和处置依据，不以二手归纳写成监管决定。"
+      },
+      {
+        "id": "sichuan-bci-and-node-list",
+        "decision": "excluded_no_major_new_governance_measure_identified",
+        "reason": "26日经信厅实际列表为脑机接口代表产品展示、工业互联网二级节点入库公示；未显示新的监管决定或基础制度调整，本期不单列。"
+      }
+    ],
+    "review_completion": {
+      "completed_at": "2026-11-27T03:31:29+00:00",
+      "review_performed": true,
+      "all_sources_successfully_read": false,
+      "scope": "中央20、标准6实际入口，重点地方、权威/法治/财经/综合/科技网安逐源及8方向反向搜索；共享11/27实际快照重新判断11/24—26。",
+      "limitations": "受阻入口、动态空壳和未能取得的一手材料保留。完成表示实际巡视及候选判断已执行，不表示每个站点所有历史栏目全部成功打开。",
+      "disposition": "全部已发现重要候选均有本期入选、跨期分配、旧闻去重或关键证据不足的明确排除结论。",
+      "latest_important_rescan": {
+        "at": "2026-11-27T03:31:29+00:00",
+        "sources": [
+          "国家数据局公开征求意见列表/公告/5页PDF",
+          "广东政数局完整算力规划",
+          "商务部政策通知/解读/24页PDF",
+          "新华社/新京报/澎湃26日全总发布会原稿",
+          "SAMR24完整标准发布会"
+        ],
+        "historical_cutoff": "2026-11-26T23:59:59+08:00",
+        "note": "本次为11/27历史补发；复扫发现的27日新事件不倒填26日。"
+      }
+    },
+    "integrated_backfill_review": {
+      "record": ".github/editions/2026-11-27.backfill-source-audit.json",
+      "reviewed_at": "2026-11-27T11:33:26+08:00",
+      "result": "各类来源巡视及已发现候选入选、跨期分配、去重、证据不足排除已执行；逐源失败限制保留。"
+    }
+  },
+  "deduplication": {
+    "completed_history_days": [
+      "2026-11-19",
+      "2026-11-20",
+      "2026-11-21",
+      "2026-11-22",
+      "2026-11-23",
+      "2026-11-24",
+      "2026-11-25"
+    ],
+    "pending_history_days": [],
+    "method": "读取完整条目标题和事实并按主体、事件和新增动作比对；同一宽泛议题不当成同一事件。24日按协作者最终items-final.json逐条核对。",
+    "notes": [
+      "26日StreamLake直接确认配置错误、受影响端点和处理措施，是24日OpenRouter初步通告后新增。",
+      "美国19日算力规则仅作为背景，26日收录的是供货执行变化与新披露企业研发进度。",
+      "Park24补偿、新西兰NCSC季度报告、上海论坛已获25日编写代理确认未使用。",
+      "修正初次去重结论：ISO/IEC 5259-4欧洲采用在24日发布会已披露，26日转载已剔除；香港售票网25日19:35公告经24/25日编辑交叉核对后补入26日。",
+      "最终来源巡视补入26日公开的服务贸易十五五规划、全总26日发布会算法协商成果；11月10日仅为协商统计截止日，不作为排除26日首次披露的依据。"
+    ],
+    "cross_edition_counts": {
+      "2026-11-24": 21,
+      "2026-11-25": 24,
+      "2026-11-26": 22
+    },
+    "result": "按最新24、25补稿和26稿逐项对照主体、文件、案件、日期与新增动作，已纠正ISO欧洲采用重复；26最终候选与前两期无同事件重复。",
+    "reviewed_artifacts": [
+      "backfill-news24/2026-11-24.news.json",
+      "backfill-news25/items.json",
+      "backfill-news26/items.json",
+      "backfill-news26/history-review.json"
+    ],
+    "reviewed_at": "2026-11-27T03:31:29+00:00"
+  },
+  "final_html_sha256": "ebd3dfd7e6d2024dab34bad1fe3915efecc30ea9ae691c53bc2b0bbcd939d3c5",
+  "next_actions": [
+    "原子提交并等待对应Pages成功",
+    "核对各补发正文及线上入口"
+  ],
+  "last_error": null,
+  "publication": {
+    "commit_sha": null,
+    "pages_run_id": null,
+    "pages_result": null,
+    "online_verified": null
+  },
+  "items": [
+    {
+      "key": "cn-nda-ai-data-rules",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "中国",
+      "agency": "国家数据局",
+      "title": "国家数据局就人工智能用数规则征求意见，涉及训练、推理与输出风险责任",
+      "original_title": "国家数据局综合司关于向社会公开征求《关于完善数据规则 赋能人工智能创新发展的若干意见》(公开征求意见稿)意见的公告",
+      "source_name": "国家数据局",
+      "url": "https://www.nda.gov.cn/sjj/hdjl/yjzq/yjzqform/list/index_pc.html?code=ff808081-a1d5596e-01a2-17aa8b5d-096b",
+      "fact": "国家数据局11月26日就《关于完善数据规则 赋能人工智能创新发展的若干意见》向社会公开征求意见，反馈截至12月6日。草案提出12项措施，涉及依法取得的数据用于人工智能训练和推理、委托处理数据的权利归属、为高质量数据付费，以及输出风险防控和数据流通责任认定。草案提出，在满足法定条件时，将企业已采取的合理必要措施、数据产权登记凭证等作为判断或减免相应责任的考量因素，并要求落实数据安全和个人信息保护规则。该文件尚处于征求意见阶段。",
+      "legal_status": "公开征求意见稿",
+      "domestic": true,
+      "verification_note": "实际读取官网公开征求意见列表与详情接口，核对11月26日公告及11月26日至12月6日征求意见期；已下载官方5页PDF并逐页提取、读取12项措施。公开动态页面正文通过网站自带公开读取接口提供，非投稿接口。",
+      "refs": [
+        "turn463917768view4"
+      ],
+      "id": "research-item-1",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:24:44+00:00",
+      "deduplication_note": "已对照11月19—25日完整标题及事实、24/25日最终补稿；无同一事件已刊重复。",
+      "background": "",
+      "outlook": "",
+      "additional_sources": [
+        {
+          "name": "公开征求意见稿全文（官方PDF）",
+          "url": "https://www.nda.gov.cn/form-files-sjj/2c99e457-8f9edeed-018f-b8a7537c-0243/2c99e457-8f9edeed-018f-b8ad7daf-0256/fileupload_scfj/2026/11/26/ff808081-a1d5596e-01a2-17aa5ba1-0946.pdf?id=ff808081-a1d5596e-01a2-17aa5ba1-0946"
+        },
+        {
+          "name": "新华社11月26日23时15分报道",
+          "url": "https://www3.xinhuanet.com/tech/20261126/134151d541c445c0987c3f8fd3b012c8/c.html"
+        }
+      ],
+      "primary_source_read": true,
+      "official_attachment_read": true,
+      "source_evidence": [
+        "sources/nda-official-api.json",
+        "sources/nda-ai-data-rules-draft.pdf",
+        "sources/nda-ai-data-rules-draft.txt"
+      ]
+    },
+    {
+      "key": "cn-nextgen-communications",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "document_date": "2026-11-17",
+      "jurisdiction": "中国",
+      "agency": "工业和信息化部、中央网信办、国家发展改革委",
+      "title": "三部门公布新一代通信网建设实施方案，部署智能体通信与网络安全保障",
+      "original_title": "三部门关于印发《新一代通信网建设实施方案》的通知",
+      "source_name": "工业和信息化部",
+      "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_808db1814bb74a0e87965d66e74f5b4b.html",
+      "additional_sources": [
+        {
+          "name": "工业和信息化部政策解读",
+          "url": "https://www.miit.gov.cn/zwgk/zcjd/art/2026/art_4638b2ae59814b7fafda3c31d8febb9d.html"
+        }
+      ],
+      "fact": "工业和信息化部、中央网信办、国家发展改革委11月26日公布《新一代通信网建设实施方案》，文件于11月17日印发。方案提出到2030年推动新一代通信网建设发展，统筹5G演进、6G、万兆光网、卫星互联网和国际通信基础设施。配套解读提出开展智能体通信网络架构、路由及算力网络等技术验证，并将关键信息基础设施安全保护、网络风险评估和绿色节能纳入建设安排。",
+      "legal_status": "已印发并公开的部门联合实施方案",
+      "domestic": true,
+      "verification_note": "已对照工信部原通知与同日解读，区分17日签发和26日公开。",
+      "refs": [
+        "turn325100426view3",
+        "turn806034660view4"
+      ],
+      "id": "research-item-2",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:15:50+00:00",
+      "deduplication_note": "已对照11月19—25日完整标题及事实、24/25日最终补稿；无同一事件已刊重复。",
+      "background": "",
+      "outlook": ""
+    },
+    {
+      "key": "cn-services-trade-fiveyear-ai-data",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "document_date": "2026-11-19",
+      "jurisdiction": "中国",
+      "agency": "商务部等8部门",
+      "title": "八部门公布服务贸易规划，部署人工智能服务出海与数据跨境便利化",
+      "original_title": "商务部等8部门关于印发《服务贸易发展“十五五”规划》的通知",
+      "source_name": "商务部",
+      "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_48dd1ca5a38f43bf944c2ba1b2bc522b.html",
+      "additional_sources": [
+        {
+          "name": "服务贸易发展“十五五”规划（官方PDF）",
+          "url": "https://pictradeinservices.mofcom.gov.cn/attach/202611/20261126114627443.pdf"
+        },
+        {
+          "name": "商务部服贸司负责人解读",
+          "url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_c0338aed34274384b2bcc6afb75a1106.html"
+        }
+      ],
+      "fact": "商务部等8部门11月26日公开《服务贸易发展“十五五”规划》，通知落款为11月19日。规划提出稳妥有序推动云计算、大模型等人工智能服务出海，鼓励企业在防范技术外流的前提下整合硬件、算力和基础设施资源，开展联合运营与本地适配。规划另设数据跨境流动安排，提出建设相关服务基础设施，提高重要数据和个人信息出境安全评估效率，并支持具备条件的地区探索跨国公司内部个人信息跨境传输的便利措施。",
+      "legal_status": "已印发并公开的部门联合专项规划",
+      "domestic": true,
+      "primary_source_read": true,
+      "official_attachment_read": true,
+      "verification_note": "已打开商务部26日09:12官方通知与16:00解读，下载并读取24页规划附件；主要事实核对印刷页9、12—13（PDF页12、15—16），区分19日签发与26日公开。原始政策发布路径404，改用同站政务公开中的实际可读通知。",
+      "refs": [
+        "turn771326915view0",
+        "turn771326915view1",
+        "turn954106065view0",
+        "turn954106065view1"
+      ],
+      "source_checked": true,
+      "source_checked_at": "2026-11-27T03:27:19+00:00",
+      "seven_day_dedup_checked": true,
+      "deduplication_note": "已对照11月19—25日全部标题和事实及24/25日最终补稿，无同一事件已刊重复；26日首次公开的文件或发布会新披露纳入当日。",
+      "background": "",
+      "outlook": "",
+      "id": "research-item-3"
+    },
+    {
+      "key": "cn-guangdong-compute-plan",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "中国·广东",
+      "agency": "广东省政务服务和数据管理局、广东省发展改革委",
+      "title": "广东算力规划提出改造低效数据中心，将能效与综合效益纳入运营约束",
+      "original_title": "广东省政务服务和数据管理局 广东省发展和改革委员会关于印发《广东省算力发展“十五五”规划》的通知",
+      "source_name": "广东省政务服务和数据管理局",
+      "url": "https://zfsg.gd.gov.cn/zwgk/gggs/content/post_4976840.html",
+      "fact": "广东省政务服务和数据管理局、广东省发展改革委11月26日公开《广东省算力发展“十五五”规划》，通知落款为11月6日。规划提出实施存量数据中心优化行动，推动中小型低效数据中心改造为高效边缘算力中心；完善算力基础设施能耗监测评估，归集电能利用效率、碳排放总量等指标。规划将综合效益、能源利用水平作为准入审核、资源配置、运营考核和项目验收的约束，并提出制定地方能效标准、加强绿色算力建设。",
+      "legal_status": "已印发并于11月26日公开的地方专项规划",
+      "domestic": true,
+      "verification_note": "已实际读取广东主管部门11月26日14:00发布的通知及规划全文，核对11月6日落款；能耗约束等表述对应规划第六部分第二项，不再以媒体简称代替文件正式名称。",
+      "refs": [
+        "turn360539368view1",
+        "turn591476192view0",
+        "turn833530149view1"
+      ],
+      "id": "research-item-4",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:24:44+00:00",
+      "deduplication_note": "已对照11月19—25日完整标题及事实、24/25日最终补稿；无同一事件已刊重复。",
+      "background": "",
+      "outlook": "",
+      "document_date": "2026-11-06",
+      "additional_sources": [
+        {
+          "name": "财联社11月26日报道（东方财富网转载）",
+          "url": "https://finance.eastmoney.com/a/202611263940616370.html"
+        }
+      ],
+      "primary_source_read": true
+    },
+    {
+      "key": "cn-platform-algorithm-bargaining-disclosure",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "中国",
+      "agency": "全国总工会",
+      "title": "全国总工会披露18家平台算法协商成果，涉及规则公开、收入与申诉保障",
+      "original_title": "工会多措并举加强劳动者权益保障",
+      "source_name": "新华社",
+      "url": "https://www3.xinhuanet.com/politics/20261126/33a53b57e10747adb2a05092554a5f6d/c.html",
+      "additional_sources": [
+        {
+          "name": "新京报发布会现场报道",
+          "url": "https://www.bjnews.com.cn/detail/1795681183129559.html"
+        },
+        {
+          "name": "澎湃新闻发布会现场报道",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34563872"
+        }
+      ],
+      "fact": "全国总工会11月26日在第四季度新闻发布会上披露，截至11月10日，网络货运、网约车、网约配送和快递4个行业的18家重点平台已完成劳动规则和算法协商并签订协议，覆盖劳动者超过2500万人。已披露的措施包括公开派单和计价规则、取消外卖超时扣款、调整抽成，以及加强人工复核和申诉反馈。全总表示将组建相关专家委员会，推动重点城市和平台开展二次协商，并建立履约监督、跟踪评估机制。本条记录26日新披露的协商成果。",
+      "legal_status": "发布会披露的协商协议及执行进展",
+      "domestic": true,
+      "primary_source_read": false,
+      "verification_note": "已实际打开新华社26日19:49原发报道，以及新京报16:46、澎湃14:05现场报道，核对26日发布会与11月10日统计截止时间。未把此前已完成协商日期写成26日，也未把协商成果当成新制定法规。",
+      "refs": [
+        "turn876528413view3",
+        "turn771326915view2",
+        "turn771326915view3"
+      ],
+      "source_checked": true,
+      "source_checked_at": "2026-11-27T03:27:19+00:00",
+      "seven_day_dedup_checked": true,
+      "deduplication_note": "已对照11月19—25日全部标题和事实及24/25日最终补稿，无同一事件已刊重复；26日首次公开的文件或发布会新披露纳入当日。",
+      "background": "",
+      "outlook": "",
+      "id": "research-item-5"
+    },
+    {
+      "key": "hk-urbtix-information-security-incident",
+      "date": "2026-11-25",
+      "event_date": "2026-11-25",
+      "jurisdiction": "中国香港",
+      "agency": "香港康乐及文化事务署",
+      "title": "香港城市售票网披露资料事故，约130万用户资料受影响",
+      "original_title": "康文署公布資訊保安事故",
+      "source_name": "香港特区政府新闻公报",
+      "url": "https://www.info.gov.hk/gia/general/202611/25/P2026112500564.htm",
+      "fact": "香港康乐及文化事务署11月25日19时35分公布，前一日收到城市售票网外包承办商通报，系统曾遭未经授权进入，初步估计约130万用户的用户名或姓名、电话号码和电邮地址等资料受影响。署方表示，该系统没有收集身份证明文件资料，信用卡资料已作遮蔽处理；承办商已阻截有关活动，售票网运作正常。康文署要求提交调查报告，并已报警及向个人资料私隐专员公署等部门报告，正通知受影响用户。",
+      "legal_status": "已公布的资料安全事故与调查处置进展",
+      "domestic": true,
+      "verification_note": "已打开香港政府原始公告全文，核对24日接报、25日19:35公布与约130万用户范围。该公告晚于25日原19:00截点，本次补入26日；不将调查中的资料事故表述为已认定违法或已处罚。",
+      "refs": [
+        "turn737118402view0"
+      ],
+      "id": "research-item-6",
+      "source_checked": true,
+      "primary_source_read": true,
+      "source_checked_at": "2026-11-27T03:24:44+00:00",
+      "seven_day_dedup_checked": true,
+      "deduplication_note": "对照11月19—25日全部已刊事实及24/25日补稿未重复；25日编辑明确未采用，晚间公告补入26日。替换此前误判为新增的ISO/IEC 5259-4欧洲采用报道。",
+      "background": "",
+      "outlook": ""
+    },
+    {
+      "key": "cn-platform-credit-cogovernance",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "中国",
+      "agency": "国家市场监督管理总局",
+      "title": "市场监管总局开展网络交易平台信用共治活动，推动信用管理融入平台治理",
+      "original_title": "市场监管总局开展网络交易平台信用共治活动",
+      "source_name": "国家市场监督管理总局",
+      "url": "https://www.samr.gov.cn/xw/zj/art/2026/art_c14d5bd0c023402f9eb8b3e65cc28749.html",
+      "fact": "市场监管总局11月26日披露，近期开展网络交易平台信用共治活动，发布倡议，推动信用管理融入平台治理全过程。活动围绕平台主体责任、平台内经营者信用管理和社会监督展开，京东等平台企业代表作出信用承诺，提出完善信用管理制度、加强经营者信用约束并接受社会监督。此次活动以信用共治倡议和企业承诺为主要形式。",
+      "legal_status": "监管部门组织的倡议与企业信用承诺",
+      "domestic": true,
+      "verification_note": "已打开总局26日20:00原文，未将倡议表述为行政处罚或强制新规。",
+      "refs": [
+        "turn187952071view0"
+      ],
+      "id": "research-item-7",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:15:50+00:00",
+      "deduplication_note": "已对照11月19—25日完整标题及事实、24/25日最终补稿；无同一事件已刊重复。",
+      "background": "",
+      "outlook": ""
+    },
+    {
+      "key": "cn-minimax-streamlake-disclosure",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "中国／新加坡",
+      "agency": "StreamLake、MiniMax",
+      "title": "StreamLake披露MiniMax请求路由配置错误，移除受影响端点的MiniMax运算资源",
+      "original_title": "Security Notice: MiniMax Requests on StreamLake",
+      "source_name": "StreamLake官方安全通告",
+      "url": "https://www.streamlake.ai/document/DOC/mwxdyc08yovm15lvbm",
+      "fact": "StreamLake11月26日发布安全通告称，调度配置错误使MiniMax运营的运算资源被误接入经OpenRouter提供服务的两个端点。10月22日前通过相关端点调用MiniMax M3或M2.5的请求内容，可能曾被第三方访问或保留。通告确认研究者测试请求中的网址和主机名随后被外部访问，嵌入的凭证未发现被使用的迹象。StreamLake称已移除受影响端点中的MiniMax运算资源，正核查数据处理路径、留存及删除情况。",
+      "legal_status": "企业安全事件调查与处置通告",
+      "domestic": true,
+      "verification_note": "26日新增为StreamLake直接确认路由错误、影响端点及处置；已通过官方网页HTTP读取全文并保存来源摘录，区别24日OpenRouter初步公告。",
+      "refs": [
+        "turn950861147search6",
+        "turn461280745search0"
+      ],
+      "id": "research-item-8",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:15:50+00:00",
+      "deduplication_note": "24日条为OpenRouter22日移除服务商和端点资格；本条为StreamLake26日直接确认误路由、受影响模型和处置，具有实质新增。",
+      "background": "",
+      "outlook": ""
+    },
+    {
+      "key": "cn-talkie-apple-removal",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "中国／美国",
+      "agency": "Apple、MiniMax",
+      "title": "苹果因儿童安全疑虑下架MiniMax聊天应用Talkie",
+      "original_title": "Apple pulls MiniMax AI chatbot from App Store over child safety concerns",
+      "source_name": "路透社（Investing.com转载）",
+      "url": "https://ca.investing.com/news/stock-market-news/apple-pulls-minimax-ai-chatbot-from-app-store-over-child-safety-concerns-4982071",
+      "fact": "路透社11月26日报道，苹果本周已将MiniMax旗下人工智能聊天应用Talkie从全球App Store下架。此前澳大利亚广播公司与调查新闻局的调查称，部分角色会向未成年使用者发送性化内容。报道提到，应用虽标示18岁以上年龄等级，但年龄核验依赖用户自行申报。苹果和MiniMax未立即回应路透社的置评请求。",
+      "legal_status": "应用商店下架及媒体调查披露",
+      "domestic": true,
+      "verification_note": "已打开路透授权转载正文；下架时间只按报道写本周，26日为报道公开时间，未虚称法院或监管机关定案。",
+      "refs": [
+        "turn245054980view4"
+      ],
+      "id": "research-item-9",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:15:50+00:00",
+      "deduplication_note": "已对照11月19—25日完整标题及事实、24/25日最终补稿；无同一事件已刊重复。",
+      "background": "",
+      "outlook": ""
+    },
+    {
+      "key": "cn-shanghai-ip-forum",
+      "date": "2026-11-26",
+      "event_date": "2026-11-25",
+      "jurisdiction": "中国·上海",
+      "agency": "国家知识产权局、上海市人民政府、世界知识产权组织",
+      "title": "上海知识产权国际论坛讨论人工智能与数据权益规则创新",
+      "original_title": "第二十三届上海知识产权国际论坛举行",
+      "source_name": "国家知识产权局",
+      "url": "https://www.cnipa.gov.cn/art/2026/11/26/art_53_209406.html",
+      "fact": "国家知识产权局11月26日披露，第二十三届上海知识产权国际论坛于25日开幕，由国家知识产权局、上海市人民政府和世界知识产权组织共同主办。为期四天的论坛以新兴领域知识产权保护为主题，具体议题包括“人工智能+”与数据权益规则创新、新兴领域保护实践以及高价值专利国际化运营。世界知识产权组织代表在开幕式上提出，知识产权制度应以人类创造者和发明者为核心，回应人工智能带来的权利边界与规则协调问题。",
+      "legal_status": "国际论坛举行及政策讨论",
+      "domestic": true,
+      "verification_note": "已打开国家知识产权局原文，准确写26日披露、25日开幕；根代理确认25日补稿未使用。",
+      "refs": [
+        "turn873645968view0"
+      ],
+      "id": "research-item-10",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:15:50+00:00",
+      "deduplication_note": "已对照11月19—25日完整标题及事实、24/25日最终补稿；无同一事件已刊重复。",
+      "background": "",
+      "outlook": ""
+    },
+    {
+      "key": "sea-nvidia-server-shipments",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "美国／新加坡、马来西亚、泰国、印度尼西亚",
+      "agency": "NVIDIA及服务器制造合作方",
+      "title": "英伟达据报暂停向四个东南亚国家交付服务器，应对美国许可要求",
+      "original_title": "Nvidia halts server shipments to four Southeast Asian countries, FT reports",
+      "source_name": "路透社（AOL转载）",
+      "url": "https://www.aol.com/articles/nvidia-halts-server-shipments-four-050944000.html",
+      "fact": "路透社11月26日援引英国《金融时报》报道，英伟达已要求戴尔、超微等制造合作方暂停向新加坡、马来西亚、泰国和印度尼西亚交付相关服务器，以应对美国新增出口许可要求。报道称，暂停持续多久尚不明确，企业未立即回应路透社的置评请求。该动向是美国11月19日有关先进芯片及海外算力使用限制公布后的供货执行变化。",
+      "legal_status": "企业供货调整的媒体报道",
+      "domestic": false,
+      "verification_note": "已打开路透转载；明确FT报道归属和未获企业置评，与19日规则公布区分。",
+      "refs": [
+        "turn187952071view4"
+      ],
+      "id": "research-item-11",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:15:50+00:00",
+      "deduplication_note": "19日规则公布、24日实体清单和调查均为背景；26日新动作为四国服务器停止交付。",
+      "background": "",
+      "outlook": ""
+    },
+    {
+      "key": "us-curbs-china-model-development",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "美国／中国",
+      "agency": "美国商务部、智谱、月之暗面及美国模型企业",
+      "title": "路透披露算力限制与反蒸馏措施对中国模型研发进度的影响",
+      "original_title": "US chip curbs, distillation crackdown threaten Chinese AI model development, sources say",
+      "source_name": "路透社",
+      "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
+      "additional_sources": [
+        {
+          "name": "Taipei Times于27日转载路透26日报道",
+          "url": "https://www.taipeitimes.com/News/biz/archives/2026/11/27/2003868457"
+        }
+      ],
+      "fact": "路透社11月26日援引知情人士报道，智谱原计划在11月发布的GLM-5.5尚未按计划推出，原因之一是美国模型企业对蒸馏行为的防范措施加强。报道同时引述月之暗面方面的内部预估：若完全失去海外算力，重大模型更新间隔可能从约六个月延长至一年或更久。美国11月19日生效的海外先进芯片算力许可要求，是报道关注的另一项研发约束；上述进度与预测均来自受访人士。",
+      "legal_status": "媒体调查披露的企业进度及条件性预估",
+      "domestic": false,
+      "verification_note": "Reuters完整搜索正文已读，直接open失败；实际打开Taipei Times全文交叉核对。27日为转载日期，26日原报道时间已核对；未纳入27日新增事实。",
+      "refs": [
+        "turn187952071news4",
+        "turn898493461view0"
+      ],
+      "id": "research-item-12",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:15:50+00:00",
+      "deduplication_note": "本条为26日路透独立披露具体研发进度，与NVIDIA交付调整不同；把条件性预测与事实区分。",
+      "background": "",
+      "outlook": ""
+    },
+    {
+      "key": "nl-meta-glasses-hearing",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "荷兰",
+      "agency": "阿姆斯特丹地区法院、Consumentenbond、Offlimits、Meta",
+      "title": "荷兰法院就Meta智能眼镜隐私争议开庭，消费者组织请求暂停销售",
+      "original_title": "Dutch groups ask court to halt Meta smart glasses sales over privacy concerns",
+      "source_name": "路透社",
+      "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/",
+      "additional_sources": [
+        {
+          "name": "Boursorama路透全文转载",
+          "url": "https://www.boursorama.com/bourse/actualites-amp/des-associations-neerlandaises-demandent-au-tribunal-d-interdire-la-vente-des-lunettes-connectees-de-meta-pour-des-raisons-liees-a-la-protection-de-la-vie-privee-b76605dab1a82b0c32cd4a7c16ce7e5a"
+        },
+        {
+          "name": "荷兰消费者协会诉讼公告",
+          "url": "https://www.consumentenbond.nl/nieuws/2026/consumentenbond-start-rechtszaak-tegen-meta-om-camerabril"
+        }
+      ],
+      "fact": "阿姆斯特丹地区法院11月26日就Meta智能眼镜隐私争议举行听证。荷兰消费者协会Consumentenbond和数字权利组织Offlimits请求禁止使用眼镜偷拍、停止将相关录制内容用于人工智能训练，并在符合要求前暂停荷兰市场销售。Meta律师主张驳回请求，强调设备设有录制指示灯，并否认其在欧洲违法使用这些影像训练模型。此案此前已提起，26日新增进展是开庭；报道预计法院最迟于12月24日作出裁定。",
+      "legal_status": "民事简易程序开庭审理，尚待裁定",
+      "domestic": false,
+      "verification_note": "已读路透完整搜索正文及Boursorama全文；消费者协会10月15日公告确认此前起诉、26日听证，避免误写26日起诉。",
+      "refs": [
+        "turn293162513news4",
+        "turn898493461view1",
+        "turn245054980view5"
+      ],
+      "id": "research-item-13",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:15:50+00:00",
+      "deduplication_note": "19日宽泛可穿戴设备隐私讨论不等于本案；本次新增为26日法院听证，消费者协会10月起诉仅作背景。",
+      "background": "",
+      "outlook": ""
+    },
+    {
+      "key": "uk-ico-independent-review",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "英国",
+      "agency": "英国文化、媒体和体育部、Information Commission",
+      "title": "英国启动对信息委员会组织文化、问责与治理的独立审查",
+      "original_title": "Independent review of culture at the Information Commission launched",
+      "source_name": "英国政府",
+      "url": "https://www.gov.uk/government/news/independent-review-of-culture-at-the-information-commission-launched",
+      "additional_sources": [
+        {
+          "name": "独立审查职责范围",
+          "url": "https://www.gov.uk/government/publications/independent-review-of-culture-accountability-and-governance-at-the-information-commission/independent-review-of-culture-accountability-and-governance-at-the-information-commission-terms-of-reference"
+        }
+      ],
+      "fact": "英国政府11月26日宣布，对信息委员会的组织文化、问责和治理启动独立审查，由御用大律师Karon Monaghan主持。审查将评估机构内部的文化与管理、问题报告和问责机制，并提出改进建议，计划于2027年第一季度完成，报告将向议会公开。公布的职责范围将工作重点放在监管机构自身的治理安排。",
+      "legal_status": "独立治理审查启动",
+      "domestic": false,
+      "verification_note": "已打开政府公告及职责范围全文，未把机构治理审查写成针对企业的数据执法。",
+      "refs": [
+        "turn463917768view1",
+        "turn463917768view2"
+      ],
+      "id": "research-item-14",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:15:50+00:00",
+      "deduplication_note": "25日ICO边境信息执法及智能体监管为对外业务；本条为政府对委员会内部治理的独立审查。",
+      "background": "",
+      "outlook": ""
+    },
+    {
+      "key": "kr-merger-data-preinspection",
+      "date": "2026-11-26",
+      "event_date": "2026-11-25",
+      "jurisdiction": "韩国",
+      "agency": "韩国个人信息保护委员会（PIPC）",
+      "title": "韩国公布企业合并数据处理预检结果，关注电商合资与个人信息移转",
+      "original_title": "개인정보위, 기업결합 관련 사전 실태점검 결과 발표",
+      "source_name": "韩国个人信息保护委员会",
+      "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=B030020000&nttId=12670",
+      "fact": "韩国个人信息保护委员会11月26日公布前一日全体会议审议的企业合并数据处理预检结果，涉及航空、电商及招聘等领域。对Gmarket与阿里巴巴韩国合资事项，委员会介绍了韩国用户数据分离管理、对受托处理方的监督等安排；对其他交易则检查信息移转的通知、加密、删除和责任主体。委员会同时提出企业合并过程中个人信息保护的操作指引，要求在交易和业务整合阶段明确保护责任。",
+      "legal_status": "监管预检结果及指引发布",
+      "domestic": false,
+      "verification_note": "已打开韩文官方正文；区分25日会议和26日公开，与23日AI个人信息特例无重复。",
+      "refs": [
+        "turn293162513view0"
+      ],
+      "id": "research-item-15",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:15:50+00:00",
+      "deduplication_note": "与其他PIPC事项主体相同，但企业合并数据预检为独立检查项目。",
+      "background": "",
+      "outlook": ""
+    },
+    {
+      "key": "kr-preadequacy-followup",
+      "date": "2026-11-26",
+      "event_date": "2026-11-25",
+      "jurisdiction": "韩国",
+      "agency": "韩国个人信息保护委员会（PIPC）",
+      "title": "韩国对六项经事前适当性审查的服务开展跟踪检查，涵盖人脸支付与AI搜索",
+      "original_title": "사전적정성 검토제, 사전 협의에 그치지 않고 현장까지 챙긴다",
+      "source_name": "韩国个人信息保护委员会",
+      "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C010010000&nttId=12669",
+      "fact": "韩国个人信息保护委员会11月26日公布，已对六项接受事前适当性审查的服务开展现场或书面跟踪检查，相关结果于25日提交全体会议。服务涉及人脸支付、医疗对话记录、反诈骗身份识别、骚扰电话核验和人工智能个性化搜索等。委员会检查告知与选择机制、加密存储、受托处理和目的限制等措施，并表示相关服务落实了此前约定的主要个人信息保护要求。",
+      "legal_status": "事前审查后续合规检查结果",
+      "domestic": false,
+      "verification_note": "已打开韩文官方全文；未将预检或自愿咨询写成行政处罚。",
+      "refs": [
+        "turn950861147view0"
+      ],
+      "id": "research-item-16",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:15:50+00:00",
+      "deduplication_note": "与同日企业合并预检不同，为此前六项事前适当性审查服务的跟踪检查。",
+      "background": "",
+      "outlook": ""
+    },
+    {
+      "key": "kr-safe-personal-data-transmission",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "source_publication_date": "2026-11-25",
+      "jurisdiction": "韩国",
+      "agency": "韩国个人信息保护委员会（PIPC）",
+      "title": "韩国提出以API逐步替代高风险个人信息抓取，推进更安全的数据传输",
+      "original_title": "내 정보, 더 안전하게 전송하여 국민 편익 높인다",
+      "source_name": "韩国个人信息保护委员会",
+      "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=B030020000&nttId=12668",
+      "fact": "韩国个人信息保护委员会在11月26日国家政策协调会议上公布安全个人信息传输推进方案，拟自2027年起逐步推动高风险网页抓取方式转向标准化API。此前对754家企业的调查涉及129个公共网站、3164项抓取行为，前十个网站占比81.5%。方案拟按风险制定保护标准，通过分阶段转换维持现有服务的连续性，并提高个人信息传输过程的可控性。",
+      "legal_status": "政府政策方案公布",
+      "domestic": false,
+      "verification_note": "官方网页标注25日，正文明确26日在第18次国家政策协调会议公布，已据正文区分预发与事件日期。",
+      "refs": [
+        "turn293162513view1"
+      ],
+      "id": "research-item-17",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:15:50+00:00",
+      "deduplication_note": "独立国家政策协调会议方案，与PIPC合并检查、服务跟踪及未来论坛不同。",
+      "background": "",
+      "outlook": ""
+    },
+    {
+      "key": "kr-privacy-future-forum",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "韩国",
+      "agency": "韩国个人信息保护委员会（PIPC）",
+      "title": "韩国隐私未来论坛讨论AI智能体的风险分级保护与数据收益分配",
+      "original_title": "「2026 개인정보 미래포럼」 제5차 전체회의 개최",
+      "source_name": "韩国个人信息保护委员会",
+      "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=B030020000&nttId=12672",
+      "fact": "韩国个人信息保护委员会11月26日举行2026年隐私未来论坛第五次全体会议，讨论人工智能智能体普及背景下的个人信息保护安排。会议提出，应根据处理风险配置保护措施，并探讨将数据利用产生的收益返还个人、与MyData服务相衔接的制度设计。讨论还涉及照护、紧急救助等应用情境，相关内容属于政策研究与意见交流。",
+      "legal_status": "监管机构政策论坛讨论",
+      "domestic": false,
+      "verification_note": "已打开韩文原文，明确论坛讨论性质，未写成已修改同意规则或已实施收益权。",
+      "refs": [
+        "turn245054980view3"
+      ],
+      "id": "research-item-18",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:15:50+00:00",
+      "deduplication_note": "23日为AI个人信息特例施行令草案，24日为仿冒邮件告警；26日为未来论坛具体政策讨论。",
+      "background": "",
+      "outlook": ""
+    },
+    {
+      "key": "nz-ncsc-quarterly-incidents",
+      "date": "2026-11-25",
+      "event_date": "2026-11-25",
+      "jurisdiction": "新西兰",
+      "agency": "新西兰国家网络安全中心（NCSC）",
+      "title": "新西兰第三季度报告网络安全事件升至两年高位，损失达590万新西兰元",
+      "original_title": "Cyber security incidents hit highest level in two years and financial losses surge",
+      "source_name": "新西兰国家网络安全中心",
+      "url": "https://www.ncsc.govt.nz/news/cyber-security-incidents-hit-highest-level-in-two-years-and-financial-losses-surge/",
+      "fact": "新西兰国家网络安全中心11月25日公布2026年第三季度数据，共收到1694起网络安全事件报告，高于上一季度的1129起。其中具有国家重要性的事件由92起增至179起，报告的直接经济损失达到590万新西兰元，环比增加118%。中心指出，人工智能正在改变网络威胁环境，并提醒组织和公众加强防护。",
+      "legal_status": "政府季度网络安全统计披露",
+      "domestic": false,
+      "verification_note": "已打开官方原文；25日内新增，根代理明确25日补稿不使用本条。",
+      "refs": [
+        "turn245054980view2"
+      ],
+      "id": "research-item-19",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:15:50+00:00",
+      "deduplication_note": "已对照11月19—25日完整标题及事实、24/25日最终补稿；无同一事件已刊重复。",
+      "background": "",
+      "outlook": ""
+    },
+    {
+      "key": "jp-park24-compensation",
+      "date": "2026-11-25",
+      "event_date": "2026-11-25",
+      "jurisdiction": "日本",
+      "agency": "Park24（Times Car）",
+      "title": "日本Times Car公布信息泄露慰问金安排，涉及约146万名驾驶证图像受影响者",
+      "original_title": "「タイムズカー」情報漏えい　見舞金来月から支払い　画像情報の約146万件対象",
+      "source_name": "朝日电视台",
+      "url": "https://news.tv-asahi.co.jp/news_economy/articles/000550485.html",
+      "fact": "日本共享汽车服务Times Car的运营方Park24于11月25日公布，计划自12月1日起向驾驶证图像等信息在此前攻击中外泄的用户发放慰问金，涉及约146万人，每人3000日元。现有会员可按安排选择现金或服务优惠，其他符合条件的对象以现金支付。此次新增进展是补偿安排；相关数据泄露发生在此前，媒体报道的整体受影响记录规模约为663万条。",
+      "legal_status": "企业数据泄露后补偿安排",
+      "domestic": false,
+      "verification_note": "已打开日文朝日电视台报道，并对照共同社转载；Park24官网访问403，记录替代来源而不标官网已查。",
+      "refs": [
+        "turn187952071view6",
+        "turn293162513search3"
+      ],
+      "id": "research-item-20",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:15:50+00:00",
+      "deduplication_note": "已对照11月19—25日完整标题及事实、24/25日最终补稿；无同一事件已刊重复。",
+      "background": "",
+      "outlook": ""
+    },
+    {
+      "key": "vn-ai-legal-information-draft",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "越南",
+      "agency": "越南司法部",
+      "title": "越南普法法令草案拟要求人工审核官方AI法律信息，并提供转人工机制",
+      "original_title": "Bảo đảm tuân thủ pháp luật khi ứng dụng trí tuệ nhân tạo trong phổ biến, giáo dục pháp luật",
+      "source_name": "越南司法部",
+      "url": "https://moj.gov.vn/portal/tin-tuc/chi-tiet/bao-am-tuan-thu-phap-luat-khi-ung-dung-tri-tue-nhan-tao-trong-pho-bien-giao-duc-phap-luat-tp3ukpabbb.html",
+      "fact": "越南司法部11月26日听取普法教育法实施法令草案修改情况汇报。草案共44条，截至25日收到69份书面意见。拟议条款要求，以机构名义正式发布的人工智能法律信息须经负责人或授权人员审核；直接提供自动法律问答的系统应使用官方法律数据，先行测试并定期检查质量，能够指向相关法律原文，并在需要时转交人工。草案还要求标明AI生成内容、告知用户正在与自动系统交互。",
+      "legal_status": "实施法令草案修改与审议准备",
+      "domestic": false,
+      "verification_note": "已读越南司法部原文195—202段，明确草案非生效法令，26日会议而非10月20日征求意见旧闻。",
+      "refs": [
+        "turn120663218view0"
+      ],
+      "id": "research-item-21",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:15:50+00:00",
+      "deduplication_note": "25日为CMC发布Clex及科技部讲话；本条为司法部26日实施法令草案修改会议，主体、文件与程序均不同。",
+      "background": "",
+      "outlook": ""
+    },
+    {
+      "key": "fr-cnil-algorithmic-video-decrees",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "法国",
+      "agency": "法国国家信息与自由委员会（CNIL）",
+      "title": "法国CNIL将算法视频监控配套法令草案列入全体会议审议",
+      "original_title": "Ordre du jour de la séance plénière du 26 novembre 2026",
+      "source_name": "法国国家信息与自由委员会",
+      "url": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-26-novembre-2026",
+      "fact": "法国国家信息与自由委员会公布11月26日全体会议议程，列入两项与算法视频监控有关的法令草案意见审议。其中一项拟修改2023-828号法令，涉及对视频保护系统及航空器摄像头采集图像实施算法处理的条件；另一项拟修改2023-939号法令，涉及相关试验的组织管理和评估。议程同时包括海事港口单一窗口个人数据处理，以及利用无人机图像开展渔业监督的配套规则。",
+      "legal_status": "监管机构审议法令草案意见的会议议程",
+      "domestic": false,
+      "verification_note": "已打开CNIL法文全文；只确认26日议程审议事项，未声称草案已通过或已生效。",
+      "refs": [
+        "turn898493461view2"
+      ],
+      "id": "research-item-22",
+      "source_checked": true,
+      "seven_day_dedup_checked": true,
+      "source_checked_at": "2026-11-27T03:15:50+00:00",
+      "deduplication_note": "已对照11月19—25日完整标题及事实、24/25日最终补稿；无同一事件已刊重复。",
+      "background": "",
+      "outlook": ""
+    }
+  ],
+  "domestic_source_coverage": [
+    {
+      "source_group": "中央机关",
+      "status": "inaccessible",
+      "reviewed_at": "2026-11-27T03:31:29+00:00",
+      "actual_audit_entries": 22,
+      "sources": [
+        "中国人民银行",
+        "中国证监会",
+        "中央网信办",
+        "全国人大",
+        "公安部",
+        "商务部",
+        "国务院",
+        "国家发展改革委",
+        "国家广播电视总局",
+        "国家数据局",
+        "国家知识产权局",
+        "国家能源局",
+        "国家金融监督管理总局",
+        "工业和信息化部",
+        "工信部科技司",
+        "市场监管总局",
+        "市场监管总局反垄断执法栏目",
+        "最高人民检察院",
+        "最高人民法院",
+        "海关总署",
+        "科技部",
+        "自然资源部"
+      ],
+      "inaccessible_sources": [
+        "中国证监会",
+        "全国人大",
+        "公安部",
+        "国务院",
+        "国家金融监督管理总局",
+        "最高人民检察院",
+        "海关总署",
+        "科技部"
+      ],
+      "notes": "该组巡视已实际执行；逐源成功/失败状态及替代复核保留在coverage.domestic_sources。存在部分入口失败或动态正文不可读，未宣称全部网站均成功可读。"
+    },
+    {
+      "source_group": "标准评测",
+      "status": "inaccessible",
+      "reviewed_at": "2026-11-27T03:31:29+00:00",
+      "actual_audit_entries": 6,
+      "sources": [
+        "CNCERT",
+        "中国信息通信研究院",
+        "全国人工智能标准化技术委员会TC28／中国电子技术标准化研究院",
+        "全国数据标准化技术委员会TC609",
+        "全国网络安全标准化技术委员会TC260",
+        "国家标准化管理委员会"
+      ],
+      "inaccessible_sources": [
+        "中国信息通信研究院",
+        "全国人工智能标准化技术委员会TC28／中国电子技术标准化研究院"
+      ],
+      "notes": "该组巡视已实际执行；逐源成功/失败状态及替代复核保留在coverage.domestic_sources。存在部分入口失败或动态正文不可读，未宣称全部网站均成功可读。"
+    },
+    {
+      "source_group": "重点地方",
+      "status": "inaccessible",
+      "reviewed_at": "2026-11-27T03:31:29+00:00",
+      "actual_audit_entries": 29,
+      "sources": [
+        "上海市数据局",
+        "上海数据局",
+        "中国雄安官网",
+        "内蒙古工信厅及能源局",
+        "内蒙古政务服务与数据局",
+        "北京市政府部门动态",
+        "北京市经济和信息化局",
+        "四川数据局",
+        "四川省经信厅及发改委",
+        "天津市数据局",
+        "山东省大数据局",
+        "广东数据局",
+        "广东省政务服务和数据管理局",
+        "广东网信网及省政务服务和数据管理局",
+        "广西数据及工信主管渠道",
+        "广西数据局",
+        "江苏数据局",
+        "江苏省数据局",
+        "河北雄安新区",
+        "浙江数据局",
+        "浙江省经信厅及省驻京办",
+        "海南数据局",
+        "海南省大数据发展中心",
+        "湖北省经信厅及数据局",
+        "福建省数据管理局",
+        "贵州数据局",
+        "贵州省大数据发展管理局",
+        "重庆人大及大数据/经信渠道",
+        "重庆数据局"
+      ],
+      "inaccessible_sources": [
+        "四川数据局",
+        "山东省大数据局",
+        "广西数据及工信主管渠道",
+        "广西数据局",
+        "江苏数据局"
+      ],
+      "notes": "该组巡视已实际执行；逐源成功/失败状态及替代复核保留在coverage.domestic_sources。存在部分入口失败或动态正文不可读，未宣称全部网站均成功可读。"
+    },
+    {
+      "source_group": "权威媒体",
+      "status": "inaccessible",
+      "reviewed_at": "2026-11-27T03:31:29+00:00",
+      "actual_audit_entries": 7,
+      "sources": [
+        "中新网",
+        "人民网",
+        "央广网",
+        "央视",
+        "新华社",
+        "新华社全总发布会原稿",
+        "新华网"
+      ],
+      "inaccessible_sources": [
+        "中新网",
+        "人民网"
+      ],
+      "notes": "该组巡视已实际执行；逐源成功/失败状态及替代复核保留在coverage.domestic_sources。存在部分入口失败或动态正文不可读，未宣称全部网站均成功可读。"
+    },
+    {
+      "source_group": "法治媒体",
+      "status": "inaccessible",
+      "reviewed_at": "2026-11-27T03:31:29+00:00",
+      "actual_audit_entries": 4,
+      "sources": [
+        "人民法院报",
+        "人民邮电报",
+        "检察日报",
+        "法治网"
+      ],
+      "inaccessible_sources": [
+        "人民法院报",
+        "人民邮电报",
+        "检察日报"
+      ],
+      "notes": "该组巡视已实际执行；逐源成功/失败状态及替代复核保留在coverage.domestic_sources。存在部分入口失败或动态正文不可读，未宣称全部网站均成功可读。"
+    },
+    {
+      "source_group": "财经媒体",
+      "status": "inaccessible",
+      "reviewed_at": "2026-11-27T03:31:29+00:00",
+      "actual_audit_entries": 12,
+      "sources": [
+        "21世纪经济报道",
+        "第一财经",
+        "经济观察报",
+        "证券时报",
+        "财新",
+        "财经",
+        "财联社／东方财富网"
+      ],
+      "inaccessible_sources": [
+        "21世纪经济报道",
+        "证券时报",
+        "财经"
+      ],
+      "notes": "该组巡视已实际执行；逐源成功/失败状态及替代复核保留在coverage.domestic_sources。存在部分入口失败或动态正文不可读，未宣称全部网站均成功可读。"
+    },
+    {
+      "source_group": "综合媒体",
+      "status": "inaccessible",
+      "reviewed_at": "2026-11-27T03:31:29+00:00",
+      "actual_audit_entries": 10,
+      "sources": [
+        "中国新闻周刊",
+        "南方周末",
+        "南方都市报",
+        "新京报",
+        "澎湃",
+        "澎湃新闻",
+        "界面",
+        "界面新闻"
+      ],
+      "inaccessible_sources": [
+        "澎湃",
+        "界面"
+      ],
+      "notes": "该组巡视已实际执行；逐源成功/失败状态及替代复核保留在coverage.domestic_sources。存在部分入口失败或动态正文不可读，未宣称全部网站均成功可读。"
+    },
+    {
+      "source_group": "科技网安媒体",
+      "status": "inaccessible",
+      "reviewed_at": "2026-11-27T03:31:29+00:00",
+      "actual_audit_entries": 19,
+      "sources": [
+        "36氪",
+        "FreeBuf",
+        "InfoQ",
+        "品玩",
+        "安全内参",
+        "机器之心",
+        "极客公园",
+        "虎嗅",
+        "量子位",
+        "钛媒体",
+        "雷峰网"
+      ],
+      "inaccessible_sources": [
+        "36氪",
+        "FreeBuf",
+        "安全内参",
+        "机器之心",
+        "虎嗅"
+      ],
+      "notes": "该组巡视已实际执行；逐源成功/失败状态及替代复核保留在coverage.domestic_sources。存在部分入口失败或动态正文不可读，未宣称全部网站均成功可读。"
+    }
+  ],
+  "pre_integration_checks": {
+    "sources": true,
+    "legal_status": true,
+    "original_titles": true,
+    "timeliness": true,
+    "previous_day_event_deduplication": true,
+    "seven_day_history_deduplication": true,
+    "domestic_major_omission_review": true,
+    "local_language_scan_korea_japan_vietnam": true,
+    "prior_background_checked": false,
+    "natural_chinese_reviewed": true,
+    "background_outlook": false,
+    "foreign_layout": false,
+    "foreign_layout_structure": true
+  },
+  "final_reviewed_at": "2026-11-27T11:33:26+08:00",
+  "validation": {
+    "html_json_parity": true,
+    "unique_item_ids": true,
+    "foreign_original_titles": true,
+    "source_links_and_dates": true,
+    "checked_at": "2026-11-27T11:33:26+08:00",
+    "layout_scope": "沿用已发布事实版结构，逐项核对外文原题、事实段和来源顺序；桌面移动端的构建验收由Pages执行。"
+  }
+}
