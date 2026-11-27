@@ -19,7 +19,7 @@ RESULTS = []
 
 def header_metrics(page):
     return page.evaluate('''() => {
-      const brand=document.querySelector('.brand'), header=document.querySelector('.top');
+      const brand=document.querySelector('.brand'), header=document.querySelector('.top, .masthead');
       const b=brand.getBoundingClientRect(), h=header.getBoundingClientRect();
       const controls=[...document.querySelectorAll('.account-nav>a,.account-nav>button')].map(x=>x.getBoundingClientRect());
       return {brand:brand.textContent.trim(),brandHeight:b.height,headerHeight:h.height,

@@ -4,3 +4,8 @@
   .top .account-nav{flex:0 0 100%;width:100%;margin:0;justify-content:flex-start;flex-wrap:wrap;gap:8px 10px}
   .account-favorites{border-left:0;padding-left:0}
 }
+
+/* Keep the editorial homepage's existing three personal-tool links; add only the missing user/logout controls. */
+.masthead>.site-tools.account-nav{flex-wrap:wrap;gap:8px 12px}
+.masthead>.site-tools.account-nav .account-favorites{border-left:0;padding-left:0}
+@media(max-width:900px){.masthead>.site-tools.account-nav{margin:12px 0 0;justify-content:flex-start;gap:8px 10px}.masthead>.site-tools.account-nav .account-link{margin-left:0}}
