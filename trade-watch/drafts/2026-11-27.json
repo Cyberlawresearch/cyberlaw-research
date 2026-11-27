@@ -1,7 +1,7 @@
 {
   "date": "2026-11-27",
   "base_main_sha": "ea663df919873b5eaa776ab93b143bcd27113700",
-  "phase": "publication_ready",
+  "phase": "main_written",
   "publication_ready": true,
   "items": [
     {
@@ -177,11 +177,61 @@
   },
   "last_error": null,
   "next_actions": [
-    "写入当期正文、首页和归档",
-    "回读与公开页面验收"
+    "核验最终提交对应的Pages部署及三份公开页面和来源专项诊断"
   ],
   "dedup": "2026-11-20至26七期完整正文读取、标题及事件比对；英国钢材、印度铝型材为新实施节点及延期；欧盟附件IV名单为独立正式调整。",
   "source_verification": "原始公告逐一打开，印度PDF已核对页面；荷兰政策表态使用Reuters。",
   "final_scan": "已复查11月26日至27日最新贸易、海关、出口管制动态，覆盖日本、韩国、澳大利亚补查；未发现需额外纳入的已核实重大新事项。",
-  "summary": "欧盟调整俄罗斯出口限制实体名单；加拿大对华建筑电缆作出损害终裁；美国延长汽车美国成分认定申请期限；英国钢材授权用途减免实施并披露出口管制执法，印度延长铝挤压型材调查意见期。"
+  "summary": "欧盟调整俄罗斯出口限制实体名单；加拿大对华建筑电缆作出损害终裁；美国延长汽车美国成分认定申请期限；英国钢材授权用途减免实施并披露出口管制执法，印度延长铝挤压型材调查意见期。",
+  "publication_attempt": {
+    "commit": "20e2c9e54880d92bd6c32e5ddf8e31d8d12caf9a",
+    "main_verified": true,
+    "issue_count": 8,
+    "source_count": 10,
+    "source_urls_match": true,
+    "files": [
+      "trade-watch/issues/2026-11-27.html",
+      "trade-watch/index.html",
+      "trade-watch/archive.html"
+    ],
+    "runs": [
+      {
+        "id": 45920560874,
+        "name": "Trade Watch source diagnostics",
+        "status": "completed",
+        "conclusion": "skipped",
+        "html_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/45920560874"
+      },
+      {
+        "id": 45920560896,
+        "name": "网信法研究每日测评与维护",
+        "status": "completed",
+        "conclusion": "skipped",
+        "html_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/45920560896"
+      },
+      {
+        "id": 45920560738,
+        "name": "每日推送发布保障",
+        "status": "completed",
+        "conclusion": "skipped",
+        "html_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/45920560738"
+      },
+      {
+        "id": 45920560746,
+        "name": "Trade Watch publication guard",
+        "status": "in_progress",
+        "conclusion": null,
+        "html_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/45920560746"
+      },
+      {
+        "id": 45920553737,
+        "name": "Deploy static site to Pages",
+        "status": "in_progress",
+        "conclusion": null,
+        "html_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/45920553737"
+      }
+    ],
+    "public_check": "两次尝试打开三份公开页面（带最终提交参数及无参数）均返回 Internal Error / URL is not accessible via this tool，未通过公开内容验收。",
+    "published": false
+  }
 }
