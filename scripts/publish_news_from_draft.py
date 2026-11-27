@@ -92,9 +92,13 @@ def verify(root, draft, now, *, backfill=False):
     demand(scan_time.tzinfo is not None, "Final scan timestamp needs timezone")
     demand(timedelta(0) <= now - scan_time.astimezone(TZ) <= timedelta(hours=2),
            "Final news scan older than two hours; recheck sources before release")
-    coverage = draft.get("coverage") or draft.get("domestic_source_coverage") or []
+    coverage = draft.get("domestic_source_coverage", draft.get("coverage")) or []
     demand(isinstance(coverage, list) and len(coverage) >= 7,
            "Seven domestic source groups required")
+    groups = [entry.get("source_group") for entry in coverage]
+    demand(all(isinstance(group, str) and group.strip() for group in groups),
+           "Missing domestic source group")
+    demand(len(set(groups)) == len(groups), "Duplicate domestic source group")
     for entry in coverage:
         demand(entry.get("source_group") and entry.get("source_name") and entry.get("checked_at"),
                "Incomplete domestic source coverage entry")
