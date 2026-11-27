@@ -6,9 +6,9 @@
   "page": "articles/2026-11-27-tech-law-brief.html",
   "mode": "fact_only",
   "analysis_pending": false,
-  "news_count": 12,
+  "news_count": 17,
   "distribution": {
-    "domestic": 2,
+    "domestic": 7,
     "international": 10
   },
   "checked_at": null,
@@ -16,9 +16,9 @@
   "last_news_scan_at": null,
   "content_verified": false,
   "publication_ready": false,
-  "base_main_sha": "441059fb76fa98c98d80f9f9b9e1a0e0f7c5dbd0",
+  "base_main_sha": "7de9238b71dcc21bed401563154a92b85da051b6",
   "checks": {
-    "all_sources_opened_for_candidates": true,
+    "all_sources_opened_for_candidates": false,
     "domestic_major_omission_review": false,
     "domestic_under_six_special_search": false,
     "local_language_scan_korea_japan_vietnam": false,
@@ -599,7 +599,114 @@
         "url": "https://www.reuters.com/world/data-chinese-ai-firm-minimax-accessed-by-unidentified-parties-researcher-says-2026-11-26/",
         "reason": "与24、26日OpenRouter及StreamLake相关事件交叉，需辨别研究者新披露是否实质新增，暂不计数"
       }
-    ]
+    ],
+    "alternative_source_review": {
+      "method": "政府网站访问受阻时，检索其他政府网站正式转载、新华社、人民网、中新网、可靠财经和行业媒体，阅读检索服务提供的具体正文并交叉核对；直接打开失败不标作成功。",
+      "items": [
+        {
+          "key": "cn-decentralized-digital-identity",
+          "url": "https://www.cac.gov.cn/2026-11/27/c_1797537998148556.htm",
+          "additional_sources": [
+            {
+              "source_name": "人民网",
+              "url": "https://society.people.com.cn/n1/2026/1127/c1008-40841935.html",
+              "title": "《分布式数字身份互通互认应用规定》答记者问"
+            },
+            {
+              "source_name": "第一财经",
+              "url": "https://www.yicai.com/news/103458166.html",
+              "title": "国家网信办等十一部门联合公布《分布式数字身份互通互认应用规定》"
+            },
+            {
+              "source_name": "江苏网信网",
+              "url": "https://www.jswx.gov.cn/fwhd/tzgg/202611/t20261127_1375513.shtml",
+              "title": "关于印发《分布式数字身份互通互认应用规定》的通知"
+            }
+          ],
+          "notes": "两种检索渠道取得正式通知、具体条文和施行日期，并与人民网、第一财经、江苏网信网转载交叉核对；单独打开页面请求返回Cache miss，保留访问失败记录，不将其写为直接打开成功。"
+        },
+        {
+          "key": "cn-csrc-online-misleading-information",
+          "url": "https://www.csrc.gov.cn/csrc/c100028/c7673660/content.shtml",
+          "additional_sources": [
+            {
+              "source_name": "新华社（人民网转载）",
+              "url": "https://finance.people.com.cn/n1/2026/1127/c1004-40841939.html",
+              "title": "证监会严肃查处两起编造传播证券市场误导性信息案件"
+            },
+            {
+              "source_name": "中国新闻网",
+              "url": "https://www.chinanews.com/cj/2026/11-27/10738924.shtml",
+              "title": "中国证监会严肃查处两起编造传播证券市场误导性信息案件"
+            }
+          ],
+          "notes": "取得证监会通报正文及新华社、中新网报道全文；不推断当事人使用AI；区别于11月21日证监会公安部联合公布的IPO谣言典型案例。单独打开人民网返回Cache miss。"
+        },
+        {
+          "key": "cn-embodied-intelligence-standard-registration",
+          "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=613F9CF0387F192FE06397BE0A0A77A8",
+          "additional_sources": [
+            {
+              "source_name": "全国标准信息公共服务平台",
+              "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=613F9C98B2B81931E06397BE0A0A7FBA",
+              "title": "具身智能 众包数据采集和纳管技术规范"
+            },
+            {
+              "source_name": "全国标准信息公共服务平台",
+              "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=613F9C98B2B41931E06397BE0A0A7FBA",
+              "title": "具身智能 端侧算力性能测试方法"
+            },
+            {
+              "source_name": "全国标准信息公共服务平台",
+              "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=613F9C98B2B71931E06397BE0A0A7FBA",
+              "title": "具身智能 域控制器通用技术规范"
+            }
+          ],
+          "notes": "两个检索渠道返回登记详情及登记日期、起草状态；这是11月27日具体新登记，区别于11月23日已刊具身智能数据标准研制概况。直接打开详情请求返回Cache miss。"
+        },
+        {
+          "key": "cn-caict-orbit-computing-test",
+          "url": "https://finance.people.com.cn/n1/2026/1126/c1004-40841015.html",
+          "additional_sources": [
+            {
+              "source_name": "科技日报（北京国际科技创新中心转载）",
+              "url": "https://www.ncsti.gov.cn/kjdt/kjrd/202611/t20261127_266114.html",
+              "title": "“纸面算力”之外，在轨到底能跑多少？信通院公布国星宇航“星算”计划首批实测数据"
+            },
+            {
+              "source_name": "澎湃新闻",
+              "url": "https://www.thepaper.cn/newsDetail_forward_34566081",
+              "title": "“纸面算力”之外，在轨到底能跑多少？信通院公布国星宇航“星算”计划首批实测数据"
+            }
+          ],
+          "notes": "人民网11月26日14:29发布测试结果报道；科技日报11月27日转载及澎湃新闻26日报道有具体技术数据，企业25日晚公告披露，保留报道日期，不编造测试发生时间。科技日报转载页直接打开返回Cache miss。"
+        },
+        {
+          "key": "cn-hefei-token-voucher",
+          "url": "https://ah.people.com.cn/n2/2026/1127/c374164-41763130.html",
+          "additional_sources": [],
+          "notes": "两种检索渠道均取得人民网安徽频道转自合高新的完整申领信息，包含时间、条件和管理要求；直接打开返回Cache miss，待进一步取得地方正式发布入口。"
+        }
+      ],
+      "duplicate_exclusions": [
+        {
+          "title": "国家数据局AI用数规则征求意见",
+          "reason": "11月26日已刊；11月27日新华社、中新网转载不构成新增动作",
+          "url": "https://www.chinanews.com.cn/gn/2026/11-27/10738591.shtml"
+        },
+        {
+          "title": "广东算力发展十五五规划",
+          "reason": "11月26日已刊；人民网27日转述同一规划",
+          "url": "https://gd.people.com.cn/n2/2026/1127/c123932-41762714.html"
+        },
+        {
+          "title": "八部门服务贸易十五五规划、新一代通信网建设实施方案、平台信用共治",
+          "reason": "11月26日已刊",
+          "url": "https://www.cnfin.com/zs-lb/detail/20261127/4500970_1.html"
+        }
+      ],
+      "complete": false
+    }
   },
   "deduplication": {
     "checked_history_dates": [
@@ -616,12 +723,15 @@
   },
   "final_html_sha256": null,
   "next_actions": [
-    "完成国内各组、地方和媒体逐站巡视，国内少于6条专项搜索",
-    "完成各国际监管机构及日韩越当地语核验",
-    "逐事件最终去重、核对原题和72小时窗口并重扫",
-    "完成后基于最新main原子提交并线上验收"
+    "已补5条国内候选，继续使用可靠替代来源获取可读原文并复核；并行巡视未完成来源组，保留访问失败事实",
+    "复核全期候选、近七日事件去重及准确72小时窗口；不以单站访问成功为必要条件，但不虚构直接访问",
+    "内容核验完成后基于最新main原子提交并验收Pages"
   ],
-  "last_error": "部分政府网站403、521、超时或正文不可读；全面来源组及终检尚未完成。不是本次Pages部署失败。",
+  "last_error": {
+    "stage": "source_recheck",
+    "error": "Direct page open returned Cache miss for several sources; indexed article bodies and alternate reports were readable.",
+    "time": null
+  },
   "publication": null,
   "items": [
     {
@@ -899,6 +1009,206 @@
       "background": "",
       "outlook": "",
       "additional_sources": []
+    },
+    {
+      "key": "cn-decentralized-digital-identity",
+      "date": "2026-11-27",
+      "event_date": "2026-11-27",
+      "document_date": "2026-11-13",
+      "agency": "国家网信办等十一部门",
+      "title": "十一部门公布分布式数字身份互通互认规定，鼓励智能体身份标识和跨境身份互认",
+      "original_title": "关于印发《分布式数字身份互通互认应用规定》的通知",
+      "source_name": "中国网信网",
+      "url": "https://www.cac.gov.cn/2026-11/27/c_1797537998148556.htm",
+      "fact": "11月27日19时，国家网信办等十一部门公开《分布式数字身份互通互认应用规定》，自2027年3月1日起施行。规定明确身份链运营方、权威身份认证机构、应用服务机构和可验证凭证签发、应用机构的责任，要求相关服务机构满足安全要求并备案。规定鼓励分布式数字身份用于智能体身份标识、行业数据授权及安全可控的跨境身份互认，并限制应用服务机构非必要关联用户其他账号数据及将身份验证行为数据用于跨场景用户画像、精准营销。",
+      "legal_status": "正式印发并公开，2027年3月1日起施行",
+      "additional_sources": [
+        {
+          "source_name": "人民网",
+          "url": "https://society.people.com.cn/n1/2026/1127/c1008-40841935.html",
+          "title": "《分布式数字身份互通互认应用规定》答记者问"
+        },
+        {
+          "source_name": "第一财经",
+          "url": "https://www.yicai.com/news/103458166.html",
+          "title": "国家网信办等十一部门联合公布《分布式数字身份互通互认应用规定》"
+        },
+        {
+          "source_name": "江苏网信网",
+          "url": "https://www.jswx.gov.cn/fwhd/tzgg/202611/t20261127_1375513.shtml",
+          "title": "关于印发《分布式数字身份互通互认应用规定》的通知"
+        }
+      ],
+      "verification_note": "两种检索渠道取得正式通知、具体条文和施行日期，并与人民网、第一财经、江苏网信网转载交叉核对；单独打开页面请求返回Cache miss，保留访问失败记录，不将其写为直接打开成功。",
+      "jurisdiction": "中国",
+      "domestic": true,
+      "id": "brief-2026-11-27-13",
+      "source_checked": false,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月20—26日各期记录标题，未发现同一新增动作；待整期逐事件最终复核。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "indexed_article_text_read": true,
+        "direct_open_success": false,
+        "direct_open_error": "Cache miss",
+        "cross_source_checked": true
+      }
+    },
+    {
+      "key": "cn-csrc-online-misleading-information",
+      "date": "2026-11-27",
+      "event_date": "2026-11-27",
+      "agency": "中国证监会",
+      "title": "证监会披露两起网络平台传播证券市场误导性信息行政处罚",
+      "original_title": "中国证监会严肃查处两起编造传播证券市场误导性信息案件",
+      "source_name": "中国证监会",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7673660/content.shtml",
+      "fact": "11月27日，中国证监会公开两起编造、传播证券市场误导性信息案件的处罚情况。两名当事人在网络平台分别发布涉及中公教育、共进股份的误导性信息，相关信息传播后两家公司股价出现异常波动。证监会对当事人没收违法所得并处罚款，通报未列明具体金额。",
+      "legal_status": "行政处罚情况公开",
+      "additional_sources": [
+        {
+          "source_name": "新华社（人民网转载）",
+          "url": "https://finance.people.com.cn/n1/2026/1127/c1004-40841939.html",
+          "title": "证监会严肃查处两起编造传播证券市场误导性信息案件"
+        },
+        {
+          "source_name": "中国新闻网",
+          "url": "https://www.chinanews.com/cj/2026/11-27/10738924.shtml",
+          "title": "中国证监会严肃查处两起编造传播证券市场误导性信息案件"
+        }
+      ],
+      "verification_note": "取得证监会通报正文及新华社、中新网报道全文；不推断当事人使用AI；区别于11月21日证监会公安部联合公布的IPO谣言典型案例。单独打开人民网返回Cache miss。",
+      "jurisdiction": "中国",
+      "domestic": true,
+      "id": "brief-2026-11-27-14",
+      "source_checked": false,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月20—26日各期记录标题，未发现同一新增动作；待整期逐事件最终复核。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "indexed_article_text_read": true,
+        "direct_open_success": false,
+        "direct_open_error": "Cache miss",
+        "cross_source_checked": true
+      }
+    },
+    {
+      "key": "cn-embodied-intelligence-standard-registration",
+      "date": "2026-11-27",
+      "event_date": "2026-11-27",
+      "agency": "国家标准委、TC28及人工智能分会",
+      "title": "具身智能世界模型、众包数据采集等国家标准化指导性技术文件登记项目公布",
+      "original_title": "具身智能 世界模型技术要求；具身智能 众包数据采集和纳管技术规范",
+      "source_name": "全国标准信息公共服务平台",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=613F9CF0387F192FE06397BE0A0A77A8",
+      "fact": "全国标准信息公共服务平台11月27日登记多项具身智能国家标准化指导性技术文件项目，涉及世界模型、众包数据采集与纳管、端侧算力性能测试及域控制器。相关项目由全国信息技术标准化技术委员会归口、人工智能分会执行，世界模型和众包数据项目登记号分别为20266037-Z-469和20266034-Z-469，均处于起草阶段。",
+      "legal_status": "国家标准化指导性技术文件登记、起草阶段",
+      "additional_sources": [
+        {
+          "source_name": "全国标准信息公共服务平台",
+          "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=613F9C98B2B81931E06397BE0A0A7FBA",
+          "title": "具身智能 众包数据采集和纳管技术规范"
+        },
+        {
+          "source_name": "全国标准信息公共服务平台",
+          "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=613F9C98B2B41931E06397BE0A0A7FBA",
+          "title": "具身智能 端侧算力性能测试方法"
+        },
+        {
+          "source_name": "全国标准信息公共服务平台",
+          "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=613F9C98B2B71931E06397BE0A0A7FBA",
+          "title": "具身智能 域控制器通用技术规范"
+        }
+      ],
+      "verification_note": "两个检索渠道返回登记详情及登记日期、起草状态；这是11月27日具体新登记，区别于11月23日已刊具身智能数据标准研制概况。直接打开详情请求返回Cache miss。",
+      "jurisdiction": "中国",
+      "domestic": true,
+      "id": "brief-2026-11-27-15",
+      "source_checked": false,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月20—26日各期记录标题，未发现同一新增动作；待整期逐事件最终复核。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "indexed_article_text_read": true,
+        "direct_open_success": false,
+        "direct_open_error": "Cache miss",
+        "cross_source_checked": true
+      }
+    },
+    {
+      "key": "cn-caict-orbit-computing-test",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "agency": "中国信息通信研究院云计算与数字化研究所",
+      "title": "中国信通院公开星算卫星第三方在轨能力测试数据",
+      "original_title": "中国信通院云大所发布国星宇航“星算”计划最新测试数据",
+      "source_name": "人民网",
+      "url": "https://finance.people.com.cn/n1/2026/1126/c1004-40841015.html",
+      "fact": "11月26日，人民网报道中国信通院云计算与数字化研究所公开国星宇航“星算”计划02组卫星在轨能力测试结果。测试覆盖算力载荷配置、整星功耗、散热、峰值算力和在轨大模型训练及微调能力，五项测试均通过。科技日报报道，天秤座卫星标称算力为32 PFLOPS（FP8），已完成通义千问Qwen3-32B模型在轨训练和推理验证。",
+      "legal_status": "第三方测试结果公开",
+      "additional_sources": [
+        {
+          "source_name": "科技日报（北京国际科技创新中心转载）",
+          "url": "https://www.ncsti.gov.cn/kjdt/kjrd/202611/t20261127_266114.html",
+          "title": "“纸面算力”之外，在轨到底能跑多少？信通院公布国星宇航“星算”计划首批实测数据"
+        },
+        {
+          "source_name": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34566081",
+          "title": "“纸面算力”之外，在轨到底能跑多少？信通院公布国星宇航“星算”计划首批实测数据"
+        }
+      ],
+      "verification_note": "人民网11月26日14:29发布测试结果报道；科技日报11月27日转载及澎湃新闻26日报道有具体技术数据，企业25日晚公告披露，保留报道日期，不编造测试发生时间。科技日报转载页直接打开返回Cache miss。",
+      "jurisdiction": "中国",
+      "domestic": true,
+      "id": "brief-2026-11-27-16",
+      "source_checked": false,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月20—26日各期记录标题，未发现同一新增动作；待整期逐事件最终复核。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "indexed_article_text_read": true,
+        "direct_open_success": false,
+        "direct_open_error": "Cache miss",
+        "cross_source_checked": true
+      }
+    },
+    {
+      "key": "cn-hefei-token-voucher",
+      "date": "2026-11-27",
+      "event_date": "2026-11-25",
+      "agency": "合肥高新区",
+      "title": "合肥高新区试点发放词元资源卡，符合条件的经营主体可申领10亿词元",
+      "original_title": "token免费领！合肥高新区联合科大讯飞发放“高新星火卡”！",
+      "source_name": "人民网安徽频道",
+      "url": "https://ah.people.com.cn/n2/2026/1127/c374164-41763130.html",
+      "fact": "11月27日，人民网安徽频道发布合肥高新区首批“高新星火卡”试点申领消息，申领期为11月25日至12月10日。注册地位于区内的符合条件的人工智能企业、新注册一人公司及赛事优质项目，可申请10亿词元的模型资源包。资源包自发放之日起两个月内有效，仅限申请主体自用，不得转借、转让或倒卖；申领信息造假将纳入诚信记录。",
+      "legal_status": "地方产业扶持试点申领",
+      "additional_sources": [],
+      "verification_note": "两种检索渠道均取得人民网安徽频道转自合高新的完整申领信息，包含时间、条件和管理要求；直接打开返回Cache miss，待进一步取得地方正式发布入口。",
+      "jurisdiction": "中国",
+      "domestic": true,
+      "id": "brief-2026-11-27-17",
+      "source_checked": false,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月20—26日各期记录标题，未发现同一新增动作；待整期逐事件最终复核。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "indexed_article_text_read": true,
+        "direct_open_success": false,
+        "direct_open_error": "Cache miss",
+        "cross_source_checked": false
+      }
     }
   ]
 }
