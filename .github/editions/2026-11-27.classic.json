@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-27",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-27-th-green-political-obligation.html",
+  "target_path": "articles/2026-11-27-th-green-political-obligation.html",
+  "book": {
+    "author": "Thomas Hill Green（托马斯·希尔·格林）",
+    "original_title": "Lectures on the Principles of Political Obligation",
+    "publisher": "Longmans, Green and Co Ltd",
+    "year": "1911",
+    "edition": "1911年重印本（据格林《哲学著作》第二卷重印，附鲍桑葵序言）"
+  },
+  "source_urls": [
+    "https://alb-lang.org/library/read/61889",
+    "https://www.gutenberg.org/cache/epub/61889/pg61889.html",
+    "https://davidmhart.com/liberty/OtherWorks/Green/1879-PoliticalObligation/index.html",
+    "https://ci.nii.ac.jp/ncid/BB20044076",
+    "https://plato.stanford.edu/entries/green/",
+    "https://academic.oup.com/book/11394/chapter-abstract/160066277",
+    "https://philpapers.org/rec/PRIGPO"
+  ],
+  "original_verification": "核对1911年重印本题名页、鲍桑葵序言、编者及转录者说明、前置自由讲演25段、主体A—P十五部分（无J）共251段的完整细目及各部分具有代表性的原文论证段落，核查最后一节与附录；以ALB Library完整转录为主并对照Gutenberg索引、1895年独立本书目。系统核对覆盖全书结构和全部主题，非逐字校勘或逐段全文通读。",
+  "chapter_sources": [
+    "https://alb-lang.org/library/read/61889",
+    "https://www.gutenberg.org/cache/epub/61889/pg61889.html"
+  ],
+  "critics": [
+    {
+      "name": "H. A. Prichard",
+      "work": "Green: Political Obligation, in Moral Writings (2002)",
+      "url": "https://academic.oup.com/book/11394/chapter-abstract/160066277",
+      "checked": "出版方公开摘要与PhilPapers同一章书目、摘要；未访问完整章节。"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html全部历史入口",
+    "classics-history.html 21期历史标题",
+    "data/books.json",
+    "main递归树及本日路径"
+  ],
+  "duplicate_found": false,
+  "sections": 40,
+  "prose_length": 9613,
+  "han_characters": 8543,
+  "checked_at": "2026-11-27",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "article_blob_sha": "9215c8af6c1331a2b4da733bb629d2a32ec8c8ec",
+  "base_main_sha": "441059fb76fa98c98d80f9f9b9e1a0e0f7c5dbd0",
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
