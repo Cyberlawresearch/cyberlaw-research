@@ -3,11 +3,49 @@
   "base_main_sha": "ea663df919873b5eaa776ab93b143bcd27113700",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "eu-annex-iv",
+      "date": "2026-11-25",
+      "title": "欧盟新增15家俄罗斯出口限制实体并移除中国玉沙集团",
+      "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1795697667652&uri=CELEX%3A32026R2632",
+      "stage": "26日公布、27日生效"
+    },
+    {
+      "id": "ca-cables",
+      "date": "2026-11-26",
+      "title": "加拿大对华非铠装建筑电缆作出损害终裁",
+      "source": "https://www.canada.ca/en/international-trade-tribunal/news/2026/11/tribunal-finds-injurycertain-unarmoured-building-cables-from-china.html",
+      "stage": "终裁，双反征收"
+    },
+    {
+      "id": "us-usmca-auto",
+      "date": "2026-11-25",
+      "title": "美国汽车美国成分认定延期",
+      "source": "https://www.federalregister.gov/documents/2026/11/27/2026-24076/extending-deadlines-for-submissions-by-importers-of-automobiles-qualifying-for-preferential-tariff",
+      "stage": "25日预公开，27日刊登"
+    },
+    {
+      "id": "nl-match",
+      "date": "2026-11-26",
+      "title": "荷兰政府反对美国MATCH法案",
+      "source": "https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/",
+      "stage": "政策表态"
+    }
+  ],
+  "coverage": {
+    "US": "Federal Register、NHTSA、USTR 检索",
+    "EU": "理事会、EUR-Lex、贸易措施检索",
+    "UK": "TRA、海关法规、HMRC 检索",
+    "Japan": "METI、MOF、JETRO 检索",
+    "Korea": "MOTIR及韩文检索",
+    "India": "DGTR检索",
+    "Canada": "CBSA、CITT检索",
+    "Australia": "反倾销委员会检索"
+  },
   "last_error": null,
   "next_actions": [
-    "读取近7期完整正文",
-    "法域巡视、来源核验与去重"
+    "核实印度延期及英国钢铁授权用途生效、HMRC执法",
+    "复核其余原文、近7期去重和终扫"
   ]
 }
