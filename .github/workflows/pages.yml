@@ -132,10 +132,16 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          name: github-pages-${{ github.run_attempt }}
           path: '.'
+      # Artifact metadata can lag behind upload completion; each retry has its own artifact.
+      - name: Allow uploaded artifact metadata to propagate
+        run: sleep 10
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
       - name: Verify deployed contextual reading
         run: python scripts/context_browser_test.py --output "$RUNNER_TEMP/context-tests/deployed/results.json"
       - name: Verify deployed current columns and entry points
