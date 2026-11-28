@@ -275,6 +275,110 @@
         "notes": "查阅广电新规正式施行报道，结合广电总局两份原文核对。",
         "group": "权威媒体",
         "checked_at": null
+      },
+      {
+        "source": "国务院",
+        "entry_url": "https://www.gov.cn/yaowen/liebiao/",
+        "status": "access_failed",
+        "notes": "403 Forbidden",
+        "group": "中央机关",
+        "checked_at": null
+      },
+      {
+        "source": "全国人大",
+        "entry_url": "https://www.npc.gov.cn/npc/",
+        "status": "access_failed",
+        "notes": "TimeoutError",
+        "group": "中央机关",
+        "checked_at": null
+      },
+      {
+        "source": "科技部",
+        "entry_url": "https://www.most.gov.cn/kjbgz/",
+        "status": "checked_no_qualifying_item",
+        "notes": "科技部工作列表直读，所见可见最新条目为11月16日，未发现窗口内条目；不等于其他栏目全面完成。",
+        "group": "中央机关",
+        "checked_at": null
+      },
+      {
+        "source": "国家发展改革委",
+        "entry_url": "https://www.ndrc.gov.cn/xwdt/",
+        "status": "checked_no_qualifying_item",
+        "notes": "直读新闻及通知栏目，26日油价及对外投资格式文本不属于本栏重点。",
+        "group": "中央机关",
+        "checked_at": null
+      },
+      {
+        "source": "公安部",
+        "entry_url": "https://www.mps.gov.cn/",
+        "status": "access_failed",
+        "notes": "521",
+        "group": "中央机关",
+        "checked_at": null
+      },
+      {
+        "source": "最高人民法院",
+        "entry_url": "https://www.court.gov.cn/zixun.html",
+        "status": "checked_no_qualifying_item",
+        "notes": "法院资讯列表直读，27日利乐垄断后继民事诉讼针对包装设备及材料，不属于本栏数字竞争范围；28日枫桥式法庭等非本栏重点。",
+        "group": "中央机关",
+        "checked_at": null
+      },
+      {
+        "source": "最高人民检察院",
+        "entry_url": "https://www.spp.gov.cn/spp/xwfbh/wsfbt/",
+        "status": "access_failed",
+        "notes": "403 Forbidden",
+        "group": "中央机关",
+        "checked_at": null
+      },
+      {
+        "source": "国家金融监督管理总局",
+        "entry_url": "https://www.nfra.gov.cn/",
+        "status": "access_failed",
+        "notes": "403 Forbidden",
+        "group": "中央机关",
+        "checked_at": null
+      },
+      {
+        "source": "海关总署",
+        "entry_url": "http://www.customs.gov.cn/",
+        "status": "access_failed",
+        "notes": "400 Timeout fetching",
+        "group": "中央机关",
+        "checked_at": null
+      },
+      {
+        "source": "国家知识产权局",
+        "entry_url": "https://www.cnipa.gov.cn/",
+        "status": "not_checked",
+        "notes": "直读首页，仍须继续核查专栏。",
+        "group": "中央机关",
+        "checked_at": null
+      },
+      {
+        "source": "国家能源局",
+        "entry_url": "https://www.nea.gov.cn/",
+        "status": "not_checked",
+        "notes": "直读首页，仍须补查算力能源政策专栏。",
+        "group": "中央机关",
+        "checked_at": null
+      },
+      {
+        "source": "自然资源部",
+        "entry_url": "https://www.mnr.gov.cn/",
+        "status": "access_failed",
+        "notes": "400 Timeout fetching",
+        "group": "中央机关",
+        "checked_at": null
+      },
+      {
+        "source": "国家广播电视总局",
+        "entry_url": "https://www.nrta.gov.cn/",
+        "status": "checked_with_candidates",
+        "notes": "首页直读，另核对两项广电运营规章及新华社11月27日正式施行报道。",
+        "group": "中央机关",
+        "checked_at": null
       }
     ],
     "international_notes": [
@@ -309,7 +413,17 @@
     "recovery_audit": {
       "date": "2026-11-28",
       "prior_issue_range": "2026-11-21—2026-11-27",
-      "notes": "已读取7期正文标题逐项初筛；补充中央机关、地方数据与算力、标准评测、司法执法、国内媒体及日、韩、越语反向检索。部分来源仅返回检索摘要或旧闻，未标记完成。"
+      "notes": "已读取7期正文标题逐项初筛；补充中央机关、地方数据与算力、标准评测、司法执法、国内媒体及日、韩、越语反向检索。部分来源仅返回检索摘要或旧闻，未标记完成。 后续再次实际访问13个中央机关入口，记录成功、拒绝和超时，仍须继续查阅地方、标准评测及媒体各指定来源。",
+      "publication_and_reader_status": {
+        "main_sha": "920d31435e57e155a30f37e5a74ce5652dfd20aa",
+        "pages_run_id": 46144913582,
+        "pages_deploy_job": 140978820066,
+        "pages_deploy_conclusion": "success",
+        "trade_source_run_id": 46145340449,
+        "reader_regression_run_id": 46145340375,
+        "reader_regression_artifact_id": 15263178116,
+        "reader_regression": "13项隔离样例通过，deployed-reader-journey失败且detail为空；截图定位到莱斯格经典文章页面，尚未确认具体断言，未修改测试或公共脚本。"
+      }
     }
   },
   "deduplication": {
