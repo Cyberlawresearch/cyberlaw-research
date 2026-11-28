@@ -2,21 +2,21 @@
   "date": "2026-11-28",
   "column": "brief",
   "state": "draft",
-  "phase": "research",
+  "phase": "supplementary-verification",
   "page": "articles/2026-11-28-tech-law-brief.html",
   "mode": "facts_only",
   "analysis_pending": true,
-  "news_count": 15,
+  "news_count": 20,
   "distribution": {
-    "domestic": 4,
-    "international": 11
+    "domestic": 7,
+    "international": 13
   },
   "checked_at": null,
   "updated_at": null,
   "last_news_scan_at": null,
   "content_verified": false,
   "publication_ready": false,
-  "base_main_sha": "7b4a315ebb2e77aa05551e8fe18dbd1a461363f2",
+  "base_main_sha": "920d31435e57e155a30f37e5a74ce5652dfd20aa",
   "checks": {
     "all_sources_opened_for_candidates": false,
     "domestic_major_omission_review": false,
@@ -243,11 +243,44 @@
         "status": "not_checked",
         "notes": "检索新华社、人民网、中新网、第一财经、澎湃、证券时报；每日经济新闻与天津日报打开正文；其余指定来源未全量完成。",
         "checked_at": null
+      },
+      {
+        "source": "国家数据局（PC原文）",
+        "entry_url": "https://www.nda.gov.cn/sjj/swdt/dfdt/1127/20261127194051984062960_pc.html",
+        "status": "checked_with_candidates",
+        "notes": "天津市数据条例全文直读成功，已替换此前无法直开的移动端链接。",
+        "group": "中央机关",
+        "checked_at": null
+      },
+      {
+        "source": "国家数据局（11月28日最新动态）",
+        "entry_url": "https://www.nda.gov.cn/sjj/jgsz/jld/llh/llhldhd/1128/20261128190356539448068_pc.html",
+        "status": "checked_with_candidates",
+        "notes": "亚太数智赋能平台启动建设，新增候选。",
+        "group": "中央机关",
+        "checked_at": null
+      },
+      {
+        "source": "江苏省生态环境厅",
+        "entry_url": "https://sthjt.jiangsu.gov.cn/art/2026/11/26/art_83843_11865922.html",
+        "status": "checked_with_candidates",
+        "notes": "直接查阅人工智能生态环境服务商征集通知。",
+        "group": "重点地方",
+        "checked_at": null
+      },
+      {
+        "source": "北京市人民政府网站（新华社）",
+        "entry_url": "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202611/t20261127_4959379.html",
+        "status": "checked_with_candidates",
+        "notes": "查阅广电新规正式施行报道，结合广电总局两份原文核对。",
+        "group": "权威媒体",
+        "checked_at": null
       }
     ],
     "international_notes": [
       "已打开Reuters、CNIL、The Record、Bar and Bench、BleepingComputer上述候选正文。",
-      "韩国PIPC及政府简报检索最新主要为27日已刊，日语PPC季度报告索引与打开的历史快照不一致，越南司法部26日草案已刊，新加坡PDPC检索所见旧闻；尚未完成指定法域全量巡视。"
+      "韩国PIPC及政府简报检索最新主要为27日已刊，日语PPC季度报告索引与打开的历史快照不一致，越南司法部26日草案已刊，新加坡PDPC检索所见旧闻；尚未完成指定法域全量巡视。",
+      "本轮查阅日本PPC官网新着信息及季度报告PDF原文截图、英格兰银行FPC纪要、NHS England安全告警、CIRCL收录的CISA KEV记录；日、韩、越文检索已尝试但完整监管机构巡视未完。"
     ],
     "excluded": [
       {
@@ -256,15 +289,28 @@
         "url": "https://epaper.tianjinwe.com/tjrb/html/2026-11/28/content_143078_4057695.htm"
       },
       {
-        "title": "日本PPC季度报告",
-        "reason": "索引日期与打开的历史快照无法对应，待取原文。"
+        "title": "波士顿科学数据泄露通知",
+        "reason": "实际原始通知时间或新监管登记时间尚未可靠确认，保留为未核验候选，不纳入可刊数量。"
       }
     ],
     "uncompleted": [
-      "所有未明确列明已检查的指定国内中央部门、标准和评测机构、地方、媒体以及国际监管机构均未完成检查；不得视为无新闻。",
-      "国内不足6条专项复核尚未完成。",
-      "临近发布1—2小时重扫、原题最终审校、精确72小时与近7日事件级终审未完成。"
-    ]
+      "指定来源逐项巡视仍未完全结束；已查阅来源与访问失败记录保留，不能视为全部完成。",
+      "完整近7日事件级终审、精确72小时复核、原题最终审校及整期发布终检未完成。"
+    ],
+    "domestic_low_count_review": {
+      "completed": false,
+      "notes": "初稿国内4条，已追加地方政策、主管机关动态、标准与传媒、司法监管、网络安全与产业等反向检索；新增3条国内候选，部分指定来源仍未完成逐项查阅。",
+      "new_candidates": [
+        "cn-apec-digital-platform",
+        "cn-jiangsu-ai-environment",
+        "cn-nrta-tv-effective"
+      ]
+    },
+    "recovery_audit": {
+      "date": "2026-11-28",
+      "prior_issue_range": "2026-11-21—2026-11-27",
+      "notes": "已读取7期正文标题逐项初筛；补充中央机关、地方数据与算力、标准评测、司法执法、国内媒体及日、韩、越语反向检索。部分来源仅返回检索摘要或旧闻，未标记完成。"
+    }
   },
   "deduplication": {
     "history_dates": [
@@ -280,11 +326,9 @@
   },
   "final_html_sha256": null,
   "next_actions": [
-    "完成国内低于6条专项反向检索并逐项补齐遗漏审查。",
-    "核查Boston Scientific原始通知日期、上海网信原始公告、Drupal安全公告、天津遥感备案时间；继续国际监管巡视。",
-    "精确时效、逐项去重与最新来源重扫完成后才发布。"
+    "继续逐项完成未巡视国内和国际来源；检查高重要性候选、精确72小时及事件级去重；排除未核验波士顿科学候选；终审后原子提交至main。"
   ],
-  "last_error": "国内多个主管机关返回403、521或访问超时；国家数据局天津条例直接打开DisabledError，已使用独立替代来源。来源巡视与发布前终审尚未完成。",
+  "last_error": "新闻来源覆盖和最终审校尚未达到发布硬性门槛；部分网站访问失败，已通过可用替代来源补查。",
   "publication": {
     "commit_sha": null,
     "pages_run_id": null,
@@ -301,10 +345,10 @@
       "title": "天津通过数据条例，明确数据权益、授权运营与跨境流动机制",
       "original_title": "天津市数据条例",
       "source_name": "国家数据局（转载天津市人大常委会）",
-      "url": "https://www.nda.gov.cn/sjj/swdt/dfdt/1127/20261127194051984062960_mobile.html",
+      "url": "https://www.nda.gov.cn/sjj/swdt/dfdt/1127/20261127194051984062960_pc.html",
       "fact": "11月27日，天津市人大常委会通过《天津市数据条例》，自2027年1月1日起施行，原《天津市促进大数据发展应用条例》同时废止。条例规定数据持有、使用和经营权益，明确委托处理数据的权益归属及公共数据授权运营安排，并提出按照国家规定实行数据跨境流动负面清单制度。",
       "legal_status": "通过并公布，2027年1月1日起施行",
-      "verification_note": "国家数据局检索返回条例全文；直接打开DisabledError，另打开天津日报11月28日会议报道及专业政策库条例全文交叉核对。",
+      "verification_note": "国家数据局检索返回条例全文；直接打开DisabledError，另打开天津日报11月28日会议报道及专业政策库条例全文交叉核对。 本轮成功直接打开国家数据局PC版条例全文，核对通过日期、施行日期、数据权益与受托处理条款。",
       "domestic": true,
       "additional_sources": [
         {
@@ -326,8 +370,8 @@
       "background": "",
       "outlook": "",
       "source_evidence": {
-        "direct_open_success": false,
-        "direct_open_error": "DisabledError",
+        "direct_open_success": true,
+        "direct_open_error": null,
         "cross_source_checked": true
       }
     },
@@ -397,7 +441,7 @@
       "original_title": "上海市新增14款已完成登记的生成式人工智能服务",
       "source_name": "每日经济新闻",
       "url": "https://www.nbd.com.cn/articles/2026-11-26/4659737.html",
-      "fact": "11月26日，上海市公布新增14款完成登记的生成式人工智能服务。此次公布后，全市累计完成登记的生成式人工智能服务达到278款。",
+      "fact": "11月26日，上海公布新增14款完成登记的生成式人工智能服务，累计完成登记的应用或服务达到278款。每日经济新闻报道了此次名单更新，相关数量为应用登记数量，与生成式人工智能服务模型备案分别统计。",
       "legal_status": "新增登记结果公布",
       "verification_note": "打开每日经济新闻正文，区分应用登记和模型备案；待补主管机关原始链接。",
       "domestic": true,
@@ -416,6 +460,107 @@
       }
     },
     {
+      "key": "cn-apec-digital-platform",
+      "date": "2026-11-28",
+      "event_date": "2026-11-28",
+      "jurisdiction": "中国",
+      "agency": "国家数据局、四川省人民政府",
+      "title": "亚太数智赋能创新发展合作平台在成都启动建设",
+      "original_title": "“亚太数智赋能创新发展合作平台”在蓉揭牌并启动建设",
+      "source_name": "国家数据局",
+      "url": "https://www.nda.gov.cn/sjj/jgsz/jld/llh/llhldhd/1128/20261128190356539448068_pc.html",
+      "fact": "11月28日，国家数据局与四川省人民政府推动建设的亚太数智赋能创新发展合作平台在成都揭牌并启动建设。平台面向亚太经济体提供数智服务，拟在数据基础设施、数据资源开发利用、产业数字化转型和数字人才培养等方面开展合作，是2026年APEC会议成果之一。",
+      "legal_status": "揭牌并启动建设",
+      "verification_note": "直接打开国家数据局28日公告，并对照新华社报道；与此前APEC合作成果宣布相比，本条是平台实际启动建设。",
+      "domestic": true,
+      "additional_sources": [
+        {
+          "source_name": "新华社",
+          "title": "亚太数智赋能创新发展合作平台在成都揭牌",
+          "url": "https://www.news.cn/politics/20261128/5388d2f3ec1749359bf1b9c8fe0d99ff/c.html"
+        }
+      ],
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "对照11月21—27日正文标题和已知事件，未发现相同新进展；完整事件级终审尚待完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": true
+      },
+      "id": "research-item-5"
+    },
+    {
+      "key": "cn-jiangsu-ai-environment",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "中国",
+      "agency": "江苏省生态环境厅",
+      "title": "江苏征集生态环境领域人工智能服务商，涵盖辅助审批与监管执法",
+      "original_title": "关于征集江苏省“人工智能+生态环境”服务商的通知",
+      "source_name": "江苏省生态环境厅",
+      "url": "https://sthjt.jiangsu.gov.cn/art/2026/11/26/art_83843_11865922.html",
+      "fact": "11月26日，江苏省生态环境厅发布通知，面向全国征集人工智能与生态环境领域服务商，拟建立省级服务商资源池。征集范围包括智能辅助环评审批、非现场监管执法、案卷智能评查、大模型与智能体研发、高质量数据集建设等，要求申报者具备相应资质、技术能力和良好信用记录，申报截止12月11日。",
+      "legal_status": "征集通知",
+      "verification_note": "直接打开11月26日15:58主管部门通知，核对范围、资质和截止日。",
+      "domestic": true,
+      "additional_sources": [],
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "对照11月21—27日正文标题和已知事件，未发现相同新进展；完整事件级终审尚待完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": false
+      },
+      "id": "research-item-6"
+    },
+    {
+      "key": "cn-nrta-tv-effective",
+      "date": "2026-11-27",
+      "event_date": "2026-11-27",
+      "jurisdiction": "中国",
+      "agency": "国家广播电视总局",
+      "title": "有线电视和交互式网络电视运营新规施行，明确广告及数据安全要求",
+      "original_title": "今天起，电视不得播放开机广告",
+      "source_name": "新华社（北京市人民政府网站转载）",
+      "url": "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202611/t20261127_4959379.html",
+      "fact": "11月27日，《有线广播电视运营服务管理规定》和《交互式网络电视运营服务管理暂行规定》正式施行。新规要求相关运营服务坚持直播优先，不得播放开机广告，明示收费信息并提供便捷的用户选择入口。有线电视运营者还须建立用户信息安全保障体系，规范数据处理并落实网络安全事件应急处置和报告义务。",
+      "legal_status": "10月27日公布，11月27日施行",
+      "verification_note": "打开新华社当日生效报道，并核对广电总局10月27日公布的两项规章正文；收录依据为实际施行而非重复公布。",
+      "domestic": true,
+      "additional_sources": [
+        {
+          "source_name": "国家广播电视总局",
+          "title": "国家广播电视总局令第17号：《有线广播电视运营服务管理规定》",
+          "url": "https://www.nrta.gov.cn/art/2026/10/27/art_1588_74295.html"
+        },
+        {
+          "source_name": "国家广播电视总局",
+          "title": "国家广播电视总局令第18号：《交互式网络电视运营服务管理暂行规定》",
+          "url": "https://weihu.nrta.gov.cn/col/col1588/art/2026/art_86d1405c4d964f07ac1baa7422a34669.html"
+        }
+      ],
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "对照11月21—27日正文标题和已知事件，未发现相同新进展；完整事件级终审尚待完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": true
+      },
+      "id": "research-item-7"
+    },
+    {
       "key": "fr-health-ai",
       "date": "2026-11-27",
       "event_date": "2026-11-27",
@@ -430,7 +575,7 @@
       "verification_note": "打开CNIL原文，核对指南性质和主要内容。",
       "domestic": false,
       "additional_sources": [],
-      "id": "research-item-5",
+      "id": "research-item-8",
       "source_checked": true,
       "source_checked_at": null,
       "seven_day_dedup_checked": false,
@@ -458,7 +603,7 @@
       "verification_note": "打开路透社正文，报道时间18:28 UTC；日期用来源当地日期。",
       "domestic": false,
       "additional_sources": [],
-      "id": "research-item-6",
+      "id": "research-item-9",
       "source_checked": true,
       "source_checked_at": null,
       "seven_day_dedup_checked": false,
@@ -486,7 +631,7 @@
       "verification_note": "打开路透社正文，与26日已刊英伟达服务器停供事件不同。",
       "domestic": false,
       "additional_sources": [],
-      "id": "research-item-7",
+      "id": "research-item-10",
       "source_checked": true,
       "source_checked_at": null,
       "seven_day_dedup_checked": false,
@@ -509,12 +654,12 @@
       "original_title": "Delhi High Court to examine whether AI can be recognised as author under Copyright Act",
       "source_name": "Bar and Bench",
       "url": "https://www.barandbench.com/news/litigation/delhi-high-court-to-examine-whether-ai-can-be-recognised-as-author-under-copyright-act",
-      "fact": "11月26日，德里高等法院就斯蒂芬·泰勒针对著作权登记机关决定提出的申诉发出通知，案件涉及人工智能系统DABUS能否被认定为著作权法上的作者。登记机关于8月拒绝其申请，法院安排2027年3月进一步审理，尚未就作者资格作出实体裁判。",
+      "fact": "11月26日，德里高等法院就斯蒂芬·泰勒针对著作权登记机关决定提出的上诉发出通知，案件涉及人工智能系统DABUS能否被认定为著作权法上的作者。登记机关于8月拒绝其申请，法院安排2027年3月进一步审理，尚未就作者资格作出实体裁判。",
       "legal_status": "司法程序进展",
       "verification_note": "打开当地法律媒体正文，核对通知与后续审理时间。",
       "domestic": false,
       "additional_sources": [],
-      "id": "research-item-8",
+      "id": "research-item-11",
       "source_checked": true,
       "source_checked_at": null,
       "seven_day_dedup_checked": false,
@@ -542,7 +687,7 @@
       "verification_note": "打开路透社原文，明确匿名信源与未证实范围。",
       "domestic": false,
       "additional_sources": [],
-      "id": "research-item-9",
+      "id": "research-item-12",
       "source_checked": true,
       "source_checked_at": null,
       "seven_day_dedup_checked": false,
@@ -570,7 +715,7 @@
       "verification_note": "打开报道全文，实际事件披露26日、报道27日。",
       "domestic": false,
       "additional_sources": [],
-      "id": "research-item-10",
+      "id": "research-item-13",
       "source_checked": true,
       "source_checked_at": null,
       "seven_day_dedup_checked": false,
@@ -598,7 +743,7 @@
       "verification_note": "打开路透社正文，事件发现日早于报道日，按新披露计。",
       "domestic": false,
       "additional_sources": [],
-      "id": "research-item-11",
+      "id": "research-item-14",
       "source_checked": true,
       "source_checked_at": null,
       "seven_day_dedup_checked": false,
@@ -615,18 +760,29 @@
       "key": "intl-drupal",
       "date": "2026-11-27",
       "event_date": "2026-11-27",
-      "jurisdiction": "国际",
-      "agency": "Drupal",
-      "title": "Drupal披露另一项已遭利用的访问控制漏洞并发布修复",
-      "original_title": "Drupal warns of new site takeover flaw exploited in attacks",
-      "source_name": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
-      "fact": "11月27日，BleepingComputer报道，Drupal披露新的访问控制漏洞CVE-2026-136716，已发现现实攻击活动。Drupal发布修复版本，建议网站维护人员及时升级，以降低网站被未经授权控制的风险。",
-      "legal_status": "安全通告和修复",
-      "verification_note": "打开专业媒体全文；待补Drupal原始安全公告与精确公告时间。",
+      "jurisdiction": "英国、美国",
+      "agency": "英国NHS England、美国CISA",
+      "title": "英国卫生部门发布Drupal漏洞告警，美国CISA将其列入已知遭利用漏洞目录",
+      "original_title": "Active Exploitation of Critical Vulnerability in Drupal Core",
+      "source_name": "NHS England Digital",
+      "url": "https://digital.nhs.uk/cyber-alerts/2026/cc-4905",
+      "fact": "11月26日，英国NHS England发布Drupal核心软件安全告警，指出CVE-2026-136716已遭实际利用，并敦促相关机构及时升级和加固。美国网络安全和基础设施安全局11月27日将该漏洞纳入已知遭利用漏洞目录，规定适用的联邦机构按要求于11月30日前采取缓解措施。",
+      "legal_status": "安全告警及美国联邦漏洞目录更新",
+      "verification_note": "直接读取NHS 26日告警和CIRCL的CISA KEV记录（27日新增），原厂25日公告不是本条新进展。",
       "domestic": false,
-      "additional_sources": [],
-      "id": "research-item-12",
+      "additional_sources": [
+        {
+          "source_name": "CIRCL漏洞库（CISA KEV记录）",
+          "title": "CVE-2026-136716",
+          "url": "https://cve.circl.lu/vuln/CVE-2026-136716"
+        },
+        {
+          "source_name": "Drupal",
+          "title": "Drupal core - Highly critical - Access bypass - SA-CORE-2026-019",
+          "url": "https://www.drupal.org/sa-core-2026-019"
+        }
+      ],
+      "id": "research-item-15",
       "source_checked": true,
       "source_checked_at": null,
       "seven_day_dedup_checked": false,
@@ -654,7 +810,7 @@
       "verification_note": "打开专业媒体全文，企业声明作为归属明确的事实，不推断无数据外泄。",
       "domestic": false,
       "additional_sources": [],
-      "id": "research-item-13",
+      "id": "research-item-16",
       "source_checked": true,
       "source_checked_at": null,
       "seven_day_dedup_checked": false,
@@ -682,7 +838,7 @@
       "verification_note": "打开路透社正文；删除未经核验的新法发布日期。",
       "domestic": false,
       "additional_sources": [],
-      "id": "research-item-14",
+      "id": "research-item-17",
       "source_checked": true,
       "source_checked_at": null,
       "seven_day_dedup_checked": false,
@@ -710,7 +866,7 @@
       "verification_note": "打开报道正文，实际通知/监管登记日期尚待核对，未纳入最终时效确认。",
       "domestic": false,
       "additional_sources": [],
-      "id": "research-item-15",
+      "id": "research-item-18",
       "source_checked": false,
       "source_checked_at": null,
       "seven_day_dedup_checked": false,
@@ -722,7 +878,70 @@
         "direct_open_error": null,
         "cross_source_checked": false
       }
+    },
+    {
+      "key": "uk-boe-fpc-ai",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "英国",
+      "agency": "英格兰银行金融政策委员会",
+      "title": "英格兰银行评估人工智能融资与第三方技术依赖的金融稳定风险",
+      "original_title": "Financial Policy Committee Record – November 2026",
+      "source_name": "Bank of England",
+      "url": "https://www.bankofengland.co.uk/financial-policy-committee-record/2026/november-2026",
+      "fact": "11月26日，英格兰银行公布金融政策委员会11月19日会议纪要。委员会指出人工智能投资融资结构日益复杂、相互关联，智能体自主行为及共同技术供应商可能放大网络和金融风险。纪要强调继续推进关键第三方监管机制，同时指出现行制度只能部分缓解前沿人工智能及供应商依赖带来的风险。",
+      "legal_status": "会议纪要公开、监管风险评估",
+      "verification_note": "打开官方纪要，核对发布日期、会议日期、金融稳定判断以及第46段关键第三方监管表述。",
+      "domestic": false,
+      "additional_sources": [],
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "对照11月21—27日正文标题和已知事件，未发现相同新进展；完整事件级终审尚待完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": false
+      },
+      "id": "research-item-19"
+    },
+    {
+      "key": "jp-ppc-quarterly",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "日本",
+      "agency": "个人信息保护委员会（PPC）",
+      "title": "日本公布第二财季个人信息保护监管报告，针对民间经营者指导和建议95件",
+      "original_title": "令和８年度第２四半期における監視・監督権限の行使状況の概要",
+      "source_name": "日本个人信息保护委员会",
+      "url": "https://www.ppc.go.jp/files/pdf/261125quarter-report_kengenkoushi.pdf",
+      "fact": "11月26日，日本个人信息保护委员会公开2026财年第二季度监管报告。报告显示，依据《个人信息保护法》第147条或第157条开展的指导和建议共117件，其中针对民间经营者95件；防止外部非法访问措施不足23件，身份识别与认证措施不足11件。报告还列举了软件漏洞长期未修复、委托方监督不足等情况。",
+      "legal_status": "季度监管报告公开",
+      "verification_note": "打开官方新着信息列表确认11月26日公开，核对11月25日署期的原始PDF第2页并查看页面截图；原先索引差异已解决。",
+      "domestic": false,
+      "additional_sources": [
+        {
+          "source_name": "日本个人信息保护委员会",
+          "title": "新着情報一覧",
+          "url": "https://www.ppc.go.jp/information/"
+        }
+      ],
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "对照11月21—27日正文标题和已知事件，未发现相同新进展；完整事件级终审尚待完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": true
+      },
+      "id": "research-item-20"
     }
   ],
-  "final_reviewed_at": null
+  "final_reviewed_at": null,
+  "checked_candidate_count": 19
 }
