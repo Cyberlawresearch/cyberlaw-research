@@ -3,8 +3,39 @@
   "base_main_sha": "aac6961f8e6602e4fbbb4b94adbbe2eac0ee3428",
   "phase": "researching",
   "publication_ready": false,
-  "items": [],
-  "coverage": {},
+  "items": [
+    {
+      "id": "jp-steel",
+      "date": "2026-11-27",
+      "title": "日本内阁决定对中韩热镀锌钢材征收最终反倾销税",
+      "source": "https://www.mof.go.jp/english/policy/customs_tariff/traderemedy/20261127-1_e.html",
+      "stage": "内阁政令通过，12月3日适用"
+    },
+    {
+      "id": "eu-cptpp",
+      "date": "2026-11-26",
+      "title": "欧盟与CPTPP启动供应链预警网络",
+      "source": "https://policy.trade.ec.europa.eu/news/eu-launches-supply-chain-early-warning-network-trans-pacific-bloc-2026-11-26_en",
+      "stage": "合作机制启动"
+    },
+    {
+      "id": "ca-al",
+      "date": "2026-11-27",
+      "title": "加拿大启动对华铝挤压材双反行政复审",
+      "source": "https://www.cbsa-asfc.gc.ca/sima-lmsi/ar-ra/ae2026/ae202601-se-eng.html",
+      "stage": "复审启动"
+    }
+  ],
+  "coverage": {
+    "US": "FR 11/27, OFAC recent actions, BIS endpoint 404; FR correction and determinations pending detailed review",
+    "EU": "DG Trade news and Council release list; EU-CPTPP network verified",
+    "UK": "trade remedies notices and gov.uk search, recent steel and HMRC items already covered",
+    "Japan": "MOF confirms three cabinet orders; METI 403",
+    "Korea": "Reuters and ministry search; no independent new rule found yet",
+    "India": "DGTR homepage new TDI and clavulanate notices pending",
+    "Canada": "CBSA list and aluminum review schedule verified; initiation notice timeout",
+    "Australia": "renamed trade remedies commission notices searched, no new date in listing"
+  },
   "last_error": null,
   "next_actions": [
     "法域巡视、事实及来源核验、近七期去重、终扫"
