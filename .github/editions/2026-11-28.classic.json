@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-28",
+  "column": "classic",
+  "state": "verified",
+  "page": "articles/2026-11-28-oppenheimer-the-state.html",
+  "target_path": "articles/2026-11-28-oppenheimer-the-state.html",
+  "book": {
+    "author": "Franz Oppenheimer",
+    "original_title": "The State: Its History and Development Viewed Sociologically",
+    "original_language_title": "Der Staat",
+    "publisher": "B. W. Huebsch, Inc.",
+    "year": "1922",
+    "edition": "Second American Edition",
+    "translator": "John M. Gitterman"
+  },
+  "source_urls": [
+    "https://dev.oll.libertyfund.org/titles/oppenheimer-the-state/read",
+    "https://en.wikisource.org/wiki/The_State_(Oppenheimer)",
+    "https://en.wikisource.org/wiki/Index:The_State_(Oppenheimer).djvu",
+    "https://en.wikisource.org/wiki/The_State_(Oppenheimer)/Preface",
+    "https://openlibrary.org/books/OL6993774M/Der_staat",
+    "https://www.franz-oppenheimer.de/state0.htm",
+    "https://www.jstor.org/stable/1946183",
+    "https://www.finna.fi/Record/fikka.5785540",
+    "https://urvak.org/articles/probe-vypusk-6-frants-oppengeymer-o-proiskhozhdeni/",
+    "https://www.famguardian.org/Publications/OurEnemyTheState/nockoets2.htm"
+  ],
+  "original_verification": "1922年美国第二版全书公开文本：核查题名页、版权、作者序言、七章及各主题分节，按各章代表性原文系统核对论证、结构与术语，非逐段全文通读或逐字校勘。德文早期版本著录1907、1908年不一致，未确定初版年份。批评分别依据作者序言及批评者书目、期刊公开摘要，不宣称已通读批评著作。",
+  "chapter_sources": [
+    "https://dev.oll.libertyfund.org/titles/oppenheimer-the-state/read",
+    "https://en.wikisource.org/wiki/The_State_(Oppenheimer)"
+  ],
+  "critics": [
+    {
+      "author": "Rudolf Holsti",
+      "work": "The Relation of War to the Origin of the State",
+      "year": 1913,
+      "source": "https://www.finna.fi/Record/fikka.5785540",
+      "argument_source": "https://en.wikisource.org/wiki/The_State_(Oppenheimer)/Preface",
+      "scope": "据1922年作者序言所载批评及书目"
+    },
+    {
+      "author": "Sergey I. Nagikh",
+      "work": "Franz Oppenheimer about the origin of the state and its criticism of the contractual theory of the origin of state and natural law",
+      "year": 2013,
+      "source": "https://urvak.org/articles/probe-vypusk-6-frants-oppengeymer-o-proiskhozhdeni/",
+      "scope": "期刊公开摘要"
+    }
+  ],
+  "dedup_checked": [
+    "classics.html",
+    "historical classic indexes and books.json",
+    "main recursive tree"
+  ],
+  "duplicate_found": false,
+  "sections": 37,
+  "prose_length": 9583,
+  "han_characters": 8417,
+  "checked_at": "2026-11-28",
+  "checks": {
+    "full_original_text_systematically_checked": true,
+    "book_bibliography_verified": true,
+    "edition_distinction_verified": true,
+    "history_deduplicated": true,
+    "critics_cited": true,
+    "natural_chinese_reviewed": true,
+    "non_anachronism_reviewed": true,
+    "not_placeholder": true
+  },
+  "article_blob_sha": "3e0d1e80b86fcafcd9cfb3de5823ae02a3f3d76b",
+  "base_main_sha": "db592715ea3c69b4b6a02d080660b9a5a4e1ba9d",
+  "publication": {
+    "main_commit": null,
+    "pages_run_id": null,
+    "pages_status": null,
+    "live_verified": null
+  }
+}
