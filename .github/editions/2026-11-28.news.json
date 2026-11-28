@@ -1,0 +1,728 @@
+{
+  "date": "2026-11-28",
+  "column": "brief",
+  "state": "draft",
+  "phase": "research",
+  "page": "articles/2026-11-28-tech-law-brief.html",
+  "mode": "facts_only",
+  "analysis_pending": true,
+  "news_count": 15,
+  "distribution": {
+    "domestic": 4,
+    "international": 11
+  },
+  "checked_at": null,
+  "updated_at": null,
+  "last_news_scan_at": null,
+  "content_verified": false,
+  "publication_ready": false,
+  "base_main_sha": "7b4a315ebb2e77aa05551e8fe18dbd1a461363f2",
+  "checks": {
+    "all_sources_opened_for_candidates": false,
+    "domestic_major_omission_review": false,
+    "domestic_under_six_special_search": false,
+    "local_language_scan_korea_japan_vietnam": false,
+    "seven_day_event_dedup": false,
+    "final_recent_rescan": false,
+    "original_titles_final_review": false,
+    "background": false,
+    "sources": false,
+    "legal_status": false,
+    "original_titles": false,
+    "timeliness": false,
+    "previous_day_event_deduplication": false,
+    "seven_day_history_deduplication": false,
+    "natural_chinese_reviewed": false,
+    "foreign_layout": false,
+    "foreign_layout_structure": false,
+    "prior_background_checked": false,
+    "background_outlook": false,
+    "all_sources_successfully_accessed": false
+  },
+  "coverage": {
+    "domestic_sources": [
+      {
+        "source": "国家网信办",
+        "entry_url": "https://www.cac.gov.cn/yaowen/wxyw/A093602index_1.htm",
+        "status": "checked_no_qualifying_item",
+        "notes": "打开要闻列表，27日数字身份等为已刊，28日可见回顾性内容。",
+        "checked_at": null
+      },
+      {
+        "source": "工信部",
+        "entry_url": "https://www.miit.gov.cn/",
+        "status": "checked_no_qualifying_item",
+        "notes": "打开首页，27日监管工作部署已刊。",
+        "checked_at": null
+      },
+      {
+        "source": "市场监管总局",
+        "entry_url": "https://www.samr.gov.cn/xw/sj/art/2026/art_33b801e2898840eb8980482b0eea2581.html",
+        "status": "checked_with_candidates",
+        "notes": "打开信息无障碍标准报道。",
+        "checked_at": null
+      },
+      {
+        "source": "国家数据局",
+        "entry_url": "https://www.nda.gov.cn/sjj/swdt/dfdt/1127/20261127194051984062960_mobile.html",
+        "status": "checked_with_candidates",
+        "notes": "天津条例索引全文可读，直接打开失败；天津日报及政策库正文可读。",
+        "checked_at": null
+      },
+      {
+        "source": "国务院",
+        "entry_url": "https://www.gov.cn/",
+        "status": "access_failed",
+        "notes": "栏目访问403。",
+        "checked_at": null
+      },
+      {
+        "source": "全国人大",
+        "entry_url": "https://www.npc.gov.cn/",
+        "status": "access_failed",
+        "notes": "访问超时。",
+        "checked_at": null
+      },
+      {
+        "source": "科技部",
+        "entry_url": "https://www.most.gov.cn/",
+        "status": "access_failed",
+        "notes": "访问超时。",
+        "checked_at": null
+      },
+      {
+        "source": "商务部",
+        "entry_url": "https://www.mofcom.gov.cn/",
+        "status": "checked_no_qualifying_item",
+        "notes": "打开首页，服务贸易规划已刊。",
+        "checked_at": null
+      },
+      {
+        "source": "国家发展改革委",
+        "entry_url": "https://www.ndrc.gov.cn/",
+        "status": "not_checked",
+        "notes": "打开首页并初筛，尚未巡视全部专栏。",
+        "checked_at": null
+      },
+      {
+        "source": "公安部",
+        "entry_url": "https://www.mps.gov.cn/",
+        "status": "access_failed",
+        "notes": "访问521。",
+        "checked_at": null
+      },
+      {
+        "source": "最高人民法院",
+        "entry_url": "https://www.court.gov.cn/index.html",
+        "status": "not_checked",
+        "notes": "打开首页，已刊AI司法草案相关内容；需补专项检索。",
+        "checked_at": null
+      },
+      {
+        "source": "最高人民检察院",
+        "entry_url": "https://www.spp.gov.cn/",
+        "status": "access_failed",
+        "notes": "访问403。",
+        "checked_at": null
+      },
+      {
+        "source": "国家金融监督管理总局",
+        "entry_url": "https://www.nfra.gov.cn/",
+        "status": "access_failed",
+        "notes": "访问403。",
+        "checked_at": null
+      },
+      {
+        "source": "人民银行",
+        "entry_url": "https://www.pbc.gov.cn/",
+        "status": "checked_no_qualifying_item",
+        "notes": "打开首页及相关报告，未发现可独立收录的重大新增。",
+        "checked_at": null
+      },
+      {
+        "source": "证监会",
+        "entry_url": "https://www.csrc.gov.cn/",
+        "status": "checked_no_qualifying_item",
+        "notes": "27日网络虚假信息处罚已刊。",
+        "checked_at": null
+      },
+      {
+        "source": "TC260",
+        "entry_url": "https://www.tc260.org.cn/",
+        "status": "checked_no_qualifying_item",
+        "notes": "打开列表，所见近期通知为已刊或旧闻。",
+        "checked_at": null
+      },
+      {
+        "source": "TC609",
+        "entry_url": "https://www.tc609.org.cn/",
+        "status": "checked_no_qualifying_item",
+        "notes": "打开网站可见列表，暂无合格新增。",
+        "checked_at": null
+      },
+      {
+        "source": "全国标准信息公共服务平台",
+        "entry_url": "https://std.samr.gov.cn/gb",
+        "status": "not_checked",
+        "notes": "检索返回27日具身智能项目已刊，待进一步查阅。",
+        "checked_at": null
+      },
+      {
+        "source": "中国信通院",
+        "entry_url": "https://www.caict.ac.cn/",
+        "status": "access_failed",
+        "notes": "访问超时。",
+        "checked_at": null
+      },
+      {
+        "source": "CNCERT",
+        "entry_url": "https://www.cert.org.cn/portal/index.htm",
+        "status": "checked_no_qualifying_item",
+        "notes": "打开首页，24日Cling事件已刊。",
+        "checked_at": null
+      },
+      {
+        "source": "国家知识产权局",
+        "entry_url": "https://www.cnipa.gov.cn/",
+        "status": "not_checked",
+        "notes": "打开首页初筛，未完成专栏。",
+        "checked_at": null
+      },
+      {
+        "source": "国家广电总局",
+        "entry_url": "https://www.nrta.gov.cn/",
+        "status": "not_checked",
+        "notes": "打开首页初筛。",
+        "checked_at": null
+      },
+      {
+        "source": "国家能源局",
+        "entry_url": "https://www.nea.gov.cn/",
+        "status": "not_checked",
+        "notes": "打开首页，27日公告未全部复核。",
+        "checked_at": null
+      },
+      {
+        "source": "自然资源部",
+        "entry_url": "https://www.mnr.gov.cn/",
+        "status": "not_checked",
+        "notes": "打开首页初筛。",
+        "checked_at": null
+      },
+      {
+        "source": "上海网信（媒体报道）",
+        "entry_url": "https://www.nbd.com.cn/articles/2026-11-26/4659737.html",
+        "status": "checked_with_candidates",
+        "notes": "每日经济新闻报道直接打开，待补原始链接。",
+        "checked_at": null
+      },
+      {
+        "source": "天津日报",
+        "entry_url": "https://epaper.tianjinwe.com/tjrb/html/2026-11/28/content_143078_4057697.htm",
+        "status": "checked_with_candidates",
+        "notes": "打开人大会议报道及卫星遥感数据报道；后者备案确切日期待查。",
+        "checked_at": null
+      },
+      {
+        "source": "香港特区政府",
+        "entry_url": "https://www.info.gov.hk/gia/general/202611/27/P2026112600362.htm",
+        "status": "checked_with_candidates",
+        "notes": "直接打开政府公报。",
+        "checked_at": null
+      },
+      {
+        "source": "北京、广东、江苏、湖南（部分检索）",
+        "entry_url": null,
+        "status": "not_checked",
+        "notes": "检索可见北京转发国家数据局征求意见、广东旧规划、江苏网信上海动态、湖南数据局列表；未完整查阅。",
+        "checked_at": null
+      },
+      {
+        "source": "国内权威、财经与专业媒体（部分）",
+        "entry_url": null,
+        "status": "not_checked",
+        "notes": "检索新华社、人民网、中新网、第一财经、澎湃、证券时报；每日经济新闻与天津日报打开正文；其余指定来源未全量完成。",
+        "checked_at": null
+      }
+    ],
+    "international_notes": [
+      "已打开Reuters、CNIL、The Record、Bar and Bench、BleepingComputer上述候选正文。",
+      "韩国PIPC及政府简报检索最新主要为27日已刊，日语PPC季度报告索引与打开的历史快照不一致，越南司法部26日草案已刊，新加坡PDPC检索所见旧闻；尚未完成指定法域全量巡视。"
+    ],
+    "excluded": [
+      {
+        "title": "天津商业卫星遥感数据出境负面清单首个备案",
+        "reason": "天津日报11月28日正文已打开，但实际备案时间为不久前，需查明是否首次披露且属于72小时内新增。",
+        "url": "https://epaper.tianjinwe.com/tjrb/html/2026-11/28/content_143078_4057695.htm"
+      },
+      {
+        "title": "日本PPC季度报告",
+        "reason": "索引日期与打开的历史快照无法对应，待取原文。"
+      }
+    ],
+    "uncompleted": [
+      "所有未明确列明已检查的指定国内中央部门、标准和评测机构、地方、媒体以及国际监管机构均未完成检查；不得视为无新闻。",
+      "国内不足6条专项复核尚未完成。",
+      "临近发布1—2小时重扫、原题最终审校、精确72小时与近7日事件级终审未完成。"
+    ]
+  },
+  "deduplication": {
+    "history_dates": [
+      "2026-11-21",
+      "2026-11-22",
+      "2026-11-23",
+      "2026-11-24",
+      "2026-11-25",
+      "2026-11-26",
+      "2026-11-27"
+    ],
+    "note": "已读取各期正文及标题；未将初筛当成最终去重。"
+  },
+  "final_html_sha256": null,
+  "next_actions": [
+    "完成国内低于6条专项反向检索并逐项补齐遗漏审查。",
+    "核查Boston Scientific原始通知日期、上海网信原始公告、Drupal安全公告、天津遥感备案时间；继续国际监管巡视。",
+    "精确时效、逐项去重与最新来源重扫完成后才发布。"
+  ],
+  "last_error": "国内多个主管机关返回403、521或访问超时；国家数据局天津条例直接打开DisabledError，已使用独立替代来源。来源巡视与发布前终审尚未完成。",
+  "publication": {
+    "commit_sha": null,
+    "pages_run_id": null,
+    "pages_result": null,
+    "online_verified": null
+  },
+  "items": [
+    {
+      "key": "cn-tianjin-data",
+      "date": "2026-11-27",
+      "event_date": "2026-11-27",
+      "jurisdiction": "中国",
+      "agency": "天津市人大常委会",
+      "title": "天津通过数据条例，明确数据权益、授权运营与跨境流动机制",
+      "original_title": "天津市数据条例",
+      "source_name": "国家数据局（转载天津市人大常委会）",
+      "url": "https://www.nda.gov.cn/sjj/swdt/dfdt/1127/20261127194051984062960_mobile.html",
+      "fact": "11月27日，天津市人大常委会通过《天津市数据条例》，自2027年1月1日起施行，原《天津市促进大数据发展应用条例》同时废止。条例规定数据持有、使用和经营权益，明确委托处理数据的权益归属及公共数据授权运营安排，并提出按照国家规定实行数据跨境流动负面清单制度。",
+      "legal_status": "通过并公布，2027年1月1日起施行",
+      "verification_note": "国家数据局检索返回条例全文；直接打开DisabledError，另打开天津日报11月28日会议报道及专业政策库条例全文交叉核对。",
+      "domestic": true,
+      "additional_sources": [
+        {
+          "source_name": "天津日报",
+          "title": "市十八届人大常委会举行第二十九次会议",
+          "url": "https://epaper.tianjinwe.com/tjrb/html/2026-11/28/content_143078_4057697.htm"
+        },
+        {
+          "source_name": "智慧城市行业分析",
+          "title": "《天津市数据条例》自2027年1月1日起施行",
+          "url": "https://www.smartcity.team/policies/shujuyaosu/%E5%A4%A9%E6%B4%A5%E5%B8%82%E6%95%B0%E6%8D%AE%E6%9D%A1%E4%BE%8B/"
+        }
+      ],
+      "id": "research-item-1",
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月21—27日正文标题与事件概况，未发现明确同一新增动作；最终逐项复核未完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": false,
+        "direct_open_error": "DisabledError",
+        "cross_source_checked": true
+      }
+    },
+    {
+      "key": "cn-hk-platform-worker",
+      "date": "2026-11-27",
+      "event_date": "2026-11-27",
+      "jurisdiction": "中国香港",
+      "agency": "香港特区政府劳工处",
+      "title": "香港公布数码平台工作者补偿条例草案，拟规定平台工伤保险责任",
+      "original_title": "《數碼平台工作者補償條例草案》刊憲",
+      "source_name": "香港特区政府新闻公报",
+      "url": "https://www.info.gov.hk/gia/general/202611/27/P2026112600362.htm",
+      "fact": "11月27日，香港特区政府刊登《数码平台工作者补偿条例草案》，拟为餐饮和货品配送平台工作者建立法定工伤补偿制度。草案要求营运商承担补偿责任、购买强制工伤保险、报告事故并保存相关记录，拟于12月9日提交立法会首读及二读。",
+      "legal_status": "草案刊宪，待立法会审议",
+      "verification_note": "已打开政府新闻公报，核对香港时间9时及适用范围。",
+      "domestic": true,
+      "additional_sources": [],
+      "id": "research-item-2",
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月21—27日正文标题与事件概况，未发现明确同一新增动作；最终逐项复核未完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": false
+      }
+    },
+    {
+      "key": "cn-accessibility",
+      "date": "2026-11-27",
+      "event_date": "2026-11-27",
+      "jurisdiction": "中国",
+      "agency": "国家市场监督管理总局",
+      "title": "市场监管总局披露互联网内容无障碍可访问性国家标准修订情况",
+      "original_title": "信息无障碍国家标准修订发布",
+      "source_name": "市场监管总局",
+      "url": "https://www.samr.gov.cn/xw/sj/art/2026/art_33b801e2898840eb8980482b0eea2581.html",
+      "fact": "11月27日，市场监管总局介绍修订发布的《信息技术 互联网内容无障碍可访问性技术要求与测试方法》国家标准。标准参考国际无障碍指南，覆盖网页和移动应用中的多媒体、键盘操作等可访问性要求，自2027年2月1日起实施。",
+      "legal_status": "标准修订发布，待实施",
+      "verification_note": "打开主管机关11月27日新闻正文；实际标准发布日期需进一步核查，本条日期暂按主管机关披露日。",
+      "domestic": true,
+      "additional_sources": [],
+      "id": "research-item-3",
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月21—27日正文标题与事件概况，未发现明确同一新增动作；最终逐项复核未完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": false
+      }
+    },
+    {
+      "key": "cn-shanghai-genai",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "中国",
+      "agency": "上海市网信办",
+      "title": "上海新增14款完成登记的生成式人工智能服务",
+      "original_title": "上海市新增14款已完成登记的生成式人工智能服务",
+      "source_name": "每日经济新闻",
+      "url": "https://www.nbd.com.cn/articles/2026-11-26/4659737.html",
+      "fact": "11月26日，上海市公布新增14款完成登记的生成式人工智能服务。此次公布后，全市累计完成登记的生成式人工智能服务达到278款。",
+      "legal_status": "新增登记结果公布",
+      "verification_note": "打开每日经济新闻正文，区分应用登记和模型备案；待补主管机关原始链接。",
+      "domestic": true,
+      "additional_sources": [],
+      "id": "research-item-4",
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月21—27日正文标题与事件概况，未发现明确同一新增动作；最终逐项复核未完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": false
+      }
+    },
+    {
+      "key": "fr-health-ai",
+      "date": "2026-11-27",
+      "event_date": "2026-11-27",
+      "jurisdiction": "法国",
+      "agency": "CNIL、HAS",
+      "title": "法国发布医疗人工智能使用指南，覆盖采购、患者告知与人工监督",
+      "original_title": "IA en contexte de soins : accompagner le bon usage avec le guide CNIL et HAS",
+      "source_name": "CNIL",
+      "url": "https://cnil.fr/fr/ia-en-soins-guide-has-cnil",
+      "fact": "11月27日，法国国家信息与自由委员会与国家卫生管理局发布医疗场景人工智能使用指南。指南按11个模块组织，涉及系统选购、合同、患者信息与权利、人工监督、运行质量、可追溯性及系统退出等事项。",
+      "legal_status": "联合监管指导文件",
+      "verification_note": "打开CNIL原文，核对指南性质和主要内容。",
+      "domestic": false,
+      "additional_sources": [],
+      "id": "research-item-5",
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月21—27日正文标题与事件概况，未发现明确同一新增动作；最终逐项复核未完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": false
+      }
+    },
+    {
+      "key": "us-openai-apple",
+      "date": "2026-11-27",
+      "event_date": "2026-11-27",
+      "jurisdiction": "美国",
+      "agency": "OpenAI、苹果、联邦法院",
+      "title": "OpenAI对苹果提出商业秘密诉讼反诉",
+      "original_title": "OpenAI countersues Apple for stealing trade secrets",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/",
+      "fact": "11月27日，路透社报道，OpenAI在加利福尼亚州联邦法院向苹果提出反诉，指控苹果通过重新聘用员工等方式获取其商业秘密，并向供应商施压。苹果否认相关指控；反诉涉及苹果此前于7月提起的诉讼。",
+      "legal_status": "反诉，双方主张尚未经法院认定",
+      "verification_note": "打开路透社正文，报道时间18:28 UTC；日期用来源当地日期。",
+      "domestic": false,
+      "additional_sources": [],
+      "id": "research-item-6",
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月21—27日正文标题与事件概况，未发现明确同一新增动作；最终逐项复核未完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": false
+      }
+    },
+    {
+      "key": "nl-match",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "荷兰、美国",
+      "agency": "荷兰贸易主管部门",
+      "title": "荷兰表示将要求美国不实施拟议的MATCH法案",
+      "original_title": "Netherlands will ask Washington not to enforce MATCH Act, minister says",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/",
+      "fact": "11月26日，荷兰贸易部长在议会表示，若美国拟议的MATCH法案获得通过，荷兰将要求美国不要实施其中可能影响欧洲半导体产业的限制。该法案涉及对盟国半导体设备出口管制的进一步协调，荷兰拟与欧盟及德国、法国等方面沟通。",
+      "legal_status": "政府回应拟议法案",
+      "verification_note": "打开路透社正文，与26日已刊英伟达服务器停供事件不同。",
+      "domestic": false,
+      "additional_sources": [],
+      "id": "research-item-7",
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月21—27日正文标题与事件概况，未发现明确同一新增动作；最终逐项复核未完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": false
+      }
+    },
+    {
+      "key": "in-ai-author",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "印度",
+      "agency": "德里高等法院",
+      "title": "德里高等法院将审理人工智能能否成为著作权法上的作者",
+      "original_title": "Delhi High Court to examine whether AI can be recognised as author under Copyright Act",
+      "source_name": "Bar and Bench",
+      "url": "https://www.barandbench.com/news/litigation/delhi-high-court-to-examine-whether-ai-can-be-recognised-as-author-under-copyright-act",
+      "fact": "11月26日，德里高等法院就斯蒂芬·泰勒针对著作权登记机关决定提出的申诉发出通知，案件涉及人工智能系统DABUS能否被认定为著作权法上的作者。登记机关于8月拒绝其申请，法院安排2027年3月进一步审理，尚未就作者资格作出实体裁判。",
+      "legal_status": "司法程序进展",
+      "verification_note": "打开当地法律媒体正文，核对通知与后续审理时间。",
+      "domestic": false,
+      "additional_sources": [],
+      "id": "research-item-8",
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月21—27日正文标题与事件概况，未发现明确同一新增动作；最终逐项复核未完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": false
+      }
+    },
+    {
+      "key": "us-cloud-one",
+      "date": "2026-11-27",
+      "event_date": "2026-11-27",
+      "jurisdiction": "美国",
+      "agency": "美国空军",
+      "title": "美国空军Cloud One云计算平台据报遭入侵",
+      "original_title": "Hackers breach US Air Force flagship Cloud One computing platform",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
+      "fact": "11月27日，路透社援引知情人士报道，美国空军的Cloud One云计算平台发生网络安全事件，部分迁移工作暂停。报道指出事件在过去一个月内被发现，是否有数据遭窃尚未得到确认；美国空军未就具体事件细节作出评论。",
+      "legal_status": "媒体披露网络安全事件",
+      "verification_note": "打开路透社原文，明确匿名信源与未证实范围。",
+      "domestic": false,
+      "additional_sources": [],
+      "id": "research-item-9",
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月21—27日正文标题与事件概况，未发现明确同一新增动作；最终逐项复核未完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": false
+      }
+    },
+    {
+      "key": "fr-afp",
+      "date": "2026-11-27",
+      "event_date": "2026-11-27",
+      "jurisdiction": "法国",
+      "agency": "法新社",
+      "title": "法新社新闻分发平台遭网络攻击并启用替代服务",
+      "original_title": "Cyberattack disrupts global news distribution platform at France’s AFP",
+      "source_name": "The Record",
+      "url": "https://therecord.media/france-afp-hit-by-cyberattack",
+      "fact": "11月27日，The Record报道，法新社于26日披露其AFP Forum新闻分发平台受到网络攻击影响。机构启用替代访问方式以维持新闻内容供应，尚未公开确认攻击者身份及事件涉及的数据范围。",
+      "legal_status": "网络安全事件披露",
+      "verification_note": "打开报道全文，实际事件披露26日、报道27日。",
+      "domestic": false,
+      "additional_sources": [],
+      "id": "research-item-10",
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月21—27日正文标题与事件概况，未发现明确同一新增动作；最终逐项复核未完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": false
+      }
+    },
+    {
+      "key": "intl-zodia",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "英国",
+      "agency": "Zodia Custody",
+      "title": "渣打旗下数字资产托管机构披露客户资料泄露事件",
+      "original_title": "StanChart's crypto unit Zodia Custody hit by security breach, some client data exposed",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/finance/stancharts-crypto-unit-zodia-custody-suffers-security-breach-client-data-exposed-2026-11-26/",
+      "fact": "11月26日，数字资产托管机构Zodia Custody负责人披露，该机构发现网络安全事件，部分客户和员工姓名、电子邮箱等信息受到影响。负责人称未发现未经授权的交易，服务已经恢复，并已通知监管机构。",
+      "legal_status": "企业披露网络安全事件",
+      "verification_note": "打开路透社正文，事件发现日早于报道日，按新披露计。",
+      "domestic": false,
+      "additional_sources": [],
+      "id": "research-item-11",
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月21—27日正文标题与事件概况，未发现明确同一新增动作；最终逐项复核未完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": false
+      }
+    },
+    {
+      "key": "intl-drupal",
+      "date": "2026-11-27",
+      "event_date": "2026-11-27",
+      "jurisdiction": "国际",
+      "agency": "Drupal",
+      "title": "Drupal披露另一项已遭利用的访问控制漏洞并发布修复",
+      "original_title": "Drupal warns of new site takeover flaw exploited in attacks",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
+      "fact": "11月27日，BleepingComputer报道，Drupal披露新的访问控制漏洞CVE-2026-136716，已发现现实攻击活动。Drupal发布修复版本，建议网站维护人员及时升级，以降低网站被未经授权控制的风险。",
+      "legal_status": "安全通告和修复",
+      "verification_note": "打开专业媒体全文；待补Drupal原始安全公告与精确公告时间。",
+      "domestic": false,
+      "additional_sources": [],
+      "id": "research-item-12",
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月21—27日正文标题与事件概况，未发现明确同一新增动作；最终逐项复核未完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": false
+      }
+    },
+    {
+      "key": "intl-pcloud",
+      "date": "2026-11-27",
+      "event_date": "2026-11-27",
+      "jurisdiction": "瑞士",
+      "agency": "pCloud",
+      "title": "pCloud披露密码管理服务安全事件",
+      "original_title": "pCloud confirms password manager hack after suspicious login alerts",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/",
+      "fact": "11月27日，BleepingComputer报道，pCloud确认其密码管理服务pCloud Pass发生安全事件，涉及部分用户电子邮箱及异常登录活动。企业表示云存储服务未受影响，并称没有密码库内容遭泄露的迹象。",
+      "legal_status": "企业披露网络安全事件",
+      "verification_note": "打开专业媒体全文，企业声明作为归属明确的事实，不推断无数据外泄。",
+      "domestic": false,
+      "additional_sources": [],
+      "id": "research-item-13",
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月21—27日正文标题与事件概况，未发现明确同一新增动作；最终逐项复核未完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": false
+      }
+    },
+    {
+      "key": "kz-ru-ai",
+      "date": "2026-11-26",
+      "event_date": "2026-11-26",
+      "jurisdiction": "哈萨克斯坦、俄罗斯",
+      "agency": "哈萨克斯坦、俄罗斯政府",
+      "title": "哈萨克斯坦与俄罗斯推动人工智能产业合作",
+      "original_title": "Kazakhstan boosts AI cooperation with Russia, which is hungry for advanced US chips",
+      "source_name": "Reuters",
+      "url": "https://www.reuters.com/business/finance/kazakhstan-boosts-ai-cooperation-with-russia-which-is-hungry-advanced-us-chips-2026-11-26/",
+      "fact": "11月26日，路透社报道，哈萨克斯坦与俄罗斯在两国会晤期间讨论人工智能合作，哈萨克斯坦总统欢迎俄罗斯人工智能企业及相关创业者参与当地项目。报道同时提及俄罗斯对海外数据中心安排的安全许可要求，但未将相关规定认定为当日新增法规。",
+      "legal_status": "政府合作动向",
+      "verification_note": "打开路透社正文；删除未经核验的新法发布日期。",
+      "domestic": false,
+      "additional_sources": [],
+      "id": "research-item-14",
+      "source_checked": true,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月21—27日正文标题与事件概况，未发现明确同一新增动作；最终逐项复核未完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": false
+      }
+    },
+    {
+      "key": "us-boston-medical",
+      "date": "2026-11-27",
+      "event_date": "2026-11-27",
+      "jurisdiction": "美国",
+      "agency": "Boston Scientific",
+      "title": "波士顿科学向受影响个人发出数据泄露通知",
+      "original_title": "New Boston Scientific data breach exposes personal, medical info",
+      "source_name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-boston-scientific-data-breach-exposes-personal-medical-info/",
+      "fact": "11月27日，BleepingComputer报道，波士顿科学正在向受网络安全事件影响的个人发出通知。报道援引得克萨斯州总检察长数据泄露平台，称涉及117789人，信息包括姓名、身份标识及医疗保险等资料。公司此前于11月5日确认发生数据泄露，表示事件与8月另一起事件无关。",
+      "legal_status": "新通知报道，待核对原始通知日期",
+      "verification_note": "打开报道正文，实际通知/监管登记日期尚待核对，未纳入最终时效确认。",
+      "domestic": false,
+      "additional_sources": [],
+      "id": "research-item-15",
+      "source_checked": false,
+      "source_checked_at": null,
+      "seven_day_dedup_checked": false,
+      "deduplication_note": "已对照11月21—27日正文标题与事件概况，未发现明确同一新增动作；最终逐项复核未完成。",
+      "background": "",
+      "outlook": "",
+      "source_evidence": {
+        "direct_open_success": true,
+        "direct_open_error": null,
+        "cross_source_checked": false
+      }
+    }
+  ],
+  "final_reviewed_at": null
+}
