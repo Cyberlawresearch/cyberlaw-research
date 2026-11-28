@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-28",
+  "column": "newworks",
+  "state": "verified",
+  "page": "articles/2026-11-28-new-works.html",
+  "page_blob_sha": "2b5867d7278d8cd656fa1b9d26aaf443dd16963b",
+  "newworks_count": 3,
+  "checked_at": "2026-11-28T12:28:07Z",
+  "checks": {
+    "publisher_original_source_verified": true,
+    "original_title_author_doi_verified": true,
+    "publication_versions_checked": true,
+    "bibliographic_fields_verified": true,
+    "historical_indexes_checked": true,
+    "github_code_search_done": true,
+    "natural_chinese_reviewed": true,
+    "items_count_verified": true,
+    "related_reading_scoped": true
+  },
+  "deduplication": {
+    "checked_sources": [
+      "new-works.html",
+      "new-works-history.html",
+      "archive.html",
+      "recursive main repository tree",
+      "GitHub repository code search for selected DOI, original title, author and surname"
+    ],
+    "historical_body_paths": 101,
+    "matches_found_for_selected": 0,
+    "scope_note": "All indexed historical paths inventoried and repository code search returned no matches for selected works. Historical body files were not individually all fetched. Other candidates with prior newworks hits excluded.",
+    "version_distinction": "Original journal publisher full text opened and version of record confirmed; no working-paper DOI used."
+  },
+  "items": [
+    {
+      "cn_title": "数字化转型下的欧洲公司法：人工智能决策与数据利益相关者",
+      "author": "Florian Möslein",
+      "original_title": "European company law in the age of digital transformation: artificial intelligence, data economy, and digital corporate governance",
+      "journal": "ERA Forum",
+      "publisher": "Springer Nature",
+      "year": 2025,
+      "publication_date": "2025-11-12",
+      "volume": "26",
+      "issue": null,
+      "pages": "629–646",
+      "article_number": null,
+      "doi": "10.1007/s12027-025-00864-6",
+      "publisher_page": "https://link.springer.com/article/10.1007/s12027-025-00864-6",
+      "version": "Published journal version of record"
+    },
+    {
+      "cn_title": "社交平台应当删除有害内容还是降低其传播范围",
+      "author": "Jeffrey W. Howard、Beatriz Kira",
+      "original_title": "Remove or Reduce: Demotion, Content Moderation, and Human Rights",
+      "journal": "Law and Philosophy",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-04-24",
+      "volume": "45",
+      "issue": null,
+      "pages": "483–513",
+      "article_number": null,
+      "doi": "10.1007/s10982-026-09557-8",
+      "publisher_page": "https://link.springer.com/article/10.1007/s10982-026-09557-8",
+      "version": "Published journal version of record"
+    },
+    {
+      "cn_title": "创作者限制人工智能训练的权利及其正当性",
+      "author": "James H. McIntyre",
+      "original_title": "The Right to Restrict AI Training",
+      "journal": "Philosophy & Technology",
+      "publisher": "Springer Nature",
+      "year": 2026,
+      "publication_date": "2026-02-03",
+      "volume": "39",
+      "issue": null,
+      "pages": null,
+      "article_number": "25",
+      "doi": "10.1007/s13347-025-01032-x",
+      "publisher_page": "https://link.springer.com/article/10.1007/s13347-025-01032-x",
+      "version": "Published journal version of record"
+    }
+  ],
+  "related_reading": [],
+  "timelines": [],
+  "publication": {
+    "phase": "publishing",
+    "body_commit_sha": "1d7525b9210c230db1c380a9fff07fe77becf508",
+    "last_complete_commit_sha": null,
+    "pages_run_id": null,
+    "pages_deploy_status": null,
+    "live_verified": null
+  }
+}
