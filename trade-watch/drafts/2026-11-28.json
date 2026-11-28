@@ -1,8 +1,8 @@
 {
   "date": "2026-11-28",
   "base_main_sha": "aac6961f8e6602e4fbbb4b94adbbe2eac0ee3428",
-  "phase": "fact_checked",
-  "publication_ready": false,
+  "phase": "publication_ready",
+  "publication_ready": true,
   "items": [
     {
       "id": "jp-steel",
@@ -223,8 +223,10 @@
   "next_actions": [
     "完成发布前检查并写入main"
   ],
-  "stage": "fact_checked",
+  "stage": "publication_ready",
   "source_verification": "逐一打开10个独立原始链接；加拿大采用已核验的案件日程",
   "dedup_review": "逐期读取11月21日至27日正文，逐项比较；日本三项及PTMEG为新增政令或日期更正。",
-  "final_sweep": "11月28日检索美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚；排除无新增事实的301及MATCH重复报道。"
+  "final_sweep": "11月28日检索美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚；排除无新增事实的301及MATCH重复报道。",
+  "issue": "081",
+  "summary": "日本通过中韩钢材及化工品反倾销政令；韩国对中国PVC及镀锡钢板作出初裁；加拿大启动中国铝挤压材双反复审；欧盟与CPTPP启动供应链预警网络。"
 }
