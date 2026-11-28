@@ -1,7 +1,7 @@
 {
   "date": "2026-11-28",
   "base_main_sha": "aac6961f8e6602e4fbbb4b94adbbe2eac0ee3428",
-  "phase": "publication_ready",
+  "phase": "main_written",
   "publication_ready": true,
   "items": [
     {
@@ -219,14 +219,72 @@
     "Canada": "CBSA list and aluminum review schedule verified; initiation notice timeout",
     "Australia": "renamed trade remedies commission notices searched, no new date in listing"
   },
-  "last_error": null,
+  "last_error": {
+    "stage": "public_page_verification",
+    "message": "web.open returned Internal Error; URL is not accessible via this tool, for each of three pages in both attempts."
+  },
   "next_actions": [
-    "完成发布前检查并写入main"
+    "核对最终提交的 Pages 部署结果及公开页面、来源诊断"
   ],
-  "stage": "publication_ready",
+  "stage": "main_written",
   "source_verification": "逐一打开10个独立原始链接；加拿大采用已核验的案件日程",
   "dedup_review": "逐期读取11月21日至27日正文，逐项比较；日本三项及PTMEG为新增政令或日期更正。",
   "final_sweep": "11月28日检索美国、欧盟、英国、日本、韩国、印度、加拿大、澳大利亚；排除无新增事实的301及MATCH重复报道。",
   "issue": "081",
-  "summary": "日本通过中韩钢材及化工品反倾销政令；韩国对中国PVC及镀锡钢板作出初裁；加拿大启动中国铝挤压材双反复审；欧盟与CPTPP启动供应链预警网络。"
+  "summary": "日本通过中韩钢材及化工品反倾销政令；韩国对中国PVC及镀锡钢板作出初裁；加拿大启动中国铝挤压材双反复审；欧盟与CPTPP启动供应链预警网络。",
+  "publication_attempt": {
+    "main_commit": "7b4a315ebb2e77aa05551e8fe18dbd1a461363f2",
+    "files_written": [
+      "trade-watch/issues/2026-11-28.html",
+      "trade-watch/index.html",
+      "trade-watch/archive.html"
+    ],
+    "main_readback": true,
+    "issue_count": 10,
+    "archive_entries": 81,
+    "source_href_match": true,
+    "workflow_runs": [
+      {
+        "name": "Trade Watch publication guard",
+        "id": 46091344118,
+        "status": "pending",
+        "conclusion": null,
+        "head_sha": "7b4a315ebb2e77aa05551e8fe18dbd1a461363f2",
+        "html_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/46091344118"
+      },
+      {
+        "name": "Trade Watch source diagnostics",
+        "id": 46091343372,
+        "status": "completed",
+        "conclusion": "skipped",
+        "head_sha": "7b4a315ebb2e77aa05551e8fe18dbd1a461363f2",
+        "html_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/46091343372"
+      },
+      {
+        "name": "Trade Watch publication guard",
+        "id": 46091342934,
+        "status": "in_progress",
+        "conclusion": null,
+        "head_sha": "7b4a315ebb2e77aa05551e8fe18dbd1a461363f2",
+        "html_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/46091342934"
+      },
+      {
+        "name": "Trade Watch source diagnostics",
+        "id": 46091342871,
+        "status": "completed",
+        "conclusion": "skipped",
+        "head_sha": "7b4a315ebb2e77aa05551e8fe18dbd1a461363f2",
+        "html_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/46091342871"
+      },
+      {
+        "name": "Deploy static site to Pages",
+        "id": 46091333668,
+        "status": "in_progress",
+        "conclusion": null,
+        "head_sha": "7b4a315ebb2e77aa05551e8fe18dbd1a461363f2",
+        "html_url": "https://github.com/Cyberlawresearch/cyberlaw-research/actions/runs/46091333668"
+      }
+    ],
+    "public_check": "两轮访问正文、首页及归档均返回 Internal Error / URL not accessible via this tool；公开页面内容及来源专项验收尚未完成。"
+  }
 }
