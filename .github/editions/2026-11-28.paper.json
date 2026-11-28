@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-28",
+  "column": "paper",
+  "state": "verified",
+  "phase": "publishing",
+  "page": "articles/2026-11-28-covilla-ai-administrative-discretion.html",
+  "selection": "Artificial Intelligence and Administrative Discretion: Exploring Adaptations and Boundaries",
+  "bibliography": {
+    "type": "article",
+    "author": "Juan Carlos Covilla",
+    "originalTitle": "Artificial Intelligence and Administrative Discretion: Exploring Adaptations and Boundaries",
+    "journal": "European Journal of Risk Regulation",
+    "year": "2025",
+    "volume": "16",
+    "issue": "1",
+    "pages": "36–50",
+    "doi": "10.1017/err.2024.76",
+    "url": "https://doi.org/10.1017/err.2024.76",
+    "cnTitle": "人工智能可以在何种范围内行使行政裁量：注意义务、理由说明与司法审查"
+  },
+  "versions": {
+    "full_text": "Publisher HTML version of record, sections I–V and footnotes 1–53 consulted; CC BY 4.0.",
+    "publication": "First published online 2024-10-23; March 2025, volume 16, Special Issue 1, pp.36–50."
+  },
+  "sources": [
+    "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/artificial-intelligence-and-administrative-discretion-exploring-adaptations-and-boundaries/7CBC719CC09F8B01845BDCED238C2A40",
+    "https://doi.org/10.1017/err.2024.76"
+  ],
+  "checks": {
+    "full_original_text_read": true,
+    "formal_bibliography_verified": true,
+    "history_deduplication": true,
+    "natural_chinese_reviewed": true,
+    "related_reading_direct_only": true,
+    "timeline_threshold_applied": true,
+    "final_html_complete": true,
+    "security_preflight": true
+  },
+  "history_scope": "papers.html and papers-history-1.html full historical link lists and latest main recursive tree inspected; no Covilla article or matching DOI/title; no current-date paper record or article.",
+  "related_reading": [
+    "articles/2026-09-07-coglianese-lehr-regulating-by-robot.html",
+    "articles/2026-11-26-green-human-oversight-government-algorithms.html"
+  ],
+  "timeline": null,
+  "body_length": 2908,
+  "checked_at": "2026-11-28",
+  "publication": {
+    "content_main_sha": null,
+    "validated_main_sha": null,
+    "pages_run_id": null,
+    "pages_conclusion": null,
+    "current_columns": null,
+    "live_page": null,
+    "live_entry_points": null
+  },
+  "last_error": null
+}
